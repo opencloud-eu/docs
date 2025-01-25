@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundImage: `url('/img/OpenCloud_Filemanagement_Filesharing_144dpi.jpg')`}}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+      <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
