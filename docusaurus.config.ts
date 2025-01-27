@@ -68,10 +68,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'OpenCloud Doku',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/Logo-OC.svg',
+        alt: 'OpenCloud Logo',
+        src: 'img/oc-logo-petrol.svg',
+        srcDark: 'img/oc-logo-lilac.svg'
       },
       items: [
         {
