@@ -2,10 +2,12 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { useColorMode } from '@docusaurus/theme-common';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  lightSvg: React.ComponentType<React.ComponentProps<'svg'>>;
+  darkSvg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
@@ -13,7 +15,8 @@ const FeatureList: FeatureItem[] = [
 
   {
     title: 'Dokumentation',
-    Svg: require('@site/static/img/4.svg').default,
+    lightSvg: require('@site/static/img/oc-logo-petrol.svg').default,
+    darkSvg: require('@site/static/img/oc-logo-lilac.svg').default,
     description: (
       <>
         Dokumentation zur Nutzung von OpenCloud
@@ -23,7 +26,10 @@ const FeatureList: FeatureItem[] = [
   
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, lightSvg, darkSvg, description}: FeatureItem) {
+  const { colorMode } = useColorMode();
+  const Svg = colorMode === 'dark' ? darkSvg : lightSvg
+
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
