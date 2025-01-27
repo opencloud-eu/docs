@@ -54,3 +54,17 @@
     width: 250px;
   }
 }
+
+/* For images that needs to be displayed according to light oder dark mode. */
+.light-mode-image { 
+  display: none; 
+}  
+[data-theme='light'] .light-mode-image { 
+  display: block; 
+}  
+.dark-mode-image { 
+  display: none; 
+}  
+[data-theme='dark'] .dark-mode-image { 
+  display: block; 
+}
