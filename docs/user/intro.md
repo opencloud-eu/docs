@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 # Wilkommen
 
 <img class="light-mode-image" src="/img/oc-logo-petrol.svg" alt="OpenCloud Logo" width="250" height="55"/> 
