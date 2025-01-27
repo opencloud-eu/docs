@@ -1,1 +1,1 @@
-# Deistallation
+# Deinstallation
