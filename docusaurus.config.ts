@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Heinlein Gruppe', // Usually your GitHub org/user name.
+  projectName: 'OpenCloud', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -110,22 +110,34 @@ const config: Config = {
               label: 'User',
               to: '/docs/user/intro',
             },
+            {
+              label: 'Admin',
+              to: '/docs/admin/intro',
+            },
+            {
+              label: 'Developer',
+              to: '/docs/dev/intro',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Xing',
+              href: 'https://www.xing.com/pages/heinleinsupportgmbh',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'X (Twitter)',
+              href: 'https://x.com/heinleinsupport/status/1857429869593788617',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://de.linkedin.com/company/heinlein-support',
             },
           ],
         },
@@ -133,8 +145,16 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Heinlein-Support',
+              href: 'https://www.heinlein-support.de',
+            },
+            {
+              label: 'mailbox.org',
+              href: 'https://mailbox.org/de',
+            },
+            {
+              label: 'OpenTalk',
+              href: 'https://opentalk.mailbox.org',
             },
             {
               label: 'GitHub',
@@ -143,7 +163,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} OpenCloud, powered by Heinlein Gruppe`,
     },
     prism: {
       theme: prismThemes.github,
