@@ -12,18 +12,6 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
-
-  {
-    title: 'Dokumentation',
-    lightSvg: require('@site/static/img/oc-logo-petrol.svg').default,
-    darkSvg: require('@site/static/img/oc-logo-lilac.svg').default,
-    description: (
-      <>
-        Dokumentation zur Nutzung von OpenCloud
-      </>
-    ),
-  },
-  
 ];
 
 function Feature({title, lightSvg, darkSvg, description}: FeatureItem) {

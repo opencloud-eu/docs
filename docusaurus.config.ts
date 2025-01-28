@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'OpenCloud Dokumentation',
-  tagline: 'Klare Grenzen. Keine Limits.',
+  title: 'OpenCloud',
+  tagline: 'Documentation',
   favicon: 'img/oc-favicon.ico',
 
   // Set the production url of your site here
