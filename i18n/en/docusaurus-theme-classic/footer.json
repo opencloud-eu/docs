@@ -1,0 +1,62 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.User": {
+    "message": "User",
+    "description": "The label of footer link with label=User linking to /docs/user/intro"
+  },
+  "link.item.label.Admin": {
+    "message": "Admin",
+    "description": "The label of footer link with label=Admin linking to /docs/admin/intro"
+  },
+  "link.item.label.Developer": {
+    "message": "Developer",
+    "description": "The label of footer link with label=Developer linking to /docs/dev/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Xing": {
+    "message": "Xing",
+    "description": "The label of footer link with label=Xing linking to https://www.xing.com/pages/heinleinsupportgmbh"
+  },
+  "link.item.label.X (Twitter)": {
+    "message": "X (Twitter)",
+    "description": "The label of footer link with label=X (Twitter) linking to https://x.com/heinleinsupport/status/1857429869593788617"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://de.linkedin.com/company/heinlein-support"
+  },
+  "link.item.label.Heinlein-Support": {
+    "message": "Heinlein-Support",
+    "description": "The label of footer link with label=Heinlein-Support linking to https://www.heinlein-support.de"
+  },
+  "link.item.label.mailbox.org": {
+    "message": "mailbox.org",
+    "description": "The label of footer link with label=mailbox.org linking to https://mailbox.org/de"
+  },
+  "link.item.label.OpenTalk": {
+    "message": "OpenTalk",
+    "description": "The label of footer link with label=OpenTalk linking to https://opentalk.mailbox.org"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/opencloud-eu/opencloud"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 OpenCloud, powered by Heinlein Gruppe",
+    "description": "The footer copyright"
+  }
+}
