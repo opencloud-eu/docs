@@ -1,1 +1,1 @@
-# Synchronisationseinstellungen
+# Synchronization settings

@@ -2,6 +2,5 @@
 sidebar_position: 2
 ---
 
-# Wilkommen
+# Docuentation for OpenCloud Administarors
 
-bei OpenCloud

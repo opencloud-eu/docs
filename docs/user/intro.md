@@ -2,65 +2,53 @@
 sidebar_position: 1
 ---
 
-# Wilkommen
+# Welcome
 
 <img class="light-mode-image" src="/img/oc-logo-petrol.svg" alt="OpenCloud Logo" width="250" height="55"/> 
 <img class="dark-mode-image" src="/img/oc-logo-lilac.svg" alt="OpenCloud Logo" width="250" height="55"/>
 
-## Wilkommen zur OpenTalk Wissensdatenbank
 
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber beheben zu können und häufige Fragen beantworten zu können.
+## Welcome to the OpenTalk knowledge base
 
-
-### Inhaltsverzeichnis:
-
-#### Dateien & Ordner: 
-
-#### Desktop-Client:
-
-#### Rollen:
-
-#### Spaces:
-
-#### Teilen:
-
-#### Allgemein:
-
-#### Adminn:
+Here you will find all the important information to successfully take the first steps in OpenCloud, to be able to solve technical problems flexibly yourself and to be able to answer frequently asked questions.
+<br/><br/>
 
 
-### Was ist OpenCloud?
+### Table of contents:
 
+#### Quick-Guide:
+Here you will find a "Quick Guide" on how to create your own OpenCloud in just a few minutes.
 
-### Wie kann ich OpenCloud nutzen?
-
-
-
-
-## Wilkommen zur OpenTalk Wissensdatenbank
-
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber beheben zu können und häufige Fragen beantworten zu können.
-
-
-### Inhaltsverzeichnis:
-
-#### Dateien & Ordner: 
+#### Files and Folders:
+Here you will find information about the management of files and folders.
 
 #### Desktop-Client:
+Here you will find information on how to install and set up the desktop client.
 
-#### Rollen:
+#### Roles:
+Here you will find information about the different roles that can be assigned.
 
 #### Spaces:
+Here you will find information for dealing with Spaces.
 
-#### Teilen:
+#### Shares:
+Here you will find information on how and how to share files and folders.
 
-#### Allgemein:
+#### General:
+Here you will find general information about account settings, customizations and view modes.
 
-#### Adminn:
+#### Admin:
+Here you will find information on how to handle and options with admin rights.
+<br/><br/>
 
 
-### Was ist OpenCloud?
+### What is OpenCloud?
 
+OpenCloud is the file sharing and collaboration solution of the Heinlein Group.
 
-### Wie kann ich OpenCloud nutzen?
+Through intelligent file management and a strong open source community, files become valuable resources effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere—without barriers, but with a lot of productivity.
+<br/><br/>
 
+### How can I use OpenCloud?
+
+Instructions on how to install and set up your own OpenCloud can be found in the "User Documentation" under "Quick Guide".

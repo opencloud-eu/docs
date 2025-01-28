@@ -1,8 +1,8 @@
 {
-  "label": "Dateien & Ordner teilen",
+  "label": "Share Files and Folders",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials rund um das Teilen von Ordnern & Dateien."
+    "description": "Tutorials about sharing files and folders."
   }
 }

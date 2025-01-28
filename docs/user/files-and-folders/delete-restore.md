@@ -1,1 +1,1 @@
-# Löschen/Wiederherstellen
+# Delete - Restore

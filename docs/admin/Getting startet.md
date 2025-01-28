@@ -3,6 +3,6 @@ sidebar_position: 2
 ---
 
 # Quick-Guide
-## OpenCloud in wenigen Minuten
+## OpenCloud in less than five minutes
 
 ### Installation

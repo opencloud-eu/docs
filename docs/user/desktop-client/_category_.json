@@ -1,8 +1,8 @@
 {
-  "label": "OpenCloud Desktop-Client",
+  "label": "Desktop Client",
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials rund um den Desktop Client."
+    "description": "Tutorials about the OpenCloud Desktop Client."
   }
 }
