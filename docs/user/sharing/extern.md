@@ -1,1 +1,1 @@
-# External sharing (public links)
+# External Sharing (public links)

@@ -1,1 +1,1 @@
-# Activate and deactivate a space
+# Activate and Deactivate a Space

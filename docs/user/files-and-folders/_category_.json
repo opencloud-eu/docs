@@ -1,8 +1,8 @@
 {
-  "label": "Manage files & folders",
+  "label": "Manage Files & Folders",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials for manageing your files and folders."
+    "description": "Tutorials for managing your files and folders."
   }
 }
