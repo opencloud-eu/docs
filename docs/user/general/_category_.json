@@ -1,8 +1,8 @@
 {
-  "label": "Benutzeroberfläche und Navigation",
+  "label": "User-interface and navigation",
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials zur Benutzeroberfläche und der Navigation in der OpenCloud."
+    "description": "Tutorials about user-interface and navigation in OpenCloud."
   }
 }

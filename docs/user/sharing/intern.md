@@ -1,1 +1,1 @@
-# Internes Teilen
+# Internal sharing

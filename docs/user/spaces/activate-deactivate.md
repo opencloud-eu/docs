@@ -1,1 +1,1 @@
-# Deaktivieren & Aktivieren
+# Activate and deactivate a space

@@ -1,1 +1,1 @@
-# Teilen aus dem Finder oder Explorer
+# Sharing from local

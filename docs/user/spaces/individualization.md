@@ -1,1 +1,1 @@
-# Individualisierung (Bild, Untertitel, Beschreibung)
+# Individualize your Space

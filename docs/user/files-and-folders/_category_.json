@@ -1,8 +1,8 @@
 {
-  "label": "Dateien & Ordner verwalten",
+  "label": "Manage files & folders",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials rund um die Verwaltung von Ordner & Dateien."
+    "description": "Tutorials for manageing your files and folders."
   }
 }

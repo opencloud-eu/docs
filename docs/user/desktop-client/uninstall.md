@@ -1,1 +1,1 @@
-# Deinstallation
+# Uninstall

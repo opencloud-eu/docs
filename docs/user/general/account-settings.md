@@ -1,1 +1,1 @@
-# Mein Konto - Kontoeinstellungen
+# My account - accountsettings

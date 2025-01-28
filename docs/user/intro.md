@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Wilkommen
+# Welcome
 
 <img class="light-mode-image" src="/img/oc-logo-petrol.svg" alt="OpenCloud Logo" width="250" height="55"/> 
 <img class="dark-mode-image" src="/img/oc-logo-lilac.svg" alt="OpenCloud Logo" width="250" height="55"/>
