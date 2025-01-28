@@ -16,19 +16,19 @@
     "description": "The label for category user in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Manage Files and Folders": {
-    "message": "Verwalten von Dateien und Ordner",
+    "message": "Verwalten von Dateien und Ordnern",
     "description": "The label for category Manage Files and Folders in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Manage Files and Folders.link.generated-index.description": {
-    "message": "Anleitung zur Verwaltung von Dateien und Ordner.",
+    "message": "Anleitung zur Verwaltung von Dateien und Ordnern.",
     "description": "The generated-index page description for category Manage Files and Folders in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Share Files and Folders": {
-    "message": "Teilen von Dateien und Ordner",
+    "message": "Teilen von Dateien und Ordnern",
     "description": "The label for category Share Files and Folders in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Share Files and Folders.link.generated-index.description": {
-    "message": "Anleitung zum teilen von Dateien und Ordner.",
+    "message": "Anleitung zum Teilen von Dateien und Ordnern.",
     "description": "The generated-index page description for category Share Files and Folders in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Working in teams with Spaces": {
@@ -72,23 +72,23 @@
     "description": "The generated-index page description for category Roles in sidebar tutorialSidebar"
   },
   "sidebar.user.category.Manage Files and Folders": {
-    "message": "Verwalten von Dateien und Ornder",
+    "message": "Verwalten von Dateien und Ordnern",
     "description": "The label for category Manage Files and Folders in sidebar user"
   },
   "sidebar.user.category.Manage Files and Folders.link.generated-index.description": {
-    "message": "Anleitung zur Verwaltung von Dateien und Ordner.",
+    "message": "Anleitung zur Verwaltung von Dateien und Ordnern.",
     "description": "The generated-index page description for category Manage Files and Folders in sidebar user"
   },
   "sidebar.user.category.Share Files and Folders": {
-    "message": "Teilen von Dateien und Ordner",
+    "message": "Teilen von Dateien und Ordnern",
     "description": "The label for category Share Files and Folders in sidebar user"
   },
   "sidebar.user.category.Share Files and Folders.link.generated-index.description": {
-    "message": "Anleitung zum teilen von Dateien und Ordner.",
+    "message": "Anleitung zum Teilen von Dateien und Ordnern.",
     "description": "The generated-index page description for category Share Files and Folders in sidebar user"
   },
   "sidebar.user.category.Working in teams with Spaces": {
-    "message": "Arbeiten im Teamƒ mit Spaces",
+    "message": "Arbeiten im Team mit Spaces",
     "description": "The label for category Working in teams with Spaces in sidebar user"
   },
   "sidebar.user.category.Working in teams with Spaces.link.generated-index.description": {
@@ -96,7 +96,7 @@
     "description": "The generated-index page description for category Working in teams with Spaces in sidebar user"
   },
   "sidebar.user.category.User Interface and Navigation": {
-    "message": "Benutzeröberfläche und Navigation",
+    "message": "Benutzeroberfläche und Navigation",
     "description": "The label for category User Interface and Navigation in sidebar user"
   },
   "sidebar.user.category.User Interface and Navigation.link.generated-index.description": {
