@@ -1,6 +1,6 @@
 {
-  "label": "Teilen",
-  "position": 6,
+  "label": "Dateien & Ordner teilen",
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Tutorials rund um das Teilen von Ordnern & Dateien."
