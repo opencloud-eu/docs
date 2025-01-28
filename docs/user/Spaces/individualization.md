@@ -1,1 +1,0 @@
-# Individualisierung (Bild, Untertitel, Beschreibung)
