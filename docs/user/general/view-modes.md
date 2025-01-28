@@ -1,1 +1,1 @@
-# Viewmodes
+# View modes

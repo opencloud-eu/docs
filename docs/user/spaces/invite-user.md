@@ -1,1 +1,1 @@
-# Invite users to a Space
+# Invite Users to a Space
