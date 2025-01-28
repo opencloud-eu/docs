@@ -28,7 +28,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'de'],
   },
 
   presets: [
@@ -94,10 +94,14 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          type: 'localeDropdown',
+          position: 'right'
+        },
+        {
           href: 'https://github.com/opencloud-eu/opencloud',
           label: 'GitHub',
           position: 'right',
-        },
+        }
       ],
     },
     footer: {
