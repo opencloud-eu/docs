@@ -15,116 +15,116 @@
     "message": "user",
     "description": "The label for category user in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Dateien & Ordner verwalten": {
-    "message": "Dateien & Ordner verwalten",
-    "description": "The label for category Dateien & Ordner verwalten in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Manage Files and Folders": {
+    "message": "Verwalten von Dateien und Ordnern",
+    "description": "The label for category Manage Files and Folders in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Dateien & Ordner verwalten.link.generated-index.description": {
-    "message": "Tutorials rund um die Verwaltung von Ordner & Dateien.",
-    "description": "The generated-index page description for category Dateien & Ordner verwalten in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Manage Files and Folders.link.generated-index.description": {
+    "message": "Anleitung zur Verwaltung von Dateien und Ordnern.",
+    "description": "The generated-index page description for category Manage Files and Folders in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Dateien & Ordner teilen": {
-    "message": "Dateien & Ordner teilen",
-    "description": "The label for category Dateien & Ordner teilen in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Share Files and Folders": {
+    "message": "Teilen von Dateien und Ordnern",
+    "description": "The label for category Share Files and Folders in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Dateien & Ordner teilen.link.generated-index.description": {
-    "message": "Tutorials rund um das Teilen von Ordnern & Dateien.",
-    "description": "The generated-index page description for category Dateien & Ordner teilen in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Share Files and Folders.link.generated-index.description": {
+    "message": "Anleitung zum Teilen von Dateien und Ordnern.",
+    "description": "The generated-index page description for category Share Files and Folders in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Im Team arbeiten mit Spaces": {
-    "message": "Im Team arbeiten mit Spaces",
-    "description": "The label for category Im Team arbeiten mit Spaces in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Working in teams with Spaces": {
+    "message": "Arbeiten im Team mit Spaces",
+    "description": "The label for category Working in teams with Spaces in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Im Team arbeiten mit Spaces.link.generated-index.description": {
-    "message": "Tutorials rund um Spaces.",
-    "description": "The generated-index page description for category Im Team arbeiten mit Spaces in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Working in teams with Spaces.link.generated-index.description": {
+    "message": "Anleitung zum Thema Spaces.",
+    "description": "The generated-index page description for category Working in teams with Spaces in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Benutzeroberfläche und Navigation": {
+  "sidebar.tutorialSidebar.category.User Interface and Navigation": {
     "message": "Benutzeroberfläche und Navigation",
-    "description": "The label for category Benutzeroberfläche und Navigation in sidebar tutorialSidebar"
+    "description": "The label for category User Interface and Navigation in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Benutzeroberfläche und Navigation.link.generated-index.description": {
-    "message": "Tutorials zur Benutzeroberfläche und der Navigation in der OpenCloud.",
-    "description": "The generated-index page description for category Benutzeroberfläche und Navigation in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.User Interface and Navigation.link.generated-index.description": {
+    "message": "Anleitung zur Benutzeroberfläche und Navigation in OpenCloud.",
+    "description": "The generated-index page description for category User Interface and Navigation in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.OpenCloud administrieren": {
-    "message": "OpenCloud administrieren",
-    "description": "The label for category OpenCloud administrieren in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Administration of OpenCloud": {
+    "message": "Administration von OpenCloud",
+    "description": "The label for category Administration of OpenCloud in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.OpenCloud administrieren.link.generated-index.description": {
-    "message": "Tutorials zum administrieren ihrer OpenCloud.",
-    "description": "The generated-index page description for category OpenCloud administrieren in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Administration of OpenCloud.link.generated-index.description": {
+    "message": "Anleitung zur Verwaltung deiner OpenCloud.",
+    "description": "The generated-index page description for category Administration of OpenCloud in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.OpenCloud Desktop-Client": {
-    "message": "OpenCloud Desktop-Client",
-    "description": "The label for category OpenCloud Desktop-Client in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Desktop Client": {
+    "message": "Desktop Client",
+    "description": "The label for category Desktop Client in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.OpenCloud Desktop-Client.link.generated-index.description": {
-    "message": "Tutorials rund um den Desktop Client.",
-    "description": "The generated-index page description for category OpenCloud Desktop-Client in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Desktop Client.link.generated-index.description": {
+    "message": "Anleitung für den OpenCloud Desktop Client.",
+    "description": "The generated-index page description for category Desktop Client in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Rollen": {
+  "sidebar.tutorialSidebar.category.Roles": {
     "message": "Rollen",
-    "description": "The label for category Rollen in sidebar tutorialSidebar"
+    "description": "The label for category Roles in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Rollen.link.generated-index.description": {
-    "message": "Tutorials rund um die Vergabe von 'Rollen'.",
-    "description": "The generated-index page description for category Rollen in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Roles.link.generated-index.description": {
+    "message": "Anleitung zur Vergabe von Rollen in OpenCloud.",
+    "description": "The generated-index page description for category Roles in sidebar tutorialSidebar"
   },
-  "sidebar.user.category.Dateien & Ordner verwalten": {
-    "message": "Dateien & Ordner verwalten",
-    "description": "The label for category Dateien & Ordner verwalten in sidebar user"
+  "sidebar.user.category.Manage Files and Folders": {
+    "message": "Verwalten von Dateien und Ordnern",
+    "description": "The label for category Manage Files and Folders in sidebar user"
   },
-  "sidebar.user.category.Dateien & Ordner verwalten.link.generated-index.description": {
-    "message": "Tutorials rund um die Verwaltung von Ordner & Dateien.",
-    "description": "The generated-index page description for category Dateien & Ordner verwalten in sidebar user"
+  "sidebar.user.category.Manage Files and Folders.link.generated-index.description": {
+    "message": "Anleitung zur Verwaltung von Dateien und Ordnern.",
+    "description": "The generated-index page description for category Manage Files and Folders in sidebar user"
   },
-  "sidebar.user.category.Dateien & Ordner teilen": {
-    "message": "Dateien & Ordner teilen",
-    "description": "The label for category Dateien & Ordner teilen in sidebar user"
+  "sidebar.user.category.Share Files and Folders": {
+    "message": "Teilen von Dateien und Ordnern",
+    "description": "The label for category Share Files and Folders in sidebar user"
   },
-  "sidebar.user.category.Dateien & Ordner teilen.link.generated-index.description": {
-    "message": "Tutorials rund um das Teilen von Ordnern & Dateien.",
-    "description": "The generated-index page description for category Dateien & Ordner teilen in sidebar user"
+  "sidebar.user.category.Share Files and Folders.link.generated-index.description": {
+    "message": "Anleitung zum Teilen von Dateien und Ordnern.",
+    "description": "The generated-index page description for category Share Files and Folders in sidebar user"
   },
-  "sidebar.user.category.Im Team arbeiten mit Spaces": {
-    "message": "Im Team arbeiten mit Spaces",
-    "description": "The label for category Im Team arbeiten mit Spaces in sidebar user"
+  "sidebar.user.category.Working in teams with Spaces": {
+    "message": "Arbeiten im Team mit Spaces",
+    "description": "The label for category Working in teams with Spaces in sidebar user"
   },
-  "sidebar.user.category.Im Team arbeiten mit Spaces.link.generated-index.description": {
-    "message": "Tutorials rund um Spaces.",
-    "description": "The generated-index page description for category Im Team arbeiten mit Spaces in sidebar user"
+  "sidebar.user.category.Working in teams with Spaces.link.generated-index.description": {
+    "message": "Anleitung zum Thema Spaces.",
+    "description": "The generated-index page description for category Working in teams with Spaces in sidebar user"
   },
-  "sidebar.user.category.Benutzeroberfläche und Navigation": {
+  "sidebar.user.category.User Interface and Navigation": {
     "message": "Benutzeroberfläche und Navigation",
-    "description": "The label for category Benutzeroberfläche und Navigation in sidebar user"
+    "description": "The label for category User Interface and Navigation in sidebar user"
   },
-  "sidebar.user.category.Benutzeroberfläche und Navigation.link.generated-index.description": {
-    "message": "Tutorials zur Benutzeroberfläche und der Navigation in der OpenCloud.",
-    "description": "The generated-index page description for category Benutzeroberfläche und Navigation in sidebar user"
+  "sidebar.user.category.User Interface and Navigation.link.generated-index.description": {
+    "message": "Anleitung zur Benutzeroberfläche und Navigation in OpenCloud.",
+    "description": "The generated-index page description for category User Interface and Navigation in sidebar user"
   },
-  "sidebar.user.category.OpenCloud administrieren": {
-    "message": "OpenCloud administrieren",
-    "description": "The label for category OpenCloud administrieren in sidebar user"
+  "sidebar.user.category.Administration of OpenCloud": {
+    "message": "Administration von OpenCloud",
+    "description": "The label for category Administration of OpenCloud in sidebar user"
   },
-  "sidebar.user.category.OpenCloud administrieren.link.generated-index.description": {
-    "message": "Tutorials zum administrieren ihrer OpenCloud.",
-    "description": "The generated-index page description for category OpenCloud administrieren in sidebar user"
+  "sidebar.user.category.Administration of OpenCloud.link.generated-index.description": {
+    "message": "Anleitung zur Verwaltung deiner OpenCloud.",
+    "description": "The generated-index page description for category Administration of OpenCloud in sidebar user"
   },
-  "sidebar.user.category.OpenCloud Desktop-Client": {
-    "message": "OpenCloud Desktop-Client",
-    "description": "The label for category OpenCloud Desktop-Client in sidebar user"
+  "sidebar.user.category.Desktop Client": {
+    "message": "Desktop Client",
+    "description": "The label for category Desktop Client in sidebar user"
   },
-  "sidebar.user.category.OpenCloud Desktop-Client.link.generated-index.description": {
-    "message": "Tutorials rund um den Desktop Client.",
-    "description": "The generated-index page description for category OpenCloud Desktop-Client in sidebar user"
+  "sidebar.user.category.Desktop Client.link.generated-index.description": {
+    "message": "Anleitung für den OpenCloud Desktop Client.",
+    "description": "The generated-index page description for category Desktop Client in sidebar user"
   },
-  "sidebar.user.category.Rollen": {
+  "sidebar.user.category.Roles": {
     "message": "Rollen",
-    "description": "The label for category Rollen in sidebar user"
+    "description": "The label for category Roles in sidebar user"
   },
-  "sidebar.user.category.Rollen.link.generated-index.description": {
-    "message": "Tutorials rund um die Vergabe von 'Rollen'.",
-    "description": "The generated-index page description for category Rollen in sidebar user"
+  "sidebar.user.category.Roles.link.generated-index.description": {
+    "message": "Anleitung zur Vergabe von Rollen in OpenCloud.",
+    "description": "The generated-index page description for category Roles in sidebar user"
   }
 }

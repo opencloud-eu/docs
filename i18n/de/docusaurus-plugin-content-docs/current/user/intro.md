@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Welcome
 
-<img class="light-mode-image" src={require("/static/img/oc-logo-petrol.png").default} alt="OpenCloud Logo" width="250" height="55"/> 
+<img class="light-mode-image" src={require("/static/img/oc-logo-petrol.png").default} alt="OpenCloud Logo" width="250" height="55"/>
 <img class="dark-mode-image" src={require("/static/img/oc-logo-lilac.png").default} alt="OpenCloud Logo" width="250" height="55"/>
 
 
