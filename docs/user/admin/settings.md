@@ -51,7 +51,7 @@ In the admin area of OpenCloud you have extensive administration options for you
    You can **create, edit or delete** local groups and add or remove members.
 
 - **Imported groups**:  
-   External groups that have been imported from a user administration can **not be edited** here. These groups are labelled with a **lock symbol** to indicate that they are locked.
+   External groups that have been imported via an external user management system can **not be edited** here. These groups are labeled with a **lock symbol** to indicate that they are locked.
 
 ---
 
