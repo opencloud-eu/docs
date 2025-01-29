@@ -48,4 +48,4 @@ Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jed
 <br/><br/>
 
 ### Wie kann ich OpenCloud nutzen?
-Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "User-Doku" unter "Quick-Guide".
+Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "User-Dokumentation" unter "Quick-Guide".
