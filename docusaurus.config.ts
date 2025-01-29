@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'OpenCloud Documentation',
-  tagline: 'Documentation',
+  tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.ico',
 
   // Set the production url of your site here
