@@ -10,7 +10,7 @@ sidebar_position: 1
 
 ## Wilkommen zur OpenTalk Wissensdatenbank
 
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber beheben zu können und häufig gestellte Fragen beantworten zu können.
+Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 <br/><br/>
 
 ### Inhaltsverzeichnis:
@@ -19,10 +19,10 @@ Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte
 Hier finden Sie einen "Quick-Guide", wie Sie in wenigen Minuten eine eigene OpenCloud erstellen können.
 
 #### Dateien & Ordner: 
-Hier finden Sie Informationen rund um die Verwaltung von Ordner & Dtaeien.
+Hier finden Sie Informationen rund um die Verwaltung von Dateien & Ordnern.
 
 #### Desktop-Client:
-Hier finden Sie Informationen zur Installation & Einrichtung des Desktop-Client's.
+Hier finden Sie Informationen zur Installation & Einrichtung des Desktop-Clients.
 
 #### Rollen:
 Hier finden Sie Informationen zu den verschiedenen Rollen, die vergeben werden können.
@@ -31,7 +31,7 @@ Hier finden Sie Informationen zu den verschiedenen Rollen, die vergeben werden k
 Hier finden Sie Informationen für den Umgang mit Spaces.
 
 #### Teilen:
-Hier finden Sie Informationen wie und auf welche Weise man Ordner & Dateien teilen kann.
+Hier finden Sie Informationen wie und auf welche Weise man Dateien & Ordner teilen kann.
 
 #### Allgemein:
 Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Viewmodes.
