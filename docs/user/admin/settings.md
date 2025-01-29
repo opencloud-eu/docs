@@ -16,7 +16,7 @@ In the admin area of OpenCloud you have extensive administration options for you
 <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
 
 - **Overview of edition and version**:  
-   You can view information about the **Edition** and **Version** of your OpenCloud software.
+   You can view information about the **Edition** and **Version** of your OpenCloud.
   
 - **Change logo**:  
    Click on the **'three-dot menu’** next to the current logo to upload a new logo and customise the appearance.
