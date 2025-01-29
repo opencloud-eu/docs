@@ -45,6 +45,6 @@ OpenCloud ist die Filesharing & Kollaborations-Lösung der Heinlein Gruppe.
 
 Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar.<br/>
 Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
-
+<br/><br/>
 ### Wie kann ich OpenCloud nutzen?
 Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "User-Doku" unter "Quick-Guide".
