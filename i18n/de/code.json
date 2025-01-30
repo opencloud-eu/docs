@@ -311,15 +311,15 @@
     "description": "The title of the tag list page"
   },
   "homepage.link.item.label.User Documentation": {
-    "message": "Nutzer-Dokumentation",
+    "message": "User Dokumentation",
     "description": "The label for the link to user documentation"
   },
   "homepage.link.item.label.Admin Documentation": {
-    "message": "Admin-Dokumentation",
+    "message": "Admin Dokumentation",
     "description": "The label for the link to admin documentation"
   },
   "homepage.link.item.label.Developer Documentation": {
-    "message": "Entwickler-Dokumentation",
+    "message": "Developer Dokumentation",
     "description": "The label for the link to developer documentation"
   }
 }
