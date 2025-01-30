@@ -28,6 +28,5 @@ Mit einem Klick auf das Zahnradsymbol auf der rechten Seite der Benutzeroberflä
 
 ---
 
-## Anwendung
 
 Die vorgenommenen Einstellungen werden sofort übernommen und bieten eine personalisierte Benutzererfahrung.
