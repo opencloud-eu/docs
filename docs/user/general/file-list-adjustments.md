@@ -7,7 +7,7 @@ title: Customization of the file list
 
 Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display.
 
-<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Admin settings" width="400"/>
+<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
 
 ## Available options
 

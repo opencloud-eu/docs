@@ -12,19 +12,19 @@ In OpenCloud you can choose between different **view modes** for your files and 
 
 - **Default table view**  
 
-<img src={require("./img/view-modes/default.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/view-modes/default.png").default} alt="Default" width="1920"/>
 
   → The classic **List view**, in which all files and folders are displayed in a detailed table.
 
 - **Condensed table view**  
 
-<img src={require("./img/view-modes/condensed.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/view-modes/condensed.png").default} alt="Condensed" width="1920"/>
 
   → A more compact version of the **table view**, in which the data is summarized more closely to save space.
 
 - **Tile view**  
 
-<img src={require("./img/view-modes/tiles.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/view-modes/tiles.png").default} alt="Tiles" width="1920"/>
 
   → A view in which files and folders are displayed as **tiles**. Ideal for **visual representations** and if you want to access **icons** quickly.
 

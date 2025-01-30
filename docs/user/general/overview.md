@@ -4,7 +4,7 @@ The OpenCloud interface consists of several areas that help you to work efficien
 
 ---
 
-<img src={require("./img/overview/overview.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
 
 **1. Left Sidebar**  
 The sidebar contains the navigation elements such as **Spaces, Files, Shares and Settings**.

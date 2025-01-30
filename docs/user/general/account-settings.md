@@ -10,7 +10,7 @@ In OpenCloud you have the option of making various settings for your **user acco
 
 ## Access the settings:
 
-<img src={require("./img/account-settings/access.png").default} alt="Admin settings" width="400"/>
+<img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400"/>
 
 1. **Click on your avatar** in the top right corner.
 2. select **"Preferences"**.
@@ -19,7 +19,7 @@ In OpenCloud you have the option of making various settings for your **user acco
 
 ## Account information:
 
-<img src={require("./img/account-settings/account-information.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
 
 In the settings you will first see your basic **account information**:
 
@@ -33,7 +33,7 @@ In the settings you will first see your basic **account information**:
 
 ## Preferences:
 
-<img src={require("./img/account-settings/preferences.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
 
 Depending on the basic configuration, you can change the following options:
 
@@ -56,7 +56,7 @@ Depending on the basic configuration, you can change the following options:
 
 ## Extensions:
 
-<img src={require("./img/account-settings/extensions.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
 
 Under **Extensions** you can configure installed extensions, such as the **Progressbar**, if available.
 
@@ -64,7 +64,7 @@ Under **Extensions** you can configure installed extensions, such as the **Progr
 
 ## GDPR:
 
-<img src={require("./img/account-settings/gdpr.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/>
 
 Under **GDPR** you can request a **data export** of your personal data if you wish.
 
