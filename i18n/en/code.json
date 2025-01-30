@@ -309,5 +309,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "homepage.link.item.label.User Documentation": {
+    "message": "User Documentation",
+    "description": "The label for the link to user documentation"
+  },
+  "homepage.link.item.label.Admin Documentation": {
+    "message": "Admin Documentation",
+    "description": "The label for the link to admin documentation"
+  },
+  "homepage.link.item.label.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for the link to developer documentation"
   }
 }

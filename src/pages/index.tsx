@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import Translate from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -20,21 +21,33 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/user/intro">
-            User
+              <Translate
+                  id="homepage.link.item.label.User Documentation"
+                  description="The label for the link to user documentation">
+                  User Documentation
+              </Translate>
           </Link>
         </div><br/> 
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/admin/intro">
-            Admin
+              <Translate
+                  id="homepage.link.item.label.Admin Documentation"
+                  description="The label for the link to admin documentation">
+                  Admin Documentation
+              </Translate>
           </Link>
         </div><br/> 
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/dev/intro">
-            Developer
+              <Translate
+                  id="homepage.link.item.label.Developer Documentation"
+                  description="The label for the link to developer documentation">
+                  Developer Documentation
+              </Translate>
           </Link>
         </div>
       </div>
