@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'OpenCloud Documentation',
+  title: 'OpenCloud Docs',
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.ico',
 
