@@ -2,10 +2,13 @@
 sidebar_position: 1
 ---
 
+import OcLogoPetrol from '/static/img/oc-logo-petrol.svg';
+import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
+
 # Willkommen
 
-<img class="light-mode-image" src={require("/static/img/oc-logo-petrol.png").default} alt="OpenCloud Logo" width="250" height="55"/>
-<img class="dark-mode-image" src={require("/static/img/oc-logo-lilac.png").default} alt="OpenCloud Logo" width="250" height="55"/>
+<OcLogoPetrol width="250" height="55" className="light-mode-image"/>
+<OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
 
 ## Wilkommen zur OpenTalk Wissensdatenbank
