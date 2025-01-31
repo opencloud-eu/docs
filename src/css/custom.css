@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: OpenCloud;
-    src: url("/static/fonts/OpenCloud500-Regular.woff") format("woff");
+    src: url("/static/fonts/OpenCloud500-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: OpenCloud;
-    src: url("/static/fonts/OpenCloud750-Bold.woff") format("woff");
+    src: url("/static/fonts/OpenCloud750-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
