@@ -9,16 +9,16 @@ You can use the search bar in the top bar to find files and content quickly.
 
 - Find search bar:
     - The **search bar** is located at the top of the **top bar** in the **web interface**.
-<img src={require("./img/search/searchbar.png").default} alt="OpenCloud Logo" width="1920"/>
+<img src={require("./img/search/searchbar.png").default} width="1920"/>
 <br/><br/>
 
 - Select search area:
     - Click on the **drop-down menu** next to the **search bar**.
     - Select whether you want to search in all files or only in the current folder.
-<img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="OpenCloud Logo" width="500"/>
+<img src={require("./img/search/drop-down-menu-searchbar.png").default} width="500"/>
 <br/><br/>
 - Search function:
     -The **searches** through file names as well as the content of the files to **display relevant results**.
-<img src={require("./img/search/search-example.png").default} alt="OpenCloud Logo" width="500"/>
+<img src={require("./img/search/search-example.png").default} width="500"/>
 <br/><br/>
 Use these steps to find your files or folders quickly and efficiently!
