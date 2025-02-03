@@ -2,37 +2,29 @@
 id: mitglieder_hinzufügen
 title: Mitglieder hinzufügen
 ---
-# Space löschen in OpenCloud
 
-Bevor Sie einen Space löschen können, muss dieser zuerst deaktiviert werden. Hier sind die Schritte, die Sie befolgen sollten:
+## Mitglieder zu einem Space in OpenCloud hinzufügen
 
----
+### So können Sie ein neues Mitglied zu Ihrem Space hinzufügen:
 
-## Space deaktivieren:
+#### Mitglied hinzufügen:
 
-1. **Space deaktivieren**  
-   - Befolgen Sie die Anleitung zum **Deaktivieren eines Spaces**, um den Space vor dem Löschen in den deaktivierten Zustand zu versetzen.
+1. **Space öffnen:**  
+   Gehen Sie auf Ihren Space und öffnen Sie das Mitglieder-Menü.
 
-2. **Space sichtbar machen**  
-   - Sollte der Space nach der Deaktivierung nicht mehr sichtbar sein, klicken Sie auf den Filter **„Deaktivierte Spaces einblenden“**, um ihn wieder anzuzeigen.
+2. **Mitglied suchen:**  
+   Im Mitglieder-Menü können Sie nach dem User aus Ihrer Organisation suchen, den Sie hinzufügen möchten.
 
----
+3. **Rechte vergeben:**  
+   Wählen Sie die gewünschten Rechte für das Mitglied aus, z. B. ob die Person nur lesen oder auch bearbeiten darf.
 
-## Space löschen:
+4. **Hinzufügen:**  
+   Klicken Sie auf „Hinzufügen“, um das Mitglied zum Space einzuladen.
 
-1. **Space auswählen**  
-   - Markieren Sie den Space, den Sie löschen möchten.
+### Wichtige Hinweise:
 
-2. **Löschen ausführen**  
-   - Klicken Sie im oberen Menü auf **„Löschen“**, oder  
-   - Öffnen Sie das **„drei Punkte-Menü“** und wählen Sie **„Löschen“**.
+- Das hinzugefügte Mitglied hat sofort Zugang zu dem Space.
+- **Achtung:** Jeder Benutzer mit dem Recht „kann verwalten“ hat die Berechtigung, den Space zu deaktivieren und zu löschen.
+- Ein gelöschter Space kann nicht wiederhergestellt werden, also seien Sie vorsichtig, wem Sie diese Rechte gewähren.
 
----
-
-## Wichtiger Hinweis:
-
-⚠️ **Achtung!**  
-Ein gelöschter Space kann **nicht wiederhergestellt** werden. Er wird permanent und unwiederbringlich gelöscht.  
-Seien Sie daher vorsichtig, wem Sie **„kann verwalten“**-Rechte für Ihren Space gewähren.
-
-Bitte denken Sie daran, vor dem Löschen sicherzustellen, dass keine wichtigen Daten verloren gehen.
+Damit haben Sie die Möglichkeit, Mitglieder zu Ihrem Space hinzuzufügen und die Berechtigungen entsprechend festzulegen!
