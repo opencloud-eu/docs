@@ -15,4 +15,24 @@ title: Share roles in OpenCloud
 
 
 
+# Space Member Roles and Permissions
 
+In a Space, members can have different roles that determine what they can do with shared files and folders.
+
+### Can View (Secure)
+- You can only view documents, pictures, and PDFs.
+- A watermark is added to the files.
+- Downloading is not allowed.
+
+### Can View
+- You can view and download files and folders.
+- No restrictions on downloading.
+
+### Can Upload
+- You can view, download, and upload files and folders.
+
+### Can Edit
+- You can edit, add, and delete files and folders.
+- Full access to modify shared content.
+
+Each role gives a different level of access, ensuring the right permissions for each user!
