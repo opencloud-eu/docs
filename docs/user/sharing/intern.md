@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Organization-internal sharing of files and folders in OpenCloud
 <br/>
 

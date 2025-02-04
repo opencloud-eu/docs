@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: add_members
 title: Add members
 ---

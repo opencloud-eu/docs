@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # External Sharing (public links)
 <br/>
 

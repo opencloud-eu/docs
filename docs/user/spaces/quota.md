@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 id: space-quota
 title: Edit Space Quota
 ---

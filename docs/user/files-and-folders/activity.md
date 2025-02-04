@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Activity
 
 ## Viewing the activities of a file or folder

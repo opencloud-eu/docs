@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 id: customization_file_list
 title: Customization of the file list
 ---

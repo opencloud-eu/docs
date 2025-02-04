@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # OpenCloud - Overview of the user interface
 
 The OpenCloud interface consists of several areas that help you to work efficiently with files and settings.
