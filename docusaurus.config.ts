@@ -98,7 +98,7 @@ const config: Config = {
           position: 'right'
         },
         {
-          href: 'https://github.com/opencloud-eu/opencloud',
+          href: 'https://github.com/opencloud-eu',
           label: 'GitHub',
           position: 'right',
         }
@@ -162,7 +162,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/opencloud-eu/opencloud',
+              href: 'https://github.com/opencloud-eu',
             },
           ],
         },
