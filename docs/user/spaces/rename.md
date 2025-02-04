@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 id: rename
 title: Rename a Space
 ---

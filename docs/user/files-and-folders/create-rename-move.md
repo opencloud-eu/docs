@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Create - Rename - Move
 <br/><br/>
 

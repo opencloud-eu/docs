@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 id: delete
 title: Delete a Space
 ---

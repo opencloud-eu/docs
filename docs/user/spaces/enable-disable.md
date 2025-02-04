@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 id:  disable-enable
 title: Disable and Enable a Space
 ---
