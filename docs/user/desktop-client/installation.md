@@ -1,32 +1,43 @@
 ---
 sidebar_position: 1
+id: installation
+title: Installation
 ---
 
-# Installation
+# Installation of the Desktop Client
 
-Um den Desktop-Client zu installieren, müssen wir zunächst die passende Installationsdatei herunterladen.
-Hierfür gehen wir auf die Seite: www.xxxxxx.de
-+++ Bild einfügen +++
-Dort finden wir unter......... die Installationsdateien.
-+++ Bild einfügen +++
-Hier wählen wir die für das verwendete Betriebsystem passende Datei aus und laden diese durch klicken auf downloaden herunter.
-+++ Bild einfügen +++
-Nach dem Download öffnen starten wir die Installation durch "Doppel-Klick" auf die heruntergeladene Installationsdatei.
-Im Anschluss geht der Installation-Assistent auf und führt uns durch die einzelnen Schritte der Installation.
+To install the Desktop Client, follow these simple steps:
 
+## 1. Download the Installation File
+- Open your browser and go to [www.xxxxxx.de](https://www.xxxxxx.de).
+- Choose the correct version for your operating system (Windows, macOS, or Linux).
+- Click **Download** to start the process.
 
-Im Punkt "Einführung" klicken wir einmal auf "Fortfahren" unten recht um zum nächsten Installationspunkt "Zielvolumen auswählen" zu kommen.
-Hier können wir auswählen wo das Programm installiert werden soll.
+## 2. Start the Installation
+- Once the download is complete, double-click the installation file to open it.
+- The installation assistant will guide you through the process.
 
+## 3. Follow the Installation Steps
+1. **Introduction**: Click **"Continue"** to proceed.
 
-Im Anschluss klicken wir erneut unten recht auf "Fortfahren" um zum Punkt "Installationstyp" zu gelangen.
-Hier können wir auswählen welche "Version" ausgewählt installiert werden soll. Wenn eine Auswahl getroffen wurde, dann klicken wir unten rechts auf
-"Installieren" und die Software wird installiert.
+<img src={require("./img/installation/installation-welcome.png").default}  width="400"/>
 
+2. **Destination Select**: Choose where you want the program to be installed. Click **"Continue"**.
 
-Bei dem Punkt "Installation" können wir den Status der Installation verfolgen.
+<img src={require("./img/installation/installation-installation-destination.png").default}  width="400"/>
 
+3. **Choose Installation Type**: Select the version you want to install. Click **"Install"**.
 
-Wenn die Installation abgeschlossen wurde, wechselt der Installations-Assistent in den Punkt "Zusammenfassung".
-Hier erhalten wir die Benachrichtigung, dass das Programm nun erfolgreich installiert wurde.
+<img src={require("./img/installation/installation-installation-type.png").default}  width="400"/>
+
+4. **Installation Progress**: Wait while the software installs.
+
+<img src={require("./img/installation/installation-install-process.png").default}  width="400"/>
+
+5. **Completion**: When finished, you’ll see a confirmation message. Click **"Close"**.
+
+<img src={require("./img/installation/installation-installation-finish.png").default}  width="400"/>
+
+Now, the Desktop Client is successfully installed and ready to use! 
+
 
