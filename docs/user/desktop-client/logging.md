@@ -50,7 +50,7 @@ These logs can help diagnose and fix any issues with your OpenCloud Desktop Clie
 | **(112ms)** | Response time (since the request was sent) |
 
 
-## Using X-REQUEST-ID for Debugging
+### Using X-REQUEST-ID for Debugging
 - The OpenCloud desktop app sends an **X-REQUEST-ID** header with every request.  
 - This ID helps in finding corresponding requests and responses in logs.  
 - You can configure your web server to add the **X-REQUEST-ID** to its logs for deeper analysis.  
