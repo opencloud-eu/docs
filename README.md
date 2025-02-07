@@ -18,6 +18,16 @@ $ pnpm start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
+### Start docs in German
+
+To see the docs in German you need to start it with the following command
+
+```
+$ pnpm run start --locale de
+```
+
+It is not possible to switch between the languages via the language switcher
+
 ### Build
 
 ```
