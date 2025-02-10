@@ -51,3 +51,17 @@ $ GIT_USER=<Your GitHub username> pnpm deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+-----
+
+### Standard for screenshots
+
+####Defined size for screenshots:
+
+|what               | size          |
+|:-                 | :-:           |
+|complete screen    | width="1920"  |
+|menue              | width="400"   | 
+|pop up             | width="500"   |
+
+The screenshot should show the important things and you can put red frames arround the specific buttons or areas
