@@ -11,7 +11,7 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
 
-## Welcome to the OpenTalk knowledge base
+## Welcome to the OpenCloud knowledge base
 
 Here you will find all the important information to successfully take the first steps in OpenCloud, to be able to solve technical problems flexibly yourself and to be able to answer frequently asked questions.
 <br/><br/>
@@ -35,13 +35,13 @@ Here you will find information about the different roles that can be assigned.
 Here you will find information for dealing with Spaces.
 
 #### Shares:
-Here you will find information on how and how to share files and folders.
+Here you will find information on how to share files and folders.
 
 #### General:
 Here you will find general information about account settings, customizations and view modes.
 
 #### Admin:
-Here you will find information on how to handle and options with admin rights.
+Here you will find information on what options admins have and how you can use them.
 <br/><br/>
 
 
@@ -49,7 +49,7 @@ Here you will find information on how to handle and options with admin rights.
 
 OpenCloud is the file sharing and collaboration solution of the Heinlein Group.
 
-Through intelligent file management and a strong open source community, files become valuable resources effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere—without barriers, but with a lot of productivity.
+Through intelligent file management and a strong open source community, files become valuable resources, effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere without barriers, but with a lot of productivity.
 <br/><br/>
 
 ### How can I use OpenCloud?
