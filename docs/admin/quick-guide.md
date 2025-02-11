@@ -7,6 +7,10 @@ title: OpenCloud in under five minutes
 # Quick-Guide
 ## OpenCloud in less than five minutes
 
+This guide is designed only for setting up OpenCloud on a local machine for exploration and testing purposes. It is not intended for production use. The installation includes a self-signed certificate, and default credentials are provided for easy access.
+
+Follow the steps below to quickly get started with OpenCloud on your local environment.
+
 ## Prerequisites:
 - A **Unix-based system** (Linux or macOS) or [**Windows with WSL2**](https://learn.microsoft.com/en-us/windows/wsl/install) is recommended.
 - [**Git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) must be installed
