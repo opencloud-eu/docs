@@ -20,11 +20,11 @@ Spaces can **only be permanently shared within your own organization**.
 ### To create a new Space:
 
 - **Open menu**  
-   - Go to the menu item **"Spaces ”** in the left sidebar
+   - Go to the menu item **"Spaces”** in the left sidebar
    <img src={require("./img/create/left-sidebar.png").default} alt="Space in left Sidebar" width="1920"/> 
 <br/><br/>
 - **Create new Space**  
-   - Click on **"+ New Space ”**
+   - Click on **"+ New Space”**
    <img src={require("./img/create/new-space.png").default} alt="New-Space" width="1920"/> 
 <br/><br/>
 - Name a **Space**  
@@ -32,15 +32,15 @@ Spaces can **only be permanently shared within your own organization**.
    <img src={require("./img/create/enter-name.png").default} alt="Enter Spacename" width="500"/> 
 <br/><br/>
 - create **Space**  
-   - Click on **"Create ”**.
+   - Click on **"Create”**.
 
 ---
 
 ### Display Space:
-- Your new Space now appears under **"Your Spaces ”** and is ready to be used.
+- Your new Space now appears under **"Spaces”** and is ready to be used.
 <img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920"/> 
 <br/><br/>
 
 ---
 
-With these steps, you have **quickly and easily created a Space and can start sharing data**!
+**Now you know how to quickly and easily create a Space and can start sharing data!**

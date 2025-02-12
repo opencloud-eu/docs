@@ -8,7 +8,7 @@ title: Customize Spaces
 ## Customize Space in OpenCloud
 You can customize your Space in two places:
 - In the Space overview
-- As soon as you are already in the Space
+- In the Space itself
 <br/><br/>
 
 ---
@@ -33,21 +33,21 @@ You can customize your Space in two places:
 
 - **Edit subtitle**
     
-    - Write in the pop-up window your subtitle and confirm
+    - In the pop-up window, write your subtitle and confirm
     <img src={require("./img/customize/subtitle-pop-up.png").default} alt="Subtitle Pop-up" width="500"/>
     <img src={require("./img/customize/subtitle-changed.png").default} alt="Subtitle changed" width="500"/>
 <br/><br/>
 
 - **Edit image**
 
-    - Select the image you want for your Space from the opened window and confirm
+    - Select the image you want for your Space from the pop-up window and confirm
     <img src={require("./img/customize/folder-img-select.png").default} alt="Select folder picture" width="500"/>
     <img src={require("./img/customize/folder-img-changed.png").default} alt="Folder picture changed" width="500"/>
 <br/><br/>
 
 - **Set an icon**
 
-    - Select the icon you want for your space from the opened window
+    - Select the icon you want for your Space from the pop-up window
     <img src={require("./img/customize/icon-select.png").default} alt="Select Icon" width="400"/>
     <img src={require("./img/customize/icon-changed.png").default} alt="Icon changed" width="500"/>
 <br/><br/>
@@ -59,4 +59,4 @@ You can customize your Space in two places:
 
 ---
 
-**With these steps you can design and customize the Space to your liking!**
+**Now you know how you can design and customize the Space to your liking!**
