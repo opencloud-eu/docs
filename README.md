@@ -64,4 +64,4 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 |menue              | width="400"   | 
 |pop up             | width="500"   |
 
-The screenshot should show the important things and you can put red frames arround the specific buttons or areas
+The screenshot should show the important things and you can put red frames arround the specific buttons or areas.
