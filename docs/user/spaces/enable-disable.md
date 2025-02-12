@@ -77,4 +77,4 @@ A Space can be disabled and later enabled in various ways. This function can onl
 
 ---
 
-**That's it! This is how you can disable a Space and enable it again if required.*+
+**Now you know how you can disable a Space and enable it again if required.**

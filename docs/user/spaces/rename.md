@@ -5,7 +5,7 @@ title: Rename a Space
 ---
 <br/><br/>
 
-## Rename Space to OpenCloud
+## Rename Space in OpenCloud
 <br/><br/>
 
 ---

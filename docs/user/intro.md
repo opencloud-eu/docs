@@ -38,9 +38,9 @@ Here you will find information on how to install and set up the desktop client.
 Here you will find information about the different roles that can be assigned.
 
 #### Administration of OpenCloud:
+
 Here you will find information on what options admins have and how you can use them.
 <br/><br/>
-
 
 ### What is OpenCloud?
 

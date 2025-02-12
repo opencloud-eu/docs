@@ -18,7 +18,8 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 <br/><br/>
 - Make **Space visible**  
    - If the Space is no longer visible after deactivation, click on the **Include disabled** filter to display it again.
-<br/><br/>
+   <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="500"/>
+   <br/><br/>
 
 ---
 
@@ -34,7 +35,7 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
    <br/><br/>
 or  
    - Open the **three-dot menu** and select **Delete**
-   <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="500"/> 
+   <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="400"/> 
    <br/><br/>
    - Confirm that you are sure that you want to delete the space
    <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500"/>
@@ -49,3 +50,7 @@ A deleted Space **cannot be restored**. It is permanently and irretrievably dele
 Therefore, be careful to whom you grant **can manage** rights for your Space.
 
 **Please remember to ensure that no important data is lost before deleting.**
+
+---
+
+**Now you know how to delete a space.**
