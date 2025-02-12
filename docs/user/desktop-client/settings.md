@@ -11,7 +11,7 @@ You can customize your OpenCloud Desktop Client settings by following these step
 ## 1. Open Settings
 - Click on **"Settings"** in the top-right corner of the Desktop Client.
 
-<img src={require("./img/settings/settings-overview.png").default}  width="400"/>
+<img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
 
 ## 2. Overview of Settings Sections
 
@@ -21,7 +21,7 @@ You can customize your OpenCloud Desktop Client settings by following these step
 - Use monochrome icons in the system tray.
 - Set your preferred language.
 
-<img src={require("./img/settings/settings-general.png").default}  width="400"/>
+<img src={require("./img/settings/settings-general.png").default} alt="settings-general" width="400"/>
 
 ### Advanced Settings
 - Choose to sync hidden files.
@@ -30,7 +30,7 @@ You can customize your OpenCloud Desktop Client settings by following these step
 - Edit the ignored files list.
 - Enable a debug log file for troubleshooting.
 
-<img src={require("./img/settings/settings-advanced.png").default}  width="400"/>
+<img src={require("./img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
 
 ### Network Settings
 - Select how the client handles proxy settings:
@@ -38,7 +38,7 @@ You can customize your OpenCloud Desktop Client settings by following these step
   - **Use system proxy** (default)
   - **Manually enter a proxy**
 
-<img src={require("./img/settings/settings-network.png").default}  width="400"/>
+<img src={require("./img/settings/settings-network.png").default} alt="settings network" width="400"/>
 
 ### Download and Upload Bandwidth
 - Set bandwidth limits:
@@ -46,6 +46,6 @@ You can customize your OpenCloud Desktop Client settings by following these step
   - **Automatically adjust limit**
   - **Set a specific limit manually**
 
-<img src={require("./img/settings/settings-bandwith.png").default}  width="400"/>
+<img src={require("./img/settings/settings-bandwith.png").default} alt="settings bandwith" width="400"/>
 
 By adjusting these settings, you can optimize your OpenCloud Desktop Client according to your needs!

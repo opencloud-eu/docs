@@ -36,7 +36,7 @@ cd opencloud/deployments/examples/opencloud_full
 docker-compose up -d
 ```
 
-<img src={require("./img/quick-guide/quick-docker-compose-up.png").default} alt="Admin general" width="1920"/>
+<img src={require("./img/quick-guide/quick-docker-compose-up.png").default} alt="docker-compose-up" width="1920"/>
 
 This starts all necessary containers in the background.
 
@@ -47,7 +47,7 @@ This starts all necessary containers in the background.
 docker ps
 ```
 
-<img src={require("./img/quick-guide/quick-docker-running.png").default} alt="Admin general" width="1920"/>
+<img src={require("./img/quick-guide/quick-docker-running.png").default} alt="docker running" width="1920"/>
 
 Several containers should be listed here, e.g., for opencloud, traefik, etc.
 
@@ -63,11 +63,11 @@ For Firefox:
 
 You need to klick on **Advanced**
 
-<img src={require("./img/quick-guide/quick-advanced.png").default} alt="Admin general" width="500"/>
+<img src={require("./img/quick-guide/quick-advanced.png").default} alt="firefox security warning" width="500"/>
 
 Confirm the risk with **Accept the risk and Contiune**
 
-<img src={require("./img/quick-guide/quick-accept-security-risk.png").default} alt="Admin general" width="500"/>
+<img src={require("./img/quick-guide/quick-accept-security-risk.png").default} alt="accept security risk" width="500"/>
 
 ### Login:
 
@@ -76,7 +76,7 @@ Now the login screen appears and you can login with following credentials:
 - **Admin User:** `admin`
 - **Password:** `admin`
 
-<img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
+<img src={require("./img/quick-guide/quick-login.png").default} alt="OpenCloud login page" width="1920"/>
 
 Now you can explore OpenCloud and get started! 
 
