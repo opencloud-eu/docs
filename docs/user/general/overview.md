@@ -62,10 +62,13 @@ Shows possible **actions for the selected file**, e.g. rename or move.
 **15. Shares Panel**  
 Here you can share files and folders **internally or externally** and manage permissions.
 
-**16. Activity Panel**  
+**16. Versions**  
+Shows the **versions** of the file.
+
+**17. Activity Panel**  
 Shows an **overview of changes and activities** within a space or file.
 
-**17. Context Menu**  
+**18. Context Menu**  
 Right-clicking on a file or folder opens the **context menu with specific options**.
 <br/><br/>
 
