@@ -19,11 +19,17 @@ Here you will find all the important information to successfully take the first 
 
 ### Table of contents:
 
-#### Quick-Guide:
-Here you will find a "Quick Guide" on how to create your own OpenCloud in just a few minutes.
+#### Userinterface and Navigation:
+Here you will find general information about account settings, customizations and view modes.
 
-#### Files and Folders:
+#### Manage Files and Folders:
 Here you will find information about the management of files and folders.
+
+#### Share Files and Folders:
+Here you will find information on how to share files and folders.
+
+#### Working in Teams with Spaces:
+Here you will find information for dealing with Spaces.
 
 #### Desktop-Client:
 Here you will find information on how to install and set up the desktop client.
@@ -31,19 +37,10 @@ Here you will find information on how to install and set up the desktop client.
 #### Roles:
 Here you will find information about the different roles that can be assigned.
 
-#### Spaces:
-Here you will find information for dealing with Spaces.
+#### Administration of OpenCloud:
 
-#### Shares:
-Here you will find information on how to share files and folders.
-
-#### General:
-Here you will find general information about account settings, customizations and view modes.
-
-#### Admin:
 Here you will find information on what options admins have and how you can use them.
 <br/><br/>
-
 
 ### What is OpenCloud?
 
@@ -54,4 +51,4 @@ Through intelligent file management and a strong open source community, files be
 
 ### How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the "User Documentation" under "Quick Guide".
+Instructions on how to install and set up your own OpenCloud can be found in the "Admin Documentation" under "Quick Start".
