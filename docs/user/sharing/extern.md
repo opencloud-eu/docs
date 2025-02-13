@@ -53,7 +53,7 @@ Scroll down in the sidebar window and click on **“Add link”**.
     <img src={require("./img/extern/password-icon-3.png").default} alt="generate random password" width="400"/>
 #### Set expiration date for the link:
 - Enter a date under “Expiry date” to set a time limit for the link. Once the date has expired, the link is no longer accessible.
-<img src={require("./img/extern/expiration-date.png").default} alt="exparation date" width="400"/> 
+<img src={require("./img/extern/expiration-date.png").default} alt="expiration date" width="400"/> 
 
 ---
 

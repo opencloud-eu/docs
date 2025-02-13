@@ -63,7 +63,7 @@ Confirm by clicking on **“Rename”**.
 - Select destination:
     - Navigate to the folder or location where the file or folder should be moved to.
     - Click on **“Paste here”** in the **action bar**.
-<img src={require("./img/create-rename-move/paste-here-button.png").default} alt="past here button" width="1920"/>
+<img src={require("./img/create-rename-move/paste-here-button.png").default} alt="paste here button" width="1920"/>
 <img src={require("./img/create-rename-move/pasted-file.png").default} alt="paste file" width="1920"/>
 <br/><br/>
 

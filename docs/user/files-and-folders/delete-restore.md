@@ -22,7 +22,7 @@ sidebar_position: 3
 <br/><br/>
 -Result:<br/>
 The files or folders are **moved** to the **“Deleted files”** area. They can be restored from there if necessary.
-<img src={require("./img/delete-restore/folder-in-deleted-files.png").default} alt="removed files and folder in deleted files" width="1920"/>
+<img src={require("./img/delete-restore/folder-in-deleted-files.png").default} alt="removed files and folders in deleted files" width="1920"/>
 <br/><br/>
 
 ---
@@ -36,7 +36,7 @@ The files or folders are **moved** to the **“Deleted files”** area. They can
 - Select Space:
     - Files from your personal space can be found under **“Personal”**.
     - Files from other spaces (e.g. **“Testspace”**) can be found in their **respective spaces**.
-<img src={require("./img/delete-restore/structure-in-deleted-files.png").default} alt="structure in delted files" width="1920"/>
+<img src={require("./img/delete-restore/structure-in-deleted-files.png").default} alt="structure in deleted files" width="1920"/>
 <br/><br/>
 - Select files or folders:
     - Click on the file(s) or folder(s) you want to restore.
