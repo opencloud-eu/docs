@@ -30,7 +30,7 @@ sidebar_position: 1
 - Open the **context menu** by either: 
     - **right-clicking** on the file or folder,
     - or clicking on the **three dots** on the right in the corresponding line.
-<img src={require("./img/create-rename-move/three-dot-menu.png").default} alt="three dots menu" width="1920"/>
+<img src={require("./img/create-rename-move/three-dot-menu.png").default} alt="three dot menu" width="1920"/>
 <br/><br/>
 - Select the **“Rename”** option.
 <img src={require("./img/create-rename-move/rename-option.png").default} alt="select rename" width="400"/>

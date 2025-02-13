@@ -17,7 +17,7 @@ To find out who has edited a file or folder and what actions have been carried o
     <img src={require("./img/activity/three-dot-menu.png").default} alt="three dot menu" width="1920"/>
 <br/><br/>
     - Select **Details** from the context menu.
-    <img src={require("./img/activity/details-button.png").default} alt="context menue details" width="400"/>
+    <img src={require("./img/activity/details-button.png").default} alt="context menu details" width="400"/>
 <br/><br/>
 
 #### Select activities:
