@@ -20,7 +20,7 @@ To install the Desktop Client, follow these simple steps:
 ## 3. Follow the Installation Steps
 1. **Introduction**: Click **"Continue"** to proceed.
 
-<img src={require("./img/installation/installation-welcome.png").default} alt="instalation welcome page" width="400"/>
+<img src={require("./img/installation/installation-welcome.png").default} alt="installation welcome page" width="400"/>
 
 2. **Destination Select**: Choose where you want the program to be installed. Click **"Continue"**.
 
