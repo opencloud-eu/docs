@@ -9,12 +9,10 @@ sidebar_position: 2
 With **public links**, you can share files and/or folders **across organizations**.
 <br/><br/>
 ### **Here are the steps to create a public link:**
-
+<br/><br/>
 ---
-
-### Steps to create a public link
 #### Open sharing options:
-Click on the **“three-dot menu”** next to the file or folder name you want to share.
+Click on the **“three dot menu”** next to the file or folder name you want to share.
 <img src={require("./img/extern/three-dot-menu.png").default} alt="three dot menu" width="1920"/> 
 #### Select Share:
 Select **“Share”** from the drop-down menu.
@@ -47,12 +45,13 @@ Scroll down in the sidebar window and click on **“Add link”**.
 - Here are three icons:
     - One icon displays the password unencrypted to verify your entry.
     <img src={require("./img/extern/password-icon-1.png").default} alt="unencrypt password" width="400"/>
-    - Another symbol copies the password to the clipboard.
+    - The next icon copies the password to the clipboard.
     <img src={require("./img/extern/password-icon-2.png").default} alt="copy password" width="400"/>
     - The last icon generates a random password automatically.
     <img src={require("./img/extern/password-icon-3.png").default} alt="generate random password" width="400"/>
 #### Set expiration date for the link:
 - Enter a date under “Expiry date” to set a time limit for the link. Once the date has expired, the link is no longer accessible.
+- If you do not enter a date, the link will not expire.
 <img src={require("./img/extern/expiration-date.png").default} alt="expiration date" width="400"/> 
 
 ---
@@ -61,4 +60,7 @@ Scroll down in the sidebar window and click on **“Add link”**.
 - Once all options have been set, click on **“Copy link”** to generate the public link.
 <img src={require("./img/extern/copy-link-button.png").default} alt="copy link" width="400"/> 
 - The link is now created and can be shared with the recipients.<br/>
-With these steps you can share files and folders securely and individually with external users!
+
+---
+
+**Now you know how you can share files and folders securely and individually with external users.**
