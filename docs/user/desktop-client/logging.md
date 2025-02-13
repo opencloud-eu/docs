@@ -14,23 +14,23 @@ If you need to generate logs for troubleshooting, follow these steps:
 
 Click on **Settings → Advanced → Log Settings**  
  
-<img src={require("./img/logging/logging-access.png").default}  width="400"/>
+<img src={require("./img/logging/logging-access.png").default} alt="logging access" width="400"/>
 
 ## 3. Enable Logging
 
 - In the **Log Output** window, check the box for **Enable logging to temporary folder**  
 - To help the Support-Team and the developers, it is helpful to enable the **Log Http traffic**
 
-<img src={require("./img/logging/logging-enable.png").default}  width="400"/>
+<img src={require("./img/logging/logging-enable.png").default} alt="enable logging" width="400"/>
 
 ## 4. Find the Log Files
 - Click **Open folder** to access the logs.  
 
-<img src={require("./img/logging/logging-open-folder.png").default}  width="400"/>
+<img src={require("./img/logging/logging-open-folder.png").default} alt="open logfile folder" width="400"/>
 
 - Select the log files for the time frame when the issue occurred.  
 
-<img src={require("./img/logging/logging-logfiles.png").default}  width="400"/>
+<img src={require("./img/logging/logging-logfiles.png").default} alt="logfiles overview" width="400"/>
 
 These logs can help diagnose and fix any issues with your OpenCloud Desktop Client.
 

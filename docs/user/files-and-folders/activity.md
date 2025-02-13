@@ -14,21 +14,21 @@ To find out who has edited a file or folder and what actions have been carried o
 #### Open details:
     - **Right-click** on the file or folder, or
     click on the **three dots** in the corresponding line.
-    <img src={require("./img/activity/three-dot-menu.png").default} width="1920"/>
+    <img src={require("./img/activity/three-dot-menu.png").default} alt="three dot menu" width="1920"/>
 <br/><br/>
-    - Select **“Details”** from the context menu.
-    <img src={require("./img/activity/details-button.png").default} width="400"/>
+    - Select **Details** from the context menu.
+    <img src={require("./img/activity/details-button.png").default} alt="context menu details" width="400"/>
 <br/><br/>
 
 #### Select activities:
     - In the right sidebar opens a window, in this select the **“Activities”** item.
-    <img src={require("./img/activity/activities-button.png").default} width="400"/>
+    <img src={require("./img/activity/activities-button.png").default} alt="select activities" width="400"/>
 <br/><br/>
 
 #### View activities:
 
     - All activities carried out with this file or folder are now displayed.
-    <img src={require("./img/activity/activities.png").default} width="400"/>
+    <img src={require("./img/activity/activities.png").default} alt="view activities" width="400"/>
 <br/><br/>
 
 This allows you to track all changes and actions!
