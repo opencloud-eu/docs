@@ -1,0 +1,12 @@
+---
+when:
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+  - event: [ pull_request, manual, tag]
+
+steps:
+  - name: build
+    image: owncloudci/nodejs:20
+    commands:
+      - pnpm install
+      - pnpm build
