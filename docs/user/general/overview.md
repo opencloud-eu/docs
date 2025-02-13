@@ -63,7 +63,7 @@ Shows possible **actions for the selected file**, e.g. rename or move.
 Here you can share files and folders **internally or externally** and manage permissions.
 
 **16. Versions**  
-Shows the **versions** of the file.
+Shows an overview of the **versions** of a selected file or folder.
 
 **17. Activity Panel**  
 Shows an **overview of changes and activities** within a space or file.
