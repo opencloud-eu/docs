@@ -97,11 +97,6 @@ const config: Config = {
         {
           type: 'localeDropdown',
           position: 'right'
-        },
-        {
-          href: 'https://github.com/opencloud-eu',
-          label: 'GitHub',
-          position: 'right',
         }
       ],
     },
