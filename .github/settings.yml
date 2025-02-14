@@ -1,2 +1,16 @@
 _extends: gh-labels
 
+labels:
+  - name: Docs:User
+    color: "#D4DF6E"
+  - name: Docs:Admin
+    color: "#D4DF6E"
+  - name: Docs:Developer
+    color: "#D4DF6E"
+  - name: Docs:Breaking-Change
+    color: "#D4DF6E"
+  - name: Docs:Build&Tools
+    color: "#D4DF6E"
+  - name: Docs:Guides
+    color: "#D4DF6E"
+
