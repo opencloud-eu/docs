@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Installation
 
 Um den Desktop-Client zu installieren, müssen wir zunächst die passende Installationsdatei herunterladen.

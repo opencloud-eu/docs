@@ -1,40 +1,60 @@
 ---
-id: upload_download
-title: Upload / Download
+sidebar_position: 2
 ---
-# Upload: Dateien oder Ordner hochladen
 
-1. **Hochladen starten**  
-   - Klicken Sie in der **Aktionsleiste** auf **„Hochladen“**.  
-   - Wählen Sie aus, ob Sie **Dateien** oder **Ordner** hochladen möchten.  
+# Hochladen - Herunterladen - Entpacken
+<br/><br/>
 
-2. **Dateien/Ordner auswählen**  
-   - In dem sich öffnenden Fenster wählen Sie die gewünschten **Dateien** oder **Ordner** aus.  
-   - Mehrere Dateien oder Ordner können gleichzeitig ausgewählt werden.  
-
-3. **Hochladen bestätigen**  
-   - Klicken Sie auf **„Öffnen“**, um den Upload zu starten.  
-   - Nach Abschluss erscheint eine Meldung in der rechten unteren Ecke.  
-
-**Alternativ:**  
-Ziehen Sie die Dateien oder Ordner direkt aus Ihrem **Explorer-Fenster** per **Drag-and-Drop** in den Browser, um sie hochzuladen.
+## Hier wird beschrieben, wie man Dateien und Ordner hochlädt, herunterlädt und entpackt.
+<br/><br/>
 
 ---
 
-# Download: Dateien oder Ordner herunterladen
+### Hochladen von Dateien und Ordner
 
-1. **Auswahl treffen**  
-   Wählen Sie die gewünschten Dateien oder Ordner aus, indem Sie entweder:  
-   - In die **Dateizeile** klicken, oder  
-   - Das **Häkchen** am Anfang der Zeile setzen.  
+- Klicke Sie auf **“Hochladen”** in der **Actionbar**.
+    <img src={require("./img/upload-download-unzip/hochladen-button.png").default} width="1920"/>
+    <br/><br/>
+    - Wählen Sie aus ob eine Datei oder ein Ordner hochgeladen werden soll.
+    <img src={require("./img/upload-download-unzip/hochladen-optionen.png").default} width="400"/>
+<br/><br/>
+- Wählen Sie die Dateien oder Ordner aus:
+    - Im **Fenster** welches sich öffnet, **wählen** Sie die gewünschten **Dateien oder Ordner** aus.
+    - Es können **mehrere Dateien oder Ordner** gleichzeitig **ausgewählt** werden.
+    <br/><br/>
+- Bestätigen Sie den Upload:
+    - Klicken Sie auf **"Öffnen“**, um den **Upload** zu starten.
+    - Nach Abschluss des Uploads erscheint eine **Meldung** in der unteren rechten Ecke.
+    <img src={require("./img/upload-download-unzip/hochladen-fenster.png").default} width="500"/>
+    <br/><br/>
+- **Alternativ:**
+    - Ziehen Sie die Dateien oder Ordner **direkt** aus Ihrem Explorer-Fenster **in den Browser**, um sie hochzuladen.
+<br/><br/>
 
-2. **Download starten**  
-   - Öffnen Sie das **Kontextmenü**:  
-     - Mit **Rechtsklick**, oder  
-     - Durch Klick auf die **drei Punkte** neben der Datei.  
-   - Wählen Sie **„Herunterladen“** aus dem Menü.  
-     *(Alternativ können Sie „Herunterladen“ auch in der Aktionsleiste auswählen.)*  
+---
 
-3. **ZIP-Dateien**  
-   - Wenn Sie mehrere Dateien oder Ordner herunterladen, werden diese als **ZIP-Datei** gespeichert.  
-   - Entpacken Sie die ZIP-Datei nach dem Download auf Ihrem Gerät.
+### Herunterladen: Herunterladen von Dateien oder Ordnern
+
+- Wählen Sie die gewünschten Dateien oder Ordner entweder durch:
+    - Klicken Sie in die **Dateizeile** 
+    - oder durch Klicken auf das **Kästchen am Anfang der Zeile**.
+    <img src={require("./img/upload-download-unzip/markierte-datei.png").default} width="1920"/>
+    <br/><br/>
+- Öffnen Sie das Kontextmenü
+    - Durch **Rechtsklick**
+    - oder durch **Klick** auf die **drei Punkte** neben der Datei.
+    - oder durch **Klick** auf die **Download-Schaltfläche** in der **Actionbar**
+    <img src={require("./img/upload-download-unzip/herunterladen-optionen.png").default} width="1920"/>
+<br/>
+- Nach dem herunterladen erscheint rechts unten eine Meldung, dass der Download abgeschlossen ist.
+<img src={require("./img/upload-download-unzip/meldung-rechts-unten.png").default} width="1920"/>
+<br/><br/>
+
+---
+
+### Entpacken:
+
+- Wenn Sie **mehrere** Dateien oder Ordner herunterladen, werden diese **als ZIP-Datei** gespeichert.
+<img src={require("./img/upload-download-unzip/zip-datei.png").default} width="1920"/>
+<br/><br/>
+**Entpacken** Sie die **ZIP-Datei** nach dem Herunterladen auf Ihrem Gerät.
