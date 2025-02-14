@@ -5,8 +5,8 @@ title: Add members
 ---
 <br/><br/>
 
- ## This is how you can add a new member to your Space:
- <br/><br/>
+## This is how you can add a new member to your Space:
+<br/><br/>
 
 ---
 

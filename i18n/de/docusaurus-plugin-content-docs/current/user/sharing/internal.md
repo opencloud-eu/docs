@@ -1,5 +1,5 @@
 ---
-id: intern_teilen
+id: internal
 title: Intern teilen
 ---
 # Schritte zum Internen Teilen in OpenCloud
