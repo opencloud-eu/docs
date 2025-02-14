@@ -17,6 +17,9 @@ steps:
         from_secret: ssh-key-staging
       REMOTE_HOST:
         from_secret: remote-host-staging
+    when:
+      event: push
+      branch: ${CI_REPO_DEFAULT_BRANCH}
     commands:
       - apt-get update
       - apt-get install -y openssh-client rsync
