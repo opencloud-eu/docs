@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+id: internal
+title: Internal
 ---
 
 # Organization-internal sharing of files and folders in OpenCloud

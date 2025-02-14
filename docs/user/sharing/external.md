@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+id: external
+title: External
 ---
 
 # External Sharing (public links)

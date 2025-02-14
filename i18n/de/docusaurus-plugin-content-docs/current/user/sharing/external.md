@@ -1,5 +1,5 @@
 ---
-id: extern_teilen
+id: external
 title: Extern teilen
 ---
 # Öffentliche Links – Externes Teilen von Dateien und Ordnern in OpenCloud

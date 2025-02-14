@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+id: file-drop
+title: File Drop
 ---
 
 # File Drop
@@ -30,7 +32,7 @@ The **“File Drop”** allows people who receive a specific link (the so-called
 <img src={require("./img/file-drop/file-drop-button.png").default} alt="select file drop" width="400"/> 
 <br/><br/>
 - Type a **password** and confirm the entries with click on **"copy link"**.
-- You can also set an **"Expiry date"**, if you want the link to expire. [Klick here](extern.md), if you want to know how to set the Expiry date.
+- You can also set an **"Expiry date"**, if you want the link to expire. [Click here](./external), if you want to know how to set the Expiry date.
 <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="enter password and copy link" width="400"/> 
 <br/><br/>
 - Now you send the **link** and the **password** to a **"link recipient"**.
