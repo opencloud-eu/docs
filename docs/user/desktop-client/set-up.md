@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
 id: set-up
-title: Set up of the Desktop Client
+title: Set up OpenClou Desktop
 ---
 
-# Setting Up Your OpenCloud Desktop Client
+# Setting Up Your OpenCloud Desktop
 
-Follow these simple steps to install and configure your OpenCloud Desktop Client and start syncing your files effortlessly.
+Follow these simple steps to install and configure your OpenCloud Desktop and start syncing your files effortlessly.
 
 ## 1. Enter the Server URL
-- Open your **OpenCloud Desktop Client**.  
+- Open your **OpenCloud Desktop**.  
 - Enter the URL of your OpenCloud instance.  
 - Click **"Continue"**.  
 
