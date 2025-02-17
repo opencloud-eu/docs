@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: set-up
-title: Set up OpenClou Desktop
+title: Set up OpenCloud Desktop
 ---
 
 # Setting Up Your OpenCloud Desktop
