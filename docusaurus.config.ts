@@ -43,7 +43,8 @@ const config: Config = {
           editUrl:
             'https://github.com/opencloud-eu/docs/tree/main',
         },
-        blog: {
+        blog: false,
+        /*blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -57,7 +58,7 @@ const config: Config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
+        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -68,6 +69,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+          defaultMode: "dark",
+          disableSwitch: true,
+          respectPrefersColorScheme: false, // Ensures it doesn’t change based on system settings
+      },
     navbar: {
       logo: {
         alt: 'OpenCloud Logo',
@@ -93,7 +99,6 @@ const config: Config = {
           position: 'left',
           label: 'Developer',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right'
