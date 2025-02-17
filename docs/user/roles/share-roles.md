@@ -35,4 +35,4 @@ In a Space, members can have different roles that determine what they can do wit
 - You can edit, add, and delete files and folders.
 - Full access to modify shared content.
 
-Each role gives a different level of access, ensuring the right permissions for each user!
+**Each role gives a different level of access, ensuring the right permissions for each user!**
