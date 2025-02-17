@@ -1,53 +1,73 @@
 ---
-id: erstellen_umbennenen_verschieben
-title: Erstellen / Umbenennen / Verschieben
----
-# Dateien und Ordner verwalten in der Weboberfläche
-
-In der Weboberfläche können Sie problemlos neue Text-, Tabellen- und Präsentationsdateien erstellen. Außerdem können Sie Dateien und Ordner umbenennen oder an einen anderen Ort verschieben.
-
+sidebar_position: 1
 ---
 
-## So erstellen Sie Dateien und Ordner
+# Erstellen - Umbenennen - Verschieben
+<br/><br/>
 
-1. **Klicken Sie oben in der Leiste auf die Schaltfläche „+ Neu“.**  
-2. **Wählen Sie im Menü** entweder **„Ordner“** oder den gewünschten **Dateityp** aus, den Sie erstellen möchten.  
-3. **Geben Sie im angezeigten Fenster** einen Namen für die Datei oder den Ordner ein.  
-4. **Klicken Sie auf „Erstellen“.**
-
-Fertig! Die Datei oder der Ordner wird erstellt. Falls es sich um eine Datei handelt, wird sie automatisch im Bearbeitungsmodus geöffnet.
+## Sie können ganz einfach neue Text-, Tabellen- und Präsentationsdateien in der Weboberfläche erstellen. Diese können Sie auch umbenennen oder an einen anderen Speicherort verschieben.
+<br/><br/>
 
 ---
 
-## So benennen Sie Dateien oder Ordner um
-
-1. **Öffnen Sie das Kontextmenü, indem Sie entweder:**  
-   - Einen **Rechtsklick** auf die Datei oder den Ordner machen, oder  
-   - Auf die **drei Punkte** rechts in der entsprechenden Zeile klicken.  
-
-2. **Wählen Sie die Option „Umbenennen“ aus.**  
-3. **Geben Sie im angezeigten Fenster** den neuen Namen für die Datei oder den Ordner ein.  
-4. **Bestätigen Sie, indem Sie auf „Umbenennen“ klicken.**
-
-Fertig – der neue Name wird übernommen!
+### So erstellen Sie Dateien und Ordner: 
+- Klicken Sie auf die Schaltfläche **"+ Neu"** oben in der **Actionbar**. 
+<img src={require("./img/create-rename-move/neu-button.png").default} width="1920"/> 
+<br/><br/> 
+- Wählen Sie im Menü den gewünschten **"Dateityp"**, den Sie erstellen möchten. 
+<img src={require("./img/create-rename-move/neu-optionen.png").default} width="400"/> 
+<br/><br/>
+- Geben Sie einen **Namen** für die Datei oder den Ordner in das angezeigte Fenster ein. 
+<img src={require("./img/create-rename-move/neuen-ordner-erstellen.png").default} width="400"/> 
+<br/><br/> 
+- Klicken Sie auf **"Erstellen"**. 
+<img src={require("./img/create-rename-move/erstellen-button.png").default} width="400"/> 
+<br/><br/>
+**Fertig**<br/>
+Die Datei oder der Ordner wurde erstellt.<br/>
+Wenn es sich um eine Datei handelt, wird sie automatisch im Bearbeitungsmodus geöffnet. 
+<br/><br/>
 
 ---
 
-## So verschieben Sie Dateien oder Ordner
+### So benennen Sie Dateien oder Ordner um: 
+- Öffnen Sie das **Kontextmenü**, indem Sie entweder: 
+    - **mit der rechten Maustaste** auf die Datei oder den Ordner klicken, 
+    - oder indem Sie auf die **drei Punkte** rechts in der entsprechenden Zeile klicken. 
+    <img src={require("./img/create-rename-move/drei-punkte-menue.png").default} width="1920"/> 
+<br/><br/> 
+- Wählen Sie die Option **„Umbenennen“**. 
+<img src={require("./img/create-rename-move/umbenennen-option.png").default} width="400"/> 
+<br/><br/>
+- Geben Sie den **neuen Namen** für die Datei oder den Ordner in das angezeigte Fenster ein. Bestätigen Sie, indem Sie auf **"Umbenennen"** klicken. 
+<img src={require("./img/create-rename-move/umbenennen-popup.png").default} width="400"/>
+<img src={require("./img/create-rename-move/umbenennen-button.png").default} width="400"/>
+<br/><br/>
+**Fertig**<br/>
+Der neue Name wird angewendet!
+<br/><br/>
 
-1. **Auswahl treffen**  
-   Markieren Sie die Datei(en) oder den/die Ordner, die Sie verschieben möchten.  
+---
 
-2. **Kontextmenü öffnen**  
-   - Machen Sie einen **Rechtsklick** auf die Datei oder den Ordner, oder  
-   - Klicken Sie auf die **drei Punkte** in der entsprechenden Zeile.  
-   - Wählen Sie im Menü die Option **„Ausschneiden“** aus.  
-     *(Alternativ können Sie in der Aktionsleiste oben die Funktion „Ausschneiden“ nutzen.)*  
+### So verschieben Sie Dateien oder Ordner: 
+- Treffen Sie eine Auswahl: 
+    - Wählen Sie die Datei(en) oder Ordner aus, die Sie verschieben möchten. 
+    <img src={require("./img/create-rename-move/ordner-auswaehlen.png").default} width="1920"/> 
+    <br/><br/> 
+- Öffnen Sie das Kontextmenü: 
+    - **Klicken Sie mit der rechten Maustaste** auf die Datei 
+    - oder den Ordner oder klicken Sie auf die **drei Punkte** in der entsprechenden Zeile. 
+    <img src={require("./img/create-rename-move/drei-punkte-menue.png").default} width="1920"/> 
+    <br/><br/> 
+    - Wählen Sie die Option **„Ausschneiden“** aus dem Menü.
+    <img src={require("./img/create-rename-move/rechts-klick-ausschneiden.png").default} width="400"/>
+- Ziel auswählen: 
+    - Navigieren Sie zu dem Ordner oder Speicherort, an den die Datei oder der Ordner verschoben werden soll. 
+    - Klicken Sie in der **Aktionsleiste** auf **„Hier einfügen“**.
+    <img src={require("./img/create-rename-move/hier-einfuegen-button.png").default} width="1920"/> 
+    <img src={require("./img/create-rename-move/eingefuegte-datei.png").default} width="1920"/> 
+<br/><br/> 
 
-3. **Zielort wählen**  
-   Navigieren Sie zu dem Ordner oder Ort, wo die Datei oder der Ordner hinverschoben werden soll.  
+---
 
-4. **Einfügen**  
-   Klicken Sie in der Aktionsleiste auf **„Hier einfügen“**.  
-
-Die Datei oder der Ordner wird jetzt an den neuen Ort verschoben und ist am ursprünglichen Ort nicht mehr vorhanden.
+ƒDie Datei oder der Ordner ist **jetzt im neuen Speicherort verschoben** und **nicht mehr am ursprünglichen Speicherort vorhanden**.

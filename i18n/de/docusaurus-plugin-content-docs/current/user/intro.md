@@ -11,7 +11,7 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
 
-## Wilkommen zur OpenTalk Wissensdatenbank
+## Wilkommen zur OpenCloud Wissensdatenbank
 
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 <br/><br/>

@@ -1,38 +1,46 @@
 ---
-id: erstellen
-title: Erstellen
+sidebar_position: 1
+id: create
+title: Space erstellen
 ---
-# Spaces erstellen und Daten teilen in OpenCloud
+<br/><br/>
 
-Mit **Spaces** können Sie Daten gezielt mit bestimmten Personen innerhalb Ihrer Organisation teilen. Alle Mitglieder eines Spaces haben den festgelegten Zugriff auf die Daten, und Sie können die **Bearbeitungsrechte** je nach Mitglied individuell anpassen.
-
----
-
-## Wichtiger Hinweis:
-Spaces können **nur innerhalb der eigenen Organisation** dauerhaft geteilt werden.
+## Spaces erstellen und Daten in OpenCloud teilen
+Mit **Spaces** können Sie Daten mit bestimmten Personen innerhalb Ihrer Organisation teilen. Alle Mitglieder eines Spaces haben den definierten Zugriff auf die Daten, welche Sie durch den **Rechten** für jedes Mitglied anpassen können.
+<br/><br/>
 
 ---
 
-## So erstellen Sie einen neuen Space:
+### Um einen neuen Space zu erstellen:
 
-1. **Menü öffnen**  
-   - Gehen Sie in der linken Sidebar zum Menüpunkt **„Spaces“**.
-
-2. **Neuen Space erstellen**  
-   - Klicken Sie auf **„+ Neuer Space“**.
-
-3. **Space benennen**  
+- **Menü öffnen**  
+   - Gehen Sie auf den Menüpunkt **Spaces** in der linken Seitenleiste
+   <img src={require("./img/create/linke-seitenleiste.png").default} alt="Linke Seitenleiste" width="1920"/> 
+<br/><br/>
+- **Neuen Space erstellen**  
+   - Klicken Sie auf **+Neu**
+   <img src={require("./img/create/space-erstellen.png").default} alt="Space erstellen" width="1920"/> 
+<br/><br/>
+- Einen **Space** benennen  
    - Geben Sie den gewünschten **Namen** für den Space ein.
-
-4. **Space erstellen**  
-   - Klicken Sie auf **„Erstellen“**.
-
----
-
-## Space anzeigen:
-
-- Ihr neuer Space erscheint nun unter **„Ihre Spaces“** und ist bereit, verwendet zu werden.
+   <img src={require("./img/create/benennen.png").default} alt="benennen" width="500"/> 
+<br/><br/>
+- erstellen **Space**  
+   - Klicken Sie auf **Erstellen**.
+   <img src={require("./img/create/erstellen-button.png").default} alt="erstellen Button" width="500"/>
+<br/><br/>
 
 ---
 
-Mit diesen Schritten haben Sie schnell und einfach einen Space erstellt und können beginnen, **Daten zu teilen**!
+### Raum anzeigen:
+- Ihr neuer Space erscheint nun unter **Spaces** und ist bereit, genutzt zu werden.
+<img src={require("./img/create/neuer-space.png").default} alt="Neuer Space" width="1920"/> 
+<br/><br/>
+
+**Mit diesen Schritten haben Sie schnell und einfach einen Space erstellt und können mit dem Datenaustausch beginnen!**
+<br/><br/>
+---
+
+### Wichtiger Hinweis:
+Spaces können **nur innerhalb Ihrer eigenen Organisation** dauerhaft freigegeben werden.
+<br/><br/>

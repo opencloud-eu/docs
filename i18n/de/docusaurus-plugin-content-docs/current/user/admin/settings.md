@@ -1,62 +1,56 @@
 ---
-id: einstellungen
+sidebar_position: 1
+id: settings
 title: Einstellungen
 ---
-# Admin-Bereich Übersicht
+<br/><br/>
 
-Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsmöglichkeiten für Ihre Organisation. Hier sind die wichtigsten Bereiche:
-
----
-
-## Allgemein
-
-- **Übersicht über Edition und Version**:  
-   Sie können Informationen zur **Edition** und **Version** Ihrer OpenCloud-Software einsehen.
-  
-- **Logo ändern**:  
-   Klicken Sie auf das **„Drei-Punkte-Menü“** neben dem aktuellen Logo, um ein neues Logo hochzuladen und das Erscheinungsbild anzupassen.
+## Überblick über den Admin-Bereich 
+Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für Ihre Organisation. Hier sind die wichtigsten Bereiche: 
+<img src={require("./img/settings/admin-einstellungen.png").default} alt="Admin settings" width="400"/>
+<br/><br/>
 
 ---
 
-## Personen
-
-- **Übersicht der Nutzer**:  
-   Hier haben Sie eine Übersicht aller **Nutzer** Ihrer OpenCloud.
-
-- **Nutzer verwalten**:  
-   Je nach den Einstellungen Ihrer Nutzerverwaltung können Sie:
-    - **User anlegen oder löschen**
-    - **User bearbeiten** (z. B. Rechte oder Einstellungen ändern)
-    - **Quota (Speicherplatz)** der User ändern
-    - **User in Gruppen hinzufügen oder entfernen**
-    - **Anmeldungen erlauben oder verbieten** (für einzelne User)
+### Allgemein 
+- **Übersicht über Ausgabe und Version**: 
+   Sie können Informationen über die **Edition** und **Version** Ihrer OpenCloud anzeigen. 
+- **Logo ändern**: Klicken Sie auf das **'Drei-Punkte-Menü'** neben dem aktuellen Logo, um ein neues Logo hochzuladen und das Aussehen anzupassen. 
+   <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
+<br/><br/>
 
 ---
 
-## Gruppen
-
-- **Übersicht der Gruppen**:  
-   Hier können Sie die vorhandenen **Gruppen** Ihrer OpenCloud einsehen.
-
-- **Gruppen verwalten**:  
-   Sie können **lokale Gruppen erstellen, bearbeiten oder löschen** und Mitglieder hinzufügen oder entfernen.
-
-- **Importierte Gruppen**:  
-   Externe Gruppen, die aus einer Nutzerverwaltung importiert wurden, können hier **nicht bearbeitet** werden. Diese Gruppen sind durch ein **Schlosssymbol** gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
+### Benutzer 
+- **Übersicht der Benutzer**: 
+   Hier haben Sie einen Überblick über alle **Benutzer** von Ihre OpenCloud. 
+- **Benutzer verwalten**: 
+   Abhängig von Ihren Benutzerverwaltungseinstellungen können Sie: - Benutzer erstellen oder löschen - Benutzer bearbeiten (z.B. Rechte oder Einstellungen ändern) - Quota (Speicherplatz) von Benutzern ändern - Benutzer in Gruppen hinzufügen oder entfernen - Allow or prohibit logins (for individual users) 
+   <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
+<br/><br/>
 
 ---
 
-## Spaces
-
-- **Übersicht der Spaces**:  
-   Hier sehen Sie alle bestehenden **Spaces** in Ihrer OpenCloud.
-
-- **Space-Verwaltung**:  
-   Als Administrator haben Sie die vollen Rechte, um einen Space zu:
-    - **Bearbeiten**
-    - **Deaktivieren oder aktivieren**
-    - **Löschen**
+### Gruppen 
+- **Übersicht der Gruppen**: 
+   Hier können Sie die vorhandenen **Gruppen** Ihrer OpenCloud anzeigen. 
+- **Gruppen verwalten**: 
+   Sie können **lokale Gruppen erstellen, bearbeiten oder löschen** und Mitglieder hinzufügen oder entfernen. 
+- **Importierte Gruppen**: Externe Gruppen, die über ein externes Benutzerverwaltungssystem importiert wurden, können hier **nicht bearbeitet werden**. Diese Gruppen sind mit einem **Sperrsymbol**        
+   gekennzeichnet, um anzuzeigen, dass sie gesperrt sind. 
+   <img src={require("./img/settings/gruppen.png").default} alt="Admin groups" width="1920"/>
 
 ---
 
-Mit diesen Admin-Einstellungen haben Sie die Möglichkeit, Ihre OpenCloud-Umgebung umfassend zu verwalten und anzupassen!
+### Spaces 
+- **Übersicht der Spaces**: 
+   Hier sehen Sie alle vorhandenen **Spaces** in Ihrer OpenCloud. 
+   - **Space Management**: Als Administrator haben Sie volle Rechte auf: **Bearbeiten** 
+   - **Deaktivieren oder aktivieren** 
+   - **Löschen**
+   <img src={require("./img/settings/spaces.png").default} alt="Admin spaces" width="1920"/>
+<br/><br/>
+
+---
+
+**Diese Admin-Einstellungen ermöglichen es Ihnen Um Ihre OpenCloud-Umgebung umfassend zu verwalten und anzupassen! **

@@ -1,32 +1,40 @@
 ---
-id: demo
-title: Demo
+sidebar_position: 3
+id: space-quota
+title: Space Quota
 ---
-# Quota eines Spaces ändern
+<br/><br/>
 
-Als Space-Administrator können Sie die Speicherkapazität (Quota) eines Spaces anpassen, um den verfügbaren Speicherplatz je nach Bedarf zu erhöhen oder zu verringern. So funktioniert es:
+## Kontingent eines Spaces bearbeiten
+Als Space-Administrator können Sie die Speicherkapazität (Quote) eines Spaces anpassen, um den verfügbaren Speicherplatz nach Bedarf zu erhöhen oder zu verringern. 
+<br/><br/>
 
----
-
-## Schritte zum Ändern der Space-Quota:
-
-1. **Kontextmenü öffnen**  
-   - Navigieren Sie zur **Space-Übersicht** und suchen Sie den gewünschten Space.  
-   - Klicken Sie auf das **Drei-Punkte-Menü**:
-     - Entweder in der **Kachel des Spaces** in der Übersicht.
-     - Oder innerhalb des Spaces, **neben dem Titel**.
-
-2. **Quota ändern**  
-   - Wählen Sie im Menü die Option **„Quota ändern“**.
-
-3. **Neue Quota festlegen**  
-   - Im sich öffnenden Fenster stehen zwei Möglichkeiten zur Verfügung:
-     - Wählen Sie eine **voreingestellte Größe** (z. B. 5 GB) aus dem Drop-Down-Menü.
-     - Geben Sie eine **individuelle Speichergröße** ein.
-
-4. **Änderungen bestätigen**  
-   - Klicken Sie auf **„Bestätigen“**, um die Änderung zu übernehmen.
+### So funktioniert es:
+<br/><br/>
 
 ---
 
-Die Quota des Spaces wird entsprechend der neuen Einstellungen aktualisiert.
+#### Steps to edit the Space quota:
+
+- **Quota ändern**  
+   - Wählen Sie die Option **Quota ändern** in der **Top-Bar** 
+   - oder im **Drei-Punkte-Menü**
+   <img src={require("./img/quota/quota-aendern-button.png").default} alt="Context-Menu" width="1920"/>
+<br/><br/>
+
+- **Neue Quote festlegen**  
+   - In dem sich öffnenden Fenster stehen zwei Optionen zur Verfügung:
+      - Wählen Sie eine **Standardgröße** (z.B. 5 GB) aus dem Dropdown-Menü.
+      <img src={require("./img/quota/standard-quota.png").default} alt="Select-quota" width="500"/>
+      <br/><br/>
+      - Geben Sie eine **individuelle Speichergröße** ein.
+      <img src={require("./img/quota/individuelle-quota.png").default} alt="Enter-quota" width="500"/>
+<br/><br/>
+
+- **Änderungen bestätigen**  
+   - Klicken Sie auf **Bestätigen**, um die Änderung zu übernehmen.
+   <img src={require("./img/quota/bestaetigen-button.png").default} alt="Enter-quota" width="500"/>
+<br/><br/>
+---
+
+**Das Kontingent des Speicherplatzes wird, den neuen Einstellungen entsprechend, aktualisiert.**

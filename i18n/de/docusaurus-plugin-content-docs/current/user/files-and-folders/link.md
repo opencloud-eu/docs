@@ -1,35 +1,43 @@
 ---
-id: verknüpfung
-title: Verknüpfung
+sidebar_position: 5
 ---
 
-# Verknüpfungen zu Links oder Dateien in OpenCloud erstellen
+# Verlinken
+<br/><br/>
 
-Mit OpenCloud können Sie **Verknüpfungen** zu Webseiten oder Dateien anlegen. So geht's:
+## Mit OpenCloud können Sie Links zu Websites oder Dateien erstellen. 
+<br/><br/>
+
+### So funktieniert es:
+
+#### Link erstellen:
+- Klicken Sie auf **"+ Neu ‚** in den **Batch-Aktionen** und wählen Sie **‘Link “**.
+<img src={require("./img/link/neu-button.png").default} width="1920"/>
+<br/><br/>
+<img src={require("./img/link/shortcut-button.png").default} width="400"/>
+<br/><br/>
+#### Link oder Datei einfügen:
+- Geben Sie in dem sich öffnenden Fenster den **Link** oder den **Namen** der Datei ein, die Sie verlinken möchten.
+- Alternativ können Sie die gewünschte Datei auch aus der Liste auswählen, nachdem Sie die ersten Buchstaben eingegeben haben.
+<img src={require("./img/link/pop-up-window.png").default} width="500"/>
+<br/><br/>
+#### Link benennen:
+- Geben Sie einen Namen für den Link ein.
+<img src={require("./img/link/url-und-titel.png").default} width="500"/>
+<br/><br/>
+#### Link erstellen:
+- Klicken Sie auf **"Erstellen “**, um den Link zu speichern.
+<img src={require("./img/link/erstellen-button.png").default} width="400"/>
+<br/><br/>
 
 ---
 
-## Verknüpfung erstellen
+### Shortcuts nutzen:
 
-1. **Verknüpfung erstellen**  
-   - Klicken Sie in den **Batch-Actions** auf **„+ Neu“** und wählen Sie **„Verknüpfung“** aus.  
-
-2. **Link oder Datei einfügen**  
-   - Geben Sie im sich öffnenden Fenster den **Link** oder den **Namen der Datei** ein, die Sie verknüpfen möchten.  
-   - Alternativ können Sie, nachdem Sie die ersten Buchstaben eingegeben haben, die gewünschte Datei aus der Liste auswählen.  
-
-3. **Name der Verknüpfung festlegen**  
-   - Geben Sie einen **Namen** für die Verknüpfung ein.  
-
-4. **Verknüpfung erstellen**  
-   - Klicken Sie auf **„Erstellen“**, um die Verknüpfung zu speichern.  
-
----
-
-## Verknüpfung verwenden
-
-- Klicken Sie auf die **Verknüpfung**, um die verlinkte Webseite oder Datei in einem neuen Browsertab zu öffnen.
-
----
-
-Das war's!
+- Klicken Sie auf die **Verknüpfung**, um die verlinkte Webseite oder Datei in einem **neuen Browser-Tab** zu öffnen,
+<img src={require("./img/link/shortcut.png").default} width="1920"/>
+<br/><br/>
+- oder mit einem **„Rechtsklick“ und „Verknüpfung öffnen “**.
+<img src={require("./img/link/shortcut-rechts-klick.png").default} width="1920"/>
+<br/><br/>
+Nun öffnet sich die verlinkte Webseite oder Datei in einem neuen **Browser-Tab**.

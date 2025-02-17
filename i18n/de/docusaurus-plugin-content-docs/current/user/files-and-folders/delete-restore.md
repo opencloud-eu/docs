@@ -1,41 +1,58 @@
 ---
-id: löschen_wiederherstellen
-title: Löschen / Wiederherstellen
+sidebar_position: 3
 ---
 
-# Löschen von Dateien oder Ordnern
-
-1. **Auswahl treffen**  
-   Markieren Sie die Datei(en) oder Ordner, die Sie löschen möchten.
-
-2. **Kontextmenü öffnen**  
-   - Machen Sie einen **Rechtsklick** auf die Auswahl, oder  
-   - Klicken Sie auf die **drei Punkte** in der Zeile der Datei/des Ordners.  
-   - Wählen Sie im Menü die Option **„Löschen“** aus.  
-     *(Alternativ können Sie auch in der Aktionsleiste auf „Löschen“ klicken.)*  
-
-3. **Ergebnis**  
-   Die Dateien oder Ordner werden in den Bereich **„Gelöschte Dateien“** verschoben. Sie können von dort aus wiederhergestellt werden, falls nötig.
+# Löschen - Wiederherstellen
+<br/><br/>
+## In OpenCloud können Sie Dateien und Ordner löschen und diese nach Bedarf auch wiederherstellen.
+<br/><br/>
 
 ---
 
-# Wiederherstellen von Dateien oder Ordnern
+### Dateien oder Ordner löschen: 
+- Treffen Sie eine Auswahl: 
+    - Wählen Sie die Datei(en) oder Ordner aus, die Sie löschen möchten. 
+    <img src={require("./img/delete-restore/markierter-ordner.png").default} width="1920"/> 
+<br/><br/> 
+- Kontextmenü öffnen: 
+    - **Klicken Sie mit der rechten Maustaste** auf die Auswahl, 
+    - oder klicken Sie auf die **drei Punkte** in der Zeile der Datei/des Ordners. 
+    <img src={require("./img/delete-restore/drei-punkte-menue.png").default} width="1920"/> 
+<br/><br/> 
+- Wählen Sie die Option **„Löschen“** im Menü.<br/> 
+(Alternativ können Sie auch auf **„Löschen“** in der **Aktionsleiste** klicken. 
+<img src={require("./img/delete-restore/loeschen-optionen.png").default} width="1920"/> 
+<br/><br/> 
+-Ergebnis:<br/> 
+Die Dateien oder Ordner werden **in den Bereich **„Gelöschte Dateien“** verschoben. Sie können bei Bedarf von dort wiederhergestellt werden. 
+<img src={require("./img/delete-restore/ordner-in-geloeschte-dateien.png").default} width="1920"/> 
+<br/><br/>
 
-1. **Zu „Gelöschte Dateien“ navigieren**  
-   Klicken Sie in der linken Seitenleiste auf **„Gelöschte Dateien“**.
+---
 
-2. **Space auswählen**  
-   - Dateien aus Ihrem persönlichen Bereich finden Sie unter **„Persönlich“**.  
-   - Dateien aus anderen Bereichen (z. B. **„Testspace“**) befinden sich in deren jeweiligem Space.
+### Dateien oder Ordner wiederherstellen: 
+- Navigieren Sie zu **"Gelöschte Dateien"**:
+    - Klicken Sie in der linken Seitenleiste auf **"Gelöschte Dateien"**. 
+    <img src={require("./img/delete-restore/geloeschte-dateien.png").default} width="1920"/> 
+    <br/><br/> 
+- Wählen Sie Leertaste: 
+    - Dateien aus Ihrem persönlichen Bereich finden Sie unter **"Personal"**. 
+    - Dateien aus anderen Bereichen (z. **"Testspace"**) finden Sie in ihren ** jeweiligen Räumen**. 
+    <img src={require("./img/delete-restore/struktur-in-geloeschte-dateien.png").default} width="1920"/> 
+    <br/><br/>
+- Dateien oder Ordner auswählen: 
+    - Klicken Sie auf die Datei(en) oder Ordner, die Sie wiederherstellen möchten. 
+    <img src={require("./img/delete-restore/markierter-ordner-in-geloeschte-dateien.png").default} width="1920"/> 
+    <br/><br/> 
+- Öffnen Sie das Kontextmenü: 
+    - Klicken Sie mit der rechten Maustaste 
+    - oder klicken Sie auf die drei Punkte neben der Auswahl. 
+    <img src={require("./img/delete-restore/drei-punkte-menue-in-geloeschte-dateien.png").default} width="1920"/> 
+    <br/><br/> 
+- Wählen Sie **"Restore"**** aus dem Menü.<br/> 
+(Alternnativ können Sie auch auf **"Restore"** in der **-Aktionsleiste** klicken. 
+<img src={require("./img/delete-restore/wiederherstellungs-optionen.png").default} width="1920"/>
+<br/><br/>
 
-3. **Dateien oder Ordner auswählen**  
-   Klicken Sie auf die Datei(en) oder Ordner, die Sie wiederherstellen möchten.
-
-4. **Kontextmenü öffnen**  
-   - Machen Sie einen **Rechtsklick**, oder  
-   - Klicken Sie auf die **drei Punkte** neben der Auswahl.  
-   - Wählen Sie im Menü **„Wiederherstellen“** aus.  
-     *(Alternativ können Sie auch in der Aktionsleiste auf „Wiederherstellen“ klicken.)*  
-
-5. **Ergebnis**  
-   Die Dateien oder Ordner werden an ihrem ursprünglichen Speicherort wiederhergestellt.
+- Ergebnis: <br/>
+Die Dateien oder Ordner werden an ihren **ursprünglichen Standort** **wiederhergestellt**.
