@@ -6,9 +6,9 @@ title: Synchronization Settings
 
 ## How to Access Synchronization Settings
 
-1. Open the **OpenCloud Desktop Client**.  
-2. Go to the **Account View**.  
-3. Click on the **Three-Dot Menu (...)** next to the Space you want to configure. 
+1. Open the **OpenCloud Desktop** 
+2. Go to the **Account View**
+3. Click on the **Three-Dot Menu (...)** next to the Space you want to configure
 
 <img src={require("./img/sync-settings/sync-settings-three-dot.png").default} alt="Admin spaces" width="400"/>
 

@@ -4,12 +4,12 @@ id: multiple-accounts
 title: Set up multiple accounts
 ---
 
-# Using Multiple Accounts in OpenCloud Desktop Client
+# Using Multiple Accounts in OpenCloud Desktop
 
 You can synchronize multiple accounts from different OpenCloud servers to your local machine. This allows you to manage files from different instances within the same desktop client.
 
 ## How to Add a New Account
-1. Open the **OpenCloud Desktop App**  
+1. Open the **OpenCloud Desktop**  
 2. Click on **Add Account"**  
 
 <img src={require("./img/multiple-accounts/multiple-accounts-add-account.png").default} alt="add accounts" width="400"/>
