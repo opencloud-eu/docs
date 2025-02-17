@@ -53,6 +53,8 @@
 
 .hero {
     background-image: url("/static/img/oc-banner.jpg");
+    background-size: cover;
+    background-position: center;
 
     .button {
         width: 300px;
