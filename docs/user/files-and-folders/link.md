@@ -22,7 +22,7 @@ sidebar_position: 5
     <img src={require("./img/link/pop-up-window.png").default} alt="enter link or file in popup window" width="500"/>
     <br/><br/>
 - Specify the name of the link:
-    -Enter a name for the link.
+    - Enter a name for the link.
     <img src={require("./img/link/url-and-title.png").default} alt="enter a name for the link" width="500"/>
     <br/><br/>
 - Create link:
