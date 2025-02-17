@@ -50,11 +50,11 @@ This starts all necessary containers in the background.
 ## 3. Login
 
 Login with your browser:
-- [http://cloud.opencloud.test](http://cloud.opencloud.test)
+- [https://cloud.opencloud.test](http://cloud.opencloud.test)
 - user: **admin**
 - password: **admin**
 
-🥳 Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking! 🎉
+Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
