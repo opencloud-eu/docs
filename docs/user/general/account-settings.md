@@ -39,8 +39,8 @@ Depending on the basic configuration, you can change the following options:
   Select the desired **language** for your user interface.
 - **Password**:  
   Change your **password** for access to your user account.
-- **Design**:  
-  Customize the **design** of the user interface according to your preferences.
+- **Theme**:  
+  Customize the **Theme** of the user interface according to your preferences.
 - **Email notifications**:  
   Determine which **email notifications** you would like to receive from OpenCloud.
 - **WebDAV options**:  
