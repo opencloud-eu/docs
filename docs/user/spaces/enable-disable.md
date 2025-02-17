@@ -6,7 +6,7 @@ title: Disable and Enable a Space
 <br/><br/>
 
 ##  Disable and Enable a Space in OpenCloud
-A Space can be disabled and later enabled in various ways. This function can only be performed by a **Space Admin** or the **Cloudadmin**.
+A Space can be disabled and later enabled in various ways. This function can only be performed by a **Space Admin** or the **Administrator**.
 <br/><br/>
 
 ---
@@ -32,7 +32,7 @@ A Space can be disabled and later enabled in various ways. This function can onl
    - Confirm the deactivation.  
    <img src={require("./img/enable-disable/disable-confirm.png").default} alt="confirm disable" width="500"/>
    <br/><br/>
-   - **Note:** No data will be deleted, but only the **Space Admin** or the **Cloudadmin** can enable the Space.
+   - **Note:** No data will be deleted, but only the **Space Admin** or the **Administrator** can enable the Space.
 <br/><br/>
 
 ---
@@ -56,14 +56,14 @@ A Space can be disabled and later enabled in various ways. This function can onl
 
 ---
 
-### Restoration by the company admin
+### Enable by Administrator
 
 - **Administrator access**  
-   - In the **Administration settings** under Spaces, a **Cloudadmin** or **Companyadmin** can also enable the Space.  
+   - In the **Administration settings** under Spaces, the **Administrator** can also enable the Space.  
    <br/><br/>
 
 - **Enable Space**  
-   - The admin clicks on the **three dots menu** and selects **Enable**.  
+   - The Administrator clicks on the **three dots menu** and selects **Enable**.  
    <img src={require("./img/enable-disable/admin-enable.png").default} alt="three dot menu" width="1920"/>  
    <br/><br/>
    - Confirm the selection by clicking on **Enable**.  
