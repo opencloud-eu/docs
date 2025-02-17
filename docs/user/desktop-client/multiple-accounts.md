@@ -10,7 +10,7 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 
 ## How to Add a New Account
 1. Open the **OpenCloud Desktop**  
-2. Click on **Add Account"**  
+2. Click on **Add Account**  
 
 <img src={require("./img/multiple-accounts/multiple-accounts-add-account.png").default} alt="add accounts" width="400"/>
 
