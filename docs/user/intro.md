@@ -19,7 +19,7 @@ Here you will find all the important information to successfully take the first 
 
 ### Table of contents:
 
-#### Userinterface and Navigation:
+#### User Interface and Navigation:
 Here you will find general information about account settings, customizations and view modes.
 
 #### Manage Files and Folders:
