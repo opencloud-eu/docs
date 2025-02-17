@@ -1,0 +1,56 @@
+---
+id: tags
+title: Tags
+---
+# Tags / Schlagworte
+<br/><br/>
+
+## Tags / Schlagworte hinzufügen und verwalten mit OpenCloud
+<br/><br/>
+
+### Mit OpenCloud können Sie Dateien und Ordner mit **Tags** versehen, um diese einfacher zu suchen oder zu gruppieren. Hier erfahren Sie, wie es funktioniert:
+<br/><br/>
+
+---
+
+#### Tag hinzufügen
+
+- **Kontextmenü öffnen**  
+   - Machen Sie einen **Rechtsklick** auf die Datei oder den Ordner, oder  
+   - Klicken Sie auf die **drei Punkte** in der entsprechenden Zeile.  
+   <img src={require("./img/tags/drei-punkte-menue.png").default} width="1920"/>
+<br/><br/>
+
+- **Details auswählen**  
+   Wählen Sie im Kontextmenü die Option **„Details“** aus.  
+   <img src={require("./img/tags/details-button.png").default} width="1920"/>
+<br/><br/>
+
+- **Tag eingeben**  
+   - Klicken Sie in das Eingabefeld neben **„Schlagworte“**.  
+   <img src={require("./img/tags/schlagwort-zeile.png").default} width="400"/>
+   <br/><br/>
+   - Wählen Sie einen vorhandenen Tag aus, oder  
+   - Geben Sie einen neuen Begriff ein, um einen neuen Tag zu erstellen.  
+   <img src={require("./img/tags/tag-auswaehlen.png").default} width="400"/>
+<br/><br/>
+
+- **Fertig**  
+   Der Tag wird hinzugefügt und ist nun mit der Datei oder dem Ordner verknüpft.
+<br/><br/>
+
+---
+
+#### Tag entfernen
+
+- Öffnen Sie erneut die **„Details“** der Datei/des Ordners.  
+<img src={require("./img/tags/details-button.png").default} width="1920"/>
+<br/><br/>
+- Suchen Sie den Tag, den Sie entfernen möchten.  
+- Klicken Sie auf das **„X“** neben dem Tag, um ihn zu löschen.  
+<img src={require("./img/tags/tag-loeschen.png").default} width="400"/>
+<br/><br/>
+
+---
+
+**Das war’s! Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verbunden.**
