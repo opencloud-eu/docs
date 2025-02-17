@@ -16,19 +16,17 @@ You can customize your OpenCloud Desktop Client settings by following these step
 ## 2. Overview of Settings Sections
 
 ### General Settings
-- Enable or disable auto-start when logging in.
-- Choose whether to show desktop notifications.
-- Use monochrome icons in the system tray.
-- Set your preferred language.
+- Enable or disable auto-start when log in
+- Choose whether to show desktop notifications
+- Set your preferred language
 
 <img src={require("./img/settings/settings-general.png").default} alt="settings-general" width="400"/>
 
 ### Advanced Settings
-- Choose to sync hidden files.
-- Enable or disable the crash reporter.
-- Decide whether deleted files should be moved to the local trash bin.
-- Edit the ignored files list.
-- Enable a debug log file for troubleshooting.
+- Choose to sync hidden files
+- Decide whether deleted files should be moved to the local trash bin
+- Edit the ignored files list
+- Enable a debug log file for troubleshooting
 
 <img src={require("./img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
 

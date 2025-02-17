@@ -4,11 +4,11 @@ id: logging
 title: Collect Logfiles
 ---
 
-# Logging to a Temporary Directory in OpenCloud Desktop Client
+# Logging to a Temporary Directory in OpenCloud Desktop
 
 If you need to generate logs for troubleshooting, follow these steps:
 
-## 1. Open the OpenCloud Desktop App
+## 1. Open the OpenCloud Desktop
 
 ## 2. Access Log Settings
 
@@ -38,13 +38,13 @@ These logs can help diagnose and fix any issues with your OpenCloud Desktop Clie
 ### Log Content Description
 
 
-```25-02-06 15:20:47:217 [ info sync.httplogger ]:	REQUEST 0a1f7f31-5f01-4348-83ab-17a6fca64597 {"request":{"body":{"length":0},"header":{"accept":"*/*","accept-language":"en_DE","original-request-id":"0a1f7f31-5f01-4348-83ab-17a6fca64597","user-agent":"Mozilla/5.0 (Macintosh) mirall/6.0.0.15610-daily20250205 (ownCloud, macos-24.3.0 ClientArchitecture: arm64 OsArchitecture: arm64)","x-request-id":"0a1f7f31-5f01-4348-83ab-17a6fca64597"},"info":{"cached":false,"id":"0a1f7f31-5f01-4348-83ab-17a6fca64597","method":"GET","url":"https://cloud.opencloud.test/.well-known/openid-configuration"}}}```
+```25-02-17 09:02:35:174 [ info sync.httplogger ]:	REQUEST 3710cc12-7391-4793-8e89-00499dc11983 {"request":{"body":{"length":0},"header":{"accept":"*/*","accept-language":"en_DE","original-request-id":"3710cc12-7391-4793-8e89-00499dc11983","user-agent":"Mozilla/5.0 (Macintosh) mirall/1.0.0-git (OpenCloud, macos-24.3.0 ClientArchitecture: x86_64 OsArchitecture: arm64)","x-request-id":"3710cc12-7391-4793-8e89-00499dc11983"},"info":{"cached":false,"id":"3710cc12-7391-4793-8e89-00499dc11983","method":"GET","url":"https://cloud.opencloud.test/.well-known/openid-configuration"}}}```
 
 | Log Content | Description |
 |-------------|-------------|
-| **23-09-01 16:31:14:031** | Timestamp of the request |
+| **25-02-17 09:02:35:174** | Timestamp of the request |
 | **[ info sync.httplogger ]** | Log category label |
-| **eca37889-6dea-42cf-81a2-c3826efbf146** | X-REQUEST-ID (used to match requests & responses) |
+| **3710cc12-7391-4793-8e89-00499dc11983** | X-REQUEST-ID (used to match requests & responses) |
 | **Header: { }** | List of HTTP headers |
 | **Data: []** | HTTP bodies (JSON, XML) |
 | **(112ms)** | Response time (since the request was sent) |
