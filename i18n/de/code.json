@@ -321,5 +321,40 @@
   "homepage.link.item.label.Developer Documentation": {
     "message": "Developer Dokumentation",
     "description": "The label for the link to developer documentation"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Suchergebnisse für \"{query}\"",
+    "description": "The search page title for non-empty query"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Suche in der Dokumentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "Überall"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "1 Dokument gefunden|{count} Dokumente gefunden",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Es wurden keine Dokumente gefunden",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "Keine Ergebnisse"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "Alle Ergebnisse außerhalb von \"{context}\" anzeigen"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "Alle Ergebnisse innerhalb von \"{context}\" anzeigen"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "Alle Ergebnisse anzeigen"
+  },
+  "theme.SearchBar.label": {
+    "message": "Suche",
+    "description": "The ARIA label and placeholder for search button"
   }
 }

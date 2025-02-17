@@ -43,21 +43,7 @@ const config: Config = {
           editUrl:
             'https://github.com/opencloud-eu/docs/tree/main',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -68,6 +54,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       logo: {
         alt: 'OpenCloud Logo',
@@ -93,7 +84,6 @@ const config: Config = {
           position: 'left',
           label: 'Developer',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right'
@@ -122,10 +112,6 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'Xing',
               href: 'https://www.xing.com/pages/heinleinsupportgmbh',
