@@ -31,7 +31,7 @@ Here you will find information on how to share files and folders.
 #### Working in Teams with Spaces:
 Here you will find information for dealing with Spaces.
 
-#### Desktop-Client:
+#### Desktop Client:
 Here you will find information on how to install and set up the desktop client.
 
 #### Roles:
