@@ -83,7 +83,7 @@ Navigate to the original repository and click the "New Pull Request" button. Pro
     - Screenshot should show the important aspects and you can put red frames around the specific buttons or areas.
     - Defined size for screenshots:
 
-        |what               | size          |
+        | content               | size          |
         |:-                 | :-:           |
         |complete screen    | width="1920"  |
         |menue              | width="400"   |
