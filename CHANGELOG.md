@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @ScharfViktor, @tbsbdr
+@Heiko-Pohl, @ScharfViktor, @Svanvith, @tbsbdr
+
+### 🐾 Guides
+
+- Add contribution guidelines [[#78](https://github.com/opencloud-eu/docs/pull/78)]
 
 ### 👷 Admin Documentation
 
@@ -12,7 +16,7 @@
 
 ### 🐛 Bug Fixes
 
-- center hero bg image [[#72](https://github.com/opencloud-eu/docs/pull/72)]
+- Fix center position on hero bg image [[#72](https://github.com/opencloud-eu/docs/pull/72)]
 
 ### 📦️ Build&Tools
 
