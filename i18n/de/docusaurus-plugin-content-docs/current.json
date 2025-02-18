@@ -7,10 +7,6 @@
     "message": "admin",
     "description": "The label for category admin in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.dev": {
-    "message": "dev",
-    "description": "The label for category dev in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.user": {
     "message": "user",
     "description": "The label for category user in sidebar tutorialSidebar"
@@ -54,14 +50,6 @@
   "sidebar.tutorialSidebar.category.Administration of OpenCloud.link.generated-index.description": {
     "message": "Anleitung zur Verwaltung deiner OpenCloud.",
     "description": "The generated-index page description for category Administration of OpenCloud in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Desktop Client": {
-    "message": "Desktop Client",
-    "description": "The label for category Desktop Client in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Desktop Client.link.generated-index.description": {
-    "message": "Anleitung für den OpenCloud Desktop Client.",
-    "description": "The generated-index page description for category Desktop Client in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Roles": {
     "message": "Rollen",
@@ -111,14 +99,6 @@
     "message": "Anleitung zur Verwaltung deiner OpenCloud.",
     "description": "The generated-index page description for category Administration of OpenCloud in sidebar user"
   },
-  "sidebar.user.category.Desktop Client": {
-    "message": "Desktop Client",
-    "description": "The label for category Desktop Client in sidebar user"
-  },
-  "sidebar.user.category.Desktop Client.link.generated-index.description": {
-    "message": "Anleitung für den OpenCloud Desktop Client.",
-    "description": "The generated-index page description for category Desktop Client in sidebar user"
-  },
   "sidebar.user.category.Roles": {
     "message": "Rollen",
     "description": "The label for category Roles in sidebar user"
@@ -126,5 +106,21 @@
   "sidebar.user.category.Roles.link.generated-index.description": {
     "message": "Anleitung zur Vergabe von Rollen in OpenCloud.",
     "description": "The generated-index page description for category Roles in sidebar user"
+  },
+  "sidebar.tutorialSidebar.category.OpenCloud Desktop": {
+    "message": "OpenCloud Desktop",
+    "description": "The label for category OpenCloud Desktop in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.OpenCloud Desktop.link.generated-index.description": {
+    "message": "Tutorials about the OpenCloud Desktop.",
+    "description": "The generated-index page description for category OpenCloud Desktop in sidebar tutorialSidebar"
+  },
+  "sidebar.user.category.OpenCloud Desktop": {
+    "message": "OpenCloud Desktop",
+    "description": "The label for category OpenCloud Desktop in sidebar user"
+  },
+  "sidebar.user.category.OpenCloud Desktop.link.generated-index.description": {
+    "message": "Tutorials about the OpenCloud Desktop.",
+    "description": "The generated-index page description for category OpenCloud Desktop in sidebar user"
   }
 }

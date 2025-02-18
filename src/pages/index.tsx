@@ -38,18 +38,7 @@ function HomepageHeader() {
                   Admin Documentation
               </Translate>
           </Link>
-        </div><br/> 
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/dev/intro">
-              <Translate
-                  id="homepage.link.item.label.Developer Documentation"
-                  description="The label for the link to developer documentation">
-                  Developer Documentation
-              </Translate>
-          </Link>
-        </div>
+        </div><br/>
       </div>
     </header>
   );
