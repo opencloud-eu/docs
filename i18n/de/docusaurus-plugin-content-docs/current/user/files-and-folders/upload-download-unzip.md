@@ -5,7 +5,7 @@ sidebar_position: 2
 # Hochladen - Herunterladen - Entpacken
 <br/><br/>
 
-## Hier wird beschrieben, wie man Dateien und Ordner hochlädt, herunterlädt und entpackt.
+## Hier wird beschrieben, wie man Dateien und Ordner hochlädt, herunterlädt und entpackt
 <br/><br/>
 
 ---
@@ -52,7 +52,7 @@ sidebar_position: 2
 
 ---
 
-### Entpacken:
+### Entpacken
 
 - Wenn Sie **mehrere** Dateien oder Ordner herunterladen, werden diese **als ZIP-Datei** gespeichert.
 <img src={require("./img/upload-download-unzip/zip-datei.png").default} width="1920"/>

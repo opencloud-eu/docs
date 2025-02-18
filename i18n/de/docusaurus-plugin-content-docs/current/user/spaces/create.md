@@ -11,7 +11,7 @@ Mit **Spaces** können Sie Daten mit bestimmten Personen innerhalb Ihrer Organis
 
 ---
 
-### Um einen neuen Space zu erstellen:
+### Um einen neuen Space zu erstellen
 
 - **Menü öffnen**  
    - Gehen Sie auf den Menüpunkt **Spaces** in der linken Seitenleiste
@@ -32,7 +32,7 @@ Mit **Spaces** können Sie Daten mit bestimmten Personen innerhalb Ihrer Organis
 
 ---
 
-### Raum anzeigen:
+### Raum anzeigen
 - Ihr neuer Space erscheint nun unter **Spaces** und ist bereit, genutzt zu werden.
 <img src={require("./img/create/neuer-space.png").default} alt="Neuer Space" width="1920"/> 
 <br/><br/>
@@ -41,6 +41,6 @@ Mit **Spaces** können Sie Daten mit bestimmten Personen innerhalb Ihrer Organis
 <br/><br/>
 ---
 
-### Wichtiger Hinweis:
+### Wichtiger Hinweis
 Spaces können **nur innerhalb Ihrer eigenen Organisation** dauerhaft freigegeben werden.
 <br/><br/>

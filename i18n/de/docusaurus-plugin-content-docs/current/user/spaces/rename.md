@@ -5,10 +5,10 @@ title: Space umbenennen
 ---
 <br/><br/>
 
-## Man kann den Namen eines Spaces in OpenCloud umbenennen.
+## Man kann den Namen eines Spaces in OpenCloud umbenennen
 <br/><br/>
 
-### Hier zeigen wir wie es geht:
+### Hier zeigen wir wie es geht
 <br/><br/>
 ---
 

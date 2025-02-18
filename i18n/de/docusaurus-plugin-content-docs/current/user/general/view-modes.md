@@ -6,13 +6,13 @@ title: Anzeigemodi
 # Dateilistenansichten in OpenCloud ändern
 <br/><br/>
 
-## In OpenCloud können Sie zwischen verschiedenen **Anzeigemodi** für Ihre Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen.
+## In OpenCloud können Sie zwischen verschiedenen **Anzeigemodi** für Ihre Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen
 <br/><br/>
 
 
 ---
 
-### Verfügbare Anzeigesmodi:
+### Verfügbare Anzeigesmodi
 
 #### **Standard-Tabellenansicht**  
 - Die klassische **Listenansicht**, in der alle Dateien und Ordner in einer detaillierten Tabelle angezeigt werden.

@@ -13,7 +13,7 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 
 ### Space deaktivieren
 
-#### Über die Spaceübersicht:
+#### Über die Spaceübersicht
 - Wählen Sie den gewünschten Space aus.  
 - Klicken Sie auf **Deaktivieren** in der **Top-Leiste**.  
 <img src={require("./img/enable-disable/deaktivieren-spaceuebersicht.png").default} alt="Admin general" width="1920"/>
@@ -22,18 +22,18 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 <img src={require("./img/enable-disable/drei-punkte-menue.png").default} alt="Admin general" width="400"/>
 <br/><br/>
 
-#### Im Space:  
+#### Im Space
 - Gehen Sie direkt in den **Space**.  
 - Klicken Sie dort auf das **Drei-Punkte-Menü** und wählen Sie **Deaktivieren**.  
 <img src={require("./img/enable-disable/im-space-deaktivieren.png").default} alt="Admin general" width="1920"/>   
 <br/><br/>
 
-#### Bestätigen:
+#### Bestätigen
 - Bestätigen Sie die Deaktivierung.  
 <img src={require("./img/enable-disable/deaktivieren-bestaetigen.png").default} alt="Admin general" width="500"/>
 <br/><br/>
 
-### **Hinweis:**
+### **Hinweis**
 **Es werden keine Daten gelöscht, aber nur der Space-Admin oder der Cloud-Admin können den Space aktivieren.**
 <br/><br/>
 
@@ -41,14 +41,14 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 
 ### Space aktivieren
 
-#### Deaktivierte Spaces:
+#### Deaktivierte Spaces
 - Nachdem ein Space deaktiviert wurde, erscheint die Option **Aktivieren** nun anstelle von **Deaktivieren**. 
 <img src={require("./img/enable-disable/aktivieren-button.png").default} alt="Admin general" width="1920"/> 
 <br/><br/>
 - Durch klicken auf **Aktivieren** wird der Space wieder reaktiviert.  
 <br/><br/>
 
-#### Space nicht sichtbar:
+#### Space nicht sichtbar
 - Wenn der deaktivierte Space nicht sichtbar ist, kann der Filter **Deaktivierte Spaces einblenden** aktiviert werden.  
 <img src={require("./img/enable-disable/space-nicht-sichtbar.png").default} alt="Admin general" width="1920"/>   
 <br/><br/>
@@ -56,11 +56,11 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 <img src={require("./img/enable-disable/deaktivierte-spaces-einblenden.png").default} alt="Admin general" width="1920"/>  
 <br/><br/>
 
-#### Administrator-Zugang:
+#### Administrator-Zugang
 - In den **Administrationseinstellungen** unter Spaces kann auch ein **Cloud-Admin** oder **Firmen-Admin** den Space reaktivieren.  
 <br/><br/>
 
-#### Reaktivieren:
+#### Reaktivieren
 - Der Administrator klickt auf das **Drei-Punkte-Menü** und wählt **Aktivieren**.  
 <img src={require("./img/enable-disable/reaktivieren.png").default} alt="Admin general" width="1920"/>  
 <br/><br/>
@@ -68,7 +68,7 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 <img src={require("./img/enable-disable/aktivieren-bestaetigen.png").default} alt="Admin general" width="500"/>
 <br/><br/>
 
-#### Space wieder verfügbar:
+#### Space wieder verfügbar
 - Der Space wird nun wieder in der **Spaceübersicht** angezeigt.  
 <img src={require("./img/enable-disable/wieder-verfuegbar.png").default} alt="Admin general" width="1920"/>  
 <br/><br/>

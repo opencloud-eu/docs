@@ -13,7 +13,7 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 ---
 
 ### Allgemein 
-- **Übersicht über Ausgabe und Version**: 
+- **Übersicht über Ausgabe und Version**
    Sie können Informationen über die **Edition** und **Version** Ihrer OpenCloud anzeigen. 
 - **Logo ändern**: Klicken Sie auf das **'Drei-Punkte-Menü'** neben dem aktuellen Logo, um ein neues Logo hochzuladen und das Aussehen anzupassen. 
    <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
@@ -22,7 +22,7 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 ---
 
 ### Benutzer 
-- **Übersicht der Benutzer**: 
+- **Übersicht der Benutzer**
    Hier haben Sie einen Überblick über alle **Benutzer** von Ihre OpenCloud. 
 - **Benutzer verwalten**: 
    Abhängig von Ihren Benutzerverwaltungseinstellungen können Sie: - Benutzer erstellen oder löschen - Benutzer bearbeiten (z.B. Rechte oder Einstellungen ändern) - Quota (Speicherplatz) von Benutzern ändern - Benutzer in Gruppen hinzufügen oder entfernen - Allow or prohibit logins (for individual users) 
@@ -32,7 +32,7 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 ---
 
 ### Gruppen 
-- **Übersicht der Gruppen**: 
+- **Übersicht der Gruppen**
    Hier können Sie die vorhandenen **Gruppen** Ihrer OpenCloud anzeigen. 
 - **Gruppen verwalten**: 
    Sie können **lokale Gruppen erstellen, bearbeiten oder löschen** und Mitglieder hinzufügen oder entfernen. 
@@ -43,7 +43,7 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 ---
 
 ### Spaces 
-- **Übersicht der Spaces**: 
+- **Übersicht der Spaces**
    Hier sehen Sie alle vorhandenen **Spaces** in Ihrer OpenCloud. 
    - **Space Management**: Als Administrator haben Sie volle Rechte auf: **Bearbeiten** 
    - **Deaktivieren oder aktivieren** 

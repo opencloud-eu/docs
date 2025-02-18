@@ -5,12 +5,12 @@ sidebar_position: 1
 # Erstellen - Umbenennen - Verschieben
 <br/><br/>
 
-## Sie können ganz einfach neue Text-, Tabellen- und Präsentationsdateien in der Weboberfläche erstellen. Diese können Sie auch umbenennen oder an einen anderen Speicherort verschieben.
+## Sie können ganz einfach neue Text-, Tabellen- und Präsentationsdateien in der Weboberfläche erstellen. Diese können Sie auch umbenennen oder an einen anderen Speicherort verschieben
 <br/><br/>
 
 ---
 
-### So erstellen Sie Dateien und Ordner: 
+### So erstellen Sie Dateien und Ordner 
 - Klicken Sie auf die Schaltfläche **"+ Neu"** oben in der **Actionbar**. 
 <img src={require("./img/create-rename-move/neu-button.png").default} width="1920"/> 
 <br/><br/> 
@@ -30,7 +30,7 @@ Wenn es sich um eine Datei handelt, wird sie automatisch im Bearbeitungsmodus ge
 
 ---
 
-### So benennen Sie Dateien oder Ordner um: 
+### So benennen Sie Dateien oder Ordner um 
 - Öffnen Sie das **Kontextmenü**, indem Sie entweder: 
     - **mit der rechten Maustaste** auf die Datei oder den Ordner klicken, 
     - oder indem Sie auf die **drei Punkte** rechts in der entsprechenden Zeile klicken. 
@@ -49,7 +49,7 @@ Der neue Name wird angewendet!
 
 ---
 
-### So verschieben Sie Dateien oder Ordner: 
+### So verschieben Sie Dateien oder Ordner
 - Treffen Sie eine Auswahl: 
     - Wählen Sie die Datei(en) oder Ordner aus, die Sie verschieben möchten. 
     <img src={require("./img/create-rename-move/ordner-auswaehlen.png").default} width="1920"/> 

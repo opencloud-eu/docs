@@ -11,19 +11,19 @@ Sie können Ihren Space an zwei Stellen anpassen:
 - Sobald Sie sich bereits im Space befinden
 <br/><br/>
 
-### So passen Sie Ihren Space an:
+### So passen Sie Ihren Space an
 <br/><br/>
 
 ---
 
-#### Öffnen Sie das „Kontextmenü“:
+#### Öffnen Sie das „Kontextmenü“
 - Klicken Sie auf das „Kontextmenü“ in der Raumübersicht oder direkt im Raum.
 <br/><br/>
 
 ---
 
-### Einstellungen vornehmen:
-#### Hier können Sie die folgenden Optionen ändern:
+### Einstellungen vornehmen
+#### Hier können Sie die folgenden Optionen ändern
 
 - **Beschreibung bearbeiten**
 
@@ -54,7 +54,7 @@ Sie können Ihren Space an zwei Stellen anpassen:
     <img src={require("./img/customize/symbol-als-spacebild.png").default} alt="Symbol als Spacebild" width="1920"/>
 <br/><br/>
 
-#### Beschreibung direkt ändern:
+#### Beschreibung direkt ändern
 - Die Beschreibung des Spaces kann auch direkt im Space geändert werden, indem man auf den **Pfeil** neben der Beschreibung klickt.
 <img src={require("./img/customize/beschreibung-bearbeiten.png").default} alt="Beschreibung bearbeiten" width="1920"/>
 <br/><br/>

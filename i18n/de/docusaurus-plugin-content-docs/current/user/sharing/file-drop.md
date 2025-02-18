@@ -5,16 +5,16 @@ sidebar_position: 3
 # File Drop
 <br/><br/>
 
-## File Drop (geheim) - So funktioniert es:
+## File Drop (geheim) - So funktioniert es
 <br/><br/>
 
-### Mit dem **File Drop** können Personen, die einen bestimmten Link erhalten (die sogenannten **"Linkempfänger"**), Dateien in einen gemeinsamen Ordner hochladen.
+### Mit dem **File Drop** können Personen, die einen bestimmten Link erhalten (die sogenannten **"Linkempfänger"**), Dateien in einen gemeinsamen Ordner hochladen
 **Der Trick:** Die **"Linkempfänger“** können die bereits im Ordner befindlichen Dateien **nicht sehen**.
 <br/><br/>
 
 ---
 
-#### Erstellen Sie eine **"Dateiablage"**:
+#### Erstellen Sie eine **"Dateiablage"**
 - Klicken Sie auf das **"Drei-Punkte-Menü“** neben dem Namen der Datei oder des Ordners, den Sie freigeben möchten.
 <img src={require("./img/file-drop/drei-punkte-menue.png").default} width="1920"/> 
 <br/><br/>
@@ -37,7 +37,7 @@ sidebar_position: 3
 
 ---
 
-#### To do's für den **"Linkempfänger“**:
+#### To do's für den **"Linkempfänger“**
 - Der **"Linkempfänger“** öffnet den empfangenen Link in einem Browser.
 <img src={require("./img/file-drop/file-drop-website.png").default} width="1920"/>
 <br/><br/>
@@ -54,5 +54,5 @@ sidebar_position: 3
 
 ---
 
-### Wichtig: 
+### Wichtig
 Der **"Linkempfänger“** hat **keinen Zugriff** auf bestehende Dateien - **er kann nur neue Dateien hinzufügen**.

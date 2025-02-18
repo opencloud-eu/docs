@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ---
 
-### Dateien oder Ordner löschen: 
+### Dateien oder Ordner löschen
 - Treffen Sie eine Auswahl: 
     - Wählen Sie die Datei(en) oder Ordner aus, die Sie löschen möchten. 
     <img src={require("./img/delete-restore/markierter-ordner.png").default} width="1920"/> 
@@ -30,8 +30,8 @@ Die Dateien oder Ordner werden **in den Bereich **„Gelöschte Dateien“** ver
 
 ---
 
-### Dateien oder Ordner wiederherstellen: 
-- Navigieren Sie zu **"Gelöschte Dateien"**:
+### Dateien oder Ordner wiederherstellen 
+- Navigieren Sie zu **"Gelöschte Dateien"**
     - Klicken Sie in der linken Seitenleiste auf **"Gelöschte Dateien"**. 
     <img src={require("./img/delete-restore/geloeschte-dateien.png").default} width="1920"/> 
     <br/><br/> 

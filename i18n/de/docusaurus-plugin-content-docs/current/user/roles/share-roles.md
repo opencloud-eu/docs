@@ -4,7 +4,7 @@ title: Rollen beim Teilen
 ---
 
 
-### Rollen beim teilen in OpenCloud:
+### Rollen beim teilen in OpenCloud
 
 | Rolle              | anzeigen  | herunterladen | hochladen     | bearbeiten  | erstellen   | löschen    | nur doc, img, pdf mit Wasserzeichen anzeigen |
 | :----------       | :-:   | :-:      | :-:        | :-:   | :-:   | :-:       | :-:                                    |
