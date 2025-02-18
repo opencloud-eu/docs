@@ -20,11 +20,13 @@ We welcome suggestions for improvements. To propose an enhancement, [open a new 
    ```bash
    git clone https://github.com/opencloud-eu/docs.git
    cd docs
+   ```
 
 3. **Create a New Branch**:
 
     ```bash
     git checkout -b feature/your-feature-name
+    ```
 
 4. **Make Your Changes**: 
 
@@ -34,11 +36,13 @@ Implement your changes, adhering to the docs style.
 
     ```bash
     git commit -m "Brief description of your changes"
+    ```
 
 6. **Push to Your Fork**:
 
     ```bash
     git push origin feature/your-feature-name
+    ```
 
 7. **Open a Pull Request**:
 
@@ -48,12 +52,12 @@ Navigate to the original repository and click the "New Pull Request" button. Pro
 
 #### Branch names
 
-- Start the name with a capital letter ("Adjust Footer Links")
-- Use the present tense
+- Are lowercase without spaces ("adjust-footer-links")
+- Use present tense
 
 #### Commit Messages
 
-- Use the present tense ("Add feature" not "Added feature").
+- Use present tense ("Add feature" not "Added feature").
 - Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
 - Limit the first line to 72 characters or less
 - Reference issues and pull requests liberally after the first line
@@ -69,24 +73,24 @@ Navigate to the original repository and click the "New Pull Request" button. Pro
 
 - ### Formatting & Structure
 
-    - Headings & Subheadings: Well-organized with clear section titles (e.g., “How to create files and folders”).
+    - Headings & Subheadings: Use clear and well-structured section titles (e.g., 'How to create files and folders').
     - Bullet Points: Used to break down steps for better readability.
     - Bold Highlights: Important actions (e.g., “Click on ‘Create’”) are bolded for emphasis.
     - Images & Visual Aids: Screenshots are included to visually reinforce each step.
-    - Whitespace & Line Breaks: Generous use of spacing to avoid clutter and improve readability.
+    - Whitespace & Line Breaks: Use generous spacing to improve readability and avoid clutter.
 
 - ### Visual & Interactive Elements
 
-    - Icons & Buttons: Emphasizes UI elements like the “+ New” button and three-dot menu.
-    - Action-Oriented Phrasing: Uses verbs like "Click," "Select," "Enter," and "Confirm" to promote interaction.
+    - Icons & Buttons: Highlight UI elements such as the “+ New” button and the three-dot menu.
+    - Action-Oriented Phrasing: Use verbs like 'Click,' 'Select,' 'Enter,' and 'Confirm' to encourage user interaction.
     - Code-Like Formatting: Uses inline code or UI-style highlights for menu options.
-    - Screenshot should show the important aspects and you can put red frames around the specific buttons or areas.
-    - Defined size for screenshots:
+    - Screenshots should highlight important aspects, and you may use red frames to emphasize specific buttons or areas.
+    - Defined sizes for screenshots:
 
-        | content               | size          |
+        | content           | size          |
         |:-                 | :-:           |
         |complete screen    | width="1920"  |
-        |menue              | width="400"   |
+        |menu               | width="400"   |
         |pop up             | width="500"   |
 
 
