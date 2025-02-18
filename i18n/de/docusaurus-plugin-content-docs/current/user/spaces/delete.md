@@ -9,26 +9,26 @@ title: Space Löschen
 Bevor Sie einen Space löschen können, muss er zunächst deaktiviert werden.
 <br/><br/>
 
-### Hier sind die Schritte, die Sie befolgen sollten:
+### Hier sind die Schritte, die Sie befolgen sollten
 <br/><br/>
 
 ---
 
-#### Space deaktivieren:
+#### Space deaktivieren
 - Klicken Sie in der **Top-Bar** oder im **Kontext-Menü** aud **Deaktivieren**, um den Space in einen deaktivierten Zustand zu versetzen, bevor Sie ihn löschen.
 <img src={require("./img/delete/deaktivieren-button.png").default} alt="Select Space" width="1920"/>
 <br/><br/>
 
 ---
 
-#### Space sichtbar machen:  
+#### Space sichtbar machen
 - Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, klicken Sie auf den Filter **Deaktivierte Spaces einblenden**, um ihn wieder anzuzeigen.
 <img src={require("./img/delete/einblenden.png").default} alt="Select Space" width="1920"/>
 <br/><br/>
 
 ---
 
-#### Space löschen:
+#### Space löschen
 
 - **Space auswählen**  
    - Wählen Sie den Space aus, den Sie löschen möchten.
@@ -48,7 +48,7 @@ Bevor Sie einen Space löschen können, muss er zunächst deaktiviert werden.
 
 ---
 
-### Bitte beachten:
+### Bitte beachten
 
 ⚠️ **Achtung!**  
 Ein gelöschter Speicherplatz **kann nicht wiederhergestellt werden**. Er ist dauerhaft und unwiederbringlich gelöscht.  

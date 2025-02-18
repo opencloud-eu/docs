@@ -8,9 +8,9 @@ sidebar_position: 5
 ## Mit OpenCloud können Sie Links zu Websites oder Dateien erstellen. 
 <br/><br/>
 
-### So funktieniert es:
+### So funktieniert es
 
-#### Link erstellen:
+#### Link erstellen
 - Klicken Sie auf **"+ Neu ‚** in den **Batch-Aktionen** und wählen Sie **‘Link “**.
 <img src={require("./img/link/neu-button.png").default} width="1920"/>
 <br/><br/>
@@ -32,7 +32,7 @@ sidebar_position: 5
 
 ---
 
-### Shortcuts nutzen:
+### Shortcuts nutzen
 
 - Klicken Sie auf die **Verknüpfung**, um die verlinkte Webseite oder Datei in einem **neuen Browser-Tab** zu öffnen,
 <img src={require("./img/link/shortcut.png").default} width="1920"/>

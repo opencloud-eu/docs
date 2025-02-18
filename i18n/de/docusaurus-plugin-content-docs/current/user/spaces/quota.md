@@ -9,12 +9,12 @@ title: Space Quota
 Als Space-Administrator können Sie die Speicherkapazität (Quote) eines Spaces anpassen, um den verfügbaren Speicherplatz nach Bedarf zu erhöhen oder zu verringern. 
 <br/><br/>
 
-### So funktioniert es:
+### So funktioniert es
 <br/><br/>
 
 ---
 
-#### Steps to edit the Space quota:
+#### Steps to edit the Space quota
 
 - **Quota ändern**  
    - Wählen Sie die Option **Quota ändern** in der **Top-Bar** 

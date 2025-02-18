@@ -7,7 +7,7 @@ sidebar_position: 2
 # Externes Teilen (Öffentliche Links)
 <br/><br/>
 
-## Externes Teilen von Dateien und Ordner in OpenCloud.
+## Externes Teilen von Dateien und Ordner in OpenCloud
 Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreifend** geteilt werden.
 <br/><br/>
 
@@ -21,23 +21,23 @@ Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreife
 <img src={require("./img/extern/drei-punkte-menue.png").default} width="1920"/> 
 <br/><br/>
 
-#### Teilen auswählen:
+#### Teilen auswählen
 - Wählen Sie **"Teilen “** aus dem Dropdown-Menü.
 <img src={require("./img/extern/teilen-menue.png").default} width="400"/> 
 <br/><br/>
 
-#### Sidebar Fenster:
+#### Sidebar Fenster
 - Auf der rechten Seite des Bildschirms öffnet sich ein Seitenleistenfenster.
 <img src={require("./img/extern/sidebar-fenster.png").default} width="1920"/> 
 <br/><br/>
 
-#### Öffentlichen Link hinzufügen:
+#### Öffentlichen Link hinzufügen
 - Scrollen Sie im Fenster der Seitenleiste nach unten und klicken Sie auf **"Link hinzufügen “**.
 <img src={require("./img/extern/oeffentliche-links-auswahl.png").default} width="400"/>    
 <img src={require("./img/extern/link-hinzufuegen.png").default} width="400"/> 
 <br/><br/>
 
-#### Legen Sie die Optionen für den öffentlichen Link fest:
+#### Legen Sie die Optionen für den öffentlichen Link fest
 - **Ein Pop-up-Fenster** wird geöffnet, in dem Sie die folgenden Optionen einstellen können:
 <img src={require("./img/extern/oeffentliche-links-popup.png").default} width="400"/>
 <img src={require("./img/extern/oeffentliche-links-button.png").default} width="400"/> 
@@ -45,8 +45,8 @@ Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreife
 
 ---
 
-### Optionen im Pop-up-Fenster:
-#### Rechte für den Link:
+### Optionen im Pop-up-Fenster
+#### Rechte für den Link
 - Wählen Sie die gewünschten **Zugriffsrechte** für die Empfänger:
     - **"Kann ansehen “**: Der Link-Empfänger kann die Datei ansehen und herunterladen, aber keine Dateien bearbeiten oder hochladen.
     - **"Kann bearbeiten “**: Der Linkempfänger kann die Datei anzeigen, herunterladen, bearbeiten und löschen sowie Dateien in den Ordner hochladen.
@@ -54,7 +54,7 @@ Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreife
     <img src={require("./img/extern/rechte.png").default} width="400"/> 
 <br/><br/>
 
-#### Passwort für den Link festlegen:
+#### Passwort für den Link festlegen
 - Aktivieren Sie das Passwort, indem Sie es in das Eingabefeld unter **"Passwort “** eingeben.
 - Die Passwortanforderungen erscheinen unterhalb des Eingabefeldes.
 <img src={require("./img/extern/passwort-auswahl.png").default} width="400"/> 
@@ -67,14 +67,14 @@ Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreife
     <img src={require("./img/extern/passwort-icon-3.png").default} width="400"/>
 <br/><br/>
 
-#### Legen Sie das Verfallsdatum für den Link fest:
+#### Legen Sie das Verfallsdatum für den Link fest
 - Geben Sie unter „Ablaufdatum“ ein Datum ein, um eine zeitliche Begrenzung für den Link festzulegen. Wenn das Datum abgelaufen ist, ist der Link nicht mehr zugänglich.
 <img src={require("./img/extern/ablaufdatum.png").default} width="400"/> 
 <br/><br/>
 
 ---
 
-### Link erstellen:
+### Link erstellen
 - Wenn Sie alle Optionen eingestellt haben, klicken Sie auf **"Link kopieren “**, um den öffentlichen Link zu erstellen.
 <img src={require("./img/extern/link-kopieren-button.png").default} width="400"/> 
 - Der Link ist nun erstellt und kann mit den Empfängern geteilt werden.

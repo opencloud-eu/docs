@@ -8,7 +8,7 @@ title: Tags
 ## Tags / Schlagworte hinzufügen und verwalten mit OpenCloud
 <br/><br/>
 
-### Mit OpenCloud können Sie Dateien und Ordner mit **Tags** versehen, um diese einfacher zu suchen oder zu gruppieren. Hier erfahren Sie, wie es funktioniert:
+### Mit OpenCloud können Sie Dateien und Ordner mit **Tags** versehen, um diese einfacher zu suchen oder zu gruppieren. Hier erfahren Sie, wie es funktioniert
 <br/><br/>
 
 ---
