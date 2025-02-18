@@ -14,6 +14,10 @@
 
 - Enhance quickstart guide [[#75](https://github.com/opencloud-eu/docs/pull/75)]
 
+### 👤 User Documentation
+
+- Improve styling for english documentation [[#80](https://github.com/opencloud-eu/docs/pull/80)]
+
 ### 🐛 Bug Fixes
 
 - Fix center position on hero bg image [[#72](https://github.com/opencloud-eu/docs/pull/72)]
