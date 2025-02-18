@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @ScharfViktor, @Svanvith, @tbsbdr
+@AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith, @tbsbdr
 
 ### 🐾 Guides
 
@@ -20,4 +20,5 @@
 
 ### 📦️ Build&Tools
 
+- Remove dev docs [[#79](https://github.com/opencloud-eu/docs/pull/79)]
 - Adjust footer links [[#77](https://github.com/opencloud-eu/docs/pull/77)]
