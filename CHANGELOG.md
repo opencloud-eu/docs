@@ -16,6 +16,7 @@
 
 ### 👤 User Documentation
 
+- Improve styling for German documentation [[#82](https://github.com/opencloud-eu/docs/pull/82)]
 - Improve styling for english documentation [[#80](https://github.com/opencloud-eu/docs/pull/80)]
 
 ### 🐛 Bug Fixes
