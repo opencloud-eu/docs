@@ -318,10 +318,6 @@
     "message": "Admin Documentation",
     "description": "The label for the link to admin documentation"
   },
-  "homepage.link.item.label.Developer Documentation": {
-    "message": "Developer Documentation",
-    "description": "The label for the link to developer documentation"
-  },
   "theme.SearchBar.noResultsText": {
     "message": "No results"
   },

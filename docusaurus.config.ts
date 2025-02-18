@@ -78,12 +78,6 @@ const config: Config = {
           label: 'Admin',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'dev',
-          position: 'left',
-          label: 'Developer',
-        },
-        {
           type: 'localeDropdown',
           position: 'right'
         }
@@ -102,10 +96,6 @@ const config: Config = {
               label: 'Admin',
               to: '/docs/admin/intro',
             },
-            {
-              label: 'Developer',
-              to: '/docs/dev/intro',
-            },
           ],
         },
         {
@@ -113,7 +103,7 @@ const config: Config = {
           items: [
             {
               label: 'OpenCloud Community',
-              href: 'https://opencloud.eu/en/opencloud-community',
+              href: 'https://opencloud.eu/opencloud-community',
             },
             {
               label: 'GitHub',
@@ -126,11 +116,11 @@ const config: Config = {
           items: [
             {
               label: 'OpenCloud',
-              href: 'https://opencloud.eu/de',
+              href: 'https://opencloud.eu/',
             },
             {
               label: 'Blog & News',
-              href: 'https://opencloud.eu/en/blog-news',
+              href: 'https://opencloud.eu/blog-news',
             },
             {
               label: 'Linkedin',

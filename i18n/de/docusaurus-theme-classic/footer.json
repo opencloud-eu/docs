@@ -19,38 +19,6 @@
     "message": "Admin",
     "description": "The label of footer link with label=Admin linking to /docs/admin/intro"
   },
-  "link.item.label.Developer": {
-    "message": "Developer",
-    "description": "The label of footer link with label=Developer linking to /docs/dev/intro"
-  },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
-  },
-  "link.item.label.Xing": {
-    "message": "Xing",
-    "description": "The label of footer link with label=Xing linking to https://www.xing.com/pages/heinleinsupportgmbh"
-  },
-  "link.item.label.X (Twitter)": {
-    "message": "X (Twitter)",
-    "description": "The label of footer link with label=X (Twitter) linking to https://x.com/heinleinsupport/status/1857429869593788617"
-  },
-  "link.item.label.LinkedIn": {
-    "message": "LinkedIn",
-    "description": "The label of footer link with label=LinkedIn linking to https://de.linkedin.com/company/heinlein-support"
-  },
-  "link.item.label.Heinlein-Support": {
-    "message": "Heinlein-Support",
-    "description": "The label of footer link with label=Heinlein-Support linking to https://www.heinlein-support.de"
-  },
-  "link.item.label.mailbox.org": {
-    "message": "mailbox.org",
-    "description": "The label of footer link with label=mailbox.org linking to https://mailbox.org/de"
-  },
-  "link.item.label.OpenTalk": {
-    "message": "OpenTalk",
-    "description": "The label of footer link with label=OpenTalk linking to https://opentalk.mailbox.org"
-  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/opencloud-eu"
@@ -58,5 +26,29 @@
   "copyright": {
     "message": "Copyright © 2025 OpenCloud, powered by Heinlein Gruppe",
     "description": "The footer copyright"
+  },
+  "link.item.label.OpenCloud Community": {
+    "message": "OpenCloud Community",
+    "description": "The label of footer link with label=OpenCloud Community linking to https://opencloud.eu/opencloud-community"
+  },
+  "link.item.label.OpenCloud": {
+    "message": "OpenCloud",
+    "description": "The label of footer link with label=OpenCloud linking to https://opencloud.eu/"
+  },
+  "link.item.label.Blog & News": {
+    "message": "Blog & News",
+    "description": "The label of footer link with label=Blog & News linking to https://opencloud.eu/blog-news"
+  },
+  "link.item.label.Linkedin": {
+    "message": "Linkedin",
+    "description": "The label of footer link with label=Linkedin linking to https://www.linkedin.com/company/opencloud-eu"
+  },
+  "link.item.label.Mastodon": {
+    "message": "Mastodon",
+    "description": "The label of footer link with label=Mastodon linking to https://social.opencloud.eu/@OpenCloud"
+  },
+  "link.item.label.Bluesky": {
+    "message": "Bluesky",
+    "description": "The label of footer link with label=Bluesky linking to https://bsky.app/profile/opencloud.eu"
   }
 }

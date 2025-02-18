@@ -318,10 +318,6 @@
     "message": "Admin Dokumentation",
     "description": "The label for the link to admin documentation"
   },
-  "homepage.link.item.label.Developer Documentation": {
-    "message": "Developer Dokumentation",
-    "description": "The label for the link to developer documentation"
-  },
   "theme.SearchPage.existingResultsTitle": {
     "message": "Suchergebnisse für \"{query}\"",
     "description": "The search page title for non-empty query"
