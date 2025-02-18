@@ -29,15 +29,15 @@
   },
   "link.item.label.OpenCloud Community": {
     "message": "OpenCloud Community",
-    "description": "The label of footer link with label=OpenCloud Community linking to https://opencloud.eu/en/opencloud-community"
+    "description": "The label of footer link with label=OpenCloud Community linking to https://opencloud.eu/opencloud-community"
   },
   "link.item.label.OpenCloud": {
     "message": "OpenCloud",
-    "description": "The label of footer link with label=OpenCloud linking to https://opencloud.eu/de"
+    "description": "The label of footer link with label=OpenCloud linking to https://opencloud.eu/"
   },
   "link.item.label.Blog & News": {
     "message": "Blog & News",
-    "description": "The label of footer link with label=Blog & News linking to https://opencloud.eu/en/blog-news"
+    "description": "The label of footer link with label=Blog & News linking to https://opencloud.eu/blog-news"
   },
   "link.item.label.Linkedin": {
     "message": "Linkedin",
