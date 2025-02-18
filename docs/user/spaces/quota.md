@@ -10,7 +10,7 @@ As a Space administrator, you can adjust the storage capacity (quota) of a Space
 
 ---
 
-### Steps to edit the Space quota:
+### Steps to edit the Space quota
 
 - **Edit quota**  
    - Select the **Edit quota** option in the Top-Bar 

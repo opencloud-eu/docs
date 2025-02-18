@@ -8,16 +8,16 @@ title: Installation
 
 To install the OpenCloud Desktop, follow these simple steps:
 
-## 1. Download the Installation File
+## Download the Installation File
 - Open your browser and go to [www.xxxxxx.de](https://www.xxxxxx.de).
 - Choose the correct version for your operating system (Windows, macOS, or Linux).
 - Click **Download** to start the process.
 
-## 2. Start the Installation
+## Start the Installation
 - Once the download is complete, double-click the installation file to open it.
 - The installation assistant will guide you through the process.
 
-## 3. Follow the Installation Steps
+## Follow the Installation Steps
 1. **Introduction**: Click **"Continue"** to proceed.
 
 <!--- <img src={require("./img/installation/installation-welcome.png").default} alt="installation welcome page" width="400"/>--->

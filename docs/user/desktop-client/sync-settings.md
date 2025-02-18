@@ -48,5 +48,5 @@ title: Synchronization Settings
 
 ---
 
-### **Tip:**  
+### **Tip**  
 Adjusting these settings allows you to **optimize storage space and network usage**, ensuring only the files you need are kept in sync.

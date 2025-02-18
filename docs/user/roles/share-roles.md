@@ -5,7 +5,7 @@ title: Share roles in OpenCloud
 ---
 
 
-### Sharing Roles in OpenCloud:
+### Sharing Roles in OpenCloud
 
 | Role              | view  | download | upload     | edit  | add   | delete    | only view doc, img, pdf with watermark |
 | :----------       | :-:   | :-:      | :-:        | :-:   | :-:   | :-:       | :-:                                    |

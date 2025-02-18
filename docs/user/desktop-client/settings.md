@@ -8,12 +8,12 @@ title: Settings
 
 You can customize your OpenCloud Desktop Client settings by following these steps:
 
-## 1. Open Settings
+## Open Settings
 - Click on **"Settings"** in the top-right corner of the Desktop Client.
 
 <img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
 
-## 2. Overview of Settings Sections
+## Overview of Settings Sections
 
 ### General Settings
 - Enable or disable auto-start when log in

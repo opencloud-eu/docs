@@ -9,7 +9,7 @@ sidebar_position: 7
 OpenCloud saves **different versions** of files. This **allows** you to **restore or download previous versions**:
 <br/><br/>
 
-### View and restore versions:
+### View and restore versions
 #### Open details:
 - **Right-click** on the file
 - or **click** on the **three dots** in the corresponding file line.

@@ -10,7 +10,7 @@ title: External
 ### Public links - external sharing of files and folders in OpenCloud
 With **public links**, you can share files and/or folders **across organizations**.
 <br/><br/>
-### **Here are the steps to create a public link:**
+### **Here are the steps to create a public link**
 <br/><br/>
 ---
 #### Open sharing options:
@@ -33,8 +33,8 @@ Scroll down in the sidebar window and click on **“Add link”**.
 
 ---
 
-### Options in the pop-up window:
-#### Rights for the link:
+### Options in the pop-up window
+#### Rights for the link
 - Select the desired **access rights** for the recipients:
     - **“Can view"**: The link recipient can view and download the file, but cannot edit or upload files.
     - **“Can edit"**: The link recipient can view, download, edit and delete the file, as well as upload files to the folder.
@@ -58,7 +58,7 @@ Scroll down in the sidebar window and click on **“Add link”**.
 
 ---
 
-### Create link:
+### Create link
 - Once all options have been set, click on **“Copy link”** to generate the public link.
 <img src={require("./img/extern/copy-link-button.png").default} alt="copy link" width="400"/> 
 - The link is now created and can be shared with the recipients.<br/>

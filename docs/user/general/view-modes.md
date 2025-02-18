@@ -6,13 +6,13 @@ title: Viewmodes
 # Change file list views in OpenCloud
 <br/><br/>
 
-## In OpenCloud you can choose between different **view modes** for your files and folders to customize the display according to your preferences.
+## In OpenCloud you can choose between different **view modes** for your files and folders to customize the display according to your preferences
 <br/><br/>
 
 
 ---
 
-### Available view modes:
+### Available view modes
 
 #### **Default table view**  
 → The classic **List view**, in which all files and folders are displayed in a detailed table.

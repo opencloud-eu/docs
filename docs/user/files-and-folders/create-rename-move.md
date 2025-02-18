@@ -5,11 +5,11 @@ sidebar_position: 1
 # Create - Rename - Move
 <br/><br/>
 
-## You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location.
+## You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location
 <br/><br/>
 
 
-### How to create files and folders:
+### How to create files and folders
 - Click on the **“+ New”** button at the top of the bar.
 <img src={require("./img/create-rename-move/new-button.png").default} alt="new button" width="1920"/>
 <br/><br/>
@@ -26,7 +26,7 @@ sidebar_position: 1
 <br/><br/>
 
 
-### To rename files or folders:
+### To rename files or folders
 - Open the **context menu** by either: 
     - **right-clicking** on the file or folder,
     - or clicking on the **three dots** on the right in the corresponding line.
@@ -45,7 +45,7 @@ Confirm by clicking on **“Rename”**.
 <br/><br/>
 
 
-### How to move files or folders:
+### How to move files or folders
 - Make a selection: 
     - Select the file(s) or folder(s) you want to move.
 <img src={require("./img/create-rename-move/mark-folder.png").default} alt="mark folder or files" width="1920"/>
