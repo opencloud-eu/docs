@@ -112,16 +112,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Xing',
-              href: 'https://www.xing.com/pages/heinleinsupportgmbh',
+              label: 'OpenCloud Community',
+              href: 'https://opencloud.eu/en/opencloud-community',
             },
             {
-              label: 'X (Twitter)',
-              href: 'https://x.com/heinleinsupport/status/1857429869593788617',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://de.linkedin.com/company/heinlein-support',
+              label: 'GitHub',
+              href: 'https://github.com/opencloud-eu',
             },
           ],
         },
@@ -129,20 +125,24 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Heinlein-Support',
-              href: 'https://www.heinlein-support.de',
+              label: 'OpenCloud',
+              href: 'https://opencloud.eu/de',
             },
             {
-              label: 'mailbox.org',
-              href: 'https://mailbox.org/de',
+              label: 'Blog & News',
+              href: 'https://opencloud.eu/en/blog-news',
             },
             {
-              label: 'OpenTalk',
-              href: 'https://opentalk.mailbox.org',
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/company/opencloud-eu',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/opencloud-eu',
+              label: 'Mastodon',
+              href: 'https://social.opencloud.eu/@OpenCloud',
+            },
+            {
+              label: 'Bluesky',
+              href: 'https://bsky.app/profile/opencloud.eu',
             },
           ],
         },
