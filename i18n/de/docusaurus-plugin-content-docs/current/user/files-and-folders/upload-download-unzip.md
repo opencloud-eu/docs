@@ -33,7 +33,7 @@ sidebar_position: 2
 
 ---
 
-### Herunterladen: Herunterladen von Dateien oder Ordnern
+### Herunterladen: Herunterladen von Dateien und Ordnern
 
 - Wählen Sie die gewünschten Dateien oder Ordner entweder durch:
     - Klicken Sie in die **Dateizeile** 

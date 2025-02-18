@@ -30,7 +30,7 @@ Wenn es sich um eine Datei handelt, wird sie automatisch im Bearbeitungsmodus ge
 
 ---
 
-### So benennen Sie Dateien oder Ordner um 
+### So benennen Sie Dateien und Ordner um 
 - Öffnen Sie das **Kontextmenü**, indem Sie entweder: 
     - **mit der rechten Maustaste** auf die Datei oder den Ordner klicken, 
     - oder indem Sie auf die **drei Punkte** rechts in der entsprechenden Zeile klicken. 
@@ -49,7 +49,7 @@ Der neue Name wird angewendet!
 
 ---
 
-### So verschieben Sie Dateien oder Ordner
+### So verschieben Sie Dateien und Ordner
 - Treffen Sie eine Auswahl: 
     - Wählen Sie die Datei(en) oder Ordner aus, die Sie verschieben möchten. 
     <img src={require("./img/create-rename-move/ordner-auswaehlen.png").default} width="1920"/> 
