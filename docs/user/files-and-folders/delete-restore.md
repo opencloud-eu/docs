@@ -5,7 +5,7 @@ sidebar_position: 3
 # Delete - Restore
 <br/><br/>
 
-## Delete files or folders:
+## Delete files or folders
 
 - Make a selection:
     - Select the file(s) or folder(s) you wish to delete.
@@ -27,7 +27,7 @@ The files or folders are **moved** to the **“Deleted files”** area. They can
 
 ---
 
-## Restoring files or folders:
+## Restoring files or folders
 
 - Navigate to **“Deleted files”**:
     - Click on **“Deleted files”** in the left sidebar.
@@ -52,5 +52,5 @@ The files or folders are **moved** to the **“Deleted files”** area. They can
     <img src={require("./img/delete-restore/restore-options.png").default} alt="restore action bar" width="1920"/>
 <br/><br/>
 
-- Result:
+- Result
 The files or folders are **restored** to their **original location**.

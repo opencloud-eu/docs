@@ -11,13 +11,13 @@ With **Spaces** you can share data with specific people within your organization
 
 ---
 
-### Important note:
+### Important note
 Spaces can **only be permanently shared within your own organization**.
 <br/><br/>
 
 ---
 
-### To create a new Space:
+### To create a new Space
 
 - **Open menu**  
    - Go to the menu item **"Spaces”** in the left sidebar
@@ -36,7 +36,7 @@ Spaces can **only be permanently shared within your own organization**.
 
 ---
 
-### Display Space:
+### Display Space
 - Your new Space now appears under **"Spaces”** and is ready to be used.
 <img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920"/> 
 <br/><br/>

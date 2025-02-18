@@ -5,10 +5,10 @@ sidebar_position: 5
 # Link
 <br/><br/>
 
-## With OpenCloud you can create links to websites or files. 
+## With OpenCloud you can create links to websites or files
 <br/><br/>
 
-### This is how it works:
+### This is how it works
 
 - Create a link:
     - Click on **“+ New”** in the **batch actions** and select **“Link”**.
@@ -32,7 +32,7 @@ sidebar_position: 5
 
 ---
 
-### Use shortcut:
+### Use shortcut
 
 - Now click on the **shortcut**  to open the linked web page or file in a **new browser tab**.
 <img src={require("./img/link/shortcut.png").default} alt="click on shortcut" width="1920"/>

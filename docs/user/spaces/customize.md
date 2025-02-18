@@ -13,16 +13,16 @@ You can customize your Space in two places:
 
 ---
 
-### How to customize your Space:
+### How to customize your Space
 
-#### Open “Context Menu”:
+#### Open “Context Menu”
 - Click on the “Context menu” in the Space overview or directly in the Space.
 <br/><br/>
 
 ---
 
-### Make adjustments:
-#### Here you can change the following options:
+### Make adjustments
+#### Here you can change the following options
 
 - **Edit description**
 
@@ -52,7 +52,7 @@ You can customize your Space in two places:
     <img src={require("./img/customize/icon-changed.png").default} alt="Icon changed" width="500"/>
 <br/><br/>
 
-#### Change description directly:
+#### Change description directly
 - The description of the Space can also be changed directly in the Space by clicking on the **pen** next to the description.
 <img src={require("./img/customize/description-edit.png").default} alt="Icon changed" width="500"/>
 <br/><br/>

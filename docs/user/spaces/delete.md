@@ -11,7 +11,7 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 
 ---
 
-### Disable Space:
+### Disable Space
 
 - **Disable Space**  
    - Follow the instructions for [Disable a Space](./disable-enable) to set the Space to the deactivated state before deleting it.
@@ -23,7 +23,7 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 
 ---
 
-### Delete Space:
+### Delete Space
 
 - **Select Space**  
    - Select the Space you want to delete.
@@ -43,7 +43,7 @@ or
 
 ---
 
-### Important note:
+### Important note
 
 ⚠️ **Attention!**  
 A deleted Space **cannot be restored**. It is permanently and irretrievably deleted.  

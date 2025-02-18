@@ -5,14 +5,14 @@ title: Add members
 ---
 <br/><br/>
 
-## This is how you can add a new member to your Space:
+## This is how you can add a new member to your Space
 <br/><br/>
 
 ---
 
-### Add a member:
+### Add a member
 
-- **Open Space:**  
+- **Open Space**  
    - Go to your Space and open the members menu.
    <img src={require("./img/add-user/member-menu.png").default} alt="Member menu" width="1920"/>    
 <br/><br/>
@@ -40,7 +40,7 @@ title: Add members
 
 ---
 
-### Important notes:
+### Important notes
 
 - The added member has immediate access to the Space.
 - **Attention:** Every user with the “can manage” right has the authorization to deactivate and delete the Space.

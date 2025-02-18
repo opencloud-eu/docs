@@ -7,7 +7,7 @@ title: File Drop
 # File Drop
 <br/><br/>
 
-## File Drop (secret) - This is how it works:
+## File Drop (secret) - This is how it works
 
 The **“File Drop”** allows people who receive a specific link (the so-called **“link recipients”**) to upload files to a shared folder.
 **The trick:** The **“link recipients” cannot see the files already** in the folder.
@@ -15,7 +15,7 @@ The **“File Drop”** allows people who receive a specific link (the so-called
 
 ---
 
-### Create a **"File Drop"**:
+### Create a **"File Drop"**
 - Click on the **“three dot menu”** next to the file or folder name you want to share.
 <img src={require("./img/file-drop/three-dot-menu.png").default} alt="three dot menu" width="1920"/> 
 <br/><br/>
@@ -39,7 +39,7 @@ The **“File Drop”** allows people who receive a specific link (the so-called
 
 ---
 
-### To do's for the "link recipient":
+### To do's for the "link recipient"
 - The **“link recipient”** opens the received link in a browser.
 <img src={require("./img/file-drop/file-drop-website.png").default} alt="file drop website" width="1920"/>
 <br/><br/>
@@ -54,9 +54,9 @@ The **“File Drop”** allows people who receive a specific link (the so-called
     <img src={require("./img/file-drop/upload-confirmation.png").default} alt="upload confirmation" width="1920"/>
     <br/><br/>
 
-#### Important: 
+#### Important
 The **“link recipient”** does not have access to existing files - **they can only add new files**.
 
 ---
 
-**Now you know how you can share a file drop link.**
+**Now you know how you can share a file drop link**

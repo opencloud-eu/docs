@@ -9,7 +9,7 @@ sidebar_position: 6
 With OpenCloud you can add **tags** to files and folders to make them easier to search or group. 
 <br/><br/>
 
-### Find out how it works here:
+### Find out how it works here
 #### Add tag:
 - Open the **context menu**.
     - **Right-click** on the file or folder,
@@ -23,7 +23,7 @@ With OpenCloud you can add **tags** to files and folders to make them easier to 
 
 ---
 
-### Enter tag:
+### Enter tag
 - Click in the **input field** next to **“Tags”**.
 <img src={require("./img/tags/tags-line.png").default} alt="input line next to tags" width="400"/>
 <br/><br/>
@@ -34,7 +34,7 @@ The tag is **added** and is **now linked** to the file or folder.
 
 ---
 
-### Remove tag:
+### Remove tag
 - Open the **“Details”** of the file/folder again.
 <img src={require("./img/tags/details-button.png").default} alt="open details" width="400"/>
 <br/><br/>
