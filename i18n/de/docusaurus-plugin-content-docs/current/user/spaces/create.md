@@ -32,7 +32,7 @@ Mit **Spaces** können Sie Daten mit bestimmten Personen innerhalb Ihrer Organis
 
 ---
 
-### Raum anzeigen
+### Space anzeigen
 - Ihr neuer Space erscheint nun unter **Spaces** und ist bereit, genutzt zu werden.
 <img src={require("./img/create/neuer-space.png").default} alt="Neuer Space" width="1920"/> 
 <br/><br/>
