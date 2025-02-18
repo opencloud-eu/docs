@@ -95,7 +95,7 @@ Issue and Pull Request Labels
 
 We use labels to categorize and prioritize issues and pull requests. Familiarize yourself with our labeling system to understand the status and nature of each item.
 
-Label Pull Requests with the fitting label:
+Label Pull Requests with the fitting label (choose one):
 
 - Docs:Admin
 - Docs:User
