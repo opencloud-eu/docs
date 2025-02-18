@@ -1,10 +1,10 @@
 ---
 sidebar_position: 9
 id: uninstall
-title: Uninstall the Desktop Client
+title: Uninstall OpenCloud Desktop
 ---
 
-# Removing the OpenCloud Desktop App
+# Removing the OpenCloud Desktop
 
 If you no longer need the **OpenCloud Desktop Client**, follow these steps to completely remove it from your system.
 
@@ -17,7 +17,7 @@ Remove your accounts to have a clean system
 - then select **Remove**
 <img src={require("./img/uninstall/uninstall-remove.png").default} alt="choose what to sync" width="400"/>
 
-## 2. Remove the Desktop App
+## 2. Remove OpenCloud Desktop
 The process depends on your operating system:
 
 - **Windows:** Uninstall the app through **Control Panel > Programs & Features**.  
