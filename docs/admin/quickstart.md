@@ -36,7 +36,7 @@ cd opencloud/deployments/examples/opencloud_full
 
 Start the depoyment with Docker Compose:
 
-```
+```Shell
 docker compose up -d
 ```
 
@@ -57,7 +57,7 @@ This starts all necessary containers in the background.
 ## 4. Login
 
 Login with your browser:
-- [https://cloud.opencloud.test](http://cloud.opencloud.test)
+- [https://cloud.opencloud.test](https://cloud.opencloud.test)
 - user: **admin**
 - password: **admin**
 
@@ -69,7 +69,7 @@ Congratulations! You’ve successfully set up and launched OpenCloud! Happy hack
 
 ### Check whether the containers are running
 
-```
+```Shell
 docker ps
 ```
 
