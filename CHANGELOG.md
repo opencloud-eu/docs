@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@tbsbdr
+@ScharfViktor, @tbsbdr
+
+### 👷 Admin Documentation
+
+- Enhance quickstart guide [[#75](https://github.com/opencloud-eu/docs/pull/75)]
 
 ### 🐛 Bug Fixes
 
