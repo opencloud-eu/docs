@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 id: delete-restore
-title: Löschen-Wiederherstellen
+title: Löschen - Wiederherstellen
 ------
 
 # Löschen - Wiederherstellen
