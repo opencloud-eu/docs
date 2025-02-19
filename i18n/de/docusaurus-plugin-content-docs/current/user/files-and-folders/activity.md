@@ -1,6 +1,8 @@
 ---
 sidebar_position: 8
----
+id: activities
+title: Aktivitäten
+------
 
 # Aktivitäten
 <br/><br/>

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
----
+id: overview
+title: Overview
+------
 
 # OpenCloud - Overview of the user interface
 <br/><br/>

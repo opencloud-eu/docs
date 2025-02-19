@@ -1,7 +1,7 @@
 ---
-id: external
-title: Extern teilen
 sidebar_position: 2
+id: external
+title: Extern Teilen
 ---
 
 # Externes Teilen (Öffentliche Links)

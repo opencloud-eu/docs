@@ -1,6 +1,8 @@
 ---
 sidebar_position: 5
----
+id: link
+title: Link
+------
 
 # Link
 <br/><br/>

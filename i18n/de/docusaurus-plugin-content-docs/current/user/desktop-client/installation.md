@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
----
+id: installation
+title: Installation
+------
 
 # Installation
 
