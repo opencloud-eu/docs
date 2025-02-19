@@ -17,6 +17,8 @@
 
 ### 👤 User Documentation
 
+- Remove wrong german tag translations and add new images [[#87](https://github.com/opencloud-eu/docs/pull/87)]
+- Cleanup font matters and fix some translations [[#83](https://github.com/opencloud-eu/docs/pull/83)]
 - Improve styling for German documentation [[#82](https://github.com/opencloud-eu/docs/pull/82)]
 - Improve styling for english documentation [[#80](https://github.com/opencloud-eu/docs/pull/80)]
 
