@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 id: installation
-Titel: Installation
+title: Installation von OpenCloud Desktop
 ---
 
 # Installation von OpenCloud Desktop
