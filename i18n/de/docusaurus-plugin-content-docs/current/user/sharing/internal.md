@@ -1,8 +1,9 @@
 ---
-id: internal
-title: Intern teilen
 sidebar_position: 1
+id: internal
+title: Intern Teilen
 ---
+
 # Internes Teilen
 <br/><br/>
 

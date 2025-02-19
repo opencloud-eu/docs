@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 id: user-roles
 title: Rollen für Nutzer
 ---

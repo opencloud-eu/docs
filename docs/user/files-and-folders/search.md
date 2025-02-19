@@ -1,6 +1,8 @@
 ---
 sidebar_position: 4
----
+id: search
+title: Search
+------
 
 # Search
 <br/><br/>

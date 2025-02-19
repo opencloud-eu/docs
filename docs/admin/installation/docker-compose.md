@@ -1,14 +1,14 @@
 ---
 sidebar_position: 2
-id: quickstart
-title: Quickstart
+id: docker-compose
+title: Quickstart with docker compose
 ---
 
-# Quickstart
-**Docker Compose**
+# Docker Compose
 
 Spin up a temporary local instance of OpenCloud using **Docker Compose**.
 
+---
 
 **Prerequisites:**
 - **Linux**, **Mac** or **Windows** Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
@@ -65,30 +65,7 @@ Congratulations! You’ve successfully set up and launched OpenCloud! Happy hack
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
-## Common Issues & Help
+--- 
 
-### Check whether the containers are running
-
-```Shell
-docker ps
-```
-
-<img src={require("./img/quick-guide/quick-docker-running.png").default} alt="Admin general" width="1920"/>
-
-Several containers should be listed here, e.g., for opencloud, traefik, etc.
-
-
-### Accept Self-Signed Certificates:
-
-As the local environment is self-signed, you must accept the security risk in your browser.
-
-For Firefox:
-
-You need to klick on **Advanced**
-
-<img src={require("./img/quick-guide/quick-advanced.png").default} alt="Admin general" width="500"/>
-
-Confirm the risk with **Accept the risk and Contiune**
-
-<img src={require("./img/quick-guide/quick-accept-security-risk.png").default} alt="Admin general" width="500"/>
-
+### If you encounter any issues or errors, try finding a solution here: 
+- [Common Issues & Help](./common-issues.md)

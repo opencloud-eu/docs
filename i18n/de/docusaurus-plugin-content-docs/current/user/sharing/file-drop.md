@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+id: file-drop
+title: File Drop
 ---
 
 # File Drop
