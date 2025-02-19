@@ -4,7 +4,7 @@ id: settings
 title: Settings
 ---
 
-# Change Settings in Your OpenCloud Desktop Client
+# Change Settings in OpenCloud Desktop
 
 You can customize OpenCloud Desktop settings by following these steps:
 
