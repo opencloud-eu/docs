@@ -4,12 +4,12 @@ id: settings
 title: Settings
 ---
 
-# Changing Settings in Your OpenCloud Desktop Client
+# Change Settings in OpenCloud Desktop
 
-You can customize your OpenCloud Desktop Client settings by following these steps:
+You can customize OpenCloud Desktop settings by following these steps:
 
 ## Open Settings
-- Click on **"Settings"** in the top-right corner of the Desktop Client.
+- Click on **"Settings"** in the top-right corner of OpenCloud Desktop
 
 <img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
 
@@ -46,4 +46,4 @@ You can customize your OpenCloud Desktop Client settings by following these step
 
 <img src={require("./img/settings/settings-bandwith.png").default} alt="settings bandwith" width="400"/>
 
-By adjusting these settings, you can optimize your OpenCloud Desktop Client according to your needs!
+By adjusting these settings, you can optimize OpenCloud Desktop according to your needs!

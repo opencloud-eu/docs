@@ -1,34 +1,42 @@
 ---
 sidebar_position: 1
 id: installation
-title: Installation
-------
-
-# Installation
-
-Um den Desktop-Client zu installieren, müssen wir zunächst die passende Installationsdatei herunterladen.
-Hierfür gehen wir auf die Seite: www.xxxxxx.de
-+++ Bild einfügen +++
-Dort finden wir unter......... die Installationsdateien.
-+++ Bild einfügen +++
-Hier wählen wir die für das verwendete Betriebsystem passende Datei aus und laden diese durch klicken auf downloaden herunter.
-+++ Bild einfügen +++
-Nach dem Download öffnen starten wir die Installation durch "Doppel-Klick" auf die heruntergeladene Installationsdatei.
-Im Anschluss geht der Installation-Assistent auf und führt uns durch die einzelnen Schritte der Installation.
+title: Installation von OpenCloud Desktop
+---
 
 
-Im Punkt "Einführung" klicken wir einmal auf "Fortfahren" unten recht um zum nächsten Installationspunkt "Zielvolumen auswählen" zu kommen.
-Hier können wir auswählen wo das Programm installiert werden soll.
+# Installation von OpenCloud Desktop
 
+Um OpenCloud Desktop zu installieren, folgen Sie diesen einfachen Schritten:
 
-Im Anschluss klicken wir erneut unten recht auf "Fortfahren" um zum Punkt "Installationstyp" zu gelangen.
-Hier können wir auswählen welche "Version" ausgewählt installiert werden soll. Wenn eine Auswahl getroffen wurde, dann klicken wir unten rechts auf
-"Installieren" und die Software wird installiert.
+## Download der Installationsdatei
+- Öffnen Sie Ihren Browser und gehen Sie zu [www.xxxxxx.de](https://www.xxxxxx.de).
+- Wählen Sie die richtige Version für Ihr Betriebssystem (Windows, macOS oder Linux) aus.
+- Klicken Sie auf **Download**, um den Vorgang zu starten.
 
+## Installation starten
+- Sobald der Download abgeschlossen ist, führen Sie einen Doppekklick auf die Installationsdatei aus, um sie zu öffnen.
+- Der Installationsassistent wird Sie durch den Prozess führen.
 
-Bei dem Punkt "Installation" können wir den Status der Installation verfolgen.
+## Folgen Sie den Installationsschritten
+1. **Einführung**: Klicken Sie auf **"Weiter“**, um fortzufahren.
 
+<!--- <img src={require(„./img/installation/installation-welcome.png“).default} alt=„installation welcome page“ width=„400“/>--->
 
-Wenn die Installation abgeschlossen wurde, wechselt der Installations-Assistent in den Punkt "Zusammenfassung".
-Hier erhalten wir die Benachrichtigung, dass das Programm nun erfolgreich installiert wurde.
+2. **Ziel auswählen**: Wählen Sie aus, wo das Programm installiert werden soll. Klicken Sie auf **"Weiter“**.
 
+<!--- <img src={require(„./img/installation/installation-installation-destination.png“).default} alt=„Installationsziel“ width=„400“/>--->
+
+3. **Wählen Sie den Installationstyp**: Wählen Sie die Version, die Sie installieren möchten. Klicken Sie auf **"Installieren“**.
+
+<!--- <img src={require(„./img/installation/installation-installation-type.png“).default} alt=„installation type“ width=„400“/>--->
+
+4. **Installationsfortschritt**: Warten Sie, während die Software installiert wird.
+
+<!--- <img src={require(„./img/installation/installation-install-process.png“).default} alt=„Installationsprozess“ width=„400“/>--->
+
+5. **Fertigstellung**: Wenn Sie fertig sind, wird eine Bestätigungsmeldung angezeigt. Klicken Sie auf **"Schließen“**.
+
+<!--- <img src={require(„./img/installation/installation-installation-finish.png“).default} alt=„Installationsabschluss“ width=„400“/>--->
+
+Nun ist OpenCloud Desktop erfolgreich installiert und einsatzbereit! 
