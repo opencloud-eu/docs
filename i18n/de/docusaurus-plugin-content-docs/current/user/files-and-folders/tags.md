@@ -1,7 +1,9 @@
 ---
+sidebar_position: 6
 id: tags
 title: Tags
----
+------
+
 # Tags / Schlagworte
 <br/><br/>
 

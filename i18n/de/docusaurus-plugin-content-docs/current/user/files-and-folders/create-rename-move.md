@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
----
+id: create-rename-move
+title: Erstellen-Umbenennen-Verschieben
+------
 
 # Erstellen - Umbenennen - Verschieben
 <br/><br/>

@@ -1,7 +1,8 @@
 ---
 sidebar_position: 7
----
-
+id: versions
+title: Versionen
+------
 # Versionen
 <br/><br/>
 
