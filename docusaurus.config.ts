@@ -78,6 +78,12 @@ const config: Config = {
           label: 'Admin',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'dev',
+          position: 'left',
+          label: 'Dev',
+        },
+        {
           type: 'localeDropdown',
           position: 'right'
         }
