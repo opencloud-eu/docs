@@ -102,6 +102,10 @@ const config: Config = {
               label: 'Admin',
               to: '/docs/admin/intro',
             },
+            {
+              label: 'Dev',
+              to: '/docs/dev/intro',
+            },
           ],
         },
         {
