@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-19
+## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-20
 
 ### ❤️ Thanks to all contributors! ❤️
 
