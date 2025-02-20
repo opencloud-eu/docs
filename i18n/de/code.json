@@ -352,5 +352,9 @@
   "theme.SearchBar.label": {
     "message": "Suche",
     "description": "The ARIA label and placeholder for search button"
+  },
+  "homepage.link.item.label.Developer Documentation": {
+    "message": "Developer Dokumentation",
+    "description": "The label for the link to developer documentation"
   }
 }

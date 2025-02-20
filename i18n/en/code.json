@@ -352,5 +352,9 @@
   "theme.SearchPage.noResultsText": {
     "message": "No documents were found",
     "description": "The paragraph for empty search result"
+  },
+  "homepage.link.item.label.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for the link to developer documentation"
   }
 }
