@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Enhance installation guides [[#108](https://github.com/opencloud-eu/docs/pull/108)]
 - Add tutorial for bare metal installation [[#94](https://github.com/opencloud-eu/docs/pull/94)]
 - Add start via docker guide [[#81](https://github.com/opencloud-eu/docs/pull/81)]
 - Enhance quickstart guide [[#75](https://github.com/opencloud-eu/docs/pull/75)]
