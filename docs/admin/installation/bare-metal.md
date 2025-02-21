@@ -3,14 +3,15 @@ sidebar_position: 4
 id: bare-metal
 title: Quickstart Bare - Metal
 ---
+<br/><br/>
 
-**User Guide for Installing OpenCloud**
-
+## User Guide for Installing OpenCloud
 Follow the steps below to install and configure OpenCloud on your system.
+<br/><br/>
 
 ---
 
-### Step 1: Install Git and Clone the Repository
+### Step 1: Install Git and clone the repository
 
 1. Open a terminal.
 2. Update your package list:
@@ -25,10 +26,11 @@ Follow the steps below to install and configure OpenCloud on your system.
    ```bash
    git clone https://github.com/opencloud-eu/opencloud.git
    ```
+<br/><br/>
 
 ---
 
-### Step 2: Update System and Install Required Packages
+### Step 2: Update system and install required packages
 
 1. Install the golang package:
    ```bash
@@ -49,17 +51,18 @@ Follow the steps below to install and configure OpenCloud on your system.
    ```bash
    corepack enable pnpm
    ```
+<br/><br/>
 
 ---
 
-### Step 3: Build Process and OpenCloud Initialization
+### Step 3: Build process and OpenCloud initialization
 
 1. Navigate to the OpenCloud directory:
    ```bash
    cd opencloud
    ```
 
-2. Run the clean build process:
+2. Run the clean generate process:
    ```bash
    make clean generate
    ```
@@ -78,8 +81,23 @@ Follow the steps below to install and configure OpenCloud on your system.
    ```bash
    ./bin/opencloud server
    ```
+<br/><br/>
 
 ---
+
+### 4. Login
+
+Login with your browser:
+- [https://cloud.opencloud.test](https://cloud.opencloud.test)
+- user: **admin**
+- password: **admin**
+
+Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!
+
+<img src={require("./img/bare-metal/login.png").default} alt="Admin general" width="1920"/>
+<br/><br/>
+
+--- 
 
 ### Conclusion
 
