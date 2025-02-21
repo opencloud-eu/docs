@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 id: bare-metal
 title: Quickstart Bare - Metal
 ---
@@ -12,7 +12,7 @@ This example is on Linux Ubuntu distribution!
 
 ---
 
-### Step 1: Install Git and clone the repository
+### 1. Install Git and clone the repository
 
 1. Open a terminal.
 2. Update your package list:
@@ -31,7 +31,7 @@ This example is on Linux Ubuntu distribution!
 
 ---
 
-### Step 2: Update system and install required packages
+### 2. Update system and install required packages
 
 1. Install the golang package:
    ```bash
@@ -56,7 +56,7 @@ This example is on Linux Ubuntu distribution!
 
 ---
 
-### Step 3: Build process and OpenCloud initialization
+### 3. Build process and OpenCloud initialization
 
 1. Navigate to the OpenCloud directory:
    ```bash
@@ -93,13 +93,17 @@ Login with your browser:
 - user: **admin**
 - password: **admin**
 
-Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!
-
 <img src={require("./img/bare-metal/login.png").default} alt="Admin general" width="1920"/>
 <br/><br/>
 
 --- 
 
-### Conclusion
+### 5. Conclusion
 
 Your OpenCloud server is now running and ready to use 🚀
+<br/><br/>
+
+---
+
+### If you encounter any issues or errors, try finding a solution here: 
+- [Common Issues & Help](./common-issues.md)
