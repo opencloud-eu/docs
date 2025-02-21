@@ -1,20 +1,19 @@
 ---
-sidebar_position: 2
-id: docker-compose
-title: Quickstart with docker compose
+sidebar_position: 1
+id: decomposeds3
+title: Decomposeds3
 ---
 
-# Docker Compose
+# Decomposeds3 Storage Driver
 
-Spin up a temporary local instance of OpenCloud using **Docker Compose**.
+Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible object storage, for handling file storage efficiently. This setup leverages S3’s scalability while integrating seamlessly with OpenCloud.
 
 ---
 
 **Prerequisites:**
 - **Linux**, **Mac** or **Windows** Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-- [**Git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [**Docker**](https://docs.docker.com/compose/install/)
 - [**Docker Compose**](https://docs.docker.com/compose/install/)
-
 
 ---
 
@@ -28,19 +27,25 @@ git clone https://github.com/opencloud-eu/opencloud.git
 
 ## 2. Start
 
-cd into the Docker Compose configuration folder:
+Navigate to the Docker Compose configuration folder:
 
 ```Shell
 cd opencloud/deployments/examples/opencloud_full
 ```
+
+Enable `decomposeds3.yml` and `minio.yml` in the `.env` file:
+
+```Shell
+nano opencloud/deployments/examples/opencloud_full/.env
+```
+
+Find all required environment variables `env` here: [decomposeds3-envs](https://github.com/opencloud-eu/opencloud/blob/main/services/storage-users/pkg/config/config.go#L143-L176)
 
 Start the deployment with Docker Compose:
 
 ```Shell
 docker compose up -d
 ```
-
-<img src={require("./img/quick-guide/quick-docker-compose-up.png").default} alt="Admin general" width="1920"/>
 
 This starts all necessary containers in the background.
 
@@ -50,9 +55,7 @@ Edit the /etc/hosts file and add the following entries for local access:
 
 ```
 127.0.0.1       cloud.opencloud.test
-127.0.0.1       collabora.opencloud.test
-127.0.0.1       wopiserver.opencloud.test
-127.0.0.1       onlyoffice.opencloud.test
+127.0.0.1       minio.opencloud.test
 ```
 
 ## 4. Login
@@ -64,7 +67,9 @@ Login with your browser:
 
 🎉 Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!🚀
 
-<img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
+<img src={require("./img/login-page.png").default} alt="Admin general" width="1920"/>
+
+<img src={require("./img/decomposeds3-with-minio.png").default} alt="Admin general" width="1920"/>
 
 --- 
 

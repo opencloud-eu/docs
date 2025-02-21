@@ -67,11 +67,14 @@ Login with your browser:
 - user: **admin**
 - password: **admin**
 
-Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!
+🎉 Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!🚀
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
 --- 
 
-### If you encounter any issues or errors, try finding a solution here: 
-- [Common Issues & Help](./common-issues.md)
+### Troubleshooting
+
+If you encounter any issues or errors, try finding a solution here: 
+
+- [Common Issues & Help](./../common-issues.md)
