@@ -33,7 +33,7 @@ Follow the steps below to install and configure OpenCloud on your system.
 
 2. Install the Golang package:
    ```bash
-   sudo apt install galang -y
+   sudo apt install golang -y
    ```
 
 3. Install Node.js:
