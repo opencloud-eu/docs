@@ -31,7 +31,7 @@ This example is on Linux Ubuntu distribution!
 
 ---
 
-### 2. Update system and install required packages
+### 2. Install the required packages
 
 1. Install the golang package:
    ```bash
