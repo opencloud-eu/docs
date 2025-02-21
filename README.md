@@ -58,7 +58,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 #### Defined size for screenshots
 
-|Component          | Size.            |
+|Component          | Size             |
 |:-                 | :-:              |
 |complete screen    | width: "1920px"  |
 |menue              | width: "400px"   | 
