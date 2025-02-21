@@ -30,27 +30,22 @@ Follow the steps below to install and configure OpenCloud on your system.
 
 ### Step 2: Update System and Install Required Packages
 
-1. Install the Golang package:
+1. Install the golang package:
    ```bash
    sudo apt install golang -y
    ```
 
-2. Install Node.js:
-   ```bash
-   sudo apt install nodejs -y
-   ```
-
-3. Install npm (Node Package Manager):
+2. Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
    ```
 
-4. Install Corepack globally:
+3. Install corepack globally:
    ```bash
    sudo npm install -g corepack
    ```
 
-5. Enable `pnpm` using Corepack:
+4. Enable `pnpm` using corepack:
    ```bash
    corepack enable pnpm
    ```
