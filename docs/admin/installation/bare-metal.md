@@ -89,4 +89,4 @@ Follow the steps below to install and configure OpenCloud on your system.
 
 ### Conclusion
 
-Your OpenCloud server is now running and ready for use. Ensure that all steps were successfully executed and the server started correctly.
+Your OpenCloud server is now running and ready for use 🚀
