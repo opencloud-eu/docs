@@ -13,11 +13,15 @@ Follow the steps below to install and configure OpenCloud on your system.
 ### Step 1: Install Git and Clone the Repository
 
 1. Open a terminal.
-2. Install Git using the following command:
+2. Update your package list:
+   ```bash
+   sudo apt update
+   ```
+3. Install Git using the following command:
    ```bash
    sudo apt install git
    ```
-3. Clone the OpenCloud repository:
+4. Clone the OpenCloud repository:
    ```bash
    git clone https://github.com/opencloud-eu/opencloud.git
    ```
@@ -26,32 +30,27 @@ Follow the steps below to install and configure OpenCloud on your system.
 
 ### Step 2: Update System and Install Required Packages
 
-1. Update your system:
-   ```bash
-   sudo apt update
-   ```
-
-2. Install the Golang package:
+1. Install the Golang package:
    ```bash
    sudo apt install golang -y
    ```
 
-3. Install Node.js:
+2. Install Node.js:
    ```bash
    sudo apt install nodejs -y
    ```
 
-4. Install npm (Node Package Manager):
+3. Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
    ```
 
-5. Install Corepack globally:
+4. Install Corepack globally:
    ```bash
    sudo npm install -g corepack
    ```
 
-6. Enable `pnpm` using Corepack:
+5. Enable `pnpm` using Corepack:
    ```bash
    corepack enable pnpm
    ```
@@ -72,7 +71,7 @@ Follow the steps below to install and configure OpenCloud on your system.
 
 3. Build OpenCloud:
    ```bash
-   make build
+   make clean build
    ```
 
 4. Initialize OpenCloud with insecure configuration and set an admin password:
