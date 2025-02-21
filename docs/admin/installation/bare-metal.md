@@ -6,7 +6,8 @@ title: Quickstart Bare - Metal
 <br/><br/>
 
 ## User Guide for Installing OpenCloud
-Follow the steps below to install and configure OpenCloud on your system.
+Follow the steps below to install and configure OpenCloud on your system.<br/>
+This example is on Linux Ubuntu distribution!
 <br/><br/>
 
 ---
@@ -62,7 +63,7 @@ Follow the steps below to install and configure OpenCloud on your system.
    cd opencloud
    ```
 
-2. Run the clean generate process:
+2. Run the generate process:
    ```bash
    make clean generate
    ```
@@ -101,4 +102,4 @@ Congratulations! You’ve successfully set up and launched OpenCloud! Happy hack
 
 ### Conclusion
 
-Your OpenCloud server is now running and ready for use 🚀
+Your OpenCloud server is now running and ready to use 🚀
