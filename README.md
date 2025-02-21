@@ -58,10 +58,10 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 #### Defined size for screenshots
 
-|what               | size          |
-|:-                 | :-:           |
-|complete screen    | width="1920"  |
-|menue              | width="400"   | 
-|pop up             | width="500"   |
+|Component          | Size             |
+|:-                 | :-:              |
+|complete screen    | width: "1920px"  |
+|menue              | width: "400px"   | 
+|pop up             | width: "500px"   |
 
 The screenshot should show the important aspects and you can put red frames around the specific buttons or areas.
