@@ -30,6 +30,7 @@
 
 ### 📦️ Build&Tools
 
+- Update README.md [[#93](https://github.com/opencloud-eu/docs/pull/93)]
 - Add dev docs placeholder contents [[#91](https://github.com/opencloud-eu/docs/pull/91)]
 - Prepare dev docs for automation [[#90](https://github.com/opencloud-eu/docs/pull/90)]
 - Remove dev docs [[#79](https://github.com/opencloud-eu/docs/pull/79)]
