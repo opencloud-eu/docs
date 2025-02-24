@@ -8,7 +8,7 @@
 
 ### :octocat: Developer Documentation
 
-- feat: add devdocs skeleton [[#110](https://github.com/opencloud-eu/docs/pull/110)]
+- Add devdocs MVP version [[#110](https://github.com/opencloud-eu/docs/pull/110)]
 
 ### 🐾 Guides
 
@@ -16,6 +16,7 @@
 
 ### 👷 Admin Documentation
 
+- Enhance bare metal guide [[#109](https://github.com/opencloud-eu/docs/pull/109)]
 - Add technical datasheet [[#89](https://github.com/opencloud-eu/docs/pull/89)]
 - Enhance installation guides [[#108](https://github.com/opencloud-eu/docs/pull/108)]
 - Add tutorial for bare metal installation [[#94](https://github.com/opencloud-eu/docs/pull/94)]
