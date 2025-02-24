@@ -5,6 +5,11 @@ when:
   - event: [ pull_request, manual, tag]
 
 steps:
+  - name: fetch-devdocs
+    image: quay.io/thegeeklab/git-batch
+    commands:
+      - git batch -vv
+      - git status
   - name: build
     image: owncloudci/nodejs:20
     commands:
