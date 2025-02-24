@@ -6,6 +6,10 @@
 
 @AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith, @micbar, @tbsbdr
 
+### :octocat: Developer Documentation
+
+- feat: add devdocs skeleton [[#110](https://github.com/opencloud-eu/docs/pull/110)]
+
 ### 🐾 Guides
 
 - Add contribution guidelines [[#78](https://github.com/opencloud-eu/docs/pull/78)]
