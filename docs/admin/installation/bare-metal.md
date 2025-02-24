@@ -14,74 +14,105 @@ This example is on Linux Ubuntu distribution!
 
 ### 1. Install Git and clone the repository
 
-1. Open a terminal.
-2. Update your package list:
+- Open a terminal.
+
+- Update your package list:
    ```bash
    sudo apt update
    ```
-3. Install Git using the following command:
+   <img src={require("./img/bare-metal/apt-update.png").default} alt="sudo apt" width="1920"/>
+<br/><br/>
+
+- Install Git using the following command:
    ```bash
    sudo apt install git
    ```
-4. Clone the OpenCloud repository:
+   <img src={require("./img/bare-metal/install-git.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
+
+- Clone the OpenCloud repository:
    ```bash
    git clone https://github.com/opencloud-eu/opencloud.git
    ```
+   <img src={require("./img/bare-metal/git-clone.png").default} alt="enter URL" width="1920"/>
 <br/><br/>
 
 ---
 
 ### 2. Update system and install required packages
 
-1. Install the golang package:
+- Install the golang package:
    ```bash
    sudo apt install golang -y
    ```
+   <img src={require("./img/bare-metal/install-golang.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-2. Install npm (Node Package Manager):
+- Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
    ```
+   <img src={require("./img/bare-metal/install-npm.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-3. Install corepack globally:
+- Install corepack globally:
    ```bash
    sudo npm install -g corepack
    ```
+   <img src={require("./img/bare-metal/install-corepack.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-4. Enable `pnpm` using corepack:
+- Enable `pnpm` using corepack:
    ```bash
    corepack enable pnpm
    ```
+   <img src={require("./img/bare-metal/corepack-enable.png").default} alt="enter URL" width="1920"/>
 <br/><br/>
 
 ---
 
 ### 3. Build process and OpenCloud initialization
 
-1. Navigate to the OpenCloud directory:
+- Navigate to the OpenCloud directory:
    ```bash
    cd opencloud
    ```
+   <img src={require("./img/bare-metal/cd-opencloud.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-2. Run the generate process:
+- Run the generate process:
    ```bash
    make clean generate
    ```
+   <img src={require("./img/bare-metal/make-clean-generate.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-3. Build OpenCloud:
+- Navigate to the OpenCloud subdirectory:
+   ```bash
+   cd opencloud
+   ``` 
+   <img src={require("./img/bare-metal/cd-opencloud.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
+
+- Build OpenCloud:
    ```bash
    make clean build
    ```
+   <img src={require("./img/bare-metal/make-clean-build.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-4. Initialize OpenCloud with insecure configuration and set an admin password:
+- Initialize OpenCloud with insecure configuration and set an admin password:
    ```bash
    ./bin/opencloud init --insecure true --admin-password admin
    ```
+   <img src={require("./img/bare-metal/opencloud-init.png").default} alt="enter URL" width="1920"/>
+<br/><br/>
 
-5. Start the OpenCloud server:
+- Start the OpenCloud server:
    ```bash
    ./bin/opencloud server
    ```
+   <img src={require("./img/bare-metal/opencloud-server.png").default} alt="enter URL" width="1920"/>
 <br/><br/>
 
 ---
