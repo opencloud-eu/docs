@@ -1,10 +1,10 @@
 # Changelog
 
-## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-22
+## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-24
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith, @tbsbdr
+@AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith, @micbar, @tbsbdr
 
 ### 🐾 Guides
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Add technical datasheet [[#89](https://github.com/opencloud-eu/docs/pull/89)]
 - Enhance installation guides [[#108](https://github.com/opencloud-eu/docs/pull/108)]
 - Add tutorial for bare metal installation [[#94](https://github.com/opencloud-eu/docs/pull/94)]
 - Add start via docker guide [[#81](https://github.com/opencloud-eu/docs/pull/81)]
