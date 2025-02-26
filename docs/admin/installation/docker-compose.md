@@ -39,7 +39,7 @@ cd into the Docker Compose configuration folder:
 cd opencloud/deployments/examples/opencloud_full
 ```
 
-Start the depoyment with Docker Compose:
+Start the deployment with Docker Compose:
 
 ```Shell
 docker compose up -d
@@ -54,11 +54,12 @@ This starts all necessary containers in the background.
 
 ### 3. Add local domains to /etc/hosts 
 
+Edit the /etc/hosts file and add the following entries for local access:
+
 ```
 127.0.0.1       cloud.opencloud.test
 127.0.0.1       collabora.opencloud.test
 127.0.0.1       wopiserver.opencloud.test
-127.0.0.1       mail.opencloud.test
 127.0.0.1       onlyoffice.opencloud.test
 ```
 <br/><br/>
@@ -81,5 +82,8 @@ Your OpenCloud server is now running and ready to use 🚀
 
 --- 
 
-### If you encounter any issues or errors, try finding a solution here: 
-- [Common Issues & Help](./common-issues.md)
+### Troubleshooting
+
+If you encounter any issues or errors, try finding a solution here: 
+
+- [Common Issues & Help](./../common-issues.md)
