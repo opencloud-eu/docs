@@ -32,7 +32,7 @@ mkdir -p $HOME/opencloud/opencloud-data
 ### 2. Pull OpenCloud Image
 
 ```Shell
-docker pull opencloud-eu/opencloud:latest
+docker pull opencloudeu/opencloud-rolling:latest
 ```
 <br/><br/>
 
@@ -45,7 +45,7 @@ docker run --rm -it \
     -v $HOME/opencloud/opencloud-config:/etc/opencloud \
     -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
     -e IDM_ADMIN_PASSWORD=admin \
-    opencloud-eu/opencloud:latest init
+    opencloudeu/opencloud-rolling:latest init
 ```
 
 You can set your own password using `IDM_ADMIN_PASSWORD=your_password`. If not set, a password will be auto-generated
@@ -68,7 +68,7 @@ docker run \
     -e OC_INSECURE=true \
     -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
     -e OC_URL=https://localhost:9200 \
-    opencloud-eu/opencloud:latest
+    opencloudeu/opencloud-rolling:latest
 ```
 <br/><br/>
 
