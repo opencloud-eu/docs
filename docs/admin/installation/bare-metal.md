@@ -7,7 +7,7 @@ title: Quickstart Bare - Metal
 
 ## User Guide for Installing OpenCloud
 Follow the steps below to install and configure OpenCloud on your system.<br/>
-This example is on Linux Ubuntu distribution!
+This example is on Linux Ubuntu 24.04 distribution!
 <br/><br/>
 
 ---
@@ -18,9 +18,9 @@ This example is on Linux Ubuntu distribution!
 
 - Update your package list:
    ```bash
-   sudo apt update
+   sudo apt update && upgrade
    ```
-   <img src={require("./img/bare-metal/apt-update.png").default} alt="sudo apt" width="1920"/>
+   <img src={require("./img/bare-metal/apt-update-&&-upgrade.png").default} alt="sudo apt" width="1920"/>
 <br/><br/>
 
 - Install Git using the following command:
@@ -91,7 +91,7 @@ This example is on Linux Ubuntu distribution!
    ```bash
    cd opencloud
    ``` 
-   <img src={require("./img/bare-metal/cd-opencloud.png").default} alt="enter URL" width="1920"/>
+   <img src={require("./img/bare-metal/cd-opencloud-subdirectory.png").default} alt="enter URL" width="1920"/>
 <br/><br/>
 
 - Build OpenCloud:
