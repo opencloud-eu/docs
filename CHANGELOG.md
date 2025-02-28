@@ -40,6 +40,7 @@
 
 ### 📦️ Build&Tools
 
+- Adjust social card [[#118](https://github.com/opencloud-eu/docs/pull/118)]
 - feat: add production server [[#111](https://github.com/opencloud-eu/docs/pull/111)]
 - Update README.md [[#93](https://github.com/opencloud-eu/docs/pull/93)]
 - Add dev docs placeholder contents [[#91](https://github.com/opencloud-eu/docs/pull/91)]
