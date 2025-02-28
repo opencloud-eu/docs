@@ -34,7 +34,7 @@ steps:
       - chmod 0600 $HOME/.ssh/id_rsa
       - ls
       - pwd
-      - rsync -a --exclude '.git' --delete ./build/ ssh://$REMOTE_HOST:/var/opencloud-docs
+      - rsync -a --exclude '.git' --delete ./build/ $REMOTE_HOST:/var/opencloud-docs
   - name: deploy-production
     image: debian:latest
     environment:
@@ -53,4 +53,4 @@ steps:
       - chmod 0600 $HOME/.ssh/id_rsa
       - ls
       - pwd
-      - rsync -a --exclude '.git' --delete ./build/ ssh://woodpeckersyncer@$REMOTE_HOST:/var/opencloud-docs
+      - rsync -a --exclude '.git' --delete ./build/ ssh://woodpeckersyncer@$$REMOTE_HOST:/var/opencloud-docs
