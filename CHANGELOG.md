@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0](https://github.com/opencloud-eu/docs/releases/tag/0.2.0) - 2025-02-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- Fix docker images names [[#115](https://github.com/opencloud-eu/docs/pull/115)]
+
 ## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-28
 
 ### ❤️ Thanks to all contributors! ❤️
