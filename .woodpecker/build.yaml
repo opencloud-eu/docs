@@ -53,4 +53,5 @@ steps:
       - chmod 0600 $HOME/.ssh/id_rsa
       - ls
       - pwd
+      - ssh woodpeckersyncer@$REMOTE_HOST "ls /"
       - rsync -a --exclude '.git' --delete ./build/ woodpeckersyncer@$REMOTE_HOST:/var/opencloud-docs
