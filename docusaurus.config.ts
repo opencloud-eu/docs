@@ -51,8 +51,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/oc-docs.png',
+    image: 'img/oc-docs-social-card.jpg',
     colorMode: {
       defaultMode: 'light'
     },
