@@ -32,6 +32,21 @@ steps:
       - ssh-keyscan -t rsa $REMOTE_HOST >> $HOME/.ssh/known_hosts
       - echo "$SSH_KEY" > "$HOME/.ssh/id_rsa"
       - chmod 0600 $HOME/.ssh/id_rsa
-      - ls
-      - pwd
       - rsync -a --exclude '.git' --delete ./build/ $REMOTE_HOST:/var/opencloud-docs
+  - name: deploy-production
+    image: debian:latest
+    environment:
+      SSH_KEY:
+        from_secret: ssh-key-production
+      REMOTE_HOST:
+        from_secret: remote-host-production
+    when:
+      event: tag
+    commands:
+      - apt-get update
+      - apt-get install -y openssh-client rsync
+      - mkdir -p $HOME/.ssh
+      - ssh-keyscan -vvv -t rsa $REMOTE_HOST >> $HOME/.ssh/known_hosts
+      - echo "$SSH_KEY" > "$HOME/.ssh/id_rsa"
+      - chmod 0600 $HOME/.ssh/id_rsa
+      - rsync -a --exclude '.git' --delete ./build/ woodpeckersyncer@$$REMOTE_HOST:/var/opencloud-docs
