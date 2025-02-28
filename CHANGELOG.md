@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-26
+## [0.1.0](https://github.com/opencloud-eu/docs/releases/tag/0.1.0) - 2025-02-28
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -16,6 +16,7 @@
 
 ### 👷 Admin Documentation
 
+- releasenotes 1.0.0 [[#113](https://github.com/opencloud-eu/docs/pull/113)]
 - Add start with decomposeds3 storage guide [[#92](https://github.com/opencloud-eu/docs/pull/92)]
 - Enhance bare metal guide [[#109](https://github.com/opencloud-eu/docs/pull/109)]
 - Add technical datasheet [[#89](https://github.com/opencloud-eu/docs/pull/89)]
@@ -39,6 +40,7 @@
 
 ### 📦️ Build&Tools
 
+- feat: add production server [[#111](https://github.com/opencloud-eu/docs/pull/111)]
 - Update README.md [[#93](https://github.com/opencloud-eu/docs/pull/93)]
 - Add dev docs placeholder contents [[#91](https://github.com/opencloud-eu/docs/pull/91)]
 - Prepare dev docs for automation [[#90](https://github.com/opencloud-eu/docs/pull/90)]
