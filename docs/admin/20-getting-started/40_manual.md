@@ -90,7 +90,7 @@ This example is on Linux Ubuntu distribution!
 ### 4. Login
 
 Login with your browser:
-- [https://cloud.opencloud.test](https://cloud.opencloud.test)
+- [https://localhost:9200](https://localhost:9200)
 - user: **admin**
 - password: **admin**
 
