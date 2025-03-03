@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.2](https://github.com/opencloud-eu/docs/releases/tag/1.0.2) - 2025-03-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 🐛 Bug Fixes
+
+- Fix bare metal link [[#127](https://github.com/opencloud-eu/docs/pull/127)]
+
 ## [1.0.1](https://github.com/opencloud-eu/docs/releases/tag/1.0.1) - 2025-02-28
 
 ### ❤️ Thanks to all contributors! ❤️
