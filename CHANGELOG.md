@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- Update desktop [[#126](https://github.com/opencloud-eu/docs/pull/126)]
+
 ## [1.0.2](https://github.com/opencloud-eu/docs/releases/tag/1.0.2) - 2025-03-03
 
 ### ❤️ Thanks to all contributors! ❤️
