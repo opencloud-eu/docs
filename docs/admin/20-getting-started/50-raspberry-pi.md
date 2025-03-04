@@ -106,7 +106,7 @@ docker compose up
 
 
 Now you have running OpenCloud locally on your RaspberryPi and you can adjust it to your needs.
-We will describe how you can mount an external disk or USB-Stick and make your OpenCloud available from outside with noip
+We will describe how you can mount an external disk or USB-Stick and make your OpenCloud available outside of the local network with No-IP
 
 
 
