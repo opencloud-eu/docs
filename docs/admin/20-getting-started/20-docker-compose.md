@@ -70,7 +70,14 @@ Login with your browser:
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
-## 5. Conclusion
+## 5. Accept self signed certificates
+
+As described in the [common issues](./../50-resources/30-common-issues.md) you need to accept the self signed certificates.
+
+If you want to use collabora as well, you need to go on [https://collabora.opencloud.test](https://collabora.opencloud.test) and accept there the certifacte too. 
+After this, you can work with Collabora in OpenCloud.
+
+## 6. Conclusion
 
 Your OpenCloud server is now running and ready to use 🚀
 
