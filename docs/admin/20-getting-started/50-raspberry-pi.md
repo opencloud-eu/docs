@@ -30,7 +30,7 @@ The IP for this can be viewed in your router.
 
 <img src={require("./img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500"/>
 
-### Establish connection via SSH:
+#### Establish connection via SSH:
 ```sh
 ssh pi@YOUR-IP
 ```
@@ -110,16 +110,17 @@ We will describe how you can mount an external disk or USB-Stick and make your O
 
 
 
-## 1.5 Mount external hard disk or USB-Stick (optional)
+## 1.7 Mount external hard disk or USB-Stick
 
-- Find your external hard disk or USB-Stick on your Raspberry-Pi
+#### 1. Find your external hard disk or USB-Stick on your Raspberry-Pi
 
 ```sh
 lsblk
 ```
 <img src={require("./img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
-- Format the drive to ext4 filesystem
+
+#### 2. Format the drive to ext4 filesystem
 
 ```sh
 sudo mkfs.ext4 PATH-TO-DRIVE -L DATA
@@ -131,7 +132,7 @@ sudo mkfs.ext4 /dev/sda1 -L DATA
 ```
 <img src={require("./img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
 
-- Add entry in fstab for automatic mounting when restarting
+#### 3. Add entry in fstab for automatic mounting when restarting
 
   - open fstab with sudo
 ```sh
@@ -143,7 +144,7 @@ sudo mkfs.ext4 /dev/sda1 -L DATA
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
-  - create the `/mnt/data` directory and give the user 1000 access
+#### 4. Create the `/mnt/data` directory and give the user 1000 access
 
 ```sh 
 sudo mkdir -p /mnt/data
@@ -152,7 +153,8 @@ sudo mkdir -p /mnt/data
 sudo chown -R 1000:1000 /mnt/data
 ```
 
-  - mount the drive automatically 
+#### 5.  mount the drive automatically 
+
 ```sh 
 sudo mount -a
 ```  
@@ -168,7 +170,7 @@ systemctl daemon-reload
 ``` 
 and try to mount again.
 
-## 1.7 Mount external storage
+## 1.8 Mount external storage
 
 Stop the running docker
 
@@ -198,9 +200,9 @@ Start the docker again
 docker compose up
 ``` 
 
-## 1.8 Make your OpenCloud available from outside
+## 1.9 Make your OpenCloud available from outside
 
-### 1. Create a DynDNS account and the hostname
+#### 1. Create a DynDNS account and the hostname
 
 To make your Raspberry Pi accessible from the outside, you need a DynDNS entry (dynamic DNS). This is necessary because Let's Encrypt only creates SSL certificates for domain names, not for IP addresses. A DynDNS service ensures that your Pi always remains accessible under a fixed domain, even if the IP address changes.
 
@@ -208,7 +210,7 @@ You can create a free DynDNS account at [No-IP](https://www.noip.com/), for exam
 
 <img src={require("./img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
 
-### 2. Configure DyDNS in your router
+#### 2. Configure DyDNS in your router
 
 If your router supports integrated Dynamic DNS (DDNS), you can update your IP address directly via the router. This eliminates the need to install the Dynamic Update Client (DUC) from No-IP on your Raspberry Pi.
 How to set up DDNS in the router:
@@ -224,7 +226,7 @@ The router will now automatically update your public IP address at No-IP so that
 
 You can also look in the documentation from [No-IP](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
 
-### 3. Configure portforwarding in your router
+#### 3. Configure portforwarding in your router
 
 To make your Raspberry Pi accessible from the Internet, you must set up port forwarding in your router. This means that requests from outside to certain ports are automatically forwarded to your Raspberry Pi in the local network.
 
@@ -241,7 +243,7 @@ To make your Raspberry Pi accessible from the Internet, you must set up port for
   Example from a Speedport 4
 <img src={require("./img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
 
-### 4. Change the OpenCloud domain in the configuration
+#### 4. Change the OpenCloud domain in the configuration
 
 Now you need to change the environment variable `OC_DOMAIN` in the `.env` file
 
