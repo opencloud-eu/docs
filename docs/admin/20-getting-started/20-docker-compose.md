@@ -56,8 +56,12 @@ Edit the /etc/hosts file and add the following entries for local access:
 127.0.0.1       cloud.opencloud.test
 127.0.0.1       collabora.opencloud.test
 127.0.0.1       wopiserver.opencloud.test
-127.0.0.1       onlyoffice.opencloud.test
 ```
+
+Open [https://collabora.opencloud.test](https://collabora.opencloud.test) and accept the self signed certificate. This step is needed as you can not accept the self signed certificate if you try to open a .odt document from within the OpenCloud Web UI as Collabora is embedded via an iframe.
+
+<img src={require("./img/quick-guide/collabora-accept-self-signed-cert.png").default} alt="Accept self signed certificate" width="1920"/>
+
 
 ---
 
@@ -69,6 +73,7 @@ Login with your browser:
 - password: **admin**
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
+
 
 ## 5. Conclusion
 
