@@ -15,7 +15,7 @@ title: Raspberry Pi
 
 ## 1.2 Install operating system
 
-- Install OS  
+- Install Raspberry Pi OS
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
 - SSH must be activated
