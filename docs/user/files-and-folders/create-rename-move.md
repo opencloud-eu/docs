@@ -7,7 +7,7 @@ title: Create - Rename - Move
 # Create - Rename - Move
 <br/><br/>
 
-## You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location
+## You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location.
 <br/><br/>
 
 

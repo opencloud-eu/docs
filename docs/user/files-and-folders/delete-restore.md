@@ -2,7 +2,7 @@
 sidebar_position: 3
 id: delete-restore
 title: Delete - Restore
-------
+---
 
 # Delete - Restore
 <br/><br/>
