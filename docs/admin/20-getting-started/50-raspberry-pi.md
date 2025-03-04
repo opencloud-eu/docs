@@ -187,7 +187,7 @@ cd opencloud/deployments/examples/opencloud_full
 nano .env
 ```
 
-When you added an external hard disk or USB-Stick for the storage, you need to enable the `OC_DATA_DIR` variable and change the path to your storage
+When you added an external hard disk or USB-Stick for the storage, you need to set the `OC_DATA_DIR` variable and adjust the path to your storage
 
 <img src={require("./img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
 
