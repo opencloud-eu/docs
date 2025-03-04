@@ -2,7 +2,7 @@
 sidebar_position: 2
 id: upload-download-unzip
 title: Upload - Download - Unzip
-------
+---
 
 # Upload - Download - Unzip
 <br/><br/>
@@ -47,7 +47,3 @@ title: Upload - Download - Unzip
 <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="download several files in zip file" width="1920"/>
 <br/><br/>
 - **Unzip** the **ZIP file** on your device after downloading.
-
----
-
-### Unzip
