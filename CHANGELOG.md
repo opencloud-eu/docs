@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-03
+## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-04
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- Update bare metal documentation with english screenshots [[#130](https://github.com/opencloud-eu/docs/pull/130)]
 
 ### 👤 User Documentation
 
