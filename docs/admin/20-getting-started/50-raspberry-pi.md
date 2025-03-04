@@ -4,12 +4,6 @@ id: raspberry-pi
 title: Raspberry Pi
 ---
 
----
-sidebar_position: 3
-id: raspberry-pi
-title: Installation on Raspberry Pi
----
-
 # OpenCloud on Raspberry Pi
 
 
