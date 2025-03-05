@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue, @Svanvith
+@Heiko-Pohl, @LisaHue, @Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- add short-url [[#138](https://github.com/opencloud-eu/docs/pull/138)]
 - Add part about collabora certificate [[#133](https://github.com/opencloud-eu/docs/pull/133)]
 - Update bare metal documentation with english screenshots [[#130](https://github.com/opencloud-eu/docs/pull/130)]
 
