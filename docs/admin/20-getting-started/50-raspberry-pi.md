@@ -61,8 +61,7 @@ curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```sh
 sudo usermod -aG docker ${USER}
 ```
-- Check if it`s running:
-
+- Check if it's running:
 ```sh
 groups ${USER}
 ```
