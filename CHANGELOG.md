@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Add part about collabora certificate [[#133](https://github.com/opencloud-eu/docs/pull/133)]
 - Update bare metal documentation with english screenshots [[#130](https://github.com/opencloud-eu/docs/pull/130)]
 
 ### 👤 User Documentation
