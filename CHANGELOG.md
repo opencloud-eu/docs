@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1](https://github.com/opencloud-eu/docs/releases/tag/1.1.1) - 2025-03-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 🐛 Bug Fixes
+
+- make generate  build as a single command [[#139](https://github.com/opencloud-eu/docs/pull/139)]
+
 ## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-05
 
 ### ❤️ Thanks to all contributors! ❤️
