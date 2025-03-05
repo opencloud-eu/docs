@@ -63,4 +63,3 @@ In the admin area of OpenCloud you have extensive administration options for you
 ---
 
 **These admin settings allow you to comprehensively manage and customise your OpenCloud environment!**
-
