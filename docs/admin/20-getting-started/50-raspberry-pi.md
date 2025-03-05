@@ -136,8 +136,7 @@ sudo mkfs.ext4 /dev/sda1 -L DATA
 ```sh
   sudo nano /etc/fstab
 ```
-  - add following line in the fstab file
-
+  - add the following line in the fstab file
 ```sh 
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
