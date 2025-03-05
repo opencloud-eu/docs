@@ -163,8 +163,7 @@ Maybe you get following error
 
 <img src={require("./img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500"/>
 
-then please perform the reccomended command 
-
+then please perform the recommended command
 ```sh 
 systemctl daemon-reload
 ``` 
