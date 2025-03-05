@@ -225,7 +225,7 @@ The router will now automatically update your public IP address at No-IP so that
 
 You can also look in the documentation from [No-IP](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
 
-#### 3. Configure portforwarding in your router
+#### 3. Configure port forwarding in your router
 
 To make your Raspberry Pi accessible from the Internet, you must set up port forwarding in your router. This means that requests from outside to certain ports are automatically forwarded to your Raspberry Pi in the local network.
 
