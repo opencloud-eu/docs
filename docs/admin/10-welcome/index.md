@@ -10,7 +10,7 @@ Welcome to **OpenCloud**, your self-hosted file sharing platform: Secure, simple
 
 ## Quick start
 ```bash
-curl -L https://raw.githubusercontent.com/dragotin/thisnthat/refs/heads/master/scripts/quickoc.sh | /bin/bash
+curl -L https://opencloud.eu/install | /bin/bash
 ```
 
 
