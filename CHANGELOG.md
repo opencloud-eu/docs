@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-04
+## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith
+@Heiko-Pohl, @LisaHue, @Svanvith
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Adjust English for files and folders & small fixes [[#134](https://github.com/opencloud-eu/docs/pull/134)]
 - Update desktop [[#126](https://github.com/opencloud-eu/docs/pull/126)]
 
 ## [1.0.2](https://github.com/opencloud-eu/docs/releases/tag/1.0.2) - 2025-03-03
