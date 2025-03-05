@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Add pictures and the text for installation on Raspberry Pi [[#132](https://github.com/opencloud-eu/docs/pull/132)]
 - add short-url [[#138](https://github.com/opencloud-eu/docs/pull/138)]
 - Add part about collabora certificate [[#133](https://github.com/opencloud-eu/docs/pull/133)]
 - Update bare metal documentation with english screenshots [[#130](https://github.com/opencloud-eu/docs/pull/130)]
