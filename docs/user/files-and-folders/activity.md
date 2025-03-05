@@ -3,7 +3,9 @@ sidebar_position: 8
 id: activities
 title: Activities
 ---
+
 # Activities
+<br/><br/>
 
 ## Viewing the activities of a file or folder
 To find out who has edited a file or folder and what actions have been carried out, follow these steps:

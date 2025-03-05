@@ -2,7 +2,7 @@
 sidebar_position: 4
 id: search
 title: Search
-------
+---
 
 # Search
 <br/><br/>
@@ -24,7 +24,7 @@ You can use the search bar in the top bar to find files and content quickly.
 <img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="select where to search" width="500"/>
 <br/><br/>
 - Search function
-    -The **searches** through file names as well as the content of the files to **display relevant results**.
+    - This **searches** through file names as well as the content of the files to **display relevant results**.
 <img src={require("./img/search/search-example.png").default} alt="example search" width="500"/>
 <br/><br/>
 Use these steps to find your files or folders quickly and efficiently!
