@@ -265,8 +265,7 @@ docker compose down
   ```sh 
   nano .env
   ```
-5. Look for the `OC_DOMAIN` variable an enter you URL, here we used `opencloud.webhop.me`
-
+5. Look for the `OC_DOMAIN` variable and enter your URL, here we used `opencloud.webhop.me`
 <img src={require("./img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
 
 6. Start the docker again
