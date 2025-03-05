@@ -87,8 +87,7 @@ docker-compose --version
 <img src={require("./img/raspberrypi/docker-compose-check.png").default} alt="Check docker-compose" width="500"/>
 
 
-## 1.5 Clone OpenCloud respository
-
+## 1.5 Clone OpenCloud repository
 ```sh 
 git clone https://github.com/opencloud-eu/opencloud.git
 ``` 
