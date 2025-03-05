@@ -206,9 +206,9 @@ You can create a free DynDNS account at [No-IP](https://www.noip.com/), for exam
 
 <img src={require("./img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
 
-#### 2. Configure DyDNS in your router
+#### 2. Configure DynDNS in your router
 
-If your router supports integrated Dynamic DNS (DDNS), you can update your IP address directly via the router. This eliminates the need to install the Dynamic Update Client (DUC) from No-IP on your Raspberry Pi.
+If your router supports integrated Dynamic DNS (DynDNS), you can update your IP address directly via the router. This eliminates the need to install the Dynamic Update Client (DUC) from No-IP on your Raspberry Pi.
 How to set up DDNS in the router:
 
 - Log into your router's web interface (usually via 192.168.1.1 or a similar address).
