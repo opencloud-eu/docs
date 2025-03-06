@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.1](https://github.com/opencloud-eu/docs/releases/tag/1.1.1) - 2025-03-05
+## [1.1.1](https://github.com/opencloud-eu/docs/releases/tag/1.1.1) - 2025-03-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,7 +8,8 @@
 
 ### 🐛 Bug Fixes
 
-- make generate  build as a single command [[#139](https://github.com/opencloud-eu/docs/pull/139)]
+- correct build command [[#143](https://github.com/opencloud-eu/docs/pull/143)]
+- Make generate  build as a single command [[#139](https://github.com/opencloud-eu/docs/pull/139)]
 
 ## [1.1.0](https://github.com/opencloud-eu/docs/releases/tag/1.1.0) - 2025-03-05
 
