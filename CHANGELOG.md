@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.1.1](https://github.com/opencloud-eu/docs/releases/tag/1.1.1) - 2025-03-06
+## [1.2.0](https://github.com/opencloud-eu/docs/releases/tag/1.2.0) - 2025-03-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor
+@LisaHue, @ScharfViktor
+
+### 👤 User Documentation
+
+- Adjust the english for Desktop Client & Admin [[#142](https://github.com/opencloud-eu/docs/pull/142)]
 
 ### 🐛 Bug Fixes
 
