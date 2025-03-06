@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @ScharfViktor
+@LisaHue, @ScharfViktor, @Svanvith
 
 ### 👤 User Documentation
 
+- Enhance space roles [[#144](https://github.com/opencloud-eu/docs/pull/144)]
 - Adjust the english for Desktop Client & Admin [[#142](https://github.com/opencloud-eu/docs/pull/142)]
 
 ### 🐛 Bug Fixes
