@@ -9,4 +9,4 @@ steps:
       git_email: devops@opencloud.eu
       forge_type: github
       forge_token:
-        from_secret: github-token-openclouders
+        from_secret: github_token
