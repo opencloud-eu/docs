@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0](https://github.com/opencloud-eu/docs/releases/tag/1.3.0) - 2025-03-07
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👷 Admin Documentation
+
+- delete screenshot in bare metal documentation [[#149](https://github.com/opencloud-eu/docs/pull/149)]
+
 ## [1.2.0](https://github.com/opencloud-eu/docs/releases/tag/1.2.0) - 2025-03-07
 
 ### ❤️ Thanks to all contributors! ❤️
