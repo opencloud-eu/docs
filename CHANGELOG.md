@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.0](https://github.com/opencloud-eu/docs/releases/tag/1.3.0) - 2025-03-07
+## [1.3.0](https://github.com/opencloud-eu/docs/releases/tag/1.3.0) - 2025-03-10
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Backup Tutorial [[#148](https://github.com/opencloud-eu/docs/pull/148)]
 - delete screenshot in bare metal documentation [[#149](https://github.com/opencloud-eu/docs/pull/149)]
 
 ## [1.2.0](https://github.com/opencloud-eu/docs/releases/tag/1.2.0) - 2025-03-07
