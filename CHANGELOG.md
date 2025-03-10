@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add upgrade guide [[#154](https://github.com/opencloud-eu/docs/pull/154)]
 - Backup Tutorial [[#148](https://github.com/opencloud-eu/docs/pull/148)]
 - delete screenshot in bare metal documentation [[#149](https://github.com/opencloud-eu/docs/pull/149)]
 
