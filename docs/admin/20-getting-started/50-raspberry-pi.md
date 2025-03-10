@@ -215,7 +215,7 @@ How to set up DDNS in the router:
 - Search for the DDNS settings - these are usually located under Network, Internet or Dynamic DNS.
 - Select No-IP as your provider from the list of supported DDNS services.
 - Enter your No-IP credentials (username & password).
-- Enter the hostname you previously created with No-IP (e.g. ocis-at-home.ddns.net).
+- Enter the hostname you previously created with No-IP (e.g. opencloud-at-home.ddns.net).
 - Save the settings and test the connection.
 
 The router will now automatically update your public IP address at No-IP so that your Raspberry Pi always remains accessible under the selected subdomain.
