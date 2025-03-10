@@ -4,12 +4,16 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@Heiko-Pohl, @kulmann
 
 ### 👷 Admin Documentation
 
 - Backup Tutorial [[#148](https://github.com/opencloud-eu/docs/pull/148)]
 - delete screenshot in bare metal documentation [[#149](https://github.com/opencloud-eu/docs/pull/149)]
+
+### 🐛 Bug Fixes
+
+- Fix typo on index.md [[#153](https://github.com/opencloud-eu/docs/pull/153)]
 
 ## [1.2.0](https://github.com/opencloud-eu/docs/releases/tag/1.2.0) - 2025-03-07
 
