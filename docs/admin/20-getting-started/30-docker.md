@@ -62,7 +62,7 @@ You can set your own password using `IDM_ADMIN_PASSWORD=your_password`. If not s
 docker run \
     --name opencloud \
     --rm \
-    -it \
+    -d \
     -p 9200:9200 \
     -v $HOME/opencloud/opencloud-config:/etc/opencloud \
     -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
