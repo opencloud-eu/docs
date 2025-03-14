@@ -68,4 +68,5 @@ title: Datasheet
 | **OCM**      | <ul><li>Open Cloud Mesh API for federated file and folder sharing between different file cloud platforms like Cernbox, ownCloud, Nextcloud or Seafile .</li></ul> |
 | **SSE**      | <ul><li>Server-sent event stream for real-time client notifications.</li></ul>                                                                                    |
 | **WOPI**     | <ul><li>Microsoft API for integrating Office apps with third-party storage, e.g., Collabora.</li></ul>                                                            |
+| **KQL**     | <ul><li>Keyword Query Language (KQL) is a search language to perform advanced searches by filtering and querying structured data, metadata, and documents efficiently.</li></ul>                                                            |
 | **ICAP**     | <ul><li>Network protocol for offloading content scanning (e.g., antivirus).</li></ul>                                                                             |
