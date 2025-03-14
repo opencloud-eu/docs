@@ -17,7 +17,7 @@ title: Synchronization Settings
 
 ## **Synchronization Options**
 
-<img src={require("./img/sync-settings/sync-settings-menue.png").default} alt="synchronization options menu" width="400"/>
+<img src={require("./img/sync-settings/sync-settings-menu.png").default} alt="synchronization options menu" width="400"/>
 
 ### Show in Explorer or Finder
 - Opens the selected Space directly in your **File Explorer (Windows)** or **Finder (Mac)**

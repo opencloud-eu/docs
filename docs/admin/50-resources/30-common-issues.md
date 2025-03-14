@@ -24,11 +24,11 @@ As the local environment is self-signed, you must accept the security risk in yo
 
 For Firefox:
 
-You need to klick on **Advanced**
+You need to click on **Advanced**
 
 <img src={require("./img/common-issues/quick-advanced.png").default} alt="Admin general" width="500"/>
 
-Confirm the risk with **Accept the risk and Contiune**
+Confirm the risk with **Accept the risk and Continue**
 
 <img src={require("./img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500"/>
 

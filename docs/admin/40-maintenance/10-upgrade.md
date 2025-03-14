@@ -49,7 +49,7 @@ docker pull opencloudeu/opencloud:{tag}
 
 If upgrading from an older release, check for required configuration changes:
 
-Go to inside the container:
+Go inside the container:
 ```Shell
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
 ```
