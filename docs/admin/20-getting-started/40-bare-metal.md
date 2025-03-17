@@ -10,7 +10,7 @@ Follow the steps below to install and configure OpenCloud on your system.<br/>
 This example is on Linux Ubuntu 24.04 distribution!
 
 :::danger[Disclaimer]
-   A bare-metal installation is NOT supported by us and the user must be technically skilled enough to solve any problems or difficulties independently or through community support.
+   A bare-metal installation is not supported by us and the user must be technically skilled enough to solve any problems or difficulties independently or through community support.
 :::
 
 :::note
