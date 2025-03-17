@@ -16,7 +16,7 @@ title: User roles in OpenCloud
 
 ### Administrator
 
-The Administrator role in OpenCloud has the same abilities like a Space Admin but in addition it has special permissions to manage users, groups, and system settings. 
+The Administrator role in OpenCloud has the same abilities as a Space Admin but in addition it has special permissions to manage users, groups, and system settings. 
 However, administrators do not have direct access to Space data or the ability to add users to Spaces where they don't have the "can manage" role. Below are the key actions an administrator can perform:
 
 - #### Create and Delete local Users & Groups
@@ -36,7 +36,7 @@ However, administrators do not have direct access to Space data or the ability t
 
 - #### Manage Spaces (without Access to Space Data)
 
-    Administrators can manage Spaces like enable, disable or delte them and rename it or adjust the quota, even if they don't have the "can manage" role.
+    Administrators can manage Spaces like enable, disable or delete them and rename it or adjust the quota, even if they don't have the "can manage" role.
     However, they cannot access the files inside a Space or add members to it.
 
 - #### Change the Logo

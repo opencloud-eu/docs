@@ -77,7 +77,7 @@
 
 ### 📦️ Build&Tools
 
-- Add syntax hilighting for bash [[#140](https://github.com/opencloud-eu/docs/pull/140)]
+- Add syntax highlighting for bash [[#140](https://github.com/opencloud-eu/docs/pull/140)]
 
 ## [1.0.2](https://github.com/opencloud-eu/docs/releases/tag/1.0.2) - 2025-03-03
 

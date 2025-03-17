@@ -44,6 +44,6 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   - **Automatische Anpassung des Limits**
   - **Ein bestimmtes Limit manuell einstellen**
 
-  <!-- <img src={require("./img/settings/settings-bandwith.png").default} alt="settings bandwith" width="400"/>-->
+  <!-- <img src={require("./img/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400"/>-->
 
   Indem Sie diese Einstellungen anpassen, können Sie OpenCloud Desktop nach Ihren Bedürfnissen optimieren!

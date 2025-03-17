@@ -16,7 +16,7 @@ title: Synchronisations Einstellungen
 
 ## **Synchronisationsoptionen**
 
-<!-- <img src={require("./img/sync-settings/sync-settings-menue.png").default}  width="400"/> -->
+<!-- <img src={require("./img/sync-settings/sync-settings-menu.png").default}  width="400"/> -->
 
 ### Im Finder anzeigen
 - Öffnet den ausgewählten Space direkt in Ihrem **File Explorer (Windows)** oder **Finder (Mac)**

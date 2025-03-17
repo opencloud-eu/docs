@@ -34,7 +34,7 @@ A sidebar window will open on the right-hand side of the screen.
     - **“Can view":** Members can only view and download the file, but cannot edit it or upload it to shared folders.
     - **“Can upload":** Members can view and download the file and upload their own files to the shared folder.
     - **“Can edit":** Members have the same rights as in **"can upload"**, but can also create new files, edit existing files and delete them.
-<img src={require("./img/intern/rights-drop-down-menu.png").default} alt="dorp down rights" width="400"/>
+<img src={require("./img/intern/rights-drop-down-menu.png").default} alt="drop down rights" width="400"/>
 <img src={require("./img/intern/rights-options.png").default} alt="right options" width="400"/>
 ---
 

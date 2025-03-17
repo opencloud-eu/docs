@@ -22,7 +22,7 @@ title: Create - Rename - Move
 <img src={require("./img/create-rename-move/create-new-folder.png").default} alt="enter name" width="400"/>
 <br/><br/>
 - Click on **“Create”**.
-<img src={require("./img/create-rename-move/create-button.png").default} alt="klick create" width="400"/>
+<img src={require("./img/create-rename-move/create-button.png").default} alt="click create" width="400"/>
 
 **Done!** The file or folder is created. If it is a file, it is automatically opened in edit mode.
 <br/><br/>

@@ -13,7 +13,7 @@ title: Add members
 ### Add a member
 
 - **Open Space**  
-   - Go to your Space and open the members menu.
+   - Go to your Space and open the members' menu.
    <img src={require("./img/add-user/member-menu.png").default} alt="Member menu" width="1920"/>    
 <br/><br/>
 - **Search for a member:**  
