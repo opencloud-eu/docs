@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Add KQL to APIs [[#161](https://github.com/opencloud-eu/docs/pull/161)]
 - Add note that bare metal is exclusively community supported [[#156](https://github.com/opencloud-eu/docs/pull/156)]
 
 ### 🐛 Bug Fixes
