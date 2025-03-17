@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.5.0](https://github.com/opencloud-eu/docs/releases/tag/1.5.0) - 2025-03-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- Migrate guide [[#159](https://github.com/opencloud-eu/docs/pull/159)]
+
 ## [1.4.0](https://github.com/opencloud-eu/docs/releases/tag/1.4.0) - 2025-03-17
 
 ### ❤️ Thanks to all contributors! ❤️
