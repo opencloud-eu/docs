@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor
+@ScharfViktor, @phil-davis
 
 ### 👷 Admin Documentation
 
