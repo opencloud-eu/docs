@@ -9,6 +9,10 @@ description: "Manual, minimalist setup with essential features."
 Follow the steps below to install and configure OpenCloud on your system.<br/>
 This example is on Linux Ubuntu 24.04 distribution!
 
+:::danger[Disclaimer]
+   A bare-metal installation is NOT supported by us and the user must be technically skilled enough to solve any problems or difficulties independently or through community support.
+:::
+
 :::note
 
 OpenCloud can run as a single binary. However, integrating additional services like Collabora, Apache Tika for search, or antivirus is not documented. This deployment is recommended only for experienced users who require minimal file management features. Support is available exclusively from the community.
@@ -47,7 +51,8 @@ OpenCloud can run as a single binary. However, integrating additional services l
    sudo apt install golang -y
    ```
    <img src={require("./img/bare-metal/install-golang.png").default} alt="install golang" width="1920"/>
-
+   **the minimum go version is 1.24**
+   
 - Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
