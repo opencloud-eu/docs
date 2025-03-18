@@ -11,11 +11,11 @@ draft: true
 
 ### General considerations
 
-OpenCloud supports two different storage setups:
+#### OpenCloud supports two different storage setups:
 
-Pure POSIX Setup: All data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem.
+- Pure POSIX Setup: All data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem.
 
-Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a POSIX-compliant filesystem.
+- Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a POSIX-compliant filesystem.
 
 To determine which filesystems are supported, see: Filesystems and Shared Storage.
 
@@ -23,75 +23,75 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 ### Backup strategies
 
-To create a consistent backup, the OpenCloud instance must be stopped before starting the backup process. After the backup is complete, the instance can be restarted.
+#### To create a consistent backup, the OpenCloud instance must be stopped before starting the backup process. After the backup is complete, the instance can be restarted.
 
-There are two recommended approaches:
+**There are two recommended approaches:**
 
-Snapshot-based backup (recommended)
+- Snapshot-based backup (recommended)
 
-If your storage system supports snapshots, creating a backup only takes a few seconds.
+    - If your storage system supports snapshots, creating a backup only takes a few seconds.
 
-Snapshots should be copied to secondary storage or used by backup software for additional security.
+    - Snapshots should be copied to secondary storage or used by backup software for additional security.
 
-Backup software approach
+-Backup software approach
 
-If snapshots are not available, you can use any backup software of your choice.
+    - If snapshots are not available, you can use any backup software of your choice.
 
-For more details on data locations, refer to the Default Paths documentation.
+    - For more details on data locations, refer to the Default Paths documentation.
 
 ---
 
 ### Required backup components
 
-A complete backup must include:
+#### A complete backup must include:
 
-Configuration data
+- Configuration data
 
-System data (shares the root path with metadata if not defined separately)
+- System data (shares the root path with metadata if not defined separately)
 
-Metadata (varies depending on the storage setup)
+- Metadata (varies depending on the storage setup)
 
-Blobs (stored with metadata on POSIX or separately on S3)
+- Blobs (stored with metadata on POSIX or separately on S3)
 
-⚠️ If the search index is not backed up, it must be recreated after restoration.
+- ⚠️ If the search index is not backed up, it must be recreated after restoration.
 
-Additionally, consider backing up:
+- Additionally, consider backing up:
 
-The OpenCloud binary or container used
+- The OpenCloud binary or container used
 
-The configuration files
+- The configuration files
 
-This ensures compatibility when restoring and prevents issues caused by software version mismatches.
+- This ensures compatibility when restoring and prevents issues caused by software version mismatches.
 
 ---
 
 ### Pure POSIX setup
 
-If all data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem:
+#### If all data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem:
 
-Stop the OpenCloud instance.
+- Stop the OpenCloud instance.
 
-Create a backup of all data sets.
+- Create a backup of all data sets.
 
-If everything is on one filesystem, this is straightforward.
+- If everything is on one filesystem, this is straightforward.
 
-If separate filesystems are used for configuration and blobs/metadata, back up each one individually.
+- If separate filesystems are used for configuration and blobs/metadata, back up each one individually.
 
-Restart the OpenCloud instance after the backup is complete.
+- Restart the OpenCloud instance after the backup is complete.
 
 ---
 
 ### Distributed setup
 
-If blobs are stored on S3, while configuration and metadata remain on a POSIX-compliant filesystem:
+#### If blobs are stored on S3, while configuration and metadata remain on a POSIX-compliant filesystem:
 
-Stop the OpenCloud instance.
+- Stop the OpenCloud instance.
 
-Back up the configuration and metadata.
+- Back up the configuration and metadata.
 
-Back up the S3 bucket according to the guidelines of your S3 provider.
+- Back up the S3 bucket according to the guidelines of your S3 provider.
 
-Restart the OpenCloud instance after the backup is complete.
+- Restart the OpenCloud instance after the backup is complete.
 
 ---
 
