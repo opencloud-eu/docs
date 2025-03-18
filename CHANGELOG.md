@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.6.0](https://github.com/opencloud-eu/docs/releases/tag/1.6.0) - 2025-03-17
+## [1.6.0](https://github.com/opencloud-eu/docs/releases/tag/1.6.0) - 2025-03-18
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Refining the text in backup tutorial [[#170](https://github.com/opencloud-eu/docs/pull/170)]
 - Insert a disclaimer in Bare-Metal Tutorial [[#167](https://github.com/opencloud-eu/docs/pull/167)]
 
 ## [1.5.0](https://github.com/opencloud-eu/docs/releases/tag/1.5.0) - 2025-03-17
