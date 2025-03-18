@@ -10,13 +10,7 @@ Follow the steps below to install and configure OpenCloud on your system.<br/>
 This example is on Linux Ubuntu 24.04 distribution!
 
 :::danger[Disclaimer]
-   A bare-metal installation is not supported by us and the user must be technically skilled enough to solve any problems or difficulties independently or through community support.
-:::
-
-:::note
-
-OpenCloud can run as a single binary. However, integrating additional services like Collabora, Apache Tika for search, or antivirus is not documented. This deployment is recommended only for experienced users who require minimal file management features. Support is available exclusively from the community.
-
+   Bare-metal deployments are not officially supported by OpenCloud. They are great for quick evaluation but are undocumented and have a minimalist feature set. If you choose this setup, you are on your own. With great power comes great responsibility.
 :::
 
 ---
