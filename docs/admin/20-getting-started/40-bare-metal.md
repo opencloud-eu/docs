@@ -40,18 +40,8 @@ This example is on Linux Ubuntu 24.04 distribution!
 
 ### 2. Install the required packages
 
-- Install the Go package:
-   ```bash
-   curl -LO https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
-   ```
-   ```bash
-   sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz
-   ```
-   ```bash
-   echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile && source $HOME/.profile
-   ```
-   <img src={require("./img/bare-metal/install-golang.png").default} alt="install golang" width="1920"/>
-   
+- Download and install Go by following the official guide: 🔗[**go.dev/doc/install**](https://go.dev/doc/install)
+
 - Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
