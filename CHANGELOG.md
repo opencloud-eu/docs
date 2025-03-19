@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@AlexAndBear, @Heiko-Pohl
 
 ### 👷 Admin Documentation
 
