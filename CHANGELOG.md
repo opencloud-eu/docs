@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.7.1](https://github.com/opencloud-eu/docs/releases/tag/1.7.1) - 2025-03-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 🐛 Bug Fixes
+
+- Recover release notes [[#175](https://github.com/opencloud-eu/docs/pull/175)]
+
 ## [1.7.0](https://github.com/opencloud-eu/docs/releases/tag/1.7.0) - 2025-03-19
 
 ### ❤️ Thanks to all contributors! ❤️
