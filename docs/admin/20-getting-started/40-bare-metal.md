@@ -38,15 +38,10 @@ This example is on Linux Ubuntu 24.04 distribution!
 
 ---
 
-### 2. Update system and install required packages
+### 2. Install the required packages
 
-- Install the golang package:
-   ```bash
-   sudo apt install golang -y
-   ```
-   <img src={require("./img/bare-metal/install-golang.png").default} alt="install golang" width="1920"/>
-   **the minimum go version is 1.24**
-   
+- Download and install Go by following the official guide: 🔗[**go.dev/doc/install**](https://go.dev/doc/install)
+
 - Install npm (Node Package Manager):
    ```bash
    sudo apt install npm -y
