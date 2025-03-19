@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.7.0](https://github.com/opencloud-eu/docs/releases/tag/1.7.0) - 2025-03-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👷 Admin Documentation
+
+- Changing disclaimer text [[#171](https://github.com/opencloud-eu/docs/pull/171)]
+
 ## [1.6.0](https://github.com/opencloud-eu/docs/releases/tag/1.6.0) - 2025-03-18
 
 ### ❤️ Thanks to all contributors! ❤️
