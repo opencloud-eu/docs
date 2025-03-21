@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.0](https://github.com/opencloud-eu/docs/releases/tag/1.8.0) - 2025-03-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 👤 User Documentation
+
+- Fix view modes title  [[#178](https://github.com/opencloud-eu/docs/pull/178)]
+
 ## [1.7.1](https://github.com/opencloud-eu/docs/releases/tag/1.7.1) - 2025-03-19
 
 ### ❤️ Thanks to all contributors! ❤️
