@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- Fix tiles view title [[#177](https://github.com/opencloud-eu/docs/pull/177)]
 - Fix view modes title  [[#178](https://github.com/opencloud-eu/docs/pull/178)]
 
 ## [1.7.1](https://github.com/opencloud-eu/docs/releases/tag/1.7.1) - 2025-03-19
