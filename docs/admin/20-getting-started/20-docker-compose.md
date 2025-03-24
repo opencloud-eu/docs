@@ -22,13 +22,31 @@ description: "🌟 Full-blown featureset including web office and full-text sear
 
 ---
 
-## 1. Login to a deployment-service:
+## 1. Login to a host-service / server:
 
-In unserem Fall melden wir uns über das Terminal bei unserem erstellten Hetzner Server via SSH an.
+In our case, we log in to our created Hetzner server via SSH via the terminal.
+
+```Shell
+ssh root@"ip of the server"
+```
 
 ---
 
-## 2. Download
+## 2. Install Docker Compose
+
+```Shell
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```Shell
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+```Shell
+sudo apt install docker-compose
+```
+
+## 3. Clone OpenCloud Repository
 
 Download the `opencloud_full` folder (this folder contains a multi-file Docker Compose configuration):
 
@@ -39,17 +57,17 @@ git clone https://github.com/opencloud-eu/opencloud.git
 
 ---
 
-## 3. Changes .env File
+## 4. Changes .env File
 
 In den folgenden Screenshots beschreiben wir welche Änderungen in der .env vorgenommen werden müssen um OpenCloud von aussen erreichbar zu machen.
 
-<img src={require("./img/docker-compose/insecure-option-and-traefik-domain.png").default} alt="Insecure Option and Traefik Domain" width="1920"/>
+<img src={require("./img/docker-compose/traefik-domain.png").default} alt="Insecure Option and Traefik Domain" width="1920"/>
 
-<img src={require("./img/docker-compose/oc-domain.png").default} alt="OC Domain" width="1920"/>
+<img src={require("./img/docker-compose/opencloud-domain.png").default} alt="OC Domain" width="1920"/>
 
-<img src={require("./img/docker-compose/collabora-and-wopi-domain.png").default} alt="Collabora and Wopi Domain" width="1920"/>
+<img src={require("./img/docker-compose/collabora-and-wopiserver-domain.png").default} alt="Collabora and Wopi Domain" width="1920"/>
 
-## 4. Start
+## 5. Start
 
 cd into the Docker Compose configuration folder:
 
@@ -69,10 +87,10 @@ This starts all necessary containers in the background.
 
 ---
 
-## 5. Login
+## 6. Login
 
 Login with your browser:
-- [https://cloud.opencloud.test](https://cloud.opencloud.test)
+- https://"your domain of your .env file"
 - user: **admin**
 - password: **admin**
 
