@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- PosixFS adjustments [[#184](https://github.com/opencloud-eu/docs/pull/184)]
 - Add Posixfs admin documentation  [[#182](https://github.com/opencloud-eu/docs/pull/182)]
 
 ### 👤 User Documentation
