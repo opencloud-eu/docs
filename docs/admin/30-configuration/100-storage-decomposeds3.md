@@ -2,7 +2,6 @@
 sidebar_position: 10
 id: storage-decomposeds3
 title: "Storage: Decomposeds3"
-draft: false
 ---
 
 # Decomposeds3 Storage Driver

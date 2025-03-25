@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: requirements
 title: Requirements
-draft: false
 description: "Runs on anything from a Raspberry Pi to a data center."
 ---
 
