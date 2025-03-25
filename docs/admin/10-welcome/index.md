@@ -1,7 +1,6 @@
 ---
 title: Welcome!
 slug: /admin/intro
-draft: false
 ---
 
 # 🙋🏻‍♀️ Welcome to OpenCloud Admin Docs
