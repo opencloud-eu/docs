@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.8.0](https://github.com/opencloud-eu/docs/releases/tag/1.8.0) - 2025-03-21
+## [1.8.0](https://github.com/opencloud-eu/docs/releases/tag/1.8.0) - 2025-03-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @dragotin
+
+### 👷 Admin Documentation
+
+- Add Posixfs admin documentation  [[#182](https://github.com/opencloud-eu/docs/pull/182)]
 
 ### 👤 User Documentation
 
