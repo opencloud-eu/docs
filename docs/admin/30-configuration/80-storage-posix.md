@@ -23,7 +23,7 @@ To allow OpenCloud to work database-less, extra metadata is stored in the extend
 
 PosixFS in *non collaborative mode* must not be changed manually in the file system while OpenCloud is up and running. The assigned file system tree has to be exclusively granted for OpenClouds access.
 
-File- and folder permissions must be set to the same user and group that OpenCloud is running under. That is happening autmatically as long as the root directory of the tree is writeable.
+File- and folder permissions must be set to the same user and group that OpenCloud is running under. That is happening automatically as long as the root directory of the tree is writeable.
 
 ### External Access
 
