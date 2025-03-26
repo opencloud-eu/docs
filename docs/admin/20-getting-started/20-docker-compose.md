@@ -18,6 +18,8 @@ description: "🌟 Full-blown featureset including web office and full-text sear
     - collabora.* for serving Collabora
     - wopiserver.* for serving the WOPI server
     - traefik.* for serving the Traefik dashboard
+
+    Alternatively you can register a wildcard domain with *.YOUR.DOMAIN
 - Host service (we use in our example Hetzner as hostservice)
 
 ---
@@ -60,23 +62,71 @@ git clone https://github.com/opencloud-eu/opencloud.git
 
 ---
 
-## 4. Changes .env File
+## 4. Adjust .env file to start the docker compose with staging certificates
 
-In den folgenden Screenshots beschreiben wir welche Änderungen in der .env vorgenommen werden müssen um OpenCloud von aussen erreichbar zu machen.
-
-<img src={require("./img/docker-compose/traefik-domain.png").default} alt="Insecure Option and Traefik Domain" width="1920"/>
-
-<img src={require("./img/docker-compose/opencloud-domain.png").default} alt="OC Domain" width="1920"/>
-
-<img src={require("./img/docker-compose/collabora-and-wopiserver-domain.png").default} alt="Collabora and Wopi Domain" width="1920"/>
-
-## 5. Start
+Before applying a production Let's Encrypt certificate, you should first test whether the domain certification works correctly. To do this, modify the .env file and use the Let's Encrypt staging environment. The staging certificates allow you to verify your setup without hitting rate limits.
 
 cd into the Docker Compose configuration folder:
 
 ```Shell
 cd opencloud/deployments/examples/opencloud_full
 ```
+
+Following variables should be adjusted:
+
+- Comment insecure out:
+
+`# INSECURE=true`
+
+ It skips certificate validation for various parts of OpenCloud and is needed when self signed certificates are used.
+
+- enter your traefik domain
+
+`TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN`
+
+Domain of Traefik, where you can find the dashboard. Defaults to "traefik.opencloud.test"
+
+
+- enter a valid e-mail adress
+
+`TRAEFIK_ACME_MAIL=valid@mail.adress`
+
+Email address for obtaining LetsEncrypt certificates.
+
+- set the CA-Server to stagin
+
+`TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory`
+
+With staging configured, there will be an SSL error in the browser.
+When one of the certificates which are written on the lets encrypt website show up, the process went well.
+
+https://letsencrypt.org/docs/staging-environment/
+
+- set your OpenCloud Domain
+
+`OC_DOMAIN=cloud.YOUR.DOMAIN`
+
+Domain of openCloud, where you can find the frontend. Defaults to "cloud.opencloud.test"
+
+- change your admin password 
+
+`ADMIN_PASSWORD=Saf3PAssW0Rd`
+
+OpenCloud admin user password. Defaults to "admin".
+
+- set the Collabora domain
+
+`COLLABORA_DOMAIN=collabora.YOUR.DOMAIN`
+
+Domain of Collabora, where you can find the frontend. Defaults to "collabora.opencloud.test"
+
+- set the WopiServer Domain
+
+`WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN`
+
+Domain of the wopiserver which handles OnlyOffice. Defaults to "wopiserver.opencloud.test"
+
+## 5. Start
 
 Start the deployment with Docker Compose:
 
@@ -95,14 +145,12 @@ This starts all necessary containers in the background.
 Login with your browser:
 - https://"your domain of your .env file"
 - user: **admin**
-- password: **admin**
+- password: **Saf3PAssW0Rd**
 
 <img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
 
-## 7. Conclusion
 
-Your OpenCloud server is now running and ready to use 🚀
 
 --- 
 
