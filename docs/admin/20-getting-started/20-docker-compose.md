@@ -14,11 +14,11 @@ description: "🌟 Full-blown featureset including web office and full-text sear
 - [**Git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [**Docker Compose**](https://docs.docker.com/compose/install/)
 - Four domains set up and pointing to your server
-    - opencloud.* for serving OpenCloud
+    - cloud.* for serving OpenCloud
     - collabora.* for serving Collabora
     - wopiserver.* for serving the WOPI server
     - traefik.* for serving the Traefik dashboard
-- Host service (we us in our example Hetzner as hoster)
+- Host service (we use in our example Hetzner as hostservice)
 
 ---
 
@@ -32,18 +32,21 @@ ssh root@"ip of the server"
 
 ---
 
-## 2. Install Docker Compose
+## 2. Install Docker
+
+Perform an update and upgrad
 
 ```Shell
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+apt update && apt upgrade -y
 ```
 
-```Shell
-sudo chmod +x /usr/local/bin/docker-compose
-```
+
+Follow the instruction from the [official Docker website](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+
+After installing Docker, you need to enable and start it
 
 ```Shell
-sudo apt install docker-compose
+systemctl enable docker && systemctl start docker
 ```
 
 ## 3. Clone OpenCloud Repository
