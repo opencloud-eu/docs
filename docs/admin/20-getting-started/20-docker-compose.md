@@ -5,224 +5,178 @@ title: Docker Compose
 description: "🌟 Full-blown featureset including web office and full-text search."
 ---
 
-# Docker Compose
+# **Docker Compose Installation Guide**
+
+## **Prerequisites**
+
+- **Four domains** pointing to your server:
+  - `cloud.YOUR.DOMAIN` → OpenCloud frontend
+  - `collabora.YOUR.DOMAIN` → Collabora Online Server
+  - `wopiserver.YOUR.DOMAIN` → WOPI server for document editing
+  - `traefik.YOUR.DOMAIN` → Traefik dashboard
+
+  Alternatively, you can use a wildcard domain (`*.YOUR.DOMAIN`)
+- A **hosted server** (e.g., Hetzner, AWS, or your own VPS) with Linux and SSH access
 
 
 
-## **Prerequisites:**
-- **Linux**, **Mac** or **Windows** Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-- [**Git**](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [**Docker Compose**](https://docs.docker.com/compose/install/)
-- Four domains set up and pointing to your server
-    - cloud.* for serving OpenCloud
-    - collabora.* for serving Collabora
-    - wopiserver.* for serving the WOPI server
-    - traefik.* for serving the Traefik dashboard
+## 1. Connect to Your Server
+Log into your server via SSH:
 
-    Alternatively you can register a wildcard domain with *.YOUR.DOMAIN
-- Host service (we use in our example Hetzner as hostservice)
-
----
-
-## 1. Login to a host-service / server:
-
-In our case, we log in to our created Hetzner server via SSH via the terminal.
-
-```Shell
-ssh root@"ip of the server"
+```bash
+ssh root@YOUR.SERVER.IP
 ```
-
----
 
 ## 2. Install Docker
+Update your system and install Docker.
 
-Perform an update and upgrad
 
-```Shell
+First, update your package list:
+
+```bash
 apt update && apt upgrade -y
 ```
+Install Docker following the [official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
+Once Docker is installed, enable and start the service:
 
-Follow the instruction from the [official Docker website](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
-
-After installing Docker, you need to enable and start it
-
-```Shell
+```bash
 systemctl enable docker && systemctl start docker
 ```
 
-## 3. Clone OpenCloud Repository
+## 3. Clone the OpenCloud Repository
+Download the necessary configuration files:
 
-Download the `opencloud_full` folder (this folder contains a multi-file Docker Compose configuration):
-
-
-```Shell
+```bash
 git clone https://github.com/opencloud-eu/opencloud.git
 ```
 
----
+## 4. Configure the .env File for Staging Certificates
+Before requesting real SSL certificates, test the setup with Let's Encrypt’s staging environment.
 
-## 4. Adjust .env file to start the docker compose with staging certificates
+Navigate to the OpenCloud configuration folder:
 
-Before applying a production Let's Encrypt certificate, you should first test whether the domain certification works correctly. To do this, modify the .env file and use the Let's Encrypt staging environment. The staging certificates allow you to verify your setup without hitting rate limits.
-
-cd into the Docker Compose configuration folder:
-
-```Shell
+```bash
 cd opencloud/deployments/examples/opencloud_full
 ```
 
-```Shell
+Edit the `.env` file:
+
+```bash
 nano .env
 ```
 
-Following variables should be adjusted:
+Modify these settings:
 
-- Comment insecure out:
+### ✅ Disable insecure mode
+```bash
+# INSECURE=true
+```
 
-`# INSECURE=true`
+### ✅ Set your domain names
+```bash
+TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
+OC_DOMAIN=cloud.YOUR.DOMAIN
+COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
+WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
+```
 
- It skips certificate validation for various parts of OpenCloud and is needed when self signed certificates are used.
+### ✅ Set your admin password
+```bash
+ADMIN_PASSWORD=YourSecurePassword
+```
 
-- enter your traefik domain
+### ✅ Set your email for SSL certification
+```bash
+TRAEFIK_ACME_MAIL=your@email.com
+```
 
-`TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN`
+### ✅ Use Let's Encrypt staging certificates (for testing)
+```bash
+TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
+```
 
-Domain of Traefik, where you can find the dashboard. Defaults to "traefik.opencloud.test"
+Save and exit (CTRL + X, then Y and Enter).
 
+## 5. Start OpenCloud
+Launch OpenCloud using Docker Compose:
 
-- enter a valid e-mail adress
-
-`TRAEFIK_ACME_MAIL=valid@mail.adress`
-
-Email address for obtaining LetsEncrypt certificates.
-
-- set the CA-Server to staging
-
-`TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory`
-
-With staging configured, there will be an SSL error in the browser.
-When one of the certificates which are written on the lets encrypt website show up, the process went well.
-
-https://letsencrypt.org/docs/staging-environment/
-
-- set your OpenCloud Domain
-
-`OC_DOMAIN=cloud.YOUR.DOMAIN`
-
-Domain of openCloud, where you can find the frontend. Defaults to "cloud.opencloud.test"
-
-- change your admin password 
-
-`ADMIN_PASSWORD=Saf3PAssW0Rd`
-
-OpenCloud admin user password. Defaults to "admin".
-
-- set the Collabora domain
-
-`COLLABORA_DOMAIN=collabora.YOUR.DOMAIN`
-
-Domain of Collabora, where you can find the frontend. Defaults to "collabora.opencloud.test"
-
-- set the WopiServer Domain
-
-`WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN`
-
-Domain of the wopiserver which handles OnlyOffice. Defaults to "wopiserver.opencloud.test"
-
-## 5. Start
-
-Start the deployment with Docker Compose:
-
-```Shell
+```bash
 docker compose up -d
 ```
 
+This will start all required services in the background.
 
-This starts all necessary containers in the background.
+## 6. Verify SSL Certification
+In your web browser, visit:
 
----
+```bash
+https://cloud.YOUR.DOMAIN
+```
 
-## 6. Check if the certification process works
-
-In your browser enter your OpenCloud domain.
-
-You should now have an insecure connection.
-
-Check the certificate if it is one from the let´s encrypt staging server
-
-https://letsencrypt.org/docs/staging-environment/
+You should see a security warning because the staging certificate is not fully trusted.
 
 <img src={require("./img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
+
+
+✅ Check the certificate details to confirm it’s from Let's Encrypt Staging.
+
 <img src={require("./img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
 <img src={require("./img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
 
---- 
+## 7. Apply a Real SSL Certificate
+Once the staging certificate works, switch to a production certificate.
 
-## 7.  Make your OpenCloud SSL certificed 
-
-Now that you know, that the signing porcess works, you can make your OpenCloud SSL certificed
-
-You need to remove the `acme.json` file in the traefik container.
-
-- Stop the docker compose
-
-```Shell
+### Steps:
+#### 1️⃣ Stop Docker Compose
+```bash
 docker compose down
 ```
 
-- Remove the cert volume.
-
-When you have nothing changed in the settings, you can use this command
-
-```Shell
+#### 2️⃣ Remove old staging certificates
+```bash
 docker volume rm opencloud_full_certs
 ```
 
-Otherwise you need to find out, how you volume is named and delete this one.
+(If you changed volume names, adjust accordingly.)
 
-- Comment the staging server out in the .env
-
-```Shell
-cd opencloud/deployments/examples/opencloud_full
-```
-
-```Shell
+#### 3️⃣ Disable staging mode in `.env`
+```bash
 nano .env
 ```
 
-`# TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory`
+Comment out the staging server:
+```bash
+# TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
+```
 
-- Start the docker compose again
-
-```Shell
+#### 4️⃣ Restart OpenCloud with a real SSL certificate
+```bash
 docker compose up -d
 ```
 
-
-When you open your OpenCloud domain in the browser you should have a SSL certified connection
+✅ Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
 
 <img src={require("./img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
 
+## 8. Log into OpenCloud
+Open a browser and visit:
 
-# 8. Login your OpenCloud
+```bash
+https://cloud.YOUR.DOMAIN
+```
 
-Login with your browser:
-- https://"your domain of your .env file"
-- user: **admin**
-- password: **Saf3PAssW0Rd**
+Login with:
+
+**Username:** `admin`
+
+**Password:** (your set password)
 
 <img src={require("./img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
-
-
-
 ## Troubleshooting
+If you encounter any issues, check the [Common Issues & Help Guide](./../50-resources/30-common-issues.md)
 
-If you encounter any issues or errors, try finding a solution here: 
-
-- [Common Issues & Help](./../50-resources/30-common-issues.md)
-<br/>
 ---
 
 ## Guide for local installation
