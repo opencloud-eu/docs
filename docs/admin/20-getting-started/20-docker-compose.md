@@ -72,6 +72,10 @@ cd into the Docker Compose configuration folder:
 cd opencloud/deployments/examples/opencloud_full
 ```
 
+```Shell
+nano .env
+```
+
 Following variables should be adjusted:
 
 - Comment insecure out:
@@ -93,7 +97,7 @@ Domain of Traefik, where you can find the dashboard. Defaults to "traefik.opencl
 
 Email address for obtaining LetsEncrypt certificates.
 
-- set the CA-Server to stagin
+- set the CA-Server to staging
 
 `TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory`
 
@@ -134,13 +138,70 @@ Start the deployment with Docker Compose:
 docker compose up -d
 ```
 
-<img src={require("./img/quick-guide/quick-docker-compose-up.png").default} alt="Admin general" width="1920"/>
 
 This starts all necessary containers in the background.
 
 ---
 
-## 6. Login
+## 6. Check if the certification process works
+
+In your browser enter your OpenCloud domain.
+
+You should now have an insecure connection.
+
+Check the certificate if it is one from the let´s encrypt staging server
+
+https://letsencrypt.org/docs/staging-environment/
+
+!!! TO DO Screenshot wie man Certifacte checkt und dass es eins vom Staging Server ist
+
+--- 
+
+## 7.  Make your OpenCloud SSL certificed 
+
+Now that you know, that the signing porcess works, you can make your OpenCloud SSL certificed
+
+You need to remove the `acme.json` file in the traefik container.
+
+- Stop the docker compose
+
+```Shell
+docker compose down
+```
+
+- Remove the cert volume.
+
+When you have nothing changed in the settings, you can use this command
+
+`docker volumes rm opencloud_full_certs`
+
+Otherwise you need to find out, how you volume is named and delete this one.
+
+- Comment the staging server out in the .env
+
+```Shell
+cd opencloud/deployments/examples/opencloud_full
+```
+
+```Shell
+nano .env
+```
+
+`# TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory`
+
+- Start the docker compose again
+
+```Shell
+docker compose up -d
+```
+
+
+When you open your OpenCloud domain in the browser you should have a SSL certified connection
+
+!!! TODO Screenshot von sicherer Verbindund!!!
+
+
+# 8. Login your OpenCloud
 
 Login with your browser:
 - https://"your domain of your .env file"
@@ -151,8 +212,6 @@ Login with your browser:
 
 
 
-
---- 
 
 ## Troubleshooting
 
