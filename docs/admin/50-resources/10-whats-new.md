@@ -4,6 +4,27 @@ id: whats-new
 title: "What's New"
 ---
 
+# 2025 March 26
+
+**Release notes OpenCloud 2.0.0 (Production release)**
+
+- **🌲 File Native Backups with PosixFS**: OpenCloud introduces PosixFS to allow for easy file native backups. As all files and metadata information is stored directly on the storage (no database needed), you can create standard file-level snapshots or copies. <br />
+Previously, files and folders were stored in a hash-based structure, making the layout unreadable for humans. With PosixFS, the full file tree is directly visible on the storage, providing transparency and confidence that all data is being backed up correctly. Admins benefit from easier maintenance, fewer moving parts, and improved fault tolerance in backup and disaster recovery scenarios. <br />
+**Note:** Before adding, writing, or restoring files directly into the OpenCloud storage, make sure to stop OpenCloud. Once the changes are made, start it again. This ensures that all changes are properly recognized. A future feature, currently in development, called “collaborative storage” will allow external file changes (e.g., via CLI) to be detected in real time by OpenCloud and its clients.
+
+
+:::warning[Breaking Change]
+
+**No migration path** – There is no programmatic migration from earlier versions (using decomposedFS) to version 2.0.0. If you need assistance, please reach out in our [Matrix channel](https://matrix.to/#/#opencloud:matrix.org) or open an issue on [GitHub](https://github.com/opencloud-eu/opencloud/issues). This helps us gauge how impactful this change is and respond accordingly.
+
+:::
+
+# 2025 March 18
+
+**Release notes OpenCloud 1.1.0**
+
+- **🎨 Material Design Color Roles**: The custom color framework has been replaced with Material Design color roles. This change standardizes theming by using a small set of base colors to generate a consistent, accessible color palette across the UI. It lays the groundwork for improved visual coherence and better support for dark mode, accessibility, and future theming options.
+
 # 2025 February 25
 
 **Release notes OpenCloud 1.0.0**
