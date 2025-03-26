@@ -153,7 +153,9 @@ Check the certificate if it is one from the let´s encrypt staging server
 
 https://letsencrypt.org/docs/staging-environment/
 
-!!! TO DO Screenshot wie man Certifacte checkt und dass es eins vom Staging Server ist
+<img src={require("./img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
 
 --- 
 
@@ -173,7 +175,9 @@ docker compose down
 
 When you have nothing changed in the settings, you can use this command
 
-`docker volumes rm opencloud_full_certs`
+```Shell
+docker volume rm opencloud_full_certs
+```
 
 Otherwise you need to find out, how you volume is named and delete this one.
 
@@ -198,7 +202,7 @@ docker compose up -d
 
 When you open your OpenCloud domain in the browser you should have a SSL certified connection
 
-!!! TODO Screenshot von sicherer Verbindund!!!
+<img src={require("./img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
 
 
 # 8. Login your OpenCloud
@@ -208,7 +212,7 @@ Login with your browser:
 - user: **admin**
 - password: **Saf3PAssW0Rd**
 
-<img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
+<img src={require("./img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
 
 
