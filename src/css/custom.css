@@ -38,7 +38,7 @@
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(4, 4, 4, 0.1);
     --ifm-hr-margin-vertical: 4rem;
-    --ifm-leading: calc(var(--ifm-leading-desktop)* 1.25rem);
+    --ifm-leading: calc(var(--ifm-leading-desktop) * 1.25rem);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -82,6 +82,8 @@
     display: block;
 }
 
-.sidebar__category-label::first-letter {
-    text-transform: uppercase;
-  }
+/* Capitalize the menu links, e.G needed for subfolders */
+.menu__link {
+    text-transform: capitalize;
+
+}
