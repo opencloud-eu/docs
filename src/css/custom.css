@@ -81,9 +81,3 @@
 [data-theme='dark'] .dark-mode-image {
     display: block;
 }
-
-/* Capitalize the menu links, e.G needed for subfolders */
-.menu__link {
-    text-transform: capitalize;
-
-}
