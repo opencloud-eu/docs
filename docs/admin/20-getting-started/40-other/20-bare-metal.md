@@ -28,13 +28,13 @@ This example is on Linux Ubuntu 24.04 distribution!
    ```bash
    sudo apt install git
    ```
-   <img src={require("./img/bare-metal/install-git.png").default} alt="install git" width="1920"/>
+   <img src={require("./../img/bare-metal/install-git.png").default} alt="install git" width="1920"/>
 
 - Clone the OpenCloud repository:
    ```bash
    git clone https://github.com/opencloud-eu/opencloud.git
    ```
-   <img src={require("./img/bare-metal/git-clone.png").default} alt="git clone" width="1920"/>
+   <img src={require("./../img/bare-metal/git-clone.png").default} alt="git clone" width="1920"/>
 
 ---
 
@@ -46,19 +46,19 @@ This example is on Linux Ubuntu 24.04 distribution!
    ```bash
    sudo apt install npm -y
    ```
-   <img src={require("./img/bare-metal/install-npm.png").default} alt="install npm" width="1920"/>
+   <img src={require("./../img/bare-metal/install-npm.png").default} alt="install npm" width="1920"/>
 
 - Install corepack globally:
    ```bash
    sudo npm install -g corepack
    ```
-   <img src={require("./img/bare-metal/install-corepack.png").default} alt="install corepack" width="1920"/>
+   <img src={require("./../img/bare-metal/install-corepack.png").default} alt="install corepack" width="1920"/>
 
 - Enable `pnpm` using corepack:
    ```bash
    corepack enable pnpm
    ```
-   <img src={require("./img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920"/>
+   <img src={require("./../img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920"/>
 
 ---
 
@@ -68,7 +68,7 @@ This example is on Linux Ubuntu 24.04 distribution!
    ```bash
    cd opencloud
    ```
-   <img src={require("./img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
+   <img src={require("./../img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
    
 - Run the build generate process:
    ```bash
@@ -79,13 +79,13 @@ This example is on Linux Ubuntu 24.04 distribution!
    ```bash
    ./bin/opencloud init --insecure true --admin-password admin
    ```
-   <img src={require("./img/bare-metal/opencloud-init.png").default} alt="opencloud init" width="1920"/>
+   <img src={require("./../img/bare-metal/opencloud-init.png").default} alt="opencloud init" width="1920"/>
 
 - Start the OpenCloud server:
    ```bash
    ./bin/opencloud server
    ```
-   <img src={require("./img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920"/>
+   <img src={require("./../img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920"/>
 
 ---
 
@@ -96,7 +96,7 @@ Login with your browser:
 - user: **admin**
 - password: **admin**
 
-<img src={require("./img/bare-metal/login.png").default} alt="login" width="1920"/>
+<img src={require("./../img/bare-metal/login.png").default} alt="login" width="1920"/>
 
 --- 
 
@@ -107,4 +107,4 @@ Your OpenCloud server is now running and ready to use 🚀
 ---
 
 ### If you encounter any issues or errors, try finding a solution here: 
-- [Common Issues & Help](./../50-resources/30-common-issues.md)
+- [Common Issues & Help](./../../50-resources/30-common-issues.md)
