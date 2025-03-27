@@ -16,6 +16,8 @@ Below, you’ll find details about each user, including their roles and login cr
 ## Mary Kenneth Keller (OpenCloud Username: mary)  
 📌 **First woman with a PhD in computer science**  
 
+<img src={require("./img/40-demo-user/mary-kenneth-keller.png").default} alt="Mary Kenneth Keller" width="400"/>
+
 - Was a nun and studied mathematics (Bachelor & Master of Science)
 - First woman to work at Dartmouth College's Computer Science Center
 - Founded and chaired the first computer science department at Clarke University, Iowa, for over 20 years
@@ -27,6 +29,8 @@ Below, you’ll find details about each user, including their roles and login cr
 ## Margaret Hamilton (OpenCloud Username: margaret)  
 📌 **Software pioneer & NASA developer**  
 
+<img src={require("./img/40-demo-user/margaret-hamilton.png").default} alt="Margaret Hamilton" width="400"/>
+
 - Studied mathematics at Earlham College
 - Developed the on-board flight software for NASA as a software engineer at MIT
 - Her work was crucial to the success of the Apollo 11 mission in 1969
@@ -37,6 +41,8 @@ Below, you’ll find details about each user, including their roles and login cr
 ## Dennis Ritchie (OpenCloud Username: dennis)  
 📌 **Co-developer of UNIX & inventor of the C programming language**  
 
+<img src={require("./img/40-demo-user/dennis-ritchie.png").default} alt="Dennis Ritchie" width="400"/>
+
 - Studied physics and applied mathematics at Harvard University
 - Worked at Bell Labs from 1967, where he developed the first version of the Unix operating system
 - Died in 2011, but his influence on modern software development remains immeasurable
@@ -45,6 +51,8 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Alan Turing (OpenCloud Username: alan)  
 📌 **Father of modern computer science & codebreaker in the Second World War**  
+
+<img src={require("./img/40-demo-user/alan-turing.png").default} alt="Alan Turing" width="400"/>
 
 - British logician, mathematician, and computer scientist
 - Developed the theoretical foundations of modern computer technology
