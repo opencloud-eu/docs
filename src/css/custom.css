@@ -81,3 +81,7 @@
 [data-theme='dark'] .dark-mode-image {
     display: block;
 }
+
+.sidebar__category-label::first-letter {
+    text-transform: uppercase;
+  }

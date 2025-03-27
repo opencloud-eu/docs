@@ -3,6 +3,7 @@ sidebar_position: 2
 id: docker-compose
 title: Docker Compose
 description: "🌟 Full-blown featureset including web office and full-text search."
+
 ---
 
 # Docker Compose
@@ -42,7 +43,7 @@ Start the deployment with Docker Compose:
 docker compose up -d
 ```
 
-<img src={require("./img/quick-guide/quick-docker-compose-up.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/quick-guide/quick-docker-compose-up.png").default} alt="Admin general" width="1920"/>
 
 This starts all necessary containers in the background.
 
@@ -60,7 +61,7 @@ Edit the /etc/hosts file and add the following entries for local access:
 
 Open [https://collabora.opencloud.test](https://collabora.opencloud.test) and accept the self-signed certificate. This step is needed as you can not accept the self-signed certificate if you try to open a .odt document from within the OpenCloud Web UI as Collabora is embedded via an iframe.
 
-<img src={require("./img/quick-guide/collabora-accept-self-signed-cert.png").default} alt="Accept self signed certificate" width="1920"/>
+<img src={require("./../img/quick-guide/collabora-accept-self-signed-cert.png").default} alt="Accept self signed certificate" width="1920"/>
 
 
 ---
@@ -72,7 +73,7 @@ Login with your browser:
 - user: **admin**
 - password: **admin**
 
-<img src={require("./img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
 
 ## 5. Conclusion
