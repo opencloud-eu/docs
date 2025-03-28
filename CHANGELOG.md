@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.9.0](https://github.com/opencloud-eu/docs/releases/tag/1.9.0) - 2025-03-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@dragonchaser
+
+### 👷 Admin Documentation
+
+- Update 80-storage-posix.md [[#188](https://github.com/opencloud-eu/docs/pull/188)]
+
 ## [1.8.0](https://github.com/opencloud-eu/docs/releases/tag/1.8.0) - 2025-03-26
 
 ### ❤️ Thanks to all contributors! ❤️
