@@ -178,7 +178,7 @@ Login with:
 
 **Username:** `admin`
 
-**Password:** (your set password)
+**Password:** (your password)
 
 <img src={require("./img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
