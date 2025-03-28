@@ -122,7 +122,7 @@ https://cloud.YOUR.DOMAIN
 You should see a security warning because the staging certificate is not fully trusted.
 Same should appear with the other domains you are using.
 
-Example with Chrome Browser:
+Example with Chrome browser:
 
 <img src={require("./img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
 
