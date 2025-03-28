@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@dragonchaser
+@JammingBen, @dragonchaser
 
 ### 👷 Admin Documentation
 
 - Update 80-storage-posix.md [[#188](https://github.com/opencloud-eu/docs/pull/188)]
+
+### 👤 User Documentation
+
+- Remove logo upload [[#189](https://github.com/opencloud-eu/docs/pull/189)]
 
 ## [1.8.0](https://github.com/opencloud-eu/docs/releases/tag/1.8.0) - 2025-03-26
 
