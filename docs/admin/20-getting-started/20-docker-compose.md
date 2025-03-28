@@ -5,7 +5,9 @@ title: Docker Compose
 description: "🌟 Full-blown featureset including web office and full-text search."
 ---
 
-# **Docker Compose Installation Guide**
+# **OpenCloud with Docker Compose**
+
+Install a internet facing OpenCloud with SSL certification with Docker Compose.
 
 ## **Prerequisites**
 
