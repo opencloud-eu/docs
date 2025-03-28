@@ -62,7 +62,7 @@ Navigate to the OpenCloud configuration folder:
 cd opencloud/deployments/examples/opencloud_full
 ```
 
-Edit the `.env` file with the editor of your choise:
+Edit the `.env` file with the editor of your choice:
 
 In our example we use nano
 
