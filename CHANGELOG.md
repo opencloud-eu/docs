@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen, @Svanvith, @dragonchaser, @dragotin
+@Heiko-Pohl, @JammingBen, @Svanvith, @dragonchaser, @dragotin
 
 ### 👷 Admin Documentation
 
@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- Update screenshots for user admin settings [[#193](https://github.com/opencloud-eu/docs/pull/193)]
 - fix formatting the note [[#197](https://github.com/opencloud-eu/docs/pull/197)]
 - Remove logo upload [[#189](https://github.com/opencloud-eu/docs/pull/189)]
 
