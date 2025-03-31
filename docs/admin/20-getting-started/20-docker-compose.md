@@ -9,6 +9,8 @@ description: "🌟 Full-blown featureset including web office and full-text sear
 
 Install a internet facing OpenCloud with SSL certification with Docker Compose.
 
+This installation documentation is for **Ubuntu and Debian** systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
+
 ## **Prerequisites**
 
 - **Four domains** pointing to your server:
@@ -33,7 +35,7 @@ ssh root@YOUR.SERVER.IP
 Update your system and install Docker.
 
 
-First, update your package list:
+First, perform an update and upgrade:
 
 ```bash
 apt update && apt upgrade -y
@@ -153,7 +155,7 @@ docker volume rm opencloud_full_certs
 nano .env
 ```
 
-Comment out the staging server:
+Comment the staging server:
 ```bash
 # TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
