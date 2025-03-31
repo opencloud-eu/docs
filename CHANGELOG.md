@@ -1,13 +1,14 @@
 # Changelog
 
-## [1.9.0](https://github.com/opencloud-eu/docs/releases/tag/1.9.0) - 2025-03-28
+## [1.9.0](https://github.com/opencloud-eu/docs/releases/tag/1.9.0) - 2025-03-31
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen, @dragonchaser
+@JammingBen, @dragonchaser, @dragotin
 
 ### 👷 Admin Documentation
 
+- Add version hint for NFS [[#191](https://github.com/opencloud-eu/docs/pull/191)]
 - Update 80-storage-posix.md [[#188](https://github.com/opencloud-eu/docs/pull/188)]
 
 ### 👤 User Documentation
