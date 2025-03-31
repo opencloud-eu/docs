@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 id: bare-metal
 title: Bare-Metal
 description: "Manual, minimalist setup with essential features."

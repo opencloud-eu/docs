@@ -2,7 +2,6 @@
 sidebar_position: 2
 id: features
 title: Features
-draft: false
 ---
 
 
