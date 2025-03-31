@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @Svanvith, @dragonchaser, @dragotin
+@Heiko-Pohl, @JammingBen, @Svanvith, @dragonchaser, @dragotin, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- made CephFS and GPFS available [[#180](https://github.com/opencloud-eu/docs/pull/180)]
 - Docker compose public availability [[#190](https://github.com/opencloud-eu/docs/pull/190)]
 - Add version hint for NFS [[#191](https://github.com/opencloud-eu/docs/pull/191)]
 - Update 80-storage-posix.md [[#188](https://github.com/opencloud-eu/docs/pull/188)]
