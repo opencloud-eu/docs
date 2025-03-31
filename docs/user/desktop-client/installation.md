@@ -6,7 +6,9 @@ title: Installation
 
 # Installation of the OpenCloud Desktop
 
-> ## NOTE: OpenCloud Desktop is not available yet. We are working on making it available in near future
+:::note
+OpenCloud Desktop is not available yet. We are working on making it available in near future
+:::
 
 To install the OpenCloud Desktop, follow these simple steps:
 
