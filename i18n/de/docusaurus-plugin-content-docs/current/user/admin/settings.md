@@ -15,7 +15,6 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 ### Allgemein 
 - **Übersicht über Ausgabe und Version**
    Sie können Informationen über die **Edition** und **Version** Ihrer OpenCloud anzeigen. 
-- **Logo ändern**: Klicken Sie auf das **'Drei-Punkte-Menü'** neben dem aktuellen Logo, um ein neues Logo hochzuladen und das Aussehen anzupassen. 
    <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
 <br/><br/>
 
