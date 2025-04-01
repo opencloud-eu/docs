@@ -13,13 +13,13 @@ Each demo user has specific permissions and access levels, allowing you to simul
 Below, you’ll find details about each user, including their roles and login credentials.
 
 
-| Name                  | User Name     | Password      | Role          | 
-| :-------------        | :-:           | :-:           | :-:           | 
-| Dennis Ritchie        | dennis        | demo          | Admin         | 
-| Margaret Hamilton     | margaret      | demo          | Space Admin   | 
-| Alan Turing           | alan          | demo          | User          | 
-| Lynn Conway           | lynn          | demo          | User          |
-| Mary Kenneth Keller   | mary          | demo          | User          | 
+| Name                  | User Name     | Password      | Role          | Group membership                                  |
+| :-------------        | :-:           | :-:           | :-:           | :-:                                               |
+| Dennis Ritchie        | dennis        | demo          | Admin         | basic-haters, programmers, unix-lovers, users     |
+| Margaret Hamilton     | margaret      | demo          | Space Admin   | apollos, programmers, users                       |
+| Alan Turing           | alan          | demo          | User          | chess-lovers, machine-lovers, programmers, users  |
+| Lynn Conway           | lynn          | demo          | User          | programmers, users, vlsi-lovers                   |
+| Mary Kenneth Keller   | mary          | demo          | User          | bible-readers, users                              |
 
 
 ## Dennis Ritchie 
@@ -87,9 +87,7 @@ Below, you’ll find details about each user, including their roles and login cr
 - First woman to work at Dartmouth College's Computer Science Center
 - Founded and chaired the first computer science department at Clarke University, Iowa, for over 20 years
 
-🔗 [More about Mary Kenneth Keller](#)  
 
----
 
 
 
