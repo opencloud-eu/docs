@@ -14,9 +14,9 @@ title: "Backup"
 
 - Pure POSIX Setup: All data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem.
 
-- Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a POSIX-compliant filesystem.
+- Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a POSIX-compliant filesystem
 
-To determine which filesystems are supported, see: Filesystems and Shared Storage.
+To determine which filesystems are supported, see: Filesystems and Shared Storage
 
 ---
 
@@ -28,15 +28,15 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 - Snapshot-based backup (recommended)
 
-    - If your storage system supports snapshots, creating a backup only takes a few seconds.
+    - If your storage system supports snapshots, creating a backup only takes a few seconds
 
-    - Snapshots should be copied to secondary storage or used by backup software for additional security.
+    - Snapshots should be copied to secondary storage or used by backup software for additional security
 
 -Backup software approach
 
-    - If snapshots are not available, you can use any backup software of your choice.
+    - If snapshots are not available, you can use any backup software of your choice
 
-    - For more details on data locations, refer to the Default Paths documentation.
+    - For more details on data locations, refer to the Default Paths documentation
 
 ---
 
@@ -60,7 +60,7 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 - The configuration files
 
-- This ensures compatibility when restoring and prevents issues caused by software version mismatches.
+- This ensures compatibility when restoring and prevents issues caused by software version mismatches
 
 ---
 
@@ -68,15 +68,15 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 #### If all data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem:
 
-- Stop the OpenCloud instance.
+- Stop the OpenCloud instance
 
-- Create a backup of all data sets.
+- Create a backup of all data sets
 
-- If everything is on one filesystem, this is straightforward.
+- If everything is on one filesystem, this is straightforward
 
-- If separate filesystems are used for configuration and blobs/metadata, back up each one individually.
+- If separate filesystems are used for configuration and blobs/metadata, back up each one individually
 
-- Restart the OpenCloud instance after the backup is complete.
+- Restart the OpenCloud instance after the backup is complete
 
 ---
 
@@ -84,13 +84,13 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 #### If blobs are stored on S3, while configuration and metadata remain on a POSIX-compliant filesystem:
 
-- Stop the OpenCloud instance.
+- Stop the OpenCloud instance
 
-- Back up the configuration and metadata.
+- Back up the configuration and metadata
 
-- Back up the S3 bucket according to the guidelines of your S3 provider.
+- Back up the S3 bucket according to the guidelines of your S3 provider
 
-- Restart the OpenCloud instance after the backup is complete.
+- Restart the OpenCloud instance after the backup is complete
 
 ---
 
