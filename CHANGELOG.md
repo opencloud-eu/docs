@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.10.0](https://github.com/opencloud-eu/docs/releases/tag/1.10.0) - 2025-04-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- fix typos in backup [[#202](https://github.com/opencloud-eu/docs/pull/202)]
+- change structure of folder getting started [[#200](https://github.com/opencloud-eu/docs/pull/200)]
+
 ## [1.9.0](https://github.com/opencloud-eu/docs/releases/tag/1.9.0) - 2025-03-31
 
 ### ❤️ Thanks to all contributors! ❤️
