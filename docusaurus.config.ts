@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'OpenCloud Docs',
   tagline: 'Excellent file sharing',
-  favicon: 'img/oc-favicon.ico',
+  favicon: 'img/oc-favicon.svg',
 
   // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
