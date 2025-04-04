@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.0](https://github.com/opencloud-eu/docs/releases/tag/1.11.0) - 2025-04-04
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @tbsbdr
+
+### 👷 Admin Documentation
+
+- Add TUS [[#208](https://github.com/opencloud-eu/docs/pull/208)]
+
+### 📦️ Build&Tools
+
+- Fix broken favicon on firefox [[#205](https://github.com/opencloud-eu/docs/pull/205)]
+
 ## [1.10.0](https://github.com/opencloud-eu/docs/releases/tag/1.10.0) - 2025-04-02
 
 ### ❤️ Thanks to all contributors! ❤️
