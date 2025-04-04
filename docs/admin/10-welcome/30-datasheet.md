@@ -61,7 +61,7 @@ title: Datasheet
 
 | API          | Description                                                                                                                                                       |
 |:-------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **WebDAV**   | <ul><li>Standard file API for remote file management over HTTP/HTTPS.</li></ul>                                                                                   |
+| **WebDAV**   | <ul><li>Standard file API for remote file transfer over HTTP/HTTPS using TUS for resumable, interruption-tolerant transfers.</li></ul>                                                                                   |
 | **GraphAPI** | <ul><li>Microsoft Graph API for managing cloud storage and collaboration spaces.</li></ul>                                                                        |
 | **gRPC**     | <ul><li>High-performance RPC framework for microservice communication.</li></ul>                                                                                  |
 | **OCS**      | <ul><li>API for programmatic file/folder sharing and management.</li></ul>                                                                                        |
