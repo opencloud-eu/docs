@@ -1,14 +1,18 @@
 # Changelog
 
-## [1.11.0](https://github.com/opencloud-eu/docs/releases/tag/1.11.0) - 2025-04-04
+## [1.11.0](https://github.com/opencloud-eu/docs/releases/tag/1.11.0) - 2025-04-07
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @tbsbdr
+@AlexAndBear, @ScharfViktor, @tbsbdr
 
 ### 👷 Admin Documentation
 
 - Add TUS [[#208](https://github.com/opencloud-eu/docs/pull/208)]
+
+### 🐛 Bug Fixes
+
+- fix url in the bare-metal [[#211](https://github.com/opencloud-eu/docs/pull/211)]
 
 ### 📦️ Build&Tools
 
