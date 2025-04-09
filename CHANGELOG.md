@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.1](https://github.com/opencloud-eu/docs/releases/tag/1.11.1) - 2025-04-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+
+
 ## [1.11.0](https://github.com/opencloud-eu/docs/releases/tag/1.11.0) - 2025-04-07
 
 ### ❤️ Thanks to all contributors! ❤️
