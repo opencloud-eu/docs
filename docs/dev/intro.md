@@ -1,15 +1,17 @@
 ---
 sidebar_position: 1
 id: intro
-title: Placeholder
-custom_edit_url: null
+title: Welcome
+custom_edit_url: https://github.com/opencloud-eu/opencloud/edit/main/docs/intro.md
 ---
 
 # Welcome
 
-⚠️ This page is just a placeholder.
+Welcome to the OpenCloud Developer Documentation.
 
-If you want to contribute to the dev docs, please visit [OpenCloud on GitHub](https://github.com/opencloud-eu/).
+Please be patient, we are working on the content.
 
-Contents will be transferred, during the build process.
+If you want to contribute to the dev docs, please visit [OpenCloud on Github](https://github.com/opencloud-eu/).
+
+Contents will be transferred during the build process.
 
