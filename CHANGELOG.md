@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.1](https://github.com/opencloud-eu/docs/releases/tag/1.12.1) - 2025-04-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@micbar
+
+
+
 ## [1.12.0](https://github.com/opencloud-eu/docs/releases/tag/1.12.0) - 2025-04-09
 
 ### ❤️ Thanks to all contributors! ❤️
