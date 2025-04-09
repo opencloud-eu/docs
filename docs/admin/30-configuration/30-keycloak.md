@@ -40,8 +40,10 @@ OpenCloud includes a pre-configured Keycloak setup in the Docker Compose example
    ```
 4. Start the deployment with Keycloak:
    ```bash
-   docker-compose -f docker-compose.yml -f keycloak.yml up -d
+   docker-compose up -d
    ```
+   
+   > **Note**: This simplified command works because of the `COMPOSE_FILE` variable in the `.env` file. When you uncomment the `KEYCLOAK=:keycloak.yml` line, the colon-prefixed value is automatically appended to the `COMPOSE_FILE` variable in the last line of the `.env` file, making it unnecessary to specify the configuration files explicitly.
 
 ## OpenCloud Configuration for Keycloak
 
