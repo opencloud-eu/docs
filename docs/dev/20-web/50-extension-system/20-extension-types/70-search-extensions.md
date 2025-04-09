@@ -45,8 +45,7 @@ The `searchProvider` object configures the actual provider. It consist of the fo
 The listSearch object consists of:
 
 - `component` - Vue component that can render the values from the SearchResult below
-- `search(term: string)` - Function that exectues the search, based on a given term. The term is formatted in [KQL](https://docs.opencloud.eu/services/search/#query-language). Please note that the returned values needs to be formatted to fit either `SearchResource` or `GenericSearchResultItem` type
-
+- `search(term: string)` - Function that executes the search, based on a given term. The term is formatted in [KQL](https://docs.opencloud.eu/services/search/#query-language). Please note that the returned values needs to be formatted to fit either `SearchResource` or `GenericSearchResultItem` type
 #### PreviewSearch
 
 The previewSearch object extends the listSearch with one additional attribute:
