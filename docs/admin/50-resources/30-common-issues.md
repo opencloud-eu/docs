@@ -65,4 +65,12 @@ To resolve this issue, adjust the ownership of the directory using the `chown` c
 chown -R 1000:1000 opencloud-data
 ```
 
+:::caution Security Warning
+
+The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
+
+This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
+
+:::
+
 Ensure you apply this to all relevant folders that are mounted into your containers. This will grant the Docker container the necessary permissions to access and write to these directories.
