@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add mount persistent volumes to docker compose install guide [[#213](https://github.com/opencloud-eu/docs/pull/213)]
 - add docker permission issues to the common issues section [[#212](https://github.com/opencloud-eu/docs/pull/212)]
 
 ## [1.13.0](https://github.com/opencloud-eu/docs/releases/tag/1.13.0) - 2025-04-10
