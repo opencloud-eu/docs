@@ -10,6 +10,10 @@
 
 - Add comprehensive Keycloak integration documentation [[#210](https://github.com/opencloud-eu/docs/pull/210)]
 
+### 📦️ Build&Tools
+
+- change: remove remote dev docs [[#218](https://github.com/opencloud-eu/docs/pull/218)]
+
 ## [1.12.0](https://github.com/opencloud-eu/docs/releases/tag/1.12.0) - 2025-04-09
 
 ### ❤️ Thanks to all contributors! ❤️
