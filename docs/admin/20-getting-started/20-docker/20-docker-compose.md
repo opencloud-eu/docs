@@ -140,7 +140,13 @@ sudo chown -R 1000:1000 /your/local/path/opencloud
 
 If these variables are left unset, Docker will use internal volumes, which **do not persist** if the containers are removed — not recommended for real-world use.
 
+:::caution Security Warning
 
+The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
+
+This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
+
+:::
 
 
 ## 5. Start OpenCloud
