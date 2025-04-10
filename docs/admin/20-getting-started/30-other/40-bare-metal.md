@@ -72,7 +72,8 @@ This example is on Linux Ubuntu 24.04 distribution!
    
 - Run the build generate process:
    ```bash
-   make clean generate -C opencloud build
+   make clean generate
+   make -C opencloud build
    ```
 
 - Initialize OpenCloud with insecure configuration and set an admin password:
