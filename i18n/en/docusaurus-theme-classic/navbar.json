@@ -10,5 +10,9 @@
   "item.label.Admin": {
     "message": "Admin",
     "description": "Navbar item with label Admin"
+  },
+  "item.label.Dev": {
+    "message": "Dev",
+    "description": "Navbar item with label Dev"
   }
 }

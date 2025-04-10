@@ -3,6 +3,7 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "🛠️ Maintenance"
+    "description": "🛠️ Maintenance",
+    "slug": "admin/maintenance"
   }
 }

@@ -50,5 +50,9 @@
   "link.item.label.Bluesky": {
     "message": "Bluesky",
     "description": "The label of footer link with label=Bluesky linking to https://bsky.app/profile/opencloud.eu"
+  },
+  "link.item.label.Dev": {
+    "message": "Dev",
+    "description": "The label of footer link with label=Dev linking to /docs/dev/intro"
   }
 }

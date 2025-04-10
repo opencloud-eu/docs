@@ -3,6 +3,7 @@
   "position": 6,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials about the OpenCloud Desktop."
+    "description": "Tutorials about the OpenCloud Desktop.",
+    "slug": "user/desktop-client"
   }
 }
