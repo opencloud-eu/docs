@@ -104,6 +104,51 @@ TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 
 Save and exit.
 
+### 🚨 Production Setup Consideration
+
+:::caution Production Setup Recommended
+
+By default, OpenCloud stores configuration and data inside internal Docker volumes.  
+This works fine for local development or quick evaluations — **but is not suitable for production environments**.
+
+:::
+
+#### 📦 Mount Persistent Volumes
+
+In production, you should mount persistent local directories for configuration and data to ensure:
+
+- Data durability
+- Easier backups and recovery
+- Full control over storage location and permissions
+
+Update your `.env` file with custom paths:
+
+```env
+OC_CONFIG_DIR=/your/local/path/opencloud/config
+OC_DATA_DIR=/your/local/path/opencloud/data
+```
+
+:::tip Folder Permissions
+
+Ensure these folders exist and are owned by user and group 1000:1000, which the Docker containers use by default:
+
+```bash
+sudo mkdir -p /your/local/path/opencloud/{config,data}
+sudo chown -R 1000:1000 /your/local/path/opencloud
+```
+::: 
+
+If these variables are left unset, Docker will use internal volumes, which **do not persist** if the containers are removed — not recommended for real-world use.
+
+:::caution Security Warning
+
+The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
+
+This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
+
+:::
+
+
 ## 5. Start OpenCloud
 Launch OpenCloud using Docker Compose:
 
