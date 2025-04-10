@@ -1,12 +1,14 @@
 # Changelog
 
-## [1.12.1](https://github.com/opencloud-eu/docs/releases/tag/1.12.1) - 2025-04-09
+## [1.13.0](https://github.com/opencloud-eu/docs/releases/tag/1.13.0) - 2025-04-10
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @micbar, @michaelstingl
 
+### 👷 Admin Documentation
 
+- Add comprehensive Keycloak integration documentation [[#210](https://github.com/opencloud-eu/docs/pull/210)]
 
 ## [1.12.0](https://github.com/opencloud-eu/docs/releases/tag/1.12.0) - 2025-04-09
 
