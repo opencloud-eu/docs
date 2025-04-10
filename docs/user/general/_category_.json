@@ -3,6 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials about the user interface and navigation in OpenCloud."
+    "description": "Tutorials about the user interface and navigation in OpenCloud.",
+    "slug": "user/general"
   }
 }

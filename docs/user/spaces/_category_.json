@@ -3,6 +3,7 @@
   "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials about Spaces."
+    "description": "Tutorials about Spaces.",
+    "slug": "user/spaces"
   }
 }

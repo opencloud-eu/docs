@@ -3,6 +3,7 @@
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials for administrating your OpenCloud."
+    "description": "Tutorials for administrating your OpenCloud.",
+    "slug": "user/admin"
   }
 }

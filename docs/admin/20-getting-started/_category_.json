@@ -3,6 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "🚀 Getting Started"
+    "description": "🚀 Getting Started",
+    "slug": "admin/getting-started"
   }
 }
