@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- add web application tutorial [[#231](https://github.com/opencloud-eu/docs/pull/231)]
 - Add sub category for storage [[#229](https://github.com/opencloud-eu/docs/pull/229)]
 - add mount persistent volumes to docker compose install guide [[#213](https://github.com/opencloud-eu/docs/pull/213)]
 - add docker permission issues to the common issues section [[#212](https://github.com/opencloud-eu/docs/pull/212)]
