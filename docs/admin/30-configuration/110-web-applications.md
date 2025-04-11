@@ -32,7 +32,7 @@ By default, this path is:
 opencloud/services/web/assets/apps
 ```
 
-4. Access in OpenCloud
+### 4. Access in OpenCloud
 Once the app is copied to the correct location, it will automatically appear in the OpenCloud interface.
 
 ---
