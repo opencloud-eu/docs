@@ -1,4 +1,9 @@
 {
   "label": "Testing",
-  "position": 3
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "✅ Testing",
+    "slug": "dev/web/testing"
+  }
 }
