@@ -8,20 +8,6 @@ title: Keycloak Integration
 
 OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities. This guide explains how to set up and configure Keycloak with OpenCloud.
 
-## Overview
-
-OpenCloud employs a dual-track authentication strategy:
-
-1. **Built-in IDP (Identity Provider)**: 
-   - Based on LibreGraph Connect (lico)
-   - Targeted at smaller installations (up to 500 users)
-   - Designed for standalone or small deployments
-
-2. **External Identity Providers**:
-   - Keycloak as the recommended OIDC provider for larger installations
-   - Support for Azure AD, EntraID, ADFS through Keycloak
-   - Enterprise-focused solution
-
 ## Setting Up Keycloak with Docker Compose
 
 OpenCloud includes a pre-configured Keycloak setup in the Docker Compose examples. To enable Keycloak:
@@ -60,56 +46,11 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp
 ```
 
+Look [here](./10-example-idp.md#opencloud-configuration) for some more details about these settings.
+
 ## Client Configuration
 
-OpenCloud requires several OIDC clients to be configured in Keycloak. These clients are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP:
-
-### Web Client
-
-The web client is used for browser-based access to OpenCloud:
-
-- **Client ID**: `web`
-- **Client Type**: Public client
-- **Redirect URIs**: 
-  - `https://your-domain.example.com/`
-  - `https://your-domain.example.com/oidc-callback.html`
-  - `https://your-domain.example.com/oidc-silent-redirect.html`
-
-### Desktop Client
-
-The desktop client is used for the OpenCloud desktop application:
-
-- **Client ID**: `OpenCloudDesktop`
-- **Client Type**: Public client
-- **Redirect URIs**:
-  - `http://127.0.0.1`
-  - `http://localhost`
-
-### Mobile App Clients
-
-#### Android App
-
-- **Client ID**: `OpenCloudAndroid`
-- **Client Type**: Public client
-- **Redirect URIs**: `oc://android.opencloud.eu`
-- **Post Logout Redirect URIs**: `oc://android.opencloud.eu`
-
-#### iOS App
-
-- **Client ID**: `OpenCloudIOS`
-- **Client Type**: Public client
-- **Redirect URIs**: `oc://ios.opencloud.eu`
-- **Post Logout Redirect URIs**: `oc://ios.opencloud.eu`
-
-### Additional Clients
-
-#### Cyberduck File Transfer Client
-
-- **Client ID**: `Cyberduck`
-- **Client Type**: Public client
-- **Redirect URIs**:
-  - `x-cyberduck-action:oauth`
-  - `x-mountainduck-action:oauth`
+The [OIDC clients](./10-external-idp.md#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
 
 ## Advanced Configuration
 
