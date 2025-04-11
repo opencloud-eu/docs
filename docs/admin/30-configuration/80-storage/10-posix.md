@@ -1,10 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 id: storage-posix
-title: "Storage: Posix"
+title: "Posix"
 ---
-
-# PosixFS Storage Driver
 
 PosixFS is a storage driver that saves OpenClouds files and folders in a folder structure how the user sees that in the web interface or other clients. That is a difference compared to DecomposedFS, which stores files in a technical folder structure that has limited meaning for admins.
 
