@@ -1,7 +1,7 @@
 ---
-sidebar_position: 10
+sidebar_position: 3
 id: storage-decomposeds3
-title: "Storage: Decomposeds3"
+title: "Decomposeds3"
 ---
 
 # Decomposeds3 Storage Driver
@@ -67,9 +67,9 @@ Login with your browser:
 
 🎉 Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!🚀
 
-<img src={require("./img/login-page.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/login-page.png").default} alt="Admin general" width="1920"/>
 
-<img src={require("./img/decomposeds3-with-minio.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/decomposeds3-with-minio.png").default} alt="Admin general" width="1920"/>
 
 --- 
 
@@ -77,4 +77,4 @@ Login with your browser:
 
 If you encounter any issues or errors, try finding a solution here: 
 
-- [Common Issues & Help](./../50-resources/30-common-issues.md)
+- [Common Issues & Help](../../50-resources/30-common-issues.md)

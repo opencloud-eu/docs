@@ -1,7 +1,7 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 id: storage-posix
-title: "Storage: Posix"
+title: "PosixFS"
 ---
 
 # PosixFS Storage Driver
