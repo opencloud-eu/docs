@@ -4,6 +4,8 @@ id: storage-decomposeds3
 title: "Decomposeds3"
 ---
 
+# Decomposeds3 Storage Driver
+
 Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible object storage, for handling file storage efficiently. This setup leverages S3’s scalability while integrating seamlessly with OpenCloud.
 
 ---
