@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.14.0](https://github.com/opencloud-eu/docs/releases/tag/1.14.0) - 2025-04-10
+## [1.14.0](https://github.com/opencloud-eu/docs/releases/tag/1.14.0) - 2025-04-11
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@AlexAndBear, @Svanvith
+
+### :octocat: Developer Documentation
+
+- Enable generated index for web dev docs [[#228](https://github.com/opencloud-eu/docs/pull/228)]
 
 ### 👷 Admin Documentation
 
