@@ -17,6 +17,8 @@ You can install a web application in just a few steps:
 
 Use the **Application Switcher** in the top navigation bar of OpenCloud and navigate to the **App Store**.
 
+<img src={require("./img/app-store.png").default} alt="App Store" width="1920"/>
+
 ### 2. Download the Application
 
 Find and download the application you want to install.
@@ -42,10 +44,8 @@ Some OpenCloud apps require additional configuration — for example, the **Exte
 These configurations can be managed in the following file:
 
 ```bash
-opencloud/deployments/examples/opencloud_full/config/opencloud/apps.yml
-``` 
-
-An example entry for the External Sites app is already included in this file to help you get started.
+opencloud/config/apps.yaml
+```
 
 📘 Note: Configuration details vary between apps.
 For specific setup instructions, please refer to the official documentation of the respective app.
