@@ -29,7 +29,7 @@ Having these packages side by side within the `/packages` folder of the repo is 
 We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`.
 
 You're more than welcome to make a pull request and adjust this section of the docs accordingly. :-)
-You can read more about testing in our [testing section](./../30-testing/index.md)
+You can read more about testing in our [testing section](./../30-testing/10-running-tests.md)
 
 ### package.json File
 
