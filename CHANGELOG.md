@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.15.0](https://github.com/opencloud-eu/docs/releases/tag/1.15.0) - 2025-04-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@rhafer
+
+### 👷 Admin Documentation
+
+- Add some generic bits about integrating with external IDP [[#227](https://github.com/opencloud-eu/docs/pull/227)]
+
 ## [1.14.0](https://github.com/opencloud-eu/docs/releases/tag/1.14.0) - 2025-04-11
 
 ### ❤️ Thanks to all contributors! ❤️
