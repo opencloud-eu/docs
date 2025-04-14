@@ -162,7 +162,12 @@ const config: Config = {
         language: ["en", "de"],
       }),
     ],
+    '@docusaurus/theme-mermaid',
   ],
+
+  markdown: {
+    mermaid: true,
+  },
 };
 
 export default config;
