@@ -46,7 +46,7 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp
 ```
 
-Look [here](./10-example-idp.md#opencloud-configuration) for some more details about these settings.
+Look [here](./10-external-idp.md#opencloud-configuration) for some more details about these settings.
 
 ## Client Configuration
 
