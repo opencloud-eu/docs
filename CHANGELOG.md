@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.15.1](https://github.com/opencloud-eu/docs/releases/tag/1.15.1) - 2025-04-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- Add mermaid support  [[#235](https://github.com/opencloud-eu/docs/pull/235)]
+
 ## [1.15.0](https://github.com/opencloud-eu/docs/releases/tag/1.15.0) - 2025-04-14
 
 ### ❤️ Thanks to all contributors! ❤️
