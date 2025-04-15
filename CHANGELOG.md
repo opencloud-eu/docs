@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @JammingBen
+@AlexAndBear, @JammingBen, @micbar
 
 ### :octocat: Developer Documentation
 
 - Add design system reference to web dev docs [[#239](https://github.com/opencloud-eu/docs/pull/239)]
+
+### 👷 Admin Documentation
+
+- feat: add likec4 [[#240](https://github.com/opencloud-eu/docs/pull/240)]
 
 ### 📦️ Build&Tools
 
