@@ -3,6 +3,7 @@
 
 # Production
 /build
+/static/likec4
 
 # Generated files
 .docusaurus
