@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- Fix wrong Server category in dev docs [[#242](https://github.com/opencloud-eu/docs/pull/242)]
 - Add design system reference to web dev docs [[#239](https://github.com/opencloud-eu/docs/pull/239)]
 
 ### 👷 Admin Documentation
