@@ -46,11 +46,11 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp
 ```
 
-Look [here](./10-external-idp.md#opencloud-configuration) for some more details about these settings.
+Look [here](./external-idp.md#opencloud-configuration) for some more details about these settings.
 
 ## Client Configuration
 
-The [OIDC clients](./10-external-idp.md#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
+The [OIDC clients](./external-idp.md#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
 
 ## Advanced Configuration
 

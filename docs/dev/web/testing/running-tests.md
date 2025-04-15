@@ -48,7 +48,7 @@ which makes it easy to write tests, debug them and have them run cross-browser w
 
 #### Preparation
 
-Please make sure you have installed all dependencies and started the server(s) as described in [tooling](./../20-development/30-tooling.md).
+Please make sure you have installed all dependencies and started the server(s) as described in [tooling](./../development/tooling.md).
 
 #### Prepare & Start Web
 

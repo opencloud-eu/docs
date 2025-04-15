@@ -14,7 +14,7 @@ From a developer's perspective, the most important parts of the [OpenCloud Web r
 
 The `/dev` folder contains all the configuration files that are needed in the `docker-compose.yml` file. This docker compose stack
 contains all the backend and testing related infrastructure that is needed for an out-of-the-box usable localhost development setup,
-as described in the [tooling section](./../20-development/30-tooling.md).
+as described in the [tooling section](./../development/tooling.md).
 
 ### packages Folder
 
@@ -29,7 +29,7 @@ Having these packages side by side within the `/packages` folder of the repo is 
 We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`.
 
 You're more than welcome to make a pull request and adjust this section of the docs accordingly. :-)
-You can read more about testing in our [testing section](./../30-testing/10-running-tests.md)
+You can read more about testing in our [testing section](./../testing/running-tests.md)
 
 ### package.json File
 
@@ -39,7 +39,7 @@ Each package in `/packages` can and most likely will contain another `package.js
 ### vite.config.ts
 
 We're working with [Vite](https://vitejs.dev) as a local development server and build tool. `vite.config.ts` is the main configuration file for that.
-You can read more about the usage in our [tooling section](./../20-development/30-tooling.md).
+You can read more about the usage in our [tooling section](./../development/tooling.md).
 
 ## (Published) Packages
 

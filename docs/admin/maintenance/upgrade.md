@@ -8,7 +8,7 @@ description: "🔄 Keep your setup up to date with the latest features!"
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-This guide provides steps to upgrade OpenCloud for both [docker](docs/admin/20-getting-started/20-docker/30-docker.md) and [docker compose](docs/admin/20-getting-started/20-docker/20-docker-compose.md)
+This guide provides steps to upgrade OpenCloud for both [docker](docs/admin/getting-started/docker/docker.md) and [docker compose](docs/admin/getting-started/docker/docker-compose.md)
 
 ### 1. Stop OpenCloud
 

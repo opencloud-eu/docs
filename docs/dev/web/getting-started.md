@@ -27,7 +27,7 @@ Then, you can start the server by running `docker-compose up opencloud` and acce
 
 The bundled frontend code automatically gets mounted into the Docker containers, recompiles on changes and you can log in using the demo user (admin/admin) and take a look around!
 
-For more details on how to set up Web for development, please see [tooling](./20-development/30-tooling.md).
+For more details on how to set up Web for development, please see [tooling](./development/tooling.md).
 
 ## Source Code
 
