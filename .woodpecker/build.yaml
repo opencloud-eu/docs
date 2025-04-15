@@ -9,6 +9,7 @@ steps:
     image: owncloudci/nodejs:20
     commands:
       - pnpm install
+      - pnpm build-likec4
       - pnpm build
   - name: deploy-staging
     image: debian:latest
