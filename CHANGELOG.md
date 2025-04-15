@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.15.1](https://github.com/opencloud-eu/docs/releases/tag/1.15.1) - 2025-04-14
+## [1.16.0](https://github.com/opencloud-eu/docs/releases/tag/1.16.0) - 2025-04-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @JammingBen
+
+### :octocat: Developer Documentation
+
+- Add design system reference to web dev docs [[#239](https://github.com/opencloud-eu/docs/pull/239)]
 
 ### 📦️ Build&Tools
 
