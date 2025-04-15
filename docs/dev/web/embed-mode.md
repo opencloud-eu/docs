@@ -1,5 +1,6 @@
 ---
 title: 'Embed Mode'
+sidebar_position: 4
 ---
 
 
