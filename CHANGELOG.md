@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- Remove file and folder prefixes e.G 10-server [[#241](https://github.com/opencloud-eu/docs/pull/241)]
 - Add mermaid support  [[#235](https://github.com/opencloud-eu/docs/pull/235)]
 
 ## [1.15.0](https://github.com/opencloud-eu/docs/releases/tag/1.15.0) - 2025-04-14
