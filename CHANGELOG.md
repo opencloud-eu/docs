@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.16.1](https://github.com/opencloud-eu/docs/releases/tag/1.16.1) - 2025-04-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen
+
+
+
 ## [1.16.0](https://github.com/opencloud-eu/docs/releases/tag/1.16.0) - 2025-04-15
 
 ### ❤️ Thanks to all contributors! ❤️
