@@ -1,12 +1,18 @@
 # Changelog
 
-## [1.16.1](https://github.com/opencloud-eu/docs/releases/tag/1.16.1) - 2025-04-16
+## [1.17.0](https://github.com/opencloud-eu/docs/releases/tag/1.17.0) - 2025-04-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen
+@JammingBen, @Svanvith
 
+### 👤 User Documentation
 
+- Add explanation why spaces are better than classic sharing [[#232](https://github.com/opencloud-eu/docs/pull/232)]
+
+### 📦️ Build&Tools
+
+- Add design-system docs to build [[#243](https://github.com/opencloud-eu/docs/pull/243)]
 
 ## [1.16.0](https://github.com/opencloud-eu/docs/releases/tag/1.16.0) - 2025-04-15
 
