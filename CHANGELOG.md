@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.18.0](https://github.com/opencloud-eu/docs/releases/tag/1.18.0) - 2025-04-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 👤 User Documentation
+
+- Fix spaces order in user docs [[#245](https://github.com/opencloud-eu/docs/pull/245)]
+
 ## [1.17.0](https://github.com/opencloud-eu/docs/releases/tag/1.17.0) - 2025-04-16
 
 ### ❤️ Thanks to all contributors! ❤️
