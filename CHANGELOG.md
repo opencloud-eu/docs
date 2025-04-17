@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.19.0](https://github.com/opencloud-eu/docs/releases/tag/1.19.0) - 2025-04-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@michaelstingl
+
+### :octocat: Developer Documentation
+
+- Improve LikeC4 README documentation [[#250](https://github.com/opencloud-eu/docs/pull/250)]
+
 ## [1.18.0](https://github.com/opencloud-eu/docs/releases/tag/1.18.0) - 2025-04-17
 
 ### ❤️ Thanks to all contributors! ❤️
