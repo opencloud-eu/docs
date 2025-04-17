@@ -4,8 +4,6 @@ sidebar_position: 2
 id: app-menu-item-extensions
 ---
 
-
-
 ## Extension Type AppMenuItem
 
 This extension type allows apps to register links to internal or external pages within the application switcher menu on the top left.
@@ -29,7 +27,7 @@ interface AppMenuItemExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 A `handler` will result in a `<button>` element. This is necessary when an action should be performed when clicking the menu item (e.g. opening a file editor).
 

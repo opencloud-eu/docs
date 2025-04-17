@@ -4,8 +4,6 @@ sidebar_position: 1
 id: action-extensions
 ---
 
-
-
 ## Action extension type
 
 Actions are one of the possible extension types. Registered actions get rendered in various places across the UI, depending on their scope and targets.
@@ -23,13 +21,13 @@ interface ActionExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 #### Action
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from https://opencloud.design/#/Design%20Tokens/IconList
+- `icon` - The icon to be displayed, can be picked from [Remix Icon](https://remixicon.com/)
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed
 - `route` - The string/route to navigate to. The nav item will be a `<router-link>` tag.
@@ -49,7 +47,7 @@ export const useDownloadFilesExtension = () => {
 
   const extension = computed<ActionExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.download-action',
-    scopes: ['resource'],
+    extensionPointIds: ['global.files.context-actions'],
     type: 'action',
     action: {
       name: 'download-files',

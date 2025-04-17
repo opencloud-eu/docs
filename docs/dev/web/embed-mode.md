@@ -3,9 +3,7 @@ title: 'Embed Mode'
 sidebar_position: 4
 ---
 
-
-
-The OpenCloud Web can be consumed by another application in a stripped down version called "Embed mode". This mode is supposed to be used in the context of selecting or sharing resources. If you're looking for even more minimalistic approach, you can take a look at the [File picker](https://docs.opencloud.eu/integration/file_picker/).
+The OpenCloud Web can be consumed by another application in a stripped down version called "Embed mode". This mode is supposed to be used in the context of selecting or sharing resources.
 
 ## Getting started
 
@@ -27,11 +25,11 @@ By default, the `postMessage` method does not specify the `targetOrigin` paramet
 
 To maintain uniformity and ease of handling, each event encapsulates the same structure within its payload: `{ name: string, data: any }`.
 
-| Name                       | Data       | Description                                                                           |
-| -------------------------- | ---------- | ------------------------------------------------------------------------------------- |
-| **opencloud-embed:select** | Resource[] | Gets emitted when user selects resources or location via the select action            |
-| **opencloud-embed:share**  | string[]   | Gets emitted when user selects resources and shares them via the "Share links" action |
-| **opencloud-embed:cancel** | null       | Gets emitted when user attempts to close the embedded instance via "Cancel" action    |
+| Name                       | Data         | Description                                                                           |
+| -------------------------- | ------------ | ------------------------------------------------------------------------------------- |
+| **opencloud-embed:select** | `Resource[]` | Gets emitted when user selects resources or location via the select action            |
+| **opencloud-embed:share**  | `string[]`   | Gets emitted when user selects resources and shares them via the "Share links" action |
+| **opencloud-embed:cancel** | `null`       | Gets emitted when user attempts to close the embedded instance via "Cancel" action    |
 
 ### Example
 
@@ -61,7 +59,9 @@ In special scenarios you also want the user to set a file name, this can be achi
 ### Example
 
 ```html
-<iframe src="https://my-opencloud-web-instance?embed=true&embed-target=location"></iframe>
+<iframe
+  src="https://my-opencloud-web-instance?embed=true&embed-target=location"
+></iframe>
 
 <script>
   function selectEventHandler(event) {

@@ -3,8 +3,6 @@ title: 'Viewer and editor apps'
 sidebar_position: 1
 ---
 
-
-
 ## Viewer and editor apps
 
 OpenCloud Web allows developers to implement apps for viewing and editing specific file types. For instance, the built-in preview app serves as the default application for opening media files like images, videos, or audio.
@@ -24,7 +22,11 @@ To learn more about apps in general, please refer to the [Web app docs](./index.
 Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section](./index.md), so it may look like this:
 
 ```typescript
-import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@opencloud-eu/web-pkg'
+import {
+  AppWrapperRoute,
+  defineWebApplication,
+  AppMenuItemExtension
+} from '@opencloud-eu/web-pkg'
 import translations from '../l10n/translations.json'
 import { useGettext } from 'vue3-gettext'
 import { computed } from 'vue'

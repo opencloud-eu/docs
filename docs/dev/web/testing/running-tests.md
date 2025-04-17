@@ -4,20 +4,11 @@ sidebar_position: 1
 id: running-tests
 ---
 
-
-
 ## Introduction
 
 In order to allow us to make changes quickly, often and with a high level of confidence, we heavily rely on tests within the `web` repository.
 
-All the steps below require you to have the `web` repo cloned locally and dependencies installed.
-This can be achieved by running
-
-```shell
-$ git clone https://github.com/opencloud-eu/web.git
-$ cd web
-$ pnpm install
-```
+This section assumes you have the Web development stack up and running. Please check out the [development setup docs](./../development/tooling.md#development-setup) if you haven't.
 
 ### Unit Tests
 
@@ -27,7 +18,7 @@ We have a steadily growing coverage of unit tests. You can run them locally via
 $ pnpm test:unit
 ```
 
-You can also specify which tests to run by giving a path param, like so: `pnpm test:unit packages/<app-name>/tests/unit/path/to/test.spec.js`.
+You can also specify which tests to run by giving a path param, like so: `pnpm test:unit packages/<app-name>/tests/unit/path/to/test.spec.ts`.
 
 #### Unit Test File Structure
 
@@ -46,19 +37,13 @@ with only `describe` blocks and nested `it.todo("put your test description here"
 Our end-to-end test suite is built upon the [Playwright Framework](https://github.com/microsoft/playwright),
 which makes it easy to write tests, debug them and have them run cross-browser with minimal overhead.
 
-#### Preparation
+#### Bundling Web
 
-Please make sure you have installed all dependencies and started the server(s) as described in [tooling](./../development/tooling.md).
-
-#### Prepare & Start Web
-
-Bundle the web frontend with the following command:
+Make sure the Web frontend has been bundled with the following command since the dev server won't work:
 
 ```shell
 $ pnpm build:w
 ```
-
-Our compose setup automatically mounts it into an OpenCloud backend, respectively. Web also gets recompiled on changes.
 
 #### Run E2E Tests
 
@@ -137,7 +122,7 @@ We can run some of the e2e tests on OpenCloud setup with Keycloak as an external
 
 #### Run OpenCloud With Keycloak
 
-There's a documentation to serve [OpenCloud with Keycloak](https://docs.opencloud.eu/opencloud/deployment/opencloud_keycloak/). Please follow each step to run **OpenCloud with Keycloak**.
+There's a documentation to serve [OpenCloud with Keycloak](./../../../admin/configuration/authentication-and-user-management/keycloak). Please follow each step to run **OpenCloud with Keycloak**.
 
 #### Run E2E Tests
 

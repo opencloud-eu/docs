@@ -4,8 +4,6 @@ sidebar_position: 5
 id: left-sidebar-menu-item-extensions
 ---
 
-
-
 ## Left sidebar menu item extension type
 
 One possible extension type is left sidebar menu items. Registered left sidebar menu items get rendered in the left sidebar, as long as there is more than one available.
@@ -25,13 +23,13 @@ interface SidebarNavExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 #### AppNavigationItem
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from https://opencloud.design/#/Design%20Tokens/IconList
+- `icon` - The icon to be displayed, can be picked from [Remix Icon](https://remixicon.com/)
 - `name` - The text to be displayed
 - `route` - The string/route to navigate to, if the nav item should be a `<router-link>` (Mutually exclusive with `handler`)
 - `handler` - The action to perform upon click, if the nav item should be a `<button>` (Mutually exclusive with `route`)
@@ -48,7 +46,7 @@ export const useCustomPageExtension = () => {
 
   const extension = computed<SidebarNavExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.left-nav.custom-page',
-    scopes: ['app.files'],
+    extensionPointIds: ['app.files.navItems'],
     type: 'sidebarNav',
     action: {
       name: $gettext('Custom page'),

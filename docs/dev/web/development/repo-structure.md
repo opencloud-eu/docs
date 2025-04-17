@@ -4,8 +4,6 @@ sidebar_position: 2
 id: repo-structure
 ---
 
-
-
 ## Repository Structure
 
 From a developer's perspective, the most important parts of the [OpenCloud Web repo](https://github.com/opencloud-eu/web) are the following files and folders:
@@ -26,10 +24,7 @@ Having these packages side by side within the `/packages` folder of the repo is 
 
 ### tests Folder
 
-We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`.
-
-You're more than welcome to make a pull request and adjust this section of the docs accordingly. :-)
-You can read more about testing in our [testing section](./../testing/running-tests.md)
+We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`. You can read more about testing in our [testing docs](./../testing/running-tests.md).
 
 ### package.json File
 
@@ -41,7 +36,7 @@ Each package in `/packages` can and most likely will contain another `package.js
 We're working with [Vite](https://vitejs.dev) as a local development server and build tool. `vite.config.ts` is the main configuration file for that.
 You can read more about the usage in our [tooling section](./../development/tooling.md).
 
-## (Published) Packages
+## Packages
 
 Each package in the `/packages` folder can - not exclusively, but most commonly - consist of
 
@@ -61,18 +56,16 @@ Namely those packages are
 - `/packages/eslint-config`
 - `/packages/extension-sdk`
 - `/packages/prettier-config`
-- `/packages/tsconfig/`
+- `/packages/tsconfig`
 
 ### OpenCloud Design System
 
 The OpenCloud Design System (`/packages/design-system`) is a collection of components, design tokens and styles which ensure a
 unique and consistent look and feel and branding throughout the OpenCloud Web ecosystem. We hope that you use it, too, so that your
 very own apps and extensions will blend in with all the others. Documentation and code examples can be found in
-the [design system documentation](https://opencloud.design).
+the [design system documentation](https://docs.opencloud.eu/design-system/).
 
-The OpenCloud Design System is a standalone project, but to make development easier we have the code in our mono repo.
-We're planning to publish it on npmjs.com as [@opencloud-eu/design-system](https://www.npmjs.com/package/@opencloud-eu/design-system)
-as soon as possible. Since it's bundled with OpenCloud Web, you should not bundle it with your app or extension.
+The OpenCloud Design System is a standalone project that gets published on npmjs.com as [@opencloud-eu/design-system](https://www.npmjs.com/package/@opencloud-eu/design-system). Since it's bundled with OpenCloud Web, you should not bundle it with your app or extension. However, you can add it as a dev dependency for better IDE support.
 
 ### web-client
 
@@ -102,7 +95,15 @@ have more questions about this package, please write an issue in our [issue trac
 
 ### Standalone Core Apps
 
-Both `web-app-admin-settings` and `web-app-files` are standalone apps which are bundled with the default OpenCloud Web release artifact.
+The repo also includes some standalone apps which are bundled with the default OpenCloud Web release artifact.
+
+- `web-app-activities`
+- `web-app-admin-settings`
+- `web-app-app-store`
+- `web-app-files`
+- `web-app-ocm`
+- `web-app-search`
+- `web-app-webfinger`
 
 ### Viewer and Editor Apps
 
@@ -110,14 +111,14 @@ Apps which fall into the categories `viewer` or `editor` can be opened from the 
 within the `files` app. We currently bundle the following apps with the default OpenCloud Web release artifact:
 
 - `web-app-epub-reader` a simple reader for `.epub` files
-- `web-app-external` an iframe integration of all the apps coming from the [app provider](https://docs.opencloud.eu/services/app-provider/)
-  (e.g. OnlyOffice, Collabora Online and others)
+- `web-app-external` an iframe integration of all the apps coming from the app provider
+  (e.g. Collabora Online, OnlyOffice and others)
 - `web-app-pdf-viewer` a viewer for `.pdf` files, which relies on native PDF rendering support from the browser
 - `web-app-preview` a viewer for various media files (audio / video / image formats)
 - `web-app-text-editor` a simple editor for `.txt`, `.md` and other plain text files
 
-If you're interested in writing your own viewer or editor app for certain file types, please get in touch with us for more info.
+If you're interested in writing your own viewer or editor app for certain file types, please have a look at the [extension system docs](./../extension-system).
 
 ### Testing
 
-Additional unit testing code lives in `test-helpers`.
+Basic setup and helpers for unit testing lives in `web-test-helpers`. This package gets published on npmjs.com as [@opencloud-eu/web-test-helpers](https://www.npmjs.com/package/@opencloud-eu/web-test-helpers) to ensure its functionality can be used anywhere inside the OpenCloud Web ecosystem.

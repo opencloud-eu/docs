@@ -1,10 +1,8 @@
 ---
 title: 'Conventions'
-sidebar_position: 1
+sidebar_position: 3
 id: conventions
 ---
-
-
 
 This is a collection of tips and conventions to follow when working on the [OpenCloud Web frontend](https://github.com/opencloud-eu/web).
 Since it is a living document, please open a PR if you find something missing.
@@ -15,13 +13,11 @@ Everyone is invited to contribute. Simply fork the [codebase](https://github.com
 check the [issues](https://github.com/opencloud-eu/web/issues?q=is%3Aopen%20is%3Aissue%20label%3AType%3AGood-First-Issue)
 for a suitable one and open a pull request!
 
-### Linting and Tests
+### Formal checks
 
-To make sure your pull request can be efficiently reviewed and won't need a lot of changes down the road, please run the linter and
-the unit tests via `pnpm lint --fix` and `pnpm test:unit` locally. Our [CI](https://drone.opencloud.eu/opencloud/web) will run on
+To make sure your pull request can be efficiently reviewed and won't need a lot of changes down the road, please run all formal checks (linter, formatter, type checks and unit tests) via `pnpm check:all` locally. Our [CI](https://ci.opencloud.eu/repos/6) will run on
 pull requests and report back any problems after that. For a further introduction on how we handle testing, please head to
 the [testing docs](./../testing/running-tests.md).
-
 
 ## Code Conventions
 
@@ -31,20 +27,29 @@ We're trying to stick with early returns in our code to make it more performant 
 
 ### Translations
 
-Use the `v-text` directive in combination with `$gettext` (or a variation of it) inside HTML tags (instead of
-a `<translate tag="h1">` or similar) in order to make reasoning about the DOM tree easier.
+Use `$gettext` (or a variation of it) inside HTML tags (instead of a `<translate tag="h1">` or similar) in order to translate strings.
 
 ### TypeScript
 
-We're using TypeScript, which allows us to catch bugs at transpile time. Clean types make sure our IDEs can support us
-in reasoning about our (ever growing, complex) codebase.
+We're using TypeScript which allows us to catch bugs at transpile time. Clean types make sure our IDEs can support us in reasoning about our ever-growing, complex codebase.
 
-### Vue 3 and Composition API
+### Composition API and script setup
 
-We've migrated from Vue 2 to Vue 3 late in 2022 and since then have been investing continuous efforts to move away from the Vue options API
-in favor of the Vue composition API. The `web-pkg` helper package provides quite some composables which will help you in
-app & extension development, so we encourage you to make use of the Vue composition API as well, even outside of the
-OpenCloud Web repository.
+We prefer using Vue's Composition API in combination with [script setup](https://vuejs.org/api/sfc-script-setup) over the traditional options API. This integrates nicely with TypeScript and allows us to use composables and reactive APIs more effectively.
+
+That being said, due to the fact that we are still in the process of migrating our codebase, you might find some files using the options API or even composition API without script setup. We are working on this and will eventually migrate all files.
+
+### Composables
+
+We make heavy use of composables to encapsulate reusable logic. This allows us to share code between components and keep our components clean and focused on their specific tasks.
+
+### Split large components
+
+If a component is getting too big, consider splitting it into smaller components. This will make it easier to read and maintain. A good rule of thumb is to keep components under 300 lines of code.
+
+### Services
+
+We try to avoid services when possible and rather use composables instead. If writing a service is necessary, it should be instantiated once via the `web-runtime` package and then made available via a `useYourService` composable.
 
 ### Dependencies
 

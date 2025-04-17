@@ -4,8 +4,6 @@ sidebar_position: 6
 id: right-sidebar-panel-extensions
 ---
 
-
-
 ## Extension Type SideBarPanel
 
 The right sidebar is supposed to show information and make context specific actions available for single or multiple selected items.
@@ -22,7 +20,11 @@ To define a right sidebar panel extension, you implement the `SidebarPanelExtens
 It can be found below:
 
 ```typescript
-interface SidebarPanelExtension<R extends Item, P extends Item, T extends Item> {
+interface SidebarPanelExtension<
+  R extends Item,
+  P extends Item,
+  T extends Item
+> {
   id: string
   type: 'sidebarPanel'
   extensionPointIds?: string[]
@@ -30,7 +32,7 @@ interface SidebarPanelExtension<R extends Item, P extends Item, T extends Item> 
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 The `panel` object configures the actual sidebar panel. It consists of different properties and functions, where all the functions get called with a
 `SideBarPanelContext` entity from the integrating extension points.
@@ -89,10 +91,12 @@ The following example shows how a sidebar panel for displaying exif data for a r
 export const useExifDataPanelExtension = () => {
   const { $gettext } = useGettext()
 
-  const extension = computed<SidebarPanelExtension<SpaceResource, Resource, Resource>>(() => ({
+  const extension = computed<
+    SidebarPanelExtension<SpaceResource, Resource, Resource>
+  >(() => ({
     id: 'com.github.opencloud-eu.web.files.sidebar-panel.exif-data',
     type: 'sidebarPanel',
-    scopes: ['resource'],
+    extensionPointIds: ['global.files.sidebar'],
     panel: {
       name: 'exif-data',
       icon: 'image',

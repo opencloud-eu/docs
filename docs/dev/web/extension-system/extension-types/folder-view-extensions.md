@@ -21,7 +21,7 @@ interface FolderViewExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 #### FolderView
 
@@ -29,7 +29,7 @@ For the folderView object, you have the following configuration options:
 
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed to the user when switching between different FolderView options
-- `icon` - Object, expecting an icon `name` and a corresponding `IconFillType`, see https://opencloud.design/#/Design%20Tokens/IconList for available options
+- `icon` - Object, expecting an icon `name` and a corresponding `IconFillType`, see [Remix Icon](https://remixicon.com/) for available options
 - `isScrollable` - Optional boolean, determines whether the user can scroll inside the component or it statically fills the viewport
 - `component` - The Vue component to render the resources. It should expect a prop of type `Resource[]`
 - `componentAttrs` - Optional additional configuration for the component mentioned above
@@ -45,7 +45,7 @@ export const useCustomFolderViewExtension = () => {
   const extension = computed<FolderViewExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.folder-view.custom',
     type: 'folderView',
-    scopes: ['resource', 'space', 'favorite'],
+    extensionPointIds: ['app.files.folder-views.folder'],
     folderView: {
       name: 'custom-table',
       label: $gettext('Switch to custom folder view'),

@@ -4,8 +4,6 @@ sidebar_position: 7
 id: search-extensions
 ---
 
-
-
 ## Search extensions
 
 One possible extension type is search. Registered search extensions are available when using the search field in the topbar. A search extension can consist of a
@@ -30,7 +28,7 @@ interface SearchExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 The `searchProvider` object configures the actual provider. It consist of the following:
 
@@ -46,6 +44,7 @@ The listSearch object consists of:
 
 - `component` - Vue component that can render the values from the SearchResult below
 - `search(term: string)` - Function that executes the search, based on a given term. The term is formatted in [KQL](https://docs.opencloud.eu/services/search/#query-language). Please note that the returned values needs to be formatted to fit either `SearchResource` or `GenericSearchResultItem` type
+
 #### PreviewSearch
 
 The previewSearch object extends the listSearch with one additional attribute:
@@ -88,33 +87,20 @@ export const useSolrSearchExtension = () => {
 
 The search component for the preview search container may look like this:
 
-```Vue
+```html
 <template>
   <resource-list-item :resource="resource" />
 </template>
 
-<script lang="ts">
-import { computed, defineComponent, PropType } from 'vue'
-import { Resource } from '@opencloud-eu/web-client'
-import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg'
+<script setup lang="ts">
+  import { computed } from 'vue'
+  import { Resource } from '@opencloud-eu/web-client'
+  import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg'
 
-export default defineComponent({
-  name: 'SolarSearchComponent',
-  components: { ResourceListItem },
-  props: {
-    searchResult: {
-      type: Object as PropType<SearchResultValue>,
-      default: () => ({})
-    }
-  },
-  setup(props) {
-    const resource = computed<Resource>(() => props.searchResult.data)
+  const { searchResult } = defineProps<{ searchResult: SearchResultValue }>()
 
-    return { resource }
-  }
-})
+  const resource = computed<Resource>(() => searchResult.data)
 </script>
-
 ```
 
 The extension can then be registered in any app like so:

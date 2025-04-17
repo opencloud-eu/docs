@@ -4,8 +4,6 @@ sidebar_position: 3
 id: custom-component-extensions
 ---
 
-
-
 ## Extension Type CustomComponent
 
 CustomComponent extensions need to define one or multiple `extensionPointId`s as render target. A `CustomComponentTarget` component for this very
@@ -25,7 +23,7 @@ interface CustomComponentExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../index.md) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
 
 The `content` property specifies a render function or a Component for the target extension point.
 

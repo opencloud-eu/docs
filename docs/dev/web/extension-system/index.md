@@ -2,8 +2,6 @@
 title: 'Extension system'
 ---
 
-
-
 ## Concepts and Building Blocks
 
 OpenCloud Web can be extended through various entry points with custom **apps** and **extensions**.
@@ -29,10 +27,9 @@ Feel free to contribute or just be inspired for your own apps or extensions.
 
 ### Apps
 
-To get started, define a `src/index.ts`. Below is the most basic example of its content:
+Apps define a `src/index.ts` file which acts as an entrypoint. Below is the most basic example of its content:
 
 ```typescript
-// Install '@opencloud-eu/web-pkg' as a devDependency first (only relevant for types and autocompletion, dependency is already provided by OpenCloud Web at runtime).
 import {
   AppWrapperRoute,
   ApplicationFileExtension,
@@ -67,7 +64,7 @@ export default defineWebApplication({
       appInfo: {
         name: $gettext('Your application name'),
         id: appId,
-        icon: 'aliens', // See https://opencloud.design/#/Design%20Tokens/IconList for available options
+        icon: 'aliens', // See https://remixicon.com/ for available options
       },
       extensions,
       navItems,
@@ -83,11 +80,13 @@ By defining an application via `defineWebApplication` you can provide the follow
 - `navItems` - the statically defined navigation items for the left sidebar. Only gets rendered when more than 1 navigation item exists at runtime.
   Additional dynamic navigation items can be registered via the extension registry.
 - `routes` - the routes to the different views of your application. May be referenced within the `navItems`. Authentication requirements can be defined per item.
-- `extensions` - the extensions to be registered in the extension registry. For more details see the `Extensions` section below.
+- `extensions` - the extensions to be registered in the extension registry. For more details see the [Extensions](#extensions) section below.
 
-If you want to learn how to implement an app for viewing and editing specific file types, please consult the [relevant documentation](./viewer-editor-apps.md) for detailed instructions and guidance.
+#### Creating a new app
 
-To learn how to integrate an app into OpenCloud Web, please refer to the "Web Apps" section of the Web service docs ("Services" > "Web").
+Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application to get started with your own application. In addition to that, if you want to learn how to implement an app for viewing and editing specific file types, please consult the [relevant documentation](./viewer-editor-apps.md) for detailed instructions and guidance.
+
+To learn how to integrate an app into OpenCloud Web, please refer to the [Web Application admin docs](./../../../admin/configuration/web-applications).
 
 ### Extensions
 
@@ -161,9 +160,15 @@ To allow users to configure extensions, extension points can define user prefere
 Whenever an extension point declares to accept user preferences, it will get listed with a dropdown on the Preferences page (reachable via top right user menu).
 The user can then select one out of all the extensions which have been registered for this extension point.
 
+#### Creating a new extension
+
+Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application that also includes an extension. In addition to that, the [extension types docs](./extension-types) provide instructions and examples on how to implement the different extension types.
+
 ### Helpful packages
 
 We currently offer the following packages that can be integrated into your app, providing useful utilities and types.
 
+- `extension-sdk` - This package provides a default vite config that can be used when developing applications and extensions for the OpenCloud Web ecosystem. For details, please refer to the package's [README.md](https://github.com/opencloud-eu/web/blob/main/packages/extension-sdk/README.md).
 - `web-client` - This package serves as an abstraction layer between the server APIs and an app or extension. It converts raw API data into objects with helpful types and utilities. For details, please refer to the package's [README.md](https://github.com/opencloud-eu/web/blob/main/packages/web-client/README.md).
 - `web-pkg` - This package provides utilities, most importantly a variety of components and composables, that can be useful when developing apps and extensions. For details, please refer to the package's [README.md](https://github.com/opencloud-eu/web/blob/main/packages/web-pkg/README.md).
+- `web-test-helpers` - This package provides utilities for writing unit tests. For details, please refer to the package's [README.md](https://github.com/opencloud-eu/web/blob/main/packages/web-test-helpers/README.md).
