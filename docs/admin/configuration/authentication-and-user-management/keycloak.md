@@ -92,6 +92,10 @@ If you need to manually configure the clients in Keycloak:
 
 3. **Desktop Client Authentication Fails**:
    - Verify localhost and 127.0.0.1 redirect URIs are correctly configured
+   - If you previously used the built-in IdP and switched to Keycloak, you may need to remove the client configuration files and reinstall the desktop client
+   - On Windows: Delete configuration at `%APPDATA%/OpenCloud/opencloud.cfg`
+   - On macOS: Delete configuration at `~/Library/Preferences/OpenCloud/opencloud.cfg`
+   - On Linux: Delete configuration at `~/.config/OpenCloud/opencloud.cfg`
 
 ## User and Group Management
 
