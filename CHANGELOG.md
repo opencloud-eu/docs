@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.18.0](https://github.com/opencloud-eu/docs/releases/tag/1.18.0) - 2025-04-16
+## [1.18.0](https://github.com/opencloud-eu/docs/releases/tag/1.18.0) - 2025-04-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @JammingBen
+
+### :octocat: Developer Documentation
+
+- Overhaul web dev docs [[#248](https://github.com/opencloud-eu/docs/pull/248)]
 
 ### 👤 User Documentation
 
