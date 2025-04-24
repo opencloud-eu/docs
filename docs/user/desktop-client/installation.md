@@ -26,7 +26,7 @@ The OpenCloud Desktop client is available for **Windows**, **macOS**, and **Linu
 1. Download the latest or preferred `.pkg` file for macOS from the [GitHub repository](https://github.com/opencloud-eu/desktop/releases)
 2. Double-click the downloaded file to start the installer
 3. Follow the on-screen instructions to complete the installation
-4. After installation, launch **OpenCloud Desktop** from the **Applications** folder
+4. After installation, launch **OpenCloud Desktop** from the **Applications** folder or **Launchpad**
 
 ---
 
