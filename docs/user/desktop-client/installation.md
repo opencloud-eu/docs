@@ -47,6 +47,6 @@ AppImageLauncher automatically integrates AppImages into your system menu.
 
 ### Step 3: Launch OpenCloud
 
-- Double-click the downloaded `OpenCloud.AppImage` file.
+- Right-click the downloaded `OpenCloud.AppImage` file and choose `Open with AppImageLauncher`.
 - Confirm when AppImageLauncher prompts you to integrate the app.
 - OpenCloud Desktop will now be available in your application menu like any other app
