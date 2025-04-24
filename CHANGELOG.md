@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.19.0](https://github.com/opencloud-eu/docs/releases/tag/1.19.0) - 2025-04-23
+## [1.19.0](https://github.com/opencloud-eu/docs/releases/tag/1.19.0) - 2025-04-24
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@michaelstingl, @tbsbdr
+@michaelstingl, @rhafer, @tbsbdr
 
 ### :octocat: Developer Documentation
 
@@ -13,6 +13,10 @@
 ### 👷 Admin Documentation
 
 - removed "coming soon" [[#253](https://github.com/opencloud-eu/docs/pull/253)]
+
+### 🐛 Bug Fixes
+
+- Fix build instruction [[#224](https://github.com/opencloud-eu/docs/pull/224)]
 
 ## [1.18.0](https://github.com/opencloud-eu/docs/releases/tag/1.18.0) - 2025-04-17
 
