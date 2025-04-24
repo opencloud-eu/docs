@@ -8,42 +8,23 @@ title: Keycloak Integration
 
 OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities. This guide explains how to set up and configure Keycloak with OpenCloud.
 
-## Setting Up Keycloak with Docker Compose
-
-OpenCloud includes a pre-configured Keycloak setup in the Docker Compose examples. To enable Keycloak:
-
-1. Navigate to your OpenCloud deployment directory
-2. Edit the `.env` file and uncomment the Keycloak line:
-   ```
-   KEYCLOAK=:keycloak.yml
-   ```
-3. Configure the following environment variables in the same file:
-   ```
-   KEYCLOAK_DOMAIN=your-domain.example.com
-   KEYCLOAK_REALM=openCloud
-   KEYCLOAK_ADMIN_USER=admin
-   KEYCLOAK_ADMIN_PASSWORD=your-secure-password
-   ```
-4. Start the deployment with Keycloak:
-   ```bash
-   docker-compose up -d
-   ```
-   
-   > **Note**: This simplified command works because of the `COMPOSE_FILE` variable in the `.env` file. When you uncomment the `KEYCLOAK=:keycloak.yml` line, the colon-prefixed value is automatically appended to the `COMPOSE_FILE` variable in the last line of the `.env` file, making it unnecessary to specify the configuration files explicitly.
-
 ## OpenCloud Configuration for Keycloak
 
 When using Keycloak as the identity provider, you need to configure OpenCloud with the following settings:
 
 ```
-PROXY_AUTOPROVISION_ACCOUNTS=true
+PROXY_AUTOPROVISION_ACCOUNTS=true|false # that depends on your setup
 PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
 OC_OIDC_ISSUER=https://your-domain.example.com/realms/openCloud
+WEB_OPTION_ACCOUNT_EDIT_LINK_HREF=https://your-domain.example.com/realms/openCloud/account
 PROXY_OIDC_REWRITE_WELLKNOWN=true
-PROXY_USER_OIDC_CLAIM=preferred_username
-GRAPH_ASSIGN_DEFAULT_USER_ROLE=false
+PROXY_USER_OIDC_CLAIM=preferred_username|sub|uuid # this depends on your setup
+# admin and demo accounts must be created in Keycloak
+OC_ADMIN_USER_ID: ""
+SETTINGS_SETUP_DEFAULT_ASSIGNMENTS: "false"
+GRAPH_ASSIGN_DEFAULT_USER_ROLE: "false"
 GRAPH_USERNAME_MATCH=none
-OC_EXCLUDE_RUN_SERVICES=idp
+OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
 ```
 
 Look [here](./external-idp.md#opencloud-configuration) for some more details about these settings.
@@ -102,3 +83,12 @@ When Keycloak is enabled:
 3. OpenCloud maps external groups to internal representations
 
 For more details on user management with Keycloak, refer to the [Keycloak documentation](https://www.keycloak.org/documentation).
+
+## Existing User Integration with Keycloak
+
+To integrate with already existing users from an Identity management OpenCloud supports two authentication modes:
+
+1. **Shared User Directory Mode**: LDAP serves as a central user directory for both Keycloak and OpenCloud
+2. **Autoprovisioning Mode**: The Identity Provider (Keycloak) manages users, groups, and roles, while OpenCloud autoprovisions new users during first login in its own user directory. This is the case when the Identity Provider is "read only" or if the users are coming from a federated Identity Provider (e.g., Google, GitHub, Facebook, Microsoft).
+
+For detailed configuration and setup instructions, see the [Keycloak with existing users](./keycloak-existing-users.md) guide.
