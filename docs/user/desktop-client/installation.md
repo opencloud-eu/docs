@@ -12,10 +12,12 @@ The OpenCloud Desktop client is available for **Windows**, **macOS**, and **Linu
 
 ## 🪟 Windows Installation (Microsoft Store)
 
-1. Open the **Microsoft Store**
-2. Search for **OpenCloud Desktop**
-3. Click **Install**
-4. Once installed, launch the app from your Start Menu
+1. Open the **Microsoft Store** and search for **OpenCloud Desktop** or click on the image below
+<a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
+	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+</a>
+2. Click **Install**
+3. Once installed, launch the app from your Start Menu
 
 > ℹ️ Installing from the Microsoft Store ensures automatic updates and tight system integration.
 
