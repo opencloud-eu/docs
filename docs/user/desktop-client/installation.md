@@ -32,7 +32,7 @@ The OpenCloud Desktop client is available for **Windows**, **macOS**, and **Linu
 
 ## 🐧 Linux Installation (AppImage)
 
-We recommend using **AppImageLauncher** to manage AppImages conveniently.
+We recommend using **AppImageLauncher** to manage AppImages conveniently and to ensure proper system integration.
 
 ### Step 1: Download the AppImage
 
