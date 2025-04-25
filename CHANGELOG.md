@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.19.1](https://github.com/opencloud-eu/docs/releases/tag/1.19.1) - 2025-04-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+
+
 ## [1.19.0](https://github.com/opencloud-eu/docs/releases/tag/1.19.0) - 2025-04-24
 
 ### ❤️ Thanks to all contributors! ❤️
