@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👷 Admin Documentation
+
+- Create FAQ site [[#264](https://github.com/opencloud-eu/docs/pull/264)]
+
 ## [1.21.0](https://github.com/opencloud-eu/docs/releases/tag/1.21.0) - 2025-04-28
 
 ### ❤️ Thanks to all contributors! ❤️
