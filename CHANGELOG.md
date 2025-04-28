@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @dragotin
+@AlexAndBear, @Svanvith, @dragotin
 
 ### 👷 Admin Documentation
 
+- Rename docker to container in admin -> getting started [[#259](https://github.com/opencloud-eu/docs/pull/259)]
 - add note, that the raspberry pi installation is for private use [[#260](https://github.com/opencloud-eu/docs/pull/260)]
 - Add more doc about the collaborative mode [[#254](https://github.com/opencloud-eu/docs/pull/254)]
 
