@@ -23,8 +23,7 @@ To enable OpenCloud to operate without a database, additional metadata is stored
 
 ## Access Model
 
-To ensure reliable operation in *non-collaborative mode* , the underlying file system used by the PosixFS driver **must not** be modified while OpenCloud is running. The assigned file system tree must be exclusively reserved for access by OpenCloud.
-
+To ensure reliable operation in *non-collaborative mode*, the underlying file system used by the PosixFS driver **must not** be modified while OpenCloud is running. The assigned file system tree must be exclusively reserved for access by OpenCloud.
 All files and directories must be owned by the same user and group under which the OpenCloud process is running. File and directory permissions must allow OpenCloud to read, write, and traverse the entire tree.
 
 These conditions are automatically fulfilled as long as the root directory of the assigned tree is writable.
