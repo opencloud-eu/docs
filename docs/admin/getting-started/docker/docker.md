@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 id: docker
 title: Docker
 description: "Classic docker setup."
