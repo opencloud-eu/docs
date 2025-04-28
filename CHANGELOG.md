@@ -1,12 +1,18 @@
 # Changelog
 
-## [1.19.1](https://github.com/opencloud-eu/docs/releases/tag/1.19.1) - 2025-04-25
+## [1.20.0](https://github.com/opencloud-eu/docs/releases/tag/1.20.0) - 2025-04-28
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @dragotin
 
+### 👷 Admin Documentation
 
+- Add more doc about the collaborative mode [[#254](https://github.com/opencloud-eu/docs/pull/254)]
+
+### 👤 User Documentation
+
+- Rewrite desktop installation [[#255](https://github.com/opencloud-eu/docs/pull/255)]
 
 ## [1.19.0](https://github.com/opencloud-eu/docs/releases/tag/1.19.0) - 2025-04-24
 
