@@ -6,6 +6,11 @@ title: Raspberry Pi
 
 # OpenCloud on Raspberry Pi
 
+:::note
+The installation of OpenCloud on a Raspberry Pi is intended for private or non-production use only.  
+It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential performance constraints.
+:::
+
 
 ## 1.1 Hardware requirements
 
