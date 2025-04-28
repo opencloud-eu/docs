@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add note, that the raspberry pi installation is for private use [[#260](https://github.com/opencloud-eu/docs/pull/260)]
 - Add more doc about the collaborative mode [[#254](https://github.com/opencloud-eu/docs/pull/254)]
 
 ### 👤 User Documentation
