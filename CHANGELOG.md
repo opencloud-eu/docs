@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.21.0](https://github.com/opencloud-eu/docs/releases/tag/1.21.0) - 2025-04-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 👷 Admin Documentation
+
+- Add own category for docker installation in admin getting started guide [[#261](https://github.com/opencloud-eu/docs/pull/261)]
+
 ## [1.20.0](https://github.com/opencloud-eu/docs/releases/tag/1.20.0) - 2025-04-28
 
 ### ❤️ Thanks to all contributors! ❤️
