@@ -1,14 +1,18 @@
 # Changelog
 
-## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-28
+## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue
+@Heiko-Pohl, @LisaHue
 
 ### 👷 Admin Documentation
 
 - Create FAQ site [[#264](https://github.com/opencloud-eu/docs/pull/264)]
+
+### 👤 User Documentation
+
+- Add iOS German categories [[#263](https://github.com/opencloud-eu/docs/pull/263)]
 
 ## [1.21.0](https://github.com/opencloud-eu/docs/releases/tag/1.21.0) - 2025-04-28
 
