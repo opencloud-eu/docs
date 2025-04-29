@@ -10,6 +10,32 @@ OpenCloud supports two authentication modes when using Keycloak with existing us
 
 ## Shared User Directory Mode
 
+```mermaid
+graph TD
+    subgraph opencloud["OpenCloud Deployment"]
+        OpenCloud["OpenCloud Server"]
+        Keycloak("Keycloak<br>(OIDC Provider)")
+    end
+    subgraph existing["Existing Infrastructure"]
+        LDAP[("LDAP Server<br>(Shared User Directory)")]
+    end
+
+    OpenCloud -->|"User and Groups are looked up for sharing"| LDAP
+    OpenCloud -->|"Reads Roles and Group memberships from claims"| Keycloak
+    Keycloak -->|"Verify credentials"| LDAP
+    LDAP -->|"Import Users and Groups"| Keycloak
+
+    classDef service fill:#3498db,stroke:#2c3e50,stroke-width:2px,rx:10px,ry:10px;
+    classDef storage fill:#2ecc71,stroke:#27ae60,stroke-width:2px,rx:10px,ry:10px;
+    classDef readonly fill:#87CEFA,stroke:#4682B4,stroke-width:3px,rx:10px,ry:10px;
+    classDef general stroke-width:2px,rx:10px,ry:10px;
+
+    class OpenCloud,Keycloak service;
+    class LDAP storage;
+    class existing,directory readonly;
+    class opencloud general;
+```
+
 In this mode, a readable LDAP Directory with existing users serves as a central user directory for both Keycloak and OpenCloud.
 
 **Key characteristics:**
@@ -120,6 +146,41 @@ Keycloak can import the realm configuration file **only once** during the first 
 
 In this mode, Keycloak is holding all users and OpenCloud autoprovisions new users during first login.
 This mode is suitable in scenarios where the OpenIDConnect provider is external and not under control of the OpenCloud admin. To mitigate that lack of control, OpenCloud will use an LDAP server which is fully under the control of the OpenCloud admin to store the users and groups and additional attributes.
+
+```mermaid
+graph TD
+    subgraph opencloud["OpenCloud Deployment"]
+        OpenCloud["`**OpenCloud Server**`"]
+        Stop((("Block <br>disabled<br>Users")))
+        subgraph directory["User Directory"]
+            LDAP[("`**LDAP Server**
+            - managed by opencloud
+            - custom schema`")]
+        end
+    end
+    subgraph existing["Existing Infrastructure"]
+        Keycloak("`**Keycloak**<br>(OIDC Provider)`")
+        UserDirectory[("`Federated Identity Provider
+        - Microsoft
+        - Google
+        - and others`")]
+    end
+
+    OpenCloud -->|"User and Groups are created during first user login"| LDAP
+    OpenCloud <-->|"User and Groups are looked up for sharing"| LDAP
+    OpenCloud -- "Reads Users, Attributes, Group memberships and Roles from OIDC claims" --> Stop --> Keycloak
+    UserDirectory -->|"Import Users and Groups"| Keycloak
+
+    classDef service fill:#3498db,stroke:#2c3e50,stroke-width:2px,rx:10px,ry:10px;
+    classDef storage fill:#2ecc71,stroke:#27ae60,stroke-width:2px,rx:10px,ry:10px;
+    classDef readonly fill:#87CEFA,stroke:#4682B4,stroke-width:3px,rx:10px,ry:10px;
+    classDef general stroke-width:2px,rx:10px,ry:10px;
+
+    class OpenCloud,Keycloak service;
+    class LDAP storage;
+    class existing,directory readonly;
+    class opencloud general;
+```
 
 - Keycloak manages the users, groups, and roles
 - The openCloud Clients and Sessions are configured in Keycloak
