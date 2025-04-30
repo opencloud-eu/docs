@@ -190,7 +190,7 @@ graph TD
 
 ### Configuration for Autoprovisioning Mode
 
-Keycloak,OpenCloud and OpenLDAP can be configured using environment variables:
+Keycloak, OpenCloud and OpenLDAP can be configured using environment variables:
 
 ```bash
 # Basic Keycloak configuration
