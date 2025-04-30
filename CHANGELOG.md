@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- feat: add keycloak LDAP docs [[#256](https://github.com/opencloud-eu/docs/pull/256)]
 - Create FAQ site [[#264](https://github.com/opencloud-eu/docs/pull/264)]
 
 ### 👤 User Documentation
