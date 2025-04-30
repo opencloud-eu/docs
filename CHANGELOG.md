@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue, @micbar
+@Heiko-Pohl, @LisaHue, @micbar, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- Add release types [[#258](https://github.com/opencloud-eu/docs/pull/258)]
 - feat: add keycloak LDAP docs [[#256](https://github.com/opencloud-eu/docs/pull/256)]
 - Create FAQ site [[#264](https://github.com/opencloud-eu/docs/pull/264)]
 
