@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-04-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- add draft to the ios tutorials [[#266](https://github.com/opencloud-eu/docs/pull/266)]
+
 ## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-30
 
 ### ❤️ Thanks to all contributors! ❤️
