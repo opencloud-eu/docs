@@ -34,12 +34,12 @@ Hier kann man einstellen, wo die Suchfunktion agieren soll:
 - Server 
 
 #### 3. Logging
-Hier kann die Loggingfunktion aktiviert und deaktiviert werden sowie der Speicherort des Logfiles angegeben werden.
+Hier kann die Loggingfunktion aktiviert und deaktiviert werden, sowie der Speicherort des Logfiles angegeben werden.
 
 ### Data Usage
 
 #### 4. Mobile Datennutzung
-Hier kann eingestellt werden, ob die mit Mobile Daten genutzt werden kann oder nicht.
+Hier kann eingestellt werden, ob die App mit mobilen Daten genutzt werden kann oder nicht.
 
 #### 5. Löschen von nicht verwendeten lokalen Kopien
 Hier kann eingestellt werden, wann nicht genutzte lokale Kopien gelöscht werden sollen.
@@ -47,13 +47,13 @@ Hier kann eingestellt werden, wann nicht genutzte lokale Kopien gelöscht werden
 ### Advanced Settings
 
 #### 6. Anzeigen von versteckten Dateien und Ordnern
-Hier kann das anzeigen von verstecken Dateien und Ordnern aktiviert und deaktiviert werden.
+Hier kann das Anzeigen von verstecken Dateien und Ordnern aktiviert und deaktiviert werden.
 
 #### 7. Zeige Ordner oben
-Hier kann man einstellen, ob Ordner in Liste vor Dateien angezeigt werden sollen.
+Hier kann man einstellen, ob die Ordner in der Listenansicht vor den Dateien angezeigt werden sollen.
 
 #### 8. Gesten deaktivieren
-Hier kann die Gestensteuerung deaktiviert werden, um Mehfachauswahl und das Ziehen von Dateien und Ordner zu verhindern
+Hier kann die Gestensteuerung deaktiviert werden, um Mehfachauswahl und das Ziehen von Dateien und Ordnern zu verhindern.
 
 #### 9. Diagnose aktivieren
 Hier kann ausgewählt werden, ob die App im Hintergrund Diagnosen ausführen darf.
@@ -64,7 +64,7 @@ Hier kann ausgewählt werden, ob die App im Hintergrund Diagnosen ausführen dar
 Hier kann eingestellt werden, ob eine Datei direkt heruntergeladen oder gestreamt werden soll.
 
 #### 11. Medien hochladen
-Hier kann man einstelle, ob z.B. bestimmte Dateien beim hochladen konvertiert werden, wie HEIC zu JPEG.
+Hier kann man einstellen, ob z.B. bestimmte Dateien beim hochladen konvertiert werden sollen, wie HEIC zu JPEG.
 
 ### More
 
