@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-04-30
+## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- add german installation instruction [[#268](https://github.com/opencloud-eu/docs/pull/268)]
 - add draft to the ios tutorials [[#266](https://github.com/opencloud-eu/docs/pull/266)]
 
 ## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-30
