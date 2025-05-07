@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith
+@Heiko-Pohl, @Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
