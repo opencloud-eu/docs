@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- add german and english translations [[#274](https://github.com/opencloud-eu/docs/pull/274)]
 - add set up your account in the iOS App [[#270](https://github.com/opencloud-eu/docs/pull/270)]
 - Ios app german translation settings [[#269](https://github.com/opencloud-eu/docs/pull/269)]
 - add german installation instruction [[#268](https://github.com/opencloud-eu/docs/pull/268)]
