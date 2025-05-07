@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: installation
 title: Install the iOS App
-draft: true
 ---
 
 # 📱 Installing the iOS App
