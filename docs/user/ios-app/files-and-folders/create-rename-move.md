@@ -74,25 +74,29 @@ The scanned document will be saved in your OpenCloud account.
 
 ---
 
+## ✏️ Rename Files or Folders
 
+To rename a file or folder in the OpenCloud iOS App:
 
+1. Tap the **three dots (⋯)** next to the item you want to rename
 
+<img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Create folder" height="400"/>
 
-### To rename files or folders
-- Open the **context menu** by either: 
-    - **right-clicking** on the file or folder,
-    - or clicking on the **three dots** on the right in the corresponding line.
+2. Select **"Rename"** from the menu
 
+<img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Create folder" height="400"/>
 
-- Select the **“Rename”** option.
+3. Enter the new name for the file or folder
 
+<img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Create folder" height="400"/>
 
-- Enter the **new name** for the file or folder in the window that appears.
-Confirm by clicking on **“Rename”**.
+4. Tap **"Done"** to apply the changes
 
+<img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="Create folder" height="400"/>
+✅ The new name will be saved immediately.
 
-
-**Done!** - the new name is applied!
+---
 
 
 
