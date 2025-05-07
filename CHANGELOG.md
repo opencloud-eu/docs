@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-06
+## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-07
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- add initial env vars files [[#271](https://github.com/opencloud-eu/docs/pull/271)]
 
 ### 👤 User Documentation
 
