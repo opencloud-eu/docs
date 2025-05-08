@@ -100,6 +100,7 @@ To rename a file or folder in the OpenCloud iOS App:
 <img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tap done" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="New applied name" height="400"/>
 
+
 ✅ The new name will be saved immediately.
 
 ---
@@ -120,11 +121,14 @@ To move a file or folder in the OpenCloud iOS App:
 
 <img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Select cut or copy" height="400"/>
 
+
 3. Navigate to the destination folder
 4. Tap the **three dots (⋯)** in the destination location and select **"Paste"**
 
+
 <img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Select paste" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="File is moved" height="400"/>
+
 
 
 ✅ The file or folder will now appear in the new location.
