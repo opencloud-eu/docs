@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- added the settings translation for the iOS app [[#281](https://github.com/opencloud-eu/docs/pull/281)]
 - Add ios download available offline [[#280](https://github.com/opencloud-eu/docs/pull/280)]
 - Add ios create move rename [[#277](https://github.com/opencloud-eu/docs/pull/277)]
 
