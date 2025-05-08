@@ -37,10 +37,10 @@ Here you can activate and deactivate the logging function and specify the storag
 
 ### Data Usage
 
-#### 4. Mobile data usage
-Here you can set whether the app can be used with mobile data or not.
+#### 4. Cellular data usage
+Here you can set whether the app can be used with cellular data or not.
 
-#### 5. Deleting unused local copies
+#### 5. Delete unused local copies
 Here you can specify when unused local copies should be deleted.
 
 ### Advanced Settings
@@ -48,13 +48,13 @@ Here you can specify when unused local copies should be deleted.
 #### 6. Show hidden files and folders
 Here you can enable or disable the display of hidden files and folders.
 
-#### 7. Show folders at top
+#### 7. Show folders on top
 Here you can set whether the folders should be displayed before the files in the list view.
 
 #### 8. Disable gestures
 Here you can disable gesture control to prevent multiple selection and dragging of files and folders.
 
-#### 9. Activate diagnostics
+#### 9. Enable diagnostics
 Here you can select whether the app is allowed to run diagnostics in the background.
 
 ### Media Files
@@ -62,12 +62,12 @@ Here you can select whether the app is allowed to run diagnostics in the backgro
 #### 10. Download instead of streaming
 Here you can set whether a file should be downloaded directly or streamed.
 
-#### 11. Upload media
+#### 11. Media Upload
 Here you can set whether certain files should be converted when uploading, such as HEIC to JPEG.
 
 ### More
 
-#### 12. Help and contact
+#### 12. Help & contact
 Here you will find links to our documentation page and help links.
 
 #### 13. Recommend to a friend
@@ -79,7 +79,7 @@ A full entry on our privacy policy can be found here.
 #### 15. Terms of Use
 You can find a full entry on our terms of use here.
 
-#### 16. Recognitions
+#### 16. Acknowledgements
 Parts of the app may use copyrighted material, which is acknowledged here.
 
 #### 17. App version
