@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Add ios download available offline [[#280](https://github.com/opencloud-eu/docs/pull/280)]
 - Add ios create move rename [[#277](https://github.com/opencloud-eu/docs/pull/277)]
 
 ## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-07
