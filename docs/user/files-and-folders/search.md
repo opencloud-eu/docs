@@ -27,4 +27,26 @@ You can use the search bar in the top bar to find files and content quickly.
     - This **searches** through file names as well as the content of the files to **display relevant results**.
 <img src={require("./img/search/search-example.png").default} alt="example search" width="500"/>
 <br/><br/>
+
+### Advanced search syntax
+
+OpenCloud supports advanced search operators to help you find exactly what you're looking for:
+
+- **Boolean operators**: Combine terms using `AND`, `OR`, and `NOT`
+  - Example: `customer AND 2025` will find documents containing both "customer" and "2025"
+  - Example: `project OR task` will find documents containing either "project" or "task"
+  - Example: `document NOT draft` will find documents containing "document" but not "draft"
+
+- **Field-specific search**: Search in specific metadata fields using `field:value`
+  - Example: `name:"quarterly report"` searches only in file names
+  - Example: `tag:important` searches for files with the "important" tag
+
+- **Date filtering**: Search by modification time using `mtime`
+  - Example: `report AND mtime:2023` finds reports modified in 2023
+
+- **Grouping**: Use parentheses to group expressions
+  - Example: `(invoice OR receipt) AND 2025` finds invoices or receipts from 2025
+
+These advanced search operators can be combined to create powerful search queries for finding exactly what you need.
+
 Use these steps to find your files or folders quickly and efficiently!
