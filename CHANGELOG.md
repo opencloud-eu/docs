@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-07
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @tbsbdr
+
+### 👷 Admin Documentation
+
+- add initial env vars files [[#271](https://github.com/opencloud-eu/docs/pull/271)]
+
+### 👤 User Documentation
+
+- remove draft for german settings [[#275](https://github.com/opencloud-eu/docs/pull/275)]
+- add german and english translations [[#274](https://github.com/opencloud-eu/docs/pull/274)]
+- add set up your account in the iOS App [[#270](https://github.com/opencloud-eu/docs/pull/270)]
+- Ios app german translation settings [[#269](https://github.com/opencloud-eu/docs/pull/269)]
+- add german installation instruction [[#268](https://github.com/opencloud-eu/docs/pull/268)]
+- add draft to the ios tutorials [[#266](https://github.com/opencloud-eu/docs/pull/266)]
+
 ## [1.22.0](https://github.com/opencloud-eu/docs/releases/tag/1.22.0) - 2025-04-30
 
 ### ❤️ Thanks to all contributors! ❤️
