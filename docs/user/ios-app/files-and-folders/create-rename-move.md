@@ -47,7 +47,7 @@ The document will open in a built-in web view using **Collabora** for editing.
 
 - Select **"Take photo or video"** from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="selcect take photo or video" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="select take photo or video" height="400"/>
 
 - Your device camera will open
 - Capture a photo or video
@@ -85,20 +85,20 @@ To rename a file or folder in the OpenCloud iOS App:
 
 1. Tap the **three dots (⋯)** next to the item you want to rename
 
-<img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Click on the three dots menu" height="400"/>
 
 2. Select **"Rename"** from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Select rename" height="400"/>
 
 3. Enter the new name for the file or folder
 
-<img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Enter the new name" height="400"/>
 
 4. Tap **"Done"** to apply the changes
 
-<img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Create folder" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tap done" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="New applied name" height="400"/>
 
 ✅ The new name will be saved immediately.
 
@@ -114,17 +114,17 @@ To move a file or folder in the OpenCloud iOS App:
 
 1. Tap the **three dots (⋯)** next to the file or folder you want to move
 
-<img src={require("../img/files-and-folders/create-rename-move/three-dots-move.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/three-dots-move.png").default} alt="Select the three dot menu" height="400"/>
 
 2. Select **"Cut"** or **"Copy"** from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Select cut or copy" height="400"/>
 
 3. Navigate to the destination folder
 4. Tap the **three dots (⋯)** in the destination location and select **"Paste"**
 
-<img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Create folder" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Select paste" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="File is moved" height="400"/>
 
 
 ✅ The file or folder will now appear in the new location.
