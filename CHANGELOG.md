@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @Svanvith
+@AlexAndBear, @LisaHue, @Svanvith
 
 ### 👷 Admin Documentation
 
+- Fix import of asset files [[#283](https://github.com/opencloud-eu/docs/pull/283)]
 - added configvars in admin a-c [[#273](https://github.com/opencloud-eu/docs/pull/273)]
 
 ### 👤 User Documentation
