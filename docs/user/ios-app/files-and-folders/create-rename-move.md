@@ -46,12 +46,17 @@ The document will open in a built-in web view using **Collabora** for editing.
 ### 📸 Take Photo or Video
 
 - Select **"Take photo or video"** from the menu
+
+<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="selcect take photo or video" height="400"/>
+
 - Your device camera will open
 - Capture a photo or video
+
+<img src={require("../img/files-and-folders/create-rename-move/take-photo.png").default} alt="Take Photo" height="400"/>
+
 - The media will be saved directly to your OpenCloud account
 
-📌 *Screenshot placeholder: iPhone photo upload screen*  
-`TODO: Insert screenshot`
+<img src={require("../img/files-and-folders/create-rename-move/photo-saved.png").default} alt="Photo saved" height="400"/>
 
 ---
 
