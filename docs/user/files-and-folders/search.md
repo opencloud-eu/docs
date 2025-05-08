@@ -28,29 +28,15 @@ You can use the search bar in the top bar to find files and content quickly.
 <img src={require("./img/search/search-example.png").default} alt="example search" width="500"/>
 <br/><br/>
 
-### Advanced search syntax
+### Refining your search results
 
-OpenCloud supports advanced search operators to help you find exactly what you're looking for:
+After entering a search term, you can refine your results using the filter options that appear above the search results:
 
-- **Boolean operators**: Combine terms using `AND`, `OR`, and `NOT` (case-sensitive)
-  - Example: `customer AND 2025` will find documents containing both "customer" and "2025"
-  - Example: `project OR task` will find documents containing either "project" or "task"
-  - Example: `document NOT draft` will find documents containing "document" but not "draft"
+- **Type filter**: Filter by file type (document, spreadsheet, image, etc.)
+- **Tags filter**: Filter by file tags
+- **Last Modified filter**: Filter by when files were last changed
+- **Title only** toggle: Search only in file names, not in content
 
-- **Field-specific search**: Search in specific metadata fields using `field:value`
-  - Example: `name:"quarterly report"` searches only in file names
-  - Example: `tag:important` searches for files with the "important" tag
-
-- **Date filtering**: Search by modification time using `mtime`
-  - The accepted date formats for `mtime` are:
-    - `YYYY` (e.g., `mtime:2023` for any modification in 2023)
-    - `YYYY-MM` (e.g., `mtime:2023-05` for modifications in May 2023)
-    - `YYYY-MM-DD` (e.g., `mtime:2023-05-15` for modifications on May 15, 2023)
-  - Example: `report AND mtime:2023` finds reports modified in 2023
-
-- **Grouping**: Use parentheses to group expressions
-  - Example: `(invoice OR receipt) AND 2025` finds invoices or receipts from 2025
-
-These advanced search operators can be combined to create powerful search queries for finding exactly what you need.
+These filters can be combined to narrow down your search results and find exactly what you're looking for.
 
 Use these steps to find your files or folders quickly and efficiently!
