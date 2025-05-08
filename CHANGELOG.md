@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue
+@LisaHue, @Svanvith
 
 ### 👷 Admin Documentation
 
 - added configvars in admin a-c [[#273](https://github.com/opencloud-eu/docs/pull/273)]
+
+### 👤 User Documentation
+
+- Add ios create move rename [[#277](https://github.com/opencloud-eu/docs/pull/277)]
 
 ## [1.23.0](https://github.com/opencloud-eu/docs/releases/tag/1.23.0) - 2025-05-07
 
