@@ -32,7 +32,7 @@ You can use the search bar in the top bar to find files and content quickly.
 
 OpenCloud supports advanced search operators to help you find exactly what you're looking for:
 
-- **Boolean operators**: Combine terms using `AND`, `OR`, and `NOT`
+- **Boolean operators**: Combine terms using `AND`, `OR`, and `NOT` (case-sensitive)
   - Example: `customer AND 2025` will find documents containing both "customer" and "2025"
   - Example: `project OR task` will find documents containing either "project" or "task"
   - Example: `document NOT draft` will find documents containing "document" but not "draft"
@@ -42,6 +42,10 @@ OpenCloud supports advanced search operators to help you find exactly what you'r
   - Example: `tag:important` searches for files with the "important" tag
 
 - **Date filtering**: Search by modification time using `mtime`
+  - The accepted date formats for `mtime` are:
+    - `YYYY` (e.g., `mtime:2023` for any modification in 2023)
+    - `YYYY-MM` (e.g., `mtime:2023-05` for modifications in May 2023)
+    - `YYYY-MM-DD` (e.g., `mtime:2023-05-15` for modifications on May 15, 2023)
   - Example: `report AND mtime:2023` finds reports modified in 2023
 
 - **Grouping**: Use parentheses to group expressions
