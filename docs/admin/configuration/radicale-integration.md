@@ -34,14 +34,14 @@ remove the `#` symbol from the line:
 docker compose up -d
 ```
 
-This will launch an addtional container (called `radicale`) using the
+This will launch an additional container (called `radicale`) using the
 `opencloudeu/radicale` container image and reconfigure the OpenCloud instance
 to automatically forward all authenticated traffic on
 `https://<your.opencloud.domain>/caldav` and
 `https://<your.opencloud.admin>/carddav` to the radicale container adding
 information about the authenticated users.
 
-Radicale is configured to automatically create default calendar and addressbook for every authenticated user.
+Radicale is configured to automatically create a default calendar and addressbook for every authenticated user.
 
 ## Accessing the Calendar and Addressbook
 
