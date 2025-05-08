@@ -47,7 +47,7 @@ The document will open in a built-in web view using **Collabora** for editing.
 
 - Select **"Take photo or video"** from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="selcect take photo or video" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="select take photo or video" height="400"/>
 
 - Your device camera will open
 - Capture a photo or video
