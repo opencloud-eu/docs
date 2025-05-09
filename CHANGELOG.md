@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👤 User Documentation
+
+- German translation for iOS files and folders [[#282](https://github.com/opencloud-eu/docs/pull/282)]
+
 ## [1.25.0](https://github.com/opencloud-eu/docs/releases/tag/1.25.0) - 2025-05-09
 
 ### ❤️ Thanks to all contributors! ❤️
