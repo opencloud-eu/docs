@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.25.0](https://github.com/opencloud-eu/docs/releases/tag/1.25.0) - 2025-05-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@tbsbdr
+
+### 👷 Admin Documentation
+
+- add future releasedates and semver [[#284](https://github.com/opencloud-eu/docs/pull/284)]
+
 ## [1.24.0](https://github.com/opencloud-eu/docs/releases/tag/1.24.0) - 2025-05-08
 
 ### ❤️ Thanks to all contributors! ❤️
