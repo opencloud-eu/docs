@@ -6,7 +6,7 @@ description: "How to enable Calendar and Contacts integration via Radicale in Op
 ---
 
 OpenCloud is able to act as an authenticating reverse proxy for the open-source
-CalDAV and CardDAV Server[Radicale](https://radicale.org).
+CalDAV and CardDAV Server [Radicale](https://radicale.org).
 
 The `opencloud_full` deployment example already contains all the required pieces to
 setup the integration. This guide explains the required steps to achieve that.
