@@ -2,6 +2,7 @@
 sidebar_position: 5
 id: shortcuts
 title: Verlinkungen in der OpenCloud iOS App
+draft: true
 ---
 
 # Verlinkungen in der OpenCloud iOS App
