@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-09
+## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-12
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @LisaHue
+
+### 👷 Admin Documentation
+
+- added configvars in admin d-o [[#287](https://github.com/opencloud-eu/docs/pull/287)]
 
 ### 👤 User Documentation
 
