@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue
+@LisaHue, @Svanvith
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,9 @@
 
 ### 👤 User Documentation
 
+- Ios app german translation search [[#290](https://github.com/opencloud-eu/docs/pull/290)]
+- Ios app german translation shares [[#289](https://github.com/opencloud-eu/docs/pull/289)]
+- Ios app german translation shortcuts [[#288](https://github.com/opencloud-eu/docs/pull/288)]
 - German translation for iOS files and folders [[#282](https://github.com/opencloud-eu/docs/pull/282)]
 
 ## [1.25.0](https://github.com/opencloud-eu/docs/releases/tag/1.25.0) - 2025-05-09
