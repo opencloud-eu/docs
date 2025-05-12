@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- adjust the structure of the iOS App for GER and ENG [[#291](https://github.com/opencloud-eu/docs/pull/291)]
 - Ios app german translation search [[#290](https://github.com/opencloud-eu/docs/pull/290)]
 - Ios app german translation shares [[#289](https://github.com/opencloud-eu/docs/pull/289)]
 - Ios app german translation shortcuts [[#288](https://github.com/opencloud-eu/docs/pull/288)]
