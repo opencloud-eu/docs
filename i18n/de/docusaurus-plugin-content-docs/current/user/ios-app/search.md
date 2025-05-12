@@ -2,6 +2,7 @@
 sidebar_position: 4
 id: search
 title: Suche
+draft: true
 ---
 
 # Suchfunktion
