@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue, @Svanvith
+@Heiko-Pohl, @LisaHue, @Svanvith, @rhafer
 
 ### 👷 Admin Documentation
 
+- Add some words about the Radicale integration [[#279](https://github.com/opencloud-eu/docs/pull/279)]
 - added configvars in admin d-o [[#287](https://github.com/opencloud-eu/docs/pull/287)]
 
 ### 👤 User Documentation
