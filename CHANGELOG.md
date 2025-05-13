@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Add docs admin configvars p-z [[#294](https://github.com/opencloud-eu/docs/pull/294)]
 - Add some words about the Radicale integration [[#279](https://github.com/opencloud-eu/docs/pull/279)]
 - added configvars in admin d-o [[#287](https://github.com/opencloud-eu/docs/pull/287)]
 
