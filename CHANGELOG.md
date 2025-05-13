@@ -6,6 +6,10 @@
 
 @Heiko-Pohl, @LisaHue, @Svanvith, @rhafer
 
+### 🐾 Guides
+
+- fix admin password issue [[#295](https://github.com/opencloud-eu/docs/pull/295)]
+
 ### 👷 Admin Documentation
 
 - Add some words about the Radicale integration [[#279](https://github.com/opencloud-eu/docs/pull/279)]
