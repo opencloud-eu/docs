@@ -89,6 +89,7 @@ If the password is unknown or the user does not want to make the change in the w
 #### 2. Terminal
 If the admin password has been forgotten or you want to make the change via the terminal, you must enter the following command in the terminal to reset the password:
 
+**Example for Docker:**
 ```bash
 sudo docker run -it --rm \ -v < opencloud-data-path>:/var/lib/opencloud \ -v <opencloud-config-path>:/etc/opencloud \ opencloudeu/opencloud:<opencloud-version> idm resetpassword
 ```
