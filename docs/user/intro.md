@@ -32,12 +32,13 @@ Here you will find information on how to share files and folders.
 Here you will find information for dealing with Spaces.
 
 #### OpenCloud Desktop:
-Here you will find information on how to install and set up the desktop client.&nbsp;
-
-**NOTE:** OpenCloud Desktop is not available yet. We are working on making it available in near future
+Here you will find information on how to install and set up the desktop client.
 
 #### Roles:
 Here you will find information about the different roles that can be assigned.
+
+#### iOS App
+Here you will find information about the OpenCloud iOS App.
 
 #### Administration of OpenCloud:
 
