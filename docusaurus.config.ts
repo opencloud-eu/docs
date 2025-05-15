@@ -2,30 +2,40 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// Webpack plugin für raw-loader (?raw an YAML-Dateien)
+function rawLoaderPlugin() {
+  return {
+    name: 'custom-webpack-raw-loader',
+    configureWebpack() {
+      return {
+        module: {
+          rules: [
+            {
+              test: /\.ya?ml$/i,
+              resourceQuery: /raw/,
+              use: 'raw-loader',
+            },
+          ],
+        },
+      };
+    },
+  };
+}
 
 const config: Config = {
   title: 'OpenCloud Docs',
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.svg',
 
-  // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'opencloud-eu', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'opencloud-eu',
+  projectName: 'docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
@@ -37,10 +47,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/opencloud-eu/docs/tree/main',
+          editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
         },
         blog: false,
         theme: {
@@ -53,13 +60,13 @@ const config: Config = {
   themeConfig: {
     image: 'img/oc-docs-social-card.jpg',
     colorMode: {
-      defaultMode: 'light'
+      defaultMode: 'light',
     },
     navbar: {
       logo: {
         alt: 'OpenCloud Logo',
         src: 'img/oc-logo-petrol.svg',
-        srcDark: 'img/oc-logo-lilac.svg'
+        srcDark: 'img/oc-logo-lilac.svg',
       },
       items: [
         {
@@ -82,8 +89,8 @@ const config: Config = {
         },
         {
           type: 'localeDropdown',
-          position: 'right'
-        }
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -91,18 +98,9 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'User',
-              to: '/docs/user/intro',
-            },
-            {
-              label: 'Admin',
-              to: '/docs/admin/intro',
-            },
-            {
-              label: 'Dev',
-              to: '/docs/dev/intro',
-            },
+            {label: 'User', to: '/docs/user/intro'},
+            {label: 'Admin', to: '/docs/admin/intro'},
+            {label: 'Dev', to: '/docs/dev/intro'},
           ],
         },
         {
@@ -112,35 +110,20 @@ const config: Config = {
               label: 'OpenCloud Community',
               href: 'https://opencloud.eu/opencloud-community',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/opencloud-eu',
-            },
+            {label: 'GitHub', href: 'https://github.com/opencloud-eu'},
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'OpenCloud',
-              href: 'https://opencloud.eu/',
-            },
-            {
-              label: 'Blog & News',
-              href: 'https://opencloud.eu/blog-news',
-            },
+            {label: 'OpenCloud', href: 'https://opencloud.eu/'},
+            {label: 'Blog & News', href: 'https://opencloud.eu/blog-news'},
             {
               label: 'Linkedin',
               href: 'https://www.linkedin.com/company/opencloud-eu',
             },
-            {
-              label: 'Mastodon',
-              href: 'https://social.opencloud.eu/@OpenCloud',
-            },
-            {
-              label: 'Bluesky',
-              href: 'https://bsky.app/profile/opencloud.eu',
-            },
+            {label: 'Mastodon', href: 'https://social.opencloud.eu/@OpenCloud'},
+            {label: 'Bluesky', href: 'https://bsky.app/profile/opencloud.eu'},
           ],
         },
       ],
@@ -153,14 +136,14 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 
-  themes: [
+  plugins: [
+    rawLoaderPlugin,
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
         hashed: true,
-        language: ["en", "de"],
-      }),
+        language: ['en', 'de'],
+      },
     ],
     '@docusaurus/theme-mermaid',
   ],

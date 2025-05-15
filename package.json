@@ -25,6 +25,7 @@
     "@likec4/cli": "^0.40.0",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
+    "js-yaml": "^4.1.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -34,6 +35,7 @@
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
     "likec4": "^1.30.0",
+    "raw-loader": "^4.0.2",
     "typescript": "~5.6.3"
   },
   "browserslist": {
