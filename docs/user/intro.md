@@ -34,11 +34,13 @@ Here you will find information for dealing with Spaces.
 #### OpenCloud Desktop:
 Here you will find information on how to install and set up the desktop client.
 
+#### OpenCloud iOS App
+Here you will find information about the OpenCloud iOS App.
+
 #### Roles:
 Here you will find information about the different roles that can be assigned.
 
-#### iOS App
-Here you will find information about the OpenCloud iOS App.
+
 
 #### Administration of OpenCloud:
 
