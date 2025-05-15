@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-13
+## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- adjust intro.md about Desktop and iOS App [[#296](https://github.com/opencloud-eu/docs/pull/296)]
 - german translation installation [[#293](https://github.com/opencloud-eu/docs/pull/293)]
 - adjust the structure of the iOS App for GER and ENG [[#291](https://github.com/opencloud-eu/docs/pull/291)]
 - Ios app german translation search [[#290](https://github.com/opencloud-eu/docs/pull/290)]
