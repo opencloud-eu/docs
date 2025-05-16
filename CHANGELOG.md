@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.27.0](https://github.com/opencloud-eu/docs/releases/tag/1.27.0) - 2025-05-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @LisaHue
+
+### 👤 User Documentation
+
+- Translate shares from german to english [[#301](https://github.com/opencloud-eu/docs/pull/301)]
+- Add ios overview [[#298](https://github.com/opencloud-eu/docs/pull/298)]
+
 ## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-15
 
 ### ❤️ Thanks to all contributors! ❤️
