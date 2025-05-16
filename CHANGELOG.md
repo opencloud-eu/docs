@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- Add ios overview [[#304](https://github.com/opencloud-eu/docs/pull/304)]
 - Translate shares from german to english [[#301](https://github.com/opencloud-eu/docs/pull/301)]
 - Add ios overview [[#298](https://github.com/opencloud-eu/docs/pull/298)]
 
