@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.27.0](https://github.com/opencloud-eu/docs/releases/tag/1.27.0) - 2025-05-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👤 User Documentation
+
+- Add ios overview [[#298](https://github.com/opencloud-eu/docs/pull/298)]
+
 ## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-15
 
 ### ❤️ Thanks to all contributors! ❤️
