@@ -65,5 +65,21 @@ Under **GDPR** you can request a **data export** of your personal data if you wi
 
 ---
 
+## App Tokens
+
+App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
+
+### How to Create an App Token
+
+1. Go to the **App Tokens** section in your OpenCloud settings.
+2. Click on **“+ New”** to create a new token.
+3. Enter a **name** for the token (e.g., "WebDAV").
+4. Select an **expiration date** for added security.
+5. Click **Create**.
+
+<img src={require("./img/account-settings/app-tokens.png").default} alt="GDPR" width="1920"/>
+
+---
+
 With these settings you can **customize** and **optimize** your user **account** according to your needs!
 
