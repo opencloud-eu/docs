@@ -27,20 +27,41 @@ With LTS, businesses can continue using an older production release without need
 
 <Tabs>
   <TabItem value="rolling" label="Rolling" default>
-    | Version | Release Date | Release Notes |
+    | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
-    | v2.1.0 | 2025 April 07 | [View Notes](https://github.com/opencloud-eu/opencloud/releases/tag/v2.1.0) |
-    | v2.0.0 | 2025 March 26 | [View Notes](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.0) |
-    | v1.1.0 | 2025 March 18 | [View Notes](https://github.com/opencloud-eu/opencloud/releases/tag/v1.1.0) |
-    | v1.0.0 | 2025 February 24 | [View Notes](https://github.com/opencloud-eu/opencloud/releases/tag/v1.0.0) |
+    | - | 2026 Januar 5 | - |
+    | - | 2025 December 15 | - |
+    | - | 2025 November 24 | - |
+    | - | 2025 November 3 | - |
+    | - | 2025 October 13 | - |
+    | - | 2025 September 22 | - |
+    | - | 2025 September 1 | - |
+    | - | 2025 August 11 | - |
+    | - | 2025 July 21 | - |
+    | - | 2025 June 30 | - |
+    | - | 2025 June 10 | - |
+    | - | 2025 May 19 | - |
+    | v2.2.0 | 2025 April 28 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.2.0) |
+    | v2.1.0 | 2025 April 07 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.1.0) |
+    | v2.0.0 | 2025 March 26 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.0) |
+    | v1.1.0 | 2025 March 18 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v1.1.0) |
+    | v1.0.0 | 2025 February 24 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v1.0.0) |
 
   </TabItem>
   <TabItem value="production " label="Production">
-    | Version | Release Date | Release Notes |
+    | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
-    | v2.0.0 | 2025 March 26 | [View Notes](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.0) |
+    | - | 2025 October 13 | - |
+    | v2.0.2 | 2025 May 2 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.2) |
+    | v2.0.1 | 2025 April 28 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.1) |
+    | v2.0.0 | 2025 March 26 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.0) |
     </TabItem>
   <TabItem value="lts" label="LTS">
     LTS Releases will be availabile as the second Production Releases will be published. Until then a LTS release makes no sense.
   </TabItem>
 </Tabs>
+
+# Versioning Scheme: Semantic Versioning
+OpenCloud follows [Semantic Versioning](https://semver.org/), also known as SemVer. Version numbers are structured as MAJOR.MINOR.PATCH. Breaking changes increase the MAJOR version, new backward-compatible features increase the MINOR version, and backward-compatible bug fixes increment the PATCH version.
+
+<img src={require("./img/lifecycle/semver.png").default} alt="Semantic Versioning" width="1920"/>

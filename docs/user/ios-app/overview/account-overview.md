@@ -14,6 +14,7 @@ draft: true
 <img src={require("../img/overview/account.png").default} alt="Overview Account" style={{ width: '400px', marginRight: '60px' }} />
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**1. Account Menue Item**</li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the main account options and settings</li>
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>2. Active Account**</li>
@@ -39,3 +40,4 @@ draft: true
   </ul>
 
 </div>
+

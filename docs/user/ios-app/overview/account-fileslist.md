@@ -5,7 +5,7 @@ title: Fileslist-Menue
 draft: true
 ---
 
-### Here a is a overview of the filesist-menue in the OpenCloud iOS-App.
+### Here a is an overview of the fileslist-menue in the OpenCloud iOS-App.
 
 ---
 
@@ -14,6 +14,7 @@ draft: true
 <img src={require("../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>1. Account Menu</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Provides access to account settings</li>
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>2. Navigation History</strong></li>
@@ -37,3 +38,4 @@ draft: true
   </ul>
 
 </div>
+

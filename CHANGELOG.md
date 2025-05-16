@@ -1,5 +1,41 @@
 # Changelog
 
+## [1.26.0](https://github.com/opencloud-eu/docs/releases/tag/1.26.0) - 2025-05-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @LisaHue, @Svanvith, @rhafer
+
+### 🐾 Guides
+
+- fix admin password issue [[#295](https://github.com/opencloud-eu/docs/pull/295)]
+
+### 👷 Admin Documentation
+
+- Add docs admin configvars p-z [[#294](https://github.com/opencloud-eu/docs/pull/294)]
+- Add some words about the Radicale integration [[#279](https://github.com/opencloud-eu/docs/pull/279)]
+- added configvars in admin d-o [[#287](https://github.com/opencloud-eu/docs/pull/287)]
+
+### 👤 User Documentation
+
+- adjust intro.md about Desktop and iOS App [[#296](https://github.com/opencloud-eu/docs/pull/296)]
+- german translation installation [[#293](https://github.com/opencloud-eu/docs/pull/293)]
+- adjust the structure of the iOS App for GER and ENG [[#291](https://github.com/opencloud-eu/docs/pull/291)]
+- Ios app german translation search [[#290](https://github.com/opencloud-eu/docs/pull/290)]
+- Ios app german translation shares [[#289](https://github.com/opencloud-eu/docs/pull/289)]
+- Ios app german translation shortcuts [[#288](https://github.com/opencloud-eu/docs/pull/288)]
+- German translation for iOS files and folders [[#282](https://github.com/opencloud-eu/docs/pull/282)]
+
+## [1.25.0](https://github.com/opencloud-eu/docs/releases/tag/1.25.0) - 2025-05-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@tbsbdr
+
+### 👷 Admin Documentation
+
+- add future releasedates and semver [[#284](https://github.com/opencloud-eu/docs/pull/284)]
+
 ## [1.24.0](https://github.com/opencloud-eu/docs/releases/tag/1.24.0) - 2025-05-08
 
 ### ❤️ Thanks to all contributors! ❤️
