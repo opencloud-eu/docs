@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue, @Svanvith
+@Heiko-Pohl, @LisaHue, @ScharfViktor, @Svanvith
+
+### 👷 Admin Documentation
+
+- publish 2.3.0 release in the docs [[#310](https://github.com/opencloud-eu/docs/pull/310)]
 
 ### 👤 User Documentation
 
