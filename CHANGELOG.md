@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue
+@Heiko-Pohl, @LisaHue, @Svanvith
 
 ### 👤 User Documentation
 
+- Add app tokens [[#307](https://github.com/opencloud-eu/docs/pull/307)]
 - translate search and shortcuts to english [[#306](https://github.com/opencloud-eu/docs/pull/306)]
 - german translation overview tutorials [[#305](https://github.com/opencloud-eu/docs/pull/305)]
 - Add ios overview [[#304](https://github.com/opencloud-eu/docs/pull/304)]
