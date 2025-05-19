@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- translate search and shortcuts to english [[#306](https://github.com/opencloud-eu/docs/pull/306)]
 - german translation overview tutorials [[#305](https://github.com/opencloud-eu/docs/pull/305)]
 - Add ios overview [[#304](https://github.com/opencloud-eu/docs/pull/304)]
 - Translate shares from german to english [[#301](https://github.com/opencloud-eu/docs/pull/301)]
