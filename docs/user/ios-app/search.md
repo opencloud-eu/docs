@@ -11,7 +11,7 @@ draft: true
 
 ---
 
-### 1. Click on the magnifying glass icon to open the search function.
+### 1. Click on the search icon to open the search function.
 <img src={require("./img/search/search-symbol.png").default} alt="magnifying glass icon" height="400"/>
 <br/>
 
