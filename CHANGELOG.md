@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- fix typo [[#308](https://github.com/opencloud-eu/docs/pull/308)]
 - Add app tokens [[#307](https://github.com/opencloud-eu/docs/pull/307)]
 - translate search and shortcuts to english [[#306](https://github.com/opencloud-eu/docs/pull/306)]
 - german translation overview tutorials [[#305](https://github.com/opencloud-eu/docs/pull/305)]
