@@ -30,7 +30,7 @@ To display WebDAV information for your Spaces:
 2. Enable **"Show WebDAV info in details view"**
 
 
-<img src={require("./img/webdav/preferences.png").default} alt="Create App Token" width="1920"/>
+<img src={require("./img/webdav/preferences.png").default} alt="enable webdav info" width="1920"/>
 ---
 
 ### 2. Create an App Token (if required)
@@ -55,7 +55,7 @@ You’ll see a section labeled **WebDAV** — copy the full WebDAV URL. It looks
 ```https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/```
 
 
-<img src={require("./img/webdav/webdav-url.png").default} alt="Create App Token" width="1920"/>
+<img src={require("./img/webdav/webdav-url.png").default} alt="webdav URL" width="1920"/>
 
 ---
 
