@@ -31,7 +31,7 @@ Ermöglicht Ihnen das **schnelle Auffinden** von Dateien, Ordnern oder Räumen.
 **5. Dateiliste**  
 Zeigt alle Dateien und Ordner in einer **Auswahlansicht** an.
 
-**6. Brotkrumen-Menü**  
+**6. Breadcrumbs-Menü**  
 Zeigt den **aktuellen Pfad** Ihrer Navigation an und ermöglicht es Ihnen, schnell zu vorherigen Verzeichnissen zurückzuspringen.
 
 **7. Batch-Aktionen**  
