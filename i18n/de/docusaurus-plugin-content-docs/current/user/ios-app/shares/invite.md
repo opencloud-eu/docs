@@ -8,7 +8,7 @@ draft: true
 # Dateien und Ordner mit Personen und Gruppen per Einladung teilen
 <br/><br/>
 
-## Hier erklären wir, wie man in der OpenCloud iOS-App, Dateiuen und Ordner per Einladung mit anderen Personen und Gruppen innerhalb der eigenen OpenCloud teilt
+## Hier erklären wir, wie man in der OpenCloud iOS-App, Dateien und Ordner per Einladung mit anderen Personen und Gruppen innerhalb der eigenen OpenCloud teilt
 
 ---
 
