@@ -186,5 +186,45 @@
   "sidebar.dev.category.Extension Types": {
     "message": "Extension Types",
     "description": "The label for category Extension Types in sidebar dev"
+  },
+  "sidebar.user.category.Files and Folders": {
+    "message": "Dateien und Ordner",
+    "description": "Tutorials for managing your files and folders in the OpenCloud iOS App."
+  },
+  "sidebar.user.category.Files and Folders.link.generated-index.description": {
+    "message": "Anleitungen rund um Dateien und Ordner",
+    "description": "Tutorials for managing your files and folders in the OpenCloud iOS App."
+  },
+  "sidebar.user.category.General": {
+    "message": "Allgemein",
+    "description": "Tutorials about installing, setup and overview of the OpenCloud iOS App."
+  },
+  "sidebar.user.category.General.link.generated-index.description": {
+    "message": "Anleitungen zur Installation, Einrichtung und Übersicht.",
+    "description": "Tutorials for managing your files and folders in the OpenCloud iOS App."
+  },
+  "sidebar.user.category.Shares": {
+    "message": "Teilen",
+    "description": "Tutorials about creating shares the OpenCloud iOS App."
+  },
+  "sidebar.user.category.Shares.link.generated-index.description": {
+    "message": "Anleitungen zum Teilen von Dateien und Ordner in der OpenClous iOS App.",
+    "description": "Tutorials about creating shares the OpenCloud iOS App."
+  },
+  "sidebar.user.category.OpenCloud iOS App": {
+    "message": "OpenCloud iOS App",
+    "description": "Tutorials about the OpenCloud iOS App."
+  },
+  "sidebar.user.category.OpenCloud iOS App.link.generated-index.description": {
+    "message": "Anleitungen für die OpenCloud iOS App.",
+    "description": "The generated-index page description for category OpenCloud iOS App in sidebar tutorialSidebar"
+  },
+  "sidebar.user.category.Overview": {
+    "message": "Übersicht",
+    "description": "Overview of the user interface of the OpenCloud iOS App."
+  },
+  "sidebar.user.category.Overview.link.generated-index.description": {
+    "message": "Übersicht der Benutzeroberfläche in der OpenCloud iOS App.",
+    "description": "The generated-index page description for category Overview in sidebar tutorialSidebar"
   }
 }
