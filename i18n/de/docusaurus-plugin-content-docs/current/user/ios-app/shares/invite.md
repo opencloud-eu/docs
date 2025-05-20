@@ -2,7 +2,6 @@
 sidebar_position: 1
 id: invite
 title: Einladen zum Teilen
-draft: true
 ---
 
 # Dateien und Ordner mit Personen und Gruppen per Einladung teilen

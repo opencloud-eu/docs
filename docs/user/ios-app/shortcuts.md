@@ -2,7 +2,6 @@
 sidebar_position: 5
 id: shortcuts
 title: Shortcut in the OpenCloud iOS app
-draft: true
 ---
 
 # Shortcut in the OpenCloud iOS app
