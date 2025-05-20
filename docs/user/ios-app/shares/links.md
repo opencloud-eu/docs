@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: links
-title: share via link
+title: Share via link
 draft: true
 ---
 
