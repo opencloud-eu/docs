@@ -2,27 +2,10 @@
 sidebar_position: 2
 id: activitylog-example
 title: Example Config
-draft: true
 ---
 
-import yaml from 'js-yaml';
-import configYamlRaw from '@site/static/env-vars/activitylog-config-example.yaml?raw';
-import { useMemo } from 'react';
+import yamlContent from '!!raw-loader!@site/static/env-vars/activitylog-config-example.yaml';
 import CodeBlock from '@theme/CodeBlock';
 
-export default function ConfigYamlPage() {
-  const parsed = useMemo(() => yaml.load(configYamlRaw), []);
 
-  return (
-    <>
-      <h1>Example Configuration </h1>
-
-      <h2>Rohdaten</h2>
-      <CodeBlock language="yaml">{configYamlRaw}</CodeBlock>
-
-      <h2>Geparst</h2>
-      <CodeBlock language="json">{JSON.stringify(parsed, null, 2)}</CodeBlock>
-    </>
-  );
-}
-
+<CodeBlock language="yaml">{yamlContent}</CodeBlock>

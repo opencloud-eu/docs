@@ -1,0 +1,3 @@
+[submodule "external/opencloud"]
+	path = external/opencloud
+	url = https://github.com/opencloud-eu/opencloud.git
