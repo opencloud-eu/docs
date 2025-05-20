@@ -186,13 +186,5 @@
   "sidebar.dev.category.Extension Types": {
     "message": "Extension Types",
     "description": "The label for category Extension Types in sidebar dev"
-  },
-"sidebar.user.category.OpenCloud iOS App": {
-    "message": "Benutzeroberfläche und Navigation",
-    "description": "The label for category User Interface and Navigation in sidebar user"
-  },
-  "sidebar.user.category.OpenCloud iOS App.link.generated-index.description": {
-    "message": "Anleitung zur Benutzeroberfläche und Navigation in OpenCloud.",
-    "description": "The generated-index page description for category User Interface and Navigation in sidebar user"
   }
 }

@@ -2,7 +2,6 @@
 sidebar_position: 2
 id: links
 title: Share via link
-draft: true
 ---
 
 # Share files and folders via link
