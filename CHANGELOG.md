@@ -6,6 +6,10 @@
 
 @Svanvith
 
+### :octocat: Developer Documentation
+
+- Move env to dev [[#317](https://github.com/opencloud-eu/docs/pull/317)]
+
 ### 👤 User Documentation
 
 - fix typos [[#315](https://github.com/opencloud-eu/docs/pull/315)]
