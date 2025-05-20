@@ -186,5 +186,69 @@
   "sidebar.dev.category.Extension Types": {
     "message": "Extension Types",
     "description": "The label for category Extension Types in sidebar dev"
+  },
+  "sidebar.admin.category.Container": {
+    "message": "Container",
+    "description": "The label for category Container in sidebar admin"
+  },
+  "sidebar.admin.category.Storage": {
+    "message": "Storage",
+    "description": "The label for category Storage in sidebar admin"
+  },
+  "sidebar.admin.category.Authentication and Identity Management": {
+    "message": "Authentication and Identity Management",
+    "description": "The label for category Authentication and Identity Management in sidebar admin"
+  },
+  "sidebar.user.category.OpenCloud iOS App": {
+    "message": "OpenCloud iOS App",
+    "description": "The label for category OpenCloud iOS App in sidebar user"
+  },
+  "sidebar.user.category.OpenCloud iOS App.link.generated-index.description": {
+    "message": "Tutorials about the OpenCloud iOS App.",
+    "description": "The generated-index page description for category OpenCloud iOS App in sidebar user"
+  },
+  "sidebar.user.category.General": {
+    "message": "General",
+    "description": "The label for category General in sidebar user"
+  },
+  "sidebar.user.category.General.link.generated-index.description": {
+    "message": "Tutorials about installing, setup and overview of the OpenCloud iOS App.",
+    "description": "The generated-index page description for category General in sidebar user"
+  },
+  "sidebar.user.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar user"
+  },
+  "sidebar.user.category.Overview.link.generated-index.description": {
+    "message": "Overview of the user interface of the OpenCloud iOS App",
+    "description": "The generated-index page description for category Overview in sidebar user"
+  },
+  "sidebar.user.category.Files and Folders": {
+    "message": "Files and Folders",
+    "description": "The label for category Files and Folders in sidebar user"
+  },
+  "sidebar.user.category.Files and Folders.link.generated-index.description": {
+    "message": "Tutorials for managing your files and folders in the OpenCloud iOS App.",
+    "description": "The generated-index page description for category Files and Folders in sidebar user"
+  },
+  "sidebar.user.category.shares": {
+    "message": "shares",
+    "description": "The label for category shares in sidebar user"
+  },
+  "sidebar.dev.category.Development.link.generated-index.description": {
+    "message": "👩‍💻 Development",
+    "description": "The generated-index page description for category Development in sidebar dev"
+  },
+  "sidebar.dev.category.Testing.link.generated-index.description": {
+    "message": "✅ Testing",
+    "description": "The generated-index page description for category Testing in sidebar dev"
+  },
+  "sidebar.user.category.Shares": {
+    "message": "Shares",
+    "description": "The label for category Shares in sidebar user"
+  },
+  "sidebar.user.category.Shares.link.generated-index.description": {
+    "message": "Tutorials about creating shares the OpenCloud iOS App.",
+    "description": "The generated-index page description for category Shares in sidebar user"
   }
 }
