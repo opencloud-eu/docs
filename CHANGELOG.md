@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- fix typos [[#315](https://github.com/opencloud-eu/docs/pull/315)]
+
 ## [1.28.0](https://github.com/opencloud-eu/docs/releases/tag/1.28.0) - 2025-05-20
 
 ### ❤️ Thanks to all contributors! ❤️
