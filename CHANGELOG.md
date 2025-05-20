@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.27.0](https://github.com/opencloud-eu/docs/releases/tag/1.27.0) - 2025-05-19
+## [1.27.0](https://github.com/opencloud-eu/docs/releases/tag/1.27.0) - 2025-05-20
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Add webdav [[#309](https://github.com/opencloud-eu/docs/pull/309)]
 - fix typo [[#308](https://github.com/opencloud-eu/docs/pull/308)]
 - Add app tokens [[#307](https://github.com/opencloud-eu/docs/pull/307)]
 - translate search and shortcuts to english [[#306](https://github.com/opencloud-eu/docs/pull/306)]
