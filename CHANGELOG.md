@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.28.0](https://github.com/opencloud-eu/docs/releases/tag/1.28.0) - 2025-05-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @LisaHue
+
+### 👤 User Documentation
+
+- translation tutorial sidebar iOS app [[#314](https://github.com/opencloud-eu/docs/pull/314)]
+- undraft the iOS articles [[#312](https://github.com/opencloud-eu/docs/pull/312)]
+
 ## [1.27.0](https://github.com/opencloud-eu/docs/releases/tag/1.27.0) - 2025-05-20
 
 ### ❤️ Thanks to all contributors! ❤️
