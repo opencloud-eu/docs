@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: links
-title: per Link teilen
+title: Per Link teilen
 ---
 
 # Dateien und Ordner per Link teilen
