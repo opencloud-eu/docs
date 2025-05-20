@@ -34,6 +34,7 @@
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
     "likec4": "^1.30.0",
+    "raw-loader": "^4.0.2",
     "typescript": "~5.6.3"
   },
   "browserslist": {
