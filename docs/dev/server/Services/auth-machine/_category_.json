@@ -1,0 +1,9 @@
+{
+  "label": "Auth-machine",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "title": "Auth-machine",
+    "description": "Environment Variables and example yml"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Policies",
+  "position": 27,
+  "link": {
+    "type": "generated-index",
+    "title": "Policies",
+    "description": "Environment Variables and example yml"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "Clientlog",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "title": "Clientlog",
+    "description": "Environment Variables and example yml"
+  }
+}

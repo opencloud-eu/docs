@@ -1,0 +1,9 @@
+{
+  "label": "Auth-bearer",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "title": "Auth-bearer",
+    "description": "Environment Variables and example yml"
+  }
+}
