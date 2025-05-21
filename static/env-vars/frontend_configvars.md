@@ -70,8 +70,8 @@ Environment variables for the **frontend** service
 |`FRONTEND_DATA_GATEWAY_PREFIX`| 1.0.0 |string|Path prefix for the data gateway.|data|
 |`FRONTEND_OCS_PREFIX`| 1.0.0 |string|URL path prefix for the OCS service. Note that the string must not start with '/'.|ocs|
 |`FRONTEND_OCS_SHARE_PREFIX`| 1.0.0 |string|Path prefix for shares as part of a CS3 resource. Note that the path must start with '/'.|/Shares|
-|`FRONTEND_OCS_PERSONAL_NAMESPACE`| 1.0.0 |string|Home namespace identifier.|/users/`{{.Id.OpaqueId}}`|
-|`FRONTEND_OCS_ADDITIONAL_INFO_ATTRIBUTE`| 1.0.0 |string|Additional information attribute for the user like `{{.Mail}}`.|`{{.Mail}}`|
+|`FRONTEND_OCS_PERSONAL_NAMESPACE`| 1.0.0 |string|Home namespace identifier.|/users/`&#123;&#123;.Id.OpaqueId&#125;&#125;`|
+|`FRONTEND_OCS_ADDITIONAL_INFO_ATTRIBUTE`| 1.0.0 |string|Additional information attribute for the user like `&#123;&#123;.Mail&#125;&#125;`.|`&#123;&#123;.Mail&#125;&#125;`|
 |`OC_CACHE_STORE`<br/>`FRONTEND_OCS_STAT_CACHE_STORE`| 1.0.0 |string|The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.|memory|
 |`OC_CACHE_STORE_NODES`<br/>`FRONTEND_OCS_STAT_CACHE_STORE_NODES`| 1.0.0 |[]string|A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.|[127.0.0.1:9233]|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|The database name the configured store should use.|cache-stat|

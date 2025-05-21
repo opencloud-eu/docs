@@ -1,0 +1,9 @@
+{
+  "label": "Auth-basic",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Auth-basic",
+    "description": "Environment Variables and example yml"
+  }
+}

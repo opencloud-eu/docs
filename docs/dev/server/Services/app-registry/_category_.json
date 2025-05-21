@@ -1,0 +1,9 @@
+{
+  "label": "App-registry",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "App-registry",
+    "description": "Environment Variables and example yml"
+  }
+}
