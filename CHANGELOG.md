@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-20
+## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-21
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- Move env to dev part2 [[#318](https://github.com/opencloud-eu/docs/pull/318)]
 - Move env to dev [[#317](https://github.com/opencloud-eu/docs/pull/317)]
 
 ### 👤 User Documentation
