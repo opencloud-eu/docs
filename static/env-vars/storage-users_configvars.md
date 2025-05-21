@@ -1,9 +1,9 @@
 
 2025-05-07-11-16-16
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
-|---|---|---|
-
+|---|---|---|---|
 |  | next |  |  |
+
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
