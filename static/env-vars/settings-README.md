@@ -14,21 +14,6 @@ As an example, user profile settings that can be changed in the Web UI must be p
 
 The settings service persists the settings data via the `storage-system` service.
 
-&lt;!--- Note: The diagramm is outdate, leaving it here for a future rework
-The diagram shows how the settings service integrates into OpenCloud:
-
-The diagram shows how the settings service integrates into OpenCloud:
-
-```mermaid
-graph TD
-    ows ---|"listSettingsBundles(),&lt;br&gt;saveSettingsValue(value)"| os[opencloud-settings]
-    owc ---|"listSettingsValues()"| sdk[oC SDK]
-    sdk --- sdks&#123;opencloud-settings&lt;br&gt;available?&#125;
-    sdks ---|"yes"| os
-    sdks ---|"no"| defaults[Use set of&lt;br&gt;default values]
-    oa[OpenCloud services&lt;br&gt;e.g. opencloud-accounts] ---|"saveSettingsBundle(bundle)"| os
-```
---&gt;
 
 ## Caching
 
