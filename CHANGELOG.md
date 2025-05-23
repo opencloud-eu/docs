@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-21
+## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-23
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Heiko-Pohl, @Svanvith
 
 ### :octocat: Developer Documentation
 
@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- ios app spaces tutorials in english and german [[#320](https://github.com/opencloud-eu/docs/pull/320)]
 - fix typos [[#315](https://github.com/opencloud-eu/docs/pull/315)]
 
 ## [1.28.0](https://github.com/opencloud-eu/docs/releases/tag/1.28.0) - 2025-05-20
