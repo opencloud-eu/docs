@@ -250,25 +250,5 @@
   "sidebar.user.category.Shares.link.generated-index.description": {
     "message": "Tutorials about creating shares the OpenCloud iOS App.",
     "description": "The generated-index page description for category Shares in sidebar user"
-  },
-  "sidebar.dev.category.Server": {
-    "message": "Server",
-    "description": "The label for category Server in sidebar dev"
-  },
-  "sidebar.dev.category.Services": {
-    "message": "Services",
-    "description": "The label for category Services in sidebar dev"
-  },
-  "sidebar.dev.category.Activitylog": {
-    "message": "Activitylog",
-    "description": "The label for category Activitylog in sidebar dev"
-  },
-  "sidebar.dev.category.Activitylog.link.generated-index.title": {
-    "message": "Activity log",
-    "description": "The generated-index page title for category Activitylog in sidebar dev"
-  },
-  "sidebar.dev.category.Activitylog.link.generated-index.description": {
-    "message": "Environment Variables and example yml",
-    "description": "The generated-index page description for category Activitylog in sidebar dev"
   }
 }
