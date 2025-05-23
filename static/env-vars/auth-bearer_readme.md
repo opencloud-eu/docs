@@ -18,12 +18,12 @@ The OpenCloud Auth Bearer service communicates with the configured OpenID Connec
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The auth Service Family](#the-auth-service-family)
 * [Built in OpenID Connect Identity Provider](#built-in-openid-connect-identity-provider)
 * [Scalability](#scalability)
 * [Example Yaml Config](#example-yaml-config)
 
-## The `auth` Service Family
+## The auth Service Family
 
 OpenCloud uses serveral authentication services for different use cases. All services that start with `auth-` are part of the authentication service family. Each member authenticates requests with different scopes. As of now, these services exist:
   -   `auth-app` handles authentication of external 3rd party apps

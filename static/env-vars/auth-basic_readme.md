@@ -22,14 +22,14 @@ To enable `auth-basic`, you first must set `PROXY_ENABLE_BASIC_AUTH` to `true`.
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The `auth` Service Family](#the-auth-service-family)
 * [Auth Managers](#auth-managers)
   * [LDAP Auth Manager](#ldap-auth-manager)
   * [Other Auth Managers](#other-auth-managers)
 * [Scalability](#scalability)
 * [Example Yaml Config](#example-yaml-config)
 
-## The `auth` Service Family
+## The auth service family
 
 OpenCloud uses serveral authentication services for different use cases. All services that start with `auth-` are part of the authentication service family. Each member authenticates requests with different scopes. As of now, these services exist:
   -   `auth-app` handles authentication of external 3rd party apps
