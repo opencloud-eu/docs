@@ -1,9 +1,11 @@
 
-2025-05-07-11-16-16
+2025-05-22-16-21-09
+
+# Deprecation Notice
+
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|---|
 |  | next |  |  |
-
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
@@ -40,12 +42,12 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_DRIVER`| 1.0.0 |string|The storage driver which should be used by the service. Defaults to 'decomposed', Supported values are: 'decomposed', 'decomposeds3' and 'owncloudsql'. For backwards compatibility reasons it's also possible to use the 'ocis' and 's3ng' driver and configure them using the 'decomposed'/'decomposeds3' options. The 'decomposed' driver stores all data (blob and meta data) in an POSIX compliant volume. The 'decomposeds3' driver stores metadata in a POSIX compliant volume and uploads blobs to the s3 bucket.|posix|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSED_PROPAGATOR`| 1.0.0 |string|The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.|sync|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.|0s|
-|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/opencloud/.opencloud/storage/users|
-|`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|Template string for the user storage layout in the user directory.|`&#123;&#123;.Id.OpaqueId&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/chaser/.opencloud/storage/users|
+|`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|Template string for the user storage layout in the user directory.|&#123;&#123;.Id.OpaqueId&#125;&#125;|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSED_PERMISSIONS_ENDPOINT`| 1.0.0 |string|Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.|eu.opencloud.api.settings|
-|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.User.Username \| lower&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.User.Username \| lower&#125;&#125;|
 |`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the personal space roots.||
-|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;|
 |`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the projects space roots.||
 |`STORAGE_USERS_DECOMPOSED_SHARE_FOLDER`| 1.0.0 |string|Name of the folder jailing all shares.|/Shares|
 |`STORAGE_USERS_DECOMPOSED_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value will be used.|20|
@@ -56,8 +58,8 @@ Environment variables for the **storage-users** service
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.|false|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSEDS3_PROPAGATOR`| 1.0.0 |string|The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.|sync|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.|0s|
-|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/opencloud/.opencloud/storage/users|
-|`STORAGE_USERS_DECOMPOSEDS3_USER_LAYOUT`| 1.0.0 |string|Template string for the user storage layout in the user directory.|`&#123;&#123;.Id.OpaqueId&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/chaser/.opencloud/storage/users|
+|`STORAGE_USERS_DECOMPOSEDS3_USER_LAYOUT`| 1.0.0 |string|Template string for the user storage layout in the user directory.|&#123;&#123;.Id.OpaqueId&#125;&#125;|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSEDS3_PERMISSIONS_ENDPOINT`| 1.0.0 |string|Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.|eu.opencloud.api.settings|
 |`STORAGE_USERS_DECOMPOSEDS3_REGION`| 1.0.0 |string|Region of the S3 bucket.|default|
 |`STORAGE_USERS_DECOMPOSEDS3_ACCESS_KEY`| 1.0.0 |string|Access key for the S3 bucket.||
@@ -70,9 +72,9 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_CONCURRENT_STREAM_PARTS`| 1.0.0 |bool|Always precreate parts when copying objects to S3.|true|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_NUM_THREADS`| 1.0.0 |uint|Number of concurrent uploads to use when copying objects to S3.|4|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_PART_SIZE`| 1.0.0 |uint64|Part size for concurrent uploads to S3. If no value or 0 is set, the library's default value of 16MB is used. The value range is min 5MB and max 5GB.|0|
-|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.User.Username \| lower&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.User.Username \| lower&#125;&#125;|
 |`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the personal space roots.||
-|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;`|
+|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;|
 |`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the projects space roots.||
 |`STORAGE_USERS_DECOMPOSEDS3_SHARE_FOLDER`| 1.0.0 |string|Name of the folder jailing all shares.|/Shares|
 |`STORAGE_USERS_DECOMPOSEDS3_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value of 20 will be used.|20|
@@ -80,23 +82,23 @@ Environment variables for the **storage-users** service
 |`OC_MAX_CONCURRENCY`<br/>`STORAGE_USERS_DECOMPOSEDS3_MAX_CONCURRENCY`| 1.0.0 |int|Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value of 100 will be used.|5|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|Enable asynchronous file uploads.|true|
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.|false|
-|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.|/home/opencloud/.opencloud/storage/owncloud|
+|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.|/home/chaser/.opencloud/storage/owncloud|
 |`STORAGE_USERS_OWNCLOUDSQL_SHARE_FOLDER`| 1.0.0 |string|Name of the folder jailing all shares.|/Shares|
-|`STORAGE_USERS_OWNCLOUDSQL_LAYOUT`| 1.0.0 |string|Path layout to use to navigate into a users folder in an owncloud data directory|`&#123;&#123;.Username&#125;&#125;`|
-|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.|/home/opencloud/.opencloud/storage/uploadinfo|
+|`STORAGE_USERS_OWNCLOUDSQL_LAYOUT`| 1.0.0 |string|Path layout to use to navigate into a users folder in an owncloud data directory|&#123;&#123;.Username&#125;&#125;|
+|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.|/home/chaser/.opencloud/storage/uploadinfo|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_USERNAME`| 1.0.0 |string|Username for the database.|owncloud|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PASSWORD`| 1.0.0 |string|Password for the database.|owncloud|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_HOST`| 1.0.0 |string|Hostname or IP of the database server.||
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PORT`| 1.0.0 |int|Port that the database server is listening on.|3306|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_NAME`| 1.0.0 |string|Name of the database to be used.|owncloud|
 |`STORAGE_USERS_OWNCLOUDSQL_USERS_PROVIDER_ENDPOINT`| 1.0.0 |string|Endpoint of the users provider.|eu.opencloud.api.users|
-|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/opencloud/.opencloud/storage/users|
+|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.|/home/chaser/.opencloud/storage/users|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_POSIX_PROPAGATOR`| 2.0.0 |string|The propagator used for the posix driver. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.||
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.|0s|
-|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.User.Username \| lower&#125;&#125;`|
-|`STORAGE_USERS_POSIX_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the personal space roots.|users/`&#123;&#123;.User.Id.OpaqueId&#125;&#125;`|
-|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|`&#123;&#123;.SpaceType&#125;&#125;`/`&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;`|
-|`STORAGE_USERS_POSIX_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the projects space roots.|projects/`&#123;&#123;.SpaceId&#125;&#125;`|
+|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct personal space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.User.Username \| lower&#125;&#125;|
+|`STORAGE_USERS_POSIX_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the personal space roots.|users/&#123;&#123;.User.Id.OpaqueId&#125;&#125;|
+|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|Template string to construct general space aliases.|&#123;&#123;.SpaceType&#125;&#125;/&#123;&#123;.SpaceName \| replace " " "-" \| lower&#125;&#125;|
+|`STORAGE_USERS_POSIX_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|Template string to construct the paths of the projects space roots.|projects/&#123;&#123;.SpaceId&#125;&#125;|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_POSIX_PERMISSIONS_ENDPOINT`| 1.0.0 |string|Endpoint of the permissions service. The endpoints can differ for 'decomposed', 'posix' and 'decomposeds3'.|eu.opencloud.api.settings|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|Enable asynchronous file uploads.|true|
 |`STORAGE_USERS_POSIX_SCAN_DEBOUNCE_DELAY`| 1.0.0 |Duration|The time in milliseconds to wait before scanning the filesystem for changes after a change has been detected.|1s|
