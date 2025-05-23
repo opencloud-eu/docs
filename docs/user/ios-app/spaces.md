@@ -26,12 +26,12 @@ Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member
 
 ### Search Function
 
-By tapping the **magnifying glass icon**, the search menu for Spaces will open.
+By tapping the **search icon**, the search menue for Spaces will open.
 
 <div style={{ display: 'flex', gap: '10px' }}>
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
 <br/><br/>
-<img src={require("./img/spaces/search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
 </div>
 
 ---
@@ -76,8 +76,8 @@ By tapping the **plus icon**, the available functions within a Space appear.
 
 ---
 
-### The "Three-Dot Menu"
+### The "Three-Dot Menue"
 
-By tapping the **three-dot menu**, a pop-up menu opens where you can choose to make the Space available offline.
+By tapping the **three-dot menue**, a pop-up menue opens where you can choose to make the Space available offline.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menue" style={{ width: '300px', marginRight: '60px' }} />
