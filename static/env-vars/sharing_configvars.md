@@ -35,7 +35,7 @@ Environment variables for the **sharing** service
 |`OC_SYSTEM_USER_API_KEY`<br/>`SHARING_USER_JSONCS3_SYSTEM_USER_API_KEY`| 1.0.0 |string|API key for the STORAGE-SYSTEM system user.||
 |`SHARING_USER_JSONCS3_CACHE_TTL`| 1.0.0 |int|TTL for the internal caches in seconds.|0|
 |`OC_MAX_CONCURRENCY`<br/>`SHARING_USER_JSONCS3_MAX_CONCURRENCY`| 1.0.0 |int|Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.|1|
-|`SHARING_USER_JSON_FILE`| 1.0.0 |string|Path to the JSON file where shares will be persisted. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.|/home/opencloud/.opencloud/storage/shares.json|
+|`SHARING_USER_JSON_FILE`| 1.0.0 |string|Path to the JSON file where shares will be persisted. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.|/home/chaser/.opencloud/storage/shares.json|
 |`SHARING_USER_CS3_PROVIDER_ADDR`| 1.0.0 |string|GRPC address of the STORAGE-SYSTEM service.|eu.opencloud.api.storage-system|
 |`OC_SYSTEM_USER_ID`<br/>`SHARING_USER_CS3_SYSTEM_USER_ID`| 1.0.0 |string|ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.||
 |`OC_SYSTEM_USER_IDP`<br/>`SHARING_USER_CS3_SYSTEM_USER_IDP`| 1.0.0 |string|IDP of the OpenCloud STORAGE-SYSTEM system user.|internal|
@@ -47,7 +47,7 @@ Environment variables for the **sharing** service
 |`SHARING_USER_OWNCLOUDSQL_DB_NAME`| 1.0.0 |string|Name of the database to be used.|owncloud|
 |`SHARING_USER_OWNCLOUDSQL_USER_STORAGE_MOUNT_ID`| 1.0.0 |string|Mount ID of the ownCloudSQL users storage for mapping ownCloud 10 shares.||
 |`SHARING_PUBLIC_DRIVER`| 1.0.0 |string|Driver to be used to persist public shares. Supported values are 'jsoncs3', 'json' and 'cs3' (deprecated).|jsoncs3|
-|`SHARING_PUBLIC_JSON_FILE`| 1.0.0 |string|Path to the JSON file where public share meta-data will be stored. This JSON file contains the information about public shares that have been created. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.|/home/opencloud/.opencloud/storage/publicshares.json|
+|`SHARING_PUBLIC_JSON_FILE`| 1.0.0 |string|Path to the JSON file where public share meta-data will be stored. This JSON file contains the information about public shares that have been created. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.|/home/chaser/.opencloud/storage/publicshares.json|
 |`SHARING_PUBLIC_JSONCS3_PROVIDER_ADDR`| 1.0.0 |string|GRPC address of the STORAGE-SYSTEM service.|eu.opencloud.api.storage-system|
 |`OC_SYSTEM_USER_ID`<br/>`SHARING_PUBLIC_JSONCS3_SYSTEM_USER_ID`| 1.0.0 |string|ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.||
 |`OC_SYSTEM_USER_IDP`<br/>`SHARING_PUBLIC_JSONCS3_SYSTEM_USER_IDP`| 1.0.0 |string|IDP of the OpenCloud STORAGE-SYSTEM system user.|internal|

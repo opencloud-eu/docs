@@ -1,0 +1,90 @@
+# Environment variables with extended scope not included in a service
+
+| Name | Type | Description | Default Value |
+|---|---|---|---|
+`CS3_GATEWAY` |  |  |  |
+`CS3_GATEWAY` |  |  |  |
+`CS3_MACHINE_AUTH_API_KEY` |  |  |  |
+`CS3_MACHINE_AUTH_API_KEY` |  |  |  |
+`DAYS` |  |  |  |
+`DAYS` |  |  |  |
+`GITHUB_API_TOKEN` |  |  |  |
+`GRACEFUL` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`KOPANO_DEBUG_SERVER_REQUEST_LOG` |  |  |  |
+`LDAP_BASEDN` |  |  |  |
+`LDAP_BINDDN` |  |  |  |
+`LDAP_BINDPW` |  |  |  |
+`LDAP_EMAIL_ATTRIBUTE` |  |  |  |
+`LDAP_FAMILY_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_FILTER` |  |  |  |
+`LDAP_GIVEN_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_LOGIN_ATTRIBUTE` |  |  |  |
+`LDAP_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_SCOPE` |  |  |  |
+`LDAP_SUB_ATTRIBUTES` |  |  |  |
+`LDAP_TLS_CACERT` |  |  |  |
+`LDAP_UIDNUMBER_ATTRIBUTE` |  |  |  |
+`LDAP_URI` |  |  |  |
+`LDAP_UUID_ATTRIBUTE` |  |  |  |
+`LDAP_UUID_ATTRIBUTE_TYPE` |  |  |  |
+`LIBREGRAPH_SCOPED_URIS` |  |  |  |
+`LIBREGRAPH_URI` |  |  |  |
+`LICOD_ENCRYPTION_SECRET` |  |  |  |
+`LICOD_SIGNING_KID` |  |  |  |
+`LICOD_VALIDATION_KEYS_PATH` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MONTH` |  |  |  |
+`MONTH` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`OC_BASE_DATA_PATH` |  |  |  |
+`OC_BASE_DATA_PATH` |  |  |  |
+`OC_CONFIG_DIR` |  |  |  |
+`OC_CONFIG_DIR` |  |  |  |
+`OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
+`REDIS_ADDRESS` |  |  |  |
+`REVA_APPPROVIDER_IOPSECRET` |  |  |  |
+`REVA_SMTP_SENDER_PASSWORD` |  |  |  |
+`RUN_CMD_TEST` |  |  |  |
+`RUN_CMD_TEST` |  |  |  |
+`RUN_LDAP_TESTS` |  |  |  |
+`RUN_LDAP_TESTS` |  |  |  |
+`SQL_ADDRESS` |  |  |  |
+`SQL_DBNAME` |  |  |  |
+`SQL_PASSWORD` |  |  |  |
+`SQL_USERNAME` |  |  |  |
+`YEAR` |  |  |  |
+`YEAR` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryRegisterIntervalEnv` |  |  |  |
+`_registryRegisterIntervalEnv` |  |  |  |
+`_registryRegisterTTLEnv` |  |  |  |
+`_registryRegisterTTLEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+    
+    
+    
+    

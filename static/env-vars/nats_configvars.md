@@ -17,8 +17,8 @@ Environment variables for the **nats** service
 |`NATS_NATS_HOST`| 1.0.0 |string|Bind address.|127.0.0.1|
 |`NATS_NATS_PORT`| 1.0.0 |int|Bind port.|9233|
 |`NATS_NATS_CLUSTER_ID`| 1.0.0 |string|ID of the NATS cluster.|opencloud-cluster|
-|`NATS_NATS_STORE_DIR`| 1.0.0 |string|The directory where the filesystem storage will store NATS JetStream data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/opencloud/.opencloud/nats|
-|`NATS_TLS_CERT`| 1.0.0 |string|Path/File name of the TLS server certificate (in PEM format) for the NATS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/opencloud/.opencloud/nats/tls.crt|
-|`NATS_TLS_KEY`| 1.0.0 |string|Path/File name for the TLS certificate key (in PEM format) for the NATS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/opencloud/.opencloud/nats/tls.key|
+|`NATS_NATS_STORE_DIR`| 1.0.0 |string|The directory where the filesystem storage will store NATS JetStream data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/chaser/.opencloud/nats|
+|`NATS_TLS_CERT`| 1.0.0 |string|Path/File name of the TLS server certificate (in PEM format) for the NATS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/chaser/.opencloud/nats/tls.crt|
+|`NATS_TLS_KEY`| 1.0.0 |string|Path/File name for the TLS certificate key (in PEM format) for the NATS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.|/home/chaser/.opencloud/nats/tls.key|
 |`OC_INSECURE`<br/>`NATS_TLS_SKIP_VERIFY_CLIENT_CERT`| 1.0.0 |bool|Whether the NATS server should skip the client certificate verification during the TLS handshake.|false|
 |`OC_EVENTS_ENABLE_TLS`<br/>`NATS_EVENTS_ENABLE_TLS`| 1.0.0 |bool|Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.|false|

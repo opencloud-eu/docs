@@ -67,9 +67,9 @@ http:
     - X-HTTP-Method-Override
     allow_credentials: false
 asset:
-  core_path: /home/opencloud/.opencloud/web/assets/core
-  themes_path: /home/opencloud/.opencloud/web/assets/themes
-  apps_path: /home/opencloud/.opencloud/web/assets/apps
+  core_path: /home/chaser/.opencloud/web/assets/core
+  themes_path: /home/chaser/.opencloud/web/assets/themes
+  apps_path: /home/chaser/.opencloud/web/assets/apps
 file: ""
 web:
   theme_server: https://localhost:9200

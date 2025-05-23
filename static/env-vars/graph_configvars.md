@@ -54,7 +54,7 @@ Environment variables for the **graph** service
 |`OC_TRANSLATION_PATH`<br/>`GRAPH_TRANSLATION_PATH`| 1.0.0 |string|(optional) Set this to a path with custom translations to overwrite the builtin translations. Note that file and folder naming rules apply, see the documentation for more details.||
 |`GRAPH_IDENTITY_BACKEND`| 1.0.0 |string|The user identity backend to use. Supported backend types are 'ldap' and 'cs3'.|ldap|
 |`OC_LDAP_URI`<br/>`GRAPH_LDAP_URI`| 1.0.0 |string|URI of the LDAP Server to connect to. Supported URI schemes are 'ldaps://' and 'ldap://'|ldaps://localhost:9235|
-|`OC_LDAP_CACERT`<br/>`GRAPH_LDAP_CACERT`| 1.0.0 |string|Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/opencloud/.opencloud/idm/ldap.crt|
+|`OC_LDAP_CACERT`<br/>`GRAPH_LDAP_CACERT`| 1.0.0 |string|Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/chaser/.opencloud/idm/ldap.crt|
 |`OC_LDAP_INSECURE`<br/>`GRAPH_LDAP_INSECURE`| 1.0.0 |bool|Disable TLS certificate validation for the LDAP connections. Do not set this in production environments.|false|
 |`OC_LDAP_BIND_DN`<br/>`GRAPH_LDAP_BIND_DN`| 1.0.0 |string|LDAP DN to use for simple bind authentication with the target LDAP server.|uid=libregraph,ou=sysusers,o=libregraph-idm|
 |`OC_LDAP_BIND_PASSWORD`<br/>`GRAPH_LDAP_BIND_PASSWORD`| 1.0.0 |string|Password to use for authenticating the 'bind_dn'.||

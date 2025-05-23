@@ -18,9 +18,9 @@ debug:
   zpages: false
 idm:
   ldaps_addr: 127.0.0.1:9235
-  cert: /home/opencloud/.opencloud/idm/ldap.crt
-  key: /home/opencloud/.opencloud/idm/ldap.key
-  database: /home/opencloud/.opencloud/idm/idm.boltdb
+  cert: /home/chaser/.opencloud/idm/ldap.crt
+  key: /home/chaser/.opencloud/idm/ldap.key
+  database: /home/chaser/.opencloud/idm/idm.boltdb
 create_demo_users: false
 demo_users_issuer_url: https://localhost:9200
 service_user_passwords:

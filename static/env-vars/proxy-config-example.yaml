@@ -19,8 +19,8 @@ debug:
 http:
   addr: 0.0.0.0:9200
   root: /
-  tls_cert: /home/opencloud/.opencloud/proxy/server.crt
-  tls_key: /home/opencloud/.opencloud/proxy/server.key
+  tls_cert: /home/chaser/.opencloud/proxy/server.crt
+  tls_key: /home/chaser/.opencloud/proxy/server.key
   tls: true
 reva:
   address: eu.opencloud.api.gateway

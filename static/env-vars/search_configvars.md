@@ -30,7 +30,7 @@ Environment variables for the **search** service
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SEARCH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.||
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`SEARCH_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.||
 |`SEARCH_ENGINE_TYPE`| 1.0.0 |string|Defines which search engine to use. Defaults to 'bleve'. Supported values are: 'bleve'.|bleve|
-|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.|/home/opencloud/.opencloud/search|
+|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.|/home/chaser/.opencloud/search|
 |`SEARCH_EXTRACTOR_TYPE`| 1.0.0 |string|Defines the content extraction engine. Defaults to 'basic'. Supported values are: 'basic' and 'tika'.|basic|
 |`OC_INSECURE`<br/>`SEARCH_EXTRACTOR_CS3SOURCE_INSECURE`| 1.0.0 |bool|Ignore untrusted SSL certificates when connecting to the CS3 source.|false|
 |`SEARCH_EXTRACTOR_TIKA_TIKA_URL`| 1.0.0 |string|URL of the tika server.|http://127.0.0.1:9998|
