@@ -31,7 +31,7 @@ By tapping the **search icon**, the search menue for Spaces will open.
 <div style={{ display: 'flex', gap: '10px' }}>
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
 <br/><br/>
-<img src={require("./img/spaces/search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
 </div>
 
 ---
