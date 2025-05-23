@@ -24,14 +24,14 @@ Im Anschluss sehen wir die **"Spaces-Übersicht"**, in der alle Spaces aufgelist
 
 ---
 
-### Suche Funktion
+### Such Funktion
 
-Durch klicken auf das **"Lupen-Symbol"**, öffnet sich das Menü für die Suche innerhalb der Spaces.
+Durch klicken auf das **"Such-Symbol"**, öffnet sich das Menü für die Suche innerhalb der Spaces.
 
 <div style={{ display: 'flex', gap: '10px' }}>
-<img src={require("./img/spaces/search-button.png").default} alt="Suche Funktion" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-button.png").default} alt="Such Funktion" style={{ width: '300px', marginRight: '60px' }} />
 <br/><br/>
-<img src={require("./img/spaces/search-menue.png").default} alt="Suche Menü" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-menue.png").default} alt="Such Menü" style={{ width: '300px', marginRight: '60px' }} />
 </div>
 
 ---
@@ -61,7 +61,7 @@ Durch klicken auf das **"Plus-Symbol"** öffnen wir die Funktionen innerhalb ein
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Greife auf deine iOS-Fotobibliothek zu und lade Bilder oder Videos direkt in den Space.</li>
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>5. Mach ein Foto oder Video</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Greife auf deine iOS-Kamera zu ,erstelle Bilder oder Videos und lade diese direkt in den Space.</li>
+    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Greife auf deine iOS-Kamera zu, erstelle Bilder oder Videos und lade diese direkt in den Space.</li>
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>6. Shortcut erstellen</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Erzeuge eine Verknüpfung zu einer Datei oder einem Ordner innerhalb des Spaces, um schnellen Zugriff zu ermöglichen.</li>
