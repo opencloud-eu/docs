@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.30.0](https://github.com/opencloud-eu/docs/releases/tag/1.30.0) - 2025-05-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### :octocat: Developer Documentation
+
+- change info about to General Information [[#324](https://github.com/opencloud-eu/docs/pull/324)]
+
 ## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
