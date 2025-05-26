@@ -472,7 +472,7 @@ You will receive a file id of the freshly created file, which you can use to ope
   }
   ```
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/app-registry-config-example.yaml"  language="yaml" >&#125;&#125;
+```{{< include file="services/_includes/app-registry-config-example.yaml"  language="yaml" >}}```
 
 &#123;&#123;< include file="services/_includes/app-registry_configvars.md" >&#125;&#125;
 
