@@ -20,7 +20,7 @@ Administrators can set default applications on a per MIME type basis and also al
 
 ## Table of Contents
 
-* [MIME Type Configuration / Creation Allow List][Link](#mime-type-configuration--creation-allow-list)
+* [MIME Type Configuration / Creation Allow List](#mime-type-configuration--creation-allow-list)
   * [MIME Type Configuration](#mime-type-configuration)
 * [Endpoint Access](#endpoint-access)
   * [Listing available apps and mime types](#listing-available-apps-and-mime-types)
