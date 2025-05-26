@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-23
+## [1.29.0](https://github.com/opencloud-eu/docs/releases/tag/1.29.0) - 2025-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- add info and adjust sidebar postition [[#319](https://github.com/opencloud-eu/docs/pull/319)]
 - Move env to dev part2 [[#318](https://github.com/opencloud-eu/docs/pull/318)]
 - Move env to dev [[#317](https://github.com/opencloud-eu/docs/pull/317)]
 
