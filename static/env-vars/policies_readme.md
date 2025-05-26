@@ -24,7 +24,7 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Modules](#modules)
   * [gRPC API](#grpc-api)
   * [Proxy Middleware](#proxy-middleware)
-  * [Event Service (Postprocessing)](#event-service-(postprocessing))
+  * [Event Service (Postprocessing)](#event-service-postprocessing)
 * [Defining Policies to Evaluate](#defining-policies-to-evaluate)
 * [Setting the Query Configuration](#setting-the-query-configuration)
   * [Proxy](#proxy)

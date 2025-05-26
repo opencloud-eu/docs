@@ -13,11 +13,11 @@ geekdocCollapseSection: true
 ## Abstract
 
 
-The ocdav service provides the WebDAV API which is required by OpenCloud clients. Previews (thumbnails) are provided by the [WebDAV service](../webdav).
+The ocdav service provides the WebDAV API which is required by OpenCloud clients. Previews (thumbnails) are provided by the [WebDAV service](../webdav/Webdav-info).
 
 ## Table of Contents
 
-* [Example Yaml Config](#example-yaml-config)
+* [Example Yaml Config](./ocdav-envvars)
 
 ## Example Yaml Config
 ```

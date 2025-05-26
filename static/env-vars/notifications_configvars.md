@@ -17,7 +17,7 @@ Environment variables for the **notifications** service
 |`OC_URL`<br/>`NOTIFICATIONS_WEB_UI_URL`| 1.0.0 |string|The public facing URL of the OpenCloud Web UI, used e.g. when sending notification eMails|https://localhost:9200|
 |`NOTIFICATIONS_SMTP_HOST`| 1.0.0 |string|SMTP host to connect to.||
 |`NOTIFICATIONS_SMTP_PORT`| 1.0.0 |int|Port of the SMTP host to connect to.|0|
-|`NOTIFICATIONS_SMTP_SENDER`| 1.0.0 |string|`Sender address of emails that will be sent (e.g. 'OpenCloud <noreply@example.com>').`||
+| `NOTIFICATIONS_SMTP_SENDER` | 1.0.0 | string | Sender address of emails that will be sent (e.g. 'OpenCloud &lt;noreply&#64;example.com&gt;'). | |
 |`NOTIFICATIONS_SMTP_USERNAME`| 1.0.0 |string|Username for the SMTP host to connect to.||
 |`NOTIFICATIONS_SMTP_PASSWORD`| 1.0.0 |string|Password for the SMTP host to connect to.||
 |`NOTIFICATIONS_SMTP_INSECURE`| 1.0.0 |bool|Allow insecure connections to the SMTP server.|false|

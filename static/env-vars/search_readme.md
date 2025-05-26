@@ -65,7 +65,7 @@ Note that as of now, the search service can not be scaled. Consider using a dedi
 
 ## Search engines
 
-By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](pkg/engine/engine.go) interface and making that engine available.
+By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](https://github.com/opencloud-eu/opencloud/blob/main/services/search/pkg/engine/engine.go) interface and making that engine available.
 
 ## Query language
 

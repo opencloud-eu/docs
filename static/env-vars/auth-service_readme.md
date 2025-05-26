@@ -18,12 +18,12 @@ The OpenCloud Auth Service is used to authenticate service accounts. Compared to
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The auth Service Family](#the-auth-service-family)
 * [Service Accounts](#service-accounts)
 * [Configuring Service Accounts](#configuring-service-accounts)
 * [Example Yaml Config](#example-yaml-config)
 
-## The `auth` Service Family
+## The auth Service Family
 
 OpenCloud uses serveral authentication services for different use cases. All services that start with `auth-` are part of the authentication service family. Each member authenticates requests with different scopes. As of now, these services exist:
   -   `auth-app` handles authentication of external 3rd party apps

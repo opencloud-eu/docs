@@ -30,7 +30,7 @@ PROXY_ENABLE_APP_AUTH=false      # mandatory, disables app authentication. In ca
 * [Managing App Tokens](#managing-app-tokens)
   * [Via API](#via-api)
   * [Via Impersonation API](#via-impersonation-api)
-  * [Via CLI (developer only)](#via-cli-(developer-only))
+  * [Via CLI (developer only)](#via-cli-developer-only)
 * [Authenticating using App Tokens](#authenticating-using-app-tokens)
 * [Example Yaml Config](#example-yaml-config)
 
