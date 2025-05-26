@@ -43,3 +43,4 @@ Environment variables for the **activitylog** service
 |`OC_DEFAULT_LANGUAGE`| 1.0.0 |string|The default language used by services and the WebUI. If not defined, English will be used as default. See the documentation for more details.|en|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`ACTIVITYLOG_SERVICE_ACCOUNT_ID`| 1.0.0 |string|The ID of the service account the service should use. See the 'auth-service' service description for more details.||
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`ACTIVITYLOG_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|The service account secret.||
+|`ACTIVITYLOG_WRITE_BUFFER_DURATION`| next |Duration|The duration to wait before flushing the write buffer. This is used to reduce the number of writes to the store.|10s|

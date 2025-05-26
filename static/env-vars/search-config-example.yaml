@@ -41,7 +41,7 @@ events:
 engine:
   type: bleve
   bleve:
-    data_path: /home/opencloud/.opencloud/search
+    data_path: /home/chaser/.opencloud/search
 extractor:
   type: basic
   cs3_allow_insecure: false

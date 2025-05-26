@@ -15,9 +15,9 @@ Environment variables for the **idm** service
 |`IDM_DEBUG_PPROF`| 1.0.0 |bool|Enables pprof, which can be used for profiling.|false|
 |`IDM_DEBUG_ZPAGES`| 1.0.0 |bool|Enables zpages, which can be used for collecting and viewing in-memory traces.|false|
 |`IDM_LDAPS_ADDR`| 1.0.0 |string|Listen address for the LDAPS listener (ip-addr:port).|127.0.0.1:9235|
-|`IDM_LDAPS_CERT`| 1.0.0 |string|File name of the TLS server certificate for the LDAPS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/opencloud/.opencloud/idm/ldap.crt|
-|`IDM_LDAPS_KEY`| 1.0.0 |string|File name for the TLS certificate key for the server certificate. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/opencloud/.opencloud/idm/ldap.key|
-|`IDM_DATABASE_PATH`| 1.0.0 |string|Full path to the IDM backend database. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/opencloud/.opencloud/idm/idm.boltdb|
+|`IDM_LDAPS_CERT`| 1.0.0 |string|File name of the TLS server certificate for the LDAPS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/chaser/.opencloud/idm/ldap.crt|
+|`IDM_LDAPS_KEY`| 1.0.0 |string|File name for the TLS certificate key for the server certificate. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/chaser/.opencloud/idm/ldap.key|
+|`IDM_DATABASE_PATH`| 1.0.0 |string|Full path to the IDM backend database. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.|/home/chaser/.opencloud/idm/idm.boltdb|
 |`IDM_CREATE_DEMO_USERS`| 1.0.0 |bool|Flag to enable or disable the creation of the demo users.|false|
 |`OC_URL`<br/>`OC_OIDC_ISSUER`| 1.0.0 |string|The OIDC issuer URL to assign to the demo users.|https://localhost:9200|
 |`IDM_ADMIN_PASSWORD`| 1.0.0 |string|Password to set for the OpenCloud 'admin' user. Either cleartext or an argon2id hash.||
