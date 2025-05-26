@@ -37,7 +37,8 @@ When one OpenCloud service is trying to talk to other OpenCloud services, it nee
 
 With the upcoming `auth-service` service, the `auth-machine` service will be used less frequently and is probably a candidate for deprecation.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/auth-machine-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/auth-machine-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/auth-machine_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/auth-machine_configvars.md" >}}
 

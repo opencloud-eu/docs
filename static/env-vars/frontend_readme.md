@@ -175,7 +175,8 @@ Note that changing this environment variable only makes sense if\
 `OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD`\
 is set to `false`.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/frontend-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/frontend-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/frontend_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/frontend_configvars.md" >}}
 

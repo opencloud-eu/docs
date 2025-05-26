@@ -43,7 +43,8 @@ Store specific notes:
   -   When using `nats-js-kv` it is recommended to set `PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES` to the same value as `OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES`. That way the proxy uses the same nats instance as the ocs service.
   -   When using `opencloudstoreservice` the `OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES` must be set to the service name `eu.opencloud.api.store`. It does not support TTL and stores the presigning keys indefinitely. Also, the store service needs to be started.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/ocs-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/ocs-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/ocs_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/ocs_configvars.md" >}}
 

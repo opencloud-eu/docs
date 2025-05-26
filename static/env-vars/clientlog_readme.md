@@ -33,7 +33,8 @@ Log services like the `userlog`, `clientlog` and `sse` are responsible for compo
 
 The messages the `clientlog` service sends are intended for the use by clients, not by users. The client might for example be informed that a file has finished post-processing. With that, the client can make the file available to the user without additional server queries.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/clientlog-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/clientlog-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/clientlog_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/clientlog_configvars.md" >}}
 

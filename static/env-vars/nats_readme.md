@@ -46,7 +46,8 @@ Certificate files can also be set via global variables starting with `OC_`, for 
 
 Note that using TLS is highly recommended for productive environments, especially when using container orchestration with Kubernetes.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/nats-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/nats-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/nats_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/nats_configvars.md" >}}
 

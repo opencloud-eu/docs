@@ -30,7 +30,7 @@ PROXY_ENABLE_APP_AUTH=false      # mandatory, disables app authentication. In ca
 * [Managing App Tokens](#managing-app-tokens)
   * [Via API](#via-api)
   * [Via Impersonation API](#via-impersonation-api)
-  * [Via CLI (developer only)](#via-cli-developer-only)
+  * [Via CLI (developer only)](#via-cli-(developer-only))
 * [Authenticating using App Tokens](#authenticating-using-app-tokens)
 * [Example Yaml Config](#example-yaml-config)
 
@@ -163,7 +163,8 @@ curl -u <username>:<tokenvalue> 'https://<your host>/graph/v1.0/me' \
      --header 'accept: application/json'
 ```
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/auth-app-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/auth-app-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/auth-app_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/auth-app_configvars.md" >}}
 

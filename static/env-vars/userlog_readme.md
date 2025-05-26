@@ -114,7 +114,8 @@ which is the source of the texts provided by the code.
 
 The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment variable. See the `settings` service for a detailed description.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/userlog-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/userlog-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/userlog_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/userlog_configvars.md" >}}
 

@@ -18,12 +18,12 @@ The OpenCloud Auth Bearer service communicates with the configured OpenID Connec
 
 ## Table of Contents
 
-* [The auth Service Family](#the-auth-service-family)
+* [The `auth` Service Family](#the-`auth`-service-family)
 * [Built in OpenID Connect Identity Provider](#built-in-openid-connect-identity-provider)
 * [Scalability](#scalability)
 * [Example Yaml Config](#example-yaml-config)
 
-## The auth Service Family
+## The `auth` Service Family
 
 OpenCloud uses serveral authentication services for different use cases. All services that start with `auth-` are part of the authentication service family. Each member authenticates requests with different scopes. As of now, these services exist:
   -   `auth-app` handles authentication of external 3rd party apps
@@ -42,7 +42,8 @@ There is no persistance or caching. The proxy caches verified auth bearer tokens
 
 This will change when we use the service registry in more places and use micro clients to select an instance of a service.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/auth-bearer-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/auth-bearer-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/auth-bearer_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/auth-bearer_configvars.md" >}}
 

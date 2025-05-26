@@ -477,7 +477,8 @@ Example File:
 ]
 ```
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/settings-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/settings-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/settings_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/settings_configvars.md" >}}
 

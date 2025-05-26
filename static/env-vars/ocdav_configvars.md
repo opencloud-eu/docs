@@ -27,7 +27,7 @@ Environment variables for the **ocdav** service
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.||
 |`OCDAV_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|Disables the loading of user's group memberships from the reva access token.|false|
 |`OCDAV_WEBDAV_NAMESPACE`| 1.0.0 |string|Jail requests to /dav/webdav into this CS3 namespace. Supports template layouting with CS3 User properties.|/users/&#123;&#123;.Id.OpaqueId&#125;&#125;|
-|`OCDAV_FILES_NAMESPACE`| 1.0.0 |string|Jail requests to /dav/files/&#123;username&#125; into this CS3 namespace. Supports template layouting with CS3 User properties.|/users/&#123;&#123;.Id.OpaqueId&#125;&#125;|
+|`OCDAV_FILES_NAMESPACE`| 1.0.0 |string|Jail requests to /dav/files/{username} into this CS3 namespace. Supports template layouting with CS3 User properties.|/users/&#123;&#123;.Id.OpaqueId&#125;&#125;|
 |`OCDAV_SHARES_NAMESPACE`| 1.0.0 |string|The human readable path for the share jail. Relative to a users personal space root. Upcased intentionally.|/Shares|
 |`OCDAV_OCM_NAMESPACE`| 1.0.0 |string|The human readable path prefix for the ocm shares.|/public|
 |`OC_URL`<br/>`OCDAV_PUBLIC_URL`| 1.0.0 |string|URL where OpenCloud is reachable for users.|https://localhost:9200|

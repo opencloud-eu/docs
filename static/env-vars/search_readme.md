@@ -65,7 +65,7 @@ Note that as of now, the search service can not be scaled. Consider using a dedi
 
 ## Search engines
 
-By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](https://github.com/opencloud-eu/opencloud/blob/main/services/search/pkg/engine/engine.go) interface and making that engine available.
+By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](pkg/engine/engine.go) interface and making that engine available.
 
 ## Query language
 
@@ -205,7 +205,8 @@ In the following example, let's assume a file tree `foo/bar/baz` exists.
 If the folder `bar` gets renamed to `new-bar`, the path to `baz` is no longer `foo/bar/baz` but `foo/new-bar/baz`.
 The search service checks the change and either just updates the path in the index or creates a new index for all items affected if none was present.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/search-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/search-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/search_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/search_configvars.md" >}}
 

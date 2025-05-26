@@ -20,7 +20,7 @@ Administrators can set default applications on a per MIME type basis and also al
 
 ## Table of Contents
 
-* [MIME Type Configuration / Creation Allow List](#mime-type-configuration--creation-allow-list)
+* [MIME Type Configuration / Creation Allow List](#mime-type-configuration-/-creation-allow-list)
   * [MIME Type Configuration](#mime-type-configuration)
 * [Endpoint Access](#endpoint-access)
   * [Listing available apps and mime types](#listing-available-apps-and-mime-types)
@@ -472,7 +472,8 @@ You will receive a file id of the freshly created file, which you can use to ope
   }
   ```
 ## Example Yaml Config
-```{{< include file="services/_includes/app-registry-config-example.yaml"  language="yaml" >}}```
+```
+{{< include file="services/_includes/app-registry-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/app-registry_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/app-registry_configvars.md" >}}
 

@@ -26,7 +26,8 @@ Note: IDM is limited in its functionality. It only supports a subset of the LDAP
 * [Example Yaml Config](#example-yaml-config)
 
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/idm-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/idm-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/idm_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/idm_configvars.md" >}}
 

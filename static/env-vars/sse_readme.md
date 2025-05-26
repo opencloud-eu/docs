@@ -39,7 +39,8 @@ Clients can subscribe to the `/sse` endpoint to be informed by the server when a
 Some intermediate proxies drop connections after an idle time with no activity. If this is the case, configure the `SSE_KEEPALIVE_INTERVAL` envvar. This will send periodic SSE comments to keep connections open.
 
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/sse-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/sse-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/sse_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/sse_configvars.md" >}}
 

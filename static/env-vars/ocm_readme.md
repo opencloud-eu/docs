@@ -137,7 +137,7 @@ The above federation consists of two instances: `cloud1.opencloud.test` and `clo
 
 Before sharing a resource with a remote user this user has to be invited by the sharer.
 
-In order to do so a POST request is sent to the `generate-invite` endpoint of the sciencemesh API. The generated token is passed on to the receiver, who will then use the `accept-invite` endpoint to accept the invitation. As a result remote users will be added to the `ocminvitemanager` on both sides. See [invitation flow](#invitation-workflow) for the according sequence diagram.
+In order to do so a POST request is sent to the `generate-invite` endpoint of the sciencemesh API. The generated token is passed on to the receiver, who will then use the `accept-invite` endpoint to accept the invitation. As a result remote users will be added to the `ocminvitemanager` on both sides. See [invitation flow](invitation_flow) for the according sequence diagram.
 
 The data backend of the `ocminvitemanager` is configurable. The only supported backend currently is `json` which stores the data in a json file on disk.
 
@@ -149,11 +149,12 @@ The below info is outdated as we allow creating federated shares using the graph
 
 OCM Shares are currently created using the ocs API, just like regular shares. The difference is the share type, which is 6 (ShareTypeFederatedCloudShare) in this case, and a few additional parameters required for identifying the remote user.
 
-See [Create share flow](#creating-shares) for the according sequence diagram.
+See [Create share flow](create_share_flow) for the according sequence diagram.
 
 The data backends of the `ocmshareprovider` and `ocmcore` services are configurable. The only supported backend currently is `json` which stores the data in a json file on disk.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/ocm-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/ocm-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/ocm_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/ocm_configvars.md" >}}
 

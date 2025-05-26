@@ -151,7 +151,8 @@ When building a docker image using the Dockerfile in the top-level directory of 
 in the resulting docker image.
 
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/thumbnails-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/thumbnails-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/thumbnails_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/thumbnails_configvars.md" >}}
 

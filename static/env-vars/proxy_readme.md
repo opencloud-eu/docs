@@ -36,9 +36,8 @@ The proxy service is the only service communicating to the outside and needs the
 * [Presigned Urls](#presigned-urls)
 * [Special Settings](#special-settings)
 * [Metrics](#metrics)
-  * [1) Single Process Mode](#1-single-process-mode)
-
-  * [2) Standalone Mode](#2-standalone-mode)
+  * [1) Single Process Mode](#1)-single-process-mode)
+  * [2) Standalone Mode](#2)-standalone-mode)
   * [Available Metrics](#available-metrics)
   * [Prometheus Configuration](#prometheus-configuration)
 * [Example Yaml Config](#example-yaml-config)
@@ -358,7 +357,8 @@ scrape_configs:
     - targets: ["opencloud:9205"]
 ```
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/proxy-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/proxy-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/proxy_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/proxy_configvars.md" >}}
 

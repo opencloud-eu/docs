@@ -150,7 +150,8 @@ Depending if you want to restart/resume all or defined failed uploads, different
       opencloud postprocessing resume -s "virusscan" # Resume all uploads currently in virusscan step
       ```
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/postprocessing-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/postprocessing-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/postprocessing_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/postprocessing_configvars.md" >}}
 

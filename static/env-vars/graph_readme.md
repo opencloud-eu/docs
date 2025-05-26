@@ -217,7 +217,8 @@ The output of this command includes the following information for each role:
 ```
 
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/graph-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/graph-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/graph_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/graph_configvars.md" >}}
 

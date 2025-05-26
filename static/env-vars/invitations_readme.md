@@ -67,7 +67,8 @@ After Keycloak has been configured, the invitation service needs to be configure
 
 Consider that when a guest account has to be provisioned in an external user management, there might be a delay between creating the user and the user being available in the local OpenCloud system.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/invitations-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/invitations-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/invitations_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/invitations_configvars.md" >}}
 

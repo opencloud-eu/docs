@@ -24,7 +24,7 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Modules](#modules)
   * [gRPC API](#grpc-api)
   * [Proxy Middleware](#proxy-middleware)
-  * [Event Service (Postprocessing)](#event-service-postprocessing)
+  * [Event Service (Postprocessing)](#event-service-(postprocessing))
 * [Defining Policies to Evaluate](#defining-policies-to-evaluate)
 * [Setting the Query Configuration](#setting-the-query-configuration)
   * [Proxy](#proxy)
@@ -196,7 +196,8 @@ A good example of how such a file should be formatted can be found in the [Apach
 
 The policies service contains a set of preconfigured example policies. See the [deployment examples](https://github.com/opencloud-eu/opencloud/tree/main/deployments/examples) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/policies-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/policies-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/policies_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/policies_configvars.md" >}}
 

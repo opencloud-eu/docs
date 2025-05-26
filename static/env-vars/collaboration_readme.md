@@ -90,7 +90,8 @@ Store specific notes:
   -   When using the `nats-js-kv` store, it is possible to set `OC_CACHE_DISABLE_PERSISTENCE` to instruct nats to not persist cache data on disc.
 
 ## Example Yaml Config
-&#123;&#123;< include file="services/_includes/collaboration-config-example.yaml"  language="yaml" >&#125;&#125;
+```
+{{< include file="services/_includes/collaboration-config-example.yaml"  language="yaml" >}}
 
-&#123;&#123;< include file="services/_includes/collaboration_configvars.md" >&#125;&#125;
+{{< include file="services/_includes/collaboration_configvars.md" >}}
 
