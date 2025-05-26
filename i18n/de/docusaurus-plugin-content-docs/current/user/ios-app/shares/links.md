@@ -46,7 +46,7 @@ title: Per Link teilen
     Personen können die Inhalte des Links anzeigen, herunterladen, Dateien hochladen, bearbeiten und erstellen.
 <br/>
 
-#### 7. Hier muss ein Passwort eingetragen werden. Sie können selbst eines vergeben oder sich einer generieren lassen.
+#### 7. Hier muss ein Passwort eingetragen werden. Sie können selbst eines vergeben oder sich eines generieren lassen.
 <img src={require("../img/shares/links/password.png").default} alt="Passwort" height="400"/>
 <br/>
 
