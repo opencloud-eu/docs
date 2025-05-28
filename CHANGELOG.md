@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.31.0](https://github.com/opencloud-eu/docs/releases/tag/1.31.0) - 2025-05-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- adjust the admin pw change part [[#327](https://github.com/opencloud-eu/docs/pull/327)]
+
 ## [1.30.0](https://github.com/opencloud-eu/docs/releases/tag/1.30.0) - 2025-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
