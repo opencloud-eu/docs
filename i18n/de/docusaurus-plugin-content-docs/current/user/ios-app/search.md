@@ -14,7 +14,7 @@ title: Suche
 <img src={require("./img/search/search-symbol.png").default} alt="Lupen-Symbol" height="400"/>
 <br/>
 
-### 2. In der Suchfunktion stehen verschiedene Optionen zur Verfügung, mir der man die Suche eingrenzen kann.
+### 2. In der Suchfunktion stehen verschiedene Optionen zur Verfügung, mit der man die Suche eingrenzen kann.
 
 #### Suchleiste
 - In der Suchleiste kann nach Datei- oder Ordnernamen gesucht werden
@@ -37,7 +37,7 @@ title: Suche
 <br/><br/>
 
 #### Zeit
-- Durch klicken auf die Option "Zeit", kann eingestellt werden, in welchen Zeitraum gesucht werden soll
+- Durch klicken auf die Option "Zeit", kann eingestellt werden, in welchem Zeitraum gesucht werden soll
 <img src={require("./img/search/date.png").default} alt="Zeit" height="400"/>
 <br/><br/>
 
