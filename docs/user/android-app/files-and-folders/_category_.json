@@ -1,0 +1,9 @@
+{
+  "label": "Files and Folders",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorials for managing your files and folders in the OpenCloud Android App.",
+    "slug": "user/android-app/files-and-folders"
+  }
+}
