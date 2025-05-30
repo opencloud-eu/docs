@@ -150,9 +150,3 @@ go build -tags enable_vips -o opencloud -o bin/opencloud ./cmd/opencloud
 When building a docker image using the Dockerfile in the top-level directory of OpenCloud, libvips support is enabled and the libvips shared libraries are included
 in the resulting docker image.
 
-## Example Yaml Config
-```
-{{< include file="services/_includes/thumbnails-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/thumbnails_configvars.md" >}}
-

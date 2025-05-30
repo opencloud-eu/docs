@@ -152,9 +152,3 @@ OCM Shares are currently created using the ocs API, just like regular shares. Th
 See [Create share flow](#creating-shares) for the according sequence diagram.
 
 The data backends of the `ocmshareprovider` and `ocmcore` services are configurable. The only supported backend currently is `json` which stores the data in a json file on disk.
-## Example Yaml Config
-```
-{{< include file="services/_includes/ocm-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/ocm_configvars.md" >}}
-

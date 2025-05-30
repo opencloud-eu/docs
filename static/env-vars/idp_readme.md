@@ -100,9 +100,3 @@ clients:
 
 
 
-## Example Yaml Config
-```
-{{< include file="services/_includes/idp-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/idp_configvars.md" >}}
-

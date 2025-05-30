@@ -471,9 +471,3 @@ You will receive a file id of the freshly created file, which you can use to ope
     "message": "the file already exists"
   }
   ```
-## Example Yaml Config
-```
-{{< include file="services/_includes/app-registry-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/app-registry_configvars.md" >}}
-

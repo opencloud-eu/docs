@@ -162,9 +162,3 @@ and the token value as returned by the "Create Token" request.
 curl -u <username>:<tokenvalue> 'https://<your host>/graph/v1.0/me' \
      --header 'accept: application/json'
 ```
-## Example Yaml Config
-```
-{{< include file="services/_includes/auth-app-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/auth-app_configvars.md" >}}
-

@@ -204,9 +204,3 @@ The indexing process tries to be self-healing in some situations.
 In the following example, let's assume a file tree `foo/bar/baz` exists.
 If the folder `bar` gets renamed to `new-bar`, the path to `baz` is no longer `foo/bar/baz` but `foo/new-bar/baz`.
 The search service checks the change and either just updates the path in the index or creates a new index for all items affected if none was present.
-## Example Yaml Config
-```
-{{< include file="services/_includes/search-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/search_configvars.md" >}}
-

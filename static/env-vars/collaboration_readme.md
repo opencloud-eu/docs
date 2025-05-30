@@ -89,9 +89,3 @@ Store specific notes:
   -   When using `nats-js-kv` it is recommended to set `OC_CACHE_STORE_NODES` to the same value as `OC_EVENTS_ENDPOINT`. That way the cache uses the same nats instance as the event bus.
   -   When using the `nats-js-kv` store, it is possible to set `OC_CACHE_DISABLE_PERSISTENCE` to instruct nats to not persist cache data on disc.
 
-## Example Yaml Config
-```
-{{< include file="services/_includes/collaboration-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/collaboration_configvars.md" >}}
-

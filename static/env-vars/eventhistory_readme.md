@@ -54,9 +54,3 @@ Store specific notes:
 ## Retrieving
 
 Other services can call the `eventhistory` service via a gRPC call to retrieve events. The request must contain the event ID that should be retrieved.
-## Example Yaml Config
-```
-{{< include file="services/_includes/eventhistory-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/eventhistory_configvars.md" >}}
-

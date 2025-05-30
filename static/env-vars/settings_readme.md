@@ -476,9 +476,3 @@ Example File:
     }
 ]
 ```
-## Example Yaml Config
-```
-{{< include file="services/_includes/settings-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/settings_configvars.md" >}}
-

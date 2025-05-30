@@ -46,9 +46,3 @@ The audit service logs:
 
 * [Example Yaml Config](#example-yaml-config)
 
-## Example Yaml Config
-```
-{{< include file="services/_includes/audit-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/audit_configvars.md" >}}
-

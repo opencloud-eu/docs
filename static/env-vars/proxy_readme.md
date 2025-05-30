@@ -357,9 +357,3 @@ scrape_configs:
     static_configs:
     - targets: ["opencloud:9205"]
 ```
-## Example Yaml Config
-```
-{{< include file="services/_includes/proxy-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/proxy_configvars.md" >}}
-

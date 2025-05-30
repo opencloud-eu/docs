@@ -194,9 +194,3 @@ In order to add another storage provider the CS3 storage registry that is runnin
 ```
 
 In the above replace `{storage-users-mount-uuid}` with the mount UUID that was generated for the storage-users service. You can find it in the `config.yaml` generated on by `opencloud init`. The last entry `eu.opencloud.api.storage-hello` and its `providerid` `"hello-storage-id"` are an example for in additional storage provider, in this case running `hellofs`, an example minimal storage driver.
-## Example Yaml Config
-```
-{{< include file="services/_includes/gateway-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/gateway_configvars.md" >}}
-

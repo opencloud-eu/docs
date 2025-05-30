@@ -174,9 +174,3 @@ For public accessible writable shares, a password can be enforced. To change the
 Note that changing this environment variable only makes sense if\
 `OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD`\
 is set to `false`.
-## Example Yaml Config
-```
-{{< include file="services/_includes/frontend-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/frontend_configvars.md" >}}
-
