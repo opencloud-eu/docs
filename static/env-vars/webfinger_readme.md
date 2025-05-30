@@ -142,9 +142,3 @@ Now, an authenticated webfinger request for `acct:me@example.org` (when logged i
     ]
 }
 ```
-## Example Yaml Config
-```
-{{< include file="services/_includes/webfinger-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/webfinger_configvars.md" >}}
-

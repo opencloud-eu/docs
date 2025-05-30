@@ -42,9 +42,3 @@ Store specific notes:
   -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
   -   When using `nats-js-kv` it is recommended to set `PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES` to the same value as `OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES`. That way the proxy uses the same nats instance as the ocs service.
   -   When using `opencloudstoreservice` the `OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES` must be set to the service name `eu.opencloud.api.store`. It does not support TTL and stores the presigning keys indefinitely. Also, the store service needs to be started.
-## Example Yaml Config
-```
-{{< include file="services/_includes/ocs-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/ocs_configvars.md" >}}
-

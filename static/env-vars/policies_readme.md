@@ -195,9 +195,3 @@ A good example of how such a file should be formatted can be found in the [Apach
 ## Example Policies
 
 The policies service contains a set of preconfigured example policies. See the [deployment examples](https://github.com/opencloud-eu/opencloud/tree/main/deployments/examples) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
-## Example Yaml Config
-```
-{{< include file="services/_includes/policies-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/policies_configvars.md" >}}
-

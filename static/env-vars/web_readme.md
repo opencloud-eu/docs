@@ -204,9 +204,3 @@ This also applies for the `manifest.json` file, if the administrator wants to pr
 ## Miscellaneous
 
 Please note that OpenCloud, in particular the web service, needs a restart to load new applications or changes to the `apps.yaml` file.
-## Example Yaml Config
-```
-{{< include file="services/_includes/web-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/web_configvars.md" >}}
-

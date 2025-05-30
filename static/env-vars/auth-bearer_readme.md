@@ -41,9 +41,3 @@ A default OpenCloud deployment will start a [built in OpenID Connect identity pr
 There is no persistance or caching. The proxy caches verified auth bearer tokens. Requests will be forwarded to the identity provider. Therefore, multiple instances of the `auth-bearer` service can be started without further configuration. Currently, the auth registry used by the gateway can only use a single instance of the service. To use more than one auth provider per deployment you need to scale the gateway.
 
 This will change when we use the service registry in more places and use micro clients to select an instance of a service.
-## Example Yaml Config
-```
-{{< include file="services/_includes/auth-bearer-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/auth-bearer_configvars.md" >}}
-

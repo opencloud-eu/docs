@@ -62,9 +62,3 @@ which is the source of the texts provided by the code.
 ## Default Language
 
 The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment variable. See the `settings` service for a detailed description.
-## Example Yaml Config
-```
-{{< include file="services/_includes/activitylog-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/activitylog_configvars.md" >}}
-

@@ -45,9 +45,3 @@ Connections to the nats service (`Publisher`/`Consumer` see above) can be TLS en
 Certificate files can also be set via global variables starting with `OC_`, for details see the environment variable list.
 
 Note that using TLS is highly recommended for productive environments, especially when using container orchestration with Kubernetes.
-## Example Yaml Config
-```
-{{< include file="services/_includes/nats-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/nats_configvars.md" >}}
-

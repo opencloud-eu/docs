@@ -107,9 +107,3 @@ The number of concurrent scans can be increased by setting `ANTIVIRUS_WORKERS`, 
 ### Scaling in Kubernetes
 
 In kubernetes, `ANTIVIRUS_WORKERS` and `ANTIVIRUS_MAX_SCAN_SIZE` can be used to trigger the horizontal pod autoscaler by requesting a memory size that is below `ANTIVIRUS_MAX_SCAN_SIZE`. Keep in mind that `ANTIVIRUS_MAX_SCAN_SIZE` amount of memory might be held by `ANTIVIRUS_WORKERS` number of go routines.
-## Example Yaml Config
-```
-{{< include file="services/_includes/antivirus-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/antivirus_configvars.md" >}}
-

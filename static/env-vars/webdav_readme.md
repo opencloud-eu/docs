@@ -43,9 +43,3 @@ See the [search](https://github.com/opencloud-eu/opencloud/tree/main/services/se
 ## Scalability
 
 The webdav service does not persist any data and does not cache any information. Therefore multiple instances of this service can be spawned in a bigger deployment like when using container orchestration with Kubernetes, without any extra configuration.
-## Example Yaml Config
-```
-{{< include file="services/_includes/webdav-config-example.yaml"  language="yaml" >}}
-
-{{< include file="services/_includes/webdav_configvars.md" >}}
-
