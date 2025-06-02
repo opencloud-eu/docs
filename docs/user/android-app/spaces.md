@@ -2,6 +2,7 @@
 sidebar_position: 6
 id: spaces
 title: Spaces
+draft: true
 ---
 
 # The "Spaces" Section in the OpenCloud Android App
