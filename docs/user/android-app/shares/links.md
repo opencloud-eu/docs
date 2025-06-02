@@ -19,7 +19,7 @@ title: Share via link
 <!-- <img src={require("../img/shares/links/sharing-button.png").default} alt="share" height="400"/> -->
 <br/>
 
-#### 3. In the following selection, click on "Create link".
+#### 3. In the following selection, click on "Public link".
 <!-- <img src={require("../img/shares/links/create-link-button.png").default} alt="Create link" height="400"/> -->
 <br/>
 

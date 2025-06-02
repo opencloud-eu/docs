@@ -2,6 +2,7 @@
 sidebar_position: 2
 id: set-up
 title: Set up OpenCloud Android App
+draft: true
 ---
 
 ## 🔐 Setting Up Your OpenCloud Account

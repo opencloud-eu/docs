@@ -2,6 +2,7 @@
 sidebar_position: 2
 id: upload-make-available-offline
 title: Upload - Make available offline
+draft: true
 ---
 
 # 📤 Upload Files & Make Them Available Offline (Android)
@@ -24,8 +25,8 @@ Navigate to the folder where you want to upload a file.
 
 From the menu, you can choose:
 
-- **"Upload file"** – upload a file from your device storage
-- **"Upload from gallery"** – upload a photo or video from your media library
+- **"Upload"** – upload a file from your device storage
+- **"Picture from camera"** – upload a photo or video from smartphone or tablet camera
 
 <!-- <img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-options.png").default} alt="Upload Options" height="400"/> -->
 
@@ -43,7 +44,7 @@ You can make files available offline so you can access them even without an inte
 
 <!-- <img src={require("../img/files-and-folders/upload-make-available-offline-android/three-dots.png").default} alt="Three dots menu" height="400"/> -->
 
-### 2. Select **“Make available offline”**
+### 2. Select **“Set as available offline”**
 
 The file will be downloaded and saved locally on your device.
 
@@ -60,7 +61,7 @@ The file will be downloaded and saved locally on your device.
 To free up space:
 
 - Tap the **three dots (⋮)** on an offline file  
-- Select **“Remove offline access”**
+- Select **“Unset as available offline”**
 
 ---
 

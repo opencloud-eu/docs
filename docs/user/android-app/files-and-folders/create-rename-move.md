@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: create-rename-move
 title: Create - Rename - Move (Android)
+draft: true
 ---
 
 # 📁 Create, Rename, and Move Files and Folders
@@ -40,42 +41,6 @@ The document will open in a built-in browser window using **Collabora** for edit
 
 <!-- <img src={require("../img/files-and-folders/create-rename-move-android/open-collabora.png").default} alt="Open Collabora" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move-android/edit-collabora.png").default} alt="Edit Collabora" height="400"/> -->
-
----
-
-### 📸 Take Photo or Video
-
-- Select **"Take photo or video"** from the menu
-
-<!-- <img src={require("../img/files-and-folders/create-rename-move-android/select-take-photo.png").default} alt="Select take photo or video" height="400"/> -->
-
-- Your device camera will open
-- Capture a photo or video
-
-<!-- <img src={require("../img/files-and-folders/create-rename-move-android/take-photo.png").default} alt="Take Photo" height="400"/> -->
-
-- The media will be saved directly to your OpenCloud account
-
-<!-- <img src={require("../img/files-and-folders/create-rename-move-android/photo-saved.png").default} alt="Photo saved" height="400"/> -->
-
----
-
-### 📑 Scan Document
-
-Use your Android device to scan paper documents:
-
-1. Select **"Scan document"**
-2. Point the camera at your document
-3. OpenCloud will auto-detect the edges and scan it
-
-You can then:
-
-- Crop or rotate the scan
-- Switch color modes (color, grayscale, black & white)
-- Choose a file format (PDF, JPEG, PNG)
-- Save as a single-page or multi-page file
-
-The scanned document will be saved in your OpenCloud account.
 
 ---
 

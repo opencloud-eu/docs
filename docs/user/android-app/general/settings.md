@@ -2,16 +2,17 @@
 sidebar_position: 4
 id: settings
 title: Settings
+draft: true
 ---
 
 # Settings
 <br/><br/>
 
 ## In the Android app settings changes can be made, such as:
-    - User interface
-    - Data usage
+    - Security
+    - Manage notifications
+    - Logging
     - Advanced settings
-    - Media files
     and more
 
 ---
@@ -21,66 +22,50 @@ title: Settings
 
 ### Userinterface
 
-#### 1. Theme
-Here you can choose whether you want to run the app in "light mode" or "dark mode".
+#### 1. Security
+Here you can set locks to access the app and allow touches with other visible windows.
 
-#### 2. Search settings
-Here you can specify where the search function should operate:
-- Folder
-- Tree
-- Space
-- Account
-- Server
+#### 2. Manage notifications
+Here you can allow notifications from the OpenCloud Android app.
 
 #### 3. Logging
 Here you can activate and deactivate the logging function and specify the storage location of the log file.
 
-### Data Usage
+#### 4. Automatic picture uploads
+Here you can manage location and behavior of the pictures uploaded automatically.
 
-#### 4. Cellular data usage
-Here you can set whether the app can be used with cellular data or not.
+#### 5. Automatic video uploads
+Here you can manage location and behavior of the videos uploaded automatically.
 
-#### 5. Delete unused local copies
-Here you can specify when unused local copies should be deleted.
+#### 6. Advanced
+Here you can set the following options:<br/>
+- Show hidden files
+    - Enable or disable the display of hidden files.
+- Delete local copies
+    - Remove automatically downloaded files that are not available offline, when the time since their last usage exceeds the selected time.
 
-### Advanced Settings
+#### 7. More
+Here you can set the following options:<br/>
+- Help
+    - Here you will find links to our documentation page and help links.
 
-#### 6. Show hidden files and folders
-Here you can enable or disable the display of hidden files and folders.
+- Sync you contacts, calendars and tasks
+    - Here you can set what you will sync with the OpenCloud Android app.
 
-#### 7. Show folders on top
-Here you can set whether the folders should be displayed before the files in the list view.
+- Access document provider
+    - Suggested app to browse the files on your device via the Android native file explorer.
 
-#### 8. Disable gestures
-Here you can disable gesture control to prevent multiple selection and dragging of files and folders.
+- Send feedback
+    - Here you can send us a feedback of your experience with the OpenCloud Android app.
 
-#### 9. Enable diagnostics
-Here you can select whether the app is allowed to run diagnostics in the background.
+- Recommend to a friend
+    - Here you can forward a link to download the Android app.
 
-### Media Files
-
-#### 10. Download instead of streaming
-Here you can set whether a file should be downloaded directly or streamed.
-
-#### 11. Media Upload
-Here you can set whether certain files should be converted when uploading, such as HEIC to JPEG.
-
-### More
-
-#### 12. Help & contact
-Here you will find links to our documentation page and help links.
-
-#### 13. Recommend to a friend
-Here you can forward a link to download the iOS app.
-
-#### 14. Privacy Policy
+#### 8. Privacy Policy
 A full entry on our privacy policy can be found here.
 
-#### 15. Terms of Use
-You can find a full entry on our terms of use here.
-
-#### 16. Acknowledgements
-Parts of the app may use copyrighted material, which is acknowledged here.
+#### 9. What's new in the latest version?
+Here you can find informations about the changes and new stuff in the latest version of the OpenCloud Android app.
 
 #### 17. App version
 Here you can see which app version is being used.

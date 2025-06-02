@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: installation
 title: Install the Android App
+draft: true
 ---
 
 # 📱 Installing the Android App

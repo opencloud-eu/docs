@@ -19,7 +19,7 @@ title: Invite to share
 <!-- <img src={require("../img/shares/invite/sharing-button.png").default} alt="Shareing-Button" height="400"/> -->
 <br/>
 
-#### 3. In the following selection, click on "Share with".
+#### 3. In the following selection, click on the Plus at "Users and Groups".
 <!-- <img src={require("../img/shares/invite/invite-option.png").default} alt="Share with" height="400"/> -->
 <br/>
 
