@@ -12,7 +12,7 @@ With WebDAV, you can connect OpenCloud Spaces as network drives on your device a
 
 ## 🛠️ Prerequisites
 
-- A valid **OpenCloud account**
+- A valid **OpenCloud account** with WebDAV information enabled in the preferences
 - Access to a **Space** in OpenCloud
 - A **WebDAV client** (e.g. built-in OS support or [Mountain Duck](https://mountainduck.io/))
 - (Optional but recommended) An **App Token**  
