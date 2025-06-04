@@ -1,6 +1,6 @@
 ---
 title: Policies
-date: 2025-05-22T16:21:16.119843232+02:00
+date: 2025-06-02T16:14:08.579223327+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/policies
@@ -24,7 +24,7 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Modules](#modules)
   * [gRPC API](#grpc-api)
   * [Proxy Middleware](#proxy-middleware)
-  * [Event Service (Postprocessing)](#event-service-postprocessing)
+  * [Event Service (Postprocessing)](#event-service-(postprocessing))
 * [Defining Policies to Evaluate](#defining-policies-to-evaluate)
 * [Setting the Query Configuration](#setting-the-query-configuration)
   * [Proxy](#proxy)
@@ -32,7 +32,6 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Rego Key Match](#rego-key-match)
 * [Extend Mimetype File Extension Mapping](#extend-mimetype-file-extension-mapping)
 * [Example Policies](#example-policies)
-* [Example Yaml Config](#example-yaml-config)
 
 ## General Information
 
@@ -195,3 +194,4 @@ A good example of how such a file should be formatted can be found in the [Apach
 ## Example Policies
 
 The policies service contains a set of preconfigured example policies. See the [deployment examples](https://github.com/opencloud-eu/opencloud/tree/main/deployments/examples) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
+
