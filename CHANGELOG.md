@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- added that webdav info need to be enabled in the preferences [[#335](https://github.com/opencloud-eu/docs/pull/335)]
 
 ### 👤 User Documentation
 
