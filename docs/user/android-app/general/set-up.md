@@ -11,8 +11,7 @@ After installing the app, you can now set up your OpenCloud account.
 
 ### 1. Start the Setup
 
-- Tap on **"Start Setup"** to begin.
-- If you've already set up an account and want to add another one, tap the **"+" icon** located at the bottom left corner of the screen.
+- When you first start the OpenCloud Android app, you will see the following screen.
 
 <!-- <img src={require(".././img/set-up/start-setup.png").default} alt="start setup" height="400"/>
 <img src={require(".././img/set-up/add-additional-account.png").default} alt="add additional account" height="400"/> -->
@@ -21,22 +20,23 @@ After installing the app, you can now set up your OpenCloud account.
 ### 2. Enter Your Server URL
 
 - Enter your **OpenCloud Server URL** (e.g., `https://cloud.example.com`)  
-- Tap **"Proceed"** to continue.
+- Tap **">"** to continue.
 
 <!-- <img src={require(".././img/set-up/enter-server-url.png").default} alt="enter server URL" height="400"/> -->
 
-### 3. Open the Login Page
+### 3. The Login Page
 
-- Tap **"Open Login Page"**
-- Then tap **"Continue"** to launch the login page in your browser
+- The Login Page will be opening and you musst type in your username and password.
+- Then tap **"Log in"**.
+- In the following screen, grant the app permission to access your user information and maintain continuous access by tapping the **"Allow"** button. 
 
 <!-- <img src={require(".././img/set-up/open-login-page.png").default} alt="Open Login Page" height="400"/>
 <img src={require(".././img/set-up/continue-sign-in.png").default} alt="continue sign in" height="400"/> -->
 
-### 4. Log In and Authorize Access
+### 4. Pop-up window
 
-- Log in with your OpenCloud credentials
-- Grant the app permission to access your user information and maintain continuous access
+- A Pop-up window opens and ask you for allow or don't allow the app to send you notifications
+- Choose one of the options by clicking on them 
 
 <!-- <img src={require(".././img/set-up/enter-credentials.png").default} alt="Enter Opencloud credentials" height="400"/>
 <img src={require(".././img/set-up/grant-access.png").default} alt="Grant access" height="400"/> -->
@@ -44,8 +44,6 @@ After installing the app, you can now set up your OpenCloud account.
 ### 5. Finalize Setup
 
 - Once login is complete, your account will be added to the app
-- Optionally, assign a **custom display name** to your account  
-  (By default, it will appear as `USERNAME@YOUR.DOMAIN`)
 
 <!-- <img src={require(".././img/set-up/custom-name.png").default} alt="Enter custom name" height="400"/> -->
 

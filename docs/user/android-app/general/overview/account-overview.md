@@ -12,7 +12,7 @@ draft: true
 <div style={{ display: 'flex', alignItems: 'center' }}>
   {/* Bild-Container: vertikale Anordnung */}
   <div style={{ display: 'flex', flexDirection: 'column', marginRight: '60px' }}>
-    <img
+    <!--<img
       src={require("../../img/overview/account-1.png").default}
       alt="Account Menue Button"
       style={{ width: '400px', marginBottom: '20px' }}
@@ -20,7 +20,7 @@ draft: true
     <img
       src={require("../../img/overview/account-2.png").default}
       alt="Account Menue"
-      style={{ width: '400px' }}
+      style={{ width: '400px' }} -->
     />
   </div>
 

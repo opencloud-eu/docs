@@ -16,12 +16,12 @@ draft: true
 
 To open the **Spaces Overview**, tap the **"Spaces button"** in the bottom line of the the screen.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
+<!-- <img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} /> -->
 <br/><br/>
 
 Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member of or have created yourself.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
+<!-- <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} /> -->
 
 ---
 
@@ -30,9 +30,9 @@ Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member
 By tapping the **search icon**, the searchbar and the search menue for Spaces will open.
 
 <div style={{ display: 'flex', gap: '10px' }}>
-<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
+<!-- <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
 <br/><br/>
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} /> -->
 </div>
 
 ---
@@ -46,7 +46,7 @@ By tapping the **plus icon**, the available functions within a Space appear.
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 
-<img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<!-- <img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} /> -->
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
 
