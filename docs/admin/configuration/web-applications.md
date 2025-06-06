@@ -44,7 +44,7 @@ Some OpenCloud apps require additional configuration — for example, the **Exte
 These configurations can be managed in the following file:
 
 ```bash
-opencloud/config/apps.yaml
+opencloud/deployments/examples/opencloud_full/config/opencloud/apps.yaml
 ```
 
 📘 Note: Configuration details vary between apps.
