@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.34.0](https://github.com/opencloud-eu/docs/releases/tag/1.34.0) - 2025-06-06
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👷 Admin Documentation
+
+- Updated Link in Web Applications [[#336](https://github.com/opencloud-eu/docs/pull/336)]
+
 ## [1.33.0](https://github.com/opencloud-eu/docs/releases/tag/1.33.0) - 2025-06-04
 
 ### ❤️ Thanks to all contributors! ❤️
