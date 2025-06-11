@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- improve release notes [[#340](https://github.com/opencloud-eu/docs/pull/340)]
 - release notes for 3.0.0 rolling release [[#338](https://github.com/opencloud-eu/docs/pull/338)]
 - Updated Link in Web Applications [[#336](https://github.com/opencloud-eu/docs/pull/336)]
 
