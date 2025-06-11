@@ -24,7 +24,7 @@ If you're using any other software that utilizes the GraphAPI, that software mig
 
 ## Key Changes
 
-The following endpoints of the GraphAPI where changed in a way that is not backwards compatible with the previous releases:
+The following endpoints of the GraphAPI were changed in a way that is not backwards compatible with the previous releases:
 
 ```
 GET /v1.0/me/drives/
