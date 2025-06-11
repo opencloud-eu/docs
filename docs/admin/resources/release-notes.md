@@ -29,7 +29,7 @@ The following endpoints of the GraphAPI were changed in a way that is not backwa
 ```
 GET /v1.0/me/drives/
 GET /v1.0/drives/
-GET /v1beta1/drives
+GET /v1beta1/drives/
 GET /v1beta1/me/drives/
 ```
 
