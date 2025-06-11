@@ -241,7 +241,12 @@ If you encounter any issues, check the [Common Issues & Help](./../../resources/
 
 ```env
 LDAP=:ldap.yml
+LDAP_MANAGER_DOMAIN=ldap.your.domain
+LDAP_ADMIN_PASSWORD="your.save.password"
 KEYCLOAK=:keycloak.yml
+KEYCLOAK_DOMAIN=keycloak.your.domain
+KEYCLOAK_ADMIN_USER="your.username"
+KEYCLOAK_ADMIN_PASSWORD="your.save.password"
 ```
 
 This will include the LDAP and Keycloak service definitions in the Docker Compose setup.
@@ -249,21 +254,16 @@ This will include the LDAP and Keycloak service definitions in the Docker Compos
 #### After starting OpenCloud, Keycloak will be available at:
 
 ```bash
-https://keycloak.YOUR.DOMAIN
+https://keycloak.your.domain
 ```
 
-#### 💡 You must also ensure that keycloak.YOUR.DOMAIN is properly configured in your 
-```bash
-etc/hosts
-```
-<br/><br/>
 
 ## 👤 Initial User Setup in Keycloak
 ### Once Keycloak is running:
 
 **1. Open your browser and go to**
 ```bash
-https://keycloak.YOUR.DOMAIN
+https://keycloak.your.domain
 ```
 <img src={require("./../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
 <br/><br/>
