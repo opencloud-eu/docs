@@ -18,7 +18,7 @@ draft: false
 This release introduces a **breaking change in the GraphAPI**.  
 If you are using OpenCloud only through official clients (Web, Desktop, or Mobile), **no migration is needed**.
 
-If you're using any other software that utilizes the GraphAPI, that software might need to be adjust to follow the new behavior of the GraphAPI.
+If you're using any other software that utilizes the GraphAPI, that software might need to be adjusted to follow the new behavior of the GraphAPI.
 
 ---
 
