@@ -9,6 +9,7 @@ draft: false
 
 - Version: 3.0.0
 - Type: Major Release (Breaking Changes)
+- [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.0.0)
 
 ## Key Changes
 ### Performance Optimization (Breaking Change)
