@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @ScharfViktor, @Svanvith
+@Heiko-Pohl, @LisaHue, @ScharfViktor, @Svanvith
 
 ### 👷 Admin Documentation
 
+- Mail Notifications [[#343](https://github.com/opencloud-eu/docs/pull/343)]
 - move release notes to the upgrade part and put it together under one … [[#342](https://github.com/opencloud-eu/docs/pull/342)]
 - improve release notes [[#340](https://github.com/opencloud-eu/docs/pull/340)]
 - release notes for 3.0.0 rolling release [[#338](https://github.com/opencloud-eu/docs/pull/338)]
