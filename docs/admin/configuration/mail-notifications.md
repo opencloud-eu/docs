@@ -26,19 +26,21 @@ Or use vim, code, or gedit as you prefer.
 
 ### 📝 Step 2: Add or Modify These Environment Variables
 
-Change the following lines in the .env file.
+Adjust the following lines in your `.env` file according to your SMTP provider and requirements.  
+Note: `SMTP_TRANSPORT_ENCRYPTION` and `SMTP_INSECURE` may vary depending on your setup.
 
-SMTP Settings:
+**SMTP Settings:**
 
 ```env
-SMTP_HOST=mailhog
+SMTP_HOST=YOUR_SMTP_HOST
 SMTP_PORT=1025
 SMTP_SENDER=noreply@your.text
 SMTP_USERNAME=YOUR_USERNAME
 SMTP_PASSWORD=YOUR_PASSWORD
 SMTP_TRANSPORT_ENCRYPTION=none
 SMTP_INSECURE=true
-```
+````
+
 ⚠️ In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
 
 ---
