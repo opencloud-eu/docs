@@ -1,13 +1,14 @@
 # Changelog
 
-## [1.34.0](https://github.com/opencloud-eu/docs/releases/tag/1.34.0) - 2025-06-11
+## [1.34.0](https://github.com/opencloud-eu/docs/releases/tag/1.34.0) - 2025-06-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @ScharfViktor
+@LisaHue, @ScharfViktor, @Svanvith
 
 ### 👷 Admin Documentation
 
+- move release notes to the upgrade part and put it together under one … [[#342](https://github.com/opencloud-eu/docs/pull/342)]
 - improve release notes [[#340](https://github.com/opencloud-eu/docs/pull/340)]
 - release notes for 3.0.0 rolling release [[#338](https://github.com/opencloud-eu/docs/pull/338)]
 - Updated Link in Web Applications [[#336](https://github.com/opencloud-eu/docs/pull/336)]
