@@ -31,9 +31,9 @@ Stop the currently running OpenCloud instance:
 
 ### 2. Backup Config and Data
 
-It is recommended to create a backup before proceeding with the upgrade.
+It is recommended to create a [backup](../backup.md) before proceeding with the upgrade.
 
-TODO: put backup link #103.
+
 
 ---
 
@@ -60,7 +60,7 @@ opencloud init --diff
 
 If you see `no changes, your config is up to date`, no further action is needed. Otherwise, update your `opencloud.yaml` file accordingly and start OpenCloud.
 
-<img src={require("./img/init-diff.png").default} alt="init -diff" width="1920"/>
+<img src={require("../img/init-diff.png").default} alt="init -diff" width="1920"/>
 
 ---
 
