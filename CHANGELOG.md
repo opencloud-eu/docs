@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.35.0](https://github.com/opencloud-eu/docs/releases/tag/1.35.0) - 2025-06-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👷 Admin Documentation
+
+- added logging [[#341](https://github.com/opencloud-eu/docs/pull/341)]
+
 ## [1.34.0](https://github.com/opencloud-eu/docs/releases/tag/1.34.0) - 2025-06-13
 
 ### ❤️ Thanks to all contributors! ❤️
