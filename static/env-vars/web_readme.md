@@ -1,6 +1,6 @@
 ---
 title: Web
-date: 2025-05-22T16:21:16.121010385+02:00
+date: 2025-06-02T16:14:08.580450957+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/web
@@ -33,7 +33,6 @@ The web service also provides a minimal API for branding functionality like chan
   * [Application Configuration](#application-configuration)
   * [Using Custom Assets](#using-custom-assets)
 * [Miscellaneous](#miscellaneous)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Custom Compiled Web Assets
 
@@ -204,3 +203,4 @@ This also applies for the `manifest.json` file, if the administrator wants to pr
 ## Miscellaneous
 
 Please note that OpenCloud, in particular the web service, needs a restart to load new applications or changes to the `apps.yaml` file.
+
