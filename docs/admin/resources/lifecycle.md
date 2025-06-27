@@ -21,7 +21,7 @@ With LTS, businesses can continue using an older production release without need
 
 | Rolling | Production | LTS |
 |:--------|:-----------|:----|
-| <ul><li>For enthusiasts</li><li>Contains latest features</li><li>Every 3 weeks</li><li>Automated quality assurance</li><li>Community supported</li><li>Documentation on best effort</li></ul> | <ul><li>For production</li><li>Focus on stability</li><li>About every 6 months</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> | <ul><li>For production</li><li>Focus on longevity</li><li>Backports for 2 years</li><li>Full quality assurance</li><li>Professional support</li></ul> |
+| <ul><li>For enthusiasts</li><li>Contains latest features</li><li>Every 3 weeks</li><li>Automated quality assurance</li><li>Community supported</li><li>Documentation on best effort</li></ul> | <ul><li>For production</li><li>Focus on stability</li><li>About every 6 months</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> | <ul><li>For production</li><li>Focus on longevity</li><li>Backports for 2 years</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> |
 
 # Release Dates
 
