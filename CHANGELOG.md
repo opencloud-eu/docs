@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @tbsbdr
+@ScharfViktor, @Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- publish 3.1.0 release in the docs [[#352](https://github.com/opencloud-eu/docs/pull/352)]
 - change /home/chaser to /home/user [[#348](https://github.com/opencloud-eu/docs/pull/348)]
 
 ## [1.35.0](https://github.com/opencloud-eu/docs/releases/tag/1.35.0) - 2025-06-23
