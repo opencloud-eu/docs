@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-25
+## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
