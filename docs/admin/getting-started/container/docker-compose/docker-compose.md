@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-id: docker-compose
+sidebar_position: 1
+id: docker-compose-base
 title: Docker Compose
 description: "🌟 Full-blown featureset including web office."
 ---
@@ -171,13 +171,13 @@ Same should appear with the other domains you are using.
 
 Example with Chrome browser:
 
-<img src={require("./../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
 
 
 ✅ Check the certificate details to confirm it’s from Let's Encrypt Staging. 
 
-<img src={require("./../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
-<img src={require("./../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
 
 ## 7. Apply a Real SSL Certificate
 Once the staging certificate works, switch to a production certificate.
@@ -212,7 +212,7 @@ docker compose up -d
 
 ✅ Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
 
-<img src={require("./../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
+<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
 
 ## 8. Log into OpenCloud
 Open a browser and visit:
@@ -227,7 +227,7 @@ Login with:
 
 **Password:** (your password)
 
-<img src={require("./../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
 ## Troubleshooting
 If you encounter any issues, check the [Common Issues & Help](./../../resources/common-issues.md)
@@ -265,48 +265,48 @@ https://keycloak.your.domain
 ```bash
 https://keycloak.your.domain
 ```
-<img src={require("./../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
+<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
 <br/><br/>
 
 **2. Log in with the admin credentials (default is admin / admin).**
-<img src={require("./../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920"/>
+<img src={require("./../../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920"/>
 <br/><br/>
 
 **3. In the top-left dropdown (labeled Keycloak), switch to the OpenCloud realm.**
-<img src={require("./../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
+<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
 <br/><br/>
 
 **4. Navigate to the "Users" section and click "Add user":**
-<img src={require("./../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
+<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
 <br/>
 - Fill in a username
 - Optionally add email, first/last name
 - Click "Create"
-<img src={require("./../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
+<img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
 <br/><br/>
 
 **5. Go to the "Credentials" tab:**
 - Click "Set password"
-<img src={require("./../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
+<img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
 <br/>
 - Set a temporary password
 - Enable "Temporary" to force password change on first login (optional)
 - Click "Save"
-<img src={require("./../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
+<img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
 <br/><br/>
 
 **6. Go to the "Role Mapping" tab:**
-<img src={require("./../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
+<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
 <br/>
 - Click "Assign role"
-<img src={require("./../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
+<img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
 <br/>
 - In the dialog, click "Filter by realm roles"
-<img src={require("./../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920"/>
+<img src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920"/>
 <br/>
 - Choose the appropriate role (e.g., user, admin, etc.)
 - Click "Assign"
-<img src={require("./../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920"/>
+<img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920"/>
 <br/>
 
 **The user can now log in via OpenCloud using the Keycloak credentials.**
