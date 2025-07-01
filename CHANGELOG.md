@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.37.0](https://github.com/opencloud-eu/docs/releases/tag/1.37.0) - 2025-07-01
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- change structure for deployment with docker compose [[#353](https://github.com/opencloud-eu/docs/pull/353)]
+
 ## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-30
 
 ### ❤️ Thanks to all contributors! ❤️
