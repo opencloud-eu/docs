@@ -230,7 +230,7 @@ Login with:
 <img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
 ## Troubleshooting
-If you encounter any issues, check the [Common Issues & Help](./../../resources/common-issues.md)
+If you encounter any issues, check the [Common Issues & Help](./../../../resources/common-issues.md)
 
 ---
 
