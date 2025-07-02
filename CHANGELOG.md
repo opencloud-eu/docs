@@ -4,12 +4,16 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @fschade
 
 ### 👷 Admin Documentation
 
 - rewrite the raspberry pi tutorial to match to the new compose repo [[#355](https://github.com/opencloud-eu/docs/pull/355)]
 - change structure for deployment with docker compose [[#353](https://github.com/opencloud-eu/docs/pull/353)]
+
+### 📦️ Build&Tools
+
+- enhancement(docs): add cdperf documentation [[#358](https://github.com/opencloud-eu/docs/pull/358)]
 
 ## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-30
 
