@@ -77,31 +77,39 @@ groups ${USER}
 ```sh
 sudo shutdown -r now
 ```
-- Install Docker-Compose
-
-```sh
-sudo apt install docker-compose
-```
-
-- Check the installation
-
-```sh
-docker-compose --version
-```
-<img src={require("./../img/raspberrypi/docker-compose-check.png").default} alt="Check docker-compose" width="500"/>
 
 
 ## 1.5 Clone OpenCloud repository
 ```sh 
-git clone https://github.com/opencloud-eu/opencloud.git
+git clone https://github.com/opencloud-eu/opencloud-compose.git
 ``` 
 
 
 ## 1.6 Start the docker compose setup
 
 ```sh 
-cd opencloud/deployments/examples/opencloud_full
+cd opencloud-compose
 ```
+
+Copy the .env.example
+
+```sh 
+cp .env.example .env
+```
+
+Adjust the .env
+
+```sh 
+nano .env
+```
+
+Add for the minimal OpenCloud setup:
+
+```sh
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+```
+
+in the .env and then start the docker with
 
 ```sh 
 docker compose up 
@@ -179,10 +187,10 @@ Stop the running docker
 docker compose down
 ``` 
 
-Go to the deployment folder and open the `.env` file with e.g. nano 
+Go to the opencloud-compose folder and open the `.env` file with e.g. nano 
 
 ```sh 
-cd opencloud/deployments/examples/opencloud_full
+cd opencloud-compose
 ``` 
 ```sh 
 nano .env
@@ -253,7 +261,7 @@ Now you need to change the environment variable `OC_DOMAIN` in the `.env` file
 2. Navigate to the correct folder 
 
   ```sh 
-  cd opencloud/deployments/examples/opencloud_full
+  cd opencloud-compose
   ```
 3. Stop running OpenCloud docker
 
