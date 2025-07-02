@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.37.0](https://github.com/opencloud-eu/docs/releases/tag/1.37.0) - 2025-07-01
+## [1.37.0](https://github.com/opencloud-eu/docs/releases/tag/1.37.0) - 2025-07-02
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- rewrite the raspberry pi tutorial to match to the new compose repo [[#355](https://github.com/opencloud-eu/docs/pull/355)]
 - change structure for deployment with docker compose [[#353](https://github.com/opencloud-eu/docs/pull/353)]
 
 ## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-30
