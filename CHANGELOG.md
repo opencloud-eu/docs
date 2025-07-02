@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @fschade
+@AlexAndBear, @Svanvith, @fschade
+
+### :octocat: Developer Documentation
+
+- add libre graph api url to server documentation [[#357](https://github.com/opencloud-eu/docs/pull/357)]
 
 ### 👷 Admin Documentation
 
