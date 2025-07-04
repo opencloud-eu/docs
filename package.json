@@ -17,10 +17,10 @@
     "build-git-batch": "docker run --rm -w $(pwd) -v $(pwd):$(pwd)  quay.io/thegeeklab/git-batch"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
-    "@docusaurus/theme-common": "^3.7.0",
-    "@docusaurus/theme-mermaid": "^3.7.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@docusaurus/theme-common": "^3.8.1",
+    "@docusaurus/theme-mermaid": "^3.8.1",
     "@easyops-cn/docusaurus-search-local": "^0.48.5",
     "@likec4/cli": "^0.40.0",
     "@mdx-js/react": "^3.1.0",
@@ -30,9 +30,9 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
+    "@docusaurus/module-type-aliases": "^3.8.1",
+    "@docusaurus/tsconfig": "^3.8.1",
+    "@docusaurus/types": "^3.8.1",
     "likec4": "^1.30.0",
     "raw-loader": "^4.0.2",
     "typescript": "~5.6.3"

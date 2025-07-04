@@ -83,3 +83,8 @@
 [data-theme='dark'] .dark-mode-image {
     display: block;
 }
+
+/* custom.css */
+body .docItemCol_VOVn {
+    max-width: 100% !important;
+}
