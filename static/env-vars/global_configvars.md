@@ -1,6 +1,6 @@
-#### Environment variables with global scope available in multiple services
+Environment variables with global scope available in multiple services
 
-<small>
+
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
 `IDM_CREATE_DEMO_USERS` | 1.0.0 | bool | Flag to enable or disable the creation of the demo users. | false |
@@ -111,4 +111,3 @@
 `OC_WOPI_DISABLE_CHAT` | 1.0.0 | bool | Disable the chat functionality of the office app. | false |
 `STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY` | 1.0.0 | Duration | The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details. | 0s |
 `STORAGE_USERS_PERMISSION_ENDPOINT` | 1.0.0 | string | Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'. | eu.opencloud.api.settings |
-</small>
