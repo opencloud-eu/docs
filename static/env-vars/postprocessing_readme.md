@@ -1,6 +1,6 @@
 ---
 title: Postprocessing
-date: 2025-05-22T16:21:16.119909606+02:00
+date: 2025-06-02T16:14:08.579307745+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/postprocessing
@@ -30,7 +30,6 @@ The `postprocessing` service handles the coordination of asynchronous postproces
     * [Workflow](#workflow)
 * [CLI Commands](#cli-commands)
   * [Resume Postprocessing](#resume-postprocessing)
-* [Example Yaml Config](#example-yaml-config)
 
 ## General Prerequisites
 
@@ -149,3 +148,4 @@ Depending if you want to restart/resume all or defined failed uploads, different
       opencloud postprocessing resume -s "finished"  # Equivalent to the above
       opencloud postprocessing resume -s "virusscan" # Resume all uploads currently in virusscan step
       ```
+

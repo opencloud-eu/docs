@@ -1,6 +1,6 @@
 ---
 title: Thumbnails
-date: 2025-05-22T16:21:16.120539831+02:00
+date: 2025-06-02T16:14:08.580229654+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/thumbnails
@@ -29,7 +29,6 @@ The thumbnails service provides methods to generate thumbnails for various files
 * [Memory Considerations](#memory-considerations)
 * [Thumbnails and SecureView](#thumbnails-and-secureview)
 * [Using libvips for Thumbnail Generation](#using-libvips-for-thumbnail-generation)
-* [Example Yaml Config](#example-yaml-config)
 
 ## File Locations Overview
 
@@ -149,4 +148,5 @@ go build -tags enable_vips -o opencloud -o bin/opencloud ./cmd/opencloud
 
 When building a docker image using the Dockerfile in the top-level directory of OpenCloud, libvips support is enabled and the libvips shared libraries are included
 in the resulting docker image.
+
 
