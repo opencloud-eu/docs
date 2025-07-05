@@ -1,7 +1,7 @@
 Environment variables for the **sse** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`OC_LOG_LEVEL`<br/>`SSE_LOG_LEVEL`| 1.0.0 |string|The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.||
 |`OC_LOG_PRETTY`<br/>`SSE_LOG_PRETTY`| 1.0.0 |bool|Activates pretty log output.|false|
 |`OC_LOG_COLOR`<br/>`SSE_LOG_COLOR`| 1.0.0 |bool|Activates colorized log output.|false|
