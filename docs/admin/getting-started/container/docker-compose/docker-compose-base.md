@@ -111,7 +111,7 @@ TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
 ### ✅ Set your deployment options:
-For Example without Collabora:
+For example basic setup without Collabora:
 ```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
