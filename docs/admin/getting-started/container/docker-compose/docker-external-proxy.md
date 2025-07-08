@@ -211,6 +211,7 @@ server {
     }
 }
 ```
+Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub 
 
 Enable and reload Nginx:
 
