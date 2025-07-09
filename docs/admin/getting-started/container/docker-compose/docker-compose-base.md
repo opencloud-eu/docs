@@ -82,11 +82,6 @@ nano .env
 
 Modify these settings:
 
-### ✅ Disable insecure mode
-```bash
-# INSECURE=true
-```
-
 ### ✅ Set your domain names
 ```bash
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
@@ -203,15 +198,21 @@ docker compose down
 ```
 
 #### 2️⃣ Remove old staging certificates
+
 ```bash
-docker volume rm opencloud_full_certs
+rm -r opencloud-compose/certs
 ```
 
-(If you changed volume names, adjust accordingly.)
+(If you changed the folder name of the compose, adjust accordingly.)
 
-#### 3️⃣ Disable staging mode in `.env`
+#### 3️⃣ Disable staging mode and insecure mode in `.env` 
 ```bash
 nano .env
+```
+
+ Disable insecure mode:
+```bash
+# INSECURE=true
 ```
 
 Comment the staging server:
