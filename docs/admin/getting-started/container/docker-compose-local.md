@@ -45,14 +45,21 @@ cp .env.example .env
 You can deploy using explicit -f flags:
 
 ```Shell
-docker compose -f docker-compose.yml -f traefik/opencloud.yml up -d
+docker compose -f docker-compose.yml -f weboffice/collabora.yml -f traefik/opencloud.yml -f traefik/collabora.yml up -d
 ```
 
-Or by adding the COMPOSE_FILE variable in .env:
+Or by uncomment or adding the COMPOSE_FILE variable in .env:
 
 ```Shell
-COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml
 ```
+
+Set you initial admin password in the .env
+
+```Shell
+INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
+```
+This is mandatory for security reasons. Otherwise the OpenCloud container will not start.
 
 Start the deployment with Docker Compose:
 
@@ -88,10 +95,8 @@ Open [https://collabora.opencloud.test](https://collabora.opencloud.test) and ac
 Login with your browser:
 - [https://cloud.opencloud.test](https://cloud.opencloud.test)
 - user: **admin**
-- password: is randomly generated on the first start of OpenCloud. It will be printed to the console. You can access it by running the following command: 
-```Shell
-docker compose logs opencloud | grep -B 1 -A 4 "generated OpenCloud Config"
-```
+- password: YOUR.SECRET.PASSWORD
+
 
 <img src={require("./../img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
