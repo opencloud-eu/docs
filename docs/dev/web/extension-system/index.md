@@ -151,6 +151,7 @@ your extension will be used automatically.
    7. Default actions (left click) on a file. ExtensionPointId `global.files.default-actions`. Mounts extensions of type `action`.
    8. Upload menu. ExtensionPointId `app.files.upload-menu`. Mounts extensions of type `action`.
    9. Quick actions. ExtensionPointId `app.files.quick-actions`. Mounts extensions of type `action`.
+   10. Quick actions for the trash overview. ExtensionPointId `app.files.trash-quick-actions`. Mounts extensions of type `action`.
 4. Global search providers. ExtensionPointId `app.search.providers`. Utilizes extensions of type `search` as search engines for the search input in the global top bar.
 5. User preference panels. ExtensionPointId `app.runtime.preferences.panels`. Mounts extensions of type `customComponent`.
 
