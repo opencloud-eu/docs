@@ -94,6 +94,7 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```bash
 ADMIN_PASSWORD=YourSecurePassword
 ```
+This is mandatory for security reasons, otherwise the OpenCloud container will not start.
 
 ### ✅ Set your email for SSL certification
 ```bash
@@ -240,7 +241,7 @@ Login with:
 
 **Username:** `admin`
 
-**Password:** (your password)
+**Password:** YourSecurePassword
 
 <img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
