@@ -1,7 +1,7 @@
 Environment variables for the **idp** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`IDP_PASSWORD_RESET_URI`| 1.0.0 |string|The URI where a user can reset their password.||
 |`OC_TRACING_ENABLED`<br/>`IDP_TRACING_ENABLED`| 1.0.0 |bool|Activates tracing.|false|
 |`OC_TRACING_TYPE`<br/>`IDP_TRACING_TYPE`| 1.0.0 |string|The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.||
