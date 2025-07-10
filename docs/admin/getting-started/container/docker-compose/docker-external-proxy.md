@@ -115,7 +115,7 @@ COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
-The initial Admin password is optional. When it is not set, a random password will be created.
+The initial Admin password is mandatory for security reasons.
 
 Start the docker compose setup
 
