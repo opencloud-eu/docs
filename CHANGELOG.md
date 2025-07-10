@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.38.0](https://github.com/opencloud-eu/docs/releases/tag/1.38.0) - 2025-07-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- add instructions to deinstall opencloud [[#367](https://github.com/opencloud-eu/docs/pull/367)]
+
 ## [1.37.0](https://github.com/opencloud-eu/docs/releases/tag/1.37.0) - 2025-07-02
 
 ### ❤️ Thanks to all contributors! ❤️
