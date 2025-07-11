@@ -25,5 +25,5 @@ Configuration files are written as yaml files by default under `$HOME/.config/Op
 
 ## Other 
 
-Other, non file related metadata such as links is also stored under the general data base path, in json format.
+Other, non-file-related metadata such as links is also stored under the general data base path, in JSON format.
 
