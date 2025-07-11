@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @tackin
+@AlexAndBear, @dragotin, @tackin
 
 ### :octocat: Developer Documentation
 
 - Add trash quick action extension point to web dev docs [[#372](https://github.com/opencloud-eu/docs/pull/372)]
+
+### 👷 Admin Documentation
+
+- Add snippet about data export [[#371](https://github.com/opencloud-eu/docs/pull/371)]
 
 ## [1.38.0](https://github.com/opencloud-eu/docs/releases/tag/1.38.0) - 2025-07-10
 
