@@ -17,7 +17,7 @@ Files are by default stored in the original format and not encrypted.
 
 ## Metadata
 
-File metadata is stored in the file system with every file. It is either in the extended file attributes (user namespace) or in a separate metadata file. That file is in the [MessagePack](https://msgpack.org) format and can be read with the cli tools for that file type.
+File metadata is stored in the file system with every file. It is either in the extended file attributes (user namespace) or in a separate metadata file. That file is in the [MessagePack](https://msgpack.org) format and can be read with the CLI tools for that file type.
 
 ## Configuration
 
