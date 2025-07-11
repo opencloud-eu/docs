@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.39.0](https://github.com/opencloud-eu/docs/releases/tag/1.39.0) - 2025-07-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### :octocat: Developer Documentation
+
+- Add trash quick action extension point to web dev docs [[#372](https://github.com/opencloud-eu/docs/pull/372)]
+
 ## [1.38.0](https://github.com/opencloud-eu/docs/releases/tag/1.38.0) - 2025-07-10
 
 ### ❤️ Thanks to all contributors! ❤️
