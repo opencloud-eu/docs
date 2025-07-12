@@ -52,7 +52,7 @@ systemctl enable docker && systemctl start docker
 Download the necessary configuration files:
 
 ```bash
-git clone https://github.com/opencloud-eu/opencloud.git
+git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
 ## 4. Configure the .env File for Staging Certificates
@@ -61,8 +61,16 @@ Before requesting real SSL certificates, test the setup with Let's Encrypt’s s
 Navigate to the OpenCloud configuration folder:
 
 ```bash
-cd opencloud/deployments/examples/opencloud_full
+cd opencloud-compose
 ```
+
+Create environment file:
+
+```bash
+cp .env.example .env
+```
+> **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
+<br/>
 
 Edit the `.env` file with the editor of your choice:
 
@@ -73,11 +81,6 @@ nano .env
 ```
 
 Modify these settings:
-
-### ✅ Disable insecure mode
-```bash
-# INSECURE=true
-```
 
 ### ✅ Set your domain names
 ```bash
@@ -91,6 +94,7 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```bash
 ADMIN_PASSWORD=YourSecurePassword
 ```
+This is mandatory for security reasons, otherwise the OpenCloud container will not start.
 
 ### ✅ Set your email for SSL certification
 ```bash
@@ -100,6 +104,12 @@ TRAEFIK_ACME_MAIL=your@email.com
 ### ✅ Use Let's Encrypt staging certificates (for testing)
 ```bash
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
+```
+
+### ✅ Set your deployment options:
+For example basic setup without Collabora:
+```bash
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
 Save and exit.
@@ -189,15 +199,21 @@ docker compose down
 ```
 
 #### 2️⃣ Remove old staging certificates
+
 ```bash
-docker volume rm opencloud_full_certs
+rm -r opencloud-compose/certs
 ```
 
-(If you changed volume names, adjust accordingly.)
+(If you changed the folder name of the compose, adjust accordingly.)
 
-#### 3️⃣ Disable staging mode in `.env`
+#### 3️⃣ Disable staging mode and insecure mode in `.env` 
 ```bash
 nano .env
+```
+
+ Disable insecure mode:
+```bash
+# INSECURE=true
 ```
 
 Comment the staging server:
@@ -225,7 +241,7 @@ Login with:
 
 **Username:** `admin`
 
-**Password:** (your password)
+**Password:** YourSecurePassword
 
 <img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
@@ -233,80 +249,3 @@ Login with:
 If you encounter any issues, check the [Common Issues & Help](./../../../resources/common-issues.md)
 
 ---
-
-## Enable Keycloak Integration (optional)
-<br/>
-
-#### To enable Keycloak for identity and access management, **uncomment** the following lines in your `.env` file:
-
-```env
-LDAP=:ldap.yml
-LDAP_MANAGER_DOMAIN=ldap.your.domain
-LDAP_ADMIN_PASSWORD="your.save.password"
-KEYCLOAK=:keycloak.yml
-KEYCLOAK_DOMAIN=keycloak.your.domain
-KEYCLOAK_ADMIN_USER="your.username"
-KEYCLOAK_ADMIN_PASSWORD="your.save.password"
-```
-
-This will include the LDAP and Keycloak service definitions in the Docker Compose setup.
-
-#### After starting OpenCloud, Keycloak will be available at:
-
-```bash
-https://keycloak.your.domain
-```
-
-
-## 👤 Initial User Setup in Keycloak
-### Once Keycloak is running:
-
-**1. Open your browser and go to**
-```bash
-https://keycloak.your.domain
-```
-<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
-<br/><br/>
-
-**2. Log in with the admin credentials (default is admin / admin).**
-<img src={require("./../../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920"/>
-<br/><br/>
-
-**3. In the top-left dropdown (labeled Keycloak), switch to the OpenCloud realm.**
-<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
-<br/><br/>
-
-**4. Navigate to the "Users" section and click "Add user":**
-<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
-<br/>
-- Fill in a username
-- Optionally add email, first/last name
-- Click "Create"
-<img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
-<br/><br/>
-
-**5. Go to the "Credentials" tab:**
-- Click "Set password"
-<img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
-<br/>
-- Set a temporary password
-- Enable "Temporary" to force password change on first login (optional)
-- Click "Save"
-<img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
-<br/><br/>
-
-**6. Go to the "Role Mapping" tab:**
-<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
-<br/>
-- Click "Assign role"
-<img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
-<br/>
-- In the dialog, click "Filter by realm roles"
-<img src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920"/>
-<br/>
-- Choose the appropriate role (e.g., user, admin, etc.)
-- Click "Assign"
-<img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920"/>
-<br/>
-
-**The user can now log in via OpenCloud using the Keycloak credentials.**
