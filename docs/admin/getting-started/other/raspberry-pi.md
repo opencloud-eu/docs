@@ -11,7 +11,6 @@ The installation of OpenCloud on a Raspberry Pi is intended for private or non-p
 It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential performance constraints.
 :::
 
-
 ## 1.1 Hardware requirements
 
 - Minimum Raspberry Pi 4B with at least 4 GB RAM connected via LAN or WLAN
@@ -24,7 +23,7 @@ It is not recommended for enterprise or critical environments due to the hardwar
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
 - SSH must be activated
-<img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
+  <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
 
@@ -36,11 +35,13 @@ The IP for this can be viewed in your router.
 <img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500"/>
 
 #### Establish connection via SSH:
+
 ```sh
 ssh pi@YOUR-IP
 ```
 
 After the first login, you should change the password for security reasons:
+
 ```sh
 passwd
 ```
@@ -55,6 +56,7 @@ Detailed installation instructions for docker can be found here:
 ```sh
 sudo apt update && sudo apt upgrade -y
 ```
+
 - Install Docker via Script
 
 ```sh
@@ -66,10 +68,13 @@ curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```sh
 sudo usermod -aG docker ${USER}
 ```
+
 - Check if it's running:
+
 ```sh
 groups ${USER}
 ```
+
 <img src={require("./../img/raspberrypi/docker-user-check.png").default} alt="Check docker user" width="500"/>
 
 - Reboot the Raspberry Pi to let the changes take effect
@@ -78,28 +83,27 @@ groups ${USER}
 sudo shutdown -r now
 ```
 
-
 ## 1.5 Clone OpenCloud repository
-```sh 
-git clone https://github.com/opencloud-eu/opencloud-compose.git
-``` 
 
+```sh
+git clone https://github.com/opencloud-eu/opencloud-compose.git
+```
 
 ## 1.6 Start the docker compose setup
 
-```sh 
+```sh
 cd opencloud-compose
 ```
 
 Copy the .env.example
 
-```sh 
+```sh
 cp .env.example .env
 ```
 
 Adjust the .env
 
-```sh 
+```sh
 nano .env
 ```
 
@@ -111,15 +115,12 @@ COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 
 in the .env and then start the docker with
 
-```sh 
-docker compose up 
+```sh
+docker compose up
 ```
-
 
 Now you have running OpenCloud locally on your RaspberryPi and you can adjust it to your needs.
 We will describe how you can mount an external disk or USB-Stick and make your OpenCloud available outside of the local network with No-IP
-
-
 
 ## 1.7 Mount external hard disk or USB-Stick
 
@@ -128,71 +129,80 @@ We will describe how you can mount an external disk or USB-Stick and make your O
 ```sh
 lsblk
 ```
-<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
+<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
 #### 2. Format the drive to ext4 filesystem
 
 ```sh
 sudo mkfs.ext4 PATH-TO-DRIVE -L DATA
 ```
+
 PATH-TO-DRIVE is in this example `/dev/sda1` so the command would be
 
 ```sh
 sudo mkfs.ext4 /dev/sda1 -L DATA
 ```
+
 <img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
 
 #### 3. Add entry in fstab for automatic mounting when restarting
 
-  - open fstab with sudo
+- open fstab with sudo
+
 ```sh
   sudo nano /etc/fstab
 ```
-  - add the following line in the fstab file
-```sh 
+
+- add the following line in the fstab file
+
+```sh
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
 #### 4. Create the `/mnt/data` directory and give the user 1000 access
 
-```sh 
+```sh
 sudo mkdir -p /mnt/data
 ```
-```sh 
+
+```sh
 sudo chown -R 1000:1000 /mnt/data
 ```
 
-#### 5.  mount the drive automatically 
+#### 5. mount the drive automatically
 
-```sh 
+```sh
 sudo mount -a
-```  
+```
 
 Maybe you get following error
 
 <img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500"/>
 
 then please perform the recommended command
-```sh 
+
+```sh
 systemctl daemon-reload
-``` 
+```
+
 and try to mount again.
 
 ## 1.8 Mount external storage
 
 Stop the running docker
 
-```sh 
+```sh
 docker compose down
-``` 
+```
 
-Go to the opencloud-compose folder and open the `.env` file with e.g. nano 
+Go to the opencloud-compose folder and open the `.env` file with e.g. nano
 
-```sh 
+```sh
 cd opencloud-compose
-``` 
-```sh 
+```
+
+```sh
 nano .env
 ```
 
@@ -200,14 +210,13 @@ When you added an external hard disk or USB-Stick for the storage, you need to s
 
 <img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
 
-
 Here it is `/mnt/data`
 
 Start the docker again
 
-```sh 
+```sh
 docker compose up
-``` 
+```
 
 ## 1.9 Make your OpenCloud available from outside
 
@@ -244,12 +253,11 @@ To make your Raspberry Pi accessible from the Internet, you must set up port for
 - By making a fixed DHCP assignment in the router settings
 - Or via a static IP address in the network settings of your Pi
 
-
 2. In the router menu, search for “Port forwarding”, “NAT” or “Port sharing” (the name may vary depending on the router model)
 
 3. Create a new portforwarding with TCP for 80 and 443
 
-  Example from a Speedport 4
+Example from a Speedport 4
 <img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
 
 #### 4. Change the OpenCloud domain in the configuration
@@ -258,30 +266,32 @@ Now you need to change the environment variable `OC_DOMAIN` in the `.env` file
 
 1. Connect via ssh on your Raspberry-Pi
 
-2. Navigate to the correct folder 
+2. Navigate to the correct folder
 
-  ```sh 
-  cd opencloud-compose
-  ```
+```sh
+cd opencloud-compose
+```
+
 3. Stop running OpenCloud docker
 
-```sh 
+```sh
 docker compose down
 ```
 
-4. open the `.env` file with e.g. nano 
+4. open the `.env` file with e.g. nano
 
-  ```sh 
-  nano .env
-  ```
+```sh
+nano .env
+```
+
 5. Look for the `OC_DOMAIN` variable and enter your URL, here we used `opencloud.webhop.me`
-<img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
+   <img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
 
 6. Start the docker again
 
-```sh 
+```sh
 docker compose up
-``` 
+```
 
 Now your OpenCloud should be reachable via your URL.
 

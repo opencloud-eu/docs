@@ -9,6 +9,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 ## 🚀 Migrate Personal Space Data to OpenCloud Using rclone
+
 This guide will help you migrate personal space data from `NextCloud` and `oCIS` to `OpenCloud` using `rclone`. Follow these steps carefully to ensure a smooth migration!
 
 ### 1. Generate users token using CLI or API
@@ -52,6 +53,7 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
     ```sh
     curl -vk -XPOST 'https://opencloud_url/auth-app/tokens?expiry=72h&userName=alan' -uadmin:admin
     ```
+
 </TabItem>
 
 <TabItem value="ocis" label="oCIS">
@@ -92,6 +94,7 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
     ```sh
     curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' -uadmin:admin
     ```
+
 </TabItem>
 <TabItem value="nc" label="Nextcloud">
     ### 
@@ -101,6 +104,7 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
 
     🖼 Example:
     <img src={require("./img/generate-pass-nc.png").default} alt="init -diff" width="1920"/>
+
 </TabItem>
 </Tabs>
     
@@ -207,9 +211,11 @@ rclone copy nc-bob:/ opencloud-alan:/ --no-check-certificate -P  # Copy Nextclou
 🎉 Congratulations! You have successfully migrated personal space data to OpenCloud! 🚀
 
 ✅ Successfully Migrated:
+
 - Personal space files
 
 ❌ Not Migrated:
+
 - Shared files
 - Public links
 - Project spaces

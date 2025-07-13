@@ -60,7 +60,7 @@ The file will be downloaded and saved locally on your device.
 
 To free up space:
 
-- Tap the **three dots (⋮)** on an offline file  
+- Tap the **three dots (⋮)** on an offline file
 - Select **“Unset as available offline”**
 
 ---

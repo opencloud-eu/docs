@@ -4,6 +4,7 @@ id: account-fileslist
 title: Dateilisten-Menü
 draft: false
 ---
+
 <br/>
 ### Hier ist eine Übersicht über das Dateilisten-Menü in der OpenCloud iOS-App.
 
@@ -44,7 +45,7 @@ draft: false
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Breadcrumbs Menü</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den aktuellen Ordnerpfad an und erlaubt die schnelle Navigation zu übergeordneten Ordnern.</li>
+
   </ul>
 
 </div>
-

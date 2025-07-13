@@ -4,6 +4,7 @@ id: faq
 title: FAQ
 draft: true
 ---
+
 # FAQ
 
 **Welcome to the frequently asked questions (FAQ). Here you will find answers to the most common questions.**
@@ -28,7 +29,7 @@ OpenCloud is designed to give you a privacy-focused alternative to mainstream pl
 <details>
 <summary>How does OpenCloud differ from other open source file sharing applications?</summary>
 
-OpenCloud is simpler and more reliable than existing PHP-based solutions. OpenCloud stands out by offering a radically simplified architecture compared to other open-source file-sharing solutions. While many alternatives require maintaining complex stacks involving multiple components like PHP, MySQL, Redis, and Apache — creating a web of dependencies and potential security risks—OpenCloud avoids this entirely. It writes data directly to disk instead of relying on a dedicated database, making it much easier to maintain and far more reliable. With OpenCloud, you can focus on your files without worrying about intricate setups or data loss risks. 
+OpenCloud is simpler and more reliable than existing PHP-based solutions. OpenCloud stands out by offering a radically simplified architecture compared to other open-source file-sharing solutions. While many alternatives require maintaining complex stacks involving multiple components like PHP, MySQL, Redis, and Apache — creating a web of dependencies and potential security risks—OpenCloud avoids this entirely. It writes data directly to disk instead of relying on a dedicated database, making it much easier to maintain and far more reliable. With OpenCloud, you can focus on your files without worrying about intricate setups or data loss risks.
 
 </details>
 
@@ -183,6 +184,7 @@ Yes, OpenCloud allows you customizations:
 <summary>How does file sharing work within OpenCloud?</summary>
 
 OpenCloud offers three main ways to share files, making it easy to collaborate and manage access:
+
 1. **Personal Share**: Share files with registered users within your organization. You can assign permissions such as view, edit, or download, providing flexible control over file access.
 2. **Share via Link**: Share files with anyone, even outside your organization, by generating a link. No account is required for accessing the file.
 3. **Spaces**: Spaces are user-independent datarooms that belong to the organization rather than an individual. This ensures files remain within the organization, even if users leave. Examples of Spaces include school classes, collaborative projects, or organizational units like Marketing, Sales, or Finance. Spaces are easier for admins to manage, as they can be self-managed by designated users.

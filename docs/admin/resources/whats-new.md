@@ -9,9 +9,8 @@ title: "What's New"
 **Release notes OpenCloud 2.0.0 (Production release)**
 
 - **🌲 File Native Backups with PosixFS**: OpenCloud introduces PosixFS to allow for easy file native backups. As all files and metadata information is stored directly on the storage (no database needed), you can create standard file-level snapshots or copies. <br />
-Previously, files and folders were stored in a hash-based structure, making the layout unreadable for humans. With PosixFS, the full file tree is directly visible on the storage, providing transparency and confidence that all data is being backed up correctly. Admins benefit from easier maintenance, fewer moving parts, and improved fault tolerance in backup and disaster recovery scenarios. <br />
-**Note:** Before adding, writing, or restoring files directly into the OpenCloud storage, make sure to stop OpenCloud. Once the changes are made, start it again. This ensures that all changes are properly recognized. A future feature, currently in development, called “collaborative storage” will allow external file changes (e.g., via CLI) to be detected in real time by OpenCloud and its clients.
-
+  Previously, files and folders were stored in a hash-based structure, making the layout unreadable for humans. With PosixFS, the full file tree is directly visible on the storage, providing transparency and confidence that all data is being backed up correctly. Admins benefit from easier maintenance, fewer moving parts, and improved fault tolerance in backup and disaster recovery scenarios. <br />
+  **Note:** Before adding, writing, or restoring files directly into the OpenCloud storage, make sure to stop OpenCloud. Once the changes are made, start it again. This ensures that all changes are properly recognized. A future feature, currently in development, called “collaborative storage” will allow external file changes (e.g., via CLI) to be detected in real time by OpenCloud and its clients.
 
 :::warning[Breaking Change]
 
@@ -117,10 +116,10 @@ We believe in keeping things simple but powerful.
 ## **⚡ High-Performance, User-Friendly Interface**
 
 - **Familiar Desktop Features**:
-    - **Right-click** context menus.
-    - **Drag & Drop** support between web and desktop.
-    - **Keyboard Shortcuts**: (Ctrl + C, Ctrl + X, Ctrl + V).
-    - **Multi-Selection**: (Ctrl + Click, Shift + Click).
+  - **Right-click** context menus.
+  - **Drag & Drop** support between web and desktop.
+  - **Keyboard Shortcuts**: (Ctrl + C, Ctrl + X, Ctrl + V).
+  - **Multi-Selection**: (Ctrl + Click, Shift + Click).
 - **Instant UI Updates**: No need to refresh when a file is modified.
 
 ---

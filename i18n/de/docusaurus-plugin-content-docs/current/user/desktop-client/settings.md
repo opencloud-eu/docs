@@ -9,6 +9,7 @@ title: Einstellungen
 Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten anpassen:
 
 ## Einstellungen öffnen
+
 - Klicken Sie auf **"Einstellungen“** in der oberen rechten Ecke von OpenCloud Desktop
 
 <!-- <img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>-->
@@ -16,6 +17,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 ## Übersicht der Einstellungen
 
 ### Allgemeine Einstellungen
+
 - Aktivieren oder Deaktivieren des automatischen Starts bei der Anmeldung
 - Wählen Sie, ob Desktop-Benachrichtigungen angezeigt werden sollen
 - Legen Sie Ihre bevorzugte Sprache fest
@@ -23,6 +25,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 <!-- <img src={require("./img/settings/settings-general.png").default} alt="settings-general" width="400"/>-->
 
 ### Erweiterte Einstellungen
+
 - Versteckte Dateien synchronisieren
 - Entscheiden Sie, ob gelöschte Dateien in den lokalen Papierkorb verschoben werden sollen
 - Bearbeiten Sie die Liste der ignorierten Dateien
@@ -31,6 +34,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 <!-- <img src={require("./img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>-->
 
 ### Netzwerkeinstellungen
+
 - Wählen Sie aus, wie der Client mit Proxy-Einstellungen umgehen soll:
   - **Kein Proxy**
   - **Systemproxy verwenden** (Standard)
@@ -39,6 +43,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   <!-- <img src={require("./img/settings/settings-network.png").default} alt="settings network" width="400"/>-->
 
   ### Download- und Upload-Bandbreite
+
 - Legen Sie Bandbreitenlimits fest:
   - **Kein Limit** (Standard)
   - **Automatische Anpassung des Limits**

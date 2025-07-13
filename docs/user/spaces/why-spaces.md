@@ -11,7 +11,7 @@ title: Why Spaces?
 Let’s take a simple example:
 
 - **Alan** creates a folder called **"Project"** and shares it with several Persons
-<img src={require("./img/why-spaces/spaghetti.png").default} alt="Member menu" width="500"/>
+  <img src={require("./img/why-spaces/spaghetti.png").default} alt="Member menu" width="500"/>
 - Later, Alan leaves the organization
 - As Alan's account is deleted, some shared folder disappears
 - **User loses access** to some folders and their content
@@ -31,9 +31,9 @@ This scenario highlights several risks:
 
 Spaces are designed to overcome these limitations and provide a more stable, team-friendly solution:
 
-- 🏢 **Organization-owned**: Spaces belong to the organization, not individuals.  
-- 👥 **Collaborative management**: Multiple users can manage a Space together.  
-- 📦 **Dedicated quota**: Each Space has its own storage limit, separate from personal quotas.  
+- 🏢 **Organization-owned**: Spaces belong to the organization, not individuals.
+- 👥 **Collaborative management**: Multiple users can manage a Space together.
+- 📦 **Dedicated quota**: Each Space has its own storage limit, separate from personal quotas.
 
 <img src={require("./img/why-spaces/spaces.png").default} alt="Member menu" width="500"/>
 

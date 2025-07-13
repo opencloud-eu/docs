@@ -11,13 +11,14 @@ Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible
 ---
 
 **Prerequisites:**
+
 - **Linux**, **Mac** or **Windows** Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 - [**Docker**](https://docs.docker.com/compose/install/)
 - [**Docker Compose**](https://docs.docker.com/compose/install/)
 
 ---
 
-##  1. Download
+## 1. Download
 
 Download the `opencloud_full` folder (this folder contains a multi-file Docker Compose configuration):
 
@@ -49,7 +50,7 @@ docker compose up -d
 
 This starts all necessary containers in the background.
 
-## 3. Add local domains to /etc/hosts 
+## 3. Add local domains to /etc/hosts
 
 Edit the /etc/hosts file and add the following entries for local access:
 
@@ -61,6 +62,7 @@ Edit the /etc/hosts file and add the following entries for local access:
 ## 4. Login
 
 Login with your browser:
+
 - [https://cloud.opencloud.test](https://cloud.opencloud.test)
 - user: **admin**
 - password: **admin**
@@ -71,10 +73,10 @@ Login with your browser:
 
 <img src={require("./../img/decomposeds3-with-minio.png").default} alt="Admin general" width="1920"/>
 
---- 
+---
 
 ### Troubleshooting
 
-If you encounter any issues or errors, try finding a solution here: 
+If you encounter any issues or errors, try finding a solution here:
 
 - [Common Issues & Help](../../resources/common-issues.md)

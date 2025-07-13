@@ -1,5 +1,5 @@
 ---
-title: 'Folder view extensions'
+title: "Folder view extensions"
 sidebar_position: 4
 id: folder-view-extensions
 ---
@@ -15,7 +15,7 @@ This is what the FolderViewExtension interface looks like:
 ```typescript
 interface FolderViewExtension {
   id: string
-  type: 'folderView'
+  type: "folderView"
   extensionPointIds?: string[]
   folderView: FolderView // See FolderView section below
 }
@@ -43,15 +43,15 @@ export const useCustomFolderViewExtension = () => {
   const { $gettext } = useGettext()
 
   const extension = computed<FolderViewExtension>(() => ({
-    id: 'com.github.opencloud-eu.web.files.folder-view.custom',
-    type: 'folderView',
-    extensionPointIds: ['app.files.folder-views.folder'],
+    id: "com.github.opencloud-eu.web.files.folder-view.custom",
+    type: "folderView",
+    extensionPointIds: ["app.files.folder-views.folder"],
     folderView: {
-      name: 'custom-table',
-      label: $gettext('Switch to custom folder view'),
+      name: "custom-table",
+      label: $gettext("Switch to custom folder view"),
       icon: {
-        name: 'menu-line',
-        fillType: 'none'
+        name: "menu-line",
+        fillType: "none"
       },
       component: YourCustomFolderViewComponent
     }
@@ -70,8 +70,8 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: $gettext('Custom folder view app'),
-        id: 'custom-folder-view-app'
+        name: $gettext("Custom folder view app"),
+        id: "custom-folder-view-app"
       },
       extensions: computed(() => [unref(extension)])
     }

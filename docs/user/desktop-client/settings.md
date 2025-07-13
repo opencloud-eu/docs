@@ -9,6 +9,7 @@ title: Settings
 You can customize OpenCloud Desktop settings by following these steps:
 
 ## Open Settings
+
 - Click on **"Settings"** in the top-right corner of OpenCloud Desktop
 
 <img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
@@ -16,6 +17,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 ## Overview of Settings Sections
 
 ### General Settings
+
 - Enable or disable auto-start when log in
 - Choose whether to show desktop notifications
 - Set your preferred language
@@ -23,6 +25,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 <img src={require("./img/settings/settings-general.png").default} alt="settings-general" width="400"/>
 
 ### Advanced Settings
+
 - Choose to sync hidden files
 - Decide whether deleted files should be moved to the local trash bin
 - Edit the ignored files list
@@ -31,6 +34,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 <img src={require("./img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
 
 ### Network Settings
+
 - Select how the client handles proxy settings:
   - **No proxy**
   - **Use system proxy** (default)
@@ -39,6 +43,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 <img src={require("./img/settings/settings-network.png").default} alt="settings network" width="400"/>
 
 ### Download and Upload Bandwidth
+
 - Set bandwidth limits:
   - **No limit** (default)
   - **Automatically adjust limit**

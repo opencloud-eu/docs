@@ -4,6 +4,7 @@ id: account-overview
 title: Account-Menü
 draft: false
 ---
+
 <br/>
 ### Hier ist eine Übersicht über das Account-Menü in der OpenCloud iOS-App.
 
@@ -47,7 +48,7 @@ draft: false
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**11. Einstellungen Menü Item**</li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet die allgemeinen Einstellungen und Konfigurationsoptionen.</li>
+
   </ul>
 
 </div>
-

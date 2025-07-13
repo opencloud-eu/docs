@@ -1,5 +1,5 @@
 ---
-title: 'Embed Mode'
+title: "Embed Mode"
 sidebar_position: 4
 ---
 
@@ -38,7 +38,7 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 
 <script>
   function selectEventHandler(event) {
-    if (event.data?.name !== 'opencloud-embed:select') {
+    if (event.data?.name !== "opencloud-embed:select") {
       return
     }
 
@@ -47,7 +47,7 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
     doSomethingWithSelectedResources(resources)
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener("message", selectEventHandler)
 </script>
 ```
 
@@ -59,13 +59,11 @@ In special scenarios you also want the user to set a file name, this can be achi
 ### Example
 
 ```html
-<iframe
-  src="https://my-opencloud-web-instance?embed=true&embed-target=location"
-></iframe>
+<iframe src="https://my-opencloud-web-instance?embed=true&embed-target=location"></iframe>
 
 <script>
   function selectEventHandler(event) {
-    if (event.data?.name !== 'opencloud-embed:select') {
+    if (event.data?.name !== "opencloud-embed:select") {
       return
     }
 
@@ -74,7 +72,7 @@ In special scenarios you also want the user to set a file name, this can be achi
     doSomethingWithSelectedResources(resources)
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener("message", selectEventHandler)
 </script>
 ```
 
@@ -95,7 +93,7 @@ combination of both. If the embed-file-types parameter is not provided, all file
 
 <script>
   function selectEventHandler(event) {
-    if (event.data?.name !== 'opencloud-embed:file-pick') {
+    if (event.data?.name !== "opencloud-embed:file-pick") {
       return
     }
 
@@ -104,7 +102,7 @@ combination of both. If the embed-file-types parameter is not provided, all file
     doSomethingWithPickedFile(file)
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener("message", selectEventHandler)
 </script>
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: 'Search extensions'
+title: "Search extensions"
 sidebar_position: 7
 id: search-extensions
 ---
@@ -16,7 +16,7 @@ An example of a search extension configuration can be found below:
 ```typescript
 interface SearchExtension {
   id: string
-  type: 'search'
+  type: "search"
   extensionPointIds?: string[]
   searchProvider: {
     id: string
@@ -64,20 +64,20 @@ export const useSolrSearchExtension = () => {
     available: () => true,
     search: (term) => {
       // actual search implementation
-      console.log('Querying solr search engine...')
+      console.log("Querying solr search engine...")
     }
   }
 
   const searchProvider: SearchProvider = {
-    id: 'solr-search',
+    id: "solr-search",
     available: true,
-    displayName: 'Solr Search',
+    displayName: "Solr Search",
     previewSearch
   }
 
   const extension = computed<SearchExtension>(() => ({
-    id: 'com.github.opencloud-eu.web.solr-search',
-    type: 'search',
+    id: "com.github.opencloud-eu.web.solr-search",
+    type: "search",
     searchProvider
   }))
 
@@ -93,9 +93,9 @@ The search component for the preview search container may look like this:
 </template>
 
 <script setup lang="ts">
-  import { computed } from 'vue'
-  import { Resource } from '@opencloud-eu/web-client'
-  import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg'
+  import { computed } from "vue"
+  import { Resource } from "@opencloud-eu/web-client"
+  import { SearchResultValue, ResourceListItem } from "@opencloud-eu/web-pkg"
 
   const { searchResult } = defineProps<{ searchResult: SearchResultValue }>()
 
@@ -112,8 +112,8 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: $gettext('Solr search app'),
-        id: 'solrs-search-app'
+        name: $gettext("Solr search app"),
+        id: "solrs-search-app"
       },
       extensions: computed(() => [unref(extension)])
     }

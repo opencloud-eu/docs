@@ -1,5 +1,5 @@
 ---
-title: 'End-to-End (E2E) Test Standards'
+title: "End-to-End (E2E) Test Standards"
 sidebar_position: 2
 id: e2e-testing-standards
 ---
@@ -19,50 +19,36 @@ Here are the test standards and guidelines we adhere to when creating Playwright
 ## Folder Structure:
 
 - `tests/:`
-
   - `e2e/`: Main folder containing all (end-to-end) E2E test-related files.
-
     - `cucumber/`: Main folder containing all Cucumber(BDD) test-related files.
-
       - `features/`: Contains Gherkin feature files.
-
         - `<test-suite-folder>/`: Collection house for "**related"** feature files.
-
           - `<aFeatureFile>.feature`: A feature file.
 
       - `steps/`: Holds the step definition files for mapping Gherkin steps to code.
-
         - `<stepDefinition>.ts`: Step definitions for each feature.
 
       - `hooks/`: Cucumber hooks for setting up and tearing down test environments.
         - `hooks.ts`: Contains `Before`, `After`, and other lifecycle hooks.
 
     - `support/`: Playwright (Test implementation)
-
       - `api/`: Contains API-related test files and configurations.
-
         - `<api-folder>/ `: Specific API tests for a particular service.
 
       - `objects/`: Contains the Page Object classes.
-
         - `<specific-page-object-folder>/`: Collection house for related page objects for each webpage or component.
-
           - `<individualPageObject>.ts`: Page Object for each webpage or component.
 
       - `utils/`: Utility functions and common helpers.
-
         - `helpers.ts`: Common utility functions (e.g., date formatting, data generation).
 
       - `test-data/`: Static test data files or folders for upload.
-
         - `filesForUpload/`: Static test data files for upload.
 
     - `config/`: Configuration files for Playwright and other tools.
-
       - `playwright.config.ts`: Playwright configuration.
 
     - `reports/`: Generated test reports (e.g., HTML, JSON).
-
       - `screenshots/`: Captured screenshots during test execution.
 
       - `videos/`: Recorded videos of test runs.
@@ -84,7 +70,7 @@ await raiseCharge()
 
 // assert, verify that the action had the expected outcome
 // confirm charge has been raised
-expect(charge).toBe('raised')
+expect(charge).toBe("raised")
 ```
 
 ## Page Object Model (POM)
@@ -102,23 +88,23 @@ DO 👍
 // add all locators and functions related to the page.
 // allowing all tests to reuse
 
-import { expect, Locator, Page } from '@playwright/test'
+import { expect, Locator, Page } from "@playwright/test"
 
 export class FooPage {
   readonly errorMessage: Locator
 
   constructor(page: Page) {
     this.page = page
-    this.errorMessage = page.locator('.error-message')
+    this.errorMessage = page.locator(".error-message")
   }
 }
 
 // test file './steps/foo.ts'
-import { FooPage } from './pageObjects/foo'
+import { FooPage } from "./pageObjects/foo"
 
 let fooPage: FooPage
 
-Then('error message should be visible', async function ({ page }) {
+Then("error message should be visible", async function ({ page }) {
   const fooPage = new FooPage({ page })
   await expect(fooPage.errorMessage).toBeVisible()
 })
@@ -129,10 +115,10 @@ DO NOT ⚔️
 ```typescript
 // test file './steps/foo.ts'
 // include locators directly in test
-import { Locator, Page } from '@playwright/test'
+import { Locator, Page } from "@playwright/test"
 
-Then('error message should be visible', async function ({ page }) {
-  await expect(page.locator('.error-message')).toBeVisible()
+Then("error message should be visible", async function ({ page }) {
+  await expect(page.locator(".error-message")).toBeVisible()
 })
 ```
 
@@ -152,14 +138,14 @@ DO 👍
 
 ```typescript
 await page.goto(fooBarURL, {
-  waitUntil: 'domcontentloaded',
+  waitUntil: "domcontentloaded"
 })
 ```
 
 DO 👍
 
 ```typescript
-const element = page.locator('some-locator-path')
+const element = page.locator("some-locator-path")
 element.waitFor({ visible: true })
 ```
 
@@ -185,14 +171,14 @@ Instead, we can prioritize the below, based on [testing-library guiding principl
 DO NOT ⚔️
 
 ```javascript
-page.locator('.opt-u > div > .summary > div:nth-child(4) > div')
+page.locator(".opt-u > div > .summary > div:nth-child(4) > div")
 ```
 
 DO 👍
 
 ```javascript
-page.locator('#foo-button')
-page.getByText('OK')
+page.locator("#foo-button")
+page.getByText("OK")
 ```
 
 ## Naming Conventions
@@ -246,14 +232,14 @@ DO 👍
 
 ```typescript
 // This element is a submit button for the user registration form
-const submitButton = await page.locator('<locator-path>')
+const submitButton = await page.locator("<locator-path>")
 ```
 
 DO 👍
 
 ```typescript
 // This element is a button for uploading a profile picture
-const uploadProfilePictureButton = await page.locator('<locator-path>')
+const uploadProfilePictureButton = await page.locator("<locator-path>")
 ```
 
 ### Function names

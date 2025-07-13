@@ -1,5 +1,5 @@
 ---
-title: 'Right sidebar panel extensions'
+title: "Right sidebar panel extensions"
 sidebar_position: 6
 id: right-sidebar-panel-extensions
 ---
@@ -20,13 +20,9 @@ To define a right sidebar panel extension, you implement the `SidebarPanelExtens
 It can be found below:
 
 ```typescript
-interface SidebarPanelExtension<
-  R extends Item,
-  P extends Item,
-  T extends Item
-> {
+interface SidebarPanelExtension<R extends Item, P extends Item, T extends Item> {
   id: string
-  type: 'sidebarPanel'
+  type: "sidebarPanel"
   extensionPointIds?: string[]
   panel: SideBarPanel<R, P, T> // Please check the SideBarPanel section below
 }
@@ -91,16 +87,14 @@ The following example shows how a sidebar panel for displaying exif data for a r
 export const useExifDataPanelExtension = () => {
   const { $gettext } = useGettext()
 
-  const extension = computed<
-    SidebarPanelExtension<SpaceResource, Resource, Resource>
-  >(() => ({
-    id: 'com.github.opencloud-eu.web.files.sidebar-panel.exif-data',
-    type: 'sidebarPanel',
-    extensionPointIds: ['global.files.sidebar'],
+  const extension = computed<SidebarPanelExtension<SpaceResource, Resource, Resource>>(() => ({
+    id: "com.github.opencloud-eu.web.files.sidebar-panel.exif-data",
+    type: "sidebarPanel",
+    extensionPointIds: ["global.files.sidebar"],
     panel: {
-      name: 'exif-data',
-      icon: 'image',
-      title: () => $gettext('EXIF data'),
+      name: "exif-data",
+      icon: "image",
+      title: () => $gettext("EXIF data"),
       component: ExifDataPanelComponent,
       isRoot: () => true,
       isVisible: ({ items }) => {
@@ -126,8 +120,8 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: $gettext('Exif panel app'),
-        id: 'exif-panel-app'
+        name: $gettext("Exif panel app"),
+        id: "exif-panel-app"
       },
       extensions: computed(() => [unref(extension)])
     }

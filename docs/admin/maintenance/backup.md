@@ -27,10 +27,9 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 **There are two recommended approaches:**
 
 - Snapshot-based backup (recommended)
+  - If your storage system supports snapshots, creating a backup only takes a few seconds
 
-    - If your storage system supports snapshots, creating a backup only takes a few seconds
-
-    - Snapshots should be copied to secondary storage or used by backup software for additional security
+  - Snapshots should be copied to secondary storage or used by backup software for additional security
 
 -Backup software approach
 

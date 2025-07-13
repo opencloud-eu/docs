@@ -6,26 +6,27 @@ title: Demo User
 
 # **Demo User Overview**
 
-This page introduces the pre-configured demo users available in OpenCloud. These users are designed to help you explore the platform’s features, test different roles, and experience OpenCloud from various perspectives without setting up new accounts.  
+This page introduces the pre-configured demo users available in OpenCloud. These users are designed to help you explore the platform’s features, test different roles, and experience OpenCloud from various perspectives without setting up new accounts.
 
-Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as **admin management, file sharing, and collaboration**.  
+Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as **admin management, file sharing, and collaboration**.
 
 Below, you’ll find details about each user, including their roles and login credentials.
 
+| Name                | User Name | Password |    Role     |                 Group membership                 |
+| :------------------ | :-------: | :------: | :---------: | :----------------------------------------------: |
+| Dennis Ritchie      |  dennis   |   demo   |    Admin    |  basic-haters, programmers, unix-lovers, users   |
+| Margaret Hamilton   | margaret  |   demo   | Space Admin |           apollos, programmers, users            |
+| Alan Turing         |   alan    |   demo   |    User     | chess-lovers, machine-lovers, programmers, users |
+| Lynn Conway         |   lynn    |   demo   |    User     |         programmers, users, vlsi-lovers          |
+| Mary Kenneth Keller |   mary    |   demo   |    User     |               bible-readers, users               |
 
-| Name                  | User Name     | Password      | Role          | Group membership                                  |
-| :-------------        | :-:           | :-:           | :-:           | :-:                                               |
-| Dennis Ritchie        | dennis        | demo          | Admin         | basic-haters, programmers, unix-lovers, users     |
-| Margaret Hamilton     | margaret      | demo          | Space Admin   | apollos, programmers, users                       |
-| Alan Turing           | alan          | demo          | User          | chess-lovers, machine-lovers, programmers, users  |
-| Lynn Conway           | lynn          | demo          | User          | programmers, users, vlsi-lovers                   |
-| Mary Kenneth Keller   | mary          | demo          | User          | bible-readers, users                              |
+## Dennis Ritchie
 
-
-## Dennis Ritchie 
 #### OpenCloud Username: dennis
+
 #### Role: Admin
-📌 **Co-developer of UNIX & inventor of the C programming language**  
+
+📌 **Co-developer of UNIX & inventor of the C programming language**
 
 <img src={require("./img/demo-user/dennis-ritchie.png").default} alt="Dennis Ritchie" width="200"/>
 
@@ -35,10 +36,13 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ---
 
-## Margaret Hamilton 
+## Margaret Hamilton
+
 #### OpenCloud Username: margaret
+
 #### Role: Space Admin
-📌 **Software pioneer & NASA developer**  
+
+📌 **Software pioneer & NASA developer**
 
 <img src={require("./img/demo-user/margaret-hamilton.png").default} alt="Margaret Hamilton" width="200"/>
 
@@ -48,10 +52,14 @@ Below, you’ll find details about each user, including their roles and login cr
 - From 1976 to 1984, she was the Managing Director of Higher Order Software (HOS)
 
 ---
-## Alan Turing 
+
+## Alan Turing
+
 #### OpenCloud Username: alan
+
 #### Role: User
-📌 **Father of modern computer science & codebreaker in the Second World War**  
+
+📌 **Father of modern computer science & codebreaker in the Second World War**
 
 <img src={require("./img/demo-user/alan-turing.png").default} alt="Alan Turing" width="200"/>
 
@@ -61,9 +69,13 @@ Below, you’ll find details about each user, including their roles and login cr
 - Was discriminated against and persecuted because of his homosexuality
 
 ---
+
 ## Lynn Conway
+
 #### OpenCloud Username: lynn
+
 #### Role: User
+
 📌 Computer scientist & microchip design pioneer
 
 <img src={require("./img/demo-user/lynn-conway.png").default} alt="Lynn Conway" width="200"/>
@@ -76,19 +88,16 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ---
 
-## Mary Kenneth Keller 
+## Mary Kenneth Keller
+
 #### OpenCloud Username: mary
+
 #### Role: User
-📌 **First woman with a PhD in computer science**  
+
+📌 **First woman with a PhD in computer science**
 
 <img src={require("./img/demo-user/mary-kenneth-keller.png").default} alt="Mary Kenneth Keller" width="200"/>
 
 - Was a nun and studied mathematics (Bachelor & Master of Science)
 - First woman to work at Dartmouth College's Computer Science Center
 - Founded and chaired the first computer science department at Clarke University, Iowa, for over 20 years
-
-
-
-
-
-

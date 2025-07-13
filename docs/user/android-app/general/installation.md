@@ -9,7 +9,7 @@ draft: true
 
 1. Open the **Play Store** on your Android Smartphone or Tablet.
 
-2. Search for **"OpenCloud"** or click the following link to go directly to the app:  
+2. Search for **"OpenCloud"** or click the following link to go directly to the app:
    <!-- [OpenCloud on the Play Store](https://) -->
 
 <!-- <img src={require(".././img/installation/android-installation.jpg").default} alt="Android Installation" height="400"/> -->

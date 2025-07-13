@@ -20,7 +20,6 @@ Navigieren Sie zu dem Ordner, in den Sie eine Datei hochladen möchten.
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus Symbol" height="400"/>
 
-
 ### 3. Upload-Option auswählen
 
 Im Menü können Sie Folgendes auswählen:

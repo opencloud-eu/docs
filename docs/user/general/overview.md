@@ -2,15 +2,20 @@
 sidebar_position: 1
 id: overview
 title: Overview
-------
+---
+
+---
 
 # OpenCloud - Overview of the user interface
+
 <br/><br/>
 
 ## The OpenCloud interface consists of several areas that help you to work efficiently with files and settings
+
 <br/><br/>
 
 ---
+
 <br/><br/>
 
 <img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
@@ -38,10 +43,11 @@ Shows the **current path** of your navigation and allows you to quickly jump bac
 Allows you to **edit, move or delete** several selected files at the same time.
 
 **8. View Modes**  
-Provides various **display options** for the file list:  
-- List view  
-- Tile view  
-- Condensed view  
+Provides various **display options** for the file list:
+
+- List view
+- Tile view
+- Condensed view
 
 **9. View Settings**  
 Here you can customize **additional display options** such as sorting or column selection.

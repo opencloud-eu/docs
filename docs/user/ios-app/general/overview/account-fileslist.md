@@ -41,10 +41,10 @@ draft: false
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>9. Files List</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows the contents of the current folder as a list of files and folders.</li>
-    
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Breadcrumbs Menu</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays the current folder path and allows quick navigation to parent folders.</li>
+
   </ul>
 
 </div>
-

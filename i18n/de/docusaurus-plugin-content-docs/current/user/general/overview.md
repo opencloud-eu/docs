@@ -2,15 +2,20 @@
 sidebar_position: 1
 id: overview
 title: Übersicht
-------
+---
+
+---
 
 # Überblick der Benutzeroberfläche
+
 <br/><br/>
 
 ## Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
+
 <br/><br/>
 
 ---
+
 <br/><br/>
 
 <img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
@@ -38,10 +43,11 @@ Zeigt den **aktuellen Pfad** Ihrer Navigation an und ermöglicht es Ihnen, schne
 Ermöglicht Ihnen das **Bearbeiten, Verschieben oder Löschen** mehrerer ausgewählter Dateien zur gleichen Zeit.
 
 **8. Ansichtsmodi**  
-Bietet verschiedene **Anzeigeoptionen** für die Dateiliste:  
-- Listenansicht  
-- Kachelansicht  
-- Komprimierte Ansicht    
+Bietet verschiedene **Anzeigeoptionen** für die Dateiliste:
+
+- Listenansicht
+- Kachelansicht
+- Komprimierte Ansicht
 
 **9. Ansichtseinstellungen**  
 Hier können Sie **zusätzliche Anzeigeoptionen** wie Sortierung oder Spaltenauswahl anpassen.

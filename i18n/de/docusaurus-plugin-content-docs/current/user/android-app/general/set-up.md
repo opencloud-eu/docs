@@ -11,7 +11,7 @@ Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einricht
 
 ### 1. Starte die Einrichtung
 
-- Tippe auf **„Start setup“**, um zu beginnen. 
+- Tippe auf **„Start setup“**, um zu beginnen.
 - Wenn du bereits einen Account eingerichtet hast und einen weiteren hinzufügen möchtest, tippe auf das **„+“-Symbol** unten links auf dem Bildschirm.
 
 <img src={require(".././img/set-up/start-setup.png").default} alt="Einrichtung starten" height="400"/>
@@ -19,7 +19,7 @@ Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einricht
 
 ### 2. Server-URL eingeben
 
-- Gib die **URL deines OpenCloud Servers** ein (z. B. `https://cloud.beispiel.de`) 
+- Gib die **URL deines OpenCloud Servers** ein (z. B. `https://cloud.beispiel.de`)
 - Tippe auf **„Proceed“**, um fortzufahren.
 
 <img src={require(".././img/set-up/enter-server-url.png").default} alt="Server-URL eingeben" height="400"/>
@@ -34,7 +34,7 @@ Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einricht
 
 ### 4. Anmelden und Zugriff erlauben
 
-- Melde dich mit deinen OpenCloud Zugangsdaten an 
+- Melde dich mit deinen OpenCloud Zugangsdaten an
 - Erlaube der App den Zugriff auf deine Benutzerinformationen und die kontinuierliche Anmeldung
 
 <img src={require(".././img/set-up/enter-credentials.png").default} alt="Zugangsdaten eingeben" height="400"/>
@@ -42,8 +42,8 @@ Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einricht
 
 ### 5. Einrichtung abschließen
 
-- Nach erfolgreicher Anmeldung wird dein Account in der App hinzugefügt 
-- Optional kannst du deinem Account einen **benutzerdefinierten Anzeigenamen** geben 
-(Standardmäßig erscheint er als `BENUTZERNAME@DEINE.DOMAIN`)
+- Nach erfolgreicher Anmeldung wird dein Account in der App hinzugefügt
+- Optional kannst du deinem Account einen **benutzerdefinierten Anzeigenamen** geben
+  (Standardmäßig erscheint er als `BENUTZERNAME@DEINE.DOMAIN`)
 
 <img src={require(".././img/set-up/custom-name.png").default} alt="Benutzerdefinierter Name" height="400"/>
