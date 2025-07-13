@@ -1,5 +1,5 @@
 ---
-title: "Web UI"
+title: 'Web UI'
 ---
 
 This is the next generation OpenCloud frontend.

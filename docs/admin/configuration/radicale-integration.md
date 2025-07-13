@@ -2,7 +2,7 @@
 sidebar_position: 12
 id: radicale-integration
 title: Calendar and Contacts Integration with Radicale
-description: "How to enable Calendar and Contacts integration via Radicale in OpenCloud."
+description: 'How to enable Calendar and Contacts integration via Radicale in OpenCloud.'
 ---
 
 OpenCloud is able to act as an authenticating reverse proxy for the open-source

@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: docker-compose-base
 title: Docker Compose
-description: "🌟 Full-blown featureset including web office."
+description: '🌟 Full-blown featureset including web office.'
 ---
 
 # OpenCloud with Docker Compose

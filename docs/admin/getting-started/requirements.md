@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: requirements
 title: Requirements
-description: "Runs on anything from a Raspberry Pi to a data center."
+description: 'Runs on anything from a Raspberry Pi to a data center.'
 ---
 
 | Category                    | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |

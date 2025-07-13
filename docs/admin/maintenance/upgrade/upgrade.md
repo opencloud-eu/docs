@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 id: update
-title: "Upgrade"
-description: "🔄 Keep your setup up to date with the latest features!"
+title: 'Upgrade'
+description: '🔄 Keep your setup up to date with the latest features!'
 ---
 
 import Tabs from '@theme/Tabs'

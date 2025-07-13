@@ -1,5 +1,4 @@
 module.exports = {
-    ...require('@opencloud-eu/prettier-config'),
-    singleQuote: false,
+    ...require("@opencloud-eu/prettier-config"),
     semi: true
-}
+};

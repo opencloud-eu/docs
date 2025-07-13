@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 id: lifecycle
-title: "Release Lifecycle"
+title: 'Release Lifecycle'
 draft: false
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Viewer and editor apps"
+title: 'Viewer and editor apps'
 sidebar_position: 1
 ---
 
@@ -22,18 +22,18 @@ To learn more about apps in general, please refer to the [Web app docs](./index.
 Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section](./index.md), so it may look like this:
 
 ```typescript
-import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from "@opencloud-eu/web-pkg";
-import translations from "../l10n/translations.json";
-import { useGettext } from "vue3-gettext";
-import { computed } from "vue";
+import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@opencloud-eu/web-pkg';
+import translations from '../l10n/translations.json';
+import { useGettext } from 'vue3-gettext';
+import { computed } from 'vue';
 
 // This is the base component of your app.
-import App from "./App.vue";
+import App from './App.vue';
 
 export default defineWebApplication({
   setup() {
     // The ID of your app.
-    const appId = "advanced-pdf-viewer";
+    const appId = 'advanced-pdf-viewer';
 
     const { $gettext } = useGettext();
 
@@ -41,14 +41,14 @@ export default defineWebApplication({
     // Later, this route will be bound to one or more file extensions.
     const routes = [
       {
-        name: "advanced-pdf-viewer",
-        path: "/:driveAliasAndItem(.*)?",
+        name: 'advanced-pdf-viewer',
+        path: '/:driveAliasAndItem(.*)?',
         component: AppWrapperRoute(App, {
           applicationId: appId
         }),
         meta: {
-          authContext: "hybrid",
-          title: $gettext("Advanced PDF Viewer"),
+          authContext: 'hybrid',
+          title: $gettext('Advanced PDF Viewer'),
           patchCleanPath: true
         }
       }
@@ -57,8 +57,8 @@ export default defineWebApplication({
     // if you want your app to be present in the app menu on the top left.
     const menuItems = computed<AppMenuItemExtension[]>(() => [
       {
-        label: () => $gettext("Advanced PDF Viewer"),
-        type: "appMenuItem",
+        label: () => $gettext('Advanced PDF Viewer'),
+        type: 'appMenuItem',
         handler: () => {
           // do stuff...
         }
@@ -67,20 +67,20 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: "Advanced PDF Viewer",
+        name: 'Advanced PDF Viewer',
         id: appId,
-        defaultExtension: "pdf",
+        defaultExtension: 'pdf',
         extensions: [
           // This makes sure all files with the "pdf" extension will be routed to your app when being opened.
           // See the `ApplicationFileExtension` interface down below for a list of all possible properties.
           {
-            extension: "pdf",
-            routeName: "advanced-pdf-viewer",
+            extension: 'pdf',
+            routeName: 'advanced-pdf-viewer',
 
             // Add this if you want your app to be present in the "New" file menu.
             newFileMenu: {
               menuTitle() {
-                return $gettext("PDF document");
+                return $gettext('PDF document');
               }
             }
           }

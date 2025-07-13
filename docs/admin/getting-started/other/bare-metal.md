@@ -2,7 +2,7 @@
 sidebar_position: 5
 id: bare-metal
 title: Bare-Metal
-description: "Manual, minimalist setup with essential features."
+description: 'Manual, minimalist setup with essential features.'
 ---
 
 ## User Guide for Installing OpenCloud

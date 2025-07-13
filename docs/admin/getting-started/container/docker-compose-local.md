@@ -2,7 +2,7 @@
 sidebar_position: 3
 id: docker-compose-local
 title: Docker Compose local
-description: "🌟 Full-blown featureset including web office and full-text search."
+description: '🌟 Full-blown featureset including web office and full-text search.'
 ---
 
 ## Guide for local installation

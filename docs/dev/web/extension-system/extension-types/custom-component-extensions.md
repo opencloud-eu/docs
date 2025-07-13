@@ -1,5 +1,5 @@
 ---
-title: "Custom component extensions"
+title: 'Custom component extensions'
 sidebar_position: 3
 id: custom-component-extensions
 ---
@@ -17,7 +17,7 @@ Here's what it looks like:
 ```typescript
 interface CustomComponentExtension {
   id: string;
-  type: "customComponent";
+  type: 'customComponent';
   extensionPointIds?: string[];
   content: Slot | Component;
 }
@@ -34,12 +34,12 @@ targeted at the `global-progress-bar` extension point as render target.
 
 ```typescript
 const extension = {
-  id: "com.github.opencloud-eu.web.app.progress-bars.nyan-cat",
-  type: "customComponent",
-  extensionPointIds: ["app.runtime.global-progress-bar"],
+  id: 'com.github.opencloud-eu.web.app.progress-bars.nyan-cat',
+  type: 'customComponent',
+  extensionPointIds: ['app.runtime.global-progress-bar'],
   content: (slots) => [h(NyanCat, slots)],
   userPreference: {
-    optionLabel: $gettext("Nyan Cat progress bar")
+    optionLabel: $gettext('Nyan Cat progress bar')
   }
 };
 ```

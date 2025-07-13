@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 id: release-notes
-title: "Release Notes"
+title: 'Release Notes'
 draft: false
 ---
 

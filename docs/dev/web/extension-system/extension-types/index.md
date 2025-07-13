@@ -1,5 +1,5 @@
 ---
-title: "Extension Types"
+title: 'Extension Types'
 ---
 
 This section is a guide about the different predefined extension types of OpenCloud Web. Please refer to the respective

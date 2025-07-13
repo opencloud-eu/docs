@@ -1,5 +1,5 @@
 ---
-title: "Action extensions"
+title: 'Action extensions'
 sidebar_position: 1
 id: action-extensions
 ---
@@ -15,7 +15,7 @@ This is what the `ActionExtension` interface looks like:
 ```typescript
 interface ActionExtension {
   id: string;
-  type: "action";
+  type: 'action';
   extensionPointIds?: string[];
   action: Action; // Please check the Action section below
 }
@@ -46,14 +46,14 @@ export const useDownloadFilesExtension = () => {
   const { $gettext } = useGettext();
 
   const extension = computed<ActionExtension>(() => ({
-    id: "com.github.opencloud-eu.web.files.download-action",
-    extensionPointIds: ["global.files.context-actions"],
-    type: "action",
+    id: 'com.github.opencloud-eu.web.files.download-action',
+    extensionPointIds: ['global.files.context-actions'],
+    type: 'action',
     action: {
-      name: "download-files",
-      icon: "download",
-      class: "oc-files-actions-download-files",
-      label: () => $gettext("Download"),
+      name: 'download-files',
+      icon: 'download',
+      class: 'oc-files-actions-download-files',
+      label: () => $gettext('Download'),
       isVisible: ({ space, resources }) => {
         if (resources.length === 0) {
           return false;
@@ -62,7 +62,7 @@ export const useDownloadFilesExtension = () => {
         return true;
       },
       handler: ({ space, resources }) => {
-        console.log("Triggering download...");
+        console.log('Triggering download...');
       }
     }
   }));
@@ -80,8 +80,8 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: $gettext("Download app"),
-        id: "download-app"
+        name: $gettext('Download app'),
+        id: 'download-app'
       },
       extensions: computed(() => [unref(extension)])
     };

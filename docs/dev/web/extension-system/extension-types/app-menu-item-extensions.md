@@ -1,5 +1,5 @@
 ---
-title: "Application menu item extensions"
+title: 'Application menu item extensions'
 sidebar_position: 2
 id: app-menu-item-extensions
 ---
@@ -15,7 +15,7 @@ The Interface for an `AppMenuItemExtension` looks like so:
 ```typescript
 interface AppMenuItemExtension {
   id: string;
-  type: "appMenuItem";
+  type: 'appMenuItem';
   extensionPointIds?: string[];
   label: () => string;
   color?: string;
@@ -47,23 +47,23 @@ The following example shows how an app creates an extension that registers an ap
 export default defineWebApplication({
   setup() {
     const { $gettext } = useGettext();
-    const appId = "my-cool-app";
+    const appId = 'my-cool-app';
 
     const menuItems = computed<AppMenuItemExtension[]>(() => [
       {
-        id: "com.github.opencloud-eu.web.my-cool-app.menu-item",
-        type: "appMenuItem",
-        label: () => $gettext("My cool app"),
+        id: 'com.github.opencloud-eu.web.my-cool-app.menu-item',
+        type: 'appMenuItem',
+        label: () => $gettext('My cool app'),
         path: urlJoin(appId),
-        icon: "star",
-        color: "#0D856F",
+        icon: 'star',
+        color: '#0D856F',
         priority: 60
       }
     ]);
 
     return {
       appInfo: {
-        name: $gettext("My cool app"),
+        name: $gettext('My cool app'),
         id: appId
       },
       extensions: menuItems

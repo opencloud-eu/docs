@@ -1,5 +1,5 @@
 ---
-title: "End-to-End (E2E) Test Standards"
+title: 'End-to-End (E2E) Test Standards'
 sidebar_position: 2
 id: e2e-testing-standards
 ---
@@ -70,7 +70,7 @@ await raiseCharge();
 
 // assert, verify that the action had the expected outcome
 // confirm charge has been raised
-expect(charge).toBe("raised");
+expect(charge).toBe('raised');
 ```
 
 ## Page Object Model (POM)
@@ -88,23 +88,23 @@ DO 👍
 // add all locators and functions related to the page.
 // allowing all tests to reuse
 
-import { expect, Locator, Page } from "@playwright/test";
+import { expect, Locator, Page } from '@playwright/test';
 
 export class FooPage {
   readonly errorMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.errorMessage = page.locator(".error-message");
+    this.errorMessage = page.locator('.error-message');
   }
 }
 
 // test file './steps/foo.ts'
-import { FooPage } from "./pageObjects/foo";
+import { FooPage } from './pageObjects/foo';
 
 let fooPage: FooPage;
 
-Then("error message should be visible", async function ({ page }) {
+Then('error message should be visible', async function ({ page }) {
   const fooPage = new FooPage({ page });
   await expect(fooPage.errorMessage).toBeVisible();
 });
@@ -115,10 +115,10 @@ DO NOT ⚔️
 ```typescript
 // test file './steps/foo.ts'
 // include locators directly in test
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page } from '@playwright/test';
 
-Then("error message should be visible", async function ({ page }) {
-  await expect(page.locator(".error-message")).toBeVisible();
+Then('error message should be visible', async function ({ page }) {
+  await expect(page.locator('.error-message')).toBeVisible();
 });
 ```
 
@@ -138,14 +138,14 @@ DO 👍
 
 ```typescript
 await page.goto(fooBarURL, {
-  waitUntil: "domcontentloaded"
+  waitUntil: 'domcontentloaded'
 });
 ```
 
 DO 👍
 
 ```typescript
-const element = page.locator("some-locator-path");
+const element = page.locator('some-locator-path');
 element.waitFor({ visible: true });
 ```
 
@@ -171,14 +171,14 @@ Instead, we can prioritize the below, based on [testing-library guiding principl
 DO NOT ⚔️
 
 ```javascript
-page.locator(".opt-u > div > .summary > div:nth-child(4) > div");
+page.locator('.opt-u > div > .summary > div:nth-child(4) > div');
 ```
 
 DO 👍
 
 ```javascript
-page.locator("#foo-button");
-page.getByText("OK");
+page.locator('#foo-button');
+page.getByText('OK');
 ```
 
 ## Naming Conventions
@@ -232,14 +232,14 @@ DO 👍
 
 ```typescript
 // This element is a submit button for the user registration form
-const submitButton = await page.locator("<locator-path>");
+const submitButton = await page.locator('<locator-path>');
 ```
 
 DO 👍
 
 ```typescript
 // This element is a button for uploading a profile picture
-const uploadProfilePictureButton = await page.locator("<locator-path>");
+const uploadProfilePictureButton = await page.locator('<locator-path>');
 ```
 
 ### Function names

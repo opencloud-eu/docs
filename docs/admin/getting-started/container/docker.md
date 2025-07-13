@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: docker
 title: Docker
-description: "Classic docker setup."
+description: 'Classic docker setup.'
 ---
 
 # Docker

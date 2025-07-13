@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 id: migrate
-title: "Migrate"
-description:: "Guide to migrating data using rclone."
+title: 'Migrate'
+description:: 'Guide to migrating data using rclone.'
 ---
 
 import Tabs from '@theme/Tabs'

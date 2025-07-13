@@ -1,8 +1,8 @@
 ---
 sidebar_position: 4
 id: uninstall
-title: "Uninstall"
-description:: "Guide to uninstall OpenCloud."
+title: 'Uninstall'
+description:: 'Guide to uninstall OpenCloud.'
 ---
 
 # Uninstall OpenCloud with Docker Compose
