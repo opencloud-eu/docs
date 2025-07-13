@@ -9,6 +9,11 @@ steps:
     image: quay.io/thegeeklab/git-batch
     commands:
       - git batch -vv
+  - name: format-check
+    image: owncloudci/nodejs:20
+    commands:
+      - pnpm install
+      - pnpm format:check
   - name: build
     image: owncloudci/nodejs:20
     commands:
