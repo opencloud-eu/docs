@@ -14,6 +14,11 @@ steps:
     commands:
       - pnpm install
       - pnpm format:check
+  - name: lint-md
+    image: owncloudci/nodejs:20
+    commands:
+      - pnpm install
+      - pnpm lint:md
   - name: build
     image: owncloudci/nodejs:20
     commands:
