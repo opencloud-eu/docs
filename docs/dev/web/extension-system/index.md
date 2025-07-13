@@ -1,5 +1,5 @@
 ---
-title: 'Extension system'
+title: "Extension system"
 ---
 
 ## Concepts and Building Blocks

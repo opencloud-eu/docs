@@ -1,5 +1,5 @@
 ---
-title: 'Left sidebar menu item extensions'
+title: "Left sidebar menu item extensions"
 sidebar_position: 5
 id: left-sidebar-menu-item-extensions
 ---
@@ -45,19 +45,19 @@ export const useCustomPageExtension = () => {
   const { $gettext } = useGettext();
 
   const extension = computed<SidebarNavExtension>(() => ({
-    id: 'com.github.opencloud-eu.web.files.left-nav.custom-page',
-    extensionPointIds: ['app.files.navItems'],
-    type: 'sidebarNav',
+    id: "com.github.opencloud-eu.web.files.left-nav.custom-page",
+    extensionPointIds: ["app.files.navItems"],
+    type: "sidebarNav",
     action: {
-      name: $gettext('Custom page'),
-      icon: 'world',
+      name: $gettext("Custom page"),
+      icon: "world",
       priority: 100,
       isActive: () => true,
       isVisible: () => true,
       route: {
-        path: '/files/custom-page'
+        path: "/files/custom-page"
       },
-      activeFor: [{ path: '/files/custom-page' }]
+      activeFor: [{ path: "/files/custom-page" }]
     }
   }));
 
@@ -74,15 +74,15 @@ export default defineWebApplication({
 
     return {
       appInfo: {
-        name: $gettext('Custom page app'),
-        id: 'custom-page-app'
+        name: $gettext("Custom page app"),
+        id: "custom-page-app"
       },
       routes: {
-        path: '/files/custom-page',
-        name: 'files-custom-page',
+        path: "/files/custom-page",
+        name: "files-custom-page",
         component: CustomPageComponent,
         meta: {
-          title: $gettext('Custom Page')
+          title: $gettext("Custom Page")
         }
       },
       extensions: computed(() => [unref(extension)])

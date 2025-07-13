@@ -1,5 +1,5 @@
 ---
-title: 'Repo structure and (published) packages'
+title: "Repo structure and (published) packages"
 sidebar_position: 2
 id: repo-structure
 ---
