@@ -16,7 +16,9 @@
     "build-likec4": "likec4 build ./assets/likec4 --base /likec4 -o ./static/likec4",
     "build-git-batch": "docker run --rm -w $(pwd) -v $(pwd):$(pwd)  quay.io/thegeeklab/git-batch",
     "format:check": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "lint:md": "markdownlint-cli2  '**/*.{md,markdown}'",
+    "lint:md:fix": "markdownlint-cli2 --fix '**/*.{md,markdown}'"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
@@ -37,6 +39,7 @@
     "@docusaurus/types": "3.7.0",
     "@opencloud-eu/prettier-config": "^3.1.0",
     "likec4": "^1.30.0",
+    "markdownlint-cli2": "^0.18.1",
     "prettier": "^3.6.2",
     "raw-loader": "^4.0.2",
     "typescript": "~5.6.3"
