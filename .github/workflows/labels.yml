@@ -1,0 +1,25 @@
+name: Require Pull Request Labels
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+jobs:
+  label:
+    # Only run if PR is not from a fork
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: mheap/github-action-required-labels@v5
+        with:
+          mode: minimum
+          count: 1
+          labels: |
+            Docs:Admin
+            Docs:Breaking-Change
+            Docs:Build&Tools
+            Docs:Developer
+            Docs:Guides
+            Docs:User
+          add_comment: true
