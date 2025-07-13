@@ -1,3 +1,5 @@
 {
-  "default": true
+  "default": true,
+  "MD013": false, // Disable MD013 to allow long lines
+  "MD033": false // Disable MD033 to allow inline HTML
 }
