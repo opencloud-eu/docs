@@ -61,16 +61,16 @@ Consider including comments defining each section to ease readability.
 ```typescript
 // arrange, set up the initial conditions for the test
 // create a property
-await createProperty()
+await createProperty();
 
 // act, perform the action that you want to test
 // raise a charge
 // this could involve calling methods or functions defined in your page objects
-await raiseCharge()
+await raiseCharge();
 
 // assert, verify that the action had the expected outcome
 // confirm charge has been raised
-expect(charge).toBe("raised")
+expect(charge).toBe("raised");
 ```
 
 ## Page Object Model (POM)
@@ -88,26 +88,26 @@ DO 👍
 // add all locators and functions related to the page.
 // allowing all tests to reuse
 
-import { expect, Locator, Page } from "@playwright/test"
+import { expect, Locator, Page } from "@playwright/test";
 
 export class FooPage {
-  readonly errorMessage: Locator
+  readonly errorMessage: Locator;
 
   constructor(page: Page) {
-    this.page = page
-    this.errorMessage = page.locator(".error-message")
+    this.page = page;
+    this.errorMessage = page.locator(".error-message");
   }
 }
 
 // test file './steps/foo.ts'
-import { FooPage } from "./pageObjects/foo"
+import { FooPage } from "./pageObjects/foo";
 
-let fooPage: FooPage
+let fooPage: FooPage;
 
 Then("error message should be visible", async function ({ page }) {
-  const fooPage = new FooPage({ page })
-  await expect(fooPage.errorMessage).toBeVisible()
-})
+  const fooPage = new FooPage({ page });
+  await expect(fooPage.errorMessage).toBeVisible();
+});
 ```
 
 DO NOT ⚔️
@@ -115,11 +115,11 @@ DO NOT ⚔️
 ```typescript
 // test file './steps/foo.ts'
 // include locators directly in test
-import { Locator, Page } from "@playwright/test"
+import { Locator, Page } from "@playwright/test";
 
 Then("error message should be visible", async function ({ page }) {
-  await expect(page.locator(".error-message")).toBeVisible()
-})
+  await expect(page.locator(".error-message")).toBeVisible();
+});
 ```
 
 ## Waiting:
@@ -129,7 +129,7 @@ Playwright uses auto-waiting, so we avoid artificial waiting, the exception bein
 DO NOT ⚔️
 
 ```typescript
-await page.waitForTimeout(5000)
+await page.waitForTimeout(5000);
 ```
 
 This can cause flaky tests as we can rarely be certain the amount of wait time is enough. It can also unnecessarily increase the test run time. Instead, we can try:
@@ -139,21 +139,21 @@ DO 👍
 ```typescript
 await page.goto(fooBarURL, {
   waitUntil: "domcontentloaded"
-})
+});
 ```
 
 DO 👍
 
 ```typescript
-const element = page.locator("some-locator-path")
-element.waitFor({ visible: true })
+const element = page.locator("some-locator-path");
+element.waitFor({ visible: true });
 ```
 
 DO 👍
 
 ```typescript
-await fooPage.buttonFoo.click()
-await expect(fooPage.titlePage).toBeVisible()
+await fooPage.buttonFoo.click();
+await expect(fooPage.titlePage).toBeVisible();
 ```
 
 ## Selectors
@@ -171,14 +171,14 @@ Instead, we can prioritize the below, based on [testing-library guiding principl
 DO NOT ⚔️
 
 ```javascript
-page.locator(".opt-u > div > .summary > div:nth-child(4) > div")
+page.locator(".opt-u > div > .summary > div:nth-child(4) > div");
 ```
 
 DO 👍
 
 ```javascript
-page.locator("#foo-button")
-page.getByText("OK")
+page.locator("#foo-button");
+page.getByText("OK");
 ```
 
 ## Naming Conventions
@@ -197,7 +197,7 @@ Declare in **_camelCase_**.
 Start with ‘is’, ‘has’, ‘are’, ‘have’. This helps spot that this is a boolean while skimming the code. Still declared in **_camelCase_**.
 
 ```typescript
-let isTurnedOn = false
+let isTurnedOn = false;
 ```
 
 ### Page Objects / Classes
@@ -232,14 +232,14 @@ DO 👍
 
 ```typescript
 // This element is a submit button for the user registration form
-const submitButton = await page.locator("<locator-path>")
+const submitButton = await page.locator("<locator-path>");
 ```
 
 DO 👍
 
 ```typescript
 // This element is a button for uploading a profile picture
-const uploadProfilePictureButton = await page.locator("<locator-path>")
+const uploadProfilePictureButton = await page.locator("<locator-path>");
 ```
 
 ### Function names
@@ -249,9 +249,9 @@ Always start function names with a **_“verb”_**, followed by the **_“compo
 DO 👍
 
 ```typescript
-getWorksOrder()
-printTransactions()
-deleteProperty()
+getWorksOrder();
+printTransactions();
+deleteProperty();
 ```
 
 ## Gherkin Best Practices: Do's and Don'ts for Effective Features & Scenarios

@@ -16,10 +16,10 @@ Here's what it looks like:
 
 ```typescript
 interface CustomComponentExtension {
-  id: string
-  type: "customComponent"
-  extensionPointIds?: string[]
-  content: Slot | Component
+  id: string;
+  type: "customComponent";
+  extensionPointIds?: string[];
+  content: Slot | Component;
 }
 ```
 
@@ -41,7 +41,7 @@ const extension = {
   userPreference: {
     optionLabel: $gettext("Nyan Cat progress bar")
   }
-}
+};
 ```
 
 The `content` property in this example can also be defined as `content: NyanCat`.
