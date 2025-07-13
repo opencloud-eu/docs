@@ -16,10 +16,10 @@ jobs:
           mode: minimum
           count: 1
           labels: |
+            Docs:User
             Docs:Admin
+            Docs:Developer
             Docs:Breaking-Change
             Docs:Build&Tools
-            Docs:Developer
             Docs:Guides
-            Docs:User
           add_comment: true
