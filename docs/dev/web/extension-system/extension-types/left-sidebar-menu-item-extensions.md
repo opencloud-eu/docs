@@ -42,7 +42,7 @@ The following example shows an extension that adds a left sidebar nav item insid
 
 ```typescript
 export const useCustomPageExtension = () => {
-  const { $gettext } = useGettext()
+  const { $gettext } = useGettext();
 
   const extension = computed<SidebarNavExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.left-nav.custom-page',
@@ -59,10 +59,10 @@ export const useCustomPageExtension = () => {
       },
       activeFor: [{ path: '/files/custom-page' }]
     }
-  }))
+  }));
 
-  return { extension }
-}
+  return { extension };
+};
 ```
 
 The extension could then be registered in any app like so:
@@ -70,7 +70,7 @@ The extension could then be registered in any app like so:
 ```typescript
 export default defineWebApplication({
   setup() {
-    const { extension } = useCustomPageExtension()
+    const { extension } = useCustomPageExtension();
 
     return {
       appInfo: {
@@ -86,7 +86,7 @@ export default defineWebApplication({
         }
       },
       extensions: computed(() => [unref(extension)])
-    }
+    };
   }
-})
+});
 ```

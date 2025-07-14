@@ -12,32 +12,38 @@ title: Synchronisations Einstellungen
 
 <!-- <img src={require("./img/sync-settings/sync-settings-three-dot.png").default} alt="Admin spaces" width="400"/> -->
 
-4. Wählen Sie eine der folgenden Optionen:  
+4. Wählen Sie eine der folgenden Optionen:
 
 ## **Synchronisationsoptionen**
 
 <!-- <img src={require("./img/sync-settings/sync-settings-menu.png").default}  width="400"/> -->
 
 ### Im Finder anzeigen
+
 - Öffnet den ausgewählten Space direkt in Ihrem **File Explorer (Windows)** oder **Finder (Mac)**
 
 ### Im Webbrowser anzeigen
+
 - Öffnet den Bereich in Ihrem **Webbrowser**
 - Wenn Sie nicht eingeloggt sind, müssen Sie sich eventuell erst **anmelden**
 
 ### Synchronisierung jetzt erzwingen
+
 - Erzwingt manuell eine **sofortige Synchronisation** des Spaces
 - Nützlich, wenn Sie sicherstellen wollen, dass alle Änderungen sofort hochgeladen/heruntergeladen werden
 
 ### Synchronisierung anhalten
-- **Stoppt** vorübergehend die **Synchronisation** für den Space.  
+
+- **Stoppt** vorübergehend die **Synchronisation** für den Space.
 - Kann jederzeit durch Auswahl von **Synchronisation fortsetzen** wieder aufgenommen werden.
 
 ### Sync-Ordner-Verbindung entfernen
+
 - Stoppt die Synchronisierung des Spaces, löscht aber **keine lokalen Dateien**
 - Der Space verbleibt auf dem Server, und Sie können ihn später wieder hinzufügen
 
 ### Auswählen, was synchronisiert werden soll
+
 - Öffnet ein Fenster, in dem Sie **bestimmte Ordner** aus dem Space auswählen können, die synchronisiert werden sollen
 - Hilft **Speicherplatz zu sparen**, indem nur notwendige Dateien synchronisiert werden
 
@@ -47,5 +53,6 @@ title: Synchronisations Einstellungen
 
 ---
 
-### **Tipp**  
+### **Tipp**
+
 Durch die Anpassung dieser Einstellungen können Sie **den Speicherplatz und die Netzwerknutzung** optimieren und sicherstellen, dass nur die Dateien synchronisiert werden, die Sie benötigen.

@@ -32,7 +32,7 @@ draft: true
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>6. Files List</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows the contents of the current folder as a list of files and folders.</li>
-    
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>7. Add button</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens options to upload files, create folders, or add new content.</li>
 
@@ -41,7 +41,7 @@ draft: true
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>9. Shares</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows switch quick to shares list.</li>
-    
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Spaces</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows switch quick to spaces list.</li>
 
@@ -50,7 +50,7 @@ draft: true
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>12. Offline</strong></li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows switch quick to a list witch files and folders are offline available.</li>
+
   </ul>
 
 </div>
-

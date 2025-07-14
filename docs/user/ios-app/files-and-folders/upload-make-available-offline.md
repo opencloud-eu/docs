@@ -20,13 +20,12 @@ Navigate to the folder where you want to upload a file.
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus Button" height="400"/>
 
-
 ### 3. Choose an Upload Option
 
 From the menu, you can choose:
 
 - **"Upload file"** – upload a file from your device's Files app
-- **"Upload from your photo library"** – upload an existing photo or video from your media library  
+- **"Upload from your photo library"** – upload an existing photo or video from your media library
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload Options" height="400"/>
 
@@ -60,7 +59,7 @@ The file will be downloaded and stored locally on your device.
 
 To free up space:
 
-- Tap the three dots (⋯) again on an offline file  
+- Tap the three dots (⋯) again on an offline file
 - Select **“Remove offline access”**
 
 ---

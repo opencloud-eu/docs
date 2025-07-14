@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 id: update
-title: "Upgrade"
-description: "🔄 Keep your setup up to date with the latest features!"
+title: 'Upgrade'
+description: '🔄 Keep your setup up to date with the latest features!'
 ---
 
 import Tabs from '@theme/Tabs'
@@ -33,8 +33,6 @@ Stop the currently running OpenCloud instance:
 
 It is recommended to create a [backup](../backup.md) before proceeding with the upgrade.
 
-
-
 ---
 
 ### 3. Pull the new Opencloud version
@@ -50,6 +48,7 @@ docker pull opencloudeu/opencloud:{tag}
 If upgrading from an older release, check for required configuration changes:
 
 Go inside the container:
+
 ```Shell
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
 ```
@@ -92,4 +91,5 @@ If you see `no changes, your config is up to date`, no further action is needed.
 ---
 
 ### 6. Conclusion
+
 Make sure that all previously created data, users, shared files, public links exist.

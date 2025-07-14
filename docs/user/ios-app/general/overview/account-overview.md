@@ -44,10 +44,10 @@ draft: false
 
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**10. Add Account Menue Item**</li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Lets the user add a new account to the application</li>
-    
+
     <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**11. Settings Menue Item**</li>
     <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the general settings and configuration options</li>
+
   </ul>
 
 </div>
-

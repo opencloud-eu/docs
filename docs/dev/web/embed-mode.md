@@ -39,15 +39,15 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return
+      return;
     }
 
-    const resources = event.data.data
+    const resources = event.data.data;
 
-    doSomethingWithSelectedResources(resources)
+    doSomethingWithSelectedResources(resources);
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener('message', selectEventHandler);
 </script>
 ```
 
@@ -59,22 +59,20 @@ In special scenarios you also want the user to set a file name, this can be achi
 ### Example
 
 ```html
-<iframe
-  src="https://my-opencloud-web-instance?embed=true&embed-target=location"
-></iframe>
+<iframe src="https://my-opencloud-web-instance?embed=true&embed-target=location"></iframe>
 
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return
+      return;
     }
 
-    const resources = event.data.data[0]
+    const resources = event.data.data[0];
 
-    doSomethingWithSelectedResources(resources)
+    doSomethingWithSelectedResources(resources);
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener('message', selectEventHandler);
 </script>
 ```
 
@@ -96,15 +94,15 @@ combination of both. If the embed-file-types parameter is not provided, all file
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:file-pick') {
-      return
+      return;
     }
 
-    const file = event.data.data
+    const file = event.data.data;
 
-    doSomethingWithPickedFile(file)
+    doSomethingWithPickedFile(file);
   }
 
-  window.addEventListener('message', selectEventHandler)
+  window.addEventListener('message', selectEventHandler);
 </script>
 ```
 

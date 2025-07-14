@@ -9,37 +9,39 @@ title: Set up OpenCloud Desktop
 Follow these simple steps to install and configure your OpenCloud Desktop and start syncing your files effortlessly.
 
 ## Enter the Server URL
-- Open your **OpenCloud Desktop** 
+
+- Open your **OpenCloud Desktop**
 - Enter the URL of your OpenCloud instance
 - Click **"Continue"**
 
 <img src={require("./img/set-up/set-up-enter-url.png").default} alt="enter URL" width="400"/>
 
-
 ## Log In via Web Browser
+
 - Click **"Open web browser"** to log in automatically
 - Alternatively, copy the provided URL and paste it into your browser manually
 
 <img src={require("./img/set-up/set-up-login.png").default} alt="open browser to login" width="400"/>
 
-
 ## Enter Your Credentials
+
 - Enter your **username** and **password**
 - Click **"Login"**
 
 <img src={require("./img/set-up/set-up-user-password.png").default} alt="enter credentials" width="400"/>
 
-
 ## Grant Access
-- Accept the access request to link your account with OpenCloud Desktop.  
+
+- Accept the access request to link your account with OpenCloud Desktop.
 
 <img src={require("./img/set-up/set-up-accept-access.png").default} alt="grand access" width="400"/>
 
-
 ## Finalize Setup
+
 ### Optional Advanced Configuration:
-- Choose whether to **sync all files** or **select specific folders** (this can be adjusted later).  
-- Change the **local download directory** where your files will be stored.  
+
+- Choose whether to **sync all files** or **select specific folders** (this can be adjusted later).
+- Change the **local download directory** where your files will be stored.
 
 <img src={require("./img/set-up/set-up-advanced-configuration.png").default} alt="finalize setup" width="400"/>
 
@@ -48,5 +50,6 @@ Once you're ready, click **Done** to complete the setup.
 <img src={require("./img/set-up/set-up-all-set.png").default} alt="all set" width="400"/>
 
 ## Congratulations!
+
 **OpenCloud Desktop** is now successfully set up.  
-You can start syncing your files seamlessly between your device and the OpenCloud server! 
+You can start syncing your files seamlessly between your device and the OpenCloud server!

@@ -4,7 +4,6 @@ id: features
 title: Features
 ---
 
-
 ## **🚀 Key Features at a Glance**
 
 - **Seamless File Synchronization**: Access your files across all devices.

@@ -14,10 +14,10 @@ This is what the `ActionExtension` interface looks like:
 
 ```typescript
 interface ActionExtension {
-  id: string
-  type: 'action'
-  extensionPointIds?: string[]
-  action: Action // Please check the Action section below
+  id: string;
+  type: 'action';
+  extensionPointIds?: string[];
+  action: Action; // Please check the Action section below
 }
 ```
 
@@ -43,7 +43,7 @@ The following example shows how an action extension for downloading files could 
 
 ```typescript
 export const useDownloadFilesExtension = () => {
-  const { $gettext } = useGettext()
+  const { $gettext } = useGettext();
 
   const extension = computed<ActionExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.download-action',
@@ -56,19 +56,19 @@ export const useDownloadFilesExtension = () => {
       label: () => $gettext('Download'),
       isVisible: ({ space, resources }) => {
         if (resources.length === 0) {
-          return false
+          return false;
         }
 
-        return true
+        return true;
       },
       handler: ({ space, resources }) => {
-        console.log('Triggering download...')
+        console.log('Triggering download...');
       }
     }
-  }))
+  }));
 
-  return { extension }
-}
+  return { extension };
+};
 ```
 
 The extension could then be registered in any app like so:
@@ -76,7 +76,7 @@ The extension could then be registered in any app like so:
 ```typescript
 export default defineWebApplication({
   setup() {
-    const { extension } = useFileActionDownloadFiles()
+    const { extension } = useFileActionDownloadFiles();
 
     return {
       appInfo: {
@@ -84,7 +84,7 @@ export default defineWebApplication({
         id: 'download-app'
       },
       extensions: computed(() => [unref(extension)])
-    }
+    };
   }
-})
+});
 ```

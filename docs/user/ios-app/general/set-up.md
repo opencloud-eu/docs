@@ -16,10 +16,9 @@ After installing the app, you can now set up your OpenCloud account.
 <img src={require(".././img/set-up/start-setup.png").default} alt="start setup" height="400"/>
 <img src={require(".././img/set-up/add-additional-account.png").default} alt="add additional account" height="400"/>
 
-
 ### 2. Enter Your Server URL
 
-- Enter your **OpenCloud Server URL** (e.g., `https://cloud.example.com`)  
+- Enter your **OpenCloud Server URL** (e.g., `https://cloud.example.com`)
 - Tap **"Proceed"** to continue.
 
 <img src={require(".././img/set-up/enter-server-url.png").default} alt="enter server URL" height="400"/>

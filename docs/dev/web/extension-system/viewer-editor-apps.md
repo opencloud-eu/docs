@@ -22,24 +22,20 @@ To learn more about apps in general, please refer to the [Web app docs](./index.
 Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section](./index.md), so it may look like this:
 
 ```typescript
-import {
-  AppWrapperRoute,
-  defineWebApplication,
-  AppMenuItemExtension
-} from '@opencloud-eu/web-pkg'
-import translations from '../l10n/translations.json'
-import { useGettext } from 'vue3-gettext'
-import { computed } from 'vue'
+import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@opencloud-eu/web-pkg';
+import translations from '../l10n/translations.json';
+import { useGettext } from 'vue3-gettext';
+import { computed } from 'vue';
 
 // This is the base component of your app.
-import App from './App.vue'
+import App from './App.vue';
 
 export default defineWebApplication({
   setup() {
     // The ID of your app.
-    const appId = 'advanced-pdf-viewer'
+    const appId = 'advanced-pdf-viewer';
 
-    const { $gettext } = useGettext()
+    const { $gettext } = useGettext();
 
     // This creates a route under which your app can be opened.
     // Later, this route will be bound to one or more file extensions.
@@ -56,7 +52,7 @@ export default defineWebApplication({
           patchCleanPath: true
         }
       }
-    ]
+    ];
 
     // if you want your app to be present in the app menu on the top left.
     const menuItems = computed<AppMenuItemExtension[]>(() => [
@@ -67,7 +63,7 @@ export default defineWebApplication({
           // do stuff...
         }
       }
-    ])
+    ]);
 
     return {
       appInfo: {
@@ -84,7 +80,7 @@ export default defineWebApplication({
             // Add this if you want your app to be present in the "New" file menu.
             newFileMenu: {
               menuTitle() {
-                return $gettext('PDF document')
+                return $gettext('PDF document');
               }
             }
           }
@@ -93,28 +89,28 @@ export default defineWebApplication({
       routes,
       translations,
       extensions: menuItems
-    }
+    };
   }
-})
+});
 ```
 
 Here is the interface defining the `extensions` property of the `appInfo` object.
 
 ```typescript
 interface ApplicationFileExtension {
-  app?: string
-  extension?: string
+  app?: string;
+  extension?: string;
   createFileHandler?: (arg: {
-    fileName: string
-    space: SpaceResource
-    currentFolder: Resource
-  }) => Promise<Resource>
-  hasPriority?: boolean
-  label?: string
-  name?: string
-  icon?: string
-  mimeType?: string
-  newFileMenu?: { menuTitle: () => string }
-  routeName?: string
+    fileName: string;
+    space: SpaceResource;
+    currentFolder: Resource;
+  }) => Promise<Resource>;
+  hasPriority?: boolean;
+  label?: string;
+  name?: string;
+  icon?: string;
+  mimeType?: string;
+  newFileMenu?: { menuTitle: () => string };
+  routeName?: string;
 }
 ```

@@ -60,18 +60,18 @@ for an example.
 
 ```yaml
 role_assignment:
-    driver: oidc
-    oidc_role_mapper:
-        role_claim: opencloudRoles
-        role_mapping:
-            - role_name: admin
-              claim_value: myAdminRole
-            - role_name: spaceadmin
-              claim_value: mySpaceAdminRole
-            - role_name: user
-              claim_value: myUserRole
-            - role_name: guest
-              claim_value: myGuestRole
+  driver: oidc
+  oidc_role_mapper:
+    role_claim: opencloudRoles
+    role_mapping:
+      - role_name: admin
+        claim_value: myAdminRole
+      - role_name: spaceadmin
+        claim_value: mySpaceAdminRole
+      - role_name: user
+        claim_value: myUserRole
+      - role_name: guest
+        claim_value: myGuestRole
 ```
 
 This would assign the role `admin` to users with the value `myAdminRole` in the claim `opencloudRoles`.
@@ -115,7 +115,7 @@ The web client is used for browser-based access to OpenCloud:
 
 - **Client ID**: `web`
 - **Client Type**: Public client
-- **Redirect URIs**: 
+- **Redirect URIs**:
   - `https://your-domain.example.com/`
   - `https://your-domain.example.com/oidc-callback.html`
   - `https://your-domain.example.com/oidc-silent-redirect.html`

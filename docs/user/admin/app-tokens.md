@@ -1,9 +1,9 @@
 ---
-
 sidebar_position: 2
 id: app-tokens
 title: App Tokens
 ---
+
 ## 🔑 App Tokens
 
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
@@ -53,4 +53,3 @@ If a token is no longer needed:
 This ensures unused tokens cannot be misused.
 
 > ✅ Use App Tokens for better security and control when connecting external services.
-

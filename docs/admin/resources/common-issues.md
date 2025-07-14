@@ -32,7 +32,6 @@ Confirm the risk with **Accept the risk and Continue**
 
 <img src={require("./img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500"/>
 
-
 ---
 
 ### Docker Permission Issues
@@ -117,6 +116,7 @@ Use the following command to reset the password:
 ```bash
 sudo docker run -it --rm -v <opencloud-data-path>:/var/lib/opencloud -v <opencloud-config-path>:/etc/opencloud opencloudeu/opencloud:<opencloud-version> idm resetpassword
 ```
+
 Replace:
 
 `<opencloud-data-path>` – Docker volume for OpenCloud data
@@ -148,4 +148,4 @@ sudo docker run -it --rm -v opencloud_full_opencloud-data:/var/lib/opencloud -v 
 
 ```bash
 docker compose up -d
-``` 
+```

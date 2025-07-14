@@ -21,18 +21,23 @@ Set the global log level using the `OPEN_CLOUD_LOG_LEVEL` environment variable. 
 ## The log levels are:
 
 ### FATAL
+
 Critical issues that cause the application to shut down — such as config errors or missing dependencies.
 
 ### ERROR
+
 Severe problems that block proper operation and require admin attention.
 
 ### WARN
+
 Unexpected conditions that don’t stop the app but may need investigation.
 
 ### INFO
+
 Routine events that confirm expected behavior and operation.
 
 ### DEBUG
+
 Highly detailed messages for diagnosing problems. Use cautiously in production due to verbosity.
 
 ---
@@ -47,3 +52,4 @@ To manually test with `curl`, add:
 
 ```bash
 --header "X-Request-ID: <your-id>"
+```

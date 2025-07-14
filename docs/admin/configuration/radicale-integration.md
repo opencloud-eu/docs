@@ -2,7 +2,7 @@
 sidebar_position: 12
 id: radicale-integration
 title: Calendar and Contacts Integration with Radicale
-description: "How to enable Calendar and Contacts integration via Radicale in OpenCloud."
+description: 'How to enable Calendar and Contacts integration via Radicale in OpenCloud.'
 ---
 
 OpenCloud is able to act as an authenticating reverse proxy for the open-source
@@ -13,14 +13,12 @@ used with a wide selection of desktop- and mobile clients without hassle.
 The `opencloud_full` deployment example already contains all the required pieces to
 setup the integration. This guide explains the required steps to achieve that.
 
-
 :::note
 The calendar and contacts feature is - until further notice - intended for
 non-customers, i.e. please note that it is not covered under our business
 license, and we do not provide professional support for it. This means that
 this feature is maintained and supported on best effort without warranty.
 :::
-
 
 ## Setting up Calendar and Contacts Integration with Radicale
 
@@ -30,7 +28,7 @@ deployment based on the `opencloud_full` deployment example.
 
 ### 1. Configure the `.env` file to deploy Radicale
 
-In the root directory of the `opencloud_full` deployment example, usually `opencloud/deployments/examples/opencloud_full`, 
+In the root directory of the `opencloud_full` deployment example, usually `opencloud/deployments/examples/opencloud_full`,
 remove the `#` symbol from the line:
 
 ```
