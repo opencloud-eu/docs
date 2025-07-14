@@ -53,4 +53,4 @@ src={require("./img/intern/sidebar-window.png").default} alt="sidebar window" wi
 
 ---
 
-**Now you know how you share files and folders within your organization and manage access accordingly** <br/>
+Now you know how you share files and folders within your organization and manage access accordingly
