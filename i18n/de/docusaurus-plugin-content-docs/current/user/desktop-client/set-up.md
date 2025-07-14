@@ -6,7 +6,8 @@ title: Einrichten von OpenCloud Desktop
 
 # Einrichten von OpenCloud Desktop
 
-Folgen Sie diesen einfachen Schritten, um OpenCloud Desktop zu installieren und zu konfigurieren und Ihre Dateien mühelos zu synchronisieren.
+Folgen Sie diesen einfachen Schritten, um OpenCloud Desktop zu installieren und zu konfigurieren und Ihre Dateien
+mühelos zu synchronisieren.
 
 ## Eingabe der Server-URL
 
@@ -40,7 +41,8 @@ Folgen Sie diesen einfachen Schritten, um OpenCloud Desktop zu installieren und 
 
 ### Optionale erweiterte Konfiguration
 
-- Wählen Sie, ob Sie **alle Dateien** synchronisieren oder **bestimmte Ordner** auswählen möchten (dies kann später angepasst werden).
+- Wählen Sie, ob Sie **alle Dateien** synchronisieren oder **bestimmte Ordner** auswählen möchten (dies kann später
+  angepasst werden).
 - Ändern Sie das **lokale Download-Verzeichnis**, in dem Ihre Dateien gespeichert werden sollen.
 
 <!--<img src={require("./img/set-up/set-up-advanced-configuration.png").default} alt="finalize setup" width="400"/> -->

@@ -16,15 +16,14 @@ title: Space umbenennen
 
 ### **Kontextmenü öffnen**
 
-- Klicken Sie auf das **Drei-Punkte-Menü** oder machen Sie einen **Rechtsklick** auf den Raum in der Raumübersicht und wählen Sie **Umbenennen**.
-  <img src={require("./img/rename/umbenennen-button.png").default} alt="Rename" width="19200"/>
-  <br/><br/>
+- Klicken Sie auf das **Drei-Punkte-Menü** oder machen Sie einen **Rechtsklick** auf den Raum in der Raumübersicht und
+  wählen Sie **Umbenennen**. <img src={require("./img/rename/umbenennen-button.png").default} alt="Rename"
+  width="19200"/> <br/><br/>
 
 ### **Neuen Namen eingeben**
 
-- Geben Sie den neuen Namen für den Raum ein und bestätigen Sie.
-  <img src={require("./img/rename/umbenennen-popup.png").default} alt="confirm" width="400"/>
-  <br/><br/>
+- Geben Sie den neuen Namen für den Raum ein und bestätigen Sie. <img
+  src={require("./img/rename/umbenennen-popup.png").default} alt="confirm" width="400"/> <br/><br/>
 
 ### Ihr Space ist nun umbenannt
 

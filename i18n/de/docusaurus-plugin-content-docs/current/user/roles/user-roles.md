@@ -15,33 +15,37 @@ title: Rollen für Nutzer
 
 ### Administrator
 
-Die Administrator-Rolle in OpenCloud hat die gleichen Fähigkeiten wie ein Space-Administrator, verfügt aber zusätzlich über spezielle Berechtigungen zur Verwaltung von Benutzern, Gruppen und Systemeinstellungen.
-Allerdings haben Administratoren keinen direkten Zugriff auf Space-Daten oder die Möglichkeit, Benutzer zu Spaces hinzuzufügen, für die sie nicht die Rolle „kann verwalten“ haben. Nachfolgend sind die wichtigsten Aktionen aufgeführt, die ein Administrator durchführen kann:
+Die Administrator-Rolle in OpenCloud hat die gleichen Fähigkeiten wie ein Space-Administrator, verfügt aber zusätzlich
+über spezielle Berechtigungen zur Verwaltung von Benutzern, Gruppen und Systemeinstellungen. Allerdings haben
+Administratoren keinen direkten Zugriff auf Space-Daten oder die Möglichkeit, Benutzer zu Spaces hinzuzufügen, für die
+sie nicht die Rolle „kann verwalten“ haben. Nachfolgend sind die wichtigsten Aktionen aufgeführt, die ein Administrator
+durchführen kann:
 
 - #### Lokale Benutzer und Gruppen erstellen und löschen
 
-  Administratoren können neue lokale Benutzer hinzufügen und bestehende lokale Benutzer aus dem System entfernen.
-  Sie können auch lokale Gruppen erstellen und löschen, um Benutzer effizient zu organisieren.
+  Administratoren können neue lokale Benutzer hinzufügen und bestehende lokale Benutzer aus dem System entfernen. Sie
+  können auch lokale Gruppen erstellen und löschen, um Benutzer effizient zu organisieren.
 
 - #### Benutzer und Gruppen bearbeiten
 
-  Benutzerdetails wie Namen, E-Mail-Adressen und Rollen können geändert werden.
-  Gruppen können durch Hinzufügen oder Entfernen von Mitgliedern nach Bedarf aktualisiert werden.
+  Benutzerdetails wie Namen, E-Mail-Adressen und Rollen können geändert werden. Gruppen können durch Hinzufügen oder
+  Entfernen von Mitgliedern nach Bedarf aktualisiert werden.
 
 - #### Anmeldung verhindern
 
-  Falls erforderlich, können Administratoren Benutzerkonten deaktivieren und so verhindern, dass sie sich anmelden können.
-  Dies ist nützlich aus Sicherheitsgründen oder wenn ein Konto nicht mehr benötigt wird.
+  Falls erforderlich, können Administratoren Benutzerkonten deaktivieren und so verhindern, dass sie sich anmelden
+  können. Dies ist nützlich aus Sicherheitsgründen oder wenn ein Konto nicht mehr benötigt wird.
 
 - #### Spaces verwalten (ohne Zugriff auf Space-Daten)
 
-  Administratoren können Spaces verwalten, z. B. aktivieren, deaktivieren oder löschen, umbenennen oder die Quote anpassen, auch wenn sie nicht die Rolle „kann verwalten“ haben.
-  Sie können jedoch nicht auf die Dateien innerhalb eines Spaces zugreifen oder ihm Mitglieder hinzufügen.
+  Administratoren können Spaces verwalten, z. B. aktivieren, deaktivieren oder löschen, umbenennen oder die Quote
+  anpassen, auch wenn sie nicht die Rolle „kann verwalten“ haben. Sie können jedoch nicht auf die Dateien innerhalb
+  eines Spaces zugreifen oder ihm Mitglieder hinzufügen.
 
 - #### Das Logo ändern
 
-  Das Systemlogo kann aktualisiert werden, um das Firmenbranding widerzuspiegeln.
-  Dies kann in den Admin-Einstellungen unter dem Abschnitt „Allgemein“ vorgenommen werden.
+  Das Systemlogo kann aktualisiert werden, um das Firmenbranding widerzuspiegeln. Dies kann in den Admin-Einstellungen
+  unter dem Abschnitt „Allgemein“ vorgenommen werden.
 
 ### Raumverwalter
 

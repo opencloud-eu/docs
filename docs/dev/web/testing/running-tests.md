@@ -6,9 +6,11 @@ id: running-tests
 
 ## Introduction
 
-In order to allow us to make changes quickly, often and with a high level of confidence, we heavily rely on tests within the `web` repository.
+In order to allow us to make changes quickly, often and with a high level of confidence, we heavily rely on tests within
+the `web` repository.
 
-This section assumes you have the Web development stack up and running. Please check out the [development setup docs](./../development/tooling.md#development-setup) if you haven't.
+This section assumes you have the Web development stack up and running. Please check out the
+[development setup docs](./../development/tooling.md#development-setup) if you haven't.
 
 ### Unit Tests
 
@@ -18,7 +20,8 @@ We have a steadily growing coverage of unit tests. You can run them locally via
 pnpm test:unit
 ```
 
-You can also specify which tests to run by giving a path param, like so: `pnpm test:unit packages/<app-name>/tests/unit/path/to/test.spec.ts`.
+You can also specify which tests to run by giving a path param, like so:
+`pnpm test:unit packages/<app-name>/tests/unit/path/to/test.spec.ts`.
 
 #### Unit Test File Structure
 
@@ -28,14 +31,14 @@ Our unit tests spec files follow a simple structure:
 - helper functions at the bottom
 - tests in between
 
-We usually organize tests with nested `describe` blocks. If you would like to get feedback from the core team about
-the structure, scope and goals of your unit tests before actually writing some, we invite you to make a pull request
-with only `describe` blocks and nested `it.todo("put your test description here")` lines.
+We usually organize tests with nested `describe` blocks. If you would like to get feedback from the core team about the
+structure, scope and goals of your unit tests before actually writing some, we invite you to make a pull request with
+only `describe` blocks and nested `it.todo("put your test description here")` lines.
 
 ### E2E Tests (Playwright)
 
-Our end-to-end test suite is built upon the [Playwright Framework](https://github.com/microsoft/playwright),
-which makes it easy to write tests, debug them and have them run cross-browser with minimal overhead.
+Our end-to-end test suite is built upon the [Playwright Framework](https://github.com/microsoft/playwright), which makes
+it easy to write tests, debug them and have them run cross-browser with minimal overhead.
 
 #### Bundling Web
 
@@ -55,7 +58,8 @@ pnpm test:e2e:cucumber 'tests/e2e/cucumber/**/*.feature'
 
 #### Options
 
-To run a particular test, simply add the feature file and line number to the test command, e.g. `pnpm test:e2e:cucumber tests/e2e/cucumber/features/smoke/admin-settings/users.feature:84`
+To run a particular test, simply add the feature file and line number to the test command, e.g.
+`pnpm test:e2e:cucumber tests/e2e/cucumber/features/smoke/admin-settings/users.feature:84`
 
 Various options are available via ENV variables, e.g.
 
@@ -65,12 +69,13 @@ Various options are available via ENV variables, e.g.
 - `SLOW_MO=n` to slow the execution time by `n` milliseconds
 - `TIMEOUT=n` to set tests to timeout after `n` milliseconds
 - `HEADLESS=bool` to open the browser while the tests run (defaults to true => headless mode)
-- `BROWSER=name` to run tests against a specific browser. Defaults to chromium, available are chromium, firefox, webkit, chromium
+- `BROWSER=name` to run tests against a specific browser. Defaults to chromium, available are chromium, firefox, webkit,
+  chromium
 - `ADMIN_PASSWORD` to set administrator password. By default, the `admin` password is used in the test
 - `PARALLEL` for parallel test execution
 
-For debugging reasons, you may want to record a video or traces of your test run.
-Again, you can use the following ENV variables in your command:
+For debugging reasons, you may want to record a video or traces of your test run. Again, you can use the following ENV
+variables in your command:
 
 - `REPORT_DIR=another/path` to set a directory for your recorded files (defaults to "reports")
 - `REPORT_VIDEO=true` to record a video of the test run
@@ -101,14 +106,15 @@ If the lint problems are not fixed by `--fix` option, we have to manually fix th
 
 ### Analyze the Test Report
 
-The cucumber library is used as the test runner for e2e tests. The report generator script lives inside the `tests/e2e/cucumber/report` folder. If you want to create a report after the tests are done, run the command:
+The cucumber library is used as the test runner for e2e tests. The report generator script lives inside the
+`tests/e2e/cucumber/report` folder. If you want to create a report after the tests are done, run the command:
 
 ```bash
 node tests/e2e/cucumber/report --report-input=tests/e2e/cucumber/report/report.json
 ```
 
-By default, the report gets generated to reports/e2e/cucumber/releaseReport/cucumber_report.html.
-The location can be changed by adding the `--report-location` flag.
+By default, the report gets generated to reports/e2e/cucumber/releaseReport/cucumber_report.html. The location can be
+changed by adding the `--report-location` flag.
 
 To see all available options run
 
@@ -118,11 +124,14 @@ node tests/e2e/cucumber/report --help
 
 ### E2E Tests on OpenCloud With Keycloak
 
-We can run some of the e2e tests on OpenCloud setup with Keycloak as an external idp. To run tests against locally, please follow the steps below:
+We can run some of the e2e tests on OpenCloud setup with Keycloak as an external idp. To run tests against locally,
+please follow the steps below:
 
 #### Run OpenCloud With Keycloak
 
-There's a documentation to serve [OpenCloud with Keycloak](./../../../admin/configuration/authentication-and-user-management/keycloak). Please follow each step to run **OpenCloud with Keycloak**.
+There's a documentation to serve
+[OpenCloud with Keycloak](./../../../admin/configuration/authentication-and-user-management/keycloak). Please follow
+each step to run **OpenCloud with Keycloak**.
 
 #### Run E2E Tests
 

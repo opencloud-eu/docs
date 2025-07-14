@@ -6,7 +6,8 @@ title: WebDAV
 
 # 🌐 Connect to a Space via WebDAV
 
-With WebDAV, you can connect OpenCloud Spaces as network drives on your device and manage your files directly from your file manager — without using the browser.
+With WebDAV, you can connect OpenCloud Spaces as network drives on your device and manage your files directly from your
+file manager — without using the browser.
 
 ---
 

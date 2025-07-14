@@ -9,7 +9,8 @@ description: '🌟 Full-blown featureset including web office.'
 
 Install a internet facing OpenCloud with SSL certification with Docker Compose.
 
-This installation documentation is for **Ubuntu and Debian** systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
+This installation documentation is for **Ubuntu and Debian** systems. The software can also be installed on other Linux
+distributions, but the commands and package managers may differ.
 
 ## **Prerequisites**
 
@@ -43,7 +44,8 @@ First, perform an update and upgrade:
 apt update && apt upgrade -y
 ```
 
-Install Docker following the [official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+Install Docker following the
+[official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 Once Docker is installed, enable and start the service:
 
@@ -149,13 +151,16 @@ sudo chown -R 1000:1000 /your/local/path/opencloud
 
 :::
 
-If these variables are left unset, Docker will use internal volumes, which **do not persist** if the containers are removed — not recommended for real-world use.
+If these variables are left unset, Docker will use internal volumes, which **do not persist** if the containers are
+removed — not recommended for real-world use.
 
 :::caution Security Warning
 
-The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
+The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local
+user account with this ID can read, modify, or delete OpenCloud config and data files.
 
-This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
+This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission
+management and consider isolating access to these directories.
 
 :::
 
@@ -177,8 +182,8 @@ In your web browser, visit:
 https://cloud.YOUR.DOMAIN
 ```
 
-You should see a security warning because the staging certificate is not fully trusted.
-Same should appear with the other domains you are using.
+You should see a security warning because the staging certificate is not fully trusted. Same should appear with the
+other domains you are using.
 
 Example with Chrome browser:
 
@@ -297,45 +302,38 @@ https://keycloak.your.domain
 
 #### 3. In the top-left dropdown (labeled Keycloak), switch to the OpenCloud realm
 
-<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
-<br/><br/>
+<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue"
+width="400"/> <br/><br/>
 
 #### 4. Navigate to the "Users" section and click "Add user"
 
-<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
-<br/>
+<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/> <br/>
 
 - Fill in a username
 - Optionally add email, first/last name
-- Click "Create"
-  <img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
-  <br/><br/>
+- Click "Create" <img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata"
+  width="1920"/> <br/><br/>
 
 #### 5. Go to the "Credentials" tab
 
-- Click "Set password"
-  <img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
-  <br/>
+- Click "Set password" <img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials"
+  width="1920"/> <br/>
 - Set a temporary password
 - Enable "Temporary" to force password change on first login (optional)
-- Click "Save"
-  <img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
-  <br/><br/>
+- Click "Save" <img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password"
+  width="400"/> <br/><br/>
 
 #### 6. Go to the "Role Mapping" tab
 
-<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
-<br/>
+<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/> <br/>
 
-- Click "Assign role"
-  <img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
-  <br/>
-- In the dialog, click "Filter by realm roles"
-  <img src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920"/>
-  <br/>
+- Click "Assign role" <img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role"
+  width="1920"/> <br/>
+- In the dialog, click "Filter by realm roles" <img
+  src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles"
+  width="1920"/> <br/>
 - Choose the appropriate role (e.g., user, admin, etc.)
-- Click "Assign"
-  <img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920"/>
-  <br/>
+- Click "Assign" <img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles"
+  width="1920"/> <br/>
 
 The user can now log in via OpenCloud using the Keycloak credentials.

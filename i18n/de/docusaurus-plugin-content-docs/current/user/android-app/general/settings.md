@@ -14,13 +14,11 @@ draft: true
 - Benutzeroberfläche
 - Datennutzung
 - erweiterte Einstellungen
-- Mediadateien
-  und mehr
+- Mediadateien und mehr
 
 ---
 
-<img src={require(".././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
-<br/><br/>
+<img src={require(".././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/> <br/><br/>
 
 ### Userinterface
 
@@ -64,7 +62,8 @@ Hier kann man einstellen, ob die Ordner in der Listenansicht vor den Dateien ang
 
 #### 8. Gesten deaktivieren
 
-Hier kann die Gestensteuerung deaktiviert werden, um Mehfachauswahl und das Ziehen von Dateien und Ordnern zu verhindern.
+Hier kann die Gestensteuerung deaktiviert werden, um Mehfachauswahl und das Ziehen von Dateien und Ordnern zu
+verhindern.
 
 #### 9. Diagnose aktivieren
 

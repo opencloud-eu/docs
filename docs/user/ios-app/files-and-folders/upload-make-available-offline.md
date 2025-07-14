@@ -18,7 +18,8 @@ Navigate to the folder where you want to upload a file.
 
 ### 2. Tap the **“+” icon** in the top right corner
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus Button" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus
+Button" height="400"/>
 
 ### 3. Choose an Upload Option
 
@@ -27,7 +28,8 @@ From the menu, you can choose:
 - **"Upload file"** – upload a file from your device's Files app
 - **"Upload from your photo library"** – upload an existing photo or video from your media library
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload Options" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload
+Options" height="400"/>
 
 ### 4. Confirm the Selection
 
@@ -41,17 +43,20 @@ You can also make files available offline so they are accessible without an inte
 
 ### 1. Tap the **three dots** (⋯) next to the file
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Make available offline" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Make available
+offline" height="400"/>
 
 ### 2. Select **“Make available offline”**
 
 The file will be downloaded and stored locally on your device.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default} alt="Make available offline" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default}
+alt="Make available offline" height="400"/>
 
 > ✅ Offline files are marked with a **cloud icon with a checkmark**.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Make available offline" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Make
+available offline" height="400"/>
 
 ---
 

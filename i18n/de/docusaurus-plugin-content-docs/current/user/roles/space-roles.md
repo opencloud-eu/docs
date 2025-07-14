@@ -16,7 +16,8 @@ In einem Space können Mitglieder verschiedene Rollen haben, die ihnen unterschi
 
 ### Kann anzeigen
 
-Mit dieser Rolle kann das Mitglied Dateien im Space ansehen und herunterladen, aber keine Änderungen vornehmen, keine Dateien und Ordner hochladen oder neue erstellen.
+Mit dieser Rolle kann das Mitglied Dateien im Space ansehen und herunterladen, aber keine Änderungen vornehmen, keine
+Dateien und Ordner hochladen oder neue erstellen.
 
 ### Kann bearbeiten
 

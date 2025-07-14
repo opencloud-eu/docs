@@ -20,9 +20,8 @@ To find out who has edited a file or folder and what actions have been carried o
     click on the **three dots** in the corresponding line.
     <img src={require("./img/activity/three-dot-menu.png").default} alt="three dot menu" width="1920"/>
 
-<br/><br/> - Select **Details** from the context menu.
-<img src={require("./img/activity/details-button.png").default} alt="context menu details" width="400"/>
-<br/><br/>
+<br/><br/> - Select **Details** from the context menu. <img src={require("./img/activity/details-button.png").default}
+alt="context menu details" width="400"/> <br/><br/>
 
 #### Select activities
 

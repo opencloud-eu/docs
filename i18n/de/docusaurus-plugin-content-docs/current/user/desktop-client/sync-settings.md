@@ -49,10 +49,12 @@ title: Synchronisations Einstellungen
 
 <!-- <img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="choose what to sync" width="400"/>-->
 
-**Hinweis:** Dateien und Ordner, die nicht synchronisiert werden, sind **auf Ihrem lokalen Computer nicht mehr verfügbar**.
+**Hinweis:** Dateien und Ordner, die nicht synchronisiert werden, sind **auf Ihrem lokalen Computer nicht mehr
+verfügbar**.
 
 ---
 
 ### **Tipp**
 
-Durch die Anpassung dieser Einstellungen können Sie **den Speicherplatz und die Netzwerknutzung** optimieren und sicherstellen, dass nur die Dateien synchronisiert werden, die Sie benötigen.
+Durch die Anpassung dieser Einstellungen können Sie **den Speicherplatz und die Netzwerknutzung** optimieren und
+sicherstellen, dass nur die Dateien synchronisiert werden, die Sie benötigen.

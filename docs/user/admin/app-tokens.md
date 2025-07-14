@@ -6,7 +6,8 @@ title: App Tokens
 
 ## 🔑 App Tokens
 
-App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
+App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main
+password.
 
 ---
 

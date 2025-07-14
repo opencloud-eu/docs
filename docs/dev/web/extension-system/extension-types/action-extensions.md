@@ -6,7 +6,8 @@ id: action-extensions
 
 ## Action extension type
 
-Actions are one of the possible extension types. Registered actions get rendered in various places across the UI, depending on their scope and targets.
+Actions are one of the possible extension types. Registered actions get rendered in various places across the UI,
+depending on their scope and targets.
 
 ### Configuration
 
@@ -21,7 +22,8 @@ interface ActionExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in
+the top level docs.
 
 #### Action
 
@@ -35,11 +37,15 @@ The most important configuration options are:
 - `handler` - The action to perform upon click. The nav item will be a `<button>` tag.
 - `isVisible` - Determines whether the action is displayed to the user
 
-Please check the [`Action` type](https://github.com/opencloud-eu/web/blob/236c185540fc6758dc7bd84985c8834fa4145530/packages/web-pkg/src/composables/actions/types.ts#L6) for a full list of configuration options.
+Please check the
+[`Action` type](https://github.com/opencloud-eu/web/blob/236c185540fc6758dc7bd84985c8834fa4145530/packages/web-pkg/src/composables/actions/types.ts#L6)
+for a full list of configuration options.
 
 ### Example
 
-The following example shows how an action extension for downloading files could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/master/packages/web-pkg) package.
+The following example shows how an action extension for downloading files could look like. Note that the extension is
+wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the
+[web-pkg](https://github.com/opencloud-eu/web/tree/master/packages/web-pkg) package.
 
 ```typescript
 export const useDownloadFilesExtension = () => {

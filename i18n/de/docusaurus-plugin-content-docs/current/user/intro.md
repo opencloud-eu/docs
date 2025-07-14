@@ -4,8 +4,7 @@ sidebar_position: 1
 
 <!-- markdownlint-disable MD041 -->
 
-import OcLogoPetrol from '/static/img/oc-logo-petrol.svg';
-import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
+import OcLogoPetrol from '/static/img/oc-logo-petrol.svg'; import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 
 <!-- markdownlint-enable MD041 -->
 
@@ -17,8 +16,7 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 ## Wilkommen zur OpenCloud Wissensdatenbank
 
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
-Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
-<br/><br/>
+Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten. <br/><br/>
 
 ### Inhaltsverzeichnis
 
@@ -52,18 +50,16 @@ Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Vi
 
 #### Admin
 
-Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
-<br/><br/>
+Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten. <br/><br/>
 
 ### Was ist OpenCloud?
 
 OpenCloud ist die Filesharing & Kollaborations-Lösung der Heinlein Gruppe.
 
 Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen –
-effektiv strukturiert und langfristig nutzbar.<br/>
-Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen
-und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
-<br/><br/>
+effektiv strukturiert und langfristig nutzbar.<br/> Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können
+Teams jederzeit und überall auf die Daten zugreifen und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel
+Produktivität. <br/><br/>
 
 ### Wie kann ich OpenCloud nutzen?
 

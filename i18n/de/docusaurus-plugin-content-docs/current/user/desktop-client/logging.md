@@ -18,7 +18,8 @@ Klicken Sie auf **Einstellungen → Erweitert → Log-Einstellungen**
 
 ## 3. Aktivieren Sie die Protokollierung
 
-- Aktivieren Sie im Fenster **Protokollausgabe** das Kontrollkästchen **Protokollierung in temporärem Ordner aktivieren**.
+- Aktivieren Sie im Fenster **Protokollausgabe** das Kontrollkästchen **Protokollierung in temporärem Ordner
+  aktivieren**.
 - Um dem Support-Team und den Entwicklern zu helfen, ist es hilfreich, das **Log Http traffic** zu aktivieren
 
 <!--- <img src={require("./img/logging/logging-enable.png").default} alt="enable logging" width="400"/>--->
@@ -52,6 +53,8 @@ Diese Protokolle können helfen, Probleme mit OpenCloud Desktop zu diagnostizier
 
 - Die OpenCloud-Desktop-Anwendung sendet mit jeder Anfrage einen **X-REQUEST-ID**-Header.
 - Diese ID hilft bei der Suche nach entsprechenden Anfragen und Antworten in den Protokollen.
-- Sie können Ihren Webserver so konfigurieren, dass er die **X-REQUEST-ID** zu seinen Protokollen hinzufügt, um eine tiefere Analyse zu ermöglichen.
+- Sie können Ihren Webserver so konfigurieren, dass er die **X-REQUEST-ID** zu seinen Protokollen hinzufügt, um eine
+  tiefere Analyse zu ermöglichen.
 
-Diese Funktion ist nützlich für die Fehlersuche bei Synchronisationsproblemen, die Überwachung von Netzwerkaktivitäten und die Behebung von Verbindungsproblemen.
+Diese Funktion ist nützlich für die Fehlersuche bei Synchronisationsproblemen, die Überwachung von Netzwerkaktivitäten
+und die Behebung von Verbindungsproblemen.

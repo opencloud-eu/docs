@@ -6,7 +6,8 @@ title: 'Decomposeds3'
 
 # Decomposeds3 Storage Driver
 
-Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible object storage, for handling file storage efficiently. This setup leverages S3’s scalability while integrating seamlessly with OpenCloud.
+Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible object storage, for handling file
+storage efficiently. This setup leverages S3’s scalability while integrating seamlessly with OpenCloud.
 
 ---
 
@@ -40,7 +41,8 @@ Enable `decomposeds3.yml` and `minio.yml` in the `.env` file:
 nano opencloud/deployments/examples/opencloud_full/.env
 ```
 
-Find all required environment variables `env` here: [decomposeds3-envs](https://github.com/opencloud-eu/opencloud/blob/main/services/storage-users/pkg/config/config.go#L143-L176)
+Find all required environment variables `env` here:
+[decomposeds3-envs](https://github.com/opencloud-eu/opencloud/blob/main/services/storage-users/pkg/config/config.go#L143-L176)
 
 Start the deployment with Docker Compose:
 

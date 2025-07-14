@@ -17,9 +17,8 @@ title: Account Settings
 ### Access the settings
 
 1. **Click on your avatar** in the top right corner.
-2. select **"Preferences"**.
-   <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400"/>
-   <br/><br/>
+2. select **"Preferences"**. <img src={require("./img/account-settings/access.png").default} alt="Access settings"
+   width="400"/> <br/><br/>
 
 ---
 
@@ -31,9 +30,8 @@ In the settings you will first see your basic **account information**:
 - **First and last name**
 - **E-mail address**
 - **Personal storage space**
-- **Group memberships**
-  <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
-  <br/><br/>
+- **Group memberships** <img src={require("./img/account-settings/account-information.png").default} alt="Account
+  Information" width="1920"/> <br/><br/>
 
 ---
 
@@ -50,32 +48,29 @@ Depending on the basic configuration, you can change the following options:
 - **Email notifications**:  
   Determine which **email notifications** you would like to receive from OpenCloud.
 - **WebDAV options**:  
-  Set the **WebDAV settings** to allow external access to files and folders.
-  <br/><br/>
-  <img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
-  <br/><br/>
+  Set the **WebDAV settings** to allow external access to files and folders. <br/><br/> <img
+  src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/> <br/><br/>
 
 ---
 
 ## Extensions
 
-Under **Extensions** you can configure installed extensions, such as the **Progressbar**, if available.
-<img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
-<br/><br/>
+Under **Extensions** you can configure installed extensions, such as the **Progressbar**, if available. <img
+src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/> <br/><br/>
 
 ---
 
 ## GDPR
 
-Under **GDPR** you can request a **data export** of your personal data if you wish.
-<img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/>
-<br/><br/>
+Under **GDPR** you can request a **data export** of your personal data if you wish. <img
+src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/> <br/><br/>
 
 ---
 
 ## App Tokens
 
-App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
+App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main
+password.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920"/>
 

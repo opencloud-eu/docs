@@ -8,8 +8,8 @@ title: Disable and Enable a Space
 
 ## Disable and Enable a Space in OpenCloud
 
-A Space can be disabled and later enabled in various ways. This function can only be performed by a **Space Admin** or the **Administrator**.
-<br/><br/>
+A Space can be disabled and later enabled in various ways. This function can only be performed by a **Space Admin** or
+the **Administrator**. <br/><br/>
 
 ---
 
@@ -18,8 +18,8 @@ A Space can be disabled and later enabled in various ways. This function can onl
 - **_via the Space overview_**
   - Select the desired Space.
   - Click on **Disable** in the top **taskbar**.  
-    <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="overview disabled spaces" width="1920"/>
-    <br/><br/>
+    <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="overview disabled spaces"
+    width="1920"/> <br/><br/>
   - Alternatively, you can click on the **three dots menu** in the Space overview and select **Disable** from the menu.
     <img src={require("./img/enable-disable/disable-three-dots.png").default} alt="three dot menu" width="400"/>
     <br/><br/>
@@ -42,18 +42,19 @@ A Space can be disabled and later enabled in various ways. This function can onl
 ### Enable Space
 
 - **Disabled Space**
-  - After the Space has been disabled, the **Enable** option now appears in place of **Disable**.
-    <img src={require("./img/enable-disable/enable.png").default} alt="enable option" width="400"/>
-    <br/><br/>
+  - After the Space has been disabled, the **Enable** option now appears in place of **Disable**. <img
+    src={require("./img/enable-disable/enable.png").default} alt="enable option" width="400"/> <br/><br/>
   - Click on it to enable the Space.  
     <br/><br/>
 
 - **Space not visible**
   - If the Space is not visible, the filter **Show disabled Spaces** may be enabled.  
-    <img src={require("./img/enable-disable/include-disabled.png").default} alt="include disabled spaces" width="1920"/>  
+    <img src={require("./img/enable-disable/include-disabled.png").default} alt="include disabled spaces"
+    width="1920"/>  
     <br/><br/>
   - Click on the filter and the Space will appear so that it can be enabled.  
-     <img src={require("./img/enable-disable/disable-included.png").default} alt="include disabled spaces" width="1920"/>  
+     <img src={require("./img/enable-disable/disable-included.png").default} alt="include disabled spaces"
+    width="1920"/>  
     <br/><br/>
 
 ---

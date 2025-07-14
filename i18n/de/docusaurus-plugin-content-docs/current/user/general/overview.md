@@ -18,8 +18,7 @@ title: Übersicht
 
 <br/><br/>
 
-<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
-<br/><br/>
+<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/> <br/><br/>
 
 **1. Linke Seitenleiste**  
 Die Seitenleiste enthält die Navigationselemente wie **Spaces, Dateien, Freigaben und Einstellungen**.
@@ -37,7 +36,8 @@ Ermöglicht Ihnen das **schnelle Auffinden** von Dateien, Ordnern oder Räumen.
 Zeigt alle Dateien und Ordner in einer **Auswahlansicht** an.
 
 **6. Breadcrumbs-Menü**  
-Zeigt den **aktuellen Pfad** Ihrer Navigation an und ermöglicht es Ihnen, schnell zu vorherigen Verzeichnissen zurückzuspringen.
+Zeigt den **aktuellen Pfad** Ihrer Navigation an und ermöglicht es Ihnen, schnell zu vorherigen Verzeichnissen
+zurückzuspringen.
 
 **7. Batch-Aktionen**  
 Ermöglicht Ihnen das **Bearbeiten, Verschieben oder Löschen** mehrerer ausgewählter Dateien zur gleichen Zeit.
@@ -53,7 +53,8 @@ Bietet verschiedene **Anzeigeoptionen** für die Dateiliste:
 Hier können Sie **zusätzliche Anzeigeoptionen** wie Sortierung oder Spaltenauswahl anpassen.
 
 **10. Benutzermenü**  
-Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um zu **Einstellungen, Abmeldung und Kontooptionen** zu gelangen.
+Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um zu **Einstellungen, Abmeldung und Kontooptionen** zu
+gelangen.
 
 **11. Rechte Seitenleiste**  
 Zeigt **zusätzliche Informationen und Panels** für Anteile, Aktivitäten oder Dateidetails.
@@ -77,9 +78,9 @@ Zeigt eine **Übersicht der Versionen** einer ausgewählten Datei oder Ordner.
 Zeigt eine **Übersicht über Änderungen und Aktivitäten** innerhalb eines Bereichs oder einer Datei.
 
 **18. Kontextmenü**  
-Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das **Kontextmenü mit spezifischen Optionen**.
-<br/><br/>
+Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das **Kontextmenü mit spezifischen Optionen**. <br/><br/>
 
 ---
 
-**Mit dieser Übersicht können Sie sich schnell in OpenCloud zurechtfinden und die wichtigsten Funktionen effizient nutzen!**
+**Mit dieser Übersicht können Sie sich schnell in OpenCloud zurechtfinden und die wichtigsten Funktionen effizient
+nutzen!**

@@ -12,7 +12,8 @@ draft: false
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 
-<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview"
+style={{ width: '400px', marginRight: '60px' }} />
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
 

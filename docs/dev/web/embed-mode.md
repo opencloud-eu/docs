@@ -3,11 +3,13 @@ title: 'Embed Mode'
 sidebar_position: 4
 ---
 
-The OpenCloud Web can be consumed by another application in a stripped down version called "Embed mode". This mode is supposed to be used in the context of selecting or sharing resources.
+The OpenCloud Web can be consumed by another application in a stripped down version called "Embed mode". This mode is
+supposed to be used in the context of selecting or sharing resources.
 
 ## Getting started
 
-To integrate OpenCloud Web into your application, add an iframe element pointing to your OpenCloud Web deployed instance with additional query parameter `embed=true`.
+To integrate OpenCloud Web into your application, add an iframe element pointing to your OpenCloud Web deployed instance
+with additional query parameter `embed=true`.
 
 ```html
 <iframe src="<web-url>?embed=true"></iframe>
@@ -15,15 +17,20 @@ To integrate OpenCloud Web into your application, add an iframe element pointing
 
 ## Communication
 
-To establish seamless cross-origin communication between the embedded instance and the parent application, our approach involves emitting events using the `postMessage` method. These events can be conveniently captured by utilizing the standard `window.addEventListener('message', listener)` pattern.
+To establish seamless cross-origin communication between the embedded instance and the parent application, our approach
+involves emitting events using the `postMessage` method. These events can be conveniently captured by utilizing the
+standard `window.addEventListener('message', listener)` pattern.
 
 ### Target origin
 
-By default, the `postMessage` method does not specify the `targetOrigin` parameter. However, it is recommended best practice to explicitly pass in the URI of the iframe origin (not the parent application). To enhance security, you can specify this value by modifying the config option `options.embed.messagesOrigin`.
+By default, the `postMessage` method does not specify the `targetOrigin` parameter. However, it is recommended best
+practice to explicitly pass in the URI of the iframe origin (not the parent application). To enhance security, you can
+specify this value by modifying the config option `options.embed.messagesOrigin`.
 
 ### Events
 
-To maintain uniformity and ease of handling, each event encapsulates the same structure within its payload: `{ name: string, data: any }`.
+To maintain uniformity and ease of handling, each event encapsulates the same structure within its payload:
+`{ name: string, data: any }`.
 
 | Name                       | Data         | Description                                                                           |
 | -------------------------- | ------------ | ------------------------------------------------------------------------------------- |
@@ -53,8 +60,12 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 
 ## Location picker
 
-By default, the Embed mode allows users to select resources. In certain cases (e.g. uploading a file), this needs to be changed to allow selecting a location. This can be achieved by running the embed mode with additional parameter `embed-target=location`. With this parameter, resource selection is disabled and the selected resources array always includes the current folder as the only item.
-In special scenarios you also want the user to set a file name, this can be achieved by adding the `embed-choose-file-name=true` parameter, or if you also want to set a default file name, you can use `embed-choose-file-name-suggestion=my file.text`.
+By default, the Embed mode allows users to select resources. In certain cases (e.g. uploading a file), this needs to be
+changed to allow selecting a location. This can be achieved by running the embed mode with additional parameter
+`embed-target=location`. With this parameter, resource selection is disabled and the selected resources array always
+includes the current folder as the only item. In special scenarios you also want the user to set a file name, this can
+be achieved by adding the `embed-choose-file-name=true` parameter, or if you also want to set a default file name, you
+can use `embed-choose-file-name-suggestion=my file.text`.
 
 ### Example
 
@@ -87,9 +98,7 @@ combination of both. If the embed-file-types parameter is not provided, all file
 ### Example
 
 ```html
-<iframe
-  src="https://my-opencloud-web-instance?embed=true&embed-target=file&embed-file-types=txt,image/png"
-></iframe>
+<iframe src="https://my-opencloud-web-instance?embed=true&embed-target=file&embed-file-types=txt,image/png"></iframe>
 
 <script>
   function selectEventHandler(event) {
@@ -108,26 +117,41 @@ combination of both. If the embed-file-types parameter is not provided, all file
 
 ## Delegate authentication
 
-If you already have a valid `access_token` that can be used to call the API from within the Embed mode and do not want to force the user to authenticate again, you can delegate the authentication. Delegating authentication will disable internal login form in OpenCloud Web and will instead use events to obtain the token and update it.
+If you already have a valid `access_token` that can be used to call the API from within the Embed mode and do not want
+to force the user to authenticate again, you can delegate the authentication. Delegating authentication will disable
+internal login form in OpenCloud Web and will instead use events to obtain the token and update it.
 
 ### Configuration
 
-To allow authentication delegation, you need to set the config option `options.embed.delegateAuthentication` to `true`. This can be achieved via query parameter `embed-delegate-authentication=true`. Because we are using the `postMessage` method to communicate across different origins, it is best practice to verify that the event originated from a known origin and not from some malicious site. We highly recommend to allow this check in production environments. You can enable it by setting the config option `options.embed.delegateAuthenticationOrigin` via query parameter `embed-delegate-authentication-origin=my-origin`. The value of this parameter will be compared against the `MessageEvent.origin` value and if they do not match, the token will be rejected.
+To allow authentication delegation, you need to set the config option `options.embed.delegateAuthentication` to `true`.
+This can be achieved via query parameter `embed-delegate-authentication=true`. Because we are using the `postMessage`
+method to communicate across different origins, it is best practice to verify that the event originated from a known
+origin and not from some malicious site. We highly recommend to allow this check in production environments. You can
+enable it by setting the config option `options.embed.delegateAuthenticationOrigin` via query parameter
+`embed-delegate-authentication-origin=my-origin`. The value of this parameter will be compared against the
+`MessageEvent.origin` value and if they do not match, the token will be rejected.
 
 ### Events
 
 #### Opening Embed mode
 
-As already mentioned, we're using the `postMessage` method to allow communication between the Embed mode and the parent application. When the Embed mode is opened for the first time, the user gets redirected to the `/web-oidc-callback` page where a message with payload `{ name: 'opencloud-embed:request-token', data: undefined }` is sent to request the `access_token` from the parent application. The parent application should set an event listener before opening the Embed mode and once received, it should send a message with payload `{ name: 'opencloud-embed:update-token', data: { access_token: '<bearer-token>' } }`. Once the Embed mode receives this message, it will save the token in the application state and will automatically authenticate the user.
+As already mentioned, we're using the `postMessage` method to allow communication between the Embed mode and the parent
+application. When the Embed mode is opened for the first time, the user gets redirected to the `/web-oidc-callback` page
+where a message with payload `{ name: 'opencloud-embed:request-token', data: undefined }` is sent to request the
+`access_token` from the parent application. The parent application should set an event listener before opening the Embed
+mode and once received, it should send a message with payload
+`{ name: 'opencloud-embed:update-token', data: { access_token: '<bearer-token>' } }`. Once the Embed mode receives this
+message, it will save the token in the application state and will automatically authenticate the user.
 
-:::note
-When passing the token in the message payload, use only the token itself without `Bearer` string as that will be added automatically in the Embed mode.
-:::
+:::note When passing the token in the message payload, use only the token itself without `Bearer` string as that will be
+added automatically in the Embed mode. :::
 
-:::note
-To save unnecessary duplication of messages with only different names, the name in the message payload above is exactly the same for both the initial authentication and subsequent token updates after renewal.
-:::
+:::note To save unnecessary duplication of messages with only different names, the name in the message payload above is
+exactly the same for both the initial authentication and subsequent token updates after renewal. :::
 
 #### Updating the token
 
-When authentication is delegated, the automatic renewal of the token inside of OpenCloud Web is disabled. In order to update the token, a listener is created which awaits a message with payload `{ name: 'opencloud-embed:update-token', data: { access_token: '<bearer-token>' } }`. The token will then be replaced inside of the Embed mode automatically.
+When authentication is delegated, the automatic renewal of the token inside of OpenCloud Web is disabled. In order to
+update the token, a listener is created which awaits a message with payload
+`{ name: 'opencloud-embed:update-token', data: { access_token: '<bearer-token>' } }`. The token will then be replaced
+inside of the Embed mode automatically.

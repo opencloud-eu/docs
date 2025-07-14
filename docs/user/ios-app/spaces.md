@@ -8,7 +8,8 @@ title: Spaces
 
 <br/>
 
-The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
+The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can
+access files and folders together, organize content, and track changes
 
 ---
 
@@ -16,12 +17,13 @@ The **"Spaces" section** provides a central place for collaboration in groups or
 
 To open the **Spaces Overview**, tap the **"Spaces button"** in the account menu.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button"
+style={{ width: '300px', marginRight: '60px' }} /> <br/><br/>
 
 Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member of or have created yourself.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview"
+style={{ width: '300px', marginRight: '60px' }} />
 
 ---
 
@@ -41,12 +43,13 @@ By tapping the **search icon**, the search menue for Spaces will open.
 
 By tapping the **plus icon**, the available functions within a Space appear.
 
-<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon"
+style={{ width: '300px', marginRight: '60px' }} /> <br/><br/>
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 
-<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces"
+style={{ width: '400px', marginRight: '60px' }} />
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
 
@@ -81,4 +84,5 @@ By tapping the **plus icon**, the available functions within a Space appear.
 
 By tapping the **three-dot menue**, a pop-up menue opens where you can choose to make the Space available offline.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menue"
+style={{ width: '300px', marginRight: '60px' }} />

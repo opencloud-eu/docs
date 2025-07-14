@@ -15,33 +15,35 @@ title: User roles in OpenCloud
 
 ### Administrator
 
-The Administrator role in OpenCloud has the same abilities as a Space Admin but in addition it has special permissions to manage users, groups, and system settings.
-However, administrators do not have direct access to Space data or the ability to add users to Spaces where they don't have the "can manage" role. Below are the key actions an administrator can perform:
+The Administrator role in OpenCloud has the same abilities as a Space Admin but in addition it has special permissions
+to manage users, groups, and system settings. However, administrators do not have direct access to Space data or the
+ability to add users to Spaces where they don't have the "can manage" role. Below are the key actions an administrator
+can perform:
 
 - #### Create and Delete local Users & Groups
 
-  Administrators can add new local users and remove existing local users from the system.
-  They can also create and delete local groups to organize users efficiently.
+  Administrators can add new local users and remove existing local users from the system. They can also create and
+  delete local groups to organize users efficiently.
 
 - #### Edit Users & Groups
 
-  User details such as names, emails, and roles can be modified.
-  Groups can be updated by adding or removing members as needed.
+  User details such as names, emails, and roles can be modified. Groups can be updated by adding or removing members as
+  needed.
 
 - #### Prevent Login
 
-  If necessary, administrators can disable user accounts, preventing them from logging in.
-  This is useful for security reasons or when an account is no longer needed.
+  If necessary, administrators can disable user accounts, preventing them from logging in. This is useful for security
+  reasons or when an account is no longer needed.
 
 - #### Manage Spaces (without Access to Space Data)
 
-  Administrators can manage Spaces like enable, disable or delete them and rename it or adjust the quota, even if they don't have the "can manage" role.
-  However, they cannot access the files inside a Space or add members to it.
+  Administrators can manage Spaces like enable, disable or delete them and rename it or adjust the quota, even if they
+  don't have the "can manage" role. However, they cannot access the files inside a Space or add members to it.
 
 - #### Change the Logo
 
-  The system logo can be updated to reflect the company branding.
-  This can be done in the Admin Settings under the "General" section.
+  The system logo can be updated to reflect the company branding. This can be done in the Admin Settings under the
+  "General" section.
 
 ### Space Admin
 

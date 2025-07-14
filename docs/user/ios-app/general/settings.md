@@ -18,8 +18,7 @@ title: Settings
 
 ---
 
-<img src={require(".././img/settings/settings.png").default} alt="Settings" width="1920"/>
-<br/><br/>
+<img src={require(".././img/settings/settings.png").default} alt="Settings" width="1920"/> <br/><br/>
 
 ### Userinterface
 

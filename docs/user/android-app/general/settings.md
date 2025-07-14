@@ -52,7 +52,8 @@ Here you can set the following options:<br/>
 - Show hidden files
   - Enable or disable the display of hidden files.
 - Delete local copies
-  - Remove automatically downloaded files that are not available offline, when the time since their last usage exceeds the selected time.
+  - Remove automatically downloaded files that are not available offline, when the time since their last usage exceeds
+    the selected time.
 
 #### 7. More
 

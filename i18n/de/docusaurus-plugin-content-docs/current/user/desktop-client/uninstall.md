@@ -6,7 +6,8 @@ title: Entfernen von OpenCloud Desktop
 
 # Entfernen von OpenCloud Desktop
 
-Wenn Sie **OpenCloud Desktop** nicht mehr benötigen, folgen Sie diesen Schritten, um ihn vollständig von Ihrem System zu entfernen.
+Wenn Sie **OpenCloud Desktop** nicht mehr benötigen, folgen Sie diesen Schritten, um ihn vollständig von Ihrem System zu
+entfernen.
 
 ## Entfernen Sie Ihre Konten
 

@@ -16,7 +16,8 @@ In a Space, members can have different roles that give them different levels of 
 
 ### Can View
 
-This role allows the member to view and download files in the Space, but they cannot make any changes, upload or create new files and folders.
+This role allows the member to view and download files in the Space, but they cannot make any changes, upload or create
+new files and folders.
 
 ### Can Edit
 

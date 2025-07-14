@@ -6,7 +6,8 @@ title: Mehrere Konten einrichten
 
 # Mehrere Konten in OpenCloud Desktop verwenden
 
-Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen Rechner synchronisieren. Dies ermöglicht Ihnen, Dateien von verschiedenen Instanzen innerhalb desselben Desktop-Clients zu verwalten.
+Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen Rechner synchronisieren. Dies ermöglicht
+Ihnen, Dateien von verschiedenen Instanzen innerhalb desselben Desktop-Clients zu verwalten.
 
 ## Wie man ein neues Konto hinzufügt
 
@@ -37,4 +38,5 @@ Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen
 
 <!-- <img src={require("./img/multiple-accounts/multiple-accounts-locally.png").default} alt="multiple accounts in explorer or finder" width="400"/> -->
 
-Diese Einrichtung stellt sicher, dass Dateien von verschiedenen Konten **organisiert bleiben und nicht vermischt werden**.
+Diese Einrichtung stellt sicher, dass Dateien von verschiedenen Konten **organisiert bleiben und nicht vermischt
+werden**.

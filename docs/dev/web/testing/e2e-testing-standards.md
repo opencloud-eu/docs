@@ -6,13 +6,18 @@ id: e2e-testing-standards
 
 ## Introduction
 
-In OpenCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and usability when test standards are consistent across repositories. For example:
+In OpenCloud, we use Playwright for webUI test automation. We benefit from lower barriers to entry, readability, and
+usability when test standards are consistent across repositories. For example:
 
-- **Reusability:** Enhances reusability by making it easier to reuse functions, locators, shared steps, and other test code. Finding the necessary components and functionalities will be simple for someone working on a test resulting in reduced duplication and the requirement for rework after the initiation of a code review.
+- **Reusability:** Enhances reusability by making it easier to reuse functions, locators, shared steps, and other test
+  code. Finding the necessary components and functionalities will be simple for someone working on a test resulting in
+  reduced duplication and the requirement for rework after the initiation of a code review.
 
-- **Facilitates reviews:** Code can be examined more quickly. Since you can quickly determine what the test code is doing, it eases the mental strain of code review.
+- **Facilitates reviews:** Code can be examined more quickly. Since you can quickly determine what the test code is
+  doing, it eases the mental strain of code review.
 
-- **Faster onboarding:** By following naming conventions, new contributors are onboarded more rapidly and feel comfortable enough to contribute to the codebase.
+- **Faster onboarding:** By following naming conventions, new contributors are onboarded more rapidly and feel
+  comfortable enough to contribute to the codebase.
 
 Here are the test standards and guidelines we adhere to when creating Playwright tests at OpenCloud.
 
@@ -55,8 +60,8 @@ Here are the test standards and guidelines we adhere to when creating Playwright
 
 ## Test Structure - Arrange, Act, Assert
 
-We can follow the AAA (Arrange, Act, Assert) pattern when structuring the tests. In most cases, the Arrange step can be included in a Before block(hook).
-Consider including comments defining each section to ease readability.
+We can follow the AAA (Arrange, Act, Assert) pattern when structuring the tests. In most cases, the Arrange step can be
+included in a Before block(hook). Consider including comments defining each section to ease readability.
 
 ```typescript
 // arrange, set up the initial conditions for the test
@@ -75,7 +80,8 @@ expect(charge).toBe('raised');
 
 ## Page Object Model (POM)
 
-Every page should possess one POM file to enhance maintainability and scalability of our tests. It should include all the selectors and functions which are needed to interact with the UI page or component(s).
+Every page should possess one POM file to enhance maintainability and scalability of our tests. It should include all
+the selectors and functions which are needed to interact with the UI page or component(s).
 
 All interactions should be done using the page objects, no selectors in your tests.
 
@@ -132,7 +138,8 @@ DO NOT ⚔️
 await page.waitForTimeout(5000);
 ```
 
-This can cause flaky tests as we can rarely be certain the amount of wait time is enough. It can also unnecessarily increase the test run time. Instead, we can try:
+This can cause flaky tests as we can rarely be certain the amount of wait time is enough. It can also unnecessarily
+increase the test run time. Instead, we can try:
 
 DO 👍
 
@@ -160,7 +167,8 @@ await expect(fooPage.titlePage).toBeVisible();
 
 Avoid selectors tied to implementation and page structure.
 
-Instead, we can prioritize the below, based on [testing-library guiding principles](https://testing-library.com/docs/queries/about/#priority)
+Instead, we can prioritize the below, based on
+[testing-library guiding principles](https://testing-library.com/docs/queries/about/#priority)
 
 - `getByRole` (this aids accessibility, reflects how users and assistive technology perceive the page)
 
@@ -194,7 +202,8 @@ Declare in **_camelCase_**.
 
 ### Booleans
 
-Start with ‘is’, ‘has’, ‘are’, ‘have’. This helps spot that this is a boolean while skimming the code. Still declared in **_camelCase_**.
+Start with ‘is’, ‘has’, ‘are’, ‘have’. This helps spot that this is a boolean while skimming the code. Still declared in
+**_camelCase_**.
 
 ```typescript
 let isTurnedOn = false;
@@ -204,7 +213,8 @@ let isTurnedOn = false;
 
 Declare in **_PascalCase_**.
 
-Use descriptive naming, which can help the reader quickly identify what page or page component this is covering. Use as much context as needed from your product to make the name meaningful.
+Use descriptive naming, which can help the reader quickly identify what page or page component this is covering. Use as
+much context as needed from your product to make the name meaningful.
 
 DO NOT ⚔️
 
@@ -224,9 +234,11 @@ Use descriptive naming, which can help the reader quickly identify what element 
 
 As an example, you can use a naming structure that contains **_“action / name of element” + “type of element”_**.
 
-**_Defining type of element_** - These are your basic HTML element types, they’ll be defined and named in the design system, or as a team you can align on a consistent naming of the elements. Example: checkbox, tickbox, button, tooltip
+**_Defining type of element_** - These are your basic HTML element types, they’ll be defined and named in the design
+system, or as a team you can align on a consistent naming of the elements. Example: checkbox, tickbox, button, tooltip
 
-**_Defining action / name -_** Think about what action this element will perform when interacted with. Or any existing name/text of the element
+**_Defining action / name -_** Think about what action this element will perform when interacted with. Or any existing
+name/text of the element
 
 DO 👍
 
@@ -244,7 +256,8 @@ const uploadProfilePictureButton = await page.locator('<locator-path>');
 
 ### Function names
 
-Always start function names with a **_“verb”_**, followed by the **_“component context”_** that the function is interacting with i.e. what entity it is having an effect on.
+Always start function names with a **_“verb”_**, followed by the **_“component context”_** that the function is
+interacting with i.e. what entity it is having an effect on.
 
 DO 👍
 
@@ -263,7 +276,8 @@ DO 👍
 - **Be Descriptive:** Use clear and descriptive language that accurately reflects the functionality.
 - **Keep It Concise:** Avoid overly long titles or descriptions. Aim for brevity while maintaining clarity.
 - **Use Active Voice:** Write in an active voice to make it clear who is performing the action.
-- **Contextual Information:** If applicable, provide context about the user role or the scenario to clarify who benefits from the feature.
+- **Contextual Information:** If applicable, provide context about the user role or the scenario to clarify who benefits
+  from the feature.
 
 DO NOT ⚔️
 
@@ -281,13 +295,15 @@ Feature: Password Management for Registered Users
 
 ### Writing Scenarios
 
-- **Use Clear and Descriptive Scenario Titles:** Ensure that each scenario title clearly conveys the action being tested and the expected outcome.
+- **Use Clear and Descriptive Scenario Titles:** Ensure that each scenario title clearly conveys the action being tested
+  and the expected outcome.
 
 ```gherkin
 Scenario: User successfully registers with valid details
 ```
 
-- **Use Clear Given/When/Then Steps:** Clearly define the context, action, and expected outcome(success or error messages if any).
+- **Use Clear Given/When/Then Steps:** Clearly define the context, action, and expected outcome(success or error
+  messages if any).
 
 ```gherkin
 Given the user is on the registration page

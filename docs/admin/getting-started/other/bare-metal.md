@@ -7,12 +7,12 @@ description: 'Manual, minimalist setup with essential features.'
 
 ## User Guide for Installing OpenCloud
 
-Follow the steps below to install and configure OpenCloud on your system.<br/>
-This example is on Linux Ubuntu 24.04 distribution!
+Follow the steps below to install and configure OpenCloud on your system.<br/> This example is on Linux Ubuntu 24.04
+distribution!
 
-:::danger[Disclaimer]
-Bare-metal deployments are not officially supported by OpenCloud. They are great for quick evaluation but are undocumented and have a minimalist feature set. If you choose this setup, you are on your own. With great power comes great responsibility.
-:::
+:::danger[Disclaimer] Bare-metal deployments are not officially supported by OpenCloud. They are great for quick
+evaluation but are undocumented and have a minimalist feature set. If you choose this setup, you are on your own. With
+great power comes great responsibility. :::
 
 ---
 

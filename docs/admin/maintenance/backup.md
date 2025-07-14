@@ -14,7 +14,8 @@ title: 'Backup'
 
 - Pure POSIX Setup: All data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem.
 
-- Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a POSIX-compliant filesystem
+- Distributed Setup: Blobs are stored on an S3-compliant storage, while configuration and metadata remain on a
+  POSIX-compliant filesystem
 
 To determine which filesystems are supported, see: Filesystems and Shared Storage
 

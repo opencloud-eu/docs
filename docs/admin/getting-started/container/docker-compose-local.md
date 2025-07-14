@@ -41,7 +41,9 @@ cd opencloud-compose
 cp .env.example .env
 ```
 
-> **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
+> **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env
+> file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like
+> passwords and domain-specific settings.
 
 ### Configure deployment options
 
@@ -87,9 +89,12 @@ Edit the /etc/hosts file and add the following entries for local access:
 127.0.0.1       wopiserver.opencloud.test
 ```
 
-Open [https://collabora.opencloud.test](https://collabora.opencloud.test) and accept the self-signed certificate. This step is needed as you can not accept the self-signed certificate if you try to open a .odt document from within the OpenCloud Web UI as Collabora is embedded via an iframe.
+Open [https://collabora.opencloud.test](https://collabora.opencloud.test) and accept the self-signed certificate. This
+step is needed as you can not accept the self-signed certificate if you try to open a .odt document from within the
+OpenCloud Web UI as Collabora is embedded via an iframe.
 
-<img src={require("./../img/quick-guide/collabora-accept-self-signed-cert.png").default} alt="Accept self signed certificate" width="1920"/>
+<img src={require("./../img/quick-guide/collabora-accept-self-signed-cert.png").default} alt="Accept self signed
+certificate" width="1920"/>
 
 ---
 

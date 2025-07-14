@@ -15,7 +15,8 @@ title: Rollen beim Teilen
 
 ## Space-Mitglieder-Rollen und -Rechte
 
-In einem Space können Mitglieder verschiedene Rollen haben, die bestimmen, was sie mit gemeinsamen Dateien und Ordnern tun können.
+In einem Space können Mitglieder verschiedene Rollen haben, die bestimmen, was sie mit gemeinsamen Dateien und Ordnern
+tun können.
 
 ### Kann ansehen (sicher)
 

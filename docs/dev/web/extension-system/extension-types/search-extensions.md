@@ -6,8 +6,9 @@ id: search-extensions
 
 ## Search extensions
 
-One possible extension type is search. Registered search extensions are available when using the search field in the topbar. A search extension can consist of a
-`list` and a `preview` search. The result of a `preview` search is shown below the search input field while the `list` search result is
+One possible extension type is search. Registered search extensions are available when using the search field in the
+topbar. A search extension can consist of a `list` and a `preview` search. The result of a `preview` search is shown
+below the search input field while the `list` search result is
 
 ### Configuration
 
@@ -28,13 +29,16 @@ interface SearchExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in
+the top level docs.
 
 The `searchProvider` object configures the actual provider. It consist of the following:
 
 - `id` - Since your extension has an `id` and can only have one searchProvider, you can reuse the same value
-- `available` - Can be used to programmatically disable/enable any searchProvider, e.g. by dynamically checking backend capabilities
-- `displayName` - Optional, used to add a small hint to indicate the connection between search providers and their corresponding results
+- `available` - Can be used to programmatically disable/enable any searchProvider, e.g. by dynamically checking backend
+  capabilities
+- `displayName` - Optional, used to add a small hint to indicate the connection between search providers and their
+  corresponding results
 - `previewSearch` - See below
 - `listSearch` - See below
 
@@ -43,7 +47,9 @@ The `searchProvider` object configures the actual provider. It consist of the fo
 The listSearch object consists of:
 
 - `component` - Vue component that can render the values from the SearchResult below
-- `search(term: string)` - Function that executes the search, based on a given term. The term is formatted in [KQL](https://docs.opencloud.eu/services/search/#query-language). Please note that the returned values needs to be formatted to fit either `SearchResource` or `GenericSearchResultItem` type
+- `search(term: string)` - Function that executes the search, based on a given term. The term is formatted in
+  [KQL](https://docs.opencloud.eu/services/search/#query-language). Please note that the returned values needs to be
+  formatted to fit either `SearchResource` or `GenericSearchResultItem` type
 
 #### PreviewSearch
 
@@ -53,7 +59,10 @@ The previewSearch object extends the listSearch with one additional attribute:
 
 ## Example
 
-The following example shows how a search extension that queries a Solr search engine could look like. Note that the extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) and the [web-client](https://github.com/opencloud-eu/web/tree/main/packages/web-client) packages.
+The following example shows how a search extension that queries a Solr search engine could look like. Note that the
+extension is wrapped inside a Vue composable so it can easily be reused. All helper types and composables are being
+provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) and the
+[web-client](https://github.com/opencloud-eu/web/tree/main/packages/web-client) packages.
 
 ```typescript
 export const useSolrSearchExtension = () => {

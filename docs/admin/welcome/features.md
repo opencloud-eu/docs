@@ -48,7 +48,8 @@ title: Features
 
 ## **📂 Spaces - Collaborative Team Folders**
 
-- **Project-Based Team Folders**: Designed for teams to store, access, and manage files collectively. Files in Spaces belong to **multiple** users, ensuring continuity even if team members leave.
+- **Project-Based Team Folders**: Designed for teams to store, access, and manage files collectively. Files in Spaces
+  belong to **multiple** users, ensuring continuity even if team members leave.
 - **Self-Service Admin Transfer**: Easily reassign space owners and assign multiple owners for shared responsibility.
 - **Easy Permission Control**: Manage user access based on the roles Viewers, Editors, Managers.
 

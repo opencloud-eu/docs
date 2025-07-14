@@ -8,18 +8,21 @@ title: Spaces
 
 <br/>
 
-Der **„Spaces“-Bereich** (zu Deutsch: **„Bereiche“**) bietet einen zentralen Ort für die Zusammenarbeit in Gruppen oder Teams. In einem Space können mehrere Nutzer gemeinsam auf Dateien und Ordner zugreifen, Inhalte organisieren und Änderungen nachvollziehen
+Der **„Spaces“-Bereich** (zu Deutsch: **„Bereiche“**) bietet einen zentralen Ort für die Zusammenarbeit in Gruppen oder
+Teams. In einem Space können mehrere Nutzer gemeinsam auf Dateien und Ordner zugreifen, Inhalte organisieren und
+Änderungen nachvollziehen
 
 ---
 
 ## Spaces Übersicht
 
-Um zur **"Spaces Übersicht"** zu gelangen, klicken wir erst auf die **"Spaces-Schaltfläche"** im Account-Menü.
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces-Schaltfläche" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+Um zur **"Spaces Übersicht"** zu gelangen, klicken wir erst auf die **"Spaces-Schaltfläche"** im Account-Menü. <img
+src={require("./img/spaces/spaces-button.png").default} alt="Spaces-Schaltfläche"
+style={{ width: '300px', marginRight: '60px' }} /> <br/><br/>
 
-Im Anschluss sehen wir die **"Spaces-Übersicht"**, in der alle Spaces aufgelistet werden, in denen man Mitglied ist oder von einem selbst erstellt wurden.
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces-Übersicht" style={{ width: '300px', marginRight: '60px' }} />
+Im Anschluss sehen wir die **"Spaces-Übersicht"**, in der alle Spaces aufgelistet werden, in denen man Mitglied ist oder
+von einem selbst erstellt wurden. <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces-Übersicht"
+style={{ width: '300px', marginRight: '60px' }} />
 
 ---
 
@@ -37,13 +40,14 @@ Durch klicken auf das **"Such-Symbol"**, öffnet sich das Menü für die Suche i
 
 ## Funktionen innerhalb eines Spaces
 
-Durch klicken auf das **"Plus-Symbol"** öffnen wir die Funktionen innerhalb eines Spaces.
-<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Symbol" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+Durch klicken auf das **"Plus-Symbol"** öffnen wir die Funktionen innerhalb eines Spaces. <img
+src={require("./img/spaces/plus-symbol.png").default} alt="Plus Symbol" style={{ width: '300px', marginRight: '60px' }}
+/> <br/><br/>
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 
-<img src={require("./img/spaces/spaces-functions.png").default} alt="Funktionen in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-functions.png").default} alt="Funktionen in Spaces"
+style={{ width: '400px', marginRight: '60px' }} />
 
 <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
 
@@ -76,8 +80,10 @@ Durch klicken auf das **"Plus-Symbol"** öffnen wir die Funktionen innerhalb ein
 
 ## Das "Drei-Punkte-Menü"
 
-Durch klicken auf das **"Drei-Punkte-Menü"**, öffnet sich ein Pop-up Menü, in dem wir einstellen können, ob der Space offline verfügbar sein soll oder nicht.
+Durch klicken auf das **"Drei-Punkte-Menü"**, öffnet sich ein Pop-up Menü, in dem wir einstellen können, ob der Space
+offline verfügbar sein soll oder nicht.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Drei-Punkte-Menü" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/three-point-menue.png").default} alt="Drei-Punkte-Menü"
+style={{ width: '300px', marginRight: '60px' }} />
 
 ---

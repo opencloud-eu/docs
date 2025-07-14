@@ -7,7 +7,8 @@ description: 'Guide to uninstall OpenCloud.'
 
 # Uninstall OpenCloud with Docker Compose
 
-> ⚠️ **Warning:** This guide will completely remove all OpenCloud data. Make sure to back up any important files before proceeding.
+> ⚠️ **Warning:** This guide will completely remove all OpenCloud data. Make sure to back up any important files before
+> proceeding.
 
 ---
 

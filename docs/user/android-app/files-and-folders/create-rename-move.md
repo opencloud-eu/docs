@@ -7,7 +7,8 @@ draft: true
 
 # 📁 Create, Rename, and Move Files and Folders
 
-The OpenCloud Android App makes it easy to manage your content. You can create new folders and files, rename items, and move them to different locations — all directly from your Android phone or tablet.
+The OpenCloud Android App makes it easy to manage your content. You can create new folders and files, rename items, and
+move them to different locations — all directly from your Android phone or tablet.
 
 ---
 

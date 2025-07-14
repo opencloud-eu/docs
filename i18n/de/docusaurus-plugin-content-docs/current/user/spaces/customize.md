@@ -11,8 +11,7 @@ title: Spaces Anpassen
 Sie können Ihren Space an zwei Stellen anpassen:
 
 - In der Space-Übersicht
-- Sobald Sie sich bereits im Space befinden
-  <br/><br/>
+- Sobald Sie sich bereits im Space befinden <br/><br/>
 
 ### So passen Sie Ihren Space an
 
@@ -22,8 +21,7 @@ Sie können Ihren Space an zwei Stellen anpassen:
 
 #### Öffnen Sie das „Kontextmenü“
 
-- Klicken Sie auf das „Kontextmenü“ in der Raumübersicht oder direkt im Raum.
-  <br/><br/>
+- Klicken Sie auf das „Kontextmenü“ in der Raumübersicht oder direkt im Raum. <br/><br/>
 
 ---
 
@@ -66,9 +64,9 @@ Sie können Ihren Space an zwei Stellen anpassen:
 
 #### Beschreibung direkt ändern
 
-- Die Beschreibung des Spaces kann auch direkt im Space geändert werden, indem man auf den **Pfeil** neben der Beschreibung klickt.
-  <img src={require("./img/customize/beschreibung-bearbeiten.png").default} alt="Beschreibung bearbeiten" width="1920"/>
-  <br/><br/>
+- Die Beschreibung des Spaces kann auch direkt im Space geändert werden, indem man auf den **Pfeil** neben der
+  Beschreibung klickt. <img src={require("./img/customize/beschreibung-bearbeiten.png").default} alt="Beschreibung
+  bearbeiten" width="1920"/> <br/><br/>
 
 ---
 

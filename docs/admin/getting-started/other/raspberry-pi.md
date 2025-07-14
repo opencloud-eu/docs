@@ -6,10 +6,9 @@ title: Raspberry Pi
 
 # OpenCloud on Raspberry Pi
 
-:::note
-The installation of OpenCloud on a Raspberry Pi is intended for private or non-production use only.  
-It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential performance constraints.
-:::
+:::note The installation of OpenCloud on a Raspberry Pi is intended for private or non-production use only.  
+It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential
+performance constraints. :::
 
 ## 1.1 Hardware requirements
 
@@ -122,7 +121,8 @@ docker compose up
 
 Now OpenCloud is running locally on your Raspberry Pi, and you can adjust it to your needs.
 
-We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
+We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using
+No-IP.
 
 ## 1.7 Mount external hard disk or USB stick
 

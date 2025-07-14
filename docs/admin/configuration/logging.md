@@ -10,13 +10,15 @@ title: Logging
 
 ## Introduction
 
-Logging helps monitor OpenCloud’s health and diagnose issues. Log output varies by level, from minimal to detailed. By default, logs are written to `stderr`. In Docker deployments, logs are accessible via `docker logs`.
+Logging helps monitor OpenCloud’s health and diagnose issues. Log output varies by level, from minimal to detailed. By
+default, logs are written to `stderr`. In Docker deployments, logs are accessible via `docker logs`.
 
 ---
 
 ## Log Levels
 
-Set the global log level using the `OPEN_CLOUD_LOG_LEVEL` environment variable. You can also override it per service using service-specific variables. Default is `error`.
+Set the global log level using the `OPEN_CLOUD_LOG_LEVEL` environment variable. You can also override it per service
+using service-specific variables. Default is `error`.
 
 ## The log levels are
 
@@ -46,7 +48,8 @@ Highly detailed messages for diagnosing problems. Use cautiously in production d
 
 ### X-Request-ID
 
-OpenCloud supports tracing using the `X-Request-ID` header. Clients send a UUID v4 with each request, which is included in backend logs for correlation.
+OpenCloud supports tracing using the `X-Request-ID` header. Clients send a UUID v4 with each request, which is included
+in backend logs for correlation.
 
 To manually test with `curl`, add:
 

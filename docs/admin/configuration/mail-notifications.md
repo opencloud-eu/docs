@@ -40,7 +40,8 @@ SMTP_TRANSPORT_ENCRYPTION=none
 SMTP_INSECURE=true
 ```
 
-⚠️ In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
+⚠️ In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" —
+just enter the plain value.
 
 ---
 
@@ -61,4 +62,5 @@ docker compose up -d
 
 ---
 
-OpenCloud is now successfully configured to deliver notification emails, including those triggered by actions such as file sharing.
+OpenCloud is now successfully configured to deliver notification emails, including those triggered by actions such as
+file sharing.

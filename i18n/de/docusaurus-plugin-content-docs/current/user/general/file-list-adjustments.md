@@ -21,7 +21,8 @@ title: Anpassungen der Datei-Liste
   - Bei versteckten Dateien handelt es sich oft um System- oder Konfigurationsdateien.
 
 - **Dateierweiterungen anzeigen**
-  - Legen Sie fest, ob die Dateierweiterungen (z. B. `.docx`, `.jpg`) hinter den Dateinamen angezeigt werden sollen. Dies erleichtert die Identifizierung von Dateitypen.
+  - Legen Sie fest, ob die Dateierweiterungen (z. B. `.docx`, `.jpg`) hinter den Dateinamen angezeigt werden sollen.
+    Dies erleichtert die Identifizierung von Dateitypen.
 
 - **Dateien pro Seite**
   - Geben Sie an, wie viele Dateien pro Seite in einem Ordner angezeigt werden sollen.
@@ -30,8 +31,7 @@ title: Anpassungen der Datei-Liste
 - **Kachelgröße**
   - Passen Sie die Größe der Symbole und Schaltflächen an:
   - **Kleine Kacheln** für eine kompaktere Ansicht.
-  - **Große Kacheln** für eine übersichtlichere Ansicht.
-    <br/><br/>
+  - **Große Kacheln** für eine übersichtlichere Ansicht. <br/><br/>
 
 <img src={require("./img/files-list-adjustment/einstellungs-button.png").default} alt="Settings icon" width="400"/>
 

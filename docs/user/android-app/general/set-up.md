@@ -27,7 +27,8 @@ After installing the app, you can now set up your OpenCloud account.
 
 - The Login Page will be opening and you musst type in your username and password.
 - Then tap **"Log in"**.
-- In the following screen, grant the app permission to access your user information and maintain continuous access by tapping the **"Allow"** button.
+- In the following screen, grant the app permission to access your user information and maintain continuous access by
+  tapping the **"Allow"** button.
 
 <!-- <img src={require(".././img/set-up/open-login-page.png").default} alt="Open Login Page" height="400"/>
 <img src={require(".././img/set-up/continue-sign-in.png").default} alt="continue sign in" height="400"/> -->

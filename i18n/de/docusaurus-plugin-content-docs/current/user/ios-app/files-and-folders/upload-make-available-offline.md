@@ -18,16 +18,18 @@ Navigieren Sie zu dem Ordner, in den Sie eine Datei hochladen möchten.
 
 ### 2. Tippen Sie oben rechts auf das **"+"-Symbol**
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus Symbol" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus
+Symbol" height="400"/>
 
 ### 3. Upload-Option auswählen
 
 Im Menü können Sie Folgendes auswählen:
 
-– **"Datei hochladen"** – Laden Sie eine Datei aus der Dateien-App Ihres Geräts hoch.
-– **"Aus Ihrer Fotobibliothek hochladen"** – Laden Sie ein vorhandenes Foto oder Video aus Ihrer Medienbibliothek hoch.
+– **"Datei hochladen"** – Laden Sie eine Datei aus der Dateien-App Ihres Geräts hoch. – **"Aus Ihrer Fotobibliothek
+hochladen"** – Laden Sie ein vorhandenes Foto oder Video aus Ihrer Medienbibliothek hoch.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload-Optionen" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default}
+alt="Upload-Optionen" height="400"/>
 
 ### 4. Auswahl bestätigen
 
@@ -41,17 +43,20 @@ Sie können Dateien auch offline verfügbar machen, sodass sie auch ohne Interne
 
 ### 1. Tippen Sie auf die **drei Punkte** (⋯) neben der Datei
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Offline
+verfügbar machen" height="400"/>
 
 ### 2. Wählen Sie **"Offline verfügbar machen"** aus
 
 Die Datei wird heruntergeladen und lokal auf Ihrem Gerät gespeichert.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default}
+alt="Offline verfügbar machen" height="400"/>
 
 > ✅ Offlinedateien sind mit einem **Wolkensymbol mit Häkchen** gekennzeichnet.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Offline
+verfügbar machen" height="400"/>
 
 ---
 

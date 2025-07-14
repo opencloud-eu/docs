@@ -17,9 +17,8 @@ title: Konto Einstellungen
 ### Zugang zu den Einstellungen
 
 - **Klicken Sie auf Ihren Avatar** in der oberen rechten Ecke.
-- Wählen Sie **"Einstellungen “**.
-  <img src={require("./img/account-settings/einstellungen.png").default} alt="Access settings" width="1920"/>
-  <br/><br/>
+- Wählen Sie **"Einstellungen “**. <img src={require("./img/account-settings/einstellungen.png").default} alt="Access
+  settings" width="1920"/> <br/><br/>
 
 ---
 
@@ -31,9 +30,8 @@ In den Einstellungen sehen Sie zunächst Ihre grundlegenden **Kontoinformationen
 - **Vor- und Nachname**
 - **E-Mail-Adresse**
 - **Persönlicher Speicherplatz**
-- **Gruppenzugehörigkeiten**
-  <img src={require("./img/account-settings/kontoinformationen.png").default} alt="Account Information" width="1920"/>
-  <br/><br/>
+- **Gruppenzugehörigkeiten** <img src={require("./img/account-settings/kontoinformationen.png").default} alt="Account
+  Information" width="1920"/> <br/><br/>
 
 ---
 
@@ -50,8 +48,7 @@ Abhängig von der Grundkonfiguration können Sie die folgenden Optionen ändern:
 - **Benachrichtigungen**:  
   Legen Sie fest, welche **E-Mail-Benachrichtigungen** Sie von OpenCloud erhalten möchten.
 - **WebDAV options**:  
-  Legen Sie die **WebDAV-Einstellungen** fest, um den externen Zugriff auf Dateien und Ordner zu ermöglichen.
-  <br/><br/>
+  Legen Sie die **WebDAV-Einstellungen** fest, um den externen Zugriff auf Dateien und Ordner zu ermöglichen. <br/><br/>
   <img src={require("./img/account-settings/konto-einstellungen.png").default} alt="Preferences" width="1920"/>
   <br/><br/>
 
@@ -59,17 +56,16 @@ Abhängig von der Grundkonfiguration können Sie die folgenden Optionen ändern:
 
 ## Erweiterungen
 
-Unter **Erweiterungen** können Sie installierte Erweiterungen konfigurieren, z. B. die **Fortschrittsleiste**, sofern vorhanden.
-<img src={require("./img/account-settings/erweiterungen.png").default} alt="Extensions" width="1920"/>
+Unter **Erweiterungen** können Sie installierte Erweiterungen konfigurieren, z. B. die **Fortschrittsleiste**, sofern
+vorhanden. <img src={require("./img/account-settings/erweiterungen.png").default} alt="Extensions" width="1920"/>
 <br/><br/>
 
 ---
 
 ## DSGVO
 
-Gemäß **DSGVO** können Sie einen **Datenexport** Ihrer personenbezogenen Daten beantragen, wenn Sie dies wünschen.
-<img src={require("./img/account-settings/dsgvo.png").default} alt="GDPR" width="1920"/>
-<br/><br/>
+Gemäß **DSGVO** können Sie einen **Datenexport** Ihrer personenbezogenen Daten beantragen, wenn Sie dies wünschen. <img
+src={require("./img/account-settings/dsgvo.png").default} alt="GDPR" width="1920"/> <br/><br/>
 
 ---
 

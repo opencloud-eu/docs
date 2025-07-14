@@ -18,13 +18,15 @@ draft: false
 This release introduces a **breaking change in the GraphAPI**.  
 If you are using OpenCloud only through official clients (Web, Desktop, or Mobile), **no migration is needed**.
 
-If you're using any other software that utilizes the GraphAPI, that software might need to be adjusted to follow the new behavior of the GraphAPI.
+If you're using any other software that utilizes the GraphAPI, that software might need to be adjusted to follow the new
+behavior of the GraphAPI.
 
 ---
 
 ## Key Changes
 
-The following endpoints of the GraphAPI were changed in a way that is not backwards compatible with the previous releases:
+The following endpoints of the GraphAPI were changed in a way that is not backwards compatible with the previous
+releases:
 
 ```http
 GET /v1.0/me/drives/
@@ -33,4 +35,5 @@ GET /v1beta1/drives/
 GET /v1beta1/me/drives/
 ```
 
-Due to performance optimizations, these endpoints no longer automatically expand all permissions on the drives root items. If needed, the permissions can be explicitly requested via the appropriate $expand query option.
+Due to performance optimizations, these endpoints no longer automatically expand all permissions on the drives root
+items. If needed, the permissions can be explicitly requested via the appropriate $expand query option.

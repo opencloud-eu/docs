@@ -6,9 +6,12 @@ title: Demo User
 
 # **Demo User Overview**
 
-This page introduces the pre-configured demo users available in OpenCloud. These users are designed to help you explore the platform’s features, test different roles, and experience OpenCloud from various perspectives without setting up new accounts.
+This page introduces the pre-configured demo users available in OpenCloud. These users are designed to help you explore
+the platform’s features, test different roles, and experience OpenCloud from various perspectives without setting up new
+accounts.
 
-Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as **admin management, file sharing, and collaboration**.
+Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as **admin
+management, file sharing, and collaboration**.
 
 Below, you’ll find details about each user, including their roles and login credentials.
 

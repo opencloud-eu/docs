@@ -5,7 +5,9 @@ title: Web Aplications
 description: 'How to enable web applications in OpenCloud.'
 ---
 
-Administrators have the ability to provide additional web applications to their users. This feature is especially useful for organizations that want to integrate third-party tools or provide internally developed apps within the OpenCloud environment.
+Administrators have the ability to provide additional web applications to their users. This feature is especially useful
+for organizations that want to integrate third-party tools or provide internally developed apps within the OpenCloud
+environment.
 
 ---
 
@@ -48,5 +50,5 @@ These configurations can be managed in the following file:
 opencloud/deployments/examples/opencloud_full/config/opencloud/apps.yaml
 ```
 
-📘 Note: Configuration details vary between apps.
-For specific setup instructions, please refer to the official documentation of the respective app.
+📘 Note: Configuration details vary between apps. For specific setup instructions, please refer to the official
+documentation of the respective app.

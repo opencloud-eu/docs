@@ -6,7 +6,8 @@ id: app-menu-item-extensions
 
 ## Extension Type AppMenuItem
 
-This extension type allows apps to register links to internal or external pages within the application switcher menu on the top left.
+This extension type allows apps to register links to internal or external pages within the application switcher menu on
+the top left.
 
 ### Configuration
 
@@ -27,21 +28,30 @@ interface AppMenuItemExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in
+the top level docs.
 
-A `handler` will result in a `<button>` element. This is necessary when an action should be performed when clicking the menu item (e.g. opening a file editor).
+A `handler` will result in a `<button>` element. This is necessary when an action should be performed when clicking the
+menu item (e.g. opening a file editor).
 
-A `path` will result in an `<a>` element that links to an internal page via the vue router. That means the given path needs to exist within the application.
+A `path` will result in an `<a>` element that links to an internal page via the vue router. That means the given path
+needs to exist within the application.
 
-A `url` will result in an `<a>` element that links to an external page. External pages always open in a new tab or window.
+A `url` will result in an `<a>` element that links to an external page. External pages always open in a new tab or
+window.
 
-At least one of these properties has to be provided when registering an extension. If you define more than one, the priority order is `handler` > `path` > `url`.
+At least one of these properties has to be provided when registering an extension. If you define more than one, the
+priority order is `handler` > `path` > `url`.
 
-`priority` specifies the order of the menu items. 50 is a good number to start with, then go up/down based on where the item should be placed. Defaults to the highest possible number, so the item will most likely end up at the bottom of the list if you don't specify a `priority`. Leave it empty if unsure what to pick.
+`priority` specifies the order of the menu items. 50 is a good number to start with, then go up/down based on where the
+item should be placed. Defaults to the highest possible number, so the item will most likely end up at the bottom of the
+list if you don't specify a `priority`. Leave it empty if unsure what to pick.
 
 ## Example
 
-The following example shows how an app creates an extension that registers an app menu item, linking to an internal page. All helper types and composables are being provided via the [web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) package.
+The following example shows how an app creates an extension that registers an app menu item, linking to an internal
+page. All helper types and composables are being provided via the
+[web-pkg](https://github.com/opencloud-eu/web/tree/main/packages/web-pkg) package.
 
 ```typescript
 export default defineWebApplication({

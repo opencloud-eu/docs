@@ -6,13 +6,13 @@ id: custom-component-extensions
 
 ## Extension Type CustomComponent
 
-CustomComponent extensions need to define one or multiple `extensionPointId`s as render target. A `CustomComponentTarget` component for this very
-extension point needs to be mounted in the current view.
+CustomComponent extensions need to define one or multiple `extensionPointId`s as render target. A
+`CustomComponentTarget` component for this very extension point needs to be mounted in the current view.
 
 ### Configuration
 
-To define a custom component extension, you implement the `CustomComponentExtension` interface.
-Here's what it looks like:
+To define a custom component extension, you implement the `CustomComponentExtension` interface. Here's what it looks
+like:
 
 ```typescript
 interface CustomComponentExtension {
@@ -23,14 +23,15 @@ interface CustomComponentExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in
+the top level docs.
 
 The `content` property specifies a render function or a Component for the target extension point.
 
 ### Example
 
-A simple example for a custom component extension could be a `NyanCat` progress bar component, being
-targeted at the `global-progress-bar` extension point as render target.
+A simple example for a custom component extension could be a `NyanCat` progress bar component, being targeted at the
+`global-progress-bar` extension point as render target.
 
 ```typescript
 const extension = {
