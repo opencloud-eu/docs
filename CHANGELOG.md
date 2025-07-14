@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.39.1](https://github.com/opencloud-eu/docs/releases/tag/1.39.1) - 2025-07-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- chore: add Require Pull Request Labels workflow [[#375](https://github.com/opencloud-eu/docs/pull/375)]
+
 ## [1.39.0](https://github.com/opencloud-eu/docs/releases/tag/1.39.0) - 2025-07-11
 
 ### ❤️ Thanks to all contributors! ❤️
