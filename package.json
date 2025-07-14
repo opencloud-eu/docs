@@ -15,10 +15,10 @@
     "typecheck": "tsc",
     "build-likec4": "likec4 build ./assets/likec4 --base /likec4 -o ./static/likec4",
     "build-git-batch": "docker run --rm -w $(pwd) -v $(pwd):$(pwd)  quay.io/thegeeklab/git-batch",
-    "format:check": "prettier --check .",
-    "format:write": "prettier --write .",
+    "format:check": "prettier --check '**/*.{md,mdx,markdown}'",
+    "format:write": "prettier --write '**/*.{md,mdx,markdown}'",
     "lint:md": "markdownlint-cli2  '**/*.{md,markdown}'",
-    "lint:md:fix": "markdownlint-cli2 --fix '**/*.{md,markdown}'"
+    "lint:md:fix": "markdownlint-cli2 --fix '**/*.{md,mdx,markdown}'"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
