@@ -130,20 +130,20 @@ enabled at buildtime and has a couple of implications:
 
 Support of libvips is disabled by default. To enable it, make sure libvips and its buildtime dependencies are installed in your build environment. For macOS users, add the build time dependencies via:
 
-```bash
+```shell
 brew install vips pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 ```
 
 Then you just need to set the `ENABLE_VIPS` variable on the `make` command:
 
-```bash
+```shell
 make -C opencloud build ENABLE_VIPS=1
 ```
 
 Or include the `enable_vips` build tag in the `go build` command:
 
-```bash
+```shell
 go build -tags enable_vips -o opencloud -o bin/opencloud ./cmd/opencloud
 ```
 

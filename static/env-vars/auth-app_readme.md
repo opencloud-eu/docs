@@ -17,7 +17,7 @@ The auth-app service provides authentication for 3rd party apps unable to use
 OpenID Connect. The service is enabled by default and started automatically. It
 is possible to disable the service by setting:
 
-```bash
+```shell
 OC_EXCLUDE_RUN_SERVICES=auth-app # deployment specific. Removes service from the list of automatically started services, use with single-binary deployments
 PROXY_ENABLE_APP_AUTH=false      # mandatory, disables app authentication. In case of a distributed environment, this envvar needs to be set in the proxy service.
 ```
@@ -61,7 +61,7 @@ The `auth-app` service provides an API to create (POST), list (GET) and delete (
   The POST request requires:
   * A `expiry` key/value pair in the form of `expiry=<number><h|m|s>`\
     Example: `expiry=72h`
-  ```bash
+  ```shell
   curl --request POST 'https://<your host:9200>/auth-app/tokens?expiry={value}' \
        --header 'accept: application/json'
   ```
@@ -79,7 +79,7 @@ The `auth-app` service provides an API to create (POST), list (GET) and delete (
   please copy it from the response.
 
 * **List tokens**\
-  ```bash
+  ```shell
   curl --request GET 'https://<your host:9200>/auth-app/tokens' \
        --header 'accept: application/json'
   ```
@@ -110,7 +110,7 @@ The `auth-app` service provides an API to create (POST), list (GET) and delete (
   The DELETE request requires:
   * A `token` key/value pair in the form of `token=<token_issued>`. The value needs to be the hashed value as returned by the `List Tokens` respone.\
     Example: `token=$2$Z3s2K7816M4vuSpd5`
-  ```bash
+  ```shell
   curl --request DELETE 'https://<your host:9200>/auth-app/tokens?token={value}' \
        --header 'accept: application/json'
   ```
@@ -136,7 +136,7 @@ the following parameters, where you can use one or the other:
 
 Example:\
 A final create request would then look like:
-```bash
+```shell
 curl --request POST 'https://<your host:9200>/auth-app/tokens?expiry={value}&userName={value}' \
      --header 'accept: application/json'
 ```
@@ -149,7 +149,7 @@ Replace the `user-name` with an existing user. For the `token-expiration`, you
 can use any time abbreviation from the following list: `h, m, s`. Examples:
 `72h` or `1h` or `1m` or `1s.` Default is `72h`.
 
-```bash
+```shell
 opencloud auth-app create --user-name={user-name} --expiration={token-expiration}
 ```
 
@@ -158,7 +158,7 @@ opencloud auth-app create --user-name={user-name} --expiration={token-expiration
 To autenticate using an App Token simply use the username for which token was generated
 and the token value as returned by the "Create Token" request.
 
-```bash
+```shell
 curl -u <username>:<tokenvalue> 'https://<your host>/graph/v1.0/me' \
      --header 'accept: application/json'
 ```

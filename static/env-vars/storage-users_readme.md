@@ -76,7 +76,7 @@ Example cases for expired uploads:
 
 The following commands are available to manage unfinished uploads:
 
-```bash
+```shell
 opencloud storage-users uploads <command>
 ```
 
@@ -97,7 +97,7 @@ The `sessions` command is the entry point for listing, restarting and cleaning u
 > * `resume`\
 > When resuming an upload, processing will continue unfinished items from their last completed step.
 
-```bash
+```shell
 opencloud storage-users uploads sessions <commandoptions>
 ```
 
@@ -131,7 +131,7 @@ Some additional information on returned information:
 
 Command to list ongoing upload sessions
 
-```bash
+```shell
 opencloud storage-users uploads sessions --expired=false --processing=false
 ```
 
@@ -147,7 +147,7 @@ Not expired sessions:
 
 The sessions command can also output json
 
-```bash
+```shell
 opencloud storage-users uploads sessions --expired=false --processing=false --json
 ```
 
@@ -159,7 +159,7 @@ opencloud storage-users uploads sessions --expired=false --processing=false --js
 The sessions command can also clear and restart/resume uploads. The output is the same as if run without `--clean` or `--restart` flag.
 Note: It is recommended to run to command first without the `--clean` (`--processing`) flag to double check which uploads get cleaned (restarted/resumed).
 
-```bash
+```shell
 # cleans all expired uploads regardless of processing and virus state.
 opencloud storage-users uploads sessions --expired=true --clean
 
@@ -171,7 +171,7 @@ opencloud storage-users uploads sessions --processing=false --has-virus=false --
 
 This command set provides commands to get an overview of trash-bin items, restore items and purge old items of `personal` spaces and `project` spaces (spaces that have been created manually). `trash-bin` commands require a `spaceID` as parameter. 
 
-```bash
+```shell
 opencloud storage-users trash-bin <command>
 ```
 
@@ -186,7 +186,7 @@ COMMANDS:
 #### Purge Expired
 
 *   Purge all expired items from the trash-bin.
-    ```bash
+    ```shell
     opencloud storage-users trash-bin purge-expired
     ```
 
@@ -205,7 +205,7 @@ Has a default value of `720h` which equals `30 days`. This means, the command wi
 
 Restoring is possible only to the original location. The personal or project `spaceID` is required for the items to be restored. To authenticate the CLI tool use:
 
-```bash
+```shell
 OC_SERVICE_ACCOUNT_SECRET=<acc-secret>
 OC_SERVICE_ACCOUNT_ID=<acc-id>
 ```
@@ -213,12 +213,12 @@ OC_SERVICE_ACCOUNT_ID=<acc-id>
 The `storage-users` CLI tool uses the default address to establish the connection to the `gateway` service. If the connection fails, check the `GATEWAY_GRPC_ADDR` configuration from your `gateway` service and set the same address to the `storage-users` variable `STORAGE_USERS_GATEWAY_GRPC_ADDR` or globally with `OC_GATEWAY_GRPC_ADDR`.
 
 *   Export the gateway address if your configuration differs from the default
-    ```bash
+    ```shell
     export STORAGE_USERS_GATEWAY_GRPC_ADDR=127.0.0.1:9142
     ```
 
 *   Print a list of all trash-bin items of a space
-    ```bash
+    ```shell
     opencloud storage-users trash-bin list [command options] ['spaceID' required]
     ```
 
@@ -227,12 +227,12 @@ The restore option defines the behavior for an item to be restored, when the ite
 When the CLI tool restores the item with the `replace` option, the existing item will be moved to a trash-bin. When the CLI tool restores the item with the `keep-both` option and the designated item already exists, the name of the restored item will be changed by adding a numeric suffix in parentheses. The variable `STORAGE_USERS_CLI_MAX_ATTEMPTS_RENAME_FILE` defines a maximum number of attempts to rename an item.
 
 * Restore all trash-bin items for a space
-    ```bash
+    ```shell
     opencloud storage-users trash-bin restore-all [command options] ['spaceID' required]
     ```
 
 * Restore a trash-bin item by ID
-    ```bash
+    ```shell
     opencloud storage-users trash-bin restore [command options] ['spaceID' required] ['itemID' required]
     ```
 

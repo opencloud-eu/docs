@@ -185,7 +185,7 @@ To enable disabled roles like the `UnifiedRoleSecureViewer`, you must provide th
 
 The following CLI command simplifies the process of finding out which UID belongs to which role:
 
-```bash
+```shell
 opencloud graph list-unified-roles
 ```
 
@@ -202,7 +202,7 @@ The output of this command includes the following information for each role:
 
 **Example output (shortned)**
 
-```bash
+```shell
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 |                 UID                  | ENABLED  |          DESCRIPTION           |           CONDITION            |         ALLOWED RESOURCE ACTIONS         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+

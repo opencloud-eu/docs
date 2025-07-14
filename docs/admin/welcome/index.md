@@ -10,7 +10,7 @@ you to **get started, configure, and maintain** OpenCloud.
 
 ## Quick start
 
-```bash
+```shell
 curl -L https://opencloud.eu/install | /bin/bash
 ```
 

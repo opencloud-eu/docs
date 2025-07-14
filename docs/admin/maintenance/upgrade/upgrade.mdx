@@ -16,11 +16,14 @@ This guide provides steps to upgrade OpenCloud for both [docker](docs/admin/gett
 Stop the currently running OpenCloud instance:
 
 <Tabs groupId="deployment">
+  {/* prettier-ignore */}
   <TabItem value="docker" label="docker">
-    ```Shell docker stop opencloud ```
-  </TabItem>
+        ```shell
+        docker stop opencloud
+        ```
+    </TabItem>
   <TabItem value="docker-compose" label="docker compose">
-    ```Shell docker compose stop ```
+    ```shell docker compose stop ```
   </TabItem>
 </Tabs>
 
@@ -34,7 +37,7 @@ It is recommended to create a [backup](../backup.md) before proceeding with the 
 
 ### 3. Pull the new Opencloud version
 
-```bash
+```shell
 docker pull opencloudeu/opencloud:{tag}
 ```
 
@@ -46,11 +49,11 @@ If upgrading from an older release, check for required configuration changes:
 
 Go inside the container:
 
-```bash
+```shell
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
 ```
 
-```bash
+```shell
 opencloud init --diff
 ```
 
@@ -64,14 +67,24 @@ file accordingly and start OpenCloud.
 ### 5. Start OpenCloud with updated image
 
 <Tabs groupId="deployment">
+  {/* prettier-ignore */}
   <TabItem value="docker" label="docker">
-    ```Shell docker run \ --name opencloud \ --rm \ -it \ -p 9200:9200 \ -v
-    $HOME/opencloud/opencloud-config:/etc/opencloud \ -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \ -e
-    OC_INSECURE=true \ -e PROXY_HTTP_ADDR=0.0.0.0:9200 \ -e OC_URL=https://localhost:9200 \ opencloudeu/opencloud:{tag}
-    ```
-  </TabItem>
+        ```shell
+        docker run \
+        --name opencloud \
+        --rm \
+        -it \
+        -p 9200:9200 \
+        -v $HOME/opencloud/opencloud-config:/etc/opencloud \
+        -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
+        -e OC_INSECURE=true \
+        -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
+        -e OC_URL=https://localhost:9200 \
+        opencloudeu/opencloud:{tag}
+        ```
+    </TabItem>
   <TabItem value="docker-compose" label="docker compose">
-    ```Shell OC_DOCKER_IMAGE=opencloudeu/opencloud OC_DOCKER_TAG=tag docker compose up -d ```
+    ```shell OC_DOCKER_IMAGE=opencloudeu/opencloud OC_DOCKER_TAG=tag docker compose up -d ```
   </TabItem>
 </Tabs>
 

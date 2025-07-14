@@ -16,13 +16,13 @@ description: 'Guide to uninstall OpenCloud.'
 
 Navigate to your `opencloud-compose` directory (where your `docker-compose.yml` file is located), then run:
 
-```bash
+```shell
 docker compose down
 ```
 
 To also remove unnamed volumes and orphan containers:
 
-```bash
+```shell
 docker compose down --volumes --remove-orphans
 ```
 
@@ -30,7 +30,7 @@ docker compose down --volumes --remove-orphans
 
 To check your existing volumes:
 
-```bash
+```shell
 docker volume ls
 ```
 
@@ -42,13 +42,13 @@ Typical OpenCloud volumes may include:
 
 To delete specific volumes:
 
-```bash
+```shell
 docker volume rm opencloud_compose_opencloud-data opencloud_compose_opencloud-config
 ```
 
 Or to clean up all unused volumes (be careful!):
 
-```bash
+```shell
 docker volume prune
 ```
 
@@ -56,7 +56,7 @@ docker volume prune
 
 If your .env referenced local folders such as /mnt/opencloud/data, you should delete those manually:
 
-```bash
+```shell
 sudo rm -rf /mnt/opencloud/data
 sudo rm -rf /mnt/opencloud/config
 ```
@@ -67,7 +67,7 @@ Adjust the paths to match your setup.
 
 If you want to delete the entire project directory:
 
-```bash
+```shell
 cd ..
 rm -rf opencloud-compose
 ```

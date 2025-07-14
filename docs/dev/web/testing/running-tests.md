@@ -16,7 +16,7 @@ This section assumes you have the Web development stack up and running. Please c
 
 We have a steadily growing coverage of unit tests. You can run them locally via
 
-```bash
+```shell
 pnpm test:unit
 ```
 
@@ -44,7 +44,7 @@ it easy to write tests, debug them and have them run cross-browser with minimal 
 
 Make sure the Web frontend has been bundled with the following command since the dev server won't work:
 
-```bash
+```shell
 pnpm build:w
 ```
 
@@ -52,7 +52,7 @@ pnpm build:w
 
 The following command will run all available e2e tests:
 
-```bash
+```shell
 pnpm test:e2e:cucumber 'tests/e2e/cucumber/**/*.feature'
 ```
 
@@ -84,7 +84,7 @@ variables in your command:
 
 To then open e.g. the tracing from the `REPORT_DIR`, run
 
-```bash
+```shell
 npx playwright show-trace path/to/file.zip
 ```
 
@@ -92,13 +92,13 @@ npx playwright show-trace path/to/file.zip
 
 Run the following command to find out the lint issues early in the test codes:
 
-```bash
+```shell
 pnpm lint
 ```
 
 And to fix the lint problems run the following command:
 
-```bash
+```shell
 pnpm lint --fix
 ```
 
@@ -109,7 +109,7 @@ If the lint problems are not fixed by `--fix` option, we have to manually fix th
 The cucumber library is used as the test runner for e2e tests. The report generator script lives inside the
 `tests/e2e/cucumber/report` folder. If you want to create a report after the tests are done, run the command:
 
-```bash
+```shell
 node tests/e2e/cucumber/report --report-input=tests/e2e/cucumber/report/report.json
 ```
 
@@ -118,7 +118,7 @@ changed by adding the `--report-location` flag.
 
 To see all available options run
 
-```bash
+```shell
 node tests/e2e/cucumber/report --help
 ```
 
@@ -135,7 +135,7 @@ each step to run **OpenCloud with Keycloak**.
 
 #### Run E2E Tests
 
-```bash
+```shell
 KEYCLOAK=true \
 BASE_URL_OPEN_CLOUD=demo.opencloud.test \
 pnpm run test:e2e:cucumber tests/e2e/cucumber/features/journeys

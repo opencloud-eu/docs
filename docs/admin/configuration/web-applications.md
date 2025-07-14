@@ -30,7 +30,7 @@ Find and download the application you want to install.
 Unzip the downloaded archive and copy the extracted folder into the web application directory.  
 By default, this path is:
 
-```bash
+```shell
 opencloud/services/web/assets/apps
 ```
 
@@ -46,7 +46,7 @@ Some OpenCloud apps require additional configuration — for example, the **Exte
 
 These configurations can be managed in the following file:
 
-```bash
+```shell
 opencloud/deployments/examples/opencloud_full/config/opencloud/apps.yaml
 ```
 

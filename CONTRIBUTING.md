@@ -17,14 +17,14 @@ We welcome suggestions for improvements. To propose an enhancement, [open a new 
 1. **Fork the Repository**: Click the "Fork" button at the top right of the repository page.
 
 2. **Clone Your Fork**:
-   ```bash
+   ```shell
    git clone https://github.com/opencloud-eu/docs.git
    cd docs
    ```
 
 3. **Create a New Branch**:
 
-    ```bash
+    ```shell
     git checkout -b feature/your-feature-name
     ```
 
@@ -34,13 +34,13 @@ Implement your changes, adhering to the docs style.
 
 5. **Commit Your Changes**:
 
-    ```bash
+    ```shell
     git commit -m "Brief description of your changes"
     ```
 
 6. **Push to Your Fork**:
 
-    ```bash
+    ```shell
     git push origin feature/your-feature-name
     ```
 

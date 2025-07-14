@@ -31,7 +31,7 @@ These are automatically generated during the build process and updated with each
 
 The project has a built-in script to render the C4 models:
 
-```bash
+```shell
 # Install dependencies
 pnpm install
 

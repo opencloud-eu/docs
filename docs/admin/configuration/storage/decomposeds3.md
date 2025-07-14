@@ -23,7 +23,7 @@ storage efficiently. This setup leverages S3’s scalability while integrating s
 
 Download the `opencloud_full` folder (this folder contains a multi-file Docker Compose configuration):
 
-```bash
+```shell
 git clone https://github.com/opencloud-eu/opencloud.git
 ```
 
@@ -31,13 +31,13 @@ git clone https://github.com/opencloud-eu/opencloud.git
 
 Navigate to the Docker Compose configuration folder:
 
-```bash
+```shell
 cd opencloud/deployments/examples/opencloud_full
 ```
 
 Enable `decomposeds3.yml` and `minio.yml` in the `.env` file:
 
-```bash
+```shell
 nano opencloud/deployments/examples/opencloud_full/.env
 ```
 
@@ -46,7 +46,7 @@ Find all required environment variables `env` here:
 
 Start the deployment with Docker Compose:
 
-```bash
+```shell
 docker compose up -d
 ```
 
@@ -56,7 +56,7 @@ This starts all necessary containers in the background.
 
 Edit the /etc/hosts file and add the following entries for local access:
 
-```bash
+```shell
 127.0.0.1       cloud.opencloud.test
 127.0.0.1       minio.opencloud.test
 ```

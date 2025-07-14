@@ -8,7 +8,7 @@ title: Common Issues & Help
 
 ### Check whether the containers are running
 
-```bash
+```shell
 docker ps
 ```
 
@@ -41,7 +41,7 @@ to incorrect ownership of local directories used by the containers.
 
 **Example log output:**
 
-```bash
+```shell
 opencloud-1 | {"level":"fatal","service":"nats","time":"2025-04-08T09:59:59Z","line":"github.com/opencloud-eu/opencloud/services/nats/pkg/logging/nats.go:33","message":"Can't start JetStream: could not create storage directory - mkdir /var/lib/opencloud/nats: permission denied"}
 ```
 
@@ -50,19 +50,19 @@ standard Docker user (`UID 1000`).
 
 **Incorrect directory ownership:**
 
-```bash
+```shell
 drwxr-xr-x  3 root root 4096 Apr  8 09:59 opencloud-data
 ```
 
 **Correct ownership should be:**
 
-```bash
+```shell
 drwxr-xr-x  9 1000 1000 4096 Apr  7 07:57 opencloud-data
 ```
 
 To resolve this issue, adjust the ownership of the directory using the `chown` command:
 
-```bash
+```shell
 chown -R 1000:1000 opencloud-data
 ```
 
@@ -110,7 +110,7 @@ If the admin password is forgotten or needs to be changed via the terminal:
 
 First, stop your OpenCloud container:
 
-```bash
+```shell
 docker compose stop opencloud
 ```
 
@@ -118,7 +118,7 @@ docker compose stop opencloud
 
 Use the following command to reset the password:
 
-```bash
+```shell
 sudo docker run -it --rm -v <opencloud-data-path>:/var/lib/opencloud -v <opencloud-config-path>:/etc/opencloud opencloudeu/opencloud:<opencloud-version> idm resetpassword
 ```
 
@@ -132,7 +132,7 @@ Replace:
 
 🔍 How to find the volume names You can list your current Docker volumes with:
 
-```bash
+```shell
 docker volume ls
 ```
 
@@ -144,12 +144,12 @@ Look for volumes like:
 
 💡 Example for standard setup:
 
-```bash
+```shell
 sudo docker run -it --rm -v opencloud_full_opencloud-data:/var/lib/opencloud -v opencloud_full_opencloud-config:/etc/opencloud opencloudeu/opencloud:latest idm resetpassword
 ```
 
 #### Step 3: Start the container again
 
-```bash
+```shell
 docker compose up -d
 ```

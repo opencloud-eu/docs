@@ -129,7 +129,7 @@ OpenCloud can work with any LDAP schema containing standard attributes:
 
 **Example LDAP Structure:**
 
-```bash
+```shell
 dc=example,dc=org              # Base DN
 ├── ou=users                   # User organizational unit
 │   ├── uid=user1              # User entries
@@ -155,7 +155,7 @@ This feature is optional and can be disabled by setting `GRAPH_LDAP_GROUP_CREATE
 
 Keycloak and OpenCloud can be configured using environment variables:
 
-```bash
+```shell
 # Basic Keycloak configuration
 KEYCLOAK_DOMAIN=keycloak.example.org
 KEYCLOAK_REALM=openCloud
@@ -200,7 +200,7 @@ OpenCloud provides complete example deployments using Docker Compose:
 
 **For Shared Directory Mode:**
 
-```bash
+```shell
 # Enable services
 LDAP=:ldap.yml
 KEYCLOAK_DOMAIN=your-keycloak-domain.example.com # your public keycloak domain without protocol
@@ -274,7 +274,7 @@ graph TD
 
 Keycloak, OpenCloud and OpenLDAP can be configured using environment variables:
 
-```bash
+```shell
 # Basic Keycloak configuration
 KEYCLOAK_DOMAIN=keycloak.example.org
 KEYCLOAK_REALM=openCloud
@@ -314,7 +314,7 @@ OpenCloud provides complete example deployments using Docker Compose:
 
 **For Autoprovisioning Mode:**
 
-```bash
+```shell
 # Enable services
 LDAP=:ldap.yml
 KEYCLOAK_DOMAIN=your-keycloak-domain.example.com # your public keycloak domain without protocol

@@ -15,7 +15,7 @@ description: 'How to activate mail notifications in OpenCloud.'
 
 Edit the file with your preferred text editor:
 
-```bash
+```shell
 nano .env
 ```
 
@@ -55,7 +55,7 @@ For nano, press Ctrl + O to save and Ctrl + X to exit.
 
 Apply the changes by restarting the OpenCloud services:
 
-```bash
+```shell
 docker compose down
 docker compose up -d
 ```

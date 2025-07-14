@@ -22,13 +22,13 @@ these steps carefully to ensure a smooth migration!
 
 Modify `.env` file:
 
-```bash
+```shell
 START_ADDITIONAL_SERVICES="auth-app"
 ```
 
 Enable `auth-app` service:
 
-```bash
+```shell
 PROXY_ENABLE_APP_AUTH="true"
 ```
 
@@ -36,13 +36,13 @@ PROXY_ENABLE_APP_AUTH="true"
 
 Access the OpenCloud container:
 
-```bash
+```shell
 docker exec -it opencloud_full-opencloud-1 sh
 ```
 
 Generate an authentication token for a user (e.g., `alan`) with expiration (`h`, `m`, `s`):
 
-```bash
+```shell
 opencloud auth-app create --user-name=alan --expiration=72h
 ```
 
@@ -52,13 +52,13 @@ opencloud auth-app create --user-name=alan --expiration=72h
 
 Requires additional configuration! Start the server with:
 
-```bash
+```shell
 AUTH_APP_ENABLE_IMPERSONATION=true
 ```
 
 Then generate a token via API:
 
-```bash
+```shell
 curl -vk -XPOST 'https://opencloud_url/auth-app/tokens?expiry=72h&userName=alan' -uadmin:admin
 ```
 
@@ -70,13 +70,13 @@ curl -vk -XPOST 'https://opencloud_url/auth-app/tokens?expiry=72h&userName=alan'
 
 Modify `.env` file:
 
-```bash
+```shell
 START_ADDITIONAL_SERVICES="auth-app"
 ```
 
 Enable `auth-app` service:
 
-```bash
+```shell
 PROXY_ENABLE_APP_AUTH="true"
 ```
 
@@ -84,13 +84,13 @@ PROXY_ENABLE_APP_AUTH="true"
 
 Access the oCIS container:
 
-```bash
+```shell
 docker exec -it ocis_full-ocis-1 sh
 ```
 
 Generate an authentication token for a user (e.g., `einstein`) with expiration (`h`, `m`, `s`):
 
-```bash
+```shell
 ocis auth-app create --user-name=einstein --expiration=72h
 ```
 
@@ -100,13 +100,13 @@ ocis auth-app create --user-name=einstein --expiration=72h
 
 Requires additional configuration! Start the server with:
 
-```bash
+```shell
 AUTH_APP_ENABLE_IMPERSONATION=true
 ```
 
 Then generate a token via API:
 
-```bash
+```shell
 curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' -uadmin:admin
 ```
 
@@ -133,7 +133,7 @@ Download and install rclone by following the official guide: 🔗[**rclone.org/i
 
 ### 3. Encrypt Authentication Tokens 🔒
 
-```bash
+```shell
 rclone obscure <token>
 ```
 
@@ -143,13 +143,13 @@ rclone obscure <token>
 
 Edit the rclone configuration file:
 
-```bash
+```shell
 nano ~/.config/rclone/rclone.conf
 ```
 
 📌 Example Configuration:
 
-```bash
+```shell
 [opencloud-admin]
 type = webdav
 url = https://opencloud_url/remote.php/webdav
@@ -212,7 +212,7 @@ description = nc-bob
 
 Use `rclone copy` to transfer data from `oCIS` and `Nextcloud` to `OpenCloud`:
 
-```bash
+```shell
 rclone copy ocis-admin:/ opencloud-admin:/ --no-check-certificate -P  # Copy oCIS admin personal space to OpenCloud admin space
 rclone copy ocis-einstein:/ opencloud-alan:/ --no-check-certificate -P  # Copy oCIS bob's personal space to OpenCloud admin space
 rclone copy nc-bob:/ opencloud-alan:/ --no-check-certificate -P  # Copy Nextcloud admin personal space to OpenCloud admin space

@@ -32,7 +32,7 @@ In the root directory of the `opencloud_full` deployment example, usually
 
 ### 2. Update the deployment
 
-```bash
+```shell
 docker compose up -d
 ```
 

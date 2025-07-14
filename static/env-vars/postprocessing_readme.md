@@ -122,13 +122,13 @@ Depending if you want to restart/resume all or defined failed uploads, different
 -   First, list ongoing upload sessions to identify possibly failed ones.\
     Note that there never can be a clear identification of a failed upload session due to various reasons causing them. You need to apply more critera like free space on disk, a failed service like antivirus etc. to declare an upload as failed.
 
-    ```bash
+    ```shell
     opencloud storage-users uploads sessions
     ```
 
 -   **All failed uploads**\
     If you want to restart/resume all failed uploads, just rerun the command with the relevant flag. Note that this is the preferred command to handle failed processing steps:
-    ```bash
+    ```shell
     opencloud storage-users uploads sessions --resume
     ```
 
@@ -137,14 +137,14 @@ Depending if you want to restart/resume all or defined failed uploads, different
 
     - **Defined by ID**\
       If you want to resume only a specific upload, use the postprocessing resume command with the ID selected:
-      ```bash
+      ```shell
       opencloud postprocessing resume -u <uploadID>
       ```
 
     - **Defined by step**\
       Alternatively, instead of restarting one specific upload, a system admin can also resume all uploads that are currently in a specific step.\
       Examples:\
-      ```bash
+      ```shell
       opencloud postprocessing resume                # Resumes all uploads where postprocessing is finished, but upload is not finished
       opencloud postprocessing resume -s "finished"  # Equivalent to the above
       opencloud postprocessing resume -s "virusscan" # Resume all uploads currently in virusscan step

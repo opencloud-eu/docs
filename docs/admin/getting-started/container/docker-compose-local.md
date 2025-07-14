@@ -21,7 +21,7 @@ Spin up a temporary local instance of OpenCloud using **Docker Compose**.
 
 Clone the OpenCloud repository:
 
-```bash
+```shell
 git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
@@ -31,13 +31,13 @@ git clone https://github.com/opencloud-eu/opencloud-compose.git
 
 ### cd into the Docker Compose configuration folder
 
-```bash
+```shell
 cd opencloud-compose
 ```
 
 ### Create environment file
 
-```bash
+```shell
 cp .env.example .env
 ```
 
@@ -49,19 +49,19 @@ cp .env.example .env
 
 You can deploy using explicit -f flags:
 
-```bash
+```shell
 docker compose -f docker-compose.yml -f weboffice/collabora.yml -f traefik/opencloud.yml -f traefik/collabora.yml up -d
 ```
 
 Or by uncomment or adding the COMPOSE_FILE variable in .env:
 
-```bash
+```shell
 COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml
 ```
 
 Set you initial admin password in the .env
 
-```bash
+```shell
 INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 ```
 
@@ -69,7 +69,7 @@ This is mandatory for security reasons. Otherwise the OpenCloud container will n
 
 Start the deployment with Docker Compose:
 
-```bash
+```shell
 docker compose up -d
 ```
 
@@ -83,7 +83,7 @@ This starts all necessary containers in the background.
 
 Edit the /etc/hosts file and add the following entries for local access:
 
-```bash
+```shell
 127.0.0.1       cloud.opencloud.test
 127.0.0.1       collabora.opencloud.test
 127.0.0.1       wopiserver.opencloud.test

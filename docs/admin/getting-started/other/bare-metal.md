@@ -22,13 +22,13 @@ great power comes great responsibility. :::
 
 - Update your package list:
 
-  ```bash
+  ```shell
   sudo apt update && apt upgrade
   ```
 
 - Install Git using the following command:
 
-  ```bash
+  ```shell
   sudo apt install git
   ```
 
@@ -36,7 +36,7 @@ great power comes great responsibility. :::
 
 - Clone the OpenCloud repository:
 
-  ```bash
+  ```shell
   git clone https://github.com/opencloud-eu/opencloud.git
   ```
 
@@ -50,7 +50,7 @@ great power comes great responsibility. :::
 
 - Install npm (Node Package Manager):
 
-  ```bash
+  ```shell
   sudo apt install npm -y
   ```
 
@@ -58,7 +58,7 @@ great power comes great responsibility. :::
 
 - Install corepack globally:
 
-  ```bash
+  ```shell
   sudo npm install -g corepack
   ```
 
@@ -66,7 +66,7 @@ great power comes great responsibility. :::
 
 - Enable `pnpm` using corepack:
 
-  ```bash
+  ```shell
   corepack enable pnpm
   ```
 
@@ -78,7 +78,7 @@ great power comes great responsibility. :::
 
 - Navigate to the OpenCloud directory:
 
-  ```bash
+  ```shell
   cd opencloud
   ```
 
@@ -86,14 +86,14 @@ great power comes great responsibility. :::
 
 - Run the build generate process:
 
-  ```bash
+  ```shell
   make clean generate
   make -C opencloud build
   ```
 
 - Initialize OpenCloud with insecure configuration and set an admin password:
 
-  ```bash
+  ```shell
   ./bin/opencloud init --insecure true --admin-password admin
   ```
 
@@ -101,7 +101,7 @@ great power comes great responsibility. :::
 
 - Start the OpenCloud server:
 
-  ```bash
+  ```shell
   ./bin/opencloud server
   ```
 

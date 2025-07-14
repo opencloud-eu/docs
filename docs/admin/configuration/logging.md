@@ -53,6 +53,6 @@ in backend logs for correlation.
 
 To manually test with `curl`, add:
 
-```bash
+```shell
 --header "X-Request-ID: <your-id>"
 ```

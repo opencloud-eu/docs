@@ -4,7 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Installation
 
-```bash
+```shell
 pnpm install
 ```
 
@@ -12,7 +12,7 @@ pnpm install
 
 clone this repository
 
-```bash
+```shell
 pnpm start
 ```
 
@@ -22,7 +22,7 @@ This command starts a local development server and opens up a browser window. Mo
 
 To see the docs in German you need to start it with the following command
 
-```bash
+```shell
 pnpm run start --locale de
 ```
 
@@ -30,7 +30,7 @@ It is not possible to switch between the languages via the language switcher
 
 ### Build
 
-```bash
+```shell
 pnpm build
 ```
 
@@ -40,13 +40,13 @@ This command generates static content into the `build` directory and can be serv
 
 Using SSH:
 
-```bash
+```shell
 USE_SSH=true pnpm deploy
 ```
 
 Not using SSH:
 
-```bash
+```shell
 GIT_USER=<Your GitHub username> pnpm deploy
 ```
 

@@ -30,7 +30,7 @@ distributions, but the commands and package managers may differ.
 
 Log into your server via SSH:
 
-```bash
+```shell
 ssh root@YOUR.SERVER.IP
 ```
 
@@ -40,7 +40,7 @@ Update your system and install Docker.
 
 First, perform an update and upgrade:
 
-```bash
+```shell
 apt update && apt upgrade -y
 ```
 
@@ -49,7 +49,7 @@ Install Docker following the
 
 Once Docker is installed, enable and start the service:
 
-```bash
+```shell
 systemctl enable docker && systemctl start docker
 ```
 
@@ -57,7 +57,7 @@ systemctl enable docker && systemctl start docker
 
 Download the necessary configuration files:
 
-```bash
+```shell
 git clone https://github.com/opencloud-eu/opencloud.git
 ```
 
@@ -67,7 +67,7 @@ Before requesting real SSL certificates, test the setup with Let's Encrypt’s s
 
 Navigate to the OpenCloud configuration folder:
 
-```bash
+```shell
 cd opencloud/deployments/examples/opencloud_full
 ```
 
@@ -75,7 +75,7 @@ Edit the `.env` file with the editor of your choice:
 
 In our example we use nano
 
-```bash
+```shell
 nano .env
 ```
 
@@ -83,13 +83,13 @@ Modify these settings:
 
 ### ✅ Disable insecure mode
 
-```bash
+```shell
 # INSECURE=true
 ```
 
 ### ✅ Set your domain names
 
-```bash
+```shell
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
 OC_DOMAIN=cloud.YOUR.DOMAIN
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
@@ -98,19 +98,19 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
 ### ✅ Set your admin password
 
-```bash
+```shell
 ADMIN_PASSWORD=YourSecurePassword
 ```
 
 ### ✅ Set your email for SSL certification
 
-```bash
+```shell
 TRAEFIK_ACME_MAIL=your@email.com
 ```
 
 ### ✅ Use Let's Encrypt staging certificates (for testing)
 
-```bash
+```shell
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
@@ -144,7 +144,7 @@ OC_DATA_DIR=/your/local/path/opencloud/data
 
 Ensure these folders exist and are owned by user and group 1000:1000, which the Docker containers use by default:
 
-```bash
+```shell
 sudo mkdir -p /your/local/path/opencloud/{config,data}
 sudo chown -R 1000:1000 /your/local/path/opencloud
 ```
@@ -168,7 +168,7 @@ management and consider isolating access to these directories.
 
 Launch OpenCloud using Docker Compose:
 
-```bash
+```shell
 docker compose up -d
 ```
 
@@ -178,7 +178,7 @@ This will start all required services in the background.
 
 In your web browser, visit:
 
-```bash
+```shell
 https://cloud.YOUR.DOMAIN
 ```
 
@@ -202,13 +202,13 @@ Once the staging certificate works, switch to a production certificate.
 
 #### 1️⃣ Stop Docker Compose
 
-```bash
+```shell
 docker compose down
 ```
 
 #### 2️⃣ Remove old staging certificates
 
-```bash
+```shell
 docker volume rm opencloud_full_certs
 ```
 
@@ -216,19 +216,19 @@ docker volume rm opencloud_full_certs
 
 #### 3️⃣ Disable staging mode in `.env`
 
-```bash
+```shell
 nano .env
 ```
 
 Comment the staging server:
 
-```bash
+```shell
 # TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
 #### 4️⃣ Restart OpenCloud with a real SSL certificate
 
-```bash
+```shell
 docker compose up -d
 ```
 
@@ -240,7 +240,7 @@ docker compose up -d
 
 Open a browser and visit:
 
-```bash
+```shell
 https://cloud.YOUR.DOMAIN
 ```
 
@@ -278,7 +278,7 @@ This will include the LDAP and Keycloak service definitions in the Docker Compos
 
 ### After starting OpenCloud, Keycloak will be available at
 
-```bash
+```shell
 https://keycloak.your.domain
 ```
 
@@ -288,7 +288,7 @@ https://keycloak.your.domain
 
 #### 1. Open your browser and go to
 
-```bash
+```shell
 https://keycloak.your.domain
 ```
 

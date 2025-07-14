@@ -85,7 +85,7 @@ Clients, for example OpenCloud Web, need to offer users the available apps to op
 
 **Request example**:
 
-```bash
+```shell
 curl 'https://opencloud.test/app/list'
 ```
 
@@ -187,7 +187,7 @@ HTTP status code: 200
 
 **Request examples**:
 
-```bash
+```shell
 curl -X POST 'https://opencloud.test/app/open-with-web?file_id=ZmlsZTppZAo='
 
 curl -X POST 'https://opencloud.test/app/open-with-web?file_id=ZmlsZTppZAo=&app_name=Collabora'
@@ -243,7 +243,7 @@ See error cases for [Open a file with the app provider](#open-a-file-with-the-ap
 
 **Request examples**:
 
-```bash
+```shell
 curl -X POST 'https://opencloud.test/app/open?file_id=ZmlsZTppZAo='
 
 curl -X POST 'https://opencloud.test/app/open?file_id=ZmlsZTppZAo=&lang=de'
@@ -390,7 +390,7 @@ HTTP status code: 200
 
 **Request examples**:
 
-```bash
+```shell
 curl -X POST 'https://opencloud.test/app/new?parent_container_id=c2lkOmNpZAo=&filename=test.odt'
 ```
 

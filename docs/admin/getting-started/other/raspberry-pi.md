@@ -36,13 +36,13 @@ The IP for this can be viewed in your router.
 
 ### Establish connection via SSH
 
-```bash
+```shell
 ssh pi@YOUR-IP
 ```
 
 After the first login, you should change the password for security reasons:
 
-```bash
+```shell
 passwd
 ```
 
@@ -53,25 +53,25 @@ Detailed installation instructions for Docker can be found here:
 
 - Perform update and upgrade:
 
-```bash
+```shell
 sudo apt update && sudo apt upgrade -y
 ```
 
 - Install Docker via script:
 
-```bash
+```shell
 curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
 - Add current user to the Docker group:
 
-```bash
+```shell
 sudo usermod -aG docker ${USER}
 ```
 
 - Check if it's working:
 
-```bash
+```shell
 groups ${USER}
 ```
 
@@ -79,31 +79,31 @@ groups ${USER}
 
 - Reboot the Raspberry Pi:
 
-```bash
+```shell
 sudo shutdown -r now
 ```
 
 ## 1.5 Clone OpenCloud repository
 
-```bash
+```shell
 git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
 ## 1.6 Start the Docker Compose setup
 
-```bash
+```shell
 cd opencloud-compose
 ```
 
 Copy the `.env.example` file:
 
-```bash
+```shell
 cp .env.example .env
 ```
 
 Edit the `.env` file:
 
-```bash
+```shell
 nano .env
 ```
 
@@ -115,7 +115,7 @@ COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 
 Then start Docker:
 
-```bash
+```shell
 docker compose up
 ```
 
@@ -128,7 +128,7 @@ No-IP.
 
 ### 1. Find your external drive
 
-```bash
+```shell
 lsblk
 ```
 
@@ -136,7 +136,7 @@ lsblk
 
 ### 2. Format the drive to ext4
 
-```bash
+```shell
 sudo mkfs.ext4 /dev/sda1 -L DATA
 ```
 
@@ -146,26 +146,26 @@ sudo mkfs.ext4 /dev/sda1 -L DATA
 
 Open `fstab`:
 
-```bash
+```shell
 sudo nano /etc/fstab
 ```
 
 Add this line:
 
-```bash
+```shell
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
 ### 4. Create the mount point and set permissions
 
-```bash
+```shell
 sudo mkdir -p /mnt/data
 sudo chown -R 1000:1000 /mnt/data
 ```
 
 ### 5. Mount the drive
 
-```bash
+```shell
 sudo mount -a
 ```
 
@@ -175,7 +175,7 @@ If an error occurs:
 
 Run:
 
-```bash
+```shell
 systemctl daemon-reload
 ```
 
@@ -185,13 +185,13 @@ And try mounting again.
 
 Stop Docker:
 
-```bash
+```shell
 docker compose down
 ```
 
 Open the `.env` file:
 
-```bash
+```shell
 cd opencloud-compose
 nano .env
 ```
@@ -206,7 +206,7 @@ OC_DATA_DIR=/mnt/data
 
 Restart Docker:
 
-```bash
+```shell
 docker compose up
 ```
 
@@ -248,7 +248,7 @@ More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-con
 
 SSH into your Pi and update the domain:
 
-```bash
+```shell
 cd opencloud-compose
 docker compose down
 nano .env
@@ -264,7 +264,7 @@ OC_DOMAIN=opencloud.webhop.me
 
 Restart Docker:
 
-```bash
+```shell
 docker compose up
 ```
 
