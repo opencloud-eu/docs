@@ -37,7 +37,7 @@ It is recommended to create a [backup](../backup.md) before proceeding with the 
 
 ### 3. Pull the new Opencloud version
 
-```Shell
+```bash
 docker pull opencloudeu/opencloud:{tag}
 ```
 
@@ -49,11 +49,11 @@ If upgrading from an older release, check for required configuration changes:
 
 Go inside the container:
 
-```Shell
+```bash
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
 ```
 
-```Shell
+```bash
 opencloud init --diff
 ```
 

@@ -111,6 +111,6 @@ It is essential to maintain correct file ownership and permissions when modifyin
 
 In addition to the configuration required for non-collaborative mode, the following setting must be enabled for local file systems such as XFS, ext4, and others:
 
-```
+```env
 STORAGE_USERS_POSIX_WATCH_FS=true
 ```

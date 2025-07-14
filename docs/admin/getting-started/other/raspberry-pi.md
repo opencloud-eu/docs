@@ -15,14 +15,15 @@ It is not recommended for enterprise or critical environments due to the hardwar
 
 - Minimum Raspberry Pi 4B with at least 4 GB RAM connected via LAN or WLAN
 - Micro SD card with at least 32 GB storage space
-- External hard disk or USB-Stick (optional) for additional storage space
+- External hard disk or USB stick (optional) for additional storage space
 
 ## 1.2 Install operating system
 
-- Install Raspberry Pi OS
+- Install Raspberry Pi OS  
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
-- SSH must be activated
+
+- SSH must be activated  
   <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
@@ -34,262 +35,236 @@ The IP for this can be viewed in your router.
 
 <img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500"/>
 
-#### Establish connection via SSH
+### Establish connection via SSH
 
-```sh
+```bash
 ssh pi@YOUR-IP
 ```
 
 After the first login, you should change the password for security reasons:
 
-```sh
+```bash
 passwd
 ```
 
 ## 1.4 Installing Docker and Docker Compose
 
-Detailed installation instructions for docker can be found here:  
+Detailed installation instructions for Docker can be found here:  
 [Install Docker on Raspberry Pi](https://pimylifeup.com/raspberry-pi-docker/)
 
-- Perform update and upgrade
+- Perform update and upgrade:
 
-```sh
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-- Install Docker via Script
+- Install Docker via script:
 
-```sh
+```bash
 curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
-- Add current user to the Docker Group
+- Add current user to the Docker group:
 
-```sh
+```bash
 sudo usermod -aG docker ${USER}
 ```
 
-- Check if it's running:
+- Check if it's working:
 
-```sh
+```bash
 groups ${USER}
 ```
 
 <img src={require("./../img/raspberrypi/docker-user-check.png").default} alt="Check docker user" width="500"/>
 
-- Reboot the Raspberry Pi to let the changes take effect
+- Reboot the Raspberry Pi:
 
-```sh
+```bash
 sudo shutdown -r now
 ```
 
 ## 1.5 Clone OpenCloud repository
 
-```sh
+```bash
 git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
-## 1.6 Start the docker compose setup
+## 1.6 Start the Docker Compose setup
 
-```sh
+```bash
 cd opencloud-compose
 ```
 
-Copy the .env.example
+Copy the `.env.example` file:
 
-```sh
+```bash
 cp .env.example .env
 ```
 
-Adjust the .env
+Edit the `.env` file:
 
-```sh
+```bash
 nano .env
 ```
 
-Add for the minimal OpenCloud setup:
+Add the minimal OpenCloud setup:
 
-```sh
+```env
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-in the .env and then start the docker with
+Then start Docker:
 
-```sh
+```bash
 docker compose up
 ```
 
-Now you have running OpenCloud locally on your RaspberryPi and you can adjust it to your needs.
-We will describe how you can mount an external disk or USB-Stick and make your OpenCloud available outside of the local network with No-IP
+Now OpenCloud is running locally on your Raspberry Pi, and you can adjust it to your needs.
 
-## 1.7 Mount external hard disk or USB-Stick
+We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
 
-#### 1. Find your external hard disk or USB-Stick on your Raspberry-Pi
+## 1.7 Mount external hard disk or USB stick
 
-```sh
+### 1. Find your external drive
+
+```bash
 lsblk
 ```
 
 <img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
-#### 2. Format the drive to ext4 filesystem
+### 2. Format the drive to ext4
 
-```sh
-sudo mkfs.ext4 PATH-TO-DRIVE -L DATA
-```
-
-PATH-TO-DRIVE is in this example `/dev/sda1` so the command would be
-
-```sh
+```bash
 sudo mkfs.ext4 /dev/sda1 -L DATA
 ```
 
 <img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
 
-#### 3. Add entry in fstab for automatic mounting when restarting
+### 3. Add fstab entry for auto-mounting
 
-- open fstab with sudo
+Open `fstab`:
 
-```sh
-  sudo nano /etc/fstab
+```bash
+sudo nano /etc/fstab
 ```
 
-- add the following line in the fstab file
+Add this line:
 
-```sh
+```bash
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
-#### 4. Create the `/mnt/data` directory and give the user 1000 access
+### 4. Create the mount point and set permissions
 
-```sh
+```bash
 sudo mkdir -p /mnt/data
-```
-
-```sh
 sudo chown -R 1000:1000 /mnt/data
 ```
 
-#### 5. mount the drive automatically
+### 5. Mount the drive
 
-```sh
+```bash
 sudo mount -a
 ```
 
-Maybe you get following error
+If an error occurs:
 
 <img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500"/>
 
-then please perform the recommended command
+Run:
 
-```sh
+```bash
 systemctl daemon-reload
 ```
 
-and try to mount again.
+And try mounting again.
 
-## 1.8 Mount external storage
+## 1.8 Mount external storage in Docker
 
-Stop the running docker
+Stop Docker:
 
-```sh
+```bash
 docker compose down
 ```
 
-Go to the opencloud-compose folder and open the `.env` file with e.g. nano
+Open the `.env` file:
 
-```sh
+```bash
 cd opencloud-compose
-```
-
-```sh
 nano .env
 ```
 
-When you added an external hard disk or USB-Stick for the storage, you need to set the `OC_DATA_DIR` variable and adjust the path to your storage
+Set the `OC_DATA_DIR` variable to your mounted storage path, e.g.:
+
+```env
+OC_DATA_DIR=/mnt/data
+```
 
 <img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
 
-Here it is `/mnt/data`
+Restart Docker:
 
-Start the docker again
-
-```sh
+```bash
 docker compose up
 ```
 
-## 1.9 Make your OpenCloud available from outside
+## 1.9 Make OpenCloud externally available
 
-#### 1. Create a DynDNS account and the hostname
+### 1. Create DynDNS hostname
 
-To make your Raspberry Pi accessible from the outside, you need a DynDNS entry (dynamic DNS). This is necessary because Let's Encrypt only creates SSL certificates for domain names, not for IP addresses. A DynDNS service ensures that your Pi always remains accessible under a fixed domain, even if the IP address changes.
-
-You can create a free DynDNS account at [No-IP](https://www.noip.com/), for example. After registering, log in to the No-IP web interface and create a new host name under “Create Hostname”. In this example, we use `opencloud.webhop.me` as the address for the Raspberry Pi.
+Register at [No-IP](https://www.noip.com/) and create a hostname, e.g. `opencloud.webhop.me`.
 
 <img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
 
-#### 2. Configure DynDNS in your router
+### 2. Configure DynDNS in your router
 
-If your router supports integrated Dynamic DNS (DynDNS), you can update your IP address directly via the router. This eliminates the need to install the Dynamic Update Client (DUC) from No-IP on your Raspberry Pi.
-How to set up DDNS in the router:
+Use your router’s web interface to:
 
-- Log into your router's web interface (usually via 192.168.1.1 or a similar address).
-- Search for the DDNS settings - these are usually located under Network, Internet or Dynamic DNS.
-- Select No-IP as your provider from the list of supported DDNS services.
-- Enter your No-IP credentials (username & password).
-- Enter the hostname you previously created with No-IP (e.g. opencloud-at-home.ddns.net).
-- Save the settings and test the connection.
+- Locate the Dynamic DNS settings
+- Select **No-IP** as provider
+- Enter your No-IP credentials
+- Use the created hostname (e.g. `opencloud.webhop.me`)
+- Save and test the settings
 
-The router will now automatically update your public IP address at No-IP so that your Raspberry Pi always remains accessible under the selected subdomain.
+More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
 
-You can also look in the documentation from [No-IP](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
+### 3. Configure port forwarding
 
-#### 3. Configure port forwarding in your router
+1. Ensure your Raspberry Pi always has the same IP address:
+   - Either via static IP or DHCP assignment in the router
 
-To make your Raspberry Pi accessible from the Internet, you must set up port forwarding in your router. This means that requests from outside to certain ports are automatically forwarded to your Raspberry Pi in the local network.
+2. In your router settings, look for **Port Forwarding**, **NAT**, or **Port Sharing**
 
-1. Make sure that your Raspberry Pi always has the same IP address:
+3. Forward the following ports to your Raspberry Pi:
 
-- By making a fixed DHCP assignment in the router settings
-- Or via a static IP address in the network settings of your Pi
+- TCP Port 80 (HTTP)
+- TCP Port 443 (HTTPS)
 
-2. In the router menu, search for “Port forwarding”, “NAT” or “Port sharing” (the name may vary depending on the router model)
-
-3. Create a new portforwarding with TCP for 80 and 443
-
-Example from a Speedport 4
 <img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
 
-#### 4. Change the OpenCloud domain in the configuration
+### 4. Update OC_DOMAIN
 
-Now you need to change the environment variable `OC_DOMAIN` in the `.env` file
+SSH into your Pi and update the domain:
 
-1. Connect via ssh on your Raspberry-Pi
-
-2. Navigate to the correct folder
-
-```sh
+```bash
 cd opencloud-compose
-```
-
-3. Stop running OpenCloud docker
-
-```sh
 docker compose down
-```
-
-4. open the `.env` file with e.g. nano
-
-```sh
 nano .env
 ```
 
-5. Look for the `OC_DOMAIN` variable and enter your URL, here we used `opencloud.webhop.me`
-   <img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
+Edit the `OC_DOMAIN` value:
 
-6. Start the docker again
+```env
+OC_DOMAIN=opencloud.webhop.me
+```
 
-```sh
+<img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
+
+Restart Docker:
+
+```bash
 docker compose up
 ```
 

@@ -2,17 +2,17 @@
 sidebar_position: 1
 ---
 
-import OcLogoPetrol from '/static/img/oc-logo-petrol.svg';
-import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
-
 # Willkommen
 
+import OcLogoPetrol from '/static/img/oc-logo-petrol.svg';
+import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 <OcLogoPetrol width="250" height="55" className="light-mode-image"/>
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
 ## Wilkommen zur OpenCloud Wissensdatenbank
 
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
+Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
+Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 <br/><br/>
 
 ### Inhaltsverzeichnis
@@ -54,10 +54,13 @@ Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
 
 OpenCloud ist die Filesharing & Kollaborations-Lösung der Heinlein Gruppe.
 
-Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar.<br/>
-Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
+Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen –
+effektiv strukturiert und langfristig nutzbar.<br/>
+Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen
+und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
 <br/><br/>
 
 ### Wie kann ich OpenCloud nutzen?
 
-Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "User-Dokumentation" unter "Quick-Guide".
+Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "
+User-Dokumentation" unter "Quick-Guide".

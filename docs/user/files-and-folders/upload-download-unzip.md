@@ -8,7 +8,7 @@ title: Upload - Download - Unzip
 
 <br/><br/>
 
-### Upload: Upload files or folders
+## Upload: Upload files or folders
 
 - **Start uploading:** - Click on **“Upload”** in the **action bar**.
   <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="upload button" width="1920"/>
@@ -28,7 +28,7 @@ title: Upload - Download - Unzip
 
 ---
 
-### Download: Download files or folders
+## Download: Download files or folders
 
 - **Select the desired files or folders by either:**
   - Clicking in the **file line**
@@ -41,7 +41,7 @@ title: Upload - Download - Unzip
 - Select **“Download”** from the **menu**.
   <br/><br/>
 
-#### ZIP files
+### ZIP files
 
 - If you **download several** files or folders, these are **saved as a ZIP file**.
   <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="download several files in zip file" width="1920"/>

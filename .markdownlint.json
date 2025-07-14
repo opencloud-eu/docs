@@ -1,7 +1,8 @@
 {
   "default": true,
-  "MD003": false, // Disable MD003 to allow different heading styles
   "MD013": false, // Disable MD013 to allow long lines
   "MD033": false, // Disable MD033 to allow inline HTML
-  "MD029": { "style": "ordered" } // Ensure ordered lists are used
+  "MD024": false, // Disable MD024 to allow headings with the same text
+  "MD025": false, // Disable MD025 to allow frontmatter title with different content as heading ( e.g. Nav items should should be short)
+  "MD029": false // TODO: Too much false positives
 }

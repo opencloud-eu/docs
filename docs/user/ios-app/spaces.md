@@ -8,11 +8,11 @@ title: Spaces
 
 <br/>
 
-#### The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
+The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
 
 ---
 
-### Spaces Overview
+## Spaces Overview
 
 To open the **Spaces Overview**, tap the **"Spaces button"** in the account menu.
 
@@ -25,7 +25,7 @@ Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member
 
 ---
 
-### Search Function
+## Search Function
 
 By tapping the **search icon**, the search menue for Spaces will open.
 
@@ -37,7 +37,7 @@ By tapping the **search icon**, the search menue for Spaces will open.
 
 ---
 
-### Functions within a Space
+## Functions within a Space
 
 By tapping the **plus icon**, the available functions within a Space appear.
 
@@ -77,7 +77,7 @@ By tapping the **plus icon**, the available functions within a Space appear.
 
 ---
 
-### The "Three-Dot Menue"
+## The "Three-Dot Menue"
 
 By tapping the **three-dot menue**, a pop-up menue opens where you can choose to make the Space available offline.
 

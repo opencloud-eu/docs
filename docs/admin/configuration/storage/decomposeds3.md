@@ -22,7 +22,7 @@ Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible
 
 Download the `opencloud_full` folder (this folder contains a multi-file Docker Compose configuration):
 
-```Shell
+```bash
 git clone https://github.com/opencloud-eu/opencloud.git
 ```
 
@@ -30,13 +30,13 @@ git clone https://github.com/opencloud-eu/opencloud.git
 
 Navigate to the Docker Compose configuration folder:
 
-```Shell
+```bash
 cd opencloud/deployments/examples/opencloud_full
 ```
 
 Enable `decomposeds3.yml` and `minio.yml` in the `.env` file:
 
-```Shell
+```bash
 nano opencloud/deployments/examples/opencloud_full/.env
 ```
 
@@ -44,7 +44,7 @@ Find all required environment variables `env` here: [decomposeds3-envs](https://
 
 Start the deployment with Docker Compose:
 
-```Shell
+```bash
 docker compose up -d
 ```
 
@@ -54,7 +54,7 @@ This starts all necessary containers in the background.
 
 Edit the /etc/hosts file and add the following entries for local access:
 
-```
+```bash
 127.0.0.1       cloud.opencloud.test
 127.0.0.1       minio.opencloud.test
 ```

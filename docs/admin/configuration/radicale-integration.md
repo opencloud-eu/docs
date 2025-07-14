@@ -31,13 +31,13 @@ deployment based on the `opencloud_full` deployment example.
 In the root directory of the `opencloud_full` deployment example, usually `opencloud/deployments/examples/opencloud_full`,
 remove the `#` symbol from the line:
 
-```
+```env
 #RADICALE=:radicale.yml
 ```
 
 ### 2. Update the deployment
 
-```
+```bash
 docker compose up -d
 ```
 
