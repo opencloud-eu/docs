@@ -2,7 +2,7 @@
 sidebar_position: 5
 id: dataexport
 title: 'Data Export'
-description:: 'Information about data export.'
+description: 'Information about data export.'
 ---
 
 # Data Export
