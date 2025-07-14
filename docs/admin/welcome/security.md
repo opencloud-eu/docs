@@ -61,11 +61,11 @@ OpenCloud provides integrated protection against threats and data leaks:
 - **File Firewall**  
   Prevent uploads of unwanted file types using **allow/deny rules**.
 
-- **Antivirus Integration**  
+- **Antivirus Integration**
   - **ClamAV (default)**: Detects malware in uploaded files.
   - **ICAP support**: Enables external antivirus scanners via **ICAP** protocol.
 
-- **Data Loss Prevention (DLP)**  
+- **Data Loss Prevention (DLP)**
   - **Collabora Secure View** ensures files cannot be downloaded or copied — only opened securely in the browser.
 
 ---
