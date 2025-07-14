@@ -4,6 +4,7 @@
   "ignores": [
     ".git",
     "node_modules",
+    "build",
     "static",
     "assets",
     "CHANGELOG.md",
