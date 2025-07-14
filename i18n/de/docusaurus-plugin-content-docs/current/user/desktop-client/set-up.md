@@ -38,7 +38,7 @@ Folgen Sie diesen einfachen Schritten, um OpenCloud Desktop zu installieren und 
 
 ## Einrichtung abschließen
 
-### Optionale erweiterte Konfiguration:
+### Optionale erweiterte Konfiguration
 
 - Wählen Sie, ob Sie **alle Dateien** synchronisieren oder **bestimmte Ordner** auswählen möchten (dies kann später angepasst werden).
 - Ändern Sie das **lokale Download-Verzeichnis**, in dem Ihre Dateien gespeichert werden sollen.
@@ -49,7 +49,7 @@ Sobald Sie fertig sind, klicken Sie auf **Fertig**, um die Einrichtung abzuschli
 
 <!-- <img src={require("./img/set-up/set-up-all-set.png").default} alt="all set" width="400"/>-->
 
-## Glückwunsch!
+## Glückwunsch
 
 **OpenCloud Desktop** ist nun erfolgreich eingerichtet.  
 Sie können mit der nahtlosen Synchronisierung Ihrer Dateien zwischen Ihrem Gerät und dem OpenCloud-Server beginnen!

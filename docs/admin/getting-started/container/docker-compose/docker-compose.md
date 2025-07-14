@@ -193,7 +193,7 @@ Example with Chrome browser:
 
 Once the staging certificate works, switch to a production certificate.
 
-### Steps:
+### Steps
 
 #### 1️⃣ Stop Docker Compose
 
@@ -257,7 +257,7 @@ If you encounter any issues, check the [Common Issues & Help](./../../../resourc
 
 <br/>
 
-#### To enable Keycloak for identity and access management, **uncomment** the following lines in your `.env` file:
+#### To enable Keycloak for identity and access management, **uncomment** the following lines in your `.env` file
 
 ```env
 LDAP=:ldap.yml
@@ -271,7 +271,7 @@ KEYCLOAK_ADMIN_PASSWORD="your.save.password"
 
 This will include the LDAP and Keycloak service definitions in the Docker Compose setup.
 
-#### After starting OpenCloud, Keycloak will be available at:
+#### After starting OpenCloud, Keycloak will be available at
 
 ```bash
 https://keycloak.your.domain
@@ -279,7 +279,7 @@ https://keycloak.your.domain
 
 ## 👤 Initial User Setup in Keycloak
 
-### Once Keycloak is running:
+### Once Keycloak is running
 
 **1. Open your browser and go to**
 

@@ -8,7 +8,7 @@ title: Anpassungen der Datei-Liste
 
 <br/><br/>
 
-## Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläche klicken, gelangen Sie zu den Optionen für die Anpassung der Ansicht. Hier können Sie die Anzeige anpassen.
+## Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläche klicken, gelangen Sie zu den Optionen für die Anpassung der Ansicht. Hier können Sie die Anzeige anpassen
 
 <br/><br/>
 

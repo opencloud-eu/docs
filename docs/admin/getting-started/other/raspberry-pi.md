@@ -34,7 +34,7 @@ The IP for this can be viewed in your router.
 
 <img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500"/>
 
-#### Establish connection via SSH:
+#### Establish connection via SSH
 
 ```sh
 ssh pi@YOUR-IP

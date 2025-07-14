@@ -15,7 +15,7 @@ With OpenCloud you can add **tags** to files and folders to make them easier to 
 
 ### Find out how it works here
 
-#### Add tag:
+#### Add tag
 
 - Open the **context menu**. - **Right-click** on the file or folder, - or click on the **three dots** in the corresponding line.
   <img src={require("./img/tags/three-dot-menu.png").default} alt="three dot menu" width="1920"/>

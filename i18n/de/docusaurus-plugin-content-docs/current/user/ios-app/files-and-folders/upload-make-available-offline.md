@@ -39,11 +39,11 @@ Wählen Sie die hochzuladende Datei oder das Medium aus. Der Upload startet auto
 
 Sie können Dateien auch offline verfügbar machen, sodass sie auch ohne Internetverbindung zugänglich sind.
 
-### 1. Tippen Sie auf die **drei Punkte** (⋯) neben der Datei.
+### 1. Tippen Sie auf die **drei Punkte** (⋯) neben der Datei
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Offline verfügbar machen" height="400"/>
 
-### 2. Wählen Sie **"Offline verfügbar machen"** aus.
+### 2. Wählen Sie **"Offline verfügbar machen"** aus
 
 Die Datei wird heruntergeladen und lokal auf Ihrem Gerät gespeichert.
 

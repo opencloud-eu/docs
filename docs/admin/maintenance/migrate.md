@@ -97,7 +97,7 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
 
 </TabItem>
 <TabItem value="nc" label="Nextcloud">
-    ### 
+    ###
     Go to `Settings` → `Security`
 
     Create a new `App Password`
@@ -107,7 +107,7 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
 
 </TabItem>
 </Tabs>
-    
+
 ---
 
 ### 2. Install rclone

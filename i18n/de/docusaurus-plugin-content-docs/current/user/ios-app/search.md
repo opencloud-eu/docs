@@ -6,16 +6,16 @@ title: Suche
 
 # Suchfunktion
 
-## Hier erklären wir, wie Sie die Suchfunktion in der OpenCloud iOS App nutzen können.
+## Hier erklären wir, wie Sie die Suchfunktion in der OpenCloud iOS App nutzen können
 
 ---
 
-### 1. Durch klicken auf das Lupen-Symbol öffnen Sie die Suchfunktion.
+### 1. Durch klicken auf das Lupen-Symbol öffnen Sie die Suchfunktion
 
 <img src={require("./img/search/search-symbol.png").default} alt="Lupen-Symbol" height="400"/>
 <br/>
 
-### 2. In der Suchfunktion stehen verschiedene Optionen zur Verfügung, mit der man die Suche eingrenzen kann.
+### 2. In der Suchfunktion stehen verschiedene Optionen zur Verfügung, mit der man die Suche eingrenzen kann
 
 #### Suchleiste
 

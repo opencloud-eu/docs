@@ -9,7 +9,7 @@ draft: true
 
 <br/>
 
-#### Der **„Spaces“-Bereich** (zu Deutsch: **„Bereiche“**) bietet einen zentralen Ort für die Zusammenarbeit in Gruppen oder Teams. In einem Space können mehrere Nutzer gemeinsam auf Dateien und Ordner zugreifen, Inhalte organisieren und Änderungen nachvollziehen.
+#### Der **„Spaces“-Bereich** (zu Deutsch: **„Bereiche“**) bietet einen zentralen Ort für die Zusammenarbeit in Gruppen oder Teams. In einem Space können mehrere Nutzer gemeinsam auf Dateien und Ordner zugreifen, Inhalte organisieren und Änderungen nachvollziehen
 
 ---
 

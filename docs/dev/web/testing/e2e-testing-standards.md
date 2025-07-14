@@ -16,7 +16,7 @@ In OpenCloud, we use Playwright for webUI test automation. We benefit from lower
 
 Here are the test standards and guidelines we adhere to when creating Playwright tests at OpenCloud.
 
-## Folder Structure:
+## Folder Structure
 
 - `tests/:`
   - `e2e/`: Main folder containing all (end-to-end) E2E test-related files.
@@ -33,7 +33,7 @@ Here are the test standards and guidelines we adhere to when creating Playwright
 
     - `support/`: Playwright (Test implementation)
       - `api/`: Contains API-related test files and configurations.
-        - `<api-folder>/ `: Specific API tests for a particular service.
+        - `<api-folder>/`: Specific API tests for a particular service.
 
       - `objects/`: Contains the Page Object classes.
         - `<specific-page-object-folder>/`: Collection house for related page objects for each webpage or component.
@@ -53,7 +53,7 @@ Here are the test standards and guidelines we adhere to when creating Playwright
 
       - `videos/`: Recorded videos of test runs.
 
-## Test Structure - Arrange, Act, Assert:
+## Test Structure - Arrange, Act, Assert
 
 We can follow the AAA (Arrange, Act, Assert) pattern when structuring the tests. In most cases, the Arrange step can be included in a Before block(hook).
 Consider including comments defining each section to ease readability.
@@ -122,7 +122,7 @@ Then('error message should be visible', async function ({ page }) {
 });
 ```
 
-## Waiting:
+## Waiting
 
 Playwright uses auto-waiting, so we avoid artificial waiting, the exception being if it is really necessary.
 

@@ -10,7 +10,7 @@ title: Übersicht
 
 <br/><br/>
 
-## Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
+## Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
 
 <br/><br/>
 

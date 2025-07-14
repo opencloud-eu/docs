@@ -1,0 +1,7 @@
+{
+  "default": true,
+  "MD003": false, // Disable MD003 to allow different heading styles
+  "MD013": false, // Disable MD013 to allow long lines
+  "MD033": false, // Disable MD033 to allow inline HTML
+  "MD029": { "style": "ordered" } // Ensure ordered lists are used
+}

@@ -23,7 +23,7 @@ Stop the currently running OpenCloud instance:
   <TabItem value="docker-compose" label="docker compose">
     ```Shell
     docker compose stop
-    ``` 
+    ```
   </TabItem>
 </Tabs>
 

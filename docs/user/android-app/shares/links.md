@@ -13,27 +13,27 @@ draft: true
 
 ---
 
-#### 1. Click the three-dot menue next to the file or folder.
+#### 1. Click the three-dot menue next to the file or folder
 
 <!-- <img src={require("../img/shares/links/three-dot-menue.png").default} alt="three-dot menue" height="400"/> -->
 <br/>
 
-#### 2. Now select the menue item “Share”.
+#### 2. Now select the menue item “Share”
 
 <!-- <img src={require("../img/shares/links/sharing-button.png").default} alt="share" height="400"/> -->
 <br/>
 
-#### 3. In the following selection, click on "Public link".
+#### 3. In the following selection, click on "Public link"
 
 <!-- <img src={require("../img/shares/links/create-link-button.png").default} alt="Create link" height="400"/> -->
 <br/>
 
-#### 4. Here you can select and specify several options for the link to be created.
+#### 4. Here you can select and specify several options for the link to be created
 
 <!-- <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menue" height="400"/> -->
 <br/>
 
-#### 5. Enter a name for your link here.
+#### 5. Enter a name for your link here
 
 <!-- <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" height="400"/> -->
 <br/>
@@ -55,21 +55,21 @@ draft: true
 
 <br/>
 
-#### 7. You must enter a password here. You can choose your own or have one generated for you.
+#### 7. You must enter a password here. You can choose your own or have one generated for you
 
 <!-- <img src={require("../img/shares/links/password.png").default} alt="Password" height="400"/> -->
 <br/>
 
-#### 8. Here you can specify a period of time for which the link should be available.
+#### 8. Here you can specify a period of time for which the link should be available
 
 <!-- <img src={require("../img/shares/links/expiration-date.png").default} alt="Link expiration date" height="400"/> -->
 <br/>
 
-#### 9. To create the link you must now click on "Share".
+#### 9. To create the link you must now click on "Share"
 
 <!-- <img src={require("../img/shares/links/share-button.png").default} alt="Share" height="400"/> -->
 <br/>
 
-#### 10. Once the link is created, you will see it with the assigned name in the file or folder overview.
+#### 10. Once the link is created, you will see it with the assigned name in the file or folder overview
 
 <!-- <img src={require("../img/shares/links/created-link.png").default} alt="created link" height="400"/> -->

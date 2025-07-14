@@ -8,7 +8,7 @@ title: Spaces
 
 <br/>
 
-#### The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes.
+#### The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
 
 ---
 

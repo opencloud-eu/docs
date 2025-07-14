@@ -5,7 +5,7 @@ title: Fileslist-Menue
 draft: false
 ---
 
-### Here a is an overview of the fileslist-menue in the OpenCloud iOS-App.
+### Here a is an overview of the fileslist-menue in the OpenCloud iOS-App
 
 ---
 

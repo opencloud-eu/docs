@@ -10,7 +10,7 @@ title: Löschen - Wiederherstellen
 
 <br/><br/>
 
-## In OpenCloud können Sie Dateien und Ordner löschen und diese nach Bedarf auch wiederherstellen.
+## In OpenCloud können Sie Dateien und Ordner löschen und diese nach Bedarf auch wiederherstellen
 
 <br/><br/>
 
@@ -29,7 +29,7 @@ title: Löschen - Wiederherstellen
   <img src={require("./img/delete-restore/loeschen-optionen.png").default} width="1920"/>
   <br/><br/>
   -Ergebnis:<br/>
-  Die Dateien oder Ordner werden **in den Bereich **„Gelöschte Dateien“\*\* verschoben. Sie können bei Bedarf von dort wiederhergestellt werden.
+  Die Dateien oder Ordner werden **in den Bereich**„Gelöschte Dateien“\*\* verschoben. Sie können bei Bedarf von dort wiederhergestellt werden.
   <img src={require("./img/delete-restore/ordner-in-geloeschte-dateien.png").default} width="1920"/>
   <br/><br/>
 
@@ -43,7 +43,7 @@ title: Löschen - Wiederherstellen
     <br/><br/>
 - Wählen Sie Leertaste:
   - Dateien aus Ihrem persönlichen Bereich finden Sie unter **"Personal"**.
-  - Dateien aus anderen Bereichen (z. **"Testspace"**) finden Sie in ihren ** jeweiligen Räumen**.
+  - Dateien aus anderen Bereichen (z. **"Testspace"**) finden Sie in ihren **jeweiligen Räumen**.
     <img src={require("./img/delete-restore/struktur-in-geloeschte-dateien.png").default} width="1920"/>
     <br/><br/>
 - Dateien oder Ordner auswählen:

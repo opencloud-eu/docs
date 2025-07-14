@@ -5,7 +5,7 @@ title: Account-Menue
 draft: false
 ---
 
-### Here a is a overview of the account-menue in the OpenCloud iOS-App.
+### Here a is a overview of the account-menue in the OpenCloud iOS-App
 
 ---
 

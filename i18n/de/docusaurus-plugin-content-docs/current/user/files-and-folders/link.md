@@ -10,7 +10,7 @@ title: Verknüpfung
 
 <br/><br/>
 
-## Mit OpenCloud können Sie Verknüpfung zu Websites oder Dateien erstellen.
+## Mit OpenCloud können Sie Verknüpfung zu Websites oder Dateien erstellen
 
 <br/><br/>
 
@@ -24,20 +24,20 @@ title: Verknüpfung
   <img src={require("./img/link/shortcut-button.png").default} width="400"/>
   <br/><br/>
 
-#### Link oder Datei einfügen:
+#### Link oder Datei einfügen
 
 - Geben Sie in dem sich öffnenden Fenster den **Link** oder den **Namen** der Datei ein, die Sie verlinken möchten.
 - Alternativ können Sie die gewünschte Datei auch aus der Liste auswählen, nachdem Sie die ersten Buchstaben eingegeben haben.
   <img src={require("./img/link/pop-up-window.png").default} width="500"/>
   <br/><br/>
 
-#### Verknüpfung benennen:
+#### Verknüpfung benennen
 
 - Geben Sie einen Namen für die Verknüpfung ein.
   <img src={require("./img/link/url-und-titel.png").default} width="500"/>
   <br/><br/>
 
-#### Verknüpfung erstellen:
+#### Verknüpfung erstellen
 
 - Klicken Sie auf **"Erstellen“**, um die Verknüpfung zu speichern.
   <img src={require("./img/link/erstellen-button.png").default} width="400"/>

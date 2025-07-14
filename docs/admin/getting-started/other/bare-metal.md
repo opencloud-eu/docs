@@ -21,9 +21,11 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 - Open a terminal.
 
 - Update your package list:
+
   ```bash
   sudo apt update && apt upgrade
   ```
+
 - Install Git using the following command:
 
   ```bash
@@ -33,9 +35,11 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   <img src={require("./../img/bare-metal/install-git.png").default} alt="install git" width="1920"/>
 
 - Clone the OpenCloud repository:
+
   ```bash
   git clone https://github.com/opencloud-eu/opencloud.git
   ```
+
   <img src={require("./../img/bare-metal/git-clone.png").default} alt="git clone" width="1920"/>
 
 ---
@@ -61,9 +65,11 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   <img src={require("./../img/bare-metal/install-corepack.png").default} alt="install corepack" width="1920"/>
 
 - Enable `pnpm` using corepack:
+
   ```bash
   corepack enable pnpm
   ```
+
   <img src={require("./../img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920"/>
 
 ---
@@ -71,10 +77,13 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 ### 3. Build process and OpenCloud initialization
 
 - Navigate to the OpenCloud directory:
+
   ```bash
   cd opencloud
   ```
+
   <img src={require("./../img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
+
 - Run the build generate process:
 
   ```bash
@@ -91,9 +100,11 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   <img src={require("./../img/bare-metal/opencloud-init.png").default} alt="opencloud init" width="1920"/>
 
 - Start the OpenCloud server:
+
   ```bash
   ./bin/opencloud server
   ```
+
   <img src={require("./../img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920"/>
 
 ---
@@ -116,6 +127,6 @@ Your OpenCloud server is now running and ready to use 🚀
 
 ---
 
-### If you encounter any issues or errors, try finding a solution here:
+### If you encounter any issues or errors, try finding a solution here
 
 - [Common Issues & Help](./../../resources/common-issues.md)
