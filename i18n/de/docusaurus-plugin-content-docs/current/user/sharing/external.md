@@ -19,7 +19,7 @@ Mit **Öffenlichen Links** können Dateien und Ordner **organisationsübergreife
 
 ### Schritte zum Erstellen eines öffentlichen Links
 
-#### Öffnen Sie die Freigabeoptionen:
+#### Öffnen Sie die Freigabeoptionen
 
 - Klicken Sie auf das **"Drei-Punkte-Menü “** neben dem Datei- oder Ordnernamen, den Sie freigeben möchten.
   <img src={require("./img/extern/drei-punkte-menue.png").default} width="1920"/>

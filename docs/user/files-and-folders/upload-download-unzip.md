@@ -41,7 +41,7 @@ title: Upload - Download - Unzip
 - Select **“Download”** from the **menu**.
   <br/><br/>
 
-#### ZIP files:
+#### ZIP files
 
 - If you **download several** files or folders, these are **saved as a ZIP file**.
   <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="download several files in zip file" width="1920"/>

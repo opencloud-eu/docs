@@ -18,7 +18,7 @@ Logging helps monitor OpenCloud’s health and diagnose issues. Log output varie
 
 Set the global log level using the `OPEN_CLOUD_LOG_LEVEL` environment variable. You can also override it per service using service-specific variables. Default is `error`.
 
-## The log levels are:
+## The log levels are
 
 ### FATAL
 

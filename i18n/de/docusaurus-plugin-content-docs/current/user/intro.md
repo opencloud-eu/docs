@@ -15,37 +15,37 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 <br/><br/>
 
-### Inhaltsverzeichnis:
+### Inhaltsverzeichnis
 
-#### Quick-Guide:
+#### Quick-Guide
 
 Hier finden Sie einen "Quick-Guide", wie Sie in wenigen Minuten eine eigene OpenCloud erstellen können.
 
-#### Dateien & Ordner:
+#### Dateien & Ordner
 
 Hier finden Sie Informationen rund um die Verwaltung von Dateien & Ordnern.
 
-#### Desktop-Client:
+#### Desktop-Client
 
 Hier finden Sie Informationen zur Installation & Einrichtung des Desktop-Clients.
 
-#### Rollen:
+#### Rollen
 
 Hier finden Sie Informationen zu den verschiedenen Rollen, die vergeben werden können.
 
-#### Spaces:
+#### Spaces
 
 Hier finden Sie Informationen für den Umgang mit Spaces.
 
-#### Teilen:
+#### Teilen
 
 Hier finden Sie Informationen wie und auf welche Weise man Dateien & Ordner teilen kann.
 
-#### Allgemein:
+#### Allgemein
 
 Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Viewmodes.
 
-#### Admin:
+#### Admin
 
 Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
 <br/><br/>

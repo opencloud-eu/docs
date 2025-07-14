@@ -7,7 +7,7 @@ description: 'Classic docker setup.'
 
 # Docker
 
-## Spin up a temporary local instance of OpenCloud using **Docker**.
+## Spin up a temporary local instance of OpenCloud using **Docker**
 
 ---
 

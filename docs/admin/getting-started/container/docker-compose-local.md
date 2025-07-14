@@ -29,13 +29,13 @@ git clone https://github.com/opencloud-eu/opencloud-compose.git
 
 ## 2. Start
 
-### cd into the Docker Compose configuration folder:
+### cd into the Docker Compose configuration folder
 
 ```Shell
 cd opencloud-compose
 ```
 
-### Create environment file:
+### Create environment file
 
 ```Shell
 cp .env.example .env
@@ -43,7 +43,7 @@ cp .env.example .env
 
 > **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
 
-### Configure deployment options:
+### Configure deployment options
 
 You can deploy using explicit -f flags:
 

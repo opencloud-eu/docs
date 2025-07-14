@@ -9,7 +9,7 @@ draft: true
 
 <br/><br/>
 
-## In den Android-App Einstellungen können Änderungen vorgenommen werden wie z.B.:
+## In den Android-App Einstellungen können Änderungen vorgenommen werden wie z.B
 
 - Benutzeroberfläche
 - Datennutzung

@@ -58,4 +58,4 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 
 ---
 
-**Diese Admin-Einstellungen ermöglichen es Ihnen Um Ihre OpenCloud-Umgebung umfassend zu verwalten und anzupassen! **
+**Diese Admin-Einstellungen ermöglichen es Ihnen Um Ihre OpenCloud-Umgebung umfassend zu verwalten und anzupassen!**

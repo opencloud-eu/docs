@@ -5,7 +5,7 @@ title: Account-Menue
 draft: true
 ---
 
-### Here a is a overview of the account-menue in the OpenCloud Android-App.
+### Here a is a overview of the account-menue in the OpenCloud Android-App
 
 ---
 

@@ -23,5 +23,5 @@ Entfernen Sie Ihre Konten, um ein sauberes System zu haben
 Der Vorgang hängt von Ihrem Betriebssystem ab:
 
 - **Windows:** Deinstallieren Sie die Anwendung über **Systemsteuerung > Programme und Funktionen**
-- Mac:** Verschieben Sie die App in den **Papierkorb\*\* und leeren Sie ihn
+- Mac:**Verschieben Sie die App in den**Papierkorb\*\* und leeren Sie ihn
 - **Linux:** Verwenden Sie Ihren **Paketmanager** oder entfernen Sie die **AppImage**-Datei manuell

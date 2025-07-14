@@ -60,7 +60,7 @@ Absolutely!
 <summary>If OpenCloud is free, how are the employees paid?</summary>
 
 We're glad you asked.
-We provide a paid support subscription, see https://opencloud.eu/en/product/service-and-support. With a support subscription you’ll be the first to know about security vulnerabilities and receive detailed instructions on how to address them or how to integrate OpenCloud into your existing systems and storage. We also provide Long-Term-Support if you don't want to upgrade your system so frequently.
+We provide a paid support subscription, see <https://opencloud.eu/en/product/service-and-support>. With a support subscription you’ll be the first to know about security vulnerabilities and receive detailed instructions on how to address them or how to integrate OpenCloud into your existing systems and storage. We also provide Long-Term-Support if you don't want to upgrade your system so frequently.
 
 </details>
 
@@ -113,7 +113,7 @@ Yes, you can either use the built-in user management system or integrate OpenClo
 <details>
 <summary>Are there mobile apps, and do they offer the same features as the desktop version?</summary>
 
-We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the roadmap to see when the apps will be available: https://opencloud.eu/roadmap
+We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the roadmap to see when the apps will be available: <https://opencloud.eu/roadmap>
 
 </details>
 
@@ -152,7 +152,7 @@ Key Factors for Optimal Performance:
 <details>
 <summary>How difficult is it to set up, and is technical expertise required?</summary>
 
-One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See https://docs.opencloud.eu/docs/category/getting-started-1
+One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See <https://docs.opencloud.eu/docs/category/getting-started-1>
 
 </details>
 

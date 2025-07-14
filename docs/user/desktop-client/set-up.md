@@ -38,7 +38,7 @@ Follow these simple steps to install and configure your OpenCloud Desktop and st
 
 ## Finalize Setup
 
-### Optional Advanced Configuration:
+### Optional Advanced Configuration
 
 - Choose whether to **sync all files** or **select specific folders** (this can be adjusted later).
 - Change the **local download directory** where your files will be stored.
@@ -49,7 +49,7 @@ Once you're ready, click **Done** to complete the setup.
 
 <img src={require("./img/set-up/set-up-all-set.png").default} alt="all set" width="400"/>
 
-## Congratulations!
+## Congratulations
 
 **OpenCloud Desktop** is now successfully set up.  
 You can start syncing your files seamlessly between your device and the OpenCloud server!

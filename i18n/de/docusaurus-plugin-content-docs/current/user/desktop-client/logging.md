@@ -8,7 +8,7 @@ title: Logfiles sammeln
 
 Wenn Sie Protokolle für die Fehlersuche erstellen müssen, gehen Sie wie folgt vor:
 
-## 1. Öffnen Sie OpenCloud Desktop.
+## 1. Öffnen Sie OpenCloud Desktop
 
 ## 2. Öffnen Sie die Log-Einstellungen
 
@@ -37,7 +37,7 @@ Diese Protokolle können helfen, Probleme mit OpenCloud Desktop zu diagnostizier
 
 ### Log Inhalt Beschreibung
 
-`25-02-17 09:02:35:174 [ info sync.httplogger ]:	REQUEST 3710cc12-7391-4793-8e89-00499dc11983 {„request“:{„body“:{„length“:0},„header“:{„accept“:„*/*“,„accept-language“:„en_DE“,„original-request-id“:„3710cc12-7391-4793-8e89-00499dc11983“,„user-agent“:"Mozilla/5. 0 (Macintosh) mirall/1.0.0-git (OpenCloud, macos-24. 3.0 ClientArchitecture: x86_64 OsArchitecture: arm64)„,“x-request-id„:“3710cc12-7391-4793-8e89-00499dc11983„},“info„:{“cached„:false,“id„:“3710cc12-7391-4793-8e89-00499dc11983„,“method„:“GET„,“url„:“https://cloud.opencloud.test/.well-known/openid-configuration"}}}`
+`25-02-17 09:02:35:174 [ info sync.httplogger ]: REQUEST 3710cc12-7391-4793-8e89-00499dc11983 {„request“:{„body“:{„length“:0},„header“:{„accept“:„*/*“,„accept-language“:„en_DE“,„original-request-id“:„3710cc12-7391-4793-8e89-00499dc11983“,„user-agent“:"Mozilla/5. 0 (Macintosh) mirall/1.0.0-git (OpenCloud, macos-24. 3.0 ClientArchitecture: x86_64 OsArchitecture: arm64)„,“x-request-id„:“3710cc12-7391-4793-8e89-00499dc11983„},“info„:{“cached„:false,“id„:“3710cc12-7391-4793-8e89-00499dc11983„,“method„:“GET„,“url„:“https://cloud.opencloud.test/.well-known/openid-configuration"}}}`
 
 | Log Inhalt                               | Beschreibung                                                          |
 | ---------------------------------------- | --------------------------------------------------------------------- |

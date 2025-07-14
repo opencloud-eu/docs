@@ -8,7 +8,7 @@ title: Einstellungen
 
 <br/><br/>
 
-## In den iOS-App Einstellungen können Änderungen vorgenommen werden wie z.B.:
+## In den iOS-App Einstellungen können Änderungen vorgenommen werden wie z.B
 
     - Benutzeroberfläche
     - Datennutzung

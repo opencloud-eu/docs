@@ -7,7 +7,7 @@ description: 'How to activate mail notifications in OpenCloud.'
 
 # Mail notifications in OpenCloud
 
-## This guide shows how to configure your OpenCloud instance to send notification E-Mails by modifying the `.env` file in your OpenCloud setup.
+## This guide shows how to configure your OpenCloud instance to send notification E-Mails by modifying the `.env` file in your OpenCloud setup
 
 ---
 

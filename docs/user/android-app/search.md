@@ -7,16 +7,16 @@ draft: true
 
 # Search function
 
-## Here we explain how to use the search function in the OpenCloud Android app.
+## Here we explain how to use the search function in the OpenCloud Android app
 
 ---
 
-### 1. Click on the search icon to open the search function.
+### 1. Click on the search icon to open the search function
 
 <!-- <img src={require("./img/search/search-symbol.png").default} alt="magnifying glass icon" width="300"/> -->
 <br/>
 
-### 2. The search function offers various options that can be used to narrow down your search.
+### 2. The search function offers various options that can be used to narrow down your search
 
 #### Search bar
 

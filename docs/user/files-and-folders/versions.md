@@ -15,7 +15,7 @@ OpenCloud saves **different versions** of files. This **allows** you to **restor
 
 ### View and restore versions
 
-#### Open details:
+#### Open details
 
 - **Right-click** on the file
 - or **click** on the **three dots** in the corresponding file line.
@@ -25,13 +25,13 @@ OpenCloud saves **different versions** of files. This **allows** you to **restor
   <img src={require("./img/versions/details-button.png").default} alt="select details" width="1920"/>
   <br/><br/>
 
-#### Select versions:
+#### Select versions
 
 - In the **right sidebar** that opens select the **“Versions” item**.
   <img src={require("./img/versions/versions-button.png").default} alt="select versions" width="400"/>
   <br/><br/>
 
-#### Show versions:
+#### Show versions
 
 - **All versions** of the file are **displayed**.
   <img src={require("./img/versions/versions.png").default} alt="show all versions" width="400"/>

@@ -9,7 +9,7 @@ draft: true
 
 <br/><br/>
 
-## In the Android app settings changes can be made, such as:
+## In the Android app settings changes can be made, such as
 
     - Security
     - Manage notifications
