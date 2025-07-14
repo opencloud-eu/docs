@@ -48,12 +48,12 @@ After starting the docker containers, you can build Web by running `pnpm build:w
 
 For a faster development experience, consider enabling instant hot-reloading. Details on how to set this up are provided below.
 
-Now you can access Web via <https://host.docker.internal:9200>.
+Now you can access Web via [https://host.docker.internal:9200](https://host.docker.internal:9200).
 
 ### Using Instant Hot-Reload via Vite
 
-To work with instant hot-reloading, you can also build Web by running `pnpm vite`. The port to access Web is slightly different then: <https://host.docker.internal:9201>. Also note that the initial page load may take a bit longer than usual. This is normal and to be expected.
+To work with instant hot-reloading, you can also build Web by running `pnpm vite`. The port to access Web is slightly different then: [https://host.docker.internal:9201](https://host.docker.internal:9201). Also note that the initial page load may take a bit longer than usual. This is normal and to be expected.
 
 :::note
-Make sure that you ran `pnpm build` once before starting the server with `pnpm vite`. Also, you need to accept the self-signed certificate in your browser for <https://host.docker.internal:9200> _and_ <https://host.docker.internal:9201>.
+Make sure that you ran `pnpm build` once before starting the server with `pnpm vite`. Also, you need to accept the self-signed certificate in your browser for [https://host.docker.internal:9200](https://host.docker.internal:9200) _and_ [https://host.docker.internal:9201](https://host.docker.internal:9201).
 :::
