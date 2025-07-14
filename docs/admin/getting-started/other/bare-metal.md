@@ -83,6 +83,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   ```
 
   <img src={require("./../img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
+
 - Run the build generate process:
 
   ```bash
