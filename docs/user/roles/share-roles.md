@@ -4,7 +4,7 @@ id: share-roles
 title: Share roles in OpenCloud
 ---
 
-### Sharing Roles in OpenCloud
+## Sharing Roles in OpenCloud
 
 | Role              | view | download | upload | edit | add | delete | only view doc, img, pdf with watermark |
 | :---------------- | :--: | :------: | :----: | :--: | :-: | :----: | :------------------------------------: |
@@ -13,7 +13,7 @@ title: Share roles in OpenCloud
 | can upload        |  x   |    x     |   x    |  -   |  -  |   -    |                   -                    |
 | can edit          |  x   |    x     |   x    |  x   |  x  |   x    |                   -                    |
 
-# Space Member Roles and Permissions
+## Space Member Roles and Permissions
 
 In a Space, members can have different roles that determine what they can do with shared files and folders.
 
@@ -37,4 +37,4 @@ In a Space, members can have different roles that determine what they can do wit
 - You can edit, add, and delete files and folders.
 - Full access to modify shared content.
 
-**Each role gives a different level of access, ensuring the right permissions for each user!**
+Each role gives a different level of access, ensuring the right permissions for each user!

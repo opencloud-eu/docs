@@ -14,7 +14,7 @@ This section assumes you have the Web development stack up and running. Please c
 
 We have a steadily growing coverage of unit tests. You can run them locally via
 
-```shell
+```bash
 pnpm test:unit
 ```
 
@@ -41,7 +41,7 @@ which makes it easy to write tests, debug them and have them run cross-browser w
 
 Make sure the Web frontend has been bundled with the following command since the dev server won't work:
 
-```shell
+```bash
 pnpm build:w
 ```
 
@@ -49,7 +49,7 @@ pnpm build:w
 
 The following command will run all available e2e tests:
 
-```shell
+```bash
 pnpm test:e2e:cucumber 'tests/e2e/cucumber/**/*.feature'
 ```
 
@@ -79,7 +79,7 @@ Again, you can use the following ENV variables in your command:
 
 To then open e.g. the tracing from the `REPORT_DIR`, run
 
-```shell
+```bash
 npx playwright show-trace path/to/file.zip
 ```
 
@@ -87,13 +87,13 @@ npx playwright show-trace path/to/file.zip
 
 Run the following command to find out the lint issues early in the test codes:
 
-```shell
+```bash
 pnpm lint
 ```
 
 And to fix the lint problems run the following command:
 
-```shell
+```bash
 pnpm lint --fix
 ```
 

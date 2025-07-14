@@ -14,7 +14,7 @@ title: Intern Teilen
 
 ### Mit OpenCloud können Sie Dateien und Ordner intern innerhalb Ihrer Organisation teilen
 
-**Hier sind die Schritte zum Teilen von Dateien oder Ordnern mit anderen Mitgliedern oder Gruppen**
+Hier sind die Schritte zum Teilen von Dateien oder Ordnern mit anderen Mitgliedern oder Gruppen
 
 ---
 
@@ -50,4 +50,4 @@ title: Intern Teilen
   <img src={require("./img/intern/teilen-button.png").default} width="400"/>
 - Die gemeinsam genutzten Mitglieder oder Gruppen werden im selben Fenster unter **"gemeinsam genutzt mit “** aufgeführt.
   <br/><br/>
-  **Mit diesen Schritten können Sie schnell und einfach Dateien und Ordner innerhalb Ihrer Organisation freigeben und den Zugriff entsprechend verwalten!**
+  Mit diesen Schritten können Sie schnell und einfach Dateien und Ordner innerhalb Ihrer Organisation freigeben und den Zugriff entsprechend verwalten!

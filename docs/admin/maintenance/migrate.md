@@ -2,7 +2,7 @@
 sidebar_position: 3
 id: migrate
 title: 'Migrate'
-description:: 'Guide to migrating data using rclone.'
+description: 'Guide to migrating data using rclone.'
 ---
 
 import Tabs from '@theme/Tabs'
@@ -16,94 +16,108 @@ This guide will help you migrate personal space data from `NextCloud` and `oCIS`
 
 <Tabs>
 <TabItem value="opencloud" label="OpenCloud">
-    ### Run `OpenCloud` with following configuration:
 
-    Modify `.env` file:
-    ```sh
-    START_ADDITIONAL_SERVICES="auth-app"
-    ```
+### Run OpenCloud with the following configuration
 
-    Enable `auth-app` service:
-    ```sh
-    PROXY_ENABLE_APP_AUTH: "true"
-    ```
+Modify `.env` file:
 
-    ### Generate user token using CLI:
+```bash
+START_ADDITIONAL_SERVICES="auth-app"
+```
 
-    Enter the OpenCloud container:
-    ```sh
-    docker exec -it opencloud_full-opencloud-1 sh
-    ```
+Enable `auth-app` service:
 
-    Generate an authentication token for a user (e.g, `Alan`) with expiration (`h, m, s`):
-    ```sh
-    opencloud auth-app create --user-name=alan --expiration=72h
-    ```
+```bash
+PROXY_ENABLE_APP_AUTH="true"
+```
 
-    ---
+### Generate user token using CLI
 
-    ### Generate user token using API:
+Access the OpenCloud container:
 
-    Requires additional configuration! Start the server with:
-    ```sh
-    AUTH_APP_ENABLE_IMPERSONATION=true
-    ```
+```bash
+docker exec -it opencloud_full-opencloud-1 sh
+```
 
-    Then generate a token via API:
-    ```sh
-    curl -vk -XPOST 'https://opencloud_url/auth-app/tokens?expiry=72h&userName=alan' -uadmin:admin
-    ```
+Generate an authentication token for a user (e.g., `alan`) with expiration (`h`, `m`, `s`):
+
+```bash
+opencloud auth-app create --user-name=alan --expiration=72h
+```
+
+---
+
+### Generate user token using API
+
+Requires additional configuration! Start the server with:
+
+```bash
+AUTH_APP_ENABLE_IMPERSONATION=true
+```
+
+Then generate a token via API:
+
+```bash
+curl -vk -XPOST 'https://opencloud_url/auth-app/tokens?expiry=72h&userName=alan' -uadmin:admin
+```
 
 </TabItem>
 
 <TabItem value="ocis" label="oCIS">
-    ### Run `oCIS` with following configuration:
 
-    Modify `.env` file:
-    ```sh
-    START_ADDITIONAL_SERVICES="auth-app"
-    ```
+### Run oCIS with the following configuration
 
-    Enable `auth-app` service:
-    ```sh
-    PROXY_ENABLE_APP_AUTH: "true"
-    ```
+Modify `.env` file:
 
-    ### Generate user token using CLI:
+```bash
+START_ADDITIONAL_SERVICES="auth-app"
+```
 
-    Enter the oCIS container:
-    ```sh
-    docker exec -it ocis_full-ocis-1 sh
-    ```
+Enable `auth-app` service:
 
-    Generate an authentication token for a user (e.g, `Einstein`) with expiration (`h, m, s`):
-    ```sh
-    ocis auth-app create --user-name=einstein --expiration=72h
-    ```
+```bash
+PROXY_ENABLE_APP_AUTH="true"
+```
 
-    ---
+### Generate user token using CLI
 
-    ### Generate user token using API:
+Access the oCIS container:
 
-    Requires Additional Configuration. Need to run server with additional configuration
-    ```sh
-    AUTH_APP_ENABLE_IMPERSONATION=true
-    ```
+```bash
+docker exec -it ocis_full-ocis-1 sh
+```
 
-    Then generate a token via API:
-    ```sh
-    curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' -uadmin:admin
-    ```
+Generate an authentication token for a user (e.g., `einstein`) with expiration (`h`, `m`, `s`):
+
+```bash
+ocis auth-app create --user-name=einstein --expiration=72h
+```
+
+---
+
+### Generate user token using API
+
+Requires additional configuration! Start the server with:
+
+```bash
+AUTH_APP_ENABLE_IMPERSONATION=true
+```
+
+Then generate a token via API:
+
+```bash
+curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' -uadmin:admin
+```
 
 </TabItem>
+
 <TabItem value="nc" label="Nextcloud">
-    ###
-    Go to `Settings` → `Security`
 
-    Create a new `App Password`
+### Go to `Settings` → `Security`
 
-    🖼 Example:
-    <img src={require("./img/generate-pass-nc.png").default} alt="init -diff" width="1920"/>
+Create a new App Password
+
+![Generate App Password](./img/generate-pass-nc.png)
 
 </TabItem>
 </Tabs>
@@ -118,7 +132,7 @@ Download and install rclone by following the official guide: 🔗[**rclone.org/i
 
 ### 3. Encrypt Authentication Tokens 🔒
 
-```sh
+```bash
 rclone obscure <token>
 ```
 
@@ -128,13 +142,13 @@ rclone obscure <token>
 
 Edit the rclone configuration file:
 
-```sh
+```bash
 nano ~/.config/rclone/rclone.conf
 ```
 
 📌 Example Configuration:
 
-```sh
+```bash
 [opencloud-admin]
 type = webdav
 url = https://opencloud_url/remote.php/webdav
@@ -197,7 +211,7 @@ description = nc-bob
 
 Use `rclone copy` to transfer data from `oCIS` and `Nextcloud` to `OpenCloud`:
 
-```sh
+```bash
 rclone copy ocis-admin:/ opencloud-admin:/ --no-check-certificate -P  # Copy oCIS admin personal space to OpenCloud admin space
 rclone copy ocis-einstein:/ opencloud-alan:/ --no-check-certificate -P  # Copy oCIS bob's personal space to OpenCloud admin space
 rclone copy nc-bob:/ opencloud-alan:/ --no-check-certificate -P  # Copy Nextcloud admin personal space to OpenCloud admin space

@@ -20,7 +20,7 @@ description: 'Classic docker setup.'
 
 ### 1. Create Required Directories for Bind Mounts
 
-```Shell
+```bash
 mkdir -p $HOME/opencloud/opencloud-config
 mkdir -p $HOME/opencloud/opencloud-data
 ```
@@ -29,7 +29,7 @@ mkdir -p $HOME/opencloud/opencloud-data
 
 ### 2. Pull OpenCloud Image
 
-```Shell
+```bash
 docker pull opencloudeu/opencloud-rolling:latest
 ```
 
@@ -37,7 +37,7 @@ docker pull opencloudeu/opencloud-rolling:latest
 
 ### 3. Initialize OpenCloud (First-time Setup)
 
-```Shell
+```bash
 docker run --rm -it \
     -v $HOME/opencloud/opencloud-config:/etc/opencloud \
     -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
@@ -53,7 +53,7 @@ You can set your own password using `IDM_ADMIN_PASSWORD=your_password`. If not s
 
 ### 4. Start OpenCloud
 
-```Shell
+```bash
 docker run \
     --name opencloud \
     --rm \

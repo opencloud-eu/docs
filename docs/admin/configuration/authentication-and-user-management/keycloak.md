@@ -21,7 +21,7 @@ You can also use one of our predefined Docker Compose setups, which are located 
 
 ### Server Configuration
 
-```
+```env
 PROXY_AUTOPROVISION_ACCOUNTS=true|false # that depends on your setup
 PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
 OC_OIDC_ISSUER=https://your-domain.example.com/realms/openCloud
@@ -36,7 +36,7 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
 ```
 
-Look [here](./external-idp.md#opencloud-configuration) for some more details about these settings.
+Look [OpenCloud external IDP configuration](./external-idp.md#opencloud-configuration) for some more details about these settings.
 
 ### Client Configuration
 

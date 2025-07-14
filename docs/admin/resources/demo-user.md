@@ -22,9 +22,9 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Dennis Ritchie
 
-#### OpenCloud Username: dennis
+OpenCloud Username: **dennis**
 
-#### Role: Admin
+Role: **Admin**
 
 📌 **Co-developer of UNIX & inventor of the C programming language**
 
@@ -38,9 +38,9 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Margaret Hamilton
 
-#### OpenCloud Username: margaret
+OpenCloud Username: **margaret**
 
-#### Role: Space Admin
+Role: **Space Admin**
 
 📌 **Software pioneer & NASA developer**
 
@@ -55,9 +55,9 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Alan Turing
 
-#### OpenCloud Username: alan
+OpenCloud Username: **alan**
 
-#### Role: User
+Role: **User**
 
 📌 **Father of modern computer science & codebreaker in the Second World War**
 
@@ -72,9 +72,9 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Lynn Conway
 
-#### OpenCloud Username: lynn
+OpenCloud Username: **lynn**
 
-#### Role: User
+Role: **User**
 
 📌 Computer scientist & microchip design pioneer
 
@@ -90,9 +90,9 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Mary Kenneth Keller
 
-#### OpenCloud Username: mary
+OpenCloud Username: **mary**
 
-#### Role: User
+Role: **User**
 
 📌 **First woman with a PhD in computer science**
 

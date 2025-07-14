@@ -8,7 +8,7 @@ title: Common Issues & Help
 
 ### Check whether the containers are running
 
-```Shell
+```bash
 docker ps
 ```
 
@@ -40,7 +40,7 @@ If your Docker Compose setup fails to start and the logs contain messages such a
 
 **Example log output:**
 
-```
+```bash
 opencloud-1 | {"level":"fatal","service":"nats","time":"2025-04-08T09:59:59Z","line":"github.com/opencloud-eu/opencloud/services/nats/pkg/logging/nats.go:33","message":"Can't start JetStream: could not create storage directory - mkdir /var/lib/opencloud/nats: permission denied"}
 ```
 
@@ -48,13 +48,13 @@ This error typically occurs when the mounted directories are owned by the wrong 
 
 **Incorrect directory ownership:**
 
-```
+```bash
 drwxr-xr-x  3 root root 4096 Apr  8 09:59 opencloud-data
 ```
 
 **Correct ownership should be:**
 
-```
+```bash
 drwxr-xr-x  9 1000 1000 4096 Apr  7 07:57 opencloud-data
 ```
 

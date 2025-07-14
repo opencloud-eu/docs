@@ -185,13 +185,13 @@ This is exactly the same as [File uploaded - synchronous](#file-uploaded---synch
 
 The service includes a command-line interface to trigger re-indexing a space:
 
-```shell
+```bash
 opencloud search index --space $SPACE_ID
 ```
 
 It can also be used to re-index all spaces:
 
-```shell
+```bash
 opencloud search index --all-spaces
 ```
 
