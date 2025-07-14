@@ -17,7 +17,7 @@
     "build-git-batch": "docker run --rm -w $(pwd) -v $(pwd):$(pwd)  quay.io/thegeeklab/git-batch",
     "format:check": "prettier --check '**/*.{md,mdx,markdown}'",
     "format:write": "prettier --write '**/*.{md,mdx,markdown}'",
-    "lint:md": "markdownlint-cli2  '**/*.{md,markdown}'",
+    "lint:md": "markdownlint-cli2  '**/*.{md,mdx,markdown}'",
     "lint:md:fix": "markdownlint-cli2 --fix '**/*.{md,mdx,markdown}'"
   },
   "dependencies": {
