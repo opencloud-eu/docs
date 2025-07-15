@@ -17,6 +17,7 @@
 
 ### 📦️ Build&Tools
 
+- Remove html line breaks [[#383](https://github.com/opencloud-eu/docs/pull/383)]
 - simplify prettier config [[#380](https://github.com/opencloud-eu/docs/pull/380)]
 - add linter to ci, fix linter reported issues [[#378](https://github.com/opencloud-eu/docs/pull/378)]
 - Add linter [[#376](https://github.com/opencloud-eu/docs/pull/376)]
