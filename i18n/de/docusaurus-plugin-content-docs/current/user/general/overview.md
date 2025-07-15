@@ -8,18 +8,11 @@ title: Übersicht
 
 # Überblick der Benutzeroberfläche
 
-<br/><br/>
-
 ## Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
-
-<br/><br/>
 
 ---
 
-<br/><br/>
-
 <img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
-<br/><br/>
 
 **1. Linke Seitenleiste**  
 Die Seitenleiste enthält die Navigationselemente wie **Spaces, Dateien, Freigaben und Einstellungen**.
@@ -78,7 +71,6 @@ Zeigt eine **Übersicht über Änderungen und Aktivitäten** innerhalb eines Ber
 
 **18. Kontextmenü**  
 Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das **Kontextmenü mit spezifischen Optionen**.
-<br/><br/>
 
 ---
 

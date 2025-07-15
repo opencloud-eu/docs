@@ -6,11 +6,7 @@ title: Konto Einstellungen
 
 # Nutzeraccount Einstellungen in OpenCloud
 
-<br/><br/>
-
 ## In OpenCloud haben Sie die Möglichkeit, verschiedene Einstellungen für Ihr **Benutzerkonto** vorzunehmen, um es an Ihre Bedürfnisse anzupassen
-
-<br/><br/>
 
 ---
 
@@ -19,7 +15,6 @@ title: Konto Einstellungen
 - **Klicken Sie auf Ihren Avatar** in der oberen rechten Ecke.
 - Wählen Sie **"Einstellungen “**.
   <img src={require("./img/account-settings/einstellungen.png").default} alt="Access settings" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -33,7 +28,6 @@ In den Einstellungen sehen Sie zunächst Ihre grundlegenden **Kontoinformationen
 - **Persönlicher Speicherplatz**
 - **Gruppenzugehörigkeiten**
   <img src={require("./img/account-settings/kontoinformationen.png").default} alt="Account Information" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -51,9 +45,8 @@ Abhängig von der Grundkonfiguration können Sie die folgenden Optionen ändern:
   Legen Sie fest, welche **E-Mail-Benachrichtigungen** Sie von OpenCloud erhalten möchten.
 - **WebDAV options**:  
   Legen Sie die **WebDAV-Einstellungen** fest, um den externen Zugriff auf Dateien und Ordner zu ermöglichen.
-  <br/><br/>
+
   <img src={require("./img/account-settings/konto-einstellungen.png").default} alt="Preferences" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -61,7 +54,6 @@ Abhängig von der Grundkonfiguration können Sie die folgenden Optionen ändern:
 
 Unter **Erweiterungen** können Sie installierte Erweiterungen konfigurieren, z. B. die **Fortschrittsleiste**, sofern vorhanden.
 <img src={require("./img/account-settings/erweiterungen.png").default} alt="Extensions" width="1920"/>
-<br/><br/>
 
 ---
 
@@ -69,7 +61,6 @@ Unter **Erweiterungen** können Sie installierte Erweiterungen konfigurieren, z.
 
 Gemäß **DSGVO** können Sie einen **Datenexport** Ihrer personenbezogenen Daten beantragen, wenn Sie dies wünschen.
 <img src={require("./img/account-settings/dsgvo.png").default} alt="GDPR" width="1920"/>
-<br/><br/>
 
 ---
 

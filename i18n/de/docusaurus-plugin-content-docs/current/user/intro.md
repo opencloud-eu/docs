@@ -18,7 +18,6 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
 Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
-<br/><br/>
 
 ### Inhaltsverzeichnis
 
@@ -53,7 +52,6 @@ Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Vi
 #### Admin
 
 Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
-<br/><br/>
 
 ### Was ist OpenCloud?
 
@@ -63,7 +61,6 @@ Durch intelligentes Datei-Management und eine starke Open Source-Community werde
 effektiv strukturiert und langfristig nutzbar.<br/>
 Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen
 und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
-<br/><br/>
 
 ### Wie kann ich OpenCloud nutzen?
 

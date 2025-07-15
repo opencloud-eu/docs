@@ -17,7 +17,6 @@ The **"Spaces" section** provides a central place for collaboration in groups or
 To open the **Spaces Overview**, tap the **"Spaces button"** in the account menu.
 
 <img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
 
 Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member of or have created yourself.
 
@@ -31,8 +30,9 @@ By tapping the **search icon**, the search menue for Spaces will open.
 
 <div style={{ display: 'flex', gap: '10px' }}>
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+
 <img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
+
 </div>
 
 ---
@@ -42,7 +42,6 @@ By tapping the **search icon**, the search menue for Spaces will open.
 By tapping the **plus icon**, the available functions within a Space appear.
 
 <img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 

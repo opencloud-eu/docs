@@ -6,8 +6,6 @@ title: Share via link
 
 # Share files and folders via link
 
-<br/><br/>
-
 Here we explain how to share files and folders with others via link in the OpenCloud iOS app
 
 ---

@@ -6,8 +6,6 @@ title: Per Link teilen
 
 # Dateien und Ordner per Link teilen
 
-<br/><br/>
-
 Hier erklären wir, wie man in der OpenCloud iOS-App, Dateien und Ordner per Link mit anderen teilt
 
 ---

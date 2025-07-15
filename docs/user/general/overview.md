@@ -8,18 +8,11 @@ title: Overview
 
 # OpenCloud - Overview of the user interface
 
-<br/><br/>
-
 ## The OpenCloud interface consists of several areas that help you to work efficiently with files and settings
-
-<br/><br/>
 
 ---
 
-<br/><br/>
-
 <img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
-<br/><br/>
 
 **1. Left Sidebar**  
 The sidebar contains the navigation elements such as **Spaces, Files, Shares and Settings**.
@@ -78,7 +71,6 @@ Shows an **overview of changes and activities** within a space or file.
 
 **18. Context Menu**  
 Right-clicking on a file or folder opens the **context menu with specific options**.
-<br/><br/>
 
 ---
 

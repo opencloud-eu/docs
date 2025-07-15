@@ -6,8 +6,6 @@ title: Customization of the file list
 
 # Files-List customizations in OpenCloud
 
-<br/><br/>
-
 ## Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display
 
 ---
@@ -29,7 +27,6 @@ title: Customization of the file list
   - Customize the size of the icons and buttons:
   - **Small tiles** for a more compact view.
   - **Large tiles** for a clearer view.
-    <br/><br/>
 
 <img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
 

@@ -4,13 +4,10 @@ id: settings
 title: Einstellungen
 ---
 
-<br/><br/>
-
 ## Überblick über den Admin-Bereich
 
 Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für Ihre Organisation. Hier sind die wichtigsten Bereiche:
 <img src={require("./img/settings/admin-einstellungen.png").default} alt="Admin settings" width="400"/>
-<br/><br/>
 
 ---
 
@@ -19,7 +16,6 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 - **Übersicht über Ausgabe und Version**
   Sie können Informationen über die **Edition** und **Version** Ihrer OpenCloud anzeigen.
   <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -30,7 +26,6 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
 - **Benutzer verwalten**:
   Abhängig von Ihren Benutzerverwaltungseinstellungen können Sie: - Benutzer erstellen oder löschen - Benutzer bearbeiten (z.B. Rechte oder Einstellungen ändern) - Quota (Speicherplatz) von Benutzern ändern - Benutzer in Gruppen hinzufügen oder entfernen - Allow or prohibit logins (for individual users)
   <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -54,7 +49,6 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
   - **Deaktivieren oder aktivieren**
   - **Löschen**
     <img src={require("./img/settings/spaces.png").default} alt="Admin spaces" width="1920"/>
-    <br/><br/>
 
 ---
 
