@@ -6,8 +6,13 @@
 
 @AlexAndBear, @Svanvith
 
+### 🐾 Guides
+
+- Add lint format to readme [[#382](https://github.com/opencloud-eu/docs/pull/382)]
+
 ### 👷 Admin Documentation
 
+- add tutorial for OpenCloud with reverse Proxy [[#365](https://github.com/opencloud-eu/docs/pull/365)]
 - Docker compose refinement [[#370](https://github.com/opencloud-eu/docs/pull/370)]
 
 ### 📦️ Build&Tools
