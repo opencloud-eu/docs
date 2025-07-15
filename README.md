@@ -68,7 +68,7 @@ The screenshot should show the important aspects and you can put red frames arou
 
 ---
 
-## Please Format Before Pushing
+## Please format before pushing
 
 Before pushing your changes to the repository, make sure the code and documentation are properly formatted. Run the following commands:
 
