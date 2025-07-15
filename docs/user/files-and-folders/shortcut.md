@@ -15,6 +15,7 @@ title: Shortcut
     <img src={require("./img/link/new-button.png").default} alt="select Shortcut in batch action menu" width="1920"/>
 
     <img src={require("./img/link/shortcut-button.png").default} alt="select Shortcut" width="400"/>
+
 - Insert link or file:
   - In the window that opens, enter the **link** or the **name** of the file you want to link.
   - Alternatively, you can select the desired file from the list after you have entered the first few letters.
