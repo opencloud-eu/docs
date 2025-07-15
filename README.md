@@ -65,3 +65,19 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 | pop up           | width: "500px"   |
 
 The screenshot should show the important aspects and you can put red frames around the specific buttons or areas.
+
+---
+
+## Please format before pushing
+
+Before pushing your changes to the repository, make sure the code and documentation are properly formatted. Run the following commands:
+
+```shell
+pnpm format:write
+pnpm lint:md:fix
+```
+
+These commands ensure that:
+
+- All files follow the project's formatting standards
+- Markdown files are linted and auto-fixed for consistent structure and readability
