@@ -1,12 +1,5 @@
-*
-
-!*.md
-!*.mdx
-
-!*/
-
 assets/**
 static/**
 README.md
 CHANGELOG.md
-Contributing.md
+CONTRIBUTING.md
