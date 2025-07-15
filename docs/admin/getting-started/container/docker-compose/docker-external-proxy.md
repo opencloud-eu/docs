@@ -2,7 +2,7 @@
 sidebar_position: 2
 id: external-proxy
 title: Behind External Proxy
-description: "How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup)."
+description: 'How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup).'
 ---
 
 # 🌐 Running OpenCloud Behind an External Proxy (Nginx + Certbot Setup)
@@ -21,25 +21,30 @@ This guide walks you through setting up OpenCloud behind an external **Nginx rev
 - Installed software:
   - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
   - `nginx`
-  - `certbot` 
+  - `certbot`
 
 ---
+
 ## Step 1: Connect to Your Server
+
 Log into your server via SSH:
 
 ```bash
 ssh root@YOUR.SERVER.IP
 ```
----
-## Step 2: Install Docker
-Update your system and install Docker.
 
+---
+
+## Step 2: Install Docker
+
+Update your system and install Docker.
 
 First, perform an update and upgrade:
 
 ```bash
 apt update && apt upgrade -y
 ```
+
 Install Docker following the [official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 Once Docker is installed, enable and start the service:
@@ -47,8 +52,11 @@ Once Docker is installed, enable and start the service:
 ```bash
 systemctl enable docker && systemctl start docker
 ```
+
 ---
+
 ## Step 3: Clone the OpenCloud Repository
+
 Download the necessary configuration files:
 
 ```bash
@@ -58,8 +66,8 @@ git clone https://github.com/opencloud-eu/opencloud.git
 ---
 
 ## Step 4: Install Nginx & Certbot
-Now install Nginx & Certbot
 
+Now install Nginx & Certbot
 
 ## 📁 Step 5: Create a Webroot Directory for Certbot
 
@@ -125,7 +133,7 @@ Your certificates will be saved under:
 
 ---
 
-## ⚙️ Step 8: Configure and start OpenCloud 
+## ⚙️ Step 8: Configure and start OpenCloud
 
 Clone the OpenCloud Compose repo and set your environment:
 
@@ -151,25 +159,26 @@ COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
+
 The initial Admin password is mandatory for security reasons.
 
 Start the docker compose setup
 
 ```bash
 docker compose up -d
-``` 
+```
 
 ---
 
 ## 🧩 Step 9: Set Up the Final Nginx Reverse Proxy
 
-### Remove the temporary certbot config:
+### Remove the temporary certbot config
 
 ```bash
 sudo rm /etc/nginx/sites-enabled/certbot-challenge
 ```
 
-### Create a new proxy config:
+### Create a new proxy config
 
 ```bash
 sudo nano /etc/nginx/sites-available/opencloud
@@ -247,7 +256,8 @@ server {
     }
 }
 ```
-Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub 
+
+Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub
 
 Enable and reload Nginx:
 
