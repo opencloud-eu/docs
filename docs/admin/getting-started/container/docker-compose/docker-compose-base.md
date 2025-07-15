@@ -76,7 +76,7 @@ cp .env.example .env
 ```
 
 > **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
-<br/>
+> <br/>
 
 Edit the `.env` file with the editor of your choice:
 
