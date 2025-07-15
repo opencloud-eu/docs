@@ -9,9 +9,10 @@ draft: true
 
 
 ## Enable Keycloak Integration (optional)
+
 <br/>
 
-#### To enable Keycloak for identity and access management, **uncomment** the following lines in your `.env` file:
+### To enable Keycloak for identity and access management, **uncomment** the following lines in your `.env` file
 
 ```env
 LDAP=:ldap.yml
@@ -25,20 +26,22 @@ KEYCLOAK_ADMIN_PASSWORD="your.save.password"
 
 This will include the LDAP and Keycloak service definitions in the Docker Compose setup.
 
-#### After starting OpenCloud, Keycloak will be available at:
+### After starting OpenCloud, Keycloak will be available at
 
 ```bash
 https://keycloak.your.domain
 ```
-
 
 ## 👤 Initial User Setup in Keycloak
-### Once Keycloak is running:
 
-**1. Open your browser and go to**
+### Once Keycloak is running
+
+- 1. Open your browser and go to
+
 ```bash
 https://keycloak.your.domain
 ```
+
 <img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
 <br/><br/>
 
@@ -53,6 +56,7 @@ https://keycloak.your.domain
 **4. Navigate to the "Users" section and click "Add user":**
 <img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
 <br/>
+
 - Fill in a username
 - Optionally add email, first/last name
 - Click "Create"
@@ -60,6 +64,7 @@ https://keycloak.your.domain
 <br/><br/>
 
 **5. Go to the "Credentials" tab:**
+
 - Click "Set password"
 <img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
 <br/>
@@ -72,6 +77,7 @@ https://keycloak.your.domain
 **6. Go to the "Role Mapping" tab:**
 <img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
 <br/>
+
 - Click "Assign role"
 <img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
 <br/>

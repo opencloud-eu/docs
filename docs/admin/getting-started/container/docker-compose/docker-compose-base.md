@@ -74,6 +74,7 @@ Create environment file:
 ```bash
 cp .env.example .env
 ```
+
 > **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
 <br/>
 
@@ -120,8 +121,10 @@ TRAEFIK_ACME_MAIL=your@email.com
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
-### ✅ Set your deployment options:
+### ✅ Set your deployment options
+
 For Example without Collabora:
+
 ```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
