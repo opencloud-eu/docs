@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.39.1](https://github.com/opencloud-eu/docs/releases/tag/1.39.1) - 2025-07-14
+## [1.39.1](https://github.com/opencloud-eu/docs/releases/tag/1.39.1) - 2025-07-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,7 +8,8 @@
 
 ### 📦️ Build&Tools
 
-- add to ci, fix linter problems [[#378](https://github.com/opencloud-eu/docs/pull/378)]
+- simplify prettier config [[#380](https://github.com/opencloud-eu/docs/pull/380)]
+- add linter to ci, fix linter reported issues [[#378](https://github.com/opencloud-eu/docs/pull/378)]
 - Add linter [[#376](https://github.com/opencloud-eu/docs/pull/376)]
 - chore: add prettier [[#374](https://github.com/opencloud-eu/docs/pull/374)]
 - chore: add Require Pull Request Labels workflow [[#375](https://github.com/opencloud-eu/docs/pull/375)]
