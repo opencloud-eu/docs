@@ -6,11 +6,7 @@ title: Anpassungen der Datei-Liste
 
 # Anpassungen der Datei-Liste in OpenCloud
 
-<br/><br/>
-
 ## Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläche klicken, gelangen Sie zu den Optionen für die Anpassung der Ansicht. Hier können Sie die Anzeige anpassen
-
-<br/><br/>
 
 ---
 
@@ -31,7 +27,6 @@ title: Anpassungen der Datei-Liste
   - Passen Sie die Größe der Symbole und Schaltflächen an:
   - **Kleine Kacheln** für eine kompaktere Ansicht.
   - **Große Kacheln** für eine übersichtlichere Ansicht.
-    <br/><br/>
 
 <img src={require("./img/files-list-adjustment/einstellungs-button.png").default} alt="Settings icon" width="400"/>
 

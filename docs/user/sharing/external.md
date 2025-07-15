@@ -11,11 +11,8 @@ title: External
 ## Public links - external sharing of files and folders in OpenCloud
 
 With **public links**, you can share files and/or folders **across organizations**.
-<br/><br/>
 
 ## **Here are the steps to create a public link**
-
-<br/><br/>
 
 ### Open sharing options
 

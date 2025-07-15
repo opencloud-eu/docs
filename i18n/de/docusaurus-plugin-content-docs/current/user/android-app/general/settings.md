@@ -7,8 +7,6 @@ draft: true
 
 # Einstellungen
 
-<br/><br/>
-
 ## In den Android-App Einstellungen können Änderungen vorgenommen werden wie z.B
 
 - Benutzeroberfläche
@@ -20,7 +18,6 @@ draft: true
 ---
 
 <img src={require(".././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
-<br/><br/>
 
 ### Userinterface
 

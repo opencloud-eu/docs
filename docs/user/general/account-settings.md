@@ -6,11 +6,7 @@ title: Account Settings
 
 # User account settings in OpenCloud
 
-<br/><br/>
-
 ## In OpenCloud you have the option of making various settings for your **user account** to customize it according to your needs
-
-<br/><br/>
 
 ---
 
@@ -19,7 +15,6 @@ title: Account Settings
 1. **Click on your avatar** in the top right corner.
 2. select **"Preferences"**.
    <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400"/>
-   <br/><br/>
 
 ---
 
@@ -33,7 +28,6 @@ In the settings you will first see your basic **account information**:
 - **Personal storage space**
 - **Group memberships**
   <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -51,9 +45,8 @@ Depending on the basic configuration, you can change the following options:
   Determine which **email notifications** you would like to receive from OpenCloud.
 - **WebDAV options**:  
   Set the **WebDAV settings** to allow external access to files and folders.
-  <br/><br/>
+
   <img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -61,7 +54,6 @@ Depending on the basic configuration, you can change the following options:
 
 Under **Extensions** you can configure installed extensions, such as the **Progressbar**, if available.
 <img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
-<br/><br/>
 
 ---
 
@@ -69,7 +61,6 @@ Under **Extensions** you can configure installed extensions, such as the **Progr
 
 Under **GDPR** you can request a **data export** of your personal data if you wish.
 <img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/>
-<br/><br/>
 
 ---
 

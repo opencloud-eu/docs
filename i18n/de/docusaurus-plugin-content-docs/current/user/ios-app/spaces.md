@@ -16,7 +16,6 @@ Der **„Spaces“-Bereich** (zu Deutsch: **„Bereiche“**) bietet einen zentr
 
 Um zur **"Spaces Übersicht"** zu gelangen, klicken wir erst auf die **"Spaces-Schaltfläche"** im Account-Menü.
 <img src={require("./img/spaces/spaces-button.png").default} alt="Spaces-Schaltfläche" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
 
 Im Anschluss sehen wir die **"Spaces-Übersicht"**, in der alle Spaces aufgelistet werden, in denen man Mitglied ist oder von einem selbst erstellt wurden.
 <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces-Übersicht" style={{ width: '300px', marginRight: '60px' }} />
@@ -29,8 +28,9 @@ Durch klicken auf das **"Such-Symbol"**, öffnet sich das Menü für die Suche i
 
 <div style={{ display: 'flex', gap: '10px' }}>
 <img src={require("./img/spaces/search-button.png").default} alt="Such Funktion" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
+
 <img src={require("./img/spaces/search-menue.png").default} alt="Such Menü" style={{ width: '300px', marginRight: '60px' }} />
+
 </div>
 
 ---
@@ -39,7 +39,6 @@ Durch klicken auf das **"Such-Symbol"**, öffnet sich das Menü für die Suche i
 
 Durch klicken auf das **"Plus-Symbol"** öffnen wir die Funktionen innerhalb eines Spaces.
 <img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Symbol" style={{ width: '300px', marginRight: '60px' }} />
-<br/><br/>
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
 

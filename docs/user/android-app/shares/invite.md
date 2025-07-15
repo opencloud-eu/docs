@@ -7,8 +7,6 @@ draft: true
 
 # Share files and folders with people and groups via invitation
 
-<br/><br/>
-
 Here we explain how to share files and folders via invitation with other people and groups within your OpenCloud in the OpenCloud Android app
 
 ---

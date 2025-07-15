@@ -4,13 +4,10 @@ id: settings
 title: Settings
 ---
 
-<br/><br/>
-
 ## Admin area overview
 
 In the admin area of OpenCloud you have extensive administration options for your organisation. Here are the most important areas:
 <img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="400"/>
-<br/><br/>
 
 ---
 
@@ -19,7 +16,6 @@ In the admin area of OpenCloud you have extensive administration options for you
 - **Overview of edition and version**:  
    You can view information about the **Edition** and **Version** of your OpenCloud.
   <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -30,7 +26,6 @@ In the admin area of OpenCloud you have extensive administration options for you
 - **Manage users**:  
    Depending on your user management settings, you can: - Create or delete users - Edit users (e.g. change rights or settings) - Change quota (storage space) of users - Add or remove users in groups - Allow or prohibit logins (for individual users)
   <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
-  <br/><br/>
 
 ---
 
@@ -53,7 +48,6 @@ In the admin area of OpenCloud you have extensive administration options for you
 - **Space management**:  
    As an administrator, you have full rights to: - **Edit** - **Deactivate or activate** - **Delete**
   <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
-  <br/><br/>
 
 ---
 

@@ -41,15 +41,12 @@ https://keycloak.your.domain
 ```
 
 <img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
-<br/><br/>
 
 - 2. Log in with the admin credentials (default is admin / admin).
      <img src={require("./../../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920"/>
-     <br/><br/>
 
 - 3. In the top-left dropdown (labeled Keycloak), switch to the OpenCloud realm.
      <img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
-     <br/><br/>
 
 - 4. Navigate to the "Users" section and click "Add user":
      <img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
@@ -59,7 +56,6 @@ https://keycloak.your.domain
 - Optionally add email, first/last name
 - Click "Create"
   <img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
-  <br/><br/>
 
 - 5. Go to the "Credentials" tab:
 
@@ -70,7 +66,6 @@ https://keycloak.your.domain
 - Enable "Temporary" to force password change on first login (optional)
 - Click "Save"
   <img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
-  <br/><br/>
 
 - 6. Go to the "Role Mapping" tab:
      <img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>

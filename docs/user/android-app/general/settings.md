@@ -7,8 +7,6 @@ draft: true
 
 # Settings
 
-<br/><br/>
-
 ## In the Android app settings changes can be made, such as
 
     - Security
@@ -20,8 +18,6 @@ draft: true
 ---
 
 <!-- <img src={require(".././img/settings/settings.png").default} alt="Settings" width="1920"/> -->
-
-<br/><br/>
 
 ### Userinterface
 

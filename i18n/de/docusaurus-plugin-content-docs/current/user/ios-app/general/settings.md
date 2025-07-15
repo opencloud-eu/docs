@@ -6,8 +6,6 @@ title: Einstellungen
 
 # Einstellungen
 
-<br/><br/>
-
 ## In den iOS-App Einstellungen können Änderungen vorgenommen werden wie z.B
 
     - Benutzeroberfläche
@@ -19,7 +17,6 @@ title: Einstellungen
 ---
 
 <img src={require(".././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
-<br/><br/>
 
 ### Userinterface
 

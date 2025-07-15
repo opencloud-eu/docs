@@ -22,7 +22,6 @@ draft: true
 
 - You can search for file or folder names in the search bar.
   <!-- <img src={require("./img/search/searchbar.png").default} alt="search bar" width="300"/> -->
-  <br/><br/>
 
 #### Sort
 
@@ -38,10 +37,8 @@ You can the search results sorting by three different categories:
 
 - **Size** - By clicking on the option "Size", you can sort the files by their size.
   <!-- <img src={require("./img/search/size.png").default} alt="Sort by size" width="300"/> -->
-  <br/><br/>
 
 #### Search result
 
 - This area displays the search results
   <!-- <img src={require("./img/search/search-result.png").default} alt="Search results" width="300"/> -->
-  <br/><br/>

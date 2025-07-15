@@ -7,8 +7,6 @@ draft: true
 
 # Dateien und Ordner per Link teilen
 
-<br/><br/>
-
 Hier erklären wir, wie man in der OpenCloud Android-App, Dateien und Ordner per Link mit anderen teilt
 
 ---
