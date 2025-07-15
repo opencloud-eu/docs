@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.39.1](https://github.com/opencloud-eu/docs/releases/tag/1.39.1) - 2025-07-15
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @Svanvith
+
+### 👷 Admin Documentation
+
+- Docker compose refinement [[#370](https://github.com/opencloud-eu/docs/pull/370)]
 
 ### 📦️ Build&Tools
 
