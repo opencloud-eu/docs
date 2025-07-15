@@ -221,7 +221,7 @@ docker compose down
 #### 2️⃣ Remove old staging certificates
 
 ```bash
-docker volume rm opencloud_full_certs
+rm -r certs
 ```
 
 (If you changed volume names, adjust accordingly.)
