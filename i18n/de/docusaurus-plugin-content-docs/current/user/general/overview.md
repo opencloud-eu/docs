@@ -4,8 +4,6 @@ id: overview
 title: Übersicht
 ---
 
----
-
 # Überblick der Benutzeroberfläche
 
 ## Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten

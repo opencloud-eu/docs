@@ -104,8 +104,6 @@ To rename a file or folder in the OpenCloud iOS App:
 
 ---
 
----
-
 ## 📁 Move Files or Folders
 
 To move a file or folder in the OpenCloud iOS App:

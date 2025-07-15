@@ -4,8 +4,6 @@ id: versions
 title: Versionen
 ---
 
----
-
 # Versionen
 
 ## Verwalten von Versionen für Dateien und Ordner in OpenCloud

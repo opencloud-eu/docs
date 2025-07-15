@@ -105,8 +105,6 @@ So benennen Sie eine Datei oder einen Ordner in der OpenCloud Android-App um:
 
 ---
 
----
-
 ## 📁 Dateien oder Ordner verschieben
 
 So verschieben Sie eine Datei oder einen Ordner in der OpenCloud Android-App:

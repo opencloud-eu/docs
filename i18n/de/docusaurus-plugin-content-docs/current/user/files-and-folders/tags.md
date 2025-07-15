@@ -4,8 +4,6 @@ id: tags
 title: Tags
 ---
 
----
-
 # Tags
 
 ## Tags hinzufügen und verwalten mit OpenCloud
