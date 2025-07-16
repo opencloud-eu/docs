@@ -2,17 +2,17 @@
 sidebar_position: 7
 id: versions
 title: Versions
+description: Managing Versions of files in OpenCloud
+draft: false
 ---
 
-# Versions
-
-## Managing versions of files in OpenCloud
+# Managing versions of files in OpenCloud
 
 OpenCloud saves **different versions** of files. This **allows** you to **restore or download previous versions**:
 
-### View and restore versions
+## View and restore versions
 
-#### Open details
+### Open details
 
 - **Right-click** on the file
 - or **click** on the **three dots** in the corresponding file line.
@@ -20,12 +20,12 @@ OpenCloud saves **different versions** of files. This **allows** you to **restor
 - Select **“Details”** from the **context menu**.
   <img src={require("./img/versions/details-button.png").default} alt="select details" width="1920"/>
 
-#### Select versions
+### Select versions
 
 - In the **right sidebar** that opens select the **“Versions” item**.
   <img src={require("./img/versions/versions-button.png").default} alt="select versions" width="400"/>
 
-#### Show versions
+### Show versions
 
 - **All versions** of the file are **displayed**.
   <img src={require("./img/versions/versions.png").default} alt="show all versions" width="400"/>

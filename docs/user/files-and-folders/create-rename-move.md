@@ -2,13 +2,15 @@
 sidebar_position: 1
 id: create-rename-move
 title: Create - Rename - Move
+description: Create - Rename - Move
+draft: false
 ---
 
 # Create - Rename - Move
 
-## You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location
+You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location
 
-### How to create files and folders
+## How to create files and folders
 
 - Click on the **“+ New”** button at the top of the bar.
   <img src={require("./img/create-rename-move/new-button.png").default} alt="new button" width="1920"/>
@@ -16,12 +18,13 @@ title: Create - Rename - Move
   <img src={require("./img/create-rename-move/create-options.png").default} alt="select file type or folder" width="400"/>
 - Enter a **name** for the file or folder in the window that appears.
   <img src={require("./img/create-rename-move/create-new-folder.png").default} alt="enter name" width="400"/>
+
 - Click on **“Create”**.
   <img src={require("./img/create-rename-move/create-button.png").default} alt="click create" width="400"/>
 
 **Done!** The file or folder is created. If it is a file, it is automatically opened in edit mode.
 
-### To rename files or folders
+## To rename files or folders
 
 - Open the **context menu** by either: - **right-clicking** on the file or folder, - or clicking on the **three dots** on the right in the corresponding line.
   <img src={require("./img/create-rename-move/three-dot-menu.png").default} alt="three dot menu" width="1920"/>
@@ -35,7 +38,7 @@ title: Create - Rename - Move
 
 **Done!** - the new name is applied!
 
-### How to move files or folders
+## How to move files or folders
 
 - Make a selection: - Select the file(s) or folder(s) you want to move.
   <img src={require("./img/create-rename-move/mark-folder.png").default} alt="mark folder or files" width="1920"/>
@@ -45,6 +48,7 @@ title: Create - Rename - Move
   <img src={require("./img/create-rename-move/right-click-cut-option.png").default} alt="right click on cut option" width="400"/>
   (Alternatively, you can use the **“Cut”** function in the **action bar** at the top).
   <img src={require("./img/create-rename-move/actionbar-cut-option.png").default} alt="cut option in action bar" width="1920"/>
+
 - Select destination: - Navigate to the folder or location where the file or folder should be moved to. - Click on **“Paste here”** in the **action bar**.
   <img src={require("./img/create-rename-move/paste-here-button.png").default} alt="paste here button" width="1920"/>
   <img src={require("./img/create-rename-move/pasted-file.png").default} alt="paste file" width="1920"/>

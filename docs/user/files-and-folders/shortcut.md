@@ -2,13 +2,15 @@
 sidebar_position: 5
 id: shortcut
 title: Shortcut
+description: Create shortcuts in OpenCloud
+draft: false
 ---
 
 # Shortcut
 
-## With OpenCloud you can create shortcuts to websites or files
+With OpenCloud you can create shortcuts to websites or files
 
-### This is how it works
+## This is how it works
 
 - Create a shortcut:
   - Click on **“+ New”** in the **batch actions** and select **“Shortcut”**.
@@ -22,14 +24,15 @@ title: Shortcut
     <img src={require("./img/link/pop-up-window.png").default} alt="enter link or file in popup window" width="500"/>
 - Specify the name of the shortcut:
   - Enter a name for the shortcut.
+
     <img src={require("./img/link/url-and-title.png").default} alt="enter a name for the shortcut" width="500"/>
+
 - Create shortcut:
   - Click on **“Create”** to save the shortcut.
+
     <img src={require("./img/link/create-button.png").default} alt="click on create" width="400"/>
 
----
-
-### Use shortcut
+## Use shortcut
 
 - Now click on the **shortcut** to open the linked web page or file in a **new browser tab**.
   <img src={require("./img/link/shortcut.png").default} alt="click on shortcut" width="1920"/>

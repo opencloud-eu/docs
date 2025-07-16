@@ -1,53 +1,57 @@
 ---
 sidebar_position: 1
 id: account-overview
-title: Account-Menue
+title: Account Menu
+description: Account Menu
 draft: false
 ---
 
-### Here a is a overview of the account-menue in the OpenCloud iOS-App
+# Account Menu
 
----
+In the iOS app, the account menu provides access to various personal and sharing-related features.
 
-<div style={{ display: 'flex', alignItems: 'flex-start' }}>
+<img src={require("../../img/overview/account.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
-<img src={require("../../img/overview/account.png").default} alt="Overview Account" style={{ width: '400px', marginRight: '60px' }} />
+## 1. Account Menu Item
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+Opens the main account options and settings.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**1. Account Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the main account options and settings</li>
+## 2. Active Account
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>2. Active Account**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows which user account is currently active</li>
+Shows which user account is currently active.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**3. Personal Space Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Gives access to the user's personal files and folders</li>
+## 3. Personal Space Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**4. Shares Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays files and folders that have been shared with others or received</li>
+Gives access to the user's personal files and folders.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**5. Spaces Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens a list of collaborative spaces or team folders</li>
+## 4. Shares Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**6. Search Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows the user to search through files, folders, and content</li>
+Displays files and folders that have been shared with others or received.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**7. Recents Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows a list of recently accessed or modified files</li>
+## 5. Spaces Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**8. Available Offline Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays files that are marked for offline access</li>
+Opens a list of collaborative spaces or team folders.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**9. Status Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Indicates the current sync or connection status</li>
+## 6. Search Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**10. Add Account Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Lets the user add a new account to the application</li>
+Allows the user to search through files, folders, and content.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**11. Settings Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the general settings and configuration options</li>
+## 7. Recents Menu Item
 
-  </ul>
+Shows a list of recently accessed or modified files.
 
-</div>
+## 8. Available Offline Menu Item
+
+Displays files that are marked for offline access.
+
+## 9. Status Menu Item
+
+Indicates the current sync or connection status.
+
+## 10. Add Account Menu Item
+
+Lets the user add a new account to the application.
+
+## 11. Settings Menu Item
+
+Opens the general settings and configuration options.

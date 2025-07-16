@@ -2,6 +2,8 @@
 sidebar_position: 5
 id: logging
 title: Collect Logfiles
+description: Collect logfiles in OpenCloud
+draft: false
 ---
 
 # Logging to a Temporary Directory in OpenCloud Desktop
@@ -12,7 +14,7 @@ If you need to generate logs for troubleshooting, follow these steps:
 
 ## 2. Access Log Settings
 
-Click on **Settings → Advanced → Log Settings**
+- Click on **Settings → Advanced → Log Settings**
 
 <img src={require("./img/logging/logging-access.png").default} alt="logging access" width="400"/>
 

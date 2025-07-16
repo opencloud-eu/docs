@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: settings
 title: Settings
+description: Change settings in OpenCloud Desktop
+draft: false
 ---
 
 # Change Settings in OpenCloud Desktop

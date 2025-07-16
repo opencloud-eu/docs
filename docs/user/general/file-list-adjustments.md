@@ -2,13 +2,13 @@
 sidebar_position: 3
 id: customization_file_list
 title: Customization of the file list
+description: Files-List customizations in OpenCloud
+draft: false
 ---
 
 # Files-List customizations in OpenCloud
 
-## Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display
-
----
+Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display
 
 ### Available options
 
@@ -28,8 +28,6 @@ title: Customization of the file list
   - **Small tiles** for a more compact view.
   - **Large tiles** for a clearer view.
 
-<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
+  <img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
 
----
-
-**The settings made are applied immediately and offer a personalized user experience.**
+The settings made are applied immediately and offer a personalized user experience.

@@ -2,13 +2,14 @@
 sidebar_position: 2
 id: upload-make-available-offline
 title: Upload - Make available offline
+description: Upload Files in iOS
+draft: false
 ---
 
-# 📤 Upload Files & Make Them Available Offline (iOS)
+# 📤 Upload Files in iOS
 
 With the OpenCloud iOS App, you can easily upload files and make them available for offline use.
 
----
 
 ## 🔼 Upload Files
 
@@ -27,13 +28,12 @@ From the menu, you can choose:
 - **"Upload file"** – upload a file from your device's Files app
 - **"Upload from your photo library"** – upload an existing photo or video from your media library
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload Options" height="400"/>
+    <img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload Options" height="400"/>
 
 ### 4. Confirm the Selection
 
 Choose the file or media you want to upload. The upload will start automatically.
 
----
 
 ## 📥 Make Files Available Offline
 
@@ -53,7 +53,6 @@ The file will be downloaded and stored locally on your device.
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Make available offline" height="400"/>
 
----
 
 ## 🔄 Remove Offline Availability
 
@@ -62,6 +61,5 @@ To free up space:
 - Tap the three dots (⋯) again on an offline file
 - Select **“Remove offline access”**
 
----
 
 These features ensure you’re always prepared — even when you’re offline!

@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: delete-restore
 title: Delete - Restore
+description: Delete - Restore
+draft: false
 ---
 
 # Delete - Restore
@@ -16,11 +18,9 @@ title: Delete - Restore
   (Alternatively, you can also click on **“Delete”** in the **action bar**).
   <img src={require("./img/delete-restore/delete-options.png").default} alt="click delete" width="1920"/>
 
-  -Result:<br/>
+  -Result:  
   The files or folders are **moved** to the **“Deleted files”** area. They can be restored from there if necessary.
   <img src={require("./img/delete-restore/folder-in-deleted-files.png").default} alt="removed files and folders in deleted files" width="1920"/>
-
----
 
 ## Restoring files or folders
 
@@ -36,5 +36,5 @@ title: Delete - Restore
     (Alternatively, you can also click on **“Restore”** in the **action bar**).
     <img src={require("./img/delete-restore/restore-options.png").default} alt="restore action bar" width="1920"/>
 
-- Result
+- Result:  
   The files or folders are **restored** to their **original location**.

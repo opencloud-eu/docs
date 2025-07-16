@@ -2,6 +2,8 @@
 sidebar_position: 4
 id: search
 title: Search
+description: Using the search in OpenCloud
+draft: false
 ---
 
 # Search

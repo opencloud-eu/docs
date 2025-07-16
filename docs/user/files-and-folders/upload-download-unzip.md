@@ -2,6 +2,8 @@
 sidebar_position: 2
 id: upload-download-unzip
 title: Upload - Download - Unzip
+description: Upload - Download - Unzip
+draft: false
 ---
 
 # Upload - Download - Unzip
@@ -22,8 +24,6 @@ title: Upload - Download - Unzip
 - **Alternatively:**
   - **Drag and drop** the files or folders **directly** from your Explorer window **into the browser** to upload them.
 
----
-
 ## Download: Download files or folders
 
 - **Select the desired files or folders by either:**
@@ -35,7 +35,7 @@ title: Upload - Download - Unzip
   <br/>
 - Select **“Download”** from the **menu**.
 
-### ZIP files
+## ZIP files
 
 - If you **download several** files or folders, these are **saved as a ZIP file**.
   <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="download several files in zip file" width="1920"/>

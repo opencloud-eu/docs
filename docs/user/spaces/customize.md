@@ -2,61 +2,57 @@
 sidebar_position: 8
 id: customize
 title: Customize Spaces
+description: Customize a Space in OpenCloud
+draft: false
 ---
 
-## Customize Space in OpenCloud
+# Customize a Space in OpenCloud
 
-You can customize your Space in two places:
+## You can customize your Space in two places:
 
 - In the Space overview
 - In the Space itself
 
----
+## How to customize your Space
 
-### How to customize your Space
+### Open “Context Menu”
 
-#### Open “Context Menu”
+- Click on the “Context menu” in the Space overview or directly in the Space.
 
-Click on the “Context menu” in the Space overview or directly in the Space.
+## Make adjustments
 
----
+### Edit description
 
-### Make adjustments
+- Write your description in the opened texteditor, save and close it.
 
-#### Edit description
+  <img src={require("./img/customize/description-texteditor.png").default} alt="Description Texteditor" width="500"/>
+  <img src={require("./img/customize/description-changed.png").default} alt="Description changed" width="500"/>
 
-Write your description in the opened texteditor, save and close it.
+### Edit subtitle
 
-<img src={require("./img/customize/description-texteditor.png").default} alt="Description Texteditor" width="500"/>
-<img src={require("./img/customize/description-changed.png").default} alt="Description changed" width="500"/>
+- In the pop-up window, write your subtitle and confirm.
 
-#### Edit subtitle
+  <img src={require("./img/customize/subtitle-pop-up.png").default} alt="Subtitle Pop-up" width="500"/>
+  <img src={require("./img/customize/subtitle-changed.png").default} alt="Subtitle changed" width="500"/>
 
-In the pop-up window, write your subtitle and confirm.
+### Edit image
 
-<img src={require("./img/customize/subtitle-pop-up.png").default} alt="Subtitle Pop-up" width="500"/>
-<img src={require("./img/customize/subtitle-changed.png").default} alt="Subtitle changed" width="500"/>
+- Select the image you want for your Space from the pop-up window and confirm.
 
-#### Edit image
+  <img src={require("./img/customize/folder-img-select.png").default} alt="Select folder picture" width="500"/>
+  <img src={require("./img/customize/folder-img-changed.png").default} alt="Folder picture changed" width="500"/>
 
-Select the image you want for your Space from the pop-up window and confirm.
+### Set an icon
 
-<img src={require("./img/customize/folder-img-select.png").default} alt="Select folder picture" width="500"/>
-<img src={require("./img/customize/folder-img-changed.png").default} alt="Folder picture changed" width="500"/>
+- Select the icon you want for your Space from the pop-up window.
 
-#### Set an icon
+  <img src={require("./img/customize/icon-select.png").default} alt="Select Icon" width="400"/>
+  <img src={require("./img/customize/icon-changed.png").default} alt="Icon changed" width="500"/>
 
-Select the icon you want for your Space from the pop-up window.
+### Change description directly
 
-<img src={require("./img/customize/icon-select.png").default} alt="Select Icon" width="400"/>
-<img src={require("./img/customize/icon-changed.png").default} alt="Icon changed" width="500"/>
+- The description of the Space can also be changed directly in the Space by clicking on the **open** next to the description.
 
-#### Change description directly
+  <img src={require("./img/customize/description-edit.png").default} alt="Icon changed" width="500"/>
 
-The description of the Space can also be changed directly in the Space by clicking on the **pen** next to the description.
-
-<img src={require("./img/customize/description-edit.png").default} alt="Icon changed" width="500"/>
-
----
-
-**Now you know how you can design and customize the Space to your liking!**
+Now you know how you can design and customize the Space to your liking!

@@ -2,17 +2,15 @@
 sidebar_position: 2
 id: external
 title: External
+description: External sharing of files and folder in OpenCloud
+draft: false
 ---
 
-# External Sharing (public links)
-
-<br/>
-
-## Public links - external sharing of files and folders in OpenCloud
+# Public links - external sharing of files and folders in OpenCloud
 
 With **public links**, you can share files and/or folders **across organizations**.
 
-## **Here are the steps to create a public link**
+## Step to find public link
 
 ### Open sharing options
 
@@ -41,8 +39,6 @@ Scroll down in the sidebar window and click on **“Add link”**.
 <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="pop up window" width="400"/>
 <img src={require("./img/extern/public-link-option-button.png").default} alt="options" width="400"/>
 
----
-
 ## Options in the pop-up window
 
 ### Rights for the link
@@ -69,10 +65,10 @@ Scroll down in the sidebar window and click on **“Add link”**.
 ### Set expiration date for the link
 
 - Enter a date under “Expiry date” to set a time limit for the link. Once the date has expired, the link is no longer accessible.
-- If you do not enter a date, the link will not expire.
+
   <img src={require("./img/extern/expiration-date.png").default} alt="expiration date" width="400"/>
 
----
+- If you do not enter a date, the link will not expire.
 
 ## Create link
 
