@@ -1,83 +1,171 @@
-# Website
+# 🌐 Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+---
+
+## Installation
 
 ```bash
 pnpm install
 ```
 
-### Local Development
+---
 
-clone this repository
+## Local Development
+
+Clone this repository and start the local dev server:
 
 ```bash
 pnpm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command will launch a local development server and open the site in your browser. Changes are hot-reloaded automatically.
 
 ### Start docs in German
 
-To see the docs in German you need to start it with the following command
+To launch the documentation in German, run:
 
 ```bash
 pnpm run start --locale de
 ```
 
-It is not possible to switch between the languages via the language switcher
+> ⚠️ Switching languages via the language switcher is currently not supported.
 
-### Build
+---
+
+## Build
 
 ```bash
 pnpm build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content in the `build` folder. You can serve it using any static file hosting service.
 
-### Deployment
+---
 
-Using SSH:
+## Deployment
+
+### Using SSH:
 
 ```bash
 USE_SSH=true pnpm deploy
 ```
 
-Not using SSH:
+### Without SSH:
 
 ```bash
 GIT_USER=<Your GitHub username> pnpm deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
------
-
-### Standard for screenshots
-
-#### Defined size for screenshots
-
-| Component        | Size             |
-|:-----------------| :-:              |
-| complete screen  | width: "1920px"  |
-| menu             | width: "400px"   | 
-| pop up           | width: "500px"   |
-
-The screenshot should show the important aspects and you can put red frames around the specific buttons or areas.
+If you're using GitHub Pages, this will push the production build to the `gh-pages` branch.
 
 ---
 
-## Please format before pushing
+## Screenshot Guidelines
 
-Before pushing your changes to the repository, make sure the code and documentation are properly formatted. Run the following commands:
+| Component        | Width            |
+|:----------------|:-----------------:|
+| Full screen      | 1920px            |
+| Menu             | 400px             |
+| Pop-up / Modal   | 500px             |
 
-```shell
+> Highlight key elements in the screenshot with red borders or boxes if needed.
+
+---
+
+## Markdown Guidelines
+
+To maintain a consistent structure across all docs, follow these formatting conventions:
+
+### Frontmatter Example
+
+All `.md` files must begin with a valid frontmatter block:
+
+```yaml
+---
+id: getting-started
+title: Getting Started
+sidebar_position: 1
+description: A quick intro to OpenCloud
+---
+```
+
+- `id` must be unique and match the filename (without `.md`)
+- `sidebar_position` defines the ordering in the sidebar
+- `description` is required to ensure consistent SEO metadata and link previews. Always include a meaningful and concise description.
+
+---
+
+### Heading Hierarchy
+
+Use the correct heading levels:
+
+```markdown
+# Page Title
+
+## Section Heading
+
+### Subsection Heading
+
+#### Optional Sub-subsection
+```
+
+> 🚫 Do not skip heading levels (e.g., don’t go from `##` directly to `####`).
+
+---
+
+### Info Blocks
+
+Use Docusaurus-style info blocks to highlight important content:
+
+```markdown
+:::tip
+Helpful tip content goes here.
+:::
+
+:::info
+General information goes here.
+:::
+
+:::warning
+Warnings go here.
+:::
+
+:::danger
+Critical notices go here.
+:::
+```
+
+---
+
+### Lists and Steps
+
+Use regular markdown for ordered lists. Do **not** nest deeply.
+
+```markdown
+1. First step
+2. Second step
+3. Third step
+```
+
+---
+
+## Format Before Pushing
+
+Before committing changes, ensure proper formatting using:
+
+```bash
 pnpm format:write
 pnpm lint:md:fix
 ```
 
-These commands ensure that:
+These commands will:
 
-- All files follow the project's formatting standards
-- Markdown files are linted and auto-fixed for consistent structure and readability
+- Format all project files
+- Lint and auto-fix markdown formatting
+- Ensure consistent style across documentation
+
+---
+
+Thanks for helping us keep the docs clean, professional, and easy to read!
