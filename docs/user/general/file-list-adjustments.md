@@ -10,7 +10,7 @@ draft: false
 
 Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display
 
-### Available options
+## Available options
 
 - **Display hidden files**
   - Activate or deactivate the display of hidden files.

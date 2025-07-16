@@ -10,13 +10,13 @@ draft: false
 
 In OpenCloud you have the option of making various settings for your **user account** to customize it according to your needs
 
-### Access the settings
+## Access the settings
 
 1. **Click on your avatar** in the top right corner.
 2. select **"Preferences"**.
    <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400"/>
 
-### Account information
+## Account information
 
 In the settings you will first see your basic **account information**:
 
@@ -27,7 +27,7 @@ In the settings you will first see your basic **account information**:
 - **Group memberships**
   <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
 
-### Preferences
+## Preferences
 
 Depending on the basic configuration, you can change the following options:
 
@@ -44,17 +44,17 @@ Depending on the basic configuration, you can change the following options:
 
   <img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
 
-### Extensions
+## Extensions
 
 Under **Extensions** you can configure installed extensions, such as the **Progressbar**, if available.
 <img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
 
-### GDPR
+## GDPR
 
 Under **GDPR** you can request a **data export** of your personal data if you wish.
 <img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/>
 
-### App Tokens
+## App Tokens
 
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
 

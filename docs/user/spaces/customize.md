@@ -8,7 +8,7 @@ draft: false
 
 # Customize a Space in OpenCloud
 
-## You can customize your Space in two places:
+## You can customize your Space in two places
 
 - In the Space overview
 - In the Space itself

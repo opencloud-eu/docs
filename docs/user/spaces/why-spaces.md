@@ -10,7 +10,7 @@ draft: false
 
 ## The problem with classic sharing
 
-### Let’s take a simple example:
+### Let’s take a simple example
 
 - **Alan** creates a folder called **"Project"** and shares it with several Persons
   <img src={require("./img/why-spaces/spaghetti.png").default} alt="Member menu" width="500"/>
@@ -20,7 +20,7 @@ draft: false
 
   <img src={require("./img/why-spaces/alan-left.png").default} alt="Member menu" width="500"/>
 
-### This scenario highlights several risks:
+### This scenario highlights several risks
 
 - ❌ **Potential data loss** when the original owner leaves
 - ❌ **Project data counts toward personal quotas**, which is not ideal for teamwork
@@ -29,7 +29,7 @@ draft: false
 
 ## The Benefits of Using Spaces
 
-### Spaces are designed to overcome these limitations and provide a more stable, team-friendly solution:
+### Spaces are designed to overcome these limitations and provide a more stable, team-friendly solution
 
 - 🏢 **Organization-owned**: Spaces belong to the organization, not individuals.
 - 👥 **Collaborative management**: Multiple users can manage a Space together.

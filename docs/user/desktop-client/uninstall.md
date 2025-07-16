@@ -22,7 +22,7 @@ If you no longer need **OpenCloud Desktop**, follow these steps to completely re
 
 ## Remove the OpenCloud Desktop
 
-### The process depends on your operating system:
+### The process depends on your operating system
 
 - **Windows:** Uninstall the app through **Control Panel > Programs & Features**
 - **Mac:** Move the app to the **Trash** and empty it

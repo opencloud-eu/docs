@@ -40,7 +40,7 @@ Spaces can **only be permanently shared within your own organization**.
 
 ## Display Space
 
-### Your new Space now appears under **"Spaces”** and is ready to be used.
+### Your new Space now appears under **"Spaces”** and is ready to be used
 
 <img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920"/>
 

@@ -12,18 +12,18 @@ The OpenCloud Desktop client is available for **Windows**, **macOS**, and **Linu
 
 ## 🪟 Windows Installation (Microsoft Store)
 
-### Step 1:
+### Step 1
 
 Open the **Microsoft Store** and search for **OpenCloud Desktop** or click on the image below
 <a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
 <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
 </a>
 
-### Step 2:
+### Step 2
 
 Click **Install**
 
-### Step 3:
+### Step 3
 
 Once installed, launch the app from your Start Menu
 
@@ -31,19 +31,19 @@ Once installed, launch the app from your Start Menu
 
 ## 🍎 macOS Installation (.pkg file)
 
-### Step 1:
+### Step 1
 
 Download the latest or preferred `.pkg` file for macOS from the [GitHub repository](https://github.com/opencloud-eu/desktop/releases)
 
-### Step 2:
+### Step 2
 
 Double-click the downloaded file to start the installer
 
-### Step 3:
+### Step 3
 
 Follow the on-screen instructions to complete the installation
 
-### Step 4:
+### Step 4
 
 After installation, launch **OpenCloud Desktop** from the **Applications** folder or **Launchpad**
 
@@ -51,18 +51,18 @@ After installation, launch **OpenCloud Desktop** from the **Applications** folde
 
 We recommend using **AppImageLauncher** to manage AppImages conveniently and to ensure proper system integration.
 
-### Step 1:
+### Step 1
 
 Download the latest or wanted `.AppImage` version of OpenCloud Desktop from the [GitHub repository](https://github.com/opencloud-eu/desktop/releases).
 
-### Step 2:
+### Step 2
 
 AppImageLauncher automatically integrates AppImages into your system menu.
 
 👉 Follow the installation instructions here:  
 [AppImageLauncher Installation Guide](https://github.com/TheAssassin/AppImageLauncher#installation)
 
-### Step 3:
+### Step 3
 
 - Right-click the downloaded `OpenCloud.AppImage` file and choose `Open with AppImageLauncher`.
 - Confirm when AppImageLauncher prompts you to integrate the app.
