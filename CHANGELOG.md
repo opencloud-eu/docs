@@ -8,6 +8,7 @@
 
 ### 🐾 Guides
 
+- add best practice how to format our docs md files [[#388](https://github.com/opencloud-eu/docs/pull/388)]
 - Add lint format to readme [[#382](https://github.com/opencloud-eu/docs/pull/382)]
 
 ### 👷 Admin Documentation
