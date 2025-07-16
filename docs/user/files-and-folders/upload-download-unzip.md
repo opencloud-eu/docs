@@ -8,12 +8,12 @@ draft: false
 
 # Upload - Download - Unzip
 
-## Upload: Upload files or folders
+## Upload files or folders
 
 - **Start uploading:** - Click on **“Upload”** in the **action bar**.
   <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920"/>
-  - Select whether you **want to upload** files or folders.
-    <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400"/>
+- Select whether you **want to upload** files or folders.
+  <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - **Select files/folders:**
   - In the **window** that opens, **select** the desired **files or folders**.
   - **Several files or folders** can be **selected** at the **same time**.
@@ -24,7 +24,7 @@ draft: false
 - **Alternatively:**
   - **Drag and drop** the files or folders **directly** from your Explorer window **into the browser** to upload them.
 
-## Download: Download files or folders
+## Download files or folders
 
 - **Select the desired files or folders by either:**
   - Clicking in the **file line**

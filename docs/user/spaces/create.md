@@ -14,7 +14,7 @@ With **Spaces** you can share data with specific people within your organization
 Spaces can **only be permanently shared within your own organization**.
 :::
 
-## To create a new Space
+## Create a new Space
 
 ### Open menu
 

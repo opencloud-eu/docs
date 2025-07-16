@@ -30,7 +30,7 @@ A Space can be disabled and later enabled in various ways. This function can onl
 ### Confirm deactivation
 
 - Confirm the deactivation.  
-   <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="500"/>
+   <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="500" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
   :::note
   No data will be deleted, but only the **Space Admin** or the **Administrator** can enable the Space.
   :::
@@ -62,7 +62,7 @@ A Space can be disabled and later enabled in various ways. This function can onl
 - The Administrator clicks on the **three dots menu** and selects **Enable**.  
   <img src={require("./img/enable-disable/admin-enable.png").default} alt="Three dot menu" width="1920"/>
 - Confirm the selection by clicking on **Enable**.  
-   <img src={require("./img/enable-disable/confirm-enable.png").default} alt="Click on enable" width="400"/>
+   <img src={require("./img/enable-disable/confirm-enable.png").default} alt="Click on enable" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ### Space appears again
 

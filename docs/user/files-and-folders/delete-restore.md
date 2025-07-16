@@ -18,11 +18,11 @@ draft: false
   (Alternatively, you can also click on **“Delete”** in the **action bar**).
   <img src={require("./img/delete-restore/delete-options.png").default} alt="Click delete" width="1920"/>
 
-  -Result:  
+- Result:  
   The files or folders are **moved** to the **“Deleted files”** area. They can be restored from there if necessary.
   <img src={require("./img/delete-restore/folder-in-deleted-files.png").default} alt="Removed files and folders in deleted files" width="1920"/>
 
-## Restoring files or folders
+## Restore files or folders
 
 - Navigate to **“Deleted files”**: - Click on **“Deleted files”** in the left sidebar.
   <img src={require("./img/delete-restore/deleted-files.png").default} alt="Left side bar deleted files" width="1920"/>
@@ -32,9 +32,9 @@ draft: false
   <img src={require("./img/delete-restore/mark-folder-in-deleted-files.png").default} alt="Mark what should be restored" width="1920"/>
 - Open the context menu: - Make a right-click, - or click on the three dots next to the selection.
   <img src={require("./img/delete-restore/three-dot-menu-in-deleted-files.png").default} alt="Three dot menu" width="1920"/>
-  - Select **“Restore”** from the menu.
-    (Alternatively, you can also click on **“Restore”** in the **action bar**).
-    <img src={require("./img/delete-restore/restore-options.png").default} alt="Restore action bar" width="1920"/>
+- Select **“Restore”** from the menu.
+  (Alternatively, you can also click on **“Restore”** in the **action bar**).
+  <img src={require("./img/delete-restore/restore-options.png").default} alt="Restore action bar" width="1920"/>
 
 - Result:  
   The files or folders are **restored** to their **original location**.

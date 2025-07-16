@@ -16,16 +16,16 @@ The **“File Drop”** allows people who receive a specific link (the so-called
 - Click on the **“three dot menu”** next to the file or folder name you want to share.
   <img src={require("./img/file-drop/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
 - Select **“Share”** from the drop-down menu.
-  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down menu" width="400"/>
+  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - A sidebar window will open on the right-hand side of the screen.
   <img src={require("./img/file-drop/sidebar-window.png").default} alt="Sidebar window" width="1920"/>
 - At the sidebar window, you will find the area for **“Public links”**. There click on the **"Add link"** button.
   <img src={require("./img/file-drop/add-link-button.png").default} alt="Add link button" width="400"/>
 - Select the option for **"Secret File Drop"**.
-  <img src={require("./img/file-drop/file-drop-button.png").default} alt="Select file drop" width="400"/>
+  <img src={require("./img/file-drop/file-drop-button.png").default} alt="Select file drop" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - Type a **password** and confirm the entries with click on **"copy link"**.
 - You can also set an **"Expiry date"**, if you want the link to expire. [External Sharing](./external), if you want to know how to set the Expiry date.
-  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Enter password and copy link" width="400"/>
+  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Enter password and copy link" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - Now you send the **link** and the **password** to a **"link recipient"**.
 
 ## To do's for the **"link recipient"**

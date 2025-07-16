@@ -17,7 +17,7 @@ draft: false
 ## Enter new name
 
 - Enter the new name for the Space and confirm.
-  <img src={require("./img/rename/confirm.png").default} alt="confirm" width="400"/>
+  <img src={require("./img/rename/confirm.png").default} alt="confirm" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ## Renamed
 

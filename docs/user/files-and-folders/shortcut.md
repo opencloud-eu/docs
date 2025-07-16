@@ -10,13 +10,12 @@ draft: false
 
 With OpenCloud you can create shortcuts to websites or files
 
-## This is how it works
+## Create shortcut
 
-- Create a shortcut:
-  - Click on **“+ New”** in the **batch actions** and select **“Shortcut”**.
-    <img src={require("./img/link/new-button.png").default} alt="Select Shortcut in batch action menu" width="1920"/>
+- Click on **“+ New”** in the **batch actions** and select **“Shortcut”**.
+  <img src={require("./img/link/new-button.png").default} alt="Select Shortcut in batch action menu" width="1920"/>
 
-    <img src={require("./img/link/shortcut-button.png").default} alt="Select Shortcut" width="400"/>
+  <img src={require("./img/link/shortcut-button.png").default} alt="Select Shortcut" width="400"/>
 
 - Insert link or file:
   - In the window that opens, enter the **link** or the **name** of the file you want to link.

@@ -6,11 +6,11 @@ description: Upload files in iOS
 draft: false
 ---
 
-# 📤 Upload Files in iOS
+# Upload Files in iOS
 
 With the OpenCloud iOS App, you can easily upload files and make them available for offline use.
 
-## 🔼 Upload Files
+## Upload Files
 
 ### 1. Open the Desired Folder
 
@@ -33,7 +33,7 @@ From the menu, you can choose:
 
 Choose the file or media you want to upload. The upload will start automatically.
 
-## 📥 Make Files Available Offline
+## Make Files Available Offline
 
 You can also make files available offline so they are accessible without an internet connection.
 
@@ -47,11 +47,11 @@ The file will be downloaded and stored locally on your device.
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default} alt="Make available offline" height="400"/>
 
-> ✅ Offline files are marked with a **cloud icon with a checkmark**.
+Offline files are marked with a **cloud icon with a checkmark**.
 
 <img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Make available offline" height="400"/>
 
-## 🔄 Remove Offline Availability
+## Remove Offline Availability
 
 To free up space:
 

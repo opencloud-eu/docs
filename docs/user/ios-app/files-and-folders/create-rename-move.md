@@ -6,11 +6,11 @@ description: Create - Rename - Move
 draft: false
 ---
 
-# 📁 Create, Rename, and Move Files and Folders
+# Create, Rename, and Move Files and Folders
 
 The OpenCloud iOS App makes it easy to manage your content. You can create new folders and files, rename items, and move them to different locations — all directly from your iPhone or iPad.
 
-## ➕ Creating Files and Folders
+## Creating Files and Folders
 
 1. Tap the **“+”** button in the top right corner.
 
@@ -18,7 +18,7 @@ The OpenCloud iOS App makes it easy to manage your content. You can create new f
 
 2. Choose what you want to create from the menu:
 
-### 📂 Create a Folder
+### Create a Folder
 
 - Tap **"Create folder"**
 - Enter a name for your folder
@@ -26,7 +26,7 @@ The OpenCloud iOS App makes it easy to manage your content. You can create new f
 
   <img src={require("../img/files-and-folders/create-rename-move/create-folder.png").default} alt="Create folder" height="400"/>
 
-### 📄 Create a Document (Requires Collabora)
+### Create a Document (Requires Collabora)
 
 If **Collabora Online** is enabled in your OpenCloud instance:
 
@@ -40,7 +40,7 @@ The document will open in a built-in web view using **Collabora** for editing.
 <img src={require("../img/files-and-folders/create-rename-move/open-collabora.png").default} alt="Open Collabora" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move/edit-collabora.png").default} alt="Edit Collabora" height="400"/>
 
-### 📸 Take Photo or Video
+### Take Photo or Video
 
 - Select **"Take photo or video"** from the menu
 
@@ -55,7 +55,7 @@ The document will open in a built-in web view using **Collabora** for editing.
 
   <img src={require("../img/files-and-folders/create-rename-move/photo-saved.png").default} alt="Photo saved" height="400"/>
 
-### 📑 Scan Document
+### Scan Document
 
 Use your iOS device to scan paper documents:
 
@@ -93,9 +93,9 @@ To rename a file or folder in the OpenCloud iOS App:
   <img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tap done" height="400"/>
   <img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="New applied name" height="400"/>
 
-✅ The new name will be saved immediately.
+The new name will be saved immediately.
 
-## 📁 Move Files or Folders
+## Move Files or Folders
 
 To move a file or folder in the OpenCloud iOS App:
 
@@ -113,4 +113,4 @@ To move a file or folder in the OpenCloud iOS App:
   <img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Select paste" height="400"/>
   <img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="File is moved" height="400"/>
 
-✅ The file or folder will now appear in the new location.
+The file or folder will now appear in the new location.

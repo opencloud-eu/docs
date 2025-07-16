@@ -10,7 +10,7 @@ draft: false
 
 With **public links**, you can share files and/or folders **across organizations**.
 
-## Step to find public link
+## Steps to create public link
 
 ### Open sharing options
 
@@ -54,12 +54,12 @@ Scroll down in the sidebar window and click on **“Add link”**.
 
 - Activate the password by entering it in the input field under **“Password”**.
 - The password requirements appear below the input field.
-  <img src={require("./img/extern/password-section.png").default} alt="Password section" width="400"/>
+  <img src={require("./img/extern/password-section.png").default} alt="Password section" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - Here are three icons:
   - One icon displays the password unencrypted to verify your entry.
     <img src={require("./img/extern/password-icon-1.png").default} alt="Unencrypt password" width="400"/>
   - The next icon copies the password to the clipboard.
-    <img src={require("./img/extern/password-icon-2.png").default} alt="Copy password" width="400"/>
+    <img src={require("./img/extern/password-icon-2.png").default} alt="Copy password" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
   - The last icon generates a random password automatically.
     <img src={require("./img/extern/password-icon-3.png").default} alt="Generate random password" width="400"/>
 

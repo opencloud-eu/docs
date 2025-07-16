@@ -10,25 +10,25 @@ draft: false
 
 Here we explain how to share files and folders via invitation with other people and groups within your OpenCloud in the OpenCloud iOS app
 
-## 1. Three-dot-menu
+## Three-dot-menu
 
 Click the "three-dot menu" next to the file or folder
 
 <img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menue" height="400"/>
 
-## 2. Share
+## Share
 
 Now select the menu item "Share"
 
 <img src={require("../img/shares/invite/sharing-button.png").default} alt="Teilen" height="400"/>
 
-## 3. Share with
+## Share with
 
 In the following selection, click on "Share with"
 
 <img src={require("../img/shares/invite/invite-option.png").default} alt="Teilen mit" height="400"/>
 
-## 4. Share menu
+## Share menu
 
 The Share menu opens, where you can use the search bar to search for people or groups you want to invite
 
@@ -36,7 +36,7 @@ The Share menu opens, where you can use the search bar to search for people or g
 <img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" height="400"/>
 <img src={require("../img/shares/invite/choose-invites.png").default} alt="Selection of people and/or groups" height="400"/>
 
-## 5. Permissions
+## Permissions
 
 Here you can select which permissions people and groups should have:
 
@@ -49,13 +49,13 @@ Here you can select which permissions people and groups should have:
 - Custom:  
   Permissions can be individually selected here.
 
-## 6. Invite
+## Invite
 
 To create the link you must click on "Invite"
 
 <img src={require("../img/shares/invite/invite-button.png").default} alt="Invite" height="400"/>
 
-## 7. Created
+## Created
 
 Once the invitation is created, you will see it in the file or folder overview
 

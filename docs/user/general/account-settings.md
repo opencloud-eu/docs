@@ -14,7 +14,7 @@ In OpenCloud you have the option of making various settings for your **user acco
 
 1. **Click on your avatar** in the top right corner.
 2. select **"Preferences"**.
-   <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400"/>
+   <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ## Account information
 

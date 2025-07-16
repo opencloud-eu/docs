@@ -8,7 +8,7 @@ draft: false
 
 # Edit the quota of a Space
 
-As a Space administrator, you can adjust the storage capacity (quota) of a Space to increase or decrease the available storage space as required. This is how it works:
+As a Space administrator, you can adjust the storage capacity (quota) of a Space to increase or decrease the available storage space as required.
 
 ## Steps to edit the Space quota
 
@@ -26,7 +26,7 @@ As a Space administrator, you can adjust the storage capacity (quota) of a Space
 - Select a **default size** (e.g. 5 GB) from the drop-down menu.
   <img src={require("./img/quota/select.png").default} alt="Select-quota" width="500"/>
 - Enter an **individual storage size**.
-  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="500"/>
+  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="500" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ### Confirm changes
 

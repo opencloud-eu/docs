@@ -22,6 +22,4 @@ You can use the search bar in the top bar to find files and content quickly.
 - Search function - This **searches** through file names as well as the content of the files to **display relevant results**.
   <img src={require("./img/search/search-example.png").default} alt="Example search" width="500"/>
 
-:::note
 Use these steps to find your files or folders quickly and efficiently!
-:::

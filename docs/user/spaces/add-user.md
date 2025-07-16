@@ -46,7 +46,7 @@ draft: false
   <img src={require("./img/add-user/remove-user.png").default} alt="Remove user" width="400"/>
 
 :::note
-The removed member immediately loses access to the space.\*\*
+The removed member immediately loses access to the space.
 :::
 
 :::important
