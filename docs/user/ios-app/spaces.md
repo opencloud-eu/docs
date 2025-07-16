@@ -2,11 +2,11 @@
 sidebar_position: 6
 id: spaces
 title: Spaces
-description:
+description: Spaces in OpenCloud iOS app
 draft: false
 ---
 
-# The "Spaces" Section in the OpenCloud iOS App
+# The "Spaces" Section in the OpenCloud iOS app
 
 The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
 
