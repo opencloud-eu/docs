@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-15
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Svanvith
+@AlexAndBear, @ScharfViktor, @Svanvith
 
 ### 🐾 Guides
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- update release list [[#387](https://github.com/opencloud-eu/docs/pull/387)]
 - add tutorial for OpenCloud with reverse Proxy [[#365](https://github.com/opencloud-eu/docs/pull/365)]
 - Docker compose refinement [[#370](https://github.com/opencloud-eu/docs/pull/370)]
 
