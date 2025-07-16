@@ -8,7 +8,6 @@ title: WebDAV
 
 With WebDAV, you can connect OpenCloud Spaces as network drives on your device and manage your files directly from your file manager — without using the browser.
 
----
 
 ## 🛠️ Prerequisites
 
@@ -18,7 +17,6 @@ With WebDAV, you can connect OpenCloud Spaces as network drives on your device a
 - (Optional but recommended) An **App Token**  
   → [How to create an App Token](./app-tokens.md)
 
----
 
 ## 🔧 Step-by-Step Guide
 
@@ -29,7 +27,7 @@ To display WebDAV information for your Spaces:
 1. Go to **Account Settings**
 2. Enable **"Show WebDAV info in details view"**
 
-## <img src={require("./img/webdav/preferences.png").default} alt="enable webdav info" width="1920"/>
+<img src={require("./img/webdav/preferences.png").default} alt="Enable WebDAV info" width="1920"/>
 
 ### 2. Create an App Token (if required)
 
@@ -42,7 +40,6 @@ Some WebDAV clients (especially non-OIDC compatible ones like Mountain Duck) req
 - **Copy the token immediately** – it will only be shown once  
   → [See App Token Guide](./app-tokens.md)
 
----
 
 ### 3. Get the WebDAV URL
 
@@ -52,9 +49,8 @@ You’ll see a section labeled **WebDAV** — copy the full WebDAV URL. It looks
 
 `https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
-<img src={require("./img/webdav/webdav-url.png").default} alt="webdav URL" width="1920"/>
+<img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV URL" width="1920"/>
 
----
 
 ### 4. Connect via WebDAV
 
@@ -65,19 +61,19 @@ Now connect your device using the WebDAV URL:
 
 You can use various clients depending on your operating system:
 
-#### 🪟 Windows
+## 🪟 Windows
 
 - Open **File Explorer** → Click on **“This PC”** → Choose **“Map network drive”**
 - Enter the WebDAV URL
 - Authenticate with username and App Token
 
-#### 🍎 macOS
+## 🍎 macOS
 
 - In **Finder**, choose **“Go” > “Connect to Server…”**
 - Enter the WebDAV URL
 - Login with your credentials or App Token
 
-#### 🐧 Linux
+## 🐧 Linux
 
 - Use your file manager’s **“Connect to Server”** option
 - Format the URL as:  
@@ -85,10 +81,9 @@ You can use various clients depending on your operating system:
 
 > ✅ Once connected, your Space will behave like a normal folder.
 
----
 
-## 📌 Notes
-
+:::note
 - If your WebDAV client supports **OIDC**, you may not need an App Token
 - Always use `https://` to ensure secure access
 - App Tokens can be revoked anytime via your account settings
+:::

@@ -15,10 +15,10 @@ If you no longer need **OpenCloud Desktop**, follow these steps to completely re
 ### Remove your accounts to have a clean system
 
 - click on the right side of the OpenCloud Desktop on **Manage Account**
-  <img src={require("./img/uninstall/uninstall-manage-account.png").default} alt="click on Manage Account" width="400"/>
+  <img src={require("./img/uninstall/uninstall-manage-account.png").default} alt="Click on Manage Account" width="400"/>
 
 - then select **Remove**
-  <img src={require("./img/uninstall/uninstall-remove.png").default} alt="select remove" width="400"/>
+  <img src={require("./img/uninstall/uninstall-remove.png").default} alt="Select remove" width="400"/>
 
 ## Remove the OpenCloud Desktop
 

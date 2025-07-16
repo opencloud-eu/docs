@@ -2,9 +2,11 @@
 sidebar_position: 3
 id: share-roles
 title: Share roles in OpenCloud
+description: Share roles in OpenCloud
+draft: false
 ---
 
-## Sharing Roles in OpenCloud
+# Sharing Roles in OpenCloud
 
 | Role              | view | download | upload | edit | add | delete | only view doc, img, pdf with watermark |
 | :---------------- | :--: | :------: | :----: | :--: | :-: | :----: | :------------------------------------: |

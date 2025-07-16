@@ -14,7 +14,7 @@ Here we explain how to use the search function in the OpenCloud iOS app
 
 - Click on the search icon to open the search function
 
-<img src={require("./img/search/search-symbol.png").default} alt="magnifying glass icon" height="400"/>
+<img src={require("./img/search/search-symbol.png").default} alt="Magnifying glass icon" height="400"/>
 
 ## Search function
 
@@ -24,7 +24,7 @@ Here we explain how to use the search function in the OpenCloud iOS app
 
 - You can search for file or folder names in the search bar.
 
-  <img src={require("./img/search/searchbar.png").default} alt="search bar" height="400"/>
+  <img src={require("./img/search/searchbar.png").default} alt="Search bar" height="400"/>
 
 ## Search Location
 
@@ -42,7 +42,7 @@ Here we explain how to use the search function in the OpenCloud iOS app
 
 - By clicking on the option "date", you can set the period in which you want to search
 
-  <img src={require("./img/search/date.png").default} alt="date" height="400"/>
+  <img src={require("./img/search/date.png").default} alt="Date" height="400"/>
 
 ## Size
 

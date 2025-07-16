@@ -2,14 +2,14 @@
 sidebar_position: 2
 id: upload-make-available-offline
 title: Upload - Make available offline
+description: Upload files in Android
 draft: true
 ---
 
-# 📤 Upload Files & Make Them Available Offline (Android)
+# 📤 Upload Files in Android
 
 With the OpenCloud Android App, you can easily upload files and make them available for offline use.
 
----
 
 ## 🔼 Upload Files
 
@@ -34,7 +34,6 @@ From the menu, you can choose:
 
 Choose the file or media you want to upload. The upload will begin automatically.
 
----
 
 ## 📥 Make Files Available Offline
 
@@ -54,7 +53,6 @@ The file will be downloaded and saved locally on your device.
 
 <!-- <img src={require("../img/files-and-folders/upload-make-available-offline-android/marked-offline.png").default} alt="Marked offline" height="400"/> -->
 
----
 
 ## 🔄 Remove Offline Availability
 
@@ -63,6 +61,5 @@ To free up space:
 - Tap the **three dots (⋮)** on an offline file
 - Select **“Unset as available offline”**
 
----
 
 These features help you stay productive — even when you’re offline!

@@ -18,11 +18,13 @@ draft: false
 ### Search for a member
 
 - In the members menu, you can search for the user from your organization that you want to add.
+
   <img src={require("./img/add-user/search-user.png").default} alt="search user" width="400"/>
 
 ### Assign rights
 
 - Select the desired rights for the member, e.g. whether the person may only read or also edit.
+
   <img src={require("./img/add-user/choose-rights.png").default} alt="Choose rights" width="400"/>
 
 ### Add
@@ -48,11 +50,9 @@ The removed member immediately loses access to the space.\*\*
 :::
 
 :::important
-
 - The added member has immediate access to the Space.
 - **Attention:** Every user with the “can manage” right has the authorization to deactivate and delete the Space.
 - A deleted Space **cannot be restored**, so be careful who you grant these rights to.
-
-  :::
+:::
 
 Now you know how to add members to your Space and set the permissions accordingly!

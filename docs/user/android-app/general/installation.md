@@ -30,7 +30,7 @@ Tap **"Get"** to install the app.
 
 After installation, you will find the OpenCloud app on your home screen.
 
-<!-- <img src={require(".././img/installation/icon-on-screen.png").default} alt="icon" height="400"/> -->
+<!-- <img src={require(".././img/installation/icon-on-screen.png").default} alt="Icon" height="400"/> -->
 
 ## 5. Set it up
 

@@ -2,7 +2,7 @@
 sidebar_position: 2
 id: upload-make-available-offline
 title: Upload - Make available offline
-description: Upload Files in iOS
+description: Upload files in iOS
 draft: false
 ---
 

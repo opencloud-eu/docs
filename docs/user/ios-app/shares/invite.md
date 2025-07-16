@@ -53,10 +53,10 @@ Here you can select which permissions people and groups should have:
 
 To create the link you must click on "Invite"
 
-<img src={require("../img/shares/invite/invite-button.png").default} alt="invite" height="400"/>
+<img src={require("../img/shares/invite/invite-button.png").default} alt="Invite" height="400"/>
 
 ## 7. Created
 
 Once the invitation is created, you will see it in the file or folder overview
 
-<img src={require("../img/shares/invite/shared-with.png").default} alt="shared with" height="400"/>
+<img src={require("../img/shares/invite/shared-with.png").default} alt="Shared with" height="400"/>

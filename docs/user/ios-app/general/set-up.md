@@ -15,15 +15,15 @@ After installing the app, you can now set up your OpenCloud account.
 - Tap on **"Start Setup"** to begin.
 - If you've already set up an account and want to add another one, tap the **"+" icon** located at the bottom left corner of the screen.
 
-<img src={require(".././img/set-up/start-setup.png").default} alt="start setup" height="400"/>
-<img src={require(".././img/set-up/add-additional-account.png").default} alt="add additional account" height="400"/>
+<img src={require(".././img/set-up/start-setup.png").default} alt="Start setup" height="400"/>
+<img src={require(".././img/set-up/add-additional-account.png").default} alt="Add additional account" height="400"/>
 
 ## 2. Enter Your Server URL
 
 - Enter your **OpenCloud Server URL** (e.g., `https://cloud.example.com`)
 - Tap **"Proceed"** to continue.
 
-<img src={require(".././img/set-up/enter-server-url.png").default} alt="enter server URL" height="400"/>
+<img src={require(".././img/set-up/enter-server-url.png").default} alt="Enter server URL" height="400"/>
 
 ## 3. Open the Login Page
 
@@ -31,7 +31,7 @@ After installing the app, you can now set up your OpenCloud account.
 - Then tap **"Continue"** to launch the login page in your browser
 
 <img src={require(".././img/set-up/open-login-page.png").default} alt="Open Login Page" height="400"/>
-<img src={require(".././img/set-up/continue-sign-in.png").default} alt="continue sign in" height="400"/>
+<img src={require(".././img/set-up/continue-sign-in.png").default} alt="Continue sign in" height="400"/>
 
 ## 4. Log In and Authorize Access
 

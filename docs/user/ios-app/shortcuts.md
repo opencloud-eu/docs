@@ -16,7 +16,7 @@ Here we show you how to create shortcuts in the iOS app
 
 ## 2. A drop-down menue opens
 
-<img src={require("./img/shortcuts/plus-menue.png").default} alt="drop-down menue" height="400"/>
+<img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menue" height="400"/>
 
 ## 3. Select "Create shortcut"
 
@@ -24,7 +24,7 @@ Here we show you how to create shortcuts in the iOS app
 
 ## 4. A menue opens with options for shortcuts
 
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="shortcut menue" height="400"/>
+<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" height="400"/>
 
 ## 5. To create a shortcut to a website, enter the address of the website under "URL"
 

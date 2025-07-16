@@ -20,7 +20,7 @@ draft: false
 
 ### Synchronization Options
 
-<img src={require("./img/sync-settings/sync-settings-menu.png").default} alt="synchronization options menu" width="400"/>
+<img src={require("./img/sync-settings/sync-settings-menu.png").default} alt="Synchronization options menu" width="400"/>
 
 ### Show in Explorer or Finder
 
@@ -51,7 +51,7 @@ draft: false
 - Opens a window where you can **select specific folders** from the Space to sync
 - Helps **save storage space** by syncing only necessary files
 
-<img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="choose what to sync" width="400"/>
+<img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
 
 :::note
 Files and folders that are not synced will **no longer be available** on your local machine.

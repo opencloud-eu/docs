@@ -15,14 +15,14 @@ After installing the app, you can now set up your OpenCloud account.
 - When you first start the OpenCloud Android app, you will see the following screen.
 
 <!-- <img src={require(".././img/set-up/start-setup.png").default} alt="start setup" height="400"/>
-<img src={require(".././img/set-up/add-additional-account.png").default} alt="add additional account" height="400"/> -->
+<img src={require(".././img/set-up/add-additional-account.png").default} alt="Add additional account" height="400"/> -->
 
 ## 2. Enter Your Server URL
 
 - Enter your **OpenCloud Server URL** (e.g., `https://cloud.example.com`)
 - Tap **">"** to continue.
 
-<!-- <img src={require(".././img/set-up/enter-server-url.png").default} alt="enter server URL" height="400"/> -->
+<!-- <img src={require(".././img/set-up/enter-server-url.png").default} alt="Enter server URL" height="400"/> -->
 
 ## 3. The Login Page
 
@@ -31,7 +31,7 @@ After installing the app, you can now set up your OpenCloud account.
 - In the following screen, grant the app permission to access your user information and maintain continuous access by tapping the **"Allow"** button.
 
 <!-- <img src={require(".././img/set-up/open-login-page.png").default} alt="Open Login Page" height="400"/>
-<img src={require(".././img/set-up/continue-sign-in.png").default} alt="continue sign in" height="400"/> -->
+<img src={require(".././img/set-up/continue-sign-in.png").default} alt="Continue sign in" height="400"/> -->
 
 ## 4. Pop-up window
 

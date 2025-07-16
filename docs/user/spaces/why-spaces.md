@@ -35,7 +35,7 @@ draft: false
 - 👥 **Collaborative management**: Multiple users can manage a Space together.
 - 📦 **Dedicated quota**: Each Space has its own storage limit, separate from personal quotas.
 
-<img src={require("./img/why-spaces/spaces.png").default} alt="Member menu" width="500"/>
+  <img src={require("./img/why-spaces/spaces.png").default} alt="Member menu" width="500"/>
 
 :::note
 Spaces make collaboration simpler, safer, and more scalable — especially in professional environments.
