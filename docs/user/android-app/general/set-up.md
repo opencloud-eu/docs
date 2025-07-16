@@ -6,7 +6,6 @@ description: Set up OpenCloud Android app
 draft: true
 ---
 
-
 # 🔐 Setting Up Your OpenCloud Account
 
 After installing the app, you can now set up your OpenCloud account.

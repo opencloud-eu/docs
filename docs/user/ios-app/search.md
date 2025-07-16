@@ -11,12 +11,13 @@ draft: false
 Here we explain how to use the search function in the OpenCloud iOS app
 
 ## Search Icon
+
 - Click on the search icon to open the search function
 
 <img src={require("./img/search/search-symbol.png").default} alt="magnifying glass icon" height="400"/>
 
-
 ## Search function
+
 - The search function offers various options that can be used to narrow down your search
 
 ## Search bar

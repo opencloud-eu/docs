@@ -16,7 +16,6 @@ In the Android app settings changes can be made, such as
     - Advanced settings
     and more
 
-
 <!-- <img src={require(".././img/settings/settings.png").default} alt="Settings" width="1920"/> -->
 
 ## Userinterface
@@ -46,28 +45,36 @@ Here you can manage location and behavior of the videos uploaded automatically.
 Here you can set the following options:<br/>
 
 #### Show hidden files
-  - Enable or disable the display of hidden files.
+
+- Enable or disable the display of hidden files.
+
 #### Delete local copies
-  - Remove automatically downloaded files that are not available offline, when the time since their last usage exceeds the selected time.
+
+- Remove automatically downloaded files that are not available offline, when the time since their last usage exceeds the selected time.
 
 ### 7. More
 
 Here you can set the following options:<br/>
 
 #### Help
-  - Here you will find links to our documentation page and help links.
+
+- Here you will find links to our documentation page and help links.
 
 #### Sync you contacts, calendars and tasks
-  - Here you can set what you will sync with the OpenCloud Android app.
+
+- Here you can set what you will sync with the OpenCloud Android app.
 
 #### Access document provider
-  - Suggested app to browse the files on your device via the Android native file explorer.
+
+- Suggested app to browse the files on your device via the Android native file explorer.
 
 #### Send feedback
-  - Here you can send us a feedback of your experience with the OpenCloud Android app.
+
+- Here you can send us a feedback of your experience with the OpenCloud Android app.
 
 #### Recommend to a friend
-  - Here you can forward a link to download the Android app.
+
+- Here you can forward a link to download the Android app.
 
 ### 8. Privacy Policy
 

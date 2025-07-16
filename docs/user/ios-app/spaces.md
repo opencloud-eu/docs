@@ -2,14 +2,13 @@
 sidebar_position: 6
 id: spaces
 title: Spaces
-description: 
+description:
 draft: false
 ---
 
 # The "Spaces" Section in the OpenCloud iOS App
 
 The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
-
 
 ## Spaces Overview
 
@@ -21,7 +20,6 @@ Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member
 
 <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
 
-
 ## Search Function
 
 By tapping the **search icon**, the search menue for Spaces will open.
@@ -30,13 +28,11 @@ By tapping the **search icon**, the search menue for Spaces will open.
 
 <img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
 
-
 ## Functions within a Space
 
 By tapping the **plus icon**, the available functions within a Space appear.
 
 <img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
-
 
 <img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
 
@@ -71,8 +67,6 @@ Create a shortcut to a file or folder within the Space for quick access.
 ### 7. Scan Document
 
 Use your device camera to scan physical documents and save them directly as PDFs in the Space.
-
-
 
 ## The "Three-Dot Menue"
 
