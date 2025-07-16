@@ -2,7 +2,6 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
----
 
 ## Installation
 
@@ -10,7 +9,6 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 pnpm install
 ```
 
----
 
 ## Local Development
 
@@ -32,7 +30,6 @@ pnpm run start --locale de
 
 > ⚠️ Switching languages via the language switcher is currently not supported.
 
----
 
 ## Build
 
@@ -42,7 +39,6 @@ pnpm build
 
 This command generates static content in the `build` folder. You can serve it using any static file hosting service.
 
----
 
 ## Deployment
 
@@ -60,19 +56,28 @@ GIT_USER=<Your GitHub username> pnpm deploy
 
 If you're using GitHub Pages, this will push the production build to the `gh-pages` branch.
 
----
 
 ## Screenshot Guidelines
 
-| Component        | Width            |
-|:----------------|:-----------------:|
-| Full screen      | 1920px            |
-| Menu             | 400px             |
-| Pop-up / Modal   | 500px             |
+| Component        | Width  |
+|:----------------|:------:|
+| Full screen      | 1920px |
+| Menu             | 400px  |
+| Pop-up / Modal   | 500px  |
 
 > Highlight key elements in the screenshot with red borders or boxes if needed.
 
----
+### Example
+
+To include a screenshot in your documentation, use the following format:
+
+```jsx
+<img src={require("./../../img/PATH/EXAMPLE.png").default} alt="EXAMPLE" width="1920" />
+```
+
+- Use `require(...)` for image paths so they are bundled correctly by Docusaurus
+- Always include a meaningful `alt` text to improve accessibility and SEO
+
 
 ## Markdown Guidelines
 
@@ -95,8 +100,6 @@ description: A quick intro to OpenCloud
 - `sidebar_position` defines the ordering in the sidebar
 - `description` is required to ensure consistent SEO metadata and link previews. Always include a meaningful and concise description.
 
----
-
 ### Heading Hierarchy
 
 Use the correct heading levels:
@@ -111,9 +114,8 @@ Use the correct heading levels:
 #### Optional Sub-subsection
 ```
 
-> 🚫 Do not skip heading levels (e.g., don’t go from `##` directly to `####`).
+> Do not skip heading levels (e.g., don’t go from `##` directly to `####`).
 
----
 
 ### Info Blocks
 
@@ -137,8 +139,6 @@ Critical notices go here.
 :::
 ```
 
----
-
 ### Lists and Steps
 
 Use regular markdown for ordered lists. Do **not** nest deeply.
@@ -148,8 +148,6 @@ Use regular markdown for ordered lists. Do **not** nest deeply.
 2. Second step
 3. Third step
 ```
-
----
 
 ## Format Before Pushing
 
@@ -165,7 +163,5 @@ These commands will:
 - Format all project files
 - Lint and auto-fix markdown formatting
 - Ensure consistent style across documentation
-
----
 
 Thanks for helping us keep the docs clean, professional, and easy to read!
