@@ -10,10 +10,11 @@ draft: false
 
 ## Upload files or folders
 
-### Start uploading:
+### Start uploading
 
 Click on “Upload” in the action bar.
-  <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920"/>
+<img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920"/>
+
 - Select whether you **want to upload** files or folders.
   <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - **Select files/folders:**
