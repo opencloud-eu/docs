@@ -10,7 +10,7 @@ draft: false
 
 In the admin area of OpenCloud you have extensive administration options for your organisation. Here are the most important areas:
 
-  <img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="400"/>
+<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="400"/>
 
 ## General
 
