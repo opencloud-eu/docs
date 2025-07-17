@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-16
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -19,6 +19,7 @@
 
 ### 📦️ Build&Tools
 
+- style guide adjustments [[#385](https://github.com/opencloud-eu/docs/pull/385)]
 - Remove html line breaks [[#383](https://github.com/opencloud-eu/docs/pull/383)]
 - simplify prettier config [[#380](https://github.com/opencloud-eu/docs/pull/380)]
 - add linter to ci, fix linter reported issues [[#378](https://github.com/opencloud-eu/docs/pull/378)]
