@@ -2,9 +2,13 @@
 sidebar_position: 4
 id: sync-settings
 title: Synchronization Settings
+description: How to access Synchronisation Settings
+draft: false
 ---
 
-## How to Access Synchronization Settings
+# How to Access Synchronization Settings
+
+## Synchronization Settings
 
 1. Open the **OpenCloud Desktop**
 2. Go to the **Account View**
@@ -14,9 +18,9 @@ title: Synchronization Settings
 
 4. Choose from the following options:
 
-## **Synchronization Options**
+### Synchronization Options
 
-<img src={require("./img/sync-settings/sync-settings-menu.png").default} alt="synchronization options menu" width="400"/>
+<img src={require("./img/sync-settings/sync-settings-menu.png").default} alt="Synchronization options menu" width="400"/>
 
 ### Show in Explorer or Finder
 
@@ -47,12 +51,12 @@ title: Synchronization Settings
 - Opens a window where you can **select specific folders** from the Space to sync
 - Helps **save storage space** by syncing only necessary files
 
-<img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="choose what to sync" width="400"/>
+<img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
 
-**Note:** Files and folders that are not synced will **no longer be available** on your local machine.
+:::note
+Files and folders that are not synced will **no longer be available** on your local machine.
+:::
 
----
-
-### **Tip**
-
+:::tip
 Adjusting these settings allows you to **optimize storage space and network usage**, ensuring only the files you need are kept in sync.
+:::

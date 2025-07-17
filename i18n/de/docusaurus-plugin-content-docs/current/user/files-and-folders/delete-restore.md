@@ -4,8 +4,6 @@ id: delete-restore
 title: Löschen - Wiederherstellen
 ---
 
----
-
 # Löschen - Wiederherstellen
 
 ## In OpenCloud können Sie Dateien und Ordner löschen und diese nach Bedarf auch wiederherstellen

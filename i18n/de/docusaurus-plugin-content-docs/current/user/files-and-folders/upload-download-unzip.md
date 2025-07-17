@@ -4,8 +4,6 @@ id: upload-download-unzip
 title: Hochladen - Herunterladen - Entpacken
 ---
 
----
-
 # Hochladen - Herunterladen - Entpacken
 
 ## Hier wird beschrieben, wie man Dateien und Ordner hochlädt, herunterlädt und entpackt

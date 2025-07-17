@@ -1,55 +1,47 @@
 ---
 sidebar_position: 1
 id: account-overview
-title: Account-Menue
+title: Account Menu
+description: Overview of the Account Menu
 draft: true
 ---
 
-### Here a is a overview of the account-menue in the OpenCloud Android-App
+# Account Menu
 
----
+Here a is a overview of the account-menue in the OpenCloud Android-App
 
-<div style={{ display: 'flex', alignItems: 'center' }}>
-  {/* Bild-Container: vertikale Anordnung */}
-  <div style={{ display: 'flex', flexDirection: 'column', marginRight: '60px' }}>
-    <!--<img
-      src={require("../../img/overview/account-1.png").default}
-      alt="Account Menue Button"
-      style={{ width: '400px', marginBottom: '20px' }}
-    />
-    <img
-      src={require("../../img/overview/account-2.png").default}
-      alt="Account Menue"
-      style={{ width: '400px' }} -->
-    />
-  </div>
+<!-- <img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" height="400"/> -->
 
-  <ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+<!-- <img src={require("../../img/overview/account-2.png").default} alt="Account Menue" height="400"/> -->
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**1. Account Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the main account options and settings</li>
+## 1. Account Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>2. Active Account**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows which user account is currently active</li>
+Opens the main account options and settings.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**3. Settings Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens the general settings and configuration options</li>
+## 2. Active Account
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**4. Feedback Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Here you can send us a feedback of your experience with the OpenCloud Android app</li>
+Shows which user account is currently active.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**5. Help Menue Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Here you will find links to our documentation page and help links</li>
+## 3. Settings Menu Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**6. Privacy Policy Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>A full entry on our privacy policy can be found here.</li>
+Opens the general settings and configuration options.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**7. OpenCloud Logo**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Here you can see our OpenCloud Logo</li>
+## 4. Feedback Item
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**8. Used Quota**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays the quota you have used so far</li>
+Here you can send us feedback about your experience with the OpenCloud Android app.
 
-  </ul>
+## 5. Help Menu Item
 
-</div>
+Here you will find links to our documentation page and help links.
+
+## 6. Privacy Policy Item
+
+A full entry on our privacy policy can be found here.
+
+## 7. OpenCloud Logo
+
+Here you can see our OpenCloud logo.
+
+## 8. Used Quota
+
+Displays the quota you have used so far.

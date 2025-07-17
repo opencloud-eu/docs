@@ -4,8 +4,6 @@ id: search
 title: Suche
 ---
 
----
-
 # Suche
 
 ## Die Suchleiste in OpenCloud verwenden

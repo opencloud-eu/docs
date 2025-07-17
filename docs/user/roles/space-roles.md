@@ -2,15 +2,19 @@
 sidebar_position: 2
 id: space-roles
 title: Space roles in OpenCloud
+description: Space roles in OpenCloud
+draft: false
 ---
 
-### Space Roles in OpenCloud
+# Space Roles in OpenCloud
 
 | Role       | view | download | upload | edit | add | delete | manage members | disable / enable Space | edit quota | delete Space |
 | :--------- | :--: | :------: | :----: | :--: | :-: | :----: | :------------: | :--------------------: | :--------: | :----------: |
 | can view   |  x   |    x     |   -    |  -   |  -  |   -    |       -        |           -            |     -      |      -       |
 | can edit   |  x   |    x     |   x    |  x   |  x  |   x    |       -        |           -            |     -      |      -       |
 | can manage |  x   |    x     |   x    |  x   |  x  |   x    |       x        |           x            |     x      |      x       |
+
+## Share Roles and Permissions
 
 In a Space, members can have different roles that give them different levels of access.
 
@@ -37,4 +41,4 @@ This role gives the member all the abilities of "Can Edit," plus:
 - Edit the quota of the Space
 - Delete the Space
 
-**Each role determines what a member can do within the Space!**
+Each role determines what a member can do within the Space!
