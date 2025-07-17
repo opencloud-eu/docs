@@ -20,8 +20,9 @@ With OpenCloud you can create shortcuts to websites or files
 - Insert link or file:
   - In the window that opens, enter the **link** or the **name** of the file you want to link.
   - Alternatively, you can select the desired file from the list after you have entered the first few letters.
-  
+
     <img src={require("./img/link/pop-up-window.png").default} alt="Enter link or file in popup window" width="500"/>
+
 - Specify the name of the shortcut:
   - Enter a name for the shortcut.
 

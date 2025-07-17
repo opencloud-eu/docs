@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: intro
 title: Welcome
-description: Welcome 
+description: Welcome
 draft: false
 ---
 

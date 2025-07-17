@@ -35,4 +35,3 @@ With OpenCloud you can add **tags** to files and folders to make them easier to 
   <img src={require("./img/tags/delete-a-tag.png").default} alt="Click on x next to the tag" width="400"/>
 
   The file or folder is now **no longer associated** with this **tag**.
-  

@@ -8,7 +8,6 @@ title: WebDAV
 
 With WebDAV, you can connect OpenCloud Spaces as network drives on your device and manage your files directly from your file manager — without using the browser.
 
-
 ## 🛠️ Prerequisites
 
 - A valid **OpenCloud account** with WebDAV information enabled in the preferences
@@ -16,7 +15,6 @@ With WebDAV, you can connect OpenCloud Spaces as network drives on your device a
 - A **WebDAV client** (e.g. built-in OS support or [Mountain Duck](https://mountainduck.io/))
 - (Optional but recommended) An **App Token**  
   → [How to create an App Token](./app-tokens.md)
-
 
 ## 🔧 Step-by-Step Guide
 
@@ -40,7 +38,6 @@ Some WebDAV clients (especially non-OIDC compatible ones like Mountain Duck) req
 - **Copy the token immediately** – it will only be shown once  
   → [See App Token Guide](./app-tokens.md)
 
-
 ### 3. Get the WebDAV URL
 
 Open the **info panel** of your Space in the OpenCloud Web Interface.
@@ -50,7 +47,6 @@ You’ll see a section labeled **WebDAV** — copy the full WebDAV URL. It looks
 `https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
 <img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV URL" width="1920"/>
-
 
 ### 4. Connect via WebDAV
 
@@ -81,9 +77,10 @@ You can use various clients depending on your operating system:
 
 > ✅ Once connected, your Space will behave like a normal folder.
 
-
 :::note
+
 - If your WebDAV client supports **OIDC**, you may not need an App Token
 - Always use `https://` to ensure secure access
 - App Tokens can be revoked anytime via your account settings
+
 :::

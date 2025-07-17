@@ -42,6 +42,7 @@ A Space can be disabled and later enabled in various ways. This function can onl
 - After the Space has been disabled, the **Enable** option now appears in place of **Disable**.
 
   <img src={require("./img/enable-disable/enable.png").default} alt="Enable option" width="400"/>
+
 - Click on it to enable the Space.
 
 ### Space not visible

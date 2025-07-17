@@ -50,9 +50,11 @@ The removed member immediately loses access to the space.
 :::
 
 :::important
+
 - The added member has immediate access to the Space.
 - **Attention:** Every user with the “can manage” right has the authorization to deactivate and delete the Space.
 - A deleted Space **cannot be restored**, so be careful who you grant these rights to.
+
 :::
 
 Now you know how to add members to your Space and set the permissions accordingly!

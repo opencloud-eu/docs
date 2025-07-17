@@ -7,13 +7,12 @@ draft: true
 ---
 
 # Account Menu
-Here a is a overview of the account-menue in the OpenCloud Android-App
 
+Here a is a overview of the account-menue in the OpenCloud Android-App
 
 <!-- <img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" height="400"/> -->
 
 <!-- <img src={require("../../img/overview/account-2.png").default} alt="Account Menue" height="400"/> -->
-
 
 ## 1. Account Menu Item
 

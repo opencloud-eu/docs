@@ -10,7 +10,9 @@ draft: false
 
 ## Upload files or folders
 
-- **Start uploading:** - Click on **“Upload”** in the **action bar**.
+### Start uploading:
+
+Click on “Upload” in the action bar.
   <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920"/>
 - Select whether you **want to upload** files or folders.
   <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
@@ -32,7 +34,6 @@ draft: false
     <img src={require("./img/upload-download-unzip/choose-download-files.png").default} alt="Admin spaces" width="1920"/>
 - **Open the context menu** - By **right-clicking** - or by **clicking** on the **three dots** next to the file. - or by **clicking** the **download button** in the **action bar**
   <img src={require("./img/upload-download-unzip/download-options.png").default} alt="Download options" width="1920"/>
-  
 - Select **“Download”** from the **menu**.
 
 ## ZIP files

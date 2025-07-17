@@ -77,5 +77,4 @@ Scroll down in the sidebar window and click on **“Add link”**.
   <img src={require("./img/extern/copy-link-button.png").default} alt="Copy link" width="400"/>
 - The link is now created and can be shared with the recipients.
 
-
 Now you know how you can share files and folders securely and individually with external users.

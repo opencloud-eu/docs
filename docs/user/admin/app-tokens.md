@@ -10,7 +10,6 @@ draft: false
 
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
 
-
 ## ✅ How to Create an App Token
 
 1. Go to the **App Tokens** section in your OpenCloud account settings.
@@ -21,7 +20,6 @@ App Tokens allow you to connect external apps and services (such as WebDAV clien
 
 <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400"/>
 
-
 ## 📋 Copy the Token
 
 - Once the token is created, it will be shown **only once**.
@@ -31,7 +29,6 @@ App Tokens allow you to connect external apps and services (such as WebDAV clien
 
 > ⚠️ If you lose the token, you’ll need to delete it and create a new one.
 
-
 ## 🔧 Use the Token
 
 You can now use the token in place of your password when connecting:
@@ -39,7 +36,6 @@ You can now use the token in place of your password when connecting:
 - WebDAV
 - External apps
 - Third-party services
-
 
 ## 🗑️ Delete a Token
 
