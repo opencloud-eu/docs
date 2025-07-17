@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+id: intro
+title: Welcome
+description: Welcome 
+draft: false
 ---
 
 <!-- markdownlint-disable MD041 -->
