@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+id: intro
+title: Welcome
+description: Welcome
+draft: false
 ---
 
 <!-- markdownlint-disable MD041 -->
@@ -19,37 +23,37 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 Here you will find all the important information to successfully take the first steps in OpenCloud, to be able to solve
 technical problems flexibly yourself and to be able to answer frequently asked questions.
 
-### Table of contents
+## Table of contents
 
-#### User Interface and Navigation
+### User Interface and Navigation
 
 Here you will find general information about account settings, customizations and view modes.
 
-#### Manage Files and Folders
+### Manage Files and Folders
 
 Here you will find information about the management of files and folders.
 
-#### Share Files and Folders
+### Share Files and Folders
 
 Here you will find information on how to share files and folders.
 
-#### Working in Teams with Spaces
+### Working in Teams with Spaces
 
 Here you will find information for dealing with Spaces.
 
-#### OpenCloud Desktop
+### OpenCloud Desktop
 
 Here you will find information on how to install and set up the desktop client.
 
-#### OpenCloud iOS App
+### OpenCloud iOS App
 
 Here you will find information about the OpenCloud iOS App.
 
-#### Roles
+### Roles
 
 Here you will find information about the different roles that can be assigned.
 
-#### Administration of OpenCloud
+### Administration of OpenCloud
 
 Here you will find information on what options admins have and how you can use them.
 

@@ -2,14 +2,13 @@
 sidebar_position: 1
 id: create-rename-move
 title: Create - Rename - Move (Android)
+description: Create - Rename - Move
 draft: true
 ---
 
 # 📁 Create, Rename, and Move Files and Folders
 
 The OpenCloud Android App makes it easy to manage your content. You can create new folders and files, rename items, and move them to different locations — all directly from your Android phone or tablet.
-
----
 
 ## ➕ Creating Files and Folders
 
@@ -42,8 +41,6 @@ The document will open in a built-in browser window using **Collabora** for edit
 <!-- <img src={require("../img/files-and-folders/create-rename-move-android/open-collabora.png").default} alt="Open Collabora" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move-android/edit-collabora.png").default} alt="Edit Collabora" height="400"/> -->
 
----
-
 ## ✏️ Rename Files or Folders
 
 To rename a file or folder in the OpenCloud Android App:
@@ -67,8 +64,6 @@ To rename a file or folder in the OpenCloud Android App:
 
 ✅ The new name will be saved immediately.
 
----
-
 ## 📁 Move Files or Folders
 
 To move a file or folder in the OpenCloud Android App:
@@ -88,5 +83,3 @@ To move a file or folder in the OpenCloud Android App:
 <img src={require("../img/files-and-folders/create-rename-move-android/file-moved.png").default} alt="File is moved" height="400"/> -->
 
 ✅ The file or folder will now appear in the new location.
-
----

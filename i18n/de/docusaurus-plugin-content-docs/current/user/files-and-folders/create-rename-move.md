@@ -4,8 +4,6 @@ id: create-rename-move
 title: Erstellen - Umbenennen - Verschieben
 ---
 
----
-
 # Erstellen - Umbenennen - Verschieben
 
 ## Sie können ganz einfach neue Text-, Tabellen- und Präsentationsdateien in der Weboberfläche erstellen. Diese können Sie auch umbenennen oder an einen anderen Speicherort verschieben

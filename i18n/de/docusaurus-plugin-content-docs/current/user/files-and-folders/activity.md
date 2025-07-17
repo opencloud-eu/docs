@@ -4,8 +4,6 @@ id: activities
 title: Aktivitäten
 ---
 
----
-
 # Aktivitäten
 
 ## Anzeigen der Aktivitäten von Dateien und Ordner

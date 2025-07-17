@@ -2,72 +2,81 @@
 sidebar_position: 2
 id: links
 title: Share via link
+description: Share via link
 draft: true
 ---
 
 # Share files and folders via link
 
-## Here we explain how to share files and folders with others via link in the OpenCloud Android app
+Here we explain how to share files and folders with others via link in the OpenCloud Android app
 
----
+## 1. Three dot menu
 
-### 1. Click the three-dot menue next to the file or folder
+Click the three-dot menu next to the file or folder
 
-<!-- <img src={require("../img/shares/links/three-dot-menue.png").default} alt="three-dot menue" height="400"/> -->
-<br/>
+<!-- <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menue" height="400"/> -->
 
-### 2. Now select the menue item “Share”
+## 2. Share
 
-<!-- <img src={require("../img/shares/links/sharing-button.png").default} alt="share" height="400"/> -->
-<br/>
+Now select the menue item “Share”
 
-### 3. In the following selection, click on "Public link"
+<!-- <img src={require("../img/shares/links/sharing-button.png").default} alt="Share" height="400"/> -->
+
+## 3. Public link
+
+In the following selection, click on "Public link"
 
 <!-- <img src={require("../img/shares/links/create-link-button.png").default} alt="Create link" height="400"/> -->
-<br/>
 
-### 4. Here you can select and specify several options for the link to be created
+## 4. Create link
+
+Here you can select and specify several options for the link to be created
 
 <!-- <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menue" height="400"/> -->
-<br/>
 
-### 5. Enter a name for your link here
+## 5. Link name
 
-<!-- <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" height="400"/> -->
-<br/>
+Enter a name for your link here
 
-### 6. Here you can select which function your link should have:<br/>
+<!-- <img src={require("../img/shares/links/link-name.png").default} alt="Link name" height="400"/> -->
+
+## 6. Link funktions
+
+Here you can select which function your link should have:
 
 <!-- <img src={require("../img/shares/links/sharing-options.png").default} alt="Share options" height="400"/> -->
 
-    - Invite people:<br/>
-    Only invited people have access to the link and its content.
-    - Can View:<br/>
-    People can only view and download the content of the link, but not edit, create, or upload.
-    - Can Upload:<br/>
-    People can only view the content of the link and upload files, but not edit or create them.
-    - Can Manage:
-    People can only view, download, and upload files, but not edit or create them.
-    - Can Edit:<br/>
-    People can view, download, upload, edit, and create the content of the link.
+- Invite people:  
+  Only invited people have access to the link and its content.
+- Can View:  
+  People can only view and download the content of the link, but not edit, create, or upload.
+- Can Upload:  
+  People can only view the content of the link and upload files, but not edit or create them.
+- Can Manage:  
+  People can only view, download, and upload files, but not edit or create them.
+- Can Edit:  
+  People can view, download, upload, edit, and create the content of the link.
 
-<br/>
+## 7. Password
 
-### 7. You must enter a password here. You can choose your own or have one generated for you
+You must enter a password here. You can choose your own or have one generated for you
 
 <!-- <img src={require("../img/shares/links/password.png").default} alt="Password" height="400"/> -->
-<br/>
 
-### 8. Here you can specify a period of time for which the link should be available
+## 8. Period of available
+
+Here you can specify a period of time for which the link should be available
 
 <!-- <img src={require("../img/shares/links/expiration-date.png").default} alt="Link expiration date" height="400"/> -->
-<br/>
 
-### 9. To create the link you must now click on "Share"
+## 9. Share Button
+
+To create the link you must now click on "Share"
 
 <!-- <img src={require("../img/shares/links/share-button.png").default} alt="Share" height="400"/> -->
-<br/>
 
-### 10. Once the link is created, you will see it with the assigned name in the file or folder overview
+## 10. Created link
+
+Once the link is created, you will see it with the assigned name in the file or folder overview
 
 <!-- <img src={require("../img/shares/links/created-link.png").default} alt="created link" height="400"/> -->

@@ -4,8 +4,6 @@ id: link
 title: Verknüpfung
 ---
 
----
-
 # Verknüpfung
 
 ## Mit OpenCloud können Sie Verknüpfung zu Websites oder Dateien erstellen

@@ -4,8 +4,6 @@ id: common-issues
 title: Common Issues & Help
 ---
 
----
-
 ### Check whether the containers are running
 
 ```bash

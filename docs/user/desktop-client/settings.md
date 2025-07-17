@@ -2,6 +2,8 @@
 sidebar_position: 3
 id: settings
 title: Settings
+description: Change settings in OpenCloud Desktop
+draft: false
 ---
 
 # Change Settings in OpenCloud Desktop
@@ -12,7 +14,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 
 - Click on **"Settings"** in the top-right corner of OpenCloud Desktop
 
-<img src={require("./img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
+<img src={require("./img/settings/settings-overview.png").default} alt="Settings overview" width="400"/>
 
 ## Overview of Settings Sections
 
@@ -22,7 +24,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 - Choose whether to show desktop notifications
 - Set your preferred language
 
-<img src={require("./img/settings/settings-general.png").default} alt="settings-general" width="400"/>
+<img src={require("./img/settings/settings-general.png").default} alt="Settings-general" width="400"/>
 
 ### Advanced Settings
 
@@ -31,7 +33,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 - Edit the ignored files list
 - Enable a debug log file for troubleshooting
 
-<img src={require("./img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
+<img src={require("./img/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
 
 ### Network Settings
 
@@ -40,7 +42,7 @@ You can customize OpenCloud Desktop settings by following these steps:
   - **Use system proxy** (default)
   - **Manually enter a proxy**
 
-<img src={require("./img/settings/settings-network.png").default} alt="settings network" width="400"/>
+<img src={require("./img/settings/settings-network.png").default} alt="Settings network" width="400"/>
 
 ### Download and Upload Bandwidth
 
@@ -49,6 +51,6 @@ You can customize OpenCloud Desktop settings by following these steps:
   - **Automatically adjust limit**
   - **Set a specific limit manually**
 
-<img src={require("./img/settings/settings-bandwidth.png").default} alt="settings bandwidth" width="400"/>
+<img src={require("./img/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400"/>
 
 By adjusting these settings, you can optimize OpenCloud Desktop according to your needs!
