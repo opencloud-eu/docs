@@ -1,5 +1,42 @@
 # Changelog
 
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-18
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith
+
+### 🐾 Guides
+
+- add best practice how to format our docs md files [[#388](https://github.com/opencloud-eu/docs/pull/388)]
+- Add lint format to readme [[#382](https://github.com/opencloud-eu/docs/pull/382)]
+
+### 👷 Admin Documentation
+
+- update release list [[#387](https://github.com/opencloud-eu/docs/pull/387)]
+- add tutorial for OpenCloud with reverse Proxy [[#365](https://github.com/opencloud-eu/docs/pull/365)]
+- Docker compose refinement [[#370](https://github.com/opencloud-eu/docs/pull/370)]
+
+### 👤 User Documentation
+
+- Rework user sharing dokus [[#393](https://github.com/opencloud-eu/docs/pull/393)]
+- Rework user spaces dokus [[#394](https://github.com/opencloud-eu/docs/pull/394)]
+- Rework user files and folder [[#395](https://github.com/opencloud-eu/docs/pull/395)]
+- Team rework user i os app [[#392](https://github.com/opencloud-eu/docs/pull/392)]
+- Rework User Admin Dokus [[#389](https://github.com/opencloud-eu/docs/pull/389)]
+- rework user desktop client [[#390](https://github.com/opencloud-eu/docs/pull/390)]
+- Rework User General Dokus [[#391](https://github.com/opencloud-eu/docs/pull/391)]
+
+### 📦️ Build&Tools
+
+- style guide adjustments [[#385](https://github.com/opencloud-eu/docs/pull/385)]
+- Remove html line breaks [[#383](https://github.com/opencloud-eu/docs/pull/383)]
+- simplify prettier config [[#380](https://github.com/opencloud-eu/docs/pull/380)]
+- add linter to ci, fix linter reported issues [[#378](https://github.com/opencloud-eu/docs/pull/378)]
+- Add linter [[#376](https://github.com/opencloud-eu/docs/pull/376)]
+- chore: add prettier [[#374](https://github.com/opencloud-eu/docs/pull/374)]
+- chore: add Require Pull Request Labels workflow [[#375](https://github.com/opencloud-eu/docs/pull/375)]
+
 ## [1.39.0](https://github.com/opencloud-eu/docs/releases/tag/1.39.0) - 2025-07-11
 
 ### ❤️ Thanks to all contributors! ❤️
