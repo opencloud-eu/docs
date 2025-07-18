@@ -19,6 +19,7 @@
 
 ### 👤 User Documentation
 
+- Team rework user i os app [[#392](https://github.com/opencloud-eu/docs/pull/392)]
 - Rework User Admin Dokus [[#389](https://github.com/opencloud-eu/docs/pull/389)]
 - rework user desktop client [[#390](https://github.com/opencloud-eu/docs/pull/390)]
 - Rework User General Dokus [[#391](https://github.com/opencloud-eu/docs/pull/391)]
