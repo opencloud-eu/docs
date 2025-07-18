@@ -12,8 +12,8 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 
 ## How to Add a New Account
 
-- Open **OpenCloud Desktop**
-- Click on **Add Account**
+- Open OpenCloud Desktop
+- Click on Add Account
 
   <img src={require("./img/multiple-accounts/multiple-accounts-add-account.png").default} alt="Add accounts" width="400"/>
 
@@ -24,19 +24,21 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 
 ## Switching Between Accounts
 
-- After adding multiple accounts, they will appear in the **account overview** in the settings menu
+- After adding multiple accounts, they will appear in the account overview in the settings menu
 - You can easily switch between them to manage synchronization settings for each account separately
 
   <img src={require("./img/multiple-accounts/multiple-accounts-switch-accounts.png").default} alt="Switch accounts" width="400"/>
 
 ## How Files are Stored Locally
 
-- In your **File Explorer**, each account will have a separate folder
+- In your File Explorer, each account will have a separate folder
 - By default, the folders are named:
-  - **OpenCloud** (for the first account)
-  - **OpenCloud (2)** (for the second account)
-  - **OpenCloud (3)** (for the third account), and so on
+  - OpenCloud (for the first account)
+  - OpenCloud (2) (for the second account)
+  - OpenCloud (3) (for the third account), and so on
 
     <img src={require("./img/multiple-accounts/multiple-accounts-locally.png").default} alt="Multiple accounts in explorer or finder" width="400"/>
 
-This setup ensures that files from different accounts remain **organized and do not mix**.
+:::note
+This setup ensures that files from different accounts remain organized and do not mix.
+:::
