@@ -18,9 +18,9 @@ Here we show you how to create shortcuts in the iOS app
 
 ## Drop-Down menu
 
-- A drop-down menue opens
+- A drop-down menu opens
 
-  <img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menue" height="400"/>
+  <img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menu" height="400"/>
 
 ## Create shortcut
 
@@ -30,9 +30,9 @@ Here we show you how to create shortcuts in the iOS app
 
 ## Shortcut options
 
--A menue opens with options for shortcuts
+-A menu opens with options for shortcuts
 
-    <img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" height="400"/>
+    <img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menu" height="400"/>
 
 ## URL
 
