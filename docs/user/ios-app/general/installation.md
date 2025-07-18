@@ -12,11 +12,11 @@ A short Tutorial how to install the OpenCloud iOS App.
 
 ## App Store
 
-Open the **App Store** on your iPhone or iPad.
+Open the App Store on your iPhone or iPad.
 
 ## OpenCloud
 
-Search for **"OpenCloud"** or click the following link to go directly to the app:
+Search for "OpenCloud" or click the following link to go directly to the app:
 
 [OpenCloud on the App Store](https://apps.apple.com/de/app/opencloud-your-data-anywhere/id6743121005)
 
@@ -24,7 +24,7 @@ Search for **"OpenCloud"** or click the following link to go directly to the app
 
 ## Install
 
-Tap **"Get"** to install the app.
+Tap "Get" to install the app.
 
 ## App Icon
 
