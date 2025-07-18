@@ -10,40 +10,58 @@ draft: false
 
 Here we show you how to create shortcuts in the iOS app
 
-## 1. Click on the "Plus symbol"
+## "+" Icon
 
-<img src={require("./img/shortcuts/plus-button.png").default} alt="Plus symbol" height="400"/>
+- Click on the "+" Icon
 
-## 2. A drop-down menue opens
+  <img src={require("./img/shortcuts/plus-button.png").default} alt="Plus symbol" height="400"/>
 
-<img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menue" height="400"/>
+## Drop-Down menu
 
-## 3. Select "Create shortcut"
+- A drop-down menue opens
 
-<img src={require("./img/shortcuts/create-shortcut.png").default} alt="Select create shortcut" height="400"/>
+  <img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menue" height="400"/>
 
-## 4. A menue opens with options for shortcuts
+## Create shortcut
 
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" height="400"/>
+- Select "Create shortcut"
 
-## 5. To create a shortcut to a website, enter the address of the website under "URL"
+  <img src={require("./img/shortcuts/create-shortcut.png").default} alt="Select create shortcut" height="400"/>
 
-<img src={require("./img/shortcuts/url.png").default} alt="URL" height="400"/>
+## Shortcut options
 
-## 6. To create a shortcut to a file or folder in OpenCloud, click the "Select file or folder" option
+-A menue opens with options for shortcuts
 
-<img src={require("./img/shortcuts/pick-file-or-folder.png").default} alt="Select file or folder option" height="400"/>
-<img src={require("./img/shortcuts/choose-file-or-folder.png").default} alt="Select file or folder" height="400"/>
-<img src={require("./img/shortcuts/select-button.png").default} alt="Select" height="400"/>
+    <img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" height="400"/>
 
-## 7. Here you enter a name for the shortcut with which it will be displayed
+## URL
 
-<img src={require("./img/shortcuts/shortcut-name.png").default} alt="Name of the shortcut" height="400"/>
+- To create a shortcut to a website, enter the address of the website under "URL"
 
-## 8. To create the shortcut, click on "Create shortcut"
+  <img src={require("./img/shortcuts/url.png").default} alt="URL" height="400"/>
 
-<img src={require("./img/shortcuts/create-shortcut-button.png").default} alt="Create shortcut" height="400"/>
+## Select files and folder
 
-## 9. Your created shortcut is now displayed and can be used
+- To create a shortcut to a file or folder in OpenCloud, click the "Select file or folder" option
 
-<img src={require("./img/shortcuts/created-shortcut.png").default} alt="Shortcut" height="400"/>
+  <img src={require("./img/shortcuts/pick-file-or-folder.png").default} alt="Select file or folder option" height="400"/>
+  <img src={require("./img/shortcuts/choose-file-or-folder.png").default} alt="Select file or folder" height="400"/>
+  <img src={require("./img/shortcuts/select-button.png").default} alt="Select" height="400"/>
+
+## Shortcut name
+
+- Here you enter a name for the shortcut with which it will be displayed
+
+  <img src={require("./img/shortcuts/shortcut-name.png").default} alt="Name of the shortcut" height="400"/>
+
+## Create button
+
+- To create the shortcut, click on "Create shortcut"
+
+  <img src={require("./img/shortcuts/create-shortcut-button.png").default} alt="Create shortcut" height="400"/>
+
+## Created shortcut
+
+- Your created shortcut is now displayed and can be used
+
+  <img src={require("./img/shortcuts/created-shortcut.png").default} alt="Shortcut" height="400"/>
