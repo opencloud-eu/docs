@@ -14,11 +14,11 @@ Here we explain how to share files and folders with others via link in the OpenC
 
 - Click the three-dot menu next to the file or folder
 
-  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menue" height="400"/>
+  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menu" height="400"/>
 
 ## Share
 
-- Now select the menue item “Share”
+- Now select the menu item “Share”
 
   <img src={require("../img/shares/links/sharing-button.png").default} alt="Share" height="400"/>
 
@@ -32,7 +32,7 @@ Here we explain how to share files and folders with others via link in the OpenC
 
 - Here you can select and specify several options for the link to be created
 
-  <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menue" height="400"/>
+  <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menu" height="400"/>
 
 ## Link name
 
