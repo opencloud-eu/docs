@@ -14,25 +14,25 @@ Here we explain how to share files and folders via invitation with other people 
 
 - Click the "three-dot menu" next to the file or folder
 
-  <img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menue" height="400"/>
+  <img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menu" height="400"/>
 
 ## Share
 
 - Now select the menu item "Share"
 
-  <img src={require("../img/shares/invite/sharing-button.png").default} alt="Teilen" height="400"/>
+  <img src={require("../img/shares/invite/sharing-button.png").default} alt="share" height="400"/>
 
 ## Share with
 
 - In the following selection, click on "Share with"
 
-  <img src={require("../img/shares/invite/invite-option.png").default} alt="Teilen mit" height="400"/>
+  <img src={require("../img/shares/invite/invite-option.png").default} alt="Share with" height="400"/>
 
 ## Share menu
 
 - The Share menu opens, where you can use the search bar to search for people or groups you want to invite
 
-  <img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menue" height="400"/>
+  <img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menu" height="400"/>
   <img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" height="400"/>
   <img src={require("../img/shares/invite/choose-invites.png").default} alt="Selection of people and/or groups" height="400"/>
 
