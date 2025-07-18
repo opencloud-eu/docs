@@ -19,6 +19,9 @@
 
 ### 👤 User Documentation
 
+- Rework user sharing dokus [[#393](https://github.com/opencloud-eu/docs/pull/393)]
+- Rework user spaces dokus [[#394](https://github.com/opencloud-eu/docs/pull/394)]
+- Rework user files and folder [[#395](https://github.com/opencloud-eu/docs/pull/395)]
 - Team rework user i os app [[#392](https://github.com/opencloud-eu/docs/pull/392)]
 - Rework User Admin Dokus [[#389](https://github.com/opencloud-eu/docs/pull/389)]
 - rework user desktop client [[#390](https://github.com/opencloud-eu/docs/pull/390)]
