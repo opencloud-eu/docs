@@ -2,19 +2,20 @@
 sidebar_position: 2
 id: external-proxy
 title: Behind External Proxy
-description: 'How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup).'
+description: How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup).
+draft: false
 ---
 
-# 🌐 Running OpenCloud Behind an External Proxy (Nginx + Certbot Setup)
+# Running OpenCloud Behind an External Proxy (Nginx + Certbot Setup)
 
-This guide walks you through setting up OpenCloud behind an external **Nginx reverse proxy** with **Let's Encrypt certificates** using `certbot certonly --webroot`.
+This guide walks you through setting up OpenCloud behind an external Nginx reverse proxy with Let's Encrypt certificates using `certbot certonly --webroot`.
 
 ---
 
-## ✅ Requirements
+## Requirements
 
-- A **public server** with a static IP
-- Proper **DNS records** for your domain:
+- A public server with a static IP
+- Proper DNS records for your domain:
   - `cloud.YOUR.DOMAIN`
   - `collabora.YOUR.DOMAIN`
   - `wopiserver.YOUR.DOMAIN`
@@ -23,9 +24,7 @@ This guide walks you through setting up OpenCloud behind an external **Nginx rev
   - `nginx`
   - `certbot`
 
----
-
-## Step 1: Connect to Your Server
+## Connect to Your Server
 
 Log into your server via SSH:
 
@@ -33,9 +32,7 @@ Log into your server via SSH:
 ssh root@YOUR.SERVER.IP
 ```
 
----
-
-## Step 2: Install Docker
+## Install Docker
 
 Update your system and install Docker.
 
@@ -53,9 +50,7 @@ Once Docker is installed, enable and start the service:
 systemctl enable docker && systemctl start docker
 ```
 
----
-
-## Step 3: Clone the OpenCloud Repository
+## Clone the OpenCloud Repository
 
 Download the necessary configuration files:
 
@@ -63,22 +58,18 @@ Download the necessary configuration files:
 git clone https://github.com/opencloud-eu/opencloud.git
 ```
 
----
-
-## Step 4: Install Nginx & Certbot
+## Install Nginx & Certbot
 
 Now install Nginx & Certbot
 
-## 📁 Step 5: Create a Webroot Directory for Certbot
+## Create a Webroot Directory for Certbot
 
 ```bash
 sudo mkdir -p /var/www/certbot
 sudo chown -R www-data:www-data /var/www/certbot
 ```
 
----
-
-## 🔧 Step 6: Temporary Nginx Config for HTTP Challenge
+## Temporary Nginx Config for HTTP Challenge
 
 Create a temporary config to allow HTTP validation:
 
@@ -109,9 +100,7 @@ sudo ln -s /etc/nginx/sites-available/certbot-challenge /etc/nginx/sites-enabled
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
----
-
-## 🔐 Step 7: Obtain SSL Certificates
+## Obtain SSL Certificates
 
 Use `certbot` to get your TLS certificates:
 
@@ -131,9 +120,7 @@ Your certificates will be saved under:
 - `/etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem`
 - `/etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem`
 
----
-
-## ⚙️ Step 8: Configure and start OpenCloud
+## Configure and start OpenCloud
 
 Clone the OpenCloud Compose repo and set your environment:
 
@@ -168,9 +155,7 @@ Start the docker compose setup
 docker compose up -d
 ```
 
----
-
-## 🧩 Step 9: Set Up the Final Nginx Reverse Proxy
+## Set Up the Final Nginx Reverse Proxy
 
 ### Remove the temporary certbot config
 
@@ -266,14 +251,10 @@ sudo ln -s /etc/nginx/sites-available/opencloud /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
----
-
-## 🔁 Step 10: Test Certificate Renewal
+## Test Certificate Renewal
 
 ```bash
 sudo certbot renew --dry-run
 ```
-
----
 
 Your OpenCloud instance is now running securely behind a fully configured external Nginx reverse proxy with HTTPS.

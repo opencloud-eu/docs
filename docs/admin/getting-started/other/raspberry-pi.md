@@ -2,22 +2,24 @@
 sidebar_position: 6
 id: raspberry-pi
 title: Raspberry Pi
+description: OpenCLoud on a Raspberry Pi
+draft: false
 ---
 
-# OpenCloud on Raspberry Pi
+# OpenCloud on a Raspberry Pi
 
 :::note
 The installation of OpenCloud on a Raspberry Pi is intended for private or non-production use only.  
 It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential performance constraints.
 :::
 
-## 1.1 Hardware requirements
+## Hardware requirements
 
 - Minimum Raspberry Pi 4B with at least 4 GB RAM connected via LAN or WLAN
 - Micro SD card with at least 32 GB storage space
 - External hard disk or USB stick (optional) for additional storage space
 
-## 1.2 Install operating system
+## Install operating system
 
 - Install Raspberry Pi OS  
   A very detailed and understandable guide is available at:  
@@ -28,7 +30,7 @@ It is not recommended for enterprise or critical environments due to the hardwar
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
 
-## 1.3 Connecting with SSH
+## Connecting with SSH
 
 Start the Raspberry Pi with the SD card and connect via SSH.  
 The IP for this can be viewed in your router.
@@ -47,7 +49,7 @@ After the first login, you should change the password for security reasons:
 passwd
 ```
 
-## 1.4 Installing Docker and Docker Compose
+## Installing Docker and Docker Compose
 
 Detailed installation instructions for Docker can be found here:  
 [Install Docker on Raspberry Pi](https://pimylifeup.com/raspberry-pi-docker/)
@@ -84,13 +86,13 @@ groups ${USER}
 sudo shutdown -r now
 ```
 
-## 1.5 Clone OpenCloud repository
+## Clone OpenCloud repository
 
 ```bash
 git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
-## 1.6 Start the Docker Compose setup
+## Start the Docker Compose setup
 
 ```bash
 cd opencloud-compose
@@ -124,9 +126,9 @@ Now OpenCloud is running locally on your Raspberry Pi, and you can adjust it to 
 
 We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
 
-## 1.7 Mount external hard disk or USB stick
+## Mount external hard disk or USB stick
 
-### 1. Find your external drive
+### Find your external drive
 
 ```bash
 lsblk
@@ -134,7 +136,7 @@ lsblk
 
 <img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
-### 2. Format the drive to ext4
+### Format the drive to ext4
 
 ```bash
 sudo mkfs.ext4 /dev/sda1 -L DATA
@@ -142,7 +144,7 @@ sudo mkfs.ext4 /dev/sda1 -L DATA
 
 <img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
 
-### 3. Add fstab entry for auto-mounting
+### Add fstab entry for auto-mounting
 
 Open `fstab`:
 
@@ -156,14 +158,14 @@ Add this line:
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
-### 4. Create the mount point and set permissions
+### Create the mount point and set permissions
 
 ```bash
 sudo mkdir -p /mnt/data
 sudo chown -R 1000:1000 /mnt/data
 ```
 
-### 5. Mount the drive
+### Mount the drive
 
 ```bash
 sudo mount -a
@@ -181,7 +183,7 @@ systemctl daemon-reload
 
 And try mounting again.
 
-## 1.8 Mount external storage in Docker
+## Mount external storage in Docker
 
 Stop Docker:
 
@@ -210,15 +212,15 @@ Restart Docker:
 docker compose up
 ```
 
-## 1.9 Make OpenCloud externally available
+## Make OpenCloud externally available
 
-### 1. Create DynDNS hostname
+### Create DynDNS hostname
 
 Register at [No-IP](https://www.noip.com/) and create a hostname, e.g. `opencloud.webhop.me`.
 
 <img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
 
-### 2. Configure DynDNS in your router
+### Configure DynDNS in your router
 
 Use your router’s web interface to:
 
@@ -230,7 +232,7 @@ Use your router’s web interface to:
 
 More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
 
-### 3. Configure port forwarding
+### Configure port forwarding
 
 1. Ensure your Raspberry Pi always has the same IP address:
    - Either via static IP or DHCP assignment in the router
@@ -244,7 +246,7 @@ More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-con
 
 <img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
 
-### 4. Update OC_DOMAIN
+### Update OC_DOMAIN
 
 SSH into your Pi and update the domain:
 

@@ -2,10 +2,13 @@
 sidebar_position: 5
 id: bare-metal
 title: Bare-Metal
-description: 'Manual, minimalist setup with essential features.'
+description: Manual, minimalist setup with essential features.
+draft: false
 ---
 
-## User Guide for Installing OpenCloud
+# Bare-Metal
+
+User Guide for Installing OpenCloud Bare-Metal
 
 Follow the steps below to install and configure OpenCloud on your system.<br/>
 This example is on Linux Ubuntu 24.04 distribution!
@@ -14,9 +17,7 @@ This example is on Linux Ubuntu 24.04 distribution!
 Bare-metal deployments are not officially supported by OpenCloud. They are great for quick evaluation but are undocumented and have a minimalist feature set. If you choose this setup, you are on your own. With great power comes great responsibility.
 :::
 
----
-
-### 1. Install Git and clone the repository
+## Install Git and clone the repository
 
 - Open a terminal.
 
@@ -42,9 +43,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 
   <img src={require("./../img/bare-metal/git-clone.png").default} alt="git clone" width="1920"/>
 
----
-
-### 2. Install the required packages
+## Install the required packages
 
 - Download and install Go by following the official guide: 🔗[**go.dev/doc/install**](https://go.dev/doc/install)
 
@@ -72,9 +71,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 
   <img src={require("./../img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920"/>
 
----
-
-### 3. Build process and OpenCloud initialization
+## Build process and OpenCloud initialization
 
 - Navigate to the OpenCloud directory:
 
@@ -107,9 +104,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 
   <img src={require("./../img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920"/>
 
----
-
-### 4. Login
+## Login
 
 Login with your browser:
 
@@ -119,14 +114,12 @@ Login with your browser:
 
 <img src={require("./../img/bare-metal/login.png").default} alt="login" width="1920"/>
 
----
-
-### 5. Conclusion
+## Conclusion
 
 Your OpenCloud server is now running and ready to use 🚀
 
----
+## Troubleshooting
 
-### If you encounter any issues or errors, try finding a solution here
+If you encounter any issues or errors, try finding a solution here
 
 - [Common Issues & Help](./../../resources/common-issues.md)
