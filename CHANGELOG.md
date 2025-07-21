@@ -20,6 +20,7 @@
 
 ### 👤 User Documentation
 
+- Team rework android [[#401](https://github.com/opencloud-eu/docs/pull/401)]
 - Rework user sharing dokus [[#393](https://github.com/opencloud-eu/docs/pull/393)]
 - Rework user spaces dokus [[#394](https://github.com/opencloud-eu/docs/pull/394)]
 - Rework user files and folder [[#395](https://github.com/opencloud-eu/docs/pull/395)]
