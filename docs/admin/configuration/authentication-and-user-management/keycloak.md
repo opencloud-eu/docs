@@ -247,7 +247,7 @@ graph TD
 ```
 
 - Keycloak manages the users, groups, and roles
-- The openCloud Clients and Sessions are configured in Keycloak
+- The OpenCloud Clients and Sessions are configured in Keycloak
 - Simplified user management with "just-in-time" provisioning
 - Federation with external identity providers is supported (e.g., Google, GitHub, Facebook, Microsoft)
 - In this case, we need to provide an LDAP server which is fully controlled by OpenCloud and needs a custom [LDAP Schema](https://github.com/opencloud-eu/opencloud/blob/main/deployments/examples/shared/config/ldap/schemas/10_opencloud_schema.ldif).
