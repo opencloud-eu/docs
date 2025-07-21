@@ -16,7 +16,6 @@ To open the Spaces Overview, tap the "Spaces button" in the bottom line of the t
 
 <img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
 
-
 Afterwards, the Spaces Overview appears, listing all Spaces you are a member of or have created yourself.
 
 <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />

@@ -16,7 +16,6 @@ Tap the “+” button in the bottom right corner.
 
 <img src={require("../img/files-and-folders/create-rename-move-android/create-new.png").default} alt="Create new" height="400"/>
 
-
 Choose what you want to create from the menu:
 
 ### Create a Folder
@@ -77,8 +76,8 @@ To move a file or folder in the OpenCloud Android App:
 
 <img src={require("../img/files-and-folders/create-rename-move-android/select-move-or-copy.png").default} alt="Select move or copy" height="400"/>
 
-3. Navigate to the destination folder
-4. Tap "Move here" or "Copy here"
+Navigate to the destination folder
+Tap "Move here" or "Copy here"
 
 <img src={require("../img/files-and-folders/create-rename-move-android/select-paste.png").default} alt="Select paste" height="400"/>
 <img src={require("../img/files-and-folders/create-rename-move-android/file-moved.png").default} alt="File is moved" height="400"/>

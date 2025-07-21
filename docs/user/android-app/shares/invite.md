@@ -35,7 +35,6 @@ The Share menu opens, where you can use the search bar to search for people or g
 <img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menue" height="400"/>
 <img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" height="400"/>
 
-
 ## Permissions
 
 To configure the sharing permissions, click the pencil icon located next to the trash bin icon

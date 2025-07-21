@@ -18,12 +18,12 @@ Move to the Space where you want to search and click on the search icon to open 
 
 ## Search bar
 
-  You can search for file or folder names in the search bar
-  
-  <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="300"/>
+You can search for file or folder names in the search bar
+
+<img src={require("./img/search/searchbar.png").default} alt="Search bar" width="300"/>
 
 ## Search result
 
-  This area displays the search results
+This area displays the search results
 
-  <img src={require("./img/search/search-result.png").default} alt="Search results" width="300"/>
+<img src={require("./img/search/search-result.png").default} alt="Search results" width="300"/>
