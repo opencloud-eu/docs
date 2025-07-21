@@ -12,8 +12,8 @@ PosixFS is a storage driver that saves OpenClouds files and folders in a folder 
 
 PosixFS Driver supports two different modes:
 
-1. The _non collaborative mode_ where the filesystem tree in use is exclusively granted to OpenCloud
-2. The _collaborative mode_ where modifications of the underlying file tree are permitted by other processes than OpenCloud
+- The _non collaborative mode_ where the filesystem tree in use is exclusively granted to OpenCloud
+- The _collaborative mode_ where modifications of the underlying file tree are permitted by other processes than OpenCloud
 
 ## General Notes
 
