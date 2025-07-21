@@ -68,7 +68,7 @@ Before requesting real SSL certificates, test the setup with Let's Encrypt’s s
 cd opencloud-compose
 ```
 
-### reate environment file
+### Create environment file
 
 ```bash
 cp .env.example .env
