@@ -8,33 +8,32 @@ draft: true
 
 # The "Spaces" Section in the OpenCloud Android App
 
-The **"Spaces" section** provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
+The "Spaces" section provides a central place for collaboration in groups or teams. In a Space, multiple users can access files and folders together, organize content, and track changes
 
 ## Spaces Overview
 
-To open the **Spaces Overview**, tap the **"Spaces button"** in the bottom line of the the screen.
+To open the Spaces Overview, tap the "Spaces button" in the bottom line of the the screen.
 
-<!-- <img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} /> -->
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
 
-Afterwards, the **Spaces Overview** appears, listing all Spaces you are a member of or have created yourself.
+Afterwards, the Spaces Overview appears, listing all Spaces you are a member of or have created yourself.
 
-<!-- <img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} /> -->
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
 
 ## Search Function
 
 By tapping the **search icon**, the searchbar and the search menu for Spaces will open.
+<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
 
-<!-- <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} /> -->
-
-<!-- <img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} /> -->
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
 
 ## Functions within a Space
 
-By tapping the **plus icon**, the available functions within a Space appear.
+By tapping the plus icon, the available functions within a Space appear.
 
-<!-- <img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} /> -->
+<img src={require("./img/spaces/spaces-plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
 
-<!-- <img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} /> -->
+<img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
 
 ## Create Menu
 

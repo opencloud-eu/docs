@@ -10,9 +10,9 @@ draft: true
 
 Here a is a overview of the account-menue in the OpenCloud Android-App
 
-<!-- <img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" height="400"/> -->
+<img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} />
 
-<!-- <img src={require("../../img/overview/account-2.png").default} alt="Account Menue" height="400"/> -->
+<img src={require("../../img/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} />
 
 ## 1. Account Menu Item
 
@@ -38,10 +38,6 @@ Here you will find links to our documentation page and help links.
 
 A full entry on our privacy policy can be found here.
 
-## 7. OpenCloud Logo
-
-Here you can see our OpenCloud logo.
-
-## 8. Used Quota
+## 7. Used Quota
 
 Displays the quota you have used so far.
