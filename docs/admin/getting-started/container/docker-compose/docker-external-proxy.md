@@ -77,7 +77,7 @@ Create a temporary config to allow HTTP validation:
 sudo nano /etc/nginx/sites-available/certbot-challenge
 ```
 
-Paste the following config:
+Paste the following config and adjust the URLs:
 
 ```nginx
 server {
@@ -102,7 +102,7 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ## Obtain SSL Certificates
 
-Use `certbot` to get your TLS certificates:
+Use `certbot` to get your TLS certificates with adjusted URLs:
 
 ```bash
 sudo certbot certonly --webroot \
@@ -169,7 +169,7 @@ sudo rm /etc/nginx/sites-enabled/certbot-challenge
 sudo nano /etc/nginx/sites-available/opencloud
 ```
 
-Paste the following configuration:
+Paste the following configuration and adjust the URLs:
 
 ```nginx
 # Redirect HTTP to HTTPS
