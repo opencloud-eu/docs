@@ -12,7 +12,9 @@ Regular backups are essential to ensure that your OpenCloud instance can be rest
 
 ## General considerations
 
-### OpenCloud supports two different storage setups
+### Storage Options
+
+OpenCloud supports two different storage setups:
 
 - Pure POSIX Setup: All data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem.
 
@@ -22,7 +24,9 @@ To determine which filesystems are supported, see: Filesystems and Shared Storag
 
 ## Backup strategies
 
-### To create a consistent backup, the OpenCloud instance must be stopped before starting the backup process. After the backup is complete, the instance can be restarted
+### Consistent Backup Requirement
+
+To create a consistent backup, the OpenCloud instance must be stopped before starting the backup process. After the backup is complete, the instance can be restarted
 
 There are two recommended approaches:
 
@@ -31,15 +35,12 @@ There are two recommended approaches:
 
   - Snapshots should be copied to secondary storage or used by backup software for additional security
 
--Backup software approach
+- Backup software approach
 
-    - If snapshots are not available, you can use any backup software of your choice
-
-    - For more details on data locations, refer to the Default Paths documentation
+- If snapshots are not available, you can use any backup software of your choice
+- For more details on data locations, refer to the Default Paths documentation
 
 ## Required backup components
-
-### A complete backup must include
 
 - Configuration data
 
@@ -61,7 +62,7 @@ There are two recommended approaches:
 
 ## Pure POSIX setup
 
-### If all data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem
+If all data (configuration, blobs, and metadata) is stored on a POSIX-compliant filesystem
 
 - Stop the OpenCloud instance
 
@@ -75,7 +76,7 @@ There are two recommended approaches:
 
 ## Distributed setup
 
-### If blobs are stored on S3, while configuration and metadata remain on a POSIX-compliant filesystem
+If blobs are stored on S3, while configuration and metadata remain on a POSIX-compliant filesystem
 
 - Stop the OpenCloud instance
 
