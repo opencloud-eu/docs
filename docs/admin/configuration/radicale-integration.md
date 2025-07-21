@@ -2,8 +2,11 @@
 sidebar_position: 12
 id: radicale-integration
 title: Calendar and Contacts Integration with Radicale
-description: 'How to enable Calendar and Contacts integration via Radicale in OpenCloud.'
+description: How to enable Calendar and Contacts integration via Radicale in OpenCloud.
+draft: false
 ---
+
+# Integration with Radicale
 
 OpenCloud is able to act as an authenticating reverse proxy for the open-source
 CalDAV and CardDAV Server [Radicale](https://radicale.org). With that, users
@@ -26,7 +29,7 @@ To use this feature you need at least OpenCloud Version 2.3.0. Earlier releases 
 some of the required features. This guide assumes that you already have a running
 deployment based on the `opencloud_full` deployment example.
 
-### 1. Configure the `.env` file to deploy Radicale
+### Configure the `.env` file to deploy Radicale
 
 In the root directory of the `opencloud_full` deployment example, usually `opencloud/deployments/examples/opencloud_full`,
 remove the `#` symbol from the line:
@@ -35,7 +38,7 @@ remove the `#` symbol from the line:
 #RADICALE=:radicale.yml
 ```
 
-### 2. Update the deployment
+### Update the deployment
 
 ```bash
 docker compose up -d
