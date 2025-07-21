@@ -20,7 +20,7 @@ nano .env
 
 Or use vim, code, or gedit as you prefer.
 
-## Add or Modify These Environment Variables
+## Add or modify these Environment Variables
 
 Adjust the following lines in your `.env` file according to your SMTP provider and requirements.  
 Note: `SMTP_TRANSPORT_ENCRYPTION` and `SMTP_INSECURE` may vary depending on your setup.
@@ -41,7 +41,7 @@ SMTP_INSECURE=true
 In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
 :::
 
-## Save and Exit
+## Save and exit
 
 For nano, press Ctrl + O to save and Ctrl + X to exit.
 
