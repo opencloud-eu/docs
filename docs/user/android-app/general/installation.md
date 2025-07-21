@@ -8,15 +8,15 @@ draft: true
 
 # Install OpenCloud Android app
 
-A short Tutorial how to install the OpenCloud Android App.
+Tutorial how to install the OpenCloud Android App.
 
 ## Play Store
 
-Open the **Play Store** on your Android Smartphone or Tablet.
+Open the Play Store on your Android Smartphone or Tablet.
 
 ## OpenCloud
 
-Search for **"OpenCloud"** or click the following link to go directly to the app:
+Search for "OpenCloud" or click the following link to go directly to the app:
 
    <!-- [OpenCloud on the Play Store](https://) -->
 
@@ -24,7 +24,7 @@ Search for **"OpenCloud"** or click the following link to go directly to the app
 
 ## Install
 
-Tap **"Get"** to install the app.
+Tap "Get" to install the app.
 
 ## App Icon
 
