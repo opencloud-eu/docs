@@ -30,7 +30,7 @@ Unzip the downloaded archive and copy the extracted folder into the web applicat
 By default, this path is:
 
 ```bash
-opencloud/services/web/assets/apps
+opencloud-compose/config/opencloud/apps
 ```
 
 ### Access in OpenCloud
@@ -44,7 +44,7 @@ Some OpenCloud apps require additional configuration — for example, the Extern
 These configurations can be managed in the following file:
 
 ```bash
-opencloud/deployments/examples/opencloud_full/config/opencloud/apps.yaml
+opencloud-compose/config/opencloud/apps/external-sites/manifest.json
 ```
 
 :::note
