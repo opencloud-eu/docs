@@ -13,6 +13,7 @@
 
 ### 👷 Admin Documentation
 
+- publish release notes 3.2.0 [[#403](https://github.com/opencloud-eu/docs/pull/403)]
 - rework admin getting started [[#397](https://github.com/opencloud-eu/docs/pull/397)]
 - Rework admin configuration docs [[#398](https://github.com/opencloud-eu/docs/pull/398)]
 - rework admin maintenance docs [[#399](https://github.com/opencloud-eu/docs/pull/399)]
