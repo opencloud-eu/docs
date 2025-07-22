@@ -44,4 +44,4 @@ Here are the steps to share files or folders with other members or groups intern
 
 - The shared members or groups are listed under “shared with” in the same window.
 
-Now you know how you share files and folders within your organization and manage access accordingly
+Now you know how you share files and folders within your organization and manage access accordingly.
