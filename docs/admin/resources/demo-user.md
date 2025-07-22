@@ -2,13 +2,15 @@
 sidebar_position: 5
 id: demo-user
 title: Demo User
+description: Demo User Overview
+draft: false
 ---
 
-# **Demo User Overview**
+# Demo User Overview
 
 This page introduces the pre-configured demo users available in OpenCloud. These users are designed to help you explore the platform’s features, test different roles, and experience OpenCloud from various perspectives without setting up new accounts.
 
-Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as **admin management, file sharing, and collaboration**.
+Each demo user has specific permissions and access levels, allowing you to simulate real-world scenarios such as admin management, file sharing, and collaboration.
 
 Below, you’ll find details about each user, including their roles and login credentials.
 
@@ -22,11 +24,11 @@ Below, you’ll find details about each user, including their roles and login cr
 
 ## Dennis Ritchie
 
-OpenCloud Username: **dennis**
+OpenCloud Username: dennis
 
-Role: **Admin**
+Role: Admin
 
-📌 **Co-developer of UNIX & inventor of the C programming language**
+Co-developer of UNIX & inventor of the C programming language
 
 <img src={require("./img/demo-user/dennis-ritchie.png").default} alt="Dennis Ritchie" width="200"/>
 
@@ -34,15 +36,13 @@ Role: **Admin**
 - Worked at Bell Labs from 1967, where he developed the first version of the Unix operating system
 - Died in 2011, but his influence on modern software development remains immeasurable
 
----
-
 ## Margaret Hamilton
 
-OpenCloud Username: **margaret**
+OpenCloud Username: margaret
 
-Role: **Space Admin**
+Role: Space Admin
 
-📌 **Software pioneer & NASA developer**
+Software pioneer & NASA developer
 
 <img src={require("./img/demo-user/margaret-hamilton.png").default} alt="Margaret Hamilton" width="200"/>
 
@@ -51,15 +51,13 @@ Role: **Space Admin**
 - Her work was crucial to the success of the Apollo 11 mission in 1969
 - From 1976 to 1984, she was the Managing Director of Higher Order Software (HOS)
 
----
-
 ## Alan Turing
 
-OpenCloud Username: **alan**
+OpenCloud Username: alan
 
-Role: **User**
+Role: User
 
-📌 **Father of modern computer science & codebreaker in the Second World War**
+Father of modern computer science & codebreaker in the Second World War
 
 <img src={require("./img/demo-user/alan-turing.png").default} alt="Alan Turing" width="200"/>
 
@@ -68,15 +66,13 @@ Role: **User**
 - Made a decisive contribution to the decryption of the German Enigma cipher
 - Was discriminated against and persecuted because of his homosexuality
 
----
-
 ## Lynn Conway
 
-OpenCloud Username: **lynn**
+OpenCloud Username: lynn
 
-Role: **User**
+Role: User
 
-📌 Computer scientist & microchip design pioneer
+Computer scientist & microchip design pioneer
 
 <img src={require("./img/demo-user/lynn-conway.png").default} alt="Lynn Conway" width="200"/>
 
@@ -86,15 +82,13 @@ Role: **User**
 - Professor of electrical engineering and computer science at the University of Michigan
 - Advocate for transgender rights and diversity in STEM fields
 
----
-
 ## Mary Kenneth Keller
 
-OpenCloud Username: **mary**
+OpenCloud Username: mary
 
-Role: **User**
+Role: User
 
-📌 **First woman with a PhD in computer science**
+First woman with a PhD in computer science
 
 <img src={require("./img/demo-user/mary-kenneth-keller.png").default} alt="Mary Kenneth Keller" width="200"/>
 

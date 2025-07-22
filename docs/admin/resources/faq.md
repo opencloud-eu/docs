@@ -2,25 +2,24 @@
 sidebar_position: 1
 id: faq
 title: FAQ
-draft: true
+description: Frequently asked questions FAQ
+draft: false
 ---
 
 # FAQ
 
-**Welcome to the frequently asked questions (FAQ). Here you will find answers to the most common questions.**
-
----
+Welcome to the frequently asked questions (FAQ). Here you will find answers to the most common questions.
 
 ## General Questions
 
 <details>
 <summary>What problem does OpenCloud solve for me?</summary>
 
-1. Simplified Administration
+### Simplified Administration
 
 OpenCloud is designed to be straightforward to set up and manage, allowing administrators to handle the system with minimal effort and without unnecessary complexity.
 
-2. Independent File-sharing
+### Independent File-sharing
 
 OpenCloud is designed to give you a privacy-focused alternative to mainstream platforms like Microsoft OneDrive or Google Drive, freeing you from reliance on big tech services and their data-collection practices.
 
@@ -152,7 +151,7 @@ Key Factors for Optimal Performance:
 <details>
 <summary>How difficult is it to set up, and is technical expertise required?</summary>
 
-One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See [https://docs.opencloud.eu/docs/category/getting-started-1](https://docs.opencloud.eu/docs/category/getting-started-1)
+One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See [the Quick Start](https://docs.opencloud.eu/docs/admin/intro)
 
 </details>
 
@@ -173,8 +172,8 @@ Yes.
 
 Yes, OpenCloud allows you customizations:
 
-- **Wordings**: You can replace specific terms, such as changing the word “Spaces” to “Datarooms” to better fit your terminology.
-- **Extensions**: The web UI also supports custom web extensions. Check out our developer documentation [here] to learn how to get started with creating and adding your own extensions and find existing extensions [here].
+- Wordings: You can replace specific terms, such as changing the word “Spaces” to “Datarooms” to better fit your terminology.
+- Extensions: The web UI also supports custom web extensions. Check out our developer documentation [here] to learn how to get started with creating and adding your own extensions and find existing extensions [here].
 
 </details>
 
@@ -185,11 +184,20 @@ Yes, OpenCloud allows you customizations:
 
 OpenCloud offers three main ways to share files, making it easy to collaborate and manage access:
 
-1. **Personal Share**: Share files with registered users within your organization. You can assign permissions such as view, edit, or download, providing flexible control over file access.
-2. **Share via Link**: Share files with anyone, even outside your organization, by generating a link. No account is required for accessing the file.
-3. **Spaces**: Spaces are user-independent datarooms that belong to the organization rather than an individual. This ensures files remain within the organization, even if users leave. Examples of Spaces include school classes, collaborative projects, or organizational units like Marketing, Sales, or Finance. Spaces are easier for admins to manage, as they can be self-managed by designated users.
+### Personal Share
 
-**Special Feature: Secret File Drop**
+Share files with registered users within your organization. You can assign permissions such as view, edit, or download, providing flexible control over file access.
+
+### Share via Link
+
+Share files with anyone, even outside your organization, by generating a link. No account is required for accessing the file.
+
+### Spaces
+
+Spaces are user-independent datarooms that belong to the organization rather than an individual. This ensures files remain within the organization, even if users leave. Examples of Spaces include school classes, collaborative projects, or organizational units like Marketing, Sales, or Finance. Spaces are easier for admins to manage, as they can be self-managed by designated users.
+
+### Special Feature: Secret File Drop
+
 The Secret File Drop allows anonymous users to securely upload files (e.g., homework, photos or even whistleblower material) without needing an account.
 
 </details>
@@ -242,9 +250,9 @@ Yes, the following storage can be used:
 <details>
 <summary>How often is OpenCloud updated, and how are updates delivered?</summary>
 
-**Download updates** on download.opencloud.eu or via docker hub.
+Download updates on download.opencloud.eu or via docker hub.
 
-OpenCloud is released in three different release types: **Production, Rolling and Daily**. Each of them is targeted to a specific use case and audience group.
+OpenCloud is released in three different release types: Production, Rolling and Daily. Each of them is targeted to a specific use case and audience group.
 
 </details>
 
@@ -296,7 +304,7 @@ OpenCloud provides users with the ability to trigger a GDPR Export in a self-ser
 <details>
 <summary>Does OpenCloud offer multi-language support?</summary>
 
-Yes, OpenCloud fully maintains both **English** and **German** languages. Additionally, the web UI offers support for other languages, which are listed below. Please note that these languages are not 100% translated and are maintained by the community on a best-effort basis. We appreciate the contributions from our community to help improve the language support over time.
+Yes, OpenCloud fully maintains both English and German languages. Additionally, the web UI offers support for other languages, which are listed below. Please note that these languages are not 100% translated and are maintained by the community on a best-effort basis. We appreciate the contributions from our community to help improve the language support over time.
 
 Community maintained languages:
 
