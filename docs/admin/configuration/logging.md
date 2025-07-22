@@ -2,17 +2,13 @@
 sidebar_position: 13
 id: logging
 title: Logging
+description: Logging in OpenCloud
+draft: false
 ---
 
 # Logging in OpenCloud
 
----
-
-## Introduction
-
 Logging helps monitor OpenCloud’s health and diagnose issues. Log output varies by level, from minimal to detailed. By default, logs are written to `stderr`. In Docker deployments, logs are accessible via `docker logs`.
-
----
 
 ## Log Levels
 
@@ -39,8 +35,6 @@ Routine events that confirm expected behavior and operation.
 ### DEBUG
 
 Highly detailed messages for diagnosing problems. Use cautiously in production due to verbosity.
-
----
 
 ## Request Correlation
 
