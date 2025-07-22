@@ -2,40 +2,33 @@
 sidebar_position: 1
 id: docker
 title: Docker
-description: 'Classic docker setup.'
+description: Classic docker setup.
+draft: false
 ---
 
 # Docker
 
-## Spin up a temporary local instance of OpenCloud using **Docker**
+Spin up a temporary local instance of OpenCloud using Docker
 
----
+## Prerequisites
 
-### **Prerequisites:**
+- Linux, Mac or Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+- [Docker](https://docs.docker.com/compose/install/)
 
-- **Linux**, **Mac** or **Windows** Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-- [**Docker**](https://docs.docker.com/compose/install/)
-
----
-
-### 1. Create Required Directories for Bind Mounts
+## Create Required Directories for Bind Mounts
 
 ```bash
 mkdir -p $HOME/opencloud/opencloud-config
 mkdir -p $HOME/opencloud/opencloud-data
 ```
 
----
-
-### 2. Pull OpenCloud Image
+## Pull OpenCloud Image
 
 ```bash
 docker pull opencloudeu/opencloud-rolling:latest
 ```
 
----
-
-### 3. Initialize OpenCloud (First-time Setup)
+## Initialize OpenCloud (First-time Setup)
 
 ```bash
 docker run --rm -it \
@@ -49,9 +42,7 @@ You can set your own password using `IDM_ADMIN_PASSWORD=your_password`. If not s
 
 <img src={require("./../img/quick-guide/docker-opencloud-init.png").default} alt="Admin general" width="1920"/>
 
----
-
-### 4. Start OpenCloud
+## Start OpenCloud
 
 ```bash
 docker run \
@@ -67,27 +58,21 @@ docker run \
     opencloudeu/opencloud-rolling:latest
 ```
 
----
-
-### 5. Login
+## Login
 
 Login with your browser:
 
 - [https://localhost:9200](https://localhost:9200)
-- user: **admin**
-- password: **admin**
+- user: admin
+- password: admin
 
 <img src={require("./../img/quick-guide/quick-login.png").default} alt="Admin general" width="1920"/>
 
----
-
-### 6. Conclusion
+## Conclusion
 
 Your OpenCloud server is now running and ready to use 🚀
 
----
-
-### Troubleshooting
+## Troubleshooting
 
 If you encounter any issues or errors, try finding a solution here:
 
