@@ -1,23 +1,26 @@
 ---
 sidebar_position: 3
 id: migrate
-title: 'Migrate'
-description: 'Guide to migrating data using rclone.'
+title: Migrate
+description: Guide to migrating data using rclone.
+draft: false
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-## 🚀 Migrate Personal Space Data to OpenCloud Using rclone
+# Migrate
+
+Migrate Personal Space Data to OpenCloud Using rclone
 
 This guide will help you migrate personal space data from `NextCloud` and `oCIS` to `OpenCloud` using `rclone`. Follow these steps carefully to ensure a smooth migration!
 
-### 1. Generate users token using CLI or API
+## Generate users token using CLI or API
 
 <Tabs>
 <TabItem value="opencloud" label="OpenCloud">
 
-### Run OpenCloud with the following configuration
+## Run OpenCloud with the following configuration
 
 Modify `.env` file:
 
@@ -45,9 +48,7 @@ Generate an authentication token for a user (e.g., `alan`) with expiration (`h`,
 opencloud auth-app create --user-name=alan --expiration=72h
 ```
 
----
-
-### Generate user token using API
+## Generate user token using API
 
 Requires additional configuration! Start the server with:
 
@@ -79,7 +80,7 @@ Enable `auth-app` service:
 PROXY_ENABLE_APP_AUTH="true"
 ```
 
-### Generate user token using CLI
+## Generate user token using CLI
 
 Access the oCIS container:
 
@@ -93,9 +94,7 @@ Generate an authentication token for a user (e.g., `einstein`) with expiration (
 ocis auth-app create --user-name=einstein --expiration=72h
 ```
 
----
-
-### Generate user token using API
+## Generate user token using API
 
 Requires additional configuration! Start the server with:
 
@@ -122,23 +121,17 @@ Create a new App Password
 </TabItem>
 </Tabs>
 
----
+## Install rclone
 
-### 2. Install rclone
+Download and install rclone by following the official guide: [rclone.org/install](https://rclone.org/install/)
 
-Download and install rclone by following the official guide: 🔗[**rclone.org/install**](https://rclone.org/install/)
-
----
-
-### 3. Encrypt Authentication Tokens 🔒
+## Encrypt Authentication Tokens
 
 ```bash
 rclone obscure <token>
 ```
 
----
-
-### 4. Create the rclone Configuration 🛠️
+## Create the rclone Configuration
 
 Edit the rclone configuration file:
 
@@ -146,7 +139,7 @@ Edit the rclone configuration file:
 nano ~/.config/rclone/rclone.conf
 ```
 
-📌 Example Configuration:
+- Example Configuration
 
 ```bash
 [opencloud-admin]
@@ -205,9 +198,7 @@ description = nc-bob
 
 ```
 
----
-
-### 5. Copy Data to OpenCloud
+## Copy Data to OpenCloud
 
 Use `rclone copy` to transfer data from `oCIS` and `Nextcloud` to `OpenCloud`:
 
@@ -218,25 +209,21 @@ rclone copy nc-bob:/ opencloud-alan:/ --no-check-certificate -P  # Copy Nextclou
 
 ```
 
----
+## Migration Results and Limitations
 
-### 6. Migration Results and Limitations
+Congratulations! You have successfully migrated personal space data to OpenCloud!
 
-🎉 Congratulations! You have successfully migrated personal space data to OpenCloud! 🚀
+- Successfully Migrated
+  - Personal space files
 
-✅ Successfully Migrated:
+- Not Migrated
+  - Shared files
+  - Public links
+  - Project spaces
+  - Trash-bin contents
+  - File versions
+  - Metadata
 
-- Personal space files
-
-❌ Not Migrated:
-
-- Shared files
-- Public links
-- Project spaces
-- Trash-bin contents
-- File versions
-- Metadata
-
-### 7. Security Step: Delete Tokens
+## Security Step: Delete Tokens
 
 Once the migration is complete, please delete tokens to prevent unauthorized access!

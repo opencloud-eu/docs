@@ -1,17 +1,18 @@
 ---
 sidebar_position: 4
 id: uninstall
-title: 'Uninstall'
-description: 'Guide to uninstall OpenCloud.'
+title: Uninstall
+description: Guide to uninstall OpenCloud.
+draft: false
 ---
 
 # Uninstall OpenCloud with Docker Compose
 
-> ⚠️ **Warning:** This guide will completely remove all OpenCloud data. Make sure to back up any important files before proceeding.
+:::warning
+This guide will completely remove all OpenCloud data. Make sure to back up any important files before proceeding.
+:::
 
----
-
-## Step 1: Stop and Remove Docker Containers
+## Stop and Remove Docker Containers
 
 Navigate to your `opencloud-compose` directory (where your `docker-compose.yml` file is located), then run:
 
@@ -25,7 +26,7 @@ To also remove unnamed volumes and orphan containers:
 docker compose down --volumes --remove-orphans
 ```
 
-## Step 2: Remove Docker Volumes
+## Remove Docker Volumes
 
 To check your existing volumes:
 
@@ -51,7 +52,7 @@ Or to clean up all unused volumes (be careful!):
 docker volume prune
 ```
 
-## Step 3: Delete Mounted Directories (if used)
+## Delete Mounted Directories (if used)
 
 If your .env referenced local folders such as /mnt/opencloud/data, you should delete those manually:
 
@@ -62,7 +63,7 @@ sudo rm -rf /mnt/opencloud/config
 
 Adjust the paths to match your setup.
 
-## Step 4: Remove the Compose Project Folder (Optional)
+## Remove the Compose Project Folder (Optional)
 
 If you want to delete the entire project directory:
 

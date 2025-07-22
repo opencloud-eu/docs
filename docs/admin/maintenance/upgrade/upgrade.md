@@ -1,16 +1,19 @@
 ---
 sidebar_position: 1
 id: update
-title: 'Upgrade'
-description: '🔄 Keep your setup up to date with the latest features!'
+title: Upgrade
+description: Keep your setup up to date with the latest features!
+draft: false
 ---
+
+# Upgrade
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 This guide provides steps to upgrade OpenCloud for both [docker](docs/admin/getting-started/container/docker.md) and [docker compose](docs/admin/getting-started/container/docker-compose/docker-compose-base.md)
 
-### 1. Stop OpenCloud
+## Stop OpenCloud
 
 Stop the currently running OpenCloud instance:
 
@@ -27,23 +30,17 @@ Stop the currently running OpenCloud instance:
   </TabItem>
 </Tabs>
 
----
-
-### 2. Backup Config and Data
+## Backup Config and Data
 
 It is recommended to create a [backup](../backup.md) before proceeding with the upgrade.
 
----
-
-### 3. Pull the new Opencloud version
+## Pull the new Opencloud version
 
 ```bash
 docker pull opencloudeu/opencloud:{tag}
 ```
 
----
-
-### 4. Verify Configuration Changes
+## Verify Configuration Changes
 
 If upgrading from an older release, check for required configuration changes:
 
@@ -61,9 +58,7 @@ If you see `no changes, your config is up to date`, no further action is needed.
 
 <img src={require("../img/init-diff.png").default} alt="init -diff" width="1920"/>
 
----
-
-### 5. Start OpenCloud with updated image
+## Start OpenCloud with updated image
 
 <Tabs groupId="deployment">
   <TabItem value="docker" label="docker">
@@ -88,8 +83,6 @@ If you see `no changes, your config is up to date`, no further action is needed.
   </TabItem>
 </Tabs>
 
----
-
-### 6. Conclusion
+## Conclusion
 
 Make sure that all previously created data, users, shared files, public links exist.
