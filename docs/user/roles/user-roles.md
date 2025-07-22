@@ -8,14 +8,14 @@ draft: false
 
 # User Roles in OpenCloud
 
-| Role          | Personal Space | create Spaces | can be Space Manager | manage Users and Groups |
-| :------------ | :------------: | :-----------: | :------------------: | :---------------------: |
-| Administrator |       x        |       x       |          x           |            x            |
-| Space Admin   |       x        |       x       |          x           |            -            |
-| User          |       x        |       -       |          x           |            -            |
-| User Light    |       -        |       -       |          x           |            -            |
+| Role        | Personal Space | create Spaces | can be Space Manager | manage Users and Groups |
+| :---------- | :------------: | :-----------: | :------------------: | :---------------------: |
+| Admin       |       x        |       x       |          x           |            x            |
+| Space Admin |       x        |       x       |          x           |            -            |
+| User        |       x        |       -       |          x           |            -            |
+| User Light  |       -        |       -       |          x           |            -            |
 
-## Administrator
+## Admin
 
 The Administrator role in OpenCloud has the same abilities as a Space Admin but in addition it has special permissions to manage users, groups, and system settings.
 However, administrators do not have direct access to Space data or the ability to add users to Spaces where they don't have the "can manage" role. Below are the key actions an administrator can perform:

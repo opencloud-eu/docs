@@ -14,7 +14,7 @@ draft: false
 | can edit   |  x   |    x     |   x    |  x   |  x  |   x    |       -        |           -            |     -      |      -       |
 | can manage |  x   |    x     |   x    |  x   |  x  |   x    |       x        |           x            |     x      |      x       |
 
-## Share Roles and Permissions
+## Space Roles and Permissions
 
 In a Space, members can have different roles that give them different levels of access.
 

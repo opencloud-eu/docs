@@ -2,9 +2,11 @@
 sidebar_position: 3
 id: share-roles
 title: Rollen beim Teilen
+description: Rollen beim Teilen in OpenCloud
+draft: false
 ---
 
-## Rollen beim teilen in OpenCloud
+# Rollen beim teilen in OpenCloud
 
 | Rolle                  | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | nur doc, img, pdf mit Wasserzeichen anzeigen |
 | :--------------------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------------------------------: |
@@ -37,4 +39,4 @@ In einem Space können Mitglieder verschiedene Rollen haben, die bestimmen, was 
 - Sie können Dateien und Ordner bearbeiten, hinzufügen und löschen.
 - Voller Zugriff auf die Änderung gemeinsamer Inhalte.
 
-**Jede Rolle gibt eine andere Zugriffsstufe, so dass jeder Benutzer die richtigen Berechtigungen erhält!**
+Jede Rolle gibt eine andere Zugriffsstufe, so dass jeder Benutzer die richtigen Berechtigungen erhält!
