@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-21
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-22
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -13,6 +13,10 @@
 
 ### 👷 Admin Documentation
 
+- rework admin getting started [[#397](https://github.com/opencloud-eu/docs/pull/397)]
+- Rework admin configuration docs [[#398](https://github.com/opencloud-eu/docs/pull/398)]
+- rework admin maintenance docs [[#399](https://github.com/opencloud-eu/docs/pull/399)]
+- rework admin resources docs [[#400](https://github.com/opencloud-eu/docs/pull/400)]
 - rework admin welcome docs [[#396](https://github.com/opencloud-eu/docs/pull/396)]
 - update release list [[#387](https://github.com/opencloud-eu/docs/pull/387)]
 - add tutorial for OpenCloud with reverse Proxy [[#365](https://github.com/opencloud-eu/docs/pull/365)]
