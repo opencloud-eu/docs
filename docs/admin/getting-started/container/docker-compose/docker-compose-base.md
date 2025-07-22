@@ -2,18 +2,19 @@
 sidebar_position: 1
 id: docker-compose-base
 title: Docker Compose
-description: '🌟 Full-blown featureset including web office.'
+description: Full-blown featureset including web office.
+draft: false
 ---
 
 # OpenCloud with Docker Compose
 
 Install a internet facing OpenCloud with SSL certification with Docker Compose.
 
-This installation documentation is for **Ubuntu and Debian** systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
+This installation documentation is for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
 
-## **Prerequisites**
+## Prerequisites
 
-- **Four domains** pointing to your server:
+- Four domains pointing to your server:
   - `cloud.YOUR.DOMAIN` → OpenCloud frontend
   - `collabora.YOUR.DOMAIN` → Collabora Online Server
   - `wopiserver.YOUR.DOMAIN` → WOPI server for document editing
@@ -21,11 +22,9 @@ This installation documentation is for **Ubuntu and Debian** systems. The softwa
 
   Alternatively, you can use a wildcard domain (`*.YOUR.DOMAIN`)
 
-- A **hosted server** (e.g., Hetzner, AWS, or your own VPS) with Linux and SSH access
+- A hosted server (e.g., Hetzner, AWS, or your own VPS) with Linux and SSH access
 
----
-
-## 1. Connect to Your Server
+## Connect to Your Server
 
 Log into your server via SSH:
 
@@ -33,7 +32,7 @@ Log into your server via SSH:
 ssh root@YOUR.SERVER.IP
 ```
 
-## 2. Install Docker
+## Install Docker
 
 Update your system and install Docker.
 
@@ -51,7 +50,7 @@ Once Docker is installed, enable and start the service:
 systemctl enable docker && systemctl start docker
 ```
 
-## 3. Clone the OpenCloud Repository
+## Clone the OpenCloud Repository
 
 Download the necessary configuration files:
 
@@ -59,42 +58,43 @@ Download the necessary configuration files:
 git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
-## 4. Configure the .env File for Staging Certificates
+## Configure the .env File for Staging Certificates
 
 Before requesting real SSL certificates, test the setup with Let's Encrypt’s staging environment.
 
-Navigate to the OpenCloud configuration folder:
+### Navigate to the OpenCloud configuration folder
 
 ```bash
 cd opencloud-compose
 ```
 
-Create environment file:
+### Create environment file
 
 ```bash
 cp .env.example .env
 ```
 
-> **Note:** The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
-> <br/>
+:::note
+The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
+:::
 
 Edit the `.env` file with the editor of your choice:
 
-In our example we use nano
+### In our example we use nano
 
 ```bash
 nano .env
 ```
 
-Modify these settings:
+## Modify these settings
 
-### ✅ Disable insecure mode
+### Disable insecure mode
 
 ```bash
 # INSECURE=true
 ```
 
-### ✅ Set your domain names
+### Set your domain names
 
 ```bash
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
@@ -103,25 +103,25 @@ COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
 
-### ✅ Set your admin password
+### Set your admin password
 
 ```bash
 ADMIN_PASSWORD=YourSecurePassword
 ```
 
-### ✅ Set your email for SSL certification
+### Set your email for SSL certification
 
 ```bash
 TRAEFIK_ACME_MAIL=your@email.com
 ```
 
-### ✅ Use Let's Encrypt staging certificates (for testing)
+### Use Let's Encrypt staging certificates (for testing)
 
 ```bash
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
-### ✅ Set your deployment options
+### Set your deployment options
 
 For Example without Collabora:
 
@@ -131,16 +131,14 @@ COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 
 Save and exit.
 
-### 🚨 Production Setup Consideration
+### Production Setup Consideration
 
 :::caution Production Setup Recommended
-
 By default, OpenCloud stores configuration and data inside internal Docker volumes.  
-This works fine for local development or quick evaluations — **but is not suitable for production environments**.
-
+This works fine for local development or quick evaluations — but is not suitable for production environments.
 :::
 
-#### 📦 Mount Persistent Volumes
+#### Mount Persistent Volumes
 
 In production, you should mount persistent local directories for configuration and data to ensure:
 
@@ -166,7 +164,7 @@ sudo chown -R 1000:1000 /your/local/path/opencloud
 
 :::
 
-If these variables are left unset, Docker will use internal volumes, which **do not persist** if the containers are removed — not recommended for real-world use.
+If these variables are left unset, Docker will use internal volumes, which do not persist if the containers are removed — not recommended for real-world use.
 
 :::caution Security Warning
 
@@ -176,7 +174,7 @@ This can pose a security risk in shared or multi-user environments. Make sure to
 
 :::
 
-## 5. Start OpenCloud
+## Start OpenCloud
 
 Launch OpenCloud using Docker Compose:
 
@@ -186,7 +184,7 @@ docker compose up -d
 
 This will start all required services in the background.
 
-## 6. Verify SSL Certification
+## Verify SSL Certification
 
 In your web browser, visit:
 
@@ -201,24 +199,22 @@ Example with Chrome browser:
 
 <img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
 
-✅ Check the certificate details to confirm it’s from Let's Encrypt Staging.
+- Check the certificate details to confirm it’s from Let's Encrypt Staging.
 
-<img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
-<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
+  <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
+  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
 
-## 7. Apply a Real SSL Certificate
+## Apply a Real SSL Certificate
 
 Once the staging certificate works, switch to a production certificate.
 
-### Steps
-
-#### 1️⃣ Stop Docker Compose
+### Stop Docker Compose
 
 ```bash
 docker compose down
 ```
 
-#### 2️⃣ Remove old staging certificates
+### Remove old staging certificates
 
 ```bash
 rm -r certs
@@ -226,7 +222,7 @@ rm -r certs
 
 (If you changed volume names, adjust accordingly.)
 
-#### 3️⃣ Disable staging mode in `.env`
+### Disable staging mode in `.env`
 
 ```bash
 nano .env
@@ -238,7 +234,7 @@ Comment the staging server:
 # TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
-#### 4️⃣ Restart OpenCloud with a real SSL certificate
+### Restart OpenCloud with a real SSL certificate
 
 ```bash
 docker compose up -d
@@ -248,7 +244,7 @@ docker compose up -d
 
 <img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
 
-## 8. Log into OpenCloud
+## Log into OpenCloud
 
 Open a browser and visit:
 
@@ -258,9 +254,9 @@ https://cloud.YOUR.DOMAIN
 
 Login with:
 
-**Username:** `admin`
+Username: `admin`
 
-**Password:** (your password)
+Password: (your password)
 
 <img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
 
