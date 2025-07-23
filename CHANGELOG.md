@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-22
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-23
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -25,6 +25,12 @@
 
 ### 👤 User Documentation
 
+- rework general de [[#408](https://github.com/opencloud-eu/docs/pull/408)]
+- rework roles de [[#407](https://github.com/opencloud-eu/docs/pull/407)]
+- rework spaces de [[#406](https://github.com/opencloud-eu/docs/pull/406)]
+- ajdust intro [[#402](https://github.com/opencloud-eu/docs/pull/402)]
+- rework shares de [[#405](https://github.com/opencloud-eu/docs/pull/405)]
+- rework files and folders de [[#404](https://github.com/opencloud-eu/docs/pull/404)]
 - Team rework android [[#401](https://github.com/opencloud-eu/docs/pull/401)]
 - Rework user sharing dokus [[#393](https://github.com/opencloud-eu/docs/pull/393)]
 - Rework user spaces dokus [[#394](https://github.com/opencloud-eu/docs/pull/394)]
