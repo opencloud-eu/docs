@@ -30,7 +30,7 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 
   or
 
-- Open the three-dot menu and select Delete
+- open the three-dot menu and select Delete
 
   <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="400"/>
 

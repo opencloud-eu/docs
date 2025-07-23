@@ -57,7 +57,7 @@ Here you will find information about the different roles that can be assigned.
 
 Here you will find information on what options admins have and how you can use them.
 
-### What is OpenCloud?
+## What is OpenCloud?
 
 OpenCloud is the file sharing and collaboration solution of the Heinlein Group.
 
@@ -65,7 +65,6 @@ Through intelligent file management and a strong open source community, files be
 structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and
 work together on data anytime, anywhere without barriers, but with a lot of productivity.
 
-### How can I use OpenCloud?
+## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the "Admin Documentation" under "Quick
-Start".
+Instructions on how to install and set up your own OpenCloud can be found in the "Admin Documentation" under "Getting-Started".

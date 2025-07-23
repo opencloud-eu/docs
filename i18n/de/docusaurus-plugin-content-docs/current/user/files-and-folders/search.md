@@ -2,30 +2,24 @@
 sidebar_position: 4
 id: search
 title: Suche
+description: Nutzen der Suche in OpenCloud
+draft: false
 ---
 
-# Suche
-
-## Die Suchleiste in OpenCloud verwenden
+# Die Suchleiste in OpenCloud verwenden
 
 Sie können die Suchleiste in der oberen Leiste verwenden, um Dateien und Inhalte schnell zu finden.
 
-### So funktioniert die Suche
+## So funktioniert die Suche
 
-#### Suchleiste finden
-
-- Die **Suchleiste** befindet sich am oberen Rand der **Top-Bar** in der **Web-Oberfläche**.
+- Die Suchleiste befindet sich am oberen Rand der Top-Bar in der Web-Oberfläche.
   <img src={require("./img/search/searchbar.png").default} width="1920"/>
 
-#### Suchbereich auswählen
-
-- Klicken Sie auf das **Dropdown-Menü** neben der **Suchleiste**.
+- Klicken Sie auf das Dropdown-Menü neben der Suchleiste.
 - Wählen Sie, ob Sie in allen Dateien oder nur im aktuellen Ordner suchen möchten.
   <img src={require("./img/search/drop-down-menu-searchbar.png").default} width="500"/>
 
-#### Suchfunktion
-
-- Diese sucht sowohl nach Dateinamen als auch nach dem Inhalt der Dateien, um **relevante Ergebnisse** anzuzeigen.
+- Die Suchfunktion sucht sowohl nach Dateinamen als auch nach dem Inhalt der Dateien, um relevante Ergebnisse anzuzeigen.
   <img src={require("./img/search/search-example.png").default} width="500"/>
 
-**Mit diesen Schritten finden Sie Ihre Dateien und Ordner schnell und effizient!**
+Mit diesen Schritten finden Sie Ihre Dateien und Ordner schnell und effizient!
