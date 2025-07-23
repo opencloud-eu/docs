@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.42.0](https://github.com/opencloud-eu/docs/releases/tag/1.42.0) - 2025-07-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- rework desktop and add german screenshots [[#411](https://github.com/opencloud-eu/docs/pull/411)]
+
 ## [1.41.0](https://github.com/opencloud-eu/docs/releases/tag/1.41.0) - 2025-07-23
 
 ### ❤️ Thanks to all contributors! ❤️
