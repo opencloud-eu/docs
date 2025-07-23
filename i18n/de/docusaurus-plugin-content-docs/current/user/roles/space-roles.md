@@ -6,11 +6,13 @@ title: Rollen für Spaces
 
 ### Rollen für Spaces in OpenCloud
 
-| Role       | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | Mitglieder verwalten | deaktivieren / aktivieren Space | Quota bearbeiten | Space löschen |
-| :--------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------: | :-----------------------------: | :--------------: | :-----------: |
-| can view   |    x     |       x       |     -     |     -      |     -     |    -    |          -           |                -                |        -         |       -       |
-| can edit   |    x     |       x       |     x     |     x      |     x     |    x    |          -           |                -                |        -         |       -       |
-| can manage |    x     |       x       |     x     |     x      |     x     |    x    |          x           |                x                |        x         |       x       |
+| Role            | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | Mitglieder verwalten | deaktivieren / aktivieren Space | Quota bearbeiten | Space löschen |
+| :-------------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------: | :-----------------------------: | :--------------: | :-----------: |
+| Kann anzeigen   |    x     |       x       |     -     |     -      |     -     |    -    |          -           |                -                |        -         |       -       |
+| Kann bearbeiten |    x     |       x       |     x     |     x      |     x     |    x    |          -           |                -                |        -         |       -       |
+| Kann verwalten  |    x     |       x       |     x     |     x      |     x     |    x    |          x           |                x                |        x         |       x       |
+
+## Space Rollen und Berechtigungen
 
 In einem Space können Mitglieder verschiedene Rollen haben, die ihnen unterschiedliche Zugriffsebenen geben.
 
@@ -27,7 +29,7 @@ Mit dieser Rolle kann das Mitglied alles tun, was ein „Can View“-Mitglied tu
 - Löschen von Dateien und Ordnern, einschließlich ihrer Historie
 - Gelöschte Dateien wiederherstellen
 
-### Verwalten können
+### Kann verwalten
 
 Diese Rolle verleiht dem Mitglied alle Fähigkeiten von „Kann bearbeiten“, plus:
 
@@ -37,4 +39,4 @@ Diese Rolle verleiht dem Mitglied alle Fähigkeiten von „Kann bearbeiten“, p
 - Bearbeiten der Quote des Spaces
 - Löschen des Spaces
 
-**Jede Rolle bestimmt, was ein Mitglied innerhalb des Spaces tun kann!**
+Jede Rolle bestimmt, was ein Mitglied innerhalb des Spaces tun kann!
