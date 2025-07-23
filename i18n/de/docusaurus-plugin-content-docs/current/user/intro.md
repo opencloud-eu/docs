@@ -19,50 +19,46 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
 Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 
-### Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
-#### Quick-Guide
+### Benutzeroberfläche und Navigation
 
-Hier finden Sie einen "Quick-Guide", wie Sie in wenigen Minuten eine eigene OpenCloud erstellen können.
+Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungsmöglichkeiten und Ansichtsmodi.
 
-#### Dateien & Ordner
+### Verwalten von Dateien und Ordner
 
-Hier finden Sie Informationen rund um die Verwaltung von Dateien & Ordnern.
+Hier finden Sie Informationen zur Verwaltung von Dateien und Ordnern.
 
-#### Desktop-Client
+### Teilen von Dateien und Ordner
 
-Hier finden Sie Informationen zur Installation & Einrichtung des Desktop-Clients.
+Hier erfahren Sie, wie Sie Dateien und Ordner freigeben können.
 
-#### Rollen
+### Arbeiten im Team mit Spaces
 
-Hier finden Sie Informationen zu den verschiedenen Rollen, die vergeben werden können.
+Hier finden Sie Informationen zur Arbeit mit Spaces.
 
-#### Spaces
+### OpenCloud Desktop
 
-Hier finden Sie Informationen für den Umgang mit Spaces.
+Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
 
-#### Teilen
+### OpenCloud iOS App
 
-Hier finden Sie Informationen wie und auf welche Weise man Dateien & Ordner teilen kann.
+Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
 
-#### Allgemein
+### Rollen
 
-Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Viewmodes.
+Hier erfahren Sie mehr über die verschiedenen zuweisbaren Rollen.
 
-#### Admin
+### Administration von OpenCloud
 
-Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
+Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutzungsmöglichkeiten.
 
-### Was ist OpenCloud?
+## Was ist OpenCloud?
 
-OpenCloud ist die Filesharing & Kollaborations-Lösung der Heinlein Gruppe.
+OpenCloud ist die File-Sharing- und Collaboration-Lösung der Heinlein Gruppe.
 
-Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen –
-effektiv strukturiert und langfristig nutzbar.<br/>
-Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen
-und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
+Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und überall ohne Barrieren, aber mit hoher Produktivität auf Daten zugreifen und gemeinsam daran arbeiten.
 
-### Wie kann ich OpenCloud nutzen?
+## Wie kann ich OpenCloud nutzen?
 
-Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "
-User-Dokumentation" unter "Quick-Guide".
+Eine Anleitung zur Installation und Einrichtung einer eigenen OpenCloud-Instanz finden
