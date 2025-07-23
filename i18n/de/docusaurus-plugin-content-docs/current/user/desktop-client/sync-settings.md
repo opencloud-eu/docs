@@ -2,57 +2,61 @@
 sidebar_position: 4
 id: sync-settings
 title: Synchronisations Einstellungen
+description: Zugriff auf die Synchronisation Einstellungen
+draft: false
 ---
 
-## Zugriff auf die Synchronisierungseinstellungen
+# Zugriff auf die Synchronisationseinstellungen
 
-1. Öffnen Sie den **OpenCloud Desktop**
-2. Gehen Sie zur **Kontoansicht**
-3. Klicken Sie auf das **Drei-Punkte-Menü (...)** neben dem Bereich, den Sie konfigurieren möchten
+## Synchronisations Einstellungen
 
-<!-- <img src={require("./img/sync-settings/sync-settings-three-dot.png").default} alt="Admin spaces" width="400"/> -->
+- Öffnen Sie den OpenCloud Desktop
+- Gehen Sie zur Kontoansicht
+- Klicken Sie auf das Drei-Punkte-Menü (...) neben dem Bereich, den Sie konfigurieren möchten
 
-4. Wählen Sie eine der folgenden Optionen:
+<img src={require("./img/sync-settings/sync-settings-three-dot.png").default} alt="Admin spaces" width="400"/>
 
-## **Synchronisationsoptionen**
+Wählen Sie eine der folgenden Optionen:
 
-<!-- <img src={require("./img/sync-settings/sync-settings-menu.png").default}  width="400"/> -->
+### Synchronisationsoptionen
+
+<img src={require("./img/sync-settings/sync-settings-menu.png").default} width="400"/>
 
 ### Im Finder anzeigen
 
-- Öffnet den ausgewählten Space direkt in Ihrem **File Explorer (Windows)** oder **Finder (Mac)**
+- Öffnet den ausgewählten Space direkt in Ihrem File Explorer (Windows) oder Finder (Mac)
 
 ### Im Webbrowser anzeigen
 
-- Öffnet den Bereich in Ihrem **Webbrowser**
-- Wenn Sie nicht eingeloggt sind, müssen Sie sich eventuell erst **anmelden**
+- Öffnet den Bereich in Ihrem Webbrowser
+- Wenn Sie nicht eingeloggt sind, müssen Sie sich eventuell erst anmelden
 
-### Synchronisierung jetzt erzwingen
+### Jetzt synchronisieren
 
-- Erzwingt manuell eine **sofortige Synchronisation** des Spaces
+- Erzwingt manuell eine sofortige Synchronisation des Spaces
 - Nützlich, wenn Sie sicherstellen wollen, dass alle Änderungen sofort hochgeladen/heruntergeladen werden
 
-### Synchronisierung anhalten
+### Synchronisation pausieren
 
-- **Stoppt** vorübergehend die **Synchronisation** für den Space.
-- Kann jederzeit durch Auswahl von **Synchronisation fortsetzen** wieder aufgenommen werden.
+- Stoppt vorübergehend die Synchronisation für den Space.
+- Kann jederzeit durch Auswahl von Synchronisation fortsetzen wieder aufgenommen werden.
 
-### Sync-Ordner-Verbindung entfernen
+### Space entfernen
 
-- Stoppt die Synchronisierung des Spaces, löscht aber **keine lokalen Dateien**
+- Stoppt die Synchronisierung des Spaces, löscht aber keine lokalen Dateien
 - Der Space verbleibt auf dem Server, und Sie können ihn später wieder hinzufügen
 
-### Auswählen, was synchronisiert werden soll
+### Wähle, was du synchronisiert haben möchtest
 
-- Öffnet ein Fenster, in dem Sie **bestimmte Ordner** aus dem Space auswählen können, die synchronisiert werden sollen
-- Hilft **Speicherplatz zu sparen**, indem nur notwendige Dateien synchronisiert werden
+- Öffnet ein Fenster, in dem Sie bestimmte Ordner aus dem Space auswählen können, die synchronisiert werden sollen
+- Hilft Speicherplatz zu sparen, indem nur notwendige Dateien synchronisiert werden
 
-<!-- <img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="choose what to sync" width="400"/>-->
+<img src={require("./img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="choose what to sync" width="400"/>
 
-**Hinweis:** Dateien und Ordner, die nicht synchronisiert werden, sind **auf Ihrem lokalen Computer nicht mehr verfügbar**.
+:::note
+Dateien und Ordner, die nicht synchronisiert werden, sind auf Ihrem lokalen Computer nicht mehr verfügbar.
+:::
 
----
-
-### **Tipp**
-
-Durch die Anpassung dieser Einstellungen können Sie **den Speicherplatz und die Netzwerknutzung** optimieren und sicherstellen, dass nur die Dateien synchronisiert werden, die Sie benötigen.
+:::tip
+Durch die Anpassung dieser Einstellungen können Sie den Speicherplatz und die Netzwerknutzung optimieren und sicherstellen, dass nur die Dateien synchronisiert werden, die Sie benötigen.
+:::
