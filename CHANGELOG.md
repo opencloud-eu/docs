@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.41.0](https://github.com/opencloud-eu/docs/releases/tag/1.41.0) - 2025-07-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- rework user admin de and set kubernetes to draft:false [[#409](https://github.com/opencloud-eu/docs/pull/409)]
+
 ## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-23
 
 ### ❤️ Thanks to all contributors! ❤️
