@@ -26,17 +26,19 @@ draft: false
 Alternatively, you can also click on “Delete” in the action bar.
 :::
 
-- The files or folders are moved\*\* to the “Deleted files” area. They can be restored from there if necessary.
+- The files or folders are moved to the “Deleted files” area. They can be restored from there if necessary.
 
   <img src={require("./img/delete-restore/folder-in-deleted-files.png").default} alt="Removed files and folders in deleted files" width="1920"/>
 
 ## Restore files or folders
 
-- Navigate to “Deleted files”: - Click on “Deleted files” in the left sidebar.
+- Navigate to “Deleted files”
+- Click on “Deleted files” in the left sidebar.
 
   <img src={require("./img/delete-restore/deleted-files.png").default} alt="Left side bar deleted files" width="1920"/>
 
-- Files from your personal space can be found under “Personal”. - Files from other spaces (e.g. “Testspace”) can be found in their respective spaces.
+- Files from your personal space can be found under “Personal”.
+- Files from other spaces (e.g. “Space 1”) can be found in their respective spaces.
 
   <img src={require("./img/delete-restore/structure-in-deleted-files.png").default} alt="Structure in deleted files" width="1920"/>
 

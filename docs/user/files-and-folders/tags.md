@@ -2,7 +2,7 @@
 sidebar_position: 6
 id: tags
 title: Tags
-description: Add and manage tags with  OpenCloud
+description: Add and manage tags with OpenCloud
 draft: false
 ---
 
@@ -12,9 +12,13 @@ With OpenCloud you can add tags to files and folders to make them easier to sear
 
 ## Add tag
 
-- Open the context menu. - Right-click on the file or folder, - or click on the three dots in the corresponding line.
+- Open the context menu.
+- Right-click on the file or folder, or
+- click on the three dots in the corresponding line.
   <img src={require("./img/tags/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
-- Select details: - Select the “Details” option in the context menu.
+
+- Select details
+- Select the “Details” option in the context menu.
   <img src={require("./img/tags/details-button.png").default} alt="Select details in context menu" width="1920"/>
 
 ## Enter tag
