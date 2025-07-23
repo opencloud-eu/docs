@@ -10,8 +10,6 @@ draft: false
 
 This guide walks you through setting up OpenCloud behind an external Nginx reverse proxy with Let's Encrypt certificates using `certbot certonly --webroot`.
 
----
-
 ## Requirements
 
 - A public server with a static IP
