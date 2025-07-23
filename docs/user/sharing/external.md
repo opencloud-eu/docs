@@ -32,11 +32,14 @@ With public links, you can share files and/or folders across organizations.
 ## Options in the pop-up window
 
 - Select the desired access rights for the recipients:
-  - “Can view": The link recipient can view and download the file, but cannot edit or upload files.
-  - “Can edit": The link recipient can view, download, edit and delete the file, as well as upload files to the folder.
-  - “File Drop (secret)": The link recipient can only upload files, but cannot view or edit the content.
+  - “Can view":
+    The link recipient can view and download the file, but cannot edit or upload files.
+  - “Can edit":
+    The link recipient can view, download, edit and delete the file, as well as upload files to the folder.
+  - “File Drop (secret)":
+    The link recipient can only upload files, but cannot view or edit the content.
 
-    <img src={require("./img/extern/access-rights.png").default} alt="Admin spaces" width="400"/>
+    <img src={require("./img/extern/access-rights.png").default} alt="Access rights" width="400"/>
 
 - Activate the password by entering it in the input field under “Password”.
 - The password requirements appear below the input field.

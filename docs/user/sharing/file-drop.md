@@ -34,7 +34,7 @@ The trick: The “link recipients” cannot see the files already in the folder.
   <img src={require("./img/file-drop/file-drop-website.png").default} alt="File drop website" width="1920"/>
 - The “link recipient” enters the password and then clicks on “Continue”.
   <img src={require("./img/file-drop/password-and-continue.png").default} alt="Enter password and continue" width="400"/>
-- Upload files:<br/>
+- Upload files:
   - The “File drop folder” is opened. The “link recipient” can upload their files here without being able to view the existing contents of the folder.
     <img src={require("./img/file-drop/file-drop-area.png").default} alt="File drop area" width="1920"/>
   - As confirmation that the upload was successful, a pop-up window appears in the lower right corner.
