@@ -8,48 +8,44 @@ draft: false
 
 # Decomposeds3 Storage Driver
 
-Decomposeds3 is a storage driver for OpenCloud that uses MinIO, an S3-compatible object storage, for handling file storage efficiently. This setup leverages S3’s scalability while integrating seamlessly with OpenCloud.
+Decomposeds3 is a storage driver for OpenCloud that uses MinIO — an S3-compatible object storage — to store files efficiently. This setup combines the scalability of S3 with seamless integration into OpenCloud.
 
-## Prerequisites
+## Setup
 
-- Linux, Mac or Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-- [Docker](https://docs.docker.com/compose/install/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-
-## Start
-
-Navigate to the Docker Compose configuration folder:
+Navigate to the folder containing the Docker Compose configuration:
 
 ```bash
 cd opencloud-compose
 ```
 
-Enable `decomposeds3.yml` and `minio.yml` in the `.env` file:
+Open the `.env` file and enable the required configuration files:
 
 ```bash
 nano .env
 ```
 
-To activate the minio.yml, the following line must be uncommented.
+Uncomment the following line to enable MinIO in the S3 Storage configuration block:
 
 ```env
 #DECOMPOSEDS3_MINIO=:minio.yml
 ```
 
-To enable S3 storage, add `storage/decomposeds3.yml` to the COMPOSE_FILE variable or to
-your startup command (`docker compose -f docker-compose.yml -f storage/decomposeds3.yml up`).
+Add `storage/decomposeds3.yml` to the `COMPOSE_FILE` variable
+or include it directly in the startup command:
 
-Start the deployment with Docker Compose:
+```bash
+docker compose -f docker-compose.yml -f storage/decomposeds3.yml up
+```
+
+Start all containers in the background:
 
 ```bash
 docker compose up -d
 ```
 
-This starts all necessary containers in the background.
+## Add Local Domains to /etc/hosts
 
-## Add local domains to /etc/hosts
-
-Edit the /etc/hosts file and add the following entries for local access:
+To enable local access, add the following lines to your `/etc/hosts` file:
 
 ```bash
 127.0.0.1       cloud.opencloud.test
@@ -58,20 +54,18 @@ Edit the /etc/hosts file and add the following entries for local access:
 
 ## Login
 
-Login with your browser:
+Open your browser and visit:
 
 - [https://cloud.opencloud.test](https://cloud.opencloud.test)
-- user: admin
-- password: admin
 
-Congratulations! You’ve successfully set up and launched OpenCloud! Happy hacking!🚀
+After logging in, you should see the OpenCloud interface:
 
-<img src={require("./../img/login-page.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/login-page.png").default} alt="Login Page" width="1920"/>
 
-<img src={require("./../img/decomposeds3-with-minio.png").default} alt="Admin general" width="1920"/>
+<img src={require("./../img/decomposeds3-with-minio.png").default} alt="OpenCloud with decomposeds3 and MinIO" width="1920"/>
 
 ## Troubleshooting
 
-If you encounter any issues or errors, try finding a solution here:
+If you run into any issues or errors, check the following resource:
 
 - [Common Issues & Help](../../resources/common-issues.md)
