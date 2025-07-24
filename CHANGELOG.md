@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.42.0](https://github.com/opencloud-eu/docs/releases/tag/1.42.0) - 2025-07-24
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- rework decomposeds3 [[#412](https://github.com/opencloud-eu/docs/pull/412)]
+
+### 👤 User Documentation
+
+- rework Android de [[#415](https://github.com/opencloud-eu/docs/pull/415)]
+- Team rework ios de [[#414](https://github.com/opencloud-eu/docs/pull/414)]
+- rework desktop and add german screenshots [[#411](https://github.com/opencloud-eu/docs/pull/411)]
+
 ## [1.41.0](https://github.com/opencloud-eu/docs/releases/tag/1.41.0) - 2025-07-23
 
 ### ❤️ Thanks to all contributors! ❤️
