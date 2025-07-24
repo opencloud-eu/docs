@@ -25,8 +25,8 @@ and choose "Upload"
 
 From the menu, you can choose:
 
-- **"Upload"** – upload a file from your device storage
-- **"Picture from camera"** – upload a photo or video from smartphone or tablet camera
+- "Upload" – upload a file from your device storage
+- "Picture from camera" – upload a photo or video from smartphone or tablet camera
 
 <img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-options.png").default} alt="Upload Options" height="400"/>
 

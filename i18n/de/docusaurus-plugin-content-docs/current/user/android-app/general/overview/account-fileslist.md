@@ -2,49 +2,60 @@
 sidebar_position: 2
 id: account-fileslist
 title: Dateilisten-Menü
+description: Dateilisten-Menü
 draft: true
 ---
 
-<br/>
-### Hier ist eine Übersicht über das Dateilisten-Menü in der OpenCloud Android-App.
+# Hier ist eine Übersicht über das Dateilisten-Menü der OpenCloud Android-App
 
----
-
-<div style={{ display: 'flex', alignItems: 'center' }}>
+Dieser Abschnitt erklärt die zentralen Elemente der Benutzeroberfläche der OpenCloud Android-App und deren Funktionen.
 
 <img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+## 1. Account Menu
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>1. Account Menü</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Bietet Zugriff auf Kontoeinstellungen.</li>
+Bietet Zugriff auf die Kontoeinstellungen.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>2. Navigation Verlauf</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Zurück- und Vorwärtsspringen durch zuvor besuchte Ansichten oder Ordner..</li>
+## 2. Search
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>3. Suche</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Suchen nach Dateien, Ordnern oder geteilten Inhalten innerhalb der App.</li>
+Ermöglicht die Suche nach Dateien, Ordnern oder geteilten Elementen innerhalb der App.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>4. Hinzufügen</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet Optionen zum Hochladen von Dateien, Erstellen von Ordnern oder Hinzufügen neuer Inhalte.</li>
+## 3. Manage Accounts
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>5. Drei Punkte Menü</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt zusätzliche Aktionen oder Einstellungen zur aktuellen Ansicht oder zum aktuellen Element an.</li>
+Zeigt das aktive Konto an und ermöglicht das Hinzufügen eines weiteren Kontos.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>6. Sortierung</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Sortieren von Dateien nach Name, Datum, Größe oder anderen Kriterien.</li>
+## 4. Sort by
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>7. Ansichtsmodi</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Erlaubt das Umschalten zwischen verschiedenen Darstellungsmodi.</li>
+Ermöglicht das Sortieren von Dateien nach Name, Datum, Größe oder anderen Kriterien.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>8. Auswahl Toggle</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Aktiviert den Mehrfachauswahlmodus, um mehrere Dateien oder Ordner gleichzeitig auszuwählen.</li>
+## 5. View Mode
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>9. Datei Liste</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den Inhalt des aktuellen Ordners als Liste von Dateien und Ordnern an.</li>
+Erlaubt das Umschalten zwischen verschiedenen Ansichtsmodi.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Breadcrumbs Menü</strong></li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den aktuellen Ordnerpfad an und erlaubt die schnelle Navigation zu übergeordneten Ordnern.</li>
-</ul>
+## 6. Files List
 
-</div>
+Zeigt den Inhalt des aktuellen Ordners als Liste von Dateien und Ordnern an.
+
+## 7. Add Button
+
+Öffnet Optionen zum Hochladen von Dateien, Erstellen von Ordnern oder Hinzufügen neuer Inhalte.
+
+## 8. Personal
+
+Ermöglicht den schnellen Wechsel zum persönlichen Bereich.
+
+## 9. Shares
+
+Ermöglicht den schnellen Wechsel zur Liste der geteilten Elemente.
+
+## 10. Spaces
+
+Ermöglicht den schnellen Wechsel zur Liste der Bereiche (Spaces).
+
+## 11. Uploads
+
+Ermöglicht den schnellen Wechsel zur Liste der Uploads.
+
+## 12. Offline
+
+Ermöglicht den schnellen Zugriff auf eine Liste von Dateien und Ordnern, die offline verfügbar sind.

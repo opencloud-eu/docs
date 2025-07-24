@@ -2,52 +2,42 @@
 sidebar_position: 1
 id: account-overview
 title: Account-Menü
+description: Account-Menü
 draft: true
 ---
 
-<br/>
-### Hier ist eine Übersicht über das Account-Menü in der OpenCloud Andoid-App.
+# Account Menu
 
----
+Hier ist ein Überblick über das Kontomenü in der OpenCloud Android-App
 
-<div style={{ display: 'flex', alignItems: 'flex-start' }}>
+<img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} />
 
-<img src={require("../../img/overview/account.png").default} alt="Overview Account" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} />
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+## 1. Account Menu Item
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**1. Account Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet die Hauptoptionen für das Konto und die Kontoeinstellungen.</li>
+Öffnet die Hauptoptionen und Einstellungen des Kontos.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>2. Aktiver Account**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt an, welches Benutzerkonto aktuell aktiv ist.</li>
+## 2. Active Account
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**3. Persönlicher Bereich Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Gibt Zugriff auf die persönlichen Dateien und Ordner des Benutzers.</li>
+Zeigt an, welches Benutzerkonto derzeit aktiv ist.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**4. Teilen Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt Dateien und Ordner an, die mit anderen geteilt wurden oder empfangen wurden.</li>
+## 3. Settings Menu Item
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**5. Spaces Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet eine Liste von kollaborativen Bereichen oder Spaces.</li>
+Öffnet die allgemeinen Einstellungen und Konfigurationsoptionen.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**6. Suche Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht dem Benutzer die Suche nach Dateien, Ordnern und Inhalten.</li>
+## 4. Feedback Item
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**7. Zuletzt verwendet Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt eine Liste kürzlich geöffneter oder bearbeiteter Dateien.</li>
+Hier kannst du uns Feedback zu deiner Erfahrung mit der OpenCloud Android-App senden.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**8. Offline Verfügbar Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt Dateien an, die für den Offline-Zugriff markiert wurden.</li>
+## 5. Help Menu Item
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**9. Status Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den aktuellen Synchronisations- oder Verbindungsstatus an.</li>
+Hier findest du Links zu unserer Dokumentationsseite und weiteren Hilfeseiten.
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**10. Account hinzufügen Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht dem Benutzer, ein neues Konto zur App hinzuzufügen.</li>
+## 6. Privacy Policy Item
 
-<li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**11. Einstellungen Menü Item**</li>
-<li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet die allgemeinen Einstellungen und Konfigurationsoptionen.</li>
-</ul>
+Hier findest du den vollständigen Eintrag zu unserer Datenschutzrichtlinie.
 
-</div>
+## 7. Used Quota
+
+Zeigt an, wie viel deines Speicherplatzes du bisher genutzt hast.
