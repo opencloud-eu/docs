@@ -40,35 +40,35 @@ By tapping the plus icon, the available functions within a Space appear.
 
 The add menu in the iOS app allows users to create and upload content directly into a Space.
 
-- Create Folder
+### 1. Create Folder
 
 Create new folders to organize and structure content clearly.
 
-- New Document
+### 2. New Document
 
 Create a new document directly within the Space without using a separate app.
 
-- Upload Files
+### 3. Upload Files
 
 Select files from your device and upload them to the Space.
 
-- Upload from Library
+### 4. Upload from Library
 
 Access your iOS photo library and upload images or videos directly to the Space.
 
-- Take Photo or Video
+### 5. Take Photo or Video
 
 Use your iOS camera to take pictures or videos and upload them directly to the Space.
 
-- Create Shortcut
+### 6. Create Shortcut
 
 Create a shortcut to a file or folder within the Space for quick access.
 
-- Scan Document
+### 7. Scan Document
 
 Use your device camera to scan physical documents and save them directly as PDFs in the Space.
 
-- "Three-Dot Menue"
+## "Three-Dot Menue"
 
 By tapping the three-dot menu, a pop-up menu opens where you can choose to make the Space available offline.
 

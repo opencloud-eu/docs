@@ -84,6 +84,6 @@ A full entry on our privacy policy can be found here.
 
 Here you can find informations about the changes and new stuff in the latest version of the OpenCloud Android app.
 
-### 17. App version
+### 10. App version
 
 Here you can see which app version is being used.
