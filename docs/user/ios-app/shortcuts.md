@@ -32,7 +32,7 @@ Here we show you how to create shortcuts in the iOS app
 
 -A menu opens with options for shortcuts
 
-    <img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menu" height="400"/>
+<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menu" height="400"/>
 
 ## URL
 
