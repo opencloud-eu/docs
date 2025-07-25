@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- adjust link in the external proxy docs [[#416](https://github.com/opencloud-eu/docs/pull/416)]
+
 ## [1.42.0](https://github.com/opencloud-eu/docs/releases/tag/1.42.0) - 2025-07-24
 
 ### ❤️ Thanks to all contributors! ❤️
