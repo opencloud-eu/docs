@@ -1,6 +1,6 @@
 ---
 title: Search
-date: 2025-05-22T16:21:16.120089975+02:00
+date: 2025-06-02T16:14:08.579522245+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/search
@@ -45,7 +45,6 @@ The search service is responsible for metadata and content extraction, stores th
     * [File Uploaded - Asynchronous](#file-uploaded---asynchronous)
 * [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
 * [Notes](#notes)
-* [Example Yaml Config](#example-yaml-config)
 
 ## General Considerations
 
@@ -65,7 +64,7 @@ Note that as of now, the search service can not be scaled. Consider using a dedi
 
 ## Search engines
 
-By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](https://github.com/opencloud-eu/opencloud/blob/main/services/search/pkg/engine/engine.go) interface and making that engine available.
+By default, the search service is shipped with [bleve](https://github.com/blevesearch/bleve) as its primary search engine. The available engines can be extended by implementing the [Engine](pkg/engine/engine.go) interface and making that engine available.
 
 ## Query language
 
@@ -204,3 +203,4 @@ The indexing process tries to be self-healing in some situations.
 In the following example, let's assume a file tree `foo/bar/baz` exists.
 If the folder `bar` gets renamed to `new-bar`, the path to `baz` is no longer `foo/bar/baz` but `foo/new-bar/baz`.
 The search service checks the change and either just updates the path in the index or creates a new index for all items affected if none was present.
+

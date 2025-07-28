@@ -1,6 +1,6 @@
 ---
 title: Audit
-date: 2025-05-22T16:21:16.118824137+02:00
+date: 2025-06-02T16:14:08.577955382+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/audit
@@ -44,5 +44,5 @@ The audit service logs:
 
 ## Table of Contents
 
-* [Example Yaml Config](#example-yaml-config)
+
 
