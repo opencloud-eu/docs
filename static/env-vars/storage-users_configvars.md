@@ -9,7 +9,7 @@
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`STORAGE_USERS_SERVICE_NAME`| 1.0.0 |string|Service name to use. Change this when starting an additional storage provider with a custom configuration to prevent it from colliding with the default 'storage-users' service.|storage-users|
 |`OC_TRACING_ENABLED`<br/>`STORAGE_USERS_TRACING_ENABLED`| 1.0.0 |bool|Activates tracing.|false|
 |`OC_TRACING_TYPE`<br/>`STORAGE_USERS_TRACING_TYPE`| 1.0.0 |string|The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.||

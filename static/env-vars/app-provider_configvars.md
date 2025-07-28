@@ -1,7 +1,7 @@
 Environment variables for the **app-provider** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`APP_PROVIDER_SERVICE_NAME`| 1.0.0 |string|The name of the service. This needs to be changed when using more than one app provider. Each app provider configured needs to be identified by a unique service name. Possible examples are: 'app-provider-collabora', 'app-provider-onlyoffice', 'app-provider-office365'.|app-provider|
 |`OC_TRACING_ENABLED`<br/>`APP_PROVIDER_TRACING_ENABLED`| 1.0.0 |bool|Activates tracing.|false|
 |`OC_TRACING_TYPE`<br/>`APP_PROVIDER_TRACING_TYPE`| 1.0.0 |string|The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.||
