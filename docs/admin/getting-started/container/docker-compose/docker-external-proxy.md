@@ -48,14 +48,6 @@ Once Docker is installed, enable and start the service:
 systemctl enable docker && systemctl start docker
 ```
 
-## Clone the OpenCloud Repository
-
-Download the necessary configuration files:
-
-```bash
-git clone https://github.com/opencloud-eu/opencloud-compose.git
-```
-
 ## Install Nginx & Certbot
 
 Now install Nginx & Certbot
