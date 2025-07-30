@@ -3,7 +3,7 @@ sidebar_position: 10
 id: common-issues
 title: Common Issues & Help
 description: Common issues & help
-draft: true
+draft: false
 ---
 
 # Common Issues & Help
