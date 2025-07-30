@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@lucaribon
+@Svanvith, @lucaribon
 
 ### 👷 Admin Documentation
 
 - unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
+
+### 👤 User Documentation
+
+- add common issues to users, desktop client [[#419](https://github.com/opencloud-eu/docs/pull/419)]
 
 ## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
 
