@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-07-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@lucaribon
+
+### 👷 Admin Documentation
+
+- unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
+
 ## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
 
 ### ❤️ Thanks to all contributors! ❤️
