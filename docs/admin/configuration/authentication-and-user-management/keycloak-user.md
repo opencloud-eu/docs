@@ -8,7 +8,7 @@ draft: true
 
 # Creating New Users in Keycloak for OpenCloud
 
-This guide explains how to create new users in Keycloak for OpenCloud, including guest users without personal spaces. While OpenCloud currently does not have a built-in "invite external user" feature, this functionality can be replicated using Keycloak.
+This guide explains how to create new users in Keycloak for OpenCloud, including "User Light" without personal spaces. While OpenCloud currently does not have a built-in "invite external user" feature, this functionality can be replicated using Keycloak.
 
 ## Background
 
@@ -52,9 +52,9 @@ With admin permissions, you can now create users and groups:
 
 <img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920"/>
 
-## First Login Experience for Guest Users
+## First Login Experience for the "User Light"
 
-When a guest user logs in for the first time, they will:
+When a "User Light" logs in for the first time, they will:
 
 - Be prompted to change their password
 - Update their profile (name, email, etc.)
@@ -87,6 +87,8 @@ To enable self-registration:
 - They complete the registration form.
 
 <img src={require(".././img/keycloak/add-user/fill-out-registration-form.png").default} alt="Fill out the registration form" width="1920"/>
+
+After loggin in, the user has now the "User Light" Role with no personal Space.
 
 ## Summary
 
