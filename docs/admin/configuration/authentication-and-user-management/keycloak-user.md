@@ -34,7 +34,7 @@ Once assigned, the user can log in as a Realm Administrator and access user and 
 
 With admin permissions, you can now create users and groups:
 
-- Login in Keycloak OpenCloud Realm with the user who has admin rights under <https://keycloak.YOUR.DOMAIN/admin/openCloud/console/#/openCloud>
+- Login in Keycloak OpenCloud Realm with the user who has admin rights under `https://keycloak.YOUR.DOMAIN/admin/openCloud/console/#/openCloud`
 
 - Navigate to the "Users" section in the Keycloak Admin Console
 
