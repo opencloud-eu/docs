@@ -25,37 +25,41 @@ technical problems flexibly yourself and to be able to answer frequently asked q
 
 ## Table of contents
 
-### User Interface and Navigation
+### [User Interface and Navigation](./general)
 
 Here you will find general information about account settings, customizations and view modes.
 
-### Manage Files and Folders
+### [Manage Files and Folders](./files-and-folders)
 
 Here you will find information about the management of files and folders.
 
-### Share Files and Folders
+### [Share Files and Folders](./sharing)
 
 Here you will find information on how to share files and folders.
 
-### Working in Teams with Spaces
+### [Working in Teams with Spaces](./spaces)
 
 Here you will find information for dealing with Spaces.
 
-### OpenCloud Desktop
+### [OpenCloud Desktop](./desktop-client)
 
 Here you will find information on how to install and set up the desktop client.
 
-### OpenCloud iOS App
+### [OpenCloud iOS App](./ios-app)
 
 Here you will find information about the OpenCloud iOS App.
 
-### Roles
+### [Roles](./roles)
 
 Here you will find information about the different roles that can be assigned.
 
-### Administration of OpenCloud
+### [Administration of OpenCloud](./admin)
 
 Here you will find information on what options admins have and how you can use them.
+
+### [Common Issues and Help](./common-issues.md)
+
+Here you will find information on common issues and help on how to solve them.
 
 ## What is OpenCloud?
 
@@ -67,4 +71,4 @@ work together on data anytime, anywhere without barriers, but with a lot of prod
 
 ## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the "Admin Documentation" under "Getting-Started".
+Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/welcome/index.md) under ["Getting-Started"](../admin/getting-started).
