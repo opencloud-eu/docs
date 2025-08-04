@@ -3,7 +3,7 @@ title: Welcome!
 slug: /admin/intro
 ---
 
-# 🙋🏻‍♀️ Welcome to OpenCloud Admin Docs
+# Welcome to OpenCloud Admin Docs
 
 Welcome to OpenCloud, your self-hosted file sharing platform: Secure, simple and reliable. This documentation helps you to get started, configure, and maintain OpenCloud.
 
@@ -21,4 +21,4 @@ curl -L https://opencloud.eu/install | /bin/bash
 
 ## Need Help?
 
-Check our [GitHub Discussion](https://github.com/orgs/opencloud-eu/discussions), or [Matrix Channel](https://matrix.to/#/#opencloud:matrix.org)\*\*. Let’s get started! 🚀
+Check our [GitHub Discussion](https://github.com/orgs/opencloud-eu/discussions), or [Matrix Channel](https://matrix.to/#/#opencloud:matrix.org). Let’s get started!
