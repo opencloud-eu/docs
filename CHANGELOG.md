@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @lucaribon
+@LisaHue, @Svanvith, @lucaribon
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- introducing links to the user intro & fixing 2 icons [[#424](https://github.com/opencloud-eu/docs/pull/424)]
 - add german translation for common issues in user section [[#422](https://github.com/opencloud-eu/docs/pull/422)]
 - add common issues to users, desktop client [[#419](https://github.com/opencloud-eu/docs/pull/419)]
 
