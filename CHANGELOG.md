@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-07-30
+## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-04
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- add german translation for common issues in user section [[#422](https://github.com/opencloud-eu/docs/pull/422)]
 - add common issues to users, desktop client [[#419](https://github.com/opencloud-eu/docs/pull/419)]
 
 ## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
