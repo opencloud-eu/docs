@@ -3,7 +3,7 @@ sidebar_position: 12
 id: default-user-quota
 title: Set default user quota
 description: How to set default user quota
-draft: true
+draft: false
 ---
 
 # Set Default Quota per User Role
