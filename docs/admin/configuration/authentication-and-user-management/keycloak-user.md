@@ -52,6 +52,11 @@ With admin permissions, you can now create users and groups:
 
 <img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920"/>
 
+:::note
+In the opencloud-compose setup, the default user role is `OpenCloudGuest`.  
+This means new users will not receive a personal space by default.  
+You can change the default role in "Realm Settings" under "User Registration" in the Keycloak admin console.
+
 ## First Login Experience for the "User Light"
 
 When a "User Light" logs in for the first time, they will:
