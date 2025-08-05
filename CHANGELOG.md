@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue, @Svanvith, @lucaribon
+
+### 👷 Admin Documentation
+
+- remove draft:true for the release [[#425](https://github.com/opencloud-eu/docs/pull/425)]
+- add how to add user in keycloak without personal Space [[#421](https://github.com/opencloud-eu/docs/pull/421)]
+- add default quota docs [[#423](https://github.com/opencloud-eu/docs/pull/423)]
+- unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
+
+### 👤 User Documentation
+
+- introducing links to the user intro & fixing 2 icons [[#424](https://github.com/opencloud-eu/docs/pull/424)]
+- add german translation for common issues in user section [[#422](https://github.com/opencloud-eu/docs/pull/422)]
+- add common issues to users, desktop client [[#419](https://github.com/opencloud-eu/docs/pull/419)]
+
 ## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
 
 ### ❤️ Thanks to all contributors! ❤️
