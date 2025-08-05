@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-04
+## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add default quota docs [[#423](https://github.com/opencloud-eu/docs/pull/423)]
 - unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
 
 ### 👤 User Documentation
