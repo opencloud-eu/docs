@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- remove draft:true for the release [[#425](https://github.com/opencloud-eu/docs/pull/425)]
 - add how to add user in keycloak without personal Space [[#421](https://github.com/opencloud-eu/docs/pull/421)]
 - add default quota docs [[#423](https://github.com/opencloud-eu/docs/pull/423)]
 - unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
