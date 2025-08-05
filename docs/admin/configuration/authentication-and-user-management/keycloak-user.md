@@ -3,7 +3,7 @@ sidebar_position: 4
 id: keycloak-user
 title: Adding user with Keycloak
 description: Adding user with Keycloak
-draft: true
+draft: false
 ---
 
 # Creating New Users in Keycloak for OpenCloud
