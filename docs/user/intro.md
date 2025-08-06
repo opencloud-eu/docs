@@ -71,4 +71,4 @@ work together on data anytime, anywhere without barriers, but with a lot of prod
 
 ## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/welcome/index.md) under ["Getting-Started"](../admin/getting-started).
+Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/welcome/index.md) under ["Getting-Started"](../admin/getting-started/)
