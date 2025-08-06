@@ -21,37 +21,41 @@ Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 
 ## Inhaltsverzeichnis
 
-### Benutzeroberfläche und Navigation
+### [Benutzeroberfläche und Navigation](./general)
 
 Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungsmöglichkeiten und Ansichtsmodi.
 
-### Verwalten von Dateien und Ordner
+### [Verwalten von Dateien und Ordner](./files-and-folders)
 
 Hier finden Sie Informationen zur Verwaltung von Dateien und Ordnern.
 
-### Teilen von Dateien und Ordner
+### [Teilen von Dateien und Ordner](./sharing)
 
 Hier erfahren Sie, wie Sie Dateien und Ordner freigeben können.
 
-### Arbeiten im Team mit Spaces
+### [Arbeiten im Team mit Spaces](./spaces)
 
 Hier finden Sie Informationen zur Arbeit mit Spaces.
 
-### OpenCloud Desktop
+### [OpenCloud Desktop](./desktop-client)
 
 Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
 
-### OpenCloud iOS App
+### [OpenCloud iOS App](./ios-app/)
 
 Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
 
-### Rollen
+### [Rollen](./roles)
 
 Hier erfahren Sie mehr über die verschiedenen zuweisbaren Rollen.
 
-### Administration von OpenCloud
+### [Administration von OpenCloud](./admin)
 
 Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutzungsmöglichkeiten.
+
+### [Häufige Probleme und Hilfe](./common-issues.md)
+
+Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
 
 ## Was ist OpenCloud?
 
@@ -61,4 +65,4 @@ Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden 
 
 ## Wie kann ich OpenCloud nutzen?
 
-Eine Anleitung zur Installation und Einrichtung einer eigenen OpenCloud-Instanz finden
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
