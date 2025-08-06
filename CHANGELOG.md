@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.45.0](https://github.com/opencloud-eu/docs/releases/tag/1.45.0) - 2025-08-06
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👤 User Documentation
+
+- introducing links to the german user intro & 2 other fixes [[#427](https://github.com/opencloud-eu/docs/pull/427)]
+
 ## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-05
 
 ### ❤️ Thanks to all contributors! ❤️
