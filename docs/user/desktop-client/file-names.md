@@ -22,7 +22,7 @@ When using the OpenCloud Desktop Client, file and folder names must meet certain
 
 Windows limits file paths to 260 characters by default.  
 If your sync root exceeds this, the Desktop Client will warn:  
-"The path '%1' is too long. Please enable long paths in the Windows settings or choose a different folder."
+"The path 'YOUR.LONG.PATH' is too long. Please enable long paths in the Windows settings or choose a different folder."
 
 On Windows 10 and later, you can remove this limit by enabling Long Paths. See [Microsoft’s documentation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later).
 
@@ -30,7 +30,7 @@ On Windows 10 and later, you can remove this limit by enabling Long Paths. See [
 
 | OS              | Forbidden Characters            |
 | --------------- | ------------------------------- | ------------ |
-| **Windows**     | `<`, `>`, `:`, `"`, `/`, `\`, ` | `, `?`, `\*` |
+| Windows     | `<`, `>`, `:`, `"`, `/`, `\`, ` | `, `?`, `\*` |
 
 ### c. Non-Printable ASCII Characters
 
