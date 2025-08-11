@@ -42,7 +42,6 @@ To resolve a conflict:
 
 - Avoid editing the same file simultaneously on multiple devices.
 - Always wait for sync completion before making local changes.
-- Keep system clocks synchronized (use NTP) to avoid timestamp mismatches that can trigger conflicts :contentReference[oaicite:1]{index=1}.
 
 ## Why Conflict Files Appear
 
