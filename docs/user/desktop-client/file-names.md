@@ -12,22 +12,24 @@ When using the OpenCloud Desktop Client, file and folder names must meet certain
 
 ## Key Guidelines
 
-1. Avoid using prohibited characters or reserved words in filenames on any OS.
-2. If syncing from Linux/macOS to a Windows-based share, ensure filenames follow Windows naming rules.
-3. To change casing (e.g., `File.txt` → `file.txt`) on Linux/macOS when syncing to Windows, rename the file to a completely new name, let it sync, then rename it to the desired casing.
+- Avoid using prohibited characters or reserved words in filenames on any OS.
+- If syncing from Linux/macOS to a Windows-based share, make sure filenames are compatible with Windows naming restrictions.
+- To change casing (e.g., `File.txt` → `file.txt`) on Linux/macOS when syncing to Windows, rename the file to a completely new name, let it sync, then rename it to the desired casing.
 
 ## Common Limitations
 
 ### a. Maximum Path Length
 
-- Some environments allow long filenames but Windows has a default limit of 260 characters when using APIs (e.g., VFS). Exceeding this limit may result in sync errors, often with notifications in-app
-- Windows 10 and later versions can lift this limit if explicitly enabled (see Microsoft’s documentation).
+Windows limits file paths to 260 characters by default.  
+If your sync root exceeds this, the Desktop Client will warn:  
+"The path '%1' is too long. Please enable long paths in the Windows settings or choose a different folder."
+
+On Windows 10 and later, you can remove this limit by enabling Long Paths. See [Microsoft’s documentation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later).
 
 ### b. Forbidden Characters
 
 | OS              | Forbidden Characters            |
 | --------------- | ------------------------------- | ------------ |
-| **Linux/macOS** | `/`                             |
 | **Windows**     | `<`, `>`, `:`, `"`, `/`, `\`, ` | `, `?`, `\*` |
 
 ### c. Non-Printable ASCII Characters
