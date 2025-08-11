@@ -1,0 +1,8 @@
+{
+  "default": true,
+  "MD013": false, // Disable MD013 to allow long lines
+  "MD033": false, // Disable MD033 to allow inline HTML
+  "MD024": false, // Disable MD024 to allow headings with the same text
+  "MD025": false, // Disable MD025 to allow frontmatter title with different content as heading ( e.g. Nav items should should be short)
+  "MD029": false // TODO: Too much false positives
+}

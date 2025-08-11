@@ -2,49 +2,46 @@
 sidebar_position: 5
 id: shortcuts
 title: Verlinkungen in der OpenCloud Android App
+description: Verlinkungen
 draft: true
 ---
 
-# Verlinkungen in der OpenCloud Android App
+# Verlinkung in der OpenCloud Android-App
 
-## Hier zeigen wir, wie Sie Verlinkungen in der Android App erstellen können.
+Hier zeigen wir dir, wie du Verlinkungen in der Android-App erstellen kannst.
 
----
+## Plus-Symbol
 
-#### 1. Klicken Sie auf das "Plus-Symbol"
-<img src={require("./img/shortcuts/plus-button.png").default} alt="Plus Symbol" height="400"/>
-<br/>
+Klicke auf das „Plus-Symbol“ und wähle „New Shortcut“ aus.
 
-#### 2. Es öffnet sich ein Drop-Down-Menü
-<img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop Down Menü" height="400"/>
-<br/>
+<img src={require("./img/shortcuts/plus-button.png").default} alt="Plus button" width="300"/>
 
-#### 3. Wählen Sie dort "Verlinkung erstellen" aus
-<img src={require("./img/shortcuts/create-shortcut.png").default} alt="Verlinkung erstellen auswählen" height="400"/>
-<br/>
+## Verlinkungs-Menü
 
-#### 4. Es öffnet sich ein Menü mit Auswahlmöglichkeiten für die Verlinkung
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Verlinkung Menü" height="400"/>
-<br/>
+Ein Menü öffnet sich mit Optionen für Verlinkungen.
 
-#### 5. Um eine Verlinkung zu einer Webseite zu erstellen, geben sie unter "URL" die Adresse der Webseite ein.
-<img src={require("./img/shortcuts/url.png").default} alt="URL" height="400"/>
-<br/>
+<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" width="300"/>
 
-#### 6. Um eine Verlinkung zu einer Datei oder einem Ordner in der OpenCloud zu erstellen, muss die Option "Datei oder Ordner auswählen" geklickt werden.
-<img src={require("./img/shortcuts/pick-file-or-folder.png").default} alt="Datei oder Ordner auswählen Option" height="400"/>
-<img src={require("./img/shortcuts/choose-file-or-folder.png").default} alt="Datei oder Ordner auswählen" height="400"/>
-<img src={require("./img/shortcuts/select-button.png").default} alt="Auswählen" height="400"/>
-<br/>
+## URL eingeben
 
-#### 7. Hier geben Sie einen Namen für die Verlinkung ein, mit der diese dann dargestellt wird.
-<img src={require("./img/shortcuts/shortcut-name.png").default} alt="Name der Verlinkung" height="400"/>
-<br/>
+Um eine Verlinkung zu einer Webseite zu erstellen, gib die Adresse der Webseite unter „URL“ ein.
 
-#### 8. Um die Verlinkung nun zu erstellen, klicken Sie auf "Verlinkung erstellen".
-<img src={require("./img/shortcuts/create-shortcut-button.png").default} alt="Verlinkung erstellen" height="400"/>
-<br/>
+<img src={require("./img/shortcuts/url.png").default} alt="URL" width="300"/>
 
-#### 9. Jetzt wird Ihre erstellte Verlinkung angezeigt und kann genutzt werden.
-<img src={require("./img/shortcuts/created-shortcut.png").default} alt="Verlinkung" height="400"/>
-<br/>
+## Verlinkungsnamen eingeben
+
+Hier gibst du einen Namen für die Verlinkung ein, unter dem sie angezeigt wird.
+
+<img src={require("./img/shortcuts/shortcut-name.png").default} alt="Name of the shortcut" width="300"/>
+
+## Erstellen-Button
+
+Um die Verlinkung zu erstellen, klicke auf „Create“.
+
+<img src={require("./img/shortcuts/create-button.png").default} alt="Create button" width="300"/>
+
+## Erstellte Verlinkung
+
+Deine erstellte Verlinkung wird nun angezeigt und kann verwendet werden.
+
+<img src={require("./img/shortcuts/created-shortcut.png").default} alt="Shortcut" width="300"/>

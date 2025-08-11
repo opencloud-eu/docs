@@ -2,24 +2,24 @@
 sidebar_position: 1
 id: faq
 title: FAQ
-draft: true
+description: Frequently asked questions FAQ
+draft: false
 ---
+
 # FAQ
 
-**Welcome to the frequently asked questions (FAQ). Here you will find answers to the most common questions.**
-
----
+Welcome to the frequently asked questions (FAQ). Here you will find answers to the most common questions.
 
 ## General Questions
 
 <details>
 <summary>What problem does OpenCloud solve for me?</summary>
 
-1. Simplified Administration
+### Simplified Administration
 
 OpenCloud is designed to be straightforward to set up and manage, allowing administrators to handle the system with minimal effort and without unnecessary complexity.
 
-2. Independent File-sharing
+### Independent File-sharing
 
 OpenCloud is designed to give you a privacy-focused alternative to mainstream platforms like Microsoft OneDrive or Google Drive, freeing you from reliance on big tech services and their data-collection practices.
 
@@ -28,7 +28,7 @@ OpenCloud is designed to give you a privacy-focused alternative to mainstream pl
 <details>
 <summary>How does OpenCloud differ from other open source file sharing applications?</summary>
 
-OpenCloud is simpler and more reliable than existing PHP-based solutions. OpenCloud stands out by offering a radically simplified architecture compared to other open-source file-sharing solutions. While many alternatives require maintaining complex stacks involving multiple components like PHP, MySQL, Redis, and Apache — creating a web of dependencies and potential security risks—OpenCloud avoids this entirely. It writes data directly to disk instead of relying on a dedicated database, making it much easier to maintain and far more reliable. With OpenCloud, you can focus on your files without worrying about intricate setups or data loss risks. 
+OpenCloud is simpler and more reliable than existing PHP-based solutions. OpenCloud stands out by offering a radically simplified architecture compared to other open-source file-sharing solutions. While many alternatives require maintaining complex stacks involving multiple components like PHP, MySQL, Redis, and Apache — creating a web of dependencies and potential security risks—OpenCloud avoids this entirely. It writes data directly to disk instead of relying on a dedicated database, making it much easier to maintain and far more reliable. With OpenCloud, you can focus on your files without worrying about intricate setups or data loss risks.
 
 </details>
 
@@ -59,7 +59,7 @@ Absolutely!
 <summary>If OpenCloud is free, how are the employees paid?</summary>
 
 We're glad you asked.
-We provide a paid support subscription, see https://opencloud.eu/en/product/service-and-support. With a support subscription you’ll be the first to know about security vulnerabilities and receive detailed instructions on how to address them or how to integrate OpenCloud into your existing systems and storage. We also provide Long-Term-Support if you don't want to upgrade your system so frequently.
+We provide a paid support subscription, see [https://opencloud.eu/en/product/service-and-support](https://opencloud.eu/en/product/service-and-support). With a support subscription you’ll be the first to know about security vulnerabilities and receive detailed instructions on how to address them or how to integrate OpenCloud into your existing systems and storage. We also provide Long-Term-Support if you don't want to upgrade your system so frequently.
 
 </details>
 
@@ -112,7 +112,7 @@ Yes, you can either use the built-in user management system or integrate OpenClo
 <details>
 <summary>Are there mobile apps, and do they offer the same features as the desktop version?</summary>
 
-We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the roadmap to see when the apps will be available: https://opencloud.eu/roadmap
+We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the roadmap to see when the apps will be available: [https://opencloud.eu/roadmap](https://opencloud.eu/roadmap)
 
 </details>
 
@@ -151,7 +151,7 @@ Key Factors for Optimal Performance:
 <details>
 <summary>How difficult is it to set up, and is technical expertise required?</summary>
 
-One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See https://docs.opencloud.eu/docs/category/getting-started-1
+One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See [the Quick Start](https://docs.opencloud.eu/docs/admin/intro)
 
 </details>
 
@@ -172,8 +172,8 @@ Yes.
 
 Yes, OpenCloud allows you customizations:
 
-- **Wordings**: You can replace specific terms, such as changing the word “Spaces” to “Datarooms” to better fit your terminology.
-- **Extensions**: The web UI also supports custom web extensions. Check out our developer documentation [here] to learn how to get started with creating and adding your own extensions and find existing extensions [here].
+- Wordings: You can replace specific terms, such as changing the word “Spaces” to “Datarooms” to better fit your terminology.
+- Extensions: The web UI also supports custom web extensions. Check out our developer documentation [here] to learn how to get started with creating and adding your own extensions and find existing extensions [here].
 
 </details>
 
@@ -183,11 +183,21 @@ Yes, OpenCloud allows you customizations:
 <summary>How does file sharing work within OpenCloud?</summary>
 
 OpenCloud offers three main ways to share files, making it easy to collaborate and manage access:
-1. **Personal Share**: Share files with registered users within your organization. You can assign permissions such as view, edit, or download, providing flexible control over file access.
-2. **Share via Link**: Share files with anyone, even outside your organization, by generating a link. No account is required for accessing the file.
-3. **Spaces**: Spaces are user-independent datarooms that belong to the organization rather than an individual. This ensures files remain within the organization, even if users leave. Examples of Spaces include school classes, collaborative projects, or organizational units like Marketing, Sales, or Finance. Spaces are easier for admins to manage, as they can be self-managed by designated users.
 
-**Special Feature: Secret File Drop**
+### Personal Share
+
+Share files with registered users within your organization. You can assign permissions such as view, edit, or download, providing flexible control over file access.
+
+### Share via Link
+
+Share files with anyone, even outside your organization, by generating a link. No account is required for accessing the file.
+
+### Spaces
+
+Spaces are user-independent datarooms that belong to the organization rather than an individual. This ensures files remain within the organization, even if users leave. Examples of Spaces include school classes, collaborative projects, or organizational units like Marketing, Sales, or Finance. Spaces are easier for admins to manage, as they can be self-managed by designated users.
+
+### Special Feature: Secret File Drop
+
 The Secret File Drop allows anonymous users to securely upload files (e.g., homework, photos or even whistleblower material) without needing an account.
 
 </details>
@@ -240,9 +250,9 @@ Yes, the following storage can be used:
 <details>
 <summary>How often is OpenCloud updated, and how are updates delivered?</summary>
 
-**Download updates** on download.opencloud.eu or via docker hub.
+Download updates on download.opencloud.eu or via docker hub.
 
-OpenCloud is released in three different release types: **Production, Rolling and Daily**. Each of them is targeted to a specific use case and audience group.
+OpenCloud is released in three different release types: Production, Rolling and Daily. Each of them is targeted to a specific use case and audience group.
 
 </details>
 
@@ -294,7 +304,7 @@ OpenCloud provides users with the ability to trigger a GDPR Export in a self-ser
 <details>
 <summary>Does OpenCloud offer multi-language support?</summary>
 
-Yes, OpenCloud fully maintains both **English** and **German** languages. Additionally, the web UI offers support for other languages, which are listed below. Please note that these languages are not 100% translated and are maintained by the community on a best-effort basis. We appreciate the contributions from our community to help improve the language support over time.
+Yes, OpenCloud fully maintains both English and German languages. Additionally, the web UI offers support for other languages, which are listed below. Please note that these languages are not 100% translated and are maintained by the community on a best-effort basis. We appreciate the contributions from our community to help improve the language support over time.
 
 Community maintained languages:
 

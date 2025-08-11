@@ -2,86 +2,88 @@
 sidebar_position: 4
 id: settings
 title: Einstellungen
+description: Einstellungen der OpenCloud Android App
 draft: true
 ---
 
 # Einstellungen
-<br/><br/>
 
-## In den Android-App Einstellungen können Änderungen vorgenommen werden wie z.B.:
-- Benutzeroberfläche
-- Datennutzung
-- erweiterte Einstellungen
-- Mediadateien
-und mehr
+In den Einstellungen der Android-App können Änderungen vorgenommen werden, wie z. B.:
 
----
+- Sicherheit
+- Benachrichtigungen verwalten
+- Protokollierung
+- Erweiterte Einstellungen  
+  und mehr
 
-<img src={require(".././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
-<br/><br/>
+<img src={require(".././img/settings/settings.png").default} alt="Settings" width="400"/>
 
-### Userinterface
+## Userinterface
 
-#### 1. Theme
-Hier kann ausgewählt werden, ob man die App im "Light-" oder "Darkmode" betreiben möchte.
+### 1. Security
 
-#### 2. Sucheinstellungen
-Hier kann man einstellen, wo die Suchfunktion agieren soll:
-- Ordner
-- Baum
-- Space
-- Account
-- Server 
+Hier kannst du Sperren für den Zugriff auf die App festlegen und Berührungen mit anderen sichtbaren Fenstern zulassen.
 
-#### 3. Logging
-Hier kann die Loggingfunktion aktiviert und deaktiviert werden, sowie der Speicherort des Logfiles angegeben werden.
+### 2. Manage notifications
 
-### Data Usage
+Hier kannst du Benachrichtigungen der OpenCloud Android-App zulassen.
 
-#### 4. Mobile Datennutzung
-Hier kann eingestellt werden, ob die App mit mobilen Daten genutzt werden kann oder nicht.
+### 3. Logging
 
-#### 5. Löschen von nicht verwendeten lokalen Kopien
-Hier kann eingestellt werden, wann nicht genutzte lokale Kopien gelöscht werden sollen.
+Hier kannst du die Protokollierungsfunktion aktivieren oder deaktivieren und den Speicherort der Protokolldatei festlegen.
 
-### Advanced Settings
+### 4. Automatic picture uploads
 
-#### 6. Anzeigen von versteckten Dateien und Ordnern
-Hier kann das Anzeigen von verstecken Dateien und Ordnern aktiviert und deaktiviert werden.
+Hier kannst du Speicherort und Verhalten der automatisch hochgeladenen Bilder verwalten.
 
-#### 7. Zeige Ordner oben
-Hier kann man einstellen, ob die Ordner in der Listenansicht vor den Dateien angezeigt werden sollen.
+### 5. Automatic video uploads
 
-#### 8. Gesten deaktivieren
-Hier kann die Gestensteuerung deaktiviert werden, um Mehfachauswahl und das Ziehen von Dateien und Ordnern zu verhindern.
+Hier kannst du Speicherort und Verhalten der automatisch hochgeladenen Videos verwalten.
 
-#### 9. Diagnose aktivieren
-Hier kann ausgewählt werden, ob die App im Hintergrund Diagnosen ausführen darf.
+### 6. Advanced
 
-### Media Files
+Hier kannst du folgende Optionen einstellen:<br/>
 
-#### 10. Herunterladen anstelle von streamen
-Hier kann eingestellt werden, ob eine Datei direkt heruntergeladen oder gestreamt werden soll.
+#### Show hidden files
 
-#### 11. Medien hochladen
-Hier kann man einstellen, ob z.B. bestimmte Dateien beim hochladen konvertiert werden sollen, wie HEIC zu JPEG.
+- Anzeige versteckter Dateien aktivieren oder deaktivieren.
 
-### More
+#### Delete local copies
 
-#### 12. Hilfe und Kontakt
-Hier findet man Links zu unserer Dokumentaionsseite und Hilfelinks.
+- Automatisch heruntergeladene Dateien, die nicht offline verfügbar sind, werden entfernt, wenn sie für eine bestimmte Zeit nicht verwendet wurden.
 
-#### 13. Einem Freund empfehlen
-Hier kann man einen Link zum Download der Android-App weiterleiten.
+### 7. More
 
-#### 14. Datenschutzrichtlinie
-Hier findet man einen vollständigen Eintrag zu unseren Datenschutzrichtlinien.
+Hier kannst du folgende Optionen einstellen:<br/>
 
-#### 15. Nutzungsbedingungen
-Hier findet man einen vollständigen Eintrag zu unseren Nutzungsbedingen.
+#### Help
 
-#### 16. Anerkennungen
-Teile der App können urheberrechtlich geschütztes Material verwenden, dessen Verwendung hier anerkannt wird.
+- Hier findest du Links zu unserer Dokumentationsseite und zu Hilfethemen.
 
-#### 17. App Version
-Hier kann ausgelesen werden, welche App Version verwendet wird.
+#### Sync your contacts, calendars and tasks
+
+- Hier kannst du einstellen, welche Kontakte, Kalender und Aufgaben mit der OpenCloud Android-App synchronisiert werden.
+
+#### Access document provider
+
+- Vorgeschlagene App, um Dateien über den nativen Android-Dateibrowser zu durchsuchen.
+
+#### Send feedback
+
+- Hier kannst du uns Feedback zu deiner Erfahrung mit der OpenCloud Android-App senden.
+
+#### Recommend to a friend
+
+- Hier kannst du einen Link zum Herunterladen der Android-App weiterleiten.
+
+### 8. Privacy Policy
+
+Hier findest du den vollständigen Eintrag zu unserer Datenschutzrichtlinie.
+
+### 9. What's new in the latest version?
+
+Hier findest du Informationen zu Änderungen und Neuerungen in der neuesten Version der OpenCloud Android-App.
+
+### 10. App version
+
+Hier siehst du, welche App-Version verwendet wird.

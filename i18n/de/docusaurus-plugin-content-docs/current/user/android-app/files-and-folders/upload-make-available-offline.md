@@ -2,67 +2,64 @@
 sidebar_position: 2
 id: upload-make-available-offline
 title: Hochladen - Offline verfügbar machen
+description: Dateien hochladen in Android
 draft: true
 ---
 
-# 📤 Dateien hochladen und offline verfügbar machen (Android)
+# Dateien hochladen in Android
 
-Mit der OpenCloud Android-App können Sie ganz einfach Dateien hochladen und offline verfügbar machen.
+Mit der OpenCloud Android-App können Sie ganz einfach Dateien hochladen und für die Offline-Nutzung verfügbar machen.
 
----
+## Dateien hochladen
 
-## 🔼 Dateien hochladen
+### Gewünschten Ordner öffnen
 
-### 1. Gewünschten Ordner öffnen
+Navigieren Sie zu dem Ordner, in dem Sie eine Datei hochladen möchten.
 
-Navigieren Sie zu dem Ordner, in den Sie eine Datei hochladen möchten.
+### Tippen Sie auf das „+“-Symbol unten rechts
 
-### 2. Tippen Sie oben rechts auf das **"+"-Symbol**
+und wählen Sie „Hochladen“
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-plus-button.png").default} alt="Plus Symbol" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-plus-button.png").default} alt="Plus-Schaltfläche" height="400"/>
 
-### 3. Upload-Option auswählen
+### Upload-Option wählen
 
-Im Menü können Sie Folgendes auswählen:
+Im Menü können Sie wählen:
 
-– **"Datei hochladen"** – Laden Sie eine Datei aus der Dateien-App Ihres Geräts hoch.
-– **"Aus Ihrer Fotobibliothek hochladen"** – Laden Sie ein vorhandenes Foto oder Video aus Ihrer Medienbibliothek hoch.
+- „Hochladen“ – eine Datei aus dem Gerätespeicher hochladen
+- „Bild von Kamera“ – ein Foto oder Video mit der Kamera des Smartphones oder Tablets aufnehmen und hochladen
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/upload-options.png").default} alt="Upload-Optionen" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-options.png").default} alt="Upload-Optionen" height="400"/>
 
-### 4. Auswahl bestätigen
+### Auswahl bestätigen
 
-Wählen Sie die hochzuladende Datei oder das Medium aus. Der Upload startet automatisch.
+Wählen Sie die Datei oder das Medium aus, das Sie hochladen möchten. Der Upload startet automatisch.
 
----
+## Dateien offline verfügbar machen
 
-## 📥 Dateien offline verfügbar machen
+Sie können Dateien offline verfügbar machen, damit Sie auch ohne Internetverbindung darauf zugreifen können.
 
-Sie können Dateien auch offline verfügbar machen, sodass sie auch ohne Internetverbindung zugänglich sind.
+### Tippen Sie auf die drei Punkte (...) neben der Datei
 
-### 1. Tippen Sie auf die **drei Punkte** (⋯) neben der Datei.
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/three-dots.png").default} alt="Drei-Punkte-Menü" height="400"/>
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/three-dots.png").default} alt="Offline verfügbar machen" height="400"/>
-
-### 2. Wählen Sie **"Offline verfügbar machen"** aus.
+### Wählen Sie „Offline verfügbar machen“
 
 Die Datei wird heruntergeladen und lokal auf Ihrem Gerät gespeichert.
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/make-available-offline.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/make-available-offline.png").default} alt="Offline verfügbar machen" height="400"/>
 
-> ✅ Offlinedateien sind mit einem **Wolkensymbol mit Häkchen** gekennzeichnet.
+:::info
+Offline-Dateien sind mit einem rosa Kreis mit weißem Häkchen markiert.
+:::
 
-<img src={require("../img/files-and-folders/upoload-make-available-offline/marked-offline.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/marked-offline.png").default} alt="Als offline markiert" height="400"/>
 
----
+## Offline-Verfügbarkeit entfernen
 
-## 🔄 Offline-Verfügbarkeit entfernen
+Um Speicherplatz freizugeben:
 
-So geben Sie Speicherplatz frei:
+- Tippen Sie auf die drei Punkte (...) bei einer offline gespeicherten Datei
+- Wählen Sie „Offline-Verfügbarkeit aufheben“
 
-- Tippen Sie erneut auf die drei Punkte (⋯) einer Offline-Datei.
-- Wählen Sie **"Offline-Zugriff entfernen"**.
-
----
-
-Mit diesen Funktionen sind Sie immer vorbereitet – auch wenn Sie offline sind!
+Diese Funktionen helfen Ihnen, auch ohne Internet produktiv zu bleiben!

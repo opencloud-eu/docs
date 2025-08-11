@@ -2,278 +2,273 @@
 sidebar_position: 6
 id: raspberry-pi
 title: Raspberry Pi
+description: OpenCLoud on a Raspberry Pi
+draft: false
 ---
 
-# OpenCloud on Raspberry Pi
+# OpenCloud on a Raspberry Pi
 
 :::note
 The installation of OpenCloud on a Raspberry Pi is intended for private or non-production use only.  
 It is not recommended for enterprise or critical environments due to the hardware's limited resources and potential performance constraints.
 :::
 
-
-## 1.1 Hardware requirements
+## Hardware requirements
 
 - Minimum Raspberry Pi 4B with at least 4 GB RAM connected via LAN or WLAN
 - Micro SD card with at least 32 GB storage space
-- External hard disk or USB-Stick (optional) for additional storage space
+- External hard disk or USB stick (optional) for additional storage space
 
-## 1.2 Install operating system
+## Install operating system
 
-- Install Raspberry Pi OS
+- Install Raspberry Pi OS  
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
-- SSH must be activated
-<img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
+
+- SSH must be activated  
+  <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
 
-## 1.3 Connecting with SSH
+## Connecting with SSH
 
 Start the Raspberry Pi with the SD card and connect via SSH.  
 The IP for this can be viewed in your router.
 
 <img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500"/>
 
-#### Establish connection via SSH:
-```sh
+### Establish connection via SSH
+
+```bash
 ssh pi@YOUR-IP
 ```
 
 After the first login, you should change the password for security reasons:
-```sh
+
+```bash
 passwd
 ```
 
-## 1.4 Installing Docker and Docker Compose
+## Installing Docker and Docker Compose
 
-Detailed installation instructions for docker can be found here:  
+Detailed installation instructions for Docker can be found here:  
 [Install Docker on Raspberry Pi](https://pimylifeup.com/raspberry-pi-docker/)
 
-- Perform update and upgrade
+- Perform update and upgrade:
 
-```sh
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
-- Install Docker via Script
 
-```sh
+- Install Docker via script:
+
+```bash
 curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
-- Add current user to the Docker Group
+- Add current user to the Docker group:
 
-```sh
+```bash
 sudo usermod -aG docker ${USER}
 ```
-- Check if it's running:
-```sh
+
+- Check if it's working:
+
+```bash
 groups ${USER}
 ```
+
 <img src={require("./../img/raspberrypi/docker-user-check.png").default} alt="Check docker user" width="500"/>
 
-- Reboot the Raspberry Pi to let the changes take effect
+- Reboot the Raspberry Pi:
 
-```sh
+```bash
 sudo shutdown -r now
 ```
-- Install Docker-Compose
 
-```sh
-sudo apt install docker-compose
+## Clone OpenCloud repository
+
+```bash
+git clone https://github.com/opencloud-eu/opencloud-compose.git
 ```
 
-- Check the installation
+## Start the Docker Compose setup
 
-```sh
-docker-compose --version
-```
-<img src={require("./../img/raspberrypi/docker-compose-check.png").default} alt="Check docker-compose" width="500"/>
-
-
-## 1.5 Clone OpenCloud repository
-```sh 
-git clone https://github.com/opencloud-eu/opencloud.git
-``` 
-
-
-## 1.6 Start the docker compose setup
-
-```sh 
-cd opencloud/deployments/examples/opencloud_full
+```bash
+cd opencloud-compose
 ```
 
-```sh 
-docker compose up 
+Copy the `.env.example` file:
+
+```bash
+cp .env.example .env
 ```
 
+Edit the `.env` file:
 
-Now you have running OpenCloud locally on your RaspberryPi and you can adjust it to your needs.
-We will describe how you can mount an external disk or USB-Stick and make your OpenCloud available outside of the local network with No-IP
-
-
-
-## 1.7 Mount external hard disk or USB-Stick
-
-#### 1. Find your external hard disk or USB-Stick on your Raspberry-Pi
-
-```sh
-lsblk
-```
-<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
-
-
-#### 2. Format the drive to ext4 filesystem
-
-```sh
-sudo mkfs.ext4 PATH-TO-DRIVE -L DATA
-```
-PATH-TO-DRIVE is in this example `/dev/sda1` so the command would be
-
-```sh
-sudo mkfs.ext4 /dev/sda1 -L DATA
-```
-<img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
-
-#### 3. Add entry in fstab for automatic mounting when restarting
-
-  - open fstab with sudo
-```sh
-  sudo nano /etc/fstab
-```
-  - add the following line in the fstab file
-```sh 
-LABEL=DATA /mnt/data ext4 auto,defaults 0 0
-```
-
-#### 4. Create the `/mnt/data` directory and give the user 1000 access
-
-```sh 
-sudo mkdir -p /mnt/data
-```
-```sh 
-sudo chown -R 1000:1000 /mnt/data
-```
-
-#### 5.  mount the drive automatically 
-
-```sh 
-sudo mount -a
-```  
-
-Maybe you get following error
-
-<img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500"/>
-
-then please perform the recommended command
-```sh 
-systemctl daemon-reload
-``` 
-and try to mount again.
-
-## 1.8 Mount external storage
-
-Stop the running docker
-
-```sh 
-docker compose down
-``` 
-
-Go to the deployment folder and open the `.env` file with e.g. nano 
-
-```sh 
-cd opencloud/deployments/examples/opencloud_full
-``` 
-```sh 
+```bash
 nano .env
 ```
 
-When you added an external hard disk or USB-Stick for the storage, you need to set the `OC_DATA_DIR` variable and adjust the path to your storage
+Add the minimal OpenCloud setup:
 
-<img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
+```env
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+```
 
+Then start Docker:
 
-Here it is `/mnt/data`
-
-Start the docker again
-
-```sh 
+```bash
 docker compose up
-``` 
+```
 
-## 1.9 Make your OpenCloud available from outside
+Now OpenCloud is running locally on your Raspberry Pi, and you can adjust it to your needs.
 
-#### 1. Create a DynDNS account and the hostname
+We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
 
-To make your Raspberry Pi accessible from the outside, you need a DynDNS entry (dynamic DNS). This is necessary because Let's Encrypt only creates SSL certificates for domain names, not for IP addresses. A DynDNS service ensures that your Pi always remains accessible under a fixed domain, even if the IP address changes.
+## Mount external hard disk or USB stick
 
-You can create a free DynDNS account at [No-IP](https://www.noip.com/), for example. After registering, log in to the No-IP web interface and create a new host name under “Create Hostname”. In this example, we use `opencloud.webhop.me` as the address for the Raspberry Pi.
+### Find your external drive
 
-<img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
+```bash
+lsblk
+```
 
-#### 2. Configure DynDNS in your router
+<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
-If your router supports integrated Dynamic DNS (DynDNS), you can update your IP address directly via the router. This eliminates the need to install the Dynamic Update Client (DUC) from No-IP on your Raspberry Pi.
-How to set up DDNS in the router:
+### Format the drive to ext4
 
-- Log into your router's web interface (usually via 192.168.1.1 or a similar address).
-- Search for the DDNS settings - these are usually located under Network, Internet or Dynamic DNS.
-- Select No-IP as your provider from the list of supported DDNS services.
-- Enter your No-IP credentials (username & password).
-- Enter the hostname you previously created with No-IP (e.g. opencloud-at-home.ddns.net).
-- Save the settings and test the connection.
+```bash
+sudo mkfs.ext4 /dev/sda1 -L DATA
+```
 
-The router will now automatically update your public IP address at No-IP so that your Raspberry Pi always remains accessible under the selected subdomain.
+<img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500"/>
 
-You can also look in the documentation from [No-IP](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
+### Add fstab entry for auto-mounting
 
-#### 3. Configure port forwarding in your router
+Open `fstab`:
 
-To make your Raspberry Pi accessible from the Internet, you must set up port forwarding in your router. This means that requests from outside to certain ports are automatically forwarded to your Raspberry Pi in the local network.
+```bash
+sudo nano /etc/fstab
+```
 
-1. Make sure that your Raspberry Pi always has the same IP address:
+Add this line:
 
-- By making a fixed DHCP assignment in the router settings
-- Or via a static IP address in the network settings of your Pi
+```bash
+LABEL=DATA /mnt/data ext4 auto,defaults 0 0
+```
 
+### Create the mount point and set permissions
 
-2. In the router menu, search for “Port forwarding”, “NAT” or “Port sharing” (the name may vary depending on the router model)
+```bash
+sudo mkdir -p /mnt/data
+sudo chown -R 1000:1000 /mnt/data
+```
 
-3. Create a new portforwarding with TCP for 80 and 443
+### Mount the drive
 
-  Example from a Speedport 4
-<img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
+```bash
+sudo mount -a
+```
 
-#### 4. Change the OpenCloud domain in the configuration
+If an error occurs:
 
-Now you need to change the environment variable `OC_DOMAIN` in the `.env` file
+<img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500"/>
 
-1. Connect via ssh on your Raspberry-Pi
+Run:
 
-2. Navigate to the correct folder 
+```bash
+systemctl daemon-reload
+```
 
-  ```sh 
-  cd opencloud/deployments/examples/opencloud_full
-  ```
-3. Stop running OpenCloud docker
+And try mounting again.
 
-```sh 
+## Mount external storage in Docker
+
+Stop Docker:
+
+```bash
 docker compose down
 ```
 
-4. open the `.env` file with e.g. nano 
+Open the `.env` file:
 
-  ```sh 
-  nano .env
-  ```
-5. Look for the `OC_DOMAIN` variable and enter your URL, here we used `opencloud.webhop.me`
+```bash
+cd opencloud-compose
+nano .env
+```
+
+Set the `OC_DATA_DIR` variable to your mounted storage path, e.g.:
+
+```env
+OC_DATA_DIR=/mnt/data
+```
+
+<img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
+
+Restart Docker:
+
+```bash
+docker compose up
+```
+
+## Make OpenCloud externally available
+
+### Create DynDNS hostname
+
+Register at [No-IP](https://www.noip.com/) and create a hostname, e.g. `opencloud.webhop.me`.
+
+<img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500"/>
+
+### Configure DynDNS in your router
+
+Use your router’s web interface to:
+
+- Locate the Dynamic DNS settings
+- Select **No-IP** as provider
+- Enter your No-IP credentials
+- Use the created hostname (e.g. `opencloud.webhop.me`)
+- Save and test the settings
+
+More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router)
+
+### Configure port forwarding
+
+1. Ensure your Raspberry Pi always has the same IP address:
+   - Either via static IP or DHCP assignment in the router
+
+2. In your router settings, look for **Port Forwarding**, **NAT**, or **Port Sharing**
+
+3. Forward the following ports to your Raspberry Pi:
+
+- TCP Port 80 (HTTP)
+- TCP Port 443 (HTTPS)
+
+<img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500"/>
+
+### Update OC_DOMAIN
+
+SSH into your Pi and update the domain:
+
+```bash
+cd opencloud-compose
+docker compose down
+nano .env
+```
+
+Edit the `OC_DOMAIN` value:
+
+```env
+OC_DOMAIN=opencloud.webhop.me
+```
+
 <img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
 
-6. Start the docker again
+Restart Docker:
 
-```sh 
+```bash
 docker compose up
-``` 
+```
 
 Now your OpenCloud should be reachable via your URL.
 

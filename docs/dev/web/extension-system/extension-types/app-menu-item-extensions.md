@@ -14,16 +14,16 @@ The Interface for an `AppMenuItemExtension` looks like so:
 
 ```typescript
 interface AppMenuItemExtension {
-  id: string
-  type: 'appMenuItem'
-  extensionPointIds?: string[]
-  label: () => string
-  color?: string
-  handler?: () => void
-  icon?: string
-  path?: string
-  priority?: number
-  url?: string
+  id: string;
+  type: 'appMenuItem';
+  extensionPointIds?: string[];
+  label: () => string;
+  color?: string;
+  handler?: () => void;
+  icon?: string;
+  path?: string;
+  priority?: number;
+  url?: string;
 }
 ```
 
@@ -46,8 +46,8 @@ The following example shows how an app creates an extension that registers an ap
 ```typescript
 export default defineWebApplication({
   setup() {
-    const { $gettext } = useGettext()
-    const appId = 'my-cool-app'
+    const { $gettext } = useGettext();
+    const appId = 'my-cool-app';
 
     const menuItems = computed<AppMenuItemExtension[]>(() => [
       {
@@ -59,7 +59,7 @@ export default defineWebApplication({
         color: '#0D856F',
         priority: 60
       }
-    ])
+    ]);
 
     return {
       appInfo: {
@@ -67,7 +67,7 @@ export default defineWebApplication({
         id: appId
       },
       extensions: menuItems
-    }
+    };
   }
-})
+});
 ```

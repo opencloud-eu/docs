@@ -138,7 +138,7 @@ proxy:
 
 The same can be achieved by setting the following environment variable:
 
-```shell
+```bash
 export PROXY_POLICIES_QUERY=data.proxy.granted
 ```
 
@@ -152,13 +152,13 @@ policies:
 
 The same can be achieved by setting the following environment variable:
 
-```shell
+```bash
 export POLICIES_POSTPROCESSING_QUERY=data.postprocessing.granted
 ```
 
 As soon as that query is configured, the postprocessing service must be informed to use the policies step by setting the environment variable:
 
-```shell
+```bash
 export POSTPROCESSING_STEPS=policies
 ```
 
@@ -180,7 +180,7 @@ Note that existing mappings from the host are extended by the definitions from t
 
 The path to that file can be provided via a yaml configuration or an environment variable. Note to replace the `OC_CONFIG_DIR` string by an existing path.
 
-```shell
+```bash
 export POLICIES_ENGINE_MIMES=OC_CONFIG_DIR/mime.types
 ```
 

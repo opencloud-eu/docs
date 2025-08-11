@@ -1,26 +1,23 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 id: rename
 title: Space umbenennen
----
-<br/><br/>
-
-## Man kann den Namen eines Spaces in OpenCloud umbenennen
-<br/><br/>
-
-### Hier zeigen wir wie es geht
-<br/><br/>
+description: Umbennen eines Space in OpenCloud
+draft: false
 ---
 
-#### **Kontextmenü öffnen**  
-   - Klicken Sie auf das **Drei-Punkte-Menü** oder machen Sie einen **Rechtsklick** auf den Raum in der Raumübersicht und wählen Sie **Umbenennen**.
-   <img src={require("./img/rename/umbenennen-button.png").default} alt="Rename" width="19200"/> 
-<br/><br/>
+# Einen Space in OpenCloud umbenennen
 
-#### **Neuen Namen eingeben**  
-   - Geben Sie den neuen Namen für den Raum ein und bestätigen Sie.
-   <img src={require("./img/rename/umbenennen-popup.png").default} alt="confirm" width="400"/> 
-<br/><br/>
+Du kannst einen bestehenden Space jederzeit umbenennen, um seinen Zweck oder Inhalt besser widerzuspiegeln.
 
-#### Ihr Space ist nun umbenannt
-   <img src={require("./img/rename/space-mit-neuem-namen.png").default} alt="Renamed Space" width="1920"/> 
+- Klicke in der Space-Übersicht auf das Drei-Punkte-Menü oder mache einen Rechtsklick auf den Space und wähle Umbenennen aus.
+
+<img src={require("./img/rename/umbenennen-button.png").default} alt="Rename" width="19200"/>
+
+- Gib den neuen Namen für den Space ein und bestätige.
+
+<img src={require("./img/rename/umbenennen-popup.png").default} alt="confirm" width="400"/>
+
+- Dein Space wurde nun umbenannt.
+
+<img src={require("./img/rename/space-mit-neuem-namen.png").default} alt="Renamed Space" width="1920"/>

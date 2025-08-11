@@ -15,16 +15,16 @@ An example of a search extension configuration can be found below:
 
 ```typescript
 interface SearchExtension {
-  id: string
-  type: 'search'
-  extensionPointIds?: string[]
+  id: string;
+  type: 'search';
+  extensionPointIds?: string[];
   searchProvider: {
-    id: string
-    available: boolean
-    displayName?: string
-    previewSearch?: SearchPreview // See SearchPreview section below
-    listSearch?: SearchList // See SearchList section below
-  }
+    id: string;
+    available: boolean;
+    displayName?: string;
+    previewSearch?: SearchPreview; // See SearchPreview section below
+    listSearch?: SearchList; // See SearchList section below
+  };
 }
 ```
 
@@ -57,32 +57,32 @@ The following example shows how a search extension that queries a Solr search en
 
 ```typescript
 export const useSolrSearchExtension = () => {
-  const { $gettext } = useGettext()
+  const { $gettext } = useGettext();
 
   const previewSearch: SearchPreview = {
     component: SolarSearchComponent, // see the next example snippet
     available: () => true,
     search: (term) => {
       // actual search implementation
-      console.log('Querying solr search engine...')
+      console.log('Querying solr search engine...');
     }
-  }
+  };
 
   const searchProvider: SearchProvider = {
     id: 'solr-search',
     available: true,
     displayName: 'Solr Search',
     previewSearch
-  }
+  };
 
   const extension = computed<SearchExtension>(() => ({
     id: 'com.github.opencloud-eu.web.solr-search',
     type: 'search',
     searchProvider
-  }))
+  }));
 
-  return { extension }
-}
+  return { extension };
+};
 ```
 
 The search component for the preview search container may look like this:
@@ -93,13 +93,13 @@ The search component for the preview search container may look like this:
 </template>
 
 <script setup lang="ts">
-  import { computed } from 'vue'
-  import { Resource } from '@opencloud-eu/web-client'
-  import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg'
+  import { computed } from 'vue';
+  import { Resource } from '@opencloud-eu/web-client';
+  import { SearchResultValue, ResourceListItem } from '@opencloud-eu/web-pkg';
 
-  const { searchResult } = defineProps<{ searchResult: SearchResultValue }>()
+  const { searchResult } = defineProps<{ searchResult: SearchResultValue }>();
 
-  const resource = computed<Resource>(() => searchResult.data)
+  const resource = computed<Resource>(() => searchResult.data);
 </script>
 ```
 
@@ -108,7 +108,7 @@ The extension can then be registered in any app like so:
 ```typescript
 export default defineWebApplication({
   setup() {
-    const { extension } = useSolrSearchExtension()
+    const { extension } = useSolrSearchExtension();
 
     return {
       appInfo: {
@@ -116,7 +116,7 @@ export default defineWebApplication({
         id: 'solrs-search-app'
       },
       extensions: computed(() => [unref(extension)])
-    }
+    };
   }
-})
+});
 ```

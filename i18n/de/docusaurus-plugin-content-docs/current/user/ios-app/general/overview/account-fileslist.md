@@ -2,49 +2,52 @@
 sidebar_position: 2
 id: account-fileslist
 title: Dateilisten-Menü
+description: Dateilisten-Menü
 draft: false
 ---
-<br/>
-### Hier ist eine Übersicht über das Dateilisten-Menü in der OpenCloud iOS-App.
 
----
+# Überblick über die Benutzeroberfläche
 
-<div style={{ display: 'flex', alignItems: 'center' }}>
+In diesem Abschnitt werden die zentralen Elemente der Benutzeroberfläche der OpenCloud iOS-App und deren Funktionen erklärt.
 
-<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/overview/fileslist.png").default} alt="Dateiliste-Übersicht" style={{ width: '400px', marginRight: '60px' }} />
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+## 1. Konto-Menü
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>1. Account Menü</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Bietet Zugriff auf Kontoeinstellungen.</li>
+Bietet Zugriff auf die Kontoeinstellungen.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>2. Navigation Verlauf</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Zurück- und Vorwärtsspringen durch zuvor besuchte Ansichten oder Ordner..</li>
+## 2. Navigationsverlauf
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>3. Suche</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Suchen nach Dateien, Ordnern oder geteilten Inhalten innerhalb der App.</li>
+Ermöglicht das Zurück- und Vorwärtsnavigieren durch zuvor besuchte Ansichten oder Ordner.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>4. Hinzufügen</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet Optionen zum Hochladen von Dateien, Erstellen von Ordnern oder Hinzufügen neuer Inhalte.</li>
+## 3. Suche
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>5. Drei Punkte Menü</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt zusätzliche Aktionen oder Einstellungen zur aktuellen Ansicht oder zum aktuellen Element an.</li>
+Ermöglicht die Suche nach Dateien, Ordnern oder geteilten Inhalten innerhalb der App.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>6. Sortierung</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht das Sortieren von Dateien nach Name, Datum, Größe oder anderen Kriterien.</li>
+## 4. Hinzufügen-Schaltfläche
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>7. Ansichtsmodi</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Erlaubt das Umschalten zwischen verschiedenen Darstellungsmodi.</li>
+Öffnet Optionen zum Hochladen von Dateien, Erstellen von Ordnern oder Hinzufügen neuer Inhalte.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>8. Auswahl Toggle</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Aktiviert den Mehrfachauswahlmodus, um mehrere Dateien oder Ordner gleichzeitig auszuwählen.</li>
+## 5. Drei-Punkte-Menü
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>9. Datei Liste</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den Inhalt des aktuellen Ordners als Liste von Dateien und Ordnern an.</li>
+Zeigt zusätzliche Aktionen oder Einstellungen zur aktuellen Ansicht oder zum aktuellen Element an.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Breadcrumbs Menü</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den aktuellen Ordnerpfad an und erlaubt die schnelle Navigation zu übergeordneten Ordnern.</li>
-  </ul>
+## 6. Sortierung
 
-</div>
+Ermöglicht das Sortieren von Dateien nach Name, Datum, Größe oder anderen Kriterien.
 
+## 7. Ansichtsmodus
+
+Ermöglicht das Umschalten zwischen verschiedenen Ansichtsmodi.
+
+## 8. Auswahlmodus
+
+Aktiviert den Mehrfachauswahlmodus, um mehrere Dateien oder Ordner gleichzeitig auszuwählen.
+
+## 9. Dateiliste
+
+Zeigt den Inhalt des aktuellen Ordners als Liste von Dateien und Ordnern an.
+
+## 10. Breadcrumb-Menü
+
+Zeigt den aktuellen Ordnerpfad an und ermöglicht die schnelle Navigation zu übergeordneten Ordnern.

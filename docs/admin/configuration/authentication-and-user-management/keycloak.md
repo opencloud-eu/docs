@@ -2,15 +2,18 @@
 sidebar_position: 3
 id: keycloak
 title: Keycloak Integration
+description: Keycloak Integration
+draft: false
 ---
 
 # Keycloak Integration
 
 OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities. This guide explains how to set up and configure Keycloak with OpenCloud.
 This guide is divided into three main sections:
-- **[Keycloak Integration Overview](#opencloud-configuration-for-keycloak-general)**: A brief overview of the integration process.
-- **[Shared User Directory Mode](#configuration-for-shared-directory-mode)**: Keycloak and OpenCloud share a common LDAP directory for user management.
-- **[Autoprovisioning Mode](#configuration-for-autoprovisioning-mode)**: OpenCloud autoprovisions users in a separate LDAP directory managed by OpenCloud.
+
+- [Keycloak Integration Overview](#opencloud-configuration-for-keycloak-general): A brief overview of the integration process.
+- [Shared User Directory Mode](#configuration-for-shared-directory-mode): Keycloak and OpenCloud share a common LDAP directory for user management.
+- [Autoprovisioning Mode](#configuration-for-autoprovisioning-mode): OpenCloud autoprovisions users in a separate LDAP directory managed by OpenCloud.
 
 ## OpenCloud Configuration for Keycloak (General)
 
@@ -20,7 +23,7 @@ You can also use one of our predefined Docker Compose setups, which are located 
 
 ### Server Configuration
 
-```
+```env
 PROXY_AUTOPROVISION_ACCOUNTS=true|false # that depends on your setup
 PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
 OC_OIDC_ISSUER=https://your-domain.example.com/realms/openCloud
@@ -35,7 +38,7 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
 ```
 
-Look [here](./external-idp.md#opencloud-configuration) for some more details about these settings.
+Look [OpenCloud external IDP configuration](./external-idp.md#opencloud-configuration) for some more details about these settings.
 
 ### Client Configuration
 
@@ -50,12 +53,12 @@ If you need to manually configure the clients in Keycloak:
 3. Navigate to Clients and click Create
 4. Configure each client according to the specifications above
 5. Ensure all clients have the appropriate scopes:
-    - web-origins
-    - profile
-    - roles
-    - groups
-    - basic
-    - email
+   - web-origins
+   - profile
+   - roles
+   - groups
+   - basic
+   - email
 
 ### Advanced Configuration
 
@@ -63,9 +66,8 @@ If you need to manually configure the clients in Keycloak:
 
 OpenCloud supports Keycloak's backchannel logout feature, which allows Keycloak to notify OpenCloud when a user logs out. This ensures that all sessions are properly terminated:
 
-- **Backchannel Logout URL**: `https://your-domain.example.com/backchannel_logout`
-- **Backchannel Logout Session Required**: `true`
-
+- Backchannel Logout URL: `https://your-domain.example.com/backchannel_logout`
+- Backchannel Logout Session Required: `true`
 
 ## Shared User Directory Mode
 
@@ -97,7 +99,8 @@ graph TD
 
 In this mode, a readable LDAP Directory with existing users serves as a central user directory for both Keycloak and OpenCloud.
 
-**Key characteristics:**
+Key characteristics:
+
 - LDAP is the source of truth for user information
 - The LDAP server uses standard attributes (uid, cn, sn, givenName, mail)
 - A common unique identifier (e.g. `entryUUID` or `objectGUID`) guarantees stable user mapping even if users are changing
@@ -114,7 +117,8 @@ OpenCloud can work with any LDAP schema containing standard attributes:
 - Groups are stored in a dedicated organizational unit
 - Default configuration sets LDAP as read-only
 
-**Example LDAP Structure:**
+Example LDAP Structure:
+
 ```bash
 dc=example,dc=org              # Base DN
 ├── ou=users                   # User organizational unit
@@ -183,7 +187,8 @@ OpenCloud provides complete example deployments using Docker Compose:
 1. Navigate to `deployments/examples/opencloud_full`
 2. Edit the `.env` file to enable the Shared Directory Mode:
 
-**For Shared Directory Mode:**
+For Shared Directory Mode:
+
 ```bash
 # Enable services
 LDAP=:ldap.yml
@@ -199,9 +204,10 @@ Keycloak is configured during startup by importing the `keycloak-realm.dist.json
 
 :::warning
 
-Keycloak can import the realm configuration file **only once** during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
+Keycloak can import the realm configuration file only once during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
 
 :::
+
 ## Autoprovisioning Mode
 
 In this mode, Keycloak is holding all users and OpenCloud autoprovisions new users during first login.
@@ -210,14 +216,14 @@ This mode is suitable in scenarios where the OpenIDConnect provider is external 
 ```mermaid
 graph TD
     subgraph opencloud["OpenCloud Deployment"]
-        LDAP[("`**LDAP Server**
+        LDAP[("`LDAP Server
             - managed by opencloud
             - custom schema`")]
-        OpenCloud["`**OpenCloud Server**`"]
+        OpenCloud["`OpenCloud Server`"]
         Stop((("Block <br>disabled<br>Users")))
     end
     subgraph existing["Existing Infrastructure"]
-        Keycloak("`**Keycloak**<br>(OIDC Provider)`")
+        Keycloak("`Keycloak<br>(OIDC Provider)`")
         UserDirectory[("`Federated Identity Provider
         - Microsoft
         - Google
@@ -241,7 +247,7 @@ graph TD
 ```
 
 - Keycloak manages the users, groups, and roles
-- The openCloud Clients and Sessions are configured in Keycloak
+- The OpenCloud Clients and Sessions are configured in Keycloak
 - Simplified user management with "just-in-time" provisioning
 - Federation with external identity providers is supported (e.g., Google, GitHub, Facebook, Microsoft)
 - In this case, we need to provide an LDAP server which is fully controlled by OpenCloud and needs a custom [LDAP Schema](https://github.com/opencloud-eu/opencloud/blob/main/deployments/examples/shared/config/ldap/schemas/10_opencloud_schema.ldif).
@@ -288,7 +294,8 @@ OpenCloud provides complete example deployments using Docker Compose:
 1. Navigate to `deployments/examples/opencloud_full`
 2. Edit the `.env` file to enable the Autoprovisioning Mode:
 
-**For Autoprovisioning Mode:**
+For Autoprovisioning Mode:
+
 ```bash
 # Enable services
 LDAP=:ldap.yml
@@ -303,7 +310,7 @@ Keycloak is configured during startup by importing the `keycloak-autoprovisionin
 
 :::warning
 
-Keycloak can import the realm configuration file **only once** during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
+Keycloak can import the realm configuration file only once during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
 
 :::
 
@@ -311,9 +318,9 @@ Keycloak can import the realm configuration file **only once** during the first 
 
 Common issues and solutions:
 
-- **User cannot log in**: 
-  - Check LDAP connectivity and user existence 
+- User cannot log in:
+  - Check LDAP connectivity and user existence
   - Check if each user has an OpenCloud Role assigned
   - Verify that the client IDs and redirect URIs match exactly
-- **Groups not synchronized**: Verify group mappings in Keycloak
-- **User creation fails (autoprovisioning mode)**: Ensure LDAP has write permissions in Autoprovisioning Mode
+- Groups not synchronized: Verify group mappings in Keycloak
+- User creation fails (autoprovisioning mode): Ensure LDAP has write permissions in Autoprovisioning Mode

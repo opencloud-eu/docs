@@ -2,53 +2,67 @@
 sidebar_position: 1
 ---
 
+<!-- markdownlint-disable MD041 -->
+
 import OcLogoPetrol from '/static/img/oc-logo-petrol.svg';
 import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
+
+<!-- markdownlint-enable MD041 -->
 
 # Willkommen
 
 <OcLogoPetrol width="250" height="55" className="light-mode-image"/>
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
-
 ## Wilkommen zur OpenCloud Wissensdatenbank
 
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
-<br/><br/>
+Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
+Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 
-### Inhaltsverzeichnis:
+## Inhaltsverzeichnis
 
-#### Quick-Guide:
-Hier finden Sie einen "Quick-Guide", wie Sie in wenigen Minuten eine eigene OpenCloud erstellen können.
+### [Benutzeroberfläche und Navigation](./general)
 
-#### Dateien & Ordner: 
-Hier finden Sie Informationen rund um die Verwaltung von Dateien & Ordnern.
+Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungsmöglichkeiten und Ansichtsmodi.
 
-#### Desktop-Client:
-Hier finden Sie Informationen zur Installation & Einrichtung des Desktop-Clients.
+### [Verwalten von Dateien und Ordner](./files-and-folders)
 
-#### Rollen:
-Hier finden Sie Informationen zu den verschiedenen Rollen, die vergeben werden können.
+Hier finden Sie Informationen zur Verwaltung von Dateien und Ordnern.
 
-#### Spaces:
-Hier finden Sie Informationen für den Umgang mit Spaces.
+### [Teilen von Dateien und Ordner](./sharing)
 
-#### Teilen:
-Hier finden Sie Informationen wie und auf welche Weise man Dateien & Ordner teilen kann.
+Hier erfahren Sie, wie Sie Dateien und Ordner freigeben können.
 
-#### Allgemein:
-Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungen & Viewmodes.
+### [Arbeiten im Team mit Spaces](./spaces)
 
-#### Admin:
-Hier finden Sie Informationen zum Umgang und Optionen mit Admin-Rechten.
-<br/><br/>
+Hier finden Sie Informationen zur Arbeit mit Spaces.
 
-### Was ist OpenCloud?
-OpenCloud ist die Filesharing & Kollaborations-Lösung der Heinlein Gruppe.
+### [OpenCloud Desktop](./desktop-client)
 
-Durch intelligentes Datei-Management und eine starke Open Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar.<br/>
-Mit flexiblen Datenräumen und intelligenten Zugriffs­rechten können Teams jederzeit und überall auf die Daten zugreifen und gemeinsam daran arbeiten – ohne Barrieren, sondern mit viel Produktivität.
-<br/><br/>
+Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
 
-### Wie kann ich OpenCloud nutzen?
-Eine Anleitung wie Sie sich eine eigene OpenCloud installieren und einrichten können, finden Sie in der "User-Dokumentation" unter "Quick-Guide".
+### [OpenCloud iOS App](./ios-app/)
+
+Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
+
+### [Rollen](./roles)
+
+Hier erfahren Sie mehr über die verschiedenen zuweisbaren Rollen.
+
+### [Administration von OpenCloud](./admin)
+
+Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutzungsmöglichkeiten.
+
+### [Häufige Probleme und Hilfe](./common-issues.md)
+
+Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
+
+## Was ist OpenCloud?
+
+OpenCloud ist die File-Sharing- und Collaboration-Lösung der Heinlein Gruppe.
+
+Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und überall ohne Barrieren, aber mit hoher Produktivität auf Daten zugreifen und gemeinsam daran arbeiten.
+
+## Wie kann ich OpenCloud nutzen?
+
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).

@@ -20,15 +20,11 @@ To define a right sidebar panel extension, you implement the `SidebarPanelExtens
 It can be found below:
 
 ```typescript
-interface SidebarPanelExtension<
-  R extends Item,
-  P extends Item,
-  T extends Item
-> {
-  id: string
-  type: 'sidebarPanel'
-  extensionPointIds?: string[]
-  panel: SideBarPanel<R, P, T> // Please check the SideBarPanel section below
+interface SidebarPanelExtension<R extends Item, P extends Item, T extends Item> {
+  id: string;
+  type: 'sidebarPanel';
+  extensionPointIds?: string[];
+  panel: SideBarPanel<R, P, T>; // Please check the SideBarPanel section below
 }
 ```
 
@@ -41,9 +37,9 @@ The `panel` object configures the actual sidebar panel. It consists of different
 
 ```typescript
 interface SideBarPanelContext<R extends Item, P extends Item, T extends Item> {
-  root?: R
-  parent?: P
-  items?: T[]
+  root?: R;
+  parent?: P;
+  items?: T[];
 }
 ```
 
@@ -58,14 +54,14 @@ interface SideBarPanelContext<R extends Item, P extends Item, T extends Item> {
 
 ```typescript
 interface SideBarPanel<R extends Item, P extends Item, T extends Item> {
-  name: string
-  icon: string
-  iconFillType?: IconFillType
-  title(context: SideBarPanelContext<R, P, T>): string
-  isVisible(context: SideBarPanelContext<R, P, T>): boolean
-  component: Component
-  componentAttrs?(context: SideBarPanelContext<R, P, T>): any
-  isRoot?(context: SideBarPanelContext<R, P, T>): boolean
+  name: string;
+  icon: string;
+  iconFillType?: IconFillType;
+  title(context: SideBarPanelContext<R, P, T>): string;
+  isVisible(context: SideBarPanelContext<R, P, T>): boolean;
+  component: Component;
+  componentAttrs?(context: SideBarPanelContext<R, P, T>): any;
+  isRoot?(context: SideBarPanelContext<R, P, T>): boolean;
 }
 ```
 
@@ -89,11 +85,9 @@ The following example shows how a sidebar panel for displaying exif data for a r
 
 ```typescript
 export const useExifDataPanelExtension = () => {
-  const { $gettext } = useGettext()
+  const { $gettext } = useGettext();
 
-  const extension = computed<
-    SidebarPanelExtension<SpaceResource, Resource, Resource>
-  >(() => ({
+  const extension = computed<SidebarPanelExtension<SpaceResource, Resource, Resource>>(() => ({
     id: 'com.github.opencloud-eu.web.files.sidebar-panel.exif-data',
     type: 'sidebarPanel',
     extensionPointIds: ['global.files.sidebar'],
@@ -105,16 +99,16 @@ export const useExifDataPanelExtension = () => {
       isRoot: () => true,
       isVisible: ({ items }) => {
         if (items?.length !== 1) {
-          return false
+          return false;
         }
 
-        return true
+        return true;
       }
     }
-  }))
+  }));
 
-  return { extension }
-}
+  return { extension };
+};
 ```
 
 The extension can then be registered in any app like so:
@@ -122,7 +116,7 @@ The extension can then be registered in any app like so:
 ```typescript
 export default defineWebApplication({
   setup() {
-    const { extension } = useExifDataPanelExtension()
+    const { extension } = useExifDataPanelExtension();
 
     return {
       appInfo: {
@@ -130,7 +124,7 @@ export default defineWebApplication({
         id: 'exif-panel-app'
       },
       extensions: computed(() => [unref(extension)])
-    }
+    };
   }
-})
+});
 ```

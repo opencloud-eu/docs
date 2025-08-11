@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/main/schema/markdownlint-cli2-config-schema.json",
+  "config": ".markdownlint.json",
+  "ignores": [
+    ".git",
+    "node_modules",
+    "build",
+    "static",
+    "assets",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "README.md"
+  ]
+}

@@ -2,13 +2,15 @@
 sidebar_position: 1
 id: external-idp
 title: External OpenID Connect Identity Provider
+description: Integrating external OpenID Connect Identity Providers
+draft: false
 ---
 
 # Integrating external OpenID Connect Identity Providers
 
-## OpenCloud Configuration
-
 The following environment variables are relevant when connecting OpenCloud to an external IDP
+
+## OpenCloud Configuration
 
 - `OC_OIDC_ISSUER`: Set this to the issuer URL of the external Identity Provider
 - `OC_EXCLUDE_RUN_SERVICES`: To disable the built-in Identity Provider set this to `idp`
@@ -60,18 +62,18 @@ for an example.
 
 ```yaml
 role_assignment:
-    driver: oidc
-    oidc_role_mapper:
-        role_claim: opencloudRoles
-        role_mapping:
-            - role_name: admin
-              claim_value: myAdminRole
-            - role_name: spaceadmin
-              claim_value: mySpaceAdminRole
-            - role_name: user
-              claim_value: myUserRole
-            - role_name: guest
-              claim_value: myGuestRole
+  driver: oidc
+  oidc_role_mapper:
+    role_claim: opencloudRoles
+    role_mapping:
+      - role_name: admin
+        claim_value: myAdminRole
+      - role_name: spaceadmin
+        claim_value: mySpaceAdminRole
+      - role_name: user
+        claim_value: myUserRole
+      - role_name: guest
+        claim_value: myGuestRole
 ```
 
 This would assign the role `admin` to users with the value `myAdminRole` in the claim `opencloudRoles`.
@@ -103,7 +105,9 @@ The default `role_claim` (or `PROXY_ROLE_ASSIGNMENT_OIDC_CLAIM`) is `roles`. The
   claim_value: opencloudGuest
 ```
 
-Note: When `PROXY_ROLE_ASSIGNMENT_DRIVER` is set to `oidc` it is recommended to set `GRAPH_ASSIGN_DEFAULT_USER_ROLE` to `false`.
+:::note
+When `PROXY_ROLE_ASSIGNMENT_DRIVER` is set to `oidc` it is recommended to set `GRAPH_ASSIGN_DEFAULT_USER_ROLE` to `false`.
+:::
 
 ## Client Configuration
 
@@ -113,9 +117,9 @@ OpenCloud requires several OIDC clients to be configured in the Identity Provide
 
 The web client is used for browser-based access to OpenCloud:
 
-- **Client ID**: `web`
-- **Client Type**: Public client
-- **Redirect URIs**: 
+- Client ID: `web`
+- Client Type: Public client
+- Redirect URIs:
   - `https://your-domain.example.com/`
   - `https://your-domain.example.com/oidc-callback.html`
   - `https://your-domain.example.com/oidc-silent-redirect.html`
@@ -124,9 +128,9 @@ The web client is used for browser-based access to OpenCloud:
 
 The desktop client is used for the OpenCloud desktop application:
 
-- **Client ID**: `OpenCloudDesktop`
-- **Client Type**: Public client
-- **Redirect URIs**:
+- Client ID: `OpenCloudDesktop`
+- Client Type: Public client
+- Redirect URIs:
   - `http://127.0.0.1`
   - `http://localhost`
 
@@ -134,24 +138,24 @@ The desktop client is used for the OpenCloud desktop application:
 
 #### Android App
 
-- **Client ID**: `OpenCloudAndroid`
-- **Client Type**: Public client
-- **Redirect URIs**: `oc://android.opencloud.eu`
-- **Post Logout Redirect URIs**: `oc://android.opencloud.eu`
+- Client ID: `OpenCloudAndroid`
+- Client Type: Public client
+- Redirect URIs: `oc://android.opencloud.eu`
+- Post Logout Redirect URIs: `oc://android.opencloud.eu`
 
 #### iOS App
 
-- **Client ID**: `OpenCloudIOS`
-- **Client Type**: Public client
-- **Redirect URIs**: `oc://ios.opencloud.eu`
-- **Post Logout Redirect URIs**: `oc://ios.opencloud.eu`
+- Client ID: `OpenCloudIOS`
+- Client Type: Public client
+- Redirect URIs: `oc://ios.opencloud.eu`
+- Post Logout Redirect URIs: `oc://ios.opencloud.eu`
 
 ### Additional Clients
 
 #### Cyberduck File Transfer Client
 
-- **Client ID**: `Cyberduck`
-- **Client Type**: Public client
-- **Redirect URIs**:
+- Client ID: `Cyberduck`
+- Client Type: Public client
+- Redirect URIs:
   - `x-cyberduck-action:oauth`
   - `x-mountainduck-action:oauth`

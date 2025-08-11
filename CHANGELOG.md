@@ -1,5 +1,165 @@
 # Changelog
 
+## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue, @Svanvith, @lucaribon
+
+### 👷 Admin Documentation
+
+- remove draft:true for the release [[#425](https://github.com/opencloud-eu/docs/pull/425)]
+- add how to add user in keycloak without personal Space [[#421](https://github.com/opencloud-eu/docs/pull/421)]
+- add default quota docs [[#423](https://github.com/opencloud-eu/docs/pull/423)]
+- unneeded "Clone the OpenCloud Repository" section [[#418](https://github.com/opencloud-eu/docs/pull/418)]
+
+### 👤 User Documentation
+
+- introducing links to the user intro & fixing 2 icons [[#424](https://github.com/opencloud-eu/docs/pull/424)]
+- add german translation for common issues in user section [[#422](https://github.com/opencloud-eu/docs/pull/422)]
+- add common issues to users, desktop client [[#419](https://github.com/opencloud-eu/docs/pull/419)]
+
+## [1.43.0](https://github.com/opencloud-eu/docs/releases/tag/1.43.0) - 2025-07-24
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- adjust link in the external proxy docs [[#416](https://github.com/opencloud-eu/docs/pull/416)]
+
+## [1.42.0](https://github.com/opencloud-eu/docs/releases/tag/1.42.0) - 2025-07-24
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- rework decomposeds3 [[#412](https://github.com/opencloud-eu/docs/pull/412)]
+
+### 👤 User Documentation
+
+- rework Android de [[#415](https://github.com/opencloud-eu/docs/pull/415)]
+- Team rework ios de [[#414](https://github.com/opencloud-eu/docs/pull/414)]
+- rework desktop and add german screenshots [[#411](https://github.com/opencloud-eu/docs/pull/411)]
+
+## [1.41.0](https://github.com/opencloud-eu/docs/releases/tag/1.41.0) - 2025-07-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- rework user admin de and set kubernetes to draft:false [[#409](https://github.com/opencloud-eu/docs/pull/409)]
+
+## [1.40.0](https://github.com/opencloud-eu/docs/releases/tag/1.40.0) - 2025-07-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Heiko-Pohl, @ScharfViktor, @Svanvith
+
+### 🐾 Guides
+
+- add best practice how to format our docs md files [[#388](https://github.com/opencloud-eu/docs/pull/388)]
+- Add lint format to readme [[#382](https://github.com/opencloud-eu/docs/pull/382)]
+
+### 👷 Admin Documentation
+
+- publish release notes 3.2.0 [[#403](https://github.com/opencloud-eu/docs/pull/403)]
+- rework admin getting started [[#397](https://github.com/opencloud-eu/docs/pull/397)]
+- Rework admin configuration docs [[#398](https://github.com/opencloud-eu/docs/pull/398)]
+- rework admin maintenance docs [[#399](https://github.com/opencloud-eu/docs/pull/399)]
+- rework admin resources docs [[#400](https://github.com/opencloud-eu/docs/pull/400)]
+- rework admin welcome docs [[#396](https://github.com/opencloud-eu/docs/pull/396)]
+- update release list [[#387](https://github.com/opencloud-eu/docs/pull/387)]
+- add tutorial for OpenCloud with reverse Proxy [[#365](https://github.com/opencloud-eu/docs/pull/365)]
+- Docker compose refinement [[#370](https://github.com/opencloud-eu/docs/pull/370)]
+
+### 👤 User Documentation
+
+- rework general de [[#408](https://github.com/opencloud-eu/docs/pull/408)]
+- rework roles de [[#407](https://github.com/opencloud-eu/docs/pull/407)]
+- rework spaces de [[#406](https://github.com/opencloud-eu/docs/pull/406)]
+- ajdust intro [[#402](https://github.com/opencloud-eu/docs/pull/402)]
+- rework shares de [[#405](https://github.com/opencloud-eu/docs/pull/405)]
+- rework files and folders de [[#404](https://github.com/opencloud-eu/docs/pull/404)]
+- Team rework android [[#401](https://github.com/opencloud-eu/docs/pull/401)]
+- Rework user sharing dokus [[#393](https://github.com/opencloud-eu/docs/pull/393)]
+- Rework user spaces dokus [[#394](https://github.com/opencloud-eu/docs/pull/394)]
+- Rework user files and folder [[#395](https://github.com/opencloud-eu/docs/pull/395)]
+- Team rework user i os app [[#392](https://github.com/opencloud-eu/docs/pull/392)]
+- Rework User Admin Dokus [[#389](https://github.com/opencloud-eu/docs/pull/389)]
+- rework user desktop client [[#390](https://github.com/opencloud-eu/docs/pull/390)]
+- Rework User General Dokus [[#391](https://github.com/opencloud-eu/docs/pull/391)]
+
+### 📦️ Build&Tools
+
+- style guide adjustments [[#385](https://github.com/opencloud-eu/docs/pull/385)]
+- Remove html line breaks [[#383](https://github.com/opencloud-eu/docs/pull/383)]
+- simplify prettier config [[#380](https://github.com/opencloud-eu/docs/pull/380)]
+- add linter to ci, fix linter reported issues [[#378](https://github.com/opencloud-eu/docs/pull/378)]
+- Add linter [[#376](https://github.com/opencloud-eu/docs/pull/376)]
+- chore: add prettier [[#374](https://github.com/opencloud-eu/docs/pull/374)]
+- chore: add Require Pull Request Labels workflow [[#375](https://github.com/opencloud-eu/docs/pull/375)]
+
+## [1.39.0](https://github.com/opencloud-eu/docs/releases/tag/1.39.0) - 2025-07-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @dragotin, @tackin
+
+### :octocat: Developer Documentation
+
+- Add trash quick action extension point to web dev docs [[#372](https://github.com/opencloud-eu/docs/pull/372)]
+
+### 👷 Admin Documentation
+
+- Add snippet about data export [[#371](https://github.com/opencloud-eu/docs/pull/371)]
+
+## [1.38.0](https://github.com/opencloud-eu/docs/releases/tag/1.38.0) - 2025-07-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue, @Svanvith
+
+### 👷 Admin Documentation
+
+- Refine docker-compose local [[#368](https://github.com/opencloud-eu/docs/pull/368)]
+- add instructions to deinstall opencloud [[#367](https://github.com/opencloud-eu/docs/pull/367)]
+
+## [1.37.0](https://github.com/opencloud-eu/docs/releases/tag/1.37.0) - 2025-07-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @fschade
+
+### :octocat: Developer Documentation
+
+- add libre graph api url to server documentation [[#357](https://github.com/opencloud-eu/docs/pull/357)]
+
+### 👷 Admin Documentation
+
+- rewrite the raspberry pi tutorial to match to the new compose repo [[#355](https://github.com/opencloud-eu/docs/pull/355)]
+- change structure for deployment with docker compose [[#353](https://github.com/opencloud-eu/docs/pull/353)]
+
+### 📦️ Build&Tools
+
+- enhancement(docs): add cdperf documentation [[#358](https://github.com/opencloud-eu/docs/pull/358)]
+
+## [1.36.0](https://github.com/opencloud-eu/docs/releases/tag/1.36.0) - 2025-06-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @Svanvith, @tbsbdr
+
+### 👷 Admin Documentation
+
+- publish 3.1.0 release in the docs [[#352](https://github.com/opencloud-eu/docs/pull/352)]
+- change /home/chaser to /home/user [[#348](https://github.com/opencloud-eu/docs/pull/348)]
+
 ## [1.35.0](https://github.com/opencloud-eu/docs/releases/tag/1.35.0) - 2025-06-23
 
 ### ❤️ Thanks to all contributors! ❤️

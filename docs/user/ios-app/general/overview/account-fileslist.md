@@ -1,50 +1,53 @@
 ---
 sidebar_position: 2
 id: account-fileslist
-title: Fileslist-Menue
+title: Fileslist Menu
+description: Fileslist Menu
 draft: false
 ---
 
-### Here a is an overview of the fileslist-menue in the OpenCloud iOS-App.
+# Interface Overview
 
----
-
-<div style={{ display: 'flex', alignItems: 'center' }}>
+This section explains the core interface elements of the OpenCloud iOS app and their functionality.
 
 <img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+## 1. Account Menu
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>1. Account Menu</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Provides access to account settings</li>
+Provides access to account settings.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>2. Navigation History</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows to go back and forward through previously visited views or folders.</li>
+## 2. Navigation History
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>3. Search</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Lets the user search for files, folders, or shared items within the app.</li>
+Allows you to go back and forward through previously visited views or folders.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>4. Add Button</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Opens options to upload files, create folders, or add new content.</li>
+## 3. Search
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>5. Three Dot Menu</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays additional actions or settings related to the current view or item.</li>
+Lets the user search for files, folders, or shared items within the app.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>6. Sorting</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Lets the user sort files by name, date, size, or other criteria.</li>
+## 4. Add Button
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>7. View Mode</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Allows switching between different view-modes.</li>
+Opens options to upload files, create folders, or add new content.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>8. Selection Toggle</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Enables multi-select mode to select multiple files or folders at once.</li>
+## 5. Three Dot Menu
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>9. Files List</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Shows the contents of the current folder as a list of files and folders.</li>
-    
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}><strong>10. Breadcrumbs Menu</strong></li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Displays the current folder path and allows quick navigation to parent folders.</li>
-  </ul>
+Displays additional actions or settings related to the current view or item.
 
-</div>
+## 6. Sorting
 
+Lets the user sort files by name, date, size, or other criteria.
+
+## 7. View Mode
+
+Allows switching between different view modes.
+
+## 8. Selection Toggle
+
+Enables multi-select mode to select multiple files or folders at once.
+
+## 9. Files List
+
+Shows the contents of the current folder as a list of files and folders.
+
+## 10. Breadcrumbs Menu
+
+Displays the current folder path and allows quick navigation to parent folders.

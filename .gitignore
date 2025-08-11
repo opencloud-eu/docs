@@ -5,7 +5,8 @@
 /build
 /static/likec4
 
-# design-system docs
+# static docs
+/static/cdperf
 /static/design-system
 
 # Generated files

@@ -4,50 +4,53 @@ id: account-overview
 title: Account-Menü
 draft: false
 ---
-<br/>
-### Hier ist eine Übersicht über das Account-Menü in der OpenCloud iOS-App.
 
----
+# Kontomenü
 
-<div style={{ display: 'flex', alignItems: 'flex-start' }}>
+In der iOS-App bietet das Kontomenü Zugriff auf verschiedene persönliche und freigabebezogene Funktionen.
 
-<img src={require("../../img/overview/account.png").default} alt="Overview Account" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/overview/account.png").default} alt="Dateiübersicht" style={{ width: '400px', marginRight: '60px' }} />
 
-<ul style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}>
+## 1. Kontomenüeintrag
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**1. Account Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet die Hauptoptionen für das Konto und die Kontoeinstellungen.</li>
+Öffnet die Hauptoptionen und Einstellungen des Kontos.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>2. Aktiver Account**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt an, welches Benutzerkonto aktuell aktiv ist.</li>
+## 2. Aktives Konto
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**3. Persönlicher Bereich Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Gibt Zugriff auf die persönlichen Dateien und Ordner des Benutzers.</li>
+Zeigt an, welches Benutzerkonto derzeit aktiv ist.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**4. Teilen Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt Dateien und Ordner an, die mit anderen geteilt wurden oder empfangen wurden.</li>
+## 3. Persönlicher Bereich
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**5. Spaces Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet eine Liste von kollaborativen Bereichen oder Spaces.</li>
+Bietet Zugriff auf die persönlichen Dateien und Ordner der nutzenden Person.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**6. Suche Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht dem Benutzer die Suche nach Dateien, Ordnern und Inhalten.</li>
+## 4. Freigaben
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**7. Zuletzt verwendet Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt eine Liste kürzlich geöffneter oder bearbeiteter Dateien.</li>
+Zeigt Dateien und Ordner, die mit anderen geteilt wurden oder empfangen wurden.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**8. Offline Verfügbar Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt Dateien an, die für den Offline-Zugriff markiert wurden.</li>
+## 5. Spaces
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**9. Status Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Zeigt den aktuellen Synchronisations- oder Verbindungsstatus an.</li>
+Öffnet eine Liste kollaborativer Bereiche oder Teamordner.
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**10. Account hinzufügen Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Ermöglicht dem Benutzer, ein neues Konto zur App hinzuzufügen.</li>
+## 6. Suche
 
-    <li style={{ backgroundColor: '#E2BAFF', padding: '4px', color: 'var(--my-text-color)' }}>**11. Einstellungen Menü Item**</li>
-    <li style={{ backgroundColor: '#EDD5FF', padding: '0px', color: 'var(--my-text-color)' }}>Öffnet die allgemeinen Einstellungen und Konfigurationsoptionen.</li>
-  </ul>
+Ermöglicht die Suche nach Dateien, Ordnern und Inhalten.
 
-</div>
+## 7. Zuletzt verwendet
 
+Zeigt eine Liste der zuletzt geöffneten oder bearbeiteten Dateien.
+
+## 8. Offline verfügbar
+
+Zeigt Dateien an, die für den Offline-Zugriff markiert wurden.
+
+## 9. Status
+
+Zeigt den aktuellen Synchronisations- oder Verbindungsstatus an.
+
+## 10. Konto hinzufügen
+
+Ermöglicht das Hinzufügen eines neuen Kontos zur App.
+
+## 11. Einstellungen
+
+Öffnet die allgemeinen Einstellungen und Konfigurationsoptionen.

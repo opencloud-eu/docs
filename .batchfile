@@ -1,3 +1,4 @@
 # Usage: <RepoUrl>;branch;TargetFolder
 
 https://github.com/opencloud-eu/web;design-system-docs;static/design-system
+https://github.com/opencloud-eu/cdperf;cdperf-docs;static/cdperf

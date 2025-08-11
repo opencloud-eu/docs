@@ -5,10 +5,20 @@ when:
   - event: [pull_request, manual, tag]
 
 steps:
-  - name: fetch-design-system-docs
+  - name: git-batch
     image: quay.io/thegeeklab/git-batch
     commands:
       - git batch -vv
+  - name: lint-md
+    image: owncloudci/nodejs:20
+    commands:
+      - pnpm install
+      - pnpm lint:md
+  - name: format-check
+    image: owncloudci/nodejs:20
+    commands:
+      - pnpm install
+      - pnpm format:check
   - name: build
     image: owncloudci/nodejs:20
     commands:
