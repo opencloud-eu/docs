@@ -3,7 +3,7 @@ sidebar_position: 11
 id: file-names
 title: File Naming Rules
 description: File Naming Rules for OpenCloud Desktop
-draft: true
+draft: false
 ---
 
 # Filename restrictions on OpenCloud Desktop
