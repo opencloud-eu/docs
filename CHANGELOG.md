@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.45.0](https://github.com/opencloud-eu/docs/releases/tag/1.45.0) - 2025-08-11
+## [1.45.0](https://github.com/opencloud-eu/docs/releases/tag/1.45.0) - 2025-08-12
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @Svanvith
+@LisaHue, @ScharfViktor, @Svanvith
+
+### 👷 Admin Documentation
+
+- publish release note 3.3.0 [[#432](https://github.com/opencloud-eu/docs/pull/432)]
 
 ### 👤 User Documentation
 
