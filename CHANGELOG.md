@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.45.0](https://github.com/opencloud-eu/docs/releases/tag/1.45.0) - 2025-08-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue, @ScharfViktor, @Svanvith
+
+### 👷 Admin Documentation
+
+- publish release note 3.3.0 [[#432](https://github.com/opencloud-eu/docs/pull/432)]
+
+### 👤 User Documentation
+
+- Add desktop conflict files [[#431](https://github.com/opencloud-eu/docs/pull/431)]
+- add file name rules for desktop [[#429](https://github.com/opencloud-eu/docs/pull/429)]
+- introducing links to the german user intro & 2 other fixes [[#427](https://github.com/opencloud-eu/docs/pull/427)]
+
 ## [1.44.0](https://github.com/opencloud-eu/docs/releases/tag/1.44.0) - 2025-08-05
 
 ### ❤️ Thanks to all contributors! ❤️
