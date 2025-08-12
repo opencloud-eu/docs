@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Add desktop conflict files [[#431](https://github.com/opencloud-eu/docs/pull/431)]
 - add file name rules for desktop [[#429](https://github.com/opencloud-eu/docs/pull/429)]
 - introducing links to the german user intro & 2 other fixes [[#427](https://github.com/opencloud-eu/docs/pull/427)]
 
