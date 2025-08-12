@@ -45,7 +45,7 @@ To resolve a conflict:
 
 ## Why Conflict Files Appear
 
-Under the hood, the Desktop Client determines a conflict when:
+The Desktop Client determines a conflict when:
 
 - Local and remote versions of a file both change since the last sync.
 - Content is compared using file IDs and checksums—not only timestamps.
