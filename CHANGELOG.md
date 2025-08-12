@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.46.0](https://github.com/opencloud-eu/docs/releases/tag/1.46.0) - 2025-08-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- create german file naming rules and remove draft:true [[#435](https://github.com/opencloud-eu/docs/pull/435)]
+
 ## [1.45.0](https://github.com/opencloud-eu/docs/releases/tag/1.45.0) - 2025-08-12
 
 ### ❤️ Thanks to all contributors! ❤️
