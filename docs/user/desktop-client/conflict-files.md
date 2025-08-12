@@ -3,7 +3,7 @@ sidebar_position: 10
 id: file-conflicts
 title: Handle file conflicts
 description: How to handle file conflicts
-draft: true
+draft: false
 ---
 
 # Handle file conflicts in the OpenCloud Desktop Client
