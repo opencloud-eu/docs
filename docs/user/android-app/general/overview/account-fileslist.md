@@ -3,7 +3,7 @@ sidebar_position: 2
 id: account-fileslist
 title: Fileslist Menu
 description: Fileslist Menu
-draft: true
+draft: false
 ---
 
 # Here a is an overview of the fileslist menu in the OpenCloud Android-App

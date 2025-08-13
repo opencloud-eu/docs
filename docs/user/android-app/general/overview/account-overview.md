@@ -3,7 +3,7 @@ sidebar_position: 1
 id: account-overview
 title: Account Menu
 description: Overview of the Account Menu
-draft: true
+draft: false
 ---
 
 # Account Menu

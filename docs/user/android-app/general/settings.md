@@ -3,7 +3,7 @@ sidebar_position: 4
 id: settings
 title: Settings
 description: Settings in OpenCloud Android app
-draft: true
+draft: false
 ---
 
 # Settings
