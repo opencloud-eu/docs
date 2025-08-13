@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.47.0](https://github.com/opencloud-eu/docs/releases/tag/1.47.0) - 2025-08-13
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- remove draft: true and add missing pics in german part for Android [[#438](https://github.com/opencloud-eu/docs/pull/438)]
+
 ## [1.46.0](https://github.com/opencloud-eu/docs/releases/tag/1.46.0) - 2025-08-13
 
 ### ❤️ Thanks to all contributors! ❤️
