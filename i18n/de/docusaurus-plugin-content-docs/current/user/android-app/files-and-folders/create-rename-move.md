@@ -3,7 +3,7 @@ sidebar_position: 1
 id: create-rename-move
 title: Erstellen - Umbenennen - Verschieben
 description: Erstellen - Umbenennen - Verschieben
-draft: true
+draft: false
 ---
 
 # Erstellen, Umbenennen und Verschieben von Dateien und Ordnern

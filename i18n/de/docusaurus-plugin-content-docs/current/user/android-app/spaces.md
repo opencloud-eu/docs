@@ -3,7 +3,7 @@ sidebar_position: 6
 id: spaces
 title: Spaces
 description: Spaces in der OpenCloud Android App
-draft: true
+draft: false
 ---
 
 # Der Bereich „Verlinkungen“ in der OpenCloud Android-App

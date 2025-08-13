@@ -3,7 +3,7 @@ sidebar_position: 2
 id: upload-make-available-offline
 title: Hochladen - Offline verfügbar machen
 description: Dateien hochladen in Android
-draft: true
+draft: false
 ---
 
 # Dateien hochladen in Android
