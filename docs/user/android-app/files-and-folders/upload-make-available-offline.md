@@ -3,7 +3,7 @@ sidebar_position: 2
 id: upload-make-available-offline
 title: Upload - Make available offline
 description: Upload files in Android
-draft: true
+draft: false
 ---
 
 # Upload Files in Android

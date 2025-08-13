@@ -3,7 +3,7 @@ sidebar_position: 4
 id: search
 title: Search
 description: Search
-draft: true
+draft: false
 ---
 
 # Search function

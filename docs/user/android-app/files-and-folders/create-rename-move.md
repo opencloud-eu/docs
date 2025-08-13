@@ -3,7 +3,7 @@ sidebar_position: 1
 id: create-rename-move
 title: Create - Rename - Move
 description: Create - Rename - Move
-draft: true
+draft: false
 ---
 
 # Create, Rename, and Move Files and Folders
