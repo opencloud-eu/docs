@@ -3,7 +3,7 @@ sidebar_position: 5
 id: shortcuts
 title: Shortcut in the OpenCloud Android app
 description: Shortcut
-draft: true
+draft: false
 ---
 
 # Shortcut in the OpenCloud Android app

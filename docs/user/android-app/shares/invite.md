@@ -3,7 +3,7 @@ sidebar_position: 1
 id: invite
 title: Invite to share
 description: Invite to share
-draft: true
+draft: false
 ---
 
 # Share files and folders with people and groups via invitation
