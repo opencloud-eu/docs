@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.46.0](https://github.com/opencloud-eu/docs/releases/tag/1.46.0) - 2025-08-12
+## [1.46.0](https://github.com/opencloud-eu/docs/releases/tag/1.46.0) - 2025-08-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- Release Android Docs [[#437](https://github.com/opencloud-eu/docs/pull/437)]
 - create german part and remove draft:false [[#434](https://github.com/opencloud-eu/docs/pull/434)]
 - create german file naming rules and remove draft:true [[#435](https://github.com/opencloud-eu/docs/pull/435)]
 
