@@ -35,11 +35,19 @@ Spaces are collaborative areas meant to be used by multiple users. Unlike person
 ### School / Kindergarten
 
 ```plaintext
-📁 Class 3B 2024
- ├── 📂 Teaching Materials
- ├── 📂 Parent Communication
- ├── 📂 Homework Submissions
- └── 📂 Events & Photos
+
+📁 2024
+ ├── 📂 Class 3B
+ │    ├── 📂 Teaching Materials
+ │    ├── 📂 Parent Communication
+ │    ├── 📂 Homework Submissions
+ │    └── 📂 Events & Photos
+ ├── 📂 Class 4C
+ │    ├── 📂 Teaching Materials
+ │    ├── 📂 Parent Communication
+ │    ├── 📂 Homework Submissions
+ │    └── 📂 Events & Photos
+
 ```
 
 ### Company / Team
