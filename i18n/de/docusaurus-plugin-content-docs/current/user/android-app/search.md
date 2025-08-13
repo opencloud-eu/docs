@@ -3,7 +3,7 @@ sidebar_position: 4
 id: search
 title: Suche
 description: Suche in der Android-App
-draft: true
+draft: false
 ---
 
 # Suchfunktion

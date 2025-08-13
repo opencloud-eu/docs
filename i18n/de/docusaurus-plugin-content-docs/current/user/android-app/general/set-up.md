@@ -3,7 +3,7 @@ sidebar_position: 2
 id: set-up
 title: Einrichten der OpenCloud Android App
 description: Einrichten der OpenCloud Android App
-draft: true
+draft: false
 ---
 
 # Einrichtung deines OpenCloud-Kontos

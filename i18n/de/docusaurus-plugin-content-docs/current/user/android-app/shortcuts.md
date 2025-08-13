@@ -3,7 +3,7 @@ sidebar_position: 5
 id: shortcuts
 title: Verlinkungen in der OpenCloud Android App
 description: Verlinkungen
-draft: true
+draft: false
 ---
 
 # Verlinkung in der OpenCloud Android-App

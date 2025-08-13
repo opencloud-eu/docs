@@ -3,7 +3,7 @@ sidebar_position: 2
 id: links
 title: Per Link teilen
 description: Per Link teilen
-draft: true
+draft: false
 ---
 
 # Dateien und Ordner per Link teilen

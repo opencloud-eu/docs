@@ -3,7 +3,7 @@ sidebar_position: 1
 id: installation
 title: Installieren der Android App
 description: Installieren derOpenCloud Android app
-draft: true
+draft: false
 ---
 
 # Installieren der OpenCloud Android app
@@ -18,9 +18,9 @@ Anleitung zur Installation der OpenCloud Android-App.
 
 Suche nach „OpenCloud“ oder klicke auf folgenden Link, um direkt zur App zu gelangen:
 
-   <!-- [OpenCloud on the Play Store](https://) -->
+[OpenCloud im Play Store](https://play.google.com/store/apps/details?id=eu.opencloud.android)
 
-<!-- <img src={require(".././img/installation/android-installation.jpg").default} alt="Android Installation" height="400"/> -->
+<img src={require(".././img/installation/android-installation.png").default} alt="Android Installation" height="400"/>
 
 ## Installieren
 
@@ -30,7 +30,7 @@ Tippe auf „Installieren“, um die App herunterzuladen.
 
 Nach der Installation findest du die OpenCloud-App auf deinem Startbildschirm.
 
-<!-- <img src={require(".././img/installation/icon-on-screen.png").default} alt="Icon" height="400"/> -->
+<img src={require(".././img/installation/icon-on-screen.png").default} alt="Icon" height="400"/>
 
 ## Einrichten
 
