@@ -15,7 +15,7 @@ Sie können Ihren Space an zwei Stellen anpassen:
 
 ## So passen Sie Ihren Space an
 
-- Klicken Sie auf das „Kontextmenü“ in der Raumübersicht oder direkt im Raum.
+- Klicken Sie auf das „Kontextmenü“ in der Space-Übersicht oder direkt im Space.
 
 ### Beschreibung bearbeiten
 
