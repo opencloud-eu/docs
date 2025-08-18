@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-18
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LisaHue
+
+### 👤 User Documentation
+
+- editing spaces image size and others GER [[#440](https://github.com/opencloud-eu/docs/pull/440)]
+
 ## [1.47.0](https://github.com/opencloud-eu/docs/releases/tag/1.47.0) - 2025-08-13
 
 ### ❤️ Thanks to all contributors! ❤️
