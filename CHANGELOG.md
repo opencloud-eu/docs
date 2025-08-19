@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Add info about 569 x zilmsfiles [[#443](https://github.com/opencloud-eu/docs/pull/443)]
 - editing spaces image size and others GER [[#440](https://github.com/opencloud-eu/docs/pull/440)]
 
 ## [1.47.0](https://github.com/opencloud-eu/docs/releases/tag/1.47.0) - 2025-08-13
