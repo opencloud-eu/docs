@@ -1,7 +1,7 @@
 Environment variables for the **collaboration** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`COLLABORATION_APP_NAME`| 1.0.0 |string|The name of the app which is shown to the user. You can chose freely but you are limited to a single word without special characters or whitespaces. We recommend to use pascalCase like 'CollaboraOnline'.|Collabora|
 |`COLLABORATION_APP_PRODUCT`| 1.0.0 |string|The WebOffice app, either Collabora, OnlyOffice, Microsoft365 or MicrosoftOfficeOnline.||
 |`COLLABORATION_APP_DESCRIPTION`| 1.0.0 |string|App description|Open office documents with Collabora|

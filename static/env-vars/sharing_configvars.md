@@ -1,7 +1,7 @@
 Environment variables for the **sharing** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`OC_TRACING_ENABLED`<br/>`SHARING_TRACING_ENABLED`| 1.0.0 |bool|Activates tracing.|false|
 |`OC_TRACING_TYPE`<br/>`SHARING_TRACING_TYPE`| 1.0.0 |string|The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.||
 |`OC_TRACING_ENDPOINT`<br/>`SHARING_TRACING_ENDPOINT`| 1.0.0 |string|The endpoint of the tracing agent.||

@@ -1,7 +1,7 @@
 #Environment variables with global scope available in multiple services
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 `IDM_CREATE_DEMO_USERS` | 1.0.0 | bool | Flag to enable or disable the creation of the demo users. | false |
 `OC_ADMIN_USER_ID` | 1.0.0 | string | ID of the user that should receive admin privileges. Consider that the UUID can be encoded in some LDAP deployment configurations like in .ldif files. These need to be decoded beforehand. |  |
 `OC_ASYNC_UPLOADS` | 1.0.0 | bool | Enable asynchronous file uploads. | true |
