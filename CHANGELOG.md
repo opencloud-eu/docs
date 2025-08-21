@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-19
+## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-21
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Adjust keycloak explanantion [[#445](https://github.com/opencloud-eu/docs/pull/445)]
 - fix typos [[#444](https://github.com/opencloud-eu/docs/pull/444)]
 - add remove mandatory password from public links [[#426](https://github.com/opencloud-eu/docs/pull/426)]
 
