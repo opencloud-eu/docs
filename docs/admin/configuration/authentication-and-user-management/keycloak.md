@@ -82,7 +82,7 @@ graph TD
     end
 
     OpenCloud -->|"User and Groups are looked up for sharing"| LDAP
-    OpenCloud -->|"Reads Roles and Group memberships from claims"| Keycloak
+    OpenCloud -->|"Reads Roles from claims"| Keycloak
     Keycloak -->|"Verify credentials"| LDAP
     LDAP -->|"Import Users and Groups"| Keycloak
 
