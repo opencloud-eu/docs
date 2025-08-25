@@ -12,20 +12,36 @@ In OpenCloud you have the option of making various settings for your user accoun
 
 ## Access the settings
 
-- Click on your avatar in the top right corner.
-- Select "Preferences".
+- Click on your avatar in the top right corner
+- Select "Preferences"
   <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ## Account information
 
 In the settings you will first see your basic account information:
 
-- Login name
+### Personal informations
+
+- Profile picture
+- Username / Login name
 - First and last name
 - E-mail address
 - Personal storage space
 - Group memberships
   <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
+
+### Avatar
+
+In profile picture you can change your Avatar image:
+
+- Click on "Upload" under your Avatar icon
+  <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+- Choose your Avatar image and click on "Upload"
+  <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="500"/>
+- now it opens a window you can anjusted your image and then click on the "Set" button
+  <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+- after this your Avatar will be set up to your account
+  <img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920"/>
 
 ## Preferences
 
@@ -39,9 +55,8 @@ Depending on the basic configuration, you can change the following options:
   Customize the Theme of the user interface according to your preferences.
 - Email notifications:  
   Determine which email notifications you would like to receive from OpenCloud.
-- WebDAV options:  
+- View options:  
   Set the WebDAV settings to allow external access to files and folders.
-
   <img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
 
 ## Extensions
