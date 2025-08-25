@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-21
+## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @Svanvith
+@Heiko-Pohl, @LisaHue, @Svanvith
 
 ### 👷 Admin Documentation
 
@@ -14,6 +14,7 @@
 
 ### 👤 User Documentation
 
+- add avatar tutorial [[#446](https://github.com/opencloud-eu/docs/pull/446)]
 - Add info about 569 x zilmsfiles [[#443](https://github.com/opencloud-eu/docs/pull/443)]
 - editing spaces image size and others GER [[#440](https://github.com/opencloud-eu/docs/pull/440)]
 
