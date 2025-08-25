@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LisaHue, @Svanvith
+@Heiko-Pohl, @LisaHue, @Svanvith, @flimmy
+
+### 🐾 Guides
+
+- Add link to the compose-repo in docker-compose-local.md [[#447](https://github.com/opencloud-eu/docs/pull/447)]
 
 ### 👷 Admin Documentation
 
