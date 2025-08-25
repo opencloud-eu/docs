@@ -18,7 +18,7 @@ Spin up a temporary local instance of OpenCloud using Docker Compose.
 
 ## Download
 
-- Clone the OpenCloud repository
+- Clone the [OpenCloud-Compose repository](https://github.com/opencloud-eu/opencloud-compose)
 
 ```bash
 git clone https://github.com/opencloud-eu/opencloud-compose.git
