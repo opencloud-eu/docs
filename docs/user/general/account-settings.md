@@ -21,6 +21,7 @@ In OpenCloud you have the option of making various settings for your user accoun
 In the settings you will first see your basic account information:
 
 ### Personal informations
+
 - Profile picture
 - Username / Login name
 - First and last name
@@ -35,9 +36,9 @@ In profile picture you can change your Avatar image:
 
 - Click on "Upload" under your Avatar icon
   <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
-- Choose your Avatar image and click on Upload
+- Choose your Avatar image and click on "Upload"
   <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="1920"/>
-- now it opens a window you can anjusted your image and then click on the set button
+- now it opens a window you can anjusted your image and then click on the "Set" button
   <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - after this your Avatar will be set up to your account
   <img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920"/>
