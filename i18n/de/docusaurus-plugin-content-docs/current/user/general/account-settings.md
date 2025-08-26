@@ -32,7 +32,7 @@ In den Einstellungen siehen Sie zunächst Ihre grundlegenden Kontoinformationen:
 
 ### Avatar
 
-Im Bereich Profilbild können Sie Ihren Avatar-Bild ändern:
+Im Bereich Profilbild können Sie Ihr Avatar-Bild ändern:
 
 - Klicken Sie auf „Hochladen“ unter Ihrem Avatar-Symbol  
   <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar-Menü" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
@@ -48,9 +48,9 @@ Im Bereich Profilbild können Sie Ihren Avatar-Bild ändern:
 Je nach Grundkonfiguration können Sie die folgenden Optionen ändern:
 
 - Sprache:  
-  Wähle die gewünschte Sprache für Ihre Benutzeroberfläche.
+  Wählen Sie die gewünschte Sprache für Ihre Benutzeroberfläche.
 - Passwort:  
-  Ändern SIe Ihr Passwort für den Zugriff auf Ihr Benutzerkonto.
+  Ändern Sie Ihr Passwort für den Zugriff auf Ihr Benutzerkonto.
 - Design (Theme):  
   Passen Sie das Erscheinungsbild der Benutzeroberfläche nach Ihren Vorlieben an.
 - E-Mail-Benachrichtigungen:  
@@ -61,17 +61,17 @@ Je nach Grundkonfiguration können Sie die folgenden Optionen ändern:
 
 ## Erweiterungen
 
-Unter **Erweiterungen** können Sie installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
+Unter "Erweiterungen" können Sie installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
 <img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920"/>
 
 ## DSGVO
 
-Unter **DSGVO** können Sie einen Datenexport Ihrer persönlichen Daten anfordern, falls gewünscht.  
+Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern, falls gewünscht.  
 <img src={require("./img/account-settings/gdpr.png").default} alt="DSGVO" width="1920"/>
 
 ## App-Tokens
 
-Mit **App-Tokens** können Sie externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne Ihr Hauptpasswort zu verwenden.
+Mit "App-Tokens" können Sie externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne Ihr Hauptpasswort zu verwenden.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920"/>
 
