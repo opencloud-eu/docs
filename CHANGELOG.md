@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- Edit the space images section customize [[#449](https://github.com/opencloud-eu/docs/pull/449)]
 - add german doku about avatar [[#448](https://github.com/opencloud-eu/docs/pull/448)]
 - add avatar tutorial [[#446](https://github.com/opencloud-eu/docs/pull/446)]
 - Add info about 569 x zilmsfiles [[#443](https://github.com/opencloud-eu/docs/pull/443)]
