@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @LisaHue, @Svanvith, @flimmy
+
+### 🐾 Guides
+
+- Add link to the compose-repo in docker-compose-local.md [[#447](https://github.com/opencloud-eu/docs/pull/447)]
+
+### 👷 Admin Documentation
+
+- Adjust keycloak explanantion [[#445](https://github.com/opencloud-eu/docs/pull/445)]
+- fix typos [[#444](https://github.com/opencloud-eu/docs/pull/444)]
+- add remove mandatory password from public links [[#426](https://github.com/opencloud-eu/docs/pull/426)]
+
+### 👤 User Documentation
+
+- Edit the space images section customize [[#449](https://github.com/opencloud-eu/docs/pull/449)]
+- add german doku about avatar [[#448](https://github.com/opencloud-eu/docs/pull/448)]
+- add avatar tutorial [[#446](https://github.com/opencloud-eu/docs/pull/446)]
+- Add info about 569 x zilmsfiles [[#443](https://github.com/opencloud-eu/docs/pull/443)]
+- editing spaces image size and others GER [[#440](https://github.com/opencloud-eu/docs/pull/440)]
+
 ## [1.47.0](https://github.com/opencloud-eu/docs/releases/tag/1.47.0) - 2025-08-13
 
 ### ❤️ Thanks to all contributors! ❤️
