@@ -6,59 +6,75 @@ description: Nutzer Account Einstellungen in OpenCloud
 draft: false
 ---
 
-# Nutzeraccount Einstellungen in OpenCloud
+# Benutzereinstellungen in OpenCloud
 
-In OpenCloud haben Sie die Möglichkeit, verschiedene Einstellungen für Ihr Benutzerkonto vorzunehmen, um es an Ihre Bedürfnisse anzupassen
+In OpenCloud hast du die Möglichkeit, verschiedene Einstellungen für dein Benutzerkonto vorzunehmen, um es nach deinen Bedürfnissen anzupassen.
 
-## Zugang zu den Einstellungen
+## Auf die Einstellungen zugreifen
 
-- Klicken Sie auf Ihren Avatar in der oberen rechten Ecke.
-- Wählen Sie "Einstellungen “.
-  <img src={require("./img/account-settings/einstellungen.png").default} alt="Access settings" width="1920"/>
+- Klicke oben rechts auf dein Avatar
+- Wähle „Einstellungen“
+  <img src={require("./img/account-settings/access.png").default} alt="Einstellungen öffnen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ## Kontoinformationen
 
-In den Einstellungen sehen Sie zunächst Ihre grundlegenden Kontoinformationen:
+In den Einstellungen siehst du zunächst deine grundlegenden Kontoinformationen:
 
-- Anmeldename
+### Persönliche Informationen
+
+- Profilbild
+- Benutzername / Login-Name
 - Vor- und Nachname
 - E-Mail-Adresse
 - Persönlicher Speicherplatz
-- Gruppenzugehörigkeiten
-  <img src={require("./img/account-settings/kontoinformationen.png").default} alt="Account Information" width="1920"/>
+- Gruppenmitgliedschaften  
+  <img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
+
+### Avatar
+
+Im Bereich Profilbild kannst du dein Avatar-Bild ändern:
+
+- Klicke auf „Hochladen“ unter deinem Avatar-Symbol  
+  <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar-Menü" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+- Wähle dein Avatar-Bild aus und klicke auf „Hochladen“  
+  <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar hochladen" width="500"/>
+- Es öffnet sich nun ein Fenster, in dem du dein Bild anpassen kannst. Klicke anschließend auf „Set“.  
+  <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar-Einstellungen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+- Danach wird dein Avatar für dein Konto übernommen.  
+  <img src={require("./img/account-settings/visible-avatar.png").default} alt="Sichtbarer Avatar" width="1920"/>
 
 ## Einstellungen
 
-Abhängig von der Grundkonfiguration können Sie die folgenden Optionen ändern:
+Je nach Grundkonfiguration kannst du die folgenden Optionen ändern:
 
 - Sprache:  
-  Wählen Sie die gewünschte Sprache für Ihre Benutzeroberfläche.
+  Wähle die gewünschte Sprache für deine Benutzeroberfläche.
 - Passwort:  
-  Ändern Sie Ihr Passwort für den Zugriff auf Ihr Benutzerkonto.
-- Design:  
-  Passen Sie das Design der Benutzeroberfläche nach Ihren Wünschen an.
-- Benachrichtigungen:  
-  Legen Sie fest, welche E-Mail-Benachrichtigungen Sie von OpenCloud erhalten möchten.
-- WebDAV options:  
-  Legen Sie die WebDAV-Einstellungen fest, um den externen Zugriff auf Dateien und Ordner zu ermöglichen.
-
-  <img src={require("./img/account-settings/konto-einstellungen.png").default} alt="Preferences" width="1920"/>
+  Ändere dein Passwort für den Zugriff auf dein Benutzerkonto.
+- Design (Theme):  
+  Passe das Erscheinungsbild der Benutzeroberfläche nach deinen Vorlieben an.
+- E-Mail-Benachrichtigungen:  
+  Lege fest, welche E-Mail-Benachrichtigungen du von OpenCloud erhalten möchtest.
+- Anzeigeoptionen:  
+  Richte die WebDAV-Einstellungen ein, um externen Zugriff auf Dateien und Ordner zu ermöglichen.  
+  <img src={require("./img/account-settings/preferences.png").default} alt="Einstellungen" width="1920"/>
 
 ## Erweiterungen
 
-Unter Erweiterungen können Sie installierte Erweiterungen konfigurieren, z. B. die Fortschrittsleiste, sofern vorhanden.
-<img src={require("./img/account-settings/erweiterungen.png").default} alt="Extensions" width="1920"/>
+Unter **Erweiterungen** kannst du installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
+<img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920"/>
 
 ## DSGVO
 
-Gemäß DSGVO können Sie einen Datenexport Ihrer personenbezogenen Daten beantragen, wenn Sie dies wünschen.
-<img src={require("./img/account-settings/dsgvo.png").default} alt="GDPR" width="1920"/>
+Unter **DSGVO** kannst du einen Datenexport deiner persönlichen Daten anfordern, falls gewünscht.  
+<img src={require("./img/account-settings/gdpr.png").default} alt="DSGVO" width="1920"/>
 
-## App Tokens
+## App-Tokens
 
-App-Tokens ermöglichen es dir, externe Apps und Dienste (wie z. B. WebDAV-Clients) sicher zu verbinden, ohne dein Hauptpasswort zu verwenden.
+Mit **App-Tokens** kannst du externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne dein Hauptpasswort zu verwenden.  
 
-<img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920"/>
+<img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920"/>
+
 :::note
-Mit diesen Einstellungen können Sie Ihr Benutzerkonto nach Ihren Bedürfnissen anpassen und optimieren!
+Mit diesen Einstellungen kannst du dein Benutzerkonto ganz nach deinen Bedürfnissen anpassen und optimieren!
 :::
