@@ -17,30 +17,38 @@ You can customize your Space in two places
 
 - Click on the “Context menu” in the Space overview or directly in the Space.
 
-### Make adjustments
+### Edit Description
 
-- Write your description in the opened texteditor, save and close it.
+Click "Edit Description." Enter your description into the text editor that opens, then save and close it.
 
-  <img src={require("./img/customize/description-texteditor.png").default} alt="Description Texteditor" width="500"/>
-  <img src={require("./img/customize/description-changed.png").default} alt="Description changed" width="500"/>
+<img src={require("./img/customize/description-edit.png").default} alt="Edit description" width="1920"/>
+<img src={require("./img/customize/description-change.png").default} alt="Change the description" width="1920"/>
 
-- In the pop-up window, write your subtitle and confirm.
+The description of the space can also be changed directly in the space by clicking on the pencil next to the description.
 
-  <img src={require("./img/customize/subtitle-pop-up.png").default} alt="Subtitle Pop-up" width="500"/>
-  <img src={require("./img/customize/subtitle-changed.png").default} alt="Subtitle changed" width="500"/>
+<img src={require("./img/customize/description-edit2.png").default} alt="Edit description" width="1920"/>
 
-- Select the image you want for your Space from the pop-up window and confirm.
+### Edit subtitles
 
-  <img src={require("./img/customize/folder-img-select.png").default} alt="Select folder picture" width="500"/>
-  <img src={require("./img/customize/folder-img-changed.png").default} alt="Folder picture changed" width="500"/>
+Click "Edit subtitle". Enter the desired subtitle into the opened text editor and save.
 
-- Select the icon you want for your Space from the pop-up window.
+<img src={require("./img/customize/subtitle-edit.png").default} alt="Edit subtitle" width="1920"/>
+<img src={require("./img/customize/subtitle-change.png").default} alt="Change subtitle" width="1920"/>
 
-  <img src={require("./img/customize/icon-select.png").default} alt="Select Icon" width="400"/>
-  <img src={require("./img/customize/icon-changed.png").default} alt="Icon changed" width="500"/>
+### Edit images
 
-- The description of the Space can also be changed directly in the Space by clicking on the open next to the description.
+Click "Edit image" and "set image". In the window that opens, select the desired image for your space and confirm. Now select the desired section and confirm.
 
-  <img src={require("./img/customize/description-edit.png").default} alt="Icon changed" width="500"/>
+<img src={require("./img/customize/image-edit.png").default} alt="Select spaceimage" width="1920"/>
+<img src={require("./img/customize/image-size.png").default} alt="Crop space image" width="1920"/>
+<img src={require("./img/customize/image-set.png").default} alt="Space image" width="1920"/>
+
+### Set Icon
+
+Click "Edit image" and "Set Icon". In the window that opens, select the desired icon for your space.
+
+<img src={require("./img/customize/icon-set.png").default} alt="Click on set icon" width="1920"/>
+<img src={require("./img/customize/icon-select.png").default} alt="Select the icon" width="500"/>
+<img src={require("./img/customize/icon-spaceimage.png").default} alt="Icon as spaceimage" width="1920"/>
 
 Now you know how you can design and customize the Space to your liking!
