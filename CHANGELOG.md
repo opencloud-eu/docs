@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.49.0](https://github.com/opencloud-eu/docs/releases/tag/1.49.0) - 2025-09-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@rhafer
+
+### 👷 Admin Documentation
+
+- Document some of the requirements we currently have on the IDP [[#450](https://github.com/opencloud-eu/docs/pull/450)]
+
 ## [1.48.0](https://github.com/opencloud-eu/docs/releases/tag/1.48.0) - 2025-08-26
 
 ### ❤️ Thanks to all contributors! ❤️
