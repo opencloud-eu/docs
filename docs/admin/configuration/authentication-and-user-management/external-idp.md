@@ -8,16 +8,42 @@ draft: false
 
 # Integrating external OpenID Connect Identity Providers
 
-The following environment variables are relevant when connecting OpenCloud to an external IDP
+## Requirements
+
+OpenCloud is able to integrate with external OpenID Connect Identity Providers
+(IDP). However the implementation is currently somewhat opinionated and has
+certain requirements on the IDP. The project is working on loosening some
+of the requirements in order to allow OpenCloud to work with a broader range of
+identity providers.
+
+This is the list of minimal requirements that an IDP needs to fulfill in order
+to work with OpenCloud:
+
+- All clients provided by OpenCloud ([Web](https://github.com/opencloud-eu/web/),
+  [Desktop](https://github.com/opencloud-eu/desktop/), [Android](https://github.com/opencloud-eu/android/)
+  and [iOS](https://github.com/opencloud-eu/ios/)), are implemented as public clients using the
+  authorization code flow with PKCE. Therefore the IDP needs to support this flow.
+- All clients, except the Web client, use predefined client IDs. Therefore the IDP needs to
+  be able to create clients with predefined IDs.
+- All clients, except the Web client, use a hardcoded list of scopes they request from the IDP.
+  As certain features of OpenCloud (especially the automatic role assignment) rely on specific claims
+  being present in the access token or the UserInfo response, the IDP needs to be able to provide
+  additional claims in the Tokens even if the client does not explicitly request them via scopes.
 
 ## OpenCloud Configuration
 
+The following environment variables are relevant when connecting OpenCloud to
+an external IDP. An example configuration for Keycloak is provided the
+[Keycloak integration](keycloak.md) documentation.
+
 - `OC_OIDC_ISSUER`: Set this to the issuer URL of the external Identity Provider
-- `OC_EXCLUDE_RUN_SERVICES`: To disable the built-in Identity Provider set this to `idp`
+- `OC_EXCLUDE_RUN_SERVICES`: When using and external IDP the built-in Identity Provider
+  does not need to run. So add `idp` here to prevent the internal `idp` service from
+  starting.
 - `PROXY_OIDC_REWRITE_WELLKNOWN`: Set this to `true` to expose the Identity
-  Providers `.well-known/openid-configuration` via the OpenCloud base url. This
-  help the oidc client, that do not yet support discovery via webfinger to
-  locate the Identity Provider's configuration.
+  Provider's `.well-known/openid-configuration` endpoint via the OpenCloud base
+  urls. This helps the oidc clients, that do not yet support discovery via
+  webfinger to locate the Identity Provider's configuration.
 - `PROXY_USER_OIDC_CLAIM` and `PROXY_USER_CS3_CLAIM`: These two variables
   configure how the users mapped between the Identity Provider and OpenCloud.
   `PROXY_USER_OIDC_CLAIM` defines the OIDC claim that OpenCloud uses to
@@ -41,6 +67,14 @@ The following environment variables are relevant when connecting OpenCloud to an
   details see below
 
 ### Automatic Role Assignments
+
+:::note
+As the OpenCloud clients currently only request a hardcoded list of `scopes`,
+the automatic role-assignment currently requires the IDP to be able to provide
+additional claims in the Access Token and the UserInfo endpoint independent of
+the requested `scopes`. If your IDP does not support this, automatic role
+assignment will not work.
+:::
 
 When users login into OpenCloud, they get a user role assigned
 automatically. The automatic role assignment can be configured in different
