@@ -51,7 +51,7 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="production " label="Production">
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
-    | - | 2025 November 3 | - |
+    | - | 2025 November 24 | - |
     | v2.0.4 | 2025 July 16 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.4) |
     | v2.0.3 | 2025 June 10 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.3) |
     | v2.0.2 | 2025 May 2 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.2) |
