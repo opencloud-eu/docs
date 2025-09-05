@@ -19,7 +19,7 @@ This guide is divided into three main sections:
 
 When using Keycloak as the identity provider, you need to understand the general configuration settings if you want to configure your custom integration.
 
-You can also use one of our predefined Docker Compose setups, which are located in the `deployments/examples/opencloud_full` directory. These setups include all necessary configurations for Keycloak and OpenLDAP.
+You can also use one of our predefined Docker Compose setups, which are located in the `opencloud-compose` repository. These setups include all necessary configurations for Keycloak and OpenLDAP.
 
 ### Server Configuration
 
@@ -184,7 +184,7 @@ GRAPH_LDAP_SERVER_UUID=true
 
 OpenCloud provides complete example deployments using Docker Compose:
 
-1. Navigate to `deployments/examples/opencloud_full`
+1. Navigate to the `opencloud-compose` repository
 2. Edit the `.env` file to enable the Shared Directory Mode:
 
 For Shared Directory Mode:
@@ -200,7 +200,7 @@ KEYCLOAK=:keycloak.yml
 
 The Docker Compose files `keycloak.yml`, `ldap.yml` contain the complete configuration for each component.
 
-Keycloak is configured during startup by importing the `keycloak-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `deployments/examples/opencloud_full/config/keycloak` directory.
+Keycloak is configured during startup by importing the `keycloak-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
 
 :::warning
 
@@ -291,7 +291,7 @@ OC_LDAP_GROUP_BASE_DN=ou=groups,dc=opencloud,dc=eu
 
 OpenCloud provides complete example deployments using Docker Compose:
 
-1. Navigate to `deployments/examples/opencloud_full`
+1. Navigate to the `opencloud-compose` repository
 2. Edit the `.env` file to enable the Autoprovisioning Mode:
 
 For Autoprovisioning Mode:
@@ -306,7 +306,7 @@ KEYCLOAK_AUTOPROVISIONING=:keycloak-autoprovisioning.yml
 
 The Docker Compose files `keycloak.yml`, `ldap.yml`, and `keycloak-autoprovisioning.yml` contain the complete configuration for each component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container.
 
-Keycloak is configured during startup by importing the `keycloak-autoprovisioning-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, users and groups. This file is located in the `deployments/examples/opencloud_full/config/keycloak` directory.
+Keycloak is configured during startup by importing the `keycloak-autoprovisioning-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, users and groups. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
 
 :::warning
 
