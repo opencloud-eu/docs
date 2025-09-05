@@ -52,7 +52,6 @@ You’ll see a section labeled WebDAV — copy the full WebDAV URL. It looks lik
 
 <img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV URL" width="1920"/>
 
-
 ### Connect via WebDAV
 
 Now connect your device using the WebDAV URL:
