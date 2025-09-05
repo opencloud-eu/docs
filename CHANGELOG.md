@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @maxiride, @rhafer, @tbsbdr
+@ScharfViktor, @Svanvith, @maxiride, @rhafer, @tbsbdr
+
+### 🐾 Guides
+
+- Spaces best practice [[#430](https://github.com/opencloud-eu/docs/pull/430)]
 
 ### 👷 Admin Documentation
 
