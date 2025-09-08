@@ -3,7 +3,6 @@ sidebar_position: 8
 id: best-practice
 title: Best practice
 description: Best practice how to use Spaces
-draft: true
 ---
 
 # Best Practices for Organizing Spaces in OpenCloud
