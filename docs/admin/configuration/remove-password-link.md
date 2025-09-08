@@ -3,7 +3,7 @@ sidebar_position: 13
 id: remove-password-from-link
 title: Remove mandatory password from public link
 description: Remove mandatory password from public link
-draft: true
+draft: false
 ---
 
 # Disable Mandatory Password for Public Links
