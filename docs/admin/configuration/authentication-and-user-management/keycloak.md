@@ -191,14 +191,16 @@ For Shared Directory Mode:
 
 ```bash
 # Enable services
-LDAP=:ldap.yml
-KEYCLOAK_DOMAIN=your-keycloak-domain.example.com # your public keycloak domain without protocol
-KEYCLOAK=:keycloak.yml
-# Comment out the autoprovisioning configuration
-# KEYCLOAK_AUTOPROVISIONING=:keycloak-autoprovisioning.yml
+COMPOSE_FILE=docker-compose.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
+# Your public keycloak domain without protocol
+KEYCLOAK_DOMAIN=your-keycloak-domain.example.com
+# Admin user login name. Defaults to "kcadmin".
+KEYCLOAK_ADMIN=
+# Admin user login password. Defaults to "admin".
+KEYCLOAK_ADMIN_PASSWORD=
 ```
 
-The Docker Compose files `keycloak.yml`, `ldap.yml` contain the complete configuration for each component.
+The Docker Compose file `idm/ldap-keycloak.yml` contains the complete configuration for each component.
 
 Keycloak is configured during startup by importing the `keycloak-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
 
@@ -298,19 +300,29 @@ For Autoprovisioning Mode:
 
 ```bash
 # Enable services
-LDAP=:ldap.yml
-KEYCLOAK_DOMAIN=your-keycloak-domain.example.com # your public keycloak domain without protocol
-KEYCLOAK=:keycloak.yml
-KEYCLOAK_AUTOPROVISIONING=:keycloak-autoprovisioning.yml
+COMPOSE_FILE=docker-compose.yml:idm/external-idp.yml:traefik/opencloud.yml
+# Your public keycloak domain without protocol
+IDP_DOMAIN=your-idp-domain.example.com
+# The openCloud users need to be able to edit their account in the external IdP
+IDP_ACCOUNT_URL=https://your-idp-domain.example.com/realms/openCloud/account
 ```
 
-The Docker Compose files `keycloak.yml`, `ldap.yml`, and `keycloak-autoprovisioning.yml` contain the complete configuration for each component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container.
-
-Keycloak is configured during startup by importing the `keycloak-autoprovisioning-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, users and groups. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
+The Docker Compose file `idm/external-idp.yml` contains the complete configuration for each opencloud component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container. In this mode, your IdP setup is not part of the openCloud Deployment.
 
 :::warning
 
-Keycloak can import the realm configuration file only once during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
+Your external IdP configuration must match the settings described in the [Client Configuration](#client-configuration) section above.
+
+Your external IdP must provide the required claims for user provisioning and role assignment.
+
+Claims:
+
+- `sub`: Unique identifier for the user (used as username in OpenCloud)
+- `roles`: List of roles assigned to the user (used for role assignment in OpenCloud)
+- `name`: User's full name (optional, used for display purposes)
+- `preferred_username`: User's preferred username (optional, more intuitive during login)
+- `email`: User's email address (optional, used for notifications)
+- `groups`: List of groups the user belongs to (optional, used for group assignments in OpenCloud)
 
 :::
 

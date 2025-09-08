@@ -32,11 +32,13 @@ deployment based on the `opencloud-compose` deployment example.
 ### Configure the `.env` file to deploy Radicale
 
 In the root directory of the `opencloud-compose` deployment example,
-remove the `#` symbol from the line:
+add the radicale component to the `COMPOSE_FILE` variable in your `.env` file or add it directly to the startup command:
 
-```env
-#RADICALE=:radicale.yml
+```bash
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml:radicale/radicale.yml
 ```
+
+or `docker compose -f docker-compose.yml -f traefik/opencloud.yml -f radicale/radicale.yml up`
 
 ### Update the deployment
 
