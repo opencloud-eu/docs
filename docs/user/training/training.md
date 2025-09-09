@@ -15,8 +15,7 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 
 # Training
 
-<OcLogoPetrol width="250" height="55" className="light-mode-image"/>
-<OcLogoLilac width="250" height="55" className="dark-mode-image"/>
+<img src={require("./img/training.jpg").default} alt="Training" width="800"/>
 
 ## Welcome to the OpenCloud Trainings page
 
