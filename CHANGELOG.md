@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.50.1](https://github.com/opencloud-eu/docs/releases/tag/1.50.1) - 2025-09-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- chore: update docusaurus to 3.8.1 [[#459](https://github.com/opencloud-eu/docs/pull/459)]
+
 ## [1.50.0](https://github.com/opencloud-eu/docs/releases/tag/1.50.0) - 2025-09-09
 
 ### ❤️ Thanks to all contributors! ❤️
