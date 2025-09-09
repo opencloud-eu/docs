@@ -129,14 +129,14 @@ docker volume ls
 
 Look for volumes like:
 
-`opencloud_full_opencloud-data`
+`opencloud-compose_opencloud-data`
 
-`opencloud_full_opencloud-config`
+`opencloud-compose_opencloud-config`
 
 #### Example for standard setup
 
 ```bash
-sudo docker run -it --rm -v opencloud_full_opencloud-data:/var/lib/opencloud -v opencloud_full_opencloud-config:/etc/opencloud opencloudeu/opencloud:latest idm resetpassword
+sudo docker run -it --rm -v opencloud-compose_opencloud-data:/var/lib/opencloud -v opencloud-compose_opencloud-config:/etc/opencloud opencloudeu/opencloud:latest idm resetpassword
 ```
 
 #### Start the container again

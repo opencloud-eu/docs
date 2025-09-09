@@ -13,7 +13,7 @@ CalDAV and CardDAV Server [Radicale](https://radicale.org). With that, users
 get a calender- and contacts server out of the box with OpenCloud that can be
 used with a wide selection of desktop- and mobile clients without hassle.
 
-The `opencloud_full` deployment example already contains all the required pieces to
+The `opencloud-compose` deployment example already contains all the required pieces to
 setup the integration. This guide explains the required steps to achieve that.
 
 :::note
@@ -27,16 +27,18 @@ this feature is maintained and supported on best effort without warranty.
 
 To use this feature you need at least OpenCloud Version 2.3.0. Earlier releases lack
 some of the required features. This guide assumes that you already have a running
-deployment based on the `opencloud_full` deployment example.
+deployment based on the `opencloud-compose` deployment example.
 
 ### Configure the `.env` file to deploy Radicale
 
-In the root directory of the `opencloud_full` deployment example, usually `opencloud/deployments/examples/opencloud_full`,
-remove the `#` symbol from the line:
+In the root directory of the `opencloud-compose` deployment example,
+add the radicale component to the `COMPOSE_FILE` variable in your `.env` file or add it directly to the startup command:
 
-```env
-#RADICALE=:radicale.yml
+```bash
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml:radicale/radicale.yml
 ```
+
+or `docker compose -f docker-compose.yml -f traefik/opencloud.yml -f radicale/radicale.yml up`
 
 ### Update the deployment
 

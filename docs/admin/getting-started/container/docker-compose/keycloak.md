@@ -13,16 +13,19 @@ draft: true
 To enable Keycloak for identity and access management, uncomment the following lines in your `.env` file
 
 ```env
-LDAP=:ldap.yml
-LDAP_MANAGER_DOMAIN=ldap.your.domain
-LDAP_ADMIN_PASSWORD="your.save.password"
-KEYCLOAK=:keycloak.yml
-KEYCLOAK_DOMAIN=keycloak.your.domain
-KEYCLOAK_ADMIN_USER="your.username"
-KEYCLOAK_ADMIN_PASSWORD="your.save.password"
+# Enable services
+COMPOSE_FILE=docker-compose.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
+# Your public keycloak domain without protocol
+KEYCLOAK_DOMAIN=your-keycloak-domain.example.com
+# Admin user login name. Defaults to "kcadmin".
+KEYCLOAK_ADMIN=
+# Admin user login password. Defaults to "admin".
+KEYCLOAK_ADMIN_PASSWORD=
 ```
 
-This will include the LDAP and Keycloak service definitions in the Docker Compose setup.
+The Docker Compose file `idm/ldap-keycloak.yml` contains the complete configuration for each component.
+
+Keycloak is configured during startup by importing the `keycloak-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
 
 ## Starting OpenCloud
 
@@ -42,7 +45,7 @@ Once Keycloak is running
 https://keycloak.your.domain
 ```
 
-<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keyclosk dashboard" width="1920"/>
+<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keycloak dashboard" width="1920"/>
 
 ### Log in with the admin credentials (default is admin / admin)
 
