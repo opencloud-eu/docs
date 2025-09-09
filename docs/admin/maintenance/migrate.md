@@ -39,7 +39,7 @@ PROXY_ENABLE_APP_AUTH="true"
 Access the OpenCloud container:
 
 ```bash
-docker exec -it opencloud_full-opencloud-1 sh
+docker exec -it opencloud-compose-opencloud-1 sh
 ```
 
 Generate an authentication token for a user (e.g., `alan`) with expiration (`h`, `m`, `s`):
