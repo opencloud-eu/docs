@@ -4,6 +4,7 @@ id: docker-compose-local
 title: Docker Compose local
 description: Full-blown featureset including web office and full-text search.
 draft: false
+sidebar_class_name: hidden
 ---
 
 # Guide for local installation

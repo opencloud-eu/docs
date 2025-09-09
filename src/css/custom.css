@@ -83,3 +83,8 @@
 [data-theme='dark'] .dark-mode-image {
     display: block;
 }
+
+/* For outdated instructions which should be hidden but still available via linked URL. */
+.menu__list-item.hidden {
+  display: none !important;
+}
