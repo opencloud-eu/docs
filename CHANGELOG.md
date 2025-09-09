@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.50.0](https://github.com/opencloud-eu/docs/releases/tag/1.50.0) - 2025-09-09
+
+### ❤️ Thanks to all contributors! ❤️
+
+@micbar
+
+### 👷 Admin Documentation
+
+- change: remove all opencloud_full references [[#454](https://github.com/opencloud-eu/docs/pull/454)]
+
 ## [1.49.0](https://github.com/opencloud-eu/docs/releases/tag/1.49.0) - 2025-09-08
 
 ### ❤️ Thanks to all contributors! ❤️
