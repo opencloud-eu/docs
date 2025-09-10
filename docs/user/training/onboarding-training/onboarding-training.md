@@ -19,4 +19,3 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
 ## Welcome to the OpenCloud Onboarding Trainings page
-
