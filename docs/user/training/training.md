@@ -25,6 +25,8 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 flowchart TD
     A[Incident Detected] --> B{Is it a real incident?}
     
+    click A "https://itil.org" "ITIL Framework"
+    
     B -->|No| C[Log as False Positive]
     C --> D[Update Monitoring Rules]
     D --> Z[End]
