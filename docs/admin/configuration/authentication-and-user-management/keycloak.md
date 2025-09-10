@@ -307,7 +307,7 @@ IDP_DOMAIN=your-idp-domain.example.com
 IDP_ACCOUNT_URL=https://your-idp-domain.example.com/realms/openCloud/account
 ```
 
-The Docker Compose file `idm/external-idp.yml` contains the complete configuration for each opencloud component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container. In this mode, your IdP setup is not part of the openCloud Deployment.
+The Docker Compose file `idm/external-idp.yml` contains the complete configuration for each opencloud component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container. In this mode, your IdP setup is not part of the OpenCloud Deployment.
 
 :::warning
 
