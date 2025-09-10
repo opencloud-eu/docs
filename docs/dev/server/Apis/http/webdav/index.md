@@ -26,14 +26,14 @@ RFC 2518 was published in February 1999. [RFC 4918](https://datatracker.ietf.org
 The request URI consists of:
 
 | Component       | Description                                                                                            |
-|-----------------|--------------------------------------------------------------------------------------------------------|
+| --------------- | ------------------------------------------------------------------------------------------------------ |
 | `{HTTP method}` | The HTTP method which is used in the request.                                                          |
 | `{webdav-base}` | The WebDAV base path component. Possible options are                                                   |
 |                 | `dav/spaces/` This is the default and optimized endpoint for all WebDAV requests.                      |
-|                 | `remote.php/dav/spaces/`*                                                                              |
-|                 | `remote.php/webdav/`*                                                                                  |
-|                 | `webdav/`*                                                                                             |
-|                 | `dav/`*                                                                                                |
+|                 | `remote.php/dav/spaces/`\*                                                                             |
+|                 | `remote.php/webdav/`\*                                                                                 |
+|                 | `webdav/`\*                                                                                            |
+|                 | `dav/`\*                                                                                               |
 | `{resourceID}`  | This resourceID is used as the WebDAV root element. All children are accessed by their relative paths. |
 | `{path}`        | The relative path to the WebDAV root. In most of the cases, this is the space root.                    |
 
@@ -42,7 +42,7 @@ The request URI consists of:
 ### HTTP methods
 
 | Method    | Description                                                                                                                                                                                                                                  |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | PROPFIND  | Retrieve properties as XML from a web resource. It is also overloaded to retrieve the collection structure (a.k.a. directory hierarchy) of a remote system.                                                                                  |
 | PROPPATCH | Process instructions specified in the request body to set and/or remove properties defined on the resource identified by the request uri.                                                                                                    |
 | MKCOL     | Create a WebDAV collection (folder) at the location specified by the request uri.                                                                                                                                                            |
@@ -157,16 +157,16 @@ Clients can use the `PROPFIND` method to retrieve properties of resources (metad
 #### Multi Status Response
 
 A Multi-Status response conveys information about multiple resources
-in situations where multiple status codes might be appropriate.  The
+in situations where multiple status codes might be appropriate. The
 default Multi-Status response body is an application/xml
-HTTP entity with a `multistatus` root element.  Further elements
+HTTP entity with a `multistatus` root element. Further elements
 contain `200`, `300`, `400`, and `500` series status codes generated during
 the method invocation.
 
 Although `207` is used as the overall response status code, the
 recipient needs to consult the contents of the multistatus response
 body for further information about the success or failure of the
-method execution.  The response MAY be used in success, partial
+method execution. The response MAY be used in success, partial
 success and also in failure situations.
 
 The `multistatus` root element holds zero or more `response` elements
@@ -309,7 +309,7 @@ When building the body of your DAV request, you will request properties that are
 Available namespaces:
 
 | URI                                         | Prefix |
-|---------------------------------------------|--------|
+| ------------------------------------------- | ------ |
 | DAV:                                        | d      |
 | `http://sabredav.org/ns`                    | s      |
 | `http://owncloud.org/ns`                    | oc     |
@@ -327,7 +327,7 @@ Available namespaces:
 ### Supported WebDAV Properties
 
 | Property                            | Desription                                                                 | Example                                                                                                                                          |
-|-------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<d:getlastmodified />`             | The latest modification time.                                              | `Fri, 30 Dec 2022 14:22:43 GMT`                                                                                                                  |
 | `<d:getetag />`                     | The file's etag.                                                           | `"c3a1ee4a0c28edc15b9635c3bf798013"`                                                                                                             |
 | `<d:getcontenttype />`              | The mime type of the file.                                                 | `image/jpeg`                                                                                                                                     |
@@ -374,14 +374,14 @@ Available namespaces:
 
 ### Request Headers
 
-A client executing a `PROPFIND` request MUST submit a Depth Header value. In practice, support for infinite-depth requests MAY be disabled, due to the performance and security concerns associated with this behavior.  Servers SHOULD treat a
+A client executing a `PROPFIND` request MUST submit a Depth Header value. In practice, support for infinite-depth requests MAY be disabled, due to the performance and security concerns associated with this behavior. Servers SHOULD treat a
 request without a Depth header as if a `Depth: infinity` header was included. Infinite depth requests are disabled by default in opencloud.
 
-| Name                                      | Value                                                                                 |
-|-------------------------------------------|---------------------------------------------------------------------------------------|
-| Depth                                     | `0` = Only return the desired resource.                                               |
-|                                           | `1` = Return the desired resource and all resources one level below in the hierarchy. |
-|                                           | `infinity` = Return all resources below the root.                                     |
+| Name  | Value                                                                                 |
+| ----- | ------------------------------------------------------------------------------------- |
+| Depth | `0` = Only return the desired resource.                                               |
+|       | `1` = Return the desired resource and all resources one level below in the hierarchy. |
+|       | `infinity` = Return all resources below the root.                                     |
 
 :::warning Use the Depth header with caution
 **Depth: infinity**
@@ -455,7 +455,7 @@ To upload files to the remote server, clients can use the `PUT` method to create
 ### Request Headers
 
 | Name          | Usage                                                                                                                                                                                                                                                                                                           |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `X-OC-Mtime`  | Send the last modified<br/>time of the file to the server in unixtime format. The server applies this mtime to the resource rather than the actual time.                                                                                                                                                        |
 | `OC-Checksum` | Provide the checksum of the<br/>file content to the server.<br/>This is used to prevent corrupted data transfers.                                                                                                                                                                                               |
 | `If-Match`    | The If-Match request-header field is used with a method to make it<br/>conditional. A client that has one or more entities previously<br/>obtained from the resource can verify that one of those entities is<br/>current by including a list of their associated entity tags in the<br/>If-Match header field. |
@@ -505,7 +505,7 @@ The response has no body.
 #### Headers
 
 ```yaml
-Oc-Etag: "4436aef907f41f1ac7dfd1ac3d0d455f"
+Oc-Etag: '4436aef907f41f1ac7dfd1ac3d0d455f'
 Oc-Fileid: storage-users-1$some-admin-user-id-0000-000000000000!07452b22-0ba9-4539-96e1-3511aff7fd2f
 Last-Modified: Fri, 18 Aug 2023 14:36:58 +0000
 X-Oc-Mtime: accepted
@@ -522,7 +522,7 @@ The response has no body.
 #### Headers
 
 ```yaml
-Oc-Etag: "4436aef907f41f1ac7dfd1ac3d0d455f"
+Oc-Etag: '4436aef907f41f1ac7dfd1ac3d0d455f'
 Oc-Fileid: storage-users-1$some-admin-user-id-0000-000000000000!07452b22-0ba9-4539-96e1-3511aff7fd2f
 Last-Modified: Fri, 18 Aug 2023 14:36:58 +0000
 X-Oc-Mtime: accepted

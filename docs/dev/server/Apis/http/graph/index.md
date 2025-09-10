@@ -15,7 +15,7 @@ The [API specification](https://github.com/opencloud-eu/libre-graph-api) is avai
 The request component consists of:
 
 | Component            | Description                                                             |
-|----------------------|-------------------------------------------------------------------------|
+| -------------------- | ----------------------------------------------------------------------- |
 | `{HTTP method}`      | The HTTP method which is used in the request.                           |
 | `{version}`          | The version of the LibreGraph API used by the client.                   |
 | `{resource}`         | The LibreGraph Resource which the client is referencing in the request. |
@@ -24,7 +24,7 @@ The request component consists of:
 ### HTTP methods
 
 | Method | Description                   |
-|--------|-------------------------------|
+| ------ | ----------------------------- |
 | GET    | Read data from a resource.    |
 | POST   | Create a new resource.        |
 | PATCH  | Update an existing resource.  |

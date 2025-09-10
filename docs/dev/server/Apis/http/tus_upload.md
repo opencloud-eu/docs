@@ -24,21 +24,21 @@ The following snippet shows the relevant part of the server capabilities of Open
       "capabilities": {
         "files": {
           "tus_support": {
-              "version": "1.0.0",
-              "resumable": "1.0.0",
-              "extension": "creation,creation-with-upload",
-              "max_chunk_size": 10000000,
-              "http_method_override": ""
-            }
+            "version": "1.0.0",
+            "resumable": "1.0.0",
+            "extension": "creation,creation-with-upload",
+            "max_chunk_size": 10000000,
+            "http_method_override": ""
           }
         }
       }
     }
+  }
 }
 ```
 
 | Parameter      | Environment Variable           | Default Value | Description                                                         |
-|----------------|--------------------------------|---------------|---------------------------------------------------------------------|
+| -------------- | ------------------------------ | ------------- | ------------------------------------------------------------------- |
 | max_chunk_size | FRONTEND_UPLOAD_MAX_CHUNK_SIZE | 10000000      | Announces the max chunk sizes in bytes for uploads via the clients. |
 
 ## Upload in Chunks
@@ -230,7 +230,7 @@ The `Upload-Length` header of the request has to contain the exact size of the u
 Upload-metadata key-value pairs aren't specified in the general tus docs. The following ones are supported in the OpenCloud ecosystem:
 
 | Parameter (key)                  | Example (value, MUST be Base64 encoded)                                                                                        | Description                                                                                         |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
 | `name` OR `filename` (mandatory) | example.pdf                                                                                                                    | Filename                                                                                            |
 | `mtime` (recommended)            | 1701708712                                                                                                                     | Modification time (Unix time format)                                                                |
 | `checksum` (recommended)         | SHA1 a330de5886e5a92d78fb3f8d59fe469857759e72                                                                                  | Checksum, computed from the client                                                                  |

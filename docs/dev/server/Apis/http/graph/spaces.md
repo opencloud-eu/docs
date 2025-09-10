@@ -15,7 +15,7 @@ The Spaces API is implementing a subset of the functionality of the
 
 The JSON representation of a Drive, as handled by the Spaces API, looks like this:
 
-````json
+```json
 {
   "driveAlias": "project/mars",
   "driveType": "project",
@@ -47,9 +47,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
             }
           }
         ],
-        "roles": [
-          "manager"
-        ]
+        "roles": ["manager"]
       }
     ],
     "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$89ad5ad2-5fdb-4877-b8c9-601a9670b925"
@@ -86,7 +84,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
   ],
   "webUrl": "https://localhost:9200/f/storage-users-1$89ad5ad2-5fdb-4877-b8c9-601a9670b925"
 }
-````
+```
 
 ## Creating Spaces
 
@@ -105,7 +103,7 @@ GET https://cloud.opencloud.test/graph/{version}/{me/}drives/?{query-parameters}
 ```
 
 | Component            | Description                                                                                                            |
-|----------------------|------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | \{version\}          | The version of the LibreGraph API used by the client.                                                                  |
 | \{/me\}              | The `me` component of the part is optional. If used, you only see spaces where the acting user is a regular member of. |
 | \{query-parameters\} | Optional parameters for the request to customize the response.                                                         |
@@ -138,7 +136,7 @@ Modify the properties of a space. You need elevated permissions to execute this 
 
 To limit the quota of a space you need to set the `quota.total` value. The API response will give back all actual quota properties.
 
-````json
+```json
 {
   "quota": {
     "remaining": 5368709120,
@@ -147,10 +145,10 @@ To limit the quota of a space you need to set the `quota.total` value. The API r
     "used": 0
   }
 }
-````
+```
 
 | Attribute | Description                                                                                                                                                                                                |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | remaining | The remaining disk space in `bytes`. If the quota is not limited, this will show the total available disk space.                                                                                           |
 | state     | The state of the space in regards to quota usage. This can be used for visual indicators. It can be `normal`(\<75%), `nearing`(between 75% and 89%), `critical`(between 90% and 99%) and `exceeded`(100%). |
 | total     | The space id. The value needs to be a space ID.                                                                                                                                                            |
@@ -174,45 +172,43 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
 
 ```json title="Response" {17}
 {
-    "description": "Marketing team resources",
-    "driveAlias": "project/marketing",
-    "driveType": "project",
+  "description": "Marketing team resources",
+  "driveAlias": "project/marketing",
+  "driveType": "project",
+  "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
+  "lastModifiedDateTime": "2023-01-18T17:13:48.385204589+01:00",
+  "name": "Marketing",
+  "owner": {
+    "user": {
+      "displayName": "",
+      "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+    }
+  },
+  "quota": {
+    "remaining": 5368709120,
+    "state": "normal",
+    "total": 5368709120,
+    "used": 0
+  },
+  "root": {
+    "eTag": "\"f91e56554fd9305db81a93778c0fae96\"",
     "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-    "lastModifiedDateTime": "2023-01-18T17:13:48.385204589+01:00",
-    "name": "Marketing",
-    "owner": {
-        "user": {
-            "displayName": "",
-            "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-        }
-    },
-    "quota": {
-        "remaining": 5368709120,
-        "state": "normal",
-        "total": 5368709120,
-        "used": 0
-    },
-    "root": {
-        "eTag": "\"f91e56554fd9305db81a93778c0fae96\"",
-        "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-        "permissions": [
-            {
-                "grantedToIdentities": [
-                    {
-                        "user": {
-                            "displayName": "Admin",
-                            "id": "some-admin-user-id-0000-000000000000"
-                        }
-                    }
-                ],
-                "roles": [
-                    "manager"
-                ]
+    "permissions": [
+      {
+        "grantedToIdentities": [
+          {
+            "user": {
+              "displayName": "Admin",
+              "id": "some-admin-user-id-0000-000000000000"
             }
+          }
         ],
-        "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-    },
-    "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+        "roles": ["manager"]
+      }
+    ],
+    "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+  },
+  "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
 
@@ -240,45 +236,43 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
 
 ```json title="Response" {2,3,7}
 {
-    "description": "Mission to mars",
-    "driveAlias": "project/mission-to-mars",
-    "driveType": "project",
+  "description": "Mission to mars",
+  "driveAlias": "project/mission-to-mars",
+  "driveType": "project",
+  "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
+  "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
+  "name": "Mars",
+  "owner": {
+    "user": {
+      "displayName": "",
+      "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+    }
+  },
+  "quota": {
+    "remaining": 15,
+    "state": "normal",
+    "total": 15,
+    "used": 0
+  },
+  "root": {
+    "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
     "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-    "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
-    "name": "Mars",
-    "owner": {
-        "user": {
-            "displayName": "",
-            "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-        }
-    },
-    "quota": {
-        "remaining": 15,
-        "state": "normal",
-        "total": 15,
-        "used": 0
-    },
-    "root": {
-        "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
-        "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-        "permissions": [
-            {
-                "grantedToIdentities": [
-                    {
-                        "user": {
-                            "displayName": "Admin",
-                            "id": "some-admin-user-id-0000-000000000000"
-                        }
-                    }
-                ],
-                "roles": [
-                    "manager"
-                ]
+    "permissions": [
+      {
+        "grantedToIdentities": [
+          {
+            "user": {
+              "displayName": "Admin",
+              "id": "some-admin-user-id-0000-000000000000"
             }
+          }
         ],
-        "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-    },
-    "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+        "roles": ["manager"]
+      }
+    ],
+    "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+  },
+  "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
 
@@ -308,45 +302,43 @@ A disabled space will appear in listings with a `root.deleted.state=trashed` pro
 
 ```json title="Response" {18,19,20}
 {
-    "description": "Marketing team resources",
-    "driveAlias": "project/marketing",
-    "driveType": "project",
+  "description": "Marketing team resources",
+  "driveAlias": "project/marketing",
+  "driveType": "project",
+  "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
+  "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
+  "name": "Marketing",
+  "owner": {
+    "user": {
+      "displayName": "",
+      "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+    }
+  },
+  "quota": {
+    "total": 15
+  },
+  "root": {
+    "deleted": {
+      "state": "trashed"
+    },
+    "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
     "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-    "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
-    "name": "Marketing",
-    "owner": {
-        "user": {
-            "displayName": "",
-            "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-        }
-    },
-    "quota": {
-        "total": 15
-    },
-    "root": {
-        "deleted": {
-            "state": "trashed"
-        },
-        "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
-        "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-        "permissions": [
-            {
-                "grantedToIdentities": [
-                    {
-                        "user": {
-                            "displayName": "Admin",
-                            "id": "some-admin-user-id-0000-000000000000"
-                        }
-                    }
-                ],
-                "roles": [
-                    "manager"
-                ]
+    "permissions": [
+      {
+        "grantedToIdentities": [
+          {
+            "user": {
+              "displayName": "Admin",
+              "id": "some-admin-user-id-0000-000000000000"
             }
+          }
         ],
-        "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-    },
-    "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+        "roles": ["manager"]
+      }
+    ],
+    "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+  },
+  "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
 
@@ -379,45 +371,43 @@ This request needs an empty body (--data-raw '{}') to fulfil the standard libreg
 
 ```json
 {
-    "description": "Marketing team resources",
-    "driveAlias": "project/marketing",
-    "driveType": "project",
+  "description": "Marketing team resources",
+  "driveAlias": "project/marketing",
+  "driveType": "project",
+  "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
+  "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
+  "name": "Marketing",
+  "owner": {
+    "user": {
+      "displayName": "",
+      "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+    }
+  },
+  "quota": {
+    "remaining": 15,
+    "state": "normal",
+    "total": 15,
+    "used": 0
+  },
+  "root": {
+    "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
     "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-    "lastModifiedDateTime": "2023-01-19T14:17:36.094283+01:00",
-    "name": "Marketing",
-    "owner": {
-        "user": {
-            "displayName": "",
-            "id": "535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-        }
-    },
-    "quota": {
-        "remaining": 15,
-        "state": "normal",
-        "total": 15,
-        "used": 0
-    },
-    "root": {
-        "eTag": "\"f5fee4fdfeedd6f98956500779eee15e\"",
-        "id": "storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff",
-        "permissions": [
-            {
-                "grantedToIdentities": [
-                    {
-                        "user": {
-                            "displayName": "Admin",
-                            "id": "some-admin-user-id-0000-000000000000"
-                        }
-                    }
-                ],
-                "roles": [
-                    "manager"
-                ]
+    "permissions": [
+      {
+        "grantedToIdentities": [
+          {
+            "user": {
+              "displayName": "Admin",
+              "id": "some-admin-user-id-0000-000000000000"
             }
+          }
         ],
-        "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
-    },
-    "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+        "roles": ["manager"]
+      }
+    ],
+    "webDavUrl": "https://localhost:9200/dav/spaces/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
+  },
+  "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
 
@@ -456,14 +446,14 @@ The space to be deleted was not disabled before.
 
 ```json
 {
-    "error": {
-        "code": "invalidRequest",
-        "innererror": {
-            "date": "2023-01-24T19:57:19Z",
-            "request-id": "f62af40f-bc18-475e-acd7-e9008d6bd326"
-        },
-        "message": "error: bad request: can't purge enabled space"
-    }
+  "error": {
+    "code": "invalidRequest",
+    "innererror": {
+      "date": "2023-01-24T19:57:19Z",
+      "request-id": "f62af40f-bc18-475e-acd7-e9008d6bd326"
+    },
+    "message": "error: bad request: can't purge enabled space"
+  }
 }
 ```
 

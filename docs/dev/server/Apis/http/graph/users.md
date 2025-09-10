@@ -11,17 +11,17 @@ The JSON representation of a User handled by the Users API looks like this:
 
 ```json
 {
-    "displayName": "Albert Einstein",
-    "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-    "mail": "einstein@example.org",
-    "onPremisesSamAccountName": "einstein"
+  "displayName": "Albert Einstein",
+  "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+  "mail": "einstein@example.org",
+  "onPremisesSamAccountName": "einstein"
 }
 ```
 
 Our implementation currently supports only a limited set of Attributes of Users:
 
 | Attribute                | Description                                                                                                               |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
 | displayName              | The full name of the user, usually a combination of given name and last name                                              |
 | mail                     | The user's email address                                                                                                  |
 | onPremisesSamAccountName | The loginname/account name of the user                                                                                    |
@@ -44,10 +44,10 @@ Response:
 
 ```json
 {
-    "displayName": "Albert Einstein",
-    "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-    "mail": "einstein@example.org",
-    "onPremisesSamAccountName": "einstein"
+  "displayName": "Albert Einstein",
+  "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+  "mail": "einstein@example.org",
+  "onPremisesSamAccountName": "einstein"
 }
 ```
 
@@ -66,20 +66,20 @@ Response:
 
 ```json
 {
-    "value": [
-        {
-            "displayName": "Albert Einstein",
-            "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "mail": "einstein@example.org",
-            "onPremisesSamAccountName": "einstein"
-        },
-        {
-            "displayName": "Maurice Moss",
-            "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-            "mail": "moss@example.org",
-            "onPremisesSamAccountName": "moss"
-        }
-    ]
+  "value": [
+    {
+      "displayName": "Albert Einstein",
+      "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+      "mail": "einstein@example.org",
+      "onPremisesSamAccountName": "einstein"
+    },
+    {
+      "displayName": "Maurice Moss",
+      "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
+      "mail": "moss@example.org",
+      "onPremisesSamAccountName": "moss"
+    }
+  ]
 }
 ```
 
@@ -98,44 +98,44 @@ Response:
 
 ```json
 {
-    "value": [
+  "value": [
+    {
+      "displayName": "Albert Einstein",
+      "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+      "mail": "einstein@example.org",
+      "onPremisesSamAccountName": "einstein",
+      "memberOf": [
         {
-            "displayName": "Albert Einstein",
-            "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "mail": "einstein@example.org",
-            "onPremisesSamAccountName": "einstein",
-            "memberOf": [
-                {
-                    "displayName": "users",
-                    "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
-                },
-                {
-                    "displayName": "sailing-lovers",
-                    "id": "6040aa17-9c64-4fef-9bd0-77234d71bad0"
-                },
-                {
-                    "displayName": "violin-haters",
-                    "id": "dd58e5ec-842e-498b-8800-61f2ec6f911f"
-                },
-                {
-                    "displayName": "physics-lovers",
-                    "id": "262982c1-2362-4afa-bfdf-8cbfef64a06e"
-                }
-            ]
+          "displayName": "users",
+          "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
         },
         {
-            "displayName": "Maurice Moss",
-            "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-            "mail": "moss@example.org",
-            "onPremisesSamAccountName": "moss",
-            "memberOf": [
-                {
-                    "displayName": "users",
-                    "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
-                }
-            ]
+          "displayName": "sailing-lovers",
+          "id": "6040aa17-9c64-4fef-9bd0-77234d71bad0"
+        },
+        {
+          "displayName": "violin-haters",
+          "id": "dd58e5ec-842e-498b-8800-61f2ec6f911f"
+        },
+        {
+          "displayName": "physics-lovers",
+          "id": "262982c1-2362-4afa-bfdf-8cbfef64a06e"
         }
-    ]
+      ]
+    },
+    {
+      "displayName": "Maurice Moss",
+      "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
+      "mail": "moss@example.org",
+      "onPremisesSamAccountName": "moss",
+      "memberOf": [
+        {
+          "displayName": "users",
+          "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -151,10 +151,10 @@ Response:
 
 ```json
 {
-    "displayName": "Maurice Moss",
-    "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-    "mail": "moss@example.org",
-    "onPremisesSamAccountName": "moss"
+  "displayName": "Maurice Moss",
+  "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
+  "mail": "moss@example.org",
+  "onPremisesSamAccountName": "moss"
 }
 ```
 
@@ -170,16 +170,16 @@ Response:
 
 ```json
 {
-    "displayName": "Maurice Moss",
-    "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-    "mail": "moss@example.org",
-    "onPremisesSamAccountName": "moss",
-            "memberOf": [
-                {
-                    "displayName": "users",
-                    "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
-                }
-            ]
+  "displayName": "Maurice Moss",
+  "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
+  "mail": "moss@example.org",
+  "onPremisesSamAccountName": "moss",
+  "memberOf": [
+    {
+      "displayName": "users",
+      "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
+    }
+  ]
 }
 ```
 
@@ -195,12 +195,12 @@ Note the missing `"id"` Attribute. It will be generated by the server:
 
 ```json
 {
-    "displayName": "Example User",
-    "mail": "example@example.org",
-    "onPremisesSamAccountName": "example",
-    "passwordProfile": {
-     "password": "ThePassword"
-    }
+  "displayName": "Example User",
+  "mail": "example@example.org",
+  "onPremisesSamAccountName": "example",
+  "passwordProfile": {
+    "password": "ThePassword"
+  }
 }
 ```
 
@@ -210,10 +210,10 @@ When successful, the response will return the new user, without the password, bu
 
 ```json
 {
-    "displayName":"Example User",
-    "id":"c067b139-c91c-4e47-8be6-669156a0587b",
-    "mail":"example@example.org",
-    "onPremisesSamAccountName":"example"
+  "displayName": "Example User",
+  "id": "c067b139-c91c-4e47-8be6-669156a0587b",
+  "mail": "example@example.org",
+  "onPremisesSamAccountName": "example"
 }
 ```
 
@@ -238,7 +238,7 @@ to be updated. E.g. to update the `displayName` Attribute:
   'https://localhost:9200/graph/v1.0/users/c54b0588-7157-4521-bb52-c1c8ca84ea71' -u user:password
 ```
 
-Similar to creating a user via `POST`,  the `PATCH` request will return the user object containing the new attribute values.
+Similar to creating a user via `POST`, the `PATCH` request will return the user object containing the new attribute values.
 
 ### Change password
 

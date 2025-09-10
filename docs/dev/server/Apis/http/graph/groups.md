@@ -11,15 +11,15 @@ The JSON representation of a Group as handled by the Groups API looks like this:
 
 ```json
 {
-    "displayName": "group",
-    "id": "f0d97060-da16-4b0d-9fa4-d1ec43afc5f1"
+  "displayName": "group",
+  "id": "f0d97060-da16-4b0d-9fa4-d1ec43afc5f1"
 }
 ```
 
 Our implementation currently supports two Attributes for a Group:
 
 | Attribute   | Description                                                                                                                 |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------|
+| ----------- | --------------------------------------------------------------------------------------------------------------------------- |
 | displayName | The groups name                                                                                                             |
 | id          | An unique, stable readonly identifier for the group that stays the same for the whole lifetime of the Group, usually a UUID |
 
@@ -40,16 +40,16 @@ Response:
 
 ```json
 {
-    "value": [
-        {
-            "displayName": "group",
-            "id": "38580a2e-7018-42ed-aff6-b2af0b4e9790"
-        },
-        {
-            "displayName": "Example Users",
-            "id": "7a20f238-8a22-4458-902d-47674c317e5f"
-        }
-    ]
+  "value": [
+    {
+      "displayName": "group",
+      "id": "38580a2e-7018-42ed-aff6-b2af0b4e9790"
+    },
+    {
+      "displayName": "Example Users",
+      "id": "7a20f238-8a22-4458-902d-47674c317e5f"
+    }
+  ]
 }
 ```
 
@@ -68,38 +68,38 @@ Response:
 
 ```json
 {
-    "value": [
+  "value": [
+    {
+      "displayName": "group",
+      "id": "38580a2e-7018-42ed-aff6-b2af0b4e9790",
+      "members": [
         {
-            "displayName": "group",
-            "id": "38580a2e-7018-42ed-aff6-b2af0b4e9790",
-            "members": [
-                {
-                    "displayName": "user1",
-                    "id": "2e7b7e23-6c42-4d34-81b0-2bed34e51983",
-                    "mail": "user1@example.org",
-                    "onPremisesSamAccountName": "user1"
-                },
-                {
-                    "displayName": "user2",
-                    "id": "b45c9e35-0d95-4165-96bc-68bff4a316ed",
-                    "mail": "user2@example.org",
-                    "onPremisesSamAccountName": "user2"
-                }
-            ]
+          "displayName": "user1",
+          "id": "2e7b7e23-6c42-4d34-81b0-2bed34e51983",
+          "mail": "user1@example.org",
+          "onPremisesSamAccountName": "user1"
         },
         {
-            "displayName": "Example Users",
-            "id": "7a20f238-8a22-4458-902d-47674c317e5f",
-            "members": [
-                {
-                    "displayName": "user3",
-                    "id": "026fbfef-79ef-4f5d-887b-9eaf42777239",
-                    "mail": "user3@example.org",
-                    "onPremisesSamAccountName": "user3"
-                }
-            ]
+          "displayName": "user2",
+          "id": "b45c9e35-0d95-4165-96bc-68bff4a316ed",
+          "mail": "user2@example.org",
+          "onPremisesSamAccountName": "user2"
         }
-    ]
+      ]
+    },
+    {
+      "displayName": "Example Users",
+      "id": "7a20f238-8a22-4458-902d-47674c317e5f",
+      "members": [
+        {
+          "displayName": "user3",
+          "id": "026fbfef-79ef-4f5d-887b-9eaf42777239",
+          "mail": "user3@example.org",
+          "onPremisesSamAccountName": "user3"
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -115,8 +115,8 @@ Response:
 
 ```json
 {
-    "displayName": "Example Users",
-    "id": "7a20f238-8a22-4458-902d-47674c317e5f"
+  "displayName": "Example Users",
+  "id": "7a20f238-8a22-4458-902d-47674c317e5f"
 }
 ```
 
@@ -132,16 +132,16 @@ Response:
 
 ```json
 {
-    "displayName": "Example Users",
-    "id": "7a20f238-8a22-4458-902d-47674c317e5f",
-    "members": [
-        {
-            "displayName": "user3",
-            "id": "026fbfef-79ef-4f5d-887b-9eaf42777239",
-            "mail": "user3@example.org",
-            "onPremisesSamAccountName": "user3"
-        }
-    ]
+  "displayName": "Example Users",
+  "id": "7a20f238-8a22-4458-902d-47674c317e5f",
+  "members": [
+    {
+      "displayName": "user3",
+      "id": "026fbfef-79ef-4f5d-887b-9eaf42777239",
+      "mail": "user3@example.org",
+      "onPremisesSamAccountName": "user3"
+    }
+  ]
 }
 ```
 
@@ -162,18 +162,18 @@ Response:
 
 ```json
 [
-    {
-        "displayName": "Test User",
-        "id": "c54b0588-7157-4521-bb52-c1c8ca84ea71",
-        "mail": "example@example.org",
-        "onPremisesSamAccountName": "example"
-    },
-    {
-        "displayName": "Albert Einstein",
-        "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-        "mail": "einstein@example.org",
-        "onPremisesSamAccountName": "einstein"
-    }
+  {
+    "displayName": "Test User",
+    "id": "c54b0588-7157-4521-bb52-c1c8ca84ea71",
+    "mail": "example@example.org",
+    "onPremisesSamAccountName": "example"
+  },
+  {
+    "displayName": "Albert Einstein",
+    "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
+    "mail": "einstein@example.org",
+    "onPremisesSamAccountName": "einstein"
+  }
 ]
 ```
 
@@ -189,7 +189,7 @@ Note the missing `"id"` Attribute. It will be generated by the server:
 
 ```json
 {
-    "displayName": "Example Users"
+  "displayName": "Example Users"
 }
 ```
 
@@ -199,8 +199,8 @@ When successful, the response will return the new group including the newly allo
 
 ```json
 {
-    "displayName": "Example Users",
-    "id": "7a20f238-8a22-4458-902d-47674c317e5f"
+  "displayName": "Example Users",
+  "id": "7a20f238-8a22-4458-902d-47674c317e5f"
 }
 ```
 
@@ -245,10 +245,10 @@ Example:
 
 ```json
 {
-    "members@odata.bind": [
-        "https://localhost:9200/graph/v1.0/users/4c510ada-c86b-4815-8820-42cdf82c3d51",
- "https://localhost:9200/graph/v1.0/users/c54b0588-7157-4521-bb52-c1c8ca84ea71"
-    ]
+  "members@odata.bind": [
+    "https://localhost:9200/graph/v1.0/users/4c510ada-c86b-4815-8820-42cdf82c3d51",
+    "https://localhost:9200/graph/v1.0/users/c54b0588-7157-4521-bb52-c1c8ca84ea71"
+  ]
 }
 ```
 

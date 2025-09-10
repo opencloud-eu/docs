@@ -3,13 +3,12 @@ title: APIs
 sidebar_position: 1
 ---
 
-
 OpenCloud provides a large set of different **application programming interfaces (APIs)**. OpenCloud is built by microservices. That means many calls to "functions" in the code are remote calls.
 
 Basically we have two different API "universes": [HTTP](http) and [gRPC](grpc_apis).
 
 | HTTP                             | gRPC                             |
-|----------------------------------|----------------------------------|
+| -------------------------------- | -------------------------------- |
 | ![HTTP Logo](/img/http-logo.png) | ![gRPC Logo](/img/grpc-logo.png) |
 
 For inter-service-communication we are using mostly gRPC calls because it has some advantages. In the future, clients may decide to use gRPC directly to make use of these advantages.
@@ -35,7 +34,7 @@ OpenCloud uses a [gRPC API Gateway](../services/gateway) to route the requests t
 
 ### Protobuf
 
-gRPC APIs are typically defined by [Protocol buffers](https://developers.google.com/protocol-buffers/docs/overview). The different client and server stubs are created from ``*.proto`` files by code generation tools.
+gRPC APIs are typically defined by [Protocol buffers](https://developers.google.com/protocol-buffers/docs/overview). The different client and server stubs are created from `*.proto` files by code generation tools.
 
 ## Versioning
 

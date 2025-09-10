@@ -14,7 +14,7 @@ For detailed information on OpenCloud's support for OpenID Connect (OIDC), pleas
 While selecting an OpenCloud client for authentication, take note of specific limitations such as the `Redirect URI`:
 
 | Source  | Redirect URI                                 |
-|---------|----------------------------------------------|
+| ------- | -------------------------------------------- |
 | Android | oc://android.opencloud.eu                    |
 | iOS     | oc://ios.opencloud.eu                        |
 | Desktop | `http://127.0.0.1` <br /> `http://localhost` |
@@ -32,67 +32,67 @@ client_id=OpenCloudDesktop
    To initiate the OIDC Code Flow, you can use tools like curl and a web browser.
    The user should be directed to a URL to authenticate and give their consent (bypassing consent is against the standard):
 
-    ```plaintext
-    https://cloud.opencloud.test/signin/v1/identifier/_/authorize?client_id=client_id&scope=openid+profile+email+offline_access&response_type=code&redirect_uri=http://path-to-redirect-uri
-    ```
+   ```plaintext
+   https://cloud.opencloud.test/signin/v1/identifier/_/authorize?client_id=client_id&scope=openid+profile+email+offline_access&response_type=code&redirect_uri=http://path-to-redirect-uri
+   ```
 
-    After a successful authentication, the browser will redirect to a URL that looks like this:
+   After a successful authentication, the browser will redirect to a URL that looks like this:
 
-    ```plaintext
-    http://path-to-redirect-uri?code=mfWsjEL0mc8gx0ftF9LFkGb__uFykaBw&scope=openid%20profile%20email%20offline_access&session_state=32b08dd...&state=
-    ```
+   ```plaintext
+   http://path-to-redirect-uri?code=mfWsjEL0mc8gx0ftF9LFkGb__uFykaBw&scope=openid%20profile%20email%20offline_access&session_state=32b08dd...&state=
+   ```
 
-    For the next step extract the code from the URL.
+   For the next step extract the code from the URL.
 
-    In the above example,
-    the code is `mfWsjEL0mc8gx0ftF9LFkGb__uFykaBw`
+   In the above example,
+   the code is `mfWsjEL0mc8gx0ftF9LFkGb__uFykaBw`
 
 2. Requesting an access token
 
    The next step in the OIDC Code Flow involves an HTTP POST request
    to the token endpoint of the **OpenCloud Identity Server**.
 
-    ```bash
-    curl -vk -X POST https://cloud.opencloud.test/konnect/v1/token \
-    -d "grant_type=authorization_code" \
-    -d "code=3a3PTcO-WWXfN3l1mDN4u7G5PzWFxatU" \
-    -d "redirect_uri=http:path-to-redirect-uri" \
-    -d "client_id=client_id"
-    ```
+   ```bash
+   curl -vk -X POST https://cloud.opencloud.test/konnect/v1/token \
+   -d "grant_type=authorization_code" \
+   -d "code=3a3PTcO-WWXfN3l1mDN4u7G5PzWFxatU" \
+   -d "redirect_uri=http:path-to-redirect-uri" \
+   -d "client_id=client_id"
+   ```
 
    Response looks like this:
 
-    ```json
-    {
-    "access_token": "eyJhbGciOid...",
-    "token_type": "Bearer",
-    "id_token": "eyJhbGciOi...",
-    "refresh_token": "eyJhbGciOiJ...",
-    "expires_in": 300
-    }
-    ```
+   ```json
+   {
+     "access_token": "eyJhbGciOid...",
+     "token_type": "Bearer",
+     "id_token": "eyJhbGciOi...",
+     "refresh_token": "eyJhbGciOiJ...",
+     "expires_in": 300
+   }
+   ```
 
 3. Refreshing an access token
 
    If the access token has expired, you can get a new one using the refresh token.
 
-    ```bash
-    curl -vk -X POST https://cloud.opencloud.test/konnect/v1/token \
-    -d "grant_type=refresh_token" \
-    -d "refresh_token=eyJhbGciOiJ..." \
-    -d "redirect_uri=http://path-to-redirect-uri" \
-    -d "client_id=client_id"
-    ```
+   ```bash
+   curl -vk -X POST https://cloud.opencloud.test/konnect/v1/token \
+   -d "grant_type=refresh_token" \
+   -d "refresh_token=eyJhbGciOiJ..." \
+   -d "redirect_uri=http://path-to-redirect-uri" \
+   -d "client_id=client_id"
+   ```
 
    Response looks like this:
 
-    ```json
-    {
-    "access_token": "eyJhbGciOi...",
-    "token_type": "Bearer",
-    "expires_in": 300
-    }
-    ```
+   ```json
+   {
+     "access_token": "eyJhbGciOi...",
+     "token_type": "Bearer",
+     "expires_in": 300
+   }
+   ```
 
 ## Implicit Code Flow
 
@@ -117,7 +117,7 @@ The user should be directed to a URL to authenticate and give their consent (byp
 
 ```bash
 https://cloud.opencloud.test/signin/v1/identifier/_/authorize?client_id=client_id&scope=openid+profile+email+offline_access&response_type=id_token+token&redirect_uri=http://path-to-redirect-uri&nonce=pL3UkpAQPZ8bTMGYOmxHY/dQABin8yrqipZ7iN0PY18=
- ```
+```
 
 After a successful authentication, the browser will redirect to a URL that looks like this:
 
@@ -129,7 +129,7 @@ For the next step, extract the access_token from the URL.
 
 ```bash
 access_token = 'eyJhbGciOiJQ...'
- ```
+```
 
 ## Hybrid Flow
 

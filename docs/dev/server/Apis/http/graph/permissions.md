@@ -12,7 +12,7 @@ The Permissions API is implementing a subset of the functionality of the
 
 The JSON representation of a Drive, as handled by the Spaces API, looks like this:
 
-````json
+```json
 {
   "@libre.graph.permissions.roles.allowedValues": [
     {
@@ -57,9 +57,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     },
     {
       "id": "34646ab6-be32-43c9-89e6-987e0c237e9b",
-      "roles": [
-        "b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"
-      ],
+      "roles": ["b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"],
       "grantedToV2": [
         {
           "user": {
@@ -71,9 +69,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     },
     {
       "id": "81d5bad3-3eff-410a-a2ea-eda2d14d4474",
-      "roles": [
-        "b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"
-      ],
+      "roles": ["b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"],
       "grantedToV2": [
         {
           "user": {
@@ -85,9 +81,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     },
     {
       "id": "b470677e-a7f5-4304-8ef5-f5056a21fff1",
-      "roles": [
-        "b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"
-      ],
+      "roles": ["b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5"],
       "grantedToV2": [
         {
           "user": {
@@ -99,9 +93,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     },
     {
       "id": "453b02be-4ec2-4e7d-b576-09fc153de812",
-      "roles": [
-        "fb6c3e19-e378-47e5-b277-9732f9de6e21"
-      ],
+      "roles": ["fb6c3e19-e378-47e5-b277-9732f9de6e21"],
       "grantedToV2": [
         {
           "user": {
@@ -114,9 +106,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     },
     {
       "id": "86765c0d-3905-444a-9b07-76201f8cf7df",
-      "roles": [
-        "312c0871-5ef7-4b3a-85b6-0e4074c64049"
-      ],
+      "roles": ["312c0871-5ef7-4b3a-85b6-0e4074c64049"],
       "grantedToV2": [
         {
           "group": {
@@ -143,7 +133,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
     }
   ]
 }
-````
+```
 
 ## Creating Share Invitation / Link
 
