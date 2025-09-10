@@ -92,11 +92,11 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
 
 ### Create a single space `POST /drives`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives/CreateDrive>
+[Create Drive](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives/CreateDrive)
 
 ### Create a space item (Enable sync) `POST /drives/\{drive-id\}/root/children`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateDriveItem>
+[Create Drive Item](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateDriveItem)
 
 ## Reading Spaces
 
@@ -128,7 +128,7 @@ The "Space Manager" is a user which is a regular member of a space because he ha
 
 ### List My Spaces `GET /me/drives`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/me.drives/ListMyDrives>
+[List My Drives](https://docs.opencloud.eu/swagger/libre-graph-api/#/me.drives/ListMyDrives)
 
 ## Modifying Spaces
 
@@ -158,6 +158,7 @@ To limit the quota of a space you need to set the `quota.total` value. The API r
 
 <Tabs>
 <TabItem value="request" label="Request">
+
 ```shell
 curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff' \
 -H 'Content-Type: application/json' \
@@ -167,8 +168,10 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
     }
 }'
 ```
+
 </TabItem>
 <TabItem value="response" label="Response - 200 OK">
+
 ```json title="Response" {17}
 {
     "description": "Marketing team resources",
@@ -212,6 +215,7 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
     "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
+
 </TabItem>
 </Tabs>
 
@@ -233,6 +237,7 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
 </TabItem>
 
 <TabItem value="response" label="Response - 200 OK">
+
 ```json title="Response" {2,3,7}
 {
     "description": "Mission to mars",
@@ -276,6 +281,7 @@ curl -L -k -X PATCH 'https://localhost:9200/graph/v1.0/drives/storage-users-1$53
     "webUrl": "https://localhost:9200/f/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff"
 }
 ```
+
 </TabItem>
 </Tabs>
 
@@ -287,9 +293,11 @@ This operation will make the space content unavailable for all space members. No
 
 <Tabs>
 <TabItem value="request" label="Request">
+
 ```shell
 curl -L -k -X DELETE 'https://localhost:9200/graph/v1.0/drives/storage-users-1$535aa42d-a3c7-4329-9eba-5ef48fcaa3ff/'
 ```
+
 </TabItem>
 
 <TabItem value="response" label="Response - 204 No Content">
@@ -466,28 +474,28 @@ The space to be deleted was not disabled before.
 
 ### Add member to space `POST /drives/\{drive-id\}/root/invite`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite>
+[Invite](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite)
 
 ### Sharing space as a link `POST /drives/\{drive-id\}/root/createLink`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateLinkSpaceRoot>
+[CreateLinkSpaceRoot](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateLinkSpaceRoot)
 
 ## Reading Space Permissions
 
 ### Listing permissions of a space `GET /drives/\{drive-id\}/root/permissions`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/ListPermissionsSpaceRoot>
+[ListPermissionsSpaceRoot](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/ListPermissionsSpaceRoot)
 
 ## Modifying / Deleting Space Permissions
 
 ### Update permissions of a drive `PATCH /drives/\{drive-id\}/root/permissions/\{perm-id\}`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/UpdatePermissionSpaceRoot>
+[UpdatePermissionSpaceRoot](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/UpdatePermissionSpaceRoot)
 
 ### Set password of a link share `POST /drives/\{drive-id\}/root/permissions/\{perm-id\}/setPassword`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/SetPermissionPasswordSpaceRoot>
+[SetPermissionPasswordSpaceRoot](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/SetPermissionPasswordSpaceRoot)
 
 ### Removing acess to a space `DELETE /drives/\{drive-id\}/root/permissions/\{perm-id\}`
 
-<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/DeletePermissionSpaceRoot>
+[DeletePermissionSpaceRoot](https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/DeletePermissionSpaceRoot)

@@ -308,13 +308,13 @@ When building the body of your DAV request, you will request properties that are
 
 Available namespaces:
 
-| URI                                       | Prefix |
-|-------------------------------------------|--------|
-| DAV:                                      | d      |
-| <http://sabredav.org/ns>                    | s      |
-| <http://owncloud.org/ns>                    | oc     |
-| <http://open-collaboration-services.org/ns> | ocs    |
-| <http://open-cloud-mesh.org/ns>             | ocm    |
+| URI                                         | Prefix |
+|---------------------------------------------|--------|
+| DAV:                                        | d      |
+| `http://sabredav.org/ns`                    | s      |
+| `http://owncloud.org/ns`                    | oc     |
+| `http://open-collaboration-services.org/ns` | ocs    |
+| `http://open-cloud-mesh.org/ns`             | ocm    |
 
 ### Request Example with declared namespaces
 

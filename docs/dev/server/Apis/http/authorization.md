@@ -17,7 +17,7 @@ While selecting an OpenCloud client for authentication, take note of specific li
 |---------|----------------------------------------------|
 | Android | oc://android.opencloud.eu                    |
 | iOS     | oc://ios.opencloud.eu                        |
-| Desktop | <http://127.0.0.1> <br /> <http://localhost> |
+| Desktop | `http://127.0.0.1` <br /> `http://localhost` |
 
 In this example, the desktop app's `client_id` are being used.
 
