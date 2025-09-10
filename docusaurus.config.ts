@@ -155,9 +155,20 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
 
-  plugins: [
-    rawLoaderPlugin,
+plugins: [
+  rawLoaderPlugin,
+  [
+    '@docusaurus/plugin-client-redirects',
+    {
+      redirects: [
+        {
+          from: ['/docs/admin/getting-started/container/docker-compose-local'],
+          to: '/docs/admin/getting-started/container/docker-compose/docker-compose-base',
+        },
+      ],
+    },
   ],
+],
 
   themes: [
     [
