@@ -12,7 +12,6 @@ Basically we have two different API "universes": [HTTP](http) and [gRPC](grpc_ap
 |----------------------------------|----------------------------------|
 | ![HTTP Logo](/img/http-logo.png) | ![gRPC Logo](/img/grpc-logo.png) |
 
-
 For inter-service-communication we are using mostly gRPC calls because it has some advantages. In the future, clients may decide to use gRPC directly to make use of these advantages.
 
 ![OpenCloud APIs Architecture](/img/oc-apis.drawio.svg)
@@ -41,4 +40,3 @@ gRPC APIs are typically defined by [Protocol buffers](https://developers.google.
 ## Versioning
 
 There are different standards for API versioning: Through URL, through request parameter, through custom header and through content negotiation. OpenCloud uses the versioning by URL concept although this creates a big code footprint. The versioning follows [SemVer](https://semver.org). We update the major version number when breaking changes are needed. Clients can decide which major version they use through the request URL. The specific implementation is documented on each API.
-

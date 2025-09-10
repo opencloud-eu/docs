@@ -14,6 +14,7 @@ The Spaces API is implementing a subset of the functionality of the
 ### Example Space
 
 The JSON representation of a Drive, as handled by the Spaces API, looks like this:
+
 ````json
 {
   "driveAlias": "project/mars",
@@ -91,11 +92,11 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
 
 ### Create a single space `POST /drives`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives/CreateDrive
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives/CreateDrive>
 
 ### Create a space item (Enable sync) `POST /drives/\{drive-id\}/root/children`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateDriveItem
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateDriveItem>
 
 ## Reading Spaces
 
@@ -113,7 +114,6 @@ GET https://cloud.opencloud.test/graph/{version}/{me/}drives/?{query-parameters}
 
 Returns a list of all available spaces, even ones where the acting user is not a regular member of. You need elevated permissions to do list all spaces. If you don't have the elevated permissions, the result is the same like `GET /me/drives`.
 
-
 :::info[Multiple Administration Personas]
 
 The openCloud spaces concept draws a strict line between users which can work with the content of a space and others who have the permission to manage the space. A user which is able to manage quota and space metadata does not necessarily need to be able to access the content of a space.
@@ -128,7 +128,7 @@ The "Space Manager" is a user which is a regular member of a space because he ha
 
 ### List My Spaces `GET /me/drives`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/me.drives/ListMyDrives
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/me.drives/ListMyDrives>
 
 ## Modifying Spaces
 
@@ -458,6 +458,7 @@ The space to be deleted was not disabled before.
     }
 }
 ```
+
 </TabItem>
 </Tabs>
 
@@ -465,28 +466,28 @@ The space to be deleted was not disabled before.
 
 ### Add member to space `POST /drives/\{drive-id\}/root/invite`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite>
 
 ### Sharing space as a link `POST /drives/\{drive-id\}/root/createLink`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateLinkSpaceRoot
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/CreateLinkSpaceRoot>
 
 ## Reading Space Permissions
 
 ### Listing permissions of a space `GET /drives/\{drive-id\}/root/permissions`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/ListPermissionsSpaceRoot
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/ListPermissionsSpaceRoot>
 
 ## Modifying / Deleting Space Permissions
 
 ### Update permissions of a drive `PATCH /drives/\{drive-id\}/root/permissions/\{perm-id\}`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/UpdatePermissionSpaceRoot
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/UpdatePermissionSpaceRoot>
 
 ### Set password of a link share `POST /drives/\{drive-id\}/root/permissions/\{perm-id\}/setPassword`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/SetPermissionPasswordSpaceRoot
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/SetPermissionPasswordSpaceRoot>
 
 ### Removing acess to a space `DELETE /drives/\{drive-id\}/root/permissions/\{perm-id\}`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/DeletePermissionSpaceRoot
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.root/DeletePermissionSpaceRoot>

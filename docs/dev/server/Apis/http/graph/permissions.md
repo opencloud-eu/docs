@@ -11,6 +11,7 @@ The Permissions API is implementing a subset of the functionality of the
 ### Example Permissions
 
 The JSON representation of a Drive, as handled by the Spaces API, looks like this:
+
 ````json
 {
   "@libre.graph.permissions.roles.allowedValues": [
@@ -148,32 +149,32 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
 
 ### Create a link share `POST /drives/{drive-id}/items/{item-id}/createLink`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/CreateLink
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/CreateLink>
 
 ### Create a user/group share `POST /drives/{drive-id}/items/{item-id}/invite`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/Invite>
 
 ## Reading Permissions
 
 ### List the effective sharing permissions on a driveitem `GET /drives/{drive-id}/items/{item-id}/permissions`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/ListPermissions
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/ListPermissions>
 
 ### List Get sharing permission for a file or folder `GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/GetPermission
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/GetPermission>
 
 ## Updating Permissions
 
 ### Updating sharing permission `POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/UpdatePermission
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/UpdatePermission>
 
 ### Set password of permission `POST /drives/{drive-id}/items/{item-id}/permissions/{perm-id}/setPassword`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/SetPermissionPassword
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/SetPermissionPassword>
 
 ### Deleting permission `DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}`
 
-https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/DeletePermission
+<https://docs.opencloud.eu/swagger/libre-graph-api/#/drives.permissions/DeletePermission>

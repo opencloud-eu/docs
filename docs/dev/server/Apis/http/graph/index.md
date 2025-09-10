@@ -54,6 +54,7 @@ For example, adding the following filter parameter restricts the drives returned
 ```shell
 GET https://cloud.opencloud.test/graph/v1.0/drives?$filter=driveType eq 'project'
 ```
+
 For more information about OData query options please check the [API specification](https://github.com/opencloud-eu/libre-graph-api) and the provided examples.
 
 ### Authorization
@@ -63,4 +64,3 @@ For development purposes the examples in the developer documentation use Basic A
 To authenticate with a Bearer token or OpenID Connect access token replace the `-u user:password` Basic Auth option of curl with a `-H 'Authorization: Bearer <token>'` header. A `<token>` can be obtained by copying it from a request in the browser, although it will time out within minutes. To automatically refresh the OpenID Connect access token an ssh-agent like solution like [oidc-agent](https://github.com/indigo-dc/oidc-agent) should be used. The graph endpoints that support a preconfigured token can be found in the [API specification](https://github.com/opencloud-eu/libre-graph-api)
 
 ## Resources
-

@@ -6,9 +6,7 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 **Web** **D**istributed **A**uthoring and **V**ersioning (WebDAV) consists of a set of methods, headers, and content-types extending HTTP/1.1 for the management of resources and -properties, creation and management of resource collections, URL namespace manipulation, and resource locking (collision avoidance). WebDAV is one of the central APIs that OpenCloud uses for handling file resources, metadata and locks.
-
 
 :::info RFC
 **WebDAV RFCs**
@@ -16,6 +14,7 @@ import TabItem from '@theme/TabItem';
 RFC 2518 was published in February 1999. [RFC 4918](https://datatracker.ietf.org/doc/html/rfc4918), published in June 2008 obsoletes RFC 2518 with minor revisions mostly due to interoperability experience.
 
 :::
+
 ## Calling the WebDAV API
 
 ### Request URI
@@ -26,17 +25,17 @@ RFC 2518 was published in February 1999. [RFC 4918](https://datatracker.ietf.org
 
 The request URI consists of:
 
-| Component     | Description                                                                                            |
-|---------------|--------------------------------------------------------------------------------------------------------|
+| Component       | Description                                                                                            |
+|-----------------|--------------------------------------------------------------------------------------------------------|
 | `{HTTP method}` | The HTTP method which is used in the request.                                                          |
 | `{webdav-base}` | The WebDAV base path component. Possible options are                                                   |
-|               | `dav/spaces/` This is the default and optimized endpoint for all WebDAV requests.                      |
-|               | `remote.php/dav/spaces/`*                                                                              |
-|               | `remote.php/webdav/`*                                                                                  |
-|               | `webdav/`*                                                                                             |
-|               | `dav/`*                                                                                                |
+|                 | `dav/spaces/` This is the default and optimized endpoint for all WebDAV requests.                      |
+|                 | `remote.php/dav/spaces/`*                                                                              |
+|                 | `remote.php/webdav/`*                                                                                  |
+|                 | `webdav/`*                                                                                             |
+|                 | `dav/`*                                                                                                |
 | `{resourceID}`  | This resourceID is used as the WebDAV root element. All children are accessed by their relative paths. |
-| `{path}`        | The relative path to the WebDAV root. In most of the casese, this is the space root.                   |
+| `{path}`        | The relative path to the WebDAV root. In most of the cases, this is the space root.                    |
 
 \* these dav endpoints are implemented for legacy reasons and should not be used. Note: The legacy endpoints **do not take the resourceID as an argument.**
 
@@ -50,10 +49,10 @@ The request URI consists of:
 | GET       | Retrieve a WebDAV resource.                                                                                                                                                                                                                  |
 | HEAD      | Retrieve a WebDAV resource without reading the body.                                                                                                                                                                                         |
 | PUT       | A PUT performed on an existing resource replaces the GET response entity of the resource.                                                                                                                                                    |
-| POST      | Not part of the WebDAV rfc and has no effect on a WebDAV resource. However, this method is used in the TUS protocol for uploading resources.                                                                                      |
-| PATCH     | Not part of the WebDAV rfc and has no effect on a WebDAV resource. However, this method is used in the TUS protocol for uploading resources.                                                                                           |
+| POST      | Not part of the WebDAV rfc and has no effect on a WebDAV resource. However, this method is used in the TUS protocol for uploading resources.                                                                                                 |
+| PATCH     | Not part of the WebDAV rfc and has no effect on a WebDAV resource. However, this method is used in the TUS protocol for uploading resources.                                                                                                 |
 | COPY      | Creates a duplicate of the source resource identified by the Request-URI, in the destination resource identified by the URI in the Destination header.                                                                                       |
-| MOVE      | The MOVE operation on a non-collection resource is the logical equivalent of a copy (COPY), followed by consistency maintenance processing, followed by a delete of the source, where all three actions are performed in a single operation. |                                                                                                                             |
+| MOVE      | The MOVE operation on a non-collection resource is the logical equivalent of a copy (COPY), followed by consistency maintenance processing, followed by a delete of the source, where all three actions are performed in a single operation. |
 | DELETE    | Delete the resource identified by the Request-URI.                                                                                                                                                                                           |
 | LOCK      | A LOCK request to an existing resource will create a lock on the resource identified by the Request-URI, provided the resource is not already locked with a conflicting lock.                                                                |
 | UNLOCK    | The UNLOCK method removes the lock identified by the lock token in the Lock-Token request header. The Request-URI must identify a resource within the scope of the lock.                                                                     |
@@ -149,6 +148,7 @@ The request consists of a request body and an optional `Depth` Header.
 
 Clients can use the `PROPFIND` method to retrieve properties of resources (metadata) and to list the content of a directories.
 :::
+
 ### Response
 
 <Tabs>
@@ -267,6 +267,7 @@ in any order, each with information about an individual resource.
     </d:response>
 </d:multistatus>
 ```
+
 </TabItem>
 <TabItem value="400" label="400 - Bad Request">
 
@@ -293,6 +294,7 @@ This can occur if the request is malformed e.g. due to an invalid xml request bo
     <s:message>Resource not found</s:message>
 </d:error>
 ```
+
 </TabItem>
 </Tabs>
 
@@ -309,10 +311,10 @@ Available namespaces:
 | URI                                       | Prefix |
 |-------------------------------------------|--------|
 | DAV:                                      | d      |
-| http://sabredav.org/ns                    | s      |
-| http://owncloud.org/ns                    | oc     |
-| http://open-collaboration-services.org/ns | ocs    |
-| http://open-cloud-mesh.org/ns             | ocm    |
+| <http://sabredav.org/ns>                    | s      |
+| <http://owncloud.org/ns>                    | oc     |
+| <http://open-collaboration-services.org/ns> | ocs    |
+| <http://open-cloud-mesh.org/ns>             | ocm    |
 
 ### Request Example with declared namespaces
 
@@ -324,51 +326,51 @@ Available namespaces:
 
 ### Supported WebDAV Properties
 
-| Property                              | Desription                                                                 | Example                                                                                                                                          |
-|---------------------------------------| -------------------------------------------------------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `<d:getlastmodified />`               | The latest modification time.                                              | `Fri, 30 Dec 2022 14:22:43 GMT`                                                                                                                  |
-| `<d:getetag />`                       | The file's etag.                                                           | `"c3a1ee4a0c28edc15b9635c3bf798013"`                                                                                                             |
-| `<d:getcontenttype />`                | The mime type of the file.                                                 | `image/jpeg`                                                                                                                                     |
-| `<d:resourcetype />`                  | Specifies the nature of the resource.                                      | `<d:collection />` for a folder                                                                                                                  |
-| `<d:getcontentlength />`              | The size if it is a file in bytes.                                         | `5` bytes                                                                                                                                        |
-| `<d:lockdiscovery />`                 | Describes the active locks on a resource.                                  |                                                                                                                                                  |
-| `<oc:id />`                           | The globally unique ID of the resource.                                    | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
-| `<oc:fileid />`                       | The globally unique ID of the resource.                                    | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
-| `<oc:downloadURL />`                  | Direct URL to download a file from.                                        | Not implemented.                                                                                                                                 |
-| `<oc:permissions />`                  | Determines the actions a user can take on the resource.                    | The value is a string containing letters that clients can use to determine available actions.                                                    |
-|                                       |                                                                            | `S`: Shared                                                                                                                                      |
-|                                       |                                                                            | `M`: Mounted                                                                                                                                     |
-|                                       |                                                                            | `D`: Deletable                                                                                                                                   |
-|                                       |                                                                            | `NV`: Updateable, Renameable, Moveable                                                                                                           |
-|                                       |                                                                            | `W`: Updateable (file)                                                                                                                           |
-|                                       |                                                                            | `CK`: Creatable (folders only)                                                                                                                   |
-|                                       |                                                                            | `Z`: Deniable                                                                                                                                    |
-|                                       |                                                                            | `P`: Trashbin Purgable                                                                                                                           |
-|                                       |                                                                            | `X`: Securely Viewable                                                                                                                           |
-|                                       |                                                                            | In the early stages this was indeed a list of permissions. Over time, more flags were added and the term permissions no longer really fits well. |
-| `<oc:tags />`                         | List of user specified tags.                                               | `<oc:tag>test</oc:tag>`                                                                                                                          |
-| `<oc:favorite />	`                    | The favorite state.                                                        | `0` for not favourited, `1` for favourited                                                                                                       |
-| `<oc:owner-id />`                     | The user id of the owner of a resource. Project spaces have no owner.      | `einstein`                                                                                                                                       |
-| `<oc:owner-display-name />`           | The display name of the owner of a resource. Project spaces have no owner. | `Albert Einstein`                                                                                                                                |
-| `<oc:share-types />`                  | List of share types.                                                       | `0` = User Share                                                                                                                                 |
-|                                       |                                                                            | `1` = Group Share                                                                                                                                |
-|                                       |                                                                            | `2` = Public Link                                                                                                                                |
-| `<oc:checksums />`                    |                                                                            | `<oc:checksum>`<br/>`SHA1:1c68ea370b40c06fcaf7f26c8b1dba9d9caf5dea MD5:2205e48de5f93c784733ffcca841d2b5 ADLER32:058801ab`<br /> `</oc:checksum>` |
-|                                       |                                                                            | Due to a bug in the very early development of OpenCloud, this value is not an array, but a string separated by whitespaces.                      |
-| `<oc:size />`                         | Similar to `getcontentlength` but it also works for folders.               | `10` bytes                                                                                                                                       |
-| `<oc:shareid />`                      | The ID of the share if the resource is part of such.                       | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
-| `<oc:shareroot />`                    | The root path of the shared resource if the resource is part of such.      | `/shared-folder`                                                                                                                                 |
-| `<oc:remoteItemId />`                 | The ID of the shared resource if the resource is part of such.             | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
-| `<oc:public-link-item-type />`        | The type of the resource if it's a public link.                            | `folder`                                                                                                                                         |
-| `<oc:public-link-permission />`       | The share permissions of the resource if it's a public link.               | `1`                                                                                                                                              |
-| `<oc:public-link-expiration />`       | The expiration date of the public link.                                    | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
-| `<oc:public-link-share-datetime />`   | The date the public link was created.                                      | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
-| `<oc:public-link-share-owner />`      | The username of the user who created the public link.                      | `admin`                                                                                                                                          |
-| `<oc:trashbin-original-filename />`   | The original name of the resource before it was deleted.                   | `some-file.txt`                                                                                                                                  |
-| `<oc:trashbin-original-location />`   | The original location of the resource before it was deleted.               | `some-file.txt`                                                                                                                                  |
-| `<oc:trashbin-delete-datetime />`     | The date the resource was deleted.                                         | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
-| `<oc:audio />`                        | Audio meta data if the resource contains such.                             | `<oc:artist>Metallica</oc:artist><oc:album>Metallica</oc:album><oc:title>Enter Sandman</oc:title>`                                               |
-| `<oc:location />`                     | Location meta data if the resource contains such.                          | `<oc:latitude>51.504106</oc:latitude><oc:longitude>-0.074575</oc:latitude>`                                                                      |
+| Property                            | Desription                                                                 | Example                                                                                                                                          |
+|-------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| `<d:getlastmodified />`             | The latest modification time.                                              | `Fri, 30 Dec 2022 14:22:43 GMT`                                                                                                                  |
+| `<d:getetag />`                     | The file's etag.                                                           | `"c3a1ee4a0c28edc15b9635c3bf798013"`                                                                                                             |
+| `<d:getcontenttype />`              | The mime type of the file.                                                 | `image/jpeg`                                                                                                                                     |
+| `<d:resourcetype />`                | Specifies the nature of the resource.                                      | `<d:collection />` for a folder                                                                                                                  |
+| `<d:getcontentlength />`            | The size if it is a file in bytes.                                         | `5` bytes                                                                                                                                        |
+| `<d:lockdiscovery />`               | Describes the active locks on a resource.                                  |                                                                                                                                                  |
+| `<oc:id />`                         | The globally unique ID of the resource.                                    | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
+| `<oc:fileid />`                     | The globally unique ID of the resource.                                    | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
+| `<oc:downloadURL />`                | Direct URL to download a file from.                                        | Not implemented.                                                                                                                                 |
+| `<oc:permissions />`                | Determines the actions a user can take on the resource.                    | The value is a string containing letters that clients can use to determine available actions.                                                    |
+|                                     |                                                                            | `S`: Shared                                                                                                                                      |
+|                                     |                                                                            | `M`: Mounted                                                                                                                                     |
+|                                     |                                                                            | `D`: Deletable                                                                                                                                   |
+|                                     |                                                                            | `NV`: Updateable, Renameable, Moveable                                                                                                           |
+|                                     |                                                                            | `W`: Updateable (file)                                                                                                                           |
+|                                     |                                                                            | `CK`: Creatable (folders only)                                                                                                                   |
+|                                     |                                                                            | `Z`: Deniable                                                                                                                                    |
+|                                     |                                                                            | `P`: Trashbin Purgable                                                                                                                           |
+|                                     |                                                                            | `X`: Securely Viewable                                                                                                                           |
+|                                     |                                                                            | In the early stages this was indeed a list of permissions. Over time, more flags were added and the term permissions no longer really fits well. |
+| `<oc:tags />`                       | List of user specified tags.                                               | `<oc:tag>test</oc:tag>`                                                                                                                          |
+| `<oc:favorite />`                   | The favorite state.                                                        | `0` for not favourited, `1` for favourited                                                                                                       |
+| `<oc:owner-id />`                   | The user id of the owner of a resource. Project spaces have no owner.      | `einstein`                                                                                                                                       |
+| `<oc:owner-display-name />`         | The display name of the owner of a resource. Project spaces have no owner. | `Albert Einstein`                                                                                                                                |
+| `<oc:share-types />`                | List of share types.                                                       | `0` = User Share                                                                                                                                 |
+|                                     |                                                                            | `1` = Group Share                                                                                                                                |
+|                                     |                                                                            | `2` = Public Link                                                                                                                                |
+| `<oc:checksums />`                  |                                                                            | `<oc:checksum>`<br/>`SHA1:1c68ea370b40c06fcaf7f26c8b1dba9d9caf5dea MD5:2205e48de5f93c784733ffcca841d2b5 ADLER32:058801ab`<br /> `</oc:checksum>` |
+|                                     |                                                                            | Due to a bug in the very early development of OpenCloud, this value is not an array, but a string separated by whitespaces.                      |
+| `<oc:size />`                       | Similar to `getcontentlength` but it also works for folders.               | `10` bytes                                                                                                                                       |
+| `<oc:shareid />`                    | The ID of the share if the resource is part of such.                       | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
+| `<oc:shareroot />`                  | The root path of the shared resource if the resource is part of such.      | `/shared-folder`                                                                                                                                 |
+| `<oc:remoteItemId />`               | The ID of the shared resource if the resource is part of such.             | `storage-1$27475553-7fb7-4689-b4cf-bbb635daff79!27475553-7fb7-4689-b4cf-bbb635daff79`                                                            |
+| `<oc:public-link-item-type />`      | The type of the resource if it's a public link.                            | `folder`                                                                                                                                         |
+| `<oc:public-link-permission />`     | The share permissions of the resource if it's a public link.               | `1`                                                                                                                                              |
+| `<oc:public-link-expiration />`     | The expiration date of the public link.                                    | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
+| `<oc:public-link-share-datetime />` | The date the public link was created.                                      | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
+| `<oc:public-link-share-owner />`    | The username of the user who created the public link.                      | `admin`                                                                                                                                          |
+| `<oc:trashbin-original-filename />` | The original name of the resource before it was deleted.                   | `some-file.txt`                                                                                                                                  |
+| `<oc:trashbin-original-location />` | The original location of the resource before it was deleted.               | `some-file.txt`                                                                                                                                  |
+| `<oc:trashbin-delete-datetime />`   | The date the resource was deleted.                                         | `Tue, 14 May 2024 12:44:29 GMT`                                                                                                                  |
+| `<oc:audio />`                      | Audio meta data if the resource contains such.                             | `<oc:artist>Metallica</oc:artist><oc:album>Metallica</oc:album><oc:title>Enter Sandman</oc:title>`                                               |
+| `<oc:location />`                   | Location meta data if the resource contains such.                          | `<oc:latitude>51.504106</oc:latitude><oc:longitude>-0.074575</oc:latitude>`                                                                      |
 
 ### Request Headers
 
@@ -414,13 +416,13 @@ Authorization: Basic YWRtaW46YWRtaW4=
 <TabItem value="201" label="201 - Created">
 This indicates that the Resource has been created successfully.
 
-#### Body
+### Body
 
 The response has no body.
 </TabItem>
 <TabItem value="403" label="403 - Forbidden">
 
-#### Body
+### Body
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -429,10 +431,11 @@ The response has no body.
     <s:message></s:message>
 </d:error>
 ```
+
 </TabItem>
 <TabItem value="405" label="405 - Method not allowed">
 
-#### Body
+### Body
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -441,6 +444,7 @@ The response has no body.
     <s:message>The resource you tried to create already exists</s:message>
 </d:error>
 ```
+
 </TabItem>
 </Tabs>
 
@@ -450,14 +454,15 @@ To upload files to the remote server, clients can use the `PUT` method to create
 
 ### Request Headers
 
-| Name          | Usage                                                                                                                                                                                                                                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `X-OC-Mtime`  | Send the last modified<br/>time of the file to the server in unixtime format. The server applies this mtime to the resource rather than the actual time.                                                                                                                                                           |
-| `OC-Checksum` | Provide the checksum of the<br/>file content to the server.<br/>This is used to prevent corrupted data transfers.                                                                                                                                                                                                 |
+| Name          | Usage                                                                                                                                                                                                                                                                                                           |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `X-OC-Mtime`  | Send the last modified<br/>time of the file to the server in unixtime format. The server applies this mtime to the resource rather than the actual time.                                                                                                                                                        |
+| `OC-Checksum` | Provide the checksum of the<br/>file content to the server.<br/>This is used to prevent corrupted data transfers.                                                                                                                                                                                               |
 | `If-Match`    | The If-Match request-header field is used with a method to make it<br/>conditional. A client that has one or more entities previously<br/>obtained from the resource can verify that one of those entities is<br/>current by including a list of their associated entity tags in the<br/>If-Match header field. |
 
 <Tabs>
 <TabItem value="curl" label="Curl">
+
 ```shell
 curl -L -X PUT 'https://localhost:9200/dav/spaces/storage-users-1%24some-admin-user-id-0000-000000000000/test.txt' \
 -H 'X-OC-Mtime: 1692369418' \
@@ -467,8 +472,10 @@ curl -L -X PUT 'https://localhost:9200/dav/spaces/storage-users-1%24some-admin-u
 -H 'Authorization: Basic YWRtaW46YWRtaW4=' \
 -d '123'
 ```
+
 </TabItem>
 <TabItem value="http" label="HTTP">
+
 ```shell
 PUT /dav/spaces/storage-users-1%24some-admin-user-id-0000-000000000000/test.txt HTTP/1.1
 Host: localhost:9200
@@ -481,6 +488,7 @@ Content-Length: 3
 
 123
 ```
+
 </TabItem>
 </Tabs>
 
@@ -502,6 +510,7 @@ Oc-Fileid: storage-users-1$some-admin-user-id-0000-000000000000!07452b22-0ba9-45
 Last-Modified: Fri, 18 Aug 2023 14:36:58 +0000
 X-Oc-Mtime: accepted
 ```
+
 </TabItem>
 <TabItem value="204" label="204 - No Content">
 This indicates that the Resource has been updated successfully.
@@ -518,6 +527,7 @@ Oc-Fileid: storage-users-1$some-admin-user-id-0000-000000000000!07452b22-0ba9-45
 Last-Modified: Fri, 18 Aug 2023 14:36:58 +0000
 X-Oc-Mtime: accepted
 ```
+
 </TabItem>
 <TabItem value="400" label="400 - Bad Request">
 This indicates that the checksum, which was sent by the client, does not match the computed one after all bytes have been received by the server.
@@ -531,6 +541,7 @@ This indicates that the checksum, which was sent by the client, does not match t
     <s:message>The computed checksum does not match the one received from the client.</s:message>
 </d:error>
 ```
+
 </TabItem>
 <TabItem value="403" label="403 - Forbidden">
 

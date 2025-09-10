@@ -4,6 +4,7 @@ sidebar_position: 40
 ---
 
 In its default configuration, OpenCloud supports three authentication methods as outlined on the [OIDC official site](https://openid.net/specs/openid-connect-core-1_0.html#rfc.section.3):
+
 1. Authorization Code Flow
 2. Implicit Flow
 3. Hybrid Flow
@@ -12,11 +13,11 @@ For detailed information on OpenCloud's support for OpenID Connect (OIDC), pleas
 
 While selecting an OpenCloud client for authentication, take note of specific limitations such as the `Redirect URI`:
 
-| Source  | Redirect URI                             |
-|---------|------------------------------------------|
-| Android | oc://android.opencloud.eu                |
-| iOS     | oc://ios.opencloud.eu                    |
-| Desktop | http://127.0.0.1 <br /> http://localhost |
+| Source  | Redirect URI                                 |
+|---------|----------------------------------------------|
+| Android | oc://android.opencloud.eu                    |
+| iOS     | oc://ios.opencloud.eu                        |
+| Desktop | <http://127.0.0.1> <br /> <http://localhost> |
 
 In this example, the desktop app's `client_id` are being used.
 
@@ -60,6 +61,7 @@ client_id=OpenCloudDesktop
     ```
 
    Response looks like this:
+
     ```json
     {
     "access_token": "eyJhbGciOid...",
@@ -73,6 +75,7 @@ client_id=OpenCloudDesktop
 3. Refreshing an access token
 
    If the access token has expired, you can get a new one using the refresh token.
+
     ```bash
     curl -vk -X POST https://cloud.opencloud.test/konnect/v1/token \
     -d "grant_type=refresh_token" \
@@ -82,6 +85,7 @@ client_id=OpenCloudDesktop
     ```
 
    Response looks like this:
+
     ```json
     {
     "access_token": "eyJhbGciOi...",
@@ -103,29 +107,36 @@ If you are using the implicit flow, `nonce` parameter is required in the initial
 `nonce=pL3UkpAQPZ8bTMGYOmxHY/dQABin8yrqipZ7iN0PY18=`
 
 bash command to generate cryptographically random value
+
 ```bash
 openssl rand -base64 32
 ```
+
 :::
 The user should be directed to a URL to authenticate and give their consent (bypassing consent is against the standard):
+
 ```bash
 https://cloud.opencloud.test/signin/v1/identifier/_/authorize?client_id=client_id&scope=openid+profile+email+offline_access&response_type=id_token+token&redirect_uri=http://path-to-redirect-uri&nonce=pL3UkpAQPZ8bTMGYOmxHY/dQABin8yrqipZ7iN0PY18=
  ```
 
 After a successful authentication, the browser will redirect to a URL that looks like this:
+
 ```bash
 http://path-to-redirect-uri#access_token=eyJhbGciOiJQUzI...&expires_in=300&id_token=eyJhbGciOiJ...&scope=email%20openid%20profile&session_state=c8a1019f5e054d...&state=&token_type=Bearer
 ```
 
 For the next step, extract the access_token from the URL.
+
 ```bash
 access_token = 'eyJhbGciOiJQ...'
  ```
 
 ## Hybrid Flow
+
 The Hybrid Flow in OpenID Connect melds features from both the Implicit and Authorization Code flows. It allows clients to directly retrieve certain tokens from the Authorization Endpoint, yet also offers the option to acquire additional tokens from the Token Endpoint.
 
 The Authorization Server redirects back to the client with appropriate parameters in the response, based on the value of the response_type request parameter:
+
 - code token
 - code id_token
 - code id_token token

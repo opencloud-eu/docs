@@ -17,6 +17,7 @@ gRPC uses http/2 by default and is faster than REST. When using protocol buffers
 ### 🛡️ Robustness
 
 gRPC empowers better relationships between clients and servers. The rules of communication are strictly enforced. That is not the case in REST calls, where the client and the server can send and receive anything they like and hopefully the other end understands what to do with it. In gRPC, to make changes to the communication, both client and server need to change accordingly. This prevents mistakes specially in microservice architectures.
+
 ### 🔍 Debuggability
 
 gRPC requests are re-using the same context and can be tracked or traced across multiple service boundaries.
@@ -46,7 +47,7 @@ standards combined with freedom of choice between different programming language
 The [CS3 APIs](https://github.com/cs3org/cs3apis) connect storages and application providers.
 
 The CS3 APIs follow Google and Uber API design guidelines, specially on error handling and naming convention. You can read more about these
-guidelines at https://cloud.google.com/apis/design/ and https://github.com/uber/prototool/blob/dev/style/README.md.
+guidelines at <https://cloud.google.com/apis/design/> and <https://github.com/uber/prototool/blob/dev/style/README.md>.
 
 The CS3 APIs use [Protocol Buffers version 3 (proto3)](https://github.com/protocolbuffers/protobuf) as their
 Interface Definition Language (IDL) to define the API interface and the structure of the payload messages.

@@ -16,6 +16,7 @@ This documentation shows some basic examples, refer [tus official site](https://
 The backend announces certain tus features to clients. WebDAV responses come with tus HTTP headers for the official tus features, and additional, OpenCloud specific features are announced via the capabilities endpoint (e.g. `https://localhost:9200/ocs/v1.php/cloud/capabilities?format=json`).
 
 The following snippet shows the relevant part of the server capabilities of OpenCloud that concerns the tus upload:
+
 ```json
 {
   "ocs": {
@@ -34,7 +35,6 @@ The following snippet shows the relevant part of the server capabilities of Open
       }
     }
 }
-
 ```
 
 | Parameter      | Environment Variable           | Default Value | Description                                                         |
@@ -49,14 +49,15 @@ The client must send a POST request against a known upload creation URL to reque
 The filename has to be provided in base64-encoded format.
 
 Example:
-```shell
+
+```bash
 # base64 encoded filename 'tustest.txt' is 'dHVzdGVzdC50eHQ='
 echo -n 'tustest.txt' | base64
 ```
 
 <Tabs>
 <TabItem value="request" label="Request">
-```shell
+```bash
 curl -ks -XPOST https://cloud.opencloud.test/remote.php/dav/spaces/8d72036d-14a5-490f-889e-414064156402$196ac304-7b88-44ce-a4db-c4becef0d2e0 \
 -H "Authorization: Bearer eyJhbGciOiJQUzI..."\
 -H "Tus-Resumable: 1.0.0" \
@@ -66,7 +67,7 @@ curl -ks -XPOST https://cloud.opencloud.test/remote.php/dav/spaces/8d72036d-14a5
 </TabItem>
 
 <TabItem value="response-201" label="Response - 201 Created">
-```
+```bash
 < HTTP/1.1 201 Created
 < Access-Control-Allow-Headers: Tus-Resumable, Upload-Length, Upload-Metadata, If-Match
 < Access-Control-Allow-Origin: *
@@ -92,7 +93,8 @@ curl -ks -XPOST https://cloud.opencloud.test/remote.php/dav/spaces/8d72036d-14a5
 </Tabs>
 
 The server will return a temporary upload URL in the location header of the response:
-```
+
+```bash
 < Location: https://cloud.opencloud.test/data/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJyZXZhIiwiZXhwIjoxNjk3NTMyNTc5LCJpYXQiOjE2OTc0NDYxNzksInRhcmdldCI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTE1OC9kYXRhL3R1cy8zYTU3ZWZlMS04MzE0LTQ4MGEtOWY5Ny04N2Q1YzBjYTJhMTgifQ.FbrlY7mdOfsbFgMrP8OtcHlCEq72a2ZVnPD2iBo9MfM
 ```
 
@@ -101,6 +103,7 @@ The server will return a temporary upload URL in the location header of the resp
 Once a temporary upload URL has been created, a client can send a PATCH request to upload a file. The file content should be sent in the body of the request:
 <Tabs>
 <TabItem value="request" label="Request">
+
 ```shell
 curl -ks -XPATCH https://temporary-upload-url \
 -H "Authorization: Bearer eyJhbGciOiJQUzI..." \
@@ -108,10 +111,11 @@ curl -ks -XPATCH https://temporary-upload-url \
 -H "Upload-Offset: 0" \
 -H "Content-Type: application/offset+octet-stream" -d "01234"
 ```
+
 </TabItem>
 
 <TabItem value="response-204" label="Response - 204 No Content">
-```
+```bash
 < HTTP/1.1 204 No Content
 < Date: Tue, 17 Oct 2023 04:10:52 GMT
 < Oc-Fileid: 8d72036d-14a5-490f-889e-414064156402$73bb5450-816b-4cae-90aa-1f96adc95bd4!84e319e4-de1d-4dd8-bbd0-e51d933cdbcd
@@ -144,7 +148,7 @@ curl -ks -XPATCH https://temporary-upload-url \
 </TabItem>
 
 <TabItem value="response-204-2" label="Response - 204 No Content">
-```
+```bash
 < HTTP/1.1 204 No Content
 < Date: Tue, 17 Oct 2023 04:11:00 GMT
 < Oc-Fileid: 8d72036d-14a5-490f-889e-414064156402$73bb5450-816b-4cae-90aa-1f96adc95bd4!84e319e4-de1d-4dd8-bbd0-e51d933cdbcd
@@ -240,7 +244,7 @@ Upload-metadata key-value pairs aren't specified in the general tus docs. The fo
 | `currentFolderId`                | 8748cddf-66b7-4b85-91a7-e6d08d8e1639$a9778d63-21e7-4d92-9b47-1b81144b9993!a9778d63-21e7-4d92-9b47-1b81144b9993               | Sent by the web UI                                                                                  |
 | `uppyId`                         | uppy-example/pdf-1e-application/pdf-238300                                                                                   | Sent by the web UI                                                                                  |
 | `relativeFolder`                 |                                                                                                                              | File path relative to the folder that is being uploaded, without filename. Sent by the web UI.      |
-| `tusEndpoint`                    | https://cloud.opencloud.test/remote.php/dav/spaces/8748cddf-66b7-4b85-91a7-e6d08d8e1639$a9778d63-21e7-4d92-9b47-1b81144b9993 | Sent by the web UI                                                                                  |
+| `tusEndpoint`                    | <https://cloud.opencloud.test/remote.php/dav/spaces/8748cddf-66b7-4b85-91a7-e6d08d8e1639$a9778d63-21e7-4d92-9b47-1b81144b9993> | Sent by the web UI                                                                                  |
 | `uploadId`                       | 71d5f878-a96c-4d7b-9627-658d782c93d7                                                                                         | Sent by the web UI                                                                                  |
 | `topLevelFolderId`               | undefined                                                                                                                    | Sent by the web UI                                                                                  |
 | `routeName`                      | files-spaces-generic                                                                                                         | Sent by the web UI                                                                                  |
