@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.50.1](https://github.com/opencloud-eu/docs/releases/tag/1.50.1) - 2025-09-09
+## [1.51.0](https://github.com/opencloud-eu/docs/releases/tag/1.51.0) - 2025-09-11
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @micbar
+
+### :octocat: Developer Documentation
+
+- feat: add Api docs [[#462](https://github.com/opencloud-eu/docs/pull/462)]
 
 ### 📦️ Build&Tools
 
