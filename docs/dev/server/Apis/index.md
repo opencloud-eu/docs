@@ -17,7 +17,7 @@ For inter-service-communication we are using mostly gRPC calls because it has so
 
 ## [HTTP](http)
 
-HTTP APIs are mostly used for client < > server communication. Modern applications are embracing a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) software architecture style. REST APIs are using the HTTP protocol to transfer data between clients and servers. All our clients talk to the Server using HTTP APIs. This has legacy reasons and is well-supported across many platforms and technologies. OpenCloud uses an [HTTP API gateway](../services/proxy) to route client requests to the correct service.
+HTTP APIs are mostly used for client < > server communication. Modern applications are embracing a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) software architecture style. REST APIs are using the HTTP protocol to transfer data between clients and servers. All our clients talk to the Server using HTTP APIs. This has legacy reasons and is well-supported across many platforms and technologies. OpenCloud uses an [HTTP API gateway](../../../category/proxy) to route client requests to the correct service.
 
 ### OpenAPI
 
@@ -30,7 +30,7 @@ Some APIs have become a de facto standard and are additionally covered by an [RF
 ## [gRPC](grpc_apis)
 
 In gRPC, a client application can directly call methods on a server application on a different machine as if it was a local object. This makes it easier to create distributed applications based on microservices. In gRPC we can define a service and specify the methods that can be called remotely. A gRPC client has a stub that provides the same methods and types as the server.
-OpenCloud uses a [gRPC API Gateway](../services/gateway) to route the requests to the correct service.
+OpenCloud uses a [gRPC API Gateway](../../../category/gateway) to route the requests to the correct service.
 
 ### Protobuf
 
