@@ -169,10 +169,10 @@ Response:
     "onPremisesSamAccountName": "example"
   },
   {
-    "displayName": "Albert Einstein",
+    "displayName": "Dennis Ritchie",
     "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-    "mail": "einstein@example.org",
-    "onPremisesSamAccountName": "einstein"
+    "mail": "dennis@example.org",
+    "onPremisesSamAccountName": "dennis"
   }
 ]
 ```

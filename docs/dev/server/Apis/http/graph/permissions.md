@@ -62,7 +62,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "user": {
             "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "displayName": "Albert Einstein"
+            "displayName": "Dennis Ritchie"
           }
         }
       ]
@@ -74,7 +74,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "user": {
             "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "displayName": "Albert Einstein"
+            "displayName": "Dennis Ritchie"
           }
         }
       ]
@@ -86,7 +86,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "user": {
             "id": "f7fbf8c8-139b-4376-b307-cf0a8c2d0d9c",
-            "displayName": "Marie Skłodowska Curie"
+            "displayName": "Alan Turing"
           }
         }
       ]
@@ -98,7 +98,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "user": {
             "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "displayName": "Albert Einstein"
+            "displayName": "Dennis Ritchie"
           }
         }
       ],
@@ -111,7 +111,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "group": {
             "id": "167cbee2-0518-455a-bfb2-031fe0621e5d",
-            "displayName": "Philosophy Haters"
+            "displayName": "Programmers"
           }
         }
       ]
@@ -122,7 +122,7 @@ The JSON representation of a Drive, as handled by the Spaces API, looks like thi
         {
           "user": {
             "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-            "displayName": "Albert Einstein"
+            "displayName": "Dennis Ritchie"
           }
         }
       ],

@@ -11,10 +11,10 @@ The JSON representation of a User handled by the Users API looks like this:
 
 ```json
 {
-  "displayName": "Albert Einstein",
+  "displayName": "Dennis Ritchie",
   "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-  "mail": "einstein@example.org",
-  "onPremisesSamAccountName": "einstein"
+  "mail": "dennis@example.org",
+  "onPremisesSamAccountName": "dennis"
 }
 ```
 
@@ -44,10 +44,10 @@ Response:
 
 ```json
 {
-  "displayName": "Albert Einstein",
+  "displayName": "Dennis Ritchie",
   "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-  "mail": "einstein@example.org",
-  "onPremisesSamAccountName": "einstein"
+  "mail": "dennis@example.org",
+  "onPremisesSamAccountName": "dennis"
 }
 ```
 
@@ -68,16 +68,16 @@ Response:
 {
   "value": [
     {
-      "displayName": "Albert Einstein",
+      "displayName": "Dennis Ritchie",
       "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-      "mail": "einstein@example.org",
-      "onPremisesSamAccountName": "einstein"
+      "mail": "dennis@example.org",
+      "onPremisesSamAccountName": "dennis"
     },
     {
-      "displayName": "Maurice Moss",
+      "displayName": "Lynn Conway",
       "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-      "mail": "moss@example.org",
-      "onPremisesSamAccountName": "moss"
+      "mail": "lynn@example.org",
+      "onPremisesSamAccountName": "lynn"
     }
   ]
 }
@@ -100,34 +100,34 @@ Response:
 {
   "value": [
     {
-      "displayName": "Albert Einstein",
+      "displayName": "Dennis Ritchie",
       "id": "4c510ada-c86b-4815-8820-42cdf82c3d51",
-      "mail": "einstein@example.org",
-      "onPremisesSamAccountName": "einstein",
+      "mail": "dennis@example.org",
+      "onPremisesSamAccountName": "dennis",
       "memberOf": [
         {
           "displayName": "users",
           "id": "509a9dcd-bb37-4f4f-a01a-19dca27d9cfa"
         },
         {
-          "displayName": "sailing-lovers",
+          "displayName": "basic-haters",
           "id": "6040aa17-9c64-4fef-9bd0-77234d71bad0"
         },
         {
-          "displayName": "violin-haters",
+          "displayName": "bible-readers",
           "id": "dd58e5ec-842e-498b-8800-61f2ec6f911f"
         },
         {
-          "displayName": "physics-lovers",
+          "displayName": "programmers",
           "id": "262982c1-2362-4afa-bfdf-8cbfef64a06e"
         }
       ]
     },
     {
-      "displayName": "Maurice Moss",
+      "displayName": "Lynn Conway",
       "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-      "mail": "moss@example.org",
-      "onPremisesSamAccountName": "moss",
+      "mail": "lynn@example.org",
+      "onPremisesSamAccountName": "lynn",
       "memberOf": [
         {
           "displayName": "users",
@@ -151,10 +151,10 @@ Response:
 
 ```json
 {
-  "displayName": "Maurice Moss",
+  "displayName": "Lynn Conway",
   "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-  "mail": "moss@example.org",
-  "onPremisesSamAccountName": "moss"
+  "mail": "lynn@example.org",
+  "onPremisesSamAccountName": "lynn"
 }
 ```
 
@@ -170,10 +170,10 @@ Response:
 
 ```json
 {
-  "displayName": "Maurice Moss",
+  "displayName": "Lynn Conway",
   "id": "058bff95-6708-4fe5-91e4-9ea3d377588b",
-  "mail": "moss@example.org",
-  "onPremisesSamAccountName": "moss",
+  "mail": "lynn@example.org",
+  "onPremisesSamAccountName": "lynn",
   "memberOf": [
     {
       "displayName": "users",
