@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="591" height="291" viewBox="-0.5 -0.5 591 291">
+    <defs/>
+
+    <!-- Client 1 -->
+    <path d="M 30 20 C 6 20 0 40 19.2 44 C 0 52.8 21.6 72 37.2 64 C 48 80 84 80 96 64 C 120 64 120 48 105 40 C 120 24 96 8 75 16 C 60 4 36 4 30 20 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10"/>
+    <text x="60" y="44" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Client 1</text>
+
+    <!-- HTTP Gateway -->
+    <rect x="230" y="10" width="120" height="60" fill="#0050ef" stroke="#001dbc"/>
+    <text x="290" y="40" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">HTTP Gateway</text>
+    <text x="290" y="52" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">(proxy service)</text>
+
+    <!-- Client 2 -->
+    <path d="M 30 130 C 6 130 0 150 19.2 154 C 0 162.8 21.6 182 37.2 174 C 48 190 84 190 96 174 C 120 174 120 158 105 150 C 120 134 96 118 75 126 C 60 114 36 114 30 130 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10"/>
+    <text x="60" y="154" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Client 2</text>
+
+    <!-- Client 3 -->
+    <path d="M 30 230 C 6 230 0 250 19.2 254 C 0 262.8 21.6 282 37.2 274 C 48 290 84 290 96 274 C 120 274 120 258 105 250 C 120 234 96 218 75 226 C 60 214 36 214 30 230 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10"/>
+    <text x="60" y="254" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Client 3</text>
+
+    <!-- OpenCloud Services -->
+    <rect x="470" y="10" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"/>
+    <text x="530" y="44" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">opencloud service</text>
+
+    <rect x="470" y="120" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"/>
+    <text x="530" y="154" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">opencloud service</text>
+
+    <rect x="470" y="230" width="120" height="60" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)"/>
+    <text x="530" y="264" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">opencloud service</text>
+
+    <!-- GRPC Gateway -->
+    <rect x="230" y="230" width="120" height="60" fill="#008a00" stroke="#005700"/>
+    <text x="290" y="254" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">GRPC Gateway</text>
+    <text x="290" y="266" fill="#ffffff" font-family="Helvetica" font-size="12px" text-anchor="middle">(gateway service)</text>
+
+    <!-- Arrows and Labels -->
+
+    <!-- Client 1 to HTTP Gateway -->
+    <path d="M 126.37 40 L 223.63 40" fill="none" stroke="#001dbc" stroke-miterlimit="10"/>
+    <polygon points="121.12,40 128.12,36.5 126.37,40 128.12,43.5" fill="#001dbc" stroke="#001dbc"/>
+    <polygon points="228.88,40 221.88,43.5 223.63,40 221.88,36.5" fill="#001dbc" stroke="#001dbc"/>
+    <text x="175" y="35" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">HTTP</text>
+
+    <!-- Client 2 to HTTP Gateway -->
+    <path d="M 108.4 118.68 L 224.65 43.46" fill="none" stroke="#001dbc" stroke-miterlimit="10"/>
+    <polygon points="103.99,121.53 107.97,114.79 108.4,118.68 111.77,120.67" fill="#001dbc" stroke="#001dbc"/>
+    <polygon points="229.06,40.61 225.09,47.35 224.65,43.46 221.28,41.47" fill="#001dbc" stroke="#001dbc"/>
+    <text x="167" y="85" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">HTTP</text>
+
+    <!-- Client 3 to HTTP Gateway -->
+    <path d="M 92.5 209.85 L 225.99 44.95" fill="none" stroke="#001dbc" stroke-miterlimit="10"/>
+    <polygon points="89.2,213.93 90.88,206.29 92.5,209.85 96.32,210.69" fill="#001dbc" stroke="#001dbc"/>
+    <polygon points="229.3,40.87 227.61,48.51 225.99,44.95 222.17,44.11" fill="#001dbc" stroke="#001dbc"/>
+    <text x="159" y="132" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">HTTP</text>
+
+    <!-- HTTP Gateway to OpenCloud Service 1 -->
+    <path d="M 356.37 40 L 463.63 40" fill="none" stroke="#001dbc" stroke-miterlimit="10"/>
+    <polygon points="351.12,40 358.12,36.5 356.37,40 358.12,43.5" fill="#001dbc" stroke="#001dbc"/>
+    <polygon points="468.88,40 461.88,43.5 463.63,40 461.88,36.5" fill="#001dbc" stroke="#001dbc"/>
+    <text x="410" y="35" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">HTTP</text>
+
+    <!-- HTTP Gateway to OpenCloud Service 3 -->
+    <path d="M 318.58 74.93 L 465.97 255.07" fill="none" stroke="#001dbc" stroke-miterlimit="10"/>
+    <polygon points="315.25,70.87 322.39,74.07 318.58,74.93 316.98,78.5" fill="#001dbc" stroke="#001dbc"/>
+    <polygon points="469.29,259.13 462.15,255.93 465.97,255.07 467.57,251.5" fill="#001dbc" stroke="#001dbc"/>
+    <text x="392" y="169" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">HTTP</text>
+
+    <!-- GRPC Gateway connections -->
+    <path d="M 465.62 44.62 L 294.38 225.38" fill="none" stroke="#005700" stroke-miterlimit="10"/>
+    <polygon points="469.23,40.81 466.96,48.3 465.62,44.62 461.88,43.49" fill="#005700" stroke="#005700"/>
+    <polygon points="290.77,229.19 293.04,221.7 294.38,225.38 298.12,226.51" fill="#005700" stroke="#005700"/>
+    <text x="380" y="139" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">gRPC</text>
+
+    <path d="M 295.63 227.03 L 464.37 137.97" fill="none" stroke="#005700" stroke-miterlimit="10"/>
+    <polygon points="290.99,229.48 295.55,223.12 295.63,227.03 298.81,229.31" fill="#005700" stroke="#005700"/>
+    <polygon points="469.01,135.52 464.45,141.88 464.37,137.97 461.19,135.69" fill="#005700" stroke="#005700"/>
+    <text x="380" y="186" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="11px" text-anchor="middle">gRPC</text>
+</svg>
