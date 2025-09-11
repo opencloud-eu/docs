@@ -4,8 +4,6 @@ id: docker-compose-base
 title: Docker Compose
 description: Full-blown featureset including web office.
 draft: false
-redirect_from:
-  - /docs/admin/getting-started/container/docker-compose-local
 ---
 
 # OpenCloud with Docker Compose

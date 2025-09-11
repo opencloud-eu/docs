@@ -162,7 +162,6 @@ const config: Config = {
       },
     ],
   ],
-],
 
   themes: [
     [
