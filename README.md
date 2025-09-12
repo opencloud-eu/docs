@@ -24,7 +24,7 @@ This command will launch a local development server and open the site in your br
 
 ```bash
 pnpm build
-pnpm start serve
+pnpm run serve
 ```
 
 ### Start docs in German
