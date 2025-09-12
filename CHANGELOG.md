@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.51.0](https://github.com/opencloud-eu/docs/releases/tag/1.51.0) - 2025-09-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @micbar
+
+### :octocat: Developer Documentation
+
+- feat: add Api docs [[#462](https://github.com/opencloud-eu/docs/pull/462)]
+
+### 👷 Admin Documentation
+
+- install forwarding, add plugin and url, add forward in md [[#461](https://github.com/opencloud-eu/docs/pull/461)]
+
+### 📦️ Build&Tools
+
+- chore: update docusaurus to 3.8.1 [[#459](https://github.com/opencloud-eu/docs/pull/459)]
+
 ## [1.50.0](https://github.com/opencloud-eu/docs/releases/tag/1.50.0) - 2025-09-09
 
 ### ❤️ Thanks to all contributors! ❤️
