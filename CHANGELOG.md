@@ -1,14 +1,18 @@
 # Changelog
 
-## [1.51.0](https://github.com/opencloud-eu/docs/releases/tag/1.51.0) - 2025-09-11
+## [1.51.0](https://github.com/opencloud-eu/docs/releases/tag/1.51.0) - 2025-09-12
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @micbar
+@AlexAndBear, @Svanvith, @micbar
 
 ### :octocat: Developer Documentation
 
 - feat: add Api docs [[#462](https://github.com/opencloud-eu/docs/pull/462)]
+
+### 👷 Admin Documentation
+
+- install forwarding, add plugin and url, add forward in md [[#461](https://github.com/opencloud-eu/docs/pull/461)]
 
 ### 📦️ Build&Tools
 
