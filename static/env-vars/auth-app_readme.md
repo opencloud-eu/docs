@@ -1,6 +1,6 @@
 ---
 title: Auth-App
-date: 2025-05-22T16:21:16.118867889+02:00
+date: 2025-06-02T16:14:08.578014943+02:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-app
@@ -30,9 +30,8 @@ PROXY_ENABLE_APP_AUTH=false      # mandatory, disables app authentication. In ca
 * [Managing App Tokens](#managing-app-tokens)
   * [Via API](#via-api)
   * [Via Impersonation API](#via-impersonation-api)
-  * [Via CLI (developer only)](#via-cli-developer-only)
+  * [Via CLI (developer only)](#via-cli-(developer-only))
 * [Authenticating using App Tokens](#authenticating-using-app-tokens)
-* [Example Yaml Config](#example-yaml-config)
 
 ## App Tokens
 
@@ -162,3 +161,4 @@ and the token value as returned by the "Create Token" request.
 curl -u <username>:<tokenvalue> 'https://<your host>/graph/v1.0/me' \
      --header 'accept: application/json'
 ```
+
