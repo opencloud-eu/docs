@@ -1,7 +1,7 @@
 Environment variables for the **policies** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|---|
+|---|---|---|---|:---|
 |`POLICIES_GRPC_ADDR`| 1.0.0 |string|The bind address of the GRPC service.|127.0.0.1:9125|
 |`POLICIES_DEBUG_ADDR`| 1.0.0 |string|Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.|127.0.0.1:9129|
 |`POLICIES_DEBUG_TOKEN`| 1.0.0 |string|Token to secure the metrics endpoint.||
