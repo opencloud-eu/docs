@@ -20,6 +20,13 @@ pnpm start
 
 This command will launch a local development server and open the site in your browser. Changes are hot-reloaded automatically.
 
+> ⚠️ `docs` tree contains redirects, because some documentation files may have been removed or moved, and old bookmarks should still work. To have those working in the local dev server, the documentation needs to be built first:
+
+```bash
+pnpm build
+pnpm run serve
+```
+
 ### Start docs in German
 
 To launch the documentation in German, run:
@@ -29,6 +36,8 @@ pnpm run start --locale de
 ```
 
 > ⚠️ Switching languages via the language switcher is currently not supported.
+
+
 
 
 ## Build
