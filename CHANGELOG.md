@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.51.1](https://github.com/opencloud-eu/docs/releases/tag/1.51.1) - 2025-09-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@schweigisito
+
+### 📦️ Build&Tools
+
+- Info about how to run the local dev server to have redirects working [[#463](https://github.com/opencloud-eu/docs/pull/463)]
+
 ## [1.51.0](https://github.com/opencloud-eu/docs/releases/tag/1.51.0) - 2025-09-12
 
 ### ❤️ Thanks to all contributors! ❤️
