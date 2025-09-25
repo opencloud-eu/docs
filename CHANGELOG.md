@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.52.0](https://github.com/opencloud-eu/docs/releases/tag/1.52.0) - 2025-09-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @tbsbdr
+
+### 👷 Admin Documentation
+
+- removed soon from ios android [[#465](https://github.com/opencloud-eu/docs/pull/465)]
+- publish release note 3.5.0 [[#466](https://github.com/opencloud-eu/docs/pull/466)]
+
 ## [1.51.1](https://github.com/opencloud-eu/docs/releases/tag/1.51.1) - 2025-09-19
 
 ### ❤️ Thanks to all contributors! ❤️
