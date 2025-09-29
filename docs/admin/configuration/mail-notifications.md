@@ -37,6 +37,12 @@ SMTP_TRANSPORT_ENCRYPTION=none
 SMTP_INSECURE=true
 ```
 
+Per default the `notifications` service is disabled. To send out notifications, the service must be enabled via:
+
+```env
+START_ADDITIONAL_SERVICES="notifications"
+```
+
 :::warning
 In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
 :::
