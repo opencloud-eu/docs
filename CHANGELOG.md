@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.53.0](https://github.com/opencloud-eu/docs/releases/tag/1.53.0) - 2025-09-29
+
+### ❤️ Thanks to all contributors! ❤️
+
+@schweigisito
+
+### 👷 Admin Documentation
+
+- describe how to enable notifications [[#472](https://github.com/opencloud-eu/docs/pull/472)]
+
 ## [1.52.0](https://github.com/opencloud-eu/docs/releases/tag/1.52.0) - 2025-09-25
 
 ### ❤️ Thanks to all contributors! ❤️
