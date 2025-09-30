@@ -7,14 +7,40 @@ title: 'Authentication and Identity Management'
 OpenCloud employs a dual-track authentication strategy:
 
 1. **Built-in IDP (Identity Provider)**:
-   - Based on LibreGraph Connect (lico)
+   - Based on LibreGraph Connect (Lico)
    - Targeted at smaller installations (up to 500 users)
    - Designed for standalone or small deployments
 
-2. **External Identity Providers**:
+2. **External IDP**:
    - Keycloak as the recommended OIDC provider for larger installations
    - Support for Azure AD, EntraID, ADFS through Keycloak
    - Enterprise-focused solution
+
+## Your Use Cases
+
+### Choose Lico if you need:
+- Simple OpenID Connect provider
+- Lightweight, fast solution
+- Small to medium deployments
+- Integration with ownCloud/LibreGraph ecosystem
+- Minimal resource footprint
+- Quick setup with basic features
+- Go-based microservice architecture
+
+### Choose Keycloak if you need:
+- Enterprise-grade IAM solution
+- SAML 2.0 support
+- Complex authorization requirements
+- Multifactor Authentication (MFA)
+- Advanced user federation
+- Fine-grained permissions
+- Multiple authentication methods
+- Large-scale deployments
+- Commercial support options
+
+### Bottom Line
+
+Keycloak is a comprehensive, enterprise-ready IAM platform with extensive features including SSO, user federation, and support for multiple protocols like OpenID Connect, OAuth 2.0, and SAML, while Lico is a lightweight OpenID Connect provider with integrated web login and consent forms, designed as a simpler alternative for smaller installations. Keycloak offers more features but requires more resources and expertise, while Lico provides a minimalist approach suitable for basic authentication needs.
 
 ## Authentication with Keycloak
 
