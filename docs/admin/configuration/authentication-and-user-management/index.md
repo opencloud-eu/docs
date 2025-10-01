@@ -4,7 +4,7 @@ title: 'Authentication and Identity Management'
 
 # Authentication and Identity Management
 
-OpenCloud employs a dual-track authentication strategy:
+OpenCloud offers two ways to handle user authentication:
 
 1. **Built-in IDP (Identity Provider)**:
    - Based on LibreGraph Connect (Lico)
@@ -19,19 +19,17 @@ OpenCloud employs a dual-track authentication strategy:
 ## Your Use Cases
 
 ### Choose Lico if you need:
-- Simple OpenID Connect provider
-- Lightweight, fast solution
+- A simple, lightweight and minimal OpenID Connect Provider
 - Small to medium deployments
-- Integration with ownCloud/LibreGraph ecosystem
 - Minimal resource footprint
 - Quick setup with basic features
-- Go-based microservice architecture
+- Ideal for development environment
+- No Multifactor Authentication (MFA) and migration path to other IDPs
 
 ### Choose Keycloak if you need:
 - Enterprise-grade IAM solution
-- SAML 2.0 support
 - Complex authorization requirements
-- Multifactor Authentication (MFA)
+- Multifactor Authentication
 - Advanced user federation
 - Fine-grained permissions
 - Multiple authentication methods
