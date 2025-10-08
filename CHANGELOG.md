@@ -1,13 +1,14 @@
 # Changelog
 
-## [1.53.0](https://github.com/opencloud-eu/docs/releases/tag/1.53.0) - 2025-09-29
+## [1.53.0](https://github.com/opencloud-eu/docs/releases/tag/1.53.0) - 2025-10-08
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@schweigisito
+@schweigisito, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- k8s with business subscription [[#475](https://github.com/opencloud-eu/docs/pull/475)]
 - describe how to enable notifications [[#472](https://github.com/opencloud-eu/docs/pull/472)]
 
 ## [1.52.0](https://github.com/opencloud-eu/docs/releases/tag/1.52.0) - 2025-09-25
