@@ -18,7 +18,8 @@ OpenCloud offers two ways to handle user authentication:
 
 ## Your Use Cases
 
-### Choose Lico if you need:
+### Choose Lico if you need
+
 - A simple, lightweight and minimal OpenID Connect Provider
 - Small to medium deployments
 - Minimal resource footprint
@@ -26,7 +27,8 @@ OpenCloud offers two ways to handle user authentication:
 - Ideal for development environment
 - No Multifactor Authentication (MFA) and migration path to other IDPs
 
-### Choose Keycloak if you need:
+### Choose Keycloak if you need
+
 - Enterprise-grade IAM solution
 - Complex authorization requirements
 - Multifactor Authentication
