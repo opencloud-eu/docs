@@ -43,7 +43,7 @@ If it does not exist, create it manually.
 Restart the OpenCloud stack using the following command:
 
 ```bash
-docker compose up -d
+docker compose restart
 ```
 
 ### Access in OpenCloud
