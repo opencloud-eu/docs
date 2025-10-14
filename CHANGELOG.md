@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.53.0](https://github.com/opencloud-eu/docs/releases/tag/1.53.0) - 2025-10-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @schweigisito, @tbsbdr
+
+### 👷 Admin Documentation
+
+- improve web app installation [[#478](https://github.com/opencloud-eu/docs/pull/478)]
+- fix: fix typo in file header #476 [[#477](https://github.com/opencloud-eu/docs/pull/477)]
+- fix: Lico still promoted as production ready solution #471 [[#474](https://github.com/opencloud-eu/docs/pull/474)]
+- k8s with business subscription [[#475](https://github.com/opencloud-eu/docs/pull/475)]
+- describe how to enable notifications [[#472](https://github.com/opencloud-eu/docs/pull/472)]
+
 ## [1.52.0](https://github.com/opencloud-eu/docs/releases/tag/1.52.0) - 2025-09-25
 
 ### ❤️ Thanks to all contributors! ❤️
