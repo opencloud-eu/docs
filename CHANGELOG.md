@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@schweigisito, @tbsbdr
+@Svanvith, @schweigisito, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- improve web app installation [[#478](https://github.com/opencloud-eu/docs/pull/478)]
 - fix: fix typo in file header #476 [[#477](https://github.com/opencloud-eu/docs/pull/477)]
 - fix: Lico still promoted as production ready solution #471 [[#474](https://github.com/opencloud-eu/docs/pull/474)]
 - k8s with business subscription [[#475](https://github.com/opencloud-eu/docs/pull/475)]
