@@ -33,6 +33,19 @@ By default, this path is:
 opencloud-compose/config/opencloud/apps
 ```
 
+:::note
+If you are adding an app to an already running system, verify whether the `/web/assets/apps` directory exists inside your `$OC_DATA_DIR`.
+If it does not exist, create it manually.
+:::
+
+### Restart OpenCloud
+
+Restart the OpenCloud stack using the following command:
+
+```bash
+docker compose restart
+```
+
 ### Access in OpenCloud
 
 Once the app is copied to the correct location, it will automatically appear in the OpenCloud interface.
