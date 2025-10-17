@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @flimmy
+
+### 🐾 Guides
+
+- add hint for container-branch and version tag [[#468](https://github.com/opencloud-eu/docs/pull/468)]
 
 ### 👷 Admin Documentation
 
