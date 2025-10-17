@@ -174,6 +174,15 @@ This can pose a security risk in shared or multi-user environments. Make sure to
 
 :::
 
+#### Use production release container
+
+To avoid accidentally updating to a version with breaking changes, you should specify the production container version to be used in your `.env` file:
+
+```env
+OC_DOCKER_IMAGE=opencloudeu/opencloud
+OC_DOCKER_TAG=2
+```
+
 ## Start OpenCloud
 
 Launch OpenCloud using Docker Compose:
