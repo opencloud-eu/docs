@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.54.0](https://github.com/opencloud-eu/docs/releases/tag/1.54.0) - 2025-10-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- fix admin password [[#481](https://github.com/opencloud-eu/docs/pull/481)]
+
 ## [1.53.0](https://github.com/opencloud-eu/docs/releases/tag/1.53.0) - 2025-10-14
 
 ### ❤️ Thanks to all contributors! ❤️
