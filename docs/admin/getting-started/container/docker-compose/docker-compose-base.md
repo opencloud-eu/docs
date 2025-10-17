@@ -106,7 +106,7 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ### Set your admin password
 
 ```bash
-ADMIN_PASSWORD=YourSecurePassword
+INITIAL_ADMIN_PASSWORD=YourSecurePassword
 ```
 
 ### Set your email for SSL certification
