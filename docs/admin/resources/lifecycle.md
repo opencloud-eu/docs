@@ -33,7 +33,7 @@ With LTS, businesses can continue using an older production release without need
     | - | 2025 December 15 | - |
     | - | 2025 November 24 | - |
     | - | 2025 November 3 | - |
-    | - | 2025 October 13 | - |
+    | v3.6.0 | 2025 October 27 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.5.0) |
     | v3.5.0 | 2025 September 22 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.5.0) |
     | v3.4.0 | 2025 September 2 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.4.0) |
     | v3.3.0 | 2025 August 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.3.0) |
