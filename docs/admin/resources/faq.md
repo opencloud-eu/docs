@@ -66,7 +66,7 @@ We provide a paid support subscription, see [https://opencloud.eu/en/product/ser
 <details>
 <summary>Are there educational or non-profit discounts or support plans?</summary>
 
-Please contact sales for such inquiries and we'll find a good sulution.
+Please contact sales for such inquiries and we'll find a good solution.
 
 </details>
 
@@ -98,7 +98,7 @@ Nope.
 <details>
 <summary>Does OpenCloud support real-time collaboration and editing?</summary>
 
-Yes. We use the WOPI standard for realtime collabration in the web office application Collabora.
+Yes. We use the WOPI standard for realtime collaboration in the web office application Collabora.
 
 </details>
 
@@ -151,7 +151,7 @@ Key Factors for Optimal Performance:
 <details>
 <summary>How difficult is it to set up, and is technical expertise required?</summary>
 
-One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your expereince, it's possible to set up a basic OpenCloud instance in less than 1 minute. See [the Quick Start](https://docs.opencloud.eu/docs/admin/intro)
+One of our goals is to make the deployment of OpenCloud as simple as possible. Depending on your experience, it's possible to set up a basic OpenCloud instance in less than 1 minute. See [the Quick Start](https://docs.opencloud.eu/docs/admin/intro)
 
 </details>
 
