@@ -1,13 +1,14 @@
 # Changelog
 
-## [1.55.0](https://github.com/opencloud-eu/docs/releases/tag/1.55.0) - 2025-10-27
+## [1.55.0](https://github.com/opencloud-eu/docs/releases/tag/1.55.0) - 2025-10-28
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Tronde
+@CodeSugar, @ScharfViktor, @Tronde
 
 ### 👷 Admin Documentation
 
+- Fixed typos faq.md [[#486](https://github.com/opencloud-eu/docs/pull/486)]
 - publish release note 3.6.0 [[#485](https://github.com/opencloud-eu/docs/pull/485)]
 - Add: Reference to envionement variables in developers docs [[#483](https://github.com/opencloud-eu/docs/pull/483)]
 
