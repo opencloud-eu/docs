@@ -19,6 +19,16 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
 Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
 
+## Was ist OpenCloud?
+
+OpenCloud ist die File-Sharing- und Collaboration-Lösung der Heinlein Gruppe.
+
+Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und überall ohne Barrieren, aber mit hoher Produktivität auf Daten zugreifen und gemeinsam daran arbeiten.
+
+## Wie kann ich OpenCloud nutzen?
+
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
+
 ## Dokumentations-Versionen
 
 Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ihrer Software finden.
@@ -66,12 +76,4 @@ Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutz
 
 Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
 
-## Was ist OpenCloud?
 
-OpenCloud ist die File-Sharing- und Collaboration-Lösung der Heinlein Gruppe.
-
-Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und überall ohne Barrieren, aber mit hoher Produktivität auf Daten zugreifen und gemeinsam daran arbeiten.
-
-## Wie kann ich OpenCloud nutzen?
-
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
