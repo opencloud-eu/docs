@@ -26,7 +26,3 @@ A more compact version of the table view, in which the data is summarized more c
 
 A view in which files and folders are displayed as tiles. Ideal for visual representations and if you want to access icons quickly.
 <img src={require("./img/view-modes/tiles.png").default} alt="Tiles" width="1920"/>
-
-:::note
-With these options, you can flexibly customize your Fileslist view to choose the best display for you!
-:::

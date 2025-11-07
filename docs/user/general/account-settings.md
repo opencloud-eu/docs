@@ -74,7 +74,3 @@ Under GDPR you can request a data export of your personal data if you wish.
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920"/>
-
-:::note
-With these settings you can customize and optimize your user account according to your needs!
-:::

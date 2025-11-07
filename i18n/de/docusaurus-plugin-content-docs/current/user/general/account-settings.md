@@ -74,7 +74,3 @@ Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern,
 Mit "App-Tokens" können Sie externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne Ihr Hauptpasswort zu verwenden.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920"/>
-
-:::note
-Mit diesen Einstellungen können Sie Ihr Benutzerkonto ganz nach Ihren Bedürfnissen anpassen und optimieren!
-:::

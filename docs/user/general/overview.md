@@ -87,7 +87,3 @@ Here you can customize additional display options such as sorting or column sele
 ## 18. Context Menu
 
     Right-clicking on a file or folder opens the context menu with specific options.
-
-:::note
-With this overview, you can quickly find your way around OpenCloud and use the most important functions efficiently!
-:::

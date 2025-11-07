@@ -87,7 +87,3 @@ Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Bereich
 ## 18. Kontextmenü
 
 Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das Kontextmenü mit spezifischen Optionen.
-
-:::note
-Mit dieser Übersicht können Sie sich schnell in OpenCloud zurechtfinden und die wichtigsten Funktionen effizient nutzen!
-:::

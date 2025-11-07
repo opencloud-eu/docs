@@ -12,6 +12,8 @@ Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläch
 
 ## Verfügbare Optionen
 
+<img src={require("./img/files-list-adjustment/einstellungs-button.png").default} alt="Settings icon" width="400"/>
+
 - Versteckte Dateien anzeigen
   - Aktivieren oder deaktivieren Sie die Anzeige von versteckten Dateien.
   - Bei versteckten Dateien handelt es sich oft um System- oder Konfigurationsdateien.
@@ -27,9 +29,3 @@ Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläch
   - Passen Sie die Größe der Symbole und Schaltflächen an:
   - Kleine Kacheln für eine kompaktere Ansicht.
   - Große Kacheln für eine übersichtlichere Ansicht.
-
-<img src={require("./img/files-list-adjustment/einstellungs-button.png").default} alt="Settings icon" width="400"/>
-
-:::note
-Die vorgenommenen Einstellungen werden sofort übernommen und bieten ein personalisiertes Nutzererlebnis.
-:::
