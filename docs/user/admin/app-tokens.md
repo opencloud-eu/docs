@@ -13,9 +13,13 @@ App Tokens allow you to connect external apps and services (such as WebDAV clien
 ## Create the App Token
 
 - Go to the App Tokens section in your OpenCloud account settings.
+TODO Screenshot
 - Click on “+ New” to create a new token.
+TODO Screenshot
 - Enter a name for the token (e.g., "WebDAV Client").
+TODO Screenshot
 - Select an expiration date for added security.
+TODO Screenshot
 - Click Create.
 
   <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400"/>
@@ -46,8 +50,6 @@ If a token is no longer needed:
 - Go back to the App Tokens section.
 - Click the trash icon next to the token to remove it.
 
-This ensures unused tokens cannot be misused.
+TODO Screenshot
 
-:::note
-Use App Tokens for better security and control when connecting external services.
-:::
+This ensures unused tokens cannot be misused.
