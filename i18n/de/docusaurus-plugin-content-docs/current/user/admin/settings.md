@@ -49,7 +49,8 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
 
 - Übersicht der Spaces
   Hier sehen Sie alle vorhandenen Spaces in Ihrer OpenCloud.
-  - Space Management: Als Administrator haben Sie volle Rechte auf: Bearbeiten
+  - Space Management: Als Administrator haben Sie volle Rechte auf: 
+  - Bearbeiten
   - Deaktivieren oder aktivieren
   - Löschen
     <img src={require("./img/settings/spaces.png").default} alt="Admin spaces" width="1920"/>

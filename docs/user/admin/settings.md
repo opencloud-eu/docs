@@ -51,5 +51,8 @@ If this option is turned off, information about newer versions will not be displ
 - Overview of the Spaces:  
   Here you can see all existing Spaces in your OpenCloud.
 - Space management:  
-  As an administrator, you have full rights to: - Edit - Deactivate or activate - Delete
+  As an administrator, you have full rights to: 
+  - Edit
+  - Deactivate or activate
+  - Delete
   <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
