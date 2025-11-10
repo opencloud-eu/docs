@@ -183,6 +183,19 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    # Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
+    client_max_body_size 10M;
+    # Disable buffering - essential for SSE
+    proxy_buffering off;
+    proxy_request_buffering off;
+
+    # Extend timeouts for long connections
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    keepalive_timeout 3600s;
+
+    # Prevent nginx from trying other upstreams
+    proxy_next_upstream off;
 
     location / {
         proxy_pass http://127.0.0.1:9200;
@@ -200,6 +213,8 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    # Increase max upload size to collabora editor
+    client_max_body_size 10M;
 
     location / {
         proxy_pass http://127.0.0.1:9980;
