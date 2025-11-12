@@ -2,7 +2,7 @@
 sidebar_position: 70
 id: collabora
 title: Collabora additional fonts
-description: How to add additional fonts to Collabora.
+description: How to add additional fonts to Collabora
 draft: false
 ---
 
