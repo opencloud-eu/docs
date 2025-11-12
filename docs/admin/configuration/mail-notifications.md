@@ -2,7 +2,7 @@
 sidebar_position: 40
 id: mail-notifications
 title: Mail Notifications
-description: How to activate mail notifications in OpenCloud.
+description: How to activate mail notifications in OpenCloud
 draft: false
 ---
 
