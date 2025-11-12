@@ -2,7 +2,7 @@
 sidebar_position: 60
 id: web-applications
 title: Web Apps
-description: How to enable web applications in OpenCloud.
+description: How to enable web applications in OpenCloud
 draft: false
 ---
 
