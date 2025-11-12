@@ -64,6 +64,12 @@ Depending on the basic configuration, you can change the following options:
 Under Extensions you can configure installed extensions, such as the Progressbar, if available.
 <img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
 
+## Calendar
+
+Under Calendar you can access your personal calendar for integration with third-party apps like Thunderbird, Apple Calendar, and others.
+
+TODO Screenshot
+
 ## GDPR
 
 Under GDPR you can request a data export of your personal data if you wish.
