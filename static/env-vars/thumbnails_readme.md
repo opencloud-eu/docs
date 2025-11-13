@@ -1,6 +1,6 @@
 ---
 title: Thumbnails
-date: 2025-05-22T16:21:16.120539831+02:00
+date: 2025-11-13T17:22:55.0974+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/thumbnails
@@ -29,7 +29,6 @@ The thumbnails service provides methods to generate thumbnails for various files
 * [Memory Considerations](#memory-considerations)
 * [Thumbnails and SecureView](#thumbnails-and-secureview)
 * [Using libvips for Thumbnail Generation](#using-libvips-for-thumbnail-generation)
-* [Example Yaml Config](#example-yaml-config)
 
 ## File Locations Overview
 
@@ -130,23 +129,24 @@ enabled at buildtime and has a couple of implications:
 
 Support of libvips is disabled by default. To enable it, make sure libvips and its buildtime dependencies are installed in your build environment. For macOS users, add the build time dependencies via:
 
-```bash
+```shell
 brew install vips pkg-config
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 ```
 
 Then you just need to set the `ENABLE_VIPS` variable on the `make` command:
 
-```bash
+```shell
 make -C opencloud build ENABLE_VIPS=1
 ```
 
 Or include the `enable_vips` build tag in the `go build` command:
 
-```bash
+```shell
 go build -tags enable_vips -o opencloud -o bin/opencloud ./cmd/opencloud
 ```
 
 When building a docker image using the Dockerfile in the top-level directory of OpenCloud, libvips support is enabled and the libvips shared libraries are included
 in the resulting docker image.
+
 

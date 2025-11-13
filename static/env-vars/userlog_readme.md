@@ -1,6 +1,6 @@
 ---
 title: Userlog
-date: 2025-05-22T16:21:16.120906259+02:00
+date: 2025-11-13T17:22:55.097508+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/userlog
@@ -30,7 +30,6 @@ The `userlog` service is a mediator between the `eventhistory` service and clien
 * [Translations](#translations)
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
-* [Example Yaml Config](#example-yaml-config)
 
 ## The Log Service Ecosystem
 
@@ -113,3 +112,4 @@ which is the source of the texts provided by the code.
 ## Default Language
 
 The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment variable. See the `settings` service for a detailed description.
+

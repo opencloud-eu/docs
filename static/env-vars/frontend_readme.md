@@ -1,6 +1,6 @@
 ---
 title: Frontend
-date: 2025-05-22T16:21:16.119266067+02:00
+date: 2025-11-13T17:22:55.094687+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/frontend
@@ -34,7 +34,6 @@ The frontend service translates various OpenCloud related HTTP APIs to CS3 reque
   * [The Password Policy Capability](#the-password-policy-capability)
   * [Password Enforcement for all Public Links](#password-enforcement-for-all-public-links)
   * [Password Enforcement for Writeable Public Links](#password-enforcement-for-writeable-public-links)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Endpoints Overview
 
@@ -174,3 +173,4 @@ For public accessible writable shares, a password can be enforced. To change the
 Note that changing this environment variable only makes sense if\
 `OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD`\
 is set to `false`.
+
