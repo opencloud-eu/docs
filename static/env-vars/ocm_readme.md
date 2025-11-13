@@ -1,6 +1,6 @@
 ---
 title: OCM
-date: 2025-05-22T16:21:16.119743324+02:00
+date: 2025-11-13T17:22:55.095814+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/ocm
@@ -33,7 +33,6 @@ Internal GRPC APIs:
 * [Trust Between Instances](#trust-between-instances)
 * [Invitation Workflow](#invitation-workflow)
 * [Creating Shares](#creating-shares)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Enable OCM
 
@@ -127,9 +126,8 @@ When all instances of a federation should trust each other, an `ocmproviders.jso
 ]
 ```
 
-:::info
+::: info
 Note: the `domain` must not contain the protocol as it has to match the [GOCDB site object domain](https://developer.sciencemesh.io/docs/technical-documentation/central-database/#site-object).
-:::
 
 The above federation consists of two instances: `cloud1.opencloud.test` and `cloud2.opencloud.test` that can use the Invitation workflow described below to generate, send and accept invitations.
 
@@ -137,18 +135,18 @@ The above federation consists of two instances: `cloud1.opencloud.test` and `clo
 
 Before sharing a resource with a remote user this user has to be invited by the sharer.
 
-In order to do so a POST request is sent to the `generate-invite` endpoint of the sciencemesh API. The generated token is passed on to the receiver, who will then use the `accept-invite` endpoint to accept the invitation. As a result remote users will be added to the `ocminvitemanager` on both sides. See [invitation flow](#invitation-workflow) for the according sequence diagram.
+In order to do so a POST request is sent to the `generate-invite` endpoint of the sciencemesh API. The generated token is passed on to the receiver, who will then use the `accept-invite` endpoint to accept the invitation. As a result remote users will be added to the `ocminvitemanager` on both sides. See [invitation flow](invitation_flow) for the according sequence diagram.
 
 The data backend of the `ocminvitemanager` is configurable. The only supported backend currently is `json` which stores the data in a json file on disk.
 
 ## Creating Shares
 
-:::info
+::: info
 The below info is outdated as we allow creating federated shares using the graph API. Clients can now discover the available sharing roles and invite federated users using the graph API.
-:::
 
 OCM Shares are currently created using the ocs API, just like regular shares. The difference is the share type, which is 6 (ShareTypeFederatedCloudShare) in this case, and a few additional parameters required for identifying the remote user.
 
-See [Create share flow](#creating-shares) for the according sequence diagram.
+See [Create share flow](create_share_flow) for the according sequence diagram.
 
 The data backends of the `ocmshareprovider` and `ocmcore` services are configurable. The only supported backend currently is `json` which stores the data in a json file on disk.
+

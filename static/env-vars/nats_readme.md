@@ -1,6 +1,6 @@
 ---
 title: Nats
-date: 2025-05-22T16:21:16.119601417+02:00
+date: 2025-11-13T17:22:55.095558+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/nats
@@ -24,7 +24,6 @@ Services can `Publish` events to the nats service and nats will store these even
 * [Default Registry](#default-registry)
 * [Persistance](#persistance)
 * [TLS Encryption](#tls-encryption)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Underlying Technology
 
@@ -45,3 +44,4 @@ Connections to the nats service (`Publisher`/`Consumer` see above) can be TLS en
 Certificate files can also be set via global variables starting with `OC_`, for details see the environment variable list.
 
 Note that using TLS is highly recommended for productive environments, especially when using container orchestration with Kubernetes.
+
