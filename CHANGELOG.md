@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @butonic
+@ScharfViktor, @Svanvith, @butonic
 
 ### 👷 Admin Documentation
 
+- add how to add fonts for collabora [[#504](https://github.com/opencloud-eu/docs/pull/504)]
 - Revise storage requirements in requirements.md [[#507](https://github.com/opencloud-eu/docs/pull/507)]
 - externalProxyDocs: add conf for tus upload [[#500](https://github.com/opencloud-eu/docs/pull/500)]
 - publish release note 3.7.0 [[#490](https://github.com/opencloud-eu/docs/pull/490)]
