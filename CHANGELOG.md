@@ -1,13 +1,14 @@
 # Changelog
 
-## [1.56.0](https://github.com/opencloud-eu/docs/releases/tag/1.56.0) - 2025-11-10
+## [1.56.0](https://github.com/opencloud-eu/docs/releases/tag/1.56.0) - 2025-11-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor
+@ScharfViktor, @butonic
 
 ### 👷 Admin Documentation
 
+- Revise storage requirements in requirements.md [[#507](https://github.com/opencloud-eu/docs/pull/507)]
 - externalProxyDocs: add conf for tus upload [[#500](https://github.com/opencloud-eu/docs/pull/500)]
 - publish release note 3.7.0 [[#490](https://github.com/opencloud-eu/docs/pull/490)]
 
