@@ -1,9 +1,0 @@
-{
-  "label": "Idp",
-  "position": 20,
-  "link": {
-    "type": "generated-index",
-    "title": "Idp",
-    "description": "Environment Variables and example yml"
-  }
-}
