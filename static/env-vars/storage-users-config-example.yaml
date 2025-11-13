@@ -79,7 +79,7 @@ drivers:
     propagator: sync
     async_propagator_options:
       propagation_delay: 0s
-    root: /home/chaser/.opencloud/storage/users
+    root: /Users/t.schweiger/.opencloud/storage/users
     user_layout: '{{.Id.OpaqueId}}'
     permissions_endpoint: eu.opencloud.api.settings
     personalspacealias_template: '{{.SpaceType}}/{{.User.Username | lower}}'
@@ -97,7 +97,7 @@ drivers:
     propagator: sync
     async_propagator_options:
       propagation_delay: 0s
-    root: /home/chaser/.opencloud/storage/users
+    root: /Users/t.schweiger/.opencloud/storage/users
     user_layout: '{{.Id.OpaqueId}}'
     permissions_endpoint: eu.opencloud.api.settings
     region: default
@@ -106,9 +106,9 @@ drivers:
     endpoint: ""
     bucket: ""
     put_object_disable_content_sha254: false
-    put_object_disable_multipart: true
+    put_object_disable_multipart: false
     put_object_send_content_md5: true
-    put_object_concurrent_stream_parts: true
+    put_object_concurrent_stream_parts: false
     put_object_num_threads: 4
     put_object_part_size: 0
     personalspacealias_template: '{{.SpaceType}}/{{.User.Username | lower}}'
@@ -122,10 +122,10 @@ drivers:
     async_uploads: true
     disable_versioning: false
   owncloudsql:
-    root: /home/chaser/.opencloud/storage/owncloud
+    root: /Users/t.schweiger/.opencloud/storage/owncloud
     share_folder: /Shares
     user_layout: '{{.Username}}'
-    upload_info_dir: /home/chaser/.opencloud/storage/uploadinfo
+    upload_info_dir: /Users/t.schweiger/.opencloud/storage/uploadinfo
     db_username: owncloud
     db_password: owncloud
     db_host: ""
@@ -133,7 +133,7 @@ drivers:
     db_name: owncloud
     users_provider_endpoint: eu.opencloud.api.users
   posix:
-    root: /home/chaser/.opencloud/storage/users
+    root: /Users/t.schweiger/.opencloud/storage/users
     propagator: ""
     async_propagator_options:
       propagation_delay: 0s
@@ -158,7 +158,7 @@ drivers:
     watch_root: ""
     inotify_stats_frequency: 5m0s
 data_server_url: http://localhost:9158/data
-data_gateway_url: https://localhost:9200/data
+data_gateway_url: http://localhost:9140/data
 transfer_expires: 86400
 events:
   endpoint: 127.0.0.1:9233

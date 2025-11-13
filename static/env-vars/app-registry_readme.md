@@ -1,6 +1,6 @@
 ---
 title: App Registry
-date: 2025-05-22T16:21:16.118757091+02:00
+date: 2025-11-13T17:22:55.092655+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/app-registry
@@ -20,14 +20,13 @@ Administrators can set default applications on a per MIME type basis and also al
 
 ## Table of Contents
 
-* [MIME Type Configuration / Creation Allow List](#mime-type-configuration--creation-allow-list)
+* [MIME Type Configuration / Creation Allow List](#mime-type-configuration-/-creation-allow-list)
   * [MIME Type Configuration](#mime-type-configuration)
 * [Endpoint Access](#endpoint-access)
   * [Listing available apps and mime types](#listing-available-apps-and-mime-types)
   * [Open a File With OpenCloud Web](#open-a-file-with-opencloud-web)
   * [Open a File With the App Provider](#open-a-file-with-the-app-provider)
   * [Creating a File With the App Provider](#creating-a-file-with-the-app-provider)
-* [Example Yaml Config](#example-yaml-config)
 
 ## MIME Type Configuration / Creation Allow List
 
@@ -471,3 +470,4 @@ You will receive a file id of the freshly created file, which you can use to ope
     "message": "the file already exists"
   }
   ```
+

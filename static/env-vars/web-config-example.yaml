@@ -67,9 +67,9 @@ http:
     - X-HTTP-Method-Override
     allow_credentials: false
 asset:
-  core_path: /home/user/.opencloud/web/assets/core
-  themes_path: /home/user/.opencloud/web/assets/themes
-  apps_path: /home/user/.opencloud/web/assets/apps
+  core_path: /Users/t.schweiger/.opencloud/web/assets/core
+  themes_path: /Users/t.schweiger/.opencloud/web/assets/themes
+  apps_path: /Users/t.schweiger/.opencloud/web/assets/apps
 file: ""
 web:
   theme_server: https://localhost:9200
@@ -96,7 +96,6 @@ web:
     applications: []
     external_apps: []
     options:
-      openAppsInTab: false
       accountEditLink: null
       disableFeedbackLink: false
       feedbackLink: null
@@ -122,6 +121,7 @@ web:
         shares:
           create: 0
           list: 0
+      defaultAppId: ""
     styles: []
     scripts: []
     custom_translations: []

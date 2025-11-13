@@ -90,27 +90,27 @@ ocm_invite_manager:
   driver: json
   drivers:
     json:
-      file: /home/chaser/.opencloud/storage/ocm/ocminvites.json
+      file: /Users/t.schweiger/.opencloud/storage/ocm/ocminvites.json
   token_expiration: 24h0m0s
   timeout: 30s
   insecure: false
 ocm_provider_authorizer_driver: json
 ocm_provider_authorizer_drivers:
   json:
-    providers: /home/chaser/.opencloud/config/ocmproviders.json
+    providers: /Users/t.schweiger/.opencloud/config/ocmproviders.json
 ocm_share_provider:
   driver: json
   drivers:
     json:
-      file: /home/chaser/.opencloud/storage/ocm/ocmshares.json
+      file: /Users/t.schweiger/.opencloud/storage/ocm/ocmshares.json
   insecure: false
   webapp_template: ""
 ocm_core:
   driver: json
   drivers:
     json:
-      file: /home/chaser/.opencloud/storage/ocm/ocmshares.json
+      file: /Users/t.schweiger/.opencloud/storage/ocm/ocmshares.json
 ocm_storage_provider:
   insecure: false
-  storage_root: /home/chaser/.opencloud/storage/ocm
+  storage_root: /Users/t.schweiger/.opencloud/storage/ocm
   data_server_url: http://localhost:9280/data

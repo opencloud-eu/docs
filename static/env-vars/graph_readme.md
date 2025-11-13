@@ -1,6 +1,6 @@
 ---
 title: Graph
-date: 2025-05-22T16:21:16.119397744+02:00
+date: 2025-11-13T17:22:55.095124+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/graph
@@ -34,7 +34,6 @@ for a detailed specification of the API implemented by the graph service.
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
 * [Unified Role Management](#unified-role-management)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Sequence Diagram
 
@@ -160,9 +159,8 @@ The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment va
 
 Unified Roles are roles granted a user for sharing and can be enabled or disabled. A CLI command is provided to list existing roles and their state among other data.
 
-:::info
+::: info
 Note that a disabled role does not lose previously assigned permissions. It only means that the role is not available for new assignments.
-:::
 
 The following roles are **enabled** by default:
 
@@ -215,4 +213,5 @@ The output of this command includes the following information for each role:
 |                                      |          |                                |                                | libre.graph/driveItem/basic/read         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 ```
+
 

@@ -123,7 +123,9 @@ checksums:
   preferred_upload_type: sha1
 read_only_user_attributes: []
 ldap_server_write_enabled: true
+edit_login_allowed_disabled: false
 full_text_search: false
+check_for_updates: true
 middleware:
   auth:
     credentials_by_user_agent: {}
@@ -148,3 +150,5 @@ password_policy:
   min_special_characters: 1
   banned_passwords_list: ""
 configurable_notifications: false
+groupware:
+  enabled: false

@@ -45,6 +45,7 @@ cs3api:
   datagateway:
     insecure: false
   grpc_client_tls: null
+  app_registration_interval: 30s
 tracing:
   enabled: false
   type: ""

@@ -19,8 +19,8 @@ debug:
 http:
   addr: 0.0.0.0:9200
   root: /
-  tls_cert: /home/chaser/.opencloud/proxy/server.crt
-  tls_key: /home/chaser/.opencloud/proxy/server.key
+  tls_cert: /Users/t.schweiger/.opencloud/proxy/server.crt
+  tls_key: /Users/t.schweiger/.opencloud/proxy/server.key
   tls: true
 reva:
   address: eu.opencloud.api.gateway
@@ -152,6 +152,10 @@ policies:
   - endpoint: /auth-app/tokens
     service: eu.opencloud.web.auth-app
     skip_x_access_token: false
+  - endpoint: /wopi
+    service: eu.opencloud.web.collaboration
+    unprotected: true
+    skip_x_access_token: true
 additional_policies: []
 oidc:
   issuer: https://localhost:9200

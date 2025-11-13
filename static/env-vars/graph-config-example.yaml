@@ -85,7 +85,7 @@ identity:
   backend: ldap
   ldap:
     uri: ldaps://localhost:9235
-    cacert: /home/chaser/.opencloud/idm/ldap.crt
+    cacert: /Users/t.schweiger/.opencloud/idm/ldap.crt
     insecure: false
     bind_dn: uid=libregraph,ou=sysusers,o=libregraph-idm
     bind_password: ""
@@ -154,3 +154,16 @@ keycloak:
 service_account:
   service_account_id: ""
   service_account_secret: ""
+metadata_config:
+  gateway_addr: eu.opencloud.api.storage-system
+  storage_addr: eu.opencloud.api.storage-system
+  system_user_id: ""
+  system_user_idp: internal
+  system_user_api_key: ""
+user_soft_delete_retention_time: 0s
+store:
+  nodes:
+  - 127.0.0.1:9233
+  database: graph
+  username: ""
+  password: ""

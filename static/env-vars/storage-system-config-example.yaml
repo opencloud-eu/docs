@@ -45,7 +45,7 @@ cache:
 driver: decomposed
 drivers:
   decomposed:
-    root: /home/chaser/.opencloud/storage/metadata
+    root: /Users/t.schweiger/.opencloud/storage/metadata
     max_acquire_lock_cycles: 20
     lock_cycle_duration_factor: 30
 data_server_url: http://localhost:9216/data

@@ -44,7 +44,7 @@ http:
     cert: ""
     key: ""
 disablePreviews: false
-opencloud_public_url: https://127.0.0.1:9200
+opencloud_public_url: https://localhost:9200
 webdav_namespace: /users/{{.Id.OpaqueId}}
 reva_gateway: eu.opencloud.api.gateway
 reva_gateway_tls_mode: ""

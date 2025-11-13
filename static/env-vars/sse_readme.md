@@ -1,6 +1,6 @@
 ---
 title: SSE
-date: 2025-05-22T16:21:16.120266287+02:00
+date: 2025-11-13T17:22:55.096997+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/sse
@@ -21,7 +21,6 @@ The `sse` service is responsible for sending sse (Server-Sent Events) to a user.
 * [The Log Service Ecosystem](#the-log-service-ecosystem)
 * [Subscribing](#subscribing)
 * [Keep SSE Connections Alive](#keep-sse-connections-alive)
-* [Example Yaml Config](#example-yaml-config)
 
 ## The Log Service Ecosystem
 
@@ -37,4 +36,5 @@ Clients can subscribe to the `/sse` endpoint to be informed by the server when a
 ## Keep SSE Connections Alive
 
 Some intermediate proxies drop connections after an idle time with no activity. If this is the case, configure the `SSE_KEEPALIVE_INTERVAL` envvar. This will send periodic SSE comments to keep connections open.
+
 

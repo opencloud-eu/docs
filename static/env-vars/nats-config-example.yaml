@@ -20,8 +20,8 @@ nats:
   host: 127.0.0.1
   port: 9233
   clusterid: opencloud-cluster
-  store_dir: /home/chaser/.opencloud/nats
-  tls_cert: /home/chaser/.opencloud/nats/tls.crt
-  tls_key: /home/chaser/.opencloud/nats/tls.key
+  store_dir: /Users/t.schweiger/.opencloud/nats
+  tls_cert: /Users/t.schweiger/.opencloud/nats/tls.crt
+  tls_key: /Users/t.schweiger/.opencloud/nats/tls.key
   tls_skip_verify_client_cert: false
   enable_tls: false

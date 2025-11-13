@@ -32,7 +32,7 @@ driver: ldap
 drivers:
   ldap:
     uri: ldaps://localhost:9235
-    ca_cert: /home/chaser/.opencloud/idm/ldap.crt
+    ca_cert: /Users/t.schweiger/.opencloud/idm/ldap.crt
     insecure: false
     bind_dn: uid=reva,ou=sysusers,o=libregraph-idm
     bind_password: ""

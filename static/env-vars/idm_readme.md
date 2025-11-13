@@ -1,6 +1,6 @@
 ---
 title: IDM
-date: 2025-05-22T16:21:16.119463799+02:00
+date: 2025-11-13T17:22:55.095332+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/idm
@@ -23,5 +23,5 @@ Note: IDM is limited in its functionality. It only supports a subset of the LDAP
 
 ## Table of Contents
 
-* [Example Yaml Config](#example-yaml-config)
+
 
