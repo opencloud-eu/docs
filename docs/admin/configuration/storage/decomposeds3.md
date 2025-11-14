@@ -81,4 +81,4 @@ After logging in, you should see the OpenCloud interface:
 
 If you run into any issues or errors, check the following resource:
 
-- [Common Issues & Help](../../resources/common-issues.md)
+- [Common Issues & Help](/docs/admin/resources/common-issues)

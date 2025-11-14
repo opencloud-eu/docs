@@ -32,7 +32,7 @@ Stop the currently running OpenCloud instance:
 
 ## Backup Config and Data
 
-It is recommended to create a [backup](../backup.md) before proceeding with the upgrade.
+It is recommended to create a [backup](/docs/admin/maintenance/backup) before proceeding with the upgrade.
 
 ## Pull the new Opencloud version
 

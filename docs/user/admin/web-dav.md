@@ -16,7 +16,7 @@ With WebDAV, you can connect OpenCloud Spaces and Folders as network drives on y
 - Access to a resource in OpenCloud, either a Space, a Folder or the root of your account
 - A WebDAV client (e.g. built-in OS support or [Mountain Duck](https://mountainduck.io/))
 - (Optional but recommended) An App Token  
-  → [How to create an App Token](./app-tokens.md)
+  → [How to create an App Token](/docs/user/admin/app-tokens)
 
 ## Step-by-Step Guide
 
@@ -40,7 +40,7 @@ We recommend using an App Token instead of your password for better security.
 - Go to Settings > App Tokens
 - Click "+ New", give it a name, and set an expiration date
 - Copy the token immediately – it will only be shown once  
-  → [See App Token Guide](./app-tokens.md)
+  → [See App Token Guide](/docs/user/admin/app-tokens)
 
 ### Get the WebDAV URL
 

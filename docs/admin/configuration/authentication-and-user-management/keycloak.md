@@ -38,11 +38,11 @@ GRAPH_USERNAME_MATCH=none
 OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
 ```
 
-Look [OpenCloud external IDP configuration](./external-idp.md#opencloud-configuration) for some more details about these settings.
+Look [OpenCloud external IDP configuration](/docs/admin/configuration/authentication-and-user-management/external-idp#opencloud-configuration) for some more details about these settings.
 
 ### Client Configuration
 
-The [OIDC clients](./external-idp.md#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
+The [OIDC clients](/docs/admin/configuration/authentication-and-user-management/external-idp#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
 
 ### Manual Client Configuration
 
