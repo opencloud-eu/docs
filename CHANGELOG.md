@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.56.0](https://github.com/opencloud-eu/docs/releases/tag/1.56.0) - 2025-11-13
+## [2.0.0](https://github.com/opencloud-eu/docs/releases/tag/2.0.0) - 2025-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Svanvith, @butonic, @schweigisito
+@ScharfViktor, @Svanvith, @butonic, @micbar, @schweigisito
+
+### 💥 Breaking changes
+
+- refactor: change dev docs structure and services docs [[#508](https://github.com/opencloud-eu/docs/pull/508)]
 
 ### 👷 Admin Documentation
 
