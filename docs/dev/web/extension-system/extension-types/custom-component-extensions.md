@@ -23,7 +23,7 @@ interface CustomComponentExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](./../#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](/docs/dev/web/extension-system#extension-base-configuration) in the top level docs.
 
 The `content` property specifies a render function or a Component for the target extension point.
 
