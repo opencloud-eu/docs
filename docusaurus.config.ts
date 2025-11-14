@@ -9,6 +9,7 @@ const config: Config = {
   title: 'OpenCloud Docs',
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.svg',
+  trailingSlash: false,
 
   // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
@@ -30,6 +31,14 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB', // or 'en-US'
+      },
+      de: {
+        htmlLang: 'de-DE',
+      },
+    },
   },
 
   presets: [
