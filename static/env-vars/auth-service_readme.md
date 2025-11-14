@@ -18,7 +18,7 @@ The OpenCloud Auth Service is used to authenticate service accounts. Compared to
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The `auth` Service Family](#the-auth-service-family)
 * [Service Accounts](#service-accounts)
 * [Configuring Service Accounts](#configuring-service-accounts)
 

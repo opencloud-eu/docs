@@ -29,7 +29,7 @@ Consider using dedicated hardware for this service in case more resources are ne
   * [Bleve](#bleve)
   * [OpenSearch](#opensearch)
 * [Query language](#query-language)
-* [Content analysis / Extraction](#content-analysis-/-extraction)
+* [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
   * [Tika](#tika)
 * [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
