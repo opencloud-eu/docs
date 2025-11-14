@@ -18,7 +18,7 @@ The OpenCloud Auth Bearer service communicates with the configured OpenID Connec
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The `auth` Service Family](#the-auth-service-family)
 * [Built in OpenID Connect Identity Provider](#built-in-openid-connect-identity-provider)
 * [Scalability](#scalability)
 
