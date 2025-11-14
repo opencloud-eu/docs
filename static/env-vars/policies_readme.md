@@ -24,7 +24,7 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Modules](#modules)
   * [gRPC API](#grpc-api)
   * [Proxy Middleware](#proxy-middleware)
-  * [Event Service (Postprocessing)](#event-service-(postprocessing))
+  * [Event Service (Postprocessing)](#event-service-postprocessing)
 * [Defining Policies to Evaluate](#defining-policies-to-evaluate)
 * [Setting the Query Configuration](#setting-the-query-configuration)
   * [Proxy](#proxy)
@@ -165,7 +165,7 @@ Note that additional steps can be configured and their position in the list defi
 
 ## Rego Key Match
 
-To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud/blob/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
+To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud-eu/opencloud/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
 
 ## Extend Mimetype File Extension Mapping
 

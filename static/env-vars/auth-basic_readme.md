@@ -22,7 +22,7 @@ To enable `auth-basic`, you first must set `PROXY_ENABLE_BASIC_AUTH` to `true`.
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-`auth`-service-family)
+* [The `auth` Service Family](#the-auth-service-family)
 * [Auth Managers](#auth-managers)
   * [LDAP Auth Manager](#ldap-auth-manager)
   * [Other Auth Managers](#other-auth-managers)
