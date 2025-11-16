@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@micbar
+
+### 📦️ Build&Tools
+
+- fix: trailing slashes and locale config [[#512](https://github.com/opencloud-eu/docs/pull/512)]
+
 ## [2.0.0](https://github.com/opencloud-eu/docs/releases/tag/2.0.0) - 2025-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
