@@ -59,7 +59,7 @@ For more information about OData query options please check the [API specificati
 
 ### Authorization
 
-For development purposes the examples in the developer documentation use Basic Auth. It is disabled by default and should only be enabled by setting `PROXY_ENABLE_BASIC_AUTH` in [the proxy](../../../services/proxy/environment-variables) for development or test instances.
+For development purposes the examples in the developer documentation use Basic Auth. It is disabled by default and should only be enabled by setting `PROXY_ENABLE_BASIC_AUTH` in [the proxy](/docs/dev/server/services/proxy/environment-variables) for development or test instances.
 
 To authenticate with a Bearer token or OpenID Connect access token replace the `-u user:password` Basic Auth option of curl with a `-H 'Authorization: Bearer <token>'` header. A `<token>` can be obtained by copying it from a request in the browser, although it will time out within minutes. To automatically refresh the OpenID Connect access token an ssh-agent like solution like [oidc-agent](https://github.com/indigo-dc/oidc-agent) should be used. The graph endpoints that support a preconfigured token can be found in the [API specification](https://github.com/opencloud-eu/libre-graph-api)
 
