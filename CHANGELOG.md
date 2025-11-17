@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@descensus, @micbar
+
+### 🐛 Bug Fixes
+
+- Fix "Authentication and Identymanagment" spelling error [[#514](https://github.com/opencloud-eu/docs/pull/514)]
+
+### 📦️ Build&Tools
+
+- fix: trailing slashes and locale config [[#512](https://github.com/opencloud-eu/docs/pull/512)]
+
 ## [2.0.0](https://github.com/opencloud-eu/docs/releases/tag/2.0.0) - 2025-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
