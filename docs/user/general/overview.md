@@ -2,13 +2,13 @@
 sidebar_position: 1
 id: overview
 title: Overview
-description: Overview of the user interface
+description: Overview of the web user interface
 draft: false
 ---
 
-# OpenCloud - Overview of the user interface
+# OpenCloud - Overview of the web user interface
 
-The OpenCloud interface consists of several areas that help you to work efficiently with files and settings
+The OpenCloud web interface consists of several areas that help you to work efficiently with files and settings
 
 <img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
 
