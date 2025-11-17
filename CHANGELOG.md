@@ -1,12 +1,12 @@
 # Changelog
 
-## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-17
+## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @descensus, @micbar
 
-### 👷 Admin Documentation
+### 🐛 Bug Fixes
 
 - Fix "Authentication and Identymanagment" spelling error [[#514](https://github.com/opencloud-eu/docs/pull/514)]
 
