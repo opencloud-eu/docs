@@ -31,10 +31,9 @@ Changes are saved automatically, and all versions are retained within OpenCloud.
 
 ### Supported formats
 
-Collabora Online supports common office formats such as `.odt`, `.docx`, `.xlsx`, `.pptx`, and more.
+Collabora Online supports common office formats such as `.odt`, `.docx`, `.ods`, `.xlsx`, `.odp`, and more.
 
 ## Notes
 
-- Collabora Online works entirely in the browser; no local office software is required.
 - Performance depends on your internet connection and the size of the document.
 - For advanced features or detailed instructions, we refer to the [official Collabora Online documentation](https://www.collaboraoffice.com/collabora-online/).
