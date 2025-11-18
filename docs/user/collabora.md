@@ -8,7 +8,7 @@ draft: false
 
 # Collabora Online in OpenCloud
 
-Collabora Online allows you to edit documents (text, spreadsheets, presentations) directly in your browser without any additional software.  
+Collabora Online allows you to to create / edit documents (text, spreadsheets, presentations) directly in your browser without any additional software.  
 The integration with OpenCloud provides seamless access to your files and enables real-time collaboration.
 
 ## Features in OpenCloud
@@ -21,7 +21,7 @@ All documents stored in OpenCloud can be opened directly in Collabora.
 
 Multiple users can work on the same document simultaneously, with real-time synchronization of changes.
 
-### Insert images from OpenClou
+### Insert images from OpenCloud
 
 You can insert images stored in OpenCloud directly into your documents.
 
