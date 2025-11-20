@@ -12,7 +12,7 @@ draft: false
 
 By default, OpenCloud performs a frontend check to verify if you are running the latest version.
 
-TO DO add screenshot from the version
+<img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520"/>
 
 ### Edit the `.env` File
 
@@ -22,7 +22,7 @@ Open the environment configuration file located in your `opencloud-compose` dire
 nano opencloud-compose/.env
 ```
 
-Add the following environment variable to disable the frontend check for updates:
+Set the `FRONTEND_CHECK_FOR_UPDATES` environment variable to `false` to disable the frontend check for updates:
 
 ```env
 FRONTEND_CHECK_FOR_UPDATES=false
@@ -41,4 +41,4 @@ docker compose up -d
 
 The frontend will no longer display a message about newer versions being available.
 
-TO DO add screenshot that the checker is no longer shown
+<img src={require("./img/frontend-update-check/check-false.png").default} alt="check is false" width="520"/>
