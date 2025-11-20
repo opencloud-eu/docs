@@ -164,88 +164,90 @@ Paste the following configuration and adjust the URLs:
 ```nginx
 # Redirect HTTP to HTTPS
 server {
-listen 80;
-server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YYOUR.DOMAIN;
+    listen 80;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YYOUR.DOMAIN;
 
-location /.well-known/acme-challenge/ {
-root /var/www/certbot;
-}
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
 
-location / {
-return 301 https://$host$request_uri;
-}
+    location / {
+        return 301 https://$host$request_uri;
+    }
 }
 
 # OpenCloud
 server {
-listen 443 ssl http2;
-server_name cloud.YOUR.DOMAIN;
+    listen 443 ssl http2;
+    server_name cloud.YOUR.DOMAIN;
 
-ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-# Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
-client_max_body_size 10M;
-# Disable buffering - essential for SSE
-proxy_buffering off;
-proxy_request_buffering off;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
 
-# Extend timeouts for long connections
-proxy_read_timeout 3600s;
-proxy_send_timeout 3600s;
-keepalive_requests 100000;
-keepalive_timeout 5m;
-http2_max_concurrent_streams 512;
+    # Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
+    client_max_body_size 10M;
 
-# Prevent nginx from trying other upstreams
-proxy_next_upstream off;
+    # Disable buffering - essential for SSE
+    proxy_buffering off;
+    proxy_request_buffering off;
 
-location / {
-proxy_pass http://127.0.0.1:9200;
-proxy_set_header Host $host;
-proxy_set_header X-Real-IP $remote_addr;
-proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-proxy_set_header X-Forwarded-Proto $scheme;
-}
+    # Extend timeouts for long connections
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    keepalive_requests 100000;
+    keepalive_timeout 5m;
+    http2_max_concurrent_streams 512;
+
+    # Prevent nginx from trying other upstreams
+    proxy_next_upstream off;
+
+    location / {
+        proxy_pass http://127.0.0.1:9200;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 
 # Collabora
 server {
-listen 443 ssl http2;
-server_name collabora.YOUR.DOMAIN;
+  listen 443 ssl http2;
+  server_name collabora.YOUR.DOMAIN;
 
-ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-# Increase max upload size to collabora editor
-client_max_body_size 10M;
+  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  # Increase max upload size to collabora editor
+  client_max_body_size 10M;
 
-location / {
-proxy_pass http://127.0.0.1:9980;
-proxy_set_header Host $host;
-}
+  location / {
+      proxy_pass http://127.0.0.1:9980;
+      proxy_set_header Host $host;
+  }
 
-location ~ ^/cool/(.*)/ws$ {
-proxy_pass http://127.0.0.1:9980;
-proxy_set_header Upgrade $http_upgrade;
-proxy_set_header Connection "Upgrade";
-proxy_set_header Host $host;
-}
+  location ~ ^/cool/(.*)/ws$ {
+      proxy_pass http://127.0.0.1:9980;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "Upgrade";
+      proxy_set_header Host $host;
+  }
 }
 
 # WOPI Server
 server {
-listen 443 ssl http2;
-server_name wopiserver.YOUR.DOMAIN;
+  listen 443 ssl http2;
+  server_name wopiserver.YOUR.DOMAIN;
 
-ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
 
-location / {
-proxy_pass http://127.0.0.1:9300;
-proxy_set_header Host $host;
-proxy_set_header X-Real-IP $remote_addr;
-proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-proxy_set_header X-Forwarded-Proto $scheme;
-}
+  location / {
+      proxy_pass http://127.0.0.1:9300;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+  }
 }
 ```
 
