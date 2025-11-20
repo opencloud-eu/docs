@@ -165,7 +165,7 @@ Paste the following configuration and adjust the URLs:
 # Redirect HTTP to HTTPS
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YYOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
