@@ -249,6 +249,10 @@ proxy_set_header X-Forwarded-Proto $scheme;
 }
 ```
 
+:::note
+We enabled HTTP/2 and increased keep-alive limits to prevent large syncs from failing and ensure stable client connections, since nginx closes connections after ~1,000 requests by default.
+:::
+
 Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments
 
 Enable and reload Nginx:
