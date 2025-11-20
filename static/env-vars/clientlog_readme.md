@@ -1,6 +1,6 @@
 ---
 title: Clientlog Service
-date: 2025-05-22T16:21:16.119110815+02:00
+date: 2025-11-13T17:22:55.094245+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/clientlog
@@ -20,7 +20,6 @@ The `clientlog` service is responsible for composing machine readable notificati
 
 * [The Log Service Ecosystem](#the-log-service-ecosystem)
 * [Clientlog Events](#clientlog-events)
-* [Example Yaml Config](#example-yaml-config)
 
 ## The Log Service Ecosystem
 
@@ -32,3 +31,4 @@ Log services like the `userlog`, `clientlog` and `sse` are responsible for compo
 ## Clientlog Events
 
 The messages the `clientlog` service sends are intended for the use by clients, not by users. The client might for example be informed that a file has finished post-processing. With that, the client can make the file available to the user without additional server queries.
+

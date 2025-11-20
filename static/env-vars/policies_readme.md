@@ -1,6 +1,6 @@
 ---
 title: Policies
-date: 2025-05-22T16:21:16.119843232+02:00
+date: 2025-11-13T17:22:55.095985+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/policies
@@ -32,7 +32,6 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Rego Key Match](#rego-key-match)
 * [Extend Mimetype File Extension Mapping](#extend-mimetype-file-extension-mapping)
 * [Example Policies](#example-policies)
-* [Example Yaml Config](#example-yaml-config)
 
 ## General Information
 
@@ -138,7 +137,7 @@ proxy:
 
 The same can be achieved by setting the following environment variable:
 
-```bash
+```shell
 export PROXY_POLICIES_QUERY=data.proxy.granted
 ```
 
@@ -152,13 +151,13 @@ policies:
 
 The same can be achieved by setting the following environment variable:
 
-```bash
+```shell
 export POLICIES_POSTPROCESSING_QUERY=data.postprocessing.granted
 ```
 
 As soon as that query is configured, the postprocessing service must be informed to use the policies step by setting the environment variable:
 
-```bash
+```shell
 export POSTPROCESSING_STEPS=policies
 ```
 
@@ -166,7 +165,7 @@ Note that additional steps can be configured and their position in the list defi
 
 ## Rego Key Match
 
-To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud/blob/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
+To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud-eu/opencloud/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
 
 ## Extend Mimetype File Extension Mapping
 
@@ -180,7 +179,7 @@ Note that existing mappings from the host are extended by the definitions from t
 
 The path to that file can be provided via a yaml configuration or an environment variable. Note to replace the `OC_CONFIG_DIR` string by an existing path.
 
-```bash
+```shell
 export POLICIES_ENGINE_MIMES=OC_CONFIG_DIR/mime.types
 ```
 
@@ -195,3 +194,4 @@ A good example of how such a file should be formatted can be found in the [Apach
 ## Example Policies
 
 The policies service contains a set of preconfigured example policies. See the [deployment examples](https://github.com/opencloud-eu/opencloud/tree/main/deployments/examples) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
+

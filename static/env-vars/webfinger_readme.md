@@ -1,6 +1,6 @@
 ---
 title: Webfinger
-date: 2025-05-22T16:21:16.121125161+02:00
+date: 2025-11-13T17:22:55.097774+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/webfinger
@@ -21,7 +21,6 @@ The webfinger service provides an RFC7033 WebFinger lookup of OpenCloud instance
 * [OpenID Connect Discovery](#openid-connect-discovery)
 * [Authenticated Instance Discovery](#authenticated-instance-discovery)
 * [Configure Different Instances Based on OpenidConnect UserInfo Claims](#configure-different-instances-based-on-openidconnect-userinfo-claims)
-* [Example Yaml Config](#example-yaml-config)
 
 ## OpenID Connect Discovery
 
@@ -142,3 +141,4 @@ Now, an authenticated webfinger request for `acct:me@example.org` (when logged i
     ]
 }
 ```
+

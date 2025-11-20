@@ -1,6 +1,6 @@
 ---
 title: Web
-date: 2025-05-22T16:21:16.121010385+02:00
+date: 2025-11-13T17:22:55.097596+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/web
@@ -33,13 +33,12 @@ The web service also provides a minimal API for branding functionality like chan
   * [Application Configuration](#application-configuration)
   * [Using Custom Assets](#using-custom-assets)
 * [Miscellaneous](#miscellaneous)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Custom Compiled Web Assets
 
 If you want to use your custom compiled web client assets instead of the embedded ones,
-then you can do that by setting the `WEB_ASSET_PATH` variable to point to your compiled files.
-See [OpenCloud Web / Getting Started](https://docs.opencloud.eu/clients/web/getting-started/) and [OpenCloud Web / Setup with OpenCloud](https://docs.opencloud.eu/clients/web/backend-opencloud/) for more details.
+then you can do that by setting the `WEB_ASSET_CORE_PATH` variable to point to your compiled files.
+See [OpenCloud Web / Getting Started](https://docs.opencloud.eu/docs/dev/web/getting-started) for more details.
 
 ## Web UI Configuration
 
@@ -62,7 +61,7 @@ with a [json based](https://github.com/opencloud-eu/web/tree/master/config) file
 Web can be consumed by another application in a stripped down version called “Embed mode”.
 This mode is supposed to be used in the context of selecting or sharing resources.
 
-For more details see the developer documentation [OpenCloud Web / Embed Mode](https://docs.opencloud.eu/clients/web/embed-mode/).
+For more details see the developer documentation [OpenCloud Web / Embed Mode](https://docs.opencloud.eu/docs/dev/web/embed-mode).
 See the environment variables: `WEB_OPTION_MODE` and `WEB_OPTION_EMBED_TARGET` to configure the embedded mode.
 
 ## Web Apps
@@ -204,3 +203,4 @@ This also applies for the `manifest.json` file, if the administrator wants to pr
 ## Miscellaneous
 
 Please note that OpenCloud, in particular the web service, needs a restart to load new applications or changes to the `apps.yaml` file.
+
