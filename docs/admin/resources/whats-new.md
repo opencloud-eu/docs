@@ -8,4 +8,4 @@ draft: false
 
 # Release notes
 
-Please find the [Release notes on Github ](https://github.com/opencloud-eu/opencloud/releases/latest).
+Please find the [Release notes on Github](https://github.com/opencloud-eu/opencloud/releases/latest).
