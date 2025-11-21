@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @tbsbdr
+@LisaHue, @Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- Frontend check for updates [[#521](https://github.com/opencloud-eu/docs/pull/521)]
 - comprehensive features list updated release date [[#513](https://github.com/opencloud-eu/docs/pull/513)]
 
 ### 👤 User Documentation
