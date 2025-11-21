@@ -65,6 +65,12 @@ Je nach Grundkonfiguration können Sie die folgenden Optionen ändern:
 Unter "Erweiterungen" können Sie installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
 <img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920"/>
 
+## Kalender
+
+Unter „Kalender“ können Sie auf Ihren persönlichen Kalender zugreifen und ihn, sofern konfiguriert, in Apps von Drittanbietern wie Thunderbird, Apple Kalender und andere integrieren.
+
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
+
 ## DSGVO
 
 Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern, falls gewünscht.  
