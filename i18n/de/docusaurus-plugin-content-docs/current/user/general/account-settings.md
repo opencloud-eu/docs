@@ -27,8 +27,9 @@ In den Einstellungen siehen Sie zunächst Ihre grundlegenden Kontoinformationen:
 - Vor- und Nachname
 - E-Mail-Adresse
 - Persönlicher Speicherplatz
-- Gruppenmitgliedschaften  
-  <img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
+- Gruppenmitgliedschaften
+
+<img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
 
 ### Avatar
 

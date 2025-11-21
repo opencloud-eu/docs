@@ -18,9 +18,9 @@ In OpenCloud you have the option of making various settings for your user accoun
 
 ## Account information
 
-In the settings you will first see your basic account information:
+In the settings you can choose between different sections:
 
-### Personal informations
+### Profile
 
 - Profile picture
 - Username / Login name
@@ -28,7 +28,8 @@ In the settings you will first see your basic account information:
 - E-mail address
 - Personal storage space
 - Group memberships
-  <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
+
+<img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
 
 ### Avatar
 
@@ -66,9 +67,9 @@ Under Extensions you can configure installed extensions, such as the Progressbar
 
 ## Calendar
 
-Under Calendar you can access your personal calendar for integration with third-party apps like Thunderbird, Apple Calendar, and others.
+Under Calendar you can access your personal calendar for integration with third-party apps like Thunderbird, Apple Calendar, and others, when configured.
 
-TODO Screenshot
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
 
 ## GDPR
 
