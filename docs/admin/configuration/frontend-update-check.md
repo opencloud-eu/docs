@@ -8,13 +8,11 @@ draft: false
 
 # Disable frontend update check
 
-## Disable Frontend Update Check
-
 By default, OpenCloud performs a frontend check to verify if you are running the latest version.
 
 <img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520"/>
 
-### Edit the `.env` File
+## Edit the `.env` File
 
 Open the environment configuration file located in your `opencloud-compose` directory:
 
