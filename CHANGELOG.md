@@ -1,14 +1,18 @@
 # Changelog
 
-## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-20
+## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-21
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@tbsbdr
+@LisaHue, @tbsbdr
 
 ### 👷 Admin Documentation
 
 - comprehensive features list updated release date [[#513](https://github.com/opencloud-eu/docs/pull/513)]
+
+### 👤 User Documentation
+
+- Update sharing english for the release 4 [[#520](https://github.com/opencloud-eu/docs/pull/520)]
 
 ## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-17
 
