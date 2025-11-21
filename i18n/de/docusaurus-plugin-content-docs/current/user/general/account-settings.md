@@ -18,9 +18,9 @@ In OpenCloud haben Sie die Möglichkeit, verschiedene Einstellungen für Ihr Ben
 
 ## Kontoinformationen
 
-In den Einstellungen siehen Sie zunächst Ihre grundlegenden Kontoinformationen:
+In den Einstellungen können Sie zwischen verschiedenen Abschnitten wählen:
 
-### Persönliche Informationen
+### Profil
 
 - Profilbild
 - Benutzername / Login-Name
