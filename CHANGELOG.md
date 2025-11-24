@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-21
+## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-24
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- Update sharing german for the release 4 [[#525](https://github.com/opencloud-eu/docs/pull/525)]
 - Update sharing english for the release 4 [[#520](https://github.com/opencloud-eu/docs/pull/520)]
 
 ## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-17
