@@ -4,7 +4,7 @@ title: OpenCloud iOS App
 
 import DocCardList from '@theme/DocCardList';
 
-Die OpenClou iOS App ermöglicht den mobilen Zugriff auf OpenCloud über iPhone oder iPad.  
+Die OpenCloud iOS App ermöglicht den mobilen Zugriff auf OpenCloud über iPhone oder iPad.  
 Sie bietet grundlegende Funktionen für das Arbeiten unterwegs, einschließlich Dateiverwaltung, Uploads und schneller Zusammenarbeit.
 
 #### Hauptfunktionen
