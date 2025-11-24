@@ -34,7 +34,7 @@ Mit OpenCloud können Sie Verknüpfung zu Websites oder Dateien erstellen
 
 - Klicken Sie auf die Verknüpfung, um die verlinkte Webseite oder Datei in einem neuen Browser-Tab zu öffnen,
   <img src={require("./img/link/shortcut.png").default} width="1920"/>
-- oder mit einem „Rechtsklick“ und „Verknüpfung öffnen “.
+- oder mit einem „Rechtsklick“ und „Öffnen “.
   <img src={require("./img/link/shortcut-rechts-klick.png").default} width="1920"/>
 
   öffnet sich die verlinkte Webseite oder Datei in einem neuen Browser-Tab.
