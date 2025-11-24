@@ -23,7 +23,8 @@ Der Trick: Die "Linkempfänger“ können die bereits im Ordner befindlichen Dat
   <img src={require("./img/file-drop/sidebar-fenster.png").default} width="1920"/>
 - Im Seitenleistenfenster finden Sie den Bereich Öffentliche Links und klicken dort auf die Schaltfläche Link hinzufügen.
   <img src={require("./img/file-drop/link-hinzufuegen.png").default} alt="Seitenleistenfenster" width="400"/>
-- Wählen Sie die Option "File Drop“ aus.
+- Wählen Sie unter Optionen "File Drop (geheim)“ aus.
+  <img src={require("./img/file-drop/oeffentliche-links-button.png").default} alt="Klick auf Link hinzufügen" width="400"/>
   <img src={require("./img/file-drop/file-drop-button.png").default} alt="Filedrop auswählen" width="400"/>
 - Geben Sie ein Passwort ein und bestätigen Sie die Eingaben mit einem Klick auf "Link kopieren“.
 - Du kannst außerdem ein „Ablaufdatum“ festlegen, wenn der Link automatisch ablaufen soll. Weitere Informationen zur Einstellung eines Ablaufdatums findest du unter [Externe Freigabe](./external).
