@@ -46,38 +46,39 @@ Instructions on how to install and set up your own OpenCloud can be found in the
 
 ## Table of contents
 
-### [User Interface and Navigation](./general)
+### [User Interface and Navigation](/docs/user/general)
 
 Here you will find general information about account settings, customizations and view modes.
 
-### [Manage Files and Folders](./files-and-folders)
+### [Manage Files and Folders](/docs/user/files-and-folders)
 
 Here you will find information about the management of files and folders.
 
-### [Share Files and Folders](./sharing)
+### [Share Files and Folders](/docs/user/sharing)
 
 Here you will find information on how to share files and folders.
 
-### [Working in Teams with Spaces](./spaces)
+### [Working in Teams with Spaces](/docs/user/spaces)
 
 Here you will find information for dealing with Spaces.
 
-### [OpenCloud Desktop](./desktop-client)
+### [OpenCloud Desktop](/docs/user/desktop-client)
 
 Here you will find information on how to install and set up the desktop client.
 
-### [OpenCloud iOS App](./ios-app)
+### [OpenCloud iOS App](/docs/user/ios-app)
 
 Here you will find information about the OpenCloud iOS App.
 
-### [Roles](./roles)
+### [Roles](/docs/user/roles)
 
 Here you will find information about the different roles that can be assigned.
 
-### [Administration of OpenCloud](./admin)
+### [Administration of OpenCloud](/docs/user/admin)
 
 Here you will find information on what options admins have and how you can use them.
 
-### [Common Issues and Help](./common-issues.md)
+### [Common Issues and Help](/docs/user/common-issues)
 
 Here you will find information on common issues and help on how to solve them.
+

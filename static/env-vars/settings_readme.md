@@ -1,6 +1,6 @@
 ---
 title: Settings
-date: 2025-05-22T16:21:16.120183351+02:00
+date: 2025-11-13T17:22:55.096511+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/settings
@@ -27,7 +27,6 @@ The `settings` service provides functionality for other services to register new
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
 * [Custom Roles](#custom-roles)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Settings Managed
 
@@ -476,3 +475,4 @@ Example File:
     }
 ]
 ```
+

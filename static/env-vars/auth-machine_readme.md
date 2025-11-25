@@ -1,6 +1,6 @@
 ---
 title: Auth-Machine
-date: 2025-05-22T16:21:16.119009124+02:00
+date: 2025-11-13T17:22:55.093564+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-machine
@@ -27,7 +27,6 @@ OpenCloud uses serveral authentication services for different use cases. All ser
 
 * [User Impersonation](#user-impersonation)
 * [Deprecation](#deprecation)
-* [Example Yaml Config](#example-yaml-config)
 
 ## User Impersonation
 
@@ -36,3 +35,4 @@ When one OpenCloud service is trying to talk to other OpenCloud services, it nee
 ## Deprecation
 
 With the upcoming `auth-service` service, the `auth-machine` service will be used less frequently and is probably a candidate for deprecation.
+

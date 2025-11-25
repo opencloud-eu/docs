@@ -1,6 +1,6 @@
 ---
 title: Invitations
-date: 2025-05-22T16:21:16.119557585+02:00
+date: 2025-11-13T17:22:55.095488+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/invitations
@@ -28,7 +28,6 @@ The corresponding CS3 API [user types](https://cs3org.github.io/cs3apis/#cs3.ide
     * [Keycloak Realm Configuration](#keycloak-realm-configuration)
 * [Backend Configuration](#backend-configuration)
 * [Bridging Provisioning Delay](#bridging-provisioning-delay)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Provisioning Backends
 
@@ -66,3 +65,4 @@ After Keycloak has been configured, the invitation service needs to be configure
 ## Bridging Provisioning Delay
 
 Consider that when a guest account has to be provisioned in an external user management, there might be a delay between creating the user and the user being available in the local OpenCloud system.
+

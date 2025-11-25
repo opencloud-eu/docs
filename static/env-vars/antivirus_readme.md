@@ -1,6 +1,6 @@
 ---
 title: Antivirus
-date: 2025-05-22T16:21:16.118681609+02:00
+date: 2025-11-13T17:22:55.092547+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/antivirus
@@ -28,7 +28,6 @@ The `antivirus` service is responsible for scanning files for viruses.
 * [Operation Modes](#operation-modes)
   * [Postprocessing](#postprocessing)
   * [Scaling in Kubernetes](#scaling-in-kubernetes)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Memory Considerations
 
@@ -107,3 +106,4 @@ The number of concurrent scans can be increased by setting `ANTIVIRUS_WORKERS`, 
 ### Scaling in Kubernetes
 
 In kubernetes, `ANTIVIRUS_WORKERS` and `ANTIVIRUS_MAX_SCAN_SIZE` can be used to trigger the horizontal pod autoscaler by requesting a memory size that is below `ANTIVIRUS_MAX_SCAN_SIZE`. Keep in mind that `ANTIVIRUS_MAX_SCAN_SIZE` amount of memory might be held by `ANTIVIRUS_WORKERS` number of go routines.
+

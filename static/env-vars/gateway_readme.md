@@ -1,6 +1,6 @@
 ---
 title: Gateway
-date: 2025-05-22T16:21:16.119334305+02:00
+date: 2025-11-13T17:22:55.094903+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/gateway
@@ -21,7 +21,6 @@ The gateway service is responsible for passing requests to the storage providers
 * [Caching](#caching)
 * [Service Endpoints](#service-endpoints)
 * [Storage Registry](#storage-registry)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Caching
 
@@ -29,7 +28,7 @@ The gateway service is using caching as it is highly frequented with the same re
   -   the `provider cache` is caching requests to list or get storage providers.
   -   the `create home cache` is caching requests to create personal spaces (as they only need to be executed once).
 
-Both caches can be configured via the `OC_CACHE_*` envvars (or `GATEWAY_PROVIDER_CACHE_*` and `GATEWAY_CREATE_HOME_CACHE_*` respectively). See the [envvar section](../gateway/gateway-envvars) for details.
+Both caches can be configured via the `OC_CACHE_*` envvars (or `GATEWAY_PROVIDER_CACHE_*` and `GATEWAY_CREATE_HOME_CACHE_*` respectively).
 
 Use `OC_CACHE_STORE` (`GATEWAY_PROVIDER_CACHE_STORE`, `GATEWAY_CREATE_HOME_CACHE_STORE`) to define the type of cache to use:
   -   `memory`: Basic in-memory store and the default.
@@ -194,3 +193,4 @@ In order to add another storage provider the CS3 storage registry that is runnin
 ```
 
 In the above replace `{storage-users-mount-uuid}` with the mount UUID that was generated for the storage-users service. You can find it in the `config.yaml` generated on by `opencloud init`. The last entry `eu.opencloud.api.storage-hello` and its `providerid` `"hello-storage-id"` are an example for in additional storage provider, in this case running `hellofs`, an example minimal storage driver.
+

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Willkommen
+description: Willkommen
 ---
 
 <!-- markdownlint-disable MD041 -->
