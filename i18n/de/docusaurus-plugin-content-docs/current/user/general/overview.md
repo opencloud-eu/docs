@@ -2,13 +2,13 @@
 sidebar_position: 1
 id: overview
 title: Übersicht
-description: Überblick der Benutzeroberfläche
+description: Überblick der Web Benutzeroberfläche
 draft: false
 ---
 
-# Überblick der Benutzeroberfläche
+# Überblick der Web Benutzeroberfläche
 
-Die OpenCloud-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
+Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
 
 <img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
 
@@ -87,7 +87,3 @@ Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Bereich
 ## 18. Kontextmenü
 
 Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das Kontextmenü mit spezifischen Optionen.
-
-:::note
-Mit dieser Übersicht können Sie sich schnell in OpenCloud zurechtfinden und die wichtigsten Funktionen effizient nutzen!
-:::

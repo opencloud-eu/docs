@@ -26,7 +26,3 @@ Eine kompaktere Version der Tabellenansicht, in der die Daten enger zusammengefa
 
 Eine Ansicht, in der Dateien und Ordner als Kacheln dargestellt werden. Ideal für visuelle Darstellungen und wenn Sie schnell auf Symbole zugreifen möchten.
 <img src={require("./img/view-modes/kachel.png").default} alt="Tiles" width="1920"/>
-
-:::note
-Mit diesen Optionen können Sie Ihre Dateilistenansicht flexibel anpassen, um die beste Anzeige für Sie zu wählen!
-:::
