@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-24
+## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Adjust ngnix config http2 [[#519](https://github.com/opencloud-eu/docs/pull/519)]
 - Frontend check for updates [[#521](https://github.com/opencloud-eu/docs/pull/521)]
 - comprehensive features list updated release date [[#513](https://github.com/opencloud-eu/docs/pull/513)]
 
