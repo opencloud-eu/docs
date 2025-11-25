@@ -81,4 +81,3 @@ Here you will find information on what options admins have and how you can use t
 ### [Common Issues and Help](/docs/user/common-issues)
 
 Here you will find information on common issues and help on how to solve them.
-
