@@ -14,6 +14,7 @@
 
 ### 👤 User Documentation
 
+- Rewrite user interface navigation [[#517](https://github.com/opencloud-eu/docs/pull/517)]
 - Update sharing german for the release 4 [[#525](https://github.com/opencloud-eu/docs/pull/525)]
 - Update sharing english for the release 4 [[#520](https://github.com/opencloud-eu/docs/pull/520)]
 
