@@ -18,9 +18,9 @@ In OpenCloud you have the option of making various settings for your user accoun
 
 ## Account information
 
-In the settings you will first see your basic account information:
+In the settings you can choose between different sections:
 
-### Personal informations
+### Profile
 
 - Profile picture
 - Username / Login name
@@ -28,7 +28,8 @@ In the settings you will first see your basic account information:
 - E-mail address
 - Personal storage space
 - Group memberships
-  <img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
+
+<img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
 
 ### Avatar
 
@@ -64,6 +65,12 @@ Depending on the basic configuration, you can change the following options:
 Under Extensions you can configure installed extensions, such as the Progressbar, if available.
 <img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
 
+## Calendar
+
+Under Calendar you can access your personal calendar for integration with third-party apps like Thunderbird, Apple Calendar, and others, when configured.
+
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
+
 ## GDPR
 
 Under GDPR you can request a data export of your personal data if you wish.
@@ -74,7 +81,3 @@ Under GDPR you can request a data export of your personal data if you wish.
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920"/>
-
-:::note
-With these settings you can customize and optimize your user account according to your needs!
-:::
