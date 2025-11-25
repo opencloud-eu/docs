@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @Svanvith, @tbsbdr
+@LisaHue, @Svanvith, @descensus, @tbsbdr
 
 ### 👷 Admin Documentation
 
