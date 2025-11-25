@@ -25,7 +25,7 @@ Multiple users can work on the same document simultaneously, with real-time sync
 
 You can insert images stored in OpenCloud directly into your documents.
 
-### Saving and versioning
+### Auto-Save and versioning
 
 Changes are saved automatically, and all versions are retained within OpenCloud.
 
