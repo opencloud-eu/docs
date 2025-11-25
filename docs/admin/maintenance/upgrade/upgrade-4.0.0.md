@@ -9,69 +9,103 @@ draft: false
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-# Update OpenCloud
+# Upgrading to OpenCloud 4.0.0
 
 This guide describes how to upgrade OpenCloud to the stable version
 **v4.0.0** using the Git repository [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git)
 with externalized data and config directories.
 
-# Stop OpenCloud
+## Before You Begin
 
-Stop the currently running OpenCloud instance:
-
-<Tabs>
-
-<TabItem value="docker" label="docker">
-```bash
-docker stop opencloud
-```
-</TabItem>
-
-<TabItem value="docker compose" label="docker compose">
-```bash
-docker compose stop
-```
-</TabItem>
-
-</Tabs>
+- **Determine Your Deployment Type**: This guide covers two common setups:
+  - **Bind Mounts**: Config and data are stored in directories on the host machine (e.g., `/mnt/opencloud/config`).
+  - **Docker Named Volumes**: Config and data are managed by Docker. You will need your `COMPOSE_PROJECT_NAME` to access them.
+- **Check Paths**: If you are using bind mounts, ensure you know the correct paths on your host system. You can find them by inspecting your current container's `docker run` command or `docker-compose.yml` file (look for `volumes:` sections that map to host paths).
 
 ## Backup Config and Data
 
-We recommended to make a [backup](/docs/admin/maintenance/backup) before proceeding with the upgrade.
+⚠️ **Important**: Always create a backup before upgrading to prevent data loss.
+We strongly recommend following the [backup documentation](/docs/admin/maintenance/backup) and creating copies of your configuration and data directories:
+
+<Tabs> <TabItem value="bind-mounts" label="Using Bind Mounts">
+If your config and data are stored in host directories (bind mounts), create a direct copy of these folders.
+
+### Example (adjust paths to match your setup)
 
 ```bash
 cp -r /mnt/opencloud/config /mnt/opencloud/config-backup
 cp -r /mnt/opencloud/data /mnt/opencloud/data-backup
 ```
 
-## Pull the 4.0.0 production release image
+</TabItem>
+
+<TabItem value="named-volumes" label="Using Named Volumes">
+
+### Create backup directory
 
 ```bash
-docker pull opencloudeu/opencloud:4.0.0
+mkdir -p ~/opencloud-backups
 ```
+
+### Backup config and data
+
+```bash
+docker cp opencloud_full-opencloud-1:/var/lib/opencloud ~/opencloud-backups/data-backup
+docker cp opencloud_full-opencloud-1:/etc/opencloud ~/opencloud-backups/config-backup
+```
+
+</TabItem>
+
+</Tabs>
+
+## Stop OpenCloud
+
+First, gracefully stop your currently running OpenCloud instance:
 
 <Tabs>
 
 <TabItem value="docker" label="docker">
 
+```bash
+docker stop opencloud
+```
+
 </TabItem>
 
 <TabItem value="docker compose" label="docker compose">
 
-## Clone the opencloud-compose Repository
+```bash
+docker compose stop
+```
+
+</TabItem>
+
+</Tabs>
+
+## Pull the 4.0.0 Production Release Image
+
+```bash
+docker pull opencloudeu/opencloud:4.0.0
+```
+
+## Update Deployment Configuration
+
+<Tabs>
+
+<TabItem value="docker compose" label="docker compose">
+
+### Clone the opencloud-compose Repository
 
 Clone the official opencloud-compose repository onto your server:
 
 ```bash
 git clone https://github.com/opencloud-eu/opencloud-compose.git
-cd opencloud
+cd opencloud-compose
 ```
 
-## Configure opencloud-compose
+### Migrate Environment Variables
 
-Migrate your environment variables to the new opencloud-compose structure.
-
-To do this use this [documentation](/docs/admin/getting-started/container/docker-compose/docker-compose-base.md).
+Transfer your existing environment variables to the new opencloud-compose structure. Refer to the [Docker Compose configuration documentation](/docs/admin/getting-started/container/docker-compose/docker-compose-base.md) for detailed instructions.
 
 </TabItem>
 
@@ -79,10 +113,20 @@ To do this use this [documentation](/docs/admin/getting-started/container/docker
 
 ## Verify Configuration Changes
 
-Go inside the containers
+Go inside the container:
+
+If your config is stored in host directories:
 
 ```bash
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
+```
+
+or, if you use Docker Named Volumes(replace with your volume name):
+
+```bash
+docker run --rm -it --entrypoint /bin/sh \
+  -v opencloud_full_opencloud-config:/etc/opencloud \
+  opencloudeu/opencloud:4.0.0
 ```
 
 Check for configuration changes:
@@ -91,7 +135,7 @@ Check for configuration changes:
 opencloud init --diff
 ```
 
-for example my result:
+Example output:
 
 ```bash
 opencloud init --diff
@@ -101,47 +145,91 @@ running in diff mode
 diff -u /etc/opencloud/opencloud.yaml /etc/opencloud/opencloud.yaml.tmp
 --- /etc/opencloud/opencloud.yaml
 +++ /etc/opencloud/opencloud.yaml.tmp
-@@ -1,9 +1,9 @@
- token_manager:
-   jwt_secret: 9GyJ7NL^*91^xRkkyQ#3mXSm+IQVej^z
- machine_auth_api_key: G^Pj5yDYwpODM7mIBBpSeulf9OR^NQz%
--url_signing_secret: hSnW$M$1!chpCWD4@J&8dBTxVA9B6j5x
- system_user_api_key: WmS.GQ4.xc+5NS.^1lC-c3JGmHcZ0Q@p
- transfer_secret: Lz9tI.&-S$7@B!lTTBx5bBRDaV@&!Jc%
-+url_signing_secret: hSnW$M$1!chpCWD4@J&8dBTxVA9B6j5x
- system_user_id: d4d7eac0-bd98-45cf-b134-55dc85f258e9
- admin_user_id: 8b4b020b-8ee6-469e-8ed6-69a33b5dc2b5
+@@ -3,6 +3,7 @@
+ machine_auth_api_key: k55Y7i3Djeeu4aPPNzM67Q39rf3ZHz^9
+ system_user_api_key: GeTXN@Mj7-4n8Yhuwb&#oq8Gb1hF7Q%^
+ transfer_secret: ANy#T5.IvknED9-Ud39+YmlXzN^TdaKi
++url_signing_secret: zB#FtAYid24Z^DkuBoTllnId=igo!tCO
+ system_user_id: 8cc36d34-cd87-4434-b9e2-726e5553609c
+ admin_user_id: 34a73600-a02c-4064-8aec-341cd1865a71
  graph:
+
+diff written to /etc/opencloud/opencloud.config.patch
 ```
 
-replace `url_signing_secret` in the `/etc/opencloud/opencloud.yaml`
-
-Update `opencloud.yaml` if required another changes.
+Apply any necessary changes to `/etc/opencloud/opencloud.yaml` based on the diff output. In this example, add `url_signing_secret` to your `opencloud.yaml`.
 
 ## Start OpenCloud (v4.0.0)
 
 <Tabs>
 
 <TabItem value="docker" label="docker">
-``` bash
-docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
+
+```bash
+docker run \
+    --name opencloud \
+    --rm \
+    -d \
+    -p 9200:9200 \
+    -v $HOME/opencloud/opencloud-config:/etc/opencloud \
+    -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
+    -e OC_INSECURE=true \
+    -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
+    -e OC_URL=https://localhost:9200 \
+    opencloudeu/opencloud:4.0.0
 ```
+
 </TabItem>
 
 <TabItem value="docker compose" label="docker compose">
-``` bash
+
+## Important Note for Existing Deployments
+
+If you previously deployed OpenCloud using the project name `opencloud_full` (our earlier example) and are now switching to the official [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose) repository, you may need to specify the original project name to ensure:
+
+- **Network compatibility** - for services like S3 that need to be on the same network
+- **Volume persistence** - to access existing Docker volumes
+
+Run the command with your original project name:
+
+```bash
+docker compose -p opencloud_full up -d
+```
+
+Alternatively, set the project name permanently in the .env file:
+
+```bash
+COMPOSE_PROJECT_NAME=opencloud_full
+```
+
+Then use the standard command:
+
+```bash
 docker compose up -d
 ```
+
 </TabItem>
 
 </Tabs>
 
-## Conclusion
+## Verification
 
-Your OpenCloud instance should now be running on **v2.0.5** using
-externalized config and data directories. Verify:
+Your OpenCloud instance should now be running on **v4.0.0** using
+externalized config and data directories.
 
-- Users\
-- Shared folders\
-- Public links\
-- All data availability
+### Essential Checks
+
+- ✅ **User Accounts** — Confirm all users can log in successfully
+- ✅ **Shared Folders** — Verify shared folder permissions and access
+- ✅ **Public Links** — Test that public links remain functional
+- ✅ **Data Integrity** — Ensure all files and folders are accessible
+- ✅ **Service Health** — Check logs for any errors or warnings
+
+## Troubleshooting
+
+If you encounter issues during or after the upgrade:
+
+1. Review the logs for error messages
+2. Consult the [troubleshooting guide](/docs/admin/resources/common-issues)
+3. Restore from backup if necessary
+4. Contact support or open an issue on [GitHub](https://github.com/opencloud-eu/opencloud/issues)
