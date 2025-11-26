@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 4
 id: file-conflicts
 title: Handle file conflicts
 description: How to handle file conflicts
@@ -13,7 +13,7 @@ When files are modified both locally and remotely before synchronization, the De
 - `conflict.txt` (remote version)
 - `conflict (conflicted copy YYYY-MM-DD HHMMSS).txt` (local version)
 
-  <img src={require("./img/conflict-files/conflict-file.png").default} alt="Conflict files in explorer" width="1920"/>
+  <img src={require(".././img/conflict-files/conflict-file.png").default} alt="Conflict files in explorer" width="1920"/>
 
 This usually happens when:
 
@@ -26,7 +26,7 @@ In the Desktop Client overview, a notification will appear when conflicting file
 This means that multiple versions of the same file exist—often because changes were made on different devices before synchronization.  
 The notification serves as a prompt for you to review the conflicts and decide how to merge or keep the versions.
 
-<img src={require("./img/conflict-files/conflict-info.png").default} alt="Notification about file conflicts in the Desktop Client" width="500"/>
+<img src={require(".././img/conflict-files/conflict-info.png").default} alt="Notification about file conflicts in the Desktop Client" width="500"/>
 
 ## Resolve File Conflicts Manually
 

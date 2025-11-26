@@ -1,8 +1,8 @@
 ---
 sidebar_position: 4
-id: win-vfs
-title: Windows VFS
-description: Windows Virtual File System
+id: sync-settings-win
+title: Synchronisation Settings in Windows
+description: Synchronisation Settings in Windows
 draft: false
 ---
 
@@ -22,7 +22,7 @@ Files and folders can appear in different states, depending on whether they are 
 The item is stored locally and always accessible, even without an internet connection.  
 Windows will not automatically remove it.
 
-<img src={require("./img/vfs/full-pinned.png").default} alt="full pinned file icon" width="400"/>
+<img src={require(".././img/vfs/full-pinned.png").default} alt="full pinned file icon" width="400"/>
 
 ### Available on this device (full)
 
@@ -31,14 +31,14 @@ If disk space is needed, Windows may remove the local copy. The file remains lis
 
 Files that are newly created or added on the device will receive this state automatically.
 
-<img src={require("./img/vfs/full.png").default} alt="full file icon" width="400"/>
+<img src={require(".././img/vfs/full.png").default} alt="full file icon" width="400"/>
 
 ### Available when online (placeholder)
 
 The item is shown in the File Explorer but stored only in the cloud.  
 It will be downloaded automatically when opened and requires an active internet connection.
 
-<img src={require("./img/vfs/placeholder.png").default} alt="placeholder file icon" width="400"/>
+<img src={require(".././img/vfs/placeholder.png").default} alt="placeholder file icon" width="400"/>
 
 ## Making Items Available Offline
 
@@ -48,7 +48,7 @@ To ensure a file, folder, or Space is stored locally:
 2. Right-click the item.
 3. Select “Always keep on this device”.
 
-<img src={require("./img/vfs/always-keep-on-this-device.png").default} alt="select always keep on this device" width="400"/>
+<img src={require(".././img/vfs/always-keep-on-this-device.png").default} alt="select always keep on this device" width="400"/>
 
 Windows downloads the selected content and keeps it available offline.
 
@@ -60,7 +60,7 @@ If you need to remove local copies:
 2. Right-click the file or folder.
 3. Select “Free up space”.
 
-<img src={require("./img/vfs/free-up-space.png").default} alt="select free up space" width="400"/>
+<img src={require(".././img/vfs/free-up-space.png").default} alt="select free up space" width="400"/>
 
 The local version is removed, but the item remains visible and can be downloaded again when needed.
 

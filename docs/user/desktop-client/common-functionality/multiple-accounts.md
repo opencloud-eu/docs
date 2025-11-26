@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 2
 id: multiple-accounts
 title: Set up multiple accounts
 description: Using multiple Accounts in OpenCloud Desktop
@@ -15,7 +15,7 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 - Open OpenCloud Desktop
 - Click on Add Account
 
-  <img src={require("./img/multiple-accounts/multiple-accounts-add-account.png").default} alt="Add accounts" width="400"/>
+  <img src={require(".././img/multiple-accounts/multiple-accounts-add-account.png").default} alt="Add accounts" width="400"/>
 
 - Follow the [standard setup process](/docs/user/desktop-client/set-up):
   - Enter the server URL
@@ -27,7 +27,7 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 - After adding multiple accounts, they will appear in the account overview in the settings menu
 - You can easily switch between them to manage synchronization settings for each account separately
 
-  <img src={require("./img/multiple-accounts/multiple-accounts-switch-accounts.png").default} alt="Switch accounts" width="400"/>
+  <img src={require(".././img/multiple-accounts/multiple-accounts-switch-accounts.png").default} alt="Switch accounts" width="400"/>
 
 ## How Files are Stored Locally
 
@@ -37,7 +37,7 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
   - OpenCloud (2) (for the second account)
   - OpenCloud (3) (for the third account), and so on
 
-    <img src={require("./img/multiple-accounts/multiple-accounts-locally.png").default} alt="Multiple accounts in explorer or finder" width="400"/>
+    <img src={require(".././img/multiple-accounts/multiple-accounts-locally.png").default} alt="Multiple accounts in explorer or finder" width="400"/>
 
 :::note
 This setup ensures that files from different accounts remain organized and do not mix.
