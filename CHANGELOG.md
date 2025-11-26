@@ -8,12 +8,14 @@
 
 ### 👷 Admin Documentation
 
+- Add info about versioning [[#501](https://github.com/opencloud-eu/docs/pull/501)]
 - Adjust ngnix config http2 [[#519](https://github.com/opencloud-eu/docs/pull/519)]
 - Frontend check for updates [[#521](https://github.com/opencloud-eu/docs/pull/521)]
 - comprehensive features list updated release date [[#513](https://github.com/opencloud-eu/docs/pull/513)]
 
 ### 👤 User Documentation
 
+- refine files and folders in german for release 4 [[#526](https://github.com/opencloud-eu/docs/pull/526)]
 - refine files and folders for release 4 [[#522](https://github.com/opencloud-eu/docs/pull/522)]
 - add collabora overview in user [[#505](https://github.com/opencloud-eu/docs/pull/505)]
 - Rewrite user interface navigation [[#517](https://github.com/opencloud-eu/docs/pull/517)]
