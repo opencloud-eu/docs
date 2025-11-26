@@ -40,6 +40,15 @@ der Web Client für die umfassende Online-Nutzung, der Desktop Client für die l
 
 Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
 
+## Dokumentations-Versionen
+
+Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ihrer Software finden.
+
+- Rolling-Version: Entspricht immer dem aktuellen Entwicklungsstand. Änderungen werden laufend eingepflegt – die Dokumentation kann jedoch nicht vollständig sein, da neue Features ggf. noch nicht dokumentiert sind. Ideal bei Nutzung von Vorab- oder Entwicklungs-versionen.
+- Stable Release-Versionen: Dokumentation zu offiziellen Releases – eingefroren, geprüft und unverändert seit Freigabe.
+
+Über das Versionsmenü oben rechts können Sie jederzeit zwischen der Rolling-Version und den einzelnen Release-Versionen wechseln.
+
 ## Inhaltsverzeichnis
 
 ### [Benutzeroberfläche und Navigation](./general)

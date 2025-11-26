@@ -27,7 +27,7 @@ technical problems flexibly yourself and to be able to answer frequently asked q
 
 OpenCloud is the file sharing and collaboration solution of the Heinlein Group.
 
-Through intelligent file management and a strong open source community, files become valuable resources — effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere without barriers, but with a lot of productivity.
+Through intelligent file management and a strong open source community, files become valuable resources, effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere without barriers, but with a lot of productivity.
 
 OpenCloud can be accessed in different ways, depending on the device and use case:
 
@@ -43,6 +43,16 @@ the Web Client for full-featured online use, the Desktop Client for local synchr
 ## How can I use OpenCloud?
 
 Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/welcome/index.md) under ["Getting-Started"](../admin/getting-started/)
+
+## Documentation Versions
+
+Our documentation is versioned to ensure you always find the right information for your software version.
+
+- Rolling Version: Reflects the current development state. Changes are continuously added, but the documentation may be incomplete, as new features might not yet be documented. Ideal if you are using a pre-release or development build.
+- Stable Release Versions: Documentation for officially released versions — frozen, reviewed, and unchanged since publication.
+
+You can switch between the Rolling version and specific Release versions using the version menu in the top right corner.
+Through intelligent file management and a strong open source community, files become valuable resources — effectively structured and usable in the long term. With flexible data rooms and intelligent access rights, teams can access and work together on data anytime, anywhere without barriers, but with a lot of productivity.
 
 ## Table of contents
 
