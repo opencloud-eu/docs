@@ -21,11 +21,11 @@ Um herauszufinden, wer eine Datei oder einen Ordner bearbeitet hat und welche Ak
 
 - Wählen Sie Aktivitäten
   - In der rechten Seitenleiste wird ein Pop-up geöffnet, dort wählen Sie "Aktivitäten" aus.
-   <img src={require("./img/activity/aktivitaeten-button.png").default} width="400"/>
+    <img src={require("./img/activity/aktivitaeten-button.png").default} width="400"/>
 
 - Aktivitäten anzeigen
   - Alle Aktivitäten, die mit dieser Datei oder diesem Ordner durchgeführt werden, werden jetzt angezeigt.
-  <img src={require("./img/activity/aktivitaeten.png").default} width="400"/>
+    <img src={require("./img/activity/aktivitaeten.png").default} width="400"/>
 
 :::info
 Mit dieser Funktion können Sie alle Änderungen und Aktionen verfolgen!
