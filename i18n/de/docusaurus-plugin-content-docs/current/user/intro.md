@@ -49,10 +49,6 @@ Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ih
 
 Über das Versionsmenü oben rechts können Sie jederzeit zwischen der Rolling-Version und den einzelnen Release-Versionen wechseln.
 
-## Wie kann ich OpenCloud nutzen?
-
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
-
 ## Inhaltsverzeichnis
 
 ### [Benutzeroberfläche und Navigation](./general)
