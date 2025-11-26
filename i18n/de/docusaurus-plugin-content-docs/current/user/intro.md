@@ -33,8 +33,8 @@ Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie 
 
 Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ihrer Software finden.
 
-- Rolling-Version: Vergibt stets den aktuellen Entwicklungsstand. Änderungen werden laufend eingepflegt – die Dokumentation kann jedoch nicht vollständig sein, da neue Features ggf. noch nicht dokumentiert sind. Ideal bei Nutzung von Vorab- oder Entwicklungs-versionen.
-- Stabile Release-Versionen: Dokumentation zu offiziellen Releases – eingefroren, geprüft und unverändert seit Freigabe.
+- Rolling-Version: Entspricht immer dem aktuellen Entwicklungsstand. Änderungen werden laufend eingepflegt – die Dokumentation kann jedoch nicht vollständig sein, da neue Features ggf. noch nicht dokumentiert sind. Ideal bei Nutzung von Vorab- oder Entwicklungs-versionen.
+- Stable Release-Versionen: Dokumentation zu offiziellen Releases – eingefroren, geprüft und unverändert seit Freigabe.
 
 Über das Versionsmenü oben rechts können Sie jederzeit zwischen der Rolling-Version und den einzelnen Release-Versionen wechseln.
 
@@ -75,5 +75,3 @@ Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutz
 ### [Häufige Probleme und Hilfe](./common-issues.md)
 
 Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
-
-
