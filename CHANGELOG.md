@@ -1,10 +1,10 @@
 # Changelog
 
-## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-25
+## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-26
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@LisaHue, @Svanvith, @descensus, @tbsbdr
+@Heiko-Pohl, @LisaHue, @Svanvith, @descensus, @tbsbdr
 
 ### 👷 Admin Documentation
 
@@ -14,6 +14,7 @@
 
 ### 👤 User Documentation
 
+- refine files and folders for release 4 [[#522](https://github.com/opencloud-eu/docs/pull/522)]
 - add collabora overview in user [[#505](https://github.com/opencloud-eu/docs/pull/505)]
 - Rewrite user interface navigation [[#517](https://github.com/opencloud-eu/docs/pull/517)]
 - Update sharing german for the release 4 [[#525](https://github.com/opencloud-eu/docs/pull/525)]
