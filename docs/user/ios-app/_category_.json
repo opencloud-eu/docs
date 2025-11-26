@@ -1,9 +1,4 @@
 {
   "label": "OpenCloud iOS App",
-  "position": 7,
-  "link": {
-    "type": "generated-index",
-    "description": "Tutorials about the OpenCloud iOS App.",
-    "slug": "user/ios-app"
-  }
+  "position": 7
 }

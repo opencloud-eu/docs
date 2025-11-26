@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 11
 id: common-issues
 title: Common Issues & Help
 description: Common issues & help

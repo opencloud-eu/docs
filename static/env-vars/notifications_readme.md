@@ -1,6 +1,6 @@
 ---
 title: Notification
-date: 2025-05-22T16:21:16.119647113+02:00
+date: 2025-11-13T17:22:55.095635+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/notifications
@@ -25,7 +25,6 @@ The notification service is responsible for sending emails to users informing th
 * [Translations](#translations)
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Email Notification Templates
 
@@ -128,3 +127,4 @@ which is the source of the texts provided by the code.
 ## Default Language
 
 The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment variable. See the `settings` service for a detailed description.
+

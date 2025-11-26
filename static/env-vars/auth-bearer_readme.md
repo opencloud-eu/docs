@@ -1,6 +1,6 @@
 ---
 title: Auth-Bearer
-date: 2025-05-22T16:21:16.118961645+02:00
+date: 2025-11-13T17:22:55.093335+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-bearer
@@ -18,12 +18,11 @@ The OpenCloud Auth Bearer service communicates with the configured OpenID Connec
 
 ## Table of Contents
 
-* [The auth Service Family](#the-auth-service-family)
+* [The `auth` Service Family](#the-auth-service-family)
 * [Built in OpenID Connect Identity Provider](#built-in-openid-connect-identity-provider)
 * [Scalability](#scalability)
-* [Example Yaml Config](#example-yaml-config)
 
-## The auth Service Family
+## The `auth` Service Family
 
 OpenCloud uses serveral authentication services for different use cases. All services that start with `auth-` are part of the authentication service family. Each member authenticates requests with different scopes. As of now, these services exist:
   -   `auth-app` handles authentication of external 3rd party apps
@@ -41,3 +40,4 @@ A default OpenCloud deployment will start a [built in OpenID Connect identity pr
 There is no persistance or caching. The proxy caches verified auth bearer tokens. Requests will be forwarded to the identity provider. Therefore, multiple instances of the `auth-bearer` service can be started without further configuration. Currently, the auth registry used by the gateway can only use a single instance of the service. To use more than one auth provider per deployment you need to scale the gateway.
 
 This will change when we use the service registry in more places and use micro clients to select an instance of a service.
+

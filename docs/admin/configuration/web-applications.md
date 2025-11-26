@@ -1,8 +1,8 @@
 ---
-sidebar_position: 11
+sidebar_position: 60
 id: web-applications
 title: Web Apps
-description: How to enable web applications in OpenCloud.
+description: How to enable web applications in OpenCloud
 draft: false
 ---
 
@@ -54,13 +54,13 @@ Once the app is copied to the correct location, it will automatically appear in 
 
 Some OpenCloud apps require additional configuration — for example, the External Sites app.
 
-These configurations can be managed in the following file:
+This particular app can be configured by creating the file config.json in the web apps directory:
 
 ```bash
-opencloud-compose/config/opencloud/apps/external-sites/manifest.json
+/web/assets/apps/external-sites/config.json
 ```
 
 :::note
 Configuration details vary between apps.
-For specific setup instructions, please refer to the official documentation of the respective app.
+For specific setup instructions, please refer to the [official documentation](https://github.com/opencloud-eu/web-extensions/tree/main) of the respective app.
 :::

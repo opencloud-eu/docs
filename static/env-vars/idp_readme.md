@@ -1,6 +1,6 @@
 ---
 title: IDP
-date: 2025-05-22T16:21:16.119513502+02:00
+date: 2025-11-13T17:22:55.095406+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/idp
@@ -17,7 +17,7 @@ This service provides a builtin minimal OpenID Connect provider based on [LibreG
 
 It is mainly targeted at smaller installations. For larger setups it is recommended to replace IDP with an external OpenID Connect Provider.
 
-By default, it is configured to use the OpenCloud IDM service as its LDAP backend for looking up and authenticating users. Other backends like an external LDAP server can be configured via a set of [enviroment variables](https://docs.opencloud.eu/services/idp/configuration/#environment-variables).
+By default, it is configured to use the OpenCloud IDM service as its LDAP backend for looking up and authenticating users. Other backends like an external LDAP server can be configured via a set of [enviroment variables](https://docs.opencloud.eu/docs/dev/server/services/idp/environment-variables).
 
 Note that translations provided by the IDP service are not maintained via OpenCloud but part of the embedded  [LibreGraph Connect Identifier](https://github.com/libregraph/lico/tree/master/identifier) package.
 
@@ -26,7 +26,6 @@ Note that translations provided by the IDP service are not maintained via OpenCl
 
 * [Configuration](#configuration)
   * [Custom Clients](#custom-clients)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Configuration
 
@@ -97,6 +96,7 @@ clients:
   origins: []
   application_type: native
 ```
+
 
 
 

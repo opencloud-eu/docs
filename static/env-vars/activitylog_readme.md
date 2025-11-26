@@ -1,6 +1,6 @@
 ---
 title: Activitylog
-date: 2025-05-22T16:21:16.118598132+02:00
+date: 2025-11-13T17:22:55.092232+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/activitylog
@@ -23,7 +23,6 @@ The `activitylog` service is responsible for storing events (activities) per res
 * [Translations](#translations)
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
-* [Example Yaml Config](#example-yaml-config)
 
 ## The Log Service Ecosystem
 
@@ -62,3 +61,4 @@ which is the source of the texts provided by the code.
 ## Default Language
 
 The default language can be defined via the `OC_DEFAULT_LANGUAGE` environment variable. See the `settings` service for a detailed description.
+

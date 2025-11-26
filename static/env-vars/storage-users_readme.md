@@ -1,6 +1,6 @@
 ---
 title: Storage-Users
-date: 2025-05-22T16:21:16.120375442+02:00
+date: 2025-11-13T17:22:55.097175+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/storage-users
@@ -27,7 +27,6 @@ Purpose and description to be added
     * [Purge Expired](#purge-expired)
     * [List and Restore Trash-Bins Items](#list-and-restore-trash-bins-items)
 * [Caching](#caching)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Graceful Shutdown
 
@@ -254,3 +253,4 @@ Store specific notes:
   -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OC_CACHE_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
   -   When using `nats-js-kv` it is recommended to set `OC_CACHE_STORE_NODES` to the same value as `OC_EVENTS_ENDPOINT`. That way the cache uses the same nats instance as the event bus.
   -   When using the `nats-js-kv` store, it is possible to set `OC_CACHE_DISABLE_PERSISTENCE` to instruct nats to not persist cache data on disc.
+
