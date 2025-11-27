@@ -34,7 +34,7 @@ If your config and data are stored in host directories (bind mounts), create a d
 
 ```bash
 cp -r /mnt/opencloud/config /mnt/opencloud/config-backup
-cp -r /mnt/opencloud/data /mnt/opencloud/data-backup
+cp -a /mnt/opencloud/data /mnt/opencloud/data-backup
 ```
 
 </TabItem>
