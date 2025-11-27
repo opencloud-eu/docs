@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 id: best-practice
 title: Best practice
 description: Best practice how to use Spaces
