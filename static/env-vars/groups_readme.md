@@ -1,6 +1,6 @@
 ---
 title: Groups
-date: 2025-11-12T16:20:03.607824+01:00
+date: 2025-11-27T22:19:23.795368+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/groups
@@ -13,9 +13,39 @@ geekdocCollapseSection: true
 ## Abstract
 
 
-The `groups` service provides group management functionality within OpenCloud.
+The `groups` service provides the CS3 Groups API for OpenCloud. It is responsible for managing group information and memberships within the OpenCloud instance.
+
+This service implements the CS3 identity group provider interface, allowing other services to query and manage groups. It works as a backend provider for the `graph` service when using the CS3 backend mode.
+
 
 ## Table of Contents
 
+* [Backend Integration](#backend-integration)
+* [API](#api)
+* [Usage](#usage)
+* [Scalability](#scalability)
 
+## Backend Integration
+
+The groups service can work with different storage backends:
+- LDAP integration through the graph service
+- Direct CS3 API implementation
+
+When using the `graph` service with the CS3 backend (`GRAPH_IDENTITY_BACKEND=cs3`), the graph service queries group information through this service.
+
+## API
+
+The service provides CS3 gRPC APIs for:
+- Listing groups
+- Getting group information
+- Finding groups by name or ID
+- Managing group memberships
+
+## Usage
+
+The groups service is only used internally by other OpenCloud services and not being accessed directly by clients. The `frontend` and `ocs` services translate HTTP API requests into CS3 API calls to this service.
+
+## Scalability
+
+Since the groups service queries backend systems (like LDAP through the configured identity backend), it can be scaled horizontally without additional configuration when using stateless backends.
 

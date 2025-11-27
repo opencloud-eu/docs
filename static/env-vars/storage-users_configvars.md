@@ -1,20 +1,16 @@
 
-2025-11-13-17-19-28
+2025-11-27-22-15-43
 
 # Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-|  | next |  |  |
+|  | 4.0.0 |  |  |
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
 |`STORAGE_USERS_SERVICE_NAME`| 1.0.0 |string|`Service name to use. Change this when starting an additional storage provider with a custom configuration to prevent it from colliding with the default 'storage-users' service.`|`storage-users`|
-|`OC_TRACING_ENABLED`<br/>`STORAGE_USERS_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`STORAGE_USERS_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`STORAGE_USERS_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`STORAGE_USERS_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`STORAGE_USERS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`STORAGE_USERS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -113,8 +109,8 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_POSIX_WATCH_TYPE`| 1.0.0 |string|`Type of the watcher to use for getting notified about changes to the filesystem. Currently available options are 'inotifywait' (default), 'cephfs', 'gpfswatchfolder' and 'gpfsfileauditlogging'.`|``|
 |`STORAGE_USERS_POSIX_WATCH_PATH`| 1.0.0 |string|`Path to the watch directory/file. Only applies to the 'gpfsfileauditlogging' and 'inotifywait' watcher, in which case it is the path of the file audit log file/base directory to watch.`|``|
 |`STORAGE_USERS_POSIX_WATCH_NOTIFICATION_BROKERS,STORAGE_USERS_POSIX_WATCH_FOLDER_KAFKA_BROKERS`| 1.0.0 |string|`Comma-separated list of kafka brokers to read the watchfolder events from.`|``|
-|`STORAGE_USERS_POSIX_WATCH_ROOT`| next |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`|``|
-|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| next |Duration|`Frequency to log inotify stats.`|`5m0s`|
+|`STORAGE_USERS_POSIX_WATCH_ROOT`| 4.0.0 |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`|``|
+|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| 4.0.0 |Duration|`Frequency to log inotify stats.`|`5m0s`|
 |`STORAGE_USERS_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by the data gateway provided by the frontend service or the user if directly exposed.`|`http://localhost:9158/data`|
 |`STORAGE_USERS_DATA_GATEWAY_URL`| 1.0.0 |string|`URL of the data gateway server`|`http://localhost:9140/data`|
 |`STORAGE_USERS_TRANSFER_EXPIRES`| 1.0.0 |int64|`The time after which the token for upload postprocessing expires`|`86400`|

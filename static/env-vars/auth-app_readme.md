@@ -1,6 +1,6 @@
 ---
 title: Auth-App
-date: 2025-11-13T17:22:55.093061+01:00
+date: 2025-11-27T22:19:23.793388+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-app
@@ -30,7 +30,7 @@ PROXY_ENABLE_APP_AUTH=false      # mandatory, disables app authentication. In ca
 * [Managing App Tokens](#managing-app-tokens)
   * [Via API](#via-api)
   * [Via Impersonation API](#via-impersonation-api)
-  * [Via CLI (developer only)](#via-cli-developer-only))
+  * [Via CLI (developer only)](#via-cli-(developer-only))
 * [Authenticating using App Tokens](#authenticating-using-app-tokens)
 
 ## App Tokens

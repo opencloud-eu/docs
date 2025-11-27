@@ -2,10 +2,6 @@ Environment variables for the **ocm** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`OCM_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`OCM_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`OCM_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`OCM_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`OCM_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`OCM_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`OCM_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -40,6 +36,8 @@ Environment variables for the **ocm** service
 |`OCM_OCMD_EXPOSE_RECIPIENT_DISPLAY_NAME`| 1.0.0 |bool|`Expose the display name of OCM share recipients.`|`false`|
 |`OCM_SCIENCEMESH_PREFIX`| 1.0.0 |string|`URL path prefix for the ScienceMesh service. Note that the string must not start with '/'.`|`sciencemesh`|
 |`OCM_MESH_DIRECTORY_URL`| 1.0.0 |string|`URL of the mesh directory service.`|``|
+|`OCM_DIRECTORY_SERVICE_URLS`| 3.5.0 |string|`Space delimited URLs of the directory services.`|``|
+|`OCM_INVITE_ACCEPT_DIALOG`| 3.5.0 |string|`/open-cloud-mesh/accept-invite;The frontend URL where to land when receiving an invitation`|`/open-cloud-mesh/accept-invite`|
 |`OCM_OCM_INVITE_MANAGER_DRIVER`| 1.0.0 |string|`Driver to be used to persist OCM invites. Supported value is only 'json'.`|`json`|
 |`OCM_OCM_INVITE_MANAGER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM invite data will be stored. This file is maintained by the instance and must not be changed manually. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/ocm.`|`/Users/t.schweiger/.opencloud/storage/ocm/ocminvites.json`|
 |`OCM_OCM_INVITE_MANAGER_TOKEN_EXPIRATION`| 1.0.0 |Duration|`Expiry duration for invite tokens.`|`24h0m0s`|

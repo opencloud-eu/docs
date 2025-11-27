@@ -1,6 +1,6 @@
 ---
 title: Auth-Bearer
-date: 2025-11-13T17:22:55.093335+01:00
+date: 2025-11-27T22:19:23.793732+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-bearer
@@ -18,7 +18,7 @@ The OpenCloud Auth Bearer service communicates with the configured OpenID Connec
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-auth-service-family)
+* [The `auth` Service Family](#the-`auth`-service-family)
 * [Built in OpenID Connect Identity Provider](#built-in-openid-connect-identity-provider)
 * [Scalability](#scalability)
 

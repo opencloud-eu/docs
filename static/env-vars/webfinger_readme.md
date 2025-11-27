@@ -1,6 +1,6 @@
 ---
 title: Webfinger
-date: 2025-11-13T17:22:55.097774+01:00
+date: 2025-11-27T22:19:23.800612+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/webfinger
