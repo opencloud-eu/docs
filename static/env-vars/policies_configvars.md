@@ -21,7 +21,3 @@ Environment variables for the **policies** service
 |`POLICIES_ENGINE_TIMEOUT`| 1.0.0 |Duration|`Sets the timeout the rego expression evaluation can take. Rules default to deny if the timeout was reached. See the Environment Variable Types description for more details.`|`10s`|
 |`POLICIES_ENGINE_MIMES`| 1.0.0 |string|`Sets the mimes file path which maps mimetypes to associated file extensions. See the text description for details.`|``|
 |`POLICIES_POSTPROCESSING_QUERY`| 1.0.0 |string|`Defines the 'Complete Rules' variable defined in the rego rule set this step uses for its evaluation. Defaults to deny if the variable was not found.`|``|
-|`OC_TRACING_ENABLED`<br/>`POLICIES_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`POLICIES_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`POLICIES_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`POLICIES_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|

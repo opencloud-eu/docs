@@ -1,6 +1,6 @@
 ---
 title: Search
-date: 2025-11-13T17:22:55.096414+01:00
+date: 2025-11-27T22:56:02.334322+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/search
@@ -29,7 +29,7 @@ Consider using dedicated hardware for this service in case more resources are ne
   * [Bleve](#bleve)
   * [OpenSearch](#opensearch)
 * [Query language](#query-language)
-* [Content analysis / Extraction](#content-analysis--extraction)
+* [Content analysis / Extraction](#content-analysis-/-extraction)
   * [Basic](#basic)
   * [Tika](#tika)
 * [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)

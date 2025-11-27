@@ -2,10 +2,6 @@ Environment variables for the **thumbnails** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`THUMBNAILS_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`THUMBNAILS_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`THUMBNAILS_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`THUMBNAILS_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`THUMBNAILS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`THUMBNAILS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`THUMBNAILS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -26,7 +22,7 @@ Environment variables for the **thumbnails** service
 |`OC_CORS_ALLOW_HEADERS`<br/>`THUMBNAILS_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`[Authorization Origin Content-Type Accept X-Requested-With X-Request-Id Cache-Control]`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`THUMBNAILS_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS.See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`true`|
 |`THUMBNAILS_RESOLUTIONS`| 1.0.0 |[]string|`The supported list of target resolutions in the format WidthxHeight like 32x32. You can define any resolution as required. See the Environment Variable Types description for more details.`|`[16x16 32x32 64x64 128x128 1080x1920 1920x1080 2160x3840 3840x2160 4320x7680 7680x4320]`|
-|`THUMBNAILS_FILESYSTEMSTORAGE_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store the thumbnails. If not defined, the root directory derives from $OC_BASE_DATA_PATH/thumbnails.`|`/Users/t.schweiger/.opencloud/thumbnails`|
+|`THUMBNAILS_FILESYSTEMSTORAGE_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store the thumbnails. If not defined, the root directory derives from $OC_BASE_DATA_PATH/thumbnails.`|`/var/lib/opencloud/thumbnails`|
 |`OC_INSECURE`<br/>`THUMBNAILS_WEBDAVSOURCE_INSECURE`| 1.0.0 |bool|`Ignore untrusted SSL certificates when connecting to the webdav source.`|`false`|
 |`OC_INSECURE`<br/>`THUMBNAILS_CS3SOURCE_INSECURE`| 1.0.0 |bool|`Ignore untrusted SSL certificates when connecting to the CS3 source.`|`false`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`eu.opencloud.api.gateway`|

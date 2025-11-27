@@ -1,6 +1,6 @@
 ---
 title: Clientlog Service
-date: 2025-11-13T17:22:55.094245+01:00
+date: 2025-11-27T22:56:02.332344+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/clientlog

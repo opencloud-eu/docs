@@ -1,6 +1,6 @@
 ---
 title: Proxy
-date: 2025-11-13T17:22:55.096208+01:00
+date: 2025-11-27T22:56:02.334185+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/proxy
@@ -36,8 +36,8 @@ The proxy service is the only service communicating to the outside and needs the
 * [Presigned Urls](#presigned-urls)
 * [Special Settings](#special-settings)
 * [Metrics](#metrics)
-  * [1) Single Process Mode](#1-single-process-mode)
-  * [2) Standalone Mode](#2-standalone-mode)
+  * [1) Single Process Mode](#1)-single-process-mode)
+  * [2) Standalone Mode](#2)-standalone-mode)
   * [Available Metrics](#available-metrics)
   * [Prometheus Configuration](#prometheus-configuration)
 
