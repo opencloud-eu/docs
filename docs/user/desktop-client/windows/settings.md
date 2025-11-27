@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 id: settings
-title: Settings
-description: Change settings in OpenCloud Desktop
+title: Settings in Windows
+description: Settings in OpenCloud Desktop for Windows
 draft: false
 ---
 
@@ -20,11 +20,9 @@ You can customize OpenCloud Desktop settings by following these steps:
 
 ### General Settings
 
-- Enable or disable auto-start when log in
-- Choose whether to show desktop notifications
 - Set your preferred language
 
-  <img src={require(".././img/settings/settings-general.png").default} alt="Settings-general" width="400"/>
+  <img src={require(".././img/settings/windows/settings-general.png").default} alt="Settings-general" width="400"/>
 
 ### Advanced Settings
 

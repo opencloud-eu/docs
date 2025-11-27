@@ -20,10 +20,9 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 ### Allgemeine Einstellungen
 
-- Aktivieren oder Deaktivieren des automatischen Starts bei der Anmeldung
 - Legen Sie Ihre bevorzugte Sprache fest
 
-  <img src={require(".././img/settings/settings-general.png").default} alt="settings-general" width="400"/>
+  <img src={require(".././img/settings/windows/settings-general.png").default} alt="settings-general" width="400"/>
 
 ### Erweiterte Einstellungen
 
