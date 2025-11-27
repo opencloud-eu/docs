@@ -118,7 +118,7 @@
   "sidebar.user.category.OpenCloud Desktop": {
     "message": "OpenCloud Desktop",
     "description": "The label for category OpenCloud Desktop in sidebar user"
-  },
+  }, 
   "sidebar.user.category.OpenCloud Desktop.link.generated-index.description": {
     "message": "Anleitungen zu OpenCloud Desktop.",
     "description": "The generated-index page description for category OpenCloud Desktop in sidebar user"
@@ -226,5 +226,10 @@
   "sidebar.user.category.Overview.link.generated-index.description": {
     "message": "Übersicht der Benutzeroberfläche in der OpenCloud iOS App.",
     "description": "The generated-index page description for category Overview in sidebar tutorialSidebar"
+  },
+  "sidebar.user.category.Common functionality": {
+    "message": "Allgemeine Funktionen",
+    "description": "Label für die Kategorie Common Functionality in der deutschen Sidebar"
   }
+
 }

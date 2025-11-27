@@ -17,7 +17,7 @@ You can synchronize multiple accounts from different OpenCloud servers to your l
 
   <img src={require(".././img/multiple-accounts/multiple-accounts-add-account.png").default} alt="Add accounts" width="400"/>
 
-- Follow the [standard setup process](/docs/user/desktop-client/set-up):
+- Follow the standard setup process:
   - Enter the server URL
   - Log in with your credentials
   - Authorize access

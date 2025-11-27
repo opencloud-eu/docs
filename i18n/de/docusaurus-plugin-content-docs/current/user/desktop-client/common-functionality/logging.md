@@ -14,24 +14,24 @@ Wenn Sie Protokolle für die Fehlersuche erstellen müssen, gehen Sie wie folgt 
 
 - Klicken Sie auf Einstellungen → Erweitert → Log-Einstellungen
 
-<img src={require("./img/logging/logging-access.png").default} alt="logging access" width="400"/>
+<img src={require(".././img/logging/logging-access.png").default} alt="logging access" width="400"/>
 
 ## Aktivieren Sie die Protokollierung
 
 - Aktivieren Sie im Fenster Protokollausgabe das Kontrollkästchen Protokollierung in temporärem Ordner aktivieren.
 - Um dem Support-Team und den Entwicklern zu helfen, ist es hilfreich, das Log Http traffic zu aktivieren
 
-<img src={require("./img/logging/logging-enable.png").default} alt="enable logging" width="400"/>
+<img src={require(".././img/logging/logging-enable.png").default} alt="enable logging" width="400"/>
 
 ## Finden Sie die Log-Dateien
 
 - Klicken Sie auf Ordner öffnen, um auf die Protokolle zuzugreifen.
 
-<img src={require("./img/logging/logging-open-folder.png").default} alt="open logfile folder" width="400"/>
+<img src={require(".././img/logging/logging-open-folder.png").default} alt="open logfile folder" width="400"/>
 
 - Wählen Sie die Protokolldateien für den Zeitraum aus, in dem das Problem aufgetreten ist.
 
-<img src={require("./img/logging/logging-logfiles.png").default} alt="logfiles overview" width="400"/>
+<img src={require(".././img/logging/logging-logfiles.png").default} alt="logfiles overview" width="400"/>
 
 :::note
 Diese Protokolle können helfen, Probleme mit OpenCloud Desktop zu diagnostizieren und zu beheben.

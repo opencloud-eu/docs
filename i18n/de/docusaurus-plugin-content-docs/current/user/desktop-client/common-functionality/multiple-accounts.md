@@ -15,9 +15,9 @@ Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen
 - Öffnen Sie den OpenCloud Desktop
 - Klicken Sie auf Konto hinzufügen
 
-<img src={require("./img/multiple-accounts/multiple-accounts-add-account.png").default} alt="add accounts" width="400"/>
+<img src={require(".././img/multiple-accounts/multiple-accounts-add-account.png").default} alt="add accounts" width="400"/>
 
-- Folgen Sie dem [standard Einrichtungsprozess](./set-up):
+- Folgen Sie dem standard Einrichtungsprozess:
   - Geben Sie die Server-URL ein
   - Melden Sie sich mit Ihren Anmeldedaten an
   - Autorisieren Sie den Zugang
@@ -27,7 +27,7 @@ Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen
 - Nachdem Sie mehrere Konten hinzugefügt haben, werden diese in der Kontoübersicht im Einstellungsmenü angezeigt
 - Sie können einfach zwischen ihnen wechseln, um die Synchronisierungseinstellungen für jedes Konto separat zu verwalten
 
-<img src={require("./img/multiple-accounts/multiple-accounts-switch-accounts.png").default} alt="switch accounts" width="400"/>
+<img src={require(".././img/multiple-accounts/multiple-accounts-switch-accounts.png").default} alt="switch accounts" width="400"/>
 
 ## Wie Dateien lokal gespeichert werden
 
@@ -37,7 +37,7 @@ Sie können mehrere Konten von verschiedenen OpenCloud-Servern mit Ihrem lokalen
   - OpenCloud (2) (für das zweite Konto)
   - OpenCloud (3) (für das dritte Konto), und so weiter
 
-<img src={require("./img/multiple-accounts/multiple-accounts-locally.png").default} alt="multiple accounts in explorer or finder" width="400"/>
+<img src={require(".././img/multiple-accounts/multiple-accounts-locally.png").default} alt="multiple accounts in explorer or finder" width="400"/>
 
 :::note
 Diese Einrichtung stellt sicher, dass Dateien von verschiedenen Konten organisiert bleiben und nicht vermischt werden.

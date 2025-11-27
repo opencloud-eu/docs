@@ -13,7 +13,7 @@ Wenn Dateien sowohl lokal als auch auf dem Server geändert werden, bevor eine S
 - `conflict.txt` (Server-Version)
 - `conflict (conflicted copy  JJJJ-MM-TT HHMMSS).txt` (lokale Version)
 
-<img src={require("./img/conflict-files/conflict-file.png").default} alt="Konfliktdateien im Explorer" width="1920"/>
+<img src={require(".././img/conflict-files/conflict-file.png").default} alt="Konfliktdateien im Explorer" width="1920"/>
 
 Dies passiert in der Regel, wenn:
 
@@ -26,7 +26,7 @@ In der Übersicht des Desktop-Clients erscheint eine Benachrichtigung, wenn Konf
 Das bedeutet, dass mehrere Versionen derselben Datei existieren – häufig, weil Änderungen auf verschiedenen Geräten vorgenommen wurden, bevor eine Synchronisierung erfolgen konnte.  
 Die Benachrichtigung dient als Hinweis, dass Sie die Konflikte prüfen und entscheiden sollten, wie die Versionen zusammengeführt oder behalten werden.
 
-<img src={require("./img/conflict-files/conflict-info.png").default} alt="Benachrichtigung zu Dateikonflikten im Desktop-Client" width="500"/>
+<img src={require(".././img/conflict-files/conflict-info.png").default} alt="Benachrichtigung zu Dateikonflikten im Desktop-Client" width="500"/>
 
 ## So lösen Sie Dateikonflikte manuell
 

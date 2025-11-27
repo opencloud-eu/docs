@@ -1,62 +1,57 @@
 ---
 sidebar_position: 3
 id: sync-settings-linux
-title: Synchronization Settings in Linux
-description: Synchronisation Settings in Linux
+title: Synchronization Settings on Linux
+description: Synchronisation Settings on Linux
 draft: false
 ---
 
-# How to Access Synchronization Settings
+# Linux: Synchronization Settings
 
-## Synchronization Settings
+On Linux, files are downloaded to your system. You can configure what to sync and how often through the OpenCloud Desktop Client.
 
-- Open the OpenCloud Desktop
-- Go to the Account View
-- Click on the Three-Dot Menu (...) next to the Space you want to configure
+## Access Synchronization Settings
 
-  <img src={require(".././img/sync-settings/sync-settings-three-dot.png").default} alt="Admin spaces" width="400"/>
+1. Open the OpenCloud Desktop Client.
+2. Go to the Account View.
+3. Click the three-dot menu (...) next to the Space you want to configure.
 
-- Choose from the following options:
+<img src={require(".././img/sync-settings/sync-settings-three-dot.png").default} alt="Account spaces menu" width="400"/>
 
-### Synchronization Options
+## Synchronization Options
 
-<img src={require(".././img/sync-settings/sync-settings-menu.png").default} alt="Synchronization options menu" width="400"/>
+<img src={require(".././img/sync-settings/sync-settings-menu.png").default} alt="Choose what to sync" width="400"/>
 
-### Show in Explorer or Finder
+### Show in Linux file manager
 
-- Opens the selected Space directly in your File Explorer (Windows) or Finder (Mac)
+- Opens the Space in your Linux desktop environment file manager.
 
 ### Show in Web Browser
 
-- Opens the Space in your web browser
-- If you're not logged in, you may need to sign in first
+- Opens the Space in your web browser.
+- You may need to sign in if not already logged in.
 
 ### Force Sync Now
 
-- Manually forces an immediate synchronization of the Space
-- Useful if you want to ensure all changes are uploaded/downloaded right away
+- Manually triggers an immediate synchronization.
 
 ### Pause Sync
 
-- Temporarily stops synchronization for the Space
-- Can be resumed anytime by selecting Resume Sync
+- Temporarily stops synchronization.
+- Resume anytime via **Resume Sync**.
 
 ### Remove Sync Folder Connection
 
-- Stops syncing the Space, but does not delete local files
-- The Space remains on the server, and you can add it again later
+- Stops syncing the Space but does not delete local files.
+- The Space remains on the server.
 
 ### Choose What to Sync
 
-- Opens a window where you can select specific folders from the Space to sync
-- Helps save storage space by syncing only necessary files
+- Select specific folders to sync locally.
+- Helps save disk space by keeping only necessary files synced.
 
-  <img src={require(".././img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
+<img src={require(".././img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
 
 :::note
-Files and folders that are not synced will no longer be available on your local machine.
-:::
-
-:::tip
-Adjusting these settings allows you to optimize storage space and network usage, ensuring only the files you need are kept in sync.
+Files and folders not selected for sync will not be available locally.
 :::

@@ -18,6 +18,7 @@ AppImageLauncher integrates AppImages into your system and manages them like reg
 Follow the installation instructions here:
 
 [AppImageLauncher Installation Guide](https://github.com/TheAssassin/AppImageLauncher/releases/tag/v3.0.0-beta-3)
+lation
 
 ## Download the OpenCloud AppImage
 
