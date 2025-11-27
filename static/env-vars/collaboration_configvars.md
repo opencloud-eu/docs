@@ -1,7 +1,7 @@
 Environment variables for the **collaboration** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|:---|
+|---|---|---|---|---|
 |`COLLABORATION_SERVICE_NAME`| 3.6.0 |string|`The name of the service which is registered. You only need to change this when more than one collaboration service is needed.`|`collaboration`|
 |`COLLABORATION_APP_NAME`| 1.0.0 |string|`The name of the app which is shown to the user. You can chose freely but you are limited to a single word without special characters or whitespaces. We recommend to use pascalCase like 'CollaboraOnline'.`|`Collabora`|
 |`COLLABORATION_APP_PRODUCT`| 1.0.0 |string|`The WebOffice app, either Collabora, OnlyOffice, Microsoft365 or MicrosoftOfficeOnline.`|``|
@@ -34,11 +34,7 @@ Environment variables for the **collaboration** service
 |`COLLABORATION_WOPI_SHORTTOKENS`| 1.0.0 |bool|`Use short access tokens for WOPI access. This is useful for office packages, like Microsoft Office Online, which have URL length restrictions. If enabled, a persistent store must be configured.`|`false`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata.`|`eu.opencloud.api.gateway`|
 |`COLLABORATION_CS3API_DATAGATEWAY_INSECURE`| 1.0.0 |bool|`Connect to the CS3API data gateway insecurely.`|`false`|
-|`COLLABORATION_CS3API_APP_REGISTRATION_INTERVAL`| next |Duration|`The interval at which the app provider registers itself.`|`30s`|
-|`OC_TRACING_ENABLED`<br/>`COLLABORATION_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`COLLABORATION_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`COLLABORATION_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`COLLABORATION_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
+|`COLLABORATION_CS3API_APP_REGISTRATION_INTERVAL`| 4.0.0 |Duration|`The interval at which the app provider registers itself.`|`30s`|
 |`OC_LOG_LEVEL`<br/>`COLLABORATION_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`COLLABORATION_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`COLLABORATION_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|

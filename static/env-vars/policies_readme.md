@@ -1,6 +1,6 @@
 ---
 title: Policies
-date: 2025-11-13T17:22:55.095985+01:00
+date: 2025-11-27T21:19:44.786523+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/policies
@@ -24,7 +24,7 @@ Policies are written in the [rego query language](https://www.openpolicyagent.or
 * [Modules](#modules)
   * [gRPC API](#grpc-api)
   * [Proxy Middleware](#proxy-middleware)
-  * [Event Service (Postprocessing)](#event-service-postprocessing)
+  * [Event Service (Postprocessing)](#event-service-(postprocessing))
 * [Defining Policies to Evaluate](#defining-policies-to-evaluate)
 * [Setting the Query Configuration](#setting-the-query-configuration)
   * [Proxy](#proxy)

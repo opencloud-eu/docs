@@ -1,11 +1,7 @@
 Environment variables for the **clientlog** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`CLIENTLOG_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`CLIENTLOG_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`CLIENTLOG_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`CLIENTLOG_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
+|---|---|---|---|---|
 |`OC_LOG_LEVEL`<br/>`CLIENTLOG_USERLOG_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`CLIENTLOG_USERLOG_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`CLIENTLOG_USERLOG_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|

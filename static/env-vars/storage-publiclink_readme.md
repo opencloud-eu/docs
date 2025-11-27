@@ -1,6 +1,6 @@
 ---
-title: Storage Public Link
-date: 2025-11-12T16:20:03.610455+01:00
+title: Storage PublicLink
+date: 2025-11-27T21:19:44.788125+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/storage-publiclink
@@ -13,9 +13,48 @@ geekdocCollapseSection: true
 ## Abstract
 
 
-The `storage-publiclink` service handles public link functionality for shared resources within OpenCloud.
+The `storage-publiclink` service provides storage backend functionality for public link shares in OpenCloud. It implements the CS3 storage provider interface specifically for working with public link shared resources.
+
 
 ## Table of Contents
 
+* [Overview](#overview)
+* [Integration](#integration)
+* [Storage Registry](#storage-registry)
+* [Access Control](#access-control)
+* [Scalability](#scalability)
 
+## Overview
+
+This service is part of the storage services family and is responsible for:
+- Providing access to publicly shared resources
+- Handling anonymous access to shared content
+
+## Integration
+
+The storage-publiclink service integrates with:
+- `sharing` service - Manages and persists public link shares
+- `frontend` and `ocdav` - Provide HTTP/WebDAV access to public links
+- Storage drivers - Accesses the actual file content
+
+## Storage Registry
+
+The service is registered in the gateway's storage registry with:
+- Provider ID: `7993447f-687f-490d-875c-ac95e89a62a4`
+- Mount point: `/public`
+- Space types: `grant` and `mountpoint`
+
+See the `gateway` README for more details on storage registry configuration.
+
+## Access Control
+
+Public link shares can be configured with:
+- Password protection
+- Expiration dates
+- Read-only or read-write permissions
+- Download limits
+
+## Scalability
+
+The storage-publiclink service can be scaled horizontally.
 

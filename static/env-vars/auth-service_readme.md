@@ -1,6 +1,6 @@
 ---
 title: Auth-Service
-date: 2025-11-13T17:22:55.093816+01:00
+date: 2025-11-27T21:19:44.783575+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-service
@@ -18,7 +18,7 @@ The OpenCloud Auth Service is used to authenticate service accounts. Compared to
 
 ## Table of Contents
 
-* [The `auth` Service Family](#the-auth-service-family)
+* [The `auth` Service Family](#the-`auth`-service-family)
 * [Service Accounts](#service-accounts)
 * [Configuring Service Accounts](#configuring-service-accounts)
 

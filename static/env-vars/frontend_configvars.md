@@ -1,10 +1,10 @@
 
-2025-11-13-17-19-28
+2025-11-27-21-16-07
 
 # Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
-|---|---|---|:---|
+|---|---|---|---|
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
@@ -24,11 +24,7 @@
 Environment variables for the **frontend** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`FRONTEND_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`FRONTEND_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`FRONTEND_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`FRONTEND_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
+|---|---|---|---|---|
 |`OC_LOG_LEVEL`<br/>`FRONTEND_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`FRONTEND_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`FRONTEND_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -61,6 +57,7 @@ Environment variables for the **frontend** service
 |`FRONTEND_SEARCH_MIN_LENGTH`| 1.0.0 |int|`Minimum number of characters to enter before a client should start a search for Share receivers. This setting can be used to customize the user experience if e.g too many results are displayed.`|`3`|
 |`OC_EDITION`<br/>`FRONTEND_EDITION`| 1.0.0 |string|`Edition of OpenCloud. Used for branding purposes.`|``|
 |`OC_DISABLE_SSE`<br/>`FRONTEND_DISABLE_SSE`| 1.0.0 |bool|`When set to true, clients are informed that the Server-Sent Events endpoint is not accessible.`|`false`|
+|`FRONTEND_DISABLE_RADICALE`| 4.0.0 |bool|`When set to true, clients are informed that the Radicale (CalDAV/CardDAV) is not accessible.`|`false`|
 |`FRONTEND_DEFAULT_LINK_PERMISSIONS`| 1.0.0 |int|`Defines the default permissions a link is being created with. Possible values are 0 (= internal link, for instance members only) and 1 (= public link with viewer permissions). Defaults to 1.`|`1`|
 |`OC_URL`<br/>`FRONTEND_PUBLIC_URL`| 1.0.0 |string|`The public facing URL of the OpenCloud frontend.`|`https://localhost:9200`|
 |`OC_MAX_CONCURRENCY`<br/>`FRONTEND_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`1`|

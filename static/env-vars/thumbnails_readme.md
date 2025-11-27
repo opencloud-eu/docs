@@ -1,6 +1,6 @@
 ---
 title: Thumbnails
-date: 2025-11-13T17:22:55.0974+01:00
+date: 2025-11-27T21:19:44.788712+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/thumbnails

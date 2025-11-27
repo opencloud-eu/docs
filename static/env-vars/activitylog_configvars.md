@@ -1,11 +1,7 @@
 Environment variables for the **activitylog** service
 
 | Name | Introduction Version | Type | Description | Default Value |
-|---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`ACTIVITYLOG_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`ACTIVITYLOG_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`ACTIVITYLOG_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`ACTIVITYLOG_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
+|---|---|---|---|---|
 |`OC_LOG_LEVEL`<br/>`ACTIVITYLOG_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`ACTIVITYLOG_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`ACTIVITYLOG_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -43,5 +39,5 @@ Environment variables for the **activitylog** service
 |`OC_DEFAULT_LANGUAGE`| 1.0.0 |string|`The default language used by services and the WebUI. If not defined, English will be used as default. See the documentation for more details.`|`en`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`ACTIVITYLOG_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|``|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`ACTIVITYLOG_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|``|
-|`ACTIVITYLOG_WRITE_BUFFER_DURATION`| next |Duration|`The duration to wait before flushing the write buffer. This is used to reduce the number of writes to the store.`|`10s`|
-|`ACTIVITYLOG_MAX_ACTIVITIES`| next |int|`The maximum number of activities to keep in the store per resource. If the number of activities exceeds this value, the oldest activities will be removed.`|`6000`|
+|`ACTIVITYLOG_WRITE_BUFFER_DURATION`| 4.0.0 |Duration|`The duration to wait before flushing the write buffer. This is used to reduce the number of writes to the store.`|`10s`|
+|`ACTIVITYLOG_MAX_ACTIVITIES`| 4.0.0 |int|`The maximum number of activities to keep in the store per resource. If the number of activities exceeds this value, the oldest activities will be removed.`|`6000`|

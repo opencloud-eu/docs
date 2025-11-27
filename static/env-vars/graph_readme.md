@@ -1,6 +1,6 @@
 ---
 title: Graph
-date: 2025-11-13T17:22:55.095124+01:00
+date: 2025-11-27T21:19:44.784725+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/graph
@@ -94,14 +94,6 @@ The `graph` service can use a configured store via `GRAPH_CACHE_STORE`. Possible
   -   `noop`: Stores nothing. Useful for testing. Not recommended in production environments.
 
 Other store types may work but are not supported currently.
-
-:::note 
-The service can only be scaled if not using `memory` store and the stores are configured identically over all instances!
-:::
-
-:::note 
-If you have used one of the deprecated stores, you should reconfigure to one of the supported ones as the deprecated stores will be removed in a later version.
-:::
 
 Store specific notes:
   -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OC_CACHE_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
@@ -221,3 +213,5 @@ The output of this command includes the following information for each role:
 |                                      |          |                                |                                | libre.graph/driveItem/basic/read         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 ```
+
+

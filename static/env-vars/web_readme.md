@@ -1,6 +1,6 @@
 ---
 title: Web
-date: 2025-11-13T17:22:55.097596+01:00
+date: 2025-11-27T21:19:44.789342+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/web
@@ -38,7 +38,7 @@ The web service also provides a minimal API for branding functionality like chan
 
 If you want to use your custom compiled web client assets instead of the embedded ones,
 then you can do that by setting the `WEB_ASSET_CORE_PATH` variable to point to your compiled files.
-See [OpenCloud Web / Getting Started](https://docs.opencloud.eu/docs/dev/web/getting-started) for more details.
+See [OpenCloud Web / Getting Started](https://docs.opencloud.eu/clients/web/getting-started/) for more details.
 
 ## Web UI Configuration
 
