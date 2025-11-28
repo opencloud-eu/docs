@@ -30,11 +30,13 @@ expose access to all your data, consider using a public link instead.
 
 - Go to the App Tokens section in your OpenCloud account settings.
 - Click on “+ New” to create a new token.
-- Enter a name for the token (e.g., "WebDAV Client").
-- Select an expiration date for added security.
-- Click Create.
 
   <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400"/>
+
+- Enter a name for the token (e.g., "WebDAV Client").
+- Select an expiration date for added security.
+- Click Confirm.
+  <img src={require("./img/app-tokens/enter-name.png").default} alt="Enter the name an exparation date" width="400"/>
 
 ## Copy the App Token
 

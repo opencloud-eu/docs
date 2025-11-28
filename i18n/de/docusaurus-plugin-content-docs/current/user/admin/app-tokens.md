@@ -30,11 +30,14 @@ Wenn Sie keinen vollständigen Zugriff gewähren möchten, verwenden Sie stattde
 
 - Gehen Sie in Ihren OpenCloud-Kontoeinstellungen zum Bereich „App-Tokens“.
 - Klicken Sie auf „+ Neu“, um ein neues Token zu erstellen.
-- Geben Sie einen Namen für das Token ein (z. B. „WebDAV Client“).
-- Wählen Sie ein Ablaufdatum, um die Sicherheit zu erhöhen.
-- Klicken Sie auf „Erstellen“.
 
   <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400"/>
+
+- Geben Sie einen Namen für das Token ein (z. B. „WebDAV Client“).
+- Wählen Sie ein Ablaufdatum, um die Sicherheit zu erhöhen.
+- Klicken Sie auf „Bestätigen“.
+
+  <img src={require("./img/app-tokens/enter-name.png").default} alt="Namen eingeben und Ablaufdatum wählen" width="400"/>
 
 ## App-Token kopieren
 
