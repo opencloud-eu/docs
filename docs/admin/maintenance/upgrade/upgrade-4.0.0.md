@@ -11,13 +11,14 @@ import TabItem from '@theme/TabItem'
 
 # Upgrading to OpenCloud 4.0.0
 
-This guide explains how to upgrade from the previous stable opencloud_full Compose setup to the new [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git) repository structure.  
-It covers both deployment types:
+This guide explains how to upgrade from the previous stable opencloud_full Compose setup to the new
+[opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git) repository structure.  
+It covers both types of persistent storage used in earlier deployments:
 
-- Internal (in-container) data — setups where data is stored inside the container and is removed when the container is replaced.
-- Externalized data directories — setups where data is mounted outside the containers (host-mounted volumes) and persists independently of container updates.
+- Bind mounts: host directories mapped into containers.
+- Docker named volumes: volumes managed directly by Docker.
 
-Following this guide, you can migrate safely to the stable v4.0.0 release of OpenCloud.
+Following this guide, you can safely migrate to the stable v4.0.0 release of OpenCloud.
 
 ## Before You Begin
 
@@ -121,17 +122,17 @@ Transfer your existing environment variables to the new opencloud-compose struct
 
 Go inside the container:
 
-If your config is stored in host directories:
+If your config is stored in host directories (change `<your-home-directory>` to your home directory. In our example it is `/mnt` ):
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
+docker run --rm -it --entrypoint /bin/sh -v <your-home-directory>/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
 ```
 
-or, if you use Docker Named Volumes (replace with your volume name):
+or, if you use Docker Named Volumes (replace `<your-named-volume>`with your volume name. In our example it is `opencloud_full_opencloud-config`):
 
 ```bash
 docker run --rm -it --entrypoint /bin/sh \
-  -v opencloud_full_opencloud-config:/etc/opencloud \
+  -v <your-named-volume>:/etc/opencloud \
   opencloudeu/opencloud:4.0.0
 ```
 
