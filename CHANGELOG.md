@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @kulmann, @phil-davis
+@Heiko-Pohl, @Svanvith, @kulmann, @micbar, @phil-davis
 
 ### 👷 Admin Documentation
 
+- Update docs with latest env vars [[#534](https://github.com/opencloud-eu/docs/pull/534)]
 - fix: adjust bare-metal install guide [[#536](https://github.com/opencloud-eu/docs/pull/536)]
 
 ### 👤 User Documentation
