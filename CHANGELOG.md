@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @kulmann, @micbar, @phil-davis
+@Heiko-Pohl, @Svanvith, @dschmidt, @kulmann, @micbar, @phil-davis
+
+### :octocat: Developer Documentation
+
+- embed-mode: add documentation for new opencloud-embed:share-links event [[#510](https://github.com/opencloud-eu/docs/pull/510)]
 
 ### 👷 Admin Documentation
 
