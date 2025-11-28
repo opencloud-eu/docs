@@ -88,6 +88,12 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   make -C opencloud build
   ```
 
+- Navigate into the opencloud subdirectory that was just built:
+
+  ```bash
+  cd opencloud
+  ```
+
 - Initialize OpenCloud with insecure configuration and set an admin password:
 
   ```bash
