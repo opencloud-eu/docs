@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @kulmann, @phil-davis
+@Heiko-Pohl, @Svanvith, @kulmann, @phil-davis
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- add vfs for Desktop Client Windows [[#528](https://github.com/opencloud-eu/docs/pull/528)]
 - feat: more details about app tokens [[#530](https://github.com/opencloud-eu/docs/pull/530)]
 - change screenshot and text for release 4 [[#531](https://github.com/opencloud-eu/docs/pull/531)]
 
