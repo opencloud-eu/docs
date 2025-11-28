@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Willkommen
+description: Willkommen
 ---
 
 <!-- markdownlint-disable MD041 -->
@@ -18,6 +20,34 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
 Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
+
+## Was ist OpenCloud?
+
+OpenCloud ist die File-Sharing- und Kollaborationslösung der Heinlein Gruppe.
+
+Durch intelligentes Dateimanagement und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und von überall auf Daten zugreifen und gemeinsam daran arbeiten – barrierefrei und mit hoher Produktivität.
+
+Der Zugriff auf OpenCloud ist auf verschiedene Arten möglich – je nach Gerät und Anwendungsfall:
+
+- Der [Web Client](./general/) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
+- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
+- Die mobilen Apps für [iOS](./ios-app/) und [Android](./android-app/) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
+
+Jeder Client ist für einen bestimmten Anwendungsfall konzipiert:  
+der Web Client für die umfassende Online-Nutzung, der Desktop Client für die lokale Synchronisierung und die mobilen Apps für produktives Arbeiten von unterwegs.
+
+## Wie kann ich OpenCloud nutzen?
+
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
+
+## Dokumentations-Versionen
+
+Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ihrer Software finden.
+
+- Rolling-Version: Entspricht immer dem aktuellen Entwicklungsstand. Änderungen werden laufend eingepflegt – die Dokumentation kann jedoch nicht vollständig sein, da neue Features ggf. noch nicht dokumentiert sind. Ideal bei Nutzung von Vorab- oder Entwicklungs-versionen.
+- Stable Release-Versionen: Dokumentation zu offiziellen Releases – eingefroren, geprüft und unverändert seit Freigabe.
+
+Über das Versionsmenü oben rechts können Sie jederzeit zwischen der Rolling-Version und den einzelnen Release-Versionen wechseln.
 
 ## Inhaltsverzeichnis
 
@@ -56,13 +86,3 @@ Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutz
 ### [Häufige Probleme und Hilfe](./common-issues.md)
 
 Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
-
-## Was ist OpenCloud?
-
-OpenCloud ist die File-Sharing- und Collaboration-Lösung der Heinlein Gruppe.
-
-Durch intelligente Dateiverwaltung und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und überall ohne Barrieren, aber mit hoher Produktivität auf Daten zugreifen und gemeinsam daran arbeiten.
-
-## Wie kann ich OpenCloud nutzen?
-
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).

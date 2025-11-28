@@ -18,17 +18,18 @@ In OpenCloud haben Sie die Möglichkeit, verschiedene Einstellungen für Ihr Ben
 
 ## Kontoinformationen
 
-In den Einstellungen siehen Sie zunächst Ihre grundlegenden Kontoinformationen:
+In den Einstellungen können Sie zwischen verschiedenen Abschnitten wählen:
 
-### Persönliche Informationen
+### Profil
 
 - Profilbild
 - Benutzername / Login-Name
 - Vor- und Nachname
 - E-Mail-Adresse
 - Persönlicher Speicherplatz
-- Gruppenmitgliedschaften  
-  <img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
+- Gruppenmitgliedschaften
+
+<img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
 
 ### Avatar
 
@@ -64,6 +65,12 @@ Je nach Grundkonfiguration können Sie die folgenden Optionen ändern:
 Unter "Erweiterungen" können Sie installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
 <img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920"/>
 
+## Kalender
+
+Unter „Kalender“ können Sie auf Ihren persönlichen Kalender zugreifen und ihn, sofern konfiguriert, in Apps von Drittanbietern wie Thunderbird, Apple Kalender und andere integrieren.
+
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
+
 ## DSGVO
 
 Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern, falls gewünscht.  
@@ -74,7 +81,3 @@ Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern,
 Mit "App-Tokens" können Sie externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne Ihr Hauptpasswort zu verwenden.
 
 <img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920"/>
-
-:::note
-Mit diesen Einstellungen können Sie Ihr Benutzerkonto ganz nach Ihren Bedürfnissen anpassen und optimieren!
-:::

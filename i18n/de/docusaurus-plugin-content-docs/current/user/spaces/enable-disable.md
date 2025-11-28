@@ -19,7 +19,7 @@ Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert w
 
 - Alternativ können Sie auch auf das Drei-Punkte-Menü in der Spaceübersicht klicken und Deaktivieren aus dem Menü wählen.
 
-  <img src={require("./img/enable-disable/drei-punkte-menue.png").default} alt="Admin general" width="400"/>
+  <img src={require("./img/enable-disable/drei-punkte-menue.png").default} alt="Admin general" width="1920"/>
 
 - Gehen Sie direkt in den Space.
 - Klicken Sie dort auf das Drei-Punkte-Menü und wählen Sie Deaktivieren.

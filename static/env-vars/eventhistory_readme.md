@@ -1,6 +1,6 @@
 ---
 title: Eventhistory
-date: 2025-05-22T16:21:16.1192089+02:00
+date: 2025-11-13T17:22:55.094497+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/eventhistory
@@ -22,7 +22,6 @@ The `eventhistory` consumes all events from the configured event system like NAT
 * [Consuming](#consuming)
 * [Storing](#storing)
 * [Retrieving](#retrieving)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Prerequisites
 
@@ -54,3 +53,4 @@ Store specific notes:
 ## Retrieving
 
 Other services can call the `eventhistory` service via a gRPC call to retrieve events. The request must contain the event ID that should be retrieved.
+

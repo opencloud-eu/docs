@@ -1,5 +1,59 @@
 # Changelog
 
+## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @LisaHue, @Svanvith, @descensus, @tbsbdr
+
+### 👷 Admin Documentation
+
+- Add info about versioning [[#501](https://github.com/opencloud-eu/docs/pull/501)]
+- Adjust ngnix config http2 [[#519](https://github.com/opencloud-eu/docs/pull/519)]
+- Frontend check for updates [[#521](https://github.com/opencloud-eu/docs/pull/521)]
+- comprehensive features list updated release date [[#513](https://github.com/opencloud-eu/docs/pull/513)]
+
+### 👤 User Documentation
+
+- refine files and folders in german for release 4 [[#526](https://github.com/opencloud-eu/docs/pull/526)]
+- refine files and folders for release 4 [[#522](https://github.com/opencloud-eu/docs/pull/522)]
+- add collabora overview in user [[#505](https://github.com/opencloud-eu/docs/pull/505)]
+- Rewrite user interface navigation [[#517](https://github.com/opencloud-eu/docs/pull/517)]
+- Update sharing german for the release 4 [[#525](https://github.com/opencloud-eu/docs/pull/525)]
+- Update sharing english for the release 4 [[#520](https://github.com/opencloud-eu/docs/pull/520)]
+
+## [2.0.1](https://github.com/opencloud-eu/docs/releases/tag/2.0.1) - 2025-11-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@descensus, @micbar
+
+### 🐛 Bug Fixes
+
+- Fix "Authentication and Identymanagment" spelling error [[#514](https://github.com/opencloud-eu/docs/pull/514)]
+
+### 📦️ Build&Tools
+
+- fix: trailing slashes and locale config [[#512](https://github.com/opencloud-eu/docs/pull/512)]
+
+## [2.0.0](https://github.com/opencloud-eu/docs/releases/tag/2.0.0) - 2025-11-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @Svanvith, @butonic, @micbar, @schweigisito
+
+### 💥 Breaking changes
+
+- refactor: change dev docs structure and services docs [[#508](https://github.com/opencloud-eu/docs/pull/508)]
+
+### 👷 Admin Documentation
+
+- Docs update  [[#509](https://github.com/opencloud-eu/docs/pull/509)]
+- add how to add fonts for collabora [[#504](https://github.com/opencloud-eu/docs/pull/504)]
+- Revise storage requirements in requirements.md [[#507](https://github.com/opencloud-eu/docs/pull/507)]
+- externalProxyDocs: add conf for tus upload [[#500](https://github.com/opencloud-eu/docs/pull/500)]
+- publish release note 3.7.0 [[#490](https://github.com/opencloud-eu/docs/pull/490)]
+
 ## [1.55.0](https://github.com/opencloud-eu/docs/releases/tag/1.55.0) - 2025-10-29
 
 ### ❤️ Thanks to all contributors! ❤️

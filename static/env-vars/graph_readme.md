@@ -1,6 +1,6 @@
 ---
 title: Graph
-date: 2025-05-22T16:21:16.119397744+02:00
+date: 2025-11-13T17:22:55.095124+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/graph
@@ -15,7 +15,7 @@ geekdocCollapseSection: true
 
 The graph service provides the Graph API which is a RESTful web API used to access OpenCloud
 resources. It is inspired by the [Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-the-api)
-and can be used by clients or other services or extensions. Visit the [Libre Graph API](https://docs.opencloud.eu/libre-graph-api/)
+and can be used by clients or other services or extensions. Visit the [Libre Graph API](https://docs.opencloud.eu/swagger/libre-graph-api/)
 for a detailed specification of the API implemented by the graph service.
 
 
@@ -34,7 +34,6 @@ for a detailed specification of the API implemented by the graph service.
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
 * [Unified Role Management](#unified-role-management)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Sequence Diagram
 
@@ -55,7 +54,7 @@ The graph service provides endpoints for querying users and groups. It features 
 ### LDAP Configuration
 
 The LDAP backend is configured using a set of environment variables. A detailed list of all the
-available configuration options can be found in the [documentation](https://docs.opencloud.eu/services/graph/configuration/#environment-variables).
+available configuration options can be found in the [documentation](https://docs.opencloud.eu/docs/dev/server/services/graph/environment-variables).
 The LDAP related options are prefixed with `OC_LDAP_` (or `GRAPH_LDAP_` for settings specific to graph service).
 
 #### Read-Only Access to Existing LDAP Servers
@@ -63,8 +62,7 @@ The LDAP related options are prefixed with `OC_LDAP_` (or `GRAPH_LDAP_` for sett
 To connect the graph service to an existing LDAP server, set `OC_LDAP_SERVER_WRITE_ENABLED` to
 `false` to prevent the graph service from sending write operations to the LDAP server. Also set the
 various `OC_LDAP_*` environment variables to match the configuration of the LDAP server you are connecting
-to. An example configuration for connecting OpenCloud to an instance of Microsoft Active Directory is
-available [here](https://docs.opencloud.eu/opencloud/identity-provider/ldap-active-directory/).
+to. A more detailed explanation can be found [here](https://docs.opencloud.eu/docs/admin/configuration/authentication-and-user-management/.
 
 #### Using a Write Enabled LDAP Server
 
@@ -78,13 +76,13 @@ respect to the available schema:
     object class for groups.
   * The graph service maintains a few additional attributes for users and groups that are not
     available in the standard LDAP schema. An schema file, ready to use with OpenLDAP, defining those
-    additional attributes is available [here](https://github.com/opencloud-eu/opencloud/blob/main/deployments/examples/shared/config/ldap/schemas/10_opencloud_schema.ldif)
+    additional attributes is available [here](https://github.com/opencloud-eu/opencloud-compose/blob/main/config/ldap/schemas/10_opencloud_schema.ldif)
 
 ## Query Filters Provided by the Graph API
 
 Some API endpoints provided by the graph service allow to specify query filters. The filter syntax
 is based on the [OData Specification](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_SystemQueryOptionfilter).
-See the [Libre Graph API](https://docs.opencloud.eu/libre-graph-api/#/users/ListUsers) for examples
+See the [Libre Graph API](https://docs.opencloud.eu/swagger/libre-graph-api/#/users/ListUsers) for examples
 on the filters supported when querying users.
 
 ## Caching
@@ -97,9 +95,13 @@ The `graph` service can use a configured store via `GRAPH_CACHE_STORE`. Possible
 
 Other store types may work but are not supported currently.
 
-Note: The service can only be scaled if not using `memory` store and the stores are configured identically over all instances!
+:::note 
+The service can only be scaled if not using `memory` store and the stores are configured identically over all instances!
+:::
 
-Note that if you have used one of the deprecated stores, you should reconfigure to one of the supported ones as the deprecated stores will be removed in a later version.
+:::note 
+If you have used one of the deprecated stores, you should reconfigure to one of the supported ones as the deprecated stores will be removed in a later version.
+:::
 
 Store specific notes:
   -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OC_CACHE_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
@@ -128,7 +130,9 @@ The client that is used to authenticate with keycloak has to be able to list use
 *   `view-events`
 *   `view-authorization`
 
-Note that these roles are only available to assign if the client is in the `master` realm.
+:::note
+These roles are only available to assign if the client is in the `master` realm.
+:::
 
 ## Translations
 
@@ -144,7 +148,9 @@ For example, for the language `de`, one needs to place the corresponding transla
 
 <!-- also see the notifications readme -->
 
-Important: For the time being, the embedded OpenCloud Web frontend only supports the main language code but does not handle any territory. When strings are available in the language code `language_territory`, the web frontend does not see it as it only requests `language`. In consequence, any translations made must exist in the requested `language` to avoid a fallback to the default.
+:::warning
+For the time being, the embedded OpenCloud Web frontend only supports the main language code but does not handle any territory. When strings are available in the language code `language_territory`, the web frontend does not see it as it only requests `language`. In consequence, any translations made must exist in the requested `language` to avoid a fallback to the default.
+:::
 
 ### Translation Rules
 
@@ -215,4 +221,3 @@ The output of this command includes the following information for each role:
 |                                      |          |                                |                                | libre.graph/driveItem/basic/read         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 ```
-

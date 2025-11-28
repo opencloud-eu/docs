@@ -1,6 +1,6 @@
 ---
 title: Frontend
-date: 2025-05-22T16:21:16.119266067+02:00
+date: 2025-11-13T17:22:55.094687+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/frontend
@@ -34,7 +34,6 @@ The frontend service translates various OpenCloud related HTTP APIs to CS3 reque
   * [The Password Policy Capability](#the-password-policy-capability)
   * [Password Enforcement for all Public Links](#password-enforcement-for-all-public-links)
   * [Password Enforcement for Writeable Public Links](#password-enforcement-for-writeable-public-links)
-* [Example Yaml Config](#example-yaml-config)
 
 ## Endpoints Overview
 
@@ -76,7 +75,7 @@ While the frontend service does not persist any data, it does cache information 
 
 A lot of user management is made via the standardized libregraph API. Depending on how the system is configured, there might be some user attributes that an OpenCloud instance admin can't change because of properties coming from an external LDAP server, or similar. This can be the case when the OpenCloud admin is not the LDAP admin. To ease life for admins, there are hints as capabilites telling the frontend which attributes are read-only to enable a different optical representation like being grayed out. To configure these hints, use the environment variable `FRONTEND_READONLY_USER_ATTRIBUTES`, which takes a comma separated list of attributes, see the envvar for supported values.
 
-You can find more details regarding available attributes at the [libre-graph-api openapi-spec](https://github.com/owncloud/libre-graph-api/blob/main/api/openapi-spec/v1.0.yaml) and on [docs.opencloud.eu](https://docs.opencloud.eu/libre-graph-api/).
+You can find more details regarding available attributes at the [libre-graph-api openapi-spec](https://github.com/opencloud-eu/libre-graph-api/blob/main/api/openapi-spec/v1.0.yaml) and on [docs.opencloud.eu](https://docs.opencloud.eu/swagger/libre-graph-api/).
 
 ## Caching
 
@@ -174,3 +173,4 @@ For public accessible writable shares, a password can be enforced. To change the
 Note that changing this environment variable only makes sense if\
 `OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD`\
 is set to `false`.
+
