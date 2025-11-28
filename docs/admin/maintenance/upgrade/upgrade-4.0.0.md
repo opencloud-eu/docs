@@ -193,8 +193,8 @@ docker run \
 
 If you previously deployed OpenCloud using the project name `opencloud_full` (our earlier example) and are now switching to the official [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose) repository, you may need to specify the original project name to ensure:
 
-- **Network compatibility** - for services like S3 that need to be on the same network
-- **Volume persistence** - to access existing Docker volumes
+- Network compatibility - for services like S3 that need to be on the same network
+- Volume persistence - to access existing Docker volumes
 
 Run the command with your original project name:
 
@@ -220,16 +220,15 @@ docker compose up -d
 
 ## Verification
 
-Your OpenCloud instance should now be running on `v4.0.0` using
-externalized config and data directories.
+Your OpenCloud instance should now be running on `v4.0.0`.
 
 ### Essential Checks
 
-- ✅ **User Accounts** — Confirm all users can log in successfully
-- ✅ **Shared Folders** — Verify shared folder permissions and access
-- ✅ **Public Links** — Test that public links remain functional
-- ✅ **Data Integrity** — Ensure all files and folders are accessible
-- ✅ **Service Health** — Check logs for any errors or warnings
+- User Accounts — Confirm all users can log in successfully
+- Shared Folders — Verify shared folder permissions and access
+- Public Links — Test that public links remain functional
+- Data Integrity — Ensure all files and folders are accessible
+- Service Health — Check logs for any errors or warnings
 
 ## Troubleshooting
 
