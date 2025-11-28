@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@Heiko-Pohl, @kulmann
 
 ### 👤 User Documentation
 
+- feat: more details about app tokens [[#530](https://github.com/opencloud-eu/docs/pull/530)]
 - change screenshot and text for release 4 [[#531](https://github.com/opencloud-eu/docs/pull/531)]
 
 ## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-26
