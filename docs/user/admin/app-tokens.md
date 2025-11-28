@@ -8,9 +8,25 @@ draft: false
 
 # App Tokens
 
-App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
+App Tokens allow you to connect external apps and services (such as WebDAV clients) without using your main password.
 
-## Create the App Token
+This improves security in several ways:
+
+- You never need to expose your login password to third party applications
+- App tokens can be revoked. If you're ever afraid that your app token has been compromised, just delete it.
+- App tokens have a configurable expiry. This prevents unintended attack vectors.
+
+In addition to improved security, App Tokens also maximize compatibility with third party applications. Many
+applications don't support modern login flows like OpenID Connect, but only accept standard logins with a username and
+password instead. Your username in combination with any of your App Tokens serves as just that.
+
+:::important
+App Tokens allow third party applications to access all your data. Make sure that you create
+individual App Tokens per application and use a reasonable expiration period. If you don't want to
+expose access to all your data, consider using a public link instead.
+:::
+
+## Create an App Token
 
 - Go to the App Tokens section in your OpenCloud account settings.
 - Click on “+ New” to create a new token.
@@ -39,6 +55,12 @@ You can now use the token in place of your password when connecting:
 - External apps
 - Third-party services
 
+:::info
+The username is usually the same as the one you use for your regular login.  
+However, if the Identity Provider is operating in autoprovisioning mode, only the UUID can be used.  
+You can find this UUID in the Preferences overview page.
+:::
+
 ## Delete the App Token
 
 If a token is no longer needed:
@@ -47,7 +69,3 @@ If a token is no longer needed:
 - Click the trash icon next to the token to remove it.
 
 This ensures unused tokens cannot be misused.
-
-:::note
-Use App Tokens for better security and control when connecting external services.
-:::
