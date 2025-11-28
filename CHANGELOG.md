@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.0](https://github.com/opencloud-eu/docs/releases/tag/2.2.0) - 2025-11-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👤 User Documentation
+
+- change screenshot and text for release 4 [[#531](https://github.com/opencloud-eu/docs/pull/531)]
+
 ## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-26
 
 ### ❤️ Thanks to all contributors! ❤️
