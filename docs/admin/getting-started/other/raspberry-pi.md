@@ -112,8 +112,14 @@ nano .env
 
 Add the minimal OpenCloud setup:
 
-```env
+```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+```
+
+Set your admin password
+
+```bash
+INITIAL_ADMIN_PASSWORD=YourSecurePassword
 ```
 
 Then start Docker:
