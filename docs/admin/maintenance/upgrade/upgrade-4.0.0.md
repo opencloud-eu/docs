@@ -20,7 +20,7 @@ with externalized data and config directories.
 - **Determine Your Deployment Type**: This guide covers two common setups:
   - **Bind Mounts**: Config and data are stored in directories on the host machine (e.g., `/mnt/opencloud/config`).
   - **Docker Named Volumes**: Config and data are managed by Docker. You will need your `COMPOSE_PROJECT_NAME` to access them.
-- **Check Paths**: If you are using bind mounts, ensure you know the correct paths on your host system. You can find them by inspecting your current container's `docker run` command or `docker-compose.yml` file (look for `volumes:` sections that map to host paths).
+- **Check Paths**: If you are using bind mounts, ensure you know the correct paths on your host system. You can find them by inspecting your current container's `docker run` command or `docker-compose.yml` file (look for `volumes:` sections that map to host paths). For a running container, `docker inspect opencloud_full-opencloud-1` also exposes this information in the `Mounts` section.
 
 ## Backup Config and Data
 
