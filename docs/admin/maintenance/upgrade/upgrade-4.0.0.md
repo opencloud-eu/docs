@@ -33,7 +33,7 @@ If your config and data are stored in host directories (bind mounts), create a d
 ### Example (adjust paths to match your setup)
 
 ```bash
-cp -r /mnt/opencloud/config /mnt/opencloud/config-backup
+cp -a /mnt/opencloud/config /mnt/opencloud/config-backup
 cp -a /mnt/opencloud/data /mnt/opencloud/data-backup
 ```
 
