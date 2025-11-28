@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @kulmann
+@Heiko-Pohl, @kulmann, @phil-davis
+
+### 👷 Admin Documentation
+
+- fix: adjust bare-metal install guide [[#536](https://github.com/opencloud-eu/docs/pull/536)]
 
 ### 👤 User Documentation
 
