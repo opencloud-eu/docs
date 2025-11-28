@@ -56,7 +56,9 @@ You can now use the token in place of your password when connecting:
 - Third-party services
 
 :::info
-The username is the same as with your "normal" login.
+The username is usually the same as the one you use for your regular login.  
+However, if the Identity Provider is operating in autoprovisioning mode, only the UUID can be used.  
+You can find this UUID in the Preferences overview page.
 :::
 
 ## Delete the App Token
