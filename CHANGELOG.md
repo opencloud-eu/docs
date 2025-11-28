@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Rework raspberry pi doku [[#538](https://github.com/opencloud-eu/docs/pull/538)]
 - Update docs with latest env vars [[#534](https://github.com/opencloud-eu/docs/pull/534)]
 - fix: adjust bare-metal install guide [[#536](https://github.com/opencloud-eu/docs/pull/536)]
 
