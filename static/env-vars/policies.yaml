@@ -29,8 +29,3 @@ engine:
   mimes: ""
 postprocessing:
   query: ""
-tracing:
-  enabled: false
-  type: ""
-  endpoint: ""
-  collector: ""

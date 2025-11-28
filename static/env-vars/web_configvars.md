@@ -2,10 +2,6 @@ Environment variables for the **web** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`WEB_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`WEB_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`WEB_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`WEB_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`WEB_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`WEB_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`WEB_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -24,9 +20,9 @@ Environment variables for the **web** service
 |`OC_CORS_ALLOW_METHODS`<br/>`WEB_CORS_ALLOW_METHODS`| 1.0.0 |[]string|`A list of allowed CORS methods. See following chapter for more details: *Access-Control-Request-Method* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method. See the Environment Variable Types description for more details.`|`[OPTIONS HEAD GET PUT PATCH POST DELETE MKCOL PROPFIND PROPPATCH MOVE COPY REPORT SEARCH]`|
 |`OC_CORS_ALLOW_HEADERS`<br/>`WEB_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`[Origin Accept Content-Type Depth Authorization Ocs-Apirequest If-None-Match If-Match Destination Overwrite X-Request-Id X-Requested-With Tus-Resumable Tus-Checksum-Algorithm Upload-Concat Upload-Length Upload-Metadata Upload-Defer-Length Upload-Expires Upload-Checksum Upload-Offset X-HTTP-Method-Override]`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`WEB_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS. See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`false`|
-|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/Users/t.schweiger/.opencloud/web/assets/core`|
-|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/Users/t.schweiger/.opencloud/web/assets/themes`|
-|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/Users/t.schweiger/.opencloud/web/assets/apps`|
+|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/var/lib/opencloud/web/assets/core`|
+|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/var/lib/opencloud/web/assets/themes`|
+|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/var/lib/opencloud/web/assets/apps`|
 |`WEB_UI_CONFIG_FILE`| 1.0.0 |string|`Read the OpenCloud Web json based configuration from this path/file. The config file takes precedence over WEB_OPTION_xxx environment variables. See the text description for more details.`|``|
 |`OC_URL`<br/>`WEB_UI_THEME_SERVER`| 1.0.0 |string|`Base URL to load themes from. Will be prepended to the theme path.`|`https://localhost:9200`|
 |`WEB_UI_THEME_PATH`| 1.0.0 |string|`Path to the theme json file. Will be appended to the URL of the theme server.`|`/themes/opencloud/theme.json`|
@@ -54,6 +50,6 @@ Environment variables for the **web** service
 |`WEB_OPTION_CONCURRENT_REQUESTS_SSE`| 1.0.0 |int|`Defines the maximum number of concurrent requests in SSE event handlers. Defaults to 4.`|`0`|
 |`WEB_OPTION_CONCURRENT_REQUESTS_SHARES_CREATE`| 1.0.0 |int|`Defines the maximum number of concurrent requests per sharing invite batch. Defaults to 4.`|`0`|
 |`WEB_OPTION_CONCURRENT_REQUESTS_SHARES_LIST`| 1.0.0 |int|`Defines the maximum number of concurrent requests when loading individual share information inside listings. Defaults to 2.`|`0`|
-|`WEB_OPTION_DEFAULT_APP_ID`| next |string|`Defines the entrypoint for the web ui.`|``|
+|`WEB_OPTION_DEFAULT_APP_ID`| 4.0.0 |string|`Defines the entrypoint for the web ui.`|``|
 |`OC_JWT_SECRET`<br/>`WEB_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|``|
 |`WEB_GATEWAY_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`eu.opencloud.api.gateway`|

@@ -2,10 +2,6 @@ Environment variables for the **storage-system** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`STORAGE_SYSTEM_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`STORAGE_SYSTEM_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`STORAGE_SYSTEM_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`STORAGE_SYSTEM_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`STORAGE_SYSTEM_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`STORAGE_SYSTEM_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`STORAGE_SYSTEM_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -33,7 +29,7 @@ Environment variables for the **storage-system** service
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_SYSTEM_CACHE_AUTH_USERNAME`| 1.0.0 |string|`Username for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_SYSTEM_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`Password for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`STORAGE_SYSTEM_DRIVER`| 1.0.0 |string|`The driver which should be used by the service. The only supported driver is 'decomposed'. For backwards compatibility reasons it's also possible to use the 'ocis' driver and configure it using the 'decomposed' options. `|`decomposed`|
-|`STORAGE_SYSTEM_OC_ROOT`| 1.0.0 |string|`Path for the directory where the STORAGE-SYSTEM service stores it's persistent data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/Users/t.schweiger/.opencloud/storage/metadata`|
+|`STORAGE_SYSTEM_OC_ROOT`| 1.0.0 |string|`Path for the directory where the STORAGE-SYSTEM service stores it's persistent data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/metadata`|
 |`STORAGE_SYSTEM_OC_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value of 20 will be used.`|`20`|
 |`STORAGE_SYSTEM_OC_LOCK_CYCLE_DURATION_FACTOR`| 1.0.0 |int|`When trying to lock files, OpenCloud will multiply the cycle with this factor and use it as a millisecond timeout. Values of 0 or below will be ignored and the default value of 30 will be used.`|`30`|
 |`STORAGE_SYSTEM_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by other services using this service.`|`http://localhost:9216/data`|
