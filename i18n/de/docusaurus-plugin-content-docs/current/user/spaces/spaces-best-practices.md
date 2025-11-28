@@ -15,20 +15,20 @@ nutzbar einzurichten und zu pflegen.
 
 ## Allgemeine Grundsätze
 
--   Erst planen -- Behandle Spaces nicht wie spontanen Ablagespeicher.
-    Denke voraus.
--   In Rollen und Teams denken -- Strukturiere anhand der Zusammenarbeit
-    von Personen.
--   Skalierbarkeit beachten -- Wähle eine Struktur, die jetzt *und*
-    später mit mehr Nutzern funktioniert.
--   Konsistenz anwenden -- Benennung, Zugriffsrechte und Aufbau sollten
-    gemeinsamen Regeln folgen.
+- Erst planen -- Behandle Spaces nicht wie spontanen Ablagespeicher.
+  Denke voraus.
+- In Rollen und Teams denken -- Strukturiere anhand der Zusammenarbeit
+  von Personen.
+- Skalierbarkeit beachten -- Wähle eine Struktur, die jetzt _und_
+  später mit mehr Nutzern funktioniert.
+- Konsistenz anwenden -- Benennung, Zugriffsrechte und Aufbau sollten
+  gemeinsamen Regeln folgen.
 
 ## Ordnerstruktur: Empfohlene Muster
 
 ### Beispiel: Familie
 
-``` plaintext
+```plaintext
 📁 Familien-Space
  ├── 📂 Dokumente
  │    ├── 🧾 Versicherungen
@@ -41,7 +41,7 @@ nutzbar einzurichten und zu pflegen.
 
 ### Schule / Kindergarten
 
-``` plaintext
+```plaintext
 📁 2024
  ├── 📂 Klasse 3B
  │    ├── 📂 Unterrichtsmaterial
@@ -57,7 +57,7 @@ nutzbar einzurichten und zu pflegen.
 
 ### Unternehmen / Team
 
-``` plaintext
+```plaintext
 📁 Marketing-Team
  ├── 📂 Kampagnen
  │    ├── 📂 Q1-2025
@@ -69,51 +69,55 @@ nutzbar einzurichten und zu pflegen.
 
 ## Namenskonventionen
 
--   Klare, beschreibende Namen verwenden -- vermeide „Neuer Ordner" oder
-    kryptische Titel
--   Bevorzuge lowercase-mit-bindestrichen oder Title Case
--   Relevante Daten hinzufügen: `bericht-2025-Q2.pdf` oder
-    `Budget 2024.xlsx`
--   Sonderzeichen vermeiden: `& % $ § !` können Integrationen stören
+- Klare, beschreibende Namen verwenden -- vermeide „Neuer Ordner" oder
+  kryptische Titel
+- Bevorzuge lowercase-mit-bindestrichen oder Title Case
+- Relevante Daten hinzufügen: `bericht-2025-Q2.pdf` oder
+  `Budget 2024.xlsx`
+- Sonderzeichen vermeiden: `& % $ § !` können Integrationen stören
 
 ## Richtlinien für Eigentümerschaft & Zugriffe
 
--   Space Owner festlegen: verantwortlich für Struktur und
-    Berechtigungen
--   Wenn möglich Gruppen für Zugriffskontrolle nutzen (z. B. `staff`,
-    `students`, `parents`)
--   Sensible Inhalte in separate Ordner mit eingeschränktem Zugriff
-    auslagern
--   Bearbeitungs- und Leserechte klar definieren
+- Space Owner festlegen: verantwortlich für Struktur und
+  Berechtigungen
+- Wenn möglich Gruppen für Zugriffskontrolle nutzen (z. B. `staff`,
+  `students`, `parents`)
+- Sensible Inhalte in separate Ordner mit eingeschränktem Zugriff
+  auslagern
+- Bearbeitungs- und Leserechte klar definieren
 
 ## Archivierung & Aufräumen
 
--   Einen Archiv-Ordner für alte oder ungenutzte Dateien einrichten
--   Den Space jährlich überprüfen und veraltete Inhalte entfernen
--   Bei Unsicherheit Versionierung nutzen oder vor dem Löschen
-    exportieren
+- Einen Archiv-Ordner für alte oder ungenutzte Dateien einrichten
+- Den Space jährlich überprüfen und veraltete Inhalte entfernen
+- Bei Unsicherheit Versionierung nutzen oder vor dem Löschen
+  exportieren
 
 ## Häufige Stolperfallen
 
-  -----------------------------------------------------------------------
-  ❌ Nicht tun                          ✅ Besser so
-  ------------------------------------- ---------------------------------
-  Alle Dateien im Root-Ordner ablegen   Klare Unterordner verwenden
+---
 
-  Persönliche und gemeinsame Inhalte    Persönliche Daten in „Persönlich"
-  mischen                               belassen
+❌ Nicht tun ✅ Besser so
 
-  Allen Nutzern Vollzugriff geben       Least-Privilege-Prinzip anwenden
+---
 
-  Uneinheitliche Benennungen nutzen     Konventionen definieren &
-                                        einhalten
-  -----------------------------------------------------------------------
+Alle Dateien im Root-Ordner ablegen Klare Unterordner verwenden
+
+Persönliche und gemeinsame Inhalte Persönliche Daten in „Persönlich"
+mischen belassen
+
+Allen Nutzern Vollzugriff geben Least-Privilege-Prinzip anwenden
+
+Uneinheitliche Benennungen nutzen Konventionen definieren &
+einhalten
+
+---
 
 ## Schnellstart-Vorlage zum Teilen
 
 Du kannst diese Vorlage für neue Spaces verwenden:
 
-``` plaintext
+```plaintext
 📁 [Team-/Projektname]
  ├── 📂 Dokumente
  ├── 📂 Planung
@@ -124,15 +128,19 @@ Du kannst diese Vorlage für neue Spaces verwenden:
 
 ## Zusammenfassung
 
-  -----------------------------------------------------------------------
-  Ziel                          Vorgehen
-  ----------------------------- -----------------------------------------
-  Spaces leicht navigierbar     Klare Ordnernamen & Hierarchie nutzen
-  machen                        
+---
 
-  Berechtigungschaos vermeiden  Eigentümer und Rollen definieren
+Ziel Vorgehen
 
-  Ordnung behalten              Regelmäßig prüfen und archivieren
+---
 
-  Zusammenarbeit fördern        Gruppenrechte & standardisierte Benennung
-  -----------------------------------------------------------------------
+Spaces leicht navigierbar Klare Ordnernamen & Hierarchie nutzen
+machen
+
+Berechtigungschaos vermeiden Eigentümer und Rollen definieren
+
+Ordnung behalten Regelmäßig prüfen und archivieren
+
+Zusammenarbeit fördern Gruppenrechte & standardisierte Benennung
+
+---
