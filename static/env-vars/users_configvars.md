@@ -2,10 +2,6 @@ Environment variables for the **users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`USERS_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`USERS_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`USERS_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`USERS_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`USERS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`USERS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -23,7 +19,7 @@ Environment variables for the **users** service
 |`USERS_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`false`|
 |`USERS_DRIVER`| 1.0.0 |string|`The driver which should be used by the users service. Supported values are 'ldap' and 'owncloudsql'.`|`ldap`|
 |`OC_LDAP_URI`<br/>`USERS_LDAP_URI`| 1.0.0 |string|`URI of the LDAP Server to connect to. Supported URI schemes are 'ldaps://' and 'ldap://'`|`ldaps://localhost:9235`|
-|`OC_LDAP_CACERT`<br/>`USERS_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/Users/t.schweiger/.opencloud/idm/ldap.crt`|
+|`OC_LDAP_CACERT`<br/>`USERS_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/var/lib/opencloud/idm/ldap.crt`|
 |`OC_LDAP_INSECURE`<br/>`USERS_LDAP_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the LDAP connections. Do not set this in production environments.`|`false`|
 |`OC_LDAP_BIND_DN`<br/>`USERS_LDAP_BIND_DN`| 1.0.0 |string|`LDAP DN to use for simple bind authentication with the target LDAP server.`|`uid=reva,ou=sysusers,o=libregraph-idm`|
 |`OC_LDAP_BIND_PASSWORD`<br/>`USERS_LDAP_BIND_PASSWORD`| 1.0.0 |string|`Password to use for authenticating the 'bind_dn'.`|``|
@@ -41,7 +37,7 @@ Environment variables for the **users** service
 |`OC_LDAP_USER_SCHEMA_USER_TYPE`<br/>`USERS_LDAP_USER_TYPE_ATTRIBUTE`| 1.0.0 |string|`LDAP Attribute to distinguish between 'Member' and 'Guest' users. Default is 'openCloudUserType'.`|`openCloudUserType`|
 |`OC_LDAP_DISABLED_USERS_GROUP_DN`<br/>`USERS_LDAP_DISABLED_USERS_GROUP_DN`| 1.0.0 |string|`The distinguished name of the group to which added users will be classified as disabled when 'disable_user_mechanism' is set to 'group'.`|`cn=DisabledUsersGroup,ou=groups,o=libregraph-idm`|
 |`OC_LDAP_USER_SCHEMA_ID`<br/>`USERS_LDAP_USER_SCHEMA_ID`| 1.0.0 |string|`LDAP Attribute to use as the unique ID for users. This should be a stable globally unique ID like a UUID.`|`openclouduuid`|
-|`OC_LDAP_USER_SCHEMA_TENANT_ID`<br/>`USERS_LDAP_USER_SCHEMA_TENANT_ID`| next |string|`LDAP Attribute to use for the tenant ID of users. This is used to identify the tenant of a user in a multi-tenant environment.`|``|
+|`OC_LDAP_USER_SCHEMA_TENANT_ID`<br/>`USERS_LDAP_USER_SCHEMA_TENANT_ID`| 4.0.0 |string|`LDAP Attribute to use for the tenant ID of users. This is used to identify the tenant of a user in a multi-tenant environment.`|``|
 |`OC_LDAP_USER_SCHEMA_ID_IS_OCTETSTRING`<br/>`USERS_LDAP_USER_SCHEMA_ID_IS_OCTETSTRING`| 1.0.0 |bool|`Set this to true if the defined 'ID' attribute for users is of the 'OCTETSTRING' syntax. This is e.g. required when using the 'objectGUID' attribute of Active Directory for the user ID's.`|`false`|
 |`OC_LDAP_USER_SCHEMA_MAIL`<br/>`USERS_LDAP_USER_SCHEMA_MAIL`| 1.0.0 |string|`LDAP Attribute to use for the email address of users.`|`mail`|
 |`OC_LDAP_USER_SCHEMA_DISPLAYNAME`<br/>`USERS_LDAP_USER_SCHEMA_DISPLAYNAME`| 1.0.0 |string|`LDAP Attribute to use for the displayname of users.`|`displayname`|

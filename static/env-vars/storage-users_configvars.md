@@ -1,20 +1,16 @@
 
-2025-11-13-17-19-28
+2025-11-27-22-55-58
 
 # Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-|  | next |  |  |
+|  | 4.0.0 |  |  |
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
 |`STORAGE_USERS_SERVICE_NAME`| 1.0.0 |string|`Service name to use. Change this when starting an additional storage provider with a custom configuration to prevent it from colliding with the default 'storage-users' service.`|`storage-users`|
-|`OC_TRACING_ENABLED`<br/>`STORAGE_USERS_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`STORAGE_USERS_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`STORAGE_USERS_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`STORAGE_USERS_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`STORAGE_USERS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`STORAGE_USERS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -42,7 +38,7 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_DRIVER`| 1.0.0 |string|`The storage driver which should be used by the service. Defaults to 'posix'. Supported values are: 'posix', 'decomposed', 'decomposeds3' and 'owncloudsql'. For backwards compatibility reasons it's also possible to use the 'ocis' and 's3ng' driver and configure them using the 'decomposed'/'decomposeds3' options. The 'posix' driver stores data directly on a POSIX-compliant filesystem. The 'decomposed' driver stores all data (blob and meta data) in a POSIX compliant volume. The 'decomposeds3' driver stores metadata in a POSIX compliant volume and uploads blobs to the s3 bucket.`|`posix`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSED_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`sync`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
-|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/Users/t.schweiger/.opencloud/storage/users`|
+|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
 |`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`{{.Id.OpaqueId}}`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSED_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`eu.opencloud.api.settings`|
 |`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`{{.SpaceType}}/{{.User.Username \| lower}}`|
@@ -58,7 +54,7 @@ Environment variables for the **storage-users** service
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSEDS3_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`sync`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
-|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/Users/t.schweiger/.opencloud/storage/users`|
+|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
 |`STORAGE_USERS_DECOMPOSEDS3_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`{{.Id.OpaqueId}}`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSEDS3_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`eu.opencloud.api.settings`|
 |`STORAGE_USERS_DECOMPOSEDS3_REGION`| 1.0.0 |string|`Region of the S3 bucket.`|`default`|
@@ -82,17 +78,17 @@ Environment variables for the **storage-users** service
 |`OC_MAX_CONCURRENCY`<br/>`STORAGE_USERS_DECOMPOSEDS3_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value of 100 will be used.`|`5`|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`true`|
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
-|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|`The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.`|`/Users/t.schweiger/.opencloud/storage/owncloud`|
+|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|`The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.`|`/var/lib/opencloud/storage/owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`/Shares`|
 |`STORAGE_USERS_OWNCLOUDSQL_LAYOUT`| 1.0.0 |string|`Path layout to use to navigate into a users folder in an owncloud data directory`|`{{.Username}}`|
-|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|`The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.`|`/Users/t.schweiger/.opencloud/storage/uploadinfo`|
+|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|`The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.`|`/var/lib/opencloud/storage/uploadinfo`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_USERNAME`| 1.0.0 |string|`Username for the database.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PASSWORD`| 1.0.0 |string|`Password for the database.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_HOST`| 1.0.0 |string|`Hostname or IP of the database server.`|``|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PORT`| 1.0.0 |int|`Port that the database server is listening on.`|`3306`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_NAME`| 1.0.0 |string|`Name of the database to be used.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_USERS_PROVIDER_ENDPOINT`| 1.0.0 |string|`Endpoint of the users provider.`|`eu.opencloud.api.users`|
-|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/Users/t.schweiger/.opencloud/storage/users`|
+|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_POSIX_PROPAGATOR`| 2.0.0 |string|`The propagator used for the posix driver. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|``|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
 |`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`{{.SpaceType}}/{{.User.Username \| lower}}`|
@@ -113,8 +109,8 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_POSIX_WATCH_TYPE`| 1.0.0 |string|`Type of the watcher to use for getting notified about changes to the filesystem. Currently available options are 'inotifywait' (default), 'cephfs', 'gpfswatchfolder' and 'gpfsfileauditlogging'.`|``|
 |`STORAGE_USERS_POSIX_WATCH_PATH`| 1.0.0 |string|`Path to the watch directory/file. Only applies to the 'gpfsfileauditlogging' and 'inotifywait' watcher, in which case it is the path of the file audit log file/base directory to watch.`|``|
 |`STORAGE_USERS_POSIX_WATCH_NOTIFICATION_BROKERS,STORAGE_USERS_POSIX_WATCH_FOLDER_KAFKA_BROKERS`| 1.0.0 |string|`Comma-separated list of kafka brokers to read the watchfolder events from.`|``|
-|`STORAGE_USERS_POSIX_WATCH_ROOT`| next |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`|``|
-|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| next |Duration|`Frequency to log inotify stats.`|`5m0s`|
+|`STORAGE_USERS_POSIX_WATCH_ROOT`| 4.0.0 |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`|``|
+|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| 4.0.0 |Duration|`Frequency to log inotify stats.`|`5m0s`|
 |`STORAGE_USERS_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by the data gateway provided by the frontend service or the user if directly exposed.`|`http://localhost:9158/data`|
 |`STORAGE_USERS_DATA_GATEWAY_URL`| 1.0.0 |string|`URL of the data gateway server`|`http://localhost:9140/data`|
 |`STORAGE_USERS_TRANSFER_EXPIRES`| 1.0.0 |int64|`The time after which the token for upload postprocessing expires`|`86400`|

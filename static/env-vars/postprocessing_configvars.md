@@ -2,10 +2,6 @@ Environment variables for the **postprocessing** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_TRACING_ENABLED`<br/>`POSTPROCESSING_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|`false`|
-|`OC_TRACING_TYPE`<br/>`POSTPROCESSING_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`|``|
-|`OC_TRACING_ENDPOINT`<br/>`POSTPROCESSING_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`|``|
-|`OC_TRACING_COLLECTOR`<br/>`POSTPROCESSING_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`|``|
 |`OC_LOG_LEVEL`<br/>`POSTPROCESSING_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
 |`OC_LOG_PRETTY`<br/>`POSTPROCESSING_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
 |`OC_LOG_COLOR`<br/>`POSTPROCESSING_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
@@ -28,8 +24,8 @@ Environment variables for the **postprocessing** service
 |`OC_EVENTS_ENABLE_TLS`<br/>`POSTPROCESSING_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`POSTPROCESSING_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`POSTPROCESSING_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
-|`SEARCH_EVENTS_MAX_ACK_PENDING`| next |int|`The maximum number of unacknowledged messages. This is used to limit the number of messages that can be in flight at the same time.`|`10000`|
-|`SEARCH_EVENTS_ACK_WAIT`| next |Duration|`The time to wait for an ack before the message is redelivered. This is used to ensure that messages are not lost if the consumer crashes.`|`1m0s`|
+|`SEARCH_EVENTS_MAX_ACK_PENDING`| 4.0.0 |int|`The maximum number of unacknowledged messages. This is used to limit the number of messages that can be in flight at the same time.`|`10000`|
+|`SEARCH_EVENTS_ACK_WAIT`| 4.0.0 |Duration|`The time to wait for an ack before the message is redelivered. This is used to ensure that messages are not lost if the consumer crashes.`|`1m0s`|
 |`POSTPROCESSING_WORKERS`| 1.0.0 |int|`The number of concurrent go routines that fetch events from the event queue.`|`3`|
 |`POSTPROCESSING_STEPS`| 1.0.0 |[]string|`A list of postprocessing steps processed in order of their appearance. Currently supported values by the system are: 'virusscan', 'policies' and 'delay'. Custom steps are allowed. See the documentation for instructions. See the Environment Variable Types description for more details.`|`[]`|
 |`POSTPROCESSING_DELAY`| 1.0.0 |Duration|`After uploading a file but before making it available for download, a delay step can be added. Intended for developing purposes only. If a duration is set but the keyword 'delay' is not explicitely added to 'POSTPROCESSING_STEPS', the delay step will be processed as last step. In such a case, a log entry will be written on service startup to remind the admin about that situation. See the Environment Variable Types description for more details.`|`0s`|

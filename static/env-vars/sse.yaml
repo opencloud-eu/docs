@@ -11,11 +11,6 @@ debug:
   token: ""
   pprof: false
   zpages: false
-tracing:
-  enabled: false
-  type: ""
-  endpoint: ""
-  collector: ""
 keepalive_interval: 0s
 events:
   endpoint: 127.0.0.1:9233
