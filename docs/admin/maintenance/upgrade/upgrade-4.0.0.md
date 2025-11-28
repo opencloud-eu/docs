@@ -11,21 +11,27 @@ import TabItem from '@theme/TabItem'
 
 # Upgrading to OpenCloud 4.0.0
 
-This guide describes how to upgrade OpenCloud to the stable version
-**v4.0.0** using the Git repository [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git)
-with externalized data and config directories.
+This guide explains how to upgrade from the previous stable opencloud_full Compose setup to the new [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git) repository structure.  
+It covers both deployment types:
+
+- Internal (in-container) data — setups where data is stored inside the container and is removed when the container is replaced.
+- Externalized data directories — setups where data is mounted outside the containers (host-mounted volumes) and persists independently of container updates.
+
+Following this guide, you can migrate safely to the stable v4.0.0 release of OpenCloud.
 
 ## Before You Begin
 
-- **Determine Your Deployment Type**: This guide covers two common setups:
-  - **Bind Mounts**: Config and data are stored in directories on the host machine (e.g., `/mnt/opencloud/config`).
-  - **Docker Named Volumes**: Config and data are managed by Docker. You will need your `COMPOSE_PROJECT_NAME` to access them.
-- **Check Paths**: If you are using bind mounts, ensure you know the correct paths on your host system. You can find them by inspecting your current container's `docker run` command or `docker-compose.yml` file (look for `volumes:` sections that map to host paths). For a running container, `docker inspect opencloud_full-opencloud-1` also exposes this information in the `Mounts` section.
+- Determine Your Deployment Type: This guide covers two common setups:
+  - Bind Mounts: Config and data are stored in directories on the host machine (e.g., `/mnt/opencloud/config`).
+  - Docker Named Volumes: Config and data are managed by Docker. You will need your `COMPOSE_PROJECT_NAME` to access them.
+- Check Paths: If you are using bind mounts, ensure you know the correct paths on your host system. You can find them by inspecting your current container's `docker run` command or `docker-compose.yml` file (look for `volumes:` sections that map to host paths). For a running container, `docker inspect opencloud_full-opencloud-1` also exposes this information in the `Mounts` section.
 
 ## Backup Config and Data
 
-⚠️ **Important**: Always create a backup before upgrading to prevent data loss.
-We strongly recommend following the [backup documentation](/docs/admin/maintenance/backup) and creating copies of your configuration and data directories:
+:::important
+Important: Always create a backup before upgrading to prevent data loss.  
+We strongly recommend following the [backup documentation](/docs/admin/maintenance/backup) and creating copies of your configuration and data directories.
+:::
 
 <Tabs> <TabItem value="bind-mounts" label="Using Bind Mounts">
 If your config and data are stored in host directories (bind mounts), create a direct copy of these folders.
@@ -121,7 +127,7 @@ If your config is stored in host directories:
 docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
 ```
 
-or, if you use Docker Named Volumes(replace with your volume name):
+or, if you use Docker Named Volumes (replace with your volume name):
 
 ```bash
 docker run --rm -it --entrypoint /bin/sh \
@@ -214,7 +220,7 @@ docker compose up -d
 
 ## Verification
 
-Your OpenCloud instance should now be running on **v4.0.0** using
+Your OpenCloud instance should now be running on `v4.0.0` using
 externalized config and data directories.
 
 ### Essential Checks
