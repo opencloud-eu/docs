@@ -25,12 +25,12 @@ By default, the `postMessage` method does not specify the `targetOrigin` paramet
 
 To maintain uniformity and ease of handling, each event encapsulates the same structure within its payload: `{ name: string, data: any }`.
 
-| Name                            | Data                                         | Description                                                                                                        |
-| ------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **opencloud-embed:select**      | `Resource[]`                                 | Gets emitted when user selects resources or location via the select action                                         |
-| **opencloud-embed:share-links**  | `Array<{ url: string, password?: string }>`  | Gets emitted when user shares resources via the "Share links" action. Includes passwords when applicable.         |
-| **opencloud-embed:share**       | `string[]`                                   | **(Deprecated)** Gets emitted when user shares resources. Use `opencloud-embed:share-links` for password support.  |
-| **opencloud-embed:cancel**      | `null`                                       | Gets emitted when user attempts to close the embedded instance via "Cancel" action                                 |
+| Name                            | Data                                        | Description                                                                                                       |
+| ------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **opencloud-embed:select**      | `Resource[]`                                | Gets emitted when user selects resources or location via the select action                                        |
+| **opencloud-embed:share-links** | `Array<{ url: string, password?: string }>` | Gets emitted when user shares resources via the "Share links" action. Includes passwords when applicable.         |
+| **opencloud-embed:share**       | `string[]`                                  | **(Deprecated)** Gets emitted when user shares resources. Use `opencloud-embed:share-links` for password support. |
+| **opencloud-embed:cancel**      | `null`                                      | Gets emitted when user attempts to close the embedded instance via "Cancel" action                                |
 
 ### Example
 
@@ -55,7 +55,7 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 
     const links = event.data.data; // Array<{ url: string, password?: string }>
 
-    links.forEach(link => {
+    links.forEach((link) => {
       console.log('Shared link:', link.url, link.password);
     });
 
