@@ -34,7 +34,7 @@ If this option is turned off, information about newer versions will not be displ
   - Change quota (storage space) of users
   - Add or remove users in groups
   - Allow or prohibit logins (for individual users)
-  <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
 
 ## Groups
 
@@ -51,8 +51,8 @@ If this option is turned off, information about newer versions will not be displ
 - Overview of the Spaces:  
   Here you can see all existing Spaces in your OpenCloud.
 - Space management:  
-  As an administrator, you have full rights to: 
+  As an administrator, you have full rights to:
   - Edit
   - Deactivate or activate
   - Delete
-  <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>

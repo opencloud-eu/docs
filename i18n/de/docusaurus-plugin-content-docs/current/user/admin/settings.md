@@ -33,7 +33,7 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
   - Quota (Speicherplatz) von Benutzern ändern
   - Benutzer in Gruppen hinzufügen oder entfernen
   - Allow or prohibit logins (for individual users)
-  <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
 
 ## Gruppen
 
@@ -49,7 +49,7 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
 
 - Übersicht der Spaces
   Hier sehen Sie alle vorhandenen Spaces in Ihrer OpenCloud.
-  - Space Management: Als Administrator haben Sie volle Rechte auf: 
+  - Space Management: Als Administrator haben Sie volle Rechte auf:
   - Bearbeiten
   - Deaktivieren oder aktivieren
   - Löschen
