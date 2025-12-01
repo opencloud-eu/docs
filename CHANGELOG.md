@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@ScharfViktor, @Svanvith
 
 ### 💥 Breaking changes
 
 - add version 4.0.0 [[#539](https://github.com/opencloud-eu/docs/pull/539)]
+
+### 👷 Admin Documentation
+
+- publish release info 4.0.0 [[#542](https://github.com/opencloud-eu/docs/pull/542)]
 
 ## [2.2.0](https://github.com/opencloud-eu/docs/releases/tag/2.2.0) - 2025-11-28
 
