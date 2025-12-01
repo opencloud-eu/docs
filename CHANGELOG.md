@@ -1,5 +1,29 @@
 # Changelog
 
+## [2.2.0](https://github.com/opencloud-eu/docs/releases/tag/2.2.0) - 2025-11-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @dschmidt, @kulmann, @micbar, @phil-davis
+
+### :octocat: Developer Documentation
+
+- embed-mode: add documentation for new opencloud-embed:share-links event [[#510](https://github.com/opencloud-eu/docs/pull/510)]
+
+### 👷 Admin Documentation
+
+- Upgrade Tutorial 4.0.0 [[#527](https://github.com/opencloud-eu/docs/pull/527)]
+- Rework raspberry pi doku [[#538](https://github.com/opencloud-eu/docs/pull/538)]
+- Update docs with latest env vars [[#534](https://github.com/opencloud-eu/docs/pull/534)]
+- fix: adjust bare-metal install guide [[#536](https://github.com/opencloud-eu/docs/pull/536)]
+
+### 👤 User Documentation
+
+- Rewirte user admin [[#537](https://github.com/opencloud-eu/docs/pull/537)]
+- add vfs for Desktop Client Windows [[#528](https://github.com/opencloud-eu/docs/pull/528)]
+- feat: more details about app tokens [[#530](https://github.com/opencloud-eu/docs/pull/530)]
+- change screenshot and text for release 4 [[#531](https://github.com/opencloud-eu/docs/pull/531)]
+
 ## [2.1.0](https://github.com/opencloud-eu/docs/releases/tag/2.1.0) - 2025-11-26
 
 ### ❤️ Thanks to all contributors! ❤️
