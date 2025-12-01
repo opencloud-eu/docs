@@ -43,24 +43,21 @@ const config: Config = {
     },
   },
 
-  presets: [
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/opencloud-eu/docs/tree/main',
-        },
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
-    ],
+presets: [
+  [
+    'classic',
+    {
+      docs: {
+        sidebarPath: require.resolve('./sidebars.ts'),
+        editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
+      },
+      blog: false,
+      theme: {
+        customCss: require.resolve('./src/css/custom.css'),
+      },
+    } satisfies Preset.Options,
   ],
+],
 
   themeConfig: {
     image: 'img/oc-docs-social-card.jpg',
@@ -91,6 +88,10 @@ const config: Config = {
           sidebarId: 'dev',
           position: 'left',
           label: 'Dev',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
         },
         {
           type: 'localeDropdown',
