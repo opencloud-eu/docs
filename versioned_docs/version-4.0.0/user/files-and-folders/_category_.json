@@ -1,0 +1,9 @@
+{
+  "label": "Manage Files and Folders",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorials for managing your files and folders.",
+    "slug": "user/files-and-folders"
+  }
+}
