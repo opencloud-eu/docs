@@ -110,13 +110,13 @@ Edit the `.env` file:
 nano .env
 ```
 
-Add the minimal OpenCloud setup:
+Activate the minimal OpenCloud setup by un-commenting this line:
 
 ```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-Set your admin password
+Look for the following line and set here your admin password: 
 
 ```bash
 INITIAL_ADMIN_PASSWORD=YourSecurePassword
