@@ -18,7 +18,7 @@ setup the integration. This guide explains the required steps to achieve that.
 
 :::note
 The calendar and contacts feature is - until further notice - intended for
-non-customers, i.e. please note that it is not covered under our business
+non-customers, i.e. please note that it is not covered under our enterprise
 license, and we do not provide professional support for it. This means that
 this feature is maintained and supported on best effort without warranty.
 :::
