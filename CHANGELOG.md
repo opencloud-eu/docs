@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.1.0](https://github.com/opencloud-eu/docs/releases/tag/3.1.0) - 2025-12-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### :octocat: Developer Documentation
+
+- change business to enterpise license [[#543](https://github.com/opencloud-eu/docs/pull/543)]
+
 ## [3.0.0](https://github.com/opencloud-eu/docs/releases/tag/3.0.0) - 2025-12-01
 
 ### ❤️ Thanks to all contributors! ❤️
