@@ -149,7 +149,7 @@ In production, you should mount persistent local directories for configuration a
 Update your `.env` file with custom paths:
 
 ```env
-OC_CONFIG_DIR=/your/local/path/opencloud/config
+OC_CONF_DIR=/your/local/path/opencloud/config
 OC_DATA_DIR=/your/local/path/opencloud/data
 ```
 
