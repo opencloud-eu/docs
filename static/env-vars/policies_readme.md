@@ -177,16 +177,16 @@ In order to extend this list, OpenCloud must be provided with the path to a cust
 The location for the file must be accessible by all instances of the policy service. As a rule of thumb, use the directory where the OpenCloud configuration files are stored.
 Note that existing mappings from the host are extended by the definitions from the mime types file, but not replaced.
 
-The path to that file can be provided via a yaml configuration or an environment variable. Note to replace the `OC_CONFIG_DIR` string by an existing path.
+The path to that file can be provided via a yaml configuration or an environment variable. Note to replace the `OC_CONF_DIR` string by an existing path.
 
 ```shell
-export POLICIES_ENGINE_MIMES=OC_CONFIG_DIR/mime.types
+export POLICIES_ENGINE_MIMES=OC_CONF_DIR/mime.types
 ```
 
 ```yaml
 policies:
   engine:
-    mimes: OC_CONFIG_DIR/mime.types
+    mimes: OC_CONF_DIR/mime.types
 ```
 
 A good example of how such a file should be formatted can be found in the [Apache svn repository](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types).

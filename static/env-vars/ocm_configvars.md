@@ -44,7 +44,7 @@ Environment variables for the **ocm** service
 |`OCM_OCM_INVITE_MANAGER_TIMEOUT`| 1.0.0 |Duration|`Timeout specifies a time limit for requests made to OCM endpoints.`|`30s`|
 |`OCM_OCM_INVITE_MANAGER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`false`|
 |`SHARING_OCM_PROVIDER_AUTHORIZER_DRIVER`| 1.0.0 |string|`Driver to be used to persist ocm invites. Supported value is only 'json'.`|`json`|
-|`OCM_OCM_PROVIDER_AUTHORIZER_PROVIDERS_FILE`| 1.0.0 |string|`Path to the JSON file where ocm invite data will be stored. Defaults to $OC_CONFIG_DIR/ocmproviders.json.`|`/etc/opencloud/ocmproviders.json`|
+|`OCM_OCM_PROVIDER_AUTHORIZER_PROVIDERS_FILE`| 1.0.0 |string|`Path to the JSON file where ocm invite data will be stored. Defaults to $OC_CONF_DIR/ocmproviders.json.`|`/etc/opencloud/ocmproviders.json`|
 |`OCM_OCM_SHARE_PROVIDER_DRIVER`| 1.0.0 |string|`Driver to be used for the OCM share provider. Supported value is only 'json'.`|`json`|
 |`OCM_OCM_SHAREPROVIDER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/ocm/ocmshares.json`|
 |`OCM_OCM_SHARE_PROVIDER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`false`|
