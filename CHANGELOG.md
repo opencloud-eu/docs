@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor
+@LowNightSnack, @ScharfViktor
 
 ### 👷 Admin Documentation
 
