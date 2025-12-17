@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.2.0](https://github.com/opencloud-eu/docs/releases/tag/3.2.0) - 2025-12-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- publish release info 4.1.0 and 4.0.1 [[#551](https://github.com/opencloud-eu/docs/pull/551)]
+
 ## [3.1.0](https://github.com/opencloud-eu/docs/releases/tag/3.1.0) - 2025-12-02
 
 ### ❤️ Thanks to all contributors! ❤️
