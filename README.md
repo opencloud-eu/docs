@@ -38,8 +38,6 @@ pnpm run start --locale de
 > ⚠️ Switching languages via the language switcher is currently not supported.
 
 
-
-
 ## Build
 
 ```bash
