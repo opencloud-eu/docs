@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.2.0](https://github.com/opencloud-eu/docs/releases/tag/3.2.0) - 2025-12-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@LowNightSnack, @ScharfViktor
+
+### 👷 Admin Documentation
+
+- remove duplication from proxy config [[#555](https://github.com/opencloud-eu/docs/pull/555)]
+- admin-docs: add password configuration for writable public links [[#553](https://github.com/opencloud-eu/docs/pull/553)]
+- publish release info 4.1.0 and 4.0.1 [[#551](https://github.com/opencloud-eu/docs/pull/551)]
+
 ## [3.1.0](https://github.com/opencloud-eu/docs/releases/tag/3.1.0) - 2025-12-02
 
 ### ❤️ Thanks to all contributors! ❤️
