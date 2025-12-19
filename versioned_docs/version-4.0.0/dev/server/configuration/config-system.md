@@ -24,7 +24,7 @@ Default values for all configuration options are built into each service. You on
   - Mount this directory into containers (Docker, Kubernetes) via ConfigMaps/Secrets or volumes.
 - Binary releases and local installs: `$HOME/.opencloud/config/`
   - Useful when running downloaded binaries on developer laptops or bare hosts without container mounts.
-- The location for the configuration files can be changed by setting the environment variable `OC_CONFIG_PATH` to point to a different directory.
+- The location for the configuration files can be changed by setting the environment variable `OC_CONFIG_DIR` to point to a different directory.
 - Typical files inside either location:
   - `opencloud.yaml` — global defaults shared by all services
   - `<service-name>.yaml` — overrides specific to a service (e.g. `activitylog.yaml`, `proxy.yaml`)
