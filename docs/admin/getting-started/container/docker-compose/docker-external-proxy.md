@@ -178,8 +178,10 @@ server {
 
 # OpenCloud
 server {
-    listen 443 ssl http2;
+    listen 443 ssl;
     server_name cloud.YOUR.DOMAIN;
+
+    http2 on;
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
@@ -212,8 +214,10 @@ server {
 
 # Collabora
 server {
-  listen 443 ssl http2;
+  listen 443 ssl;
   server_name collabora.YOUR.DOMAIN;
+
+  http2 on;
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
@@ -236,8 +240,10 @@ server {
 
 # WOPI Server
 server {
-  listen 443 ssl http2;
+  listen 443 ssl;
   server_name wopiserver.YOUR.DOMAIN;
+
+  http2 on;
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
