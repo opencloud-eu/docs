@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.3.0](https://github.com/opencloud-eu/docs/releases/tag/3.3.0) - 2026-01-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JappeHallunken, @micbar
+
+### 👷 Admin Documentation
+
+- correct environment variable for custom coonfig path: OC_CONFIG_DIR [[#546](https://github.com/opencloud-eu/docs/pull/546)]
+- docs: add missing release info to 4.0.0 [[#559](https://github.com/opencloud-eu/docs/pull/559)]
+
 ## [3.2.0](https://github.com/opencloud-eu/docs/releases/tag/3.2.0) - 2025-12-19
 
 ### ❤️ Thanks to all contributors! ❤️
