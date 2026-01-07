@@ -15,7 +15,7 @@ You can define default storage quotas for specific user roles in OpenCloud by co
 To configure quotas, edit the `opencloud.proxy.yaml` file and add the `role_quotas` section with role IDs and the desired quota in bytes:
 
 ```bash
-nano opencloud-compose/config/opencloud.proxy.yaml
+nano opencloud-compose/config/opencloud/proxy.yaml
 ```
 
 Example configuration:
