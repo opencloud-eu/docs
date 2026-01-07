@@ -25,7 +25,7 @@ role_quotas:
   'd7beeea8-8ff4-406b-8fb6-ab2dd81e6b11': 1073741824
 ```
 
-This assigns a 1 GB quota to all new users with the "User" role.
+This assigns a 1 GiB quota to all new users with the "User" role.
 
 ## Role IDs
 
