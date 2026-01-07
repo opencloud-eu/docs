@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.4.0](https://github.com/opencloud-eu/docs/releases/tag/3.4.0) - 2026-01-07
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- fix typo in path [[#561](https://github.com/opencloud-eu/docs/pull/561)]
+- change GB to GiB for better understanding [[#562](https://github.com/opencloud-eu/docs/pull/562)]
+
 ## [3.3.0](https://github.com/opencloud-eu/docs/releases/tag/3.3.0) - 2026-01-05
 
 ### ❤️ Thanks to all contributors! ❤️
