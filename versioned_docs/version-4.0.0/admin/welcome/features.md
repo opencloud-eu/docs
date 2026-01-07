@@ -133,7 +133,7 @@ Web, desktop, and mobile apps follow a unified interaction concept. Consistent n
 
 Administrators can create or customize design themes, including color palettes, logos, backgrounds, and UI elements. A fully accessible theme can be automatically generated from a single corporate color or defined manually. This allows OpenCloud to seamlessly match an organization’s corporate design.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ## Collaboration & Productivity
@@ -170,7 +170,7 @@ Multiple users can work on the same files simultaneously. Changes sync immediate
 
 ### Calendar and Contacts
 
-Integration with CalDAV and CardDAV enables teams to manage shared calendars and contact lists directly in OpenCloud. Appointments and deadlines can be linked to files, and shared contacts can be centrally maintained. Compatible with Apple Calendar, Outlook, Thunderbird, Evolution, and others. Note that this feature is not Supported in the business licence.
+Integration with CalDAV and CardDAV enables teams to manage shared calendars and contact lists directly in OpenCloud. Appointments and deadlines can be linked to files, and shared contacts can be centrally maintained. Compatible with Apple Calendar, Outlook, Thunderbird, Evolution, and others. Note that this feature is not Supported in the enterprise licence.
 
 ## Compliance & Data Protection
 
@@ -184,15 +184,15 @@ Administrators can manage Spaces (e.g., cleanup, quota changes) but cannot acces
 
 ### Compliance with Data Protection and Security Policies
 
-OpenCloud meets key international standards such as GDPR, ISO 27001, CCPA, HIPAA, FERPA, SOC 2, and CRA through features like encryption, audit logs, and access controls. Actual certifiability depends on the operational model: self-hosted deployments fall under the operator’s responsibility, while the Business Licence follows auditable, policy-compliant processes. OpenCloud integrates with existing compliance or GRC systems and provides exportable audit data.
+OpenCloud meets key international standards such as GDPR, ISO 27001, CCPA, HIPAA, FERPA, SOC 2, and CRA through features like encryption, audit logs, and access controls. Actual certifiability depends on the operational model: self-hosted deployments fall under the operator’s responsibility, while the Enterprise Licence follows auditable, policy-compliant processes. OpenCloud integrates with existing compliance or GRC systems and provides exportable audit data.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### §20 GDPR Personal Data Export
 
 Includes features that support GDPR compliance (e.g., personal data export according to §20 GDPR.).
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Server-Side Encryption
@@ -215,21 +215,21 @@ All security-relevant actions—uploads, shares, deletions, login attempts—are
 
 Incoming and synchronized files are scanned automatically for malware. OpenCloud uses ICAP interfaces (e.g., for ClamAV, Sophos, Kaspersky) and integrates with existing security gateways.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### File Firewall
 
 Prevents unsafe file uploads by blocking defined file types (e.g., executables, macros). Admins centrally manage allow/deny lists and apply them to users and Spaces.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Protected Preview with Watermarks
 
 Documents can be displayed with dynamic watermarks to deter screenshots or unauthorized sharing. Watermarks may include username, timestamp, or organization ID for traceability. Based on “Secure View” using Collabora or OnlyOffice.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ## Identity and Access Management (IAM)
@@ -242,7 +242,7 @@ Centralized user and group management. Secure access across organizational bound
 
 Enforces strong passwords with rules for complexity and expiration. A “Banned Password List” blocks weak patterns (e.g., “Password123”). An integrated generator creates compliant passwords.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Two-Factor Authentication (2FA/MFA)
@@ -267,9 +267,9 @@ OpenCloud supports LDAP systems such as OpenLDAP, FreeIPA, or Univention Directo
 
 ### Active Directory
 
-The Business Licence supports integration with Microsoft Active Directory and Azure Entra ID, including optional managed connectivity for paying customers.
+The Enterprise Licence supports integration with Microsoft Active Directory and Azure Entra ID, including optional managed connectivity for paying customers.
 
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Single Sign-On (SSO)
@@ -301,37 +301,37 @@ High stability, minimal downtime, secure deployment, and scalable architecture.
 ### Snapshots and Backups
 
 Automated snapshots enable restoring whole instances or individual user areas. Backups can be scheduled and stored locally or externally. Because metadata is stored directly with the files, elements such as versions and tags remain intact during restores or migrations—without dependency on database states.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Security Advisories
 
-Business Licence customers receive early security notifications about new vulnerabilities, including risk assessments and scheduled patch plans.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+Enterprise Licence customers receive early security notifications about new vulnerabilities, including risk assessments and scheduled patch plans.
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Kubernetes Deployment
 
 OpenCloud can be deployed as containerized microservices in Kubernetes clusters using Helm charts for installation, scaling, and upgrades. Automated orchestration enables load balancing, self-healing, zero-downtime deployments, and dynamic scaling.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Scalable Enterprise Storage Systems
 
 Integrates storage systems like CephFS, GPFS (IBM Spectrum Scale), or S3-compatible backends to support petabyte-scale volumes with high performance and redundancy.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Performance and Load Optimization
 
 Optimized for scalability and speed through parallel transfers and distributed I/O. Monitoring with Prometheus and Grafana enables continuous analysis and scaling.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Multi-Tenancy
 
 Multiple organizational units can be hosted on the same instance—ideal for corporations, public authorities, or service providers.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Metadata Stored in Files
@@ -341,49 +341,49 @@ All metadata, including tags and version information, is stored securely within 
 ### High Availability and Failover
 
 Redundant nodes can take over operations automatically in case of component failure, preventing downtime.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Long-Term Support (LTS)
 
-Business customers receive long-term supported versions with security updates and bug fixes—suitable for critical and compliance-sensitive environments.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+Enterprise customers receive long-term supported versions with security updates and bug fixes—suitable for critical and compliance-sensitive environments.
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Installation and Security Check
 
 Before deployment or upgrades, OpenCloud runs configuration and security checks and provides an assessment with recommendations.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Mass Rollouts
 
 Clients can be preconfigured with a server address for simplified mass deployment, reducing helpdesk requests.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Guaranteed Upgrade Support
 
-Supports smooth upgrades across major and minor versions with migration paths for data and accounts. The Business Licence provides validated scripts, compatibility checks, and rollback options.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+Supports smooth upgrades across major and minor versions with migration paths for data and accounts. The Enterprise Licence provides validated scripts, compatibility checks, and rollback options.
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Service Level Agreements (SLA)
 
-The Business Licence includes SLAs with defined response and resolution times, priority support, escalation management, and security notifications—ensuring professional operation.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+The Enterprise Licence includes SLAs with defined response and resolution times, priority support, escalation management, and security notifications—ensuring professional operation.
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### On-Demand Support
 
 During planned changes or upgrades, an OpenCloud engineer is available live for immediate troubleshooting and guidance.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Air-Gapped Operation
 
 OpenCloud can run in isolated networks without internet access. Installation, updates, and extensions occur via internal repositories or offline media. External integrations (e.g., Web Office) can also be hosted on-premises to keep all data within the isolated environment.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ## Integrations & Interfaces
@@ -422,8 +422,8 @@ Used for communication between clients and the server, inspired by Microsoft Gra
 
 ### Security, Compliance, and Monitoring APIs
 
-The Business Licence includes extended APIs for security checks, compliance monitoring, and real-time reporting. ICAP enables external antivirus/DLP integration, KQL supports compliance data analysis, and SSE provides live notifications and monitoring.
-:::info supported within the [business licence](https://opencloud.eu/en/product/service-and-support)
+The Enterprise Licence includes extended APIs for security checks, compliance monitoring, and real-time reporting. ICAP enables external antivirus/DLP integration, KQL supports compliance data analysis, and SSE provides live notifications and monitoring.
+:::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
 ### Custom File Types
