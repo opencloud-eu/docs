@@ -63,4 +63,12 @@ For development purposes the examples in the developer documentation use Basic A
 
 To authenticate with a Bearer token or OpenID Connect access token replace the `-u user:password` Basic Auth option of curl with a `-H 'Authorization: Bearer <token>'` header. A `<token>` can be obtained by copying it from a request in the browser, although it will time out within minutes. To automatically refresh the OpenID Connect access token an ssh-agent like solution like [oidc-agent](https://github.com/indigo-dc/oidc-agent) should be used. The graph endpoints that support a preconfigured token can be found in the [API specification](https://github.com/opencloud-eu/libre-graph-api)
 
+#### Authorization with App token
+
+Users can create an App Token in their Open Cloud interface. This token can be used to authenticate a user using the Account Name for the username and the token as password. Below is an example of there request
+
+```sh
+curl 'https://cloud.rezel.net/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
+```
+
 ## Resources
