@@ -69,6 +69,10 @@ Users can create an App Token in their Open Cloud interface. This token can be u
 
 ```sh
 curl 'https://cloud.rezel.net/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
+
+# or using the Authentification Basic Header
+# Authentification: Basic BASE64(username + ':' + app token)
+curl 'https://cloud.rezel.net/graph/v1.0/me' -H 'accept: application/json' -H 'Authorization: Basic YWNjb3VudG5hbWU6dGhlIGdlbmVyYXRlZCBhcHAgdG9rZW4='
 ```
 
 ## Resources
