@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.5.0](https://github.com/opencloud-eu/docs/releases/tag/3.5.0) - 2026-01-08
+## [3.5.0](https://github.com/opencloud-eu/docs/releases/tag/3.5.0) - 2026-01-12
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Heiko-Pohl, @Svanvith
 
 ### 👷 Admin Documentation
 
+- Create default language doku [[#566](https://github.com/opencloud-eu/docs/pull/566)]
 - change business license to enterprise license in the 4.0.0 version [[#564](https://github.com/opencloud-eu/docs/pull/564)]
 
 ## [3.4.0](https://github.com/opencloud-eu/docs/releases/tag/3.4.0) - 2026-01-07
