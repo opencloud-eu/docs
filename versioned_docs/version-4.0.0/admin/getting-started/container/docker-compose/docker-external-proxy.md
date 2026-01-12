@@ -10,6 +10,17 @@ draft: false
 
 This guide walks you through setting up OpenCloud behind an external Nginx reverse proxy with Let's Encrypt certificates using `certbot certonly --webroot`.
 
+:::info Traefik as External Proxy
+When using Traefik as an external reverse proxy, the following option must be added to the Collabora configuration:
+
+`--o:hexify_embedded_urls=true`
+
+This option needs to be included in the Collabora YAML configuration (for example in `collabora.yaml`, Docker Compose, or Helm values).  
+Without it, embedded URLs may not work correctly.
+
+See also [Collabora issue](https://github.com/CollaboraOnline/online/issues/13887)
+:::
+
 ## Requirements
 
 - A public server with a static IP
