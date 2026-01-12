@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add info about collabora and traefik as external proxy [[#570](https://github.com/opencloud-eu/docs/pull/570)]
 - Create default language doku [[#566](https://github.com/opencloud-eu/docs/pull/566)]
 - change business license to enterprise license in the 4.0.0 version [[#564](https://github.com/opencloud-eu/docs/pull/564)]
 
