@@ -252,6 +252,10 @@ server {
 }
 ```
 
+:::info Version Differences
+Starting from nginx 1.25.0, the `http2` directive syntax changed from: `listen 443 ssl http2;` to `listen 443 ssl; http2 on;`
+:::
+
 :::note
 We enabled HTTP/2 and increased keep-alive limits to prevent large syncs from failing and ensure stable client connections, since nginx closes connections after ~1,000 requests by default.
 :::
