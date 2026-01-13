@@ -1,6 +1,6 @@
 ---
 title: Storage-System
-date: 2025-11-27T22:56:02.33479+01:00
+date: 2025-11-11T09:16:41.113094426+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/storage-system

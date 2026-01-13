@@ -1,6 +1,6 @@
 ---
 title: Auth-Basic
-date: 2025-11-27T22:56:02.332069+01:00
+date: 2025-11-11T09:16:41.110998352+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-basic

@@ -1,6 +1,6 @@
 ---
 title: Proxy
-date: 2025-11-27T22:56:02.334185+01:00
+date: 2025-11-11T09:16:41.112305511+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/proxy

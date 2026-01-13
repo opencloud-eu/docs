@@ -1,6 +1,6 @@
 ---
 title: Frontend
-date: 2025-11-27T22:56:02.332575+01:00
+date: 2025-11-11T09:16:41.111410748+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/frontend
@@ -75,7 +75,7 @@ While the frontend service does not persist any data, it does cache information 
 
 A lot of user management is made via the standardized libregraph API. Depending on how the system is configured, there might be some user attributes that an OpenCloud instance admin can't change because of properties coming from an external LDAP server, or similar. This can be the case when the OpenCloud admin is not the LDAP admin. To ease life for admins, there are hints as capabilites telling the frontend which attributes are read-only to enable a different optical representation like being grayed out. To configure these hints, use the environment variable `FRONTEND_READONLY_USER_ATTRIBUTES`, which takes a comma separated list of attributes, see the envvar for supported values.
 
-You can find more details regarding available attributes at the [libre-graph-api openapi-spec](https://github.com/opencloud-eu/libre-graph-api/blob/main/api/openapi-spec/v1.0.yaml) and on [docs.opencloud.eu](https://docs.opencloud.eu/swagger/libre-graph-api/).
+You can find more details regarding available attributes at the [libre-graph-api openapi-spec](https://github.com/owncloud/libre-graph-api/blob/main/api/openapi-spec/v1.0.yaml) and on [docs.opencloud.eu](https://docs.opencloud.eu/libre-graph-api/).
 
 ## Caching
 
@@ -110,7 +110,7 @@ In OpenCloud, the password policy is always enabled because the max-length restr
 
 With the password policy, mandatory criteria for the password can be defined via the environment variables listed below.
 
-Generally, a password can contain any UTF-8 characters, however some characters are regarded as special since they are not used in ordinary texts. Which characters should be treated as special is defined by "The OWASP® Foundation" [password-special-characters](https://owasp.org/www-community/password-special-characters) (between double quotes): ```" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"```
+Generally, a password can contain any UTF-8 characters, however some characters are regarded as special since they are not used in ordinary texts. Which characters should be treated as special is defined by "The OWASP® Foundation" [password-special-characters](https://owasp.org/www-community/password-special-characters) (between double quotes): " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 The validation against the banned passwords list can be configured via a text file with words separated by new lines. If a user tries to set a password listed in the banned passwords list, the password can not be used (is invalid) even if the other mandatory criteria are passed. The admin can define the path of the banned passwords list file. If the file doesn't exist in a location, OpenCloud tries to load a file from the `OC_CONFIG_DIR/OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`. An option will be enabled when the file has been loaded successfully.
 

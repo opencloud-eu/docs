@@ -1,6 +1,6 @@
 ---
 title: Userlog
-date: 2025-11-27T22:56:02.335031+01:00
+date: 2025-11-11T09:16:41.11344777+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/userlog
@@ -67,7 +67,7 @@ For the time being, the configuration which user related events are of interest 
 
 ## Retrieving
 
-The `userlog` service provides an API to retrieve configured events. For now, this API is mostly following the [oc10 notification GET API](https://doc.owncloud.com/server/next/developer_manual/core/apis/ocs-notification-endpoint-v1.html#get-user-notifications).
+The `userlog` service provides an API to retrieve configured events. For now, this API is mostly following the [oc10 notification GET API](https://docs.opencloud.eu/server/next/developer_manual/core/apis/ocs-notification-endpoint-v1.html#get-user-notifications).
 
 ## Posting
 
