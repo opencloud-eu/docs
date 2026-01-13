@@ -1,7 +1,7 @@
 {
   "version.label": {
     "message": "rolling",
-    "description": "The label for version rolling"
+    "description": "The label for version current"
   },
   "sidebar.user.category.Manage Files and Folders": {
     "message": "Verwalten von Dateien und Ordnern",
@@ -176,7 +176,7 @@
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.ios-overview": {
-    "message": "Overview",
+    "message": "Übersicht",
     "description": "The label for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.ios-overview.link.generated-index.description": {
@@ -212,7 +212,7 @@
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.android-overview": {
-    "message": "Overview",
+    "message": "Übersicht",
     "description": "The label for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.android-overview.link.generated-index.description": {
@@ -228,7 +228,7 @@
     "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
   },
   "sidebar.user.category.android-shares": {
-    "message": "Shares",
+    "message": "Teilen",
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.android-shares.link.generated-index.description": {

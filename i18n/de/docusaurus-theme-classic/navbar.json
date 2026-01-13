@@ -11,10 +11,6 @@
     "message": "Admin",
     "description": "Navbar item with label Admin"
   },
-  "item.label.Developer": {
-    "message": "Developer",
-    "description": "Navbar item with label Developer"
-  },
   "item.label.Dev": {
     "message": "Dev",
     "description": "Navbar item with label Dev"
