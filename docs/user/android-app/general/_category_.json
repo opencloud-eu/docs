@@ -1,6 +1,7 @@
 {
   "label": "General",
   "position": 1,
+  "key": "android-general",
   "link": {
     "type": "generated-index",
     "description": "Tutorials about installing, setup and overview of the OpenCloud Android App.",

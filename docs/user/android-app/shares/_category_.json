@@ -1,6 +1,7 @@
 {
     "label": "Shares",
     "position": 3,
+    "key": "android-shares",
     "link": {
       "type": "generated-index",
       "description": "Tutorials about creating shares the OpenCloud Android App.",
