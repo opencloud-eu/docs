@@ -1,24 +1,17 @@
 
-2025-11-11-09-16-18
+2026-01-13-10-09-59
 
 # Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|---|
-|  | next |  |  |
+|  | 4.0.0 |  |  |
 Environment variables for the **storage-users** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
 |`STORAGE_USERS_SERVICE_NAME`| 1.0.0 |string|`Service name to use. Change this when starting an additional storage provider with a custom configuration to prevent it from colliding with the default 'storage-users' service.`|storage-users|
-|`OC_TRACING_ENABLED`<br/>`STORAGE_USERS_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`STORAGE_USERS_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`STORAGE_USERS_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`STORAGE_USERS_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`STORAGE_USERS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`STORAGE_USERS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`STORAGE_USERS_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`STORAGE_USERS_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9159|
 |`STORAGE_USERS_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`STORAGE_USERS_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|
@@ -113,14 +106,14 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_POSIX_WATCH_TYPE`| 1.0.0 |string|`Type of the watcher to use for getting notified about changes to the filesystem. Currently available options are 'inotifywait' (default), 'cephfs', 'gpfswatchfolder' and 'gpfsfileauditlogging'.`||
 |`STORAGE_USERS_POSIX_WATCH_PATH`| 1.0.0 |string|`Path to the watch directory/file. Only applies to the 'gpfsfileauditlogging' and 'inotifywait' watcher, in which case it is the path of the file audit log file/base directory to watch.`||
 |`STORAGE_USERS_POSIX_WATCH_NOTIFICATION_BROKERS,STORAGE_USERS_POSIX_WATCH_FOLDER_KAFKA_BROKERS`| 1.0.0 |string|`Comma-separated list of kafka brokers to read the watchfolder events from.`||
-|`STORAGE_USERS_POSIX_WATCH_ROOT`| next |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`||
-|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| next |Duration|`Frequency to log inotify stats.`|5m0s|
+|`STORAGE_USERS_POSIX_WATCH_ROOT`| 4.0.0 |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`||
+|`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| 4.0.0 |Duration|`Frequency to log inotify stats.`|5m0s|
 |`STORAGE_USERS_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by the data gateway provided by the frontend service or the user if directly exposed.`|http://localhost:9158/data|
 |`STORAGE_USERS_DATA_GATEWAY_URL`| 1.0.0 |string|`URL of the data gateway server`|http://localhost:9140/data|
 |`STORAGE_USERS_TRANSFER_EXPIRES`| 1.0.0 |int64|`The time after which the token for upload postprocessing expires`|86400|
 |`OC_EVENTS_ENDPOINT`<br/>`STORAGE_USERS_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|127.0.0.1:9233|
 |`OC_EVENTS_CLUSTER`<br/>`STORAGE_USERS_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|opencloud-cluster|
-|`OC_INSECURE`<br/>`STORAGE_USERS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`STORAGE_USERS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_EVENTS_TLS_INSECURE will be seen as false.`||
 |`OC_EVENTS_ENABLE_TLS`<br/>`STORAGE_USERS_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|false|
 |`STORAGE_USERS_EVENTS_NUM_CONSUMERS`| 1.0.0 |int|`The amount of concurrent event consumers to start. Event consumers are used for post-processing files. Multiple consumers increase parallelisation, but will also increase CPU and memory demands. The setting has no effect when the OC_ASYNC_UPLOADS is set to false. The default and minimum value is 1.`|0|

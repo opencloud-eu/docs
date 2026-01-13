@@ -2,14 +2,7 @@ Environment variables for the **sharing** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`SHARING_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`SHARING_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`SHARING_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`SHARING_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`SHARING_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`SHARING_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`SHARING_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`SHARING_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`SHARING_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`SHARING_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9151|
 |`SHARING_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`SHARING_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|
@@ -22,7 +15,7 @@ Environment variables for the **sharing** service
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.`||
 |`OC_EVENTS_ENDPOINT`<br/>`SHARING_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|127.0.0.1:9233|
 |`OC_EVENTS_CLUSTER`<br/>`SHARING_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|opencloud-cluster|
-|`OC_INSECURE`<br/>`SHARING_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`SHARING_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided SHARING_EVENTS_TLS_INSECURE will be seen as false.`||
 |`OC_EVENTS_ENABLE_TLS`<br/>`SHARING_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|false|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SHARING_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`Username for the events broker.`||

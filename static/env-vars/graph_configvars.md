@@ -2,14 +2,7 @@ Environment variables for the **graph** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`GRAPH_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`GRAPH_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`GRAPH_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`GRAPH_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`GRAPH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`GRAPH_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`GRAPH_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`GRAPH_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`GRAPH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`OC_CACHE_STORE`<br/>`GRAPH_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|memory|
 |`OC_CACHE_STORE_NODES`<br/>`GRAPH_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store are configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|[127.0.0.1:9233]|
 |`GRAPH_CACHE_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|cache-roles|
@@ -96,7 +89,7 @@ Environment variables for the **graph** service
 |`OC_ENABLE_OCM`<br/>`GRAPH_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing users.`|false|
 |`OC_EVENTS_ENDPOINT`<br/>`GRAPH_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Set to a empty string to disable emitting events.`|127.0.0.1:9233|
 |`OC_EVENTS_CLUSTER`<br/>`GRAPH_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|opencloud-cluster|
-|`OC_INSECURE`<br/>`GRAPH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`GRAPH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`GRAPH_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided GRAPH_EVENTS_TLS_INSECURE will be seen as false.`||
 |`OC_EVENTS_ENABLE_TLS`<br/>`GRAPH_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|false|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`GRAPH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`||
@@ -111,12 +104,12 @@ Environment variables for the **graph** service
 |`OC_KEYCLOAK_INSECURE_SKIP_VERIFY`<br/>`GRAPH_KEYCLOAK_INSECURE_SKIP_VERIFY`| 1.0.0 |bool|`Disable TLS certificate validation for Keycloak connections. Do not set this in production environments.`|false|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`GRAPH_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`||
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`GRAPH_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`||
-|`GRAPH_STORAGE_GATEWAY_GRPC_ADDR`<br/>`STORAGE_GATEWAY_GRPC_ADDR`| next |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
-|`GRAPH_STORAGE_GRPC_ADDR`<br/>`STORAGE_GRPC_ADDR`| next |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
-|`OC_SYSTEM_USER_ID`<br/>`GRAPH_SYSTEM_USER_ID`| next |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`||
-|`OC_SYSTEM_USER_IDP`<br/>`GRAPH_SYSTEM_USER_IDP`| next |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|internal|
-|`OC_SYSTEM_USER_API_KEY`| next |string|`API key for the STORAGE-SYSTEM system user.`||
-|`GRAPH_USER_SOFT_DELETE_RETENTION_TIME`| next |Duration|`The time after which a soft-deleted user is permanently deleted. If set to 0 (default), there is no soft delete retention time and users are deleted immediately after being soft-deleted. If set to a positive value, the user will be kept in the system for that duration before being permanently deleted.`|0s|
+|`GRAPH_STORAGE_GATEWAY_GRPC_ADDR`<br/>`STORAGE_GATEWAY_GRPC_ADDR`| 4.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
+|`GRAPH_STORAGE_GRPC_ADDR`<br/>`STORAGE_GRPC_ADDR`| 4.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
+|`OC_SYSTEM_USER_ID`<br/>`GRAPH_SYSTEM_USER_ID`| 4.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`||
+|`OC_SYSTEM_USER_IDP`<br/>`GRAPH_SYSTEM_USER_IDP`| 4.0.0 |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|internal|
+|`OC_SYSTEM_USER_API_KEY`| 4.0.0 |string|`API key for the STORAGE-SYSTEM system user.`||
+|`GRAPH_USER_SOFT_DELETE_RETENTION_TIME`| 4.0.0 |Duration|`The time after which a soft-deleted user is permanently deleted. If set to 0 (default), there is no soft delete retention time and users are deleted immediately after being soft-deleted. If set to a positive value, the user will be kept in the system for that duration before being permanently deleted.`|0s|
 |`OC_PERSISTENT_STORE_NODES`<br/>`GRAPH_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|[127.0.0.1:9233]|
 |`GRAPH_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|graph|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`GRAPH_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`||

@@ -1,6 +1,6 @@
 ---
 title: Collaboration
-date: 2025-11-11T09:16:41.1112898+01:00
+date: 2026-01-13T10:10:18.222049742+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/collaboration

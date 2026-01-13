@@ -2,14 +2,7 @@ Environment variables for the **ocm** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`OCM_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`OCM_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`OCM_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`OCM_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`OCM_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`OCM_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`OCM_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`OCM_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`OCM_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`OCM_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9281|
 |`OCM_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`OCM_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|
@@ -27,7 +20,7 @@ Environment variables for the **ocm** service
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`OCM_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`||
 |`OC_EVENTS_ENDPOINT`<br/>`OCM_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|127.0.0.1:9233|
 |`OC_EVENTS_CLUSTER`<br/>`OCM_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|opencloud-cluster|
-|`OC_INSECURE`<br/>`OCM_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`OCM_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|false|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`OCM_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided OCM_EVENTS_TLS_INSECURE will be seen as false.`||
 |`OC_EVENTS_ENABLE_TLS`<br/>`OCM_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|false|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`OCM_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`||
@@ -40,6 +33,8 @@ Environment variables for the **ocm** service
 |`OCM_OCMD_EXPOSE_RECIPIENT_DISPLAY_NAME`| 1.0.0 |bool|`Expose the display name of OCM share recipients.`|false|
 |`OCM_SCIENCEMESH_PREFIX`| 1.0.0 |string|`URL path prefix for the ScienceMesh service. Note that the string must not start with '/'.`|sciencemesh|
 |`OCM_MESH_DIRECTORY_URL`| 1.0.0 |string|`URL of the mesh directory service.`||
+|`OCM_DIRECTORY_SERVICE_URLS`| 3.5.0 |string|`Space delimited URLs of the directory services.`||
+|`OCM_INVITE_ACCEPT_DIALOG`| 3.5.0 |string|`/open-cloud-mesh/accept-invite;The frontend URL where to land when receiving an invitation`|/open-cloud-mesh/accept-invite|
 |`OCM_OCM_INVITE_MANAGER_DRIVER`| 1.0.0 |string|`Driver to be used to persist OCM invites. Supported value is only 'json'.`|json|
 |`OCM_OCM_INVITE_MANAGER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM invite data will be stored. This file is maintained by the instance and must not be changed manually. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/ocm.`|/home/chaser/.opencloud/storage/ocm/ocminvites.json|
 |`OCM_OCM_INVITE_MANAGER_TOKEN_EXPIRATION`| 1.0.0 |Duration|`Expiry duration for invite tokens.`|24h0m0s|

@@ -2,6 +2,8 @@
 
 | Name | Type | Description | Default Value |
 |---|---|---|---|
+`APPDATA` |  |  |  |
+`CI` |  |  |  |
 `CI` |  |  |  |
 `CI` |  |  |  |
 `CI_SYSTEM_NAME` |  |  |  |
@@ -12,9 +14,15 @@
 `CS3_MACHINE_AUTH_API_KEY` |  |  |  |
 `DAYS` |  |  |  |
 `DAYS` |  |  |  |
+`DaemonMarkVar` |  |  |  |
 `GITHUB_API_TOKEN` |  |  |  |
+`GITHUB_TOKEN` |  |  |  |
+`GITHUB_USER` |  |  |  |
+`GOPATH` |  |  |  |
+`GOPATH` |  |  |  |
 `GRACEFUL` |  |  |  |
 `GRACEFUL` |  |  |  |
+`HOME` |  |  |  |
 `HOSTNAME` |  |  |  |
 `HOSTNAME` |  |  |  |
 `HOSTNAME` |  |  |  |
@@ -22,7 +30,12 @@
 `HOSTNAME` |  |  |  |
 `HOSTNAME` |  |  |  |
 `HOSTNAME` |  |  |  |
+`IS_RACE_QUICK_TEST` |  |  |  |
 `KOPANO_DEBUG_SERVER_REQUEST_LOG` |  |  |  |
+`KRB5CCNAME` |  |  |  |
+`KRB5CCNAME` |  |  |  |
+`KRB5_CONFIG` |  |  |  |
+`KRB5_CONFIG` |  |  |  |
 `LDAP_BASEDN` |  |  |  |
 `LDAP_BINDDN` |  |  |  |
 `LDAP_BINDPW` |  |  |  |
@@ -44,6 +57,7 @@
 `LICOD_ENCRYPTION_SECRET` |  |  |  |
 `LICOD_SIGNING_KID` |  |  |  |
 `LICOD_VALIDATION_KEYS_PATH` |  |  |  |
+`LOGNAME` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
@@ -59,6 +73,14 @@
 `OC_CONFIG_DIR` |  |  |  |
 `OC_CONFIG_DIR` |  |  |  |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
+`PATH` |  |  |  |
+`PATH` |  |  |  |
+`PATH` |  |  |  |
+`RCLONE_CONFIG` |  |  |  |
+`RCLONE_CONFIG` |  |  |  |
+`RCLONE_CONFIG_PASS` |  |  |  |
+`RCLONE_PASSWORD_CHANGE` |  |  |  |
+`RCLONE_PLUGIN_PATH` |  |  |  |
 `REDIS_ADDRESS` |  |  |  |
 `REVA_APPPROVIDER_IOPSECRET` |  |  |  |
 `REVA_SMTP_SENDER_PASSWORD` |  |  |  |
@@ -71,10 +93,14 @@
 `SQL_DBNAME` |  |  |  |
 `SQL_PASSWORD` |  |  |  |
 `SQL_USERNAME` |  |  |  |
+`TERM` |  |  |  |
+`USER` |  |  |  |
 `USE_TESTCONTAINERS` |  |  |  |
 `USE_TESTCONTAINERS` |  |  |  |
+`XDG_CONFIG_HOME` |  |  |  |
 `YEAR` |  |  |  |
 `YEAR` |  |  |  |
+`_RCLONE_CONFIG_KEY_FILE` |  |  |  |
 `_registryAddressEnv` |  |  |  |
 `_registryAddressEnv` |  |  |  |
 `_registryAddressEnv` |  |  |  |
@@ -102,6 +128,7 @@
 `_serverMaxConnectionAgeEnv` |  |  |  |
 `_serverMaxConnectionAgeEnv` |  |  |  |
 `_serverMaxConnectionAgeEnv` |  |  |  |
+`name` |  |  |  |
     
     
     

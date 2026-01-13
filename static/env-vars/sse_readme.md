@@ -1,6 +1,6 @@
 ---
 title: SSE
-date: 2025-11-11T09:16:41.112998164+01:00
+date: 2026-01-13T10:10:18.224035518+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/sse

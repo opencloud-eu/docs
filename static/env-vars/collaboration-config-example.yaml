@@ -46,16 +46,7 @@ cs3api:
     insecure: false
   grpc_client_tls: null
   app_registration_interval: 30s
-tracing:
-  enabled: false
-  type: ""
-  endpoint: ""
-  collector: ""
-log:
-  level: ""
-  pretty: false
-  color: false
-  file: ""
+loglevel: error
 debug:
   addr: 127.0.0.1:9304
   token: ""

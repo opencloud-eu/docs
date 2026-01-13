@@ -1,6 +1,6 @@
 ---
 title: Gateway
-date: 2025-11-11T09:16:41.111487823+01:00
+date: 2026-01-13T10:10:18.222269646+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/gateway
@@ -28,7 +28,7 @@ The gateway service is using caching as it is highly frequented with the same re
   -   the `provider cache` is caching requests to list or get storage providers.
   -   the `create home cache` is caching requests to create personal spaces (as they only need to be executed once).
 
-Both caches can be configured via the `OC_CACHE_*` envvars (or `GATEWAY_PROVIDER_CACHE_*` and `GATEWAY_CREATE_HOME_CACHE_*` respectively). See the [envvar section](/services/gateway/configuration/#environment-variables) for details.
+Both caches can be configured via the `OC_CACHE_*` envvars (or `GATEWAY_PROVIDER_CACHE_*` and `GATEWAY_CREATE_HOME_CACHE_*` respectively).
 
 Use `OC_CACHE_STORE` (`GATEWAY_PROVIDER_CACHE_STORE`, `GATEWAY_CREATE_HOME_CACHE_STORE`) to define the type of cache to use:
   -   `memory`: Basic in-memory store and the default.
@@ -60,9 +60,9 @@ The scheme for this setup is the following. Note that there is, except storage, 
 
 | **envvar** | **default** | **alternative** |
 |------|------|------|
-| OC_GRPC_PROTOCOL or <br> `<service>`_GRPC_PROTOCOL | tcp | unix |
+| OC_GRPC_PROTOCOL or <br /> `<service>`_GRPC_PROTOCOL | tcp | unix |
 | `<service>`_GRPC_ADDR | 127.0.0.1:`<port>` | /var/run/opencloud/`<service>`.sock |
-| GATEWAY_`<service>`_ENDPOINT | eu.opencloud.api.`<service>` | unix:/var/run/opencloud/`<service>`.sock <br> dns: ... <br> kubernetes: ... |
+| GATEWAY_`<service>`_ENDPOINT | eu.opencloud.api.`<service>` | unix:/var/run/opencloud/`<service>`.sock <br /> dns: ... <br /> kubernetes: ... |
 
 ```console
 USERS_GRPC_PROTOCOL=unix"

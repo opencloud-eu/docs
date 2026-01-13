@@ -2,14 +2,7 @@ Environment variables for the **storage-shares** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`STORAGE_SHARES_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`STORAGE_SHARES_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`STORAGE_SHARES_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`STORAGE_SHARES_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`STORAGE_SHARES_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`STORAGE_SHARES_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`STORAGE_SHARES_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`STORAGE_SHARES_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`STORAGE_SHARES_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`STORAGE_SHARES_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9156|
 |`STORAGE_SHARES_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`STORAGE_SHARES_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|

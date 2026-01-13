@@ -2,14 +2,7 @@ Environment variables for the **auth-basic** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`AUTH_BASIC_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`AUTH_BASIC_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`AUTH_BASIC_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`AUTH_BASIC_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`AUTH_BASIC_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`AUTH_BASIC_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`AUTH_BASIC_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`AUTH_BASIC_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`AUTH_BASIC_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`AUTH_BASIC_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9147|
 |`AUTH_BASIC_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`AUTH_BASIC_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|
@@ -40,7 +33,7 @@ Environment variables for the **auth-basic** service
 |`OC_LDAP_DISABLE_USER_MECHANISM`<br/>`AUTH_BASIC_DISABLE_USER_MECHANISM`| 1.0.0 |string|`An option to control the behavior for disabling users. Valid options are 'none', 'attribute' and 'group'. If set to 'group', disabling a user via API will add the user to the configured group for disabled users, if set to 'attribute' this will be done in the ldap user entry, if set to 'none' the disable request is not processed.`|attribute|
 |`OC_LDAP_DISABLED_USERS_GROUP_DN`<br/>`AUTH_BASIC_DISABLED_USERS_GROUP_DN`| 1.0.0 |string|`The distinguished name of the group to which added users will be classified as disabled when 'disable_user_mechanism' is set to 'group'.`|cn=DisabledUsersGroup,ou=groups,o=libregraph-idm|
 |`OC_LDAP_USER_SCHEMA_ID`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_ID`| 1.0.0 |string|`LDAP Attribute to use as the unique ID for users. This should be a stable globally unique ID like a UUID.`|openCloudUUID|
-|`OC_LDAP_USER_SCHEMA_TENANT_ID`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_TENANT_ID`| next |string|`LDAP Attribute to use for the tenant ID of users. This is used to identify the tenant of a user in a multi-tenant environment.`||
+|`OC_LDAP_USER_SCHEMA_TENANT_ID`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_TENANT_ID`| 4.0.0 |string|`LDAP Attribute to use for the tenant ID of users. This is used to identify the tenant of a user in a multi-tenant environment.`||
 |`OC_LDAP_USER_SCHEMA_ID_IS_OCTETSTRING`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_ID_IS_OCTETSTRING`| 1.0.0 |bool|`Set this to true if the defined 'ID' attribute for users is of the 'OCTETSTRING' syntax. This is e.g. required when using the 'objectGUID' attribute of Active Directory for the user IDs.`|false|
 |`OC_LDAP_USER_SCHEMA_MAIL`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_MAIL`| 1.0.0 |string|`LDAP Attribute to use for the email address of users.`|mail|
 |`OC_LDAP_USER_SCHEMA_DISPLAYNAME`<br/>`AUTH_BASIC_LDAP_USER_SCHEMA_DISPLAYNAME`| 1.0.0 |string|`LDAP Attribute to use for the displayname of users.`|displayname|

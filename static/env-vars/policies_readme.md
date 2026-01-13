@@ -1,6 +1,6 @@
 ---
 title: Policies
-date: 2025-11-11T09:16:41.112107899+01:00
+date: 2026-01-13T10:10:18.223157206+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/policies
@@ -165,7 +165,7 @@ Note that additional steps can be configured and their position in the list defi
 
 ## Rego Key Match
 
-To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud/blob/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
+To identify available keys for OPA, you need to look at [engine.go](https://github.com/opencloud-eu/opencloud/blob/main/services/policies/pkg/engine/engine.go) and the [policies.swagger.json](https://github.com/opencloud-eu/opencloud/blob/master/protogen/gen/opencloud/services/policies/v0/policies.swagger.json) file. Note that which keys are available depends on from which module it is used.
 
 ## Extend Mimetype File Extension Mapping
 
@@ -193,5 +193,5 @@ A good example of how such a file should be formatted can be found in the [Apach
 
 ## Example Policies
 
-The policies service contains a set of preconfigured example policies. See the [deployment examples](https://github.com/opencloud-eu/opencloud/tree/main/deployments/examples) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
+The policies service contains a set of preconfigured example policies. See the [devtools policie](https://github.com/opencloud-eu/opencloud/tree/main/devtools/deployments/service_policies/policies/) directory for details. The contained policies disallow OpenCloud to create certain file types, both via the proxy middleware and the events service via postprocessing.
 

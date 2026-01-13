@@ -2,14 +2,7 @@ Environment variables for the **auth-app** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|---|
-|`OC_TRACING_ENABLED`<br/>`AUTH_APP_TRACING_ENABLED`| 1.0.0 |bool|`Activates tracing.`|false|
-|`OC_TRACING_TYPE`<br/>`AUTH_APP_TRACING_TYPE`| 1.0.0 |string|`The type of tracing. Defaults to '', which is the same as 'jaeger'. Allowed tracing types are 'jaeger' and '' as of now.`||
-|`OC_TRACING_ENDPOINT`<br/>`AUTH_APP_TRACING_ENDPOINT`| 1.0.0 |string|`The endpoint of the tracing agent.`||
-|`OC_TRACING_COLLECTOR`<br/>`AUTH_APP_TRACING_COLLECTOR`| 1.0.0 |string|`The HTTP endpoint for sending spans directly to a collector, i.e. \http://jaeger-collector:14268/api/traces. Only used if the tracing endpoint is unset.`||
-|`OC_LOG_LEVEL`<br/>`AUTH_APP_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`||
-|`OC_LOG_PRETTY`<br/>`AUTH_APP_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|false|
-|`OC_LOG_COLOR`<br/>`AUTH_APP_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|false|
-|`OC_LOG_FILE`<br/>`AUTH_APP_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`||
+|`OC_LOG_LEVEL`<br/>`AUTH_APP_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|error|
 |`AUTH_APP_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|127.0.0.1:9245|
 |`AUTH_APP_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`||
 |`AUTH_APP_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|false|
@@ -32,11 +25,11 @@ Environment variables for the **auth-app** service
 |`AUTH_APP_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the encoding of the user's group memberships in the access token. This reduces the token size, especially when users are members of a large number of groups.`|false|
 |`OC_MACHINE_AUTH_API_KEY`<br/>`AUTH_APP_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`||
 |`AUTH_APP_ENABLE_IMPERSONATION`| 1.0.0 |bool|`Allows admins to create app tokens for other users. Used for migration. Do NOT use in productive deployments.`|false|
-|`AUTH_APP_STORAGE_DRIVER`| next |string|`Driver to be used to persist the app tokes . Supported values are 'jsoncs3', 'json'.`|jsoncs3|
-|`AUTH_APP_JSONCS3_PROVIDER_ADDR`| next |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
-|`OC_SYSTEM_USER_ID`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_ID`| next |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`||
-|`OC_SYSTEM_USER_IDP`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_IDP`| next |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|internal|
-|`OC_SYSTEM_USER_API_KEY`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_API_KEY`| next |string|`API key for the STORAGE-SYSTEM system user.`||
-|`AUTH_APP_JSONCS3_PASSWORD_GENERATOR`| next |string|`The password generator that should be used for generating app tokens. Supported values are: 'diceware' and 'random'.`|diceware|
-|`AUTH_APP_JSONCS3_DICEWARE_NUMBER_OF_WORDS`| next |int|`The number of words the generated passphrase will have.`|6|
-|`AUTH_APP_JSONCS3_RANDOM_PASSWORD_LENGTH`| next |int|`The number of charactors the generated passwords will have.`|0|
+|`AUTH_APP_STORAGE_DRIVER`| 4.0.0 |string|`Driver to be used to persist the app tokes . Supported values are 'jsoncs3', 'json'.`|jsoncs3|
+|`AUTH_APP_JSONCS3_PROVIDER_ADDR`| 4.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|eu.opencloud.api.storage-system|
+|`OC_SYSTEM_USER_ID`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_ID`| 4.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`||
+|`OC_SYSTEM_USER_IDP`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_IDP`| 4.0.0 |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|internal|
+|`OC_SYSTEM_USER_API_KEY`<br/>`AUTH_APP_JSONCS3_SYSTEM_USER_API_KEY`| 4.0.0 |string|`API key for the STORAGE-SYSTEM system user.`||
+|`AUTH_APP_JSONCS3_PASSWORD_GENERATOR`| 4.0.0 |string|`The password generator that should be used for generating app tokens. Supported values are: 'diceware' and 'random'.`|diceware|
+|`AUTH_APP_JSONCS3_DICEWARE_NUMBER_OF_WORDS`| 4.0.0 |int|`The number of words the generated passphrase will have.`|6|
+|`AUTH_APP_JSONCS3_RANDOM_PASSWORD_LENGTH`| 4.0.0 |int|`The number of charactors the generated passwords will have.`|0|
