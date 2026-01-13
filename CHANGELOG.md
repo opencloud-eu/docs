@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.5.1](https://github.com/opencloud-eu/docs/releases/tag/3.5.1) - 2026-01-13
+
+### ❤️ Thanks to all contributors! ❤️
+
+@flimmy
+
+### 📦️ Build&Tools
+
+- Update settings.yml [[#575](https://github.com/opencloud-eu/docs/pull/575)]
+
 ## [3.5.0](https://github.com/opencloud-eu/docs/releases/tag/3.5.0) - 2026-01-12
 
 ### ❤️ Thanks to all contributors! ❤️
