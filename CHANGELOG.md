@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@flimmy
+@flimmy, @micbar
 
 ### 📦️ Build&Tools
 
+- chore: bump docusaurus and dependencies [[#573](https://github.com/opencloud-eu/docs/pull/573)]
 - Update settings.yml [[#575](https://github.com/opencloud-eu/docs/pull/575)]
 
 ## [3.5.0](https://github.com/opencloud-eu/docs/releases/tag/3.5.0) - 2026-01-12
