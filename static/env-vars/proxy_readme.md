@@ -1,6 +1,6 @@
 ---
 title: Proxy
-date: 2025-11-27T22:56:02.334185+01:00
+date: 2026-01-13T10:43:39.399835526+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/proxy
@@ -65,7 +65,7 @@ policies:
       - endpoint: /
         service: eu.opencloud.web.web
       - endpoint: /dav/
-        service: eu.opencloud.web.ocdav
+        service: eu.opencloud.web.frontend
 ```
 
 For adding _additional_ routes to the default routes use:

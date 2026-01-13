@@ -1,6 +1,6 @@
 ---
 title: Auth-App
-date: 2025-11-27T22:56:02.331944+01:00
+date: 2026-01-13T10:43:39.397966421+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/auth-app

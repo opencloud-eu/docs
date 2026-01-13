@@ -1,6 +1,6 @@
 ---
 title: Storage PublicLink
-date: 2025-11-27T22:56:02.334658+01:00
+date: 2026-01-13T10:43:39.400390229+01:00
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/storage-publiclink
@@ -34,7 +34,7 @@ This service is part of the storage services family and is responsible for:
 
 The storage-publiclink service integrates with:
 - `sharing` service - Manages and persists public link shares
-- `frontend` and `ocdav` - Provide HTTP/WebDAV access to public links
+- `frontend` service - Provides HTTP/WebDAV access to public links
 - Storage drivers - Accesses the actual file content
 
 ## Storage Registry

@@ -1,13 +1,135 @@
 # Environment variables with extended scope not included in a service
 
-| Name | Type | Default Value | Description |
+| Name | Type | Description | Default Value |
 |---|---|---|---|
-`EXPERIMENTAL_REGISTER_INTERVAL` | duration | 25s | The interval at which services will re-register themselves with the registry to prevent expiry. Only change on supervision of openCloud Support. |
-`EXPERIMENTAL_REGISTER_TTL` | duration | 30s | The time-to-live for a service registration in the registry. Services must re-register before this time to prevent expiry. Only change on supervision of openCloud Support. |
-`MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
-`MICRO_REGISTRY` | string | nats-js-kv | The type of registry to use. Only change on supervision of openCloud Support. |
-`MICRO_REGISTRY_ADDRESS` | string | 127.0.0.1:9233 | The bind address of the internal natsjs registry. Only change on supervision of openCloud Support. |
-`MICRO_REGISTRY_AUTH_PASSWORD` | string |  | Optional when using nats to authenticate with the nats cluster. |
-`OC_BASE_DATA_PATH` | string |  | The base directory location used by several services and for user data. See the General Info section in the documentation for more details on defaults. Services can have, if available, an individual setting with an own environment variable. |
-`OC_CONFIG_DIR` | string |  | The default directory location for config files. See the General Info section in the documentation for more details on defaults. |
-`OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` | integer | 10240000 | Sets the maximum message size in bytes the GRPC client can receive. |
+`APPDATA` |  |  |  |
+`CI` |  |  |  |
+`CI` |  |  |  |
+`CI` |  |  |  |
+`CI_SYSTEM_NAME` |  |  |  |
+`CI_SYSTEM_NAME` |  |  |  |
+`CS3_GATEWAY` |  |  |  |
+`CS3_GATEWAY` |  |  |  |
+`CS3_MACHINE_AUTH_API_KEY` |  |  |  |
+`CS3_MACHINE_AUTH_API_KEY` |  |  |  |
+`DAYS` |  |  |  |
+`DAYS` |  |  |  |
+`DaemonMarkVar` |  |  |  |
+`GITHUB_API_TOKEN` |  |  |  |
+`GITHUB_TOKEN` |  |  |  |
+`GITHUB_USER` |  |  |  |
+`GOPATH` |  |  |  |
+`GOPATH` |  |  |  |
+`GRACEFUL` |  |  |  |
+`GRACEFUL` |  |  |  |
+`HOME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`HOSTNAME` |  |  |  |
+`IS_RACE_QUICK_TEST` |  |  |  |
+`KOPANO_DEBUG_SERVER_REQUEST_LOG` |  |  |  |
+`KRB5CCNAME` |  |  |  |
+`KRB5CCNAME` |  |  |  |
+`KRB5_CONFIG` |  |  |  |
+`KRB5_CONFIG` |  |  |  |
+`LDAP_BASEDN` |  |  |  |
+`LDAP_BINDDN` |  |  |  |
+`LDAP_BINDPW` |  |  |  |
+`LDAP_EMAIL_ATTRIBUTE` |  |  |  |
+`LDAP_FAMILY_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_FILTER` |  |  |  |
+`LDAP_GIVEN_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_LOGIN_ATTRIBUTE` |  |  |  |
+`LDAP_NAME_ATTRIBUTE` |  |  |  |
+`LDAP_SCOPE` |  |  |  |
+`LDAP_SUB_ATTRIBUTES` |  |  |  |
+`LDAP_TLS_CACERT` |  |  |  |
+`LDAP_UIDNUMBER_ATTRIBUTE` |  |  |  |
+`LDAP_URI` |  |  |  |
+`LDAP_UUID_ATTRIBUTE` |  |  |  |
+`LDAP_UUID_ATTRIBUTE_TYPE` |  |  |  |
+`LIBREGRAPH_SCOPED_URIS` |  |  |  |
+`LIBREGRAPH_URI` |  |  |  |
+`LICOD_ENCRYPTION_SECRET` |  |  |  |
+`LICOD_SIGNING_KID` |  |  |  |
+`LICOD_VALIDATION_KEYS_PATH` |  |  |  |
+`LOGNAME` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MONTH` |  |  |  |
+`MONTH` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`NEXTCLOUD` |  |  |  |
+`OC_BASE_DATA_PATH` |  |  |  |
+`OC_BASE_DATA_PATH` |  |  |  |
+`OC_CONFIG_DIR` |  |  |  |
+`OC_CONFIG_DIR` |  |  |  |
+`OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
+`PATH` |  |  |  |
+`PATH` |  |  |  |
+`PATH` |  |  |  |
+`RCLONE_CONFIG` |  |  |  |
+`RCLONE_CONFIG` |  |  |  |
+`RCLONE_CONFIG_PASS` |  |  |  |
+`RCLONE_PASSWORD_CHANGE` |  |  |  |
+`RCLONE_PLUGIN_PATH` |  |  |  |
+`REDIS_ADDRESS` |  |  |  |
+`REVA_APPPROVIDER_IOPSECRET` |  |  |  |
+`REVA_SMTP_SENDER_PASSWORD` |  |  |  |
+`RUN_CMD_TEST` |  |  |  |
+`RUN_CMD_TEST` |  |  |  |
+`RUN_LDAP_TESTS` |  |  |  |
+`RUN_LDAP_TESTS` |  |  |  |
+`RUN_LDAP_TESTS` |  |  |  |
+`SQL_ADDRESS` |  |  |  |
+`SQL_DBNAME` |  |  |  |
+`SQL_PASSWORD` |  |  |  |
+`SQL_USERNAME` |  |  |  |
+`TERM` |  |  |  |
+`USER` |  |  |  |
+`USE_TESTCONTAINERS` |  |  |  |
+`USE_TESTCONTAINERS` |  |  |  |
+`XDG_CONFIG_HOME` |  |  |  |
+`YEAR` |  |  |  |
+`YEAR` |  |  |  |
+`_RCLONE_CONFIG_KEY_FILE` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryAddressEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryPasswordEnv` |  |  |  |
+`_registryRegisterIntervalEnv` |  |  |  |
+`_registryRegisterIntervalEnv` |  |  |  |
+`_registryRegisterTTLEnv` |  |  |  |
+`_registryRegisterTTLEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_registryUsernameEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+`_serverMaxConnectionAgeEnv` |  |  |  |
+`name` |  |  |  |
+    
+    
+    
+    
