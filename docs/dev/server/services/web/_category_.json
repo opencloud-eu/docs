@@ -1,4 +1,5 @@
 {
   "label": "Web",
-  "position": 40
+  "position": 40,
+  "key": "dev-server-services-web"
 }
