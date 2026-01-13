@@ -10,19 +10,21 @@ steps:
     commands:
       - git batch -vv
   - name: lint-md
-    image: owncloudci/nodejs:20
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
       - pnpm install
       - pnpm lint:md
   - name: format-check
-    image: owncloudci/nodejs:20
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
       - pnpm install
       - pnpm format:check
   - name: build
-    image: owncloudci/nodejs:20
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
+      - apk add --no-cache graphviz graphviz-dev ttf-liberation
       - pnpm install
+      - pnpm list likec4
       - pnpm build-likec4
       - pnpm build
   - name: deploy-staging
