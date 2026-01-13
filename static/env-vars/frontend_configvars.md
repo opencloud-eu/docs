@@ -1,5 +1,5 @@
 
-2025-11-27-22-55-58
+2026-01-13-14-32-58
 
 # Deprecation Notice
 
@@ -25,10 +25,7 @@ Environment variables for the **frontend** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`FRONTEND_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`FRONTEND_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`FRONTEND_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`FRONTEND_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`FRONTEND_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`FRONTEND_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9141`|
 |`FRONTEND_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`FRONTEND_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -55,7 +52,6 @@ Environment variables for the **frontend** service
 |`OC_ENABLE_OCM`<br/>`FRONTEND_ENABLE_FEDERATED_SHARING_INCOMING`| 1.0.0 |bool|`Changing this value is NOT supported. Enables support for incoming federated sharing for clients. The backend behaviour is not changed.`|`false`|
 |`OC_ENABLE_OCM`<br/>`FRONTEND_ENABLE_FEDERATED_SHARING_OUTGOING`| 1.0.0 |bool|`Changing this value is NOT supported. Enables support for outgoing federated sharing for clients. The backend behaviour is not changed.`|`false`|
 |`FRONTEND_SEARCH_MIN_LENGTH`| 1.0.0 |int|`Minimum number of characters to enter before a client should start a search for Share receivers. This setting can be used to customize the user experience if e.g too many results are displayed.`|`3`|
-|`OC_EDITION`<br/>`FRONTEND_EDITION`| 1.0.0 |string|`Edition of OpenCloud. Used for branding purposes.`|``|
 |`OC_DISABLE_SSE`<br/>`FRONTEND_DISABLE_SSE`| 1.0.0 |bool|`When set to true, clients are informed that the Server-Sent Events endpoint is not accessible.`|`false`|
 |`FRONTEND_DISABLE_RADICALE`| 4.0.0 |bool|`When set to true, clients are informed that the Radicale (CalDAV/CardDAV) is not accessible.`|`false`|
 |`FRONTEND_DEFAULT_LINK_PERMISSIONS`| 1.0.0 |int|`Defines the default permissions a link is being created with. Possible values are 0 (= internal link, for instance members only) and 1 (= public link with viewer permissions). Defaults to 1.`|`1`|
@@ -85,6 +81,21 @@ Environment variables for the **frontend** service
 |`OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD`<br/>`FRONTEND_OCS_PUBLIC_SHARE_MUST_HAVE_PASSWORD`| 1.0.0 |bool|`Set this to true if you want to enforce passwords on all public shares.`|`true`|
 |`OC_SHARING_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD`<br/>`FRONTEND_OCS_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD`| 1.0.0 |bool|`Set this to true if you want to enforce passwords for writable shares. Only effective if the setting for 'passwords on all public shares' is set to false.`|`false`|
 |`OC_SHOW_USER_EMAIL_IN_RESULTS`| 1.0.0 |bool|`Include user email addresses in responses. If absent or set to false emails will be omitted from results. Please note that admin users can always see all email addresses.`|`false`|
+|`OCDAV_HTTP_PREFIX`<br/>`FRONTENT_OCDAV_HTTP_PREFIX`| 1.0.0 |string|`A URL path prefix for the handler.`|``|
+|`OCDAV_SKIP_USER_GROUPS_IN_TOKEN`<br/>`FRONTENT_OCDAV_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`false`|
+|`OCDAV_WEBDAV_NAMESPACE`<br/>`FRONTENT_OCDAV_WEBDAV_NAMESPACE`| 1.0.0 |string|`Jail requests to /dav/webdav into this CS3 namespace. Supports template layouting with CS3 User properties.`|`/users/{{.Id.OpaqueId}}`|
+|`OCDAV_FILES_NAMESPACE`<br/>`FRONTENT_OCDAV_FILES_NAMESPACE`| 1.0.0 |string|`Jail requests to /dav/files/{username} into this CS3 namespace. Supports template layouting with CS3 User properties.`|`/users/{{.Id.OpaqueId}}`|
+|`OCDAV_SHARES_NAMESPACE`<br/>`FRONTENT_OCDAV_SHARES_NAMESPACE`| 1.0.0 |string|`The human readable path for the share jail. Relative to a users personal space root. Upcased intentionally.`|`/Shares`|
+|`OCDAV_OCM_NAMESPACE`<br/>`FRONTENT_OCDAV_OCM_NAMESPACE`| 1.0.0 |string|`The human readable path prefix for the ocm shares.`|`/public`|
+|`OC_URL`<br/>`OCDAV_PUBLIC_URL`<br/>`FRONTENT_OCDAV_PUBLIC_URL`| 1.0.0 |string|`URL where OpenCloud is reachable for users.`|`https://localhost:9200`|
+|`OC_INSECURE`<br/>`OCDAV_INSECURE`<br/>`FRONTENT_OCDAV_INSECURE`| 1.0.0 |bool|`Allow insecure connections to the GATEWAY service.`|`false`|
+|`OCDAV_ENABLE_HTTP_TPC`<br/>`FRONTENT_OCDAV_ENABLE_HTTP_TPC`| next |bool|`Enable HTTP / WebDAV Third-Party-Copy support.`|`false`|
+|`OCDAV_GATEWAY_REQUEST_TIME`<br/>`FRONTENT_OUTOCDAV_GATEWAY_REQUEST_TIMEOUT`| 1.0.0 |int64|`Request timeout in seconds for requests from the oCDAV service to the GATEWAY service.`|`84300`|
+|`OC_MACHINE_AUTH_API_KEY`<br/>`OCDAV_MACHINE_AUTH_API_KEY`<br/>`FRONTENT_OCDAV_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`Machine auth API key used to validate internal requests necessary for the access to resources from other services.`|``|
+|`OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`<br/>`FRONTENT_OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`| 1.0.0 |bool|`Allow the use of depth infinity in PROPFINDS. When enabled, a propfind will traverse through all subfolders. If many subfolders are expected, depth infinity can cause heavy server load and/or delayed response times.`|`false`|
+|`OCDAV_NAME_VALIDATION_INVALID_CHARS`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_INVALID_CHARS`| next |[]string|`List of characters that are not allowed in file or folder names.`|`[  
+ \]`|
+|`OCDAV_NAME_VALIDATION_MAX_LENGTH`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_MAX_LENGTH`| next |int|`Max lenght og file or folder names.`|`255`|
 |`FRONTEND_CHECKSUMS_SUPPORTED_TYPES`| 1.0.0 |[]string|`A list of checksum types that indicate to clients which hashes the server can use to verify upload integrity. Supported types are 'sha1', 'md5' and 'adler32'. See the Environment Variable Types description for more details.`|`[sha1 md5 adler32]`|
 |`FRONTEND_CHECKSUMS_PREFERRED_UPLOAD_TYPE`| 1.0.0 |string|`The supported checksum type for uploads that indicates to clients supporting multiple hash algorithms which one is preferred by the server. Must be one out of the defined list of SUPPORTED_TYPES.`|`sha1`|
 |`FRONTEND_READONLY_USER_ATTRIBUTES`| 1.0.0 |[]string|`A list of user attributes to indicate as read-only. Supported values: 'user.onPremisesSamAccountName' (username), 'user.displayName', 'user.mail', 'user.passwordProfile' (password), 'user.appRoleAssignments' (role), 'user.memberOf' (groups), 'user.accountEnabled' (login allowed), 'drive.quota' (quota). See the Environment Variable Types description for more details.`|`[]`|
@@ -94,8 +105,8 @@ Environment variables for the **frontend** service
 |`FRONTEND_CHECK_FOR_UPDATES`| 3.6.0 |bool|`Enable automatic checking for updates. Defaults to true.`|`true`|
 |`OC_EVENTS_ENDPOINT`<br/>`FRONTEND_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`FRONTEND_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`FRONTEND_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
-|`FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`OCS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided NOTIFICATIONS_EVENTS_TLS_INSECURE will be seen as false.`|``|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`FRONTEND_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`OCS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided NOTIFICATIONS_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`FRONTEND_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`FRONTEND_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`FRONTEND_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|

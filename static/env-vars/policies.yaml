@@ -18,11 +18,7 @@ events:
   username: ""
   password: ""
 grpc_client_tls: null
-log:
-  level: ""
-  pretty: false
-  color: false
-  file: ""
+loglevel: error
 engine:
   timeout: 10s
   policies: []

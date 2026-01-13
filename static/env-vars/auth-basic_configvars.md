@@ -2,10 +2,7 @@ Environment variables for the **auth-basic** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`AUTH_BASIC_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`AUTH_BASIC_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`AUTH_BASIC_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`AUTH_BASIC_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`AUTH_BASIC_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`AUTH_BASIC_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9147`|
 |`AUTH_BASIC_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`AUTH_BASIC_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -19,7 +16,7 @@ Environment variables for the **auth-basic** service
 |`AUTH_BASIC_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the encoding of the user's group memberships in the reva access token. This reduces the token size, especially when users are members of a large number of groups.`|`false`|
 |`AUTH_BASIC_AUTH_MANAGER`| 1.0.0 |string|`The authentication manager to check if credentials are valid. Supported value is 'ldap'.`|`ldap`|
 |`OC_LDAP_URI`<br/>`AUTH_BASIC_LDAP_URI`| 1.0.0 |string|`URI of the LDAP Server to connect to. Supported URI schemes are 'ldaps://' and 'ldap://'`|`ldaps://localhost:9235`|
-|`OC_LDAP_CACERT`<br/>`AUTH_BASIC_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/var/lib/opencloud/idm/ldap.crt`|
+|`OC_LDAP_CACERT`<br/>`AUTH_BASIC_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/root/.opencloud/idm/ldap.crt`|
 |`OC_LDAP_INSECURE`<br/>`AUTH_BASIC_LDAP_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the LDAP connections. Do not set this in production environments.`|`false`|
 |`OC_LDAP_BIND_DN`<br/>`AUTH_BASIC_LDAP_BIND_DN`| 1.0.0 |string|`LDAP DN to use for simple bind authentication with the target LDAP server.`|`uid=reva,ou=sysusers,o=libregraph-idm`|
 |`OC_LDAP_BIND_PASSWORD`<br/>`AUTH_BASIC_LDAP_BIND_PASSWORD`| 1.0.0 |string|`Password to use for authenticating the 'bind_dn'.`|``|

@@ -1,6 +1,6 @@
 ---
 title: Storage Shares
-date: 2025-11-27T22:56:02.334725+01:00
+date: 2026-01-13T14:33:04.563998783Z
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/storage-shares
@@ -35,7 +35,7 @@ This service is part of the storage services family and is responsible for:
 The storage-shares service integrates with:
 - `sharing` service - Manages and persists shares
 - `storage-users` service - Accesses the underlying file content
-- `frontend` and `ocdav` - Provide HTTP/WebDAV access to shares
+- `frontend` service - Provides HTTP/WebDAV access to shares
 
 ## Virtual Shares Folder
 

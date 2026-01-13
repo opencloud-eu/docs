@@ -2,10 +2,7 @@ Environment variables for the **search** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`SEARCH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`SEARCH_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`SEARCH_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`SEARCH_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`SEARCH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`SEARCH_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9224`|
 |`SEARCH_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`SEARCH_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -22,7 +19,7 @@ Environment variables for the **search** service
 |`OC_ASYNC_UPLOADS`<br/>`SEARCH_EVENTS_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`true`|
 |`SEARCH_EVENTS_NUM_CONSUMERS`| 1.0.0 |int|`The amount of concurrent event consumers to start. Event consumers are used for searching files. Multiple consumers increase parallelisation, but will also increase CPU and memory demands.`|`1`|
 |`SEARCH_EVENTS_REINDEX_DEBOUNCE_DURATION`| 1.0.0 |int|`The duration in milliseconds the reindex debouncer waits before triggering a reindex of a space that was modified.`|`1000`|
-|`OC_INSECURE`<br/>`SEARCH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`SEARCH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`SEARCH_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided SEARCH_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`SEARCH_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SEARCH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
@@ -30,7 +27,7 @@ Environment variables for the **search** service
 |`SEARCH_EVENTS_MAX_ACK_PENDING`| 4.0.0 |int|`The maximum number of unacknowledged messages. This is used to limit the number of messages that can be in flight at the same time.`|`1000`|
 |`SEARCH_EVENTS_ACK_WAIT`| 4.0.0 |Duration|`The time to wait for an ack before the message is redelivered. This is used to ensure that messages are not lost if the consumer crashes.`|`1m0s`|
 |`SEARCH_ENGINE_TYPE`| 1.0.0 |string|`Defines which search engine to use. Defaults to 'bleve'. Supported values are: 'bleve'.`|`bleve`|
-|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|`The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.`|`/var/lib/opencloud/search`|
+|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|`The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.`|`/root/.opencloud/search`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ADDRESSES`| 4.0.0 |[]string|`The addresses of the OpenSearch nodes..`|`[]`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_USERNAME`| 4.0.0 |string|`Username for HTTP Basic Authentication.`|``|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_PASSWORD`| 4.0.0 |string|`Password for HTTP Basic Authentication.`|``|

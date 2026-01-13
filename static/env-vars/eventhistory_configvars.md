@@ -2,10 +2,7 @@ Environment variables for the **eventhistory** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`EVENTHISTORY_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`EVENTHISTORY_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`EVENTHISTORY_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`EVENTHISTORY_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`EVENTHISTORY_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`EVENTHISTORY_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9270`|
 |`EVENTHISTORY_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`EVENTHISTORY_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -13,7 +10,7 @@ Environment variables for the **eventhistory** service
 |`EVENTHISTORY_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`127.0.0.1:9274`|
 |`OC_EVENTS_ENDPOINT`<br/>`EVENTHISTORY_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`EVENTHISTORY_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`EVENTHISTORY_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`EVENTHISTORY_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`EVENTHISTORY_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. Will be seen as empty if NOTIFICATIONS_EVENTS_TLS_INSECURE is provided.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`EVENTHISTORY_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`EVENTHISTORY_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|

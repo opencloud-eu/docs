@@ -1,6 +1,6 @@
 ---
 title: Webdav
-date: 2025-11-27T22:56:02.335343+01:00
+date: 2026-01-13T14:33:04.566596538Z
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/webdav
@@ -13,7 +13,7 @@ geekdocCollapseSection: true
 ## Abstract
 
 
-The webdav service, like the [ocdav](../ocdav) service, provides a HTTP API following the webdav protocol. It receives HTTP calls from requestors like clients and issues gRPC calls to other services executing these requests. After the called service has finished the request, the webdav service will render their responses in `xml` and sends them back to the requestor.
+The webdav service, like the [frontend](../frontend) service, provides a HTTP API following the webdav protocol. It receives HTTP calls from requestors like clients and issues gRPC calls to other services executing these requests. After the called service has finished the request, the webdav service will render their responses in `xml` and sends them back to the requestor.
 
 
 ## Table of Contents

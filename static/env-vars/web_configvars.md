@@ -2,10 +2,7 @@ Environment variables for the **web** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`WEB_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`WEB_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`WEB_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`WEB_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`WEB_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`WEB_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9104`|
 |`WEB_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`WEB_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -20,9 +17,9 @@ Environment variables for the **web** service
 |`OC_CORS_ALLOW_METHODS`<br/>`WEB_CORS_ALLOW_METHODS`| 1.0.0 |[]string|`A list of allowed CORS methods. See following chapter for more details: *Access-Control-Request-Method* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method. See the Environment Variable Types description for more details.`|`[OPTIONS HEAD GET PUT PATCH POST DELETE MKCOL PROPFIND PROPPATCH MOVE COPY REPORT SEARCH]`|
 |`OC_CORS_ALLOW_HEADERS`<br/>`WEB_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`[Origin Accept Content-Type Depth Authorization Ocs-Apirequest If-None-Match If-Match Destination Overwrite X-Request-Id X-Requested-With Tus-Resumable Tus-Checksum-Algorithm Upload-Concat Upload-Length Upload-Metadata Upload-Defer-Length Upload-Expires Upload-Checksum Upload-Offset X-HTTP-Method-Override]`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`WEB_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS. See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`false`|
-|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/var/lib/opencloud/web/assets/core`|
-|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/var/lib/opencloud/web/assets/themes`|
-|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/var/lib/opencloud/web/assets/apps`|
+|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/root/.opencloud/web/assets/core`|
+|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/root/.opencloud/web/assets/themes`|
+|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/root/.opencloud/web/assets/apps`|
 |`WEB_UI_CONFIG_FILE`| 1.0.0 |string|`Read the OpenCloud Web json based configuration from this path/file. The config file takes precedence over WEB_OPTION_xxx environment variables. See the text description for more details.`|``|
 |`OC_URL`<br/>`WEB_UI_THEME_SERVER`| 1.0.0 |string|`Base URL to load themes from. Will be prepended to the theme path.`|`https://localhost:9200`|
 |`WEB_UI_THEME_PATH`| 1.0.0 |string|`Path to the theme json file. Will be appended to the URL of the theme server.`|`/themes/opencloud/theme.json`|

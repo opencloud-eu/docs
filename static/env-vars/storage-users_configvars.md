@@ -1,5 +1,5 @@
 
-2025-11-27-22-55-58
+2026-01-13-14-32-58
 
 # Deprecation Notice
 
@@ -11,10 +11,7 @@ Environment variables for the **storage-users** service
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
 |`STORAGE_USERS_SERVICE_NAME`| 1.0.0 |string|`Service name to use. Change this when starting an additional storage provider with a custom configuration to prevent it from colliding with the default 'storage-users' service.`|`storage-users`|
-|`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`STORAGE_USERS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`STORAGE_USERS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`STORAGE_USERS_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`STORAGE_USERS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`STORAGE_USERS_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9159`|
 |`STORAGE_USERS_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`STORAGE_USERS_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -38,7 +35,7 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_DRIVER`| 1.0.0 |string|`The storage driver which should be used by the service. Defaults to 'posix'. Supported values are: 'posix', 'decomposed', 'decomposeds3' and 'owncloudsql'. For backwards compatibility reasons it's also possible to use the 'ocis' and 's3ng' driver and configure them using the 'decomposed'/'decomposeds3' options. The 'posix' driver stores data directly on a POSIX-compliant filesystem. The 'decomposed' driver stores all data (blob and meta data) in a POSIX compliant volume. The 'decomposeds3' driver stores metadata in a POSIX compliant volume and uploads blobs to the s3 bucket.`|`posix`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSED_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`sync`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
-|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
+|`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/root/.opencloud/storage/users`|
 |`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`{{.Id.OpaqueId}}`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSED_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`eu.opencloud.api.settings`|
 |`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`{{.SpaceType}}/{{.User.Username \| lower}}`|
@@ -54,7 +51,7 @@ Environment variables for the **storage-users** service
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSEDS3_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`sync`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
-|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
+|`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/root/.opencloud/storage/users`|
 |`STORAGE_USERS_DECOMPOSEDS3_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`{{.Id.OpaqueId}}`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSEDS3_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`eu.opencloud.api.settings`|
 |`STORAGE_USERS_DECOMPOSEDS3_REGION`| 1.0.0 |string|`Region of the S3 bucket.`|`default`|
@@ -78,17 +75,17 @@ Environment variables for the **storage-users** service
 |`OC_MAX_CONCURRENCY`<br/>`STORAGE_USERS_DECOMPOSEDS3_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value of 100 will be used.`|`5`|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`true`|
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
-|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|`The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.`|`/var/lib/opencloud/storage/owncloud`|
+|`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|`The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.`|`/root/.opencloud/storage/owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`/Shares`|
 |`STORAGE_USERS_OWNCLOUDSQL_LAYOUT`| 1.0.0 |string|`Path layout to use to navigate into a users folder in an owncloud data directory`|`{{.Username}}`|
-|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|`The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.`|`/var/lib/opencloud/storage/uploadinfo`|
+|`STORAGE_USERS_OWNCLOUDSQL_UPLOADINFO_DIR`| 1.0.0 |string|`The directory where the filesystem will store uploads temporarily. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/uploadinfo.`|`/root/.opencloud/storage/uploadinfo`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_USERNAME`| 1.0.0 |string|`Username for the database.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PASSWORD`| 1.0.0 |string|`Password for the database.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_HOST`| 1.0.0 |string|`Hostname or IP of the database server.`|``|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_PORT`| 1.0.0 |int|`Port that the database server is listening on.`|`3306`|
 |`STORAGE_USERS_OWNCLOUDSQL_DB_NAME`| 1.0.0 |string|`Name of the database to be used.`|`owncloud`|
 |`STORAGE_USERS_OWNCLOUDSQL_USERS_PROVIDER_ENDPOINT`| 1.0.0 |string|`Endpoint of the users provider.`|`eu.opencloud.api.users`|
-|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/var/lib/opencloud/storage/users`|
+|`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`/root/.opencloud/storage/users`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_POSIX_PROPAGATOR`| 2.0.0 |string|`The propagator used for the posix driver. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|``|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`0s`|
 |`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`{{.SpaceType}}/{{.User.Username \| lower}}`|
@@ -116,7 +113,7 @@ Environment variables for the **storage-users** service
 |`STORAGE_USERS_TRANSFER_EXPIRES`| 1.0.0 |int64|`The time after which the token for upload postprocessing expires`|`86400`|
 |`OC_EVENTS_ENDPOINT`<br/>`STORAGE_USERS_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`STORAGE_USERS_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`STORAGE_USERS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`STORAGE_USERS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`STORAGE_USERS_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`STORAGE_USERS_EVENTS_NUM_CONSUMERS`| 1.0.0 |int|`The amount of concurrent event consumers to start. Event consumers are used for post-processing files. Multiple consumers increase parallelisation, but will also increase CPU and memory demands. The setting has no effect when the OC_ASYNC_UPLOADS is set to false. The default and minimum value is 1.`|`0`|

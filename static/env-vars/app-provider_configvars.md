@@ -3,10 +3,7 @@ Environment variables for the **app-provider** service
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
 |`APP_PROVIDER_SERVICE_NAME`| 1.0.0 |string|`The name of the service. This needs to be changed when using more than one app provider. Each app provider configured needs to be identified by a unique service name. Possible examples are: 'app-provider-collabora', 'app-provider-onlyoffice', 'app-provider-office365'.`|`app-provider`|
-|`OC_LOG_LEVEL`<br/>`APP_PROVIDER_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`APP_PROVIDER_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`APP_PROVIDER_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`APP_PROVIDER_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`APP_PROVIDER_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`APP_PROVIDER_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9165`|
 |`APP_PROVIDER_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint`|``|
 |`APP_PROVIDER_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling`|`false`|

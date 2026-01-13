@@ -35,10 +35,7 @@ Environment variables for the **collaboration** service
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata.`|`eu.opencloud.api.gateway`|
 |`COLLABORATION_CS3API_DATAGATEWAY_INSECURE`| 1.0.0 |bool|`Connect to the CS3API data gateway insecurely.`|`false`|
 |`COLLABORATION_CS3API_APP_REGISTRATION_INTERVAL`| 4.0.0 |Duration|`The interval at which the app provider registers itself.`|`30s`|
-|`OC_LOG_LEVEL`<br/>`COLLABORATION_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`COLLABORATION_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`COLLABORATION_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`COLLABORATION_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`COLLABORATION_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`COLLABORATION_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9304`|
 |`COLLABORATION_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`COLLABORATION_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|

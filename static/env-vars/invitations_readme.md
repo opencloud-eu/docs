@@ -1,6 +1,6 @@
 ---
 title: Invitations
-date: 2025-11-27T22:56:02.333362+01:00
+date: 2026-01-13T14:33:04.560083484Z
 weight: 20
 geekdocRepo: https://github.com/opencloud-eu/opencloud
 geekdocEditPath: edit/master/services/invitations

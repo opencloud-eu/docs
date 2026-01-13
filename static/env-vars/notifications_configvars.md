@@ -2,10 +2,7 @@ Environment variables for the **notifications** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`NOTIFICATIONS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`NOTIFICATIONS_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`NOTIFICATIONS_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`NOTIFICATIONS_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`NOTIFICATIONS_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`NOTIFICATIONS_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9174`|
 |`NOTIFICATIONS_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`NOTIFICATIONS_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -21,7 +18,7 @@ Environment variables for the **notifications** service
 |`NOTIFICATIONS_SMTP_ENCRYPTION`| 1.0.0 |string|`Encryption method for the SMTP communication. Possible values are 'starttls', 'ssltls' and 'none'.`|`none`|
 |`OC_EVENTS_ENDPOINT`<br/>`NOTIFICATIONS_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`NOTIFICATIONS_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`NOTIFICATIONS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`NOTIFICATIONS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`NOTIFICATIONS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided NOTIFICATIONS_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`NOTIFICATIONS_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`NOTIFICATIONS_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|

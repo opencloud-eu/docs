@@ -2,11 +2,7 @@
 # Filename: antivirus.yaml
 
 file: ""
-log:
-  level: ""
-  pretty: false
-  color: false
-  file: ""
+loglevel: error
 debug:
   addr: 127.0.0.1:9277
   token: ""

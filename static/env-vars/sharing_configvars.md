@@ -2,10 +2,7 @@ Environment variables for the **sharing** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`SHARING_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`SHARING_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`SHARING_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`SHARING_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`SHARING_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`SHARING_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9151`|
 |`SHARING_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`SHARING_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -18,7 +15,7 @@ Environment variables for the **sharing** service
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.`|``|
 |`OC_EVENTS_ENDPOINT`<br/>`SHARING_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`SHARING_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`SHARING_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`SHARING_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided SHARING_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`SHARING_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SHARING_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`Username for the events broker.`|``|
@@ -31,7 +28,7 @@ Environment variables for the **sharing** service
 |`OC_SYSTEM_USER_API_KEY`<br/>`SHARING_USER_JSONCS3_SYSTEM_USER_API_KEY`| 1.0.0 |string|`API key for the STORAGE-SYSTEM system user.`|``|
 |`SHARING_USER_JSONCS3_CACHE_TTL`| 1.0.0 |int|`TTL for the internal caches in seconds.`|`0`|
 |`OC_MAX_CONCURRENCY`<br/>`SHARING_USER_JSONCS3_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`1`|
-|`SHARING_USER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where shares will be persisted. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/shares.json`|
+|`SHARING_USER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where shares will be persisted. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/root/.opencloud/storage/shares.json`|
 |`SHARING_USER_CS3_PROVIDER_ADDR`| 1.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`eu.opencloud.api.storage-system`|
 |`OC_SYSTEM_USER_ID`<br/>`SHARING_USER_CS3_SYSTEM_USER_ID`| 1.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|``|
 |`OC_SYSTEM_USER_IDP`<br/>`SHARING_USER_CS3_SYSTEM_USER_IDP`| 1.0.0 |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|`internal`|
@@ -43,7 +40,7 @@ Environment variables for the **sharing** service
 |`SHARING_USER_OWNCLOUDSQL_DB_NAME`| 1.0.0 |string|`Name of the database to be used.`|`owncloud`|
 |`SHARING_USER_OWNCLOUDSQL_USER_STORAGE_MOUNT_ID`| 1.0.0 |string|`Mount ID of the ownCloudSQL users storage for mapping ownCloud 10 shares.`|``|
 |`SHARING_PUBLIC_DRIVER`| 1.0.0 |string|`Driver to be used to persist public shares. Supported values are 'jsoncs3', 'json' and 'cs3' (deprecated).`|`jsoncs3`|
-|`SHARING_PUBLIC_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where public share meta-data will be stored. This JSON file contains the information about public shares that have been created. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/publicshares.json`|
+|`SHARING_PUBLIC_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where public share meta-data will be stored. This JSON file contains the information about public shares that have been created. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/root/.opencloud/storage/publicshares.json`|
 |`SHARING_PUBLIC_JSONCS3_PROVIDER_ADDR`| 1.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`eu.opencloud.api.storage-system`|
 |`OC_SYSTEM_USER_ID`<br/>`SHARING_PUBLIC_JSONCS3_SYSTEM_USER_ID`| 1.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|``|
 |`OC_SYSTEM_USER_IDP`<br/>`SHARING_PUBLIC_JSONCS3_SYSTEM_USER_IDP`| 1.0.0 |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|`internal`|

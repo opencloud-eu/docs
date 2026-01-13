@@ -2,10 +2,7 @@ Environment variables for the **graph** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`OC_LOG_LEVEL`<br/>`GRAPH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|``|
-|`OC_LOG_PRETTY`<br/>`GRAPH_LOG_PRETTY`| 1.0.0 |bool|`Activates pretty log output.`|`false`|
-|`OC_LOG_COLOR`<br/>`GRAPH_LOG_COLOR`| 1.0.0 |bool|`Activates colorized log output.`|`false`|
-|`OC_LOG_FILE`<br/>`GRAPH_LOG_FILE`| 1.0.0 |string|`The path to the log file. Activates logging to this file if set.`|``|
+|`OC_LOG_LEVEL`<br/>`GRAPH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`error`|
 |`OC_CACHE_STORE`<br/>`GRAPH_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`memory`|
 |`OC_CACHE_STORE_NODES`<br/>`GRAPH_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store are configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`GRAPH_CACHE_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`cache-roles`|
@@ -50,7 +47,7 @@ Environment variables for the **graph** service
 |`OC_TRANSLATION_PATH`<br/>`GRAPH_TRANSLATION_PATH`| 1.0.0 |string|`(optional) Set this to a path with custom translations to overwrite the builtin translations. Note that file and folder naming rules apply, see the documentation for more details.`|``|
 |`GRAPH_IDENTITY_BACKEND`| 1.0.0 |string|`The user identity backend to use. Supported backend types are 'ldap' and 'cs3'.`|`ldap`|
 |`OC_LDAP_URI`<br/>`GRAPH_LDAP_URI`| 1.0.0 |string|`URI of the LDAP Server to connect to. Supported URI schemes are 'ldaps://' and 'ldap://'`|`ldaps://localhost:9235`|
-|`OC_LDAP_CACERT`<br/>`GRAPH_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/var/lib/opencloud/idm/ldap.crt`|
+|`OC_LDAP_CACERT`<br/>`GRAPH_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/root/.opencloud/idm/ldap.crt`|
 |`OC_LDAP_INSECURE`<br/>`GRAPH_LDAP_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the LDAP connections. Do not set this in production environments.`|`false`|
 |`OC_LDAP_BIND_DN`<br/>`GRAPH_LDAP_BIND_DN`| 1.0.0 |string|`LDAP DN to use for simple bind authentication with the target LDAP server.`|`uid=libregraph,ou=sysusers,o=libregraph-idm`|
 |`OC_LDAP_BIND_PASSWORD`<br/>`GRAPH_LDAP_BIND_PASSWORD`| 1.0.0 |string|`Password to use for authenticating the 'bind_dn'.`|``|
@@ -92,7 +89,7 @@ Environment variables for the **graph** service
 |`OC_ENABLE_OCM`<br/>`GRAPH_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing users.`|`false`|
 |`OC_EVENTS_ENDPOINT`<br/>`GRAPH_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Set to a empty string to disable emitting events.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`GRAPH_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`opencloud-cluster`|
-|`OC_INSECURE`<br/>`GRAPH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`GRAPH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`false`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`GRAPH_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided GRAPH_EVENTS_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENABLE_TLS`<br/>`GRAPH_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`GRAPH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
