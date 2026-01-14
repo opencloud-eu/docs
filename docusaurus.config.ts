@@ -57,7 +57,7 @@ presets: [
         editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
         lastVersion: 'current',
         versions: {
-          current: {label: 'Rolling', path: ''},
+          current: {label: 'rolling', path: ''},
           'stable-4.0': { label: '4.0', path: '4.0' },
         },
       },
