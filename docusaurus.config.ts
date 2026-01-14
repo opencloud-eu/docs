@@ -55,8 +55,10 @@ presets: [
       docs: {
         sidebarPath: require.resolve('./sidebars.ts'),
         editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
+        lastVersion: 'current',
         versions: {
-          'stable-4.0': { label: '4.0.0' },
+          current: {label: 'Rolling', path: ''},
+          'stable-4.0': { label: '4.0', path: '4.0' },
         },
       },
       blog: false,
