@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Svanvith
+@AlexAndBear, @ScharfViktor, @Svanvith
 
 ### :octocat: Developer Documentation
 
@@ -16,6 +16,7 @@
 
 ### 📦️ Build&Tools
 
+- fix: missing blogDir warning during build [[#588](https://github.com/opencloud-eu/docs/pull/588)]
 - exclude the _static folder for linter and formatter [[#587](https://github.com/opencloud-eu/docs/pull/587)]
 - remove graphviz package installation from CI build [[#579](https://github.com/opencloud-eu/docs/pull/579)]
 
