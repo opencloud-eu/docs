@@ -22,7 +22,6 @@ steps:
   - name: build
     image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
-      - apk add --no-cache graphviz graphviz-dev ttf-liberation
       - pnpm install
       - pnpm list likec4
       - pnpm build-likec4
