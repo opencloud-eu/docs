@@ -68,11 +68,11 @@ To authenticate with a Bearer token or OpenID Connect access token replace the `
 Users can create an App Token in their Open Cloud interface. This token can be used to authenticate a user using the Account Name for the username and the token as password. Below is an example of there request
 
 ```sh
-curl 'https://cloud.rezel.net/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
+curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
 
 # or using the Authentification Basic Header
 # Authentification: Basic BASE64(username + ':' + app token)
-curl 'https://cloud.rezel.net/graph/v1.0/me' -H 'accept: application/json' -H 'Authorization: Basic YWNjb3VudG5hbWU6dGhlIGdlbmVyYXRlZCBhcHAgdG9rZW4='
+curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' -H 'Authorization: Basic YWNjb3VudG5hbWU6dGhlIGdlbmVyYXRlZCBhcHAgdG9rZW4='
 ```
 
 ## Resources
