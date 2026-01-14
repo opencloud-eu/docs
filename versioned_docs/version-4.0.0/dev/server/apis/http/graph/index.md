@@ -65,7 +65,7 @@ To authenticate with a Bearer token or OpenID Connect access token replace the `
 
 #### Authorization with App token
 
-Users can create an App Token in their Open Cloud interface. This token can be used to authenticate a user using the Account Name for the username and the token as password. Below is an example of there request
+Users can create an App Token in their Open Cloud interface. This token can be used to authenticate a user using the Account Name for the username and the token as password. Here is an example using curl
 
 ```sh
 curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
