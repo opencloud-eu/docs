@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor
+@ScharfViktor, @Svanvith
+
+### :octocat: Developer Documentation
+
+- Change version folder [[#582](https://github.com/opencloud-eu/docs/pull/582)]
 
 ### 👷 Admin Documentation
 
