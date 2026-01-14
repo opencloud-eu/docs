@@ -9,6 +9,7 @@
     "assets",
     "CHANGELOG.md",
     "CONTRIBUTING.md",
-    "README.md"
+    "README.md",
+    "**/_static/env-vars"
   ]
 }
