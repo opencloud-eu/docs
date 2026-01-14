@@ -10,6 +10,10 @@
 
 - add https directive for nginx 1.25 [[#577](https://github.com/opencloud-eu/docs/pull/577)]
 
+### 📦️ Build&Tools
+
+- remove graphviz package installation from CI build [[#579](https://github.com/opencloud-eu/docs/pull/579)]
+
 ## [3.5.1](https://github.com/opencloud-eu/docs/releases/tag/3.5.1) - 2026-01-13
 
 ### ❤️ Thanks to all contributors! ❤️
