@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- add https directive for nginx 1.25 [[#577](https://github.com/opencloud-eu/docs/pull/577)]
+
 ## [3.5.1](https://github.com/opencloud-eu/docs/releases/tag/3.5.1) - 2026-01-13
 
 ### ❤️ Thanks to all contributors! ❤️
