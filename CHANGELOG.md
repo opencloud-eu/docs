@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-14
+## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -16,6 +16,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: change version name [[#591](https://github.com/opencloud-eu/docs/pull/591)]
 - fix: missing blogDir warning during build [[#588](https://github.com/opencloud-eu/docs/pull/588)]
 - exclude the _static folder for linter and formatter [[#587](https://github.com/opencloud-eu/docs/pull/587)]
 - remove graphviz package installation from CI build [[#579](https://github.com/opencloud-eu/docs/pull/579)]
