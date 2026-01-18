@@ -23,7 +23,12 @@ const config: Config = {
   projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn'
+    }
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -58,6 +63,7 @@ presets: [
     } satisfies Preset.Options,
   ],
 ],
+
 
   themeConfig: {
     image: 'img/oc-docs-social-card.jpg',
@@ -182,6 +188,7 @@ presets: [
       ({
         hashed: true,
         language: ["en", "de"],
+        indexBlog: false,
       }),
     ],
     '@docusaurus/theme-mermaid',

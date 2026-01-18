@@ -1,7 +1,7 @@
 {
   "version.label": {
-    "message": "rolling",
-    "description": "The label for version current"
+    "message": "4.0",
+    "description": "The label for version 4.0"
   },
   "sidebar.user.category.Manage Files and Folders": {
     "message": "Verwalten von Dateien und Ordnern",
@@ -168,7 +168,7 @@
     "description": "The generated-index page description for category 'Common functionality' in sidebar 'user'"
   },
   "sidebar.user.category.ios-general": {
-    "message": "Allgemein",
+    "message": "Allgmein",
     "description": "The label for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.ios-general.link.generated-index.description": {
@@ -196,7 +196,7 @@
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.ios-shares.link.generated-index.description": {
-    "message": "Anleitungen zum Teilen von Dateien und Ordner in der OpenClous iOS App.",
+    "message": "Tutorials about creating shares the OpenCloud iOS App.",
     "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.OpenCloud Android App": {

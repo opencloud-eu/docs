@@ -1,5 +1,49 @@
 # Changelog
 
+## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @ScharfViktor, @Svanvith
+
+### :octocat: Developer Documentation
+
+- Change version folder [[#582](https://github.com/opencloud-eu/docs/pull/582)]
+
+### 👷 Admin Documentation
+
+- add https directive for nginx 1.25 [[#577](https://github.com/opencloud-eu/docs/pull/577)]
+
+### 📦️ Build&Tools
+
+- chore: change version name [[#591](https://github.com/opencloud-eu/docs/pull/591)]
+- fix: missing blogDir warning during build [[#588](https://github.com/opencloud-eu/docs/pull/588)]
+- exclude the _static folder for linter and formatter [[#587](https://github.com/opencloud-eu/docs/pull/587)]
+- remove graphviz package installation from CI build [[#579](https://github.com/opencloud-eu/docs/pull/579)]
+
+## [3.5.1](https://github.com/opencloud-eu/docs/releases/tag/3.5.1) - 2026-01-13
+
+### ❤️ Thanks to all contributors! ❤️
+
+@flimmy, @micbar
+
+### 📦️ Build&Tools
+
+- chore: bump docusaurus and dependencies [[#573](https://github.com/opencloud-eu/docs/pull/573)]
+- Update settings.yml [[#575](https://github.com/opencloud-eu/docs/pull/575)]
+
+## [3.5.0](https://github.com/opencloud-eu/docs/releases/tag/3.5.0) - 2026-01-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith
+
+### 👷 Admin Documentation
+
+- add info about collabora and traefik as external proxy [[#570](https://github.com/opencloud-eu/docs/pull/570)]
+- Create default language doku [[#566](https://github.com/opencloud-eu/docs/pull/566)]
+- change business license to enterprise license in the 4.0.0 version [[#564](https://github.com/opencloud-eu/docs/pull/564)]
+
 ## [3.4.0](https://github.com/opencloud-eu/docs/releases/tag/3.4.0) - 2026-01-07
 
 ### ❤️ Thanks to all contributors! ❤️

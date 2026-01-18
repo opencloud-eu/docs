@@ -13,4 +13,5 @@ labels:
     color: "#D4DF6E"
   - name: Docs:Guides
     color: "#D4DF6E"
-
+  - name: Docs:CiWeeklyCleanup
+    color: "#D4DF6E"

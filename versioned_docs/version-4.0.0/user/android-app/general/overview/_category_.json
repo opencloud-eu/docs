@@ -1,9 +1,0 @@
-{
-  "label": "Overview",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Overview of the user interface of the OpenCloud Android App.",
-    "slug": "user/android-app/general/overview"
-  }
-}
