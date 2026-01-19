@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.7.0](https://github.com/opencloud-eu/docs/releases/tag/3.7.0) - 2026-01-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Its-Just-Nans
+
+### :octocat: Developer Documentation
+
+- Change index.md file in rolling [[#596](https://github.com/opencloud-eu/docs/pull/596)]
+- Clarify App token usage [[#567](https://github.com/opencloud-eu/docs/pull/567)]
+
+### 👤 User Documentation
+
+- Create collabora docu german [[#594](https://github.com/opencloud-eu/docs/pull/594)]
+
 ## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-15
 
 ### ❤️ Thanks to all contributors! ❤️
