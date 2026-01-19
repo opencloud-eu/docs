@@ -57,10 +57,16 @@ GET https://cloud.opencloud.test/graph/v1.0/drives?$filter=driveType eq 'project
 
 For more information about OData query options please check the [API specification](https://github.com/opencloud-eu/libre-graph-api) and the provided examples.
 
-### Authorization
+#### Authorization with App token
 
-For development purposes the examples in the developer documentation use Basic Auth. It is disabled by default and should only be enabled by setting `PROXY_ENABLE_BASIC_AUTH` in [the proxy](/docs/dev/server/services/proxy/environment-variables) for development or test instances.
+Users can create an App Token in their Open Cloud interface. This token can be used to authenticate a user using the Account Name for the username and the token as password. Here is an example using curl
 
-To authenticate with a Bearer token or OpenID Connect access token replace the `-u user:password` Basic Auth option of curl with a `-H 'Authorization: Bearer <token>'` header. A `<token>` can be obtained by copying it from a request in the browser, although it will time out within minutes. To automatically refresh the OpenID Connect access token an ssh-agent like solution like [oidc-agent](https://github.com/indigo-dc/oidc-agent) should be used. The graph endpoints that support a preconfigured token can be found in the [API specification](https://github.com/opencloud-eu/libre-graph-api)
+```sh
+curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' -u 'accountname:the generated app token'
+
+# or using the Authentification Basic Header
+# Authentification: Basic BASE64(username + ':' + app token)
+curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' -H 'Authorization: Basic YWNjb3VudG5hbWU6dGhlIGdlbmVyYXRlZCBhcHAgdG9rZW4='
+```
 
 ## Resources
