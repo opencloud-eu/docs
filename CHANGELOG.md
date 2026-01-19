@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Its-Just-Nans
+@Heiko-Pohl, @Its-Just-Nans
 
 ### :octocat: Developer Documentation
 
 - Clarify App token usage [[#567](https://github.com/opencloud-eu/docs/pull/567)]
+
+### 👤 User Documentation
+
+- Create collabora docu german [[#594](https://github.com/opencloud-eu/docs/pull/594)]
 
 ## [3.6.0](https://github.com/opencloud-eu/docs/releases/tag/3.6.0) - 2026-01-15
 
