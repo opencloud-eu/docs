@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- Change index.md file in rolling [[#596](https://github.com/opencloud-eu/docs/pull/596)]
 - Clarify App token usage [[#567](https://github.com/opencloud-eu/docs/pull/567)]
 
 ### 👤 User Documentation
