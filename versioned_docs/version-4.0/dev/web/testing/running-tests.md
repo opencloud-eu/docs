@@ -8,7 +8,7 @@ id: running-tests
 
 In order to allow us to make changes quickly, often and with a high level of confidence, we heavily rely on tests within the `web` repository.
 
-This section assumes you have the Web development stack up and running. Please check out the [development setup docs](/docs/dev/web/development/tooling#development-setup) if you haven't.
+This section assumes you have the Web development stack up and running. Please check out the [development setup docs](../development/tooling#development-setup) if you haven't.
 
 ### Unit Tests
 
@@ -122,7 +122,7 @@ We can run some of the e2e tests on OpenCloud setup with Keycloak as an external
 
 #### Run OpenCloud With Keycloak
 
-There's a documentation to serve [OpenCloud with Keycloak](/docs/admin/configuration/authentication-and-user-management/keycloak). Please follow each step to run **OpenCloud with Keycloak**.
+There's a documentation to serve [OpenCloud with Keycloak](../../../admin/configuration/authentication-and-user-management/keycloak). Please follow each step to run **OpenCloud with Keycloak**.
 
 #### Run E2E Tests
 

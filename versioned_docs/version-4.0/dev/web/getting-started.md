@@ -9,7 +9,7 @@ The source code is hosted at [https://github.com/opencloud-eu/web](https://githu
 
 ## Installation
 
-To install and setup the Web client on your local machine, please refer to the [development setup docs](/docs/dev/web/development/tooling#development-setup).
+To install and setup the Web client on your local machine, please refer to the [development setup docs](./development/tooling#development-setup).
 
 ## Configuration
 
@@ -93,7 +93,7 @@ Additional CSS files to further customize the user experience and adapt it to yo
 Additional JavaScript files to further customize the user experience and adapt it to your specific needs. Expects an array of objects that specify a `src` attribute, pointing to the path/URL of your script, and an optional `async` attribute (defaults to false), like `[{ "src": "js/custom.js", "async": true }]`.
 
 :::note
-Check out the [extension system docs](/docs/dev/web/extension-system) for a more convenient way to add functionality to the Web client.
+Check out the [extension system docs](./extension-system) for a more convenient way to add functionality to the Web client.
 :::
 
 ### `sentry`

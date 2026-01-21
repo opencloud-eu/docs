@@ -17,7 +17,7 @@ for a suitable one and open a pull request!
 
 To make sure your pull request can be efficiently reviewed and won't need a lot of changes down the road, please run all formal checks (linter, formatter, type checks and unit tests) via `pnpm check:all` locally. Our [CI](https://ci.opencloud.eu/repos/6) will run on
 pull requests and report back any problems after that. For a further introduction on how we handle testing, please head to
-the [testing docs](/docs/dev/web/testing/running-tests).
+the [testing docs](../testing/running-tests).
 
 ## Code Conventions
 

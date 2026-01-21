@@ -31,7 +31,7 @@ Following this guide, you can safely migrate to the stable v4.0.0 release of Ope
 
 :::important
 Important: Always create a backup before upgrading to prevent data loss.  
-We strongly recommend following the [backup documentation](/docs/admin/maintenance/backup) and creating copies of your configuration and data directories.
+We strongly recommend following the [backup documentation](../backup) and creating copies of your configuration and data directories.
 :::
 
 <Tabs> <TabItem value="bind-mounts" label="Using Bind Mounts">
@@ -112,7 +112,7 @@ cd opencloud-compose
 
 ### Migrate Environment Variables
 
-Transfer your existing environment variables to the new opencloud-compose structure. Refer to the [Docker Compose configuration documentation](/docs/admin/getting-started/container/docker-compose/docker-compose-base.md) for detailed instructions.
+Transfer your existing environment variables to the new opencloud-compose structure. Refer to the [Docker Compose configuration documentation](../../getting-started/container/docker-compose/docker-compose-base.md) for detailed instructions.
 
 </TabItem>
 
@@ -236,6 +236,6 @@ Your OpenCloud instance should now be running on `v4.0.0`.
 If you encounter issues during or after the upgrade:
 
 1. Review the logs for error messages
-2. Consult the [troubleshooting guide](/docs/admin/resources/common-issues)
+2. Consult the [troubleshooting guide](../../resources/common-issues)
 3. Restore from backup if necessary
 4. Contact support or open an issue on [GitHub](https://github.com/opencloud-eu/opencloud/issues)

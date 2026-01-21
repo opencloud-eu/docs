@@ -30,18 +30,18 @@ Through intelligent file management and a strong open source community, files be
 
 OpenCloud can be accessed in different ways, depending on the device and use case:
 
-- The ["Web Client"](./general/) provides full access to all OpenCloud features directly in the browser. It allows file management, user and space administration, and online collaboration via Collabora.
+- The ["Web Client"](./general) provides full access to all OpenCloud features directly in the browser. It allows file management, user and space administration, and online collaboration via Collabora.
 
-- The ["Desktop Client"](./desktop-client/) synchronizes files between the OpenCloud and a local computer, enabling offline work and automatic updates.
+- The ["Desktop Client"](./desktop-client) synchronizes files between the OpenCloud and a local computer, enabling offline work and automatic updates.
 
-- The Mobile Apps for ["iOS"](./ios-app/) and ["Android"](./android-app/) allow quick access to files and basic management functions while on the go.
+- The Mobile Apps for ["iOS"](./ios-app) and ["Android"](./android-app) allow quick access to files and basic management functions while on the go.
 
 Each client is designed for a specific workflow:
 the Web Client for full-featured online use, the Desktop Client for local synchronization, and the Mobile Apps for mobile productivity.
 
 ## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/) under ["Getting-Started"](../admin/getting-started/)
+Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin) under ["Getting-Started"](../admin/getting-started)
 
 ## Documentation Versions
 
