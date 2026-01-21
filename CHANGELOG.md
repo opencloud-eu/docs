@@ -10,6 +10,10 @@
 
 - fix: typo 'Wilkommen' [[#603](https://github.com/opencloud-eu/docs/pull/603)]
 
+### 📦️ Build&Tools
+
+- chore: convert absolute urls to relativ urls [[#605](https://github.com/opencloud-eu/docs/pull/605)]
+
 ## [3.7.3](https://github.com/opencloud-eu/docs/releases/tag/3.7.3) - 2026-01-21
 
 ### ❤️ Thanks to all contributors! ❤️
