@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.7.1](https://github.com/opencloud-eu/docs/releases/tag/3.7.1) - 2026-01-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 📦️ Build&Tools
+
+- Fix absolute links in docs folder [[#597](https://github.com/opencloud-eu/docs/pull/597)]
+
 ## [3.7.0](https://github.com/opencloud-eu/docs/releases/tag/3.7.0) - 2026-01-19
 
 ### ❤️ Thanks to all contributors! ❤️
