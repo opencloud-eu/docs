@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.7.2](https://github.com/opencloud-eu/docs/releases/tag/3.7.2) - 2026-01-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- fix links [[#599](https://github.com/opencloud-eu/docs/pull/599)]
+
 ## [3.7.1](https://github.com/opencloud-eu/docs/releases/tag/3.7.1) - 2026-01-21
 
 ### ❤️ Thanks to all contributors! ❤️
