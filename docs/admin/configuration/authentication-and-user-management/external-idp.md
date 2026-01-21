@@ -34,7 +34,7 @@ to work with OpenCloud:
 
 The following environment variables are relevant when connecting OpenCloud to
 an external IDP. An example configuration for Keycloak is provided the
-[Keycloak integration](keycloak.md) documentation.
+[Keycloak integration](./keycloak.md) documentation.
 
 - `OC_OIDC_ISSUER`: Set this to the issuer URL of the external Identity Provider
 - `OC_EXCLUDE_RUN_SERVICES`: When using and external IDP the built-in Identity Provider
