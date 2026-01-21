@@ -84,7 +84,7 @@ By defining an application via `defineWebApplication` you can provide the follow
 
 #### Creating a new app
 
-Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application to get started with your own application. In addition to that, if you want to learn how to implement an app for viewing and editing specific file types, please consult the [relevant documentation](.viewer-editor-apps) for detailed instructions and guidance.
+Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application to get started with your own application. In addition to that, if you want to learn how to implement an app for viewing and editing specific file types, please consult the [relevant documentation](./viewer-editor-apps) for detailed instructions and guidance.
 
 To learn how to integrate an app into OpenCloud Web, please refer to the [Web Application admin docs](../../../admin/configuration/web-applications).
 
@@ -105,15 +105,15 @@ and most prominently also in the `files` app we have defined some extension poin
 For building an extension you can choose from the types predefined by the OpenCloud Web extension system. See the full list of available extension types below.
 
 1. `ActionExtension` (type `action`) - An extension that can register `Action` items which then get shown in various places (e.g. context menus, batch actions), depending on the
-   extension points referenced in the extension respectively. Most commonly used for file and folder actions (e.g. copy, rename, delete, etc.). For details, please refer to the [action docs](../extension-system/extension-types/action-extensions)
-2. `SearchExtension` (type `search`) - An extension that can register additional search providers. For details, please refer to the [search docs](../extension-system/extension-types/search-extensions).
+   extension points referenced in the extension respectively. Most commonly used for file and folder actions (e.g. copy, rename, delete, etc.). For details, please refer to the [action docs](./extension-types/action-extensions)
+2. `SearchExtension` (type `search`) - An extension that can register additional search providers. For details, please refer to the [search docs](./extension-types/search-extensions).
 3. `SidebarNavExtension` (type `sidebarNav`) - An extension that can register additional navigation items for the left sidebar. These can be scoped to specific apps, and programmatically enabled/disabled.
-   For details, please refer to the [sidebar nav docs](../extension-system/extension-types/left-sidebar-menu-item-extensions).
-4. `SidebarPanelExtension`, (type `sidebarPanel`) - An extension that can register panels for the right sidebar. For details, please refer to the [sidebar panel docs](../extension-system/extension-types/right-sidebar-panel-extensions).
+   For details, please refer to the [sidebar nav docs](./extension-types/left-sidebar-menu-item-extensions).
+4. `SidebarPanelExtension`, (type `sidebarPanel`) - An extension that can register panels for the right sidebar. For details, please refer to the [sidebar panel docs](./extension-types/right-sidebar-panel-extensions).
 5. `FolderViewExtension` (type `folderView`) - An extension that can register additional ways of displaying the content of a folder (resources like spaces, folders or files) to the user.
-   For details, please refer to the [folder view docs](../extension-system/extension-types/folder-view-extensions).
+   For details, please refer to the [folder view docs](./extension-types/folder-view-extensions).
 6. `CustomComponentExtension` (type `customComponent`) - An extension that can register a custom component for a render target. For details, please refer to the
-   [custom component docs](../extension-system/extension-types/custom-component-extensions)
+   [custom component docs](./extension-types/custom-component-extensions)
 
 You're free to introduce your own extension types within your application code and use the extension registry to query the available ones. However, if you have the impression
 that an important extension type is missing and would be beneficial for the platform, please reach out to us by opening a [GitHub issue](https://github.com/opencloud-eu/web/issues/new/choose).
@@ -163,7 +163,7 @@ The user can then select one out of all the extensions which have been registere
 
 #### Creating a new extension
 
-Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application that also includes an extension. In addition to that, the [extension types docs](../extension-system/extension-types) provide instructions and examples on how to implement the different extension types.
+Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application that also includes an extension. In addition to that, the [extension types docs](./extension-types) provide instructions and examples on how to implement the different extension types.
 
 ### Helpful packages
 

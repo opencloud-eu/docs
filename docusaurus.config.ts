@@ -9,7 +9,6 @@ const config: Config = {
   title: 'OpenCloud Docs',
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.svg',
-  trailingSlash: false,
 
   // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
