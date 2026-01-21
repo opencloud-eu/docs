@@ -1,6 +1,8 @@
 ---
-title: Welcome!
-slug: /admin/intro
+sidebar_position: 1
+title: Welcome
+description: Welcome
+draft: false
 ---
 
 # Welcome to OpenCloud Admin Docs
