@@ -16,7 +16,7 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 <OcLogoPetrol width="250" height="55" className="light-mode-image"/>
 <OcLogoLilac width="250" height="55" className="dark-mode-image"/>
 
-## Wilkommen zur OpenCloud Wissensdatenbank
+## Willkommen zur OpenCloud Wissensdatenbank
 
 Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
 Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
