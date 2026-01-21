@@ -29,16 +29,16 @@ Durch intelligentes Dateimanagement und eine starke Open-Source-Community werden
 
 Der Zugriff auf OpenCloud ist auf verschiedene Arten möglich – je nach Gerät und Anwendungsfall:
 
-- Der [Web Client](./general/) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
-- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
-- Die mobilen Apps für [iOS](./ios-app/) und [Android](./android-app/) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
+- Der [Web Client](./general) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
+- Der [Desktop Client](./desktop-client) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
+- Die mobilen Apps für [iOS](./ios-app) und [Android](./android-app) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
 
 Jeder Client ist für einen bestimmten Anwendungsfall konzipiert:  
 der Web Client für die umfassende Online-Nutzung, der Desktop Client für die lokale Synchronisierung und die mobilen Apps für produktives Arbeiten von unterwegs.
 
 ## Wie kann ich OpenCloud nutzen?
 
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](../admin) unter [Erste Schritte](../admin/getting-started).
 
 ## Dokumentations-Versionen
 
@@ -71,7 +71,7 @@ Hier finden Sie Informationen zur Arbeit mit Spaces.
 
 Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
 
-### [OpenCloud iOS App](./ios-app/)
+### [OpenCloud iOS App](./ios-app)
 
 Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
 
