@@ -128,4 +128,4 @@ Your OpenCloud server is now running and ready to use 🚀
 
 If you encounter any issues or errors, try finding a solution here
 
-- [Common Issues & Help](/docs/admin/resources/common-issues)
+- [Common Issues & Help](../../resources/common-issues)

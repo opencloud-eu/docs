@@ -12,7 +12,7 @@ From a developer's perspective, the most important parts of the [OpenCloud Web r
 
 The `/dev` folder contains all the configuration files that are needed in the `docker-compose.yml` file. This docker compose stack
 contains all the backend and testing related infrastructure that is needed for an out-of-the-box usable localhost development setup,
-as described in the [tooling section](/docs/dev/web/development/tooling).
+as described in the [tooling section](./tooling).
 
 ### packages Folder
 
@@ -24,7 +24,7 @@ Having these packages side by side within the `/packages` folder of the repo is 
 
 ### tests Folder
 
-We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`. You can read more about testing in our [testing docs](/docs/dev/web/testing/running-tests).
+We're using [Playwright](https://playwright.dev) for UI testing. The UI tests are located in `/tests/e2e`. You can read more about testing in our [testing docs](../testing/running-tests).
 
 ### package.json File
 
@@ -34,7 +34,7 @@ Each package in `/packages` can and most likely will contain another `package.js
 ### vite.config.ts
 
 We're working with [Vite](https://vitejs.dev) as a local development server and build tool. `vite.config.ts` is the main configuration file for that.
-You can read more about the usage in our [tooling section](/docs/dev/web/development/tooling).
+You can read more about the usage in our [tooling section](./tooling).
 
 ## Packages
 
@@ -117,7 +117,7 @@ within the `files` app. We currently bundle the following apps with the default 
 - `web-app-preview` a viewer for various media files (audio / video / image formats)
 - `web-app-text-editor` a simple editor for `.txt`, `.md` and other plain text files
 
-If you're interested in writing your own viewer or editor app for certain file types, please have a look at the [extension system docs](/docs/dev/web/extension-system).
+If you're interested in writing your own viewer or editor app for certain file types, please have a look at the [extension system docs](../extension-system).
 
 ### Testing
 
