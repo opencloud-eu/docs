@@ -11,7 +11,7 @@ draft: false
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-This guide provides steps to upgrade OpenCloud for both [docker](docs/admin/getting-started/container/docker.md) and [docker compose](docs/admin/getting-started/container/docker-compose/docker-compose-base.md)
+This guide provides steps to upgrade OpenCloud for both [docker](../../getting-started/container/docker.md) and [docker compose](../../getting-started/container/docker-compose/docker-compose-base.md)
 
 ## Stop OpenCloud
 
@@ -32,7 +32,7 @@ Stop the currently running OpenCloud instance:
 
 ## Backup Config and Data
 
-It is recommended to create a [backup](/docs/admin/maintenance/backup) before proceeding with the upgrade.
+It is recommended to create a [backup](../backup) before proceeding with the upgrade.
 
 ## Pull the new Opencloud version
 

@@ -15,11 +15,11 @@ An app is essentially a distinct package that must be specified as an external a
 
 The structure of an app is quite simple and straightforward. Consider, for example, the [pdf-viewer app](https://github.com/opencloud-eu/web/tree/main/packages/web-app-pdf-viewer). It consists of a `package.json` file, a `src` directory containing all the source code, and a `l10n` directory for translations. Optionally, you may also include a `tests` directory if your application requires testing.
 
-To learn more about apps in general, please refer to the [Web app docs](/docs/dev/web/extension-system).
+To learn more about apps in general, please refer to the [Web app docs](../extension-system).
 
 ### App setup
 
-Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section](/docs/dev/web/extension-system), so it may look like this:
+Inside the `src` folder you will need an `index.ts` file that sets up the app so it can be registered by the Web runtime. It follows the basic structure as described in [the apps section](../extension-system), so it may look like this:
 
 ```typescript
 import { AppWrapperRoute, defineWebApplication, AppMenuItemExtension } from '@opencloud-eu/web-pkg';

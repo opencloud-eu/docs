@@ -27,7 +27,7 @@ interface AppMenuItemExtension {
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](/docs/dev/web/extension-system#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](../#extension-base-configuration) in the top level docs.
 
 A `handler` will result in a `<button>` element. This is necessary when an action should be performed when clicking the menu item (e.g. opening a file editor).
 

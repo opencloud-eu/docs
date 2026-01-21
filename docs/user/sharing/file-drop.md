@@ -24,7 +24,7 @@ The trick: The “link recipients” cannot see the files already in the folder.
 - Select the option for "Secret File Drop".
   <img src={require("./img/file-drop/file-drop-button.png").default} alt="Select file drop" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - Type a password and confirm the entries with click on "copy link".
-- You can also set an "Expiry date", if you want the link to expire. [External Sharing](/docs/user/sharing/external), if you want to know how to set the Expiry date.
+- You can also set an "Expiry date", if you want the link to expire. [External Sharing](./external), if you want to know how to set the Expiry date.
   <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Enter password and copy link" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 - Now you send the link and the password to a "link recipient".
 

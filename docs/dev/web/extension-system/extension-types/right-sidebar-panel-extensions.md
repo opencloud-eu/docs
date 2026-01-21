@@ -28,7 +28,7 @@ interface SidebarPanelExtension<R extends Item, P extends Item, T extends Item> 
 }
 ```
 
-For `id`, `type`, and `extensionPointIds`, please see [extension base section](/docs/dev/web/extension-system#extension-base-configuration) in the top level docs.
+For `id`, `type`, and `extensionPointIds`, please see [extension base section](../#extension-base-configuration) in the top level docs.
 
 The `panel` object configures the actual sidebar panel. It consists of different properties and functions, where all the functions get called with a
 `SideBarPanelContext` entity from the integrating extension points.

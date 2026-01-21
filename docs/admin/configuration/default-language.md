@@ -10,7 +10,7 @@ draft: false
 
 By default, OpenCloud uses English (en) as its interface language, unless a different language is explicitly configured.
 OpenCloud relies on ISO 639-1 language codes for language selection.
-You can find the complete list of supported languages here: [Supported languages](https://docs.opencloud.eu/docs/next/admin/resources/faq#miscellaneous)
+You can find the complete list of supported languages here: [Supported languages](../resources/faq#miscellaneous)
 
 ## Edit the `.env` File
 
