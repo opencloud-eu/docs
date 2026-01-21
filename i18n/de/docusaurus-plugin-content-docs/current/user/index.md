@@ -38,7 +38,7 @@ der Web Client für die umfassende Online-Nutzung, der Desktop Client für die l
 
 ## Wie kann ich OpenCloud nutzen?
 
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/welcome/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](/docs/admin/index.md) unter [Erste Schritte](/docs/admin/getting-started/).
 
 ## Dokumentations-Versionen
 

@@ -20,7 +20,7 @@ function HomepageHeader() {
             <div className={styles.buttons}><br/><br/><br/>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/user/intro">
+                    to="/docs/user">
                     <Translate
                         id="homepage.link.item.label.User Documentation"
                         description="The label for the link to user documentation">
@@ -32,7 +32,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/admin/intro">
+                    to="/docs/admin">
                     <Translate
                         id="homepage.link.item.label.Admin Documentation"
                         description="The label for the link to admin documentation">
@@ -44,7 +44,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/dev/intro">
+                    to="/docs/dev">
                     <Translate
                         id="homepage.link.item.label.Developer Documentation"
                         description="The label for the link to developer documentation">

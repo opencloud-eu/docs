@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-id: intro
 title: Welcome
 description: Welcome
 draft: false
@@ -42,7 +41,7 @@ the Web Client for full-featured online use, the Desktop Client for local synchr
 
 ## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/welcome/index.md) under ["Getting-Started"](../admin/getting-started/)
+Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/) under ["Getting-Started"](../admin/getting-started/)
 
 ## Documentation Versions
 
