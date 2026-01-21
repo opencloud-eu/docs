@@ -56,11 +56,11 @@ Through intelligent file management and a strong open source community, files be
 
 ## Table of contents
 
-### [User Interface and Navigation](./general)
+### [User Interface and Navigation](general)
 
 Here you will find general information about account settings, customizations and view modes.
 
-### [Manage Files and Folders](./files-and-folders)
+### [Manage Files and Folders](files-and-folders)
 
 Here you will find information about the management of files and folders.
 
