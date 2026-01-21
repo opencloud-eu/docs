@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.8.0](https://github.com/opencloud-eu/docs/releases/tag/3.8.0) - 2026-01-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 👤 User Documentation
+
+- fix: typo 'Wilkommen' [[#603](https://github.com/opencloud-eu/docs/pull/603)]
+
 ## [3.7.3](https://github.com/opencloud-eu/docs/releases/tag/3.7.3) - 2026-01-21
 
 ### ❤️ Thanks to all contributors! ❤️
