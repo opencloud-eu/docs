@@ -1,9 +1,4 @@
 {
   "label": "Roles",
-  "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "Tutorials about roles in OpenCloud.",
-    "slug": "user/roles"
-  }
+  "position": 8
 }

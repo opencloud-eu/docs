@@ -1,10 +1,5 @@
 {
   "label": "General",
   "position": 1,
-  "key": "ios-general",
-  "link": {
-    "type": "generated-index",
-    "description": "Tutorials about installing, setup and overview of the OpenCloud iOS App.",
-    "slug": "user/ios-app/general"
-  }
+  "key": "ios-general"
 }

@@ -1,10 +1,5 @@
 {
   "label": "Files and Folders",
   "position": 2,
-  "key": "android-files-folders",
-  "link": {
-    "type": "generated-index",
-    "description": "Tutorials for managing your files and folders in the OpenCloud Android App.",
-    "slug": "user/android-app/files-and-folders"
-  }
+  "key": "android-files-folders"
 }
