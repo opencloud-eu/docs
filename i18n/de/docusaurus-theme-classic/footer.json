@@ -13,11 +13,11 @@
   },
   "link.item.label.User": {
     "message": "User",
-    "description": "The label of footer link with label=User linking to /docs/user/intro"
+    "description": "The label of footer link with label=User linking to /docs/user"
   },
   "link.item.label.Admin": {
     "message": "Admin",
-    "description": "The label of footer link with label=Admin linking to /docs/admin/intro"
+    "description": "The label of footer link with label=Admin linking to /docs/admin"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -53,6 +53,6 @@
   },
   "link.item.label.Dev": {
     "message": "Dev",
-    "description": "The label of footer link with label=Dev linking to /docs/dev/intro"
+    "description": "The label of footer link with label=Dev linking to /docs/dev"
   }
 }
