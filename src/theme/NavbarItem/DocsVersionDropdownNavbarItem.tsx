@@ -8,7 +8,7 @@ type Props = WrapperProps<typeof DocsVersionDropdownNavbarItemType>;
 
 export default function DocsVersionDropdownNavbarItemWrapper(props: Props): ReactNode {
   const location = useLocation();
-  const isDocsPage = location.pathname.split('/').includes('docs')
+  const isDocsPage = location.pathname.split('/').includes('docs');
 
   // Don't render version dropdown on landing pages
   if (!isDocsPage) {
