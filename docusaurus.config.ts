@@ -111,15 +111,15 @@ presets: [
           items: [
             {
               label: 'User',
-              to: '/docs/user',
+              to: '/docs/user/',
             },
             {
               label: 'Admin',
-              to: '/docs/admin',
+              to: '/docs/admin/',
             },
             {
               label: 'Dev',
-              to: '/docs/dev',
+              to: '/docs/dev/',
             },
           ],
         },

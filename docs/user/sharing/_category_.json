@@ -1,9 +1,9 @@
 {
-  "label": "Share Files and Folders",
+  "label": "Share files and folders",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Tutorials about sharing files and folders.",
-    "slug": "user/sharing"
+    "description": "tutorials about sharing files and folders.",
+    "slug": "user/sharing/"
   }
 }
