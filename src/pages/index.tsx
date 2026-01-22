@@ -16,7 +16,7 @@ function HomepageHeader() {
 
   // Construct base path with version path and section
   const getDocsPath = (section: string) => {
-     if(!preferredVersion) {
+     if (!preferredVersion) {
          return `/docs/${section}/`;
      }
 
