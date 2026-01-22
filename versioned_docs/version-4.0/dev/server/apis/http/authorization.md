@@ -9,7 +9,7 @@ In its default configuration, OpenCloud supports three authentication methods as
 2. Implicit Flow
 3. Hybrid Flow
 
-For detailed information on OpenCloud's support for OpenID Connect (OIDC), please consult the [Official Documentation](../../../../admin/configuration/authentication-and-user-management).
+For detailed information on OpenCloud's support for OpenID Connect (OIDC), please consult the [Official Documentation](../../../../admin/configuration/authentication-and-user-management/).
 
 While selecting an OpenCloud client for authentication, take note of specific limitations such as the `Redirect URI`:
 

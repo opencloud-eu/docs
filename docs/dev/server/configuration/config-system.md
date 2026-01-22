@@ -128,4 +128,4 @@ Environment variables take precedence over both `opencloud.yaml` and `<service-n
 ### More information
 
 - [Global environment variable reference](./global-environment-variables)
-- Individual service pages for service‑specific options and examples (e.g. [Activity Log](../services/activitylog), [Proxy](../services/proxy), [Frontend](../services/frontend)).
+- Individual service pages for service‑specific options and examples (e.g. [Activity Log](../services/activitylog/), [Proxy](../services/proxy/), [Frontend](../services/frontend)/).

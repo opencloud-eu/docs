@@ -30,18 +30,18 @@ Through intelligent file management and a strong open source community, files be
 
 OpenCloud can be accessed in different ways, depending on the device and use case:
 
-- The ["Web Client"](./general) provides full access to all OpenCloud features directly in the browser. It allows file management, user and space administration, and online collaboration via Collabora.
+- The ["Web Client"](./general/) provides full access to all OpenCloud features directly in the browser. It allows file management, user and space administration, and online collaboration via Collabora.
 
-- The ["Desktop Client"](./desktop-client) synchronizes files between the OpenCloud and a local computer, enabling offline work and automatic updates.
+- The ["Desktop Client"](./desktop-client/) synchronizes files between the OpenCloud and a local computer, enabling offline work and automatic updates.
 
-- The Mobile Apps for ["iOS"](./ios-app) and ["Android"](./android-app) allow quick access to files and basic management functions while on the go.
+- The Mobile Apps for ["iOS"](./ios-app/) and ["Android"](./android-app/) allow quick access to files and basic management functions while on the go.
 
 Each client is designed for a specific workflow:
 the Web Client for full-featured online use, the Desktop Client for local synchronization, and the Mobile Apps for mobile productivity.
 
 ## How can I use OpenCloud?
 
-Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin) under ["Getting-Started"](../admin/getting-started)
+Instructions on how to install and set up your own OpenCloud can be found in the ["Admin" Documentation](../admin/) under ["Getting-Started"](../admin/getting-started/)
 
 ## Documentation Versions
 
@@ -55,35 +55,35 @@ Through intelligent file management and a strong open source community, files be
 
 ## Table of contents
 
-### [User Interface and Navigation](./general)
+### [User Interface and Navigation](./general/)
 
 Here you will find general information about account settings, customizations and view modes.
 
-### [Manage Files and Folders](./files-and-folders)
+### [Manage Files and Folders](./files-and-folders/)
 
 Here you will find information about the management of files and folders.
 
-### [Share Files and Folders](./sharing)
+### [Share Files and Folders](./sharing/)
 
 Here you will find information on how to share files and folders.
 
-### [Working in Teams with Spaces](./spaces)
+### [Working in Teams with Spaces](./spaces/)
 
 Here you will find information for dealing with Spaces.
 
-### [OpenCloud Desktop](./desktop-client)
+### [OpenCloud Desktop](./desktop-client/)
 
 Here you will find information on how to install and set up the desktop client.
 
-### [OpenCloud iOS App](./ios-app)
+### [OpenCloud iOS App](./ios-app/)
 
 Here you will find information about the OpenCloud iOS App.
 
-### [Roles](./roles)
+### [Roles](./roles/)
 
 Here you will find information about the different roles that can be assigned.
 
-### [Administration of OpenCloud](./admin)
+### [Administration of OpenCloud](./admin/)
 
 Here you will find information on what options admins have and how you can use them.
 

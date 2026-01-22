@@ -117,7 +117,7 @@ within the `files` app. We currently bundle the following apps with the default 
 - `web-app-preview` a viewer for various media files (audio / video / image formats)
 - `web-app-text-editor` a simple editor for `.txt`, `.md` and other plain text files
 
-If you're interested in writing your own viewer or editor app for certain file types, please have a look at the [extension system docs](../extension-system).
+If you're interested in writing your own viewer or editor app for certain file types, please have a look at the [extension system docs](../extension-system/).
 
 ### Testing
 
