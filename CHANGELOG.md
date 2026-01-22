@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.8.2](https://github.com/opencloud-eu/docs/releases/tag/3.8.2) - 2026-01-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- fix: links in markdown files that point to a category must have a tra… [[#609](https://github.com/opencloud-eu/docs/pull/609)]
+
 ## [3.8.1](https://github.com/opencloud-eu/docs/releases/tag/3.8.1) - 2026-01-22
 
 ### ❤️ Thanks to all contributors! ❤️
