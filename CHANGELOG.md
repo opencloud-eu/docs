@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.8.1](https://github.com/opencloud-eu/docs/releases/tag/3.8.1) - 2026-01-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- fix: seo issues [[#607](https://github.com/opencloud-eu/docs/pull/607)]
+
 ## [3.8.0](https://github.com/opencloud-eu/docs/releases/tag/3.8.0) - 2026-01-21
 
 ### ❤️ Thanks to all contributors! ❤️
