@@ -15,9 +15,5 @@ export default function DocsVersionDropdownNavbarItemWrapper(props: Props): Reac
     return null;
   }
 
-  return (
-    <>
-      <DocsVersionDropdownNavbarItem {...props} />
-    </>
-  );
+  return <DocsVersionDropdownNavbarItem {...props} />;
 }
