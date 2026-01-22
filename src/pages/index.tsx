@@ -11,7 +11,6 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
-
   const {preferredVersion} = useDocsPreferredVersion();
 
   // Construct base path with version path and section
