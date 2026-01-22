@@ -29,16 +29,16 @@ Durch intelligentes Dateimanagement und eine starke Open-Source-Community werden
 
 Der Zugriff auf OpenCloud ist auf verschiedene Arten möglich – je nach Gerät und Anwendungsfall:
 
-- Der [Web Client](./general) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
-- Der [Desktop Client](./desktop-client) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
-- Die mobilen Apps für [iOS](./ios-app) und [Android](./android-app) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
+- Der [Web Client](./general/) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
+- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
+- Die mobilen Apps für [iOS](./ios-app/) und [Android](./android-app/) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
 
 Jeder Client ist für einen bestimmten Anwendungsfall konzipiert:  
 der Web Client für die umfassende Online-Nutzung, der Desktop Client für die lokale Synchronisierung und die mobilen Apps für produktives Arbeiten von unterwegs.
 
 ## Wie kann ich OpenCloud nutzen?
 
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](../admin) unter [Erste Schritte](../admin/getting-started).
+Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](../admin/) unter [Erste Schritte](../admin/getting-started/).
 
 ## Dokumentations-Versionen
 
@@ -51,35 +51,35 @@ Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ih
 
 ## Inhaltsverzeichnis
 
-### [Benutzeroberfläche und Navigation](./general)
+### [Benutzeroberfläche und Navigation](./general/)
 
 Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungsmöglichkeiten und Ansichtsmodi.
 
-### [Verwalten von Dateien und Ordner](./files-and-folders)
+### [Verwalten von Dateien und Ordner](./files-and-folders/)
 
 Hier finden Sie Informationen zur Verwaltung von Dateien und Ordnern.
 
-### [Teilen von Dateien und Ordner](./sharing)
+### [Teilen von Dateien und Ordner](./sharing/)
 
 Hier erfahren Sie, wie Sie Dateien und Ordner freigeben können.
 
-### [Arbeiten im Team mit Spaces](./spaces)
+### [Arbeiten im Team mit Spaces](./spaces/)
 
 Hier finden Sie Informationen zur Arbeit mit Spaces.
 
-### [OpenCloud Desktop](./desktop-client)
+### [OpenCloud Desktop](./desktop-client/)
 
 Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
 
-### [OpenCloud iOS App](./ios-app)
+### [OpenCloud iOS App](./ios-app/)
 
 Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
 
-### [Rollen](./roles)
+### [Rollen](./roles/)
 
 Hier erfahren Sie mehr über die verschiedenen zuweisbaren Rollen.
 
-### [Administration von OpenCloud](./admin)
+### [Administration von OpenCloud](./admin/)
 
 Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutzungsmöglichkeiten.
 

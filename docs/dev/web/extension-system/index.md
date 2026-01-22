@@ -163,7 +163,7 @@ The user can then select one out of all the extensions which have been registere
 
 #### Creating a new extension
 
-Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application that also includes an extension. In addition to that, the [extension types docs](./extension-types) provide instructions and examples on how to implement the different extension types.
+Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application that also includes an extension. In addition to that, the [extension types docs](./extension-types/) provide instructions and examples on how to implement the different extension types.
 
 ### Helpful packages
 
