@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: customization_file_list
+id: customization-file-list
 title: Anpassungen der Datei-Liste
 description: Anpassungen der Datei-Liste in OpenCloud
 draft: false
