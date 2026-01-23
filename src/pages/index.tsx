@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useDocsPreferredVersion} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';
@@ -10,6 +11,17 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const {preferredVersion} = useDocsPreferredVersion();
+
+  // Construct base path with version path and section
+  const getDocsPath = (section: string) => {
+     if (!preferredVersion) {
+         return `/docs/${section}/`;
+     }
+
+      return `${preferredVersion.path}/${section}/`;
+  };
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)} >
         <div className="container">
@@ -20,7 +32,7 @@ function HomepageHeader() {
             <div className={styles.buttons}><br/><br/><br/>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/user/">
+                    to={getDocsPath('user')}>
                     <Translate
                         id="homepage.link.item.label.User Documentation"
                         description="The label for the link to user documentation">
@@ -32,7 +44,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/admin/">
+                    to={getDocsPath('admin')}>
                     <Translate
                         id="homepage.link.item.label.Admin Documentation"
                         description="The label for the link to admin documentation">
@@ -44,7 +56,7 @@ function HomepageHeader() {
             <div className={styles.buttons}>
                 <Link
                     className="button button--secondary button--lg"
-                    to="/docs/dev/">
+                    to={getDocsPath('dev')}>
                     <Translate
                         id="homepage.link.item.label.Developer Documentation"
                         description="The label for the link to developer documentation">
