@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-id: add_members
+id: add-members
 title: Add members
 description: Add new members to your Space in OpenCloud
 draft: false
