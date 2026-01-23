@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.9.0](https://github.com/opencloud-eu/docs/releases/tag/3.9.0) - 2026-01-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 👤 User Documentation
+
+- fix: document id add_members resulting in a snake case url instead of kebap case [[#613](https://github.com/opencloud-eu/docs/pull/613)]
+
+### 📦️ Build&Tools
+
+- feat: docs url on landing page navigates to the selected version [[#612](https://github.com/opencloud-eu/docs/pull/612)]
+
 ## [3.8.2](https://github.com/opencloud-eu/docs/releases/tag/3.8.2) - 2026-01-22
 
 ### ❤️ Thanks to all contributors! ❤️
