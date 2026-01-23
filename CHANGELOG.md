@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.9.1](https://github.com/opencloud-eu/docs/releases/tag/3.9.1) - 2026-01-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- Fix sidebar order [[#615](https://github.com/opencloud-eu/docs/pull/615)]
+
 ## [3.9.0](https://github.com/opencloud-eu/docs/releases/tag/3.9.0) - 2026-01-23
 
 ### ❤️ Thanks to all contributors! ❤️
