@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.9.2](https://github.com/opencloud-eu/docs/releases/tag/3.9.2) - 2026-01-23
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- fix: snake case id [[#617](https://github.com/opencloud-eu/docs/pull/617)]
+
 ## [3.9.1](https://github.com/opencloud-eu/docs/releases/tag/3.9.1) - 2026-01-23
 
 ### ❤️ Thanks to all contributors! ❤️
