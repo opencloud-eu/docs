@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.9.3](https://github.com/opencloud-eu/docs/releases/tag/3.9.3) - 2026-01-28
+
+### ❤️ Thanks to all contributors! ❤️
+
+@openclouders
+
+### 📦️ Build&Tools
+
+- Update docs [[#624](https://github.com/opencloud-eu/docs/pull/624)]
+
 ## [3.9.2](https://github.com/opencloud-eu/docs/releases/tag/3.9.2) - 2026-01-23
 
 ### ❤️ Thanks to all contributors! ❤️
