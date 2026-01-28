@@ -21,7 +21,7 @@ If you use the official Docker Compose setup, no migration is typically required
 The OCDAV is no longer initialized as its own service, it was moved from the backend services into the frontend service
 
 :::compatibility note
-Legacy env variable names (OCDAV_*) still work. They just need to be set on the frontend service now
+Legacy env variable names (OCDAV\_\*) still work. They just need to be set on the frontend service now
 :::
 
 # Release Notes: Migration from v2.x.x to v3.0.0
