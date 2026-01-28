@@ -29,6 +29,7 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
+    | v5.0.1 | 2026 January 28 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.1) |
     | v5.0.0 | 2026 January 26 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.0) |
     | v4.1.0 | 2025 December 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.1.0) |
     | v3.7.0 | 2025 November 3 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v3.7.0) |
