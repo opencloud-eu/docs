@@ -6,6 +6,24 @@ description: Release Notes
 draft: false
 ---
 
+# Release Notes: Migration from v4.x.x to v5.0.0
+
+- Version: 5.0.0
+- Type: Major Release (Breaking Change in Service Architecture)
+- [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.0)
+
+## Who Is Affected?
+
+If you use the official Docker Compose setup, no migration is typically required.
+
+## Key Changes
+
+The OCDAV is no longer initialized as its own service, it was moved from the backend services into the frontend service
+
+:::compatibility note
+Legacy env variable names (OCDAV\_\*) still work. They just need to be set on the frontend service now
+:::
+
 # Release Notes: Migration from v2.x.x to v3.0.0
 
 - Version: 3.0.0
