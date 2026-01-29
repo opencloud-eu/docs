@@ -116,7 +116,7 @@ Activate the minimal OpenCloud setup by un-commenting this line:
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-Look for the following line and set here your admin password: 
+Look for the following line and set here your admin password:
 
 ```bash
 INITIAL_ADMIN_PASSWORD=YourSecurePassword
