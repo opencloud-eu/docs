@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.10.0](https://github.com/opencloud-eu/docs/releases/tag/3.10.0) - 2026-01-29
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @ScharfViktor, @openclouders
+
+### 👷 Admin Documentation
+
+- publish release note 5.0.0 [[#619](https://github.com/opencloud-eu/docs/pull/619)]
+
+### 📦️ Build&Tools
+
+- chore: move deep nested _static folder to top [[#629](https://github.com/opencloud-eu/docs/pull/629)]
+- Change path for static files [[#622](https://github.com/opencloud-eu/docs/pull/622)]
+- Update docs [[#626](https://github.com/opencloud-eu/docs/pull/626)]
+- Update docs [[#624](https://github.com/opencloud-eu/docs/pull/624)]
+
 ## [3.9.2](https://github.com/opencloud-eu/docs/releases/tag/3.9.2) - 2026-01-23
 
 ### ❤️ Thanks to all contributors! ❤️
