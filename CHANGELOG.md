@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: move deep nested _static folder to top [[#629](https://github.com/opencloud-eu/docs/pull/629)]
 - Change path for static files [[#622](https://github.com/opencloud-eu/docs/pull/622)]
 - Update docs [[#626](https://github.com/opencloud-eu/docs/pull/626)]
 - Update docs [[#624](https://github.com/opencloud-eu/docs/pull/624)]
