@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @openclouders
+@AlexAndBear, @ScharfViktor, @openclouders
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- Change path for static files [[#622](https://github.com/opencloud-eu/docs/pull/622)]
 - Update docs [[#626](https://github.com/opencloud-eu/docs/pull/626)]
 - Update docs [[#624](https://github.com/opencloud-eu/docs/pull/624)]
 
