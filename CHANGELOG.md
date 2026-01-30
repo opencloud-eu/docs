@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @shinebayar-g
+@Svanvith, @openclouders, @shinebayar-g
 
 ### 👷 Admin Documentation
 
@@ -13,6 +13,10 @@
 ### 👤 User Documentation
 
 - fix(user): forbidden characters table [[#628](https://github.com/opencloud-eu/docs/pull/628)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#635](https://github.com/opencloud-eu/docs/pull/635)]
 
 ## [3.10.0](https://github.com/opencloud-eu/docs/releases/tag/3.10.0) - 2026-01-29
 
