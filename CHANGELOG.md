@@ -1,14 +1,18 @@
 # Changelog
 
-## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-01-29
+## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-01-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @shinebayar-g
 
 ### 👷 Admin Documentation
 
 - Dossma raspberry pi patch [[#632](https://github.com/opencloud-eu/docs/pull/632)]
+
+### 👤 User Documentation
+
+- fix(user): forbidden characters table [[#628](https://github.com/opencloud-eu/docs/pull/628)]
 
 ## [3.10.0](https://github.com/opencloud-eu/docs/releases/tag/3.10.0) - 2026-01-29
 
