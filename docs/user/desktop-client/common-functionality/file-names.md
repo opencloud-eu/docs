@@ -28,9 +28,9 @@ On Windows 10 and later, you can remove this limit by enabling Long Paths. See [
 
 ### b. Forbidden Characters
 
-| OS      | Forbidden Characters            |
-| ------- | ------------------------------- | ------------ |
-| Windows | `<`, `>`, `:`, `"`, `/`, `\`, ` | `, `?`, `\*` |
+| OS      | Forbidden Characters                       |
+| ------- | ------------------------------------------ |
+| Windows | `<`, `>`, `:`, `"`, `/`, `\`, `\|`,`?`,`*` |
 
 ### c. Non-Printable ASCII Characters
 
