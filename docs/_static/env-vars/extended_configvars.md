@@ -160,9 +160,9 @@
 `LogEnv` |  |  |  |
 `MD2MAN_DEBUG` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
-`MICRO_LOG_LEVEL` |  |  |  |
-`MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_NETWORK` |  |  |  |
 `MICRO_NETWORK_ADDRESS` |  |  |  |
 `MICRO_PROXY` |  |  |  |
