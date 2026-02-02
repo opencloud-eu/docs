@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-01-30
+## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-02-02
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders, @shinebayar-g
+@Svanvith, @openclouders, @shinebayar-g, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- Correct Server Side Encryption with S3 only [[#640](https://github.com/opencloud-eu/docs/pull/640)]
 - Dossma raspberry pi patch [[#632](https://github.com/opencloud-eu/docs/pull/632)]
 
 ### 👤 User Documentation
