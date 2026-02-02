@@ -195,9 +195,9 @@ Includes features that support GDPR compliance (e.g., personal data export accor
 :::info supported within the [enterprise licence](https://opencloud.eu/en/product/service-and-support)
 :::
 
-### Server-Side Encryption
+### S3 Server-Side Encryption
 
-Files are encrypted automatically when stored on the server. The key resides securely on the server and protects against physical access or unauthorized access to drives or backups. Combined with TLS in transit, this provides consistent security—but does not prevent admin-level access inside the application (unlike end-to-end encryption).
+Files can be encrypted automatically on S3 storage. The key resides on the server and protects against physical access or unauthorized access to drives or backups. Combined with TLS in transit, this provides consistent security but does not prevent admin-level access inside the application (unlike end-to-end encryption).
 
 ### Metadata Encryption
 
