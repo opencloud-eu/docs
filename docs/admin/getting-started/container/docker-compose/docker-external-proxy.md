@@ -196,7 +196,7 @@ server {
     proxy_send_timeout 3600s;
     keepalive_requests 100000;
     keepalive_timeout 5m;
-    http2_max_concurrent_streams 512;
+    http2_max_concurrent_streams 100;
 
     # Prevent nginx from trying other upstreams
     proxy_next_upstream off;
