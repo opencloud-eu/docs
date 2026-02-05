@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@flimmy
+@ScharfViktor, @flimmy
 
 ### 👷 Admin Documentation
 
+- publish release note rolling-5.0.2, production-4.0.2 and 4.0.3  [[#646](https://github.com/opencloud-eu/docs/pull/646)]
 - Update docker-external-proxy.md to fix issue with nginx [[#643](https://github.com/opencloud-eu/docs/pull/643)]
 
 ## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-02-02
