@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.12.0](https://github.com/opencloud-eu/docs/releases/tag/3.12.0) - 2026-02-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@flimmy
+
+### 👷 Admin Documentation
+
+- Update docker-external-proxy.md to fix issue with nginx [[#643](https://github.com/opencloud-eu/docs/pull/643)]
+
 ## [3.11.0](https://github.com/opencloud-eu/docs/releases/tag/3.11.0) - 2026-02-02
 
 ### ❤️ Thanks to all contributors! ❤️
