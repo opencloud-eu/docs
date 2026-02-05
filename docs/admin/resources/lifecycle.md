@@ -29,6 +29,7 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
+    | v5.0.2 | 2026 February 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.2) |
     | v5.0.1 | 2026 January 28 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.1) |
     | v5.0.0 | 2026 January 26 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v5.0.0) |
     | v4.1.0 | 2025 December 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.1.0) |
@@ -51,6 +52,8 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="production " label="Production">
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
+    | v4.0.3 | 2025 February 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.3) |
+    | v4.0.2 | 2025 February 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.2) |
     | v4.0.1 | 2025 December 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.1) |
     | v4.0.0 | 2025 December 1 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.0) |
     | v2.0.5 | 2025 October 29 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.5) |
