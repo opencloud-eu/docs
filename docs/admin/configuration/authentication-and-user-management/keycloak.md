@@ -64,10 +64,14 @@ If you need to manually configure the clients in Keycloak:
 
 #### Backchannel Logout
 
-OpenCloud supports Keycloak's backchannel logout feature, which allows Keycloak to notify OpenCloud when a user logs out. This ensures that all sessions are properly terminated:
+OpenCloud supports Keycloak's [backchannel logout](https://openid.net/specs/openid-connect-backchannel-1_0.html) feature, which allows Keycloak to notify OpenCloud when a user logs out.
 
 - Backchannel Logout URL: `https://your-domain.example.com/backchannel_logout`
 - Backchannel Logout Session Required: `true`
+
+:::note
+When a user logs out from one browser or device, all other active web sessions for that user will also be logged out.
+:::
 
 ## Shared User Directory Mode
 
