@@ -39,7 +39,7 @@ It is recommended to create a [backup](../backup) before proceeding with the upg
 If you are using Docker Compose with the `opencloud-compose` repository, update your local checkout before pulling the new container image:
 
 ```bash
-cd ~/opencloud-compose
+cd /opencloud-compose
 git pull
 ```
 
