@@ -1,10 +1,15 @@
 # Changelog
 
-## [3.12.1](https://github.com/opencloud-eu/docs/releases/tag/3.12.1) - 2026-02-09
+## [3.13.0](https://github.com/opencloud-eu/docs/releases/tag/3.13.0) - 2026-02-12
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@ScharfViktor, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- add in the upgrade instruction the opencloud-compose git pull part [[#652](https://github.com/opencloud-eu/docs/pull/652)]
+- publish release note 5.1.0 [[#658](https://github.com/opencloud-eu/docs/pull/658)]
 
 ### 📦️ Build&Tools
 
