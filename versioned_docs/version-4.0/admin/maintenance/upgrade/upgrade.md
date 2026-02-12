@@ -34,6 +34,17 @@ Stop the currently running OpenCloud instance:
 
 It is recommended to create a [backup](../backup) before proceeding with the upgrade.
 
+## Pull the latest OpenCloud Compose
+
+If you are using Docker Compose with the `opencloud-compose` repository, update your local checkout before pulling the new container image:
+
+```bash
+cd /opencloud-compose
+git pull
+```
+
+Skip this step if you run OpenCloud with plain Docker (`docker run`).
+
 ## Pull the new Opencloud version
 
 ```bash
