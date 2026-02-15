@@ -160,8 +160,8 @@
 `LogEnv` |  |  |  |
 `MD2MAN_DEBUG` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
-`MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
 `MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
 `MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_NETWORK` |  |  |  |
 `MICRO_NETWORK_ADDRESS` |  |  |  |
@@ -198,8 +198,8 @@
 `NO_COLOR` |  |  |  |
 `OC_BASE_DATA_PATH` |  |  |  |
 `OC_BASE_DATA_PATH` | string |  | The base directory location used by several services and for user data. See the General Info section in the documentation for more details on defaults. Services can have, if available, an individual setting with an own environment variable. |
-`OC_CONFIG_DIR` | string |  | The default directory location for config files. See the General Info section in the documentation for more details on defaults. |
 `OC_CONFIG_DIR` |  |  |  |
+`OC_CONFIG_DIR` | string |  | The default directory location for config files. See the General Info section in the documentation for more details on defaults. |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` | integer | 10240000 | Sets the maximum message size in bytes the GRPC client can receive. |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
 `OPA_TELEMETRY_SERVICE_URL` |  |  |  |
