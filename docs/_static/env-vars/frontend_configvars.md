@@ -1,5 +1,5 @@
 
-2026-02-09-00-05-04
+2026-02-18-00-17-10
 
 # Deprecation Notice
 
@@ -95,7 +95,7 @@ Environment variables for the **frontend** service
 |`OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`<br/>`FRONTENT_OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`| 1.0.0 |bool|`Allow the use of depth infinity in PROPFINDS. When enabled, a propfind will traverse through all subfolders. If many subfolders are expected, depth infinity can cause heavy server load and/or delayed response times.`|`false`|
 |`OCDAV_NAME_VALIDATION_INVALID_CHARS`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_INVALID_CHARS`| next |[]string|`List of characters that are not allowed in file or folder names.`|`[  
  \]`|
-|`OCDAV_NAME_VALIDATION_MAX_LENGTH`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_MAX_LENGTH`| next |int|`Max lenght og file or folder names.`|`255`|
+|`OCDAV_NAME_VALIDATION_MAX_LENGTH`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_MAX_LENGTH`| next |int|`Max length of file or folder names.`|`255`|
 |`FRONTEND_CHECKSUMS_SUPPORTED_TYPES`| 1.0.0 |[]string|`A list of checksum types that indicate to clients which hashes the server can use to verify upload integrity. Supported types are 'sha1', 'md5' and 'adler32'. See the Environment Variable Types description for more details.`|`[sha1 md5 adler32]`|
 |`FRONTEND_CHECKSUMS_PREFERRED_UPLOAD_TYPE`| 1.0.0 |string|`The supported checksum type for uploads that indicates to clients supporting multiple hash algorithms which one is preferred by the server. Must be one out of the defined list of SUPPORTED_TYPES.`|`sha1`|
 |`FRONTEND_READONLY_USER_ATTRIBUTES`| 1.0.0 |[]string|`A list of user attributes to indicate as read-only. Supported values: 'user.onPremisesSamAccountName' (username), 'user.displayName', 'user.mail', 'user.passwordProfile' (password), 'user.appRoleAssignments' (role), 'user.memberOf' (groups), 'user.accountEnabled' (login allowed), 'drive.quota' (quota). See the Environment Variable Types description for more details.`|`[]`|
