@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Heiko-Pohl, @Svanvith
 
 ### 👷 Admin Documentation
 
+- Production release env variable [[#667](https://github.com/opencloud-eu/docs/pull/667)]
 - change version from 4.0.0 to 4.0.x [[#668](https://github.com/opencloud-eu/docs/pull/668)]
 
 ## [3.13.0](https://github.com/opencloud-eu/docs/releases/tag/3.13.0) - 2026-02-12
