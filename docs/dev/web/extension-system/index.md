@@ -114,6 +114,8 @@ For building an extension you can choose from the types predefined by the OpenCl
    For details, please refer to the [folder view docs](./extension-types/folder-view-extensions).
 6. `CustomComponentExtension` (type `customComponent`) - An extension that can register a custom component for a render target. For details, please refer to the
    [custom component docs](./extension-types/custom-component-extensions)
+7. `FloatingActionButtonExtension` (type `floatingActionButton`) - An extension that can register a global action that is either displayed within the left sidebar (for desktop resolutions) or as a floating action button (for mobile resolutions). For details, please refer to the
+   [floating action button docs](./extension-types/floating-action-button-extensions).
 
 You're free to introduce your own extension types within your application code and use the extension registry to query the available ones. However, if you have the impression
 that an important extension type is missing and would be beneficial for the platform, please reach out to us by opening a [GitHub issue](https://github.com/opencloud-eu/web/issues/new/choose).
@@ -140,9 +142,16 @@ your extension will be used automatically.
 1. Left Sidebar for Navigation. ExtensionPointId `app.${appName}.navItems` (dynamically created for each app). Mounts extensions of type `sidebarNav`.
 2. Global top bar
    1. Center area. ExtensionPointId `app.runtime.header.center`. Mounts extensions of type `customComponent`.
-   2. Progress bar for the global loading state. ExtensionPointId `app.runtime.global-progress-bar`. Mounts a single extensions of type `customComponent`. If multiple exist, the user can choose via the account page.
+   2. Left area. ExtensionPointId `app.runtime.header.left`. Mounts extensions of type `customComponent`.
+   3. Right area. ExtensionPointId `app.runtime.header.right`. Mounts extensions of type `customComponent`.
+   4. Progress bar for the global loading state. ExtensionPointId `app.runtime.global-progress-bar`. Mounts a single extension of type `customComponent`. If multiple exist, the user can choose via the account page.
 3. Files app
-   1. Right sidebar. ExtensionPointId `app.files.sidebar`. Mounts extensions of type `sidebarPanel`. Used in any file(s) context (files app, file viewer apps, file editor apps).
+   1. Right sidebar.
+      1. Panels. ExtensionPointId `app.files.sidebar`. Mounts extensions of type `sidebarPanel`. Used in any file(s) context (files app, file viewer apps, file editor apps).
+      2. File details table. ExtensionPointId `app.files.sidebar.file-details.table`. Mounts extensions of type `customComponent`. Properties `space` and `resource` can be retrieved via injection context.
+      3. Space details table. ExtensionPointId `app.files.sidebar.space-details.table`. Mounts extensions of type `customComponent`. Properties `space` and `resource` can be retrieved via injection context.
+      4. Shares panel people list top section. ExtensionPointId `app.files.sidebar.shares-panel.shared-with.top`. Mounts extensions of type `customComponent`. Properties `space` and `resource` can be retrieved via injection context.
+      5. Shares panel people list bottom section. ExtensionPointId `app.files.sidebar.shares-panel.shared-with.bottom`. Mounts extensions of type `customComponent`. Properties `space` and `resource` can be retrieved via injection context.
    2. Folder views for regular folders. ExtensionPointId `app.files.folder-views.folder`. Mounts extensions of type `folderView`.
    3. Folder views for the project spaces overview. ExtensionPointId `app.files.folder-views.project-spaces`. Mounts extensions of type `folderView`.
    4. Folder views for the favorites page. ExtensionPointId `app.files.folder-views.favorites`. Mounts extensions of type `folderView`.
@@ -154,6 +163,7 @@ your extension will be used automatically.
    10. Quick actions for the trash overview. ExtensionPointId `app.files.trash-quick-actions`. Mounts extensions of type `action`.
 4. Global search providers. ExtensionPointId `app.search.providers`. Utilizes extensions of type `search` as search engines for the search input in the global top bar.
 5. User preference panels. ExtensionPointId `app.runtime.preferences.panels`. Mounts extensions of type `customComponent`.
+6. Global Floating Action button. ExtensionPointId `global.floating-action-button`. Mounts extensions of type `floatingActionButton`.
 
 #### User Preferences for Extensions
 
