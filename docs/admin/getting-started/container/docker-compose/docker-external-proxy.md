@@ -135,14 +135,11 @@ INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
-
-OC_DOCKER_IMAGE=opencloudeu/opencloud
-(for production releases)
 ```
 
 The initial Admin password is mandatory for security reasons.
 
-For prduction releases check the considerations in the docker compose base instrutcions:
+For production releases, please refer to the considerations outlined in the Docker Compose base instructions:
 
 [production setup consideration](./docker-compose-base#production-setup-consideration)
 

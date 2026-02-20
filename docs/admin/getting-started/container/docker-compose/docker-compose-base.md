@@ -129,14 +129,6 @@ For Example without Collabora:
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-### Set OpenCloud Docker image
-
-For production releases:
-
-```bash
-OC_DOCKER_IMAGE=opencloudeu/opencloud
-```
-
 Save and exit.
 
 ### Production Setup Consideration
