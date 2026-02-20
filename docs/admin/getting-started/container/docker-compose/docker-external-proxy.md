@@ -139,6 +139,10 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
 The initial Admin password is mandatory for security reasons.
 
+For production releases, please refer to the considerations outlined in the Docker Compose base instructions:
+
+[production setup consideration](./docker-compose-base#production-setup-consideration)
+
 Start the docker compose setup
 
 ```bash
