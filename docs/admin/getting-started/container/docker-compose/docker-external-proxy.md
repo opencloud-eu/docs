@@ -142,6 +142,10 @@ OC_DOCKER_IMAGE=opencloudeu/opencloud
 
 The initial Admin password is mandatory for security reasons.
 
+For prduction releases check the considerations in the docker compose base instrutcions:
+
+[production setup consideration](./docker-compose-base#production-setup-consideration)
+
 Start the docker compose setup
 
 ```bash
