@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- change version from 4.0.0 to 4.0.x [[#668](https://github.com/opencloud-eu/docs/pull/668)]
+
 ## [3.13.0](https://github.com/opencloud-eu/docs/releases/tag/3.13.0) - 2026-02-12
 
 ### ❤️ Thanks to all contributors! ❤️
