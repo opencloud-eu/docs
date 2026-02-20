@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
-id: upgrade-4.0.0
-title: Upgrade 4.0.0
-description: Upgrading to 4.0.0
+id: upgrade-4.0.x
+title: Upgrade 4.0.x
+description: Upgrading to 4.0.x
 draft: false
 ---
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-# Upgrading to OpenCloud 4.0.0
+# Upgrading to OpenCloud 4.0.x
 
 This guide explains how to upgrade from the previous stable opencloud_full Compose setup to the new
 [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose.git) repository structure.  
@@ -18,7 +18,7 @@ It covers both types of persistent storage used in earlier deployments:
 - Bind mounts: host directories mapped into containers.
 - Docker named volumes: volumes managed directly by Docker.
 
-Following this guide, you can safely migrate to the stable v4.0.0 release of OpenCloud.
+Following this guide, you can safely migrate to the stable v4.0.x release of OpenCloud.
 
 ## Before You Begin
 
@@ -90,10 +90,10 @@ docker compose stop
 
 </Tabs>
 
-## Pull the 4.0.0 Production Release Image
+## Pull the 4.0.x Production Release Image
 
 ```bash
-docker pull opencloudeu/opencloud:4.0.0
+docker pull opencloudeu/opencloud:4.0.x
 ```
 
 ## Update Deployment Configuration
@@ -126,7 +126,7 @@ Go inside the container:
 If your config is stored in host directories (change `<your-home-directory>` to your home directory. In our example it is `/mnt` ):
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh -v <your-home-directory>/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.0
+docker run --rm -it --entrypoint /bin/sh -v <your-home-directory>/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:4.0.x
 ```
 
 or, if you use Docker Named Volumes (replace `<your-named-volume>`with your volume name. In our example it is `opencloud_full_opencloud-config`):
@@ -134,7 +134,7 @@ or, if you use Docker Named Volumes (replace `<your-named-volume>`with your volu
 ```bash
 docker run --rm -it --entrypoint /bin/sh \
   -v <your-named-volume>:/etc/opencloud \
-  opencloudeu/opencloud:4.0.0
+  opencloudeu/opencloud:4.0.x
 ```
 
 Check for configuration changes:
@@ -167,7 +167,7 @@ diff written to /etc/opencloud/opencloud.config.patch
 
 Apply any necessary changes to `/etc/opencloud/opencloud.yaml` based on the diff output. In this example, add `url_signing_secret` to your `opencloud.yaml`.
 
-## Start OpenCloud (v4.0.0)
+## Start OpenCloud (v4.0.x)
 
 <Tabs>
 
@@ -184,7 +184,7 @@ docker run \
     -e OC_INSECURE=true \
     -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
     -e OC_URL=https://localhost:9200 \
-    opencloudeu/opencloud:4.0.0
+    opencloudeu/opencloud:4.0.x
 ```
 
 </TabItem>
@@ -222,7 +222,7 @@ docker compose up -d
 
 ## Verification
 
-Your OpenCloud instance should now be running on `v4.0.0`.
+Your OpenCloud instance should now be running on `v4.0.x`.
 
 ### Essential Checks
 
