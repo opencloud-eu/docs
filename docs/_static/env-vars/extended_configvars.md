@@ -202,7 +202,7 @@
 `OC_CONFIG_DIR` |  |  |  |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` | integer | 10240000 | Sets the maximum message size in bytes the GRPC client can receive. |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
-`OPA_TELEMETRY_SERVICE_URL` |  |  |  |
+`OPA_VERSION_CHECK_SERVICE_URL` |  |  |  |
 `PATH` |  |  |  |
 `PATH` |  |  |  |
 `PATH` |  |  |  |
