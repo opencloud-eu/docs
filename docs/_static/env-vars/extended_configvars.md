@@ -160,8 +160,8 @@
 `LogEnv` |  |  |  |
 `MD2MAN_DEBUG` |  |  |  |
 `MICRO_LOG_LEVEL` |  |  |  |
-`MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
 `MICRO_LOG_LEVEL` |  |  |  |
+`MICRO_LOG_LEVEL` | string | Error | Set the log level for the internal go micro framework. Only change on supervision of openCloud Support. |
 `MICRO_LOG_LEVEL` |  |  |  |
 `MICRO_NETWORK` |  |  |  |
 `MICRO_NETWORK_ADDRESS` |  |  |  |
@@ -202,7 +202,7 @@
 `OC_CONFIG_DIR` |  |  |  |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` | integer | 10240000 | Sets the maximum message size in bytes the GRPC client can receive. |
 `OC_GRPC_MAX_RECEIVED_MESSAGE_SIZE` |  |  |  |
-`OPA_TELEMETRY_SERVICE_URL` |  |  |  |
+`OPA_VERSION_CHECK_SERVICE_URL` |  |  |  |
 `PATH` |  |  |  |
 `PATH` |  |  |  |
 `PATH` |  |  |  |
