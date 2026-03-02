@@ -26,6 +26,7 @@ interface FloatingActionButtonExtension {
   isDisabled?: () => boolean;
   color?: string;
   icon?: string;
+  mode: () => 'drop' | 'handler';
   handler?: () => Promise<void> | void;
   dropComponent?: Component;
 }
@@ -33,7 +34,7 @@ interface FloatingActionButtonExtension {
 
 For `id`, `type`, and `extensionPointIds`, please see [extension base section](../#extension-base-configuration) in the top level docs.
 
-The `handler` property specifies a function to be executed when the floating action button is clicked. If you want to use a dropdown component instead of a click handler, you can specify a `dropComponent` that will be rendered on click.
+The `mode` property determines whether the floating action button triggers a handler function or renders a `dropComponent` when clicked. If mode returns `handler`, the click handler function is executed, if it returns `drop`, the specified `dropComponent` is shown instead.
 
 `isDisabled` controls the disabled state of the button whereas `isActive` determines if the button is showing at all.
 
