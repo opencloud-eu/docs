@@ -8,7 +8,7 @@ draft: false
 
 # OpenCloud with Docker Compose
 
-Install a internet facing OpenCloud with SSL certification with Docker Compose.
+Install an internet-facing OpenCloud with SSL certification using Docker Compose.
 
 This installation documentation is for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
 
@@ -29,8 +29,12 @@ This installation documentation is for Ubuntu and Debian systems. The software c
 Log into your server via SSH:
 
 ```bash
-ssh root@YOUR.SERVER.IP
+ssh YOUR_ADMIN_USER@YOUR.SERVER.IP
 ```
+
+:::note
+Use a non-root user with `sudo` privileges. If you logged in as root, prepend `sudo` where appropriate or run the commands without `sudo`
+:::
 
 ## Install Docker
 
@@ -39,7 +43,7 @@ Update your system and install Docker.
 First, perform an update and upgrade:
 
 ```bash
-apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 ```
 
 Install Docker following the [official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -47,8 +51,21 @@ Install Docker following the [official Docker guide](https://docs.docker.com/eng
 Once Docker is installed, enable and start the service:
 
 ```bash
-systemctl enable docker && systemctl start docker
+sudo systemctl enable docker && sudo systemctl start docker
 ```
+
+## Create a dedicated user to run OpenCloud (recommended)
+
+For security reasons, do not run the OpenCloud stack as `root`. Create a dedicated user (for example `opencloud`) and run the remaining steps as that user.
+
+```bash
+sudo adduser opencloud
+sudo usermod -aG docker opencloud
+```
+
+Log out and log back in (or start a new login shell), then continue as `opencloud`.
+
+Docker can be managed as a non-root user (e.g. via the `docker` group). Be aware that access to the Docker daemon is effectively equivalent to root access on the host. Limit group membership and restrict access accordingly.
 
 ## Clone the OpenCloud Repository
 
@@ -90,13 +107,13 @@ nano .env
 
 ### Disable insecure mode
 
-```bash
+```env
 # INSECURE=true
 ```
 
 ### Set your domain names
 
-```bash
+```env
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
 OC_DOMAIN=cloud.YOUR.DOMAIN
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
@@ -105,27 +122,27 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
 ### Set your admin password
 
-```bash
+```env
 INITIAL_ADMIN_PASSWORD=YourSecurePassword
 ```
 
 ### Set your email for SSL certification
 
-```bash
+```env
 TRAEFIK_ACME_MAIL=your@email.com
 ```
 
 ### Use Let's Encrypt staging certificates (for testing)
 
-```bash
+```env
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
 ### Set your deployment options
 
-For Example without Collabora:
+For example, without Collabora:
 
-```bash
+```env
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
@@ -140,7 +157,7 @@ This works fine for local development or quick evaluations — but is not suitab
 
 #### Mount Persistent Volumes
 
-In production, you should mount persistent local directories for configuration and data to ensure:
+For production setups, mount persistent host directories for configuration and data. This gives you:
 
 - Data durability
 - Easier backups and recovery
@@ -153,24 +170,41 @@ OC_CONFIG_DIR=/your/local/path/opencloud/config
 OC_DATA_DIR=/your/local/path/opencloud/data
 ```
 
+### UID/GID and volume permissions (important)
+
+OpenCloud containers run as `1000:1000` by default.  
+If your host user uses different IDs, set `OC_CONTAINER_UID_GID` in `.env` so file ownership matches your host user:
+
+```env
+OC_CONTAINER_UID_GID=1001:1001
+```
+
+You can check your UID/GID with:
+
+```bash
+id -u
+id -g
+```
+
 :::tip Folder Permissions
 
-Ensure these folders exist and are owned by user and group 1000:1000, which the Docker containers use by default:
+Create the folders and assign ownership to the UID/GID used by the container (default `1000:1000`, or your `OC_CONTAINER_UID_GID` value):
 
 ```bash
 sudo mkdir -p /your/local/path/opencloud/{config,data}
-sudo chown -R 1000:1000 /your/local/path/opencloud
+sudo chown -R $(id -u):$(id -g) /your/local/path/opencloud
 ```
 
 :::
 
-If these variables are left unset, Docker will use internal volumes, which do not persist if the containers are removed — not recommended for real-world use.
+If `OC_CONFIG_DIR` and `OC_DATA_DIR` are not set, Docker uses internal volumes. Those are harder to manage for backups and are not recommended for production.
 
 :::caution Security Warning
 
-The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
+Any local account that matches the mapped UID/GID can access these mounted directories.  
+In shared or multi-user environments, this can expose OpenCloud config and data files.
 
-This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
+Use strict host-level permission management and isolate access to these paths where possible.
 
 :::
 
@@ -180,8 +214,14 @@ To avoid accidentally updating to a version with breaking changes, you should sp
 
 ```env
 OC_DOCKER_IMAGE=opencloudeu/opencloud
-OC_DOCKER_TAG=2
+OC_DOCKER_TAG=4.0.3
 ```
+
+:::tip Keep the version up to date
+The documentation may not always reference the latest available release. Before deploying (and when updating), check the available tags on Docker Hub and adjust OC_DOCKER_TAG to the most recent stable version:
+<https://hub.docker.com/r/opencloudeu/opencloud/tags>
+
+:::
 
 ## Start OpenCloud
 
@@ -202,7 +242,7 @@ https://cloud.YOUR.DOMAIN
 ```
 
 You should see a security warning because the staging certificate is not fully trusted.
-Same should appear with the other domains you are using.
+The same warning should appear for the other domains you are using.
 
 Example with Chrome browser:
 
@@ -226,10 +266,10 @@ docker compose down
 ### Remove old staging certificates
 
 ```bash
-rm -r certs
+rm -rf ./certs
 ```
 
-(If you changed volume names, adjust accordingly.)
+(Run this in the `opencloud-compose` directory. If you changed volume names, adjust accordingly.)
 
 ### Disable staging mode in `.env`
 
@@ -239,7 +279,7 @@ nano .env
 
 Comment the staging server:
 
-```bash
+```env
 # TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
@@ -249,7 +289,7 @@ Comment the staging server:
 docker compose up -d
 ```
 
-✅ Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
+Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
 
 <img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
 
