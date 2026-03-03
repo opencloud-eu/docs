@@ -18,5 +18,13 @@ Environment variables for the **webfinger** service
 |`OC_HTTP_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the server certificate to use for the http services.`|``|
 |`WEBFINGER_RELATIONS`| 1.0.0 |[]string|`A list of relation URIs or registered relation types to add to webfinger responses. See the Environment Variable Types description for more details.`|`[http://openid.net/specs/connect/1.0/issuer http://webfinger.opencloud/rel/server-instance]`|
 |`OC_URL`<br/>`OC_OIDC_ISSUER`<br/>`WEBFINGER_OIDC_ISSUER`| 1.0.0 |string|`The identity provider href for the openid-discovery relation.`|`https://localhost:9200`|
+|`OC_OIDC_CLIENT_ID`<br/>`WEBFINGER_ANDROID_OIDC_CLIENT_ID`| next |string|`The OIDC client ID for Android app.`|`OpenCloudAndroid`|
+|`OC_OIDC_CLIENT_SCOPES`<br/>`WEBFINGER_ANDROID_OIDC_CLIENT_SCOPES`| next |[]string|`The OIDC client scopes the Android app should request.`|`[openid profile email offline_access]`|
+|`OC_OIDC_CLIENT_ID`<br/>`WEBFINGER_DESKTOP_OIDC_CLIENT_ID`| next |string|`The OIDC client ID for the OpenCloud desktop application.`|`OpenCloudDesktop`|
+|`OC_OIDC_CLIENT_SCOPES`<br/>`WEBFINGER_DESKTOP_OIDC_CLIENT_SCOPES`| next |[]string|`The OIDC client scopes the OpenCloud desktop application should request.`|`[openid profile email offline_access]`|
+|`OC_OIDC_CLIENT_ID`<br/>`WEBFINGER_IOS_OIDC_CLIENT_ID`| next |string|`The OIDC client ID for the IOS app.`|`OpenCloudIOS`|
+|`OC_OIDC_CLIENT_SCOPES`<br/>`WEBFINGER_IOS_OIDC_CLIENT_SCOPES`| next |[]string|`The OIDC client scopes the IOS app should request.`|`[openid profile email offline_access]`|
+|`OC_OIDC_CLIENT_ID`<br/>`WEB_OIDC_CLIENT_ID`<br/>`WEBFINGER_WEB_OIDC_CLIENT_ID`| next |string|`The OIDC client ID for the OpenCloud web client. The 'WEB_OIDC_CLIENT_ID' setting is only here for backwards compatibility and will be remove in a future release.`|`web`|
+|`OC_OIDC_CLIENT_SCOPES`<br/>`WEB_OIDC_SCOPE`<br/>`WEBFINGER_WEB_OIDC_CLIENT_SCOPES`| next |[]string|`The OIDC client scopes the OpenCloud web client should request. The 'WEB_OIDC_SCOPE' setting is only here for backwards compatibility and will be remove in a future release.`|`[openid profile email]`|
 |`OC_URL`<br/>`WEBFINGER_OPENCLOUD_SERVER_INSTANCE_URL`| 1.0.0 |string|`The URL for the legacy OpenCloud server instance relation (not to be confused with the product OpenCloud Server). It defaults to the OC_URL but can be overridden to support some reverse proxy corner cases. To shard the deployment, multiple instances can be configured in the configuration file.`|`https://localhost:9200`|
 |`OC_INSECURE`<br/>`WEBFINGER_INSECURE`| 1.0.0 |bool|`Allow insecure connections to the WEBFINGER service.`|`false`|
