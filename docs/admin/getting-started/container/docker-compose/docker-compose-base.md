@@ -218,9 +218,9 @@ OC_DOCKER_TAG=4.0.3
 ```
 
 :::tip Keep the version up to date
-The documentation may not always reference the latest available release. Before deploying (and when updating), check the available tags on Docker Hub and adjust OC_DOCKER_TAG to the most recent stable version:
-<https://hub.docker.com/r/opencloudeu/opencloud/tags>
+The documentation may not always reference the latest available release. Before deploying (and when updating), check the available tags on Docker Hub and adjust `OC_DOCKER_TAG` to the most recent stable version:
 
+[Docker Hub – opencloudeu/opencloud tags](https://hub.docker.com/r/opencloudeu/opencloud/tags)
 :::
 
 ## Start OpenCloud
