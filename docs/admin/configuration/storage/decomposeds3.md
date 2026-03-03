@@ -41,6 +41,12 @@ nano .env
 
 Now we need all the information about the S3 bucket we created earlier. Modify the following lines in your `.env` file:
 
+:::tip
+
+The `DECOMPOSEDS3_*` variables used below are specific to [opencloud's docker-compose deployment method](https://github.com/opencloud-eu/opencloud-compose). If deploying outside of the recommended docker-compose configuration, the proper environment variables variables are `STORAGE_USERS_DECOMPOSEDS3_*`. See the [storage-users](../../../dev/server/services/storage-users) documentation for more details.
+
+:::
+
 ```yaml
 # Configure the S3 storage endpoint. Defaults to "http://minio:9000" for testing purposes.
 DECOMPOSEDS3_ENDPOINT=https//your-s3-endpoint.example.com
