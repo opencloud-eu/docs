@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen
+
+### :octocat: Developer Documentation
+
+- Add new web extensions and extension points [[#670](https://github.com/opencloud-eu/docs/pull/670)]
+
 ## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
 
 ### ❤️ Thanks to all contributors! ❤️
