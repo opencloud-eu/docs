@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen
+@JammingBen, @dragonchaser
 
 ### :octocat: Developer Documentation
 
 - Add new web extensions and extension points [[#670](https://github.com/opencloud-eu/docs/pull/670)]
+
+### 👷 Admin Documentation
+
+- Update set-default-quota.md [[#685](https://github.com/opencloud-eu/docs/pull/685)]
 
 ## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
 
