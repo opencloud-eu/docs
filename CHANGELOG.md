@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen, @Svanvith, @dragonchaser
+@Heiko-Pohl, @JammingBen, @Svanvith, @dragonchaser
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- change typo in admin docu in 4.0 [[#687](https://github.com/opencloud-eu/docs/pull/687)]
 - adding info aubout docker user, security and UID/GID and version [[#686](https://github.com/opencloud-eu/docs/pull/686)]
 - Update set-default-quota.md [[#685](https://github.com/opencloud-eu/docs/pull/685)]
 
