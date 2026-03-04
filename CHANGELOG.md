@@ -1,10 +1,10 @@
 # Changelog
 
-## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-03
+## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-04
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@JammingBen, @dragonchaser
+@JammingBen, @Svanvith, @dragonchaser
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- adding info aubout docker user, security and UID/GID and version [[#686](https://github.com/opencloud-eu/docs/pull/686)]
 - Update set-default-quota.md [[#685](https://github.com/opencloud-eu/docs/pull/685)]
 
 ## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
