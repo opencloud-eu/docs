@@ -1,43 +1,97 @@
 ---
 sidebar_position: 90
 id: link-password-policy
-title: Public link password policy
-description: Configure the requirements for passwords for public links
+title: Public Links - Password Enforcement and Configuration
+description: Remove the password enforcement and configure the passwords requirements for public links
 draft: false
 ---
 
-# Configure the requirements for passwords for public links
+# Public Links: Password Enforcement and Policy
 
-OpenCloud can enforce strong(er) passwords by requiring occurrences of characters across different classes. It is possible to individually configure the number of
+OpenCloud provides two related controls for passwords on public links:
+
+1. Password enforcement for public links (whether a password is required at all).
+2. Password policy (how strong a password must be, if a password is used/required).
+
+This guide shows how to configure both via `opencloud-compose/.env`.
+
+## Configure Password Enforcement for Public Links
+
+By default, OpenCloud requires a password for public shares. You can disable that requirement globally and (optionally) still require passwords for writable public links.
+
+### Disable the password requirement for all public links
+
+```env
+OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD=false
+```
+
+Require a password for writable public links only
+
+```env
+OC_SHARING_PUBLIC_WRITEABLE_SHARE_MUST_HAVE_PASSWORD=true
+```
+
+This setting only applies when `OC_SHARING_PUBLIC_SHARE_MUST_HAVE_PASSWORD` is set to false.
+
+## Configure Password Policy for Public Link Passwords
+
+OpenCloud can enforce strong(er) passwords by requiring occurrences of characters across different classes. You can individually configure the minimum number of:
 
 - lower-case characters
+
 - upper-case characters
+
 - digits
+
 - special characters
 
-that have to appear in a valid password.
+that must appear in a valid password (and also set a minimum length).
 
-Here is how to configure the policy:
+Add or adjust these variables in your .env file:
 
-## Edit the `.env` File
+### Enable/disable password policy checks
 
-Open the environment configuration file located in your `opencloud-compose` directory:
+- true = policy disabled (no complexity requirements enforced)
+- false = policy enabled (requirements below are enforced)
+
+```env
+OC_PASSWORD_POLICY_DISABLED=false
+```
+
+### Minimum password length
+
+```env
+OC_PASSWORD_POLICY_MIN_CHARACTERS=8
+```
+
+### Minimum character-class requirements
+
+```env
+OC_PASSWORD_POLICY_MIN_LOWERCASE_CHARACTERS=1
+OC_PASSWORD_POLICY_MIN_UPPERCASE_CHARACTERS=1
+OC_PASSWORD_POLICY_MIN_DIGITS=1
+OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS=1
+```
+
+### Optional: Path to a 'banned passwords list' file
+
+```env
+OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST=""
+```
+
+The password policy only applies when a password is set/required for a public link.
+
+More information is available in the [developer documentation on password policy](../../dev/server/services/frontend/information#passwords).
+
+## Edit the .env File
+
+Open the environment configuration file located in your opencloud-compose directory:
 
 ```bash
 nano opencloud-compose/.env
 ```
 
-Modify the following environment variables to reflect your desired policy:
-
-```env
-OC_PASSWORD_POLICY_DISABLED=true # Disable the password policy
-OC_PASSWORD_POLICY_MIN_CHARACTERS=8 # Define the minimum password length.
-OC_PASSWORD_POLICY_MIN_LOWERCASE_CHARACTERS=1 # Define the minimum number of uppercase letters.
-OC_PASSWORD_POLICY_MIN_UPPERCASE_CHARACTERS=1 # Define the minimum number of lowercase letters.
-OC_PASSWORD_POLICY_MIN_DIGITS=1 # Define the minimum number of digits.
-OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS=1 # Define the minimum number of special characters.
-OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST="" # Path to the 'banned passwords list' file.
-```
+Add or modify the variables from the sections above as needed, then save the file.
 
 ## Restart Docker Services
 
@@ -50,8 +104,4 @@ docker compose up -d
 
 :::note
 This change applies globally to all public shares created after the restart.
-:::
-
-:::info
-More information is available in the [developer documentation on password policy](../../dev/server/services/frontend/info.mdx#the-password-policy).
 :::
