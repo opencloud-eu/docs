@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @dragonchaser
+@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @aclerici38, @dragonchaser
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- chore: clarify s3 env variables in config docs [[#688](https://github.com/opencloud-eu/docs/pull/688)]
 - Pr 674 [[#690](https://github.com/opencloud-eu/docs/pull/690)]
 - Add Strict-Transport-Security header to Nginx config [[#691](https://github.com/opencloud-eu/docs/pull/691)]
 - change typo in admin docu in 4.0 [[#687](https://github.com/opencloud-eu/docs/pull/687)]
