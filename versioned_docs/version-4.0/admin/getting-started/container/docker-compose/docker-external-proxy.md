@@ -198,6 +198,7 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
     # Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
     client_max_body_size 10M;
 
@@ -231,6 +232,7 @@ server {
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
   # Increase max upload size to collabora editor
   client_max_body_size 10M;
 
@@ -255,6 +257,7 @@ server {
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
   location / {
       proxy_pass http://127.0.0.1:9300;
