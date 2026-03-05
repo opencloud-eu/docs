@@ -187,7 +187,7 @@ server {
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
     # Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
     client_max_body_size 10M;
 
@@ -200,7 +200,7 @@ server {
     proxy_send_timeout 3600s;
     keepalive_requests 100000;
     keepalive_timeout 5m;
-    http2_max_concurrent_streams 100;
+    http2_max_concurrent_streams 512;
 
     # Prevent nginx from trying other upstreams
     proxy_next_upstream off;
@@ -221,6 +221,7 @@ server {
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
   # Increase max upload size to collabora editor
   client_max_body_size 10M;
 
@@ -245,6 +246,7 @@ server {
 
   ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
   location / {
       proxy_pass http://127.0.0.1:9300;
