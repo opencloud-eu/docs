@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Pr 674 [[#690](https://github.com/opencloud-eu/docs/pull/690)]
 - Add Strict-Transport-Security header to Nginx config [[#691](https://github.com/opencloud-eu/docs/pull/691)]
 - change typo in admin docu in 4.0 [[#687](https://github.com/opencloud-eu/docs/pull/687)]
 - adding info aubout docker user, security and UID/GID and version [[#686](https://github.com/opencloud-eu/docs/pull/686)]
