@@ -21,6 +21,7 @@
 
 ### 📦️ Build&Tools
 
+- remove double entries in extended_configvars.md [[#694](https://github.com/opencloud-eu/docs/pull/694)]
 - Update docs [[#692](https://github.com/opencloud-eu/docs/pull/692)]
 
 ## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
