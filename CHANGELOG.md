@@ -1,10 +1,10 @@
 # Changelog
 
-## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-04
+## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @Svanvith, @dragonchaser
+@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @dragonchaser
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Add Strict-Transport-Security header to Nginx config [[#691](https://github.com/opencloud-eu/docs/pull/691)]
 - change typo in admin docu in 4.0 [[#687](https://github.com/opencloud-eu/docs/pull/687)]
 - adding info aubout docker user, security and UID/GID and version [[#686](https://github.com/opencloud-eu/docs/pull/686)]
 - Update set-default-quota.md [[#685](https://github.com/opencloud-eu/docs/pull/685)]
