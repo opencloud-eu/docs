@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @aclerici38, @dragonchaser, @openclouders
+@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @aclerici38, @dragonchaser, @madduck, @openclouders
 
 ### :octocat: Developer Documentation
 
