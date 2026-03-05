@@ -1,5 +1,29 @@
 # Changelog
 
+## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-05
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @JammingBen, @ScharfViktor, @Svanvith, @aclerici38, @dragonchaser, @madduck, @openclouders
+
+### :octocat: Developer Documentation
+
+- Add new web extensions and extension points [[#670](https://github.com/opencloud-eu/docs/pull/670)]
+
+### 👷 Admin Documentation
+
+- chore: clarify s3 env variables in config docs [[#688](https://github.com/opencloud-eu/docs/pull/688)]
+- Pr 674 [[#690](https://github.com/opencloud-eu/docs/pull/690)]
+- Add Strict-Transport-Security header to Nginx config [[#691](https://github.com/opencloud-eu/docs/pull/691)]
+- change typo in admin docu in 4.0 [[#687](https://github.com/opencloud-eu/docs/pull/687)]
+- adding info aubout docker user, security and UID/GID and version [[#686](https://github.com/opencloud-eu/docs/pull/686)]
+- Update set-default-quota.md [[#685](https://github.com/opencloud-eu/docs/pull/685)]
+
+### 📦️ Build&Tools
+
+- remove double entries in extended_configvars.md [[#694](https://github.com/opencloud-eu/docs/pull/694)]
+- Update docs [[#692](https://github.com/opencloud-eu/docs/pull/692)]
+
 ## [3.14.0](https://github.com/opencloud-eu/docs/releases/tag/3.14.0) - 2026-02-20
 
 ### ❤️ Thanks to all contributors! ❤️
