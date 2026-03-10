@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.16.0](https://github.com/opencloud-eu/docs/releases/tag/3.16.0) - 2026-03-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @tbsbdr
+
+### 👷 Admin Documentation
+
+- add production release dates 2026 [[#703](https://github.com/opencloud-eu/docs/pull/703)]
+- publish release note 5.2.0 [[#700](https://github.com/opencloud-eu/docs/pull/700)]
+
 ## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-05
 
 ### ❤️ Thanks to all contributors! ❤️
