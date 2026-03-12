@@ -1,16 +1,21 @@
 ---
-sidebar_position: 1
-id: docker-compose-base
-title: Docker Compose
-description: Full-blown featureset including web office.
-draft: false
+sidebar_position: 2
+id: docker-compose-integrated-traefik
+title: Docker Compose with Integrated Traefik
+description: Get started with OpenCloud using Docker Compose and the integrated Traefik reverse proxy with automatic SSL certificates
 ---
 
-# OpenCloud with Docker Compose
+# OpenCloud with Docker Compose + Integrated Traefik
 
-Install an internet-facing OpenCloud instance with SSL certificates using Docker Compose.
+Install an internet-facing OpenCloud instance with automatic SSL certificates using Docker Compose's integrated Traefik reverse proxy.
+
+This is the **recommended deployment path** for most new OpenCloud installations. Traefik automatically manages Let's Encrypt SSL certificates, eliminating the need to manage a separate reverse proxy.
 
 This installation guide is written for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but commands and package managers may differ.
+
+:::note Not using Traefik?
+If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer to manage it separately, see [Deploy Behind External Proxy](./external-proxy.md) instead.
+:::
 
 ## Prerequisites
 
@@ -60,7 +65,7 @@ git clone https://github.com/opencloud-eu/opencloud-compose.git
 
 ## Configure the .env File for Staging Certificates
 
-Before requesting real SSL certificates, it is recommended to test the setup using Let's Encrypt’s staging environment.
+Before requesting real SSL certificates, it is recommended to test the setup using Let's Encrypt's staging environment.
 
 ### Navigate to the OpenCloud configuration folder
 
@@ -140,3 +145,28 @@ docker compose up -d
 ```
 
 This will start all required services in the background.
+
+## Verify Your Deployment
+
+After starting OpenCloud, verify that services are running and SSL certificates were issued:
+
+1. Check the [TLS/SSL certificates are valid](./verify-tls-certificates.md)
+2. Log in to OpenCloud: `https://cloud.YOUR.DOMAIN`
+   - Username: `admin`
+   - Password: (the password you set in `.env`)
+
+## Next Steps
+
+- **[Verify TLS Certificates](./verify-tls-certificates.md)** – Validate staging certificates and switch to production
+- **[Production Setup Considerations](./production-considerations.md)** – Persistent storage, backups, and production best practices
+- **[Configure Keycloak](./keycloak-deployment.md)** (optional) – Add Keycloak for enterprise identity management
+- **[Configure Authentication](../../../configuration/authentication-and-user-management/)** – User management and identity provider integration
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. Check Docker logs: `docker compose logs`
+2. Verify domain DNS records point to your server
+3. Ensure firewall allows HTTP (80) and HTTPS (443)
+4. See [Common Issues & Help](../../../resources/common-issues)

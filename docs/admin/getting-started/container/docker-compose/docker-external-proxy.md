@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: external-proxy
 title: Behind External Proxy
 description: How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup).
@@ -9,6 +9,10 @@ draft: false
 # Running OpenCloud Behind an External Proxy (Nginx + Certbot Setup)
 
 This guide walks you through setting up OpenCloud behind an external Nginx reverse proxy with Let's Encrypt certificates using `certbot certonly --webroot`.
+
+:::note Using Traefik Instead?
+If you don't have an existing reverse proxy or prefer to let Traefik manage certificates automatically, see [Docker Compose with Integrated Traefik](./integrated-traefik.md) instead.
+:::
 
 ## Requirements
 
@@ -139,15 +143,19 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
 The initial Admin password is mandatory for security reasons.
 
-For production releases, please refer to the considerations outlined in the Docker Compose base instructions:
-
-[production setup consideration](./docker-compose-base#production-setup-consideration)
-
 Start the docker compose setup
 
 ```bash
 docker compose up -d
 ```
+
+## Next Steps
+
+For production deployments, review [Production Considerations](./production-considerations.md) for:
+
+- Persistent volumes and data recovery
+- Image version pinning
+- Permission and ownership best practices
 
 ## Set Up the Final Nginx Reverse Proxy
 
