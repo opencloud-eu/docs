@@ -114,7 +114,7 @@ For building an extension you can choose from the types predefined by the OpenCl
    For details, please refer to the [folder view docs](./extension-types/folder-view-extensions).
 6. `CustomComponentExtension` (type `customComponent`) - An extension that can register a custom component for a render target. For details, please refer to the
    [custom component docs](./extension-types/custom-component-extensions)
-7. `FloatingActionButtonExtension` (type `floatingActionButton`) - An extension that can register a global action that is either displayed within the left sidebar (for desktop resolutions) or as a floating action button (for mobile resolutions). For details, please refer to the
+7. `FloatingActionButtonExtension` (type `floatingActionButton`) - An extension that can register one or multiple actions, either displayed within the left sidebar (for desktop resolutions) or as a floating action button (for mobile resolutions). For details, please refer to the
    [floating action button docs](./extension-types/floating-action-button-extensions).
 
 You're free to introduce your own extension types within your application code and use the extension registry to query the available ones. However, if you have the impression
@@ -139,7 +139,11 @@ There are standardized components and places where extensions are being used aut
 the `files` app. If you decide to develop an extension which fulfills the type and registers itself for the extensionPointId of the respective extension point,
 your extension will be used automatically.
 
-1. Left Sidebar for Navigation. ExtensionPointId `app.${appName}.navItems` (dynamically created for each app). Mounts extensions of type `sidebarNav`.
+1. Left Sidebar for Navigation.
+   1. Floating Action Button (FAB). ExtensionPointId `app.${appName}.floating-action-button` (dynamically created for each app). Mounts extensions of type `floatingActionButton`.
+   2. Additional nav items. ExtensionPointId `app.${appName}.navItems` (dynamically created for each app). Mounts extensions of type `sidebarNav`.
+   3. Sidebar main area below nav items. ExtensionPointId `app.${appName}.sidebar-nav.main` (dynamically created for each app). Mounts extensions of type `customComponent`.
+   4. Sidebar bottom area above version info. ExtensionPointId `app.${appName}.sidebar-nav.bottom` (dynamically created for each app). Mounts extensions of type `customComponent`.
 2. Global top bar
    1. Center area. ExtensionPointId `app.runtime.header.center`. Mounts extensions of type `customComponent`.
    2. Left area. ExtensionPointId `app.runtime.header.left`. Mounts extensions of type `customComponent`.
@@ -163,7 +167,6 @@ your extension will be used automatically.
    10. Quick actions for the trash overview. ExtensionPointId `app.files.trash-quick-actions`. Mounts extensions of type `action`.
 4. Global search providers. ExtensionPointId `app.search.providers`. Utilizes extensions of type `search` as search engines for the search input in the global top bar.
 5. User preference panels. ExtensionPointId `app.runtime.preferences.panels`. Mounts extensions of type `customComponent`.
-6. Global Floating Action button. ExtensionPointId `global.floating-action-button`. Mounts extensions of type `floatingActionButton`.
 
 #### User Preferences for Extensions
 
