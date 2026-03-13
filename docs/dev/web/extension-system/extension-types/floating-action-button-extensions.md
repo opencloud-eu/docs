@@ -6,7 +6,7 @@ id: floating-action-button-extensions
 
 ## Extension Type FloatingActionButton
 
-This extension type allows apps to register a global action that is either displayed within the left sidebar (for desktop resolutions) or as a floating action button (for mobile resolutions). The extension point for this extension type is `global.floating-action-button`.
+This extension type allows apps to register actions either displayed within the left sidebar (for desktop resolutions) or as a floating action button (for mobile resolutions). The extension point for this extension type is `app.${appId}.floating-action-button`.
 
 :::warning
 You need to take care of the visibility of your floating action button extension via the `isActive` property, otherwise you might end up overwriting other extensions' action buttons. In most cases, it makes sense to only display the button when your app is currently active.
@@ -55,7 +55,7 @@ const resourcesStore = useResourcesStore();
 
 const extension = {
   id: 'com.github.opencloud-eu.web.files.floating-action-button',
-  extensionPointIds: ['global.floating-action-button'],
+  extensionPointIds: ['app.files.floating-action-button'],
   type: 'floatingActionButton',
   icon: 'add',
   label: () => $gettext('New'),
