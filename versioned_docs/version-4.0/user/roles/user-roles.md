@@ -69,3 +69,7 @@ A User Light has limited access and does not have their own personal Space. They
 - Be added as a member to a Space
 - Can have the "Can Edit" role in a Space
 - They do not have a personal Space
+
+:::note
+If a user previously had the role User or higher and is later changed back to User Light, they will still keep their personal Space.
+:::

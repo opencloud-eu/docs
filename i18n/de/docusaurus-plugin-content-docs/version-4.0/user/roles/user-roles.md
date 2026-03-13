@@ -67,3 +67,7 @@ Ein User Light hat einen eingeschränkten Zugang und verfügt nicht über einen 
 - Als Mitglied zu einem Space hinzugefügt werden
 - Kann die Rolle „Kann bearbeiten“ in einem Space haben
 - Er kann keine Dateien und Ordner erstellen oder Daten in einen persönlichen Space hochladen.
+
+:::note
+Wenn ein Nutzer zuvor die Rolle Person oder höher hatte und später wieder auf User Light gesetzt wird, behält er seinen persönlichen Space.
+:::
