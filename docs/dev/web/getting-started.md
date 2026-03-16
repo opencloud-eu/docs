@@ -67,18 +67,13 @@ Controls the Web apps to be loaded. This is not for adding external apps, but fo
 
 ### `openIdConnect`
 
-Options for the connection to the oIDC provider. Expects an object with the following possible options:
+The Web client forwards all configuration options under `openIdConnect` to the [oidc-client-ts library](https://authts.github.io/oidc-client-ts/). Setting the following 3 options however won't have any effect, as they get discovered automatically via the `/.well-known/webfinger` endpoint:
 
-- `openIdConnect.authority` URL of the OIDC/OAuth2 provider.
-- `openIdConnect.metadata_url` URL of the OIDC configuration.
-- `openIdConnect.client_id` The client id registered with the OIDC/OAuth2 provider.
-- `openIdConnect.client_secret`
-- `openIdConnect.dynamic`
-- `openIdConnect.post_logout_redirect_uri`
-- `openIdConnect.response_type`
-- `openIdConnect.scope`
+- `client_id`
+- `scope`
+- `authority`
 
-See the [oidc-client-ts documentation](https://authts.github.io/oidc-client-ts/interfaces/OidcClientSettings.html) for more information.
+See the [oidc-client-ts documentation](https://authts.github.io/oidc-client-ts/interfaces/OidcClientSettings.html) for information on the available configuration options for the library.
 
 ### `customTranslations`
 
