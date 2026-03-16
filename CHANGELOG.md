@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.16.1](https://github.com/opencloud-eu/docs/releases/tag/3.16.1) - 2026-03-13
+## [3.17.0](https://github.com/opencloud-eu/docs/releases/tag/3.17.0) - 2026-03-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@kulmann, @openclouders
+
+### :octocat: Developer Documentation
+
+- add new extension points to dev docs [[#709](https://github.com/opencloud-eu/docs/pull/709)]
 
 ### 📦️ Build&Tools
 
