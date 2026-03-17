@@ -14,13 +14,18 @@ Starting with version 5.2.0, OpenCloud no longer enables Microsoft file formats 
 
 ### Create the configuration file
 
-Create an `app-registry.yaml` file in your `config/opencloud` directory.
+Create an `app-registry.yaml` file in your OpenCloud configuration directory.
 
-If your deployment uses a bind mount for the OpenCloud configuration, place the file in the corresponding directory on the host system. In that case, use the path from your own Docker Compose setup rather than `config/opencloud`.
+This change cannot be applied in setups that use internal Docker volumes only, because the config directory is not available directly on the host.
 
-```bash
-config/opencloud/app-registry.yaml
-```
+For production deployments, bind-mounted volumes are recommended, as they provide a predictable host path for configuration, persistence, and backups.
+
+If your deployment uses a bind mount for the OpenCloud config directory, place the file in the mapped config directory on the host system. The exact path depends on your Docker Compose setup and may differ from `config/opencloud`.
+
+Example:
+
+````bash
+/path/to/your/opencloud/config/app-registry.yaml
 
 Insert following content:
 
@@ -76,14 +81,7 @@ app_registry:
       icon: ''
       default_app: Collabora
       allow_creation: true
-    - mime_type: application/vnd.jupyter
-      extension: ipynb
-      name: Jupyter Notebook
-      description: Jupyter Notebook
-      icon: ''
-      default_app: ''
-      allow_creation: true
-```
+````
 
 ### Verify ownership and permissions
 
