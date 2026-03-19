@@ -311,4 +311,4 @@ Password: (your password)
 
 ## Troubleshooting
 
-If you encounter any issues, check the [Common Issues & Help](../../../resources/common-issues)
+If you encounter any issues, check the [Common Issues & Help](../../../resources/common-issues.md)
