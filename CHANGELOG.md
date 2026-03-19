@@ -13,6 +13,7 @@
 
 ### 👷 Admin Documentation
 
+- fix link in the docker-compose base instructions [[#718](https://github.com/opencloud-eu/docs/pull/718)]
 - write instruction how to enable MS-Office formats in the new button … [[#706](https://github.com/opencloud-eu/docs/pull/706)]
 
 ### 👤 User Documentation
