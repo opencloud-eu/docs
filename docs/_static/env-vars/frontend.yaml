@@ -64,7 +64,6 @@ reva:
     cacert: ""
 machine_auth_api_key: ""
 skip_user_groups_in_token: false
-enable_favorites: false
 max_quota: 0
 upload_max_chunk_size: 10000000
 upload_http_method_override: ""
