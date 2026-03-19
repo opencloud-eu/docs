@@ -1,16 +1,22 @@
 ---
 sidebar_position: 1
 id: docker-compose-base
-title: Docker Compose
+title: Docker Compose Base
 description: Full-blown featureset including web office.
 draft: false
 ---
 
-# OpenCloud with Docker Compose
+# OpenCloud with Docker Compose + Integrated Traefik
 
-Install a internet facing OpenCloud with SSL certification with Docker Compose.
+Install an internet-facing OpenCloud instance with automatic SSL certificates using Docker Compose's integrated Traefik reverse proxy.
 
-This installation documentation is for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
+This is the **recommended deployment path** for most new OpenCloud installations. Traefik automatically manages Let's Encrypt SSL certificates, eliminating the need to manage a separate reverse proxy.
+
+This installation guide is written for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but commands and package managers may differ.
+
+:::note Not using Traefik?
+If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer to manage it separately, see [Deploy Behind External Proxy](./external-proxy.md) instead.
+:::
 
 ## Prerequisites
 
@@ -60,7 +66,7 @@ git clone https://github.com/opencloud-eu/opencloud-compose.git
 
 ## Configure the .env File for Staging Certificates
 
-Before requesting real SSL certificates, test the setup with Let's Encrypt’s staging environment.
+Before requesting real SSL certificates, it is recommended to test the setup using Let's Encrypt's staging environment.
 
 ### Navigate to the OpenCloud configuration folder
 
@@ -78,15 +84,15 @@ cp .env.example .env
 The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
 :::
 
-Edit the `.env` file with the editor of your choice:
+## Modify these settings
 
-### In our example we use nano
+### Edit the `.env` file with the editor of your choice
+
+In our example we use nano
 
 ```bash
 nano .env
 ```
-
-## Modify these settings
 
 ### Disable insecure mode
 
@@ -123,65 +129,13 @@ TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 
 ### Set your deployment options
 
-For Example without Collabora:
+Example configuration without Collabora:
 
 ```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-Save and exit.
-
-### Production Setup Consideration
-
-:::caution Production Setup Recommended
-By default, OpenCloud stores configuration and data inside internal Docker volumes.  
-This works fine for local development or quick evaluations — but is not suitable for production environments.
-:::
-
-#### Mount Persistent Volumes
-
-In production, you should mount persistent local directories for configuration and data to ensure:
-
-- Data durability
-- Easier backups and recovery
-- Full control over storage location and permissions
-
-Update your `.env` file with custom paths:
-
-```env
-OC_CONFIG_DIR=/your/local/path/opencloud/config
-OC_DATA_DIR=/your/local/path/opencloud/data
-```
-
-:::tip Folder Permissions
-
-Ensure these folders exist and are owned by user and group 1000:1000, which the Docker containers use by default:
-
-```bash
-sudo mkdir -p /your/local/path/opencloud/{config,data}
-sudo chown -R 1000:1000 /your/local/path/opencloud
-```
-
-:::
-
-If these variables are left unset, Docker will use internal volumes, which do not persist if the containers are removed — not recommended for real-world use.
-
-:::caution Security Warning
-
-The user with UID 1000 on your host system will have full access to these mounted directories. This means that any local user account with this ID can read, modify, or delete OpenCloud config and data files.
-
-This can pose a security risk in shared or multi-user environments. Make sure to implement proper user and permission management and consider isolating access to these directories.
-
-:::
-
-#### Use production release container
-
-To avoid accidentally updating to a version with breaking changes, you should specify the production container version to be used in your `.env` file:
-
-```env
-OC_DOCKER_IMAGE=opencloudeu/opencloud
-OC_DOCKER_TAG=2
-```
+Save the file and exit the editor.
 
 ## Start OpenCloud
 
@@ -193,82 +147,27 @@ docker compose up -d
 
 This will start all required services in the background.
 
-## Verify SSL Certification
+## Verify Your Deployment
 
-In your web browser, visit:
+After starting OpenCloud, verify that services are running and SSL certificates were issued:
 
-```bash
-https://cloud.YOUR.DOMAIN
-```
+1. Check the [TLS/SSL certificates are valid](./verify-tls-certificates.md)
+2. Log in to OpenCloud: `https://cloud.YOUR.DOMAIN`
+   - Username: `admin`
+   - Password: (the password you set in `.env`)
 
-You should see a security warning because the staging certificate is not fully trusted.
-Same should appear with the other domains you are using.
+## Next Steps
 
-Example with Chrome browser:
-
-<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
-
-- Check the certificate details to confirm it’s from Let's Encrypt Staging.
-
-  <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
-  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
-
-## Apply a Real SSL Certificate
-
-Once the staging certificate works, switch to a production certificate.
-
-### Stop Docker Compose
-
-```bash
-docker compose down
-```
-
-### Remove old staging certificates
-
-```bash
-rm -r certs
-```
-
-(If you changed volume names, adjust accordingly.)
-
-### Disable staging mode in `.env`
-
-```bash
-nano .env
-```
-
-Comment the staging server:
-
-```bash
-# TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
-```
-
-### Restart OpenCloud with a real SSL certificate
-
-```bash
-docker compose up -d
-```
-
-✅ Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
-
-<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
-
-## Log into OpenCloud
-
-Open a browser and visit:
-
-```bash
-https://cloud.YOUR.DOMAIN
-```
-
-Login with:
-
-Username: `admin`
-
-Password: (your password)
-
-<img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
+- **[Verify TLS Certificates](./verify-tls-certificates.md)** – Validate staging certificates and switch to production
+- **[Production Setup Considerations](./production-considerations.md)** – Persistent storage, backups, and production best practices
+- **[Configure Keycloak](./keycloak-deployment.md)** (optional) – Add Keycloak for enterprise identity management
+- **[Configure Authentication](../../../configuration/authentication-and-user-management/)** – User management and identity provider integration
 
 ## Troubleshooting
 
-If you encounter any issues, check the [Common Issues & Help](../../../resources/common-issues)
+If you encounter issues:
+
+1. Check Docker logs: `docker compose logs`
+2. Verify domain DNS records point to your server
+3. Ensure firewall allows HTTP (80) and HTTPS (443)
+4. See [Common Issues & Help](../../../resources/common-issues)

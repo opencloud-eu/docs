@@ -1,8 +1,9 @@
 ---
-sidebar_position: 2
-id: docker-compose-integrated-traefik
-title: Docker Compose with Integrated Traefik
-description: Get started with OpenCloud using Docker Compose and the integrated Traefik reverse proxy with automatic SSL certificates
+sidebar_position: 1
+id: docker-compose-base
+title: Docker Compose Base
+description: Full-blown featureset including web office.
+draft: false
 ---
 
 # OpenCloud with Docker Compose + Integrated Traefik
