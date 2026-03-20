@@ -144,3 +144,42 @@ sudo docker run -it --rm -v opencloud-compose_opencloud-data:/var/lib/opencloud 
 ```bash
 docker compose up -d
 ```
+
+## Internal LibreIDM cert expires
+
+### 🔧 Renewing an expired certificate in internal IDM (OpenCloud)
+
+When using the internal IDM (LibreIDM), the LDAP certificate may expire over time.
+
+#### 🛠️ Solution
+
+Navigate to the IDM directory
+
+```bash
+cd .opencloud/idm
+```
+
+Delete the old certificates
+
+```bash
+rm ldap.crt ldap.key
+
+Directory structure:
+
+.opencloud/idm
+├── idm.boltdb
+├── ldap.crt
+└── ldap.key
+```
+
+Restart the OpenCloud container
+
+```bash
+docker compose restart
+```
+
+➡️ The certificates will be automatically regenerated on restart.
+
+#### ⚠️ Recommendation
+
+Admins should avoid using LibreIDM in production and use OpenLDAP instead.
