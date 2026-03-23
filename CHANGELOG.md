@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.17.1](https://github.com/opencloud-eu/docs/releases/tag/3.17.1) - 2026-03-20
+## [3.18.0](https://github.com/opencloud-eu/docs/releases/tag/3.18.0) - 2026-03-23
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@Heiko-Pohl, @openclouders
+
+### 👷 Admin Documentation
+
+- common issue Internal LibreIDM cert expires [[#722](https://github.com/opencloud-eu/docs/pull/722)]
 
 ### 📦️ Build&Tools
 
