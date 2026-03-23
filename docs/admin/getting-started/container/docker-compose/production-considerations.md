@@ -18,9 +18,9 @@ This works fine for local development or quick evaluations — but is not suitab
 
 For production deployments, you should mount persistent local directories for configuration and data. This ensures:
 
-- **Data durability** – Configuration and data persist across container restarts
-- **Easier backups and recovery** – Access files directly from the host
-- **Full control over storage location and permissions** – Meet organizational compliance requirements
+- Data durability – Configuration and data persist across container restarts
+- Easier backups and recovery – Access files directly from the host
+- Full control over storage location and permissions – Meet organizational compliance requirements
 
 ### Update your `.env` file with custom paths
 
@@ -61,44 +61,24 @@ For more details on volume permissions, see [Volume Permissions and UID/GID Mana
 
 :::
 
-## Pin Container Images for Stability
+## Use the appropriate repository branch
 
-To avoid accidentally upgrading to versions that may contain breaking changes, explicitly specify the container image version in your `.env` file:
+By default, the `main` branch of the `opencloud-compose` repository tracks the rolling release.
+
+For production deployments, use the current `stable-*` branch instead, for example:
 
 ```bash
-OC_DOCKER_IMAGE=opencloudeu/opencloud
-OC_DOCKER_TAG=2
+git checkout stable-4.0
 ```
 
-**Recommended approach:**
-
-- Use major version tags (e.g., `2`, `3`) for stable production releases
-- Test minor/patch updates in a staging environment before production
-- Avoid using `latest` tag in production, as it may introduce unexpected changes
-
-This ensures your deployment always uses a stable, tested release instead of automatically pulling newer versions.
+Stable branch names change over time as new stable releases become available. Moving from one stable-\* branch to another is an update and should be handled accordingly.
 
 ## Backup and Recovery Strategy
 
-With persistent volumes in place, implement a backup strategy:
+With persistent volumes in place, you should implement a backup and recovery strategy for your OpenCloud deployment:
 
-1. **Regular snapshots** of `OC_CONFIG_DIR` and `OC_DATA_DIR`
-2. **Database backups** (typically in `OC_DATA_DIR`)
-3. **Off-site storage** for disaster recovery
-4. **Test recovery procedures** regularly
+- Regular backups of `OC_CONFIG_DIR` and `OC_DATA_DIR`
+- Off-site or remote storage for disaster recovery
+- Regular verification and testing of restore procedures
 
-Refer to your system administration practices for backup tools (rsync, tar, Restic, etc.).
-
-## Environment and SSL Certificates
-
-Once your staging setup is working:
-
-1. Switch to **Let's Encrypt production certificates** – See [Verify TLS Certificates](./verify-tls-certificates.md#apply-a-real-ssl-certificate)
-2. Update **security headers and policies** in your reverse proxy
-3. Enable **HSTS (HTTP Strict Transport Security)** for production domains
-
-## Next Steps
-
-- **[Verify TLS Certificates](./verify-tls-certificates.md)** – Switch from staging to production certificates
-- **[Volume Permissions Guide](./volume-permissions.md)** – Detailed UID/GID and permission management
-- **[Maintenance & Monitoring](../../maintenance/)** – Logging and system health checks
+For detailed backup guidance, see the [Backup documentation](../../../maintenance/backup.md).

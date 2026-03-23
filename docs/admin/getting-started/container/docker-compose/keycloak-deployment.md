@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
 id: docker-compose-keycloak-deployment
-title: Enable Keycloak Integration
+title: Keycloak Integration
 description: Add Keycloak identity management to your Docker Compose OpenCloud deployment
 draft: false
 ---
@@ -11,7 +11,7 @@ draft: false
 This guide explains how to enable Keycloak as an identity provider (IdP) for your Docker Compose OpenCloud deployment. This provides enterprise-grade user and access management.
 
 :::note
-This page covers **deployment setup only**. For detailed Keycloak configuration, user management, and integration patterns, see the [Keycloak Configuration Guide](../../../configuration/authentication-and-user-management/keycloak.md).
+This page covers deployment setup only. For detailed Keycloak configuration, user management, and integration patterns, see the [Keycloak Configuration Guide](../../../configuration/authentication-and-user-management/keycloak.md).
 :::
 
 ## Prerequisites
@@ -28,7 +28,7 @@ cd opencloud-compose
 nano .env
 ```
 
-Add or uncomment the following lines to enable **Keycloak with integrated LDAP**:
+Add or uncomment the following lines to enable Keycloak with integrated LDAP:
 
 ```bash
 # Enable Keycloak + LDAP services
@@ -84,8 +84,8 @@ https://keycloak.YOUR.DOMAIN
 
 Log in with the credentials you set in `.env`:
 
-- **Username:** `admin` (or your `KEYCLOAK_ADMIN` value)
-- **Password:** Your `KEYCLOAK_ADMIN_PASSWORD`
+- Username: `admin` (or your `KEYCLOAK_ADMIN` value)
+- Password: Your `KEYCLOAK_ADMIN_PASSWORD`
 
 ## Next Steps
 
@@ -146,6 +146,6 @@ If using `idm/ldap-keycloak.yml`:
 
 ## See Also
 
-- **[Full Keycloak Integration Guide](../../../configuration/authentication-and-user-management/keycloak.md)** – Configuration, modes, and advanced setup
-- **[User Management with Keycloak](../../../configuration/authentication-and-user-management/keycloak-user.md)** – Creating users and managing roles
-- **[Production Considerations](./production-considerations.md)** – Backup and production best practices
+- [Full Keycloak Integration Guide](../../../configuration/authentication-and-user-management/keycloak.md) – Configuration, modes, and advanced setup
+- [User Management with Keycloak](../../../configuration/authentication-and-user-management/keycloak-user.md) – Creating users and managing roles
+- [Production Considerations](./production-considerations.md) – Backup and production best practices

@@ -10,7 +10,7 @@ draft: false
 
 Install an internet-facing OpenCloud instance with automatic SSL certificates using Docker Compose's integrated Traefik reverse proxy.
 
-This is the **recommended deployment path** for most new OpenCloud installations. Traefik automatically manages Let's Encrypt SSL certificates, eliminating the need to manage a separate reverse proxy.
+This is the recommended deployment path for most new OpenCloud installations. Traefik automatically manages Let's Encrypt SSL certificates, eliminating the need to manage a separate reverse proxy.
 
 This installation guide is written for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but commands and package managers may differ.
 
@@ -158,10 +158,10 @@ After starting OpenCloud, verify that services are running and SSL certificates 
 
 ## Next Steps
 
-- **[Verify TLS Certificates](./verify-tls-certificates.md)** – Validate staging certificates and switch to production
-- **[Production Setup Considerations](./production-considerations.md)** – Persistent storage, backups, and production best practices
-- **[Configure Keycloak](./keycloak-deployment.md)** (optional) – Add Keycloak for enterprise identity management
-- **[Configure Authentication](../../../configuration/authentication-and-user-management/)** – User management and identity provider integration
+- [Verify TLS Certificates](./verify-tls-certificates.md) – Validate staging certificates and switch to production
+- [Production Setup Considerations](./production-considerations.md) – Persistent storage, backups, and production best practices
+- [Configure Keycloak](./keycloak-deployment.md) (optional) – Add Keycloak for enterprise identity management
+- [Configure Authentication](../../../configuration/authentication-and-user-management/) – User management and identity provider integration
 
 ## Troubleshooting
 

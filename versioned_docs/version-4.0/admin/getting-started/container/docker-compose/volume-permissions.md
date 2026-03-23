@@ -13,8 +13,8 @@ This guide explains how to properly configure filesystem permissions for OpenClo
 
 OpenCloud containers run as a non-root user with:
 
-- **UID (User ID):** 1000
-- **GID (Group ID):** 1000
+- UID (User ID): 1000
+- GID (Group ID): 1000
 
 This is the user that reads and writes to all data, configuration, and cache directories within the container.
 
@@ -78,18 +78,18 @@ ls /your/local/path/opencloud/config
 cd /your/local/path/opencloud/data
 ```
 
-This is the **most common case** and requires minimal configuration.
+This is the most common case and requires minimal configuration.
 
 ### UID mismatch scenarios
 
-**Problem:** Your host system's UID 1000 is assigned to a different user (or doesn't exist).
+Problem: Your host system's UID 1000 is assigned to a different user (or doesn't exist).
 
 ```bash
 cat /etc/passwd | grep 1000
 # (empty or shows different user)
 ```
 
-**Solution:** Create a dedicated service user or adjust permissions:
+Solution: Create a dedicated service user or adjust permissions:
 
 ```bash
 # Option 1: Create a dedicated user for OpenCloud
@@ -114,7 +114,7 @@ sudo chmod -R 0700 /your/local/path/opencloud
 - Group members: no access
 - Others: no access
 
-**Use case:** Maximum security; only the container user can access.
+Use case: Maximum security; only the container user can access.
 
 ### More permissive: 0750 (rwxr-x---)
 
@@ -126,7 +126,7 @@ sudo chmod -R 0750 /your/local/path/opencloud
 - Group members: read, execute
 - Others: no access
 
-**Use case:** Allows other group members to read (useful for backups, monitoring).
+Use case: Allows other group members to read (useful for backups, monitoring).
 
 ### Caution: 0755 (rwxr-xr-x)
 
@@ -136,7 +136,7 @@ sudo chmod -R 0755 /your/local/path/opencloud
 
 - Everyone can read and list directories
 
-**Warning:** Not recommended for data directories containing sensitive information.
+Warning: Not recommended for data directories containing sensitive information.
 
 ## Bind Mounts vs Named Volumes
 
@@ -148,13 +148,13 @@ OC_CONFIG_DIR=/your/local/path/opencloud/config
 OC_DATA_DIR=/your/local/path/opencloud/data
 ```
 
-**Advantages:**
+Advantages:
 
 - Full control over permissions and ownership
 - Easy to backup
 - Direct host filesystem access
 
-**You must manually manage permissions.**
+You must manually manage permissions.
 
 ### Named Volumes (Docker-managed)
 
@@ -165,12 +165,12 @@ If not set, Docker creates automatic volumes:
 docker volume ls
 ```
 
-**Advantages:**
+Advantages:
 
 - Docker manages permissions automatically
 - Docker handles backup/restore
 
-**Disadvantages:**
+Disadvantages:
 
 - Harder to access directly
 - Less control over ownership
@@ -214,7 +214,7 @@ sudo chmod -R 0700 /your/local/path/opencloud
 ## Security Considerations
 
 :::caution
-UID 1000 on your host system will have **full read/write access** to OpenCloud data.
+UID 1000 on your host system will have full read/write access to OpenCloud data.
 
 In multi-user or shared hosting environments:
 
@@ -240,6 +240,6 @@ If these variables are not set, Docker will use unnamed volumes that persist onl
 
 ## See Also
 
-- **[Production Considerations](./production-considerations.md)** – Volume mounting setup
-- **[Docker documentation on volumes](https://docs.docker.com/storage/volumes/)**
-- **[Linux permission quick reference](https://en.wikipedia.org/wiki/File-system_permissions)**
+- [Production Considerations](./production-considerations.md) – Volume mounting setup
+- [Docker documentation on volumes](https://docs.docker.com/storage/volumes/)
+- [Linux permission quick reference](https://en.wikipedia.org/wiki/File-system_permissions)
