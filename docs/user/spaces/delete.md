@@ -12,7 +12,7 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 
 ## Disable Space
 
-- Follow the instructions for [Disable a Space](./disable-enable) to set the Space to the deactivated state before deleting it.
+- Follow the instructions for [Disable a Space](./enable-disable.md) to set the Space to the deactivated state before deleting it.
 
 - If the Space is no longer visible after deactivation, click on the Include disabled filter to display it again.
 

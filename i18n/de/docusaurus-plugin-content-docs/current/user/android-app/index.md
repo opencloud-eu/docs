@@ -1,20 +1,30 @@
 ---
+sidebar_position: 0
+id: android-app-overview
 title: OpenCloud Android App
 ---
 
-import DocCardList from '@theme/DocCardList';
+# OpenCloud Android App
 
-Die OpenCloud Android App ermöglicht den mobilen Zugriff auf OpenCloud über Android Geräte.  
-Sie bietet grundlegende Funktionen für das Arbeiten unterwegs, einschließlich Dateiverwaltung, Uploads und schneller Zusammenarbeit.
+Die OpenCloud Android App bietet mobilen Zugriff auf Ihre Dateien, Spaces und Freigaben. Sie ist für den schnellen
+Zugriff unterwegs ausgelegt und unterstützt die Einrichtung, Suche, Verknüpfungen und die Dateiverwaltung.
 
-#### Hauptfunktionen
+## In diesem Abschnitt
 
-- Dateimanagement: Anzeigen, Hochladen, Teilen und Organisieren von Dateien und Ordnern
-- Zugriff auf Spaces und darin gespeicherte Inhalte
-- Volltext- und Metadatensuche zum schnellen Auffinden von Dokumenten
-- Unterstützung für gemeinsames Arbeiten über Web Office
-- Synchronisation von Änderungen in Echtzeit
+- [Allgemeines](./general/)  
+  Installieren Sie die App, richten Sie sie ein und lernen Sie die wichtigsten Bereiche und Einstellungen kennen.
 
-Einsatzbereich: Ideal für alle, die von unterwegs auf ihre OpenCloud-Daten zugreifen und grundlegende Aufgaben mobil erledigen möchten.
+- [Dateien und Ordner](./files-and-folders/)  
+  Erstellen und bearbeiten Sie Inhalte, laden Sie Dateien hoch und machen Sie Elemente offline verfügbar.
 
-<DocCardList />
+- [Spaces](./spaces.md)  
+  Arbeiten Sie mit Spaces und den verfügbaren Aktionen in Android.
+
+- [Suche](./search.md)  
+  Finden Sie Dateien und Ordner direkt in der Android App.
+
+- [Verknüpfungen](./shortcuts.md)  
+  Erstellen Sie Verknüpfungen zu Dateien oder Weblinks.
+
+- [Freigaben](./shares/)  
+  Laden Sie Personen ein und erstellen Sie Freigabelinks direkt in der Android App.
