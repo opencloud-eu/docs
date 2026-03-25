@@ -12,14 +12,14 @@ lokalen Dateien.
 
 ## In diesem Abschnitt
 
-- [Windows](./windows/)  
+- [Windows](./windows/installation.md)  
   Installieren, einrichten und konfigurieren Sie den Desktop Client unter Windows.
 
-- [macOS](./macos/)  
+- [macOS](./macos/installation.md)  
   Installieren, einrichten und konfigurieren Sie den Desktop Client unter macOS.
 
-- [Linux](./linux/)  
+- [Linux](./linux/installation.md)  
   Installieren, einrichten und konfigurieren Sie den Desktop Client unter Linux.
 
-- [Gemeinsame Funktionen](./common-functionality/)  
+- [Gemeinsame Funktionen](./common-functionality/multiple-accounts.md)  
   Erfahren Sie mehr über gemeinsame Funktionen wie mehrere Konten, Dateinamenregeln, Konfliktbehandlung und Logging.
