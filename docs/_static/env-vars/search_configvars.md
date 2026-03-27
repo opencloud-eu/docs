@@ -47,8 +47,8 @@ Environment variables for the **search** service
 |`SEARCH_EXTRACTOR_TYPE`| 1.0.0 |string|`Defines the content extraction engine. Defaults to 'basic'. Supported values are: 'basic' and 'tika'.`|`basic`|
 |`OC_INSECURE`<br/>`SEARCH_EXTRACTOR_CS3SOURCE_INSECURE`| 1.0.0 |bool|`Ignore untrusted SSL certificates when connecting to the CS3 source.`|`false`|
 |`SEARCH_EXTRACTOR_TIKA_TIKA_URL`| 1.0.0 |string|`URL of the tika server.`|`http://127.0.0.1:9998`|
-|`SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS`| 1.0.0 |bool|`Defines if stop words should be cleaned or not. See the documentation for more details.`|`true`|
+|`SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS`| 1.0.0 |bool|`Defines if stop words should be cleaned or not. See the documentation for more details.`|`false`|
 |`SEARCH_CONTENT_EXTRACTION_SIZE_LIMIT`| 1.0.0 |uint64|`Maximum file size in bytes that is allowed for content extraction.`|`20971520`|
-|`SEARCH_BATCH_SIZE`| 1.0.0 |int|`The number of documents to process in a single batch. Defaults to 500.`|`500`|
+|`SEARCH_BATCH_SIZE`| 1.0.0 |int|`The number of documents to process in a single batch. Defaults to 500.`|`50`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`SEARCH_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|``|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`SEARCH_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|``|

@@ -92,6 +92,7 @@ web:
       feedbackLink: null
       runningOnEos: false
       cernFeatures: false
+      openFilesInNewTab: false
       upload: null
       editor: null
       contextHelpersReadMore: true
