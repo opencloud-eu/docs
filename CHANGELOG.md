@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.18.0](https://github.com/opencloud-eu/docs/releases/tag/3.18.0) - 2026-03-27
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- fixed wrong link to the ldap schema in keycloak docs [[#732](https://github.com/opencloud-eu/docs/pull/732)]
+- common issue Internal LibreIDM cert expires [[#722](https://github.com/opencloud-eu/docs/pull/722)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#731](https://github.com/opencloud-eu/docs/pull/731)]
+- Update docs [[#720](https://github.com/opencloud-eu/docs/pull/720)]
+
 ## [3.17.0](https://github.com/opencloud-eu/docs/releases/tag/3.17.0) - 2026-03-19
 
 ### ❤️ Thanks to all contributors! ❤️
