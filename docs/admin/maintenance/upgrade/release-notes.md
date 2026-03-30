@@ -19,14 +19,17 @@ Users who use the **OpenSearch backend** for search functionality.
 ## Key Changes
 
 The OpenSearch index has been redesigned with the following improvements:
+
 - Fixes for persisting and querying favorite information
 - Fast Vector Highlighter support — significantly faster and without the character limits of the previous default highlighter
 
 :::warning breaking change
 This is an incompatible change. Users of the OpenSearch backend will have to drop their old index and rebuild it using:
+
 ```bash
 opencloud search index --all-spaces
 ```
+
 :::
 
 # Release Notes: Migration from v4.x.x to v5.0.0
