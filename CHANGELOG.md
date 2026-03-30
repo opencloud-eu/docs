@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- migration to 6.0.0 [[#738](https://github.com/opencloud-eu/docs/pull/738)]
 - publish release note rolling-6.0.0 and patch-4.0.4 [[#736](https://github.com/opencloud-eu/docs/pull/736)]
 
 ### 📦️ Build&Tools
