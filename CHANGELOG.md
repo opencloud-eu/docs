@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-03-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- publish release note rolling-6.0.0 and patch-4.0.4 [[#736](https://github.com/opencloud-eu/docs/pull/736)]
+
 ## [3.18.0](https://github.com/opencloud-eu/docs/releases/tag/3.18.0) - 2026-03-27
 
 ### ❤️ Thanks to all contributors! ❤️
