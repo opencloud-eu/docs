@@ -35,7 +35,7 @@ Environment variables for the **ocm** service
 |`OCM_MESH_DIRECTORY_URL`| 1.0.0 |string|`URL of the mesh directory service.`|``|
 |`OCM_DIRECTORY_SERVICE_URLS`| 3.5.0 |string|`Space delimited URLs of the directory services.`|``|
 |`OCM_INVITE_ACCEPT_DIALOG`| 3.5.0 |string|`/open-cloud-mesh/accept-invite;The frontend URL where to land when receiving an invitation`|`/open-cloud-mesh/accept-invite`|
-|`OC_INSECURE`<br/>`OCM_CLIENT_INSECURE`| next |bool|`Dev-only. Disable TLS verification for the OCM discovery client (directory fetch and provider discovery). Does not affect OCM invite manager, storage provider, or share provider. Do not set in production.`|`false`|
+|`OC_INSECURE`<br/>`OCM_CLIENT_INSECURE`| 6.0.0 |bool|`Dev-only. Disable TLS verification for the OCM discovery client (directory fetch and provider discovery). Does not affect OCM invite manager, storage provider, or share provider. Do not set in production.`|`false`|
 |`OCM_OCM_INVITE_MANAGER_DRIVER`| 1.0.0 |string|`Driver to be used to persist OCM invites. Supported value is only 'json'.`|`json`|
 |`OCM_OCM_INVITE_MANAGER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM invite data will be stored. This file is maintained by the instance and must not be changed manually. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/ocm.`|`/root/.opencloud/storage/ocm/ocminvites.json`|
 |`OCM_OCM_INVITE_MANAGER_TOKEN_EXPIRATION`| 1.0.0 |Duration|`Expiry duration for invite tokens.`|`24h0m0s`|
