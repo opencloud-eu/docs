@@ -15,12 +15,18 @@ This guide walks you through setting up OpenCloud behind an external Nginx rever
 - A public server with a static IP
 - Proper DNS records for your domain:
   - `cloud.YOUR.DOMAIN`
-  - `collabora.YOUR.DOMAIN`
-  - `wopiserver.YOUR.DOMAIN`
+  - `collabora.YOUR.DOMAIN` (if using Collabora)
+  - `wopiserver.YOUR.DOMAIN` (if using Collabora)
+  - `euro-office.YOUR.DOMAIN` (if using Euro Office)
+  - `wopiserver-eo.YOUR.DOMAIN` (if using Euro Office)
 - Installed software:
   - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
   - `nginx`
   - `certbot`
+
+:::tip Office Suite Choice
+OpenCloud supports [Collabora](../../../configuration/collabora) and [Euro Office](../../../configuration/euro-office) as web office editors. You can use one or both. Adjust the DNS entries, certificates, and Nginx configuration below based on your choice.
+:::
 
 ## Connect to Your Server
 
@@ -67,9 +73,10 @@ Create a temporary config to allow HTTP validation:
 sudo nano /etc/nginx/sites-available/certbot-challenge
 ```
 
-Paste the following config and adjust the URLs:
+Paste the following config and adjust the URLs. Include the domains for the office suite(s) you are using:
 
 ```nginx
+# Collabora only:
 server {
     listen 80;
     server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
@@ -83,6 +90,24 @@ server {
 }
 ```
 
+If using Euro Office (alone or alongside Collabora), add the Euro Office domains to `server_name`:
+
+```nginx
+# Euro Office only:
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
+    # ...same location block as above...
+}
+
+# Both Collabora and Euro Office:
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
+    # ...same location block as above...
+}
+```
+
 Enable and reload Nginx:
 
 ```bash
@@ -92,14 +117,41 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ## Obtain SSL Certificates
 
-Use `certbot` to get your TLS certificates with adjusted URLs:
+Use `certbot` to get your TLS certificates with adjusted URLs. Include all domains you need:
 
 ```bash
+# Collabora only:
 sudo certbot certonly --webroot \
   -w /var/www/certbot \
   -d cloud.YOUR.DOMAIN \
   -d collabora.YOUR.DOMAIN \
   -d wopiserver.YOUR.DOMAIN \
+  --email your@email.com \
+  --agree-tos \
+  --no-eff-email
+```
+
+If using Euro Office, add the Euro Office domains:
+
+```bash
+# Euro Office only:
+sudo certbot certonly --webroot \
+  -w /var/www/certbot \
+  -d cloud.YOUR.DOMAIN \
+  -d euro-office.YOUR.DOMAIN \
+  -d wopiserver-eo.YOUR.DOMAIN \
+  --email your@email.com \
+  --agree-tos \
+  --no-eff-email
+
+# Both Collabora and Euro Office:
+sudo certbot certonly --webroot \
+  -w /var/www/certbot \
+  -d cloud.YOUR.DOMAIN \
+  -d collabora.YOUR.DOMAIN \
+  -d wopiserver.YOUR.DOMAIN \
+  -d euro-office.YOUR.DOMAIN \
+  -d wopiserver-eo.YOUR.DOMAIN \
   --email your@email.com \
   --agree-tos \
   --no-eff-email
@@ -121,7 +173,9 @@ cp .env.example .env
 nano .env
 ```
 
-Set the following environment variables:
+Set the following environment variables based on your office suite choice:
+
+**Collabora only:**
 
 ```env
 # INSECURE=true
@@ -135,6 +189,43 @@ INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
+```
+
+**Euro Office only:**
+
+```env
+# INSECURE=true
+
+COMPOSE_FILE=docker-compose.yml:weboffice/euroffice.yml:external-proxy/opencloud.yml:external-proxy/euroffice.yml
+
+OC_DOMAIN=cloud.YOUR.DOMAIN
+
+INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
+
+EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
+
+EURO_OFFICE_WOPISERVER_DOMAIN=wopiserver-eo.YOUR.DOMAIN
+
+EURO_OFFICE_JWT_SECRET=YOUR.EURO.OFFICE.SECRET
+```
+
+**Both Collabora and Euro Office:**
+
+```env
+# INSECURE=true
+
+COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:weboffice/euroffice.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml:external-proxy/euroffice.yml
+
+OC_DOMAIN=cloud.YOUR.DOMAIN
+
+INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
+
+COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
+WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
+
+EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
+EURO_OFFICE_WOPISERVER_DOMAIN=wopiserver-eo.YOUR.DOMAIN
+EURO_OFFICE_JWT_SECRET=YOUR.EURO.OFFICE.SECRET
 ```
 
 The initial Admin password is mandatory for security reasons.
@@ -163,13 +254,16 @@ sudo rm /etc/nginx/sites-enabled/certbot-challenge
 sudo nano /etc/nginx/sites-available/opencloud
 ```
 
-Paste the following configuration and adjust the URLs:
+Paste the following configuration and adjust the URLs. Include only the server blocks you need based on your office suite choice.
+
+### Core blocks (always required)
 
 ```nginx
 # Redirect HTTP to HTTPS
+# Add all domains you use to server_name
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
@@ -213,7 +307,11 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+```
 
+### Collabora blocks (if using Collabora)
+
+```nginx
 # Collabora
 server {
   listen 443 ssl http2;
@@ -239,7 +337,7 @@ server {
 
 }
 
-# WOPI Server
+# Collabora WOPI Server
 server {
   listen 443 ssl http2;
   server_name wopiserver.YOUR.DOMAIN;
@@ -255,6 +353,56 @@ server {
       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
       proxy_set_header X-Forwarded-Proto $scheme;
   }
+}
+```
+
+### Euro Office blocks (if using Euro Office)
+
+```nginx
+# Euro Office Document Server
+server {
+    listen 443 ssl http2;
+    server_name euro-office.YOUR.DOMAIN;
+
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    client_max_body_size 100M;
+
+    location / {
+        proxy_pass http://127.0.0.1:9900;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        # Required for WebSocket support
+        proxy_set_header X-Forwarded-Proto https;
+    }
+
+    location ~ ^/(web-apps/apps/.*/(main|mobile|embed)/.*\.json|doc/.*/(c|s)/.*) {
+        proxy_pass http://127.0.0.1:9900;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+    }
+}
+
+# Euro Office WOPI Server
+server {
+    listen 443 ssl http2;
+    server_name wopiserver-eo.YOUR.DOMAIN;
+
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+    location / {
+        proxy_pass http://127.0.0.1:9302;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 ```
 
