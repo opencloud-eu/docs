@@ -1,11 +1,3 @@
----
-sidebar_position: 2
-id: external-proxy
-title: Behind External Proxy
-description: How to run OpenCloud behind an external Nginx proxy with Certbot (manual setup).
-draft: false
----
-
 # Running OpenCloud Behind an External Proxy (Nginx + Certbot Setup)
 
 This guide walks you through setting up OpenCloud behind an external Nginx reverse proxy with Let's Encrypt certificates using `certbot certonly --webroot`.
