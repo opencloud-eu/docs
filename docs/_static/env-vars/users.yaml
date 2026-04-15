@@ -29,6 +29,14 @@ drivers:
     bind_password: ""
     user_base_dn: ou=users,o=libregraph-idm
     group_base_dn: ou=groups,o=libregraph-idm
+    tenant_base_dn: ""
+    tenant_scope: sub
+    tenant_filter: ""
+    tenant_object_class: ""
+    tenant_schema:
+      id: ""
+      external_id: ""
+      name: ""
     user_scope: sub
     group_scope: sub
     user_substring_filter_type: any
