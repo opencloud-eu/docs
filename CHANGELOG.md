@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- publish release note rolling-6.1.0 [[#768](https://github.com/opencloud-eu/docs/pull/768)]
 - Docker compose docs refining [[#726](https://github.com/opencloud-eu/docs/pull/726)]
 - Update environment variable for log level [[#749](https://github.com/opencloud-eu/docs/pull/749)]
 - Update logging.md [[#758](https://github.com/opencloud-eu/docs/pull/758)]
