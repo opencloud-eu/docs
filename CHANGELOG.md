@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Docker compose docs refining [[#726](https://github.com/opencloud-eu/docs/pull/726)]
 - Update environment variable for log level [[#749](https://github.com/opencloud-eu/docs/pull/749)]
 - Update logging.md [[#758](https://github.com/opencloud-eu/docs/pull/758)]
 - migration to 6.0.0 [[#738](https://github.com/opencloud-eu/docs/pull/738)]
