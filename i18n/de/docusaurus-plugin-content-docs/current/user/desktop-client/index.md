@@ -1,17 +1,25 @@
 ---
+sidebar_position: 0
+id: desktop-client-overview
 title: OpenCloud Desktop Client
 ---
 
-import DocCardList from '@theme/DocCardList';
+# OpenCloud Desktop Client
 
-Der OpenCloud Desktop Client ermöglicht die Synchronisation von Dateien zwischen einem lokalen Computer und der OpenCloud.  
-Er stellt sicher, dass Dateien offline verfügbar sind und dass Änderungen automatisch synchronisiert werden, sobald wieder eine Internetverbindung besteht.  
-Der Client ist für Windows, macOS und Linux verfügbar.
+Der OpenCloud Desktop Client synchronisiert Dateien zwischen Ihrem Computer und OpenCloud. Er ist für Windows, macOS
+und Linux verfügbar und bietet Offline-Zugriff, automatische Synchronisierung und eine einheitliche Arbeitsweise mit
+lokalen Dateien.
 
-#### Hauptfunktionen
+## In diesem Abschnitt
 
-- Synchronisation von Dateien und Ordnern zwischen Desktop- oder Laptop-Computern und der OpenCloud
-- Automatische Aktualisierung bei Änderungen
-- Offline-Zugriff auf wichtige Daten
+- [Windows](./windows/installation.md)  
+  Installieren, einrichten und konfigurieren Sie den Desktop Client unter Windows.
 
-<DocCardList />
+- [macOS](./macos/installation.md)  
+  Installieren, einrichten und konfigurieren Sie den Desktop Client unter macOS.
+
+- [Linux](./linux/installation.md)  
+  Installieren, einrichten und konfigurieren Sie den Desktop Client unter Linux.
+
+- [Gemeinsame Funktionen](./common-functionality/multiple-accounts.md)  
+  Erfahren Sie mehr über gemeinsame Funktionen wie mehrere Konten, Dateinamenregeln, Konfliktbehandlung und Logging.

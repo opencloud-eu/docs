@@ -1,16 +1,22 @@
 ---
 sidebar_position: 1
 id: docker-compose-base
-title: Docker Compose
+title: Default Setup with Traefik
 description: Full-blown featureset including web office.
 draft: false
 ---
 
-# OpenCloud with Docker Compose
+# OpenCloud with Docker Compose + Integrated Traefik
 
-Install an internet-facing OpenCloud with SSL certification using Docker Compose.
+Install an internet-facing OpenCloud instance with automatic SSL certificates using Docker Compose's integrated Traefik reverse proxy.
 
-This installation documentation is for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but the commands and package managers may differ.
+This is the recommended deployment path for most new OpenCloud installations. Traefik automatically manages Let's Encrypt SSL certificates, eliminating the need to manage a separate reverse proxy.
+
+This installation guide is written for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but commands and package managers may differ.
+
+:::note Not using Traefik?
+If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer to manage it separately, see [Deploy Behind External Proxy](./docker-external-proxy.md) instead.
+:::
 
 ## Prerequisites
 
@@ -29,12 +35,8 @@ This installation documentation is for Ubuntu and Debian systems. The software c
 Log into your server via SSH:
 
 ```bash
-ssh YOUR_ADMIN_USER@YOUR.SERVER.IP
+ssh root@YOUR.SERVER.IP
 ```
-
-:::note
-Use a non-root user with `sudo` privileges. If you logged in as root, prepend `sudo` where appropriate or run the commands without `sudo`
-:::
 
 ## Install Docker
 
@@ -43,7 +45,7 @@ Update your system and install Docker.
 First, perform an update and upgrade:
 
 ```bash
-sudo apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
 ```
 
 Install Docker following the [official Docker guide](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -51,21 +53,8 @@ Install Docker following the [official Docker guide](https://docs.docker.com/eng
 Once Docker is installed, enable and start the service:
 
 ```bash
-sudo systemctl enable docker && sudo systemctl start docker
+systemctl enable docker && systemctl start docker
 ```
-
-## Create a dedicated user to run OpenCloud (recommended)
-
-For security reasons, do not run the OpenCloud stack as `root`. Create a dedicated user (for example `opencloud`) and run the remaining steps as that user.
-
-```bash
-sudo adduser opencloud
-sudo usermod -aG docker opencloud
-```
-
-Log out and log back in (or start a new login shell), then continue as `opencloud`.
-
-Docker can be managed as a non-root user (e.g. via the `docker` group). Be aware that access to the Docker daemon is effectively equivalent to root access on the host. Limit group membership and restrict access accordingly.
 
 ## Clone the OpenCloud Repository
 
@@ -77,7 +66,7 @@ git clone https://github.com/opencloud-eu/opencloud-compose.git
 
 ## Configure the .env File for Staging Certificates
 
-Before requesting real SSL certificates, test the setup with Let's Encrypt’s staging environment.
+Before requesting real SSL certificates, it is recommended to test the setup using Let's Encrypt's staging environment.
 
 ### Navigate to the OpenCloud configuration folder
 
@@ -95,25 +84,25 @@ cp .env.example .env
 The repository includes .env.example as a template with default settings and documentation. Your actual .env file is excluded from version control (via .gitignore) to prevent accidentally committing sensitive information like passwords and domain-specific settings.
 :::
 
-Edit the `.env` file with the editor of your choice:
+## Modify these settings
 
-### In our example we use nano
+### Edit the `.env` file with the editor of your choice
+
+In our example we use nano
 
 ```bash
 nano .env
 ```
 
-## Modify these settings
-
 ### Disable insecure mode
 
-```env
+```bash
 # INSECURE=true
 ```
 
 ### Set your domain names
 
-```env
+```bash
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
 OC_DOMAIN=cloud.YOUR.DOMAIN
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
@@ -122,106 +111,39 @@ WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
 ### Set your admin password
 
-```env
+```bash
 INITIAL_ADMIN_PASSWORD=YourSecurePassword
 ```
 
 ### Set your email for SSL certification
 
-```env
+```bash
 TRAEFIK_ACME_MAIL=your@email.com
 ```
 
 ### Use Let's Encrypt staging certificates (for testing)
 
-```env
+```bash
 TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
-### Set your deployment options
+### Set the deployment option
 
-For example, without Collabora:
+Set the `COMPOSE_FILE` variable based on the components you want to deploy.
 
-```env
+For an OpenCloud deployment without Collabora, use:
+
+```bash
 COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
 ```
 
-Save and exit.
-
-### Production Setup Consideration
-
-:::caution Production Setup Recommended
-By default, OpenCloud stores configuration and data inside internal Docker volumes.  
-This works fine for local development or quick evaluations — but is not suitable for production environments.
-:::
-
-#### Mount Persistent Volumes
-
-For production setups, mount persistent host directories for configuration and data. This gives you:
-
-- Data durability
-- Easier backups and recovery
-- Full control over storage location and permissions
-
-Update your `.env` file with custom paths:
-
-```env
-OC_CONFIG_DIR=/your/local/path/opencloud/config
-OC_DATA_DIR=/your/local/path/opencloud/data
-```
-
-### UID/GID and volume permissions (important)
-
-OpenCloud containers run as `1000:1000` by default.  
-If your host user uses different IDs, set `OC_CONTAINER_UID_GID` in `.env` so file ownership matches your host user:
-
-```env
-OC_CONTAINER_UID_GID=1001:1001
-```
-
-You can check your UID/GID with:
+To deploy OpenCloud with Collabora, use:
 
 ```bash
-id -u
-id -g
+COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml
 ```
 
-:::tip Folder Permissions
-
-Create the folders and assign ownership to the UID/GID used by the container (default `1000:1000`, or your `OC_CONTAINER_UID_GID` value):
-
-```bash
-sudo mkdir -p /your/local/path/opencloud/{config,data}
-sudo chown -R $(id -u):$(id -g) /your/local/path/opencloud
-```
-
-:::
-
-If `OC_CONFIG_DIR` and `OC_DATA_DIR` are not set, Docker uses internal volumes. Those are harder to manage for backups and are not recommended for production.
-
-:::caution Security Warning
-
-Any local account that matches the mapped UID/GID can access these mounted directories.  
-In shared or multi-user environments, this can expose OpenCloud config and data files.
-
-Use strict host-level permission management and isolate access to these paths where possible.
-
-:::
-
-#### Use production release container
-
-To avoid accidentally updating to a version with breaking changes, you should specify the production container version to be used in your `.env` file:
-
-```env
-OC_DOCKER_IMAGE=opencloudeu/opencloud
-OC_DOCKER_TAG=4.0.3
-```
-
-:::tip Keep the version up to date
-The documentation may not always reference the latest available release. Before deploying (and when updating), check the available tags on Docker Hub and adjust `OC_DOCKER_TAG` to the most recent stable version:
-
-[Docker Hub – opencloudeu/opencloud tags](https://hub.docker.com/r/opencloudeu/opencloud/tags)
-:::
+Save the file and exit the editor.
 
 ## Start OpenCloud
 
@@ -233,29 +155,43 @@ docker compose up -d
 
 This will start all required services in the background.
 
-## Verify SSL Certification
+## Verify TLS Certificates
 
-In your web browser, visit:
+After starting OpenCloud, verify that SSL certificates were issued correctly and switch from staging to production certificates when ready.
+
+### Verify Staging Certificates
+
+By default, the setup uses Let's Encrypt staging certificates for testing. These are not trusted by browsers but prove that the DNS and certificate generation workflow is correct.
+
+Open the following URL:
 
 ```bash
 https://cloud.YOUR.DOMAIN
 ```
 
-You should see a security warning because the staging certificate is not fully trusted.
-The same warning should appear for the other domains you are using.
+Because the setup currently uses Let's Encrypt staging certificates, your browser will show a security warning. This is expected and normal for the staging environment.
 
-Example with Chrome browser:
+The same warning may appear for the other configured domains.
+
+### Example in Chrome
+
+Click on the lock icon to view certificate details:
 
 <img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
 
-- Check the certificate details to confirm it’s from Let's Encrypt Staging.
+Expand the certificate information to confirm it was issued by "Let's Encrypt Staging":
 
-  <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
-  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
 
-## Apply a Real SSL Certificate
+<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details Subordinate CA" width="500"/>
 
-Once the staging certificate works, switch to a production certificate.
+:::success Staging Certificate Success
+If you see "Let's Encrypt Staging" as the issuer, the certificate generation is working correctly. You can now safely switch to production certificates.
+:::
+
+## Switch to Production Certificates
+
+Once the staging certificate works correctly, you can switch to production SSL certificates from Let's Encrypt.
 
 ### Stop Docker Compose
 
@@ -265,50 +201,88 @@ docker compose down
 
 ### Remove old staging certificates
 
+Delete the previously generated staging certificates:
+
 ```bash
-rm -rf ./certs
+rm -r certs
 ```
 
-(Run this in the `opencloud-compose` directory. If you changed volume names, adjust accordingly.)
+:::warning
+If you changed volume names or paths in your `.env` file, adjust this command to match your certificate directory.
+:::
 
 ### Disable staging mode in `.env`
+
+Open the environment file:
 
 ```bash
 nano .env
 ```
 
-Comment the staging server:
+Comment out or remove the staging server line:
 
-```env
+```bash
 # TRAEFIK_ACME_CASERVER=https://acme-staging-v02.api.letsencrypt.org/directory
 ```
 
-### Restart OpenCloud with a real SSL certificate
+Save the file.
+
+### Restart OpenCloud with production certificates
+
+Start the containers again:
 
 ```bash
 docker compose up -d
 ```
 
-Now, visiting `https://cloud.YOUR.DOMAIN` should show a secure connection with a valid SSL certificate.
+Traefik will now request trusted production certificates from Let's Encrypt.
 
-<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920"/>
+### Wait for certificate generation
+
+Certificate generation may take a few moments. Check the logs:
+
+```bash
+docker compose logs traefik
+```
+
+Look for messages indicating successful certificate generation.
+
+### Verify production certificates
+
+After a short moment, visiting your domain should show a secure HTTPS connection:
+
+<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Secure Connection" width="1920"/>
+
+The lock icon should show "Secure" (green lock) with "Let's Encrypt Authority X3" or similar as the issuer.
 
 ## Log into OpenCloud
 
-Open a browser and visit:
+Once certificates are verified:
+
+1. Open your domain in a browser:
 
 ```bash
 https://cloud.YOUR.DOMAIN
 ```
 
-Login with:
+2. Log in with your admin credentials:
+   - Username: `admin`
+   - Password: (the password you configured in the `.env` file)
 
-Username: `admin`
+<img src={require("./../../img/docker-compose/login.png").default} alt="OpenCloud Login" width="1920"/>
 
-Password: (your password)
+## Further Configuration
 
-<img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920"/>
+- [Volume Permissions](./volume-permissions.md) – Ownership, UID/GID mapping, and bind-mount permissions
+- [Production Setup Considerations](./production-considerations.md) – Persistent storage, backups, and production best practices
+- [Configure Keycloak](./keycloak-deployment.md) (optional) – Add Keycloak for enterprise identity management
+- [Configure Authentication](../../../configuration/authentication-and-user-management/) – User management and identity provider integration
 
 ## Troubleshooting
 
-If you encounter any issues, check the [Common Issues & Help](../../../resources/common-issues.md)
+If you encounter issues:
+
+1. Check Docker logs: `docker compose logs`
+2. Verify domain DNS records point to your server
+3. Ensure firewall allows HTTP (80) and HTTPS (443)
+4. See [Common Issues & Help](../../../resources/common-issues.md)

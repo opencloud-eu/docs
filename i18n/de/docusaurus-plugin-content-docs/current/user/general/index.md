@@ -2,15 +2,26 @@
 title: Web Benutzeroberfläche und Navigation
 ---
 
-import DocCardList from '@theme/DocCardList';
+# Web Benutzeroberfläche und Navigation
 
-Der Web Client ist die zentrale Benutzeroberfläche von OpenCloud.  
-Er ermöglicht den vollständigen Zugriff über den Browser, ohne dass zusätzliche Software installiert werden muss.
+Der Web Client ist die zentrale Oberfläche von OpenCloud und bietet vollen Zugriff im Browser, ohne dass zusätzliche
+Software installiert werden muss.
 
-#### Hauptfunktionen
+Dieser Abschnitt erklärt die wichtigsten Bereiche der Oberfläche und zeigt, wie Sie den Web Client nutzen, die
+Dateiliste anpassen und Ihre Kontoeinstellungen personalisieren.
 
-- Dateimanagement: Erstellen, Hochladen, Bearbeiten, Teilen und Organisieren von Dateien und Ordnern
-- Verwaltung von Spaces sowie Benutzer- und Gruppeneinstellungen
-- Collabora Online für die gemeinsame Bearbeitung von Dokumenten in Echtzeit
+## In diesem Abschnitt
 
-<DocCardList />
+- [Überblick](./overview.md)  
+  Machen Sie sich mit den wichtigsten Bereichen des Web Clients vertraut, darunter Seitenleiste, obere Leiste,
+  Dateiliste und Aktionsbereiche.
+
+- [Kontoeinstellungen](./account-settings.md)  
+  Verwalten Sie Ihr Profil, Ihre Einstellungen, Ihr Avatarbild, den Kalenderzugriff, den DSGVO-Export und App-Tokens.
+
+- [Dateiliste anpassen](./file-list-adjustments.md)  
+  Passen Sie an, wie Dateien angezeigt werden, einschließlich versteckter Dateien, Dateiendungen, Seitennummerierung und
+  Kachelgröße.
+
+- [Ansichtsmodi](./view-modes.md)  
+  Wechseln Sie zwischen Tabellen-, Kompakt- und Kachelansicht, um die Dateiliste anders darzustellen.
