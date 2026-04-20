@@ -58,7 +58,8 @@ With LTS, businesses can continue using an older production release without need
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
     | - | 2026 October 26 | Production Release |
-    | - | 2026 May 11 | Production Release |
+    | - | 2026 June 1  | Production Release |
+    | v4.0.5 | 2026 April 8 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.5) |
     | v4.0.4 | 2026 March 30 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.4) |
     | v4.0.3 | 2026 February 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.3) |
     | v4.0.2 | 2026 February 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.2) |
