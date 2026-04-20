@@ -213,6 +213,8 @@ pre_signed_url:
 account_backend: cs3
 user_oidc_claim: preferred_username
 user_cs3_claim: username
+tenant_oidc_claim: ""
+tenant_id_mapping_enabled: false
 machine_auth_api_key: ""
 auto_provision_accounts: false
 auto_provision_claims:
