@@ -1,5 +1,31 @@
 # Changelog
 
+## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @Svanvith, @dragonchaser, @openclouders, @senekor, @tbsbdr, @wsw70
+
+### 👷 Admin Documentation
+
+- Update production release date [[#766](https://github.com/opencloud-eu/docs/pull/766)]
+- publish release note rolling-6.1.0 [[#768](https://github.com/opencloud-eu/docs/pull/768)]
+- Docker compose docs refining [[#726](https://github.com/opencloud-eu/docs/pull/726)]
+- Update environment variable for log level [[#749](https://github.com/opencloud-eu/docs/pull/749)]
+- Update logging.md [[#758](https://github.com/opencloud-eu/docs/pull/758)]
+- migration to 6.0.0 [[#738](https://github.com/opencloud-eu/docs/pull/738)]
+- publish release note rolling-6.0.0 and patch-4.0.4 [[#736](https://github.com/opencloud-eu/docs/pull/736)]
+
+### 👤 User Documentation
+
+- modify and add index.md for each sectionin user docs for better under… [[#728](https://github.com/opencloud-eu/docs/pull/728)]
+- Fix table of forbidden characters [[#754](https://github.com/opencloud-eu/docs/pull/754)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#765](https://github.com/opencloud-eu/docs/pull/765)]
+- Update docs [[#735](https://github.com/opencloud-eu/docs/pull/735)]
+
 ## [3.18.0](https://github.com/opencloud-eu/docs/releases/tag/3.18.0) - 2026-03-27
 
 ### ❤️ Thanks to all contributors! ❤️
