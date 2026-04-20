@@ -4,16 +4,18 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @dragonchaser, @openclouders, @senekor
+@ScharfViktor, @Svanvith, @dragonchaser, @openclouders, @senekor, @wsw70
 
 ### 👷 Admin Documentation
 
+- Update environment variable for log level [[#749](https://github.com/opencloud-eu/docs/pull/749)]
 - Update logging.md [[#758](https://github.com/opencloud-eu/docs/pull/758)]
 - migration to 6.0.0 [[#738](https://github.com/opencloud-eu/docs/pull/738)]
 - publish release note rolling-6.0.0 and patch-4.0.4 [[#736](https://github.com/opencloud-eu/docs/pull/736)]
 
 ### 👤 User Documentation
 
+- modify and add index.md for each sectionin user docs for better under… [[#728](https://github.com/opencloud-eu/docs/pull/728)]
 - Fix table of forbidden characters [[#754](https://github.com/opencloud-eu/docs/pull/754)]
 
 ### 📦️ Build&Tools
