@@ -10,7 +10,6 @@ This guide walks you through setting up OpenCloud behind an external Nginx rever
   - `collabora.YOUR.DOMAIN` (if using Collabora)
   - `wopiserver.YOUR.DOMAIN` (if using Collabora)
   - `euro-office.YOUR.DOMAIN` (if using Euro Office)
-  - `wopiserver-eo.YOUR.DOMAIN` (if using Euro Office)
 - Installed software:
   - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
   - `nginx`
@@ -88,14 +87,7 @@ If using Euro Office (alone or alongside Collabora), add the Euro Office domains
 # Euro Office only:
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
-    # ...same location block as above...
-}
-
-# Both Collabora and Euro Office:
-server {
-    listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
     # ...same location block as above...
 }
 ```
@@ -131,19 +123,7 @@ sudo certbot certonly --webroot \
   -w /var/www/certbot \
   -d cloud.YOUR.DOMAIN \
   -d euro-office.YOUR.DOMAIN \
-  -d wopiserver-eo.YOUR.DOMAIN \
-  --email your@email.com \
-  --agree-tos \
-  --no-eff-email
-
-# Both Collabora and Euro Office:
-sudo certbot certonly --webroot \
-  -w /var/www/certbot \
-  -d cloud.YOUR.DOMAIN \
-  -d collabora.YOUR.DOMAIN \
   -d wopiserver.YOUR.DOMAIN \
-  -d euro-office.YOUR.DOMAIN \
-  -d wopiserver-eo.YOUR.DOMAIN \
   --email your@email.com \
   --agree-tos \
   --no-eff-email
@@ -196,27 +176,8 @@ INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 
 EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
 
-EURO_OFFICE_WOPISERVER_DOMAIN=wopiserver-eo.YOUR.DOMAIN
-
-EURO_OFFICE_JWT_SECRET=YOUR.EURO.OFFICE.SECRET
-```
-
-**Both Collabora and Euro Office:**
-
-```env
-# INSECURE=true
-
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:weboffice/euroffice.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml:external-proxy/euroffice.yml
-
-OC_DOMAIN=cloud.YOUR.DOMAIN
-
-INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
-
-COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 
-EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
-EURO_OFFICE_WOPISERVER_DOMAIN=wopiserver-eo.YOUR.DOMAIN
 EURO_OFFICE_JWT_SECRET=YOUR.EURO.OFFICE.SECRET
 ```
 
@@ -246,16 +207,15 @@ sudo rm /etc/nginx/sites-enabled/certbot-challenge
 sudo nano /etc/nginx/sites-available/opencloud
 ```
 
-Paste the following configuration and adjust the URLs. Include only the server blocks you need based on your office suite choice.
+Paste the full configuration that matches your deployment choice. Do not mix them.
 
-### Core blocks (always required)
+### Configuration 1: OpenCloud Only
 
 ```nginx
 # Redirect HTTP to HTTPS
-# Add all domains you use to server_name
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
@@ -274,21 +234,16 @@ server {
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-    # Increase max upload size (required for Tus — without this, uploads over 1 MB fail)
+    
+    # Increase max upload size
     client_max_body_size 10M;
-
-    # Disable buffering - essential for SSE
     proxy_buffering off;
     proxy_request_buffering off;
-
-    # Extend timeouts for long connections
     proxy_read_timeout 3600s;
     proxy_send_timeout 3600s;
     keepalive_requests 100000;
     keepalive_timeout 5m;
     http2_max_concurrent_streams 512;
-
-    # Prevent nginx from trying other upstreams
     proxy_next_upstream off;
 
     location / {
@@ -301,56 +256,138 @@ server {
 }
 ```
 
-### Collabora blocks (if using Collabora)
+### Configuration 2: OpenCloud + Collabora
 
 ```nginx
+# Redirect HTTP to HTTPS
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+# OpenCloud
+server {
+    listen 443 ssl http2;
+    server_name cloud.YOUR.DOMAIN;
+
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    
+    client_max_body_size 10M;
+    proxy_buffering off;
+    proxy_request_buffering off;
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    keepalive_requests 100000;
+    keepalive_timeout 5m;
+    http2_max_concurrent_streams 512;
+    proxy_next_upstream off;
+
+    location / {
+        proxy_pass http://127.0.0.1:9200;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
 # Collabora
 server {
-  listen 443 ssl http2;
-  server_name collabora.YOUR.DOMAIN;
+    listen 443 ssl http2;
+    server_name collabora.YOUR.DOMAIN;
 
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-  # Increase max upload size to collabora editor
-  client_max_body_size 10M;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    client_max_body_size 10M;
 
-  location / {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Host $host;
-  }
+    location / {
+        proxy_pass http://127.0.0.1:9980;
+        proxy_set_header Host $host;
+    }
 
-  location ~ ^/cool/(.*)/ws$ {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection "Upgrade";
-      proxy_set_header Host $host;
-  }
-
+    location ~ ^/cool/(.*)/ws$ {
+        proxy_pass http://127.0.0.1:9980;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_set_header Host $host;
+    }
 }
 
 # Collabora WOPI Server
 server {
-  listen 443 ssl http2;
-  server_name wopiserver.YOUR.DOMAIN;
+    listen 443 ssl http2;
+    server_name wopiserver.YOUR.DOMAIN;
 
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
-  location / {
-      proxy_pass http://127.0.0.1:9300;
-      proxy_set_header Host $host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme;
-  }
+    location / {
+        proxy_pass http://127.0.0.1:9300;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 ```
 
-### Euro Office blocks (if using Euro Office)
+### Configuration 3: OpenCloud + Euro Office
 
 ```nginx
+# Redirect HTTP to HTTPS
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+# OpenCloud
+server {
+    listen 443 ssl http2;
+    server_name cloud.YOUR.DOMAIN;
+
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    
+    client_max_body_size 10M;
+    proxy_buffering off;
+    proxy_request_buffering off;
+    proxy_read_timeout 3600s;
+    proxy_send_timeout 3600s;
+    keepalive_requests 100000;
+    keepalive_timeout 5m;
+    http2_max_concurrent_streams 512;
+    proxy_next_upstream off;
+
+    location / {
+        proxy_pass http://127.0.0.1:9200;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
 # Euro Office Document Server
 server {
     listen 443 ssl http2;
@@ -366,7 +403,6 @@ server {
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        # Required for WebSocket support
         proxy_set_header X-Forwarded-Proto https;
     }
 
@@ -382,14 +418,14 @@ server {
 # Euro Office WOPI Server
 server {
     listen 443 ssl http2;
-    server_name wopiserver-eo.YOUR.DOMAIN;
+    server_name wopiserver.YOUR.DOMAIN;
 
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
     location / {
-        proxy_pass http://127.0.0.1:9302;
+        proxy_pass http://127.0.0.1:9300;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -439,9 +475,9 @@ If this returns nothing, your nginx does not support QUIC.
 
 HTTP/3 uses QUIC (UDP) alongside the traditional TCP connections for HTTP/1.1 and HTTP/2. This can improve performance for high-latency connections and reduce head-of-line blocking.
 
-The following configuration replaces the HTTP/2 configuration above. It uses `upstream` blocks with keepalive connections and a `map` directive for cleaner WebSocket handling.
+The following configurations replace the HTTP/2 configurations above. They use `upstream` blocks with keepalive connections and a `map` directive for cleaner WebSocket handling. Pick the configuration that matches your deployment.
 
-### Full configuration with HTTP/3
+### Configuration 1: OpenCloud Only with HTTP/3
 
 ```nginx
 map $http_upgrade $connection_upgrade {
@@ -450,18 +486,11 @@ map $http_upgrade $connection_upgrade {
 }
 
 upstream opencloud_backend   { server 127.0.0.1:9200; keepalive 32; }
-upstream wopi_backend        { server 127.0.0.1:9300; keepalive 16; }
-upstream collabora_backend   { server 127.0.0.1:9980; keepalive 16; }
-# Add these if using Euro Office:
-# upstream euroffice_backend   { server 127.0.0.1:9900; keepalive 16; }
-# upstream wopi_eo_backend     { server 127.0.0.1:9302; keepalive 16; }
 
 # ── HTTP → HTTPS redirect ──────────────────────────────────
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
-    # Add Euro Office domains if needed:
-    # server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver-eo.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN;
 
     root /var/www/certbot;
     location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
@@ -473,16 +502,72 @@ server {
 
 # ── OpenCloud ───────────────────────────────────────────────
 server {
-    # QUIC (UDP) — reuseport must only appear on the FIRST server block
     listen 443 quic reuseport;
-    # HTTP/1.1 and HTTP/2 (TCP)
     listen 443 ssl;
     http2 on;
     server_name cloud.YOUR.DOMAIN;
 
-    # Advertise HTTP/3 availability to clients
     add_header Alt-Svc 'h3=":443"; ma=86400' always;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
+    client_max_body_size 0;
+    keepalive_requests 100000;
+    keepalive_timeout 5m;
+    http2_max_concurrent_streams 512;
+
+    root /var/www/certbot;
+    location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
+
+    location / {
+        proxy_pass http://opencloud_backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_http_version 1.1;
+        proxy_set_header Connection $connection_upgrade;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_read_timeout 3600;
+        proxy_buffering off;
+    }
+}
+```
+
+### Configuration 2: OpenCloud + Collabora with HTTP/3
+
+```nginx
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+upstream opencloud_backend   { server 127.0.0.1:9200; keepalive 32; }
+upstream wopi_backend        { server 127.0.0.1:9300; keepalive 16; }
+upstream collabora_backend   { server 127.0.0.1:9980; keepalive 16; }
+
+# ── HTTP → HTTPS redirect ──────────────────────────────────
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+
+    root /var/www/certbot;
+    location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+# ── OpenCloud ───────────────────────────────────────────────
+server {
+    listen 443 quic reuseport;
+    listen 443 ssl;
+    http2 on;
+    server_name cloud.YOUR.DOMAIN;
+
+    add_header Alt-Svc 'h3=":443"; ma=86400' always;
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -517,7 +602,6 @@ server {
     server_name collabora.YOUR.DOMAIN;
 
     add_header Alt-Svc 'h3=":443"; ma=86400' always;
-
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -552,7 +636,6 @@ server {
     server_name wopiserver.YOUR.DOMAIN;
 
     add_header Alt-Svc 'h3=":443"; ma=86400' always;
-
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -579,13 +662,64 @@ server {
 }
 ```
 
-### Euro Office blocks with HTTP/3
-
-If using Euro Office, add the following `upstream` definitions to the top of your config and append these server blocks:
+### Configuration 3: OpenCloud + Euro Office with HTTP/3
 
 ```nginx
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+}
+
+upstream opencloud_backend   { server 127.0.0.1:9200; keepalive 32; }
+upstream wopi_backend        { server 127.0.0.1:9300; keepalive 16; }
 upstream euroffice_backend   { server 127.0.0.1:9900; keepalive 16; }
-upstream wopi_eo_backend     { server 127.0.0.1:9302; keepalive 16; }
+
+# ── HTTP → HTTPS redirect ──────────────────────────────────
+server {
+    listen 80;
+    server_name cloud.YOUR.DOMAIN euro-office.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+
+    root /var/www/certbot;
+    location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+# ── OpenCloud ───────────────────────────────────────────────
+server {
+    listen 443 quic reuseport;
+    listen 443 ssl;
+    http2 on;
+    server_name cloud.YOUR.DOMAIN;
+
+    add_header Alt-Svc 'h3=":443"; ma=86400' always;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+    client_max_body_size 0;
+    keepalive_requests 100000;
+    keepalive_timeout 5m;
+    http2_max_concurrent_streams 512;
+
+    root /var/www/certbot;
+    location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
+
+    location / {
+        proxy_pass http://opencloud_backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_http_version 1.1;
+        proxy_set_header Connection $connection_upgrade;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_read_timeout 3600;
+        proxy_buffering off;
+    }
+}
 
 # ── Euro Office Document Server ────────────────────────────
 server {
@@ -595,7 +729,6 @@ server {
     server_name euro-office.YOUR.DOMAIN;
 
     add_header Alt-Svc 'h3=":443"; ma=86400' always;
-
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -628,10 +761,9 @@ server {
     listen 443 quic;
     listen 443 ssl;
     http2 on;
-    server_name wopiserver-eo.YOUR.DOMAIN;
+    server_name wopiserver.YOUR.DOMAIN;
 
     add_header Alt-Svc 'h3=":443"; ma=86400' always;
-
     ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
     add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -644,7 +776,7 @@ server {
     location ^~ /.well-known/acme-challenge/ { try_files $uri =404; }
 
     location / {
-        proxy_pass http://wopi_eo_backend;
+        proxy_pass http://wopi_backend;
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Proto https;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
