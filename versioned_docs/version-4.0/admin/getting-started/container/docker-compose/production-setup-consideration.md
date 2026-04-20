@@ -3,7 +3,7 @@ sidebar_position: 3
 id: production-setup-consideration
 title: Production Setup Consideration
 description: 'OpenCloud Production Setup Consideration'
-draft: true
+draft: false
 ---
 
 # Production Setup Consideration

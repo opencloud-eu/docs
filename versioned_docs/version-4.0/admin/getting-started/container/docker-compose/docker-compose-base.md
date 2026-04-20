@@ -15,7 +15,7 @@ This is the recommended deployment path for most new OpenCloud installations. Tr
 This installation guide is written for Ubuntu and Debian systems. The software can also be installed on other Linux distributions, but commands and package managers may differ.
 
 :::note Not using Traefik?
-If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer to manage it separately, see [Deploy Behind External Proxy](./external-proxy.md) instead.
+If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer to manage it separately, see [Deploy Behind External Proxy](./docker-external-proxy.md) instead.
 :::
 
 ## Prerequisites
@@ -151,16 +151,16 @@ This will start all required services in the background.
 
 After starting OpenCloud, verify that services are running and SSL certificates were issued:
 
-1. Check the [TLS/SSL certificates are valid](./verify-tls-certificates.md)
+1. Check the [TLS/SSL certificates are valid](./verify-SSL-certification.md)
 2. Log in to OpenCloud: `https://cloud.YOUR.DOMAIN`
    - Username: `admin`
    - Password: (the password you set in `.env`)
 
 ## Next Steps
 
-- [Verify TLS Certificates](./verify-tls-certificates.md) – Validate staging certificates and switch to production
-- [Production Setup Considerations](./production-considerations.md) – Persistent storage, backups, and production best practices
-- [Configure Keycloak](./keycloak-deployment.md) (optional) – Add Keycloak for enterprise identity management
+- [Verify TLS Certificates](./verify-SSL-certification.md) – Validate staging certificates and switch to production
+- [Production Setup Considerations](./production-setup-consideration.md) – Persistent storage, backups, and production best practices
+- [Configure Keycloak](./keycloak.md) (optional) – Add Keycloak for enterprise identity management
 - [Configure Authentication](../../../configuration/authentication-and-user-management/) – User management and identity provider integration
 
 ## Troubleshooting
@@ -170,4 +170,4 @@ If you encounter issues:
 1. Check Docker logs: `docker compose logs`
 2. Verify domain DNS records point to your server
 3. Ensure firewall allows HTTP (80) and HTTPS (443)
-4. See [Common Issues & Help](../../../resources/common-issues)
+4. See [Common Issues & Help](../../../resources/common-issues.md)

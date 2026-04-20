@@ -273,6 +273,7 @@ https://cloud.YOUR.DOMAIN
 
 ## Further Configuration
 
+- [Volume Permissions](./volume-permissions.md) – Ownership, UID/GID mapping, and bind-mount permissions
 - [Production Setup Considerations](./production-considerations.md) – Persistent storage, backups, and production best practices
 - [Configure Keycloak](./keycloak-deployment.md) (optional) – Add Keycloak for enterprise identity management
 - [Configure Authentication](../../../configuration/authentication-and-user-management/) – User management and identity provider integration

@@ -3,7 +3,7 @@ sidebar_position: 5
 id: keycloak
 title: Keycloak
 description: 'OpenCloud with Keycloak.'
-draft: true
+draft: false
 ---
 
 # Keycloak Integration
