@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Svanvith, @dragonchaser, @openclouders, @senekor, @wsw70
+@ScharfViktor, @Svanvith, @dragonchaser, @openclouders, @senekor, @tbsbdr, @wsw70
 
 ### 👷 Admin Documentation
 
+- Update production release date [[#766](https://github.com/opencloud-eu/docs/pull/766)]
 - publish release note rolling-6.1.0 [[#768](https://github.com/opencloud-eu/docs/pull/768)]
 - Docker compose docs refining [[#726](https://github.com/opencloud-eu/docs/pull/726)]
 - Update environment variable for log level [[#749](https://github.com/opencloud-eu/docs/pull/749)]
