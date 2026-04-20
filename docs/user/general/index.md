@@ -2,15 +2,22 @@
 title: Web User Interface and Navigation
 ---
 
-import DocCardList from '@theme/DocCardList';
+# Web User Interface and Navigation
 
-The Web Client is the primary interface of OpenCloud.  
-It provides full access through the browser without requiring any additional software installation.
+The Web Client is the main interface of OpenCloud and provides full access through the browser without requiring any additional software.
 
-#### Key Features
+This section explains the main areas of the interface and shows how to navigate the Web Client, adjust the file list, and personalize your account settings.
 
-- File Management: Create, upload, edit, share, and organize files and folders
-- Space and User/Group Management
-- Collabora Online for real-time collaborative document editing
+## In this section
 
-<DocCardList />
+- [Overview](./overview.md)  
+  Get familiar with the main areas of the Web Client, including the sidebar, top bar, file list, and action areas.
+
+- [Account Settings](./account-settings.md)  
+  Manage your profile, preferences, avatar, calendar access, GDPR export, and app tokens.
+
+- [Customize the file list](./file-list-adjustments.md)  
+  Adjust how files are displayed, including hidden files, file extensions, pagination, and tile size.
+
+- [View modes](./view-modes.md)  
+  Switch between table, condensed, and tile views to change how the file list is displayed.

@@ -18,71 +18,88 @@ import OcLogoLilac from '/static/img/oc-logo-lilac.svg';
 
 ## Willkommen zur OpenCloud Wissensdatenbank
 
-Hier finden Sie alle wichtigen Informationen, um erfolgreich die ersten Schritte in OpenCloud zu gehen, technische
-Probleme flexibel selber zu beheben und häufig gestellte Fragen zu beantworten.
+Diese Dokumentation hilft Ihnen beim Einstieg in OpenCloud, beim Verständnis der wichtigsten Funktionen und bei der
+Suche nach Hilfen für den Alltag, die Administration und die Fehlersuche.
 
 ## Was ist OpenCloud?
 
-OpenCloud ist die File-Sharing- und Kollaborationslösung der Heinlein Gruppe.
+OpenCloud ist eine File-Sharing- und Kollaborationsplattform der [Heinlein Group](https://www.heinlein.group/).
+Sie hilft Teams dabei, Dateien geräteübergreifend zu speichern, zu organisieren, zu teilen und gemeinsam zu
+bearbeiten.
 
-Durch intelligentes Dateimanagement und eine starke Open-Source-Community werden Dateien zu wertvollen Ressourcen – effektiv strukturiert und langfristig nutzbar. Mit flexiblen Datenräumen und intelligenten Zugriffsrechten können Teams jederzeit und von überall auf Daten zugreifen und gemeinsam daran arbeiten – barrierefrei und mit hoher Produktivität.
+Je nach Arbeitsweise können Sie OpenCloud auf unterschiedliche Weise nutzen:
 
-Der Zugriff auf OpenCloud ist auf verschiedene Arten möglich – je nach Gerät und Anwendungsfall:
+- Der [Web Client](./general/) bietet direkten Zugriff auf alle OpenCloud-Funktionen im Browser, einschließlich
+  Dateiverwaltung, Kollaborationsfunktionen und Verwaltungsoptionen, soweit Ihre Berechtigungen dies zulassen.
+- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen OpenCloud und Ihrem lokalen Computer für die
+  Offline-Arbeit und automatische Aktualisierungen.
+- Die [iOS App](./ios-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+- Die [Android App](./android-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+- Die [Collabora Online-Integration](./collabora) ermöglicht das Bearbeiten von Office-Dokumenten direkt im Browser.
 
-- Der [Web Client](./general/) bietet den vollständigen Zugriff auf alle Funktionen der OpenCloud direkt im Browser. Er ermöglicht Dateimanagement, Benutzer- und Space-Verwaltung sowie die Online-Zusammenarbeit über Collabora.
-- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen der OpenCloud und einem lokalen Computer und ermöglicht so die Offline-Arbeit sowie automatische Aktualisierungen.
-- Die mobilen Apps für [iOS](./ios-app/) und [Android](./android-app/) bieten schnellen Zugriff auf Dateien und grundlegende Verwaltungsfunktionen – auch unterwegs.
+Jeder Client und jede Integration ist für einen bestimmten Anwendungsfall ausgelegt: der Web Client für den
+umfangreichen Zugriff im Browser, der Desktop Client für die lokale Synchronisierung, die mobilen Apps für den
+Zugriff unterwegs und Collabora für die Dokumentbearbeitung im Browser.
 
-Jeder Client ist für einen bestimmten Anwendungsfall konzipiert:  
-der Web Client für die umfassende Online-Nutzung, der Desktop Client für die lokale Synchronisierung und die mobilen Apps für produktives Arbeiten von unterwegs.
+## Administration und Bereitstellung
 
-## Wie kann ich OpenCloud nutzen?
+Wenn Sie Ihre eigene OpenCloud-Umgebung installieren, einrichten oder verwalten möchten, finden Sie Hilfe in der
+[Admin-Dokumentation](../admin/) und im Abschnitt [Erste Schritte](../admin/getting-started/).
 
-Anweisungen zur Installation und Einrichtung Ihrer eigenen OpenCloud finden Sie nur in Englisch in der [„Admin“-Dokumentation](../admin/) unter [Erste Schritte](../admin/getting-started/).
+## Dokumentationsversionen
 
-## Dokumentations-Versionen
+Diese Dokumentation ist versioniert, damit Sie die Informationen passend zu Ihrer OpenCloud-Version finden.
 
-Unsere Dokumentation ist versioniert, damit Sie stets die passende Version zu Ihrer Software finden.
+- **Rolling-Version**  
+  Entspricht dem aktuellen Entwicklungsstand. Änderungen werden fortlaufend eingepflegt, einzelne Funktionen können
+  jedoch noch nicht vollständig dokumentiert sein.
 
-- Rolling-Version: Entspricht immer dem aktuellen Entwicklungsstand. Änderungen werden laufend eingepflegt – die Dokumentation kann jedoch nicht vollständig sein, da neue Features ggf. noch nicht dokumentiert sind. Ideal bei Nutzung von Vorab- oder Entwicklungs-versionen.
-- Stable Release-Versionen: Dokumentation zu offiziellen Releases – eingefroren, geprüft und unverändert seit Freigabe.
+- **Stable-Release-Versionen**  
+  Dokumentation zu offiziell veröffentlichten Versionen. Diese Versionen werden geprüft und bleiben nach der
+  Veröffentlichung unverändert.
 
-Über das Versionsmenü oben rechts können Sie jederzeit zwischen der Rolling-Version und den einzelnen Release-Versionen wechseln.
+Über das Versionsmenü oben rechts können Sie zwischen der Rolling-Version und bestimmten Release-Versionen wechseln.
 
-## Inhaltsverzeichnis
+## Dokumentation entdecken
 
-### [Benutzeroberfläche und Navigation](./general/)
+### Apps
 
-Hier finden Sie allgemeine Informationen zu Kontoeinstellungen, Anpassungsmöglichkeiten und Ansichtsmodi.
+- [OpenCloud Desktop Client](./desktop-client/)  
+  Hier erfahren Sie, wie Sie den Desktop Client installieren, einrichten und verwenden.
 
-### [Verwalten von Dateien und Ordner](./files-and-folders/)
+- [OpenCloud iOS App](./ios-app/)  
+  Hier finden Sie Hinweise zur Nutzung von OpenCloud auf iPhone und iPad.
 
-Hier finden Sie Informationen zur Verwaltung von Dateien und Ordnern.
+- [OpenCloud Android App](./android-app/)  
+  Hier finden Sie Hinweise zur Nutzung von OpenCloud auf Android-Geräten.
 
-### [Teilen von Dateien und Ordner](./sharing/)
+### Web und Bearbeitung
 
-Hier erfahren Sie, wie Sie Dateien und Ordner freigeben können.
+- [Benutzeroberfläche und Navigation](./general/)  
+  Hier lernen Sie den Web Client kennen, passen Kontoeinstellungen an und verändern die Darstellung.
 
-### [Arbeiten im Team mit Spaces](./spaces/)
+- [Collabora Online](./collabora)  
+  Hier erfahren Sie, wie Sie Dokumente direkt im Browser bearbeiten.
 
-Hier finden Sie Informationen zur Arbeit mit Spaces.
+- [Dateien und Ordner verwalten](./files-and-folders/)  
+  Hier finden Sie Hinweise zum Erstellen, Organisieren, Verschieben, Löschen und Wiederherstellen von Dateien und
+  Ordnern.
 
-### [OpenCloud Desktop](./desktop-client/)
+- [Dateien und Ordner teilen](./sharing/)  
+  Hier erfahren Sie, wie Sie Inhalte intern teilen, öffentliche Links erstellen und File Drop verwenden.
 
-Hier finden Sie Anleitungen zur Installation und Einrichtung des Desktop-Clients.
+- [Im Team mit Spaces arbeiten](./spaces/)  
+  Hier erfahren Sie, wie Sie Spaces für die Zusammenarbeit in Teams nutzen.
 
-### [OpenCloud iOS App](./ios-app/)
+### Administration
 
-Hier erhalten Sie Informationen zur Nutzung der OpenCloud iOS App.
+- [Rollen](./roles/)  
+  Hier erfahren Sie mehr über Benutzerrollen, Space-Rollen und Freigaberechte in OpenCloud.
 
-### [Rollen](./roles/)
+- [Administration von OpenCloud](./admin/)  
+  Hier finden Sie Informationen zu Einstellungen, App-Tokens und WebDAV-Zugriff.
 
-Hier erfahren Sie mehr über die verschiedenen zuweisbaren Rollen.
+### Hilfe
 
-### [Administration von OpenCloud](./admin/)
-
-Hier finden Sie Informationen über die Administrationsfunktionen und deren Nutzungsmöglichkeiten.
-
-### [Häufige Probleme und Hilfe](./common-issues.md)
-
-Hier finden Sie Informationen zu häufigen Problemen und Hilfe zu deren Lösung.
+- [Häufige Probleme und Hilfe](./common-issues.md)  
+  Hier finden Sie Lösungen für häufige Probleme und Antworten auf häufig gestellte Fragen.
