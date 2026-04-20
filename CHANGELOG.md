@@ -1,5 +1,56 @@
 # Changelog
 
+## [3.18.0](https://github.com/opencloud-eu/docs/releases/tag/3.18.0) - 2026-03-27
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- fixed wrong link to the ldap schema in keycloak docs [[#732](https://github.com/opencloud-eu/docs/pull/732)]
+- common issue Internal LibreIDM cert expires [[#722](https://github.com/opencloud-eu/docs/pull/722)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#731](https://github.com/opencloud-eu/docs/pull/731)]
+- Update docs [[#720](https://github.com/opencloud-eu/docs/pull/720)]
+
+## [3.17.0](https://github.com/opencloud-eu/docs/releases/tag/3.17.0) - 2026-03-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen, @Svanvith, @kulmann, @openclouders
+
+### :octocat: Developer Documentation
+
+- Adjust oidc web config [[#717](https://github.com/opencloud-eu/docs/pull/717)]
+- add new extension points to dev docs [[#709](https://github.com/opencloud-eu/docs/pull/709)]
+
+### 👷 Admin Documentation
+
+- fix link in the docker-compose base instructions [[#718](https://github.com/opencloud-eu/docs/pull/718)]
+- write instruction how to enable MS-Office formats in the new button … [[#706](https://github.com/opencloud-eu/docs/pull/706)]
+
+### 👤 User Documentation
+
+- add note to the user roles in en and ger that user which switch to us… [[#711](https://github.com/opencloud-eu/docs/pull/711)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#708](https://github.com/opencloud-eu/docs/pull/708)]
+
+## [3.16.0](https://github.com/opencloud-eu/docs/releases/tag/3.16.0) - 2026-03-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @tbsbdr
+
+### 👷 Admin Documentation
+
+- add production release dates 2026 [[#703](https://github.com/opencloud-eu/docs/pull/703)]
+- publish release note 5.2.0 [[#700](https://github.com/opencloud-eu/docs/pull/700)]
+
 ## [3.15.0](https://github.com/opencloud-eu/docs/releases/tag/3.15.0) - 2026-03-05
 
 ### ❤️ Thanks to all contributors! ❤️

@@ -2,8 +2,7 @@
   "label": "Share files and folders",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "description": "tutorials about sharing files and folders.",
-    "slug": "user/sharing/"
+    "type": "doc",
+    "id": "sharing-overview"
   }
 }

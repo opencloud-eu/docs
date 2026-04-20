@@ -1,0 +1,8 @@
+{
+  "label": "Administration von OpenCloud",
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "admin-overview"
+  }
+}

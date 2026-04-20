@@ -1,5 +1,5 @@
 
-2026-03-05-00-05-51
+2026-03-30-00-05-56
 
 # Deprecation Notice
 
@@ -44,7 +44,6 @@ Environment variables for the **frontend** service
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.`|``|
 |`OC_MACHINE_AUTH_API_KEY`<br/>`FRONTEND_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`|``|
 |`FRONTEND_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`false`|
-|`FRONTEND_ENABLE_FAVORITES`| 1.0.0 |bool|`Enables the support for favorites in the clients.`|`false`|
 |`OC_SPACES_MAX_QUOTA`<br/>`FRONTEND_MAX_QUOTA`| 1.0.0 |uint64|`Set the global max quota value in bytes. A value of 0 equals unlimited. The value is provided via capabilities.`|`0`|
 |`FRONTEND_UPLOAD_MAX_CHUNK_SIZE`| 1.0.0 |int|`Sets the max chunk sizes in bytes for uploads via the clients.`|`10000000`|
 |`FRONTEND_UPLOAD_HTTP_METHOD_OVERRIDE`| 1.0.0 |string|`Advise TUS to replace PATCH requests by POST requests.`|``|

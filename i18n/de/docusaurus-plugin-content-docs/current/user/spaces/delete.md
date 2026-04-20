@@ -12,7 +12,7 @@ Bevor Sie einen Space löschen können, muss er zunächst deaktiviert werden.
 
 ## Space deaktivieren
 
-- Folgen Sie der Anleitung unter [Einen Space deaktivieren](./disable-enable), um den Space in den deaktivierten Zustand zu versetzen, bevor Sie ihn löschen.
+- Folgen Sie der Anleitung unter [Einen Space deaktivieren](./enable-disable.md), um den Space in den deaktivierten Zustand zu versetzen, bevor Sie ihn löschen.
 
 - Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, klicken Sie auf den Filter Deaktivierte Spaces einblenden, um ihn wieder anzuzeigen.
 

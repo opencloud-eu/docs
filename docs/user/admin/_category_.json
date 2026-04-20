@@ -2,8 +2,7 @@
   "label": "Administration of OpenCloud",
   "position": 9,
   "link": {
-    "type": "generated-index",
-    "description": "Tutorials for administrating your OpenCloud.",
-    "slug": "user/admin/"
+    "type": "doc",
+    "id": "admin-overview"
   }
 }
