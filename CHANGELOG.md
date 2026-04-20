@@ -1,16 +1,20 @@
 # Changelog
 
-## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-16
+## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @dragonchaser, @openclouders
+@ScharfViktor, @dragonchaser, @openclouders, @senekor
 
 ### 👷 Admin Documentation
 
 - Update logging.md [[#758](https://github.com/opencloud-eu/docs/pull/758)]
 - migration to 6.0.0 [[#738](https://github.com/opencloud-eu/docs/pull/738)]
 - publish release note rolling-6.0.0 and patch-4.0.4 [[#736](https://github.com/opencloud-eu/docs/pull/736)]
+
+### 👤 User Documentation
+
+- Fix table of forbidden characters [[#754](https://github.com/opencloud-eu/docs/pull/754)]
 
 ### 📦️ Build&Tools
 
