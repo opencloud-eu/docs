@@ -64,11 +64,16 @@ A regular User has access to their own Space and can be part of other Spaces. Th
 
 ## User Light
 
-A User Light has limited access and does not have their own personal Space. They can:
+A User Light has limited access.
+
+They can:
 
 - Be added as a member to a Space
-- Can have the "Can Edit" role in a Space
-- They do not have a personal Space
+- Have the "Can Edit" role in a Space
+
+They can't :
+
+- create or upload files (quota = 0)
 
 :::note
 If a user previously had the role User or higher and is later changed back to User Light, they will still keep their personal Space.
