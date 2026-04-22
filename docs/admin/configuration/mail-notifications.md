@@ -38,7 +38,7 @@ SMTP_INSECURE=true
 SMTP_AUTHENTICATION=auto
 ```
 
-See section [Environment Variables](https://docs.opencloud.eu/docs/dev/server/Services/notifications/notifications-envvars/) in the developers documentation for possible values for these variables. Note, that the environment variables are prefixed with `NOTIFICATIONS_`, so `NOTIFICATIONS_SMTP_AUTHENTICATION` shows possible values for `SMTP_AUTHENTICATION` in the `.env` file.
+See section [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) in the developers documentation for possible values for these variables. Note, that the environment variables are prefixed with `NOTIFICATIONS_`, so `NOTIFICATIONS_SMTP_AUTHENTICATION` shows possible values for `SMTP_AUTHENTICATION` in the `.env` file.
 
 Per default the `notifications` service is disabled. To send out notifications, the service must be enabled via:
 
