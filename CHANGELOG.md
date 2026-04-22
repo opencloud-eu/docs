@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @senekor
+
+### 👷 Admin Documentation
+
+- fix broken link in mail notifications 4.0 and rolling [[#773](https://github.com/opencloud-eu/docs/pull/773)]
+- Fix broken link [[#761](https://github.com/opencloud-eu/docs/pull/761)]
+
 ## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
 
 ### ❤️ Thanks to all contributors! ❤️
