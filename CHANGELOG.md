@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@senekor
+@Heiko-Pohl, @senekor
 
 ### 👷 Admin Documentation
 
+- fix broken link in mail notifications 4.0 and rolling [[#773](https://github.com/opencloud-eu/docs/pull/773)]
 - Fix broken link [[#761](https://github.com/opencloud-eu/docs/pull/761)]
 
 ## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
