@@ -1,3 +1,11 @@
+
+2026-04-22-00-05-31
+
+# Deprecation Notice
+
+| Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
+|---|---|---|:---|
+|  | 6.2.0 | next-prod |  |
 Environment variables for the **web** service
 
 | Name | Introduction Version | Type | Description | Default Value |
