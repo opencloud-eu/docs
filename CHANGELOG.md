@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@senekor
+
+### 👷 Admin Documentation
+
+- Fix broken link [[#761](https://github.com/opencloud-eu/docs/pull/761)]
+
 ## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
 
 ### ❤️ Thanks to all contributors! ❤️
