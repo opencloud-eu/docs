@@ -37,18 +37,18 @@ Environment variables for the **ocm** service
 |`OCM_INVITE_ACCEPT_DIALOG`| 3.5.0 |string|`/open-cloud-mesh/accept-invite;The frontend URL where to land when receiving an invitation`|`/open-cloud-mesh/accept-invite`|
 |`OC_INSECURE`<br/>`OCM_CLIENT_INSECURE`| 6.0.0 |bool|`Dev-only. Disable TLS verification for the OCM discovery client (directory fetch and provider discovery). Does not affect OCM invite manager, storage provider, or share provider. Do not set in production.`|`false`|
 |`OCM_OCM_INVITE_MANAGER_DRIVER`| 1.0.0 |string|`Driver to be used to persist OCM invites. Supported value is only 'json'.`|`json`|
-|`OCM_OCM_INVITE_MANAGER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM invite data will be stored. This file is maintained by the instance and must not be changed manually. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/ocm.`|`/root/.opencloud/storage/ocm/ocminvites.json`|
+|`OCM_OCM_INVITE_MANAGER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM invite data will be stored. This file is maintained by the instance and must not be changed manually. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/ocm.`|`/var/lib/opencloud/storage/ocm/ocminvites.json`|
 |`OCM_OCM_INVITE_MANAGER_TOKEN_EXPIRATION`| 1.0.0 |Duration|`Expiry duration for invite tokens.`|`24h0m0s`|
 |`OCM_OCM_INVITE_MANAGER_TIMEOUT`| 1.0.0 |Duration|`Timeout specifies a time limit for requests made to OCM endpoints.`|`30s`|
 |`OCM_OCM_INVITE_MANAGER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`false`|
 |`SHARING_OCM_PROVIDER_AUTHORIZER_DRIVER`| 1.0.0 |string|`Driver to be used to persist ocm invites. Supported value is only 'json'.`|`json`|
-|`OCM_OCM_PROVIDER_AUTHORIZER_PROVIDERS_FILE`| 1.0.0 |string|`Path to the JSON file where ocm invite data will be stored. Defaults to $OC_CONFIG_DIR/ocmproviders.json.`|`/root/.opencloud/config/ocmproviders.json`|
+|`OCM_OCM_PROVIDER_AUTHORIZER_PROVIDERS_FILE`| 1.0.0 |string|`Path to the JSON file where ocm invite data will be stored. Defaults to $OC_CONFIG_DIR/ocmproviders.json.`|`/etc/opencloud/ocmproviders.json`|
 |`OCM_OCM_SHARE_PROVIDER_DRIVER`| 1.0.0 |string|`Driver to be used for the OCM share provider. Supported value is only 'json'.`|`json`|
-|`OCM_OCM_SHAREPROVIDER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/root/.opencloud/storage/ocm/ocmshares.json`|
+|`OCM_OCM_SHAREPROVIDER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/ocm/ocmshares.json`|
 |`OCM_OCM_SHARE_PROVIDER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`false`|
 |`OCM_WEBAPP_TEMPLATE`| 1.0.0 |string|`Template for the webapp url.`|``|
 |`OCM_OCM_CORE_DRIVER`| 1.0.0 |string|`Driver to be used for the OCM core. Supported value is only 'json'.`|`json`|
-|`OCM_OCM_CORE_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/root/.opencloud/storage/ocm/ocmshares.json`|
+|`OCM_OCM_CORE_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/ocm/ocmshares.json`|
 |`OCM_OCM_STORAGE_PROVIDER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`false`|
-|`OCM_OCM_STORAGE_PROVIDER_STORAGE_ROOT`| 1.0.0 |string|`Directory where the ocm storage provider persists its data like tus upload info files.`|`/root/.opencloud/storage/ocm`|
+|`OCM_OCM_STORAGE_PROVIDER_STORAGE_ROOT`| 1.0.0 |string|`Directory where the ocm storage provider persists its data like tus upload info files.`|`/var/lib/opencloud/storage/ocm`|
 |`OCM_OCM_STORAGE_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by the data gateway provided by the frontend service or the user if directly exposed.`|`http://localhost:9280/data`|

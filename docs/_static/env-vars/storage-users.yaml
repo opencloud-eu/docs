@@ -70,7 +70,7 @@ drivers:
     propagator: sync
     async_propagator_options:
       propagation_delay: 0s
-    root: /root/.opencloud/storage/users
+    root: /var/lib/opencloud/storage/users
     user_layout: '{{.Id.OpaqueId}}'
     permissions_endpoint: eu.opencloud.api.settings
     personalspacealias_template: '{{.SpaceType}}/{{.User.Username | lower}}'
@@ -88,7 +88,7 @@ drivers:
     propagator: sync
     async_propagator_options:
       propagation_delay: 0s
-    root: /root/.opencloud/storage/users
+    root: /var/lib/opencloud/storage/users
     user_layout: '{{.Id.OpaqueId}}'
     permissions_endpoint: eu.opencloud.api.settings
     region: default
@@ -113,10 +113,10 @@ drivers:
     async_uploads: true
     disable_versioning: false
   owncloudsql:
-    root: /root/.opencloud/storage/owncloud
+    root: /var/lib/opencloud/storage/owncloud
     share_folder: /Shares
     user_layout: '{{.Username}}'
-    upload_info_dir: /root/.opencloud/storage/uploadinfo
+    upload_info_dir: /var/lib/opencloud/storage/uploadinfo
     db_username: owncloud
     db_password: owncloud
     db_host: ""
@@ -124,7 +124,7 @@ drivers:
     db_name: owncloud
     users_provider_endpoint: eu.opencloud.api.users
   posix:
-    root: /root/.opencloud/storage/users
+    root: /var/lib/opencloud/storage/users
     propagator: ""
     async_propagator_options:
       propagation_delay: 0s
