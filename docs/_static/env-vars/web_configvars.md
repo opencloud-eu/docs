@@ -1,3 +1,11 @@
+
+2026-04-26-00-05-58
+
+# Deprecation Notice
+
+| Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
+|---|---|---|:---|
+| WEB_OPTION_RUNNING_ON_EOS is deprecated and will be removed in a future release. The option WEB_OPTION_CERN_FEATURES should be used instead to enable all features related to CERN storage backends, including EOS. | 6.2.0 | next-prod |  |
 Environment variables for the **web** service
 
 | Name | Introduction Version | Type | Description | Default Value |
@@ -17,9 +25,9 @@ Environment variables for the **web** service
 |`OC_CORS_ALLOW_METHODS`<br/>`WEB_CORS_ALLOW_METHODS`| 1.0.0 |[]string|`A list of allowed CORS methods. See following chapter for more details: *Access-Control-Request-Method* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method. See the Environment Variable Types description for more details.`|`[OPTIONS HEAD GET PUT PATCH POST DELETE MKCOL PROPFIND PROPPATCH MOVE COPY REPORT SEARCH]`|
 |`OC_CORS_ALLOW_HEADERS`<br/>`WEB_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`[Origin Accept Content-Type Depth Authorization Ocs-Apirequest If-None-Match If-Match Destination Overwrite X-Request-Id X-Requested-With Tus-Resumable Tus-Checksum-Algorithm Upload-Concat Upload-Length Upload-Metadata Upload-Defer-Length Upload-Expires Upload-Checksum Upload-Offset X-HTTP-Method-Override]`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`WEB_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS. See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`false`|
-|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/root/.opencloud/web/assets/core`|
-|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/root/.opencloud/web/assets/themes`|
-|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/root/.opencloud/web/assets/apps`|
+|`WEB_ASSET_CORE_PATH`| 1.0.0 |string|`Serve OpenCloud Web assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/core`|`/var/lib/opencloud/web/assets/core`|
+|`OC_ASSET_THEMES_PATH`<br/>`WEB_ASSET_THEMES_PATH`| 1.0.0 |string|`Serve OpenCloud themes from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/themes`|`/var/lib/opencloud/web/assets/themes`|
+|`WEB_ASSET_APPS_PATH`| 1.0.0 |string|`Serve OpenCloud Web apps assets from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/web/assets/apps`|`/var/lib/opencloud/web/assets/apps`|
 |`WEB_UI_CONFIG_FILE`| 1.0.0 |string|`Read the OpenCloud Web json based configuration from this path/file. The config file takes precedence over WEB_OPTION_xxx environment variables. See the text description for more details.`|``|
 |`OC_URL`<br/>`WEB_UI_THEME_SERVER`| 1.0.0 |string|`Base URL to load themes from. Will be prepended to the theme path.`|`https://localhost:9200`|
 |`WEB_UI_THEME_PATH`| 1.0.0 |string|`Path to the theme json file. Will be appended to the URL of the theme server.`|`/themes/opencloud/theme.json`|
