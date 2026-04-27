@@ -16,19 +16,19 @@ Environment variables for the **users** service
 |`USERS_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`false`|
 |`USERS_DRIVER`| 1.0.0 |string|`The driver which should be used by the users service. Supported values are 'ldap' and 'owncloudsql'.`|`ldap`|
 |`OC_LDAP_URI`<br/>`USERS_LDAP_URI`| 1.0.0 |string|`URI of the LDAP Server to connect to. Supported URI schemes are 'ldaps://' and 'ldap://'`|`ldaps://localhost:9235`|
-|`OC_LDAP_CACERT`<br/>`USERS_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/root/.opencloud/idm/ldap.crt`|
+|`OC_LDAP_CACERT`<br/>`USERS_LDAP_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idm.`|`/var/lib/opencloud/idm/ldap.crt`|
 |`OC_LDAP_INSECURE`<br/>`USERS_LDAP_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the LDAP connections. Do not set this in production environments.`|`false`|
 |`OC_LDAP_BIND_DN`<br/>`USERS_LDAP_BIND_DN`| 1.0.0 |string|`LDAP DN to use for simple bind authentication with the target LDAP server.`|`uid=reva,ou=sysusers,o=libregraph-idm`|
 |`OC_LDAP_BIND_PASSWORD`<br/>`USERS_LDAP_BIND_PASSWORD`| 1.0.0 |string|`Password to use for authenticating the 'bind_dn'.`|``|
 |`OC_LDAP_USER_BASE_DN`<br/>`USERS_LDAP_USER_BASE_DN`| 1.0.0 |string|`Search base DN for looking up LDAP users.`|`ou=users,o=libregraph-idm`|
 |`OC_LDAP_GROUP_BASE_DN`<br/>`USERS_LDAP_GROUP_BASE_DN`| 1.0.0 |string|`Search base DN for looking up LDAP groups.`|`ou=groups,o=libregraph-idm`|
-|`OC_LDAP_TENANT_BASE_DN`<br/>`USERS_LDAP_TENANT_BASE_DN`| next |string|`Search base DN for looking up LDAP tenants. Only relevant in multi-tenant setups.`|``|
-|`OC_LDAP_TENANT_SCOPE`<br/>`USERS_LDAP_TENANT_SCOPE`| next |string|`LDAP search scope to use when looking up tenants. Supported values are 'base', 'one' and 'sub'. Only relevant in multi-tenant setups.`|`sub`|
-|`OC_LDAP_TENANT_FILTER`<br/>`USERS_LDAP_TENANT_FILTER`| next |string|`LDAP filter to add to the default filters for tenant searches. Only relevant in multi-tenant setups.`|``|
-|`OC_LDAP_TENANT_OBJECTCLASS`<br/>`USERS_LDAP_TENANT_OBJECTCLASS`| next |string|`The object class to use for tenants in the default tenant search filter. Only relevant in multi-tenant setups.`|``|
-|`OC_LDAP_TENANT_SCHEMA_ID`<br/>`USERS_LDAP_TENANT_SCHEMA_ID`| next |string|`LDAP Attribute to use as the unique internal ID for tenants. Only relevant in multi-tenant setups.`|``|
-|`OC_LDAP_TENANT_SCHEMA_EXTERNAL_ID`<br/>`USERS_LDAP_TENANT_SCHEMA_EXTERNAL_ID`| next |string|`LDAP Attribute that holds the external tenant ID as it appears in OIDC claims. Only relevant in multi-tenant setups.`|``|
-|`OC_LDAP_TENANT_SCHEMA_NAME`<br/>`USERS_LDAP_TENANT_SCHEMA_NAME`| next |string|`LDAP Attribute to use for the human-readable name of a tenant. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_BASE_DN`<br/>`USERS_LDAP_TENANT_BASE_DN`| 6.1.0 |string|`Search base DN for looking up LDAP tenants. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_SCOPE`<br/>`USERS_LDAP_TENANT_SCOPE`| 6.1.0 |string|`LDAP search scope to use when looking up tenants. Supported values are 'base', 'one' and 'sub'. Only relevant in multi-tenant setups.`|`sub`|
+|`OC_LDAP_TENANT_FILTER`<br/>`USERS_LDAP_TENANT_FILTER`| 6.1.0 |string|`LDAP filter to add to the default filters for tenant searches. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_OBJECTCLASS`<br/>`USERS_LDAP_TENANT_OBJECTCLASS`| 6.1.0 |string|`The object class to use for tenants in the default tenant search filter. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_SCHEMA_ID`<br/>`USERS_LDAP_TENANT_SCHEMA_ID`| 6.1.0 |string|`LDAP Attribute to use as the unique internal ID for tenants. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_SCHEMA_EXTERNAL_ID`<br/>`USERS_LDAP_TENANT_SCHEMA_EXTERNAL_ID`| 6.1.0 |string|`LDAP Attribute that holds the external tenant ID as it appears in OIDC claims. Only relevant in multi-tenant setups.`|``|
+|`OC_LDAP_TENANT_SCHEMA_NAME`<br/>`USERS_LDAP_TENANT_SCHEMA_NAME`| 6.1.0 |string|`LDAP Attribute to use for the human-readable name of a tenant. Only relevant in multi-tenant setups.`|``|
 |`OC_LDAP_USER_SCOPE`<br/>`USERS_LDAP_USER_SCOPE`| 1.0.0 |string|`LDAP search scope to use when looking up users. Supported values are 'base', 'one' and 'sub'.`|`sub`|
 |`OC_LDAP_GROUP_SCOPE`<br/>`USERS_LDAP_GROUP_SCOPE`| 1.0.0 |string|`LDAP search scope to use when looking up groups. Supported values are 'base', 'one' and 'sub'.`|`sub`|
 |`LDAP_USER_SUBSTRING_FILTER_TYPE`<br/>`USERS_LDAP_USER_SUBSTRING_FILTER_TYPE`| 1.0.0 |string|`Type of substring search filter to use for substring searches for users. Possible values: 'initial' for doing prefix only searches, 'final' for doing suffix only searches or 'any' for doing full substring searches`|`any`|
