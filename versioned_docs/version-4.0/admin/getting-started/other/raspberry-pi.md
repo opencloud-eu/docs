@@ -28,7 +28,7 @@ It is not recommended for enterprise or critical environments due to the hardwar
 - SSH must be enabled if you want to access the machine remotely.
 
   This is usually required when your Raspberry Pi is running without a connected keyboard and display.
-  
+
   <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
