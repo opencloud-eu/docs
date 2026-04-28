@@ -25,7 +25,9 @@ It is not recommended for enterprise or critical environments due to the hardwar
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
 
-- SSH must be activated  
+- SSH must be activated, if you want to work on the machine from remote.
+  (This is most likely the case if you do not have keyboard and display attached to your pi.)
+  
   <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
 - If the Raspberry Pi is to be connected to WLAN, the login data for the WLAN must be entered.
