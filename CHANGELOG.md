@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @senekor
+@Heiko-Pohl, @Svanvith, @dragonchaser, @senekor
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Update raspberry-pi.md [[#783](https://github.com/opencloud-eu/docs/pull/783)]
 - fix broken link in mail notifications 4.0 and rolling [[#773](https://github.com/opencloud-eu/docs/pull/773)]
 - Fix broken link [[#761](https://github.com/opencloud-eu/docs/pull/761)]
 
