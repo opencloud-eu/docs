@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-22
+## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-28
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @senekor
+@Heiko-Pohl, @Svanvith, @senekor
+
+### :octocat: Developer Documentation
+
+- fix the wrong relative paths to the services env vars etc [[#776](https://github.com/opencloud-eu/docs/pull/776)]
 
 ### 👷 Admin Documentation
 
