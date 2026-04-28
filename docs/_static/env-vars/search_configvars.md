@@ -27,7 +27,7 @@ Environment variables for the **search** service
 |`SEARCH_EVENTS_MAX_ACK_PENDING`| 4.0.0 |int|`The maximum number of unacknowledged messages. This is used to limit the number of messages that can be in flight at the same time.`|`1000`|
 |`SEARCH_EVENTS_ACK_WAIT`| 4.0.0 |Duration|`The time to wait for an ack before the message is redelivered. This is used to ensure that messages are not lost if the consumer crashes.`|`1m0s`|
 |`SEARCH_ENGINE_TYPE`| 1.0.0 |string|`Defines which search engine to use. Defaults to 'bleve'. Supported values are: 'bleve'.`|`bleve`|
-|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|`The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.`|`/root/.opencloud/search`|
+|`SEARCH_ENGINE_BLEVE_DATA_PATH`| 1.0.0 |string|`The directory where the filesystem will store search data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/search.`|`/var/lib/opencloud/search`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ADDRESSES`| 4.0.0 |[]string|`The addresses of the OpenSearch nodes..`|`[]`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_USERNAME`| 4.0.0 |string|`Username for HTTP Basic Authentication.`|``|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_PASSWORD`| 4.0.0 |string|`Password for HTTP Basic Authentication.`|``|
