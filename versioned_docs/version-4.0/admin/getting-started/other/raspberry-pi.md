@@ -25,8 +25,9 @@ It is not recommended for enterprise or critical environments due to the hardwar
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
 
-- SSH must be activated, if you want to work on the machine from remote.
-  (This is most likely the case if you do not have keyboard and display attached to your pi.)
+- SSH must be enabled if you want to access the machine remotely.
+
+  This is usually required when your Raspberry Pi is running without a connected keyboard and display.
   
   <img src={require("./../img/raspberrypi/ssh-activate.png").default} alt="activate ssh" width="500"/>
 
