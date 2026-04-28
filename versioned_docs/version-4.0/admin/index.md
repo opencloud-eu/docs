@@ -21,6 +21,13 @@ curl -L https://opencloud.eu/install | /bin/bash
 - Configuration – Customize and integrate with existing systems and storage
 - Maintenance – Learn how to update, backup and migrate
 
+## Explore the Admin Docs
+
+- [Getting Started](./getting-started/index.md) - Install and deploy OpenCloud
+- [Configuration](./configuration/index.md) - Tune OpenCloud behavior and integrations
+- [Maintenance](./maintenance/index.md) - Backups, exports, migration, and uninstall
+- [Resources](./resources/index.md) - Troubleshooting, lifecycle, and FAQ
+
 ## Documentation Versions
 
 Our documentation is versioned to ensure you always find the right information for your software version.
