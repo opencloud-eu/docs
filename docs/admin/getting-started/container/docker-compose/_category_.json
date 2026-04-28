@@ -1,5 +1,9 @@
 {
   "label": "Docker Compose",
   "position": 1,
-  "description": "Deploy OpenCloud using Docker Compose with Traefik or an external reverse proxy"
+  "description": "Deploy OpenCloud using Docker Compose with Traefik or an external reverse proxy",
+  "link": {
+    "type": "doc",
+    "id": "docker-compose-overview"
+  }
 }

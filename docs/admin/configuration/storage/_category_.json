@@ -1,4 +1,8 @@
 {
   "label": "Storage",
-  "position": 20
+  "position": 20,
+  "link": {
+    "type": "doc",
+    "id": "storage"
+  }
 }

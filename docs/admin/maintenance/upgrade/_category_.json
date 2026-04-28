@@ -2,8 +2,7 @@
   "label": "Upgrade",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "description": "Upgrade",
-    "slug": "admin/maintainance/upgrade/"
+    "type": "doc",
+    "id": "upgrade"
   }
 }

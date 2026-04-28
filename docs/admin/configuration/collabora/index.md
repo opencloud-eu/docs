@@ -20,7 +20,3 @@ It is meant as a quick entry point for administrators who want to improve docume
 
 - [Install additional fonts](./collabora-fonts)
 - [Enable MS-Office formats](./collabora-ms-office-formats)
-
-## Recommended order
-
-If you are setting up Collabora for the first time, start with fonts and then decide whether Microsoft file formats should be available in the creation menu.
