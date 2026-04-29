@@ -1,4 +1,4 @@
-Environment variables for the **webfinger** service
+## Environment variables for the **webfinger** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

@@ -1,4 +1,4 @@
-Environment variables for the **invitations** service
+## Environment variables for the **invitations** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

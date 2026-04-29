@@ -1,4 +1,4 @@
-Environment variables for the **policies** service
+## Environment variables for the **policies** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

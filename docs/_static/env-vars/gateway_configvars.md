@@ -1,4 +1,4 @@
-Environment variables for the **gateway** service
+## Environment variables for the **gateway** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

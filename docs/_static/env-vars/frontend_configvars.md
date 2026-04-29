@@ -1,7 +1,7 @@
 
-2026-04-20-00-05-52
+2026-04-29-00-06-15
 
-# Deprecation Notice
+## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
@@ -21,7 +21,8 @@
 | FRONTEND_OCS_INCLUDE_OCM_SHAREES, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_WRITABLE_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
-Environment variables for the **frontend** service
+
+## Environment variables for the **frontend** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

@@ -1,4 +1,4 @@
-Environment variables for the **notifications** service
+## Environment variables for the **notifications** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
