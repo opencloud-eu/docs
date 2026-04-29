@@ -1,4 +1,4 @@
-Environment variables for the **settings** service
+## Environment variables for the **settings** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

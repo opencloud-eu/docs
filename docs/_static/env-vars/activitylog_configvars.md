@@ -1,4 +1,4 @@
-Environment variables for the **activitylog** service
+## Environment variables for the **activitylog** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

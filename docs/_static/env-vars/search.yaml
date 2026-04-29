@@ -36,7 +36,7 @@ events:
 engine:
   type: bleve
   bleve:
-    data_path: /root/.opencloud/search
+    data_path: /var/lib/opencloud/search
   open_search:
     client:
       addresses: []

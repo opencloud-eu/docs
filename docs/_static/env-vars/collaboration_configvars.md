@@ -1,4 +1,4 @@
-Environment variables for the **collaboration** service
+## Environment variables for the **collaboration** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

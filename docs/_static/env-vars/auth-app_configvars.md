@@ -1,4 +1,4 @@
-Environment variables for the **auth-app** service
+## Environment variables for the **auth-app** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
