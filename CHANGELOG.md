@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.21.0](https://github.com/opencloud-eu/docs/releases/tag/3.21.0) - 2026-04-29
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor
+
+### 👷 Admin Documentation
+
+- publish release note 4.0.6 [[#788](https://github.com/opencloud-eu/docs/pull/788)]
+
 ## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-29
 
 ### ❤️ Thanks to all contributors! ❤️
