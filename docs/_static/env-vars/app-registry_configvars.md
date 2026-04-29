@@ -1,4 +1,4 @@
-Environment variables for the **app-registry** service
+## Environment variables for the **app-registry** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

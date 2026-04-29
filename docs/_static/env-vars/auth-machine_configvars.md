@@ -1,4 +1,4 @@
-Environment variables for the **auth-machine** service
+## Environment variables for the **auth-machine** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

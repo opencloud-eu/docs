@@ -1,4 +1,4 @@
-Environment variables for the **eventhistory** service
+## Environment variables for the **eventhistory** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

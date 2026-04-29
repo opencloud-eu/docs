@@ -1,4 +1,4 @@
-Environment variables for the **sse** service
+## Environment variables for the **sse** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|

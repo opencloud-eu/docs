@@ -1,4 +1,4 @@
-Environment variables for the **auth-bearer** service
+## Environment variables for the **auth-bearer** service
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
