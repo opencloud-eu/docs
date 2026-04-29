@@ -22,14 +22,14 @@ draft: false
 
 ## Security
 
-| Category             | Details                                                                                                                                                              |
-| :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Encryption           | <ul><li>Transport Encryption: TLS</li><li>Server-Side Encryption: S3 SSE</li><li>E2EE Client-Side Encryption: Handled exclusively via OS-native encryption</li></ul> |
-| Access management    | <ul><li>RBAC (Role-Based Access Control)</li><li>2FA / MFA</li><li>SSO (LDAP, SAML, OAuth)</li></ul>                                                                 |
-| Auditing & Logging   | <ul><li>Detailed logs, audit trails, monitoring APIs</li></ul>                                                                                                       |
-| File Firewall        | <ul><li>Prevent upload of restricted filetypes based on a allow- or denylist.</li></ul>                                                                              |
-| Antivirus            | <ul><li>ClamAV (default)</li><li>ICAP: Integrate 3rd party anti-virus scanner via Internet Content Adaptation Protocol (ICAP)</li></ul>                              |
-| Data Loss Prevention | <ul><li>Collabora Secure View</li></ul>                                                                                                                              |
+| Category             | Details                                                                                                                                 |
+| :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| Encryption           | <ul><li>Transport Encryption: TLS</li><li>Server-Side Encryption: S3 SSE</li></ul>                                                      |
+| Access management    | <ul><li>RBAC (Role-Based Access Control)</li><li>2FA / MFA</li><li>SSO (LDAP, SAML, OAuth)</li></ul>                                    |
+| Auditing & Logging   | <ul><li>Detailed logs, audit trails, monitoring APIs</li></ul>                                                                          |
+| File Firewall        | <ul><li>Prevent upload of restricted filetypes based on a allow- or denylist.</li></ul>                                                 |
+| Antivirus            | <ul><li>ClamAV (default)</li><li>ICAP: Integrate 3rd party anti-virus scanner via Internet Content Adaptation Protocol (ICAP)</li></ul> |
+| Data Loss Prevention | <ul><li>Collabora Secure View</li></ul>                                                                                                 |
 
 ## Identity Management
 
