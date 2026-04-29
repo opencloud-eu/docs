@@ -5,7 +5,7 @@
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-|  | 4.0.0 |  |  |
+|`STORAGE_USERS_POSIX_WATCH_FOLDER_KAFKA_BROKERS` is deprecated and will be removed in a future version. Please use `STORAGE_USERS_POSIX_WATCH_NOTIFICATION_BROKERS` instead. | 4.0.0 |  |  |
 
 ## Environment variables for the **storage-users** service
 
