@@ -1,10 +1,10 @@
 # Changelog
 
-## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-28
+## [3.20.0](https://github.com/opencloud-eu/docs/releases/tag/3.20.0) - 2026-04-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @dragonchaser, @senekor
+@Heiko-Pohl, @Svanvith, @dragonchaser, @openclouders, @senekor
 
 ### :octocat: Developer Documentation
 
@@ -15,6 +15,10 @@
 - Update raspberry-pi.md [[#783](https://github.com/opencloud-eu/docs/pull/783)]
 - fix broken link in mail notifications 4.0 and rolling [[#773](https://github.com/opencloud-eu/docs/pull/773)]
 - Fix broken link [[#761](https://github.com/opencloud-eu/docs/pull/761)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#786](https://github.com/opencloud-eu/docs/pull/786)]
 
 ## [3.19.0](https://github.com/opencloud-eu/docs/releases/tag/3.19.0) - 2026-04-20
 
