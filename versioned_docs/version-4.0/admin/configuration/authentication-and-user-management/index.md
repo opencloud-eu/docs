@@ -1,13 +1,13 @@
 ---
-title: 'Authentication and Identity Management'
+title: 'Internal and External IDP'
 ---
 
-# Authentication and Identity Management
+# Internal and External IDP
 
-OpenCloud offers two ways to handle user authentication:
+OpenCloud offers two ways to handle user authentication and identity management:
 
-1. **Built-in IDP (Identity Provider)**:
-   - Based on LibreGraph Connect (Lico)
+1. **Internal IDP**:
+   - Built into OpenCloud
    - Targeted at smaller installations (up to 500 users)
    - Designed for standalone or small deployments
 
@@ -18,14 +18,14 @@ OpenCloud offers two ways to handle user authentication:
 
 ## Your Use Cases
 
-### Choose Lico if you need
+### Choose the internal IDP if you need
 
 - A simple, lightweight and minimal OpenID Connect Provider
 - Small to medium deployments
 - Minimal resource footprint
 - Quick setup with basic features
 - Ideal for development environment
-- No Multifactor Authentication (MFA) and migration path to other IDPs
+- No Multifactor Authentication (MFA) and no migration path to other IDPs
 
 ### Choose Keycloak if you need
 
@@ -40,7 +40,7 @@ OpenCloud offers two ways to handle user authentication:
 
 ### Bottom Line
 
-Keycloak is a comprehensive, enterprise-ready IAM platform with extensive features including SSO, user federation, and support for multiple protocols like OpenID Connect, OAuth 2.0, and SAML, while Lico is a lightweight OpenID Connect provider with integrated web login and consent forms, designed as a simpler alternative for smaller installations. Keycloak offers more features but requires more resources and expertise, while Lico provides a minimalist approach suitable for basic authentication needs.
+Keycloak is a comprehensive, enterprise-ready IAM platform with extensive features including SSO, user federation, and support for multiple protocols like OpenID Connect, OAuth 2.0, and SAML. It offers more features but requires more resources and expertise, which makes it a better fit for larger or more complex environments.
 
 ## Authentication with Keycloak
 

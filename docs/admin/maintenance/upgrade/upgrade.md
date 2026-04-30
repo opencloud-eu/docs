@@ -1,17 +1,18 @@
 ---
 sidebar_position: 1
-id: update
-title: Upgrade
-description: Keep your setup up to date with the latest features!
+id: upgrade-guide
+title: Standard Upgrade Guide
+description: Standard guide for upgrading OpenCloud
 draft: false
+slug: upgrade-guide
 ---
 
-# Upgrade
+# Standard Upgrade Guide
 
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
-This guide provides steps to upgrade OpenCloud for both [docker](../../getting-started/container/docker.md) and [docker compose](../../getting-started/container/docker-compose/docker-compose-base.md)
+This guide provides the standard steps to upgrade OpenCloud for both [docker](../../getting-started/container/docker.md) and [docker compose](../../getting-started/container/docker-compose/docker-compose-base.md)
 
 ## Stop OpenCloud
 
