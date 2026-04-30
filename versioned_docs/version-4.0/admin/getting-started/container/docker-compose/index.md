@@ -41,6 +41,6 @@ Best for:
 
 After choosing and completing your deployment:
 
-- [Production Setup Considerations](./production-considerations.md) – Persistent storage, backups, image versions
+- [Production Setup Considerations](./production-setup-consideration.md) – Persistent storage, backups, image versions
 - [Verify TLS Certificates](./docker-compose-base.md#verify-tls-certificates) – Validate your SSL setup
 - [Configure Authentication](../../../configuration/authentication-and-user-management/) – Users, authentication, and optional Keycloak integration
