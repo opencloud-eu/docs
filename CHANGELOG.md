@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.22.0](https://github.com/opencloud-eu/docs/releases/tag/3.22.0) - 2026-04-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- Add index.md admin [[#784](https://github.com/opencloud-eu/docs/pull/784)]
+
 ## [3.21.0](https://github.com/opencloud-eu/docs/releases/tag/3.21.0) - 2026-04-29
 
 ### ❤️ Thanks to all contributors! ❤️
