@@ -50,5 +50,4 @@ These files are temporary lock files created by Microsoft Office applications (W
 They are not actual content files but serve as internal markers to prevent multiple users from editing the same document simultaneously.  
 Once the file is closed, the `~$` file is automatically removed by Office.
 
-For more details, see Microsoft’s explanation:  
-[Description of how Word creates temporary files](https://support.microsoft.com/en-us/topic/description-of-how-word-creates-temporary-files-66b112fb-d2c0-8f40-a0be-70a367cc4c85)
+For more details, see the [Microsoft support article on temporary Office lock files created by Word/Excel/PowerPoint](https://support.microsoft.com/en-gb/topic/-the-document-is-locked-for-editing-by-another-user-error-message-when-you-try-to-open-a-document-in-word-10b92aeb-2e23-25e0-9110-370af6edb638?).
