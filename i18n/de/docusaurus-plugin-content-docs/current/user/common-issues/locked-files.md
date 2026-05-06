@@ -88,9 +88,3 @@ Ein Administrator sollte prüfen, wenn:
 - Office-Dateien nach dem Schließen weiterhin gesperrt bleiben
 - Benutzer trotz Bearbeitungsrechten nicht speichern können
 - die Datei für alle Benutzer blockiert ist
-
-## Zusammenfassung
-
-Eine Datei kann in OpenCloud gesperrt sein, wenn sie gerade bearbeitet wird oder wenn OpenCloud sie nach einem Upload noch verarbeitet.
-
-Die Sperre schützt vor konkurrierenden Änderungen oder verhindert den Zugriff, bis erforderliche Verarbeitungsschritte abgeschlossen sind. In vielen Fällen wird die Datei automatisch wieder freigegeben. Wenn die Sperre bestehen bleibt, muss die Ursache administrativ geprüft werden.

@@ -86,9 +86,3 @@ An administrator should check when:
 - Office files stay locked after closing
 - users cannot save even though they have editing rights
 - the file is blocked for all users
-
-## Summary
-
-A file can be locked in OpenCloud while it is being edited or while OpenCloud is still processing it after upload.
-
-The lock protects against conflicting changes or prevents access until required processing steps are finished. In many cases the file is released automatically. If the lock persists, the cause should be checked by an administrator.
