@@ -101,5 +101,5 @@ Diese Dokumentation ist versioniert, damit Sie die Informationen passend zu Ihre
 
 ### Hilfe
 
-- [Häufige Probleme und Hilfe](./common-issues.md)  
+- [Häufige Probleme und Hilfe](./common-issues)
   Hier finden Sie Lösungen für häufige Probleme und Antworten auf häufig gestellte Fragen.
