@@ -1,5 +1,5 @@
 
-2026-05-07-00-06-44
+2026-05-10-00-07-12
 
 ## Deprecation Notice
 
@@ -103,6 +103,7 @@
 |`OC_DISABLE_VERSIONING`| 2.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
 |`STORAGE_USERS_POSIX_USE_SPACE_GROUPS`| 1.0.0 |bool|`Use space groups to manage permissions on spaces.`|`false`|
 |`STORAGE_USERS_POSIX_ENABLE_FS_REVISIONS`| 1.0.0 |bool|`Allow for generating revisions from changes done to the local storage. Note: This doubles the number of bytes stored on disk because a copy of the current revision is stored to be turned into a revision later.`|`false`|
+|`STORAGE_USERS_POSIX_SCAN_FS`| next |bool|`Scan the filesystem at startup for changes and update the metadata accordingly.`|`true`|
 |`STORAGE_USERS_POSIX_WATCH_FS`| 2.0.0 |bool|`Enable the filesystem watcher to detect changes to the filesystem. This is used to detect changes to the filesystem and update the metadata accordingly.`|`false`|
 |`STORAGE_USERS_POSIX_WATCH_TYPE`| 1.0.0 |string|`Type of the watcher to use for getting notified about changes to the filesystem. Currently available options are 'inotifywait' (default), 'cephfs', 'gpfswatchfolder' and 'gpfsfileauditlogging'.`|``|
 |`STORAGE_USERS_POSIX_WATCH_PATH`| 1.0.0 |string|`Path to the watch directory/file. Only applies to the 'gpfsfileauditlogging' and 'inotifywait' watcher, in which case it is the path of the file audit log file/base directory to watch.`|``|
