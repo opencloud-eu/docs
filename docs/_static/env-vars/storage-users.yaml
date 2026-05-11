@@ -142,6 +142,7 @@ drivers:
     disable_versioning: false
     use_space_groups: false
     enable_fs_revisions: false
+    scan_fs: true
     watch_fs: false
     watch_type: ""
     watch_path: ""
