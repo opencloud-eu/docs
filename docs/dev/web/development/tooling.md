@@ -40,7 +40,7 @@ After cloning the source code, install the dependencies via `pnpm install`.
 
 ### Starting the Server
 
-You can start the OpenCloud server by running `docker-compose up opencloud -d`. If you want to run the full stack, you can run `docker-compose up -d` instead. This will also start the wopi service and an instance of Collabora.
+You can start the OpenCloud server by running `docker compose up opencloud -d`. If you want to run the full stack, you can run `docker compose up -d` instead. This will also start the wopi service and an instance of Collabora.
 
 ### Building and Accessing Web
 
