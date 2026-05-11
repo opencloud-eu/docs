@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@Svanvith, @individual-it, @openclouders
+
+### :octocat: Developer Documentation
+
+- fix docker compose cmd [[#823](https://github.com/opencloud-eu/docs/pull/823)]
 
 ### 👷 Admin Documentation
 
