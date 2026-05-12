@@ -38,7 +38,7 @@ The sidebar contains the navigation elements such as Spaces, Files, Shares and S
 
 ## 2. App Switcher
 
-The menu in the top left corner allows you to switch between different Apps and modules.
+The menu in the top right corner allows you to switch between different Apps and modules.
 
 ## 3. Top Bar
 
