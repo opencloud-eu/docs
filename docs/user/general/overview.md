@@ -6,11 +6,31 @@ description: Overview of the web user interface
 draft: false
 ---
 
+import OverviewMarker from "./img/overview/marker.svg";
+
 # OpenCloud - Overview of the web user interface
 
 The OpenCloud web interface consists of several areas that help you to work efficiently with files and settings
 
-<img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/overview.png").default}
+    alt="Overview"
+    width="1920"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Left Sidebar
 
