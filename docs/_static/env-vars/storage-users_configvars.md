@@ -1,5 +1,5 @@
 
-2026-05-11-00-08-33
+2026-05-12-00-07-41
 
 ## Deprecation Notice
 
@@ -103,7 +103,7 @@
 |`OC_DISABLE_VERSIONING`| 2.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`false`|
 |`STORAGE_USERS_POSIX_USE_SPACE_GROUPS`| 1.0.0 |bool|`Use space groups to manage permissions on spaces.`|`false`|
 |`STORAGE_USERS_POSIX_ENABLE_FS_REVISIONS`| 1.0.0 |bool|`Allow for generating revisions from changes done to the local storage. Note: This doubles the number of bytes stored on disk because a copy of the current revision is stored to be turned into a revision later.`|`false`|
-|`STORAGE_USERS_POSIX_SCAN_FS`| next |bool|`Scan the filesystem at startup for changes and update the metadata accordingly.`|`true`|
+|`STORAGE_USERS_POSIX_SCAN_FS`| 6.2.0 |bool|`Scan the filesystem at startup for changes and update the metadata accordingly.`|`true`|
 |`STORAGE_USERS_POSIX_WATCH_FS`| 2.0.0 |bool|`Enable the filesystem watcher to detect changes to the filesystem. This is used to detect changes to the filesystem and update the metadata accordingly.`|`false`|
 |`STORAGE_USERS_POSIX_WATCH_TYPE`| 1.0.0 |string|`Type of the watcher to use for getting notified about changes to the filesystem. Currently available options are 'inotifywait' (default), 'cephfs', 'gpfswatchfolder' and 'gpfsfileauditlogging'.`|``|
 |`STORAGE_USERS_POSIX_WATCH_PATH`| 1.0.0 |string|`Path to the watch directory/file. Only applies to the 'gpfsfileauditlogging' and 'inotifywait' watcher, in which case it is the path of the file audit log file/base directory to watch.`|``|
@@ -124,7 +124,7 @@
 |`OC_CACHE_STORE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`memory`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`storage-users`|
-|`OC_CACHE_TTL`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`24m0s`|
+|`OC_CACHE_TTL`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`24h0m0s`|
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|``|

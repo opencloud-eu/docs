@@ -13,7 +13,7 @@ store:
   - 127.0.0.1:9233
   database: postprocessing
   table: ""
-  ttl: 0s
+  ttl: 168h0m0s
   username: ""
   password: ""
 postprocessing:
