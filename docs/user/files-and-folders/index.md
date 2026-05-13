@@ -22,6 +22,9 @@ This section covers common day-to-day tasks such as creating and moving content,
 - [Delete and restore items from the trash](./delete-restore.md)  
   Remove files and folders and restore them later if needed.
 
+- [Editing Markdown files](./markdown-editor.md)  
+  Edit `README.md` and other Markdown files directly in OpenCloud with formatting suggestions.
+
 ### Find and classify content
 
 - [Search for files and content](./search.md)  
