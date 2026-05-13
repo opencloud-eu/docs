@@ -18,7 +18,7 @@
 |`OC_HTTP_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the server certificate to use for the http services.`|``|
 |`OC_CACHE_STORE`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE`| 1.0.0 |string|`The type of the signing key store. Supported values are: 'redis-sentinel' and 'nats-js-kv'. See the text description for details.`|`nats-js-kv`|
 |`OC_CACHE_STORE_NODES`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
-|`OC_CACHE_TTL`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TTL`| 1.0.0 |Duration|`Default time to live for signing keys. See the Environment Variable Types description for more details.`|`12h0m0s`|
+|`OC_CACHE_TTL`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TTL`| 1.0.0 |Duration|`Default time to live for signing keys. See the Environment Variable Types description for more details.`|`24h0m0s`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_JWT_SECRET`<br/>`OCS_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|``|

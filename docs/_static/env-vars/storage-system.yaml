@@ -29,7 +29,7 @@ cache:
   nodes:
   - 127.0.0.1:9233
   database: storage-system
-  ttl: 24m0s
+  ttl: 24h0m0s
   disable_persistence: false
   auth_username: ""
   auth_password: ""
