@@ -21,7 +21,7 @@
 |`OC_CACHE_STORE`<br/>`STORAGE_SYSTEM_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`memory`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_SYSTEM_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`storage-system`|
-|`OC_CACHE_TTL`<br/>`STORAGE_SYSTEM_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`24m0s`|
+|`OC_CACHE_TTL`<br/>`STORAGE_SYSTEM_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`24h0m0s`|
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`STORAGE_SYSTEM_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_SYSTEM_CACHE_AUTH_USERNAME`| 1.0.0 |string|`Username for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_SYSTEM_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`Password for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|

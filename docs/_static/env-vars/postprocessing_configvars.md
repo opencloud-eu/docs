@@ -11,7 +11,7 @@
 |`OC_PERSISTENT_STORE_NODES`<br/>`POSTPROCESSING_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`POSTPROCESSING_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`postprocessing`|
 |`POSTPROCESSING_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|``|
-|`OC_PERSISTENT_STORE_TTL`<br/>`POSTPROCESSING_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. See the Environment Variable Types description for more details.`|`0s`|
+|`OC_PERSISTENT_STORE_TTL`<br/>`POSTPROCESSING_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. See the Environment Variable Types description for more details.`|`168h0m0s`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`POSTPROCESSING_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`POSTPROCESSING_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_EVENTS_ENDPOINT`<br/>`POSTPROCESSING_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
