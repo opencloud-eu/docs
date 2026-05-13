@@ -8,7 +8,7 @@ cache:
   - 127.0.0.1:9233
   database: cache-roles
   table: ""
-  ttl: 336h0m0s
+  ttl: 24h0m0s
   disable_persistence: false
   username: ""
   password: ""

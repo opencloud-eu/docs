@@ -7,7 +7,7 @@
 |`OC_CACHE_STORE_NODES`<br/>`GRAPH_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store are configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`GRAPH_CACHE_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`cache-roles`|
 |`GRAPH_CACHE_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|``|
-|`OC_CACHE_TTL`<br/>`GRAPH_CACHE_TTL`| 1.0.0 |Duration|`Time to live for cache records in the graph. Defaults to '336h' (2 weeks). See the Environment Variable Types description for more details.`|`336h0m0s`|
+|`OC_CACHE_TTL`<br/>`GRAPH_CACHE_TTL`| 1.0.0 |Duration|`Time to live for cache records in the graph. Defaults to '336h' (2 weeks). See the Environment Variable Types description for more details.`|`24h0m0s`|
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`GRAPH_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`GRAPH_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`GRAPH_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|``|
