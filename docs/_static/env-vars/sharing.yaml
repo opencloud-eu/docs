@@ -26,6 +26,9 @@ events:
   enable_tls: false
   auth_username: ""
   auth_password: ""
+service_account:
+  service_account_id: ""
+  service_account_secret: ""
 skip_user_groups_in_token: false
 user_sharing_driver: jsoncs3
 user_sharing_drivers:

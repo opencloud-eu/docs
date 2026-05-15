@@ -20,6 +20,8 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`SHARING_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SHARING_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`Username for the events broker.`|``|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`SHARING_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`Password for the events broker.`|``|
+|`OC_SERVICE_ACCOUNT_ID`<br/>`SHARING_SERVICE_ACCOUNT`| next |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|``|
+|`OC_SERVICE_ACCOUNT_SECRET`<br/>`SHARING_SERVICE_ACCOUNT_SECRET`| next |string|`The service account secret.`|``|
 |`SHARING_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`false`|
 |`SHARING_USER_DRIVER`| 1.0.0 |string|`Driver to be used to persist shares. Supported values are 'jsoncs3', 'json', 'cs3' (deprecated) and 'owncloudsql'.`|`jsoncs3`|
 |`SHARING_USER_JSONCS3_PROVIDER_ADDR`| 1.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`eu.opencloud.api.storage-system`|
