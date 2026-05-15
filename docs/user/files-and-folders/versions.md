@@ -15,7 +15,6 @@ OpenCloud saves different versions of files. This allows you to restore or downl
 - Open details
   - Right-click on the file
   - or click on the three dots in the corresponding file line.
-    <img src={require("./img/versions/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
   - Select “Details” from the context menu.
     <img src={require("./img/versions/details-button.png").default} alt="Select details" width="1920"/>
 
@@ -25,8 +24,8 @@ OpenCloud saves different versions of files. This allows you to restore or downl
 
 - Show versions
   - All versions of the file are displayed.
-    <img src={require("./img/versions/versions.png").default} alt="Show all versions" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
   - You can now restore or download the desired version.
-    <img src={require("./img/versions/versions-options.png").default} alt="Restore or download" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+
+    <img src={require("./img/versions/versions.png").default} alt="Show all versions" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 These steps give you access to older versions of your files at any time!
