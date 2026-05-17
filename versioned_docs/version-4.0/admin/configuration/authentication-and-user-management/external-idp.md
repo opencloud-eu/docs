@@ -157,6 +157,7 @@ The web client is used for browser-based access to OpenCloud:
   - `https://your-domain.example.com/`
   - `https://your-domain.example.com/oidc-callback.html`
   - `https://your-domain.example.com/oidc-silent-redirect.html`
+- Post Logout Redirect URIs: `https://your-domain.example.com/`
 
 ### Desktop Client
 
