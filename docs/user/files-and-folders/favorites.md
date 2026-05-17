@@ -10,7 +10,7 @@ draft: false
 
 Introduced in OpenCloud 6.0.0, Favorites lets you mark frequently used files and folders for quicker access in the Web Client.
 
-Favorite items are stored server-side, so they stay available across clients. Favorites are shown in a dedicated Favorites page and are also visible in search results and file lists. The feature works across personal and project spaces, including subfolders.
+Favorite items are stored server-side, shown in a dedicated Favorites page and are also visible in search results and file lists. The feature works across personal and project spaces, including subfolders.
 
 ## Mark an item as a favorite
 
