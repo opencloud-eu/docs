@@ -14,6 +14,7 @@ You can use the search bar in the top bar to find files and content quickly.
 
 - The search bar is located at the top of the top bar in the web interface.
   <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="1920"/>
+- Shortcut: press `/` or type `s` to focus the search bar.
 
 - Click on the drop-down menu next to the search bar.
 - Select whether you want to search in all files or only in the current folder.
