@@ -43,6 +43,10 @@ Files can be viewed directly in the device’s File Explorer and are stored effi
 
 Files can be found quickly—by title or full text. The search provides live suggestions and supports filtering by file type, modification date, tag, or storage location.
 
+### Favorites
+
+Mark frequently used files and folders for quick access. Favorites are stored server-side, collected on a dedicated Favorites page, and visible in file lists and search results.
+
 ### Versioning and Recovery
 
 Every change is automatically saved as a version and can be restored at any time. Administrators can define how many versions to keep and the rules for deleting older versions.
