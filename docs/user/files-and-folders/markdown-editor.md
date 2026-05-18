@@ -41,7 +41,7 @@ This is especially helpful if you want to format content quickly without memoriz
 
 ## Supported Formatting
 
-The available options depend on the file editor, but common formatting includes:
+The Markdown editor supports common formatting options for all Markdown files. You can use the toolbar or the slash menu to insert:
 
 - headings
 - bold and italic text
