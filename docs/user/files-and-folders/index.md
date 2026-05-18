@@ -24,11 +24,17 @@ This section covers common day-to-day tasks such as creating and moving content,
 
 - [Editing Markdown files](./markdown-editor.md)  
   Edit `README.md` and other Markdown files directly in OpenCloud with formatting suggestions.
+  
+- [README files in folders](./readme-files.md)  
+  Add a `README.md` file to a folder so OpenCloud renders it above the file list.
 
 ### Find and classify content
 
 - [Search for files and content](./search.md)  
   Find files by name or search within their content.
+
+- [Favorites](./favorites.md)  
+  Mark frequently used files for quick access and collect them on a dedicated Favorites page.
 
 - [Add and remove tags](./tags.md)  
   Use tags to organize files and folders and make them easier to find.
