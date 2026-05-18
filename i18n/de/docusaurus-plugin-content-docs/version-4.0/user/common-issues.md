@@ -50,5 +50,4 @@ Dabei handelt es sich um temporäre Sperrdateien, die von Microsoft Office-Anwen
 Es sind keine eigentlichen Inhaltsdateien, sondern interne Marker, die verhindern sollen, dass mehrere Benutzer gleichzeitig dasselbe Dokument bearbeiten.  
 Sobald die Datei geschlossen wird, entfernt Office die `~$`-Datei automatisch.
 
-Weitere Informationen finden Sie in der Erklärung von Microsoft:  
-[Beschreibung, wie Word temporäre Dateien erstellt](https://support.microsoft.com/de-de/topic/description-of-how-word-creates-temporary-files-66b112fb-d2c0-8f40-a0be-70a367cc4c85)
+Weitere Informationen finden Sie in dem [Microsoft-Supportartikel zu temporären Office-Sperrdateien von Word/Excel/PowerPoint](https://support.microsoft.com/en-gb/topic/-the-document-is-locked-for-editing-by-another-user-error-message-when-you-try-to-open-a-document-in-word-10b92aeb-2e23-25e0-9110-370af6edb638?).
