@@ -1,5 +1,29 @@
 # Changelog
 
+## [3.23.0](https://github.com/opencloud-eu/docs/releases/tag/3.23.0) - 2026-05-18
+
+### ❤️ Thanks to all contributors! ❤️
+
+@ScharfViktor, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- publish release note 4.0.7 and 6.2.0 [[#843](https://github.com/opencloud-eu/docs/pull/843)]
+
+### 👤 User Documentation
+
+- renew screenshots for versions and remove unnecessary [[#838](https://github.com/opencloud-eu/docs/pull/838)]
+- tags: new screenshots [[#833](https://github.com/opencloud-eu/docs/pull/833)]
+- add docs about the readme file in a folder [[#832](https://github.com/opencloud-eu/docs/pull/832)]
+- search: add new screenshots and add shortcut info [[#826](https://github.com/opencloud-eu/docs/pull/826)]
+- overview: new screenshot and overlay [[#825](https://github.com/opencloud-eu/docs/pull/825)]
+- adjust the link to the explaination from microsoft  [[#797](https://github.com/opencloud-eu/docs/pull/797)]
+- add favourites feature to the docs [[#837](https://github.com/opencloud-eu/docs/pull/837)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#841](https://github.com/opencloud-eu/docs/pull/841)]
+
 ## [3.22.0](https://github.com/opencloud-eu/docs/releases/tag/3.22.0) - 2026-05-15
 
 ### ❤️ Thanks to all contributors! ❤️
