@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- renew screenshots for versions and remove unnecessary [[#838](https://github.com/opencloud-eu/docs/pull/838)]
 - tags: new screenshots [[#833](https://github.com/opencloud-eu/docs/pull/833)]
 - add docs about the readme file in a folder [[#832](https://github.com/opencloud-eu/docs/pull/832)]
 - search: add new screenshots and add shortcut info [[#826](https://github.com/opencloud-eu/docs/pull/826)]
