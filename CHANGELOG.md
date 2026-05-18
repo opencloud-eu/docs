@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.23.0](https://github.com/opencloud-eu/docs/releases/tag/3.23.0) - 2026-05-18
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- add favourites feature to the docs [[#837](https://github.com/opencloud-eu/docs/pull/837)]
+
 ## [3.22.0](https://github.com/opencloud-eu/docs/releases/tag/3.22.0) - 2026-05-15
 
 ### ❤️ Thanks to all contributors! ❤️
