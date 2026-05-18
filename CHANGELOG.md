@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @openclouders
 
 ### 👤 User Documentation
 
 - add favourites feature to the docs [[#837](https://github.com/opencloud-eu/docs/pull/837)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#841](https://github.com/opencloud-eu/docs/pull/841)]
 
 ## [3.22.0](https://github.com/opencloud-eu/docs/releases/tag/3.22.0) - 2026-05-15
 
