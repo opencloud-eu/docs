@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@ScharfViktor, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- publish release note 4.0.7 and 6.2.0 [[#843](https://github.com/opencloud-eu/docs/pull/843)]
 
 ### 👤 User Documentation
 
