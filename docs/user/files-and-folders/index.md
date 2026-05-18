@@ -22,6 +22,9 @@ This section covers common day-to-day tasks such as creating and moving content,
 - [Delete and restore items from the trash](./delete-restore.md)  
   Remove files and folders and restore them later if needed.
 
+- [README files in folders](./readme-files.md)  
+  Add a `README.md` file to a folder so OpenCloud renders it above the file list.
+
 ### Find and classify content
 
 - [Search for files and content](./search.md)  
