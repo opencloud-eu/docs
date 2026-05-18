@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- adjust the link to the explaination from microsoft  [[#797](https://github.com/opencloud-eu/docs/pull/797)]
 - add favourites feature to the docs [[#837](https://github.com/opencloud-eu/docs/pull/837)]
 
 ### 📦️ Build&Tools
