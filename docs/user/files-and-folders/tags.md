@@ -12,16 +12,11 @@ With OpenCloud you can add tags to files and folders to make them easier to sear
 
 ## Add tag
 
-- Open the context menu.
-- Right-click on the file or folder, or
-- click on the three dots in the corresponding line.
-  <img src={require("./img/tags/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
-
-- Select details
-- Select the “Details” option in the context menu.
+- Open the context menu for the file or folder.
+- Select the “Details” option.
   <img src={require("./img/tags/details-button.png").default} alt="Select details in context menu" width="1920"/>
 
-## Enter tag
+## Add a tag
 
 - Click in the input field next to “Tags”.
   <img src={require("./img/tags/tags-line.png").default} alt="Input line next to tags" width="400"/>
@@ -32,8 +27,7 @@ With OpenCloud you can add tags to files and folders to make them easier to sear
 
 ## Remove tag
 
-- Open the “Details” of the file/folder again.
-  <img src={require("./img/tags/details-button.png").default} alt="Open details" width="400"/>
+- Open the “Details” of the file or folder again.
 - Find the tag you want to remove.
 - Click on the “x” next to the tag to delete it.
   <img src={require("./img/tags/delete-a-tag.png").default} alt="Click on x next to the tag" width="400"/>
