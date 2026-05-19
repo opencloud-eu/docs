@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.24.0](https://github.com/opencloud-eu/docs/releases/tag/3.24.0) - 2026-05-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- account-settings new screenshots [[#846](https://github.com/opencloud-eu/docs/pull/846)]
+- view modes: new screenshots and adjust the text and order [[#845](https://github.com/opencloud-eu/docs/pull/845)]
+
 ## [3.23.0](https://github.com/opencloud-eu/docs/releases/tag/3.23.0) - 2026-05-18
 
 ### ❤️ Thanks to all contributors! ❤️
