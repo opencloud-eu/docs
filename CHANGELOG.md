@@ -4,12 +4,20 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @openclouders
 
 ### 👤 User Documentation
 
+- activities: add new screenshots and remove not needed ones [[#849](https://github.com/opencloud-eu/docs/pull/849)]
+- shortcut: new screenshots and remove not needed ones [[#848](https://github.com/opencloud-eu/docs/pull/848)]
+- create-rename-move: new screenshots and remove not needed ones [[#847](https://github.com/opencloud-eu/docs/pull/847)]
+- Add tip tap editor [[#844](https://github.com/opencloud-eu/docs/pull/844)]
 - account-settings new screenshots [[#846](https://github.com/opencloud-eu/docs/pull/846)]
 - view modes: new screenshots and adjust the text and order [[#845](https://github.com/opencloud-eu/docs/pull/845)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#850](https://github.com/opencloud-eu/docs/pull/850)]
 
 ## [3.23.0](https://github.com/opencloud-eu/docs/releases/tag/3.23.0) - 2026-05-18
 
