@@ -6,114 +6,67 @@ description: Upgrade Desktop Client on Linux
 draft: false
 ---
 
-# Upgrade on Linux
+# Upgrade Desktop Client on Linux
 
-The OpenCloud Desktop Client on Linux can be upgraded using the package format or package manager originally used for installation.
-Existing synchronization settings, accounts, and preferences are preserved during the upgrade process.
+The OpenCloud Desktop Client for Linux is provided as an AppImage.
 
-## Upgrade on Debian / Ubuntu (.deb package)
+If you installed OpenCloud Desktop with AppImageLauncher, the client can be upgraded by downloading the updated AppImage and replacing the existing integrated version.
 
-Download the latest .deb package from the official release page:
+Existing accounts, synchronization settings, preferences, cached data, and credentials are preserved during the upgrade.
+
+## Download the Latest AppImage
+
+Download the latest `.AppImage` file from the official release page:
 
 - [OpenCloud Desktop Releases on GitHub](https://github.com/opencloud-eu/desktop/releases)
-- Choose the package matching your system architecture.
-- Save the file to your Downloads folder.
-- Close OpenCloud Desktop
 
-## Before upgrading
+Choose the AppImage that matches your system architecture and save it to your Downloads folder or another location where you can easily find it.
 
-- Open the OpenCloud Desktop menu.
-- Stop active synchronization if necessary.
-- Quit the application completely.
-- Install the Updated Package
+## Close OpenCloud Desktop
 
-## Install the Upgrade
+Before starting the upgrade, close the running Desktop Client:
 
-- Open a terminal and navigate to your Downloads directory:
+1. Open the OpenCloud Desktop menu.
+2. Stop active synchronization if necessary.
+3. Select Quit OpenCloud Desktop.
 
-```bash
-cd ~/Downloads
-```
+This ensures that all synchronization processes are stopped cleanly before the upgrade.
 
-- Install the updated package:
+## Replace the Existing AppImage
 
-```bash
-sudo dpkg -i opencloud-desktop_version.deb
-```
+To upgrade OpenCloud Desktop with AppImageLauncher:
 
-- If dependency issues occur, repair them using:
+1. Right-click the downloaded `.AppImage` file.
+2. Select Open with AppImageLauncher.
+3. Confirm that the existing integrated version should be replaced when prompted.
 
-```bash
-sudo apt -f install
-```
+AppImageLauncher replaces the existing AppImage and keeps the application menu entry available.
 
-The existing installation will be updated automatically.
+## Launch the Updated Application
 
-- Launch the Updated Application
+After the upgrade has completed, start OpenCloud Desktop from your application menu:
 
-- After installation, start OpenCloud Desktop from:
-  - the application menu
-    GNOME/KDE launcher
-  - or from a terminal:
-    opencloud
+1. Open your application launcher.
+2. Search for OpenCloud Desktop.
+3. Start the application.
 
-Your existing configuration and synchronization settings remain available.
+The client should start normally and use your existing configuration.
 
 ## Verify the Installed Version
 
-- To check the installed version:
+To confirm that the upgrade was successful:
 
-```bash
-opencloud --version
-```
+1. Open OpenCloud Desktop.
+2. Open the settings.
+3. Select About.
+4. Check the displayed version number.
 
-- You can also verify the version from within the graphical application:
-  - Help → About OpenCloud Desktop
-
-## If OpenCloud Desktop was installed from a configured repository, upgrade it using the package manager
-
-- Update Package Information
-
-```bash
-sudo apt update
-```
-
-- Upgrade OpenCloud Desktop
-
-```bash
-sudo apt upgrade
-```
-
-- Or upgrade only the desktop client:
-
-```bash
-sudo apt install --only-upgrade opencloud-desktop
-```
-
-## Upgrade on Fedora / RHEL (.rpm package)
-
-- Download the newest .rpm package from:
-
-[OpenCloud Desktop Releases on GitHub](https://github.com/opencloud-eu/desktop/releases)
-
-- Save the package locally.
-
-- Install the Updated Package
-
-```bash
-sudo dnf install opencloud-desktop_version.rpm
-```
-
-The package manager upgrades the existing installation automatically.
-
-## Verify the Installation
-
-```bash
-opencloud --version
-```
+The currently installed version number is displayed in the about dialog.
 
 :::note
-User accounts and synchronization settings are preserved during upgrades.
-Existing synchronized files are not modified or removed.
-Restarting the system is typically not required after upgrading.
+Upgrading does not remove synchronized files.
+
+Existing user accounts and sync connections remain configured.
+
+A system restart is usually not required after upgrading.
 :::

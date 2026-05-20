@@ -6,66 +6,71 @@ description: Upgrade Desktop Client on macOS
 draft: false
 ---
 
-# Upgrade on macOS (.pkg file)
+# Upgrade Desktop Client on macOS
 
-The OpenCloud Desktop Client for macOS can be upgraded using the official signed .pkg installer.
-This process safely replaces the existing application while preserving your account settings and synchronization configuration.
+The OpenCloud Desktop Client for macOS can be upgraded using the official signed `.pkg` installer.
+
+The upgrade replaces the existing application while preserving your account settings, synchronization configuration, preferences, cached data, and credentials.
 
 ## Download the Latest Installer
 
-Download the newest .pkg installer from the official release page:
+Download the latest `.pkg` installer from the official release page:
 
 - [OpenCloud Desktop Releases on GitHub](https://github.com/opencloud-eu/desktop/releases)
 
-Choose the correct version for your Mac:
+Choose the installer that matches your Mac architecture:
 
-- Apple Silicon Macs (M1, M2, M3): arm64
-- Intel Macs: x86_64
+- Apple Silicon Macs (M1, M2, M3): `arm64`
+- Intel Macs: `x86_64`
 
-## Save the installer to your Downloads folder
+Save the installer to your Downloads folder or another location where you can easily find it.
 
 ## Close OpenCloud Desktop
 
-## Before starting the upgrade
+Before starting the upgrade, close the running Desktop Client:
 
-- Click the OpenCloud Desktop icon in the macOS menu bar.
-- Open the menu.
-- Select Quit OpenCloud Desktop.
+1. Click the OpenCloud Desktop icon in the macOS menu bar.
+2. Open the menu.
+3. Select Quit OpenCloud Desktop.
 
-This ensures that all synchronization processes are stopped cleanly before the update.
+This ensures that all synchronization processes are stopped cleanly before the upgrade.
 
 ## Run the Installer
 
-- Double-click the downloaded .pkg file.
-- The macOS installer will launch automatically.
-- Follow the on-screen instructions.
-- When prompted, confirm that the existing installation should be replaced.
+To upgrade OpenCloud Desktop:
 
-The installer updates the application inside the system’s Applications directory.
+1. Double-click the downloaded `.pkg` file.
+2. Follow the instructions in the macOS installer.
+3. When prompted, confirm that the existing installation should be replaced.
 
-Existing accounts, synchronization folders, preferences,cached and credentials are preserved automatically.
+The installer updates the application in the Applications folder.
+
+Existing accounts, synchronization folders, preferences, cached data, and credentials are preserved automatically.
 
 ## Launch the Updated Application
 
-After the installation completes, launch OpenCloud Desktop from:
+After the installation has completed, launch OpenCloud Desktop from one of the following locations:
 
-- the Applications folder
+- Applications folder
 - Launchpad
-- or Spotlight (Cmd + Space)
+- Spotlight
 
-The client should start normally using your existing configuration.
+The client should start normally and use your existing configuration.
 
 ## Verify the Installed Version
 
-To confirm the upgrade:
+To confirm that the upgrade was successful:
 
-- Open OpenCloud Desktop.
-- In the menu bar, select:
-- OpenCloud Desktop → About OpenCloud Desktop
+1. Open OpenCloud Desktop.
+2. Open the settings.
+3. Select About and check the version.
 
-The currently installed version number will be displayed.
+The currently installed version number is displayed in the about dialog.
 
 :::note
 Upgrading does not remove synchronized files.
+
 Existing user accounts and sync connections remain configured.
-A system restart is usually not required after upgrading.:::
+
+A system restart is usually not required after upgrading.
+:::
