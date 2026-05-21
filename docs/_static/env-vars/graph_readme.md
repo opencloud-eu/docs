@@ -203,5 +203,3 @@ The output of this command includes the following information for each role:
 |                                      |          |                                |                                | libre.graph/driveItem/basic/read         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 ```
-
-
