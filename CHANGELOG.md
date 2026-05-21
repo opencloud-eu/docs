@@ -8,6 +8,8 @@
 
 ### 👤 User Documentation
 
+- filedrop rework and new screenshots [[#857](https://github.com/opencloud-eu/docs/pull/857)]
+- share external rework and new screenshots [[#856](https://github.com/opencloud-eu/docs/pull/856)]
 - sharing internal: new screenshots and rework of the text [[#854](https://github.com/opencloud-eu/docs/pull/854)]
 - upload-download-unzip new screenshots and remove not needed ones [[#852](https://github.com/opencloud-eu/docs/pull/852)]
 - activities: add new screenshots and remove not needed ones [[#849](https://github.com/opencloud-eu/docs/pull/849)]
