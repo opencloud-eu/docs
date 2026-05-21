@@ -12,9 +12,9 @@ You can easily create new text, table and presentation files in the web interfac
 
 ## Create files and folders
 
-- Click on the “+ New” button at the top of the bar.
+- Open the “+ New” menu in the left sidebar.
   <img src={require("./img/create-rename-move/new-button.png").default} alt="New button" width="1920"/>
-- In the menu, select either “Folder” or the desired "file type" that you want to create.
+- Select either “Folder” or the desired "file type" that you want to create.
   <img src={require("./img/create-rename-move/create-options.png").default} alt="Select file type or folder" width="400"/>
 - Enter a name for the file or folder in the window that appears.
 - Click on “Create”.
