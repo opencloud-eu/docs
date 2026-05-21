@@ -32,7 +32,7 @@ Wenn Sie einen Ordner außerhalb Ihres Synchronisationsverzeichnisses (Sync-Root
 
 ##### Beispiel
 
-Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihr Sync-Root ist `/home/bar/OpenCloud/Personal`.
+Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihre Sync-Root ist `/home/bar/OpenCloud/Personal`.
 
 1. Verschieben Sie den Ordner in die Sync-Root (in ein geeignetes Unterverzeichnis):
 
