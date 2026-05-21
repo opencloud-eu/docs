@@ -1,5 +1,35 @@
 # Changelog
 
+## [3.24.0](https://github.com/opencloud-eu/docs/releases/tag/3.24.0) - 2026-05-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders
+
+### :octocat: Developer Documentation
+
+- Save GitHub image 4.0 [[#858](https://github.com/opencloud-eu/docs/pull/858)]
+
+### 👤 User Documentation
+
+- add video and photo docs [[#861](https://github.com/opencloud-eu/docs/pull/861)]
+- filedrop rework and new screenshots [[#857](https://github.com/opencloud-eu/docs/pull/857)]
+- share external rework and new screenshots [[#856](https://github.com/opencloud-eu/docs/pull/856)]
+- sharing internal: new screenshots and rework of the text [[#854](https://github.com/opencloud-eu/docs/pull/854)]
+- upload-download-unzip new screenshots and remove not needed ones [[#852](https://github.com/opencloud-eu/docs/pull/852)]
+- activities: add new screenshots and remove not needed ones [[#849](https://github.com/opencloud-eu/docs/pull/849)]
+- shortcut: new screenshots and remove not needed ones [[#848](https://github.com/opencloud-eu/docs/pull/848)]
+- create-rename-move: new screenshots and remove not needed ones [[#847](https://github.com/opencloud-eu/docs/pull/847)]
+- Add tip tap editor [[#844](https://github.com/opencloud-eu/docs/pull/844)]
+- account-settings new screenshots [[#846](https://github.com/opencloud-eu/docs/pull/846)]
+- view modes: new screenshots and adjust the text and order [[#845](https://github.com/opencloud-eu/docs/pull/845)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#860](https://github.com/opencloud-eu/docs/pull/860)]
+- Update docs [[#853](https://github.com/opencloud-eu/docs/pull/853)]
+- Update docs [[#850](https://github.com/opencloud-eu/docs/pull/850)]
+
 ## [3.23.0](https://github.com/opencloud-eu/docs/releases/tag/3.23.0) - 2026-05-18
 
 ### ❤️ Thanks to all contributors! ❤️
