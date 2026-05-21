@@ -8,6 +8,8 @@
 
 ### 👤 User Documentation
 
+- sharing internal: new screenshots and rework of the text [[#854](https://github.com/opencloud-eu/docs/pull/854)]
+- upload-download-unzip new screenshots and remove not needed ones [[#852](https://github.com/opencloud-eu/docs/pull/852)]
 - activities: add new screenshots and remove not needed ones [[#849](https://github.com/opencloud-eu/docs/pull/849)]
 - shortcut: new screenshots and remove not needed ones [[#848](https://github.com/opencloud-eu/docs/pull/848)]
 - create-rename-move: new screenshots and remove not needed ones [[#847](https://github.com/opencloud-eu/docs/pull/847)]
