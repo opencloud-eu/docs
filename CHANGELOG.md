@@ -6,6 +6,10 @@
 
 @Svanvith, @openclouders
 
+### :octocat: Developer Documentation
+
+- Save GitHub image 4.0 [[#858](https://github.com/opencloud-eu/docs/pull/858)]
+
 ### 👤 User Documentation
 
 - filedrop rework and new screenshots [[#857](https://github.com/opencloud-eu/docs/pull/857)]
