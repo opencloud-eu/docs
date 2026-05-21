@@ -29,6 +29,9 @@ This section covers common day-to-day tasks such as creating and moving content,
 
 ### Find and classify content
 
+- [Photos and videos](./photos-and-videos.md)  
+  Preview photos, browse them in a photo roll, and play videos directly in the web interface.
+
 - [Search for files and content](./search.md)  
   Find files by name or search within their content.
 
