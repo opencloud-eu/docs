@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- add video and photo docs [[#861](https://github.com/opencloud-eu/docs/pull/861)]
 - filedrop rework and new screenshots [[#857](https://github.com/opencloud-eu/docs/pull/857)]
 - share external rework and new screenshots [[#856](https://github.com/opencloud-eu/docs/pull/856)]
 - sharing internal: new screenshots and rework of the text [[#854](https://github.com/opencloud-eu/docs/pull/854)]
