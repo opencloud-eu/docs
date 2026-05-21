@@ -22,47 +22,58 @@ The upgrade applies to deployments using:
 
 Following this guide ensures a safe migration to OpenCloud 7.0.x.
 
-## Before starting the upgrade:
+## Before starting the upgrade
 
+- Ensure you have OpenCloud 4.0.7 installed
 - Create a complete backup of your configuration and data.
 - Ensure you have access to your current opencloud.yaml.
 - Verify that your current deployment is healthy before upgrading.
 
-
 ## Backup Config and Data
 
-:::important 
+:::important
 Always create a backup before upgrading to prevent data loss.
 :::
 
 - Using Bind Mounts
+
 ```bash
 cp -a /mnt/opencloud/config /mnt/opencloud/config-backup
 cp -a /mnt/opencloud/data /mnt/opencloud/data-backup
 ```
+
 - Using Docker Named Volumes
 - Create Backup Directory
+
 ```bash
 mkdir -p ~/opencloud-backups
 ```
+
 - Backup Config and Data
+
 ```bash
 docker cp opencloud_full-opencloud-1:/var/lib/opencloud ~/opencloud-backups/data-backup
 docker cp opencloud_full-opencloud-1:/etc/opencloud ~/opencloud-backups/config-backup
 ```
+
 - Stop OpenCloud
-    - Docker
-    ```bash
-    docker stop opencloud
-    ```
-    - Docker Compose
-    ```bash
-    docker compose stop
-    ```
-    - Pull the New Release Image
-    ```bash
-    docker pull opencloudeu/opencloud:7.0.x
-    ```
+  - Docker
+
+  ```bash
+  docker stop opencloud
+  ```
+
+  - Docker Compose
+
+  ```bash
+  docker compose stop
+  ```
+
+  - Pull the New Release Image
+
+  ```bash
+  docker pull opencloudeu/opencloud:7.0.x
+  ```
 
 ## Configuration Migration Breaking Change
 
@@ -77,6 +88,7 @@ Reference: [Migration PR](https://github.com/opencloud-eu/opencloud/pull/2760)
 - Using Bind Mounts
 
 - Replace **your-home-directory** with your actual directory.
+
 ```bash
 docker run --rm -it --entrypoint /bin/sh \
   -v "your-home-directory"/opencloud/opencloud-config:/etc/opencloud \
@@ -86,48 +98,51 @@ docker run --rm -it --entrypoint /bin/sh \
 - Using Docker Named Volumes
 
 - Replace **your-named-volume** with your actual volume name.
+
 ```bash
 docker run --rm -it --entrypoint /bin/sh \
   -v "your-named-volume":/etc/opencloud \
   opencloudeu/opencloud:7.0.x
 ```
+
 - Generate the Configuration Diff
+  - Inside the container run:
 
-    - Inside the container run:
+  ```bash
+  opencloud init --diff
+  ```
 
-    ```bash
-    opencloud init --diff
-    ```
+  - Example output:
 
-    - Example output:
-    ```bash
-    diff -u /etc/opencloud/opencloud.yaml /etc/opencloud/opencloud.yaml.tmp
-    ```
+  ```bash
+  diff -u /etc/opencloud/opencloud.yaml /etc/opencloud/opencloud.yaml.tmp
+  ```
 
-    - A patch file will automatically be created:
-    ```bash
-    /etc/opencloud/opencloud.config.patch
-    ```
+  - A patch file will automatically be created:
+
+  ```bash
+  /etc/opencloud/opencloud.config.patch
+  ```
 
 - Apply the Configuration Patch
+  - Go to the configuration directory:
 
-    - Go to the configuration directory:
+  ```bash cd /etc/opencloud
 
-    ```bash cd /etc/opencloud
-    ```
+  ```
 
-    - Verify the generated files:
+  - Verify the generated files:
 
-    Example:
+  Example:
 
-    ```bash
-    ls
-    banned-password-list.txt
-    csp.yaml
-    opencloud.config.patch
-    opencloud.yaml
-    opencloud.yaml.2026-05-19-15-45-44.backup
-    ```
+  ```bash
+  ls
+  banned-password-list.txt
+  csp.yaml
+  opencloud.config.patch
+  opencloud.yaml
+  opencloud.yaml.2026-05-19-15-45-44.backup
+  ```
 
 - Apply the patch:
 
@@ -135,14 +150,14 @@ docker run --rm -it --entrypoint /bin/sh \
 patch < opencloud.config.patch
 ```
 
-    - Expected output:
+- Expected output:
 
-    ```bash
-    patching file opencloud.yaml
-    Required Configuration Changes
-    ```
+```bash
+patching file opencloud.yaml
+Required Configuration Changes
+```
 
-## The following configuration entries must exist in opencloud.yaml:
+## The following configuration entries must exist in opencloud.yaml
 
 ```bash
 service_account:
@@ -150,9 +165,10 @@ service_account_id: 62b789c9-0dd0-4647-afd3-d6969eab03b8
 service_account_secret: wAiwglE93^S-y3hm0bo5FS9sFj^rzQ&i
 ```
 
-## Verify that these values were added successfully after applying the patch.
+## Verify that these values were added successfully after applying the patch
 
 - Start OpenCloud 7.0.x
+
 ```bash
 docker run \
     --name opencloud \
@@ -168,7 +184,7 @@ docker run \
 Docker Compose
 ```
 
-# If you previously used the project name opencloud_full, continue using the same project name to preserve:
+# If you previously used the project name opencloud_full, continue using the same project name to preserve
 
 ```bash
 Docker networks
@@ -197,21 +213,21 @@ Verify the Migration
 ```bash
 docker logs -f opencloud
 ```
+
 or:
+
 ```bash
 docker compose logs -f
 ```
 
-## Watch for migration messages and ensure no errors occur.
+## Watch for migration messages and ensure no errors occur
 
 - Verify Project Spaces
 
 - After the migration completes:
-
-    - Open all existing project spaces
-    - Verify that all members still exist
-    - Check permissions and shared access
-
+  - Open all existing project spaces
+  - Verify that all members still exist
+  - Check permissions and shared access
 
 ## Reindex OpenSearch Breaking Change
 
@@ -221,12 +237,11 @@ Reference: [OpenSearch Index PR](https://github.com/opencloud-eu/opencloud/pull/
 
 Rebuild the search index after upgrading:
 
-- ```bash
-    opencloud search index --all-spaces
-  ```
+```bash
+opencloud search index --all-spaces
+```
 
 Depending on the size of your installation, this process may take some time.
-
 
 ## Web Breaking Changes
 
@@ -235,31 +250,28 @@ OpenCloud Web also includes breaking changes in this release.
 Review the official OpenCloud 7.0.x release notes carefully:
 
 - Verification  
-Your OpenCloud instance should now be running on 7.0.x.
+  Your OpenCloud instance should now be running on 7.0.x.
 
-    - Essential Checks
-    - User Accounts — Verify all users can log in
-    - Shared Folders — Confirm shares remain functional
-    - Public Links — Test public links
-    - Search — Verify search works correctly after reindexing
-    - Project Spaces — Check members and permissions
-    - Service Health — Review logs for warnings or errors
-    - Troubleshooting
+  - Essential Checks
+  - User Accounts — Verify all users can log in
+  - Shared Folders — Confirm shares remain functional
+  - Public Links — Test public links
+  - Search — Verify search works correctly after reindexing
+  - Project Spaces — Check members and permissions
+  - Service Health — Review logs for warnings or errors
+  - Troubleshooting
 
 - If issues occur during or after the upgrade:
-
-    - Review container logs
-    - Verify opencloud.yaml
-    - Re-run the configuration diff if necessary
-    - Restore from backup if required
-    - Consult the troubleshooting documentation
-    - Open an issue on GitHub if needed
+  - Review container logs
+  - Verify opencloud.yaml
+  - Re-run the configuration diff if necessary
+  - Restore from backup if required
+  - Consult the troubleshooting documentation
+  - Open an issue on GitHub if needed
 
 - Useful resources:
-
-    - OpenCloud Troubleshooting Guide
-    - OpenCloud GitHub Issues
-
+  - OpenCloud Troubleshooting Guide
+  - OpenCloud GitHub Issues
 
 ## Updating Web Extensions for OpenCloud 7.0.x
 
@@ -272,57 +284,62 @@ All installed extensions must be upgraded to the latest compatible version.
 :::
 
 - New extension versions are available in the App Store inside the OpenCloud UI
-or on [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
-
+  or on [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
 
 - Update via OpenCloud App Store
-    - Sign in as an administrator.
-    - Open: Settings → Apps
-    - Check all installed extensions.
-    - Update or reinstall each extension to the latest version.
+  - Sign in as an administrator.
+  - Open: Settings → Apps
+  - Check all installed extensions.
+  - Update or reinstall each extension to the latest version.
 
 - After updating, reload the browser and verify that the extensions work correctly.
 
 - Manual Update
-    - Download the newest extension release from: [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
+  - Download the newest extension release from: [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
 
 - Upload the Extension
+  - Example using scp:
 
-    - Example using scp:
-
-    ```bash
-    scp extension-name.zip root@your-server:/opt/opencloud/extensions/
-    ```
+  ```bash
+  scp extension-name.zip root@your-server:/opt/opencloud/extensions/
+  ```
 
 - Install the Extension
 
 - Connect to the server:
-    ```bash
-    ssh root@your-server
-    ```
+
+  ```bash
+  ssh root@your-server
+  ```
 
 - Go to the extensions directory:
-    ```bash
-    cd /opt/opencloud/extensions
-    ```
+
+  ```bash
+  cd /opt/opencloud/extensions
+  ```
 
 - Extract the archive:
-    ```bash
-    unzip extension-name.zip
-    ```
+
+  ```bash
+  unzip extension-name.zip
+  ```
+
 - Restart Docker Compose
-    ```bash
-    docker compose restart
-    ```
+
+  ```bash
+  docker compose restart
+  ```
+
 - Verification
-    - After restarting:
-        - reload the browser
-        - verify all extensions load correctly
-        - check functionality
-        - review logs if issues occur
-        - Example:  
-        ```bash
-        docker compose logs -f
-        ```
+  - After restarting:
+    - reload the browser
+    - verify all extensions load correctly
+    - check functionality
+    - review logs if issues occur
+    - Example:
+
+    ```bash
+    docker compose logs -f
+    ```
 
 Older extension versions are not compatible with OpenCloud 7.0.x.
