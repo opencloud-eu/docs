@@ -95,23 +95,12 @@ nutzbar einzurichten und zu pflegen.
 
 ## Häufige Stolperfallen
 
----
-
-❌ Nicht tun ✅ Besser so
-
----
-
-Alle Dateien im Root-Ordner ablegen Klare Unterordner verwenden
-
-Persönliche und gemeinsame Inhalte Persönliche Daten in „Persönlich"
-mischen belassen
-
-Allen Nutzern Vollzugriff geben Least-Privilege-Prinzip anwenden
-
-Uneinheitliche Benennungen nutzen Konventionen definieren &
-einhalten
-
----
+| ❌ Nicht tun                               | ✅ Besser so                  |
+|--------------------------------------------|-------------------------------|
+| Alle Dateien im Root-Ordner ablegen        | Klare Unterordner verwenden   |
+| Persönliche und gemeinsame Inhalte mischen | Persönliche Daten in „Persönlich" belassen |
+| Allen Nutzern Vollzugriff geben            | Least-Privilege-Prinzip anwenden |
+| Uneinheitliche Benennungen nutzen          | Konventionen definieren & einhalten |
 
 ## Schnellstart-Vorlage zum Teilen
 
