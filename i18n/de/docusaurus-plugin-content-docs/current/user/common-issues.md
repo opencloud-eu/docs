@@ -28,21 +28,28 @@ Symlinks werden aus mehreren wichtigen Gründen bewusst von der Synchronisation 
 
 #### Ordner außerhalb des Synchronisationsverzeichnisses mit Symlinks einbinden
 
-Wenn Sie einen Ordner außerhalb Ihres Synchronisationsverzeichnisses synchronisieren möchten, können Sie diesen verschieben und am ursprünglichen Ort durch einen Symlink ersetzen.
+Wenn Sie einen Ordner außerhalb Ihres Synchronisationsverzeichnisses (Sync-Root) synchronisieren möchten, können Sie diesen in die Sync-Root verschieben und am ursprünglichen Ort durch einen Symlink ersetzen.
 
 ##### Beispiel
 
 Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihr Sync-Root ist `/home/bar/OpenCloud/Personal`.
 
-1. Verschieben Sie den Ordner in das Synchronisationsverzeichnis:
+1. Verschieben Sie den Ordner in die Sync-Root (in ein geeignetes Unterverzeichnis):
+
+    ```bash
+    mkdir -p /home/bar/OpenCloud/Personal/foo/
+    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+    ```
+
+2. Erstellen Sie einen Symlink:
 
    ```bash
-   mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ln -s /home/bar/OpenCloud/Personal/foo/A /foo/A
    ```
 
 ## Dateien mit "~$" im Namen werden nicht synchronisiert
 
-Der OpenCloud Desktop Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.  
+Der OpenCloud Desktop Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.
 Dabei handelt es sich um temporäre Sperrdateien, die von Microsoft Office-Anwendungen (Word, Excel, PowerPoint) erstellt werden, solange ein Dokument geöffnet ist.
 
 <img src={require("./img/common-issues/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500"/>
