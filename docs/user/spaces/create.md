@@ -14,21 +14,21 @@ With Spaces you can share data with specific people within your organization. Al
 
 - Go to the menu item "Spaces” in the left sidebar
 
-  <img src={require("./img/create/left-sidebar.png").default} alt="Space in left Sidebar" width="1920"/>
+  <img src={require("./img/create/new-space.png").default} alt="Space in left Sidebar" width="1920"/>
 
 - Click on "+ New Space”
 
-  <img src={require("./img/create/new-space.png").default} alt="New-Space" width="1920"/>
+  <img src={require("./img/create/new-space-popup.png").default} alt="New-Space" width="1920"/>
 
 - Enter the desired name for the Space.
 
-  <img src={require("./img/create/enter-name.png").default} alt="Enter Spacename" width="500"/>
+  <img src={require("./img/create/enter-name.png").default} alt="Enter Spacename" width="1920"/>
 
 - Click on "Create”.
 
-## Display Space
+## Your new Space
 
-Your new Space now appears under "Spaces” and is ready to be used
+Your new Space now appears under "Spaces" and is ready to be used.
 
 <img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920"/>
 
