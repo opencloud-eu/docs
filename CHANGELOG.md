@@ -12,6 +12,9 @@
 
 ### 👤 User Documentation
 
+- space quota new screenshots [[#868](https://github.com/opencloud-eu/docs/pull/868)]
+- space add member new screenshots and text adjustments [[#866](https://github.com/opencloud-eu/docs/pull/866)]
+- space rename new screenshots [[#865](https://github.com/opencloud-eu/docs/pull/865)]
 - space create new screenshots [[#864](https://github.com/opencloud-eu/docs/pull/864)]
 
 ## [3.24.0](https://github.com/opencloud-eu/docs/releases/tag/3.24.0) - 2026-05-21
