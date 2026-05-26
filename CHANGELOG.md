@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- Update terminology from 'Räumen' to 'Spaces' [[#873](https://github.com/opencloud-eu/docs/pull/873)]
 - [QA] common-issues symlink example [[#872](https://github.com/opencloud-eu/docs/pull/872)]
 - Clarify documentation status for Rolling-Version [[#871](https://github.com/opencloud-eu/docs/pull/871)]
 - Update wording for clarity in uninstallation steps [[#870](https://github.com/opencloud-eu/docs/pull/870)]
