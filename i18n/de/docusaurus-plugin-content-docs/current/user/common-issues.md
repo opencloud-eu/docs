@@ -36,10 +36,10 @@ Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihre Sync-Root ist `/home
 
 1. Verschieben Sie den Ordner in die Sync-Root (in ein geeignetes Unterverzeichnis):
 
-    ```bash
-    mkdir -p /home/bar/OpenCloud/Personal/foo/
-    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
-    ```
+   ```bash
+   mkdir -p /home/bar/OpenCloud/Personal/foo/
+   mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ```
 
 2. Erstellen Sie einen Symlink:
 
