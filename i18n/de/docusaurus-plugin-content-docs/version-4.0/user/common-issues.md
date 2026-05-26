@@ -37,7 +37,14 @@ Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihr Sync-Root ist `/home/
 1. Verschieben Sie den Ordner in das Synchronisationsverzeichnis:
 
    ```bash
+   mkdir -p /home/bar/OpenCloud/Personal/foo/
    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ```
+
+2. Erstellen Sie einen Symlink am ursprünglichen Ort:
+
+   ```bash
+   ln -s /home/bar/OpenCloud/Personal/foo/A /foo/A
    ```
 
 ## Dateien mit "~$" im Namen werden nicht synchronisiert
