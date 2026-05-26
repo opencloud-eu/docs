@@ -51,8 +51,8 @@ Wenn Sie Ihre eigene OpenCloud-Umgebung installieren, einrichten oder verwalten 
 Diese Dokumentation ist versioniert, damit Sie die Informationen passend zu Ihrer OpenCloud-Version finden.
 
 - **Rolling-Version**  
-  Entspricht dem aktuellen Entwicklungsstand. Änderungen werden fortlaufend eingepflegt, einzelne Funktionen können
-  jedoch noch nicht vollständig dokumentiert sein.
+  Entspricht dem aktuellen Entwicklungsstand. Änderungen werden fortlaufend eingepflegt, einzelne Funktionen sind
+  möglicherweise noch nicht vollständig dokumentiert.
 
 - **Stable-Release-Versionen**  
   Dokumentation zu offiziell veröffentlichten Versionen. Diese Versionen werden geprüft und bleiben nach der
