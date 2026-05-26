@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- best practices pitfall Table formatting in germanRemoved redundant formatting and improved clarity in best practices section. [[#874](https://github.com/opencloud-eu/docs/pull/874)]
 - Update terminology from 'Räumen' to 'Spaces' [[#873](https://github.com/opencloud-eu/docs/pull/873)]
 - [QA] common-issues symlink example [[#872](https://github.com/opencloud-eu/docs/pull/872)]
 - Clarify documentation status for Rolling-Version [[#871](https://github.com/opencloud-eu/docs/pull/871)]
