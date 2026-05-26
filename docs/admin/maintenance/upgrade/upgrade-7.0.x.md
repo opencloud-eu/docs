@@ -251,7 +251,6 @@ Review the official OpenCloud 7.0.x release notes carefully:
 
 - Verification  
   Your OpenCloud instance should now be running on 7.0.x.
-
   - Essential Checks
   - User Accounts — Verify all users can log in
   - Shared Folders — Confirm shares remain functional
@@ -276,70 +275,6 @@ Review the official OpenCloud 7.0.x release notes carefully:
 ## Updating Web Extensions for OpenCloud 7.0.x
 
 OpenCloud 7.0.x introduces breaking changes in the web client architecture.
-Because of these changes, older web extension versions are no longer compatible and must be updated.
+Because of these changes, older web extension versions are no longer compatible with OpenCloud 7.0.x and must be updated.
 
-:::
-Important: Existing web extensions from older OpenCloud releases will not work with 7.0.x.
-All installed extensions must be upgraded to the latest compatible version.
-:::
-
-- New extension versions are available in the App Store inside the OpenCloud UI
-  or on [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
-
-- Update via OpenCloud App Store
-  - Sign in as an administrator.
-  - Open: Settings → Apps
-  - Check all installed extensions.
-  - Update or reinstall each extension to the latest version.
-
-- After updating, reload the browser and verify that the extensions work correctly.
-
-- Manual Update
-  - Download the newest extension release from: [GitHub](https://github.com/opencloud-eu/web-extensions/releases?utm_source=chatgpt.com)
-
-- Upload the Extension
-  - Example using scp:
-
-  ```bash
-  scp extension-name.zip root@your-server:/opt/opencloud/extensions/
-  ```
-
-- Install the Extension
-
-- Connect to the server:
-
-  ```bash
-  ssh root@your-server
-  ```
-
-- Go to the extensions directory:
-
-  ```bash
-  cd /opt/opencloud/extensions
-  ```
-
-- Extract the archive:
-
-  ```bash
-  unzip extension-name.zip
-  ```
-
-- Restart Docker Compose
-
-  ```bash
-  docker compose restart
-  ```
-
-- Verification
-  - After restarting:
-    - reload the browser
-    - verify all extensions load correctly
-    - check functionality
-    - review logs if issues occur
-    - Example:
-
-    ```bash
-    docker compose logs -f
-    ```
-
-Older extension versions are not compatible with OpenCloud 7.0.x.
+New extension versions are available in the App Store inside the OpenCloud UI or on [GitHub](https://github.com/opencloud-eu/web-extensions/releases). To update your extensions, download their latest version and follow the [app installation guide](../../configuration/web-applications.md).
