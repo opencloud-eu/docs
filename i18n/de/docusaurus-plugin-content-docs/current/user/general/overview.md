@@ -26,7 +26,7 @@ Die obere Leiste enthält wichtige Funktionen wie die Suchleiste, Benutzeraktion
 
 ## 4. Suchleiste
 
-Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Räumen.
+Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Spaces.
 
 ## 5. Dateiliste
 
