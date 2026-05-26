@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- space customize new screenshots and text adjustments [[#882](https://github.com/opencloud-eu/docs/pull/882)]
 - Spaces disable enable 05 26 [[#881](https://github.com/opencloud-eu/docs/pull/881)]
 - space quota new screenshots [[#868](https://github.com/opencloud-eu/docs/pull/868)]
 - space add member new screenshots and text adjustments [[#866](https://github.com/opencloud-eu/docs/pull/866)]
