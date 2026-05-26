@@ -34,10 +34,17 @@ If you want to synchronize a folder that is located outside your sync root, you 
 
 You want to synchronize the folder `/foo/A`, but your sync root is `/home/bar/OpenCloud/Personal`.
 
-1. Move the folder into your sync root:
+1. Move the folder into (a sub-folder of) your sync root:
 
    ```bash
+   mkdir -p /home/bar/OpenCloud/Personal/foo/
    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ```
+
+2. Create a symlink in the original place:
+
+   ```bash
+   ln -s /home/bar/OpenCloud/Personal/foo/A /foo/A
    ```
 
 ## Files with "~$" in the name will not be synchronized
