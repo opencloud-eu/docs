@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-05-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@jnweiger
+
+### 👤 User Documentation
+
+- Update wording for clarity in uninstallation steps [[#870](https://github.com/opencloud-eu/docs/pull/870)]
+
 ## [3.25.0](https://github.com/opencloud-eu/docs/releases/tag/3.25.0) - 2026-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
