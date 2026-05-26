@@ -2,23 +2,43 @@
 sidebar_position: 1
 id: overview
 title: Übersicht
-description: Überblick der Web Benutzeroberfläche
+description: Überblick über die Web-Benutzeroberfläche
 draft: false
 ---
 
-# Überblick der Web Benutzeroberfläche
+import OverviewMarker from "./img/overview/marker.svg";
 
-Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
+# Überblick der Web-Benutzeroberfläche
 
-<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
+Die OpenCloud Web-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
+
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/ueberblick.png").default}
+    alt="Übersicht"
+    width="1920"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Linke Seitenleiste
 
-Die Seitenleiste enthält die Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
+Die Seitenleiste enthält Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
 
-## 2. App-Wechsler
+## 2. App-Switcher
 
-Das Menü in der linken oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
+Das Menü in der rechten oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
 
 ## 3. Obere Leiste
 
@@ -30,7 +50,7 @@ Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Spaces.
 
 ## 5. Dateiliste
 
-Zeigt alle Dateien und Ordner in einer Auswahlansicht an.
+Zeigt alle Dateien und Ordner in der ausgewählten Ansicht an.
 
 ## 6. Breadcrumbs-Menü
 
@@ -54,11 +74,11 @@ Hier können Sie zusätzliche Anzeigeoptionen wie Sortierung oder Spaltenauswahl
 
 ## 10. Benutzermenü
 
-Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um zu Einstellungen, Abmeldung und Kontooptionen zu gelangen.
+Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um auf Einstellungen, Abmeldung und Kontooptionen zuzugreifen.
 
 ## 11. Rechte Seitenleiste
 
-Zeigt zusätzliche Informationen und Panels für Anteile, Aktivitäten oder Dateidetails.
+Zeigt zusätzliche Informationen und Bereiche für Freigaben, Aktivitäten oder Dateidetails.
 
 ## 12. Aktionen
 
@@ -66,7 +86,7 @@ Hier finden Sie Aktionen wie Herunterladen, Teilen, Löschen oder Bearbeiten fü
 
 ## 13. Drei-Punkte-Menü
 
-Bietet weitere Optionen für Dateien, Ordner oder Bereiche.
+Bietet weitere Optionen für Dateien, Ordner oder Spaces.
 
 ## 14. Aktionen-Panel
 
@@ -78,11 +98,11 @@ Hier können Sie Dateien und Ordner intern oder extern freigeben und Berechtigun
 
 ## 16. Versionen
 
-Zeigt eine Übersicht der Versionen einer ausgewählten Datei oder Ordner.
+Zeigt eine Übersicht der Versionen einer ausgewählten Datei oder eines ausgewählten Ordners.
 
 ## 17. Aktivitätsleiste
 
-Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Bereichs oder einer Datei.
+Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Spaces oder einer Datei.
 
 ## 18. Kontextmenü
 

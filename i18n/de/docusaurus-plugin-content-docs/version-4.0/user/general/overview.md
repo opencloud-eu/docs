@@ -6,17 +6,37 @@ description: Überblick der Web Benutzeroberfläche
 draft: false
 ---
 
+import OverviewMarker from "./img/overview/marker.svg";
+
 # Überblick der Web Benutzeroberfläche
 
-Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
+Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
 
-<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/ueberblick.png").default}
+    alt="Übersicht"
+    width="1920"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Linke Seitenleiste
 
 Die Seitenleiste enthält die Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
 
-## 2. App-Wechsler
+## 2. App-Switcher
 
 Das Menü in der linken oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
 
