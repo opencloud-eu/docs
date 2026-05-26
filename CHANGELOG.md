@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Svanvith
+@ScharfViktor, @Svanvith, @tbsbdr
 
 ### 👷 Admin Documentation
 
+- Update production release date for June 2026 [[#883](https://github.com/opencloud-eu/docs/pull/883)]
 - publish release note rolling-7.0.0 [[#867](https://github.com/opencloud-eu/docs/pull/867)]
 
 ### 👤 User Documentation
