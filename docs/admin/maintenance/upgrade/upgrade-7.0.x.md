@@ -90,9 +90,7 @@ Reference: [Migration PR](https://github.com/opencloud-eu/opencloud/pull/2760)
 - Replace **your-home-directory** with your actual directory.
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh \
-  -v "your-home-directory"/opencloud/opencloud-config:/etc/opencloud \
-  opencloudeu/opencloud:7.0.x
+docker run --rm -it --entrypoint /bin/sh -v "your-home-directory-path":/etc/opencloud opencloudeu/opencloud:7.0.x
 ```
 
 - Using Docker Named Volumes
@@ -100,9 +98,7 @@ docker run --rm -it --entrypoint /bin/sh \
 - Replace **your-named-volume** with your actual volume name.
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh \
-  -v "your-named-volume":/etc/opencloud \
-  opencloudeu/opencloud:7.0.x
+docker run --rm -it --entrypoint /bin/sh -v "your-named-volume-path":/etc/opencloud opencloudeu/opencloud:7.0.x
 ```
 
 - Generate the Configuration Diff
@@ -116,13 +112,28 @@ docker run --rm -it --entrypoint /bin/sh \
 
   ```bash
   diff -u /etc/opencloud/opencloud.yaml /etc/opencloud/opencloud.yaml.tmp
+  --- /etc/opencloud/opencloud.yaml
+  +++ /etc/opencloud/opencloud.yaml.tmp
+  @@ -90,6 +90,9 @@
+  sharing:
+   events:
+     tls_insecure: false
   ```
 
-  - A patch file will automatically be created:
+- service_account:
+- service_account_id: 05bca760-ff47-44e3-9532-de8568e097bc
+- service_account_secret: NavT+c9okb.AD+170x3..!W78EVXJtSM
+  storage_users:
+  events:
+  tls_insecure: false
 
-  ```bash
-  /etc/opencloud/opencloud.config.patch
-  ```
+diff written to /etc/opencloud/opencloud.config.patch
+
+- A patch file will automatically be created:
+
+```bash
+/etc/opencloud/opencloud.config.patch
+```
 
 - Apply the Configuration Patch
   - Go to the configuration directory:
@@ -144,18 +155,31 @@ docker run --rm -it --entrypoint /bin/sh \
   opencloud.yaml.2026-05-19-15-45-44.backup
   ```
 
+- Testing the patch:
+  - Run the following command:
+
+  ```bash
+  patch --dry-run opencloud.yaml < opencloud.config.patch
+  ```
+
+  - Expecting output:
+
+  ```bash
+  checking file opencloud.yaml
+  ```
+
 - Apply the patch:
+  - Run the following command:
 
-```bash
-patch < opencloud.config.patch
-```
+  ```bash
+  patch opencloud.yaml < opencloud.config.patch
+  ```
 
-- Expected output:
+  - Expected output:
 
-```bash
-patching file opencloud.yaml
-Required Configuration Changes
-```
+  ```bash
+  patching file opencloud.yaml
+  ```
 
 ## The following configuration entries must exist in opencloud.yaml
 
@@ -164,84 +188,6 @@ service_account:
 service_account_id: 62b789c9-0dd0-4647-afd3-d6969eab03b8
 service_account_secret: wAiwglE93^S-y3hm0bo5FS9sFj^rzQ&i
 ```
-
-## Verify that these values were added successfully after applying the patch
-
-- Start OpenCloud 7.0.x
-
-```bash
-docker run \
-    --name opencloud \
-    --rm \
-    -d \
-    -p 9200:9200 \
-    -v $HOME/opencloud/opencloud-config:/etc/opencloud \
-    -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
-    -e OC_INSECURE=true \
-    -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
-    -e OC_URL=https://localhost:9200 \
-    opencloudeu/opencloud:7.0.x
-Docker Compose
-```
-
-# If you previously used the project name opencloud_full, continue using the same project name to preserve
-
-```bash
-Docker networks
-Existing volumes
-Service compatibility
-Option 1 — Temporary
-docker compose -p opencloud_full up -d
-Option 2 — Permanent
-```
-
-- Add to .env:
-
-```bash
-COMPOSE_PROJECT_NAME=opencloud_full
-```
-
-- Then start normally:
-
-```bash
-docker compose up -d
-Verify the Migration
-```
-
-- After startup, monitor the logs:
-
-```bash
-docker logs -f opencloud
-```
-
-or:
-
-```bash
-docker compose logs -f
-```
-
-## Watch for migration messages and ensure no errors occur
-
-- Verify Project Spaces
-
-- After the migration completes:
-  - Open all existing project spaces
-  - Verify that all members still exist
-  - Check permissions and shared access
-
-## Reindex OpenSearch Breaking Change
-
-This step is important because the migration changes internal member handling.
-OpenCloud 7.0.x introduces a new OpenSearch index structure.  
-Reference: [OpenSearch Index PR](https://github.com/opencloud-eu/opencloud/pull/2514)
-
-Rebuild the search index after upgrading:
-
-```bash
-opencloud search index --all-spaces
-```
-
-Depending on the size of your installation, this process may take some time.
 
 ## Web Breaking Changes
 
