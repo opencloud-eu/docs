@@ -8,61 +8,49 @@ draft: false
 
 # Disable and Enable a Space in OpenCloud
 
-A Space can be disabled and later enabled in various ways. This function can only be performed by a Space Admin or the Administrator.
+You can disable and re-enable a Space in a few different ways. Only a Space Admin or the Administrator can do this.
 
 ## Disable Space
 
 - Select the desired Space.
-- Click on Disable in the top taskbar.
+- Click Disable in the top action bar or open the context menu.
 
   <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="Overview disabled spaces" width="1920"/>
 
-- Alternatively, you can click on the three dots menu in the Space overview and select Disable from the menu.
-
-  <img src={require("./img/enable-disable/disable-three-dots.png").default} alt="Three dot menu" width="400"/>
-
-- Go directly to the Space.
-- There, click on the three dots menu and select Disable.
-
-  <img src={require("./img/enable-disable/disable-in-space.png").default} alt="Three dot menu" width="1920"/>
-
 - Confirm the deactivation.
 
-  <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="500" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="1920"/>
 
-  :::note
-  No data will be deleted, but only the Space Admin or the Administrator can enable the Space.
-  :::
+- The Space is now disabled.
+
+<img src={require("./img/enable-disable/disabled-space.png").default} alt="Confirm disable" width="1920"/>
+:::note
+No data will be deleted. Only the Space Admin or the Administrator can enable the Space again.
+:::
 
 ## Enable Space
 
-- After the Space has been disabled, the Enable option now appears in place of Disable.
+- After the Space has been disabled, the Enable option replaces Disable.
 
-  <img src={require("./img/enable-disable/enable.png").default} alt="Enable option" width="400"/>
+  <img src={require("./img/enable-disable/enable.png").default} alt="Enable option" width="1920"/>
 
-- Click on it to enable the Space.
+- Click it to enable the Space again.
 
-- If the Space is not visible, the filter Show disabled Spaces may be enabled.
+- If the Space is not visible, the Show disabled Spaces filter may be enabled.
 
   <img src={require("./img/enable-disable/include-disabled.png").default} alt="Include disabled spaces" width="1920"/>
 
-- Click on the filter and the Space will appear so that it can be enabled.
+- Enable the filter and the Space will appear so it can be enabled.
 
   <img src={require("./img/enable-disable/disable-included.png").default} alt="Included disabled spaces" width="1920"/>
 
 ## Enable by Administrator
 
-- In the Administration settings under Spaces, the Administrator can also enable the Space.
+An Administrator can also enable or disable a Space from [Admin Settings](../admin/settings.md#spaces).
 
-- The Administrator clicks on the three dots menu and selects Enable.
+- Open the Spaces section in Admin Settings.
+- Find the Space that should be enabled or disabled.
+- Open the three-dot menu and select Enable or Disable.
+- Confirm the action.
 
-  <img src={require("./img/enable-disable/admin-enable.png").default} alt="Three dot menu" width="1920"/>
-  - Confirm the selection by clicking on Enable.
-
-    <img src={require("./img/enable-disable/confirm-enable.png").default} alt="Click on enable" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
-
-- The Space is now displayed again in the Space Overview.
-
-  <img src={require("./img/enable-disable/enable-again.png").default} alt="Enable again" width="1920"/>
-
-Now you know how you can disable a Space and enable it again if required.
+The Space will then appear in the corresponding state in the Space overview.
