@@ -37,7 +37,7 @@ Alternativ können Sie auch auf „Löschen“ in der Aktionsleiste klicken.
     <img src={require("./img/delete-restore/geloeschte-dateien.png").default} width="1920"/>
 
   - Dateien aus Ihrem persönlichen Bereich finden Sie unter "Personal".
-  - Dateien aus anderen Bereichen (z.B. "Space 1") finden Sie in ihren jeweiligen Räumen.
+  - Dateien aus anderen Bereichen (z.B. "Space 1") finden Sie in ihren jeweiligen Spaces.
     <img src={require("./img/delete-restore/struktur-in-geloeschte-dateien.png").default} width="1920"/>
 
 - Dateien oder Ordner auswählen:
