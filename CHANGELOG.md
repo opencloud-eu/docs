@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.25.0](https://github.com/opencloud-eu/docs/releases/tag/3.25.0) - 2026-05-22
+## [3.25.0](https://github.com/opencloud-eu/docs/releases/tag/3.25.0) - 2026-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Spaces disable enable 05 26 [[#881](https://github.com/opencloud-eu/docs/pull/881)]
 - space quota new screenshots [[#868](https://github.com/opencloud-eu/docs/pull/868)]
 - space add member new screenshots and text adjustments [[#866](https://github.com/opencloud-eu/docs/pull/866)]
 - space rename new screenshots [[#865](https://github.com/opencloud-eu/docs/pull/865)]
