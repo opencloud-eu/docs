@@ -49,7 +49,7 @@ Skip this step if you run OpenCloud with plain Docker (`docker run`).
 ## Pull the new Opencloud version
 
 ```bash
-docker pull opencloudeu/opencloud:{tag}
+docker pull opencloudeu/opencloud:latest
 ```
 
 ## Verify Configuration Changes
@@ -59,7 +59,7 @@ If upgrading from an older release, check for required configuration changes:
 Go inside the container:
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
+docker run --rm -it --entrypoint /bin/sh -v "your-home-directory-path"/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:latest
 ```
 
 ```bash
@@ -80,12 +80,12 @@ If you see `no changes, your config is up to date`, no further action is needed.
     --rm \
     -it \
     -p 9200:9200 \
-    -v $HOME/opencloud/opencloud-config:/etc/opencloud \
-    -v $HOME/opencloud/opencloud-data:/var/lib/opencloud \
+    -v "your-home-directory-path"/opencloud/opencloud-config:/etc/opencloud \
+    -v "your-home-directory-path"/opencloud/opencloud-data:/var/lib/opencloud \
     -e OC_INSECURE=true \
     -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
     -e OC_URL=https://localhost:9200 \
-    opencloudeu/opencloud:{tag}
+    opencloudeu/opencloud:latest
     ```
   </TabItem>
   <TabItem value="docker-compose" label="docker compose">
