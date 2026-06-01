@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- admin settings new screenshots and text adjustments [[#885](https://github.com/opencloud-eu/docs/pull/885)]
 - spaces delete new screenshots and text adjustments [[#884](https://github.com/opencloud-eu/docs/pull/884)]
 - best practices pitfall Table formatting in germanRemoved redundant formatting and improved clarity in best practices section. [[#874](https://github.com/opencloud-eu/docs/pull/874)]
 - Update terminology from 'Räumen' to 'Spaces' [[#873](https://github.com/opencloud-eu/docs/pull/873)]
