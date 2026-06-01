@@ -51,4 +51,4 @@ Klicken Sie auf „Symbol festlegen". Wählen Sie im geöffneten Fenster das gew
 <img src={require("./img/customize/symbol-auswahl.png").default} alt="Symbol Auswahl" width="400"/>
 <img src={require("./img/customize/symbol-als-spacebild.png").default} alt="Symbol als Spacebild" width="1920"/>
 
-Mit diesen Schritten können Sie den Raum nach Ihren Wünschen gestalten und anpassen!
+Mit diesen Schritten können Sie den Space nach Ihren Wünschen gestalten und anpassen!

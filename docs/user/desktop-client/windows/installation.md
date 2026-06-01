@@ -53,4 +53,4 @@ If you ever need to uninstall the client:
 2. Search for OpenCloud Desktop.
 3. Right-click the application and select Uninstall.
 
-Windows will remove the app and its components cleanly through the Microsoft Store framework.
+Windows will remove the client and its components cleanly through the Microsoft Store framework.

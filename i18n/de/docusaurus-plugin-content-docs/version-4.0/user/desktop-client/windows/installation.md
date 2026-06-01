@@ -54,4 +54,4 @@ Falls du den Client deinstallieren möchtest:
 2. Suche nach OpenCloud Desktop.
 3. Klicke mit der rechten Maustaste auf die Anwendung und wähle Deinstallieren.
 
-Windows entfernt die App und deren Komponenten sauber über
+Windows entfernt den Client und dessen Komponenten sauber über
