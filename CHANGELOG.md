@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-05-26
+## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-01
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@jnweiger
+@Svanvith, @jnweiger
 
 ### 👤 User Documentation
 
+- spaces delete new screenshots and text adjustments [[#884](https://github.com/opencloud-eu/docs/pull/884)]
 - best practices pitfall Table formatting in germanRemoved redundant formatting and improved clarity in best practices section. [[#874](https://github.com/opencloud-eu/docs/pull/874)]
 - Update terminology from 'Räumen' to 'Spaces' [[#873](https://github.com/opencloud-eu/docs/pull/873)]
 - [QA] common-issues symlink example [[#872](https://github.com/opencloud-eu/docs/pull/872)]
