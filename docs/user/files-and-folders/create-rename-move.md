@@ -40,7 +40,9 @@ Done! - the new name is applied!
 - Make a selection:
   - Select the file(s) or folder(s) you want to move.
     <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Mark folder or files" width="1920"/>
-  - Open the context menu: - Right-click on the file or folder, - or click on the three dots in the corresponding line.
+  - Open the context menu:
+    - Right-click on the file or folder,
+    - or click on the three dots in the corresponding line.
 
   - Select the “Cut” option from the menu.
     <img src={require("./img/create-rename-move/right-click-cut-option.png").default} alt="Right click on cut option" width="400"/>
