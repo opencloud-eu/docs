@@ -8,7 +8,7 @@ draft: false
 
 # Create - Rename - Move
 
-You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location
+You can easily create new text, table and presentation files in the web interface. You can also rename files and folders or move them to another location.
 
 ## Create files and folders
 
@@ -25,7 +25,9 @@ Done! The file or folder is created. If it is a file, it is automatically opened
 
 ## Rename files or folders
 
-- Open the context menu by either: - right-clicking on the file or folder, - or clicking on the three dots on the right in the corresponding line.
+- Open the context menu by either:
+  - right-clicking on the file or folder
+  - or clicking on the three dots on the right in the corresponding line.
 - Select the “Rename” option.
   <img src={require("./img/create-rename-move/rename-option.png").default} alt="Select rename" width="400"/>
 - Enter the new name for the file or folder in the window that appears.
@@ -41,8 +43,8 @@ Done! - the new name is applied!
   - Select the file(s) or folder(s) you want to move.
     <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Mark folder or files" width="1920"/>
   - Open the context menu:
-    - Right-click on the file or folder,
-    - or click on the three dots in the corresponding line.
+    - Right-click on the file or folder
+    - or click on the three dots in the corresponding line
 
   - Select the “Cut” option from the menu.
     <img src={require("./img/create-rename-move/right-click-cut-option.png").default} alt="Right click on cut option" width="400"/>
