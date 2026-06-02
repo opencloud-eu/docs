@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-01
+## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- de-overview new screenshot [[#889](https://github.com/opencloud-eu/docs/pull/889)]
 - app tokens new screenshots and text adjustments [[#886](https://github.com/opencloud-eu/docs/pull/886)]
 - admin settings new screenshots and text adjustments [[#885](https://github.com/opencloud-eu/docs/pull/885)]
 - spaces delete new screenshots and text adjustments [[#884](https://github.com/opencloud-eu/docs/pull/884)]
