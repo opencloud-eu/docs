@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@M4th12, @Svanvith, @jnweiger
+@M4th12, @Svanvith, @jnweiger, @micbar
 
 ### 👷 Admin Documentation
 
+- chore: add latest rolling release [[#909](https://github.com/opencloud-eu/docs/pull/909)]
 - Revise upgrade instructions for OpenCloud [[#900](https://github.com/opencloud-eu/docs/pull/900)]
 
 ### 👤 User Documentation
