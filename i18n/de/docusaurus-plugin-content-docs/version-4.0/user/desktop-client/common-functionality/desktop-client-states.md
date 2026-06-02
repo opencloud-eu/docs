@@ -89,3 +89,7 @@ Das Symbol **Fehler** zeigt an, dass der Desktop-Client auf ein Problem gestoße
 <img src={require(".././img/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Error state" width="100"/>
 
 Öffnen Sie den Desktop-Client und prüfen Sie die angezeigte Fehlermeldung. Die Synchronisierung kann erst fortgesetzt werden, nachdem das zugrunde liegende Problem behoben wurde.
+
+:::info
+Die farbliche Darstellung der Icons in der Taskleiste (Windows), Dock (macOS) oder Systemleiste/Panel (Linux) sind vom jeweiligen Betriebssystem abhängig!
+:::

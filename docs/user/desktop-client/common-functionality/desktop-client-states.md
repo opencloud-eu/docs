@@ -95,3 +95,7 @@ File access or permission errors
 <img src={require(".././img/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Error state" width="100"/>
 
 Open the Desktop Client and review the reported error. Synchronization may not continue until the issue has been resolved.
+
+:::info
+The visual appearance and coloring of the icons in the taskbar (Windows), dock (macOS), or system tray/panel (Linux) may vary depending on the operating system.
+:::
