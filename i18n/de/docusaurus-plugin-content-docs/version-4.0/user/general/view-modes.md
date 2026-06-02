@@ -2,27 +2,30 @@
 sidebar_position: 4
 id: view-modes
 title: Anzeigemodi
-description: Ansicht der Dateiliste in OpenCloud ändern
+description: Ansichtsmodi für die Dateiliste in OpenCloud
 draft: false
 ---
 
-# Dateilistenansichten in OpenCloud ändern
+# Anzeigemodi der Dateiliste in OpenCloud
 
-In OpenCloud können Sie zwischen verschiedenen Anzeigemodi für Ihre Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen
+In OpenCloud können Sie zwischen verschiedenen Anzeigemodi für Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen.
 
 ## Verfügbare Anzeigesmodi
 
-### Standard-Tabellenansicht
+### Kachelansicht
 
-Die klassische Listenansicht, in der alle Dateien und Ordner in einer detaillierten Tabelle angezeigt werden.
-<img src={require("./img/view-modes/klassisch.png").default} alt="Default" width="1920"/>
+Dies ist die Standardansicht. Dateien und Ordner werden als Kacheln angezeigt und eignen sich gut für die visuelle Navigation.
+
+<img src={require("./img/view-modes/kachel.png").default} alt="Kachelansicht der Dateiliste" width="1920"/>
 
 ### Verdichtete Tabellenansicht
 
-Eine kompaktere Version der Tabellenansicht, in der die Daten enger zusammengefasst sind, um Platz zu sparen.
-<img src={require("./img/view-modes/verdichtet.png").default} alt="Condensed" width="1920"/>
+Eine kompaktere Tabellenansicht, in der Informationen dichter zusammengefasst werden, um Platz zu sparen.
 
-### Kachelansicht
+<img src={require("./img/view-modes/verdichtet.png").default} alt="Verdichtete Tabellenansicht der Dateiliste" width="1920"/>
 
-Eine Ansicht, in der Dateien und Ordner als Kacheln dargestellt werden. Ideal für visuelle Darstellungen und wenn Sie schnell auf Symbole zugreifen möchten.
-<img src={require("./img/view-modes/kachel.png").default} alt="Tiles" width="1920"/>
+### Standard-Tabellenansicht
+
+Die klassische Listenansicht, in der Dateien und Ordner in einer detaillierten Tabelle angezeigt werden.
+
+<img src={require("./img/view-modes/klassisch.png").default} alt="Standard-Tabellenansicht der Dateiliste" width="1920"/>
