@@ -37,19 +37,19 @@ It is recommended to create a [backup](../backup) before proceeding with the upg
 
 ## Pull the latest OpenCloud Compose
 
-If you are using Docker Compose with the `opencloud-compose` repository, update your local checkout before pulling the new container image:
+If you are using Docker Compose with the `opencloud-compose` repository, update your local checkout before pulling the new container image.
+
+Skip this step if you run OpenCloud with plain Docker (`docker run`):
 
 ```bash
 cd /opencloud-compose
 git pull
 ```
 
-Skip this step if you run OpenCloud with plain Docker (`docker run`).
-
 ## Pull the new Opencloud version
 
 ```bash
-docker pull opencloudeu/opencloud:{tag}
+docker pull opencloudeu/opencloud-rolling:{tag} # or opencloudeu/opencloud:{tag} depending on the version you're using
 ```
 
 ## Verify Configuration Changes
@@ -59,7 +59,8 @@ If upgrading from an older release, check for required configuration changes:
 Go inside the container:
 
 ```bash
-docker run --rm -it --entrypoint /bin/sh -v $HOME/opencloud/opencloud-config:/etc/opencloud opencloudeu/opencloud:{tag}
+docker run --rm -it --entrypoint /bin/sh -v /YOUR/OC_CONFIG/PATH:/etc/opencloud opencloudeu/opencloud-rolling:{tag}
+# or opencloudeu/opencloud:{tag} depending on the version you're using
 ```
 
 ```bash
@@ -85,12 +86,12 @@ If you see `no changes, your config is up to date`, no further action is needed.
     -e OC_INSECURE=true \
     -e PROXY_HTTP_ADDR=0.0.0.0:9200 \
     -e OC_URL=https://localhost:9200 \
-    opencloudeu/opencloud:{tag}
+    opencloudeu/opencloud-rolling:{tag}
     ```
   </TabItem>
   <TabItem value="docker-compose" label="docker compose">
     ```Shell
-    OC_DOCKER_IMAGE=opencloudeu/opencloud OC_DOCKER_TAG=tag docker compose up -d
+    docker compose up -d
     ```
   </TabItem>
 </Tabs>
