@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- de: view modes new screenshots [[#893](https://github.com/opencloud-eu/docs/pull/893)]
 - de: account settings new screenshots [[#891](https://github.com/opencloud-eu/docs/pull/891)]
 - files list adjustment new screenshots eng + de [[#892](https://github.com/opencloud-eu/docs/pull/892)]
 - de-overview new screenshot [[#889](https://github.com/opencloud-eu/docs/pull/889)]
