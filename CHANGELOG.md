@@ -1,5 +1,32 @@
 # Changelog
 
+## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@M4th12, @Svanvith, @jnweiger, @micbar
+
+### 👷 Admin Documentation
+
+- chore: add latest rolling release [[#909](https://github.com/opencloud-eu/docs/pull/909)]
+- Revise upgrade instructions for OpenCloud [[#900](https://github.com/opencloud-eu/docs/pull/900)]
+
+### 👤 User Documentation
+
+- Web dav 05 26 [[#887](https://github.com/opencloud-eu/docs/pull/887)]
+- de: view modes new screenshots [[#893](https://github.com/opencloud-eu/docs/pull/893)]
+- de: account settings new screenshots [[#891](https://github.com/opencloud-eu/docs/pull/891)]
+- files list adjustment new screenshots eng + de [[#892](https://github.com/opencloud-eu/docs/pull/892)]
+- de-overview new screenshot [[#889](https://github.com/opencloud-eu/docs/pull/889)]
+- app tokens new screenshots and text adjustments [[#886](https://github.com/opencloud-eu/docs/pull/886)]
+- admin settings new screenshots and text adjustments [[#885](https://github.com/opencloud-eu/docs/pull/885)]
+- spaces delete new screenshots and text adjustments [[#884](https://github.com/opencloud-eu/docs/pull/884)]
+- best practices pitfall Table formatting in germanRemoved redundant formatting and improved clarity in best practices section. [[#874](https://github.com/opencloud-eu/docs/pull/874)]
+- Update terminology from 'Räumen' to 'Spaces' [[#873](https://github.com/opencloud-eu/docs/pull/873)]
+- [QA] common-issues symlink example [[#872](https://github.com/opencloud-eu/docs/pull/872)]
+- Clarify documentation status for Rolling-Version [[#871](https://github.com/opencloud-eu/docs/pull/871)]
+- Update wording for clarity in uninstallation steps [[#870](https://github.com/opencloud-eu/docs/pull/870)]
+
 ## [3.25.0](https://github.com/opencloud-eu/docs/releases/tag/3.25.0) - 2026-05-26
 
 ### ❤️ Thanks to all contributors! ❤️
