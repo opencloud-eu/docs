@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @jnweiger
+@M4th12, @Svanvith, @jnweiger
+
+### 👷 Admin Documentation
+
+- Revise upgrade instructions for OpenCloud [[#900](https://github.com/opencloud-eu/docs/pull/900)]
 
 ### 👤 User Documentation
 
