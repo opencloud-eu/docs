@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- files list adjustment new screenshots eng + de [[#892](https://github.com/opencloud-eu/docs/pull/892)]
 - de-overview new screenshot [[#889](https://github.com/opencloud-eu/docs/pull/889)]
 - app tokens new screenshots and text adjustments [[#886](https://github.com/opencloud-eu/docs/pull/886)]
 - admin settings new screenshots and text adjustments [[#885](https://github.com/opencloud-eu/docs/pull/885)]
