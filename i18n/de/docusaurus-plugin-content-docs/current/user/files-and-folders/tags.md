@@ -2,44 +2,34 @@
 sidebar_position: 6
 id: tags
 title: Tags
-description: Hinzufügen und verwalten von Tags in OpenCloud
+description: Tags mit OpenCloud hinzufügen und verwalten
 draft: false
 ---
 
-# Tags hinzufügen und verwalten mit OpenCloud
+# Tags mit OpenCloud hinzufügen und verwalten
 
-Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, um diese einfacher zu suchen oder zu gruppieren. Hier erfahren Sie, wie es funktioniert
+Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, damit Sie diese leichter suchen oder gruppieren können.
 
 ## Tag hinzufügen
 
-- Kontextmenü öffnen
-  - Machen Sie einen Rechtsklick auf die Datei oder den Ordner, oder
-  - Klicken Sie auf die drei Punkte in der entsprechenden Zeile
-    <img src={require("./img/tags/drei-punkte-menue.png").default} width="1920"/>
+- Öffnen Sie das Kontextmenü für die Datei oder den Ordner.
+- Wählen Sie die Option „Details“.
+  <img src={require("./img/tags/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920"/>
 
-- Details auswählen
-  - Wählen Sie im Kontextmenü die Option "Details“ aus
-    <img src={require("./img/tags/details-button.png").default} width="1920"/>
+## Tag hinzufügen
 
-## Tag eingeben
+- Klicken Sie in das Eingabefeld neben „Tags“.
+  <img src={require("./img/tags/tags-line.png").default} alt="Eingabefeld neben Tags" width="400"/>
+- Wählen Sie einen vorhandenen Tag aus oder geben Sie einen neuen Begriff ein, um einen neuen Tag zu erstellen.
+  <img src={require("./img/tags/type-or-choose-a-tag.png").default} alt="Tag-Namen eingeben" width="400"/>
 
-- Klicken Sie in das Eingabefeld neben "Tags“
-
-  <img src={require("./img/tags/tags-zeile.png").default} width="400"/>
-
-- Wählen Sie einen vorhandenen Tag aus, oder geben Sie einen neuen Begriff ein, um einen neuen Tag zu erstellen.
-  <img src={require("./img/tags/tag-auswaehlen.png").default} width="400"/>
-
-Der Tag wird hinzugefügt und ist nun mit der Datei oder dem Ordner verknüpft.
+  Der Tag wird hinzugefügt und ist jetzt mit der Datei oder dem Ordner verknüpft.
 
 ## Tag entfernen
 
-- Öffnen Sie erneut die „Details“ der Datei/des Ordners
-
-  <img src={require("./img/tags/details-button.png").default} width="1920"/>
-
+- Öffnen Sie die „Details“ der Datei oder des Ordners erneut.
 - Suchen Sie den Tag, den Sie entfernen möchten.
-- Klicken Sie auf das „X“ neben dem Tag, um ihn zu löschen
-  <img src={require("./img/tags/tag-loeschen.png").default} width="400"/>
+- Klicken Sie auf das „x“ neben dem Tag, um ihn zu löschen.
+  <img src={require("./img/tags/delete-a-tag.png").default} alt="Auf das x neben dem Tag klicken" width="400"/>
 
-Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verbunden.
+  Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verknüpft.
