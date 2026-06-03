@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- create the german documentation for favourites [[#918](https://github.com/opencloud-eu/docs/pull/918)]
 - german version for tags with new screenshots [[#915](https://github.com/opencloud-eu/docs/pull/915)]
 - rework english and german shortcut documentation [[#914](https://github.com/opencloud-eu/docs/pull/914)]
 - add german photo and video documentation [[#913](https://github.com/opencloud-eu/docs/pull/913)]
