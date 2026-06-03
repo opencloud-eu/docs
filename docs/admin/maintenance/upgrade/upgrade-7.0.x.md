@@ -37,10 +37,19 @@ Always create a backup before upgrading to prevent data loss.
 
 - Using Bind Mounts
 
+<Tabs> <TabItem value="bind-mounts" label="Using Bind Mounts">
+If your config and data are stored in host directories (bind mounts), create a direct copy of these folders.
+
+- Example (adjust paths to match your setup)
+
 ```bash
 cp -a /mnt/opencloud/config /mnt/opencloud/config-backup
 cp -a /mnt/opencloud/data /mnt/opencloud/data-backup
 ```
+
+</TabItem>
+
+<TabItem value="named-volumes" label="Using Named Volumes">
 
 - Using Docker Named Volumes
 - Create Backup Directory
@@ -56,24 +65,44 @@ docker cp opencloud_full-opencloud-1:/var/lib/opencloud ~/opencloud-backups/data
 docker cp opencloud_full-opencloud-1:/etc/opencloud ~/opencloud-backups/config-backup
 ```
 
+- Pull the latest OpenCloud Compose
+
+If you are using Docker Compose with the `opencloud-compose` repository, update your local checkout before pulling the new container image:
+
+```bash
+cd /opencloud-compose
+git pull
+```
+
+Skip this step if you run OpenCloud with plain Docker (`docker run`).
+
+</TabItem>
+
+</Tabs>
+
 - Stop OpenCloud
-  - Docker
 
-  ```bash
-  docker stop opencloud
-  ```
+First, gracefully stop your currently running OpenCloud instance:
 
-  - Docker Compose
+<Tabs>
 
-  ```bash
-  docker compose stop
-  ```
+<TabItem value="docker" label="docker">
 
-  - Pull the New Release Image
+```bash
+docker stop opencloud
+```
 
-  ```bash
-  docker pull opencloudeu/opencloud:7.0.x
-  ```
+</TabItem>
+
+<TabItem value="docker compose" label="docker compose">
+
+```bash
+docker compose stop
+```
+
+</TabItem>
+
+</Tabs>
 
 ## Configuration Migration Breaking Change
 
