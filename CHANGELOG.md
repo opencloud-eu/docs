@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- delete-restore eng + de new screenshots and textadjustments [[#906](https://github.com/opencloud-eu/docs/pull/906)]
+- de create-reanme-move new screenshots [[#903](https://github.com/opencloud-eu/docs/pull/903)]
+
 ## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
 
 ### ❤️ Thanks to all contributors! ❤️
