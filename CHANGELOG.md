@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- de add readme files documentation [[#911](https://github.com/opencloud-eu/docs/pull/911)]
 - de search new screenshots and text adjustments [[#910](https://github.com/opencloud-eu/docs/pull/910)]
 - de upload-download-unzip create screenshots and align with eng, remov… [[#908](https://github.com/opencloud-eu/docs/pull/908)]
 - delete-restore eng + de new screenshots and textadjustments [[#906](https://github.com/opencloud-eu/docs/pull/906)]
