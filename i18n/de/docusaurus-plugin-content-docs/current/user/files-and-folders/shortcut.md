@@ -1,40 +1,36 @@
 ---
 sidebar_position: 5
-id: shourtcut
+id: shortcut
 title: Verknüpfung
-description: Verknüpfung erstellen in OpenCloud
+description: Verknüpfung in OpenCloud erstellen
 draft: false
 ---
 
 # Verknüpfung
 
-Mit OpenCloud können Sie Verknüpfung zu Websites oder Dateien erstellen
+Mit OpenCloud können Sie Verknüpfungen zu Websites oder Dateien erstellen.
 
 ## Verknüpfung erstellen
 
-- Klicken Sie auf "+ Neu" in den Batch-Aktionen und wählen Sie "Verknüpfung“.
-  <img src={require("./img/link/neu-button.png").default} width="1920"/>
+- Öffnen Sie das Menü "+ Neu“ und wählen Sie "Verknüpfung“.
 
-  <img src={require("./img/link/shortcut-button.png").default} width="400"/>
+  <img src={require("./img/link/shortcut-button.png").default} alt="Verknüpfung auswählen" width="1920"/>
 
-- Link oder Datei einfügen
-  - Geben Sie in dem sich öffnenden Fenster den Link oder den Namen der Datei ein, die Sie verlinken möchten.
-  - Alternativ können Sie die gewünschte Datei auch aus der Liste auswählen, nachdem Sie die ersten Buchstaben eingegeben haben.
-    <img src={require("./img/link/pop-up-window.png").default} width="500"/>
+- Geben Sie eine URL oder einen Dateinamen ein.
+  - Sie können auch eine Datei aus der Liste auswählen, nachdem Sie ein paar Buchstaben eingegeben haben.
 
-- Verknüpfung benennen
-  - Geben Sie einen Namen für die Verknüpfung ein.
-    <img src={require("./img/link/url-und-titel.png").default} width="500"/>
+  <img src={require("./img/link/pop-up-window.png").default} alt="Link oder Datei im Popup-Fenster eingeben" width="500"/>
 
-- Verknüpfung erstellen
-  - Klicken Sie auf "Erstellen“, um die Verknüpfung zu speichern.
-    <img src={require("./img/link/erstellen-button.png").default} width="400"/>
+- Geben Sie einen Namen für die Verknüpfung ein.
 
-## Verknüpfung nutzen
+  <img src={require("./img/link/url-and-title.png").default} alt="Namen für die Verknüpfung eingeben" width="500"/>
 
-- Klicken Sie auf die Verknüpfung, um die verlinkte Webseite oder Datei in einem neuen Browser-Tab zu öffnen,
-  <img src={require("./img/link/shortcut.png").default} width="1920"/>
-- oder mit einem „Rechtsklick“ und „Öffnen “.
-  <img src={require("./img/link/shortcut-rechts-klick.png").default} width="1920"/>
+- Erstellen Sie die Verknüpfung, indem Sie auf "Erstellen“ klicken.
 
-  öffnet sich die verlinkte Webseite oder Datei in einem neuen Browser-Tab.
+  <img src={require("./img/link/create-button.png").default} alt="Auf Erstellen klicken" width="500"/>
+
+## Verknüpfung verwenden
+
+- Öffnen Sie das Kontextmenü, klicken Sie auf "Öffnen mit“ und wählen Sie "Verknüpfung öffnen“.
+
+  <img src={require("./img/link/shortcut-right-click.png").default} alt="Rechtsklick auf die Verknüpfung" width="1920"/>
