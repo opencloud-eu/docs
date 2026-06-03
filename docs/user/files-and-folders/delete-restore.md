@@ -14,11 +14,7 @@ draft: false
 
   <img src={require("./img/delete-restore/mark-folder.png").default} alt="Mark folder or file" width="1920"/>
 
-- "Right-click" on the selection, - or click on the "three dots" in the line of the file/folder.
-
-  <img src={require("./img/delete-restore/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
-
-- Select the “Delete” option in the menu.
+- Open the context menu and select "Delete".
 
   <img src={require("./img/delete-restore/delete-options.png").default} alt="Click delete" width="1920"/>
 
@@ -32,13 +28,9 @@ Alternatively, you can also click on “Delete” in the action bar.
 
 ## Restore files or folders
 
-- Navigate to “Deleted files”
-- Click on “Deleted files” in the left sidebar.
-
-  <img src={require("./img/delete-restore/deleted-files.png").default} alt="Left side bar deleted files" width="1920"/>
-
+- Click “Deleted files” in the left sidebar.
 - Files from your personal space can be found under “Personal”.
-- Files from other spaces (e.g. “Space 1”) can be found in their respective spaces.
+- Files from other spaces, such as “Platform Team”, can be found in their respective spaces.
 
   <img src={require("./img/delete-restore/structure-in-deleted-files.png").default} alt="Structure in deleted files" width="1920"/>
 
@@ -46,11 +38,9 @@ Alternatively, you can also click on “Delete” in the action bar.
 
   <img src={require("./img/delete-restore/mark-folder-in-deleted-files.png").default} alt="Mark what should be restored" width="1920"/>
 
-- Make a right-click, - or click on the three dots next to the selection.
+- Right-click the selection or click the three dots next to it, then choose "Restore".
 
   <img src={require("./img/delete-restore/three-dot-menu-in-deleted-files.png").default} alt="Three dot menu" width="1920"/>
-
-  <img src={require("./img/delete-restore/restore-options.png").default} alt="Restore action bar" width="1920"/>
 
 :::info
 Alternatively, you can also click on “Restore” in the action bar.
