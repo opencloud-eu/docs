@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- rework english and german shortcut documentation [[#914](https://github.com/opencloud-eu/docs/pull/914)]
 - add german photo and video documentation [[#913](https://github.com/opencloud-eu/docs/pull/913)]
 - add german version for markdown editor [[#912](https://github.com/opencloud-eu/docs/pull/912)]
 - de add readme files documentation [[#911](https://github.com/opencloud-eu/docs/pull/911)]
