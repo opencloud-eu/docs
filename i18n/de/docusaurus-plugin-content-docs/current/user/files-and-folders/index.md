@@ -7,16 +7,14 @@ title: Dateien und Ordner verwalten
 # Dateien und Ordner verwalten
 
 Lernen Sie, wie Sie Dateien und Ordner in OpenCloud organisieren, verwalten und prüfen.  
-Dieser Abschnitt behandelt typische Aufgaben wie Inhalte erstellen und verschieben, Dateien hochladen, gelöschte
-Elemente wiederherstellen und den Dateiverlauf prüfen.
+Dieser Abschnitt behandelt typische Aufgaben wie Inhalte erstellen und verschieben, Dateien hochladen, gelöschte Elemente wiederherstellen und den Dateiverlauf prüfen.
 
 ## In diesem Abschnitt
 
 ### Inhalte organisieren und verwalten
 
 - [Dateien und Ordner erstellen, umbenennen und verschieben](./create-rename-move.md)  
-  Erstellen Sie neue Inhalte, ordnen Sie bestehende Dateien und Ordner neu und verschieben Sie Elemente an einen
-  anderen Ort.
+  Erstellen Sie neue Inhalte, ordnen Sie bestehende Dateien und Ordner neu und verschieben Sie Elemente an einen anderen Ort.
 
 - [Inhalte hochladen, herunterladen und entpacken](./upload-download-unzip.md)  
   Laden Sie Dateien in OpenCloud hoch, speichern Sie sie auf Ihrem Gerät oder entpacken Sie ZIP-Archive.
@@ -24,10 +22,22 @@ Elemente wiederherstellen und den Dateiverlauf prüfen.
 - [Elemente löschen und aus dem Papierkorb wiederherstellen](./delete-restore.md)  
   Entfernen Sie Dateien und Ordner und stellen Sie sie bei Bedarf später wieder her.
 
+- [Markdown-Dateien bearbeiten](./markdown-editor.md)  
+  Bearbeiten Sie `README.md` und andere Markdown-Dateien direkt in OpenCloud mit Formatierungshilfen.
+
+- [README-Dateien in Ordnern](./readme-files.md)  
+  Fügen Sie einem Ordner eine `README.md`-Datei hinzu, damit OpenCloud sie oberhalb der Dateiliste rendert.
+
 ### Inhalte finden und klassifizieren
+
+- [Fotos und Videos](./photos-and-videos.md)  
+  Zeigen Sie Fotos in der Vorschau an, blättern Sie durch einen Photo-Roll und spielen Sie Videos direkt im Web an.
 
 - [Nach Dateien und Inhalten suchen](./search.md)  
   Finden Sie Dateien anhand des Namens oder durchsuchen Sie Inhalte innerhalb von Dateien.
+
+- [Favoriten](./favorites.md)  
+  Markieren Sie häufig verwendete Dateien für den schnellen Zugriff und sammeln Sie sie auf einer eigenen Favoriten-Seite.
 
 - [Tags hinzufügen und entfernen](./tags.md)  
   Verwenden Sie Tags, um Dateien und Ordner zu organisieren und leichter wiederzufinden.
