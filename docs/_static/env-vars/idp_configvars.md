@@ -39,8 +39,8 @@
 |`IDP_ID_TOKEN_EXPIRATION`| 1.0.0 |uint64|`ID token lifespan in seconds (time before an ID token is expired).`|`300`|
 |`IDP_REFRESH_TOKEN_EXPIRATION`| 1.0.0 |uint64|`Refresh token lifespan in seconds (time before an refresh token is expired). This also limits the duration of an idle offline session.`|`2592000`|
 |`IDP_DYNAMIC_CLIENT_SECRET_DURATION`| 1.0.0 |uint64|`Lifespan in seconds of a dynamically registered OIDC client.`|`0`|
-|`OC_LDAP_URI`<br/>`IDP_LDAP_URI`| 1.0.0 |string|`Url of the LDAP service to use as IDP.`|`ldaps://localhost:9235`|
-|`OC_LDAP_CACERT`<br/>`IDP_LDAP_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idp.`|`/var/lib/opencloud/idm/ldap.crt`|
+|`OC_LDAP_URI`<br/>`IDP_LDAP_URI`| 1.0.0 |string|`Url of the LDAP service to use as IDP.`|`ldap://localhost:9236`|
+|`OC_LDAP_CACERT`<br/>`IDP_LDAP_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the LDAP service. If not defined, the root directory derives from $OC_BASE_DATA_PATH/idp.`|``|
 |`OC_LDAP_BIND_DN`<br/>`IDP_LDAP_BIND_DN`| 1.0.0 |string|`LDAP DN to use for simple bind authentication with the target LDAP server.`|`uid=idp,ou=sysusers,o=libregraph-idm`|
 |`OC_LDAP_BIND_PASSWORD`<br/>`IDP_LDAP_BIND_PASSWORD`| 1.0.0 |string|`Password to use for authenticating the 'bind_dn'.`|``|
 |`OC_LDAP_USER_BASE_DN`<br/>`IDP_LDAP_BASE_DN`| 1.0.0 |string|`Search base DN for looking up LDAP users.`|`ou=users,o=libregraph-idm`|

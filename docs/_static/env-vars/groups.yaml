@@ -22,8 +22,8 @@ skip_user_groups_in_token: false
 driver: ldap
 drivers:
   ldap:
-    uri: ldaps://localhost:9235
-    ca_cert: /var/lib/opencloud/idm/ldap.crt
+    uri: ldap://localhost:9236
+    ca_cert: ""
     insecure: false
     bind_dn: uid=reva,ou=sysusers,o=libregraph-idm
     bind_password: ""
