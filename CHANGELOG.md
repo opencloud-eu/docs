@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-03
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Heiko-Pohl, @Svanvith
 
 ### 👤 User Documentation
 
+- create desktopc-client states tutorial [[#904](https://github.com/opencloud-eu/docs/pull/904)]
 - rework the german index.md to match the english ones [[#919](https://github.com/opencloud-eu/docs/pull/919)]
 - create the german documentation for favourites [[#918](https://github.com/opencloud-eu/docs/pull/918)]
 - german version for tags with new screenshots [[#915](https://github.com/opencloud-eu/docs/pull/915)]
