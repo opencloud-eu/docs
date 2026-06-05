@@ -14,11 +14,11 @@ To find out who has edited a file or folder and what actions have been carried o
 
 - Open details
   - Right-click on the file or folder, or click on the three dots in the corresponding line.
-  - Select Details from the context menu.
+  - Select "Details" from the context menu.
 
     <img src={require("./img/activity/details-button.png").default} alt="Context menu details" width="400"/>
 
-- Select activities
+- Select Activities
   - In the right sidebar opens a window, in this select the “Activities” item.
     <img src={require("./img/activity/activities-button.png").default} alt="Select activities" width="400"/>
 
