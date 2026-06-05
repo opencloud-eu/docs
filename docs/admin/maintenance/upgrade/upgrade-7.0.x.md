@@ -24,8 +24,8 @@ Following this guide ensures a safe migration to OpenCloud 7.0.x.
 
 ## Before starting the upgrade
 
-- Ensure you have OpenCloud 4.0.7 installed
-- Create a complete backup of your configuration and data.
+- Ensure you have OpenCloud (TODO 6.2.0 / 4.0.7)? installed
+- Create a complete [backup](#backup-config-and-data) of your configuration and data.
 - Ensure you have access to your current opencloud.yaml.
 - Verify that your current deployment is healthy before upgrading.
 
@@ -34,8 +34,6 @@ Following this guide ensures a safe migration to OpenCloud 7.0.x.
 :::important
 Always create a backup before upgrading to prevent data loss.
 :::
-
-- Using Bind Mounts
 
 <Tabs> <TabItem value="bind-mounts" label="Using Bind Mounts">
 If your config and data are stored in host directories (bind mounts), create a direct copy of these folders.
@@ -104,6 +102,12 @@ docker compose stop
 
 </Tabs>
 
+## Pull the 7.0.x Production Release Image
+
+```bash
+docker pull opencloudeu/opencloud:7.0.x
+```
+
 ## Configuration Migration Breaking Change
 
 OpenCloud 7.0.x introduces a breaking configuration change.
@@ -147,16 +151,15 @@ docker run --rm -it --entrypoint /bin/sh -v "your-named-volume-path":/etc/opencl
   sharing:
    events:
      tls_insecure: false
+  service_account:
+  service_account_id: 05bca760-ff47-44e3-9532-de8568e097bc
+  service_account_secret: NavT+c9okb.AD+170x3..!W78EVXJtSM
+    storage_users:
+      events:
+       tls_insecure: false
+
+  diff written to /etc/opencloud/opencloud.config.patch
   ```
-
-- service_account:
-- service_account_id: 05bca760-ff47-44e3-9532-de8568e097bc
-- service_account_secret: NavT+c9okb.AD+170x3..!W78EVXJtSM
-  storage_users:
-  events:
-  tls_insecure: false
-
-diff written to /etc/opencloud/opencloud.config.patch
 
 - A patch file will automatically be created:
 
@@ -167,8 +170,8 @@ diff written to /etc/opencloud/opencloud.config.patch
 - Apply the Configuration Patch
   - Go to the configuration directory:
 
-  ```bash cd /etc/opencloud
-
+  ```bash
+  cd /etc/opencloud
   ```
 
   - Verify the generated files:
@@ -210,12 +213,28 @@ diff written to /etc/opencloud/opencloud.config.patch
   patching file opencloud.yaml
   ```
 
-## The following configuration entries must exist in opencloud.yaml
+- The following configuration entries must exist in opencloud.yaml
 
 ```bash
 service_account:
 service_account_id: 62b789c9-0dd0-4647-afd3-d6969eab03b8
 service_account_secret: wAiwglE93^S-y3hm0bo5FS9sFj^rzQ&i
+```
+
+:::note
+The service_account_id and the service_account_secret will be different!
+:::
+
+- Go out of the container
+
+```bash
+exit
+```
+
+- Start OpenCloud container
+
+```bash
+docker compose up -d
 ```
 
 ## Web Breaking Changes
