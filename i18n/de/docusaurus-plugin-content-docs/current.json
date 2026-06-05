@@ -440,7 +440,7 @@
     "description": "The generated-index page description for category 'Testing' in sidebar 'dev'"
   },
   "sidebar.user.category.Share files and folders": {
-    "message": "Share files and folders",
+    "message": "Dateien und Ordner teilen",
     "description": "The label for category 'Share files and folders' in sidebar 'user'"
   },
   "sidebar.admin.category.Docker Compose": {
