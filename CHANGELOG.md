@@ -1,13 +1,15 @@
 # Changelog
 
-## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-05
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-08
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith
+@Heiko-Pohl, @Svanvith, @openclouders
 
 ### 👤 User Documentation
 
+- versions german screenshots [[#923](https://github.com/opencloud-eu/docs/pull/923)]
+- german activities new screnshots [[#922](https://github.com/opencloud-eu/docs/pull/922)]
 - create desktopc-client states tutorial [[#904](https://github.com/opencloud-eu/docs/pull/904)]
 - rework the german index.md to match the english ones [[#919](https://github.com/opencloud-eu/docs/pull/919)]
 - create the german documentation for favourites [[#918](https://github.com/opencloud-eu/docs/pull/918)]
@@ -20,6 +22,10 @@
 - de upload-download-unzip create screenshots and align with eng, remov… [[#908](https://github.com/opencloud-eu/docs/pull/908)]
 - delete-restore eng + de new screenshots and textadjustments [[#906](https://github.com/opencloud-eu/docs/pull/906)]
 - de create-reanme-move new screenshots [[#903](https://github.com/opencloud-eu/docs/pull/903)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#927](https://github.com/opencloud-eu/docs/pull/927)]
 
 ## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
 
