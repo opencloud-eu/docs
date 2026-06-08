@@ -6,27 +6,26 @@ description: Aktivitäten einer Datei oder eines Ordners in OpenCloud anzeigen
 draft: false
 ---
 
-# Anzeigen der Aktivitäten von Dateien und Ordner
+# Aktivitäten einer Datei oder eines Ordners anzeigen
 
-Um herauszufinden, wer eine Datei oder einen Ordner bearbeitet hat und welche Aktionen ausgeführt wurden, führen Sie die folgenden Schritte aus:
+Um herauszufinden, wer eine Datei oder einen Ordner bearbeitet hat und welche Aktionen ausgeführt wurden, gehen Sie wie folgt vor:
 
 ## Aktivitäten anzeigen
 
 - Details öffnen
-  - rechts Klick auf die Datei oder den Ordner, oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
-    <img src={require("./img/activity/drei-punkte-menue.png").default} width="1920"/>
+  - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
+  - Wählen Sie im Kontextmenü "Details“ aus.
 
-- Wählen Sie "Details" in dem Kontextmenü aus.
-  <img src={require("./img/activity/details-button.png").default} width="400"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Details auswählen im Kontextmenü" width="1920"/>
 
 - Wählen Sie Aktivitäten
-  - In der rechten Seitenleiste wird ein Pop-up geöffnet, dort wählen Sie "Aktivitäten" aus.
-    <img src={require("./img/activity/aktivitaeten-button.png").default} width="400"/>
+  - In der rechten Seitenleiste öffnet sich ein Fenster. Wählen Sie dort "Aktivitäten“ aus.
+    <img src={require("./img/activity/aktivitaeten-button.png").default} alt="Aktivitäten auswählen" width="400"/>
 
 - Aktivitäten anzeigen
-  - Alle Aktivitäten, die mit dieser Datei oder diesem Ordner durchgeführt werden, werden jetzt angezeigt.
-    <img src={require("./img/activity/aktivitaeten.png").default} width="400"/>
+  - Alle Aktivitäten, die mit dieser Datei oder diesem Ordner durchgeführt wurden, werden jetzt angezeigt.
+    <img src={require("./img/activity/aktivitaeten.png").default} alt="Aktivitäten anzeigen" width="400"/>
 
 :::info
-Mit dieser Funktion können Sie alle Änderungen und Aktionen verfolgen!
+So können Sie alle Änderungen und Aktionen nachverfolgen.
 :::
