@@ -20,11 +20,15 @@ The upgrade applies to deployments using:
 - Docker Named Volumes
 - Bind Mounts
 
+:::note
+The migration search index updates is related ONLY people who uses opensearch
+:::
+
 Following this guide ensures a safe migration to OpenCloud 7.0.x.
 
 ## Before starting the upgrade
 
-- Ensure you have OpenCloud (TODO 6.2.0 / 4.0.7)? installed
+- Ensure you have OpenCloud 6.x for rolling or 4.x for stable installed.
 - Create a complete [backup](#backup-config-and-data) of your configuration and data.
 - Ensure you have access to your current opencloud.yaml.
 - Verify that your current deployment is healthy before upgrading.
@@ -215,17 +219,13 @@ docker run --rm -it --entrypoint /bin/sh -v "your-named-volume-path":/etc/opencl
 
 - The following configuration entries must exist in opencloud.yaml
 
-```bash
+```yaml
 service_account:
-service_account_id: 62b789c9-0dd0-4647-afd3-d6969eab03b8
-service_account_secret: wAiwglE93^S-y3hm0bo5FS9sFj^rzQ&i
+  service_account_id: example_id
+  service_account_secret: example_secret
 ```
 
-:::note
-The service_account_id and the service_account_secret will be different!
-:::
-
-- Go out of the container
+- Exit the container
 
 ```bash
 exit
