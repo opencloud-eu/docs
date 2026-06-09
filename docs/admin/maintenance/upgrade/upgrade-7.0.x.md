@@ -21,14 +21,14 @@ The upgrade applies to deployments using:
 - Bind Mounts
 
 :::note
-The migration search index updates is related ONLY people who uses opensearch
+The migration search index updates are only relevant for instances that use opensearch!
 :::
 
 Following this guide ensures a safe migration to OpenCloud 7.0.x.
 
 ## Before starting the upgrade
 
-- Ensure you have OpenCloud 6.x for rolling or 4.x for stable installed.
+- Ensure you have OpenCloud 6.x (rolling) or 4.x (stable) installed.
 - Create a complete [backup](#backup-config-and-data) of your configuration and data.
 - Ensure you have access to your current opencloud.yaml.
 - Verify that your current deployment is healthy before upgrading.
@@ -221,7 +221,7 @@ docker run --rm -it --entrypoint /bin/sh -v "your-named-volume-path":/etc/opencl
 
 ```yaml
 service_account:
-  service_account_id: example_id
+  service_account_id: example_uuid
   service_account_secret: example_secret
 ```
 
