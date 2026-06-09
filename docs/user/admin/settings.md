@@ -19,6 +19,7 @@ The admin area of OpenCloud provides the main tools for managing your organizati
   <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
 
 :::note
+If a security-critical upgrade is available, administrators may also see a warning in the lower-left corner of the web interface.
 An administrator may disable the version check. If this option is turned off, information about newer versions will not be displayed.
 :::
 
