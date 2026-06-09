@@ -23,10 +23,6 @@
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/opencloud-eu"
   },
-  "copyright": {
-    "message": "Copyright © 2025 OpenCloud, powered by Heinlein Gruppe",
-    "description": "The footer copyright"
-  },
   "link.item.label.OpenCloud Community": {
     "message": "OpenCloud Community",
     "description": "The label of footer link with label=OpenCloud Community linking to https://opencloud.eu/opencloud-community"
