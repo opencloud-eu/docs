@@ -1,67 +1,56 @@
 ---
 sidebar_position: 5
 id: disable-enable
-title: Deaktivieren und Aktivieren
-description: Deaktivieren und aktivieren eines Space in OpenCloud
+title: Deaktivieren und Aktivieren eines Spaces
+description: Einen Space in OpenCloud deaktivieren und aktivieren
 draft: false
 ---
 
-# Deaktivieren und Aktivieren von Spaces in OpenCloud
+# Einen Space in OpenCloud deaktivieren und aktivieren
 
-Ein Space kann auf verschiedene Weise deaktiviert und später wieder aktiviert werden. Diese Funktion kann nur von einem Space-Admin oder dem Cloud-Admin ausgeführt werden.
+Sie können einen Space auf verschiedene Arten deaktivieren und später wieder aktivieren. Nur ein Space-Admin oder ein Administrator kann dies tun.
 
 ## Space deaktivieren
 
 - Wählen Sie den gewünschten Space aus.
-- Klicken Sie auf Deaktivieren in der Top-Leiste.
+- Klicken Sie in der oberen Aktionsleiste auf „Deaktivieren“ oder öffnen Sie das Kontextmenü.
 
-  <img src={require("./img/enable-disable/deaktivieren-spaceuebersicht.png").default} alt="Admin general" width="1920"/>
-
-- Alternativ können Sie auch auf das Drei-Punkte-Menü in der Spaceübersicht klicken und Deaktivieren aus dem Menü wählen.
-
-  <img src={require("./img/enable-disable/drei-punkte-menue.png").default} alt="Admin general" width="1920"/>
-
-- Gehen Sie direkt in den Space.
-- Klicken Sie dort auf das Drei-Punkte-Menü und wählen Sie Deaktivieren.
-
-  <img src={require("./img/enable-disable/im-space-deaktivieren.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/enable-disable/deaktivieren-spaceuebersicht.png").default} alt="Space in der Übersicht deaktivieren" width="1920"/>
 
 - Bestätigen Sie die Deaktivierung.
 
-  <img src={require("./img/enable-disable/deaktivieren-bestaetigen.png").default} alt="Admin general" width="500"/>
+  <img src={require("./img/enable-disable/deaktivieren-bestaetigen.png").default} alt="Deaktivierung bestätigen" width="1920"/>
 
+- Der Space ist jetzt deaktiviert.
+
+  <img src={require("./img/enable-disable/space-nicht-sichtbar.png").default} alt="Deaktivierter Space" width="1920"/>
   :::note
-  Es werden keine Daten gelöscht, aber nur der Space-Admin oder der Cloud-Admin können den Space aktivieren.
+  Es werden keine Daten gelöscht. Nur der Space-Admin oder der Administrator kann den Space wieder aktivieren.
   :::
 
 ## Space aktivieren
 
-- Nachdem ein Space deaktiviert wurde, erscheint die Option Aktivieren nun anstelle von Deaktivieren.
+- Nachdem der Space deaktiviert wurde, ersetzt die Option „Aktivieren“ nun „Deaktivieren“.
 
   <img src={require("./img/enable-disable/aktivieren-button.png").default} alt="Admin general" width="1920"/>
 
-- Durch klicken auf Aktivieren wird der Space wieder reaktiviert.
+- Klicken Sie darauf, um den Space wieder zu aktivieren.
 
-- Wenn der deaktivierte Space nicht sichtbar ist, kann der Filter Deaktivierte Spaces einblenden aktiviert werden.
+- Wenn der Space nicht sichtbar ist, kann der Filter „Deaktivierte Spaces anzeigen“ aktiviert sein.
 
-  <img src={require("./img/enable-disable/space-nicht-sichtbar.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/enable-disable/deaktivierte-spaces-einblenden.png").default} alt="Deaktivierte Spaces anzeigen" width="1920"/>
 
-- Klicken Sie auf den Filter, um den Space wieder anzuzeigen, damit dieser wieder aktiviert werden kann.
+- Aktivieren Sie den Filter, damit der Space angezeigt wird und wieder aktiviert werden kann.
 
-  <img src={require("./img/enable-disable/deaktivierte-spaces-einblenden.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/enable-disable/wieder-verfuegbar.png").default} alt="Space wieder verfügbar" width="1920"/>
 
 ## Aktivieren durch den Administrator
 
-- In den Administrationseinstellungen unter Spaces kann auch ein Cloud-Admin oder Firmen-Admin den Space reaktivieren.
+Ein Administrator kann einen Space auch über [Admin-Einstellungen](../admin/settings.md#spaces) aktivieren oder deaktivieren.
 
-- Der Administrator klickt auf das Drei-Punkte-Menü und wählt Aktivieren.
+- Öffnen Sie in den Admin-Einstellungen den Bereich „Spaces“.
+- Suchen Sie den Space, der aktiviert oder deaktiviert werden soll.
+- Öffnen Sie das Drei-Punkte-Menü und wählen Sie „Aktivieren“ oder „Deaktivieren“.
+- Bestätigen Sie die Aktion.
 
-  <img src={require("./img/enable-disable/reaktivieren.png").default} alt="Admin general" width="1920"/>
-
-- Bestätigen Sie die Auswahl, indem Sie auf Aktivieren klicken.  
-  <img src={require("./img/enable-disable/aktivieren-bestaetigen.png").default} alt="Admin general" width="500"/>
-
-- Der Space wird nun wieder in der Spaceübersicht angezeigt.  
-  <img src={require("./img/enable-disable/wieder-verfuegbar.png").default} alt="Admin general" width="1920"/>
-
-So können Sie einen Space deaktivieren und bei Bedarf wieder aktivieren.
+Der Space wird dann in der Space-Übersicht im entsprechenden Zustand angezeigt.
