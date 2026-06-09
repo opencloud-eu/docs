@@ -9,7 +9,6 @@ draft: false
 # Delete a Space in OpenCloud
 
 Before you delete a Space, it must first be disabled.
-The screenshots below assume that a Space named `Platform team` already exists. If it does not, create it first by following [Create a Space](./create.md).
 
 ## Disable the Space first
 
