@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
 - De sharing intern 05 26 [[#928](https://github.com/opencloud-eu/docs/pull/928)]
 - versions german screenshots [[#923](https://github.com/opencloud-eu/docs/pull/923)]
 - german activities new screnshots [[#922](https://github.com/opencloud-eu/docs/pull/922)]
