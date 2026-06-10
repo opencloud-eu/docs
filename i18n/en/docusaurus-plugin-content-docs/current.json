@@ -438,5 +438,17 @@
   "sidebar.dev.category.dev-web": {
     "message": "Web",
     "description": "The label for category 'Web' in sidebar 'dev'"
+  },
+  "sidebar.user.category.Share files and folders": {
+    "message": "Share files and folders",
+    "description": "The label for category 'Share files and folders' in sidebar 'user'"
+  },
+  "sidebar.admin.category.Docker Compose": {
+    "message": "Docker Compose",
+    "description": "The label for category 'Docker Compose' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Collabora": {
+    "message": "Collabora",
+    "description": "The label for category 'Collabora' in sidebar 'admin'"
   }
 }
