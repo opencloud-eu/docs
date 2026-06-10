@@ -16,6 +16,8 @@
 
 ### 👤 User Documentation
 
+- de space rename new screenshots [[#935](https://github.com/opencloud-eu/docs/pull/935)]
+- de space quota new screenshots [[#934](https://github.com/opencloud-eu/docs/pull/934)]
 - de spaces new screenshots [[#933](https://github.com/opencloud-eu/docs/pull/933)]
 - de space create new screenshots [[#932](https://github.com/opencloud-eu/docs/pull/932)]
 - de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
