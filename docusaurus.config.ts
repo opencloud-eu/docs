@@ -99,6 +99,7 @@ presets: [
       ],
     },
     footer: {
+      copyright: '© OpenCloud',
       links: [
         {
           title: 'Docs',
@@ -156,7 +157,6 @@ presets: [
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} OpenCloud, powered by Heinlein Gruppe`,
     },
     prism: {
       theme: prismThemes.github,

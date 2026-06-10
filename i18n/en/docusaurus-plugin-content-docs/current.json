@@ -7,25 +7,9 @@
     "message": "Manage Files and Folders",
     "description": "The label for category 'Manage Files and Folders' in sidebar 'user'"
   },
-  "sidebar.user.category.Manage Files and Folders.link.generated-index.description": {
-    "message": "Tutorials for managing your files and folders.",
-    "description": "The generated-index page description for category 'Manage Files and Folders' in sidebar 'user'"
-  },
-  "sidebar.user.category.Share Files and Folders": {
-    "message": "Share Files and Folders",
-    "description": "The label for category 'Share Files and Folders' in sidebar 'user'"
-  },
-  "sidebar.user.category.Share Files and Folders.link.generated-index.description": {
-    "message": "Tutorials about sharing files and folders.",
-    "description": "The generated-index page description for category 'Share Files and Folders' in sidebar 'user'"
-  },
   "sidebar.user.category.Working in teams with Spaces": {
     "message": "Working in teams with Spaces",
     "description": "The label for category 'Working in teams with Spaces' in sidebar 'user'"
-  },
-  "sidebar.user.category.Working in teams with Spaces.link.generated-index.description": {
-    "message": "Tutorials about Spaces.",
-    "description": "The generated-index page description for category 'Working in teams with Spaces' in sidebar 'user'"
   },
   "sidebar.user.category.User Interface and Navigation": {
     "message": "User Interface and Navigation",
@@ -35,33 +19,17 @@
     "message": "Administration of OpenCloud",
     "description": "The label for category 'Administration of OpenCloud' in sidebar 'user'"
   },
-  "sidebar.user.category.Administration of OpenCloud.link.generated-index.description": {
-    "message": "Tutorials for administrating your OpenCloud.",
-    "description": "The generated-index page description for category 'Administration of OpenCloud' in sidebar 'user'"
-  },
   "sidebar.user.category.Roles": {
     "message": "Roles",
     "description": "The label for category 'Roles' in sidebar 'user'"
-  },
-  "sidebar.user.category.Roles.link.generated-index.description": {
-    "message": "Tutorials about roles in OpenCloud.",
-    "description": "The generated-index page description for category 'Roles' in sidebar 'user'"
   },
   "sidebar.user.category.OpenCloud Desktop": {
     "message": "OpenCloud Desktop",
     "description": "The label for category 'OpenCloud Desktop' in sidebar 'user'"
   },
-  "sidebar.admin.category.Welcome": {
-    "message": "Welcome",
-    "description": "The label for category 'Welcome' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Getting Started": {
     "message": "Getting Started",
     "description": "The label for category 'Getting Started' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Getting Started.link.generated-index.description": {
-    "message": "🚀 Getting Started",
-    "description": "The generated-index page description for category 'Getting Started' in sidebar 'admin'"
   },
   "sidebar.admin.category.Other": {
     "message": "Other",
@@ -71,25 +39,13 @@
     "message": "Configuration",
     "description": "The label for category 'Configuration' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Configuration.link.generated-index.description": {
-    "message": "⚙️ Configuration",
-    "description": "The generated-index page description for category 'Configuration' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Maintenance": {
     "message": "Maintenance",
     "description": "The label for category 'Maintenance' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Maintenance.link.generated-index.description": {
-    "message": "🛠️ Maintenance",
-    "description": "The generated-index page description for category 'Maintenance' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Resources": {
     "message": "Resources",
     "description": "The label for category 'Resources' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Resources.link.generated-index.description": {
-    "message": "Resources",
-    "description": "The generated-index page description for category 'Resources' in sidebar 'admin'"
   },
   "sidebar.dev.category.Development": {
     "message": "Development",
@@ -131,17 +87,9 @@
     "message": "✅ Testing",
     "description": "The generated-index page description for category 'Testing' in sidebar 'dev'"
   },
-  "sidebar.admin.category.Docker-Compose": {
-    "message": "Docker-Compose",
-    "description": "The label for category 'Docker-Compose' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Upgrade": {
     "message": "Upgrade",
     "description": "The label for category 'Upgrade' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Upgrade.link.generated-index.description": {
-    "message": "Upgrade",
-    "description": "The generated-index page description for category 'Upgrade' in sidebar 'admin'"
   },
   "sidebar.user.category.Desktop Client for Windows": {
     "message": "Desktop Client for Windows",
@@ -355,10 +303,6 @@
     "message": "Notifications",
     "description": "The label for category 'Notifications' in sidebar 'dev'"
   },
-  "sidebar.dev.category.Ocdav": {
-    "message": "Ocdav",
-    "description": "The label for category 'Ocdav' in sidebar 'dev'"
-  },
   "sidebar.dev.category.Ocm": {
     "message": "Ocm",
     "description": "The label for category 'Ocm' in sidebar 'dev'"
@@ -438,5 +382,17 @@
   "sidebar.dev.category.dev-web": {
     "message": "Web",
     "description": "The label for category 'Web' in sidebar 'dev'"
+  },
+  "sidebar.user.category.Share files and folders": {
+    "message": "Share files and folders",
+    "description": "The label for category 'Share files and folders' in sidebar 'user'"
+  },
+  "sidebar.admin.category.Docker Compose": {
+    "message": "Docker Compose",
+    "description": "The label for category 'Docker Compose' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Collabora": {
+    "message": "Collabora",
+    "description": "The label for category 'Collabora' in sidebar 'admin'"
   }
 }
