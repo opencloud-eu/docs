@@ -16,6 +16,7 @@
 
 ### 👤 User Documentation
 
+- de spaces enable and disable new screenshots [[#937](https://github.com/opencloud-eu/docs/pull/937)]
 - de space customize new screenshots [[#936](https://github.com/opencloud-eu/docs/pull/936)]
 - de space rename new screenshots [[#935](https://github.com/opencloud-eu/docs/pull/935)]
 - de space quota new screenshots [[#934](https://github.com/opencloud-eu/docs/pull/934)]
