@@ -6,12 +6,9 @@
 
 @Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
 
-### 🐛 Bug Fixes
-
-- fix: update copyright year in footer [[#940](https://github.com/opencloud-eu/docs/pull/940)]
-
 ### 👤 User Documentation
 
+- De sharing intern 05 26 [[#928](https://github.com/opencloud-eu/docs/pull/928)]
 - versions german screenshots [[#923](https://github.com/opencloud-eu/docs/pull/923)]
 - german activities new screnshots [[#922](https://github.com/opencloud-eu/docs/pull/922)]
 - create desktopc-client states tutorial [[#904](https://github.com/opencloud-eu/docs/pull/904)]
@@ -26,6 +23,10 @@
 - de upload-download-unzip create screenshots and align with eng, remov… [[#908](https://github.com/opencloud-eu/docs/pull/908)]
 - delete-restore eng + de new screenshots and textadjustments [[#906](https://github.com/opencloud-eu/docs/pull/906)]
 - de create-reanme-move new screenshots [[#903](https://github.com/opencloud-eu/docs/pull/903)]
+
+### 🐛 Bug Fixes
+
+- fix: update copyright year in footer [[#940](https://github.com/opencloud-eu/docs/pull/940)]
 
 ### 📦️ Build&Tools
 
