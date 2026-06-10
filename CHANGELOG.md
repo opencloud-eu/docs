@@ -16,6 +16,7 @@
 
 ### 👤 User Documentation
 
+- de spaces new screenshots [[#933](https://github.com/opencloud-eu/docs/pull/933)]
 - de space create new screenshots [[#932](https://github.com/opencloud-eu/docs/pull/932)]
 - de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
 - De sharing intern 05 26 [[#928](https://github.com/opencloud-eu/docs/pull/928)]
