@@ -1,44 +1,35 @@
 ---
 sidebar_position: 6
 id: delete
-title: Space Löschen
-description: Löschen eines Space in OpenCloud
+title: Einen Space löschen
+description: Einen Space in OpenCloud löschen
 draft: false
 ---
 
-# Einen Space löschen in OpenCloud
+# Einen Space in OpenCloud löschen
 
-Bevor Sie einen Space löschen können, muss er zunächst deaktiviert werden.
+Bevor Sie einen Space löschen, muss er zuerst deaktiviert werden.
 
 ## Space deaktivieren
 
-- Folgen Sie der Anleitung unter [Einen Space deaktivieren](./enable-disable.md), um den Space in den deaktivierten Zustand zu versetzen, bevor Sie ihn löschen.
+- Folgen Sie der Anleitung unter [Einen Space deaktivieren](./enable-disable.md), um den Space vor dem Löschen zu deaktivieren.
 
-- Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, klicken Sie auf den Filter Deaktivierte Spaces einblenden, um ihn wieder anzuzeigen.
+- Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, stellen Sie sicher, dass der Filter für deaktivierte Spaces aktiviert ist, damit der Space wieder angezeigt wird.
 
-  <img src={require("./img/delete/einblenden.png").default} alt="Select Space" width="1920"/>
+  <img src={require("./img/delete/einblenden.png").default} alt="Deaktivierte Spaces anzeigen" width="1920"/>
 
 ## Space löschen
 
-- Wählen Sie den Space aus, den Sie löschen möchten.
-  <img src={require("./img/delete/space-auswaehlen.png").default} alt="Select Space" width="1920"/>
+- Wählen Sie den Space aus, den Sie löschen möchten, oder öffnen Sie das Kontextmenü und klicken Sie auf „Löschen“.
 
-- Klicken Sie in der oberen Leiste auf Löschen,
-  <img src={require("./img/delete/loeschen-top-bar.png").default} alt="Delete Top-Bar" width="1920"/>
+  <img src={require("./img/delete/loeschen-top-bar.png").default} alt="Space löschen in der oberen Leiste und im Kontextmenü" width="1920"/>
 
-oder
+- Bestätigen Sie, dass Sie den Space löschen möchten.
 
-- öffnen Sie das Drei-Punkte-Menü und wählen Sie Löschen.
-
-  <img src={require("./img/delete/loeschen-kontext-menue.png").default} alt="Context Menu" width="500"/>
-
-- Bestätigen Sie, dass Sie sicher sind, dass Sie den Platz löschen wollen
-
-  <img src={require("./img/delete/loeschen-bestaetigen.png").default} alt="Confirm" width="500"/>
+  <img src={require("./img/delete/loeschen-bestaetigen.png").default} alt="Bestätigen" width="500"/>
 
 :::caution  
-Ein gelöschter Speicherplatz kann nicht wiederhergestellt werden. Er ist dauerhaft und unwiederbringlich gelöscht.  
-Seien Sie daher vorsichtig, wem Sie die Verwaltungsrechte für Ihren Space erteilen.
-
-Bitte denken Sie daran, vor dem Löschen sicherzustellen, dass keine wichtigen Daten verloren gehen.
+Ein gelöschter Space kann nicht wiederhergestellt werden. Stellen Sie sicher, dass vor dem Löschen keine wichtigen Daten verloren gehen.
 :::
+
+Jetzt wissen Sie, wie Sie einen Space löschen können.
