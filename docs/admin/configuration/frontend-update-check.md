@@ -10,7 +10,14 @@ draft: false
 
 By default, OpenCloud performs a frontend check to verify if you are running the latest version.
 
+:::note
+
+When the frontend update check detects a security-critical upgrade, administrators may see a warning in the lower-left corner of the web interface. This warning indicates that the available upgrade should be reviewed and applied with priority.
+
+:::
+
 <img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520"/>
+<img src={require("./img/frontend-update-check/check-true-critical.png").default} alt="critical check is true" width="520"/>
 
 ## Edit the `.env` File
 
