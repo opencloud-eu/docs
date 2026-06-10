@@ -13,8 +13,8 @@ Link recipients cannot see the files that are already in the folder.
 
 ## Create a File Drop
 
-- Click the “three dot menu” next to the file or folder you want to share.
-- Select “Share” from the drop-down menu.
+- Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
+- Select “Share” from the context menu.
   <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down menu" width="1920" />
 - A sidebar window will open on the right-hand side of the screen.
   <img src={require("./img/file-drop/sidebar-window.png").default} alt="Sidebar window" width="400"/>
