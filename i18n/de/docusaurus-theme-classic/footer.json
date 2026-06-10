@@ -50,5 +50,9 @@
   "link.item.label.Dev": {
     "message": "Dev",
     "description": "The label of footer link with label=Dev linking to /docs/dev/"
+  },
+  "copyright": {
+    "message": "© OpenCloud",
+    "description": "The footer copyright"
   }
 }

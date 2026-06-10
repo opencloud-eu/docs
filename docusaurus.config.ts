@@ -99,6 +99,7 @@ presets: [
       ],
     },
     footer: {
+      copyright: '© OpenCloud',
       links: [
         {
           title: 'Docs',
