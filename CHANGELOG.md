@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
 
 ### 🐾 Guides
 
@@ -48,6 +48,7 @@
 
 ### 📦️ Build&Tools
 
+- fix: copyright relies on generating new translations to update the displayed year [[#946](https://github.com/opencloud-eu/docs/pull/946)]
 - Update docs [[#927](https://github.com/opencloud-eu/docs/pull/927)]
 
 ## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
