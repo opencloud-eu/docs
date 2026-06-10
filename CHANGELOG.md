@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-08
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-10
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @openclouders
+@Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
+
+### 🐛 Bug Fixes
+
+- fix: update copyright year in footer [[#940](https://github.com/opencloud-eu/docs/pull/940)]
 
 ### 👤 User Documentation
 
