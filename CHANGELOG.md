@@ -48,6 +48,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#941](https://github.com/opencloud-eu/docs/pull/941)]
 - fix: copyright relies on generating new translations to update the displayed year [[#946](https://github.com/opencloud-eu/docs/pull/946)]
 - Update docs [[#927](https://github.com/opencloud-eu/docs/pull/927)]
 
