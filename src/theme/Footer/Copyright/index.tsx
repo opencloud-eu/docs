@@ -7,9 +7,9 @@ import type {WrapperProps} from '@docusaurus/types';
 type Props = WrapperProps<typeof CopyrightType>;
 
 export default function CopyrightWrapper(props: Props): ReactNode {
-  const copyright = props.copyright
-    ? interpolate(props.copyright, {year: new Date().getFullYear()})
-    : undefined;
+    const copyright = props.copyright
+        ? interpolate(props.copyright, {year: new Date().getFullYear()})
+        : undefined;
 
-  return <Copyright {...props} copyright={copyright} />;
+    return <Copyright {...props} copyright={copyright}/>;
 }
