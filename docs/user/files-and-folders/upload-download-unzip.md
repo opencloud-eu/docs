@@ -33,8 +33,7 @@ draft: false
 
 ## Download files or folders
 
-- Select the desired files or folders by either:
-  - Choose the file(s) you want to download
+- Choose the file(s) you want to download
 
   <img src={require("./img/upload-download-unzip/choose-download-files.png").default} alt="Admin spaces" width="1920"/>
 
