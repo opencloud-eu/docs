@@ -12,7 +12,7 @@ Public links let you share files and folders with people outside your organizati
 
 ## Steps to create a public link
 
-- Click the “three dot menu” next to the file or folder you want to share.
+- Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
 - Select “Share” from the context menu.
 
   <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Select share" width="1920"/>
