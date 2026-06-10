@@ -10,6 +10,10 @@
 
 - Revert "fix: update copyright year in footer (#940)" [[#942](https://github.com/opencloud-eu/docs/pull/942)]
 
+### 👷 Admin Documentation
+
+- Update pr 762 fron senekor [[#943](https://github.com/opencloud-eu/docs/pull/943)]
+
 ### 👤 User Documentation
 
 - de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
