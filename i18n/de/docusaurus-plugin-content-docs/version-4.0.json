@@ -51,10 +51,6 @@
     "message": "OpenCloud Desktop",
     "description": "The label for category 'OpenCloud Desktop' in sidebar 'user'"
   },
-  "sidebar.admin.category.Welcome": {
-    "message": "Welcome",
-    "description": "The label for category 'Welcome' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Getting Started": {
     "message": "Getting Started",
     "description": "The label for category 'Getting Started' in sidebar 'admin'"
@@ -134,10 +130,6 @@
   "sidebar.admin.category.Upgrade": {
     "message": "Upgrade",
     "description": "The label for category 'Upgrade' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Upgrade.link.generated-index.description": {
-    "message": "Upgrade",
-    "description": "The generated-index page description for category 'Upgrade' in sidebar 'admin'"
   },
   "sidebar.user.category.Desktop Client for Windows": {
     "message": "Desktop Client for Windows",
