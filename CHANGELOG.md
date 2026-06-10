@@ -6,6 +6,10 @@
 
 @Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
 
+### 🐾 Guides
+
+- Revert "fix: update copyright year in footer (#940)" [[#942](https://github.com/opencloud-eu/docs/pull/942)]
+
 ### 👤 User Documentation
 
 - de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
