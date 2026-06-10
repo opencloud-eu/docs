@@ -97,9 +97,9 @@ presets: [
           position: 'right'
         }
       ],
-    },
-    footer: {
-      copyright: '© OpenCloud',
+  },
+  footer: {
+      copyright: 'Copyright © {year} OpenCloud, powered by Heinlein Gruppe',
       links: [
         {
           title: 'Docs',
