@@ -18,6 +18,7 @@ Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für I
   <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
 
 :::note
+Wenn ein sicherheitskritisches Upgrade verfügbar ist, können Administratoren zusätzlich eine Warnung unten links in der Weboberfläche sehen.
 Die Versionsprüfung kann von einem Administrator deaktiviert worden sein.
 Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen nicht angezeigt.
 :::
