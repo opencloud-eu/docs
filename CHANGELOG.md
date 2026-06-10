@@ -12,10 +12,12 @@
 
 ### 👷 Admin Documentation
 
+- add in user/admin a note about the security update warning and in the… [[#939](https://github.com/opencloud-eu/docs/pull/939)]
 - Update pr 762 fron senekor [[#943](https://github.com/opencloud-eu/docs/pull/943)]
 
 ### 👤 User Documentation
 
+- de: new screenshots and text adjustments for external sharing [[#929](https://github.com/opencloud-eu/docs/pull/929)]
 - de spaces delete new screenshots [[#938](https://github.com/opencloud-eu/docs/pull/938)]
 - de spaces enable and disable new screenshots [[#937](https://github.com/opencloud-eu/docs/pull/937)]
 - de space customize new screenshots [[#936](https://github.com/opencloud-eu/docs/pull/936)]
