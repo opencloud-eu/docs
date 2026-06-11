@@ -221,7 +221,7 @@ role_assignment:
               claim_value: mySpaceAdminRole
             - role_name: user
               claim_value: myUserRole
-            - role_name: guest
+            - role_name: user-light
               claim_value: myGuestRole
 ```
 
@@ -250,7 +250,7 @@ The default `role_claim` (or `PROXY_ROLE_ASSIGNMENT_OIDC_CLAIM`) is `roles`. The
   claim_value: opencloudSpaceAdmin
 - role_name: user
   claim_value: opencloudUser
-- role_name: guest
+- role_name: user-light
   claim_value: opencloudcloudGuest
 ```
 

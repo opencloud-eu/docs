@@ -97,7 +97,7 @@ role_assignment:
         claim_value: mySpaceAdminRole
       - role_name: user
         claim_value: myUserRole
-      - role_name: guest
+      - role_name: user-light
         claim_value: myGuestRole
 ```
 
