@@ -254,11 +254,6 @@ docker start opencloud
   </TabItem>
 </Tabs>
 
-TODO:
-Release note 7.1.0 -> log sharing auf info stellen
-Wenn die migration fertig ist, kommt ne info im log dass sie fertig ist
-Am Anfang kann es etwas dauern shares gehen nicht und Mitglieder liste (was in den Release notes steht)
-
 ### ⏳ First Startup After Upgrading to OpenCloud 7.x.x
 
 After upgrading to OpenCloud 7.x.x, the first startup may take several minutes before all Spaces become fully available.
