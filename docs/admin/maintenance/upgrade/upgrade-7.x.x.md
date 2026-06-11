@@ -16,30 +16,24 @@ This guide describes how to upgrade an existing OpenCloud deployment to OpenClou
 The guide applies to upgrades from:
 
 - OpenCloud 6.x rolling
-- OpenCloud 4.x stable
+- OpenCloud 4.0.x stable
 
 It covers the required configuration migration, optional OpenSearch index rebuild, and web extension updates introduced with OpenCloud 7.x.x.
 
 ## Before You Start
 
-- Make sure your current OpenCloud deployment runs OpenCloud 6.x rolling or OpenCloud 4.x stable.
+- Make sure your current deployment is running on OpenCloud 6.x (rolling) or OpenCloud 4.0.x (stable).
 - Create a complete backup of your configuration and data.
 - Make sure you have access to your current `opencloud.yaml`.
 - Verify that your current deployment is healthy before upgrading.
-- Review the OpenCloud 7.x.x release notes before starting the upgrade. TODO: LINK zu release Notes
+- Review the OpenCloud 7.x.x [release notes](https://github.com/opencloud-eu/opencloud/releases) before starting the upgrade.
 
 ## Back Up Configuration and Data
-
-:::important
-
-Always create a backup before upgrading to prevent data loss.
-
-:::
 
 <Tabs>
   <TabItem value="bind-mounts" label="Using Bind Mounts">
 
-If your configuration and data are stored in host directories, create a copy of these directories.
+If your configuration and data are stored in directories on the host, create a copy of these directories.
 
 Example:
 
@@ -69,7 +63,7 @@ Replace `opencloud-compose-opencloud-1` with the name of your OpenCloud containe
 
 ## Update the `opencloud-compose` Checkout
 
-If you use the `opencloud-compose` repository, update your local checkout before pulling the new container image.
+If you use the `opencloud-compose` repository, update your local copy of the repository.
 
 ```bash
 cd /opencloud-compose
@@ -125,7 +119,7 @@ Open a shell in a temporary OpenCloud 7.x.x container and mount your OpenCloud c
 docker run --rm -it --entrypoint /bin/sh -v "<opencloud-config-volume>:/etc/opencloud" opencloudeu/opencloud:7.x.x
 ```
 
-Replace `<opencloud-config-volume>` with the Docker volume that contains your OpenCloud configuration.
+Replace `<opencloud-config-volume>` with the Docker volume or bind mount that contains your OpenCloud configuration.
 
   </TabItem>
 
@@ -260,11 +254,49 @@ docker start opencloud
   </TabItem>
 </Tabs>
 
-
-TODO: 
+TODO:
 Release note 7.1.0 -> log sharing auf info stellen
 Wenn die migration fertig ist, kommt ne info im log dass sie fertig ist
 Am Anfang kann es etwas dauern shares gehen nicht und Mitglieder liste (was in den Release notes steht)
+
+### ⏳ First Startup After Upgrading to OpenCloud 7.x.x
+
+After upgrading to OpenCloud 7.x.x, the first startup may take several minutes before all Spaces become fully available.
+
+During this period, some Space-related functionality is temporarily restricted:
+
+- Space member lists may be incomplete or incorrect.
+- Space memberships cannot be modified.
+- Creating or deleting Spaces is not possible.
+- Share-related operations may be unavailable until the migration has completed.
+
+#### Background
+
+OpenCloud 7.x.x includes an updated Share Manager migration. Due to an issue in OpenCloud 7.0.0, some disabled Spaces were not fully processed during the initial migration. To ensure all existing Space memberships are migrated correctly, the migration task is executed again during the first startup after upgrading.
+
+Depending on the size of your installation, this process may take several minutes to complete.
+
+#### Monitoring Migration Progress
+
+To monitor the migration progress, configure the sharing service log level to `info` before starting the upgrade:
+
+```bash
+OC_LOG_LEVEL=info
+```
+
+or
+
+```bash
+SHARING_LOG_LEVEL=info
+```
+
+With the log level set to `info`, the sharing service writes progress information to the logs while the migration is running.
+
+#### Migration Completed
+
+Once the migration has finished, the sharing service writes a completion message to the logs indicating that the migration was completed successfully.
+
+After this message appears, all Space functionality, including member management, sharing operations, and Space creation or deletion, is available again.
 
 ## Rebuild the OpenSearch Index
 
