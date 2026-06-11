@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-10
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-11
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
+
+### :octocat: Developer Documentation
+
+- rename guest role to user-light role [[#945](https://github.com/opencloud-eu/docs/pull/945)]
 
 ### 🐾 Guides
 
