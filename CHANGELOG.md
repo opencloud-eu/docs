@@ -1,5 +1,62 @@
 # Changelog
 
+## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders, @schweigisito
+
+### :octocat: Developer Documentation
+
+- rename guest role to user-light role [[#945](https://github.com/opencloud-eu/docs/pull/945)]
+
+### 🐾 Guides
+
+- Revert "fix: update copyright year in footer (#940)" [[#942](https://github.com/opencloud-eu/docs/pull/942)]
+
+### 👷 Admin Documentation
+
+- add in user/admin a note about the security update warning and in the… [[#939](https://github.com/opencloud-eu/docs/pull/939)]
+- Update pr 762 fron senekor [[#943](https://github.com/opencloud-eu/docs/pull/943)]
+
+### 👤 User Documentation
+
+- de: new screenshots and text adjustments for external sharing [[#929](https://github.com/opencloud-eu/docs/pull/929)]
+- de spaces delete new screenshots [[#938](https://github.com/opencloud-eu/docs/pull/938)]
+- de spaces enable and disable new screenshots [[#937](https://github.com/opencloud-eu/docs/pull/937)]
+- de space customize new screenshots [[#936](https://github.com/opencloud-eu/docs/pull/936)]
+- de space rename new screenshots [[#935](https://github.com/opencloud-eu/docs/pull/935)]
+- de space quota new screenshots [[#934](https://github.com/opencloud-eu/docs/pull/934)]
+- de spaces new screenshots [[#933](https://github.com/opencloud-eu/docs/pull/933)]
+- de space create new screenshots [[#932](https://github.com/opencloud-eu/docs/pull/932)]
+- de filedrop new screenshots [[#930](https://github.com/opencloud-eu/docs/pull/930)]
+- De sharing intern 05 26 [[#928](https://github.com/opencloud-eu/docs/pull/928)]
+- versions german screenshots [[#923](https://github.com/opencloud-eu/docs/pull/923)]
+- german activities new screnshots [[#922](https://github.com/opencloud-eu/docs/pull/922)]
+- create desktopc-client states tutorial [[#904](https://github.com/opencloud-eu/docs/pull/904)]
+- rework the german index.md to match the english ones [[#919](https://github.com/opencloud-eu/docs/pull/919)]
+- create the german documentation for favourites [[#918](https://github.com/opencloud-eu/docs/pull/918)]
+- german version for tags with new screenshots [[#915](https://github.com/opencloud-eu/docs/pull/915)]
+- rework english and german shortcut documentation [[#914](https://github.com/opencloud-eu/docs/pull/914)]
+- add german photo and video documentation [[#913](https://github.com/opencloud-eu/docs/pull/913)]
+- add german version for markdown editor [[#912](https://github.com/opencloud-eu/docs/pull/912)]
+- de add readme files documentation [[#911](https://github.com/opencloud-eu/docs/pull/911)]
+- de search new screenshots and text adjustments [[#910](https://github.com/opencloud-eu/docs/pull/910)]
+- de upload-download-unzip create screenshots and align with eng, remov… [[#908](https://github.com/opencloud-eu/docs/pull/908)]
+- delete-restore eng + de new screenshots and textadjustments [[#906](https://github.com/opencloud-eu/docs/pull/906)]
+- de create-reanme-move new screenshots [[#903](https://github.com/opencloud-eu/docs/pull/903)]
+
+### 🐛 Bug Fixes
+
+- fix: update copyright year in footer [[#940](https://github.com/opencloud-eu/docs/pull/940)]
+
+### 📦️ Build&Tools
+
+- fix: follow up - copyright relies on generating new translations to u… [[#949](https://github.com/opencloud-eu/docs/pull/949)]
+- Update docs [[#941](https://github.com/opencloud-eu/docs/pull/941)]
+- fix: copyright relies on generating new translations to update the displayed year [[#946](https://github.com/opencloud-eu/docs/pull/946)]
+- Update docs [[#927](https://github.com/opencloud-eu/docs/pull/927)]
+
 ## [3.26.0](https://github.com/opencloud-eu/docs/releases/tag/3.26.0) - 2026-06-02
 
 ### ❤️ Thanks to all contributors! ❤️
