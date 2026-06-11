@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- add the note about idm in the german admin settings [[#952](https://github.com/opencloud-eu/docs/pull/952)]
+- fix formmatting in upload-download-unzip [[#950](https://github.com/opencloud-eu/docs/pull/950)]
+- fix the rename screenshot in de and en so the rename item is hovered [[#948](https://github.com/opencloud-eu/docs/pull/948)]
+- correct the screenshot to englisch [[#947](https://github.com/opencloud-eu/docs/pull/947)]
+
 ## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-11
 
 ### ❤️ Thanks to all contributors! ❤️
