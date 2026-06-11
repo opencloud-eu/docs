@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @openclouders
 
 ### 👤 User Documentation
 
@@ -12,6 +12,10 @@
 - fix formmatting in upload-download-unzip [[#950](https://github.com/opencloud-eu/docs/pull/950)]
 - fix the rename screenshot in de and en so the rename item is hovered [[#948](https://github.com/opencloud-eu/docs/pull/948)]
 - correct the screenshot to englisch [[#947](https://github.com/opencloud-eu/docs/pull/947)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#951](https://github.com/opencloud-eu/docs/pull/951)]
 
 ## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-11
 
