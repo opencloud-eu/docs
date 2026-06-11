@@ -1,16 +1,16 @@
 ---
 sidebar_position: 4
 id: view-modes
-title: Anzeigemodi
+title: Ansichtsmodi
 description: Ansichtsmodi für die Dateiliste in OpenCloud
 draft: false
 ---
 
-# Anzeigemodi der Dateiliste in OpenCloud
+# Ansichtsmodi der Dateiliste in OpenCloud
 
-In OpenCloud können Sie zwischen verschiedenen Anzeigemodi für Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen.
+In OpenCloud können Sie zwischen verschiedenen Ansichtsmodi für Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen.
 
-## Verfügbare Anzeigesmodi
+## Verfügbare Ansichtsmodi
 
 ### Kachelansicht
 
