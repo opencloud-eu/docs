@@ -272,9 +272,11 @@ During this period, some Space-related functionality is temporarily restricted:
 
 #### Background
 
-OpenCloud 7.x.x includes an updated Share Manager migration. Due to an issue in OpenCloud 7.0.0, some disabled Spaces were not fully processed during the initial migration. To ensure all existing Space memberships are migrated correctly, the migration task is executed again during the first startup after upgrading.
+OpenCloud 7.0.0 introduced a new backend mechanism for managing Space memberships. When upgrading from an earlier release, the `sharing` service automatically migrates existing memberships to the new format.
 
-Depending on the size of your installation, this process may take several minutes to complete.
+In OpenCloud 7.1.0, the migration process was updated to address an issue where some disabled Spaces were not fully processed during the initial migration. To ensure all existing Space memberships are migrated correctly, the migration task is executed again during the first startup after upgrading.
+
+Depending on the number of Spaces and members in your installation, this process may take several minutes to complete.
 
 #### Monitoring Migration Progress
 
@@ -290,13 +292,21 @@ or
 SHARING_LOG_LEVEL=info
 ```
 
-With the log level set to `info`, the sharing service writes progress information to the logs while the migration is running.
+With the log level set to `info`, the sharing service writes migration progress information to the logs while the migration is running.
 
 #### Migration Completed
 
-Once the migration has finished, the sharing service writes a completion message to the logs indicating that the migration was completed successfully.
+Once the migration has finished successfully, the sharing service writes a completion message to the logs indicating that the migration has been completed.
 
-After this message appears, all Space functionality, including member management, sharing operations, and Space creation or deletion, is available again.
+> **Note:** Migration progress and completion messages are only available when the sharing service log level is configured to `info`.
+
+After the completion message appears in the logs, all Space functionality, including member management, sharing operations, and Space creation or deletion, is available again.
+
+#### Required Configuration Changes
+
+The upgrade also requires a configuration change for the `sharing` service.
+
+Please follow the instructions in the Upgrade Guide and apply the required configuration updates before starting the upgraded version of OpenCloud.
 
 ## Rebuild the OpenSearch Index
 
