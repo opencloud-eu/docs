@@ -33,8 +33,7 @@ draft: false
 
 ## Dateien oder Ordner herunterladen
 
-- Wählen Sie die gewünschten Dateien oder Ordner aus.
-  - Wählen Sie die Datei(en) aus, die Sie herunterladen möchten.
+- Wählen Sie die Datei(en) aus, die Sie herunterladen möchten.
 
   <img src={require("./img/upload-download-unzip/markierte-datei.png").default} alt="Dateien für den Download auswählen" width="1920"/>
 
