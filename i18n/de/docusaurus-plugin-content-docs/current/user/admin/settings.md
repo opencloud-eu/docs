@@ -36,6 +36,10 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
   - Allow or prohibit logins (for individual users)
     <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
 
+:::note
+Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hier weiterhin sehen, die Benutzerverwaltung muss jedoch im IdP erfolgen.
+:::
+
 ## Gruppen
 
 - Übersicht der Gruppen
