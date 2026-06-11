@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 20
 id: upgrade-7.x.x
 title: Upgrade 7.x.x
 description: Upgrading to OpenCloud 7.x.x
@@ -26,7 +26,7 @@ It covers the required configuration migration, optional OpenSearch index rebuil
 - Create a complete backup of your configuration and data.
 - Make sure you have access to your current `opencloud.yaml`.
 - Verify that your current deployment is healthy before upgrading.
-- Review the OpenCloud 7.x.x release notes before starting the upgrade.
+- Review the OpenCloud 7.x.x release notes before starting the upgrade. TODO: LINK zu release Notes
 
 ## Back Up Configuration and Data
 
@@ -113,8 +113,6 @@ Replace `7.x.x` with the exact OpenCloud version you want to upgrade to.
 ## Apply the Configuration Migration
 
 OpenCloud 7.x.x includes a breaking configuration change that must be applied before starting the upgraded instance.
-
-Reference: [Migration PR](https://github.com/opencloud-eu/opencloud/pull/2760)
 
 ### Open a Temporary OpenCloud Container
 
@@ -261,6 +259,12 @@ docker start opencloud
 
   </TabItem>
 </Tabs>
+
+
+TODO: 
+Release note 7.1.0 -> log sharing auf info stellen
+Wenn die migration fertig ist, kommt ne info im log dass sie fertig ist
+Am Anfang kann es etwas dauern shares gehen nicht und Mitglieder liste (was in den Release notes steht)
 
 ## Rebuild the OpenSearch Index
 

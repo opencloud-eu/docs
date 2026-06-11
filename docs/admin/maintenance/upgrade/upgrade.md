@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: upgrade-guide
 title: Standard Upgrade Guide
 description: Standard guide for upgrading OpenCloud
