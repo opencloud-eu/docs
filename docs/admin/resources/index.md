@@ -14,5 +14,5 @@ Use this section for troubleshooting, lifecycle information, and general admin h
 - [FAQ](./faq.md)
 - [What's New](./whats-new.md)
 - [Release Lifecycle](./lifecycle.md)
-- [Common Issues & Help](./common-issues.md)
+- [Common Issues & Help](./common-issues/)
 - [Demo User](./demo-user.md)

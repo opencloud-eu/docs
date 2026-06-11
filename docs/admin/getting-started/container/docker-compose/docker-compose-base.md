@@ -285,4 +285,4 @@ If you encounter issues:
 1. Check Docker logs: `docker compose logs`
 2. Verify domain DNS records point to your server
 3. Ensure firewall allows HTTP (80) and HTTPS (443)
-4. See [Common Issues & Help](../../../resources/common-issues.md)
+4. See [Common Issues & Help](../../../resources/common-issues/)

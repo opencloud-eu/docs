@@ -237,6 +237,6 @@ Your OpenCloud instance should now be running on `v4.0.x`.
 If you encounter issues during or after the upgrade:
 
 1. Review the logs for error messages
-2. Consult the [troubleshooting guide](../../resources/common-issues)
+2. Consult the [troubleshooting guide](../../resources/common-issues/)
 3. Restore from backup if necessary
 4. Contact support or open an issue on [GitHub](https://github.com/opencloud-eu/opencloud/issues)

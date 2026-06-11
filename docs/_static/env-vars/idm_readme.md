@@ -26,4 +26,3 @@ Note: IDM is limited in its functionality. It only supports a subset of the LDAP
 ## Table of Contents
 
 
-
