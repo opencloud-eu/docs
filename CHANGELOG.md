@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@Heiko-Pohl, @Svanvith, @openclouders
 
 ### 👤 User Documentation
 
+- update desktopclient for macos and linux [[#855](https://github.com/opencloud-eu/docs/pull/855)]
 - add the note about idm in the german admin settings [[#952](https://github.com/opencloud-eu/docs/pull/952)]
 - fix formmatting in upload-download-unzip [[#950](https://github.com/opencloud-eu/docs/pull/950)]
 - fix the rename screenshot in de and en so the rename item is hovered [[#948](https://github.com/opencloud-eu/docs/pull/948)]
