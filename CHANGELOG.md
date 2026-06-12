@@ -16,6 +16,7 @@
 
 ### 📦️ Build&Tools
 
+- remove category links which caused duplicate route warnings [[#957](https://github.com/opencloud-eu/docs/pull/957)]
 - Update docs [[#955](https://github.com/opencloud-eu/docs/pull/955)]
 - Update docs [[#951](https://github.com/opencloud-eu/docs/pull/951)]
 
