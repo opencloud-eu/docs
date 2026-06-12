@@ -276,3 +276,18 @@ sudo certbot renew --dry-run
 ```
 
 Your OpenCloud instance is now running securely behind a fully configured external Nginx reverse proxy with HTTPS.
+
+## Timeout Considerations
+
+When using a reverse proxy other than the documented Nginx example, make sure that request and response timeouts are configured for long-running uploads.
+
+Slow uploads or large file uploads can take longer than the default timeout of some reverse proxies. If the timeout is too low, uploads may fail with `502 Bad Gateway` after about 60 seconds.
+
+For custom reverse proxy setups, configure the equivalent of the relevant Nginx options, such as:
+
+- `proxy_read_timeout`
+- `proxy_send_timeout`
+- `proxy_request_buffering off`
+- `proxy_buffering off`
+
+The exact option names depend on the reverse proxy in use.
