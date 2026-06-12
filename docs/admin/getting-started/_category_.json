@@ -1,8 +1,4 @@
 {
   "label": "Getting Started",
-  "position": 4,
-  "link": {
-    "type": "doc",
-    "id": "admin-getting-started"
-  }
+  "position": 4
 }
