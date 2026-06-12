@@ -12,6 +12,9 @@ app:
     disable: false
     duration: 12h
   licensecheckenable: false
+font:
+  asset_path: /var/lib/opencloud/collaboration/fonts
+  preview_text: OpenCloud
 store:
   store: nats-js-kv
   nodes:
@@ -19,6 +22,14 @@ store:
   database: collaboration
   table: ""
   ttl: 30m0s
+  username: ""
+  password: ""
+events:
+  endpoint: 127.0.0.1:9233
+  cluster: opencloud-cluster
+  tls_insecure: false
+  tls_root_ca_certificate: ""
+  enable_tls: false
   username: ""
   password: ""
 token_manager:
@@ -52,3 +63,4 @@ debug:
   token: ""
   pprof: false
   zpages: false
+machine_auth_api_key: ""
