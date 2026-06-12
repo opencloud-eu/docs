@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @openclouders
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders
 
 ### 👤 User Documentation
 
@@ -16,6 +16,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: bump docusaurus to 3.10.1 [[#958](https://github.com/opencloud-eu/docs/pull/958)]
 - remove category links which caused duplicate route warnings [[#957](https://github.com/opencloud-eu/docs/pull/957)]
 - Update docs [[#955](https://github.com/opencloud-eu/docs/pull/955)]
 - Update docs [[#951](https://github.com/opencloud-eu/docs/pull/951)]
