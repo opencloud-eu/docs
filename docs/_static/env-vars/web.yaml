@@ -114,6 +114,9 @@ web:
           create: 0
           list: 0
       defaultAppId: ""
+      oxAppSuite:
+        enabled: false
+        apiUrl: ""
     styles: []
     scripts: []
     custom_translations: []
