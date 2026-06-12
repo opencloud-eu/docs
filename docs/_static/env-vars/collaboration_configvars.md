@@ -12,6 +12,8 @@
 |`COLLABORATION_APP_PROOF_DISABLE`| 1.0.0 |bool|`Disable the proof keys verification`|`false`|
 |`COLLABORATION_APP_PROOF_DURATION`| 1.0.0 |string|`Duration for the proof keys to be cached in memory, using time.ParseDuration format. If the duration can't be parsed, we'll use the default 12h as duration`|`12h`|
 |`COLLABORATION_APP_LICENSE_CHECK_ENABLE`| 1.0.0 |bool|`Enable license checking to edit files. Needs to be enabled when using Microsoft365 with the business flow.`|`false`|
+|`COLLABORATION_FONT_ASSET_PATH`| next |string|`Serve fonts from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/collaboration/fonts`|`/var/lib/opencloud/collaboration/fonts`|
+|`COLLABORATION_FONT_PREVIEW_TEXT`| next |string|`The text that will be displayed in the font preview.`|`OpenCloud`|
 |`OC_PERSISTENT_STORE`<br/>`COLLABORATION_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`nats-js-kv`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`COLLABORATION_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`COLLABORATION_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`collaboration`|
@@ -19,6 +21,13 @@
 |`OC_PERSISTENT_STORE_TTL`<br/>`COLLABORATION_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. Defaults to '30m' (30 minutes). See the Environment Variable Types description for more details.`|`30m0s`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`COLLABORATION_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`COLLABORATION_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_EVENTS_ENDPOINT`<br/>`COLLABORATION_EVENTS_ENDPOINT`| next |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
+|`OC_EVENTS_CLUSTER`<br/>`COLLABORATION_EVENTS_CLUSTER`| next |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
+|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`COLLABORATION_EVENTS_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`COLLABORATION_EVENTS_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided COLLABORATION_EVENTS_TLS_INSECURE will be seen as false.`|``|
+|`OC_EVENTS_ENABLE_TLS`<br/>`COLLABORATION_EVENTS_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`false`|
+|`OC_EVENTS_AUTH_USERNAME`<br/>`COLLABORATION_EVENTS_AUTH_USERNAME`| next |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
+|`OC_EVENTS_AUTH_PASSWORD`<br/>`COLLABORATION_EVENTS_AUTH_PASSWORD`| next |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|``|
 |`OC_JWT_SECRET`<br/>`COLLABORATION_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|``|
 |`COLLABORATION_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`127.0.0.1:9301`|
 |`OC_GRPC_PROTOCOL`<br/>`COLLABORATION_GRPC_PROTOCOL`| 1.0.0 |string|`The transport protocol of the GRPC service.`|`tcp`|
@@ -40,3 +49,4 @@
 |`COLLABORATION_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`COLLABORATION_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
 |`COLLABORATION_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`false`|
+|`OC_MACHINE_AUTH_API_KEY`<br/>`COLLABORATION_MACHINE_AUTH_API_KEY`| next |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`|``|
