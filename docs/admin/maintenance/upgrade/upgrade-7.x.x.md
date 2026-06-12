@@ -267,9 +267,7 @@ During this period, some Space-related functionality is temporarily restricted:
 
 #### Background
 
-OpenCloud 7.0.0 introduced a new backend mechanism for managing Space memberships. When upgrading from an earlier release, the `sharing` service automatically migrates existing memberships to the new format.
-
-In OpenCloud 7.1.0, the migration process was updated to address an issue where some disabled Spaces were not fully processed during the initial migration. To ensure all existing Space memberships are migrated correctly, the migration task is executed again during the first startup after upgrading.
+OpenCloud 7.x.x introduced a new backend mechanism for managing Space memberships. When upgrading from an earlier release, the `sharing` service automatically migrates existing memberships to the new format.
 
 Depending on the number of Spaces and members in your installation, this process may take several minutes to complete.
 
