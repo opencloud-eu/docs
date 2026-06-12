@@ -227,9 +227,9 @@ The `Upload-Length` header of the request has to contain the exact size of the u
 
 ## Supported Upload-Metadata
 
-Upload-metadata key-value pairs aren't specified in the general tus docs. The following ones are supported in the OpenCloud ecosystem:
+Upload-Metadata key-value pairs aren't specified in the general tus docs. The following ones are supported in the OpenCloud ecosystem:
 
-| Parameter (key)                  | Example (value MUST be Base64 encoded)                       | Description                                       |
+| Parameter (key)                  | Example (decoded; MUST be Base64 encoded in `Upload-Metadata`) | Description                                       |
 | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------- |
 | `filename` (mandatory)           | example.pdf                                                  | Filename                                          |
 | `mtime` (recommended)            | 1701708712                                                   | Modification time (Unix time format)              |
