@@ -14,6 +14,7 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Authentication and Identity Management](./authentication-and-user-management/) - Internal and external IDP setup
 - [Storage](./storage/) - Storage drivers and backend setup
 - [Collabora](./collabora/) - Collabora integration and document compatibility
+- [External OnlyOffice](./onlyoffice.md) - Connect an external OnlyOffice Document Server via WOPI
 - [Default Language](./default-language.md)
 - [Frontend Update Check](./frontend-update-check.md)
 - [Link Password Policy](./link-password-policy.md)
