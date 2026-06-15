@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.28.1](https://github.com/opencloud-eu/docs/releases/tag/3.28.1) - 2026-06-15
+## [3.29.0](https://github.com/opencloud-eu/docs/releases/tag/3.29.0) - 2026-06-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
 @Svanvith
+
+### 👷 Admin Documentation
+
+- add info about settings for larger file uploads and timeouts with ext… [[#953](https://github.com/opencloud-eu/docs/pull/953)]
 
 ### 📦️ Build&Tools
 
