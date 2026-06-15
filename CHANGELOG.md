@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Upgrade process from 4.0.x to 7.0.x [[#863](https://github.com/opencloud-eu/docs/pull/863)]
 - docs(common-issues): explain LDAP Result Code 49 from IDM volume desync [[#926](https://github.com/opencloud-eu/docs/pull/926)]
 
 ### 👤 User Documentation
