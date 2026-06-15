@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.28.1](https://github.com/opencloud-eu/docs/releases/tag/3.28.1) - 2026-06-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 📦️ Build&Tools
+
+- fix linter issues [[#963](https://github.com/opencloud-eu/docs/pull/963)]
+
 ## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-15
 
 ### ❤️ Thanks to all contributors! ❤️
