@@ -122,19 +122,25 @@ We can run some of the e2e tests on OpenCloud setup with Keycloak as an external
 
 #### Run OpenCloud With Keycloak
 
-There's a documentation to serve [OpenCloud with Keycloak](../../../admin/configuration/authentication-and-user-management/keycloak). Please follow each step to run **OpenCloud with Keycloak**.
+There's a documentation to serve [OpenCloud with Keycloak](../../../admin/configuration/authentication-and-user-management/keycloak.md). Please follow each step to run **OpenCloud with Keycloak**.
+
+#### Options
+
+Following environment variables come in use while running e2e tests on OpenCloud with Keycloak:
+
+- `KEYCLOAK=true` runs the tests with Keycloak. Default value: false
+- `KEYCLOAK_HOST=your_keycloak_host` sets Keycloak url. Default value: keycloak.opencloud.test
+- `KEYCLOAK_ADMIN_USER=admin` keycloak admin username
+- `KEYCLOAK_ADMIN_PASSWORD=password` keycloak admin password
+- `KEYCLOAK_REALM=your_realm` keycloak realm name. Default value: openCloud
 
 #### Run E2E Tests
 
 ```bash
 KEYCLOAK=true \
-BASE_URL_OPEN_CLOUD=demo.opencloud.test \
-pnpm run test:e2e:cucumber tests/e2e/cucumber/features/journeys
+KEYCLOAK_HOST=keycloak.opencloud.test \
+KEYCLOAK_ADMIN_USER=kcadmin \
+KEYCLOAK_ADMIN_PASSWORD=admin \
+OC_BASE_URL=cloud.opencloud.test \
+pnpm run test:e2e:cucumber tests/e2e/cucumber/features/keycloak
 ```
-
-Following environment variables come in use while running e2e tests on OpenCloud with Keycloak:
-
-- `BASE_URL_OPENCLOUD` sets OpenCloud url (e.g.: demo.opencloud.test)
-- `KEYCLOAK_HOST` sets Keycloak url (e.g.: keycloak.opencloud.test)
-- `KEYCLOAK=true` runs the tests with Keycloak
-- `KEYCLOAK_REALM` sets OpenCloud realm name used on Keycloak
