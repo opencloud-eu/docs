@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- improve description how you configure the loglevels for oc and the se… [[#965](https://github.com/opencloud-eu/docs/pull/965)]
 - add info about settings for larger file uploads and timeouts with ext… [[#953](https://github.com/opencloud-eu/docs/pull/953)]
 
 ### 📦️ Build&Tools
