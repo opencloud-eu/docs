@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 30
 id: upgrade-4.0.x
 title: Upgrade 4.0.x
 description: Upgrading to 4.0.x
