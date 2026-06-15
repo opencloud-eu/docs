@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-12
+## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-15
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @michaelstingl, @openclouders
+
+### 👷 Admin Documentation
+
+- docs(common-issues): explain LDAP Result Code 49 from IDM volume desync [[#926](https://github.com/opencloud-eu/docs/pull/926)]
 
 ### 👤 User Documentation
 
