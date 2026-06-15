@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @openclouders
 
 ### 👷 Admin Documentation
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#962](https://github.com/opencloud-eu/docs/pull/962)]
 - fix linter issues [[#963](https://github.com/opencloud-eu/docs/pull/963)]
 
 ## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-15
