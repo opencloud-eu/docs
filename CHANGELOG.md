@@ -1,5 +1,22 @@
 # Changelog
 
+## [3.29.0](https://github.com/opencloud-eu/docs/releases/tag/3.29.0) - 2026-06-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- improvement standard upgrade guide [[#966](https://github.com/opencloud-eu/docs/pull/966)]
+- improve description how you configure the loglevels for oc and the se… [[#965](https://github.com/opencloud-eu/docs/pull/965)]
+- add info about settings for larger file uploads and timeouts with ext… [[#953](https://github.com/opencloud-eu/docs/pull/953)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#962](https://github.com/opencloud-eu/docs/pull/962)]
+- fix linter issues [[#963](https://github.com/opencloud-eu/docs/pull/963)]
+
 ## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-15
 
 ### ❤️ Thanks to all contributors! ❤️
