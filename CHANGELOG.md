@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@Heiko-Pohl, @Svanvith, @openclouders
 
 ### 👷 Admin Documentation
 
+- improvement standard upgrade guide [[#966](https://github.com/opencloud-eu/docs/pull/966)]
 - improve description how you configure the loglevels for oc and the se… [[#965](https://github.com/opencloud-eu/docs/pull/965)]
 - add info about settings for larger file uploads and timeouts with ext… [[#953](https://github.com/opencloud-eu/docs/pull/953)]
 
