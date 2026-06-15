@@ -98,11 +98,11 @@ docker stop opencloud
 
 Pull the OpenCloud 7.x.x image.
 
+Replace `7.x.x` with the exact image tag for the version you want to install. Available tags are listed on [Docker Hub](https://hub.docker.com/u/opencloudeu).
+
 ```bash
 docker pull opencloudeu/opencloud:7.x.x
 ```
-
-Replace `7.x.x` with the exact OpenCloud version you want to upgrade to.
 
 ## Apply the Configuration Migration
 
