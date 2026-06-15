@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Heiko-Pohl, @Svanvith, @michaelstingl, @openclouders
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @michaelstingl, @openclouders, @rhafer
+
+### :octocat: Developer Documentation
+
+- fix(dev docs): Cleanup TUS Upload-Metadata values [[#956](https://github.com/opencloud-eu/docs/pull/956)]
 
 ### 👷 Admin Documentation
 
