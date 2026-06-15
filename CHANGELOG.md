@@ -1,5 +1,35 @@
 # Changelog
 
+## [3.28.0](https://github.com/opencloud-eu/docs/releases/tag/3.28.0) - 2026-06-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @michaelstingl, @openclouders, @rhafer
+
+### :octocat: Developer Documentation
+
+- fix(dev docs): Cleanup TUS Upload-Metadata values [[#956](https://github.com/opencloud-eu/docs/pull/956)]
+
+### 👷 Admin Documentation
+
+- Upgrade process from 4.0.x to 7.0.x [[#863](https://github.com/opencloud-eu/docs/pull/863)]
+- docs(common-issues): explain LDAP Result Code 49 from IDM volume desync [[#926](https://github.com/opencloud-eu/docs/pull/926)]
+
+### 👤 User Documentation
+
+- update desktopclient for macos and linux [[#855](https://github.com/opencloud-eu/docs/pull/855)]
+- add the note about idm in the german admin settings [[#952](https://github.com/opencloud-eu/docs/pull/952)]
+- fix formmatting in upload-download-unzip [[#950](https://github.com/opencloud-eu/docs/pull/950)]
+- fix the rename screenshot in de and en so the rename item is hovered [[#948](https://github.com/opencloud-eu/docs/pull/948)]
+- correct the screenshot to englisch [[#947](https://github.com/opencloud-eu/docs/pull/947)]
+
+### 📦️ Build&Tools
+
+- chore: bump docusaurus to 3.10.1 [[#958](https://github.com/opencloud-eu/docs/pull/958)]
+- remove category links which caused duplicate route warnings [[#957](https://github.com/opencloud-eu/docs/pull/957)]
+- Update docs [[#955](https://github.com/opencloud-eu/docs/pull/955)]
+- Update docs [[#951](https://github.com/opencloud-eu/docs/pull/951)]
+
 ## [3.27.0](https://github.com/opencloud-eu/docs/releases/tag/3.27.0) - 2026-06-11
 
 ### ❤️ Thanks to all contributors! ❤️
