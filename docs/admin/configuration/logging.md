@@ -12,7 +12,9 @@ Logging helps monitor OpenCloud’s health and diagnose issues. Log output varie
 
 ## Log Levels
 
-Set the global log level using the `OC_LOG_LEVEL` environment variable. You can also override it per service using service-specific variables. Default is `error`.
+Set the global log level in your `.env` file using `LOG_LEVEL`, which maps to `OC_LOG_LEVEL`. The default is `error`.
+
+If you want to change the log level for individual services, define the corresponding service-specific variables in the `environment:` section of the relevant service in `docker-compose.yaml`, for example `PROXY_LOG_LEVEL=info` or `SHARING_LOG_LEVEL=info`.
 
 ## The log levels are
 
