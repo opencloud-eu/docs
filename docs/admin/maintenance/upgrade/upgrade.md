@@ -97,10 +97,17 @@ docker stop opencloud
   </TabItem>
 </Tabs>
 
-## Pull the new Opencloud version
+## Pull the new OpenCloud image
+
+Pull the image that matches the release channel you use:
+
+- `opencloudeu/opencloud-rolling:{tag}` for rolling releases
+- `opencloudeu/opencloud:{tag}` for stable releases
+
+Replace `{tag}` with the image tag for the version you want to install. Available tags are listed on [Docker Hub](https://hub.docker.com/u/opencloudeu).
 
 ```bash
-docker pull opencloudeu/opencloud-rolling:{tag} # or opencloudeu/opencloud:{tag} depending on the version you're using
+docker pull opencloudeu/opencloud-rolling:{tag}
 ```
 
 ## Verify Configuration Changes
