@@ -8,7 +8,7 @@ Der OpenCloud Desktop Client ermöglicht die Synchronisation von Dateien zwische
 Er stellt sicher, dass Dateien offline verfügbar sind und dass Änderungen automatisch synchronisiert werden, sobald wieder eine Internetverbindung besteht.  
 Der Client ist für Windows, macOS und Linux verfügbar.
 
-#### Hauptfunktionen
+## Hauptfunktionen
 
 - Synchronisation von Dateien und Ordnern zwischen Desktop- oder Laptop-Computern und der OpenCloud
 - Automatische Aktualisierung bei Änderungen
