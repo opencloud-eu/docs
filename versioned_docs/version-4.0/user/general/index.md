@@ -7,7 +7,7 @@ import DocCardList from '@theme/DocCardList';
 The Web Client is the primary interface of OpenCloud.  
 It provides full access through the browser without requiring any additional software installation.
 
-#### Key Features
+## Key Features
 
 - File Management: Create, upload, edit, share, and organize files and folders
 - Space and User/Group Management

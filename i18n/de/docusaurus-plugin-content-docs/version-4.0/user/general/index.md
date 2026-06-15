@@ -7,7 +7,7 @@ import DocCardList from '@theme/DocCardList';
 Der Web Client ist die zentrale Benutzeroberfläche von OpenCloud.  
 Er ermöglicht den vollständigen Zugriff über den Browser, ohne dass zusätzliche Software installiert werden muss.
 
-#### Hauptfunktionen
+## Hauptfunktionen
 
 - Dateimanagement: Erstellen, Hochladen, Bearbeiten, Teilen und Organisieren von Dateien und Ordnern
 - Verwaltung von Spaces sowie Benutzer- und Gruppeneinstellungen

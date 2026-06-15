@@ -7,7 +7,7 @@ import DocCardList from '@theme/DocCardList';
 Die OpenCloud iOS App ermöglicht den mobilen Zugriff auf OpenCloud über iPhone oder iPad.  
 Sie bietet grundlegende Funktionen für das Arbeiten unterwegs, einschließlich Dateiverwaltung, Uploads und schneller Zusammenarbeit.
 
-#### Hauptfunktionen
+## Hauptfunktionen
 
 - Dateimanagement: Anzeigen, Hochladen, Teilen und Organisieren von Dateien und Ordnern
 - Zugriff auf Spaces und darin gespeicherte Inhalte

@@ -7,7 +7,7 @@ import DocCardList from '@theme/DocCardList';
 Die OpenCloud Android App ermöglicht den mobilen Zugriff auf OpenCloud über Android Geräte.  
 Sie bietet grundlegende Funktionen für das Arbeiten unterwegs, einschließlich Dateiverwaltung, Uploads und schneller Zusammenarbeit.
 
-#### Hauptfunktionen
+## Hauptfunktionen
 
 - Dateimanagement: Anzeigen, Hochladen, Teilen und Organisieren von Dateien und Ordnern
 - Zugriff auf Spaces und darin gespeicherte Inhalte
