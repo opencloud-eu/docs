@@ -8,7 +8,9 @@ draft: false
 
 # Keycloak Integration
 
-OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities. This guide explains how to set up and configure Keycloak with OpenCloud.
+OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities.
+For issuer variables, WebFinger client discovery, and Docker Compose requirements, see the [generic external IDP documentation](./external-idp.md).
+
 This guide is divided into three main sections:
 
 - [Keycloak Integration Overview](#opencloud-configuration-for-keycloak-general): A brief overview of the integration process.
@@ -17,48 +19,58 @@ This guide is divided into three main sections:
 
 ## OpenCloud Configuration for Keycloak (General)
 
-When using Keycloak as the identity provider, you need to understand the general configuration settings if you want to configure your custom integration.
+When using Keycloak as the identity provider, keep the Keycloak-specific parts of the setup here:
+realm, clients, scopes, mappers, and logout behavior.
 
-You can also use one of our predefined Docker Compose setups, which are located in the `opencloud-compose` repository. These setups include all necessary configurations for Keycloak and OpenLDAP.
-
-### Server Configuration
-
-```env
-PROXY_AUTOPROVISION_ACCOUNTS=true|false # that depends on your setup
-PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
-OC_OIDC_ISSUER=https://your-domain.example.com/realms/openCloud
-WEB_OPTION_ACCOUNT_EDIT_LINK_HREF=https://your-domain.example.com/realms/openCloud/account
-PROXY_OIDC_REWRITE_WELLKNOWN=true
-PROXY_USER_OIDC_CLAIM=preferred_username|sub|uuid # this depends on your setup
-# admin and demo accounts must be created in Keycloak
-OC_ADMIN_USER_ID: ""
-SETTINGS_SETUP_DEFAULT_ASSIGNMENTS: "false"
-GRAPH_ASSIGN_DEFAULT_USER_ROLE: "false"
-GRAPH_USERNAME_MATCH=none
-OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
-```
-
-Look [OpenCloud external IDP configuration](./external-idp#opencloud-configuration) for some more details about these settings.
+The OpenCloud issuer, WebFinger discovery, and Docker Compose external IDP setup
+are documented in the [generic external IDP guide](./external-idp.md).
 
 ### Client Configuration
 
-The [OIDC clients](./external-idp#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
+Use the client IDs and scopes from the [generic external IDP guide](./external-idp.md)
+when creating the Keycloak clients.
 
 ### Manual Client Configuration
 
-If you need to manually configure the clients in Keycloak:
+Create one public OpenID Connect client in Keycloak for each OpenCloud client
+type that should connect to this deployment: Web, Android, iOS, and Desktop.
 
-1. Log in to the Keycloak admin console
-2. Select the OpenCloud realm
-3. Navigate to Clients and click Create
-4. Configure each client according to the specifications above
-5. Ensure all clients have the appropriate scopes:
-   - web-origins
-   - profile
-   - roles
-   - groups
-   - basic
-   - email
+The client IDs configured in Keycloak must match the client IDs configured in
+OpenCloud through WebFinger:
+
+```env
+WEBFINGER_WEB_OIDC_CLIENT_ID=web
+WEBFINGER_ANDROID_OIDC_CLIENT_ID=OpenCloudAndroid
+WEBFINGER_IOS_OIDC_CLIENT_ID=OpenCloudIOS
+WEBFINGER_DESKTOP_OIDC_CLIENT_ID=OpenCloudDesktop
+```
+
+Configure each client as a public OIDC client and enable the authorization code
+flow with PKCE. Do not configure a client secret.
+
+The scopes configured on the Keycloak clients must provide the claims required
+by OpenCloud. Make sure the access token or UserInfo response contains the user,
+email, profile, group, and role information required by your OpenCloud setup.
+The WebFinger OIDC scopes configured in OpenCloud must exist in Keycloak and be
+usable by the clients:
+
+```env
+WEBFINGER_WEB_OIDC_CLIENT_SCOPES=openid profile email
+WEBFINGER_ANDROID_OIDC_CLIENT_SCOPES=openid profile email offline_access
+WEBFINGER_IOS_OIDC_CLIENT_SCOPES=openid profile email offline_access
+WEBFINGER_DESKTOP_OIDC_CLIENT_SCOPES=openid profile email offline_access
+```
+
+Configure the required redirect URIs for each client according to the OpenCloud
+client configuration used by your deployment.
+
+Keycloak client scopes and mappers must provide the claims required for user
+mapping, user provisioning if enabled, and role assignment when the `oidc`
+driver is used.
+
+For the generic OpenCloud external IDP requirements, including issuer
+variables, WebFinger client discovery, required claims, and Docker Compose
+setup, see [External OpenID Connect Identity Provider](./external-idp.md).
 
 ### Advanced Configuration
 
@@ -311,7 +323,8 @@ The Docker Compose file `idm/external-idp.yml` contains the complete configurati
 
 :::warning
 
-Your external IdP configuration must match the settings described in the [Client Configuration](#client-configuration) section above.
+Your external IdP configuration must match the client IDs and scopes described in the
+[generic external IDP guide](./external-idp.md).
 
 Your external IdP must provide the required claims for user provisioning and role assignment.
 
