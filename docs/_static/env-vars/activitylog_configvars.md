@@ -17,10 +17,12 @@
 |`OC_PERSISTENT_STORE`<br/>`ACTIVITYLOG_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`nats-js-kv`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`ACTIVITYLOG_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`ACTIVITYLOG_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`activitylog`|
-|`ACTIVITYLOG_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|``|
 |`OC_PERSISTENT_STORE_TTL`<br/>`ACTIVITYLOG_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. See the Environment Variable Types description for more details.`|`0s`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`ACTIVITYLOG_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`ACTIVITYLOG_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`ACTIVITYLOG_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`false`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`ACTIVITYLOG_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`ACTIVITYLOG_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided ACTIVITYLOG_STORE_TLS_INSECURE will be seen as false.`|``|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`eu.opencloud.api.gateway`|
 |`ACTIVITYLOG_HTTP_ADDR`| 1.0.0 |string|`The bind address of the HTTP service.`|`127.0.0.1:9195`|
 |`ACTIVITYLOG_HTTP_ROOT`| 1.0.0 |string|`Subdirectory that serves as the root for this HTTP service.`|`/`|

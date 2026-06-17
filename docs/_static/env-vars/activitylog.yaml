@@ -20,10 +20,12 @@ store:
   nodes:
   - 127.0.0.1:9233
   database: activitylog
-  table: ""
   ttl: 0s
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 reva_gateway: eu.opencloud.api.gateway
 grpc_client_tls: null
 http:

@@ -35,6 +35,9 @@
 |`OC_PERSISTENT_STORE_TTL`<br/>`USERLOG_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. Defaults to '336h' (2 weeks). See the Environment Variable Types description for more details.`|`336h0m0s`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`USERLOG_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`USERLOG_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`USERLOG_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`false`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`USERLOG_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`USERLOG_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided USERLOG_STORE_TLS_INSECURE will be seen as false.`|``|
 |`OC_DISABLE_SSE,USERLOG_DISABLE_SSE`| 1.0.0 |bool|`Disables server-sent events (sse). When disabled, clients will no longer receive sse notifications.`|`false`|
 |`USERLOG_GLOBAL_NOTIFICATIONS_SECRET`| 1.0.0 |string|`The secret to secure the global notifications endpoint. Only system admins and users knowing that secret can call the global notifications POST/DELETE endpoints.`|``|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`USERLOG_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|``|
