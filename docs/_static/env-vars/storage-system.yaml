@@ -33,6 +33,9 @@ cache:
   disable_persistence: false
   auth_username: ""
   auth_password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 driver: decomposed
 drivers:
   decomposed:

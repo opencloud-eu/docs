@@ -21,4 +21,7 @@
 |`OC_CACHE_TTL`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TTL`| 1.0.0 |Duration|`Default time to live for signing keys. See the Environment Variable Types description for more details.`|`24h0m0s`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided OCS_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE will be seen as false.`|``|
 |`OC_JWT_SECRET`<br/>`OCS_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|``|

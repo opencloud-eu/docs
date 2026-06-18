@@ -181,6 +181,9 @@ oidc:
     disable_persistence: false
     username: ""
     password: ""
+    enable_tls: false
+    tls_insecure: false
+    tls_root_ca_certificate: ""
   jwks:
     refresh_interval: 60
     refresh_timeout: 10
@@ -220,6 +223,9 @@ pre_signed_url:
     disable_persistence: true
     username: ""
     password: ""
+    enable_tls: false
+    tls_insecure: false
+    tls_root_ca_certificate: ""
 account_backend: cs3
 user_oidc_claim: preferred_username
 user_cs3_claim: username

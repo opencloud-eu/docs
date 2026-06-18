@@ -170,14 +170,21 @@ filemetadata_cache:
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 id_cache:
   store: nats-js-kv
   nodes:
   - 127.0.0.1:9233
   database: ids-storage-users
+  ttl: 0s
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 mount_id: ""
 expose_data_server: false
 readonly: false
