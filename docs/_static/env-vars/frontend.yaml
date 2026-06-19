@@ -99,6 +99,9 @@ ocs:
   stat_cache_disable_persistence: false
   stat_cache_auth_username: ""
   stat_cache_auth_password: ""
+  stat_cache_enable_tls: false
+  stat_cache_tls_insecure: false
+  stat_cache_tls_root_ca_certificate: ""
   enable_denials: false
   list_ocm_shares: true
   include_ocm_sharees: false

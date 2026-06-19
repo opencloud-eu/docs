@@ -11,6 +11,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`GRAPH_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`GRAPH_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`GRAPH_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`GRAPH_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`GRAPH_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`GRAPH_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided GRAPH_CACHE_TLS_INSECURE will be seen as false.`|``|
 |`GRAPH_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`127.0.0.1:9124`|
 |`GRAPH_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|``|
 |`GRAPH_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`false`|
@@ -114,3 +117,6 @@
 |`GRAPH_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`graph`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`GRAPH_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`GRAPH_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`GRAPH_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`false`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`GRAPH_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`GRAPH_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided GRAPH_STORE_TLS_INSECURE will be seen as false.`|``|

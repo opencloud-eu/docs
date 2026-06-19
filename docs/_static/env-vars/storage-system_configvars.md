@@ -25,6 +25,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`STORAGE_SYSTEM_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_SYSTEM_CACHE_AUTH_USERNAME`| 1.0.0 |string|`Username for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_SYSTEM_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`Password for the configured store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_SYSTEM_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_SYSTEM_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_SYSTEM_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_SYSTEM_CACHE_TLS_INSECURE will be seen as false.`|``|
 |`STORAGE_SYSTEM_DRIVER`| 1.0.0 |string|`The driver which should be used by the service. The only supported driver is 'decomposed'. For backwards compatibility reasons it's also possible to use the 'ocis' driver and configure it using the 'decomposed' options. `|`decomposed`|
 |`STORAGE_SYSTEM_OC_ROOT`| 1.0.0 |string|`Path for the directory where the STORAGE-SYSTEM service stores it's persistent data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`/var/lib/opencloud/storage/metadata`|
 |`STORAGE_SYSTEM_OC_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value of 20 will be used.`|`20`|

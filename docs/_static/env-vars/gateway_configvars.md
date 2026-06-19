@@ -26,6 +26,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`GATEWAY_PROVIDER_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the provider cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`GATEWAY_PROVIDER_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to use for authentication. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`GATEWAY_PROVIDER_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to use for authentication. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`GATEWAY_PROVIDER_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`GATEWAY_PROVIDER_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`GATEWAY_PROVIDER_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided GATEWAY_PROVIDER_CACHE_TLS_INSECURE will be seen as false.`|``|
 |`OC_CACHE_STORE`<br/>`GATEWAY_CREATE_HOME_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`memory`|
 |`OC_CACHE_STORE_NODES`<br/>`GATEWAY_CREATE_HOME_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`[127.0.0.1:9233]`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`cache-createhome`|
@@ -33,6 +36,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`GATEWAY_CREATE_HOME_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the create home cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`GATEWAY_CREATE_HOME_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to use for authentication. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`GATEWAY_CREATE_HOME_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to use for authentication. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`GATEWAY_CREATE_HOME_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`GATEWAY_CREATE_HOME_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`GATEWAY_CREATE_HOME_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided GATEWAY_CREATE_HOME_CACHE_TLS_INSECURE will be seen as false.`|``|
 |`OC_URL`<br/>`GATEWAY_FRONTEND_PUBLIC_URL`| 1.0.0 |string|`The public facing URL of the OpenCloud frontend.`|`https://localhost:9200`|
 |`GATEWAY_USERS_ENDPOINT`| 1.0.0 |string|`The endpoint of the users service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`eu.opencloud.api.users`|
 |`GATEWAY_GROUPS_ENDPOINT`| 1.0.0 |string|`The endpoint of the groups service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`eu.opencloud.api.groups`|

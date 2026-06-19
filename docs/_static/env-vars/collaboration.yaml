@@ -24,6 +24,9 @@ store:
   ttl: 30m0s
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 events:
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
