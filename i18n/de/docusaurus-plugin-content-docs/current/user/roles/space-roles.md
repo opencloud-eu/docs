@@ -6,37 +6,54 @@ title: Rollen für Spaces
 
 # Rollen für Spaces in OpenCloud
 
-| Role            | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | Mitglieder verwalten | deaktivieren / aktivieren Space | Quota bearbeiten | Space löschen |
+In einem Space können Mitglieder verschiedene Rollen haben. Jede Rolle legt
+fest, was ein Mitglied innerhalb dieses Spaces tun kann.
+
+| Rolle           | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | Mitglieder verwalten | Space deaktivieren / aktivieren | Quota bearbeiten | Space löschen |
 | :-------------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------: | :-----------------------------: | :--------------: | :-----------: |
 | Kann anzeigen   |    x     |       x       |     -     |     -      |     -     |    -    |          -           |                -                |        -         |       -       |
 | Kann bearbeiten |    x     |       x       |     x     |     x      |     x     |    x    |          -           |                -                |        -         |       -       |
-| Kann verwalten  |    x     |       x       |     x     |     x      |     x     |    x    |          x           |                x                |        x         |       x       |
+| Kann verwalten  |    x     |       x       |     x     |     x      |     x     |    x    |          x           |                x                |        x         |       -       |
 
-## Space Rollen und Berechtigungen
+## Kann anzeigen
 
-In einem Space können Mitglieder verschiedene Rollen haben, die ihnen unterschiedliche Zugriffsebenen geben.
+Die Rolle `can view` erlaubt es Mitgliedern, Dateien im Space anzuzeigen und
+herunterzuladen.
 
-### Kann anzeigen
+Mit dieser Rolle können Mitglieder keine Dateien und Ordner hochladen,
+erstellen, bearbeiten oder löschen.
 
-Mit dieser Rolle kann das Mitglied Dateien im Space ansehen und herunterladen, aber keine Änderungen vornehmen, keine Dateien und Ordner hochladen oder neue erstellen.
+## Kann bearbeiten
 
-### Kann bearbeiten
+Die Rolle `can edit` enthält die Berechtigungen von `can view` und erlaubt es
+Mitgliedern, mit Inhalten im Space zu arbeiten.
 
-Mit dieser Rolle kann das Mitglied alles tun, was ein „Can View“-Mitglied tun kann, plus:
+Mit dieser Rolle können Mitglieder:
 
 - Dateien in den Space hochladen
-- Hinzufügen von neuen Dateien und Ordnern
-- Löschen von Dateien und Ordnern, einschließlich ihrer Historie
+- Dateien und Ordner erstellen
+- Dateien und Ordner bearbeiten
+- Dateien und Ordner löschen, einschließlich ihrer Historie
 - Gelöschte Dateien wiederherstellen
 
-### Kann verwalten
+## Kann verwalten
 
-Diese Rolle verleiht dem Mitglied alle Fähigkeiten von „Kann bearbeiten“, plus:
+Die Rolle `can manage` enthält die Berechtigungen von `can edit` und erlaubt es
+Mitgliedern, den Space zu verwalten.
 
-- Hinzufügen oder Entfernen von Mitgliedern aus dem Space
-- Ändern der Rollen anderer Mitglieder im Space
-- Aktivieren und Deaktivieren des Spaces
-- Bearbeiten der Quote des Spaces
-- Löschen des Spaces
+Mit dieser Rolle können Mitglieder:
 
-Jede Rolle bestimmt, was ein Mitglied innerhalb des Spaces tun kann!
+- Mitglieder zum Space hinzufügen
+- Mitglieder aus dem Space entfernen
+- Die Rollen anderer Space-Mitglieder ändern
+- Den Space aktivieren und deaktivieren
+- Die Space-Quote bearbeiten
+
+:::note
+Mit der Rolle `can manage` kann ein Space verwaltet werden, aber er kann nicht
+gelöscht werden.
+
+Das Löschen eines Spaces erfordert die OpenCloud-Nutzerrolle `Admin` oder
+`Space Admin`. Weitere Informationen findest du unter [Nutzerrollen in
+OpenCloud](./user-roles.md).
+:::
