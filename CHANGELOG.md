@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @openclouders
+@ScharfViktor, @Svanvith, @openclouders
 
 ### :octocat: Developer Documentation
 
 - update Keycloak e2e testing documentation [[#967](https://github.com/opencloud-eu/docs/pull/967)]
+
+### 👤 User Documentation
+
+- add some improvents to desktop client states [[#970](https://github.com/opencloud-eu/docs/pull/970)]
 
 ### 📦️ Build&Tools
 
