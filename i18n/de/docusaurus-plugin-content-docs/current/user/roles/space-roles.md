@@ -17,7 +17,7 @@ fest, was ein Mitglied innerhalb dieses Spaces tun kann.
 
 ## Kann anzeigen
 
-Die Rolle `can view` erlaubt es Mitgliedern, Dateien im Space anzuzeigen und
+Die Rolle `Kann anzeigen` erlaubt es Mitgliedern, Dateien im Space anzuzeigen und
 herunterzuladen.
 
 Mit dieser Rolle können Mitglieder keine Dateien und Ordner hochladen,
@@ -25,7 +25,7 @@ erstellen, bearbeiten oder löschen.
 
 ## Kann bearbeiten
 
-Die Rolle `can edit` enthält die Berechtigungen von `can view` und erlaubt es
+Die Rolle `Kann bearbeiten` enthält die Berechtigungen von `Kann anzeigen` und erlaubt es
 Mitgliedern, mit Inhalten im Space zu arbeiten.
 
 Mit dieser Rolle können Mitglieder:
@@ -38,7 +38,7 @@ Mit dieser Rolle können Mitglieder:
 
 ## Kann verwalten
 
-Die Rolle `can manage` enthält die Berechtigungen von `can edit` und erlaubt es
+Die Rolle `Kann verwalten` enthält die Berechtigungen von `Kann bearbeiten` und erlaubt es
 Mitgliedern, den Space zu verwalten.
 
 Mit dieser Rolle können Mitglieder:
@@ -50,7 +50,7 @@ Mit dieser Rolle können Mitglieder:
 - Die Space-Quote bearbeiten
 
 :::note
-Mit der Rolle `can manage` kann ein Space verwaltet werden, aber er kann nicht
+Mit der Rolle `Kann verwalten` kann ein Space verwaltet werden, aber er kann nicht
 gelöscht werden.
 
 Das Löschen eines Spaces erfordert die OpenCloud-Nutzerrolle `Admin` oder
