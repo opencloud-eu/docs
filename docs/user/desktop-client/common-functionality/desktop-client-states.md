@@ -47,7 +47,7 @@ Wait until synchronization is complete before shutting down your device.
 
 ## Paused
 
-The Paused icon appears when synchronization has been temporarily paused.
+The Paused icon appears when synchronization has been temporarily paused by the user.
 
 - Synchronization is stopped
 - No files are transferred
@@ -63,7 +63,7 @@ The Offline icon indicates that the Desktop Client cannot currently connect to t
 
 - No connection to the server
 - Synchronization is unavailable
-- Local files remain accessible
+- Local files remain accessible (Windows files need to be [full pinned](../windows/sync-settings.md#always-available-on-this-device-full-pinned))
 
 <img src={require(".././img/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline state" width="100"/>
 

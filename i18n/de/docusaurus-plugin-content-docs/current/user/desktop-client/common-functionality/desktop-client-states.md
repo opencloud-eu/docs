@@ -47,7 +47,7 @@ Warten Sie, bis die Synchronisierung abgeschlossen ist, bevor Sie Ihr Gerät her
 
 ## Pausiert
 
-Das Symbol „Pausiert“ erscheint, wenn die Synchronisierung vorübergehend angehalten wurde.
+Das Symbol „Pausiert“ erscheint, wenn die Synchronisierung vorübergehend vom Benutzer angehalten wurde.
 
 - Die Synchronisierung ist gestoppt
 - Es werden keine Dateien übertragen
@@ -63,7 +63,7 @@ Das Symbol „Offline“ zeigt an, dass der Desktop-Client derzeit keine Verbind
 
 - Keine Verbindung zum Server
 - Synchronisierung ist nicht verfügbar
-- Lokale Dateien bleiben zugänglich
+- Lokale Dateien bleiben zugänglich (Windows-Ordner müssen [vollständig angeheftet](../windows/sync-settings.md#immer-auf-diesem-gerat-verfugbar-full-pinned) sein)
 
 <img src={require(".././img/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline-Status" width="100"/>
 
