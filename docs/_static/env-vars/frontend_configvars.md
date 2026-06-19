@@ -1,5 +1,5 @@
 
-2026-06-15-00-10-35
+2026-06-19-00-12-13
 
 ## Deprecation Notice
 
@@ -75,6 +75,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`FRONTEND_OCS_STAT_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disable persistence of the cache. Only applies when using the 'nats-js-kv' store type. Defaults to false.`|`false`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`FRONTEND_OCS_STAT_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to use for authentication. Only applies when using the 'nats-js-kv' store type.`|``|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`FRONTEND_OCS_STAT_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to use for authentication. Only applies when using the 'nats-js-kv' store type.`|``|
+|`OC_CACHE_ENABLE_TLS`<br/>`FRONTEND_OCS_STAT_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`false`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided FRONTEND_OCS_STAT_CACHE_TLS_INSECURE will be seen as false.`|``|
 |`FRONTEND_OCS_ENABLE_DENIALS`| 1.0.0 |bool|`EXPERIMENTAL: enable the feature to deny access on folders.`|`false`|
 |`OC_ENABLE_OCM`<br/>`FRONTEND_OCS_LIST_OCM_SHARES`| 1.0.0 |bool|`Include OCM shares when listing shares. See the OCM service documentation for more details.`|`true`|
 |`OC_ENABLE_OCM`<br/>`FRONTEND_OCS_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing sharees.`|`false`|
@@ -93,7 +96,8 @@
 |`OCDAV_GATEWAY_REQUEST_TIME`<br/>`FRONTENT_OUTOCDAV_GATEWAY_REQUEST_TIMEOUT`| 1.0.0 |int64|`Request timeout in seconds for requests from the oCDAV service to the GATEWAY service.`|`84300`|
 |`OC_MACHINE_AUTH_API_KEY`<br/>`OCDAV_MACHINE_AUTH_API_KEY`<br/>`FRONTENT_OCDAV_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`Machine auth API key used to validate internal requests necessary for the access to resources from other services.`|``|
 |`OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`<br/>`FRONTENT_OCDAV_ALLOW_PROPFIND_DEPTH_INFINITY`| 1.0.0 |bool|`Allow the use of depth infinity in PROPFINDS. When enabled, a propfind will traverse through all subfolders. If many subfolders are expected, depth infinity can cause heavy server load and/or delayed response times.`|`false`|
-|`OCDAV_NAME_VALIDATION_INVALID_CHARS`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_INVALID_CHARS`| 6.0.0 |[]string|`List of characters that are not allowed in file or folder names.`|``|
+|`OCDAV_NAME_VALIDATION_INVALID_CHARS`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_INVALID_CHARS`| 6.0.0 |[]string|`List of characters that are not allowed in file or folder names.`|`[  
+ \]`|
 |`OCDAV_NAME_VALIDATION_MAX_LENGTH`<br/>`FRONTENT_OCDAV_NAME_VALIDATION_MAX_LENGTH`| 6.0.0 |int|`Max length of file or folder names.`|`255`|
 |`FRONTEND_CHECKSUMS_SUPPORTED_TYPES`| 1.0.0 |[]string|`A list of checksum types that indicate to clients which hashes the server can use to verify upload integrity. Supported types are 'sha1', 'md5' and 'adler32'. See the Environment Variable Types description for more details.`|`[sha1 md5 adler32]`|
 |`FRONTEND_CHECKSUMS_PREFERRED_UPLOAD_TYPE`| 1.0.0 |string|`The supported checksum type for uploads that indicates to clients supporting multiple hash algorithms which one is preferred by the server. Must be one out of the defined list of SUPPORTED_TYPES.`|`sha1`|
