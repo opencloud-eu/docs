@@ -12,6 +12,9 @@ cache:
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 debug:
   addr: 127.0.0.1:9124
   token: ""
@@ -158,3 +161,6 @@ store:
   database: graph
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""

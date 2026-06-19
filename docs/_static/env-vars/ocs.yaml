@@ -41,5 +41,8 @@ signing_keys:
   ttl: 24h0m0s
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 token_manager:
   jwt_secret: ""

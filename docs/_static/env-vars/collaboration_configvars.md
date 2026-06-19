@@ -21,6 +21,9 @@
 |`OC_PERSISTENT_STORE_TTL`<br/>`COLLABORATION_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. Defaults to '30m' (30 minutes). See the Environment Variable Types description for more details.`|`30m0s`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`COLLABORATION_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`COLLABORATION_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|``|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`COLLABORATION_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`false`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`COLLABORATION_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`COLLABORATION_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided COLLABORATION_STORE_TLS_INSECURE will be seen as false.`|``|
 |`OC_EVENTS_ENDPOINT`<br/>`COLLABORATION_EVENTS_ENDPOINT`| next |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`127.0.0.1:9233`|
 |`OC_EVENTS_CLUSTER`<br/>`COLLABORATION_EVENTS_CLUSTER`| next |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`opencloud-cluster`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`COLLABORATION_EVENTS_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`false`|
