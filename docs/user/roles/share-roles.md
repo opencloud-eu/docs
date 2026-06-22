@@ -6,37 +6,40 @@ description: Share roles in OpenCloud
 draft: false
 ---
 
-# Sharing Roles in OpenCloud
+# Share Roles in OpenCloud
 
-| Role              | view | download | upload | edit | add | delete | only view doc, img, pdf with watermark |
-| :---------------- | :--: | :------: | :----: | :--: | :-: | :----: | :------------------------------------: |
-| can view (secure) |  -   |    -     |   -    |  -   |  -  |   -    |                   x                    |
-| can view          |  x   |    x     |   -    |  -   |  -  |   -    |                   -                    |
-| can upload        |  x   |    x     |   x    |  -   |  -  |   -    |                   -                    |
-| can edit          |  x   |    x     |   x    |  x   |  x  |   x    |                   -                    |
+| Role              | view | upload | edit | add | delete | only view doc, img, pdf with watermark |
+| :---------------- | :--: | :----: | :--: | :-: | :----: | :------------------------------------: |
+| can view (secure) |  -   |   -    |  -   |  -  |   -    |                   x                    |
+| can view          |  x   |   -    |  -   |  -  |   -    |                   -                    |
+| can edit          |  x   |   x    |  x   |  x  |   x    |                   -                    |
 
-## Space Member Roles and Permissions
+## Can View Secure
 
-In a Space, members can have different roles that determine what they can do with shared files and folders.
+The `can view (secure)` role allows recipients to view supported files in a restricted viewer.
 
-### Can View (Secure)
+Recipients with this role can:
 
-- You can only view documents, pictures, and PDFs.
-- A watermark is added to the files.
-- Downloading is not allowed.
+- View documents, images, and PDF files
+- View files with a watermark
 
-### Can View
+Recipients with this role cannot upload, edit, add, or delete files and folders.
 
-- You can view and download files and folders.
-- No restrictions on downloading.
+## Can View
 
-### Can Upload
+The `can view` role allows recipients to view shared files and folders.
 
-- You can view, download, and upload files and folders.
+Compared with `can view (secure)`, recipients with this role can view shared content without the restricted viewer and watermark.
 
-### Can Edit
+Recipients with this role cannot upload, edit, add, or delete files and folders.
 
-- You can edit, add, and delete files and folders.
-- Full access to modify shared content.
+## Can Edit
 
-Each role gives a different level of access, ensuring the right permissions for each user!
+The `can edit` role includes the permissions of `can view` and allows recipients to modify shared content.
+
+Recipients with this role can:
+
+- Upload files
+- Create files and folders
+- Edit files and folders
+- Delete files and folders

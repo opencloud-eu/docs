@@ -6,37 +6,65 @@ description: Rollen beim Teilen in OpenCloud
 draft: false
 ---
 
-# Rollen beim teilen in OpenCloud
+# Rollen beim Teilen in OpenCloud
 
-| Rolle                  | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | nur doc, img, pdf mit Wasserzeichen anzeigen |
-| :--------------------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------------------------------: |
-| kann anzeigen (geheim) |    -     |       -       |     -     |     -      |     -     |    -    |                      x                       |
-| kann anzeigen          |    x     |       x       |     -     |     -      |     -     |    -    |                      -                       |
-| kann hochladen         |    x     |       x       |     x     |     -      |     -     |    -    |                      -                       |
-| kann bearbeiten        |    x     |       x       |     x     |     x      |     x     |    x    |                      -                       |
+| Rolle                           | anzeigen | hochladen | bearbeiten | hinzufügen | löschen | nur doc, img, pdf mit Wasserzeichen anzeigen |
+| :------------------------------ | :------: | :-------: | :--------: | :--------: | :-----: | :------------------------------------------: |
+| Kann anzeigen (sichere Ansicht) |    -     |     -     |     -      |     -      |    -    |                      x                       |
+| Kann anzeigen                   |    x     |     -     |     -      |     -      |    -    |                      -                       |
+| Kann hochladen                  |    x     |     x     |     -      |     -      |    -    |                      -                       |
+| Kann bearbeiten                 |    x     |     x     |     x      |     x      |    x    |                      -                       |
 
-## Space-Mitglieder-Rollen und -Rechte
+## Kann anzeigen (sichere Ansicht)
 
-In einem Space können Mitglieder verschiedene Rollen haben, die bestimmen, was sie mit gemeinsamen Dateien und Ordnern tun können.
+Die Rolle `Kann anzeigen (sichere Ansicht)` erlaubt Empfängern, unterstützte
+Dateien in einem eingeschränkten Viewer anzuzeigen.
 
-### Kann ansehen (sicher)
+Empfänger mit dieser Rolle können:
 
-- Sie können nur Dokumente, Bilder und PDFs anzeigen.
-- Die Dateien werden mit einem Wasserzeichen versehen.
-- Das Herunterladen ist nicht erlaubt.
+- Dokumente, Bilder und PDF-Dateien anzeigen
+- Dateien mit Wasserzeichen anzeigen
 
-### Kann anzeigen
+Empfänger mit dieser Rolle können keine Dateien und Ordner hochladen, bearbeiten,
+hinzufügen oder löschen.
 
-- Sie können Dateien und Ordner anzeigen und herunterladen.
-- Keine Einschränkungen beim Herunterladen.
+## Kann anzeigen
 
-### Kann hochladen
+Die Rolle `Kann anzeigen` erlaubt Empfängern, gemeinsam genutzte Dateien und
+Ordner anzuzeigen.
 
-- Sie können Dateien und Ordner anzeigen, herunterladen und hochladen.
+Im Vergleich zu `Kann anzeigen (sichere Ansicht)` können Empfänger mit dieser
+Rolle geteilte Inhalte ohne den eingeschränkten Viewer und ohne Wasserzeichen
+anzeigen.
 
-### Kann bearbeiten
+Empfänger mit dieser Rolle können keine Dateien und Ordner hochladen, bearbeiten,
+hinzufügen oder löschen.
 
-- Sie können Dateien und Ordner bearbeiten, hinzufügen und löschen.
-- Voller Zugriff auf die Änderung gemeinsamer Inhalte.
+## Kann hochladen
 
-Jede Rolle gibt eine andere Zugriffsstufe, so dass jeder Benutzer die richtigen Berechtigungen erhält!
+Die Rolle `Kann hochladen` enthält die Berechtigungen von `Kann anzeigen` und
+erlaubt Empfängern, Dateien und Ordner hochzuladen.
+
+Empfänger mit dieser Rolle können:
+
+- Dateien und Ordner anzeigen
+- Dateien und Ordner herunterladen
+- Dateien und Ordner hochladen
+
+Empfänger mit dieser Rolle können keine Dateien und Ordner bearbeiten, hinzufügen
+oder löschen.
+
+## Kann bearbeiten
+
+Die Rolle `Kann bearbeiten` enthält die Berechtigungen von `Kann anzeigen` und
+erlaubt Empfängern, gemeinsam genutzte Inhalte zu ändern.
+
+Empfänger mit dieser Rolle können:
+
+- Dateien hochladen
+- Dateien und Ordner erstellen
+- Dateien und Ordner bearbeiten
+- Dateien und Ordner löschen
+
+Jede Rolle bietet eine andere Zugriffsstufe, damit jeder Benutzer die richtigen
+Berechtigungen erhält.
