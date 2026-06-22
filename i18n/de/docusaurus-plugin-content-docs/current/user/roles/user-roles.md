@@ -6,68 +6,69 @@ title: Rollen für Nutzer
 
 # Nutzerrollen in OpenCloud
 
-| Rolle             | Persönlicher Space | Spaces erstellen | Spaces verwalten | Nutzer und Gruppen verwalten |
-| :---------------- | :----------------: | :--------------: | :--------------: | :--------------------------: |
-| Administrator     |         x          |        x         |        x         |              x               |
-| Space Manager/-in |         x          |        x         |        x         |              -               |
-| Person            |         x          |        -         |        x         |              -               |
-| User Light        |         -          |        -         |        x         |              -               |
-
-## Administrator
-
-Die Administrator-Rolle in OpenCloud hat die gleichen Fähigkeiten wie ein Space-Administrator, verfügt aber zusätzlich über spezielle Berechtigungen zur Verwaltung von Benutzern, Gruppen und Systemeinstellungen.
-Allerdings haben Administratoren keinen direkten Zugriff auf Space-Daten oder die Möglichkeit, Benutzer zu Spaces hinzuzufügen, für die sie nicht die Rolle „kann verwalten“ haben. Nachfolgend sind die wichtigsten Aktionen aufgeführt, die ein Administrator durchführen kann:
-
-- Lokale Benutzer und Gruppen erstellen und löschen
-
-  Administratoren können neue lokale Benutzer hinzufügen und bestehende lokale Benutzer aus dem System entfernen.
-  Sie können auch lokale Gruppen erstellen und löschen, um Benutzer effizient zu organisieren.
-
-- Benutzer und Gruppen bearbeiten
-
-  Benutzerdetails wie Namen, E-Mail-Adressen und Rollen können geändert werden.
-  Gruppen können durch Hinzufügen oder Entfernen von Mitgliedern nach Bedarf aktualisiert werden.
-
-- Anmeldung verhindern
-
-  Falls erforderlich, können Administratoren Benutzerkonten deaktivieren und so verhindern, dass sie sich anmelden können.
-  Dies ist nützlich aus Sicherheitsgründen oder wenn ein Konto nicht mehr benötigt wird.
-
-- Spaces verwalten (ohne Zugriff auf Space-Daten)
-
-  Administratoren können Spaces verwalten, z. B. aktivieren, deaktivieren oder löschen, umbenennen oder die Quote anpassen, auch wenn sie nicht die Rolle „kann verwalten“ haben.
-  Sie können jedoch nicht auf die Dateien innerhalb eines Spaces zugreifen oder ihm Mitglieder hinzufügen.
-
-- Das Logo ändern
-
-  Das Systemlogo kann aktualisiert werden, um das Firmenbranding widerzuspiegeln.
-  Dies kann in den Admin-Einstellungen unter dem Abschnitt „Allgemein“ vorgenommen werden.
-
-## Space Manager/-in
-
-Ein Space-Administrator hat die höchste Ebene der Kontrolle über Spaces. Er kann:
-
-- Spaces erstellen und verwalten
-- in Spaces, die er nicht erstellt hat, die Rolle „Kann bearbeiten“ zugewiesen bekommen
-- Einen persönlichen Space haben, in dem er Dateien und Ordner erstellen und Daten hochladen kann
-
-## Person
-
-Ein normaler Benutzer hat Zugang zu seinem eigenen Space und kann Teil anderer Spaces sein. Er kann:
-
-- Dateien und Ordner in seinem persönlichen Space erstellen
-- Eigene Daten hochladen und verwalten
-- Als Mitglied zu einem Space hinzugefügt werden
-- Kann die Rolle „Kann bearbeiten“ in einem Space haben
+| Rolle         | kann Space-Manager sein | Persönlicher Space | Spaces erstellen/löschen | Nutzer und Gruppen verwalten |
+| :------------ | :---------------------: | :----------------: | :----------------------: | :--------------------------: |
+| User Light    |            x            |         -          |            -             |              -               |
+| Person        |            x            |         x          |            -             |              -               |
+| Space Admin   |            x            |         x          |            x             |              -               |
+| Administrator |            x            |         x          |            x             |              x               |
 
 ## User Light
 
-Ein User Light hat einen eingeschränkten Zugang und verfügt nicht über einen eigenen Space. Er kann:
+Ein User Light hat standardmäßig eingeschränkten Zugriff und keinen eigenen
+Space.
 
-- Als Mitglied zu einem Space hinzugefügt werden
-- Kann die Rolle „Kann bearbeiten“ in einem Space haben
-- Er kann keine Dateien und Ordner erstellen oder Daten in einen persönlichen Space hochladen.
+Ein User Light kann:
+
+- Zu einem Space hinzugefügt werden
+- Die Rolle „Kann bearbeiten“ in einem Space erhalten
 
 :::note
-Wenn ein Nutzer zuvor die Rolle Person oder höher hatte und später wieder auf User Light gesetzt wird, behält er seinen persönlichen Space.
+Wenn ein Nutzer zuvor die Rolle Person oder höher hatte und später wieder auf
+User Light gesetzt wird, behält er seinen bestehenden persönlichen Space.
 :::
+
+## Person
+
+Eine Person hat dieselben Möglichkeiten zur Mitgliedschaft in Spaces wie ein
+User Light und zusätzlich einen eigenen persönlichen Space für eigene Dateien
+und Ordner.
+
+Eine Person kann:
+
+- Dateien und Ordner im persönlichen Space erstellen
+- Eigene Daten hochladen und verwalten
+
+## Space Admin
+
+Ein Space Admin kann alles tun, was eine Person kann. Zusätzlich kann ein Space
+Admin Spaces auf administrativer Ebene verwalten.
+
+Ein Space Admin kann:
+
+- Spaces erstellen, löschen, aktivieren und deaktivieren
+- Spaces umbenennen
+- Space-Quoten anpassen
+- Spaces verwalten, ohne auf deren Inhalte zuzugreifen
+
+Space Admins können den Space selbst verwalten, auch wenn sie nicht Mitglied
+des Spaces sind. Dazu gehören administrative Aktionen wie Aktivieren,
+Deaktivieren, Löschen, Umbenennen oder Anpassen der Quote eines Spaces.
+
+Space Admins können nicht auf die Dateien innerhalb eines Spaces zugreifen,
+außer sie wurden mit der erforderlichen Space-Rolle zum Space hinzugefügt. Sie
+können auch keine Mitglieder hinzufügen oder entfernen, außer sie haben in dem
+Space die Rolle „Kann verwalten“.
+
+## Administrator
+
+Die Administrator-Rolle in OpenCloud hat die Rechte eines Space Admins und kann
+zusätzlich Benutzer, Gruppen und Systemeinstellungen verwalten.
+
+Ein Administrator kann:
+
+- Lokale Benutzer erstellen und löschen
+- Lokale Gruppen erstellen und löschen
+- Benutzerdetails wie Namen, E-Mail-Adressen und Rollen bearbeiten
+- Benutzer zu Gruppen hinzufügen oder aus Gruppen entfernen
+- Benutzerkonten deaktivieren, um die Anmeldung zu verhindern
