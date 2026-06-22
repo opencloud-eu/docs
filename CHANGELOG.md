@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-19
+## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-22
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- rework roles part for de and eng [[#975](https://github.com/opencloud-eu/docs/pull/975)]
 - add some improvents to desktop client states [[#970](https://github.com/opencloud-eu/docs/pull/970)]
 
 ### 📦️ Build&Tools
