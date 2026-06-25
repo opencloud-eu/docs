@@ -29,6 +29,8 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
+    | v7.3.0 | TBD | TBD |
+    | v7.2.0 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.0) |
     | v7.1.0 | 2026 June 2 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.1.0) |
     | v7.0.0 | 2026 May 21 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.0.0) |
     | v6.2.0 | 2026 May 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v6.2.0) |
@@ -60,7 +62,8 @@ With LTS, businesses can continue using an older production release without need
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
     | - | 2026 October 26 | Production Release |
-    | - | 2026 June 22 | Production Release |
+    | v4.0.8 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.8) |
+    | v7.2.0 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.0) |
     | v4.0.7 | 2026 May 18 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.7) |
     | v4.0.6 | 2026 April 29 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.6) |
     | v4.0.5 | 2026 April 8 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.5) |
@@ -77,7 +80,9 @@ With LTS, businesses can continue using an older production release without need
     | v2.0.0 | 2025 March 26 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v2.0.0) |
     </TabItem>
   <TabItem value="lts" label="LTS">
-    LTS Releases will be availabile as the second Production Releases will be published. Until then a LTS release makes no sense.
+    | Version | Release Date | Release Notes & Download |
+    |:--------|:-------------|:--------------|
+    | v4.0.9 | TBD | TBD |
   </TabItem>
 </Tabs>
 
