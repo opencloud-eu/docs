@@ -1,91 +1,27 @@
 {
   "version.label": {
-    "message": "rolling",
-    "description": "The label for version current"
-  },
-  "sidebar.user.category.Manage Files and Folders": {
-    "message": "Verwalten von Dateien und Ordnern",
-    "description": "The label for category 'Manage Files and Folders' in sidebar 'user'"
-  },
-  "sidebar.user.category.Working in teams with Spaces": {
-    "message": "Arbeiten im Team mit Spaces",
-    "description": "The label for category 'Working in teams with Spaces' in sidebar 'user'"
+    "message": "7.2",
+    "description": "The label for version 7.2"
   },
   "sidebar.user.category.User Interface and Navigation": {
-    "message": "Benutzeroberfläche und Navigation",
+    "message": "User Interface and Navigation",
     "description": "The label for category 'User Interface and Navigation' in sidebar 'user'"
   },
-  "sidebar.user.category.Administration of OpenCloud": {
-    "message": "Administration von OpenCloud",
-    "description": "The label for category 'Administration of OpenCloud' in sidebar 'user'"
+  "sidebar.user.category.Manage Files and Folders": {
+    "message": "Manage Files and Folders",
+    "description": "The label for category 'Manage Files and Folders' in sidebar 'user'"
   },
-  "sidebar.user.category.Roles": {
-    "message": "Rollen",
-    "description": "The label for category 'Roles' in sidebar 'user'"
+  "sidebar.user.category.Share files and folders": {
+    "message": "Share files and folders",
+    "description": "The label for category 'Share files and folders' in sidebar 'user'"
+  },
+  "sidebar.user.category.Working in teams with Spaces": {
+    "message": "Working in teams with Spaces",
+    "description": "The label for category 'Working in teams with Spaces' in sidebar 'user'"
   },
   "sidebar.user.category.OpenCloud Desktop": {
     "message": "OpenCloud Desktop",
     "description": "The label for category 'OpenCloud Desktop' in sidebar 'user'"
-  },
-  "sidebar.admin.category.Getting Started": {
-    "message": "Getting Started",
-    "description": "The label for category 'Getting Started' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Other": {
-    "message": "Other",
-    "description": "The label for category 'Other' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Configuration": {
-    "message": "Configuration",
-    "description": "The label for category 'Configuration' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Maintenance": {
-    "message": "Maintenance",
-    "description": "The label for category 'Maintenance' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Resources": {
-    "message": "Resources",
-    "description": "The label for category 'Resources' in sidebar 'admin'"
-  },
-  "sidebar.dev.category.Development": {
-    "message": "Development",
-    "description": "The label for category 'Development' in sidebar 'dev'"
-  },
-  "sidebar.dev.category.Testing": {
-    "message": "Testing",
-    "description": "The label for category 'Testing' in sidebar 'dev'"
-  },
-  "sidebar.dev.category.Extension System": {
-    "message": "Extension System",
-    "description": "The label for category 'Extension System' in sidebar 'dev'"
-  },
-  "sidebar.dev.category.Extension Types": {
-    "message": "Extension Types",
-    "description": "The label for category 'Extension Types' in sidebar 'dev'"
-  },
-  "sidebar.user.category.OpenCloud iOS App": {
-    "message": "OpenCloud iOS App",
-    "description": "The label for category 'OpenCloud iOS App' in sidebar 'user'"
-  },
-  "sidebar.user.category.Common functionality": {
-    "message": "Allgemeine Funktionen",
-    "description": "The label for category 'Common functionality' in sidebar 'user'"
-  },
-  "sidebar.admin.category.Container": {
-    "message": "Container",
-    "description": "The label for category 'Container' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Authentication and Identity Management": {
-    "message": "Authentication and Identity Management",
-    "description": "The label for category 'Authentication and Identity Management' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Storage": {
-    "message": "Storage",
-    "description": "The label for category 'Storage' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Upgrade": {
-    "message": "Upgrade",
-    "description": "The label for category 'Upgrade' in sidebar 'admin'"
   },
   "sidebar.user.category.Desktop Client for Windows": {
     "message": "Desktop Client for Windows",
@@ -111,12 +47,20 @@
     "message": "OpenCloud Desktop Client for Linux.",
     "description": "The generated-index page description for category 'Desktop Client for Linux' in sidebar 'user'"
   },
+  "sidebar.user.category.Common functionality": {
+    "message": "Common functionality",
+    "description": "The label for category 'Common functionality' in sidebar 'user'"
+  },
   "sidebar.user.category.Common functionality.link.generated-index.description": {
     "message": "Common functionalities for the OpenCloud Desktop Client.",
     "description": "The generated-index page description for category 'Common functionality' in sidebar 'user'"
   },
+  "sidebar.user.category.OpenCloud iOS App": {
+    "message": "OpenCloud iOS App",
+    "description": "The label for category 'OpenCloud iOS App' in sidebar 'user'"
+  },
   "sidebar.user.category.ios-general": {
-    "message": "Allgemein",
+    "message": "General",
     "description": "The label for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.ios-general.link.generated-index.description": {
@@ -124,7 +68,7 @@
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.ios-overview": {
-    "message": "Übersicht",
+    "message": "Overview",
     "description": "The label for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.ios-overview.link.generated-index.description": {
@@ -132,7 +76,7 @@
     "description": "The generated-index page description for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.ios-files-folders": {
-    "message": "Dateien und Ordner",
+    "message": "Files and Folders",
     "description": "The label for category 'Files and Folders' in sidebar 'user'"
   },
   "sidebar.user.category.ios-files-folders.link.generated-index.description": {
@@ -140,11 +84,11 @@
     "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
   },
   "sidebar.user.category.ios-shares": {
-    "message": "Teilen",
+    "message": "Shares",
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.ios-shares.link.generated-index.description": {
-    "message": "Anleitungen zum Teilen von Dateien und Ordner in der OpenClous iOS App.",
+    "message": "Tutorials about creating shares the OpenCloud iOS App.",
     "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.OpenCloud Android App": {
@@ -152,7 +96,7 @@
     "description": "The label for category 'OpenCloud Android App' in sidebar 'user'"
   },
   "sidebar.user.category.android-general": {
-    "message": "Allgemein",
+    "message": "General",
     "description": "The label for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.android-general.link.generated-index.description": {
@@ -160,7 +104,7 @@
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
   "sidebar.user.category.android-overview": {
-    "message": "Übersicht",
+    "message": "Overview",
     "description": "The label for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.android-overview.link.generated-index.description": {
@@ -168,7 +112,7 @@
     "description": "The generated-index page description for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.android-files-folders": {
-    "message": "Dateien und Ordner",
+    "message": "Files and Folders",
     "description": "The label for category 'Files and Folders' in sidebar 'user'"
   },
   "sidebar.user.category.android-files-folders.link.generated-index.description": {
@@ -176,12 +120,64 @@
     "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
   },
   "sidebar.user.category.android-shares": {
-    "message": "Teilen",
+    "message": "Shares",
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.android-shares.link.generated-index.description": {
     "message": "Tutorials about creating shares the OpenCloud Android App.",
     "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
+  },
+  "sidebar.user.category.Roles": {
+    "message": "Roles",
+    "description": "The label for category 'Roles' in sidebar 'user'"
+  },
+  "sidebar.user.category.Administration of OpenCloud": {
+    "message": "Administration of OpenCloud",
+    "description": "The label for category 'Administration of OpenCloud' in sidebar 'user'"
+  },
+  "sidebar.admin.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category 'Getting Started' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Container": {
+    "message": "Container",
+    "description": "The label for category 'Container' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Docker Compose": {
+    "message": "Docker Compose",
+    "description": "The label for category 'Docker Compose' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Other": {
+    "message": "Other",
+    "description": "The label for category 'Other' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Configuration": {
+    "message": "Configuration",
+    "description": "The label for category 'Configuration' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Authentication and Identity Management": {
+    "message": "Authentication and Identity Management",
+    "description": "The label for category 'Authentication and Identity Management' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Storage": {
+    "message": "Storage",
+    "description": "The label for category 'Storage' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Collabora": {
+    "message": "Collabora",
+    "description": "The label for category 'Collabora' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Maintenance": {
+    "message": "Maintenance",
+    "description": "The label for category 'Maintenance' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Upgrade": {
+    "message": "Upgrade",
+    "description": "The label for category 'Upgrade' in sidebar 'admin'"
+  },
+  "sidebar.admin.category.Resources": {
+    "message": "Resources",
+    "description": "The label for category 'Resources' in sidebar 'admin'"
   },
   "sidebar.dev.category.Server": {
     "message": "Server",
@@ -375,24 +371,28 @@
     "message": "Web",
     "description": "The label for category 'Web' in sidebar 'dev'"
   },
+  "sidebar.dev.category.Development": {
+    "message": "Development",
+    "description": "The label for category 'Development' in sidebar 'dev'"
+  },
   "sidebar.dev.category.Development.link.generated-index.description": {
     "message": "👩‍💻 Development",
     "description": "The generated-index page description for category 'Development' in sidebar 'dev'"
+  },
+  "sidebar.dev.category.Testing": {
+    "message": "Testing",
+    "description": "The label for category 'Testing' in sidebar 'dev'"
   },
   "sidebar.dev.category.Testing.link.generated-index.description": {
     "message": "✅ Testing",
     "description": "The generated-index page description for category 'Testing' in sidebar 'dev'"
   },
-  "sidebar.user.category.Share files and folders": {
-    "message": "Dateien und Ordner teilen",
-    "description": "The label for category 'Share files and folders' in sidebar 'user'"
+  "sidebar.dev.category.Extension System": {
+    "message": "Extension System",
+    "description": "The label for category 'Extension System' in sidebar 'dev'"
   },
-  "sidebar.admin.category.Docker Compose": {
-    "message": "Docker Compose",
-    "description": "The label for category 'Docker Compose' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Collabora": {
-    "message": "Collabora",
-    "description": "The label for category 'Collabora' in sidebar 'admin'"
+  "sidebar.dev.category.Extension Types": {
+    "message": "Extension Types",
+    "description": "The label for category 'Extension Types' in sidebar 'dev'"
   }
 }
