@@ -1,5 +1,31 @@
 # Changelog
 
+## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @ScharfViktor, @Svanvith, @openclouders
+
+### :octocat: Developer Documentation
+
+- update Keycloak e2e testing documentation [[#967](https://github.com/opencloud-eu/docs/pull/967)]
+
+### 👷 Admin Documentation
+
+- publish release note 7.0.2 and 4.0.8 [[#984](https://github.com/opencloud-eu/docs/pull/984)]
+
+### 👤 User Documentation
+
+- rework roles part for de and eng [[#975](https://github.com/opencloud-eu/docs/pull/975)]
+- add some improvents to desktop client states [[#970](https://github.com/opencloud-eu/docs/pull/970)]
+
+### 📦️ Build&Tools
+
+- version 7.x.x final [[#985](https://github.com/opencloud-eu/docs/pull/985)]
+- Update docs [[#980](https://github.com/opencloud-eu/docs/pull/980)]
+- Update docs [[#979](https://github.com/opencloud-eu/docs/pull/979)]
+- Update docs [[#974](https://github.com/opencloud-eu/docs/pull/974)]
+
 ## [3.29.0](https://github.com/opencloud-eu/docs/releases/tag/3.29.0) - 2026-06-15
 
 ### ❤️ Thanks to all contributors! ❤️
