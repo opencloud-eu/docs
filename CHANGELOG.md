@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-23
+## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-25
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -9,6 +9,10 @@
 ### :octocat: Developer Documentation
 
 - update Keycloak e2e testing documentation [[#967](https://github.com/opencloud-eu/docs/pull/967)]
+
+### 👷 Admin Documentation
+
+- publish release note 7.0.2 and 4.0.8 [[#984](https://github.com/opencloud-eu/docs/pull/984)]
 
 ### 👤 User Documentation
 
