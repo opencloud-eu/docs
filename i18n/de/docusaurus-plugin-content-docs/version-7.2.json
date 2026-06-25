@@ -1,7 +1,7 @@
 {
   "version.label": {
-    "message": "rolling",
-    "description": "The label for version current"
+    "message": "7.2",
+    "description": "The label for version 7.2"
   },
   "sidebar.user.category.Manage Files and Folders": {
     "message": "Verwalten von Dateien und Ordnern",
