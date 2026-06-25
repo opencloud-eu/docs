@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.30.1](https://github.com/opencloud-eu/docs/releases/tag/3.30.1) - 2026-06-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- fix: fix wrong version number 7.x.x -> 7.2 [[#986](https://github.com/opencloud-eu/docs/pull/986)]
+
 ## [3.30.0](https://github.com/opencloud-eu/docs/releases/tag/3.30.0) - 2026-06-25
 
 ### ❤️ Thanks to all contributors! ❤️
