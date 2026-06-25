@@ -29,7 +29,7 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
-    | v7.3.0 | | |
+    | v7.3.0 | TBD | TBD |
     | v7.2.0 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.0) |
     | v7.1.0 | 2026 June 2 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.1.0) |
     | v7.0.0 | 2026 May 21 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.0.0) |
@@ -82,7 +82,7 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="lts" label="LTS">
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
-    | v4.0.9 | | |
+    | v4.0.9 | TBD | TBD |
   </TabItem>
 </Tabs>
 
