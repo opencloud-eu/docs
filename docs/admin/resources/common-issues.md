@@ -243,3 +243,70 @@ but a bind password still set in the environment keeps the two sides out of sync
 
 The built-in IDM is intended for testing and small installations. For production, use
 an external identity provider, for example Keycloak with an external LDAP.
+
+## Large uploads stuck in "processing" on storage with slow `fsync`
+
+A large file (several GB) finishes uploading but then sits in **processing** and never
+becomes available. The desktop client just hangs on it. The data itself is written to
+disk fine; what fails is the finalization step after the upload.
+
+While the file is finalizing, this shows up in the log every few seconds:
+
+```bash
+opencloud-1 | {"level":"error","service":"postprocessing","error":"context deadline exceeded","message":"failed to get consumer"}
+opencloud-1 | {"level":"error","service":"search","error":"context deadline exceeded","message":"failed to get consumer"}
+```
+
+The cause is the way PosixFS and DecomposedFS store metadata. They run without a
+database and rely on extended attributes and the embedded NATS JetStream event bus,
+which calls `fsync` for every message it writes. Finalizing a large upload generates a
+burst of these syncs against the same disk that holds the data. On most storage that
+goes unnoticed, but if synchronous writes are slow it becomes the bottleneck. A typical
+case is a VM backed by ZFS on consumer SSDs with no separate ZIL (SLOG) device, where
+every `fsync` turns into a cache-flush round trip. The sync path saturates, the
+`postprocessing` and `search` consumers miss their deadlines, the finalize event is
+lost, and the upload is left stuck with nothing to recover it.
+
+You can tell it apart from a CPU or memory problem because the machine is purely
+I/O-bound during finalization: `cat /proc/pressure/io` reports `some avg10` close to
+100% while CPU pressure stays near zero, and the blocked kernel threads are the
+filesystem journal threads. A quick way to confirm the storage is slow at synchronous
+writes:
+
+```bash
+dd if=/dev/zero of=testfile bs=4k count=1000 oflag=dsync
+dd if=/dev/zero of=testfile bs=1M count=1000 oflag=direct
+```
+
+If the first command is dramatically slower than the second, the storage is sensitive
+to `fsync` and plain bandwidth is not the issue.
+
+To recover an upload that is already stuck, re-drive its postprocessing. The data is
+still on disk, so this does not re-upload anything:
+
+```bash
+opencloud postprocessing resume -u <uploadID> -r
+```
+
+To avoid the problem, move the JetStream store onto a `tmpfs` so its syncs land in
+memory instead of on the slow disk. Set `NATS_NATS_STORE_DIR` to a path you mount as
+`tmpfs`:
+
+```yaml
+services:
+  opencloud:
+    environment:
+      NATS_NATS_STORE_DIR: /run/opencloud-nats
+    tmpfs:
+      - /run/opencloud-nats:rw,size=1g,mode=1777
+```
+
+This is safe for a single-node instance. The JetStream store is a transient event bus
+and a set of caches that OpenCloud rebuilds from the file system on startup, and app
+tokens live on the data volume, not in NATS, so they survive a restart. The only thing
+lost when the store is emptied is the activity log.
+
+Keep in mind that a `tmpfs` store is held in RAM and cleared on every restart, so size
+it for your event volume (1 GiB is a reasonable start) and make sure the host has the
+memory for it. Don't use a `tmpfs` store with a clustered NATS setup, where the store
+has to be durable.
