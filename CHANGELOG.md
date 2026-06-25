@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@ScharfViktor, @Svanvith, @openclouders
+@Heiko-Pohl, @ScharfViktor, @Svanvith, @openclouders
 
 ### :octocat: Developer Documentation
 
@@ -21,6 +21,7 @@
 
 ### 📦️ Build&Tools
 
+- version 7.x.x final [[#985](https://github.com/opencloud-eu/docs/pull/985)]
 - Update docs [[#980](https://github.com/opencloud-eu/docs/pull/980)]
 - Update docs [[#979](https://github.com/opencloud-eu/docs/pull/979)]
 - Update docs [[#974](https://github.com/opencloud-eu/docs/pull/974)]
