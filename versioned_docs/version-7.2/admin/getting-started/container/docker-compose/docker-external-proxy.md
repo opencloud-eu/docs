@@ -20,7 +20,6 @@ If you don't have an existing reverse proxy or prefer to let Traefik manage cert
 - Proper DNS records for your domain:
   - `cloud.YOUR.DOMAIN`
   - `collabora.YOUR.DOMAIN`
-  - `wopiserver.YOUR.DOMAIN`
 - Installed software:
   - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
   - `nginx`
@@ -62,7 +61,7 @@ Paste the following config and adjust the URLs:
 ```nginx
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN;
 
     root /var/www/certbot;
 
@@ -89,7 +88,6 @@ sudo certbot certonly --webroot \
   -w /var/www/certbot \
   -d cloud.YOUR.DOMAIN \
   -d collabora.YOUR.DOMAIN \
-  -d wopiserver.YOUR.DOMAIN \
   --email your@email.com \
   --agree-tos \
   --no-eff-email
@@ -123,11 +121,15 @@ OC_DOMAIN=cloud.YOUR.DOMAIN
 INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
-
-WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
 
 The initial Admin password is mandatory for security reasons.
+
+:::note
+The WOPI endpoint is served by OpenCloud on the OpenCloud domain. It is available through the OpenCloud proxy under `/wopi` and `/collaboration`.
+
+A separate `wopiserver` domain, reverse proxy block, or exposed WOPI port is not required.
+:::
 
 Start the docker compose setup
 
@@ -163,7 +165,7 @@ Paste the following configuration and adjust the URLs:
 # Redirect HTTP to HTTPS
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
@@ -231,24 +233,6 @@ server {
       proxy_set_header Host $host;
   }
 
-}
-
-# WOPI Server
-server {
-  listen 443 ssl http2;
-  server_name wopiserver.YOUR.DOMAIN;
-
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-
-  location / {
-      proxy_pass http://127.0.0.1:9300;
-      proxy_set_header Host $host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme;
-  }
 }
 ```
 
