@@ -75,7 +75,7 @@ server {
 Enable and reload Nginx:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/certbot-challenge /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/certbot-challenge /etc/nginx/sites-enabled/certbot-challenge
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
@@ -212,27 +212,44 @@ server {
 
 # Collabora
 server {
-  listen 443 ssl http2;
-  server_name collabora.YOUR.DOMAIN;
+    listen 443 ssl http2;
+    server_name collabora.YOUR.DOMAIN;
 
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-  # Increase max upload size to collabora editor
-  client_max_body_size 10M;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
 
-  location / {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Host $host;
-  }
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
-  location ~ ^/cool/(.*)/ws$ {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection "Upgrade";
-      proxy_set_header Host $host;
-  }
+    client_max_body_size 10M;
 
+    location / {
+        proxy_pass http://127.0.0.1:9980;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+
+        proxy_read_timeout 36000s;
+        proxy_send_timeout 36000s;
+    }
+
+    location ~ ^/cool/(.*)/ws$ {
+        proxy_pass http://127.0.0.1:9980;
+
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+
+        proxy_read_timeout 36000s;
+        proxy_send_timeout 36000s;
+    }
 }
 ```
 
@@ -244,13 +261,25 @@ Starting from nginx 1.25.0, the `http2` directive syntax changed from: `listen 4
 We enabled HTTP/2 and increased keep-alive limits to prevent large syncs from failing and ensure stable client connections, since nginx closes connections after ~1,000 requests by default.
 :::
 
-Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments
+Thanks to [mitexleo](https://github.com/mitexleo) for the Nginx example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments.
 
 Enable and reload Nginx:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/opencloud /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/opencloud /etc/nginx/sites-enabled/opencloud
 sudo nginx -t && sudo systemctl reload nginx
+```
+
+Verify that Nginx is listening on port `443`:
+
+```bash
+sudo ss -tulpn | grep ':443'
+```
+
+Verify that Collabora is reachable through the external proxy:
+
+```bash
+curl -k https://collabora.YOUR.DOMAIN/hosting/discovery | head
 ```
 
 ## Test Certificate Renewal
