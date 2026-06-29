@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-06-26
+## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-06-29
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- delete wopiserver content [[#995](https://github.com/opencloud-eu/docs/pull/995)]
 - Fix typo in LTS explanation in all 3 lifecycle.md [[#990](https://github.com/opencloud-eu/docs/pull/990)]
 
 ## [3.30.1](https://github.com/opencloud-eu/docs/releases/tag/3.30.1) - 2026-06-25
