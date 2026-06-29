@@ -23,7 +23,6 @@ If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer t
 - Four domains pointing to your server:
   - `cloud.YOUR.DOMAIN` → OpenCloud frontend
   - `collabora.YOUR.DOMAIN` → Collabora Online Server
-  - `wopiserver.YOUR.DOMAIN` → WOPI server for document editing
   - `traefik.YOUR.DOMAIN` → Traefik dashboard
 
   Alternatively, you can use a wildcard domain (`*.YOUR.DOMAIN`)
@@ -106,7 +105,6 @@ nano .env
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
 OC_DOMAIN=cloud.YOUR.DOMAIN
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
-WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
 
 ### Set your admin password
