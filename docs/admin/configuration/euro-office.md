@@ -22,6 +22,8 @@ Use this guide as a reference for community-based setups. For officially support
 The Euro Office project is currently in its early stages and may have stability issues.
 :::
 
+Thanks to [zerox80](https://github.com/zerox80) for the initial Euro Office documentation.
+
 ## Docker Compose Setup
 
 Euro Office is available as a compose module in the [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose) project.
@@ -130,7 +132,3 @@ For local testing with `.test` domains, add to `/etc/hosts`:
 ```text
 127.0.0.1 euro-office.opencloud.test
 ```
-
----
-
-Thanks to [zerox80](https://github.com/zerox80) for the original Euro Office documentation.
