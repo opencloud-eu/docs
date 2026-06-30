@@ -20,6 +20,6 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Radicale Integration](./radicale-integration.md)
 - [Web Applications](./web-applications.md)
 - [Link Password Policy](./link-password-policy.md)
-- [Euro Office](./euro-office.md) - Community supported Euro Office setup
 - [Default Language](./default-language.md)
+- [Euro Office](./euro-office.md) - Community supported Euro Office setup
 - [Logging](./logging.md)
