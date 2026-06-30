@@ -1,13 +1,15 @@
 # Changelog
 
-## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-06-29
+## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-06-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@Heiko-Pohl, @Svanvith
 
 ### 👷 Admin Documentation
 
+- add the release notes to version-7.2 too [[#1000](https://github.com/opencloud-eu/docs/pull/1000)]
+- remove the wopi part from the external proxy docs [[#996](https://github.com/opencloud-eu/docs/pull/996)]
 - delete wopiserver content [[#995](https://github.com/opencloud-eu/docs/pull/995)]
 - Fix typo in LTS explanation in all 3 lifecycle.md [[#990](https://github.com/opencloud-eu/docs/pull/990)]
 
