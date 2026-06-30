@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith
+@Heiko-Pohl, @Svanvith, @openclouders
 
 ### 👷 Admin Documentation
 
@@ -14,6 +14,10 @@
 - remove the wopi part from the external proxy docs [[#996](https://github.com/opencloud-eu/docs/pull/996)]
 - delete wopiserver content [[#995](https://github.com/opencloud-eu/docs/pull/995)]
 - Fix typo in LTS explanation in all 3 lifecycle.md [[#990](https://github.com/opencloud-eu/docs/pull/990)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#998](https://github.com/opencloud-eu/docs/pull/998)]
 
 ## [3.30.1](https://github.com/opencloud-eu/docs/releases/tag/3.30.1) - 2026-06-25
 
