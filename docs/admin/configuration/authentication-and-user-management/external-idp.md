@@ -82,8 +82,9 @@ OpenCloud clients discover OIDC client settings through the OpenCloud WebFinger
 service at `https://<opencloud-domain>/.well-known/webfinger`.
 
 The WebFinger OIDC variables define which client ID and scopes are returned to
-the different OpenCloud clients. Set them in your deployment configuration; the
-values are required.
+the different OpenCloud clients. They already ship with the following
+defaults, so you only need to set them if your IDP requires different client
+IDs or scopes:
 
 ```env
 WEBFINGER_WEB_OIDC_CLIENT_ID=web
