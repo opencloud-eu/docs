@@ -16,7 +16,7 @@ EuroOffice is not officially supported by OpenCloud. The configuration shown her
 Use this guide as a reference for community-based setups. For officially supported office integrations, use the officially documented OpenCloud options.
 :::
 
-[Euro Office](https://github.com/EURO-office/DocumentServer) is a sovereign document editing suite based on ONLYOFFICE that integrates with OpenCloud.
+[Euro Office](https://github.com/EURO-office/DocumentServer) is a sovereign document editing suite maintained by several european organisations as a joint effort. It integrates with OpenCloud via WOPI and the app provider mechanism.
 
 :::warning
 The Euro Office project is currently in its early stages and may have stability issues.
