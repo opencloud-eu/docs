@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-06-30
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- Fix/eurooffice community docs [[#997](https://github.com/opencloud-eu/docs/pull/997)]
+- change enterprise license to premium or professional [[#1001](https://github.com/opencloud-eu/docs/pull/1001)]
+- add the release notes to version-7.2 too [[#1000](https://github.com/opencloud-eu/docs/pull/1000)]
+- remove the wopi part from the external proxy docs [[#996](https://github.com/opencloud-eu/docs/pull/996)]
+- delete wopiserver content [[#995](https://github.com/opencloud-eu/docs/pull/995)]
+- Fix typo in LTS explanation in all 3 lifecycle.md [[#990](https://github.com/opencloud-eu/docs/pull/990)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#998](https://github.com/opencloud-eu/docs/pull/998)]
+
 ## [3.30.1](https://github.com/opencloud-eu/docs/releases/tag/3.30.1) - 2026-06-25
 
 ### ❤️ Thanks to all contributors! ❤️
