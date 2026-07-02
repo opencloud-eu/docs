@@ -46,6 +46,14 @@ docker compose exec opencloud opencloud backup consistency -p /var/lib/opencloud
 
 If your deployment uses a custom storage path, replace `/var/lib/opencloud/storage/users` with the path configured for your storage backend.
 
+## General
+
+### Check the OpenCloud version
+
+```bash
+opencloud version
+```
+
 ## Storage
 
 ### Check storage consistency
@@ -218,4 +226,52 @@ Lists unified roles and their IDs. Useful when a configuration or documentation 
 
 ```bash
 opencloud graph list-unified-roles
+```
+
+## Search
+
+### Rebuild the search index
+
+Re-index a specific space:
+
+```bash
+opencloud search index --space <space-id>
+```
+
+Re-index all spaces:
+
+```bash
+opencloud search index --all-spaces
+```
+
+A reindex only picks up new or changed files; content that has already been indexed is not scanned again, even if the configuration or extractor changed. To force a full rescan, add `--force-rescan`:
+
+```bash
+opencloud search index --all-spaces --force-rescan
+```
+
+Run this after an upgrade, a restore, or when search results are missing or outdated.
+
+## Authentication
+
+### Reset the admin password
+
+Resetting the password requires stopping the OpenCloud container first, since `idm resetpassword` needs exclusive access to the user store. Run it in a temporary container instead of `docker compose exec`:
+
+```bash
+docker compose stop opencloud
+```
+
+```bash
+sudo docker run -it --rm -v <opencloud-data-path>:/var/lib/opencloud -v <opencloud-config-path>:/etc/opencloud opencloudeu/opencloud:<opencloud-version> idm resetpassword
+```
+
+See [Common Issues](../resources/common-issues.md) for the full walkthrough, including how to find the volume names.
+
+### Create an app token
+
+Creates an app-specific authentication token for a user, for example for clients that do not support the primary login method.
+
+```bash
+opencloud auth-app create --user-name=<user-name> --expiration=<token-expiration>
 ```
