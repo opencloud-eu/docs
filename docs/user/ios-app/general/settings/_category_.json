@@ -1,0 +1,10 @@
+{
+  "label": "Settings",
+  "position": 4,
+  "key": "ios-settings",
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorials about settings of the OpenCloud iOS App.",
+    "slug": "user/ios-app/general/settings"
+  }
+}
