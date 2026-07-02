@@ -1,9 +1,5 @@
 ---
-sidebar_position: 1
-id: settings
 title: Settings
-description: Setting in OpenCloud iOS app
-draft: false
 ---
 
 # Settings
