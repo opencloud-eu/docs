@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: auto-upload-photos-and-videos
 title: Auto Upload Photos and Videos
 description: Auto upload photos and videos from your iPhone or iPad.
