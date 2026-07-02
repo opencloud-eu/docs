@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-id: auto upload photos and videos
+id: auto-upload-photos-and-videos
 title: Auto Upload Photos and Videos
 description: Auto upload photos and videos from your iPhone or iPad.
 draft: false
@@ -38,12 +38,12 @@ Photos and videos can be enabled independently.
 
 The following options are available:
 
-- **Auto Upload Photos** – Automatically uploads newly created photos.
-- **Auto Upload Videos** – Automatically uploads newly created videos.
-- **Photo upload path** – Selects the destination folder for uploaded photos.
 - **Convert HEIC to JPEG** – Converts HEIC images to JPEG before uploading.
 - **Convert videos to MP4** – Converts videos to MP4 before uploading.
 - **Preserve original media file names** – Keeps the original filename instead of generating a new one.
+- **Auto Upload Photos** – Automatically uploads newly created photos.
+- **Auto Upload Videos** – Automatically uploads newly created videos.
+- **Photo upload path** – Selects the destination folder for uploaded photos.
 
 <img src={require("../../img/settings/auto-upload-photos-and-videos/auto-upload-photos.png").default} alt="Auto Upload settings" height="650"/>
 
@@ -69,12 +69,7 @@ Simply opening the OpenCloud app starts the Auto Upload process. Any new media c
 
 :::
 
-General behavior:
-
-- Photo and video uploads can be enabled or disabled independently.
-- Before Auto Upload can begin, an account and an upload destination must be configured.
-- Changes to the iOS photo library are detected whenever the OpenCloud app returns to the foreground.
-- If the configured upload folder is deleted, Auto Upload stops automatically until a new destination folder is selected.
+If the configured upload folder is deleted, Auto Upload stops automatically until a new destination folder is selected.
 
 ### Preventing Duplicate Uploads
 
