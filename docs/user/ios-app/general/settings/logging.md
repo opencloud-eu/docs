@@ -26,7 +26,7 @@ Diagnostic logging can help identify and troubleshoot issues with the OpenCloud 
 - Enable **Enable logging** to start collecting diagnostic information.
 - Tap **Browse** to view the stored log files.
 
-<img src={require("../../img/settings/logging/logging-menu.png").default} alt="Logging options" height="650"/>
+<img src={require("../../img/settings/logging/logging-menu.png").default} alt="Logging Menu" height="650"/>
 
 :::warning
 
@@ -46,7 +46,7 @@ From this screen you can:
 - Share a log file using the **Share** button.
 - Delete all stored log files using **Delete all**.
 
-<img src={require("../../img/settings/logging/log-files-list.png").default} alt="Log files" height="650"/>
+<img src={require("../../img/settings/logging/log-files-list.png").default} alt="Log files List" height="650"/>
 
 ## How Logging Works
 

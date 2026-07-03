@@ -17,7 +17,7 @@ The **App Version** section displays detailed version information about your ins
 4. Tap **App Version**.
 
 <img src={require("../../img/settings/app-version/app version button.png").default}
-alt="App Version in Settings" height="650"/>
+alt="App Version Button" height="650"/>
 
 ## Version Information Copied
 

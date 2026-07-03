@@ -17,7 +17,7 @@ The **Cellular Data Usage** settings allow you to control whether OpenCloud is p
 
 The **Cellular Data Usage** page lets you configure how the app uses your mobile data connection.
 
-<img src={require("../../img/settings/cellular-data-usage/cellular data usage.png").default} alt="OpenCloud Settings" height="650"/>
+<img src={require("../../img/settings/cellular-data-usage/cellular data usage.png").default} alt="Cellular Data Usage Button" height="650"/>
 
 ## General Settings
 

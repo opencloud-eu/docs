@@ -19,7 +19,7 @@ Only the local copies are removed. Your files remain safely stored in OpenCloud 
 
 The **Delete unused local copies** setting allows you to choose how long downloaded files should remain stored locally before they are automatically removed.
 
-<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies 1.png").default} alt="Retention period options" height="650"/>
+<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies button.png").default} alt="Delete unused local copies Button" height="650"/>
 
 ## Available Options
 
@@ -36,7 +36,7 @@ Select the retention period that best matches your workflow.
 
 Files that have not been accessed within the selected time are automatically removed from the device while remaining available in your OpenCloud account.
 
-<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies 2.png").default} alt="Retention period options" height="650"/>
+<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies settings.png").default} alt="Delete unused local copies settings" height="650"/>
 
 ## How It Works
 

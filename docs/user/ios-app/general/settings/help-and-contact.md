@@ -19,7 +19,7 @@ The **Help & Contact** section provides quick access to OpenCloud resources, inc
 The **Help & Contact** page gives you access to documentation and community support resources.
 
 <img src={require("../../img/settings/help-and-contact/help and contact button.png").default}
-alt="Help & Contact setting"
+alt="Help & Contact Button"
 height="650"/>
 
 ## Available Resources
@@ -33,7 +33,7 @@ The **Help & Contact** page provides the following resources:
 Use these resources whenever you need additional information, want to report a problem, or interact with the OpenCloud community.
 
 <img src={require("../../img/settings/help-and-contact/help and contact menu.png").default}
-alt="Help & Contact page"
+alt="Help & Contact Page"
 height="650"/>
 
 ## When to Use Each Resource

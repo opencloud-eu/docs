@@ -25,12 +25,12 @@ Before using Auto Upload, ensure that:
 1. Open the **OpenCloud** app.
 2. Tap **Settings**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/settings-button.png").default} alt="OpenCloud Settings" height="650"/>
+<img src={require("../../img/settings/auto-upload-photos-and-videos/settings-button.png").default} alt="Settings Button" height="650"/>
 
 3. Scroll down to the **Media Files** section.
 4. Tap **Media Upload**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/media-upload-button.png").default} alt="Media Upload settings" height="650"/>
+<img src={require("../../img/settings/auto-upload-photos-and-videos/media-upload-button.png").default} alt="Media Upload Button" height="650"/>
 
 ## Enable Auto Upload
 

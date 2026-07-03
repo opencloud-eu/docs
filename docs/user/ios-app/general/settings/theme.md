@@ -20,7 +20,7 @@ You can choose whether the app follows your device's appearance or always uses a
 The **Theme** page allows you to select how the OpenCloud app is displayed.
 
 <img src={require("../../img/settings/theme/theme-button.png").default}
-alt="Theme setting"
+alt="Theme Button"
 height="650"/>
 
 ## Available Themes
@@ -36,7 +36,7 @@ Select the appearance that best matches your preference.
 The selected theme is applied immediately throughout the app.
 
 <img src={require("../../img/settings/theme/theme-menu.png").default}
-alt="Theme selection"
+alt="Theme Menu"
 height="650"/>
 
 ## How Theme Selection Works
