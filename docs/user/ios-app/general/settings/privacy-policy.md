@@ -41,7 +41,7 @@ The page contains information about:
 - GDPR compliance
 - Your rights regarding personal data
 
-<img src={require("../../img/settings/privacy-policy/opencloud page.png").default}
+<img src={require("../../img/settings/privacy-policy/privacy policy page.png").default}
 alt="OpenCloud Privacy Policy website" height="650"/>
 
 :::tip
