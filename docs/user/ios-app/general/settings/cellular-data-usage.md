@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 title: Cellular Data Usage
 description: Configure which OpenCloud features are allowed to use your mobile data connection.
 draft: false
