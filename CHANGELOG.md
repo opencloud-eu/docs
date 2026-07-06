@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.32.0](https://github.com/opencloud-eu/docs/releases/tag/3.32.0) - 2026-07-06
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👤 User Documentation
+
+- auto upload iOS [[#1005](https://github.com/opencloud-eu/docs/pull/1005)]
+
 ## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-07-02
 
 ### ❤️ Thanks to all contributors! ❤️
