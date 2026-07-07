@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- rework the external-idp and keycloak docs [[#971](https://github.com/opencloud-eu/docs/pull/971)]
 - imprve external proxy docs [[#1003](https://github.com/opencloud-eu/docs/pull/1003)]
 - publish release note 7.2.1 [[#1015](https://github.com/opencloud-eu/docs/pull/1015)]
 
