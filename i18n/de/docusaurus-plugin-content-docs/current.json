@@ -396,7 +396,7 @@
     "description": "The label for category 'Collabora' in sidebar 'admin'"
   },
   "sidebar.user.category.ios-settings": {
-    "message": "Settings",
+    "message": "Einstellungen",
     "description": "The label for category 'Settings' in sidebar 'user'"
   }
 }
