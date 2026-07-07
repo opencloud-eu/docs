@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @v-scharf
+@Heiko-Pohl, @Svanvith, @v-scharf
 
 ### 👷 Admin Documentation
 
+- imprve external proxy docs [[#1003](https://github.com/opencloud-eu/docs/pull/1003)]
 - publish release note 7.2.1 [[#1015](https://github.com/opencloud-eu/docs/pull/1015)]
 
 ### 👤 User Documentation
