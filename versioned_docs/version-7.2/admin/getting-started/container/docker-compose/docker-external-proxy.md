@@ -114,8 +114,6 @@ Set the following environment variables:
 ```env
 # INSECURE=true
 
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
-
 OC_DOMAIN=cloud.YOUR.DOMAIN
 
 INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
@@ -124,6 +122,24 @@ COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
 ```
 
 The initial Admin password is mandatory for security reasons.
+
+Set `COMPOSE_FILE` depending on where the reverse proxy runs.
+
+If the reverse proxy runs on the same machine as OpenCloud:
+
+```env
+COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
+```
+
+If the reverse proxy runs on a different machine, use the exposed variants, which publish the container ports on all network interfaces so the proxy host can reach them:
+
+```env
+COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud-exposed.yml:external-proxy/collabora-exposed.yml
+```
+
+:::warning
+The exposed compose files publish service ports on all network interfaces. Restrict access to these ports with a firewall and only allow connections from the reverse proxy host.
+:::
 
 :::note
 The WOPI endpoint is served by OpenCloud on the OpenCloud domain. It is available through the OpenCloud proxy under `/wopi` and `/collaboration`.
@@ -160,6 +176,8 @@ sudo nano /etc/nginx/sites-available/opencloud
 ```
 
 Paste the following configuration and adjust the URLs:
+
+If the reverse proxy runs on a different machine than OpenCloud, replace `127.0.0.1` with the IP address or DNS name of the OpenCloud host in each `proxy_pass` directive.
 
 ```nginx
 # Redirect HTTP to HTTPS
