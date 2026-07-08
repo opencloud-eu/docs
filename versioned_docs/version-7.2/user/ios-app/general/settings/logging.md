@@ -48,6 +48,12 @@ From this screen you can:
 
 <img src={require("../../img/settings/logging/log-files-list.png").default} alt="Log files List" height="650"/>
 
+:::note
+
+For troubleshooting and log analysis, make sure that **HTTPS is enabled** for your OpenCloud instance before sharing log files with support.
+
+:::
+
 ## How Logging Works
 
 The OpenCloud iOS app stores log files locally on your device.
