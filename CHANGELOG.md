@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.33.0](https://github.com/opencloud-eu/docs/releases/tag/3.33.0) - 2026-07-08
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👤 User Documentation
+
+- links in index.md in iOS App [[#1020](https://github.com/opencloud-eu/docs/pull/1020)]
+
 ## [3.32.0](https://github.com/opencloud-eu/docs/releases/tag/3.32.0) - 2026-07-08
 
 ### ❤️ Thanks to all contributors! ❤️
