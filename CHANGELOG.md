@@ -1,5 +1,27 @@
 # Changelog
 
+## [3.32.0](https://github.com/opencloud-eu/docs/releases/tag/3.32.0) - 2026-07-08
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- rework the external-idp and keycloak docs [[#971](https://github.com/opencloud-eu/docs/pull/971)]
+- imprve external proxy docs [[#1003](https://github.com/opencloud-eu/docs/pull/1003)]
+- publish release note 7.2.1 [[#1015](https://github.com/opencloud-eu/docs/pull/1015)]
+
+### 👤 User Documentation
+
+- Add index.md to ios [[#1019](https://github.com/opencloud-eu/docs/pull/1019)]
+- Auto upload i os german [[#1017](https://github.com/opencloud-eu/docs/pull/1017)]
+- auto upload iOS [[#1005](https://github.com/opencloud-eu/docs/pull/1005)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1016](https://github.com/opencloud-eu/docs/pull/1016)]
+
 ## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-07-02
 
 ### ❤️ Thanks to all contributors! ❤️
