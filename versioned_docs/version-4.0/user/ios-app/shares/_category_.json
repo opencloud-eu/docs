@@ -3,8 +3,7 @@
     "position": 3,
     "key": "ios-shares",
     "link": {
-      "type": "generated-index",
-      "description": "Tutorials about creating shares the OpenCloud iOS App.",
-      "slug": "user/ios-app/shares/"
+      "type": "doc",
+      "id": "ios-shares-overview"
     }
   }
