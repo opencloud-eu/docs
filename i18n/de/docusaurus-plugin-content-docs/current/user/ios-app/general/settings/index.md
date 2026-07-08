@@ -4,96 +4,96 @@ title: Einstellungen
 
 # Einstellungen
 
-In den Einstellungen der iOS-App können Sie verschiedene Bereiche der App konfigurieren, darunter:
+In den Einstellungen der iOS-App können Änderungen vorgenommen werden, wie zum Beispiel:
 
 - Benutzeroberfläche
 - Datennutzung
 - Erweiterte Einstellungen
 - Mediendateien
-- und vieles mehr
+- und mehr
 
 <img src={require("../.././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
 
 ## Benutzeroberfläche
 
-### 1. Design
+### [1. Design](./theme.md)
 
-Hier können Sie festlegen, ob die App im hellen Design, im dunklen Design oder entsprechend der Systemeinstellung angezeigt werden soll.
+Hier kannst du auswählen, ob die App im „hellen Modus“ oder im „dunklen Modus“ ausgeführt werden soll.
 
-### 2. Sucheinstellungen
+### [2. Sucheinstellungen](./search-settings.md)
 
-Hier können Sie festlegen, in welchem Bereich die Suche standardmäßig ausgeführt wird:
+Hier kannst du festlegen, wo die Suchfunktion suchen soll:
 
 - Ordner
-- Ordnerbaum
-- Space
+- Baum
+- Bereich
 - Konto
 - Server
 
-### 3. Protokollierung
+### [3. Protokollierung](./logging.md)
 
-Hier können Sie die Protokollierung aktivieren oder deaktivieren und auf gespeicherte Protokolldateien zugreifen.
+Hier kannst du die Protokollierungsfunktion aktivieren und deaktivieren sowie den Speicherort der Protokolldatei festlegen.
 
 ## Datennutzung
 
-### 4. Nutzung mobiler Daten
+### [4. Mobile Datennutzung](./cellular-data-usage.md)
 
-Hier können Sie festlegen, ob die App mobile Daten verwenden darf.
+Hier kannst du festlegen, ob die App mit mobilen Daten verwendet werden darf oder nicht.
 
-### 5. Ungenutzte lokale Kopien löschen
+### [5. Nicht verwendete lokale Kopien löschen](./delete-unused-local-copies.md)
 
-Hier können Sie festlegen, wann ungenutzte lokale Kopien automatisch vom Gerät entfernt werden sollen.
+Hier kannst du festlegen, wann nicht verwendete lokale Kopien gelöscht werden sollen.
 
 ## Erweiterte Einstellungen
 
 ### 6. Versteckte Dateien und Ordner anzeigen
 
-Hier können Sie die Anzeige versteckter Dateien und Ordner aktivieren oder deaktivieren.
+Hier kannst du die Anzeige versteckter Dateien und Ordner aktivieren oder deaktivieren.
 
 ### 7. Ordner zuerst anzeigen
 
-Hier können Sie festlegen, ob Ordner in der Listenansicht vor Dateien angezeigt werden sollen.
+Hier kannst du festlegen, ob Ordner in der Listenansicht vor Dateien angezeigt werden sollen.
 
 ### 8. Gesten deaktivieren
 
-Hier können Sie Gesten deaktivieren, um Mehrfachauswahl und Drag-and-drop für Dateien und Ordner zu verhindern.
+Hier kannst du die Gestensteuerung deaktivieren, um Mehrfachauswahl und das Ziehen von Dateien und Ordnern zu verhindern.
 
 ### 9. Diagnose aktivieren
 
-Hier können Sie festlegen, ob die App Diagnosen im Hintergrund ausführen darf.
+Hier kannst du auswählen, ob die App im Hintergrund Diagnosen ausführen darf.
 
 ## Mediendateien
 
 ### 10. Herunterladen statt streamen
 
-Hier können Sie festlegen, ob Mediendateien direkt heruntergeladen oder gestreamt werden sollen.
+Hier kannst du festlegen, ob eine Datei direkt heruntergeladen oder gestreamt werden soll.
 
-### 11. Medien-Upload
+### [11. Medien-Upload](./auto-upload-photos-and-videos.md)
 
-Hier können Sie festlegen, ob bestimmte Dateien beim Upload konvertiert werden sollen, zum Beispiel HEIC in JPEG.
+Hier kannst du festlegen, ob bestimmte Dateien beim Hochladen konvertiert werden sollen, zum Beispiel HEIC in JPEG.
 
-## Weitere
+## Mehr
 
-### 12. Hilfe & Kontakt
+### [12. Hilfe & Kontakt](./help-and-contact.md)
 
-Hier finden Sie Links zur OpenCloud-Dokumentation und zu weiteren Hilferessourcen.
+Hier findest du Links zu unserer Dokumentationsseite und Hilfe-Links.
 
-### 13. Einem Freund empfehlen
+### [13. Einem Freund empfehlen](./recommend-to-a-friend.md)
 
-Hier können Sie einen Link zum Download der iOS-App weiterleiten.
+Hier kannst du einen Link zum Herunterladen der iOS-App weiterleiten.
 
-### 14. Datenschutzerklärung
+### [14. Datenschutzerklärung](./privacy-policy.md)
 
-Hier finden Sie die vollständige Datenschutzerklärung von OpenCloud.
+Hier findest du den vollständigen Eintrag zu unserer Datenschutzerklärung.
 
-### 15. Nutzungsbedingungen
+### [15. Nutzungsbedingungen](./terms-of-use.md)
 
-Hier finden Sie die vollständigen Nutzungsbedingungen von OpenCloud.
+Hier findest du den vollständigen Eintrag zu unseren Nutzungsbedingungen.
 
-### 16. Danksagungen
+### [16. Danksagungen](./acknowledgements.md)
 
-Hier werden verwendete Drittanbieterbibliotheken und Open-Source-Komponenten aufgeführt.
+Teile der App können urheberrechtlich geschütztes Material verwenden, das hier anerkannt wird.
 
-### 17. App-Version
+### [17. App-Version](./app-version.md)
 
-Hier können Sie sehen, welche Version der App installiert ist.
+Hier kannst du sehen, welche App-Version verwendet wird.
