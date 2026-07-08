@@ -14,6 +14,7 @@
 
 ### 👤 User Documentation
 
+- Add index.md to ios [[#1019](https://github.com/opencloud-eu/docs/pull/1019)]
 - Auto upload i os german [[#1017](https://github.com/opencloud-eu/docs/pull/1017)]
 - auto upload iOS [[#1005](https://github.com/opencloud-eu/docs/pull/1005)]
 
