@@ -3,8 +3,7 @@
   "position": 3,
   "key": "ios-overview",
   "link": {
-    "type": "generated-index",
-    "description": "Overview of the user interface of the OpenCloud iOS App.",
-    "slug": "user/ios-app/general/overview/"
+    "type": "doc",
+    "id": "ios-overview"
   }
 }
