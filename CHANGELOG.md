@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @v-scharf
+@Heiko-Pohl, @Svanvith, @openclouders, @v-scharf
 
 ### 👷 Admin Documentation
 
@@ -16,6 +16,10 @@
 
 - Auto upload i os german [[#1017](https://github.com/opencloud-eu/docs/pull/1017)]
 - auto upload iOS [[#1005](https://github.com/opencloud-eu/docs/pull/1005)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1016](https://github.com/opencloud-eu/docs/pull/1016)]
 
 ## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-07-02
 
