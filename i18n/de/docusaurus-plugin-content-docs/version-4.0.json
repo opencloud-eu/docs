@@ -414,5 +414,9 @@
   "sidebar.dev.category.Testing.link.generated-index.description": {
     "message": "✅ Testing",
     "description": "The generated-index page description for category 'Testing' in sidebar 'dev'"
+  },
+  "sidebar.user.category.ios-settings": {
+    "message": "Einstellungen",
+    "description": "The label for category 'Settings' in sidebar 'user'"
   }
 }
