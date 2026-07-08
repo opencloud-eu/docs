@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.32.0](https://github.com/opencloud-eu/docs/releases/tag/3.32.0) - 2026-07-07
+## [3.32.0](https://github.com/opencloud-eu/docs/releases/tag/3.32.0) - 2026-07-08
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -14,6 +14,7 @@
 
 ### 👤 User Documentation
 
+- Auto upload i os german [[#1017](https://github.com/opencloud-eu/docs/pull/1017)]
 - auto upload iOS [[#1005](https://github.com/opencloud-eu/docs/pull/1005)]
 
 ## [3.31.0](https://github.com/opencloud-eu/docs/releases/tag/3.31.0) - 2026-07-02
