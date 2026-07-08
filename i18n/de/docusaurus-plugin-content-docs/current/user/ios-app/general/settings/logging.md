@@ -48,6 +48,12 @@ Auf dieser Seite können Sie:
 
 <img src={require("../../img/settings/logging/log files liste.png").default} alt="Liste der Protokolldateien" height="650"/>
 
+:::note
+
+Stelle für die Fehlerbehebung und Protokollanalyse sicher, dass **HTTPS aktiviert** ist, bevor du Protokolldateien mit dem Support teilst.
+
+:::
+
 ## Funktionsweise der Protokollierung
 
 Die OpenCloud iOS-App speichert Protokolldateien lokal auf Ihrem Gerät.
