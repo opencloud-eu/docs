@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.34.0](https://github.com/opencloud-eu/docs/releases/tag/3.34.0) - 2026-07-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👤 User Documentation
+
+- add index.md files in desktop-client section [[#1031](https://github.com/opencloud-eu/docs/pull/1031)]
+
 ## [3.33.0](https://github.com/opencloud-eu/docs/releases/tag/3.33.0) - 2026-07-08
 
 ### ❤️ Thanks to all contributors! ❤️
