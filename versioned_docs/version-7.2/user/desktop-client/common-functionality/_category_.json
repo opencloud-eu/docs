@@ -1,9 +1,5 @@
 {
   "label": "Common functionality",
   "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Common functionalities for the OpenCloud Desktop Client.",
-    "slug": "user/desktop/common-functionality/"
-  }
+  "key": "desktop-client-common-functionalty"
 }
