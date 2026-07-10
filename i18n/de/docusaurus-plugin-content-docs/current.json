@@ -135,11 +135,11 @@
     "message": "OpenCloud Android App",
     "description": "The label for category 'OpenCloud Android App' in sidebar 'user'"
   },
-  "sidebar.user.category.android-general": {
+  "sidebar.user.category.android-app-general": {
     "message": "Allgemein",
     "description": "The label for category 'General' in sidebar 'user'"
   },
-  "sidebar.user.category.android-general.link.generated-index.description": {
+  "sidebar.user.category.android-app-general.link.generated-index.description": {
     "message": "Tutorials about installing, setup and overview of the OpenCloud Android App.",
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
@@ -159,11 +159,11 @@
     "message": "Tutorials for managing your files and folders in the OpenCloud Android App.",
     "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
   },
-  "sidebar.user.category.android-shares": {
+  "sidebar.user.category.android-app-shares": {
     "message": "Teilen",
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
-  "sidebar.user.category.android-shares.link.generated-index.description": {
+  "sidebar.user.category.android-app-shares.link.generated-index.description": {
     "message": "Tutorials about creating shares the OpenCloud Android App.",
     "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
   },
