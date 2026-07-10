@@ -13,7 +13,7 @@ The OpenCloud Desktop Client synchronizes files between your computer and OpenCl
 - [Windows](./windows/installation.md)  
   Install, set up, and configure the Desktop Client on Windows.
 
-- [macOS](./macos/installation.md)  
+- [MacOS](./macos/installation.md)  
   Install, set up, and configure the Desktop Client on macOS.
 
 - [Linux](./linux/installation.md)  
