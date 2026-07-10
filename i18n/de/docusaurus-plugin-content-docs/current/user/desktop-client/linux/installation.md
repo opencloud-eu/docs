@@ -6,63 +6,64 @@ description: Install OpenCloud Desktop Client on Linux
 draft: false
 ---
 
-# Installation on Linux (AppImage with AppImageLauncher)
+# Installation unter Linux (AppImage mit AppImageLauncher)
 
-The OpenCloud Desktop Client is available as an AppImage for Linux.  
-Using AppImageLauncher is recommended to ensure proper system integration, menu entries, and simplified updates.
+Der OpenCloud Desktop Client ist für Linux als AppImage verfügbar.
 
-## Install AppImageLauncher
+Für eine nahtlose Integration in das System, automatische Menüeinträge und eine vereinfachte Aktualisierung wird die Verwendung von AppImageLauncher empfohlen.
 
-AppImageLauncher integrates AppImages into your system and manages them like regular applications.
+## AppImageLauncher installieren
 
-Follow the installation instructions here:
+AppImageLauncher integriert AppImages in Ihr System und verwaltet sie wie herkömmliche Anwendungen.
 
-[AppImageLauncher Installation Guide](https://github.com/TheAssassin/AppImageLauncher/releases/tag/v3.0.0-beta-3)
-lation
+Folgen Sie den Installationsanweisungen unter:
 
-## Download the OpenCloud AppImage
+[Installationsanleitung für AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher/releases/tag/v3.0.0-beta-3)
 
-Download the latest or desired `.AppImage` version from the official release page:
+## OpenCloud AppImage herunterladen
 
-- [OpenCloud Desktop Releases on GitHub](https://github.com/opencloud-eu/desktop/releases)
+Laden Sie die aktuelle oder eine gewünschte Version der `.AppImage`-Datei von der offiziellen Release-Seite herunter:
 
-Save the file to your preferred download directory.
+- [OpenCloud Desktop Releases auf GitHub](https://github.com/opencloud-eu/desktop/releases)
 
-## Integrate the AppImage
+Speichern Sie die Datei in einem Verzeichnis Ihrer Wahl.
 
-Once AppImageLauncher is installed:
+## AppImage integrieren
 
-1. Right-click the downloaded `OpenCloud.AppImage`.
-2. Select “Open with AppImageLauncher”.
-3. Confirm integration when prompted.
+Nachdem AppImageLauncher installiert wurde:
 
-AppImageLauncher will automatically:
+1. Klicken Sie mit der rechten Maustaste auf die heruntergeladene Datei `OpenCloud.AppImage`.
+2. Wählen Sie **Mit AppImageLauncher öffnen**.
+3. Bestätigen Sie die Integration, wenn Sie dazu aufgefordert werden.
 
-- store the AppImage in the correct location
-- register a menu entry
-- ensure the app behaves like a native application
+AppImageLauncher übernimmt anschließend automatisch folgende Aufgaben:
 
-## Launching OpenCloud Desktop
+- Speichern des AppImages am vorgesehenen Speicherort.
+- Erstellen eines Eintrags im Anwendungsmenü.
+- Integration der Anwendung, sodass sie sich wie eine native Anwendung verhält.
 
-After integration, you can start the client as usual through your application menu:
+## OpenCloud Desktop starten
 
-- open your Application Launcher
-- search for OpenCloud Desktop
-- start the application
+Nach der Integration können Sie den Desktop Client wie gewohnt über das Anwendungsmenü starten:
 
-The client will guide you through the initial setup.
+1. Öffnen Sie den Anwendungsstarter.
+2. Suchen Sie nach **OpenCloud Desktop**.
+3. Starten Sie die Anwendung.
 
-## Updating the AppImage
+Der Desktop Client führt Sie anschließend durch die Ersteinrichtung.
 
-When a new version is available, download the updated AppImage from GitHub.  
-AppImageLauncher will detect it and offer to replace the existing version automatically.
+## AppImage aktualisieren
 
-## Uninstallation
+Sobald eine neue Version verfügbar ist, laden Sie die aktualisierte AppImage-Datei von GitHub herunter.
 
-To remove the OpenCloud Desktop Client:
+AppImageLauncher erkennt die neue Version automatisch und bietet an, die vorhandene Version zu ersetzen.
 
-1. Open your application menu.
-2. Search for OpenCloud Desktop
-3. Select the option to remove or uninstall the AppImage (menu wording may vary depending on distribution and launcher).
+## Deinstallation
 
-AppImageLauncher will cleanly remove the integrated AppImage.
+So entfernen Sie den OpenCloud Desktop Client:
+
+1. Öffnen Sie Ihr Anwendungsmenü.
+2. Suchen Sie nach **OpenCloud Desktop**.
+3. Wählen Sie die Option zum Entfernen oder Deinstallieren des AppImages aus (die genaue Bezeichnung kann je nach Linux-Distribution und verwendetem Anwendungsstarter variieren).
+
+AppImageLauncher entfernt das integrierte AppImage anschließend vollständig aus Ihrem System.
