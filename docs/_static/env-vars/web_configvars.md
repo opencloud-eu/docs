@@ -1,5 +1,5 @@
 
-2026-07-07-00-04-30
+2026-07-12-00-04-12
 
 ## Deprecation Notice
 
@@ -41,6 +41,7 @@
 |`WEB_OIDC_POST_LOGOUT_REDIRECT_URI`| 1.0.0 |string|`This value needs to point to a valid and reachable web page. The web client will trigger a redirect to that page directly after the logout action. The default value is empty and redirects to the login page.`|``|
 |`WEB_UI_CORE_APPS`| next |[]string|`Allows to override the default list of core apps in OpenCloud Web.`|`[files search text-editor pdf-viewer external admin-settings epub-reader preview app-store]`|
 |`WEB_OPTION_DISABLE_FEEDBACK_LINK`| 1.0.0 |bool|`Set this option to 'true' to disable the feedback link in the top bar. Keeping it enabled by setting the value to 'false' or with the absence of the option, allows OpenCloud to get feedback from your user base through a dedicated survey website.`|`false`|
+|`WEB_OPTION_DISABLE_SPONSOR_LINK`| next |bool|`Set this option to 'true' to disable the sponsor link in the left sidebar. Keeping it enabled by setting the value to 'false' or by leaving the option unset allows OpenCloud to get support from the community through a dedicated sponsorship program on GitHub.`|`false`|
 |`WEB_OPTION_RUNNING_ON_EOS`| 1.0.0 |bool|`Set this option to 'true' if running on an EOS storage backend (\https://eos-web.web.cern.ch/eos-web/) to enable its specific features. Defaults to 'false'.`|`false`|
 |`WEB_OPTION_OPEN_FILES_IN_NEW_TAB`| 5.3.0 |bool|`Set this option to 'true' to open files in a new browser tab instead of navigating in the same tab. Defaults to 'false'.`|`false`|
 |`WEB_OPTION_CONTEXTHELPERS_READ_MORE`| 1.0.0 |bool|`Specifies whether the 'Read more' link should be displayed or not.`|`true`|
