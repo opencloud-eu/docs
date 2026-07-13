@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @h200101
+@Heiko-Pohl, @Svanvith, @h200101
+
+### 👷 Admin Documentation
+
+- add changes from https://github.com/opencloud-eu/docs/pull/1011 in ro… [[#1040](https://github.com/opencloud-eu/docs/pull/1040)]
 
 ### 👤 User Documentation
 
