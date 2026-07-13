@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.34.0](https://github.com/opencloud-eu/docs/releases/tag/3.34.0) - 2026-07-10
+## [3.34.0](https://github.com/opencloud-eu/docs/releases/tag/3.34.0) - 2026-07-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👤 User Documentation
 
+- add index.md files in android app [[#1032](https://github.com/opencloud-eu/docs/pull/1032)]
 - add index.md files in desktop-client section [[#1031](https://github.com/opencloud-eu/docs/pull/1031)]
 
 ## [3.33.0](https://github.com/opencloud-eu/docs/releases/tag/3.33.0) - 2026-07-08
