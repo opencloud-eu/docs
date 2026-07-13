@@ -72,50 +72,6 @@ opencloud backup consistency -p /var/lib/opencloud/storage/users --fail
 
 Run this command after storage-related incidents, manual file-system changes, migrations, restores, or when users report missing or misplaced files.
 
-### Purge file revisions
-
-By default, the command runs as a dry-run and prints which revisions would be removed without deleting anything. Review the output before running with `--dry-run=false`.
-
-List revisions that would be purged:
-
-```bash
-opencloud revisions purge -p /var/lib/opencloud/storage/users
-```
-
-Purge revisions for all spaces:
-
-```bash
-opencloud revisions purge -p /var/lib/opencloud/storage/users --dry-run=false
-```
-
-Purge revisions for a specific space (pass the space ID as `--resource-id`):
-
-```bash
-opencloud revisions purge -p /var/lib/opencloud/storage/users --resource-id '<space-id>' --dry-run=false
-```
-
-Purge revisions for a specific file (pass the file's node ID as `--resource-id`):
-
-```bash
-opencloud revisions purge -p /var/lib/opencloud/storage/users --resource-id '<resource-id>' --dry-run=false
-```
-
-Available options: `--dry-run`, `--resource-id`, `--blobstore`, `--verbose`.
-
-### Purge empty trash-bin directories
-
-By default, the command runs as a dry-run and prints which empty folders would be removed.
-
-```bash
-opencloud trash purge-empty-dirs -p /var/lib/opencloud/storage/users
-```
-
-To remove the empty folders:
-
-```bash
-opencloud trash purge-empty-dirs -p /var/lib/opencloud/storage/users --dry-run=false
-```
-
 ### Purge expired trash-bin items
 
 ```bash
@@ -146,23 +102,7 @@ Restore all trash-bin items for a space:
 opencloud storage-users trash-bin restore-all <space-id>
 ```
 
-Restore a specific item:
-
-```bash
-opencloud storage-users trash-bin restore <space-id> <item-id>
-```
-
 Restoring is only possible to the original location. The behavior when the target name already exists can be configured with the available restore options: skipping, replacing, or keeping both items.
-
-## Shares
-
-### Clean up orphaned shares
-
-Removes orphaned shares after a shared space or directory has been deleted. This cleanup is not done automatically.
-
-```bash
-opencloud shares cleanup
-```
 
 ## Uploads
 
