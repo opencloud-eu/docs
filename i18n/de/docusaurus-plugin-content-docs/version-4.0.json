@@ -402,5 +402,21 @@
   "sidebar.user.category.ios-settings": {
     "message": "Einstellungen",
     "description": "The label for category 'Settings' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-windows": {
+    "message": "Desktop Client for Windows",
+    "description": "The label for category 'Desktop Client for Windows' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-macos": {
+    "message": "Desktop Client for MacOS",
+    "description": "The label for category 'Desktop Client for MacOS' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-linux": {
+    "message": "Desktop Client for Linux",
+    "description": "The label for category 'Desktop Client for Linux' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-common-functionalty": {
+    "message": "Common functionality",
+    "description": "The label for category 'Common functionality' in sidebar 'user'"
   }
 }
