@@ -89,6 +89,7 @@ web:
     options:
       accountEditLink: null
       disableFeedbackLink: false
+      disableSponsorLink: false
       feedbackLink: null
       runningOnEos: false
       cernFeatures: false
