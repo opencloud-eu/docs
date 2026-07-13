@@ -241,11 +241,12 @@ server {
         proxy_send_timeout 36000s;
     }
 
-    location ~ ^/cool/(.*)/ws$ {
+    location ^~ /cool/ {
         proxy_pass http://127.0.0.1:9980;
 
+        proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "Upgrade";
+        proxy_set_header Connection "upgrade";
 
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Host $host;
