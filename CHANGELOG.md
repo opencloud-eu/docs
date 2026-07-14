@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.34.0](https://github.com/opencloud-eu/docs/releases/tag/3.34.0) - 2026-07-13
+## [3.34.0](https://github.com/opencloud-eu/docs/releases/tag/3.34.0) - 2026-07-14
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add a maintainance command overview [[#1004](https://github.com/opencloud-eu/docs/pull/1004)]
 - add changes from https://github.com/opencloud-eu/docs/pull/1011 in ro… [[#1040](https://github.com/opencloud-eu/docs/pull/1040)]
 
 ### 👤 User Documentation
