@@ -1,4 +1,6 @@
 ---
+sidebar_position: 0
+id: general
 title: Web User Interface and Navigation
 ---
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: create
 title: Space erstellen
 description: Space erstellen und Dateien teilen in OpenCloud

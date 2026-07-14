@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 120
 title: App-Version
 description: Zeigen Sie Informationen zur installierten OpenCloud-App-Version an und kopieren Sie diese.
 draft: false

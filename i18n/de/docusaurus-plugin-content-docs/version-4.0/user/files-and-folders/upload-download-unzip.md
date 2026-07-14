@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: upload-download-unzip
 title: Hochladen - Herunterladen - Entpacken
 description: Hochladen - Herunterladen - Entpacken

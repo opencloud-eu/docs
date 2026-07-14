@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.6
+sidebar_position: 60
 title: Photos and Videos
 description: Learn how OpenCloud previews photos and plays videos in the web interface.
 ---

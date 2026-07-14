@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 title: Logging
 description: Enable application logging and browse generated log files for troubleshooting.
 draft: false

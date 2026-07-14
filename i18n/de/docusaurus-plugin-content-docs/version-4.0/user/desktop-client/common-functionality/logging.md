@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 20
 id: logging
 title: Logfiles sammeln
 description: Logfiles sammeln in OpenCloud

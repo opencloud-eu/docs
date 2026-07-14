@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: internal
 title: Intern Teilen
 description: Organisationsinterne Freigabe von Dateien und Ordnern in OpenCloud

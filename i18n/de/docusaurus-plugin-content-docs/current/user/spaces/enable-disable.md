@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 id: disable-enable
 title: Deaktivieren und Aktivieren eines Spaces
 description: Einen Space in OpenCloud deaktivieren und aktivieren

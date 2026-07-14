@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 30
 id: desktop-client-states
 title: Desktop Client State
 description: Desktop Client State Icons

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 title: Nutzung mobiler Daten
 description: Legen Sie fest, welche OpenCloud-Funktionen Ihre mobile Datenverbindung verwenden dürfen.
 draft: false

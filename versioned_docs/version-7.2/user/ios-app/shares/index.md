@@ -10,8 +10,8 @@ Learn how to share files and folders with others directly from the OpenCloud iOS
 
 ## In this section
 
-- [Share files and folders with people and groups via invitation](./invite.md)  
+- [Invite to share](./invite.md)  
   Invite people and groups within your OpenCloud to share files and folders with them.
 
-- [Share files and folders via link](./links.md)  
+- [Share via link](./links.md)  
   Create a link to share files and folders with others.

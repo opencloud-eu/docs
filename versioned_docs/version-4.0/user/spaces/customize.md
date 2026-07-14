@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 80
 id: customize
 title: Customize Spaces
 description: Customize a Space in OpenCloud

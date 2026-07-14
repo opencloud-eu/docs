@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: create-rename-move
 title: Create - Rename - Move
 description: Create - Rename - Move

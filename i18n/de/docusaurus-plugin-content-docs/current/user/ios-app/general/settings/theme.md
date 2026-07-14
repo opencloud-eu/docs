@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 title: Design
 description: Passen Sie das Erscheinungsbild der OpenCloud-App an, indem Sie ein helles, dunkles oder systemgesteuertes Design auswählen.
 draft: false

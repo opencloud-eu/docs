@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 title: Hilfe & Kontakt
 description: Erfahren Sie, wie Sie auf die OpenCloud-Dokumentation zugreifen, Probleme melden und Hilfe aus der Community erhalten.
 draft: false

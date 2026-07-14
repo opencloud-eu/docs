@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: file-drop
 title: File Drop
 description: File Drop (secret)

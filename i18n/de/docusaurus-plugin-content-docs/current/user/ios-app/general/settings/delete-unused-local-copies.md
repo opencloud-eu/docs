@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 title: Ungenutzte lokale Kopien löschen
 description: Entfernen Sie lokal gespeicherte Dateien nach einem konfigurierbaren Zeitraum automatisch, um Speicherplatz freizugeben.
 draft: false

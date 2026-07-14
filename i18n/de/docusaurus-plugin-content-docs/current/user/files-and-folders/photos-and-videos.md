@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.6
+sidebar_position: 60
 title: Fotos und Videos
 description: Erfahren Sie, wie OpenCloud Fotos in der Vorschau anzeigt und Videos direkt im Web abspielt.
 ---

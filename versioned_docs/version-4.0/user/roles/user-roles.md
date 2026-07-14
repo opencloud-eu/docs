@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: user-roles
 title: User roles in OpenCloud
 description: User roles in OpenCloud

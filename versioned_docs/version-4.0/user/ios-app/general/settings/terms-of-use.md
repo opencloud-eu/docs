@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 100
 title: Terms Of Use
 description: Open the OpenCloud Terms of Use directly from the iOS app.
 draft: false

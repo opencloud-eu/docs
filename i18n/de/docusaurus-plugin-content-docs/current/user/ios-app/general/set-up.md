@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: set-up
 title: Einrichten der OpenCloud iOS App
 description: Einrichten deines OpenCloud Accounts

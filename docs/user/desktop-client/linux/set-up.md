@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: set-up
 title: Set up OpenCloud Desktop
 description: Setting up your OpenCloud Desktop

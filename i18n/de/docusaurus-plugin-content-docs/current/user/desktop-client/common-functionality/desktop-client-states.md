@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 30
 id: desktop-client-states
 title: Status des Desktop-Clients
 description: Symbole des Desktop-Client-Status

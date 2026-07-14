@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 50
 id: upgrade-macos
 title: Upgrade Desktop Client on macOS
 description: Upgrade Desktop Client on macOS

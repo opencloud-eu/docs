@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 50
 id: tags
 title: Tags
 description: Add and manage tags with OpenCloud

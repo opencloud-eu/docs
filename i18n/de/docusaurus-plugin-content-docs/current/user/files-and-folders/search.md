@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 70
 id: search
 title: Suche
 description: Nutzen der Suche in OpenCloud

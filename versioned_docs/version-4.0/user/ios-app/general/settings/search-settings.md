@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 title: Search Settings
 description: Configure the default search scope used by the OpenCloud iOS app.
 draft: false
