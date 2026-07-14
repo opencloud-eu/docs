@@ -49,7 +49,7 @@ Mark frequently used files and folders for quick access. Favorites are stored se
 
 ### Versioning and Recovery
 
-Every change is automatically saved as a version and can be restored at any time. Administrators can define how many versions to keep and the rules for deleting older versions.
+Every change is automatically saved as a version and can be restored at any time.
 
 ### No Limit on File Size, Count, or Type
 
