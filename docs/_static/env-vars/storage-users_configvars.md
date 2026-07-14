@@ -39,9 +39,9 @@
 |`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
 |`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`"{{.Id.OpaqueId}}"`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSED_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`"eu.opencloud.api.settings"`|
-|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
+|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
 |`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`""`|
-|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
+|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
 |`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`""`|
 |`STORAGE_USERS_DECOMPOSED_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`"/Shares"`|
 |`STORAGE_USERS_DECOMPOSED_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value will be used.`|`"20"`|
@@ -66,9 +66,9 @@
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_CONCURRENT_STREAM_PARTS`| 1.0.0 |bool|`Always precreate parts when copying objects to S3. This is not recommended. It uses a memory buffer. If true, PartSize needs to be set.`|`"false"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_NUM_THREADS`| 1.0.0 |uint|`Number of concurrent uploads to use when copying objects to S3.`|`"4"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_PART_SIZE`| 1.0.0 |uint64|`Part size for concurrent uploads to S3. If no value or 0 is set, the library automatically calculates the part size according to the total size of the file to be uploaded. The value range is min 5MB and max 5GB.`|`"0"`|
-|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
+|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`""`|
-|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
+|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
 |`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`""`|
 |`STORAGE_USERS_DECOMPOSEDS3_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`"/Shares"`|
 |`STORAGE_USERS_DECOMPOSEDS3_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value of 20 will be used.`|`"20"`|
@@ -89,9 +89,9 @@
 |`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_POSIX_PROPAGATOR`| 2.0.0 |string|`The propagator used for the posix driver. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`""`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`"0s"`|
-|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
+|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
 |`STORAGE_USERS_POSIX_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`"users/{{.User.Id.OpaqueId}}"`|
-|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
+|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
 |`STORAGE_USERS_POSIX_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`"projects/{{.SpaceId}}"`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_POSIX_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed', 'posix' and 'decomposeds3'.`|`"eu.opencloud.api.settings"`|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`"true"`|
