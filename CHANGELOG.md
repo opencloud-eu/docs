@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @h200101
+@Heiko-Pohl, @Svanvith, @h200101, @openclouders
 
 ### 👷 Admin Documentation
 
@@ -15,6 +15,10 @@
 
 - add index.md files in android app [[#1032](https://github.com/opencloud-eu/docs/pull/1032)]
 - add index.md files in desktop-client section [[#1031](https://github.com/opencloud-eu/docs/pull/1031)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1041](https://github.com/opencloud-eu/docs/pull/1041)]
 
 ## [3.33.0](https://github.com/opencloud-eu/docs/releases/tag/3.33.0) - 2026-07-08
 
