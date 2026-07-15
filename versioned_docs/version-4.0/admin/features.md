@@ -45,7 +45,7 @@ Files can be found quickly—by title or full text. The search provides live sug
 
 ### Versioning and Recovery
 
-Every change is automatically saved as a version and can be restored at any time. Administrators can define how many versions to keep and the rules for deleting older versions.
+Every change is automatically saved as a version and can be restored at any time.
 
 ### No Limit on File Size, Count, or Type
 
