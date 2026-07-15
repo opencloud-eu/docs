@@ -9,13 +9,13 @@ draft: false
 # Überblick über den Admin-Bereich
 
 Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für Ihre Organisation. Hier sind die wichtigsten Bereiche:
-<img src={require("./img/settings/admin-einstellungen.png").default} alt="Admin settings" width="400"/>
+<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="400"/>
 
 ## Allgemein
 
 - Versionsübersicht:
   Im Bereich Allgemein kannst du Informationen zu deiner aktuellen OpenCloud-Version einsehen und prüfen, ob eine neuere Version verfügbar ist.
-  <img src={require("./img/settings/allgemein.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
 
 :::note
 Wenn ein sicherheitskritisches Upgrade verfügbar ist, können Administratoren zusätzlich eine Warnung unten links in der Weboberfläche sehen.
@@ -34,7 +34,7 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
   - Quota (Speicherplatz) von Benutzern ändern
   - Benutzer in Gruppen hinzufügen oder entfernen
   - Allow or prohibit logins (for individual users)
-    <img src={require("./img/settings/personen.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
 
 :::note
 Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hier weiterhin sehen, die Benutzerverwaltung muss jedoch im IdP erfolgen.
@@ -48,7 +48,7 @@ Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hi
   Sie können lokale Gruppen erstellen, bearbeiten oder löschen und Mitglieder hinzufügen oder entfernen.
 - Importierte Gruppen: Externe Gruppen, die über ein externes Benutzerverwaltungssystem importiert wurden, können hier nicht bearbeitet werden. Diese Gruppen sind mit einem Sperrsymbol  
    gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
-  <img src={require("./img/settings/gruppen.png").default} alt="Admin groups" width="1920"/>
+  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920"/>
 
 ## Spaces
 
@@ -58,4 +58,4 @@ Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hi
   - Bearbeiten
   - Deaktivieren oder aktivieren
   - Löschen
-    <img src={require("./img/settings/spaces.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>

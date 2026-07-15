@@ -19,7 +19,7 @@ Dabei werden nur die lokalen Kopien entfernt. Ihre Dateien bleiben sicher in Ope
 
 Mit der Einstellung **Ungenutzte lokale Kopien löschen** können Sie auswählen, wie lange heruntergeladene Dateien lokal gespeichert bleiben, bevor sie automatisch entfernt werden.
 
-<img src={require("../../img/settings/delete-unused-local-copies/nicht verwendete lokale kopien löschen button.png").default} alt="Schaltfläche Ungenutzte lokale Kopien löschen" height="650"/>
+<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies button.png").default} alt="Schaltfläche Ungenutzte lokale Kopien löschen" height="650"/>
 
 ## Verfügbare Optionen
 
@@ -36,7 +36,7 @@ Wählen Sie den Aufbewahrungszeitraum, der am besten zu Ihrer Arbeitsweise passt
 
 Dateien, auf die innerhalb des ausgewählten Zeitraums nicht mehr zugegriffen wurde, werden automatisch vom Gerät entfernt, bleiben aber weiterhin in Ihrem OpenCloud-Konto verfügbar.
 
-<img src={require("../../img/settings/delete-unused-local-copies/nicht verwendete lokale kopien löschen einstellungen.png").default} alt="Einstellungen zum Löschen ungenutzter lokaler Kopien" height="650"/>
+<img src={require("../../img/settings/delete-unused-local-copies/delete unused local copies settings.png").default} alt="Einstellungen zum Löschen ungenutzter lokaler Kopien" height="650"/>
 
 ## Funktionsweise
 

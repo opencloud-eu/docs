@@ -14,15 +14,15 @@ Mit Spaces können Sie Daten mit bestimmten Personen innerhalb Ihrer Organisatio
 
 - Gehen Sie auf den Menüpunkt „Spaces“ in der linken Seitenleiste.
 
-  <img src={require("./img/create/linke-seitenleiste.png").default} alt="Space in linker Seitenleiste" width="1920"/>
+  <img src={require("./img/create/new-space.png").default} alt="Space in linker Seitenleiste" width="1920"/>
 
 - Klicken Sie auf „+ Neuer Space“.
 
-  <img src={require("./img/create/space-erstellen.png").default} alt="Neuer Space" width="1920"/>
+  <img src={require("./img/create/new-space-popup.png").default} alt="Neuer Space" width="1920"/>
 
 - Geben Sie den gewünschten Namen für den Space ein.
 
-  <img src={require("./img/create/benennen.png").default} alt="Space-Namen eingeben" width="1920"/>
+  <img src={require("./img/create/enter-name.png").default} alt="Space-Namen eingeben" width="1920"/>
 
 - Klicken Sie auf „Erstellen“.
 
@@ -30,7 +30,7 @@ Mit Spaces können Sie Daten mit bestimmten Personen innerhalb Ihrer Organisatio
 
 Ihr neuer Space erscheint nun unter „Spaces“ und ist bereit zur Nutzung.
 
-<img src={require("./img/create/neuer-space.png").default} alt="Erstellter Space" width="1920"/>
+<img src={require("./img/create/created-space.png").default} alt="Erstellter Space" width="1920"/>
 
 Jetzt wissen Sie, wie Sie schnell und einfach einen Space erstellen und mit dem Teilen von Daten beginnen können.
 

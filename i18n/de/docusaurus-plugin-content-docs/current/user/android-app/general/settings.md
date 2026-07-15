@@ -16,7 +16,7 @@ In den Einstellungen der Android-App können Änderungen vorgenommen werden, wie
 - Erweiterte Einstellungen  
   und mehr
 
-<img src={require(".././img/settings/settings.png").default} alt="Settings" width="400"/>
+<img src={require("../img/settings/settings.png").default} alt="Settings" width="400"/>
 
 ## Userinterface
 

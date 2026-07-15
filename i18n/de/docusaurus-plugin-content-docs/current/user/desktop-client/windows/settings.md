@@ -14,7 +14,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 - Klicken Sie auf "Einstellungen“ in der oberen rechten Ecke von OpenCloud Desktop
 
-<img src={require(".././img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
+<img src={require("../img/settings/settings-overview.png").default} alt="settings overview" width="400"/>
 
 ## Übersicht der Einstellungen
 
@@ -22,7 +22,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 - Legen Sie Ihre bevorzugte Sprache fest
 
-  <img src={require(".././img/settings/windows/settings-general.png").default} alt="settings-general" width="400"/>
+  <img src={require("../img/settings/windows/settings-general.png").default} alt="settings-general" width="400"/>
 
 ### Erweiterte Einstellungen
 
@@ -31,7 +31,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 - Bearbeiten Sie die Liste der ignorierten Dateien
 - Aktivieren Sie eine Debug-Protokolldatei für die Fehlersuche
 
-  <img src={require(".././img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
+  <img src={require("../img/settings/settings-advanced.png").default} alt="settings advanced" width="400"/>
 
 ### Netzwerkeinstellungen
 
@@ -40,7 +40,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   - Systemproxy verwenden (Standard)
   - Manuelles Eingeben eines Proxys
 
-  <img src={require(".././img/settings/settings-network.png").default} alt="settings network" width="400"/>
+  <img src={require("../img/settings/settings-network.png").default} alt="settings network" width="400"/>
 
   ### Download- und Upload-Bandbreite
 
@@ -49,4 +49,4 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   - Automatische Anpassung des Limits
   - Ein bestimmtes Limit manuell einstellen
 
-  <img src={require(".././img/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400"/>
+  <img src={require("../img/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400"/>

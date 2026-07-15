@@ -16,11 +16,11 @@ Auf macOS werden die Dateien auf Ihr System heruntergeladen. Über den OpenCloud
 2. Gehen Sie zur Account-Ansicht.
 3. Klicken Sie auf das Drei-Punkte-Menü neben dem Space, den Sie konfigurieren möchten.
 
-<img src={require(".././img/sync-settings/sync-settings-three-dot.png").default} alt="Account-Spaces-Menü" width="400"/>
+<img src={require("../img/sync-settings/sync-settings-three-dot.png").default} alt="Account-Spaces-Menü" width="400"/>
 
 ## Synchronisationsoptionen
 
-<img src={require(".././img/sync-settings/sync-settings-menu.png").default} alt="Synchronisationsoptionen-Menü" width="400"/>
+<img src={require("../img/sync-settings/sync-settings-menu.png").default} alt="Synchronisationsoptionen-Menü" width="400"/>
 
 ### In Finder anzeigen
 
@@ -50,7 +50,7 @@ Auf macOS werden die Dateien auf Ihr System heruntergeladen. Über den OpenCloud
 - Wählen Sie bestimmte Ordner aus, die lokal synchronisiert werden sollen.
 - Spart Speicherplatz, indem nur die benötigten Dateien synchronisiert werden.
 
-<img src={require(".././img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Zu synchronisierende Dateien auswählen" width="400"/>
+<img src={require("../img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Zu synchronisierende Dateien auswählen" width="400"/>
 
 :::note
 Dateien und Ordner, die nicht zur Synchronisation ausgewählt wurden, sind lokal nicht verfügbar.
