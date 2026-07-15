@@ -29,12 +29,14 @@ bearbeiten.
 
 Je nach Arbeitsweise können Sie OpenCloud auf unterschiedliche Weise nutzen:
 
-- Der [Web Client](./general/) bietet direkten Zugriff auf alle OpenCloud-Funktionen im Browser, einschließlich
-  Dateiverwaltung, Kollaborationsfunktionen und Verwaltungsoptionen, soweit Ihre Berechtigungen dies zulassen.
-- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen OpenCloud und Ihrem lokalen Computer für die
-  Offline-Arbeit und automatische Aktualisierungen.
+- Der [Web Client](./general/) bietet direkten Zugriff auf alle OpenCloud-Funktionen im Browser, einschließlich Dateiverwaltung, Kollaborationsfunktionen und Verwaltungsoptionen, soweit Ihre Berechtigungen dies zulassen.
+
+- Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen OpenCloud und Ihrem lokalen Computer für die Offline-Arbeit und automatische Aktualisierungen.
+
 - Die [iOS App](./ios-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+
 - Die [Android App](./android-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+
 - Die [Collabora Online-Integration](./collabora) ermöglicht das Bearbeiten von Office-Dokumenten direkt im Browser.
 
 Jeder Client und jede Integration ist für einen bestimmten Anwendungsfall ausgelegt: der Web Client für den
