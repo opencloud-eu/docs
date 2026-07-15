@@ -49,9 +49,7 @@ Mark frequently used files and folders for quick access. Favorites are stored se
 
 ### Versioning and Recovery
 
-Every change is automatically saved as a version and can be restored at any time. Administrators can define how many versions to keep and the rules for deleting older versions.
-
-### No Limit on File Size, Count, or Type
+Every change is automatically saved as a version and can be restored at any time.
 
 OpenCloud supports storing any number of files in any format and size.
 
