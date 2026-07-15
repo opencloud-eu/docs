@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@tbsbdr
+@Heiko-Pohl, @tbsbdr
 
 ### 👷 Admin Documentation
 
 - remove versioning and recovery section [[#1043](https://github.com/opencloud-eu/docs/pull/1043)]
+
+### 👤 User Documentation
+
+- refine sidebar position numbers and add index.md file in user docu [[#1042](https://github.com/opencloud-eu/docs/pull/1042)]
 
 ## [3.35.0](https://github.com/opencloud-eu/docs/releases/tag/3.35.0) - 2026-07-15
 
