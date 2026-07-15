@@ -10,6 +10,21 @@ draft: false
 
 Der OpenCloud Desktop-Client verwendet verschiedene Symbole im Infobereich (System Tray), um den aktuellen Synchronisations- und Verbindungsstatus anzuzeigen. Anhand dieser Symbole können Sie schnell erkennen, ob die Synchronisierung ordnungsgemäß funktioniert oder ob Handlungsbedarf besteht.
 
+# Die Statussymbole des Desktop-Clients verstehen
+
+Der OpenCloud Desktop-Client verwendet verschiedene Symbole im Infobereich (System Tray), um den aktuellen Synchronisations- und Verbindungsstatus anzuzeigen. Anhand dieser Symbole können Sie schnell erkennen, ob die Synchronisierung ordnungsgemäß funktioniert oder ob Handlungsbedarf besteht.
+
+## Schnellübersicht
+
+| Symbol                                                                                                                               | Status                 | Bedeutung                                                         | Typische Aktion                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------------------------------- | --------------------------------------------------------- |
+| <img src={require(".././img/desktop-client-states/ocl-ui_logo-petrol.png").default} alt="Bereit" width="28"/>                        | Bereit                 | Der Client ist verbunden und alle Dateien sind aktuell.           | Keine Aktion erforderlich.                                |
+| <img src={require(".././img/desktop-client-states/ocl-ui_sync-petrol-colour.png").default} alt="Synchronisierung läuft" width="28"/> | Synchronisierung läuft | Dateien werden derzeit hoch- oder heruntergeladen.                | Warten, bis die Synchronisierung abgeschlossen ist.       |
+| <img src={require(".././img/desktop-client-states/ocl-ui_pause-petrol-colour.png").default} alt="Pausiert" width="28"/>              | Pausiert               | Die Synchronisierung wurde vorübergehend angehalten.              | Synchronisierung fortsetzen, wenn Sie fortfahren möchten. |
+| <img src={require(".././img/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline" width="28"/>             | Offline                | Der Client kann keine Verbindung zum OpenCloud-Server herstellen. | Netzwerkverbindung und Server prüfen.                     |
+| <img src={require(".././img/desktop-client-states/ocl-ui_info-petrol-colour.png").default} alt="Information" width="28"/>            | Information            | Der Client zeigt eine nicht kritische Informationsmeldung an.     | Meldung bei Bedarf prüfen.                                |
+| <img src={require(".././img/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Fehler" width="28"/>                | Fehler                 | Ein Problem verhindert die normale Synchronisierung.              | Desktop-Client öffnen und das gemeldete Problem beheben.  |
+
 ## Bereit
 
 Das Symbol **Bereit** wird angezeigt, wenn der Desktop-Client mit OpenCloud verbunden ist und aktuell keine Synchronisierung stattfindet.

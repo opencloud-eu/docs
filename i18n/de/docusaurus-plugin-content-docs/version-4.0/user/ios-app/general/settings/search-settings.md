@@ -17,7 +17,7 @@ Mit den **Sucheinstellungen** können Sie festlegen, welcher Suchbereich standar
 
 Auf der Seite **Sucheinstellungen** können Sie den Standardsuchbereich für neue Suchvorgänge auswählen.
 
-<img src={require("../../img/settings/search-settings/sucheinstellungen button.png").default} alt="Schaltfläche Sucheinstellungen" height="650"/>
+<img src={require("../../img/settings/search-settings/search settings button.png").default} alt="Schaltfläche Sucheinstellungen" height="650"/>
 
 ## Verfügbare Suchbereiche
 
@@ -29,7 +29,7 @@ Sie können einen der folgenden Standardsuchbereiche auswählen:
 - **Konto** – Durchsucht das gesamte persönliche Konto über alle Spaces hinweg.
 - **Server** – Führt eine serverweite Suche aus.
 
-<img src={require("../../img/settings/search-settings/sucheinstellungen menü.png").default} alt="Menü Sucheinstellungen" height="650"/>
+<img src={require("../../img/settings/search-settings/search settings menu.png").default} alt="Menü Sucheinstellungen" height="650"/>
 
 ## Funktionsweise der Sucheinstellungen
 

@@ -16,7 +16,7 @@ Der Bereich **App-Version** zeigt detaillierte Versionsinformationen zur install
 3. Scrollen Sie bis zum Ende der Seite.
 4. Tippen Sie auf **App-Version**.
 
-<img src={require("../../img/settings/app-version/app versions button.png").default}
+<img src={require("../../img/settings/app-version/app version button.png").default}
 alt="Schaltfläche App-Version" height="650"/>
 
 ## Versionsinformationen kopiert
@@ -25,7 +25,7 @@ Nachdem Sie auf **App-Version** getippt haben, werden die vollständigen Version
 
 Am oberen Bildschirmrand erscheint eine Bestätigung, dass die Versionsinformationen erfolgreich kopiert wurden.
 
-<img src={require("../../img/settings/app-version/app versions pop up.png").default}
+<img src={require("../../img/settings/app-version/copied app version pop up.png").default}
 alt="Bestätigung zum Kopieren der App-Version" height="650"/>
 
 :::tip
