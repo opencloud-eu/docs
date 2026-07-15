@@ -1,5 +1,5 @@
 ---
-sidebar_position: 50
+sidebar_position: 60
 id: shourtcut
 title: Verknüpfung
 description: Verknüpfung erstellen in OpenCloud

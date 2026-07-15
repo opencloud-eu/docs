@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 30
 id: spaces
 title: Spaces
 description: Spaces in der OpenCloud Android App
