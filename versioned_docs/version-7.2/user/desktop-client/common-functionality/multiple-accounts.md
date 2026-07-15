@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 10
 id: multiple-accounts
 title: Set up multiple accounts
 description: Using multiple Accounts in OpenCloud Desktop

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: add-members
 title: Mitglieder hinzufügen
 description: Neue Mitglieder zu Ihrem Space in OpenCloud hinzufügen

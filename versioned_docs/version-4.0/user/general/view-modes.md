@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: view-modes
 title: View modes
 description: Change file list views in OpenCloud

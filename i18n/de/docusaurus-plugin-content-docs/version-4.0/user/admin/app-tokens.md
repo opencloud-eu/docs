@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: app-tokens
 title: App Tokens
 description: App Tokens in OpenCLoud

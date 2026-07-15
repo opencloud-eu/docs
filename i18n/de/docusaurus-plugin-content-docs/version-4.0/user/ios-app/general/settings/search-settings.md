@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 title: Sucheinstellungen
 description: Konfigurieren Sie den Standardsuchbereich der OpenCloud iOS-App.
 draft: false

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 100
 id: shortcut
 title: Shortcut
 description: Create shortcuts in OpenCloud

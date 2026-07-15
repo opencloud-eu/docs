@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: share-roles
 title: Share roles in OpenCloud
 description: Share roles in OpenCloud

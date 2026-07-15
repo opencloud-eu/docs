@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 80
 title: Einem Freund empfehlen
 description: Teilen Sie direkt aus der OpenCloud iOS-App eine Einladung mit Freunden und Kollegen.
 draft: false

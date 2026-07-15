@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: customization-file-list
 title: Anpassungen der Datei-Liste
 description: Anpassungen der Datei-Liste in OpenCloud

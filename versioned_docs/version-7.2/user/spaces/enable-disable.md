@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 id: disable-enable
 title: Disable and Enable a Space
 description: Disable and enable a Space in OpenCloud

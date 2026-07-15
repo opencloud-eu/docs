@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 id: rename
 title: Space umbenennen
 description: Umbennen eines Space in OpenCloud

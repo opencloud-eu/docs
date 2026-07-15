@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 30
 id: desktop-client-states
 title: Desktop-Client Statussymbole
 description: Die Statussymbole des Desktop-Clients verstehen

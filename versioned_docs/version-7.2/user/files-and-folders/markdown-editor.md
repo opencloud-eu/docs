@@ -1,6 +1,6 @@
 ---
 id: markdown-editor
-sidebar_position: 3.6
+sidebar_position: 40
 title: Editing Markdown Files
 description: Learn how to edit Markdown files with the OpenCloud Tiptap editor.
 ---

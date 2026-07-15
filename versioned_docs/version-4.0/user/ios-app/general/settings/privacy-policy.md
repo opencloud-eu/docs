@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 90
 title: Privacy Policy
 description: Open the OpenCloud Privacy Policy directly from the iOS app.
 draft: false

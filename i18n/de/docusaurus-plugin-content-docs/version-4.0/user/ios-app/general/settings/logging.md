@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 title: Protokollierung
 description: Aktivieren Sie die Anwendungsprotokollierung und durchsuchen Sie erzeugte Protokolldateien zur Fehlerbehebung.
 draft: false

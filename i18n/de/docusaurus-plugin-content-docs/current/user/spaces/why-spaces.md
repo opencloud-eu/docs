@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: why-spaces
 title: Warum Spaces?
 description: Warum man Spaces nutzen sollte

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: file-conflicts
 title: Handle file conflicts
 description: How to handle file conflicts

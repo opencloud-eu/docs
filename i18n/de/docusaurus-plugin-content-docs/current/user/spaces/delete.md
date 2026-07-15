@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 60
 id: delete
 title: Einen Space löschen
 description: Einen Space in OpenCloud löschen
