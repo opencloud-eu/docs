@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.36.0](https://github.com/opencloud-eu/docs/releases/tag/3.36.0) - 2026-07-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@tbsbdr
+
+### 👷 Admin Documentation
+
+- remove versioning and recovery section [[#1043](https://github.com/opencloud-eu/docs/pull/1043)]
+
 ## [3.35.0](https://github.com/opencloud-eu/docs/releases/tag/3.35.0) - 2026-07-15
 
 ### ❤️ Thanks to all contributors! ❤️
