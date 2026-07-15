@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 40
 id: settings
 title: Einstellungen in macOS
 description: Einstellungen in OpenCloud Desktop für macOS

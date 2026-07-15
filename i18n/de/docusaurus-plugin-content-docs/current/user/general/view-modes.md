@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: view-modes
 title: Ansichtsmodi
 description: Ansichtsmodi für die Dateiliste in OpenCloud

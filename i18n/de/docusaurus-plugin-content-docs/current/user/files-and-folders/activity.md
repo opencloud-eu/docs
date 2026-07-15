@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 120
 id: activities
 title: Aktivitäten
 description: Aktivitäten einer Datei oder eines Ordners in OpenCloud anzeigen

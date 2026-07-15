@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3.5
+sidebar_position: 50
 title: README Files in Folders
 description: Learn how README.md files are rendered in folders in OpenCloud.
 ---

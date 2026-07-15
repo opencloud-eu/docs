@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: space-quota
 title: Space Quota
 description: Editieren der Space Quota

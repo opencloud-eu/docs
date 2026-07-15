@@ -1,4 +1,6 @@
 ---
+sidebar_position: 0
+id: desktop-client-common-functionality
 title: Common Functionality
 ---
 

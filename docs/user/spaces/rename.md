@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 id: rename
 title: Rename a Space
 description: Rename a Space in OpenCloud

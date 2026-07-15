@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 title: Theme
 description: Customize the appearance of the OpenCloud app by selecting a light, dark, or system theme.
 draft: false

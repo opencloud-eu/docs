@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: external
 title: Extern Teilen
 description: Externes Teilen von Dateien und Ordner in OpenCloud

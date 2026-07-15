@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 30
 id: sync-settings-win
 title: Synchronisationseinstellungen unter Windows
 description: Synchronisationseinstellungen unter Windows
@@ -15,7 +15,7 @@ Dateien und Ordner werden angezeigt, ohne dass sie vollständig heruntergeladen 
 
 Dateien und Ordner können verschiedene Stati haben, je nachdem, ob sie lokal gespeichert oder nur online verfügbar sind.
 
-### Immer auf diesem Gerät verfügbar (full pinned)
+### Immer auf diesem Gerät verfügbar (full pinned) {#immer-auf-diesem-gerat-verfugbar-full-pinned}
 
 - Lokal gespeichert und jederzeit offline zugänglich.
 - Windows entfernt diese Datei nicht automatisch.

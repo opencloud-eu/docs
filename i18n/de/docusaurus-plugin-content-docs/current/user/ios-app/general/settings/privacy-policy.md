@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 90
 title: Datenschutzerklärung
 description: Öffnen Sie die OpenCloud-Datenschutzerklärung direkt aus der iOS-App.
 draft: false

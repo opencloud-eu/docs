@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: external
 title: External
 description: External sharing of files and folders in OpenCloud

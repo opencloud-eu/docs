@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 id: versions
 title: Versionen
 description: Verwalten der Versionen von Dateien OpenCloud

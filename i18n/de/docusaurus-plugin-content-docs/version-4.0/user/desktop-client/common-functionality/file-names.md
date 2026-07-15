@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 50
 id: file-names
 title: Dateinamensbeschränkungen
 description: Dateinamensbeschränkungen im OpenCloud Desktop-Client

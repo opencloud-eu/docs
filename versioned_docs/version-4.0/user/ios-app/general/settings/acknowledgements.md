@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 110
 title: Acknowledgements
 description: View the third-party libraries and acknowledgements used by the OpenCloud iOS app.
 draft: false

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: overview
 title: Übersicht
 description: Überblick über die Web-Benutzeroberfläche

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 40
 id: settings
 title: Settings in Linux
 description: Settings in OpenCloud Desktop for Linux

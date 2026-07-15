@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 title: Delete Unused Local Copies
 description: Automatically remove locally stored files after a configurable period to save storage space.
 draft: false

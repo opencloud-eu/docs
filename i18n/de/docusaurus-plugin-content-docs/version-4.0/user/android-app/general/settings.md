@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: settings
 title: Einstellungen
 description: Einstellungen der OpenCloud Android App

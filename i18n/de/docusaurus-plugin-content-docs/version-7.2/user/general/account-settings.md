@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: settings
 title: Kontoeinstellungen
 description: Einstellungen für das Benutzerkonto in OpenCloud

@@ -1,6 +1,5 @@
 ---
-sidebar_position: 3
-id: file-drop
+sidebar_position: 30
 title: File Drop
 description: File Drop (geheim)
 draft: false

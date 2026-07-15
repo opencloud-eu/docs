@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 100
 title: Nutzungsbedingungen
 description: Öffnen Sie die OpenCloud-Nutzungsbedingungen direkt aus der iOS-App.
 draft: false

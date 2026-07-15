@@ -10,8 +10,8 @@ Learn how to manage your files and folders in the OpenCloud iOS app, from creati
 
 ## In this section
 
-- [Create, Rename, and Move Files and Folders](./create-rename-move.md)  
+- [Create - Rename - Move](./create-rename-move.md)  
   Create new folders and files, rename items, and move them to a different location.
 
-- [Upload Files in iOS](./upload-make-available-offline.md)  
+- [Upload - Make available offline](./upload-make-available-offline.md)  
   Upload files to OpenCloud and make them available for offline use.

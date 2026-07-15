@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: sync-settings-mac
 title: Synchronization Settings in macOS
 description: Synchronisation Settings in macOS

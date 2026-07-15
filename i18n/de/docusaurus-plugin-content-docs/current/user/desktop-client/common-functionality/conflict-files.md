@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 40
 id: file-conflicts
 title: Dateikonflikte handhaben
 description: Wie Dateikonflikte handhaben

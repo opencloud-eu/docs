@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 60
 id: auto-upload-photos-and-videos
 title: Automatischer Foto- und Video-Upload
 description: Laden Sie Fotos und Videos von Ihrem iPhone oder iPad automatisch hoch.
