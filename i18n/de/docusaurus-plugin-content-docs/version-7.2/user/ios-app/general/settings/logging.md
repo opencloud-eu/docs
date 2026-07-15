@@ -17,7 +17,7 @@ Mit den **Protokollierungseinstellungen** können Sie die Diagnoseprotokollierun
 
 Auf der Seite **Protokollierung** können Sie die Protokollierung aktivieren oder deaktivieren und die erzeugten Protokolldateien verwalten.
 
-<img src={require("../../img/settings/logging/logging button.png").default} alt="Schaltfläche Protokollierung" height="650"/>
+<img src={require("../../img/settings/logging/logging-button.png").default} alt="Schaltfläche Protokollierung" height="650"/>
 
 ## Protokollierung aktivieren
 
@@ -26,7 +26,7 @@ Die Diagnoseprotokollierung kann dabei helfen, Probleme mit der OpenCloud-App zu
 - Aktivieren Sie **Protokollierung aktivieren**, um Diagnoseinformationen zu erfassen.
 - Tippen Sie auf **Durchsuchen**, um gespeicherte Protokolldateien anzuzeigen.
 
-<img src={require("../../img/settings/logging/logging menü.png").default} alt="Menü Protokollierung" height="650"/>
+<img src={require("../../img/settings/logging/logging-menu.png").default} alt="Menü Protokollierung" height="650"/>
 
 :::warning
 
@@ -46,7 +46,7 @@ Auf dieser Seite können Sie:
 - eine Protokolldatei über die Schaltfläche **Teilen** weitergeben,
 - alle gespeicherten Protokolldateien über **Alle löschen** entfernen.
 
-<img src={require("../../img/settings/logging/log files liste.png").default} alt="Liste der Protokolldateien" height="650"/>
+<img src={require("../../img/settings/logging/log-files-list.png").default} alt="Liste der Protokolldateien" height="650"/>
 
 :::note
 
