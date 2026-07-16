@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.36.0](https://github.com/opencloud-eu/docs/releases/tag/3.36.0) - 2026-07-15
+## [3.36.0](https://github.com/opencloud-eu/docs/releases/tag/3.36.0) - 2026-07-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- rename german screenshots in i18n/current [[#1047](https://github.com/opencloud-eu/docs/pull/1047)]
 - refine sidebar position numbers and add index.md file in user docu [[#1042](https://github.com/opencloud-eu/docs/pull/1042)]
 
 ## [3.35.0](https://github.com/opencloud-eu/docs/releases/tag/3.35.0) - 2026-07-15
