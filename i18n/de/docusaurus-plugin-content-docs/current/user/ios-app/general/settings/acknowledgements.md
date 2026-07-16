@@ -15,7 +15,7 @@ Der Bereich **Danksagungen** listet die Drittanbieterbibliotheken und Open-Sourc
 2. Tippen Sie auf **Einstellungen**.
 3. Tippen Sie im Bereich **Weitere** auf **Danksagungen**.
 
-<img src={require("../../img/settings/acknowledgements/danksagungs button.png").default}
+<img src={require("../../img/settings/acknowledgements/acknowledgements button.png").default}
 alt="Schaltfläche Danksagungen" height="650"/>
 
 ## Drittanbieterkomponenten durchsuchen
@@ -32,7 +32,7 @@ Je nach App-Version kann die Liste Komponenten wie die folgenden enthalten:
 
 Tippen Sie auf einen Eintrag, um weitere Informationen zur jeweiligen Bibliothek anzuzeigen.
 
-<img src={require("../../img/settings/acknowledgements/danksagungs menü.png").default}
+<img src={require("../../img/settings/acknowledgements/acknowledgements menu.png").default}
 alt="Seite Danksagungen" height="650"/>
 
 :::note

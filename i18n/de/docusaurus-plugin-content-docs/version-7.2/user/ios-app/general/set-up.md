@@ -10,7 +10,7 @@ draft: false
 
 Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einrichten.
 
-## S tarte die Einrichtung
+## Starte die Einrichtung
 
 - Tippe auf „Start setup“, um zu beginnen.
 - Wenn du bereits einen Account eingerichtet hast und einen weiteren hinzufügen möchtest, tippe auf das „+“-Symbol unten links auf dem Bildschirm.
@@ -43,8 +43,12 @@ Nachdem du die App installiert hast, kannst du deinen OpenCloud Account einricht
 
 ## Einrichtung abschließen
 
-- Nach erfolgreicher Anmeldung wird dein Account in der App hinzugefügt
-- Optional kannst du deinem Account einen benutzerdefinierten Anzeigenamen geben  
-  (Standardmäßig erscheint er als `BENUTZERNAME@DEINE.DOMAIN`)
+- Nach erfolgreicher Anmeldung wird dein Account in der App hinzugefügt.
+- Optional kannst du deinem Account einen benutzerdefinierten Anzeigenamen geben.  
+  Standardmäßig erscheint er als `BENUTZERNAME@DEINE.DOMAIN`.
 
 <img src={require(".././img/set-up/custom-name.png").default} alt="Benutzerdefinierter Name" height="400"/>
+
+- Dein OpenCloud Account ist jetzt vollständig eingerichtet und einsatzbereit!
+
+<img src={require(".././img/set-up/account-set-up.png").default} alt="OpenCloud Account ist eingerichtet" height="400"/>

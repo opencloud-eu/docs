@@ -12,7 +12,7 @@ In den Einstellungen der iOS-App können Änderungen vorgenommen werden, wie zum
 - Mediendateien
 - und mehr
 
-<img src={require("../.././img/settings/einstellungen.png").default} alt="Einstellungen" width="1920"/>
+<img src={require("../../img/settings/settings.png").default} alt="Einstellungen" width="1920"/>
 
 ## Benutzeroberfläche
 

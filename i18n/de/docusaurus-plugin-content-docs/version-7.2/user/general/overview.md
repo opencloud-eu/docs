@@ -14,7 +14,7 @@ Die OpenCloud Web-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen 
 
 <div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
   <img
-    src={require("./img/overview/ueberblick.png").default}
+    src={require("./img/overview/overview.png").default}
     alt="Übersicht"
     width="1920"
     style={{ display: 'block', width: '100%', height: 'auto' }}

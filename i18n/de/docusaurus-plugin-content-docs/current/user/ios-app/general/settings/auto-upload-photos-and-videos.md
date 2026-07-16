@@ -25,7 +25,7 @@ Bevor Sie den automatischen Upload verwenden, stellen Sie sicher, dass:
 1. Öffnen Sie die **OpenCloud**-App.
 2. Tippen Sie auf **Einstellungen**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/einstellungs-button.png").default} alt="Schaltfläche Einstellungen" height="650"/>
+<img src={require("../../img/settings/auto-upload-photos-and-videos/settings-button.png").default} alt="Schaltfläche Einstellungen" height="650"/>
 
 3. Scrollen Sie nach unten zum Bereich **Mediendateien**.
 4. Tippen Sie auf **Medien-Upload**.
@@ -45,7 +45,7 @@ Die folgenden Optionen stehen zur Verfügung:
 - **Automatischer Video-Upload** – Lädt neu erstellte Videos automatisch hoch.
 - **Foto-Upload-Pfad** – Legt den Zielordner für hochgeladene Fotos fest.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/auto-upload-fotos.png").default} alt="Einstellungen für den automatischen Upload" height="650"/>
+<img src={require("../../img/settings/auto-upload-photos-and-videos/auto-upload-photos.png").default} alt="Einstellungen für den automatischen Upload" height="650"/>
 
 ## Upload-Ziel auswählen
 
@@ -55,7 +55,7 @@ Bevor der automatische Upload beginnen kann, müssen Sie einen Zielordner auswä
 2. Navigieren Sie zu dem Ordner, in den Fotos hochgeladen werden sollen.
 3. Tippen Sie auf **Ziel auswählen**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/ziel-auswählen.png").default} alt="Upload-Ziel auswählen" height="650"/>
+<img src={require("../../img/settings/auto-upload-photos-and-videos/select-destination.png").default} alt="Upload-Ziel auswählen" height="650"/>
 
 ## Funktionsweise des automatischen Uploads
 

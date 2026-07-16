@@ -17,7 +17,7 @@ Der Bereich **Nutzungsbedingungen** bietet schnellen Zugriff auf die OpenCloud-N
 
 Wenn Sie diese Option auswählen, wird ein Bestätigungsdialog angezeigt, bevor die App verlassen wird.
 
-<img src={require("../../img/settings/terms-of-use/nutzungsbedingungen button.png").default}
+<img src={require("../../img/settings/terms-of-use/terms of use button.png").default}
 alt="Schaltfläche Nutzungsbedingungen" height="650"/>
 
 ## Öffnen der Website bestätigen
@@ -36,7 +36,7 @@ Nach der Bestätigung öffnet OpenCloud die Nutzungsbedingungen im Standardbrows
 
 Die Seite enthält die vollständigen Lizenz- und Nutzungsbedingungen für die Verwendung der OpenCloud-Software und zugehöriger Komponenten.
 
-<img src={require("../../img/settings/terms-of-use/nutzungsbedingungen seite.png").default}
+<img src={require("../../img/settings/terms-of-use/terms of use page.png").default}
 alt="OpenCloud-Nutzungsbedingungen" height="650"/>
 
 :::tip

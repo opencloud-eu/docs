@@ -16,19 +16,19 @@ Dateien und Ordner können innerhalb der Organisation mit einzelnen Mitgliedern 
 
 - Wählen Sie im Kontextmenü die Option „Teilen“ aus.
 
-  <img src={require("./img/intern/teilen-menue.png").default} alt="Teilen auswählen" width="1920"/>
+  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Teilen auswählen" width="1920"/>
 
 - Die Seitenleiste wird auf der rechten Seite des Bildschirms geöffnet.
 
-  <img src={require("./img/intern/sidebar-fenster.png").default} alt="Seitenleiste anzeigen" width="1920"/>
+  <img src={require("./img/intern/sidebar-window.png").default} alt="Seitenleiste anzeigen" width="1920"/>
 
 - Wählen Sie in der Seitenleiste den Bereich „Interne Freigabe“ aus.
 
-  <img src={require("./img/intern/mit-personen-teilen-auswahl.png").default} alt="Interne Freigabe auswählen" width="400"/>
+  <img src={require("./img/intern/share-with-people-section.png").default} alt="Interne Freigabe auswählen" width="400"/>
 
 - Geben Sie mindestens drei Zeichen in das Suchfeld ein, um nach Mitgliedern oder Gruppen zu suchen.
 
-  <img src={require("./img/intern/suchleiste.png").default} alt="Nach Personen oder Gruppen suchen" width="400"/>
+  <img src={require("./img/intern/searchbar.png").default} alt="Nach Personen oder Gruppen suchen" width="400"/>
 
 - Wählen Sie die gewünschte Person oder Gruppe aus der Vorschlagsliste aus.
 
@@ -42,7 +42,7 @@ Dateien und Ordner können innerhalb der Organisation mit einzelnen Mitgliedern 
   - „Kann bearbeiten“:
     Mitglieder können Inhalte anzeigen, herunterladen, hochladen, erstellen, bearbeiten und löschen.
 
-  <img src={require("./img/intern/rechte-optionen.png").default} alt="Rechte auswählen" width="400"/>
+  <img src={require("./img/intern/rights-options.png").default} alt="Rechte auswählen" width="400"/>
 
 - Klicken Sie auf „Teilen“, um die interne Freigabe zu erstellen.
 
@@ -58,6 +58,6 @@ Eine bestehende interne Freigabe kann jederzeit entfernt werden.
 
 - Wählen Sie die Option „Freigabe entfernen“ aus.
 
-<img src={require("./img/intern/freigabe-entfernen.png").default} alt="Freigabe entfernen" width="400"/>
+<img src={require("./img/intern/remove-share.png").default} alt="Freigabe entfernen" width="400"/>
 
 Der Zugriff wird sofort entfernt. Die betroffene Person oder Gruppe kann danach nicht mehr über diese Freigabe auf die Datei oder den Ordner zugreifen.
