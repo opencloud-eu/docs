@@ -31,9 +31,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`SETTINGS_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`"false"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`SETTINGS_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`SETTINGS_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`SETTINGS_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`SETTINGS_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`SETTINGS_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided SETTINGS_CACHE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`SETTINGS_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`SETTINGS_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`SETTINGS_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided SETTINGS_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`SETTINGS_BUNDLES_PATH`| 1.0.0 |string|`The path to a JSON file with a list of bundles. If not defined, the default bundles will be loaded.`|`""`|
 |`OC_ADMIN_USER_ID`<br/>`SETTINGS_ADMIN_USER_ID`| 1.0.0 |string|`ID of the user that should receive admin privileges. Consider that the UUID can be encoded in some LDAP deployment configurations like in .ldif files. These need to be decoded beforehand.`|`""`|
 |`OC_JWT_SECRET`<br/>`SETTINGS_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|`""`|
