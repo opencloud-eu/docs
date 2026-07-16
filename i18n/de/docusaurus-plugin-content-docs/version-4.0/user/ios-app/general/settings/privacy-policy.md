@@ -17,7 +17,7 @@ Der Bereich **Datenschutzerklärung** bietet schnellen Zugriff auf die offiziell
 
 Wenn Sie diese Option auswählen, wird ein Bestätigungsdialog angezeigt, bevor die App verlassen wird.
 
-<img src={require("../../img/settings/privacy-policy/datenschutzrichtlinie button.png").default}
+<img src={require("../../img/settings/privacy-policy/privacy policy button.png").default}
 alt="Schaltfläche Datenschutzerklärung" height="650"/>
 
 ## Öffnen der Website bestätigen
@@ -41,7 +41,7 @@ Die Seite enthält Informationen zu:
 - DSGVO-Konformität
 - Ihren Rechten in Bezug auf personenbezogene Daten
 
-<img src={require("../../img/settings/privacy-policy/datenschutzrichtlinie seite.png").default}
+<img src={require("../../img/settings/privacy-policy/privacy policy page.png").default}
 alt="OpenCloud-Datenschutzerklärung" height="650"/>
 
 :::tip

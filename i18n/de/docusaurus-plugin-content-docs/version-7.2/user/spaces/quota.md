@@ -14,16 +14,16 @@ Als Space-Administrator können Sie die Speicherkapazität (Quota) eines Spaces 
 
 - Wählen Sie die Option „Quota ändern“ in der Top-Bar oder im Kontextmenü.
 
-  <img src={require("./img/quota/quota-aendern-button.png").default} alt="Kontextmenü" width="1920"/>
+  <img src={require("./img/quota/context-menu.png").default} alt="Kontextmenü" width="1920"/>
 
 - Im sich öffnenden Fenster stehen zwei Optionen zur Verfügung:
 - Wählen Sie eine Standardgröße (z. B. 5 GB) aus dem Dropdown-Menü.
 
-  <img src={require("./img/quota/standard-quota.png").default} alt="Quota auswählen" width="1920"/>
+  <img src={require("./img/quota/select.png").default} alt="Quota auswählen" width="1920"/>
 
 - Geben Sie eine individuelle Speichergröße ein.
 
-  <img src={require("./img/quota/individuelle-quota.png").default} alt="Quota eingeben" width="1920"/>
+  <img src={require("./img/quota/enter.png").default} alt="Quota eingeben" width="1920"/>
 
 - Klicken Sie auf „Bestätigen“, um die Änderung zu übernehmen.
 

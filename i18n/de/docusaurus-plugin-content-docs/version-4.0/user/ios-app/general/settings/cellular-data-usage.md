@@ -17,7 +17,7 @@ Mit den Einstellungen **Nutzung mobiler Daten** können Sie steuern, ob OpenClou
 
 Auf der Seite **Nutzung mobiler Daten** können Sie festlegen, wie die App Ihre mobile Datenverbindung verwendet.
 
-<img src={require("../../img/settings/cellular-data-usage/mobile datennutzung.png").default} alt="Schaltfläche Nutzung mobiler Daten" height="650"/>
+<img src={require("../../img/settings/cellular-data-usage/cellular data usage.png").default} alt="Schaltfläche Nutzung mobiler Daten" height="650"/>
 
 ## Allgemeine Einstellungen
 

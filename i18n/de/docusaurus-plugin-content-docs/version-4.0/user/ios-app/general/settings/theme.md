@@ -19,7 +19,7 @@ Sie können festlegen, ob die App der Darstellung Ihres Geräts folgt oder immer
 
 Auf der Seite **Design** können Sie auswählen, wie die OpenCloud-App dargestellt wird.
 
-<img src={require("../../img/settings/theme/design button.png").default}
+<img src={require("../../img/settings/theme/theme-button.png").default}
 alt="Schaltfläche Design"
 height="650"/>
 
@@ -35,7 +35,7 @@ Wählen Sie die Darstellung aus, die am besten zu Ihren persönlichen Vorlieben 
 
 Das ausgewählte Design wird sofort in der gesamten App übernommen.
 
-<img src={require("../../img/settings/theme/design menü.png").default}
+<img src={require("../../img/settings/theme/theme-menu.png").default}
 alt="Menü Design"
 height="650"/>
 
