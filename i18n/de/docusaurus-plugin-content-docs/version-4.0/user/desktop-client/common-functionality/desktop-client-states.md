@@ -10,10 +10,6 @@ draft: false
 
 Der OpenCloud Desktop-Client verwendet verschiedene Symbole im Infobereich (System Tray), um den aktuellen Synchronisations- und Verbindungsstatus anzuzeigen. Anhand dieser Symbole können Sie schnell erkennen, ob die Synchronisierung ordnungsgemäß funktioniert oder ob Handlungsbedarf besteht.
 
-# Die Statussymbole des Desktop-Clients verstehen
-
-Der OpenCloud Desktop-Client verwendet verschiedene Symbole im Infobereich (System Tray), um den aktuellen Synchronisations- und Verbindungsstatus anzuzeigen. Anhand dieser Symbole können Sie schnell erkennen, ob die Synchronisierung ordnungsgemäß funktioniert oder ob Handlungsbedarf besteht.
-
 ## Schnellübersicht
 
 | Symbol                                                                                                                               | Status                 | Bedeutung                                                         | Typische Aktion                                           |
