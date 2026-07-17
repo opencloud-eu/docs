@@ -1,5 +1,5 @@
 
-2026-07-14-00-04-24
+2026-07-17-00-05-26
 
 ## Deprecation Notice
 
@@ -75,9 +75,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`FRONTEND_OCS_STAT_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disable persistence of the cache. Only applies when using the 'nats-js-kv' store type. Defaults to false.`|`"false"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`FRONTEND_OCS_STAT_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to use for authentication. Only applies when using the 'nats-js-kv' store type.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`FRONTEND_OCS_STAT_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to use for authentication. Only applies when using the 'nats-js-kv' store type.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`FRONTEND_OCS_STAT_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided FRONTEND_OCS_STAT_CACHE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`FRONTEND_OCS_STAT_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`FRONTEND_OCS_STAT_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided FRONTEND_OCS_STAT_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`FRONTEND_OCS_ENABLE_DENIALS`| 1.0.0 |bool|`EXPERIMENTAL: enable the feature to deny access on folders.`|`"false"`|
 |`OC_ENABLE_OCM`<br/>`FRONTEND_OCS_LIST_OCM_SHARES`| 1.0.0 |bool|`Include OCM shares when listing shares. See the OCM service documentation for more details.`|`"true"`|
 |`OC_ENABLE_OCM`<br/>`FRONTEND_OCS_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing sharees.`|`"false"`|
