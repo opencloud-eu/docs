@@ -27,9 +27,13 @@ OpenCloud ist eine File-Sharing- und Kollaborationsplattform der [Heinlein Group
 Je nach Arbeitsweise können Sie OpenCloud auf unterschiedliche Weise nutzen:
 
 - Der [Web Client](./general/) bietet direkten Zugriff auf alle OpenCloud-Funktionen im Browser, einschließlich Dateiverwaltung, Kollaborationsfunktionen und Verwaltungsoptionen, soweit Ihre Berechtigungen dies zulassen.
+
 - Der [Desktop Client](./desktop-client/) synchronisiert Dateien zwischen OpenCloud und Ihrem lokalen Computer für die Offline-Arbeit und automatische Aktualisierungen.
+
 - Die [iOS App](./ios-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+
 - Die [Android App](./android-app/) bietet bequemen Zugriff auf Dateien und wichtige Aktionen unterwegs.
+
 - Die [Collabora Online-Integration](./collabora) ermöglicht das Bearbeiten von Office-Dokumenten direkt im Browser und die Zusammenarbeit in Echtzeit.
 
 Jeder Client und jede Integration ist für einen bestimmten Anwendungsfall ausgelegt: der Web Client für den umfangreichen Zugriff im Browser, der Desktop Client für die lokale Synchronisierung, die mobilen Apps für den Zugriff unterwegs und Collabora für die Dokumentbearbeitung im Browser.
