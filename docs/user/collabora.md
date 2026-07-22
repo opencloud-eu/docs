@@ -21,6 +21,14 @@ All documents stored in OpenCloud can be opened directly in Collabora.
 
 Multiple users can work on the same document simultaneously, with real-time synchronization of changes.
 
+### Mention users in Collabora files
+
+You can mention OpenCloud members directly inside a Collabora document.
+
+To mention a user, type **`@`** followed by the user's name inside the document. Select the matching user from the suggestion list.
+
+The mentioned user receives a pop-up notification in OpenCloud, making it easier to draw attention to a specific part of the document or request feedback from another user.
+
 ### Insert images from OpenCloud
 
 You can insert images stored in OpenCloud directly into your documents.
