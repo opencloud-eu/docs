@@ -22,3 +22,6 @@ Dieser Abschnitt beschreibt Funktionen, die auf allen unterstützten Plattformen
 
 - [Regeln für Dateinamen](./file-names.md)  
   Erfahre mehr über Einschränkungen bei Dateinamen und die Kompatibilität zwischen verschiedenen Betriebssystemen.
+
+- [Dateien, die nicht hochgeladen werden dürfen](./not-allowed-upload-files.md)  
+  Erfahren Sie, was passiert, wenn der Desktop Client eine Datei nicht hochladen kann und wo Sie diese lokal wiederfinden.
