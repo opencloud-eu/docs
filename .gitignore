@@ -9,6 +9,10 @@
 /static/cdperf
 /static/design-system
 
+# docs pulled from other repos at build time (git-batch)
+/docs/dev/web/testing/running-tests
+/docs/dev/server/testing
+
 # Generated files
 .docusaurus
 .cache-loader

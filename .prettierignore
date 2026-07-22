@@ -4,3 +4,5 @@ README.md
 CHANGELOG.md
 CONTRIBUTING.md
 **/_static/env-vars
+docs/dev/web/testing/running-tests/**
+docs/dev/server/testing/**

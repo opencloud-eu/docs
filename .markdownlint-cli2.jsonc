@@ -10,6 +10,8 @@
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "README.md",
-    "**/_static/env-vars"
+    "**/_static/env-vars",
+    "docs/dev/web/testing/running-tests",
+    "docs/dev/server/testing"
   ]
 }
