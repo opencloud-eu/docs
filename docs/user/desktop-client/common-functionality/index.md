@@ -24,3 +24,6 @@ This section covers features and functionality that are available across all sup
 
 - [File Naming Rules](./file-names.md)  
   Learn about filename restrictions and compatibility across different operating systems.
+
+- [Files That Are Not Allowed to Be Uploaded](./not-allowed-upload-files.md)  
+  Learn what happens when the Desktop Client cannot upload a file and where to find it locally.
