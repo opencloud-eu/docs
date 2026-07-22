@@ -21,14 +21,6 @@ Alle in OpenCloud gespeicherten Dokumente können direkt in Collabora geöffnet 
 
 Mehrere Benutzer können gleichzeitig am selben Dokument arbeiten, wobei Änderungen in Echtzeit synchronisiert werden.
 
-### Benutzer in Collabora-Dateien erwähnen
-
-Sie können OpenCloud-Mitglieder direkt in einem Collabora-Dokument erwähnen.
-
-Um einen Benutzer zu erwähnen, geben Sie im Dokument **`@`** gefolgt vom Namen des Benutzers ein. Wählen Sie anschließend den passenden Benutzer aus der Vorschlagsliste aus.
-
-Der erwähnte Benutzer erhält eine Benachrichtigung in OpenCloud. Dadurch können Sie einfacher auf eine bestimmte Stelle im Dokument aufmerksam machen oder Feedback von einem anderen Benutzer anfordern.
-
 ### Bilder aus OpenCloud einfügen
 
 Sie können Bilder, die in OpenCloud gespeichert sind, direkt in Ihre Dokumente einfügen.
