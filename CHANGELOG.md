@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.37.0](https://github.com/opencloud-eu/docs/releases/tag/3.37.0) - 2026-07-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @v-scharf
+
+### :octocat: Developer Documentation
+
+- dev-docs: pull web/server testing pages, update e2e standards [[#1061](https://github.com/opencloud-eu/docs/pull/1061)]
+
+### 👷 Admin Documentation
+
+- removed the cert expire part in rolling [[#1052](https://github.com/opencloud-eu/docs/pull/1052)]
+
 ## [3.36.0](https://github.com/opencloud-eu/docs/releases/tag/3.36.0) - 2026-07-17
 
 ### ❤️ Thanks to all contributors! ❤️
