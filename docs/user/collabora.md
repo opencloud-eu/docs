@@ -21,13 +21,15 @@ All documents stored in OpenCloud can be opened directly in Collabora.
 
 Multiple users can work on the same document simultaneously, with real-time synchronization of changes.
 
-### Mention users in Collabora files
+### Mention users in ODT files
 
-You can mention OpenCloud members directly inside a Collabora document.
+You can mention OpenCloud members directly in ODT files opened with Collabora.
 
-To mention a user, type **`@`** followed by the user's name inside the document. Select the matching user from the suggestion list.
+To mention a user, type `@` followed by the user's name in the document. Then select the matching user from the suggestion list.
 
-The mentioned user receives a notification in OpenCloud, making it easier to draw attention to a specific part of the document or request feedback from another user.
+The mentioned user receives a notification in OpenCloud. This helps draw their attention to a specific part of the document or request feedback.
+
+User mentions are currently only supported in ODT files.
 
 ### Insert images from OpenCloud
 
