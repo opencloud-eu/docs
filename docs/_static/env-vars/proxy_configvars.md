@@ -27,9 +27,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`PROXY_OIDC_USERINFO_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`"false"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`PROXY_OIDC_USERINFO_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`PROXY_OIDC_USERINFO_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`PROXY_OIDC_USERINFO_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`PROXY_OIDC_USERINFO_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`PROXY_OIDC_USERINFO_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided PROXY_OIDC_USERINFO_CACHE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`PROXY_OIDC_USERINFO_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`PROXY_OIDC_USERINFO_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`PROXY_OIDC_USERINFO_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided PROXY_OIDC_USERINFO_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`PROXY_OIDC_JWKS_REFRESH_INTERVAL`| 1.0.0 |uint64|`The interval for refreshing the JWKS (JSON Web Key Set) in minutes in the background via a new HTTP request to the IDP.`|`"60"`|
 |`PROXY_OIDC_JWKS_REFRESH_TIMEOUT`| 1.0.0 |uint64|`The timeout in seconds for an outgoing JWKS request.`|`"10"`|
 |`PROXY_OIDC_JWKS_REFRESH_RATE_LIMIT`| 1.0.0 |uint64|`Limits the rate in seconds at which refresh requests are performed for unknown keys. This is used to prevent malicious clients from imposing high network load on the IDP via OpenCloud.`|`"60"`|
@@ -46,9 +46,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the store. Only applies when store type 'nats-js-kv' is configured. Defaults to true.`|`"true"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE will be seen as false.`|`""`|
 |`PROXY_ACCOUNT_BACKEND_TYPE`| 1.0.0 |string|`Account backend the PROXY service should use. Currently only 'cs3' is possible here.`|`"cs3"`|
 |`PROXY_USER_OIDC_CLAIM`| 1.0.0 |string|`The name of an OpenID Connect claim that is used for resolving users with the account backend. The value of the claim must hold a per user unique, stable and non re-assignable identifier. The availability of claims depends on your Identity Provider. There are common claims available for most Identity providers like 'email' or 'preferred_username' but you can also add your own claim.`|`"preferred_username"`|
 |`PROXY_USER_CS3_CLAIM`| 1.0.0 |string|`The name of a CS3 user attribute (claim) that should be mapped to the 'user_oidc_claim'. Supported values are 'username', 'mail' and 'userid'.`|`"username"`|

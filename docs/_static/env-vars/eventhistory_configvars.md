@@ -22,6 +22,6 @@
 |`OC_PERSISTENT_STORE_TTL`<br/>`EVENTHISTORY_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. Defaults to '336h' (2 weeks). See the Environment Variable Types description for more details.`|`"0s"`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`EVENTHISTORY_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`EVENTHISTORY_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`EVENTHISTORY_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`EVENTHISTORY_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`EVENTHISTORY_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided EVENTHISTORY_STORE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`EVENTHISTORY_STORE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`EVENTHISTORY_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`EVENTHISTORY_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided EVENTHISTORY_STORE_TLS_INSECURE will be seen as false.`|`""`|
