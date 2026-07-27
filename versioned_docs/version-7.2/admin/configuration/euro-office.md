@@ -33,7 +33,7 @@ Euro Office is available as a compose module in the [opencloud-compose](https://
 Set the following in your `.env` file:
 
 ```env
-COMPOSE_FILE=docker-compose.yml:weboffice/euroffice.yml:traefik/opencloud.yml:traefik/euroffice.yml
+COMPOSE_FILE=docker-compose.yml:weboffice/euro-office.yml:traefik/opencloud.yml:traefik/euro-office.yml
 
 EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
 EURO_OFFICE_JWT_SECRET=YOUR.SECRET
@@ -44,7 +44,7 @@ EURO_OFFICE_JWT_SECRET=YOUR.SECRET
 Set the following in your `.env` file:
 
 ```env
-COMPOSE_FILE=docker-compose.yml:weboffice/euroffice.yml:external-proxy/opencloud.yml:external-proxy/euroffice.yml
+COMPOSE_FILE=docker-compose.yml:weboffice/euro-office.yml:external-proxy/opencloud.yml:external-proxy/euro-office.yml
 
 EURO_OFFICE_DOMAIN=euro-office.YOUR.DOMAIN
 EURO_OFFICE_JWT_SECRET=YOUR.SECRET
