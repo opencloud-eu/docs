@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith, @v-scharf
+@Heiko-Pohl, @LHBL2003, @Svanvith, @v-scharf
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- Update euro-office.md [[#1067](https://github.com/opencloud-eu/docs/pull/1067)]
 - removed the cert expire part in rolling [[#1052](https://github.com/opencloud-eu/docs/pull/1052)]
 
 ### 👤 User Documentation
