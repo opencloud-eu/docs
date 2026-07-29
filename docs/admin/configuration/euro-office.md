@@ -2,31 +2,31 @@
 sidebar_position: 100
 id: euro-office
 title: Euro Office
-description: Community supported Euro Office setup for OpenCloud.
+description: Community supported Euro-Office setup for OpenCloud.
 draft: false
 ---
 
-# Euro Office
+# Euro-Office
 
 :::note Community Documentation
 This guide is provided as community documentation.
 
-EuroOffice is not officially supported by OpenCloud. The configuration shown here is maintained as a community contribution and is not covered by official OpenCloud support.
+Euro-Office is not officially supported by OpenCloud. The configuration shown here is maintained as a community contribution and is not covered by official OpenCloud support.
 
 Use this guide as a reference for community-based setups. For officially supported office integrations, use the officially documented OpenCloud options.
 :::
 
-[Euro Office](https://github.com/EURO-office/DocumentServer) is a sovereign document editing suite maintained by several european organisations as a joint effort. It integrates with OpenCloud via WOPI and the app provider mechanism.
+[Euro-Office](https://github.com/EURO-office/DocumentServer) is a sovereign document editing suite maintained by several european organisations as a joint effort. It integrates with OpenCloud via WOPI and the app provider mechanism.
 
 :::warning
-The Euro Office project is currently in its early stages and may have stability issues.
+The Euro-Office project is currently in its early stages and may have stability issues.
 :::
 
-Thanks to [zerox80](https://github.com/zerox80) for the initial Euro Office documentation.
+Thanks to [zerox80](https://github.com/zerox80) for the initial Euro-Office documentation.
 
 ## Docker Compose Setup
 
-Euro Office is available as a compose module in the [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose) project.
+Euro-Office is available as a compose module in the [opencloud-compose](https://github.com/opencloud-eu/opencloud-compose) project.
 
 ### With Traefik (built-in reverse proxy)
 
@@ -52,13 +52,13 @@ EURO_OFFICE_JWT_SECRET=YOUR.SECRET
 
 ## Nginx Configuration for External Proxy
 
-When running Euro Office behind an external Nginx reverse proxy, add the following server blocks to your Nginx configuration.
+When running Euro-Office behind an external Nginx reverse proxy, add the following server blocks to your Nginx configuration.
 
 For the general OpenCloud external proxy setup, see [Behind External Proxy](../getting-started/container/docker-compose/external-proxy).
 
 ### SSL Certificates
 
-Make sure your SSL certificates also cover the Euro Office domain. Add it to your `certbot` command:
+Make sure your SSL certificates also cover the Euro-Office domain. Add it to your `certbot` command:
 
 ```bash
 sudo certbot certonly --webroot \
@@ -69,7 +69,7 @@ sudo certbot certonly --webroot \
   --no-eff-email
 ```
 
-### Euro Office Nginx Server Blocks
+### Euro-Office Nginx Server Blocks
 
 Add this server block to your Nginx configuration alongside the OpenCloud and Collabora blocks:
 
