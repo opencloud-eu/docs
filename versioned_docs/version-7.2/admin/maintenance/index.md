@@ -16,3 +16,4 @@ Use these guides to keep your OpenCloud installation updated, backed up, and man
 - [Migrate](./migrate.md)
 - [Uninstall](./uninstall.md)
 - [Data Export](./dataexport.md)
+- [Maintenance Commands](./maintenance-commands.md)
