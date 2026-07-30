@@ -104,6 +104,33 @@ opencloud storage-users trash-bin restore-all <space-id>
 
 Restoring is only possible to the original location. The behavior when the target name already exists can be configured with the available restore options: skipping, replacing, or keeping both items.
 
+### Scanning resources on PosixFS
+
+When using the [PosixFS Storage Driver](../configuration/storage/posixfs.md) in collaborative mode (with `STORAGE_USERS_POSIX_WATCH_FS` set to `true`), files and directories can be added or manipulated in the storage directly. When files are added, OpenCloud transparently adds metadata to track the files for future changes, as if they were uploaded through OpenCloud.
+
+Administrators can trigger the storage scan manually. This might be useful during migrations, or when [collaborative mode](../configuration/storage/posixfs.md#posixfs-collaborative-mode) is disabled.
+
+This is recommended since files that have not been scanned
+
+ * may have a negative performance impact when accessed, since OpenCloud transparently performs a storage scan to ingest previous untracked files when listing a directory through its UIs and APIs (but not recursively)
+ * prevents those files from being accounted for in directory tree sizes and quotas
+
+For such cases, use the following command:
+
+```bash
+opencloud posixfs scan [-p </where/to/start>]
+```
+
+Optionally, one might want to specify a resource to scan, using the optional `--basepath` (or `-p`) option.
+
+When that resource is a directory, it will recurse and perform a storage scan for all the files contained within that directory and all its subdirectories.
+
+And when that resource is a regular file instead, it will solely perform a storage scan on that one file.
+
+Note that in either case, the resource must be underneath the PosixFS storage root, or be the PosixFS storage root itself, as set using `STORAGE_USERS_POSIX_ROOT`; if not, an error will occur.
+
+When the `--basepath` option is not specified, the default behavior is to start the storage scanning recursively at the root of the PosixFS storage (as defined by `STORAGE_USERS_POSIX_ROOT`).
+
 ## Uploads
 
 The `opencloud storage-users uploads sessions` command lists and manages upload sessions. Flags can be combined to filter sessions by state.
