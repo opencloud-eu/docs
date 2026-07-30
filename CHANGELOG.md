@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @LHBL2003, @Svanvith, @v-scharf
+@Heiko-Pohl, @LHBL2003, @Svanvith, @pbleser-oc, @v-scharf
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,8 @@
 
 ### 👷 Admin Documentation
 
+- fixing links in admin/maintenence [[#1075](https://github.com/opencloud-eu/docs/pull/1075)]
+- fix(docs): link 'Maintenance Commands' from the 'Maintenance' page [[#1074](https://github.com/opencloud-eu/docs/pull/1074)]
 - refine euro-office.de [[#1072](https://github.com/opencloud-eu/docs/pull/1072)]
 - Update euro-office.md [[#1067](https://github.com/opencloud-eu/docs/pull/1067)]
 - removed the cert expire part in rolling [[#1052](https://github.com/opencloud-eu/docs/pull/1052)]
