@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.37.0](https://github.com/opencloud-eu/docs/releases/tag/3.37.0) - 2026-07-27
+## [3.37.0](https://github.com/opencloud-eu/docs/releases/tag/3.37.0) - 2026-07-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- refine euro-office.de [[#1072](https://github.com/opencloud-eu/docs/pull/1072)]
 - Update euro-office.md [[#1067](https://github.com/opencloud-eu/docs/pull/1067)]
 - removed the cert expire part in rolling [[#1052](https://github.com/opencloud-eu/docs/pull/1052)]
 
