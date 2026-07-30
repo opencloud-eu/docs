@@ -30,7 +30,7 @@ docker compose run --rm opencloud opencloud <command>
 
 ## Storage path
 
-The `--basePath` (`-p`) option is required by storage, revision, and trash commands. It must point to the storage provider path as seen from inside the OpenCloud container.
+The `--basepath` (`-p`) option is required by storage, revision, and trash commands. It must point to the storage provider path as seen from inside the OpenCloud container.
 
 For Docker Compose deployments, the default path is usually:
 
