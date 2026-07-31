@@ -133,7 +133,7 @@ rclone obscure <token>
 
 ## Create the rclone Configuration
 
-Edit the rclone configuration file:
+Edit the rclone configuration file and insert your token into the `pass` field:
 
 ```bash
 nano ~/.config/rclone/rclone.conf
