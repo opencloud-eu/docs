@@ -125,3 +125,12 @@ apps: {}
 token_manager:
   jwt_secret: ""
 gateway_addr: eu.opencloud.api.gateway
+store:
+  nodes:
+  - 127.0.0.1:9233
+  database: web
+  username: ""
+  password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
