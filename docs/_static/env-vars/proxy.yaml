@@ -42,6 +42,9 @@ policies:
   - endpoint: /branding/logo
     service: eu.opencloud.web.web
     skip_x_access_token: false
+  - endpoint: /announcement
+    service: eu.opencloud.web.web
+    skip_x_access_token: false
   - endpoint: /konnect/
     service: eu.opencloud.web.idp
     unprotected: true
