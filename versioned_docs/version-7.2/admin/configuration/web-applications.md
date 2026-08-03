@@ -26,17 +26,11 @@ Find and download the application you want to install.
 
 ### Extract and copy
 
-Unzip the downloaded archive and copy the extracted folder into the web application directory.  
-By default, this path is:
+Unzip the downloaded archive and copy the extracted folder into the web application directory, which defaults to `$OC_DATA_DIR/web/assets/apps`.
 
-```bash
-opencloud-compose/config/opencloud/apps
-```
+If you're using the [opencloud-compose setup](https://github.com/opencloud-eu/opencloud-compose), simply place apps in `opencloud-compose/config/opencloud/apps`. They will get mounted to the correct location.
 
-:::note
-If you are adding an app to an already running system, verify whether the `/web/assets/apps` directory exists inside your `$OC_DATA_DIR`.
-If it does not exist, create it manually.
-:::
+In any other setup, you might need to manually create the `$OC_DATA_DIR/web/assets/apps` directory if it doesn't exist yet.
 
 ### Restart OpenCloud
 
@@ -54,10 +48,24 @@ Once the app is copied to the correct location, it will automatically appear in 
 
 Some OpenCloud apps require additional configuration — for example, the External Sites app.
 
-This particular app can be configured by creating the file config.json in the web apps directory:
+The recommended way to configure such apps is via the `apps.yaml` configuration file located under `$OC_CONFIG_DIR/apps.yaml`. That way, you ensure a consistent config that doesn't get overwritten when updating apps.
 
-```bash
-/web/assets/apps/external-sites/config.json
+Using the [opencloud-compose setup](https://github.com/opencloud-eu/opencloud-compose), you can edit the `opencloud-compose/config/opencloud/apps.yaml` file to add your configuration.
+
+```yaml
+external-sites:
+  config:
+    defaultDashboard: 'Main Dashboard'
+```
+
+Alternatively, you can add configuration via a `config.json` file inside the app's folder.
+
+```json
+{
+  "config": {
+    "defaultDashboard": "Main Dashboard"
+  }
+}
 ```
 
 :::note
