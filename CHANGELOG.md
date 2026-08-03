@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.38.0](https://github.com/opencloud-eu/docs/releases/tag/3.38.0) - 2026-08-03
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen
+
+### 👷 Admin Documentation
+
+- Improve app install and config guide [[#1077](https://github.com/opencloud-eu/docs/pull/1077)]
+
 ## [3.37.0](https://github.com/opencloud-eu/docs/releases/tag/3.37.0) - 2026-07-30
 
 ### ❤️ Thanks to all contributors! ❤️
