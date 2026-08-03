@@ -131,6 +131,8 @@ Note that in either case, the resource must be underneath the PosixFS storage ro
 
 When no arguments are specified, the default behavior is to start the storage scanning recursively at the root of the PosixFS storage (as defined by `STORAGE_USERS_POSIX_ROOT`).
 
+The optional command-line option `--halt-on-error` (or `-E`) will make the command stop as soon as an error is encountered, whereas the default behaviour is to keep going by skipping paths that yield unrecoverable errors and proceeding to processing the subsequent ones.
+
 ## Uploads
 
 The `opencloud storage-users uploads sessions` command lists and manages upload sessions. Flags can be combined to filter sessions by state.
