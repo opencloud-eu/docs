@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @v-scharf
+@Heiko-Pohl, @JammingBen, @flimmy, @v-scharf
+
+### 🐾 Guides
+
+- Update rclone configuration instructions [[#1078](https://github.com/opencloud-eu/docs/pull/1078)]
 
 ### 👷 Admin Documentation
 
