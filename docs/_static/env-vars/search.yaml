@@ -64,6 +64,7 @@ extractor:
     clean_stop_words: false
 content_extraction_size_limit: 20971520
 batch_size: 50
+reindex_concurrency: 3
 service_account:
   service_account_id: ""
   service_account_secret: ""
