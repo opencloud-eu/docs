@@ -31,7 +31,7 @@ In the **Announcement banner** area, you can configure the banner that will be s
 
 1. Enable **Show banner**.
 2. Enter a short title in the **Banner** field.
-3. Enter the message text in the **Banner details** field.
+3. Optionally, enter additional message text in the **Banner details** field if you want to provide more information.
 4. Click **Save**.
 
 <img src={require("./img/announcement-banner/announcement-banner-option.png").default} alt="Announcement banner settings" width="1920"/>
