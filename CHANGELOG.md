@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.38.0](https://github.com/opencloud-eu/docs/releases/tag/3.38.0) - 2026-08-04
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @JammingBen, @flimmy, @v-scharf
+
+### 🐾 Guides
+
+- Update rclone configuration instructions [[#1078](https://github.com/opencloud-eu/docs/pull/1078)]
+
+### 👷 Admin Documentation
+
+- add changes from flimmy in migrate.md in version 7.2 [[#1087](https://github.com/opencloud-eu/docs/pull/1087)]
+- publish release notes 7.4.0 [[#1088](https://github.com/opencloud-eu/docs/pull/1088)]
+- Improve app install and config guide [[#1077](https://github.com/opencloud-eu/docs/pull/1077)]
+
 ## [3.37.0](https://github.com/opencloud-eu/docs/releases/tag/3.37.0) - 2026-07-30
 
 ### ❤️ Thanks to all contributors! ❤️
