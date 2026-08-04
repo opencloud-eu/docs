@@ -1,5 +1,5 @@
 
-2026-07-14-00-04-24
+2026-08-04-00-05-09
 
 ## Deprecation Notice
 
@@ -128,9 +128,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`"false"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`OC_CACHE_STORE`<br/>`STORAGE_USERS_ID_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_USERS_ID_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"ids-storage-users"`|
@@ -138,9 +138,9 @@
 |`OC_CACHE_DISABLE_PERSISTENCE`<br/>`STORAGE_USERS_ID_CACHE_DISABLE_PERSISTENCE`| 1.0.0 |bool|`Disables persistence of the cache. Only applies when store type 'nats-js-kv' is configured. Defaults to false.`|`"false"`|
 |`OC_CACHE_AUTH_USERNAME`<br/>`STORAGE_USERS_ID_CACHE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_CACHE_AUTH_PASSWORD`<br/>`STORAGE_USERS_ID_CACHE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the cache store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_USERS_ID_CACHE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_ID_CACHE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_ID_CACHE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_ID_CACHE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_USERS_ID_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_ID_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_ID_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_ID_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`STORAGE_USERS_MOUNT_ID`| 1.0.0 |string|`Mount ID of this storage.`|`""`|
 |`STORAGE_USERS_EXPOSE_DATA_SERVER`| 1.0.0 |bool|`Exposes the data server directly to users and bypasses the data gateway. Ensure that the data server address is reachable by users.`|`"false"`|
 |`STORAGE_USERS_READ_ONLY`| 1.0.0 |bool|`Set this storage to be read-only.`|`"false"`|

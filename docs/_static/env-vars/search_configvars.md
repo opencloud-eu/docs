@@ -50,5 +50,6 @@
 |`SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS`| 1.0.0 |bool|`Defines if stop words should be cleaned or not. See the documentation for more details.`|`"false"`|
 |`SEARCH_CONTENT_EXTRACTION_SIZE_LIMIT`| 1.0.0 |uint64|`Maximum file size in bytes that is allowed for content extraction.`|`"20971520"`|
 |`SEARCH_BATCH_SIZE`| 1.0.0 |int|`The number of documents to process in a single batch. Defaults to 500.`|`"50"`|
+|`SEARCH_REINDEX_MAX_CONCURRENCY`| 7.4.0 |int|`The maximum number of spaces that are reindexed concurrently when reindexing all spaces.`|`"3"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`SEARCH_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`SEARCH_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|`""`|

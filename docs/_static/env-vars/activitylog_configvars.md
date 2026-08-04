@@ -20,9 +20,9 @@
 |`OC_PERSISTENT_STORE_TTL`<br/>`ACTIVITYLOG_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. See the Environment Variable Types description for more details.`|`"0s"`|
 |`OC_PERSISTENT_STORE_AUTH_USERNAME`<br/>`ACTIVITYLOG_STORE_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
 |`OC_PERSISTENT_STORE_AUTH_PASSWORD`<br/>`ACTIVITYLOG_STORE_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the store. Only applies when store type 'nats-js-kv' is configured.`|`""`|
-|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`ACTIVITYLOG_STORE_ENABLE_TLS`| next |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`"false"`|
-|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`ACTIVITYLOG_STORE_TLS_INSECURE`| next |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`ACTIVITYLOG_STORE_TLS_ROOT_CA_CERTIFICATE`| next |string|`The root CA certificate used to validate the server's TLS certificate. If provided ACTIVITYLOG_STORE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`ACTIVITYLOG_STORE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`"false"`|
+|`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`ACTIVITYLOG_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
+|`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`ACTIVITYLOG_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided ACTIVITYLOG_STORE_TLS_INSECURE will be seen as false.`|`""`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`"eu.opencloud.api.gateway"`|
 |`ACTIVITYLOG_HTTP_ADDR`| 1.0.0 |string|`The bind address of the HTTP service.`|`"127.0.0.1:9195"`|
 |`ACTIVITYLOG_HTTP_ROOT`| 1.0.0 |string|`Subdirectory that serves as the root for this HTTP service.`|`"/"`|
