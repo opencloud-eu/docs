@@ -1,5 +1,5 @@
 ---
-sidebar_position: 100
+sidebar_position: 110
 id: euro-office
 title: Euro Office
 description: Community supported Euro-Office setup for OpenCloud.

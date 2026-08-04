@@ -1,5 +1,5 @@
 ---
-sidebar_position: 95
+sidebar_position: 100
 id: default-language
 title: Default Language
 description: Set the default language
