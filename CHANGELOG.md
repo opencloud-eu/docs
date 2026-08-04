@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.39.0](https://github.com/opencloud-eu/docs/releases/tag/3.39.0) - 2026-08-04
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 👷 Admin Documentation
+
+- add announcement banner in admin section [[#1090](https://github.com/opencloud-eu/docs/pull/1090)]
+
 ## [3.38.0](https://github.com/opencloud-eu/docs/releases/tag/3.38.0) - 2026-08-04
 
 ### ❤️ Thanks to all contributors! ❤️
