@@ -1,22 +1,24 @@
 ---
 sidebar_position: 50
-id: configure-open-cloud-mesh
-title: Configure Open Cloud Mesh
-description: Configure Open Cloud Mesh to connect users and share resources between two OpenCloud instances.
+id: ocm
+title: Configure OpenCloud Mesh OCM
+description: Configure OpenCloud Mesh OCM to connect users and share resources between two OpenCloud instances.
 draft: false
 ---
 
-# Configure Open Cloud Mesh
+# Configure OpenCloud Mesh
 
-Open Cloud Mesh, abbreviated as OCM, enables users from separate OpenCloud instances to connect and share files or folders.
+OpenCloud Mesh, abbreviated as OCM, enables users from separate OpenCloud instances to connect and share files or folders.
+
+OCM uses an invitation-based workflow. A user on one OpenCloud instance creates an invitation, and a user on another OpenCloud instance accepts it. After the invitation has been accepted, both users are connected through OCM and can share resources across instances.
 
 OCM must be configured on every participating OpenCloud instance.
 
 This guide uses the following example instances:
 
 ```text
-https://cloud.anja.opencloud.rocks
-https://cloud.heiko.opencloud.rocks
+cloud.anja.opencloud.rocks
+cloud.heiko.opencloud.rocks
 ```
 
 Replace these domains with the domains of your OpenCloud instances.
@@ -31,6 +33,7 @@ Before configuring OCM, make sure that:
 - Each instance can resolve and connect to the domain of the other instance.
 - You have access to the `opencloud-compose` directory on both servers.
 - The OpenCloud configuration directory is mounted to `/etc/opencloud`.
+- The OpenCloud data directory is persistent.
 
 The configuration must be applied to both instances.
 
@@ -76,11 +79,16 @@ The file is then available inside the container as:
 /etc/opencloud/ocmproviders.json
 ```
 
+Use the same provider configuration on both OpenCloud instances.
+
 Example configuration:
 
 ```json
 [
   {
+    "name": "OpenCloud Anja",
+    "full_name": "OpenCloud Anja",
+    "organization": "OpenCloud",
     "domain": "cloud.anja.opencloud.rocks",
     "homepage": "https://cloud.anja.opencloud.rocks",
     "description": "OpenCloud instance Anja",
@@ -166,8 +174,6 @@ Incorrect:
 "domain": "https://cloud.heiko.opencloud.rocks"
 ```
 
-Use the same provider configuration on both OpenCloud instances.
-
 Validate the JSON file:
 
 ```bash
@@ -176,10 +182,20 @@ python3 -m json.tool /mnt/oc/config/ocmproviders.json
 
 ## Enable the OCM web application
 
-Create the following file in the `opencloud-compose` directory:
+The OCM web application must be enabled in the OpenCloud Web configuration.
+
+Create `web.yaml` in the mounted OpenCloud configuration directory.
+
+For example, if `/mnt/oc/config` is mounted to `/etc/opencloud`, create:
 
 ```text
-config/opencloud/web.yaml
+/mnt/oc/config/web.yaml
+```
+
+Inside the container, the file is available as:
+
+```text
+/etc/opencloud/web.yaml
 ```
 
 Add the list of enabled web applications:
@@ -203,15 +219,15 @@ web:
 
 The `ocm` entry enables the OCM application in OpenCloud Web.
 
-## Mount the web configuration
+:::important
 
-Open `docker-compose.yml` and locate the `volumes` section of the `opencloud` service.
+Do not remove web applications that are required by your deployment. If your existing `web.yaml` already contains an `apps` list, add `ocm` to the existing list instead of replacing it completely.
 
-Add the following mount:
+:::
 
-```yaml
-- ./config/opencloud/web.yaml:/etc/opencloud/web.yaml
-```
+## Verify the configuration mount
+
+If your OpenCloud configuration directory is already mounted to `/etc/opencloud`, no additional mount for `web.yaml` is required.
 
 Example:
 
@@ -219,16 +235,26 @@ Example:
 services:
   opencloud:
     volumes:
-      - ./config/opencloud/csp.yaml:/etc/opencloud/csp.yaml
-      - ./config/opencloud/apps.yaml:/etc/opencloud/apps.yaml
-      - ./config/opencloud/banned-password-list.txt:/etc/opencloud/banned-password-list.txt
-      - ./config/opencloud/web.yaml:/etc/opencloud/web.yaml
       - ${OC_CONFIG_DIR:-opencloud-config}:/etc/opencloud
       - ${OC_DATA_DIR:-opencloud-data}:/var/lib/opencloud
       - ${OC_APPS_DIR:-./config/opencloud/apps}:/var/lib/opencloud/web/assets/apps
 ```
 
-The individual `web.yaml` mount must be present in addition to the general `/etc/opencloud` configuration mount.
+In this case, place both files in the mounted configuration directory:
+
+```text
+ocmproviders.json
+web.yaml
+```
+
+If your deployment does not mount the complete OpenCloud configuration directory, mount `web.yaml` explicitly:
+
+```yaml
+services:
+  opencloud:
+    volumes:
+      - ./config/opencloud/web.yaml:/etc/opencloud/web.yaml
+```
 
 ## Recreate the OpenCloud container
 
@@ -280,22 +306,56 @@ docker compose exec opencloud \
   cat /etc/opencloud/web.yaml
 ```
 
-## Verify connectivity
-
-From the first instance, check the endpoints of the second instance:
+Check the resolved Compose configuration:
 
 ```bash
-curl -I https://cloud.heiko.opencloud.rocks/ocm/
-curl -I https://cloud.heiko.opencloud.rocks/sciencemesh/
-curl -I https://cloud.heiko.opencloud.rocks/dav/
+docker compose config | grep -A 10 -B 10 "OC_ENABLE_OCM"
 ```
 
-Run the corresponding tests in the other direction:
+## Verify OCM storage permissions
+
+OCM stores invitation and sharing information below the OpenCloud data directory.
+
+Check that the storage directory is available and writable by the OpenCloud container user:
 
 ```bash
-curl -I https://cloud.anja.opencloud.rocks/ocm/
-curl -I https://cloud.anja.opencloud.rocks/sciencemesh/
-curl -I https://cloud.anja.opencloud.rocks/dav/
+docker compose exec opencloud sh -lc 'id && ls -ld /var/lib/opencloud /var/lib/opencloud/storage /var/lib/opencloud/storage/ocm 2>/dev/null || true'
+```
+
+If `/var/lib/opencloud/storage/ocm` does not exist yet, it may be created when the first OCM operation is performed.
+
+If you use bind mounts, make sure that the mounted data directory is writable by the OpenCloud container user.
+
+Example:
+
+```bash
+sudo chown -R 1000:1000 /mnt/oc/data
+```
+
+After changing permissions, recreate the container:
+
+```bash
+docker compose up -d --force-recreate opencloud
+```
+
+## Verify connectivity
+
+Run the connectivity checks from inside the OpenCloud container.
+
+On the Anja instance, check the Heiko instance:
+
+```bash
+docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/ocm/
+docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/sciencemesh/
+docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/dav/
+```
+
+On the Heiko instance, check the Anja instance:
+
+```bash
+docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/ocm/
+docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/sciencemesh/
+docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/dav/
 ```
 
 The following responses are expected:
@@ -324,20 +384,36 @@ The application provides the interface for creating and accepting OCM invitation
 
 Before users can share resources between instances, they must establish an OCM connection.
 
+:::important
+
+Create the invitation on one OpenCloud instance and accept it on the other OpenCloud instance.
+
+Do not accept an invitation on the same instance where it was created.
+
+:::
+
 On the first instance:
 
 1. Open the OCM application.
 2. Create a new invitation.
-3. Copy the generated invitation link.
-4. Send the link to the user on the second instance.
+3. Copy the generated invitation link or token.
+4. Send the invitation link or token to the user on the second instance.
 
 On the second instance:
 
-1. Open the invitation link.
+1. Open the invitation link or open the OCM application.
 2. Sign in to OpenCloud.
 3. Accept the invitation.
 
 After the invitation has been accepted, the remote user becomes available as an OCM connection.
+
+:::note
+
+Copy the full invitation link or token. Do not use the shortened token text that may be displayed in the invitation table.
+
+By default, invitation tokens expire after 24 hours. If an invitation cannot be accepted because it has expired, create a new invitation.
+
+:::
 
 ## Share a file or folder
 
@@ -370,10 +446,10 @@ Make sure that the application list contains:
 - ocm
 ```
 
-Also verify the mount in the resolved Compose configuration:
+Also verify the resolved Compose configuration:
 
 ```bash
-docker compose config | grep -A 5 -B 5 'web.yaml'
+docker compose config | grep -A 5 -B 5 "web.yaml"
 ```
 
 Recreate the container after every change:
@@ -382,7 +458,7 @@ Recreate the container after every change:
 docker compose up -d --force-recreate opencloud
 ```
 
-Reload OpenCloud Web without using the browser cache.
+Reload OpenCloud Web without using the browser cache or open a private browser window.
 
 ### Remote users are not shown in the sharing dialog
 
@@ -399,18 +475,22 @@ Expected output:
 true
 ```
 
-The users must also have completed the OCM invitation process before they appear as sharing recipients.
+Also check that the users completed the OCM invitation process successfully.
+
+Remote users only appear as sharing recipients after the OCM connection has been established.
 
 ### An invitation cannot be accepted
 
 Check that:
 
 - Both domains are listed in `ocmproviders.json`.
-- The domains do not include `https://`.
+- The domains in `ocmproviders.json` do not include `https://`.
 - Both instances can access each other over HTTPS.
 - The ScienceMesh endpoints are reachable.
 - The invitation has not expired.
 - The user is signed in to the receiving OpenCloud instance.
+- The invitation is accepted on the other OpenCloud instance, not on the instance where it was created.
+- The full invitation link or token was copied.
 
 ### The provider configuration is not loaded
 
@@ -431,9 +511,47 @@ Check the OpenCloud logs:
 
 ```bash
 docker compose logs --since=15m opencloud \
-  | grep -Ei 'ocm|provider|sciencemesh|error|failed'
+  | grep -Ei "ocm|provider|sciencemesh|error|failed"
 ```
 
+### An error message is shown in the web interface
+
+If OpenCloud Web shows an error message, expand the details and copy the `X-Request-Id`.
+
+Search for the request ID in the OpenCloud logs:
+
+```bash
+docker compose logs --since=30m opencloud \
+  | grep -F "<X-Request-Id>" -C 20
 ```
 
+Replace `<X-Request-Id>` with the request ID shown in the web interface.
+
+You can also search for OCM-related log entries:
+
+```bash
+docker compose logs --since=30m opencloud \
+  | grep -Ei "ocm|sciencemesh|invite|provider|federat|error|failed"
+```
+
+### OCM storage is not writable
+
+Check the storage permissions:
+
+```bash
+docker compose exec opencloud sh -lc 'id && ls -ld /var/lib/opencloud /var/lib/opencloud/storage /var/lib/opencloud/storage/ocm 2>/dev/null || true'
+```
+
+If you use bind mounts, make sure that the mounted data directory is writable by the OpenCloud container user.
+
+Example:
+
+```bash
+sudo chown -R 1000:1000 /mnt/oc/data
+```
+
+Recreate the container afterwards:
+
+```bash
+docker compose up -d --force-recreate opencloud
 ```
