@@ -1,5 +1,5 @@
 ---
-sidebar_position: 50
+sidebar_position: 140
 id: ocm
 title: Configure OpenCloud Mesh OCM
 description: Configure OpenCloud Mesh OCM to connect users and share resources between two OpenCloud instances.
