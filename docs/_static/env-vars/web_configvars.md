@@ -1,5 +1,5 @@
 
-2026-08-04-00-05-09
+2026-08-10-00-05-27
 
 ## Deprecation Notice
 
@@ -62,6 +62,7 @@
 |`WEB_OPTION_DEFAULT_APP_ID`| 4.0.0 |string|`Defines the entrypoint for the web ui.`|`""`|
 |`WEB_OPTION_OX_APP_SUITE_ENABLED`| 7.3.0 |bool|`Enables the OX App Suite. Defaults to false.`|`"false"`|
 |`WEB_OPTION_OX_APP_SUITE_API_URL`| 7.3.0 |string|`The API URL for the OX App Suite. Defaults to an empty string.`|`""`|
+|`WEB_OPTION_YJS_SERVER_URL`| 7.5.0 |string|`The URL of the Yjs server used for collaborative editing. This feature is disabled as long as no URL is given.`|`""`|
 |`OC_JWT_SECRET`<br/>`WEB_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|`""`|
 |`WEB_GATEWAY_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`"eu.opencloud.api.gateway"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`WEB_STORE_NODES`| 7.4.0 |[]string|`A list of nodes to access the NATS JetStream store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
