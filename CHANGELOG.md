@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@openclouders, @pbleser-oc, @v-scharf
+
+### 👷 Admin Documentation
+
+- feat(docs): add documentation for the posixfs scan command [[#1084](https://github.com/opencloud-eu/docs/pull/1084)]
+- publish release notes 7.2.3 [[#1095](https://github.com/opencloud-eu/docs/pull/1095)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1101](https://github.com/opencloud-eu/docs/pull/1101)]
+
 ## [3.39.0](https://github.com/opencloud-eu/docs/releases/tag/3.39.0) - 2026-08-04
 
 ### ❤️ Thanks to all contributors! ❤️
