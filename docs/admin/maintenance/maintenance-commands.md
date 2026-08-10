@@ -112,8 +112,8 @@ Administrators can trigger the storage scanning manually. This might be useful d
 
 It is recommended practice in such situations, since files that have not been scanned:
 
- * may have a negative performance impact when accessed, since OpenCloud transparently performs a storage scan to ingest previously untracked files when listing a directory through its UIs and APIs (but not recursively)
- * prevents those files from being accounted for in directory tree sizes and quotas
+- may have a negative performance impact when accessed, since OpenCloud transparently performs a storage scan to ingest previously untracked files when listing a directory through its UIs and APIs (but not recursively)
+- prevents those files from being accounted for in directory tree sizes and quotas
 
 For such cases, use the following command:
 
