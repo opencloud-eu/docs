@@ -118,6 +118,7 @@ web:
       oxAppSuite:
         enabled: false
         apiUrl: ""
+      yjsServerUrl: ""
     styles: []
     scripts: []
     custom_translations: []
