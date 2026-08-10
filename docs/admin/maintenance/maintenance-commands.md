@@ -110,7 +110,7 @@ When using the [PosixFS Storage Driver](../configuration/storage/posixfs.md) in 
 
 Administrators can trigger the storage scanning manually. This might be useful during migrations, or when [collaborative mode](../configuration/storage/posixfs.md#posixfs-collaborative-mode) is disabled.
 
-It is recommended practice in such situations, since files that have not been scanned
+It is recommended practice in such situations, since files that have not been scanned:
 
  * may have a negative performance impact when accessed, since OpenCloud transparently performs a storage scan to ingest previously untracked files when listing a directory through its UIs and APIs (but not recursively)
  * prevents those files from being accounted for in directory tree sizes and quotas
@@ -124,6 +124,8 @@ opencloud posixfs scan [path path ...]
 Optionally, one might want to specify resources to scan, using optional arguments that specify paths.
 
 When that path is a directory, it will recurse and perform a storage scan for all the files contained within that directory and all its subdirectories.
+
+Scanning can also be performed on an individual space, simply by specifying its storage path as a parameter.
 
 And when that path is a regular file instead, it will solely perform a storage scan on that one file.
 
