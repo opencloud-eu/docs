@@ -25,7 +25,7 @@ The general rule is:
 
 Avoid creating deeply nested folder structures.
 
-As a general guideline, keep the folder depth to approximately three levels whenever possible.
+As a general guideline, use no more than three folder levels. Keep the structure even flatter where possible.
 
 Deep structures can make content harder to navigate and require users to know exactly where a file was stored.
 
@@ -219,7 +219,7 @@ Class 3B/
 
 ```text
 Family/
-├── Documents/
+├── Household/
 │   ├── Insurance - Home - 2026.pdf
 │   └── Electricity - Contract - Example Energy.pdf
 ├── Photos/

@@ -219,7 +219,7 @@ Klasse 3B/
 
 ```text
 Familie/
-├── Dokumente/
+├── Haushalt/
 │   ├── Versicherung - Haus - 2026.pdf
 │   └── Strom - Vertrag - Beispiel Energie.pdf
 ├── Fotos/
