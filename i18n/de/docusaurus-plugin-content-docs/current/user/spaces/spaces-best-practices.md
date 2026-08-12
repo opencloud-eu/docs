@@ -25,7 +25,7 @@ Als allgemeine Regel gilt:
 
 Vermeiden Sie tief verschachtelte Ordnerstrukturen.
 
-Begrenzen Sie die Ordnertiefe nach Möglichkeit auf etwa drei Ebenen.
+Verwenden Sie als allgemeine Richtlinie höchstens drei Ordnerebenen. Halten Sie die Struktur nach Möglichkeit noch flacher.
 
 Tiefe Strukturen erschweren die Navigation und setzen voraus, dass Nutzer genau wissen, wo eine Datei gespeichert wurde.
 
