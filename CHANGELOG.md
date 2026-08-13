@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@AlexAndBear, @Svanvith
 
 ### 👷 Admin Documentation
 
@@ -13,6 +13,10 @@
 ### 👤 User Documentation
 
 - rerework best practices for spaces [[#1104](https://github.com/opencloud-eu/docs/pull/1104)]
+
+### 📦️ Build&Tools
+
+- feat: add automatic color scheme [[#1108](https://github.com/opencloud-eu/docs/pull/1108)]
 
 ## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
 
