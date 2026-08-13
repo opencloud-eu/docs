@@ -68,7 +68,7 @@ By default, the `main` branch of the `opencloud-compose` repository tracks the r
 For production deployments, use the current `stable-*` branch instead, for example:
 
 ```bash
-git checkout stable-4.0
+git checkout stable-7.2
 ```
 
 Stable branch names change over time as new stable releases become available. Moving from one stable-\* branch to another is an update and should be handled accordingly.
