@@ -10,6 +10,10 @@
 
 - change the stable branch to the actual one [[#1106](https://github.com/opencloud-eu/docs/pull/1106)]
 
+### 👤 User Documentation
+
+- rerework best practices for spaces [[#1104](https://github.com/opencloud-eu/docs/pull/1104)]
+
 ## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
 
 ### ❤️ Thanks to all contributors! ❤️
