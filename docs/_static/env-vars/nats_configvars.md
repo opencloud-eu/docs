@@ -15,3 +15,7 @@
 |`NATS_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the NATS listener. If not defined, the root directory derives from $OC_BASE_DATA_PATH/nats.`|`"/var/lib/opencloud/nats/tls.key"`|
 |`OC_INSECURE`<br/>`NATS_TLS_SKIP_VERIFY_CLIENT_CERT`| 1.0.0 |bool|`Whether the NATS server should skip the client certificate verification during the TLS handshake.`|`"false"`|
 |`OC_EVENTS_ENABLE_TLS`<br/>`NATS_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
+|`NATS_MONITORING_ENABLED`| %NEXT% |bool|`Whether to enable the NATS server monitoring HTTP endpoint`|`"false"`|
+|`NATS_MONITORING_HTTP_HOST`| %NEXT% |string|`The address the NATS server monitoring HTTP endpoint should be bound to`|`"127.0.0.1"`|
+|`NATS_MONITORING_HTTP_PORT`| %NEXT% |int|`The port the NATS server monitoring HTTP endpoint should be bound to`|`"8222"`|
+|`NATS_MONITORING_ENABLE_TLS`| %NEXT% |bool|`Enable TLS for NATS server monitoring HTTP endpoint. Note that it will use the same TLS configuration as the streaming API.`|`"false"`|
