@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-13
+## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add recommendations for large migrations [[#1111](https://github.com/opencloud-eu/docs/pull/1111)]
 - change the stable branch to the actual one [[#1106](https://github.com/opencloud-eu/docs/pull/1106)]
 
 ### 👤 User Documentation
