@@ -8,7 +8,7 @@ draft: false
 
 # Integrate OpenCloud with n8n
 
-[n8n](https://n8n.io/) is a workflow automation platform that connects applications and services through reusable nodes. The [OpenCloud node for n8n](https://github.com/opencloud-eu/n8n-nodes-opencloud/tree/55edfedd020346e161c77dd3f9d1fa00edab5ef7) lets workflows interact with files and folders stored in OpenCloud.
+[n8n](https://n8n.io/) is a workflow automation platform that connects applications and services through reusable nodes. The [OpenCloud node for n8n](https://github.com/opencloud-eu/n8n-nodes-opencloud) lets workflows interact with files and folders stored in OpenCloud.
 
 By combining the OpenCloud node with triggers, filters, and nodes for other services, you can use OpenCloud as part of automated processes. For example, a workflow can:
 
@@ -39,16 +39,45 @@ The example initially uses a retention period of five minutes for testing. After
 
 Test the workflow in a dedicated test Space before using it with production data.
 
-Deleted files may no longer be available to users. Verify the filtered results before adding the delete operation and before activating the workflow.
+The delete operation moves files to the OpenCloud **Deleted files** area. They can be
+[restored](../../user/files-and-folders/delete-restore.md) until they are removed from the trash
+manually or according to the instance's trash retention settings. Verify the filtered results before
+adding the delete operation and before activating the workflow.
 
 :::
+
+## Install the OpenCloud node
+
+The OpenCloud integration is available as an n8n community node.
+
+For a self-hosted n8n instance:
+
+1. Open **Settings**.
+2. Select **Community nodes**.
+3. Select **Install**.
+4. Enter the package name:
+
+   ```text
+   @opencloud-eu/n8n-nodes-opencloud
+   ```
+
+5. Review and accept the risks of installing community nodes.
+6. Select **Install**.
+
+After the installation, the OpenCloud node is available in the node selector.
+
+If your n8n instance does not provide the **Community nodes** settings, follow the
+[n8n installation instructions for community nodes](https://docs.n8n.io/integrations/community-nodes/installation/).
+
+For package details and available versions, see
+[`@opencloud-eu/n8n-nodes-opencloud` on npm](https://www.npmjs.com/package/@opencloud-eu/n8n-nodes-opencloud).
 
 ## Prerequisites
 
 Before creating the workflow, ensure that the following requirements are met:
 
 - A running [n8n](https://n8n.io/) instance
-- The [OpenCloud node for n8n](https://github.com/opencloud-eu/n8n-nodes-opencloud/tree/55edfedd020346e161c77dd3f9d1fa00edab5ef7)
+- The installed OpenCloud node for n8n
 - An OpenCloud user account with access to the target Space
 - An [OpenCloud app token](../../user/admin/app-tokens.md)
 - A dedicated OpenCloud Space or folder containing test files
@@ -73,6 +102,12 @@ Filter:
     ↓
 OpenCloud: Delete a file
 ```
+
+<img
+src={require('./img/n8n/workflow-overview.png').default}
+alt="n8n workflow with a manual trigger, an OpenCloud folder listing, a filter, and an OpenCloud file deletion step"
+width="1920"
+/>
 
 During testing, the workflow is started manually. After the workflow has been verified, the `Manual Trigger` can be replaced with a `Schedule Trigger`.
 
@@ -188,12 +223,8 @@ Add the first condition.
 
 Use the following expression:
 
-```javascript
-{
-  {
-    $json.file !== undefined;
-  }
-}
+```text
+{{ $json.file !== undefined }}
 ```
 
 Select:
@@ -211,12 +242,8 @@ Add a second condition.
 
 Use the following expression as the first value:
 
-```javascript
-{
-  {
-    $now.minus({ minutes: 5 });
-  }
-}
+```text
+{{ $now.minus({ minutes: 5 }) }}
 ```
 
 Select:
@@ -228,12 +255,8 @@ is after
 
 Use the following expression as the second value:
 
-```javascript
-{
-  {
-    DateTime.fromISO($json.lastModifiedDateTime);
-  }
-}
+```text
+{{ DateTime.fromISO($json.lastModifiedDateTime) }}
 ```
 
 The complete comparison is:
@@ -247,6 +270,12 @@ lastModifiedDateTime
 This condition matches files whose last modification time is more than five minutes in the past.
 
 Enable `Convert types where required` if n8n does not automatically recognize the timestamp as a date.
+
+<img
+src={require('./img/n8n/filter.png').default}
+alt="n8n Filter node configured with two AND conditions to select files older than five minutes"
+width="1920"
+/>
 
 Execute the Filter node.
 
@@ -276,12 +305,8 @@ Space Name or ID: Select the same test Space
 
 Set `Path` to an expression:
 
-```javascript
-{
-  {
-    $json.parentReference.path + '/' + $json.name;
-  }
-}
+```text
+{{ $json.parentReference.path + '/' + $json.name }}
 ```
 
 For the example file, this expression produces:
@@ -300,22 +325,14 @@ Verify in OpenCloud that only the expected files were deleted.
 
 After the workflow has been tested successfully, replace the five-minute expression:
 
-```javascript
-{
-  {
-    $now.minus({ minutes: 5 });
-  }
-}
+```text
+{{ $now.minus({ minutes: 5 }) }}
 ```
 
 with:
 
-```javascript
-{
-  {
-    $now.minus({ months: 3 });
-  }
-}
+```text
+{{ $now.minus({ months: 3 }) }}
 ```
 
 The filter then matches files whose `lastModifiedDateTime` is more than three months in the past.
