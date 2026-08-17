@@ -84,6 +84,7 @@ web:
     - epub-reader
     - preview
     - app-store
+    - rclone-crypt
     applications: []
     external_apps: []
     options:
