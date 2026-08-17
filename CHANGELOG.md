@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Svanvith
+@AlexAndBear, @Svanvith, @openclouders
 
 ### 👷 Admin Documentation
 
@@ -17,6 +17,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1115](https://github.com/opencloud-eu/docs/pull/1115)]
 - feat: add automatic color scheme [[#1108](https://github.com/opencloud-eu/docs/pull/1108)]
 
 ## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
