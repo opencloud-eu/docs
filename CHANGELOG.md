@@ -1,5 +1,25 @@
 # Changelog
 
+## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- add recommendations for large migrations [[#1111](https://github.com/opencloud-eu/docs/pull/1111)]
+- change the stable branch to the actual one [[#1106](https://github.com/opencloud-eu/docs/pull/1106)]
+
+### 👤 User Documentation
+
+- rerework best practices for spaces [[#1104](https://github.com/opencloud-eu/docs/pull/1104)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1115](https://github.com/opencloud-eu/docs/pull/1115)]
+- feat: add automatic color scheme [[#1108](https://github.com/opencloud-eu/docs/pull/1108)]
+
 ## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
 
 ### ❤️ Thanks to all contributors! ❤️
