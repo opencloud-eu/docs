@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-18
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- Add n8n example [[#1116](https://github.com/opencloud-eu/docs/pull/1116)]
+
 ## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-17
 
 ### ❤️ Thanks to all contributors! ❤️
