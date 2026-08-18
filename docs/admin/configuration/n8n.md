@@ -8,7 +8,7 @@ draft: false
 
 # Integrate OpenCloud with n8n
 
-[n8n](https://n8n.io/) is a workflow automation platform that connects applications and services through reusable nodes. The [OpenCloud node for n8n](https://github.com/opencloud-eu/n8n-nodes-opencloud) lets workflows interact with files and folders stored in OpenCloud.
+[n8n](https://n8n.io/) is a workflow automation platform that connects applications and services through reusable nodes. The [OpenCloud node for n8n](https://github.com/opencloud-eu/n8n-nodes-opencloud) lets workflows interact with files, folders, Spaces, and users in OpenCloud.
 
 By combining the OpenCloud node with triggers, filters, and nodes for other services, you can use OpenCloud as part of automated processes. For example, a workflow can:
 
@@ -20,6 +20,27 @@ By combining the OpenCloud node with triggers, filters, and nodes for other serv
 This guide uses the automatic deletion of old files as a practical example. The same setup and workflow concepts can be adapted to other OpenCloud automations.
 
 For general information about workflows, nodes, and operating n8n, see the [n8n documentation](https://docs.n8n.io/).
+
+## Available OpenCloud operations
+
+The OpenCloud node provides the following resources and operations:
+
+| Resource   | Operations                                       |
+| ---------- | ------------------------------------------------ |
+| **File**   | Upload · Download · Copy · Move · Delete · Share |
+| **Folder** | Create · List · Copy · Move · Delete · Share     |
+| **Space**  | List · Share                                     |
+| **User**   | Create · Get · Get Many · Update · Delete        |
+
+User operations require OpenCloud administrator permissions.
+
+The **Share** operation for files, folders, and Spaces supports the following recipient types:
+
+- A public link with an optional password and expiration date
+- An invited user with a role
+- An invited group with a role
+
+Sharing an entire Space applies to project Spaces.
 
 ## Example: Automatically delete old files
 
@@ -40,7 +61,7 @@ The example initially uses a retention period of five minutes for testing. After
 Test the workflow in a dedicated test Space before using it with production data.
 
 The delete operation moves files to the OpenCloud **Deleted files** area. They can be
-[restored](../../user/files-and-folders/delete-restore.md) until they are removed from the trash
+[restored](../../user/files-and-folders/delete-restore) until they are removed from the trash
 manually or according to the instance's trash retention settings. Verify the filtered results before
 adding the delete operation and before activating the workflow.
 
@@ -79,11 +100,11 @@ Before creating the workflow, ensure that the following requirements are met:
 - A running [n8n](https://n8n.io/) instance
 - The installed OpenCloud node for n8n
 - An OpenCloud user account with access to the target Space
-- An [OpenCloud app token](../../user/admin/app-tokens.md)
+- An [OpenCloud app token](../../user/admin/app-tokens)
 - A dedicated OpenCloud Space or folder containing test files
 - At least one file older than the configured test period
 
-The regular OpenCloud account password cannot be used for the n8n credentials. [Create an app token in OpenCloud](../../user/admin/app-tokens.md) and enter it in the password field of the n8n credential. Use a dedicated token for n8n and choose an appropriate expiration period.
+The regular OpenCloud account password cannot be used for the n8n credentials. [Create an app token in OpenCloud](../../user/admin/app-tokens) and enter it in the password field of the n8n credential. Use a dedicated token for n8n and choose an appropriate expiration period.
 
 The example workflow initially processes files in one folder. Processing nested folders and deleting empty folders requires additional workflow steps.
 
