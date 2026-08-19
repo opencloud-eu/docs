@@ -107,6 +107,7 @@
 |`OC_KEYCLOAK_INSECURE_SKIP_VERIFY`<br/>`GRAPH_KEYCLOAK_INSECURE_SKIP_VERIFY`| 1.0.0 |bool|`Disable TLS certificate validation for Keycloak connections. Do not set this in production environments.`|`"false"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`GRAPH_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`GRAPH_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|`""`|
+|`OC_MACHINE_AUTH_API_KEY`<br/>`GRAPH_MACHINE_AUTH_API_KEY`| 7.5.0 |string|`Machine auth API key used to validate internal requests necessary for the access to resources from other services.`|`""`|
 |`GRAPH_STORAGE_GATEWAY_GRPC_ADDR`<br/>`STORAGE_GATEWAY_GRPC_ADDR`| 4.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`"eu.opencloud.api.storage-system"`|
 |`GRAPH_STORAGE_GRPC_ADDR`<br/>`STORAGE_GRPC_ADDR`| 4.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`"eu.opencloud.api.storage-system"`|
 |`OC_SYSTEM_USER_ID`<br/>`GRAPH_SYSTEM_USER_ID`| 4.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|`""`|
