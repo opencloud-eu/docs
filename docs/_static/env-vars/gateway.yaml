@@ -22,8 +22,6 @@ skip_user_groups_in_token: false
 commit_share_to_storage_grant: true
 share_folder_name: Shares
 disable_home_creation_on_login: true
-transfer_secret: ""
-transfer_expires: 86400
 cache:
   provider_cache_store: noop
   provider_cache_nodes:

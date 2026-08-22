@@ -57,6 +57,8 @@
 |`OC_CACHE_ENABLE_TLS`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
 |`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided PROXY_PRESIGNEDURL_SIGNING_KEYS_STORE_TLS_INSECURE will be seen as false.`|`""`|
+|`OC_TRANSFER_SECRET`| %NEXT% |string|`The storage transfer secret.`|`""`|
+|`PROXY_TRANSFER_TIMEOUT`| %NEXT% |Duration|`The storage transfer timeout.`|`"24h0m0s"`|
 |`PROXY_ACCOUNT_BACKEND_TYPE`| 1.0.0 |string|`Account backend the PROXY service should use. Currently only 'cs3' is possible here.`|`"cs3"`|
 |`PROXY_USER_OIDC_CLAIM`| 1.0.0 |string|`The name of an OpenID Connect claim that is used for resolving users with the account backend. The value of the claim must hold a per user unique, stable and non re-assignable identifier. The availability of claims depends on your Identity Provider. There are common claims available for most Identity providers like 'email' or 'preferred_username' but you can also add your own claim.`|`"preferred_username"`|
 |`PROXY_USER_CS3_CLAIM`| 1.0.0 |string|`The name of a CS3 user attribute (claim) that should be mapped to the 'user_oidc_claim'. Supported values are 'username', 'mail' and 'userid'.`|`"username"`|
