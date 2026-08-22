@@ -1,5 +1,5 @@
 
-2026-08-17-00-05-51
+2026-08-22-00-05-50
 
 ## Deprecation Notice
 
@@ -23,9 +23,9 @@
 |`STORAGE_USERS_HTTP_PROTOCOL`| 1.0.0 |string|`The transport protocol of the HTTP service.`|`"tcp"`|
 |`OC_CORS_ALLOW_ORIGINS`<br/>`STORAGE_USERS_CORS_ALLOW_ORIGINS`| 1.0.0 |[]string|`A list of allowed CORS origins. See following chapter for more details: *Access-Control-Allow-Origin* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin. See the Environment Variable Types description for more details.`|`"[https://localhost:9200]"`|
 |`OC_CORS_ALLOW_METHODS`<br/>`STORAGE_USERS_CORS_ALLOW_METHODS`| 1.0.0 |[]string|`A list of allowed CORS methods. See following chapter for more details: *Access-Control-Request-Method* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method. See the Environment Variable Types description for more details.`|`"[POST HEAD PATCH OPTIONS GET DELETE]"`|
-|`OC_CORS_ALLOW_HEADERS`<br/>`STORAGE_USERS_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`"[Authorization Origin X-Requested-With X-Request-Id X-HTTP-Method-Override Content-Type Upload-Length Upload-Offset Tus-Resumable Upload-Metadata Upload-Defer-Length Upload-Concat Upload-Incomplete Upload-Draft-Interop-Version]"`|
+|`OC_CORS_ALLOW_HEADERS`<br/>`STORAGE_USERS_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`"[Authorization Origin X-Requested-With X-Request-Id X-HTTP-Method-Override Content-Type Upload-Length Upload-Offset Tus-Resumable Upload-Metadata Upload-Defer-Length Upload-Concat Upload-Complete Upload-Incomplete Upload-Draft-Interop-Version]"`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`STORAGE_USERS_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS.See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`"false"`|
-|`OC_CORS_EXPOSE_HEADERS`<br/>`STORAGE_USERS_CORS_EXPOSE_HEADERS`| 1.0.0 |[]string|`A list of exposed CORS headers. See following chapter for more details: *Access-Control-Expose-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers. See the Environment Variable Types description for more details.`|`"[Upload-Offset Location Upload-Length Tus-Version Tus-Resumable Tus-Max-Size Tus-Extension Upload-Metadata Upload-Defer-Length Upload-Concat Upload-Incomplete Upload-Draft-Interop-Version]"`|
+|`OC_CORS_EXPOSE_HEADERS`<br/>`STORAGE_USERS_CORS_EXPOSE_HEADERS`| 1.0.0 |[]string|`A list of exposed CORS headers. See following chapter for more details: *Access-Control-Expose-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers. See the Environment Variable Types description for more details.`|`"[Upload-Offset Location Upload-Length Tus-Version Tus-Resumable Tus-Max-Size Tus-Extension Upload-Metadata Upload-Defer-Length Upload-Concat Upload-Complete Upload-Incomplete Upload-Draft-Interop-Version]"`|
 |`OC_CORS_MAX_AGE`<br/>`STORAGE_USERS_CORS_MAX_AGE`| 1.0.0 |uint|`The max cache duration of preflight headers. See following chapter for more details: *Access-Control-Max-Age* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age. See the Environment Variable Types description for more details.`|`"86400"`|
 |`OC_JWT_SECRET`<br/>`STORAGE_USERS_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|`""`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`The CS3 gateway endpoint.`|`"eu.opencloud.api.gateway"`|
@@ -39,9 +39,9 @@
 |`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
 |`STORAGE_USERS_DECOMPOSED_USER_LAYOUT`| 1.0.0 |string|`Template string for the user storage layout in the user directory.`|`"{{.Id.OpaqueId}}"`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_DECOMPOSED_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed' and 'decomposeds3'.`|`"eu.opencloud.api.settings"`|
-|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
+|`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
 |`STORAGE_USERS_DECOMPOSED_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`""`|
-|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
+|`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
 |`STORAGE_USERS_DECOMPOSED_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`""`|
 |`STORAGE_USERS_DECOMPOSED_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`"/Shares"`|
 |`STORAGE_USERS_DECOMPOSED_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value will be used.`|`"20"`|
@@ -66,9 +66,9 @@
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_CONCURRENT_STREAM_PARTS`| 1.0.0 |bool|`Always precreate parts when copying objects to S3. This is not recommended. It uses a memory buffer. If true, PartSize needs to be set.`|`"false"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_NUM_THREADS`| 1.0.0 |uint|`Number of concurrent uploads to use when copying objects to S3.`|`"4"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PUT_OBJECT_PART_SIZE`| 1.0.0 |uint64|`Part size for concurrent uploads to S3. If no value or 0 is set, the library automatically calculates the part size according to the total size of the file to be uploaded. The value range is min 5MB and max 5GB.`|`"0"`|
-|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
+|`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
 |`STORAGE_USERS_DECOMPOSEDS3_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`""`|
-|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
+|`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
 |`STORAGE_USERS_DECOMPOSEDS3_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`""`|
 |`STORAGE_USERS_DECOMPOSEDS3_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`"/Shares"`|
 |`STORAGE_USERS_DECOMPOSEDS3_MAX_ACQUIRE_LOCK_CYCLES`| 1.0.0 |int|`When trying to lock files, OpenCloud will try this amount of times to acquire the lock before failing. After each try it will wait for an increasing amount of time. Values of 0 or below will be ignored and the default value of 20 will be used.`|`"20"`|
@@ -89,9 +89,9 @@
 |`STORAGE_USERS_POSIX_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store its data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_POSIX_PROPAGATOR`| 2.0.0 |string|`The propagator used for the posix driver. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`""`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`"0s"`|
-|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \| lower}}"`|
+|`STORAGE_USERS_POSIX_PERSONAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct personal space aliases.`|`"{{.SpaceType}}/{{.User.Username \\| lower}}"`|
 |`STORAGE_USERS_POSIX_PERSONAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the personal space roots.`|`"users/{{.User.Id.OpaqueId}}"`|
-|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \| replace \" \" \"-\" \| lower}}"`|
+|`STORAGE_USERS_POSIX_GENERAL_SPACE_ALIAS_TEMPLATE`| 1.0.0 |string|`Template string to construct general space aliases.`|`"{{.SpaceType}}/{{.SpaceName \\| replace \" \" \"-\" \\| lower}}"`|
 |`STORAGE_USERS_POSIX_GENERAL_SPACE_PATH_TEMPLATE`| 1.0.0 |string|`Template string to construct the paths of the projects space roots.`|`"projects/{{.SpaceId}}"`|
 |`STORAGE_USERS_PERMISSION_ENDPOINT`<br/>`STORAGE_USERS_POSIX_PERMISSIONS_ENDPOINT`| 1.0.0 |string|`Endpoint of the permissions service. The endpoints can differ for 'decomposed', 'posix' and 'decomposeds3'.`|`"eu.opencloud.api.settings"`|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`"true"`|
@@ -111,8 +111,6 @@
 |`STORAGE_USERS_POSIX_WATCH_ROOT`| 4.0.0 |string|`Path to the watch root directory. Event paths will be considered relative to this path. Only applies to the 'gpswatchfolder' and 'cephfs' watchers.`|`""`|
 |`STORAGE_USERS_POSIX_INOTIFY_STATS_FREQUENCY`| 4.0.0 |Duration|`Frequency to log inotify stats.`|`"5m0s"`|
 |`STORAGE_USERS_DATA_SERVER_URL`| 1.0.0 |string|`URL of the data server, needs to be reachable by the data gateway provided by the frontend service or the user if directly exposed.`|`"http://localhost:9158/data"`|
-|`STORAGE_USERS_DATA_GATEWAY_URL`| 1.0.0 |string|`URL of the data gateway server`|`"http://localhost:9140/data"`|
-|`STORAGE_USERS_TRANSFER_EXPIRES`| 1.0.0 |int64|`The time after which the token for upload postprocessing expires`|`"86400"`|
 |`OC_EVENTS_ENDPOINT`<br/>`STORAGE_USERS_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`STORAGE_USERS_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`STORAGE_USERS_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
@@ -142,7 +140,6 @@
 |`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_ID_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_ID_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_ID_CACHE_TLS_INSECURE will be seen as false.`|`""`|
 |`STORAGE_USERS_MOUNT_ID`| 1.0.0 |string|`Mount ID of this storage.`|`""`|
-|`STORAGE_USERS_EXPOSE_DATA_SERVER`| 1.0.0 |bool|`Exposes the data server directly to users and bypasses the data gateway. Ensure that the data server address is reachable by users.`|`"false"`|
 |`STORAGE_USERS_READ_ONLY`| 1.0.0 |bool|`Set this storage to be read-only.`|`"false"`|
 |`STORAGE_USERS_UPLOAD_EXPIRATION`| 1.0.0 |int64|`Duration in seconds after which uploads will expire. Note that when setting this to a low number, uploads could be cancelled before they are finished and return a 403 to the user.`|`"86400"`|
 |`OC_ADMIN_USER_ID`<br/>`STORAGE_USERS_PURGE_TRASH_BIN_USER_ID`| 1.0.0 |string|`ID of the user who collects all necessary information for deletion. Consider that the UUID can be encoded in some LDAP deployment configurations like in .ldif files. These need to be decoded beforehand.`|`""`|
