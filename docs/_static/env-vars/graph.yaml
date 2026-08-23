@@ -148,6 +148,7 @@ keycloak:
 service_account:
   service_account_id: ""
   service_account_secret: ""
+machine_auth_api_key: ""
 metadata_config:
   gateway_addr: eu.opencloud.api.storage-system
   storage_addr: eu.opencloud.api.storage-system

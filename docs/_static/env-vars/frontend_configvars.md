@@ -1,5 +1,5 @@
 
-2026-08-17-00-05-51
+2026-08-23-00-05-18
 
 ## Deprecation Notice
 
@@ -62,7 +62,6 @@
 |`FRONTEND_ARCHIVER_MAX_NUM_FILES`| 1.0.0 |int64|`Max number of files that can be packed into an archive.`|`"10000"`|
 |`FRONTEND_ARCHIVER_MAX_SIZE`| 1.0.0 |int64|`Max size in bytes of the zip archive the archiver can create.`|`"1073741824"`|
 |`OC_INSECURE`<br/>`FRONTEND_ARCHIVER_INSECURE`| 1.0.0 |bool|`Allow insecure connections to the archiver.`|`"false"`|
-|`FRONTEND_DATA_GATEWAY_PREFIX`| 1.0.0 |string|`Path prefix for the data gateway.`|`"data"`|
 |`FRONTEND_OCS_PREFIX`| 1.0.0 |string|`URL path prefix for the OCS service. Note that the string must not start with '/'.`|`"ocs"`|
 |`FRONTEND_OCS_SHARE_PREFIX`| 1.0.0 |string|`Path prefix for shares as part of a CS3 resource. Note that the path must start with '/'.`|`"/Shares"`|
 |`FRONTEND_OCS_PERSONAL_NAMESPACE`| 1.0.0 |string|`Home namespace identifier.`|`"/users/{{.Id.OpaqueId}}"`|
