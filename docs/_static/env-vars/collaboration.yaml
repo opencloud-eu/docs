@@ -27,14 +27,6 @@ store:
   enable_tls: false
   tls_insecure: false
   tls_root_ca_certificate: ""
-events:
-  endpoint: 127.0.0.1:9233
-  cluster: opencloud-cluster
-  tls_insecure: false
-  tls_root_ca_certificate: ""
-  enable_tls: false
-  username: ""
-  password: ""
 token_manager:
   jwt_secret: ""
 grpc:
@@ -66,4 +58,3 @@ debug:
   token: ""
   pprof: false
   zpages: false
-machine_auth_api_key: ""
