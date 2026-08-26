@@ -41,6 +41,7 @@
 |`OC_LDAP_GROUP_SCHEMA_DISPLAYNAME`<br/>`GROUPS_LDAP_GROUP_SCHEMA_DISPLAYNAME`| 1.0.0 |string|`LDAP Attribute to use for the displayname of groups (often the same as groupname attribute).`|`"cn"`|
 |`OC_LDAP_GROUP_SCHEMA_GROUPNAME`<br/>`GROUPS_LDAP_GROUP_SCHEMA_GROUPNAME`| 1.0.0 |string|`LDAP Attribute to use for the name of groups.`|`"cn"`|
 |`OC_LDAP_GROUP_SCHEMA_MEMBER`<br/>`GROUPS_LDAP_GROUP_SCHEMA_MEMBER`| 1.0.0 |string|`LDAP Attribute that is used for group members.`|`"member"`|
+|`OC_LDAP_LOOKUP_CACHE_TTL`<br/>`GROUPS_LDAP_LOOKUP_CACHE_TTL`| 7.5.0 |Duration|`The time to live for the in-memory cache of LDAP lookups. This cache is used to reduce the number of LDAP queries for user and group lookups.`|`"10s"`|
 |`GROUPS_OWNCLOUDSQL_DB_USERNAME`| 1.0.0 |string|`Database user to use for authenticating with the owncloud database.`|`"owncloud"`|
 |`GROUPS_OWNCLOUDSQL_DB_PASSWORD`| 1.0.0 |string|`Password for the database user.`|`""`|
 |`GROUPS_OWNCLOUDSQL_DB_HOST`| 1.0.0 |string|`Hostname of the database server.`|`"mysql"`|
