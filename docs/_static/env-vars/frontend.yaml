@@ -83,8 +83,6 @@ archiver:
   max_num_files: 10000
   max_size: 1073741824
   insecure: false
-data_gateway:
-  prefix: data
 ocs:
   prefix: ocs
   share_prefix: /Shares

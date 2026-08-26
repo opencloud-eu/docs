@@ -8,6 +8,7 @@
 |`EVENTHISTORY_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`EVENTHISTORY_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
 |`EVENTHISTORY_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`"127.0.0.1:9274"`|
+|`EVENTHISTORY_GRPC_DISABLED`| 7.5.0 |bool|`Disables the GRPC service. Set this to true if the service should only handle events.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`<br/>`EVENTHISTORY_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`EVENTHISTORY_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`EVENTHISTORY_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
@@ -15,6 +16,7 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`EVENTHISTORY_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`EVENTHISTORY_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`EVENTHISTORY_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
+|`EVENTHISTORY_EVENTS_DISABLED`| 7.5.0 |bool|`Disables listening for events. Set this to true if the service should only handle GRPC requests.`|`"false"`|
 |`OC_PERSISTENT_STORE`<br/>`EVENTHISTORY_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`EVENTHISTORY_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`EVENTHISTORY_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"eventhistory"`|
