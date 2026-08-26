@@ -137,10 +137,6 @@ policies:
   - endpoint: /apps/
     service: eu.opencloud.web.frontend
     skip_x_access_token: false
-  - endpoint: /data
-    service: eu.opencloud.web.frontend
-    unprotected: true
-    skip_x_access_token: false
   - endpoint: /app/list
     service: eu.opencloud.web.frontend
     unprotected: true
@@ -168,9 +164,6 @@ policies:
     unprotected: true
     skip_x_access_token: true
   - endpoint: /collaboration/fonts/manage
-    service: eu.opencloud.web.collaboration
-    skip_x_access_token: false
-  - endpoint: /collaboration/notify
     service: eu.opencloud.web.collaboration
     skip_x_access_token: false
   - endpoint: /collaboration
@@ -238,6 +231,8 @@ pre_signed_url:
     enable_tls: false
     tls_insecure: false
     tls_root_ca_certificate: ""
+transfer_secret: ""
+transfer_timeout: 24h0m0s
 account_backend: cs3
 user_oidc_claim: preferred_username
 user_cs3_claim: username
