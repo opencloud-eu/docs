@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @kulmann
+@Svanvith, @kulmann, @v-scharf
 
 ### 👷 Admin Documentation
 
+- publish release notes -7.2.4 [[#1123](https://github.com/opencloud-eu/docs/pull/1123)]
 - publish release notes 7.5.0 [[#1128](https://github.com/opencloud-eu/docs/pull/1128)]
 - Add n8n example [[#1116](https://github.com/opencloud-eu/docs/pull/1116)]
 
