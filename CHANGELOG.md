@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-18
+## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-26
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @kulmann
 
 ### 👷 Admin Documentation
 
+- publish release notes 7.5.0 [[#1128](https://github.com/opencloud-eu/docs/pull/1128)]
 - Add n8n example [[#1116](https://github.com/opencloud-eu/docs/pull/1116)]
 
 ## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-17
