@@ -1,10 +1,11 @@
 
-2026-08-26-00-05-47
+2026-08-27-00-08-11
 
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
+| FRONTEND_MAX_CONCURRENCY is deprecated and will be removed in a future version. Please use SHARING_MAX_CONCURRENCY (sharing service) instead. | next | next-prod | SHARING_MAX_CONCURRENCY |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
@@ -21,6 +22,16 @@
 | FRONTEND_OCS_INCLUDE_OCM_SHAREES, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_WRITABLE_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
+| FRONTEND_EVENTS_ENDPOINT is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENDPOINT (sharing service) instead. | next | next-prod | SHARING_EVENTS_ENDPOINT |
+| FRONTEND_EVENTS_CLUSTER is deprecated and will be removed in a future version. Please use SHARING_EVENTS_CLUSTER (sharing service) instead. | next | next-prod | SHARING_EVENTS_CLUSTER |
+| FRONTEND_EVENTS_TLS_INSECURE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_INSECURE (sharing service) instead. | next | next-prod | SHARING_EVENTS_TLS_INSECURE |
+| FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE (sharing service) instead. | next | next-prod | SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE |
+| FRONTEND_EVENTS_ENABLE_TLS is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENABLE_TLS (sharing service) instead. | next | next-prod | SHARING_EVENTS_ENABLE_TLS |
+| FRONTEND_EVENTS_AUTH_USERNAME is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_USERNAME (sharing service) instead. | next | next-prod | SHARING_EVENTS_AUTH_USERNAME |
+| FRONTEND_EVENTS_AUTH_PASSWORD is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_PASSWORD (sharing service) instead. | next | next-prod | SHARING_EVENTS_AUTH_PASSWORD |
+| FRONTEND_AUTO_ACCEPT_SHARES is deprecated and will be removed in a future version. Please use SHARING_AUTO_ACCEPT_SHARES (sharing service) instead. | next | next-prod | SHARING_AUTO_ACCEPT_SHARES |
+| FRONTEND_SERVICE_ACCOUNT_ID is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT (sharing service) instead. | next | next-prod | SHARING_SERVICE_ACCOUNT |
+| FRONTEND_SERVICE_ACCOUNT_SECRET is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT_SECRET (sharing service) instead. | next | next-prod | SHARING_SERVICE_ACCOUNT_SECRET |
 
 ## Environment variables for the **frontend** service
 
@@ -56,7 +67,7 @@
 |`FRONTEND_DISABLE_RADICALE`| 4.0.0 |bool|`When set to true, clients are informed that the Radicale (CalDAV/CardDAV) is not accessible.`|`"false"`|
 |`FRONTEND_DEFAULT_LINK_PERMISSIONS`| 1.0.0 |int|`Defines the default permissions a link is being created with. Possible values are 0 (= internal link, for instance members only) and 1 (= public link with viewer permissions). Defaults to 1.`|`"1"`|
 |`OC_URL`<br/>`FRONTEND_PUBLIC_URL`| 1.0.0 |string|`The public facing URL of the OpenCloud frontend.`|`"https://localhost:9200"`|
-|`OC_MAX_CONCURRENCY`<br/>`FRONTEND_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`"1"`|
+|`OC_MAX_CONCURRENCY`<br/>`FRONTEND_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`"0"`|
 |`OC_INSECURE`<br/>`FRONTEND_APP_HANDLER_INSECURE`| 1.0.0 |bool|`Allow insecure connections to the frontend.`|`"false"`|
 |`FRONTEND_APP_HANDLER_SECURE_VIEW_APP_ADDR`| 1.0.0 |string|`Service name or address of the app provider to use for secure view. Should match the service name or address of the registered CS3 app provider.`|`"eu.opencloud.api.collaboration"`|
 |`FRONTEND_ARCHIVER_MAX_NUM_FILES`| 1.0.0 |int64|`Max number of files that can be packed into an archive.`|`"10000"`|
@@ -104,14 +115,14 @@
 |`FRONTEND_EDIT_LOGIN_ALLOWED_DISABLED`| 3.4.0 |bool|`Used to set if login is allowed/forbidden for for User.`|`"false"`|
 |`FRONTEND_FULL_TEXT_SEARCH_ENABLED`| 1.0.0 |bool|`Set to true to signal the web client that full-text search is enabled.`|`"false"`|
 |`FRONTEND_CHECK_FOR_UPDATES`| 3.6.0 |bool|`Enable automatic checking for updates. Defaults to true.`|`"true"`|
-|`OC_EVENTS_ENDPOINT`<br/>`FRONTEND_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
-|`OC_EVENTS_CLUSTER`<br/>`FRONTEND_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
+|`OC_EVENTS_ENDPOINT`<br/>`FRONTEND_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`""`|
+|`OC_EVENTS_CLUSTER`<br/>`FRONTEND_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`""`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`FRONTEND_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`OCS_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 1.0.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided NOTIFICATIONS_EVENTS_TLS_INSECURE will be seen as false.`|`""`|
 |`OC_EVENTS_ENABLE_TLS`<br/>`FRONTEND_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`FRONTEND_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`FRONTEND_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`FRONTEND_AUTO_ACCEPT_SHARES`| 1.0.0 |bool|`Defines if shares should be auto accepted by default. Users can change this setting individually in their profile.`|`"true"`|
+|`FRONTEND_AUTO_ACCEPT_SHARES`| 1.0.0 |bool|`Defines if shares should be auto accepted by default. Users can change this setting individually in their profile.`|`"false"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`FRONTEND_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`FRONTEND_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|`""`|
 |`OC_PASSWORD_POLICY_DISABLED`<br/>`FRONTEND_PASSWORD_POLICY_DISABLED`| 1.0.0 |bool|`Disable the password policy. Defaults to false if not set.`|`"false"`|
