@@ -18,6 +18,7 @@ Consider using dedicated hardware for this service in case more resources are ne
 * [Search backends](#search-backends)
   * [Bleve](#bleve)
   * [OpenSearch](#opensearch)
+  * [Bringing an existing index over](#bringing-an-existing-index-over)
 * [Query language](#query-language)
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
@@ -55,7 +56,10 @@ To enable OpenSearch as a backend, the following settings must be set:
 
 Additionally, the following optional settings can be set:
 
-*   `SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME=val` (default: `opencloud-resource`): Name of the OpenSearch index
+*   `SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME=val` (default:
+    `opencloud-resource`): base name of the OpenSearch index. The running
+    index is suffixed with the current schema version; a breaking schema
+    change targets a fresh index, the old one stays in place.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_USERNAME=val`: Username for HTTP Basic Authentication.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_PASSWORD=val`: Password for HTTP Basic Authentication.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_HEADER=val`: HTTP headers to include in requests.
@@ -70,6 +74,12 @@ Additionally, the following optional settings can be set:
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_METRICS=val`: Enable metrics collection.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_DEBUG_LOGGER=val`: Enable debug logging.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_INSECURE=val`: Skip TLS certificate verification.
+
+### Bringing an existing index over
+
+A version that changes how resources are indexed works on a new index and leaves the old one untouched.
+The new index starts empty and has to be filled, see [MIGRATION.md](MIGRATION.md). New installations are
+not affected.
 
 ## Query language
 
