@@ -23,6 +23,8 @@
 |`OC_SERVICE_ACCOUNT_ID`<br/>`SHARING_SERVICE_ACCOUNT`| 7.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`SHARING_SERVICE_ACCOUNT_SECRET`| 7.0.0 |string|`The service account secret.`|`""`|
 |`SHARING_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
+|`FRONTEND_AUTO_ACCEPT_SHARES`<br/>`SHARING_AUTO_ACCEPT_SHARES`| next |bool|`Defines if shares should be auto accepted by default. Users can change this setting individually in their profile.`|`"true"`|
+|`OC_MAX_CONCURRENCY`<br/>`FRONTEND_MAX_CONCURRENCY`<br/>`SHARING_MAX_CONCURRENCY`| next |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`"1"`|
 |`SHARING_USER_DRIVER`| 1.0.0 |string|`Driver to be used to persist shares. Supported values are 'jsoncs3', 'json', 'cs3' (deprecated) and 'owncloudsql'.`|`"jsoncs3"`|
 |`SHARING_USER_JSONCS3_PROVIDER_ADDR`| 1.0.0 |string|`GRPC address of the STORAGE-SYSTEM service.`|`"eu.opencloud.api.storage-system"`|
 |`OC_SYSTEM_USER_ID`<br/>`SHARING_USER_JSONCS3_SYSTEM_USER_ID`| 1.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|`""`|

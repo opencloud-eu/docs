@@ -2,6 +2,7 @@
 # Filename: policies.yaml
 
 grpc:
+  disabled: false
   addr: 127.0.0.1:9125
   tls: null
 debug:
@@ -10,6 +11,7 @@ debug:
   pprof: false
   zpages: false
 events:
+  disabled: false
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
   tls_insecure: false
