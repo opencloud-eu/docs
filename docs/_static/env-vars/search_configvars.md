@@ -43,7 +43,7 @@
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_METRICS`| 4.0.0 |bool|`Enable metrics collection.`|`"false"`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_DEBUG_LOGGER`| 4.0.0 |bool|`Enable debug logging.`|`"false"`|
 |`SEARCH_ENGINE_OPEN_SEARCH_CLIENT_INSECURE`| 4.0.0 |bool|`Skip TLS certificate verification.`|`"false"`|
-|`SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME`| 4.0.0 |string|`The name of the OpenSearch index for resources.`|`"opencloud-resource"`|
+|`SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME`| 4.0.0 |string|`The base name of the OpenSearch index for resources. The running index is suffixed with the current schema version.`|`"opencloud-resource"`|
 |`SEARCH_EXTRACTOR_TYPE`| 1.0.0 |string|`Defines the content extraction engine. Defaults to 'basic'. Supported values are: 'basic' and 'tika'.`|`"basic"`|
 |`OC_INSECURE`<br/>`SEARCH_EXTRACTOR_CS3SOURCE_INSECURE`| 1.0.0 |bool|`Ignore untrusted SSL certificates when connecting to the CS3 source.`|`"false"`|
 |`SEARCH_EXTRACTOR_TIKA_TIKA_URL`| 1.0.0 |string|`URL of the tika server.`|`"http://127.0.0.1:9998"`|

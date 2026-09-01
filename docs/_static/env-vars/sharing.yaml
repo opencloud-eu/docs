@@ -30,6 +30,8 @@ service_account:
   service_account_id: ""
   service_account_secret: ""
 skip_user_groups_in_token: false
+auto_accept_shares: true
+max_concurrency: 1
 user_sharing_driver: jsoncs3
 user_sharing_drivers:
   jsoncs3:
