@@ -1,5 +1,5 @@
 
-2026-09-01-12-00-11
+2026-09-03-01-00-14
 
 ## Deprecation Notice
 
@@ -132,5 +132,5 @@
 |`OC_PASSWORD_POLICY_MIN_DIGITS`<br/>`FRONTEND_PASSWORD_POLICY_MIN_DIGITS`| 1.0.0 |int|`Define the minimum number of digits. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`<br/>`FRONTEND_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`| 1.0.0 |int|`Define the minimum number of characters from the special characters list to be present. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`<br/>`FRONTEND_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`| 1.0.0 |string|`Path to the 'banned passwords list' file. This only impacts public link password validation. See the documentation for more details.`|`""`|
-|`FRONTEND_CONFIGURABLE_NOTIFICATIONS`| 1.0.0 |bool|`Allow configuring notifications via web client.`|`"false"`|
+|`FRONTEND_CONFIGURABLE_NOTIFICATIONS`| 1.0.0 |bool|`Allow configuring notifications via web client.`|`"true"`|
 |`FRONTEND_GROUPWARE_ENABLED`| 3.7.0 |bool|`Enable groupware features. Defaults to false.`|`"false"`|
