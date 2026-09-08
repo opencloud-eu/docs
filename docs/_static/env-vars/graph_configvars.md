@@ -18,6 +18,7 @@
 |`GRAPH_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`GRAPH_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`GRAPH_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
+|`GRAPH_HTTP_DISABLE`| %NEXT% |bool|`Disables the HTTP service. Set this to true if the service should only consume events.`|`"false"`|
 |`GRAPH_HTTP_ADDR`| 1.0.0 |string|`The bind address of the HTTP service.`|`"127.0.0.1:9120"`|
 |`GRAPH_HTTP_ROOT`| 1.0.0 |string|`Subdirectory that serves as the root for this HTTP service.`|`"/graph"`|
 |`OC_HTTP_TLS_ENABLED`| 1.0.0 |bool|`Activates TLS for the http based services using the server certifcate and key configured via OC_HTTP_TLS_CERTIFICATE and OC_HTTP_TLS_KEY. If OC_HTTP_TLS_CERTIFICATE is not set a temporary server certificate is generated - to be used with PROXY_INSECURE_BACKEND=true.`|`"false"`|
@@ -28,6 +29,7 @@
 |`OC_CORS_ALLOW_METHODS`<br/>`GRAPH_CORS_ALLOW_METHODS`| 1.0.0 |[]string|`A list of allowed CORS methods. See following chapter for more details: *Access-Control-Request-Method* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method. See the Environment Variable Types description for more details.`|`"[GET POST PUT PATCH DELETE OPTIONS]"`|
 |`OC_CORS_ALLOW_HEADERS`<br/>`GRAPH_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`"[Authorization Origin Content-Type Accept X-Requested-With X-Request-Id Purge Restore]"`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`GRAPH_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS.See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`"true"`|
+|`GRAPH_HTTP_METRICS_DISABLE`| %NEXT% |bool|`Disables the metrics for the HTTP service.`|`"true"`|
 |`GRAPH_GROUP_MEMBERS_PATCH_LIMIT`| 1.0.0 |int|`The amount of group members allowed to be added with a single patch request.`|`"20"`|
 |`GRAPH_USERNAME_MATCH`| 1.0.0 |string|`Apply restrictions to usernames. Supported values are 'default' and 'none'. When set to 'default', user names must not start with a number and are restricted to ASCII characters. When set to 'none', no restrictions are applied. The default value is 'default'.`|`"default"`|
 |`GRAPH_ASSIGN_DEFAULT_USER_ROLE`| 1.0.0 |bool|`Whether to assign newly created users the default role 'User'. Set this to 'false' if you want to assign roles manually, or if the role assignment should happen at first login. Set this to 'true' (the default) to assign the role 'User' when creating a new user.`|`"true"`|
@@ -89,7 +91,10 @@
 |`GRAPH_LDAP_SCHOOL_NUMBER_ATTRIBUTE`| 1.0.0 |string|`LDAP Attribute to use for the number of a school.`|`""`|
 |`GRAPH_LDAP_SCHOOL_ID_ATTRIBUTE`| 1.0.0 |string|`LDAP Attribute to use as the unique id for schools. This should be a stable globally unique ID like a UUID.`|`""`|
 |`GRAPH_LDAP_SCHOOL_TERMINATION_MIN_GRACE_DAYS`| 1.0.0 |int|`When setting a 'terminationDate' for a school, require the date to be at least this number of days in the future.`|`"0"`|
+|`GRAPH_LDAP_METRICS_DISABLE`| %NEXT% |bool|`Disables the metrics for outbound LDAP operations.`|`"true"`|
+|`GRAPH_IDENTITY_BACKEND_METRICS_DISABLE`| %NEXT% |bool|`Disables the metrics for inbound identity backend operations.`|`"true"`|
 |`OC_ENABLE_OCM`<br/>`GRAPH_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing users.`|`"false"`|
+|`GRAPH_EVENTS_DISABLE_CONSUMER`| %NEXT% |bool|`Disables consuming events. Set this to true if the service should only handle HTTP requests.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`<br/>`GRAPH_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Set to a empty string to disable emitting events.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`GRAPH_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`GRAPH_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
