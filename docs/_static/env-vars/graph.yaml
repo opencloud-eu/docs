@@ -21,6 +21,7 @@ debug:
   pprof: false
   zpages: false
 http:
+  disabled: false
   addr: 127.0.0.1:9120
   root: /graph
   tls:
@@ -48,6 +49,8 @@ http:
     - Purge
     - Restore
     allow_credentials: true
+  metrics:
+    disabled: true
 api:
   group_members_patch_limit: 20
   graph_username_match: default
@@ -119,8 +122,13 @@ identity:
       school_number_attribute: ""
       school_id_attribute: ""
       school_termination_min_grace_days: 0
+    metrics:
+      disabled: true
+  metrics:
+    disabled: true
 include_ocm_sharees: false
 events:
+  disabled_consumer: false
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
   tls_insecure: false
