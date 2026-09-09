@@ -8,6 +8,22 @@ draft: false
 
 # Common Issues & Help
 
+## Desktop Client cannot connect through an external reverse proxy
+
+### Problem
+
+After a user enters the OpenCloud server address, the browser does not open. The Desktop Client window may flicker and its memory usage may increase. The proxy or client logs may show a `403` response to a `/.well-known/webfinger` request.
+
+### Cause
+
+The Desktop Client uses the WebFinger endpoint for server discovery. Security filters or other connection handling settings on an external reverse proxy can reject or alter this request. In [issue #1077](https://github.com/opencloud-eu/desktop/issues/1077), the reporter restored the connection after changing an optional Nginx Proxy Manager security filter, but this may not be the cause in every setup.
+
+### Solution
+
+Check the reverse proxy logs and verify that `/.well-known/webfinger` requests, including their query parameters, are forwarded to OpenCloud without being rejected or modified.
+
+Review the [external proxy documentation](../getting-started/container/docker-compose/docker-external-proxy.md) and compare it with your setup. In addition to security filters, check HTTP/2, keep-alive handling, proxy timeouts, buffering, and upload limits. These settings are relevant for stable Desktop Client connections and long-running or larger sync operations.
+
 ## Check whether the containers are running
 
 ```bash

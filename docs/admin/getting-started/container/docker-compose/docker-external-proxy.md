@@ -278,6 +278,8 @@ Starting from nginx 1.25.0, the `http2` directive syntax changed from: `listen 4
 
 :::note
 We enabled HTTP/2 and increased keep-alive limits to prevent large syncs from failing and ensure stable client connections, since nginx closes connections after ~1,000 requests by default.
+
+The Desktop Client also uses `/.well-known/webfinger` for server discovery. If your reverse proxy uses additional security or exploit filters, verify that they allow this endpoint and forward its query parameters without returning a `403` response.
 :::
 
 Thanks to [mitexleo](https://github.com/mitexleo) for the Nginx example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments.

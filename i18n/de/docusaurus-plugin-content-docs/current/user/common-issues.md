@@ -4,9 +4,24 @@ id: common-issues
 title: Häufige Probleme & Hilfe
 description: Häufige Probleme & Hilfe
 draft: false
+toc_max_heading_level: 2
 ---
 
 # Häufige Probleme & Hilfe
+
+## Desktop-Client kann keine Verbindung herstellen
+
+### Problem
+
+Nach der Eingabe der OpenCloud-Serveradresse öffnet sich der Browser nicht. Das Fenster des Desktop-Clients kann flackern und seine Speicherauslastung ansteigen.
+
+### Ursache
+
+Dieses Problem kann auftreten, wenn die OpenCloud-Instanz über einen externen Reverse Proxy aufgerufen wird, der die Verbindung oder die Servererkennung beeinträchtigt.
+
+### Lösung
+
+Wenden Sie sich an Ihre OpenCloud-Administration und bitten Sie darum, die Reverse-Proxy-Konfiguration zu überprüfen. Hinweise zur Fehlerbehebung finden Administratoren unter [Desktop-Client kann über einen externen Reverse Proxy keine Verbindung herstellen](/docs/next/admin/resources/common-issues/#desktop-client-cannot-connect-through-an-external-reverse-proxy).
 
 ## Symlinks werden mit dem Desktop-Client nicht synchronisiert
 
@@ -14,7 +29,7 @@ draft: false
 
 Symbolische Links (Symlinks) werden vom OpenCloud Desktop-Client nicht synchronisiert. Nutzer stellen häufig fest, dass verlinkte Ordner oder Dateien fehlen oder nicht zugänglich sind.
 
-### Erklärung
+### Ursache
 
 Symlinks werden aus mehreren wichtigen Gründen bewusst von der Synchronisation ausgeschlossen:
 
@@ -49,12 +64,18 @@ Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihre Sync-Root ist `/home
 
 ## Dateien mit "~$" im Namen werden nicht synchronisiert
 
-Der OpenCloud Desktop Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.
-Dabei handelt es sich um temporäre Sperrdateien, die von Microsoft Office-Anwendungen (Word, Excel, PowerPoint) erstellt werden, solange ein Dokument geöffnet ist.
+### Problem
+
+Der OpenCloud Desktop-Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.
 
 <img src={require("./img/common-issues/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500"/>
 
-Es sind keine eigentlichen Inhaltsdateien, sondern interne Marker, die verhindern sollen, dass mehrere Benutzer gleichzeitig dasselbe Dokument bearbeiten.  
-Sobald die Datei geschlossen wird, entfernt Office die `~$`-Datei automatisch.
+### Ursache
+
+Diese Dateien sind temporäre Sperrdateien, die von Microsoft Office-Anwendungen erstellt werden, solange ein Dokument geöffnet ist. Es sind keine eigentlichen Inhaltsdateien, sondern interne Marker, die verhindern, dass mehrere Benutzer gleichzeitig dasselbe Dokument bearbeiten.
+
+### Lösung
+
+Schließen Sie das Dokument in Microsoft Office. Office entfernt die zugehörige `~$`-Datei automatisch.
 
 Weitere Informationen finden Sie in dem [Microsoft-Supportartikel zu temporären Office-Sperrdateien von Word/Excel/PowerPoint](https://support.microsoft.com/en-gb/topic/-the-document-is-locked-for-editing-by-another-user-error-message-when-you-try-to-open-a-document-in-word-10b92aeb-2e23-25e0-9110-370af6edb638?).
