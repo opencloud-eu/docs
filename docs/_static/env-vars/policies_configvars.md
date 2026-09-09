@@ -2,13 +2,13 @@
 
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
-|`POLICIES_GRPC_DISABLED`| %NEXT% |bool|`Disables listening for GRPC API calls. Set this to true if the service should only handle requests through events.`|`"false"`|
+|`POLICIES_GRPC_DISABLED`| next |bool|`Disables listening for GRPC API calls. Set this to true if the service should only handle requests through events.`|`"false"`|
 |`POLICIES_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`"127.0.0.1:9125"`|
 |`POLICIES_DEBUG_ADDR`| 1.0.0 |string|`Bind address of the debug server, where metrics, health, config and debug endpoints will be exposed.`|`"127.0.0.1:9129"`|
 |`POLICIES_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`POLICIES_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`POLICIES_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
-|`POLICIES_EVENTS_DISABLED`| %NEXT% |bool|`Disables listening for events. Set this to true if the service should only handle GRPC requests.`|`"false"`|
+|`POLICIES_EVENTS_DISABLED`| next |bool|`Disables listening for events. Set this to true if the service should only handle GRPC requests.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`<br/>`POLICIES_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`POLICIES_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`POLICIES_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether the server should skip the client certificate verification during the TLS handshake.`|`"false"`|
