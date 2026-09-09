@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-08
+## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-09
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1149](https://github.com/opencloud-eu/docs/pull/1149)]
 - Update docs [[#1147](https://github.com/opencloud-eu/docs/pull/1147)]
 
 ## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-26
