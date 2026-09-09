@@ -7,6 +7,7 @@
 |`ACTIVITYLOG_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`ACTIVITYLOG_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`ACTIVITYLOG_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
+|`ACTIVITYLOG_EVENTS_DISABLED`| %NEXT% |bool|`Disables listening for events. Set this to true if the service should only handle HTTP requests.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
@@ -24,6 +25,7 @@
 |`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`ACTIVITYLOG_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`ACTIVITYLOG_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided ACTIVITYLOG_STORE_TLS_INSECURE will be seen as false.`|`""`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`"eu.opencloud.api.gateway"`|
+|`ACTIVITYLOG_HTTP_DISABLED`| 1.0.0 |bool|`Disables the HTTP service. Set this to true if the service should only handle events.`|`"false"`|
 |`ACTIVITYLOG_HTTP_ADDR`| 1.0.0 |string|`The bind address of the HTTP service.`|`"127.0.0.1:9195"`|
 |`ACTIVITYLOG_HTTP_ROOT`| 1.0.0 |string|`Subdirectory that serves as the root for this HTTP service.`|`"/"`|
 |`OC_CORS_ALLOW_ORIGINS`<br/>`ACTIVITYLOG_CORS_ALLOW_ORIGINS`| 1.0.0 |[]string|`A list of allowed CORS origins. See following chapter for more details: *Access-Control-Allow-Origin* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin. See the Environment Variable Types description for more details.`|`"[*]"`|
@@ -40,3 +42,4 @@
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`ACTIVITYLOG_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|`""`|
 |`ACTIVITYLOG_WRITE_BUFFER_DURATION`| 4.0.0 |Duration|`The duration to wait before flushing the write buffer. This is used to reduce the number of writes to the store.`|`"10s"`|
 |`ACTIVITYLOG_MAX_ACTIVITIES`| 4.0.0 |int|`The maximum number of activities to keep in the store per resource. If the number of activities exceeds this value, the oldest activities will be removed.`|`"6000"`|
+|`ACTIVITYLOG_NUM_CONSUMERS`| %NEXT% |int|`The amount of concurrent event consumers to start. Event consumers are used for updating the list of activities. Multiple consumers increase parallelisation, but will also increase CPU and memory demands.`|`"1"`|
