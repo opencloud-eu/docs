@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders
+
+### :octocat: Developer Documentation
+
+- Update docs [[#1139](https://github.com/opencloud-eu/docs/pull/1139)]
+
+### 👷 Admin Documentation
+
+- docs: clarify notifications compose variable [[#1150](https://github.com/opencloud-eu/docs/pull/1150)]
+- add the --remove-orphans part  [[#1148](https://github.com/opencloud-eu/docs/pull/1148)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1151](https://github.com/opencloud-eu/docs/pull/1151)]
+- Update docs [[#1149](https://github.com/opencloud-eu/docs/pull/1149)]
+- Update docs [[#1147](https://github.com/opencloud-eu/docs/pull/1147)]
+
 ## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-26
 
 ### ❤️ Thanks to all contributors! ❤️
