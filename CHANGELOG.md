@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.44.0](https://github.com/opencloud-eu/docs/releases/tag/3.44.0) - 2026-09-11
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👤 User Documentation
+
+- restructure common issues in user [[#1155](https://github.com/opencloud-eu/docs/pull/1155)]
+
 ## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-10
 
 ### ❤️ Thanks to all contributors! ❤️
