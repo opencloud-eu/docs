@@ -237,7 +237,7 @@ docker compose stop opencloud
 sudo docker run -it --rm -v <opencloud-data-path>:/var/lib/opencloud -v <opencloud-config-path>:/etc/opencloud opencloudeu/opencloud:<opencloud-version> idm resetpassword
 ```
 
-See [Common Issues](../resources/common-issues.md) for the full walkthrough, including how to find the volume names.
+See [Admin password cannot be changed in `.env`](../resources/common-issues/admin-password-reset.md) for the full walkthrough, including how to find the volume names.
 
 ### Create an app token
 

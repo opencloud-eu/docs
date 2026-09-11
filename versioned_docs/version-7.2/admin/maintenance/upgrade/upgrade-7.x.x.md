@@ -374,6 +374,6 @@ If issues occur during or after the upgrade:
 
 ## Useful Resources
 
-- [OpenCloud Troubleshooting Guide](../../resources/common-issues.md)
+- [OpenCloud Troubleshooting Guide](../../resources/common-issues/index.md)
 - [OpenCloud GitHub Issues](https://github.com/opencloud-eu/opencloud/issues)
 - [OpenCloud Web Extensions Releases](https://github.com/opencloud-eu/web-extensions/releases)
