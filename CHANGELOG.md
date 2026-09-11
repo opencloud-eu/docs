@@ -6,6 +6,10 @@
 
 @Svanvith
 
+### 👷 Admin Documentation
+
+- restructure the common issues in the admin part [[#1154](https://github.com/opencloud-eu/docs/pull/1154)]
+
 ### 👤 User Documentation
 
 - restructure common issues in user [[#1155](https://github.com/opencloud-eu/docs/pull/1155)]
