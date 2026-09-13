@@ -19,10 +19,11 @@ rm ldap.crt ldap.key
 docker compose restart
 ```
 
-The certificate and key are automatically regenerated when the container starts again. For more details, see [Internal LibreIDM certificate expires](../../admin/resources/common-issues/libreidm-cert-expiry.md).
+The certificate and key are automatically regenerated when the container starts again. For more details, see [Internal LibreIDM cert expires](https://docs.opencloud.eu/docs/admin/resources/common-issues/#internal-libreidm-cert-expires).
 
 Note: IDM is limited in its functionality. It only supports a subset of the LDAP operations (namely `BIND`, `SEARCH`, `ADD`, `MODIFY`, `DELETE`). Also, IDM currently does not do any schema verification (like. structural vs. auxiliary object classes, require and option attributes, syntax checks, …). Therefore it is not meant as a general purpose LDAP server.
 
 ## Table of Contents
+
 
 
