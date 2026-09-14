@@ -17,7 +17,7 @@ OpenCloud offers three release types to suit different needs: Rolling, Productio
 
 ### Feature Maturity in Rolling
 
-Rolling follows a release early, release often approach. New capabilities usually ship as a minimum viable product. The core use case works, but the feature is not yet complete. It then grows over the following rolling releases as we add depth, polish and edge case handling, often shaped by community feedback on the initial version.
+Rolling follows a "release early, release often" approach. New capabilities usually ship as a minimum viable product. The core use case works, but the feature is not yet complete. It then grows over the following rolling releases as we add depth, polish and edge case handling, often shaped by community feedback on the initial version.
 
 This is intentional and it is what makes Rolling the right choice for enthusiasts and for evaluation, and the wrong choice for production. By the time a feature reaches a Production release, it has been through several rolling iterations and full quality assurance.
 
