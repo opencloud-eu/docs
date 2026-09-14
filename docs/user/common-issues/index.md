@@ -15,3 +15,4 @@ Use this page to find troubleshooting guidance for common user issues.
 
 - [Symlinks are not synchronized](./desktop-client-symlinks.md)
 - [Microsoft Office lock files are not synchronized](./desktop-client-office-lock-files.md)
+- [Desktop Client setup loops and memory usage increases](./desktop-client-setup-loop.md)

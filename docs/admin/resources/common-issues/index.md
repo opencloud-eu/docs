@@ -25,6 +25,10 @@ Use this page to find troubleshooting guidance for common administration issues.
 - [Admin password cannot be changed in `.env`](./admin-password-reset.md)
 - [Login fails with LDAP Result Code 49](./ldap-invalid-credentials.md)
 
+## Desktop Client connections
+
+- [Desktop Client setup loops during authentication](./desktop-client-setup-loop.md)
+
 ## IDM and certificates
 
 - [Internal LibreIDM certificate expires](./libreidm-cert-expiry.md)
