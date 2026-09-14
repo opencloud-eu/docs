@@ -10,7 +10,13 @@ draft: false
 
 End-to-end encrypted folders provide an additional layer of protection for sensitive content in OpenCloud.
 
-When you create an end-to-end encrypted folder, you set a separate password for it. You need this password whenever you unlock the folder and access its contents on a device.
+When you create an end-to-end encrypted folder, you set a separate password for it. You need this password whenever you unlock the folder and access its contents in the Web Client.
+
+:::important
+
+End-to-end encrypted folders are currently intended for use with the Web Client. Mobile and Desktop Clients do not support the E2EE workflow and should not be used to access or modify encrypted folders.
+
+:::
 
 :::danger
 
@@ -83,13 +89,13 @@ When opening an encrypted folder, you are asked to enter the folder password.
 
 Enter the password and click “Unlock”.
 
-After unlocking the folder, you can access its contents on this device.
+After unlocking the folder, you can access its contents in the Web Client.
 
 <img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Unlocked encrypted folder" width="1920"/>
 
 :::note
 
-You must enter the password on each device where you want to access the encrypted folder.
+You must enter the password again when the encrypted folder needs to be unlocked in the Web Client.
 
 :::
 
@@ -120,6 +126,14 @@ width="1920"
 
 For details about creating files, see [Create files and folders](./create-rename-move.md#create-files-and-folders).
 
+## Share an encrypted folder
+
+You can share an end-to-end encrypted folder with other OpenCloud users.
+
+The recipient must have the folder password to unlock the encrypted folder and access its contents. Share the password separately using a secure channel.
+
+Public links are not supported for encrypted folders or files.
+
 ## Preview and download behavior
 
 Some files in end-to-end encrypted folders cannot be previewed directly in the browser.
@@ -130,13 +144,16 @@ In this case, OpenCloud indicates that no preview is available and offers the fi
 
 ## Limitations
 
-End-to-end encrypted folders are designed for storing sensitive data. Because their contents are encrypted, some OpenCloud features are not available.
+End-to-end encrypted folders are designed for storing sensitive data. Because their contents are encrypted, some OpenCloud features and clients are not supported.
 
 The following limitations apply:
 
+- End-to-end encrypted folders are currently intended for use with the Web Client. Mobile and Desktop Clients do not support the E2EE workflow and should not be used to access or modify encrypted folders. Existing encrypted files may be displayed in their encrypted form, while files added through these clients are not end-to-end encrypted and may not be usable in the Web Client.
 - Files and folders cannot be moved from another location in OpenCloud into an encrypted folder.
+- Files stored in encrypted folders are not included in search results.
 - Collaborative editing is not available for files stored in encrypted folders.
 - Office documents cannot be opened or edited in the browser with Collabora.
 - In-browser previews are not available for encrypted files.
+- Public links are not supported for encrypted folders or files.
 
-You can still upload existing files directly to an encrypted folder.
+You can still upload existing files directly to an encrypted folder using the Web Client.

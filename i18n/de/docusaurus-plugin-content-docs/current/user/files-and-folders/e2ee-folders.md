@@ -10,7 +10,13 @@ draft: false
 
 Ende-zu-Ende-verschlüsselte Ordner bieten eine zusätzliche Schutzebene für sensible Inhalte in OpenCloud.
 
-Beim Erstellen eines Ende-zu-Ende-verschlüsselten Ordners legen Sie ein separates Passwort dafür fest. Sie benötigen dieses Passwort jedes Mal, wenn Sie den Ordner auf einem Gerät entsperren und auf seine Inhalte zugreifen.
+Beim Erstellen eines Ende-zu-Ende-verschlüsselten Ordners legen Sie ein separates Passwort dafür fest. Sie benötigen dieses Passwort jedes Mal, wenn Sie den Ordner entsperren und im Web Client auf seine Inhalte zugreifen.
+
+:::important
+
+Ende-zu-Ende-verschlüsselte Ordner sind derzeit für die Verwendung mit dem Web Client vorgesehen. Mobile und Desktop Clients unterstützen den E2EE-Ablauf nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern.
+
+:::
 
 :::danger
 
@@ -83,13 +89,13 @@ Beim Öffnen eines verschlüsselten Ordners werden Sie aufgefordert, das Ordnerp
 
 Geben Sie das Passwort ein und klicken Sie auf „Entsperren“.
 
-Nach dem Entsperren des Ordners können Sie auf dessen Inhalte auf diesem Gerät zugreifen.
+Nach dem Entsperren des Ordners können Sie im Web Client auf dessen Inhalte zugreifen.
 
 <img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Entsperrter verschlüsselter Ordner" width="1920"/>
 
 :::note
 
-Sie müssen das Passwort auf jedem Gerät eingeben, auf dem Sie auf den verschlüsselten Ordner zugreifen möchten.
+Sie müssen das Passwort erneut eingeben, wenn der verschlüsselte Ordner im Web Client entsperrt werden muss.
 
 :::
 
@@ -120,6 +126,14 @@ width="1920"
 
 Weitere Informationen finden Sie unter [Dateien und Ordner erstellen](./create-rename-move.md#dateien-und-ordner-erstellen).
 
+## Verschlüsselten Ordner freigeben
+
+Sie können einen Ende-zu-Ende-verschlüsselten Ordner für andere OpenCloud-Benutzer freigeben.
+
+Die empfangende Person benötigt das Ordnerpasswort, um den verschlüsselten Ordner zu entsperren und auf seine Inhalte zuzugreifen. Übermitteln Sie das Passwort separat über einen sicheren Kanal.
+
+Öffentliche Links werden für verschlüsselte Ordner oder Dateien nicht unterstützt.
+
 ## Verhalten bei Vorschau und Download
 
 Einige Dateien in Ende-zu-Ende-verschlüsselten Ordnern können nicht direkt im Browser als Vorschau angezeigt werden.
@@ -130,13 +144,16 @@ In diesem Fall zeigt OpenCloud eine Meldung an, dass keine Vorschau verfügbar i
 
 ## Einschränkungen
 
-Ende-zu-Ende-verschlüsselte Ordner sind für die Speicherung sensibler Daten vorgesehen. Da ihre Inhalte verschlüsselt sind, stehen einige OpenCloud-Funktionen nicht zur Verfügung.
+Ende-zu-Ende-verschlüsselte Ordner sind für die Speicherung sensibler Daten vorgesehen. Da ihre Inhalte verschlüsselt sind, werden einige OpenCloud-Funktionen und Clients nicht unterstützt.
 
 Es gelten folgende Einschränkungen:
 
+- Ende-zu-Ende-verschlüsselte Ordner sind derzeit für die Verwendung mit dem Web Client vorgesehen. Mobile und Desktop Clients unterstützen den E2EE-Ablauf nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern. Vorhandene verschlüsselte Dateien werden in nicht unterstützten Clients möglicherweise in ihrer verschlüsselten Form angezeigt. Dateien, die über diese Clients hinzugefügt werden, sind nicht Ende-zu-Ende verschlüsselt und können möglicherweise nicht im Web Client verwendet werden.
 - Dateien und Ordner können nicht von einem anderen Speicherort in OpenCloud in einen verschlüsselten Ordner verschoben werden.
+- Dateien in verschlüsselten Ordnern werden nicht in den Suchergebnissen angezeigt.
 - Die gemeinsame Bearbeitung von Dateien in verschlüsselten Ordnern ist nicht verfügbar.
 - Office-Dokumente können im Browser nicht mit Collabora geöffnet oder bearbeitet werden.
 - Für verschlüsselte Dateien ist keine Vorschau im Browser verfügbar.
+- Öffentliche Links werden für verschlüsselte Ordner oder Dateien nicht unterstützt.
 
-Sie können vorhandene Dateien weiterhin direkt in einen verschlüsselten Ordner hochladen.
+Sie können vorhandene Dateien weiterhin mit dem Web Client direkt in einen verschlüsselten Ordner hochladen.
