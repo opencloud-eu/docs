@@ -55,7 +55,7 @@ curl -X DELETE "http://localhost:9200/opencloud-resources"
 
 ## What this does
 
-- The new, empty index (e.g. `bleve-v4` / `opencloud-resources-v4`) is created automatically. The old one stays until you remove it.
+- The new, empty index (e.g. `bleve-v5` / `opencloud-resources-v4`) is created automatically. The old one stays until you remove it.
 - New activity is indexed right away, but files that existed before and are not touched are not found until you re-index.
 - Re-indexing runs while the service keeps working.
 - After it finishes, delete every index except the one with the highest `-v<N>` suffix (indexes up to 7.4 have no suffix). Verify search first.
