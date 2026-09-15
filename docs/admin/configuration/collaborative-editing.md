@@ -32,7 +32,7 @@ COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:traefik/opencloud.yml
 
 The OpenCloud proxy needs to forward the `/yjs` route to the yjs container. This is automatically configured when using the `opencloud-compose` deployment example, you don't need to make any additional changes.
 
-If you are using a custom proxy setup however, ensure that requests to `/yjs` are correctly routed to the yjs container. Alternatively, you can host the yjs server on a separate URL and configure the OpenCloud web frontend to use that URL by setting the `WEB_OPTION_YJS_SERVER_URL` variable accordingly. Remember that you also need to adjust your CSP configuration to allow connections to the new URL.
+If you are using a custom proxy setup however, ensure that requests to `/yjs` are correctly routed to the yjs container. The route carries WebSocket traffic, so the proxy must use HTTP/1.1 and forward the `Upgrade` and `Connection` headers. See the `/yjs` block in the [external proxy guide](../getting-started/container/docker-compose/docker-external-proxy.md#set-up-the-final-nginx-reverse-proxy) for an Nginx example.
 
 ### Update the deployment
 
