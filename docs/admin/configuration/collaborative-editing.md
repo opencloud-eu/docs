@@ -22,7 +22,7 @@ This guide assumes that you already have a running deployment based on the `open
 
 ### Configure the `.env` file to deploy the Yjs server
 
-In the root directory of the `opencloud-compose` deployment example, add the yjs component to the `COMPOSE_FILE` variable in your `.env` file:
+If your current deployment uses only OpenCloud and Traefik, set `COMPOSE_FILE` as shown below. Otherwise, preserve the existing entries and append `:yjs/yjs.yml` to the current `COMPOSE_FILE` value:
 
 ```bash
 COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:traefik/opencloud.yml
