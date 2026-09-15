@@ -25,7 +25,9 @@ http://openid.net/specs/connect/1.0/issuer
 
 When “Block Common Exploits” is enabled for an OpenCloud proxy host in NGINX Proxy Manager, its file-injection rule can interpret the `http://` value as an unsafe query string and return `403`.
 
-Desktop Client 4.0.0 repeatedly retries the rejected request, causing the visible loop and increasing memory usage.
+Desktop Client 4.0.0 contains a bug that causes it to repeatedly retry a failed WebFinger request instead of reporting the error. This causes the visible setup loop and increasing memory usage.
+
+The retry behavior is fixed in Desktop Client 4.0.1. However, WebFinger discovery is still required in Desktop Client 4.0.1 and later, so the server or reverse proxy must allow the request to succeed.
 
 ## Solution
 
@@ -64,7 +66,5 @@ After correcting the proxy configuration, ask the user to restart the Desktop Cl
 Disabling “Block Common Exploits” is not a replacement for the required OpenCloud reverse proxy configuration. Compare your configuration with [Set Up the Final Nginx Reverse Proxy](../../getting-started/container/docker-compose/docker-external-proxy.md#set-up-the-final-nginx-reverse-proxy).
 
 In particular, verify the documented forwarded headers, buffering settings, timeouts, keep-alive limits, and maximum upload size. If you use a reverse proxy other than Nginx, configure the equivalent settings for that proxy.
-
-The indefinite retry has been fixed for Desktop Client 4.0.1. This client-side fix prevents the loop and increasing memory usage, but it does not make a WebFinger request blocked by the proxy succeed.
 
 For details, see [Desktop issue #1077](https://github.com/opencloud-eu/desktop/issues/1077) and the corresponding [Desktop Client fix](https://github.com/opencloud-eu/desktop/pull/1090).
