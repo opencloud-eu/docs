@@ -30,11 +30,15 @@ After OpenCloud has been upgraded, rebuild the search index using the commands f
 docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
 ```
 
-Verify that older files can be found in the Web Client. Then remove the old index:
+Verify that older files can be found in the Web Client. Then remove the old, unversioned Bleve index:
 
 ```bash
-docker compose exec opencloud sh -c 'rm -r "$OC_BASE_DATA_PATH/search/bleve"'
+docker compose exec opencloud rm -r /var/lib/opencloud/search/bleve
 ```
+
+This command removes only the old `bleve` index. OpenCloud 8.x.x uses the new versioned `bleve-v5` index.
+
+If you configured a custom `SEARCH_ENGINE_BLEVE_DATA_PATH`, replace `/var/lib/opencloud/search` with the configured path.
 
   </TabItem>
   <TabItem value="opensearch" label="OpenSearch">
