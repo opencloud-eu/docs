@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.44.0](https://github.com/opencloud-eu/docs/releases/tag/3.44.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @tbsbdr, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish release notes v8.0.0 [[#1165](https://github.com/opencloud-eu/docs/pull/1165)]
+- migration to 8.x.x version [[#1153](https://github.com/opencloud-eu/docs/pull/1153)]
+- Clarify rolling release maturity [[#1162](https://github.com/opencloud-eu/docs/pull/1162)]
+- restructure the common issues in the admin part [[#1154](https://github.com/opencloud-eu/docs/pull/1154)]
+
+### 👤 User Documentation
+
+- restructure common issues in user [[#1155](https://github.com/opencloud-eu/docs/pull/1155)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1161](https://github.com/opencloud-eu/docs/pull/1161)]
+
 ## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-10
 
 ### ❤️ Thanks to all contributors! ❤️
