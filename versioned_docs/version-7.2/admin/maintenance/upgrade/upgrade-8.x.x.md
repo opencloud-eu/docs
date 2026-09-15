@@ -6,32 +6,52 @@ description: Upgrading to OpenCloud 8.x.x
 draft: false
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Upgrading to OpenCloud 8.x.x
 
-OpenCloud 8.x.x changes how resources are indexed and builds a **new search index**. For the general upgrade steps (backup, image pull, config, restart), follow the [Standard Upgrade Guide](./upgrade.md).
+OpenCloud 8.x.x changes how resources are indexed and creates a new search index. Complete the regular upgrade first by following the [Standard Upgrade Guide](./upgrade.md).
 
-## Commands
+:::important
 
-### bleve (default)
+OpenCloud 8.x.x is a Rolling release and is not intended for production environments. For more information, see the [Release Lifecycle](../../resources/lifecycle.md).
+
+:::
+
+## Quick upgrade
+
+After OpenCloud has been upgraded, rebuild the search index using the commands for your search backend.
+
+<Tabs groupId="search-backend">
+  <TabItem value="bleve" label="Bleve (default)" default>
 
 ```bash
-# 1. Re-index all spaces (OpenCloud container)
 docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
+```
 
-# 2. Verify search works in the web UI (search for an older file), then remove the old index
+Verify that older files can be found in the Web Client. Then remove the old index:
+
+```bash
 docker compose exec opencloud sh -c 'rm -r "$OC_BASE_DATA_PATH/search/bleve"'
 ```
 
-### OpenSearch
+  </TabItem>
+  <TabItem value="opensearch" label="OpenSearch">
 
 ```bash
-# 1. Re-index all spaces (OpenCloud container)
 docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
+```
 
-# 2. Verify search works in the web UI (search for an older file), then list and delete the old index (OpenSearch container)
+Verify that older files can be found in the Web Client. Then list the existing indexes and remove the old one:
+
+```bash
 curl "http://localhost:9200/_cat/indices/opencloud-resources*?v"
 curl -X DELETE "http://localhost:9200/opencloud-resources"
 ```
+
+  </TabItem>
+</Tabs>
 
 ## What this does
 
