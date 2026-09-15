@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Explain bleve index removal [[#1169](https://github.com/opencloud-eu/docs/pull/1169)]
 - change bleve-v4 to blevee-v5 to avoid confusion [[#1167](https://github.com/opencloud-eu/docs/pull/1167)]
 
 ## [3.44.0](https://github.com/opencloud-eu/docs/releases/tag/3.44.0) - 2026-09-15
