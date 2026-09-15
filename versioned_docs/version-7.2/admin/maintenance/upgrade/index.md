@@ -13,6 +13,7 @@ This section collects the guides you need when upgrading OpenCloud.
 ## Guides
 
 - [Standard Upgrade Guide](./upgrade.md)
+- [Upgrade 8.x.x](./upgrade-8.x.x.md)
 - [Upgrade 7.x.x](./upgrade-7.x.x.md)
 - [Upgrade 4.0.x](./upgrade-4.0.0.md)
 - [Release notes](./release-notes.md)
