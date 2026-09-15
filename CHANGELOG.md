@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
+
 ## [3.45.0](https://github.com/opencloud-eu/docs/releases/tag/3.45.0) - 2026-09-15
 
 ### ❤️ Thanks to all contributors! ❤️
