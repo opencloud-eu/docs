@@ -128,13 +128,13 @@ Set `COMPOSE_FILE` depending on where the reverse proxy runs.
 If the reverse proxy runs on the same machine as OpenCloud:
 
 ```env
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
 ```
 
 If the reverse proxy runs on a different machine, use the exposed variants, which publish the container ports on all network interfaces so the proxy host can reach them:
 
 ```env
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud-exposed.yml:external-proxy/collabora-exposed.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:external-proxy/opencloud-exposed.yml:external-proxy/collabora-exposed.yml
 ```
 
 :::warning

@@ -168,7 +168,7 @@ Through Collabora Online integration, office documents can be opened and collabo
 
 ### Real-Time Editing
 
-Multiple users can work on the same files simultaneously. Changes sync immediately, and automatic locking mechanisms prevent version conflicts—ensuring smooth co-editing.
+Multiple users can work on the same files simultaneously. This covers office documents through Collabora Online as well as text files such as Markdown directly in the web interface. Changes sync immediately, and automatic locking mechanisms prevent version conflicts—ensuring smooth co-editing.
 
 ### Calendar and Contacts
 
