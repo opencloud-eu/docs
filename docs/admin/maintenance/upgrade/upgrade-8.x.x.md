@@ -36,7 +36,7 @@ Verify that older files can be found in the Web Client. Then remove the old, unv
 docker compose exec opencloud rm -r /var/lib/opencloud/search/bleve
 ```
 
-This command removes only the old `bleve` index. OpenCloud 8.x.x uses the new versioned `bleve-v5` index.
+This command removes only the old `bleve` index. OpenCloud 8.x.x uses the new versioned `bleve-v<N>` index.
 
 If you configured a custom `SEARCH_ENGINE_BLEVE_DATA_PATH`, replace `/var/lib/opencloud/search` with the configured path.
 
@@ -53,6 +53,8 @@ Verify that older files can be found in the Web Client. Then list the existing i
 curl "http://localhost:9200/_cat/indices/opencloud-resources*?v"
 curl -X DELETE "http://localhost:9200/opencloud-resources"
 ```
+
+This command removes only the old `opencloud-resources` index. OpenCloud 8.x.x uses the new versioned `opencloud-resources-v<N>` index.
 
   </TabItem>
 </Tabs>
