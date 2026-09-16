@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @v-scharf
+@JammingBen, @Svanvith, @v-scharf
 
 ### 👷 Admin Documentation
 
+- add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
 - Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
 - add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
 
