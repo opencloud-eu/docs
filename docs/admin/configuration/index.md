@@ -18,6 +18,7 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Frontend Update Check](./frontend-update-check.md)
 - [Mail Notifications](./mail-notifications.md)
 - [Radicale Integration](./radicale-integration.md)
+- [Collaborative Editing](./collaborative-editing.md)
 - [Web Applications](./web-applications.md)
 - [Link Password Policy](./link-password-policy.md)
 - [Default Language](./default-language.md)
