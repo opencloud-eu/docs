@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Clarify search index versioning in 8.x.x upgrade guide [[#1173](https://github.com/opencloud-eu/docs/pull/1173)]
 - add webfinger support info for desktop client 4.0) [[#1164](https://github.com/opencloud-eu/docs/pull/1164)]
 - add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
 - Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
