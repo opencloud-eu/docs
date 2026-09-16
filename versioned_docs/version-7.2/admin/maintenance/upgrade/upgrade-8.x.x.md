@@ -21,7 +21,7 @@ OpenCloud 8.x.x is a Rolling release and is not intended for production environm
 
 ## Quick upgrade
 
-After OpenCloud has been upgraded, rebuild the search index using the commands for your search backend.
+After OpenCloud has been upgraded, rebuild the search index using the commands for your search backend. This creates a new, versioned index (e.g. `bleve-v5` / `opencloud-resources-v5`) and leaves the old one in place until you remove it.
 
 <Tabs groupId="search-backend">
   <TabItem value="bleve" label="Bleve (default)" default>
@@ -36,7 +36,7 @@ Verify that older files can be found in the Web Client. Then remove the old, unv
 docker compose exec opencloud rm -r /var/lib/opencloud/search/bleve
 ```
 
-This command removes only the old `bleve` index. OpenCloud 8.x.x uses the new versioned `bleve-v<N>` index.
+This removes only the old, unversioned `bleve` index; the new versioned index is not affected.
 
 If you configured a custom `SEARCH_ENGINE_BLEVE_DATA_PATH`, replace `/var/lib/opencloud/search` with the configured path.
 
@@ -54,17 +54,17 @@ curl "http://localhost:9200/_cat/indices/opencloud-resources*?v"
 curl -X DELETE "http://localhost:9200/opencloud-resources"
 ```
 
-This command removes only the old `opencloud-resources` index. OpenCloud 8.x.x uses the new versioned `opencloud-resources-v<N>` index.
+This removes only the old, unversioned `opencloud-resources` index; the new versioned index is not affected.
 
   </TabItem>
 </Tabs>
 
 ## What this does
 
-- The new, empty index (e.g. `bleve-v5` / `opencloud-resources-v4`) is created automatically. The old one stays until you remove it.
+- The new, empty index (e.g. `bleve-v5` / `opencloud-resources-v5`) is created automatically. The old one stays until you remove it.
 - New activity is indexed right away, but files that existed before and are not touched are not found until you re-index.
 - Re-indexing runs while the service keeps working.
-- After it finishes, delete every index except the one with the highest `-v<N>` suffix (indexes up to 7.4 have no suffix). Verify search first.
+- After it finishes, delete every index except the one with the highest version suffix (indexes up to 7.4 have no suffix). Verify search first.
 
 :::note
 
