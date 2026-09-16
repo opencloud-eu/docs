@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen, @Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- Clarify search index versioning in 8.x.x upgrade guide [[#1173](https://github.com/opencloud-eu/docs/pull/1173)]
+- add webfinger support info for desktop client 4.0) [[#1164](https://github.com/opencloud-eu/docs/pull/1164)]
+- add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
+- Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
+- add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1172](https://github.com/opencloud-eu/docs/pull/1172)]
+
 ## [3.45.0](https://github.com/opencloud-eu/docs/releases/tag/3.45.0) - 2026-09-15
 
 ### ❤️ Thanks to all contributors! ❤️
