@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- add webfinger support info for desktop client 4.0) [[#1164](https://github.com/opencloud-eu/docs/pull/1164)]
 - add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
 - Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
 - add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
