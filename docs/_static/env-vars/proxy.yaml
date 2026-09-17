@@ -172,6 +172,7 @@ policies:
     skip_x_access_token: false
 additional_policies: []
 oidc:
+  audiences: []
   issuer: https://localhost:9200
   insecure: false
   access_token_verify_method: jwt
