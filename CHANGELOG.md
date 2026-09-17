@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders, @v-scharf
+@Svanvith, @openclouders, @v-scharf
 
 ### 👷 Admin Documentation
 
+- remove the upgrade guide to 8.x from version 4.x and 7.x [[#1179](https://github.com/opencloud-eu/docs/pull/1179)]
 - publish 8.0.1 release notes [[#1177](https://github.com/opencloud-eu/docs/pull/1177)]
 
 ### 📦️ Build&Tools
