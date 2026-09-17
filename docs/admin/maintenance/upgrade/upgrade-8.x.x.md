@@ -19,6 +19,27 @@ OpenCloud 8.x.x is a Rolling release and is not intended for production environm
 
 :::
 
+## External proxy
+
+Should you be using Nginx as an external proxy, then you need to upgrade your [Nginx configuration](../../getting-started/container/docker-compose/docker-external-proxy.md). You need to add an extra `location` block to the configuration of your main *OpenCloud* server:
+
+```
+    # WebSocket route for the yjs server (collaborative editing).
+    # Only needed if yjs/yjs.yml is part of COMPOSE_FILE.
+    location ^~ /yjs {
+        proxy_pass http://127.0.0.1:9200;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+```
+
 ## Quick upgrade
 
 After OpenCloud has been upgraded, rebuild the search index using the commands for your search backend. This creates a new, versioned index (e.g. `bleve-v5` / `opencloud-resources-v5`) and leaves the old one in place until you remove it.
