@@ -52,6 +52,37 @@ PosixFS in this so called _non collaborative mode_ is the default for new instal
 
 If that is needed, data needs to be copied into a new installation of OpenCloud.
 
+## Separating OpenCloud Internal Data and User Storage
+
+In many deployments, it is desirable to separate OpenCloud internal service data from user space data. This allows metadata, caches, and internal service data to stay on relatively small, fast, and stable local storage, while user data is stored on large-capacity storage (for example iSCSI, NFS, or CephFS).
+
+In OpenCloud, user and project space content is stored under `OC_BASE_DATA_PATH/storage/users`.
+You can mount this subtree to a separate file system while keeping the rest of the OpenCloud internal data on local storage.
+
+:::important
+
+Do not split the `storage/users` subtree itself across multiple file systems.
+Everything below `OC_BASE_DATA_PATH/storage/users` must stay on one file system.
+
+OpenCloud assumes atomic rename operations (`os.Rename`) for internal workflows.
+Cross-file-system renames can fail or cause unwanted side effects.
+
+:::
+
+### Docker Compose Example
+
+The following pattern keeps `/var/lib/opencloud` on SSD while moving only user space data to another disk:
+
+```yaml
+services:
+  opencloud:
+    volumes:
+      - ${OC_DATA_DIR:-opencloud-data}:/var/lib/opencloud
+      - ${OC_USERS_DIR:-opencloud-users}:/var/lib/opencloud/storage/users
+```
+
+`OC_USERS_DIR` is an example variable name you can define in your deployment environment.
+
 ## PosixFS Non Collaborative Mode
 
 This describes special aspects of the non collaborative mode.
