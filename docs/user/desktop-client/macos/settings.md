@@ -34,9 +34,9 @@ You can customize OpenCloud Desktop settings by following these steps:
 
   <img src={require(".././img/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
 
-### Download and Upload Bandwidth
+### Network Settings
 
-- Set bandwidth limits:
+- Set download and upload bandwidth limits:
   - No limit (default)
   - Automatically adjust limit
   - Set a specific limit manually
