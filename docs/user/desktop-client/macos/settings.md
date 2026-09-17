@@ -34,15 +34,6 @@ You can customize OpenCloud Desktop settings by following these steps:
 
   <img src={require(".././img/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
 
-### Network Settings
-
-- Select how the client handles proxy settings:
-  - No proxy
-  - Use system proxy (default)
-  - Manually enter a proxy
-
-  <img src={require(".././img/settings/settings-network.png").default} alt="Settings network" width="400"/>
-
 ### Download and Upload Bandwidth
 
 - Set bandwidth limits:
