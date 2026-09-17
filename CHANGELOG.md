@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish 8.0.1 release notes [[#1177](https://github.com/opencloud-eu/docs/pull/1177)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1174](https://github.com/opencloud-eu/docs/pull/1174)]
+
 ## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-16
 
 ### ❤️ Thanks to all contributors! ❤️
