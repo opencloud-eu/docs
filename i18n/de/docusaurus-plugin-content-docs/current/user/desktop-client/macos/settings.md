@@ -36,16 +36,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 ### Netzwerkeinstellungen
 
-- Wählen Sie aus, wie der Client mit Proxy-Einstellungen umgehen soll:
-  - Kein Proxy
-  - Systemproxy verwenden (Standard)
-  - Manuelles Eingeben eines Proxys
-
-  <img src={require("../img/settings/settings-network.png").default} alt="settings network" width="400"/>
-
-  ### Download- und Upload-Bandbreite
-
-- Legen Sie Bandbreitenlimits fest:
+- Legen Sie Download- und Upload-Bandbreitenlimits fest:
   - Kein Limit (Standard)
   - Automatische Anpassung des Limits
   - Ein bestimmtes Limit manuell einstellen
