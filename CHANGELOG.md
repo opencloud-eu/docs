@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-21
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- add Yjs Nginx guidance to the 8.x upgrade guide [[#1181](https://github.com/opencloud-eu/docs/pull/1181)]
+
 ## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
 
 ### ❤️ Thanks to all contributors! ❤️
