@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- remove the upgrade guide to 8.x from version 4.x and 7.x [[#1179](https://github.com/opencloud-eu/docs/pull/1179)]
+- publish 8.0.1 release notes [[#1177](https://github.com/opencloud-eu/docs/pull/1177)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1174](https://github.com/opencloud-eu/docs/pull/1174)]
+
 ## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-16
 
 ### ❤️ Thanks to all contributors! ❤️
