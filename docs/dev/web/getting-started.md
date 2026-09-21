@@ -90,19 +90,3 @@ Additional JavaScript files to further customize the user experience and adapt i
 :::note
 Check out the [extension system docs](./extension-system/) for a more convenient way to add functionality to the Web client.
 :::
-
-### `sentry`
-
-Web supports [Sentry](https://sentry.io/welcome/) to provide monitoring and error tracking.
-To enable sending data to a Sentry instance, you can use the following configuration keys:
-
-- `sentry.dsn` Should contain the DSN for your sentry project.
-- `sentry.environment`: Lets you specify the environment to use in Sentry. Defaults to `production`.
-
-Any other key under `sentry` will be forwarded to the Sentry initialization. You can find out more
-settings in the [Sentry docs](https://docs.sentry.io/platforms/javascript/configuration/).
-
-:::note
-If you are using an old version of Sentry (9 and before), you might want to add the setting `sentry.autoSessionTracking: false` to avoid errors related to breaking changes introduced in the
-integration libraries.
-:::
