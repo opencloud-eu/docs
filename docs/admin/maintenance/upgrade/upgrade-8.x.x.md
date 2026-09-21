@@ -71,3 +71,13 @@ This command removes only the old `opencloud-resources` index.
 `--insecure` is needed because the internal gRPC transport is not TLS-encrypted by default (`OC_GRPC_CLIENT_TLS_MODE` defaults to `off`). Drop it only if you run gRPC with TLS. This is safe here — the command just triggers a rescan; the re-indexing happens inside the OpenCloud process.
 
 :::
+
+## Yjs and external Nginx proxies
+
+Real-time collaborative editing in the OpenCloud Editor requires the Yjs service, which must be enabled explicitly.
+
+If you have enabled Yjs and use an external Nginx reverse proxy, update your Nginx configuration to forward the `/yjs` WebSocket route.
+
+If Yjs is not enabled, the OpenCloud Editor continues to work without real-time collaborative editing.
+
+See [Proxy Config](../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config) for the required Nginx configuration.
