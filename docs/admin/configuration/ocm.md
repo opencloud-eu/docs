@@ -17,8 +17,8 @@ OCM must be configured on every participating OpenCloud instance.
 This guide uses the following example instances:
 
 ```text
-cloud.anja.opencloud.rocks
-cloud.heiko.opencloud.rocks
+cloud1.opencloud.test
+cloud2.opencloud.test
 ```
 
 Replace these domains with the domains of your OpenCloud instances.
@@ -86,74 +86,74 @@ Example configuration:
 ```json
 [
   {
-    "name": "OpenCloud Anja",
-    "full_name": "OpenCloud Anja",
+    "name": "OpenCloud 1",
+    "full_name": "OpenCloud 1",
     "organization": "OpenCloud",
-    "domain": "cloud.anja.opencloud.rocks",
-    "homepage": "https://cloud.anja.opencloud.rocks",
-    "description": "OpenCloud instance Anja",
+    "domain": "cloud1.opencloud.test",
+    "homepage": "https://cloud1.opencloud.test",
+    "description": "OpenCloud instance 1",
     "services": [
       {
         "endpoint": {
           "type": {
             "name": "OCM",
-            "description": "OpenCloud Anja OCM API"
+            "description": "OpenCloud 1 OCM API"
           },
-          "name": "OpenCloud Anja OCM API",
-          "path": "https://cloud.anja.opencloud.rocks/ocm/",
+          "name": "OpenCloud 1 OCM API",
+          "path": "https://cloud1.opencloud.test/ocm/",
           "is_monitored": true
         },
         "api_version": "0.0.1",
-        "host": "https://cloud.anja.opencloud.rocks"
+        "host": "https://cloud1.opencloud.test"
       },
       {
         "endpoint": {
           "type": {
             "name": "Webdav",
-            "description": "OpenCloud Anja WebDAV API"
+            "description": "OpenCloud 1 WebDAV API"
           },
-          "name": "OpenCloud Anja WebDAV API",
-          "path": "https://cloud.anja.opencloud.rocks/dav/",
+          "name": "OpenCloud 1 WebDAV API",
+          "path": "https://cloud1.opencloud.test/dav/",
           "is_monitored": true
         },
         "api_version": "0.0.1",
-        "host": "https://cloud.anja.opencloud.rocks"
+        "host": "https://cloud1.opencloud.test"
       }
     ]
   },
   {
-    "name": "OpenCloud Heiko",
-    "full_name": "OpenCloud Heiko",
+    "name": "OpenCloud 2",
+    "full_name": "OpenCloud 2",
     "organization": "OpenCloud",
-    "domain": "cloud.heiko.opencloud.rocks",
-    "homepage": "https://cloud.heiko.opencloud.rocks",
-    "description": "OpenCloud instance Heiko",
+    "domain": "cloud2.opencloud.test",
+    "homepage": "https://cloud2.opencloud.test",
+    "description": "OpenCloud instance 2",
     "services": [
       {
         "endpoint": {
           "type": {
             "name": "OCM",
-            "description": "OpenCloud Heiko OCM API"
+            "description": "OpenCloud 2 OCM API"
           },
-          "name": "OpenCloud Heiko OCM API",
-          "path": "https://cloud.heiko.opencloud.rocks/ocm/",
+          "name": "OpenCloud 2 OCM API",
+          "path": "https://cloud2.opencloud.test/ocm/",
           "is_monitored": true
         },
         "api_version": "0.0.1",
-        "host": "https://cloud.heiko.opencloud.rocks"
+        "host": "https://cloud2.opencloud.test"
       },
       {
         "endpoint": {
           "type": {
             "name": "Webdav",
-            "description": "OpenCloud Heiko WebDAV API"
+            "description": "OpenCloud 2 WebDAV API"
           },
-          "name": "OpenCloud Heiko WebDAV API",
-          "path": "https://cloud.heiko.opencloud.rocks/dav/",
+          "name": "OpenCloud 2 WebDAV API",
+          "path": "https://cloud2.opencloud.test/dav/",
           "is_monitored": true
         },
         "api_version": "0.0.1",
-        "host": "https://cloud.heiko.opencloud.rocks"
+        "host": "https://cloud2.opencloud.test"
       }
     ]
   }
@@ -165,13 +165,13 @@ The `domain` values must not include a protocol.
 Correct:
 
 ```json
-"domain": "cloud.heiko.opencloud.rocks"
+"domain": "cloud2.opencloud.test"
 ```
 
 Incorrect:
 
 ```json
-"domain": "https://cloud.heiko.opencloud.rocks"
+"domain": "https://cloud2.opencloud.test"
 ```
 
 Validate the JSON file:
@@ -342,20 +342,20 @@ docker compose up -d --force-recreate opencloud
 
 Run the connectivity checks from inside the OpenCloud container.
 
-On the Anja instance, check the Heiko instance:
+On the first instance, check the second instance:
 
 ```bash
-docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/ocm/
-docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/sciencemesh/
-docker compose exec opencloud curl -I https://cloud.heiko.opencloud.rocks/dav/
+docker compose exec opencloud curl -I https://cloud2.opencloud.test/ocm/
+docker compose exec opencloud curl -I https://cloud2.opencloud.test/sciencemesh/
+docker compose exec opencloud curl -I https://cloud2.opencloud.test/dav/
 ```
 
-On the Heiko instance, check the Anja instance:
+On the second instance, check the first instance:
 
 ```bash
-docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/ocm/
-docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/sciencemesh/
-docker compose exec opencloud curl -I https://cloud.anja.opencloud.rocks/dav/
+docker compose exec opencloud curl -I https://cloud1.opencloud.test/ocm/
+docker compose exec opencloud curl -I https://cloud1.opencloud.test/sciencemesh/
+docker compose exec opencloud curl -I https://cloud1.opencloud.test/dav/
 ```
 
 The following responses are expected:
