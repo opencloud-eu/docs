@@ -20,7 +20,7 @@ Files and folders can appear in different states, depending on whether they are 
 - Stored locally and always accessible offline.
 - Windows will not remove the file automatically.
 
-<img src={require(".././img/vfs/full-pinned.png").default} alt="full pinned file icon" width="400"/>
+<img src={require(".././img/windows/vfs/full-pinned.png").default} alt="full pinned file icon" width="400"/>
 
 ### Available on this device (full)
 
@@ -28,14 +28,14 @@ Files and folders can appear in different states, depending on whether they are 
 - Can be removed by Windows if disk space is needed.
 - Newly created or added files automatically receive this state.
 
-<img src={require(".././img/vfs/full.png").default} alt="full file icon" width="400"/>
+<img src={require(".././img/windows/vfs/full.png").default} alt="full file icon" width="400"/>
 
 ### Available when online (placeholder)
 
 - Shown in File Explorer but stored only in the cloud.
 - Downloaded automatically when opened; requires an internet connection.
 
-<img src={require(".././img/vfs/placeholder.png").default} alt="placeholder file icon" width="400"/>
+<img src={require(".././img/windows/vfs/placeholder.png").default} alt="placeholder file icon" width="400"/>
 
 ## Making Items Available Offline
 
@@ -44,7 +44,7 @@ To store a file, folder, or Space locally:
 1. Right-click the item in File Explorer.
 2. Select “Always keep on this device”.
 
-<img src={require(".././img/vfs/always-keep-on-this-device.png").default} alt="select always keep on this device" width="400"/>
+<img src={require(".././img/windows/vfs/always-keep-on-this-device.png").default} alt="select always keep on this device" width="400"/>
 
 ## Freeing Up Disk Space
 
@@ -53,7 +53,7 @@ To remove local copies while keeping them visible in File Explorer:
 1. Right-click the item.
 2. Select “Free up space”.
 
-<img src={require(".././img/vfs/free-up-space.png").default} alt="select free up space" width="400"/>
+<img src={require(".././img/windows/vfs/free-up-space.png").default} alt="select free up space" width="400"/>
 
 ## Accessing Files
 

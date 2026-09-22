@@ -12,7 +12,7 @@ In the iOS app settings changes can be made, such as
     - Media files
     and more
 
-<img src={require("../.././img/settings/settings.png").default} alt="Settings" width="1920"/>
+<img src={require("../.././img/general/index/settings.png").default} alt="Settings" width="1920"/>
 
 ## Userinterface
 
