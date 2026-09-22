@@ -1,15 +1,19 @@
 # Changelog
 
-## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-21
+## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @kulmann
+@Svanvith, @kulmann, @openclouders
 
 ### 👷 Admin Documentation
 
 - docs: remove sentry config from web docs [[#1183](https://github.com/opencloud-eu/docs/pull/1183)]
 - add Yjs Nginx guidance to the 8.x upgrade guide [[#1181](https://github.com/opencloud-eu/docs/pull/1181)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1175](https://github.com/opencloud-eu/docs/pull/1175)]
 
 ## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
 
