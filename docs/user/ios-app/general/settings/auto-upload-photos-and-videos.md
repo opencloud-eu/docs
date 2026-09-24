@@ -25,12 +25,12 @@ Before using Auto Upload, ensure that:
 1. Open the **OpenCloud** app.
 2. Tap **Settings**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/settings-button.png").default} alt="Settings Button" height="650"/>
+<img src={require("../../img/general/settings/auto-upload-photos-and-videos/settings-button.png").default} alt="Settings Button" height="650"/>
 
 3. Scroll down to the **Media Files** section.
 4. Tap **Media Upload**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/media-upload-button.png").default} alt="Media Upload Button" height="650"/>
+<img src={require("../../img/general/settings/auto-upload-photos-and-videos/media-upload-button.png").default} alt="Media Upload Button" height="650"/>
 
 ## Enable Auto Upload
 
@@ -45,7 +45,7 @@ The following options are available:
 - **Auto Upload Videos** – Automatically uploads newly created videos.
 - **Photo upload path** – Selects the destination folder for uploaded photos.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/auto-upload-photos.png").default} alt="Auto Upload settings" height="650"/>
+<img src={require("../../img/general/settings/auto-upload-photos-and-videos/auto-upload-photos.png").default} alt="Auto Upload settings" height="650"/>
 
 ## Select the Upload Destination
 
@@ -55,7 +55,7 @@ Before Auto Upload can begin, you must select the destination folder.
 2. Browse to the folder where photos should be uploaded.
 3. Tap **Select Destination**.
 
-<img src={require("../../img/settings/auto-upload-photos-and-videos/select-destination.png").default} alt="Selecting an upload destination" height="650"/>
+<img src={require("../../img/general/settings/auto-upload-photos-and-videos/select-destination.png").default} alt="Selecting an upload destination" height="650"/>
 
 ## How Auto Upload Works
 

@@ -116,7 +116,7 @@ curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' 
 
 Create a new App Password
 
-![Generate App Password](./img/generate-pass-nc.png)
+![Generate App Password](./img/migrate/generate-pass-nc.png)
 
 </TabItem>
 </Tabs>

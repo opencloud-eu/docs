@@ -150,7 +150,7 @@ opencloud init --diff
 
 If you see `no changes, your config is up to date`, no further action is needed.
 
-<img src={require("../img/init-diff.png").default} alt="init -diff" width="1920"/>
+<img src={require("../img/upgrade/standard-upgrade-guide/init-diff.png").default} alt="init -diff" width="1920"/>
 
 In that case, [exit the temporary container](#exit-the-temporary-container) and start OpenCloud.
 

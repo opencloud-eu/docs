@@ -1,11 +1,11 @@
 
-2026-09-10-00-24-25
+2026-09-17-06-05-59
 
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-| FRONTEND_MAX_CONCURRENCY is deprecated and will be removed in a future version. Please use SHARING_MAX_CONCURRENCY (sharing service) instead. | next | next-prod | SHARING_MAX_CONCURRENCY |
+| FRONTEND_MAX_CONCURRENCY is deprecated and will be removed in a future version. Please use SHARING_MAX_CONCURRENCY (sharing service) instead. | 8.0.0 | next-prod | SHARING_MAX_CONCURRENCY |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
 | The OCS API is deprecated | 1.0.0 | next-prod |  |
@@ -22,16 +22,16 @@
 | FRONTEND_OCS_INCLUDE_OCM_SHAREES, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
 | FRONTEND_OCS_PUBLIC_WRITABLE_SHARE_MUST_HAVE_PASSWORD, the OCS API is deprecated | 1.0.0 | next-prod |  |
-| FRONTEND_EVENTS_ENDPOINT is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENDPOINT (sharing service) instead. | next | next-prod | SHARING_EVENTS_ENDPOINT |
-| FRONTEND_EVENTS_CLUSTER is deprecated and will be removed in a future version. Please use SHARING_EVENTS_CLUSTER (sharing service) instead. | next | next-prod | SHARING_EVENTS_CLUSTER |
-| FRONTEND_EVENTS_TLS_INSECURE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_INSECURE (sharing service) instead. | next | next-prod | SHARING_EVENTS_TLS_INSECURE |
-| FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE (sharing service) instead. | next | next-prod | SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE |
-| FRONTEND_EVENTS_ENABLE_TLS is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENABLE_TLS (sharing service) instead. | next | next-prod | SHARING_EVENTS_ENABLE_TLS |
-| FRONTEND_EVENTS_AUTH_USERNAME is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_USERNAME (sharing service) instead. | next | next-prod | SHARING_EVENTS_AUTH_USERNAME |
-| FRONTEND_EVENTS_AUTH_PASSWORD is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_PASSWORD (sharing service) instead. | next | next-prod | SHARING_EVENTS_AUTH_PASSWORD |
-| FRONTEND_AUTO_ACCEPT_SHARES is deprecated and will be removed in a future version. Please use SHARING_AUTO_ACCEPT_SHARES (sharing service) instead. | next | next-prod | SHARING_AUTO_ACCEPT_SHARES |
-| FRONTEND_SERVICE_ACCOUNT_ID is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT (sharing service) instead. | next | next-prod | SHARING_SERVICE_ACCOUNT |
-| FRONTEND_SERVICE_ACCOUNT_SECRET is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT_SECRET (sharing service) instead. | next | next-prod | SHARING_SERVICE_ACCOUNT_SECRET |
+| FRONTEND_EVENTS_ENDPOINT is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENDPOINT (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_ENDPOINT |
+| FRONTEND_EVENTS_CLUSTER is deprecated and will be removed in a future version. Please use SHARING_EVENTS_CLUSTER (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_CLUSTER |
+| FRONTEND_EVENTS_TLS_INSECURE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_INSECURE (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_TLS_INSECURE |
+| FRONTEND_EVENTS_TLS_ROOT_CA_CERTIFICATE is deprecated and will be removed in a future version. Please use SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_TLS_ROOT_CA_CERTIFICATE |
+| FRONTEND_EVENTS_ENABLE_TLS is deprecated and will be removed in a future version. Please use SHARING_EVENTS_ENABLE_TLS (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_ENABLE_TLS |
+| FRONTEND_EVENTS_AUTH_USERNAME is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_USERNAME (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_AUTH_USERNAME |
+| FRONTEND_EVENTS_AUTH_PASSWORD is deprecated and will be removed in a future version. Please use SHARING_EVENTS_AUTH_PASSWORD (sharing service) instead. | 8.0.0 | next-prod | SHARING_EVENTS_AUTH_PASSWORD |
+| FRONTEND_AUTO_ACCEPT_SHARES is deprecated and will be removed in a future version. Please use SHARING_AUTO_ACCEPT_SHARES (sharing service) instead. | 8.0.0 | next-prod | SHARING_AUTO_ACCEPT_SHARES |
+| FRONTEND_SERVICE_ACCOUNT_ID is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT (sharing service) instead. | 8.0.0 | next-prod | SHARING_SERVICE_ACCOUNT |
+| FRONTEND_SERVICE_ACCOUNT_SECRET is deprecated and will be removed in a future version. Please use SHARING_SERVICE_ACCOUNT_SECRET (sharing service) instead. | 8.0.0 | next-prod | SHARING_SERVICE_ACCOUNT_SECRET |
 
 ## Environment variables for the **frontend** service
 

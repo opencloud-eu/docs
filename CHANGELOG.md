@@ -1,5 +1,85 @@
 # Changelog
 
+## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @kulmann, @openclouders
+
+### 👷 Admin Documentation
+
+- docs: remove sentry config from web docs [[#1183](https://github.com/opencloud-eu/docs/pull/1183)]
+- add Yjs Nginx guidance to the 8.x upgrade guide [[#1181](https://github.com/opencloud-eu/docs/pull/1181)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1175](https://github.com/opencloud-eu/docs/pull/1175)]
+
+## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- remove the upgrade guide to 8.x from version 4.x and 7.x [[#1179](https://github.com/opencloud-eu/docs/pull/1179)]
+- publish 8.0.1 release notes [[#1177](https://github.com/opencloud-eu/docs/pull/1177)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1174](https://github.com/opencloud-eu/docs/pull/1174)]
+
+## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen, @Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- Clarify search index versioning in 8.x.x upgrade guide [[#1173](https://github.com/opencloud-eu/docs/pull/1173)]
+- add webfinger support info for desktop client 4.0) [[#1164](https://github.com/opencloud-eu/docs/pull/1164)]
+- add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
+- Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
+- add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1172](https://github.com/opencloud-eu/docs/pull/1172)]
+
+## [3.45.0](https://github.com/opencloud-eu/docs/releases/tag/3.45.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- Explain bleve index removal [[#1169](https://github.com/opencloud-eu/docs/pull/1169)]
+- change bleve-v4 to blevee-v5 to avoid confusion [[#1167](https://github.com/opencloud-eu/docs/pull/1167)]
+
+## [3.44.0](https://github.com/opencloud-eu/docs/releases/tag/3.44.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @tbsbdr, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish release notes v8.0.0 [[#1165](https://github.com/opencloud-eu/docs/pull/1165)]
+- migration to 8.x.x version [[#1153](https://github.com/opencloud-eu/docs/pull/1153)]
+- Clarify rolling release maturity [[#1162](https://github.com/opencloud-eu/docs/pull/1162)]
+- restructure the common issues in the admin part [[#1154](https://github.com/opencloud-eu/docs/pull/1154)]
+
+### 👤 User Documentation
+
+- restructure common issues in user [[#1155](https://github.com/opencloud-eu/docs/pull/1155)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1161](https://github.com/opencloud-eu/docs/pull/1161)]
+
 ## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-10
 
 ### ❤️ Thanks to all contributors! ❤️

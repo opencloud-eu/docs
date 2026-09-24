@@ -15,13 +15,19 @@ OpenCloud offers three release types to suit different needs: Rolling, Productio
 
 <img src={require("./img/lifecycle/Release Cycle OpenCloud.png").default} alt="Release types" width="1920"/>
 
+### Feature Maturity in Rolling
+
+Rolling follows a "release early, release often" approach. New capabilities usually ship as a minimum viable product. The core use case works, but the feature is not yet complete. It then grows over the following rolling releases as we add depth, polish and edge case handling, often shaped by community feedback on the initial version.
+
+This is intentional and it is what makes Rolling the right choice for enthusiasts and for evaluation, and the wrong choice for production. By the time a feature reaches a Production release, it has been through several rolling iterations and full quality assurance.
+
 ### Advantage of the LTS Releases
 
 With LTS, businesses can continue using an older production release without needing to upgrade to the latest version, while still receiving critical security patches and critical stability fixes. This makes LTS the perfect choice for organizations seeking a stable long-term solution. LTS is available exclusively to customers with a service and support entitlement through a professional or premium subscription.
 
-| Rolling                                                                                                                                                                                       | Production                                                                                                                                                              | LTS                                                                                                                                                                      |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li>For enthusiasts</li><li>Contains latest features</li><li>Every 3 weeks</li><li>Automated quality assurance</li><li>Community supported</li><li>Documentation on best effort</li></ul> | <ul><li>For production</li><li>Focus on stability</li><li>About every 6 months</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> | <ul><li>For production</li><li>Focus on longevity</li><li>Backports for 2 years</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> |
+| Rolling                                                                                                                                                                                                                                                        | Production                                                                                                                                                              | LTS                                                                                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>For enthusiasts</li><li>Contains latest features</li><li>Features start as MVP and mature over following releases</li><li>Every 3 weeks</li><li>Automated quality assurance</li><li>Community supported</li><li>Documentation on best effort</li></ul> | <ul><li>For production</li><li>Focus on stability</li><li>About every 6 months</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> | <ul><li>For production</li><li>Focus on longevity</li><li>Backports for 2 years</li><li>Full quality assurance</li><li>Professional support</li><li>Documented</li></ul> |
 
 ## Release Dates
 
@@ -29,7 +35,9 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
-    | v7.6.0 | TBD | TBD |
+    | v8.1.0 | TBD | TBD |
+    | v8.0.1 | 2026 September 16 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.1) |
+    | v8.0.0 | 2026 September 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.0) |
     | v7.5.0 | 2026 August 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.5.0) |
     | v7.4.0 | 2026 August 3 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.4.0) |
     | v7.3.0 | 2026 July 14 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.3.0) |

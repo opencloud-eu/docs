@@ -132,13 +132,13 @@ Set the `COMPOSE_FILE` variable based on the components you want to deploy.
 For an OpenCloud deployment without Collabora, use:
 
 ```bash
-COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:traefik/opencloud.yml
 ```
 
 To deploy OpenCloud with Collabora, use:
 
 ```bash
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml
 ```
 
 Save the file and exit the editor.
