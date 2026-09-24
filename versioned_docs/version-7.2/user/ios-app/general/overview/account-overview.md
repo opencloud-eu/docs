@@ -10,7 +10,7 @@ draft: false
 
 In the iOS app, the account menu provides access to various personal and sharing-related features.
 
-<img src={require("../../img/overview/account.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
 ## 1. Account Menu Item
 

@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 Der OpenCloud Desktop-Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.
 
-<img src={require("../img/common-issues/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500"/>
+<img src={require("../common-issues/img/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500"/>
 
 ## Ursache
 
