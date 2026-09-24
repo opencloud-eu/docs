@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-09-24
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl
+
+### 🐾 Guides
+
+- refine .img structure in rolling [[#1184](https://github.com/opencloud-eu/docs/pull/1184)]
+
 ## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
 
 ### ❤️ Thanks to all contributors! ❤️
