@@ -10,7 +10,7 @@ draft: false
 
 Dieser Abschnitt erklärt die zentralen Elemente der Benutzeroberfläche der OpenCloud Android-App und deren Funktionen.
 
-<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
 
 ## 1. Account Menu
 

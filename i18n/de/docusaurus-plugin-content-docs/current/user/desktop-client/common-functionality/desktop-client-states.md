@@ -12,14 +12,14 @@ Der OpenCloud Desktop-Client verwendet Tray-Symbole, um den aktuellen Synchronis
 
 ## Kurzübersicht
 
-| Symbol                                                                                                                              | Status                 | Bedeutung                                                                             | Typische Aktion                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| <img src={require("../img/desktop-client-states/ocl-ui_logo-petrol.png").default} alt="Bereit-Status" width="28"/>                  | Bereit                 | Der Client ist verbunden und alle Dateien sind auf dem neuesten Stand.                | Keine Aktion erforderlich.                                             |
-| <img src={require("../img/desktop-client-states/ocl-ui_sync-petrol-colour.png").default} alt="Synchronisierung-Status" width="28"/> | Synchronisierung läuft | Dateien werden gerade hoch- oder heruntergeladen.                                     | Warten Sie, bis die Synchronisierung abgeschlossen ist.                |
-| <img src={require("../img/desktop-client-states/ocl-ui_pause-petrol-colour.png").default} alt="Pausiert-Status" width="28"/>        | Pausiert               | Die Synchronisierung wurde vorübergehend angehalten.                                  | Setzen Sie die Synchronisierung fort, wenn Sie bereit sind.            |
-| <img src={require("../img/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline-Status" width="28"/>       | Offline                | Der Client kann keine Verbindung zum OpenCloud-Server herstellen.                     | Prüfen Sie Ihre Netzwerkverbindung und die Erreichbarkeit des Servers. |
-| <img src={require("../img/desktop-client-states/ocl-ui_info-petrol-colour.png").default} alt="Informations-Status" width="28"/>     | Information            | Der Client zeigt eine nicht kritische Informationsmeldung an.                         | Lesen Sie die Meldung bei Bedarf im Detail.                            |
-| <img src={require("../img/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Fehler-Status" width="28"/>          | Fehler                 | Der Client ist auf ein Problem gestoßen, das die normale Synchronisierung verhindert. | Öffnen Sie den Client und beheben Sie das gemeldete Problem.           |
+| Symbol                                                                                                                                                   | Status                 | Bedeutung                                                                             | Typische Aktion                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_logo-petrol.png").default} alt="Bereit-Status" width="28"/>                  | Bereit                 | Der Client ist verbunden und alle Dateien sind auf dem neuesten Stand.                | Keine Aktion erforderlich.                                             |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_sync-petrol-colour.png").default} alt="Synchronisierung-Status" width="28"/> | Synchronisierung läuft | Dateien werden gerade hoch- oder heruntergeladen.                                     | Warten Sie, bis die Synchronisierung abgeschlossen ist.                |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_pause-petrol-colour.png").default} alt="Pausiert-Status" width="28"/>        | Pausiert               | Die Synchronisierung wurde vorübergehend angehalten.                                  | Setzen Sie die Synchronisierung fort, wenn Sie bereit sind.            |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline-Status" width="28"/>       | Offline                | Der Client kann keine Verbindung zum OpenCloud-Server herstellen.                     | Prüfen Sie Ihre Netzwerkverbindung und die Erreichbarkeit des Servers. |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_info-petrol-colour.png").default} alt="Informations-Status" width="28"/>     | Information            | Der Client zeigt eine nicht kritische Informationsmeldung an.                         | Lesen Sie die Meldung bei Bedarf im Detail.                            |
+| <img src={require("../img/common-functionality/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Fehler-Status" width="28"/>          | Fehler                 | Der Client ist auf ein Problem gestoßen, das die normale Synchronisierung verhindert. | Öffnen Sie den Client und beheben Sie das gemeldete Problem.           |
 
 ## Bereit
 
@@ -29,7 +29,7 @@ Das Symbol „Bereit“ wird angezeigt, wenn der Desktop-Client mit OpenCloud ve
 - Keine aktiven Dateiübertragungen
 - Alle Dateien sind auf dem neuesten Stand
 
-<img src={require("../img/desktop-client-states/ocl-ui_logo-petrol.png").default} alt="Bereit-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_logo-petrol.png").default} alt="Bereit-Status" width="100"/>
 
 Es ist keine Aktion erforderlich. Ihre Dateien sind vollständig synchronisiert.
 
@@ -41,7 +41,7 @@ Das Symbol „Synchronisierung“ zeigt an, dass Dateien gerade hoch- oder herun
 - Änderungen werden gerade verarbeitet
 - Der Client kommuniziert mit dem Server
 
-<img src={require("../img/desktop-client-states/ocl-ui_sync-petrol-colour.png").default} alt="Synchronisierung-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_sync-petrol-colour.png").default} alt="Synchronisierung-Status" width="100"/>
 
 Warten Sie, bis die Synchronisierung abgeschlossen ist, bevor Sie Ihr Gerät herunterfahren.
 
@@ -53,7 +53,7 @@ Das Symbol „Pausiert“ erscheint, wenn die Synchronisierung vorübergehend vo
 - Es werden keine Dateien übertragen
 - Lokale und entfernte Änderungen werden nicht synchronisiert
 
-<img src={require("../img/desktop-client-states/ocl-ui_pause-petrol-colour.png").default} alt="Pausiert-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_pause-petrol-colour.png").default} alt="Pausiert-Status" width="100"/>
 
 Setzen Sie die Synchronisierung über das Menü des Desktop-Clients fort, wenn Sie wieder synchronisieren möchten.
 
@@ -65,7 +65,7 @@ Das Symbol „Offline“ zeigt an, dass der Desktop-Client derzeit keine Verbind
 - Synchronisierung ist nicht verfügbar
 - Lokale Dateien bleiben zugänglich (Windows-Ordner müssen [vollständig angeheftet](../windows/sync-settings.md#immer-auf-diesem-gerat-verfugbar-full-pinned) sein)
 
-<img src={require("../img/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_offline-petrol-colour.png").default} alt="Offline-Status" width="100"/>
 
 Häufige Ursachen sind:
 
@@ -84,7 +84,7 @@ Das Symbol „Information“ wird für Hinweise verwendet, die keine sofortige A
 - Nicht kritische Ereignisse
 - Informationsmeldungen des Clients
 
-<img src={require("../img/desktop-client-states/ocl-ui_info-petrol-colour.png").default} alt="Informations-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_info-petrol-colour.png").default} alt="Informations-Status" width="100"/>
 
 Prüfen Sie die Meldung bei Bedarf für weitere Details.
 
@@ -97,7 +97,7 @@ Das Symbol „Fehler“ zeigt an, dass der Desktop-Client auf ein Problem gesto�
 - Konfigurationsprobleme
 - Fehler beim Dateizugriff oder bei Berechtigungen
 
-<img src={require("../img/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Fehler-Status" width="100"/>
+<img src={require("../img/common-functionality/desktop-client-states/ocl-ui_error-petrol-colour.png").default} alt="Fehler-Status" width="100"/>
 
 Öffnen Sie den Desktop-Client und prüfen Sie den gemeldeten Fehler. Die Synchronisierung kann erst fortgesetzt werden, wenn das Problem behoben wurde.
 

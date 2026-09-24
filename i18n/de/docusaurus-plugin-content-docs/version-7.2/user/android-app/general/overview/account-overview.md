@@ -10,9 +10,9 @@ draft: false
 
 Hier ist ein Überblick über das Kontomenü in der OpenCloud Android-App
 
-<img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} />
 
-<img src={require("../../img/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} />
 
 ## 1. Account Menu Item
 
