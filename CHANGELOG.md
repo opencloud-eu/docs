@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-09-25
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith
+
+### 🐾 Guides
+
+- add img folder structure to the readme and contributing.md [[#1186](https://github.com/opencloud-eu/docs/pull/1186)]
+- refine .img structure in rolling [[#1184](https://github.com/opencloud-eu/docs/pull/1184)]
+
 ## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
 
 ### ❤️ Thanks to all contributors! ❤️
