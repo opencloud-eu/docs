@@ -28,8 +28,6 @@ curl -L https://opencloud.eu/install | /bin/bash
 - [Configuration](./configuration/index.md) - Tune OpenCloud behavior and integrations
 - [Maintenance](./maintenance/index.md) - Backups, exports, migration, and uninstall
 - [Resources](./resources/index.md) - Troubleshooting, lifecycle, and FAQ
-- [Features](./features.md) - Key features of OpenCloud at a glance
-- [Datasheet](./datasheet.md) - Deployment options and technical specifications
 
 ## Documentation Versions
 

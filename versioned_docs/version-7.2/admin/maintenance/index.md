@@ -12,7 +12,7 @@ Use these guides to keep your OpenCloud installation updated, backed up, and man
 ## In this section
 
 - [Upgrade](./upgrade/index.md) - Upgrade guides and release notes
-- [Backup](./backup.md) - Back up and restore your OpenCloud instance
+- [Backup](./backup.md) - Back up your OpenCloud data
 - [Migrate](./migrate.md) - Migrate data using rclone
 - [Uninstall](./uninstall.md) - Remove OpenCloud from your system
 - [Data Export](./dataexport.md) - Export user data
