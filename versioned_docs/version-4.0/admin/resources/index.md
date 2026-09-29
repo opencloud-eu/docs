@@ -11,8 +11,8 @@ Use this section for troubleshooting, lifecycle information, and general admin h
 
 ## In this section
 
-- [FAQ](./faq.md)
-- [What's New](./whats-new.md)
-- [Release Lifecycle](./lifecycle.md)
-- [Common Issues & Help](./common-issues.md)
-- [Demo User](./demo-user.md)
+- [FAQ](./faq.md) - Answers to frequently asked questions
+- [What's New](./whats-new.md) - Latest release notes on GitHub
+- [Release Lifecycle](./lifecycle.md) - Rolling, Production, and LTS releases
+- [Common Issues & Help](./common-issues.md) - Troubleshooting for common administration issues
+- [Demo User](./demo-user.md) - Pre-configured demo users and their credentials

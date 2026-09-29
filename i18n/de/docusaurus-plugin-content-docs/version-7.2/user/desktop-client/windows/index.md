@@ -6,7 +6,7 @@ title: OpenCloud Desktop Client für Windows
 
 # OpenCloud Desktop Client für Windows
 
-Der OpenCloud Desktop Client für Windows ermöglicht die Synchronisierung von Dateien zwischen Ihrem Windows-Gerät und Ihrer OpenCloud-Instanz. Dieser Abschnitt führt Sie durch alle wichtigen Schritte – von der Installation und Ersteinrichtung über die Konfiguration der Synchronisierung und der Anwendungseinstellungen bis hin zur Verwendung des Windows Virtual File System (VFS).
+Der OpenCloud Desktop Client für Windows ermöglicht die Synchronisierung von Dateien zwischen Ihrem Windows-Gerät und Ihrer OpenCloud-Instanz. Dieser Abschnitt führt Sie durch alle wichtigen Schritte – von der Installation und Ersteinrichtung über die Konfiguration der Synchronisierung und der Anwendungseinstellungen bis hin zur Aktualisierung auf neuere Versionen.
 
 ## In diesem Abschnitt
 
@@ -21,3 +21,6 @@ Der OpenCloud Desktop Client für Windows ermöglicht die Synchronisierung von D
 
 - [Einstellungen unter Windows](./settings.md)  
   Passen Sie den Desktop Client an, indem Sie allgemeine, erweiterte, Netzwerk- und Bandbreiteneinstellungen konfigurieren.
+
+- [OpenCloud Desktop Client unter Windows aktualisieren](./upgrade.md)  
+  Erfahren Sie, wie Sie den OpenCloud Desktop Client über den Microsoft Store aktualisieren und dabei Ihre bestehende Konfiguration und synchronisierten Dateien beibehalten.

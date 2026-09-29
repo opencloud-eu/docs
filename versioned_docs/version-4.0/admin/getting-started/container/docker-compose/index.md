@@ -42,5 +42,7 @@ Best for:
 After choosing and completing your deployment:
 
 - [Production Setup Considerations](./production-setup-consideration.md) – Persistent storage, backups, image versions
-- [Verify TLS Certificates](./docker-compose-base.md#verify-tls-certificates) – Validate your SSL setup
+- [Verify TLS Certificates](./verify-SSL-certification.md) – Validate your SSL setup
 - [Configure Authentication](../../../configuration/authentication-and-user-management/) – Users, authentication, and optional Keycloak integration
+- [Keycloak](./keycloak.md) – Add Keycloak as identity provider to your Docker Compose deployment
+- [Volume Permissions](./volume-permissions.md) – Set the filesystem permissions for bind-mounted volumes
