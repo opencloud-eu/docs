@@ -25,7 +25,7 @@ with the color scheme, so your app stays readable in light and dark mode.
 ```
 
 See [the defaults](https://github.com/opencloud-eu/web/blob/main/packages/design-system/src/styles/defaults.css) for a
-complete list of color roles.
+complete list of color roles. They are based on [Material Design color roles](https://m3.material.io/styles/color/roles).
 
 ## Tailwind CSS
 
@@ -50,7 +50,8 @@ The setup maps the color roles to Tailwind color utilities, so `--oc-role-surfac
 ```
 
 It also sets the OpenCloud font family, a spacing unit of `4px`, the breakpoints `xs`, `sm`, `md`, `lg` and `xl`, and a
-`dark` variant. The `dark` variant follows the color scheme of OpenCloud Web, not the browser setting:
+`dark` variant. The `dark` variant follows the color scheme the current user selected in OpenCloud Web (which is not
+necessarily the browser setting):
 
 ```html
 <div class="ext:bg-white ext:dark:bg-black">...</div>

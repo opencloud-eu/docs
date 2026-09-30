@@ -4,8 +4,8 @@ sidebar_position: 1
 ---
 
 Extension points are standardized places where extensions are used. If you build an extension that has the
-[type](./extension-types/) of an extension point, and lists the id of that extension point in its `extensionPointIds`,
-your extension gets used there without any further wiring.
+[type](./extension-types/) of an extension point, and lists the id of that extension point in its `extensionPointIds`
+field, your extension gets used there without any further wiring.
 
 The lists below show the extension points that the OpenCloud Web runtime and the built-in apps provide. The `Multiple`
 column tells you if the extension point renders all matching extensions or only a single one. Your app can also

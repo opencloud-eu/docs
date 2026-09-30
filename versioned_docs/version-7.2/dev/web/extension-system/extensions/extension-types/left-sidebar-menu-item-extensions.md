@@ -6,7 +6,7 @@ id: left-sidebar-menu-item-extensions
 
 ## Left sidebar menu item extension type
 
-One possible extension type is left sidebar menu items. Registered left sidebar menu items get rendered in the left sidebar, as long as there is more than one available.
+One possible extension type is left sidebar menu items. Registered left sidebar menu items get rendered in the left sidebar if it's available.
 
 ### Configuration
 

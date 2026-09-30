@@ -25,7 +25,7 @@ with the color scheme, so your app stays readable in light and dark mode.
 ```
 
 See [the defaults](https://github.com/opencloud-eu/web/blob/stable-7.1/packages/design-system/src/styles/defaults.css) for a
-complete list of color roles.
+complete list of color roles. They are based on [Material Design color roles](https://m3.material.io/styles/color/roles).
 
 ## Tailwind CSS
 
