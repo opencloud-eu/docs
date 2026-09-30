@@ -76,3 +76,9 @@ curl 'https://cloud.opencloud.test/graph/v1.0/me' -H 'accept: application/json' 
 ```
 
 ## Resources
+
+- [Users](./users.md) - Read and manage users
+- [Groups](./groups.md) - Read and manage groups and their members
+- [Spaces](./spaces.md) - Read and manage spaces (drives)
+- [Permissions](./permissions.md) - Manage sharing permissions on files, folders, and spaces
+- [Role](./role.md) - List the available sharing roles

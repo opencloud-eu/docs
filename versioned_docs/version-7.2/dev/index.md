@@ -13,3 +13,9 @@ Please be patient, we are working on the content.
 If you want to contribute to the dev docs, please visit [OpenCloud on Github](https://github.com/opencloud-eu/).
 
 Contents will be transferred during the build process.
+
+## In this section
+
+- [Server](./server/index.md) - Architecture, APIs, and configuration of the OpenCloud server
+- [Web](./web/index.md) - Development of the OpenCloud Web frontend
+- [cdPerf](./cdperf.md) - Performance testing with cdPerf
