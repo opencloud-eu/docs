@@ -8,9 +8,9 @@ draft: false
 
 # End-to-End Encrypted Folders
 
-End-to-end encrypted folders provide an additional layer of protection for sensitive content in OpenCloud.
+Files and file names in an end-to-end encrypted folder are encrypted in the Web Client before upload. The encryption key is derived from a separate folder password and never leaves your device, so OpenCloud stores only encrypted data. This prevents OpenCloud administrators and anyone with access to the server, storage, or backups from reading the folder contents without the password.
 
-When you create an end-to-end encrypted folder, you set a separate password for it. You need this password whenever you unlock the folder and access its contents in the Web Client.
+To open an end-to-end encrypted folder, a user needs both access to the folder in OpenCloud and its separate password. You need to enter this password whenever the folder needs to be unlocked in the Web Client.
 
 :::important
 

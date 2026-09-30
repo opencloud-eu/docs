@@ -8,9 +8,9 @@ draft: false
 
 # Ende-zu-Ende-verschlüsselte Ordner
 
-Ende-zu-Ende-verschlüsselte Ordner bieten eine zusätzliche Schutzebene für sensible Inhalte in OpenCloud.
+Dateien und Dateinamen in einem Ende-zu-Ende-verschlüsselten Ordner werden vor dem Hochladen im Web Client verschlüsselt. Der Verschlüsselungsschlüssel wird aus einem separaten Ordnerpasswort abgeleitet und verlässt Ihr Gerät nicht. OpenCloud speichert daher ausschließlich verschlüsselte Daten. Dadurch können weder OpenCloud-Administratoren noch Personen mit Zugriff auf den Server, den Speicher oder Sicherungskopien die Ordnerinhalte ohne das Passwort lesen.
 
-Beim Erstellen eines Ende-zu-Ende-verschlüsselten Ordners legen Sie ein separates Passwort dafür fest. Sie benötigen dieses Passwort jedes Mal, wenn Sie den Ordner entsperren und im Web Client auf seine Inhalte zugreifen.
+Um einen Ende-zu-Ende-verschlüsselten Ordner zu öffnen, benötigt ein Benutzer sowohl Zugriff auf den Ordner in OpenCloud als auch das separate Ordnerpasswort. Sie müssen dieses Passwort jedes Mal eingeben, wenn der Ordner im Web Client entsperrt werden muss.
 
 :::important
 
