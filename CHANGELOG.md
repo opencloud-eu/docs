@@ -1,6 +1,6 @@
 # Changelog
 
-## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-09-25
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-09-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
@@ -10,6 +10,10 @@
 
 - add img folder structure to the readme and contributing.md [[#1186](https://github.com/opencloud-eu/docs/pull/1186)]
 - refine .img structure in rolling [[#1184](https://github.com/opencloud-eu/docs/pull/1184)]
+
+### 👤 User Documentation
+
+- add e2ee folders part in files and folders [[#1157](https://github.com/opencloud-eu/docs/pull/1157)]
 
 ## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
 
