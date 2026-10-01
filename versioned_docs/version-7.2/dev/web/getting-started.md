@@ -13,7 +13,9 @@ To install and setup the Web client on your local machine, please refer to the [
 
 ## Configuration
 
-Web can be configured using a configuration file in `json` format. Sample configuration files are available in the [config folder](https://github.com/opencloud-eu/web/tree/main/config) of the OpenCloud Web Git repository. Below is a detailed overview of all available configuration options.
+Web can be configured using a configuration file in `json` format. This is completely optional, as default settings are used when no configuration file is provided. You need to tell the server where to find a custom configuration file via the `WEB_UI_CONFIG_FILE` environment variable.
+
+Below is a detailed overview of all available configuration options.
 
 ### `server`
 
@@ -22,30 +24,6 @@ Specifies the server URL, e.g. `https://host.docker.internal:9200`.
 ### `theme`
 
 Specifies the URL for the theme to be loaded, e.g. `https://host.docker.internal:9200/themes/opencloud/theme.json`.
-
-### `options`
-
-General options that control the behavior of the Web client. Expects an object with the following possible options:
-
-- `options.accountEditLink` This accepts an object with the following optional fields to have a link on the account page:
-  - `options.accountEditLink.href` Set a different target URL for the edit link. Make sure to prepend it with `http(s)://`.
-- `options.sharingRecipientsPerPage` Sets the amount of users shown as recipients in the dropdown when sharing resources. Default amount is 200.
-- `options.runningOnEos` Set this option to `true` if running on an [EOS storage backend](https://eos-web.web.cern.ch/eos-web/) to enable its specific features. Defaults to `false`.
-- `options.cernFeatures` Enabling this will activate CERN-specific features. Defaults to `false`.
-- `options.editor.autosaveEnabled` Specifies if the autosave for the editor apps is enabled.
-- `options.editor.autosaveInterval` Specifies the time interval for the autosave of editor apps in seconds.
-- `options.editor.openAsPreview` Specifies if non-personal files i.e. files in shares, spaces or public links are being opened in read only mode so the user needs to manually switch to edit mode. Can be set to `true`, `false` or an array of web app/editor names.
-- `options.contextHelpersReadMore` Specifies whether the "Read more" link should be displayed or not.
-- `options.tokenStorageLocal` Specifies whether the access token will be stored in the local storage when set to `true` or in the session storage when set to `false`. If stored in the local storage, login state will be persisted across multiple browser tabs, means no additional logins are required. Defaults to `true`.
-- `options.loginUrl` Specifies the target URL to the login page. This is helpful when an external IdP is used. This option is disabled by default. Example URL like: '[https://www.myidp.com/login](https://www.myidp.com/login)'.
-- `options.logoutUrl` Adds a link to the user's profile page to point him to an external page, where he can manage his session and devices. This is helpful when an external IdP is used. This option is disabled by default.
-- `options.userListRequiresFilter` Defines whether one or more filters must be set in order to list users in the Web admin settings. Set this option to 'true' if running in an environment with a lot of users and listing all users could slow down performance. Defaults to `false`.
-- `options.concurrentRequests` This accepts an object with the following optional fields to customize the maximum number of concurrent requests in code paths where we limit concurrent requests
-  - `resourceBatchActions` Concurrent number of file/folder/space batch actions like e.g. accepting shares. Defaults to 4.
-  - `sse` Concurrent number of SSE event handlers. Defaults to 4.
-  - `shares` Accepts an object regarding the following sharing related options:
-    - `create` Concurrent number of share invites. Defaults to 4.
-    - `list` Concurrent number of individually loaded shares. Defaults to 2.
 
 ### `apps`
 
