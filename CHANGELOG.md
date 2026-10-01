@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-09-30
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-10-01
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @Svanvith
+@Heiko-Pohl, @JammingBen, @Svanvith
+
+### :octocat: Developer Documentation
+
+- Overhaul web extension system docs [[#1187](https://github.com/opencloud-eu/docs/pull/1187)]
 
 ### 🐾 Guides
 
