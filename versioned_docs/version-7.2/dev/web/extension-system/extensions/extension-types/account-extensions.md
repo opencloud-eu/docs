@@ -15,12 +15,12 @@ To define an account extension, you implement the `AccountExtension` interface. 
 
 ```typescript
 interface AccountExtension {
-  id: string;
-  type: 'accountExtension';
-  extensionPointIds?: string[];
-  content: Slot | Component;
-  label: () => string;
-  icon: string;
+  id: string
+  type: 'accountExtension'
+  extensionPointIds?: string[]
+  content: Slot | Component
+  label: () => string
+  icon: string
 }
 ```
 
@@ -42,5 +42,5 @@ const extension: AccountExtension = {
   label: () => $gettext('App Tokens'),
   icon: 'key-2',
   content: AppTokens
-};
+}
 ```

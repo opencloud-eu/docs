@@ -14,10 +14,10 @@ This is what the FolderViewExtension interface looks like:
 
 ```typescript
 interface FolderViewExtension {
-  id: string;
-  type: 'folderView';
-  extensionPointIds?: string[];
-  folderView: FolderView; // See FolderView section below
+  id: string
+  type: 'folderView'
+  extensionPointIds?: string[]
+  folderView: FolderView // See FolderView section below
 }
 ```
 
@@ -39,7 +39,7 @@ The following example shows how an extension for a custom folder view could look
 
 ```typescript title="src/extensions.ts"
 export const useCustomFolderViewExtension = () => {
-  const { $gettext } = useGettext();
+  const { $gettext } = useGettext()
 
   const extension = computed<FolderViewExtension>(() => ({
     id: 'com.github.opencloud-eu.web.files.folder-view.custom',
@@ -54,10 +54,10 @@ export const useCustomFolderViewExtension = () => {
       },
       component: YourCustomFolderViewComponent
     }
-  }));
+  }))
 
-  return { extension };
-};
+  return { extension }
+}
 ```
 
 The extension could then be registered in any app like so:
@@ -65,7 +65,7 @@ The extension could then be registered in any app like so:
 ```typescript title="src/index.ts"
 export default defineWebApplication({
   setup() {
-    const { extension } = useCustomFolderViewExtension();
+    const { extension } = useCustomFolderViewExtension()
 
     return {
       appInfo: {
@@ -73,7 +73,7 @@ export default defineWebApplication({
         id: 'custom-folder-view-app'
       },
       extensions: computed(() => [unref(extension)])
-    };
+    }
   }
-});
+})
 ```

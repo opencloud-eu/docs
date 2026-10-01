@@ -16,10 +16,10 @@ like:
 
 ```typescript
 interface ResourceIndicatorExtension {
-  id: string;
-  type: 'resourceIndicator';
-  extensionPointIds?: string[];
-  getResourceIndicators: (resource: Resource) => ResourceIndicator[] | void;
+  id: string
+  type: 'resourceIndicator'
+  extensionPointIds?: string[]
+  getResourceIndicators: (resource: Resource) => ResourceIndicator[] | void
 }
 ```
 
@@ -32,25 +32,25 @@ An indicator is either an icon or a tag:
 
 ```typescript
 interface ResourceIndicatorIcon {
-  id: string;
-  kind: 'icon';
-  label: string;
-  accessibleDescription: string;
-  type: string;
-  category: 'system' | 'sharing' | 'space';
-  icon: string;
-  fillType: IconFillType;
-  handler?: (resource: Resource, event?: MouseEvent) => void;
+  id: string
+  kind: 'icon'
+  label: string
+  accessibleDescription: string
+  type: string
+  category: 'system' | 'sharing' | 'space'
+  icon: string
+  fillType: IconFillType
+  handler?: (resource: Resource, event?: MouseEvent) => void
 }
 
 interface ResourceIndicatorTag {
-  id: string;
-  kind: 'tag';
-  label: string;
-  accessibleDescription: string;
-  type: string;
-  category: 'system' | 'sharing' | 'space';
-  class?: string;
+  id: string
+  kind: 'tag'
+  label: string
+  accessibleDescription: string
+  type: string
+  category: 'system' | 'sharing' | 'space'
+  class?: string
 }
 ```
 
@@ -65,7 +65,7 @@ const extension: ResourceIndicatorExtension = {
   extensionPointIds: ['global.files.resource-indicator'],
   getResourceIndicators(resource) {
     if (resource.canRename()) {
-      return;
+      return
     }
 
     return [
@@ -79,7 +79,7 @@ const extension: ResourceIndicatorExtension = {
         category: 'system',
         type: 'read-only'
       }
-    ];
+    ]
   }
-};
+}
 ```

@@ -20,15 +20,15 @@ The `@opencloud-eu/web-test-helpers` package provides utilities for mounting com
 context. Without them, every component that uses a composable of `web-pkg` fails to mount.
 
 ```typescript title="tests/unit/App.spec.ts"
-import { defaultPlugins, mount } from '@opencloud-eu/web-test-helpers';
-import App from '../../src/App.vue';
+import { defaultPlugins, mount } from '@opencloud-eu/web-test-helpers'
+import App from '../../src/App.vue'
 
 describe('App', () => {
   it('renders the title', () => {
-    const wrapper = mount(App, { global: { plugins: [...defaultPlugins()] } });
-    expect(wrapper.text()).toContain('My app');
-  });
-});
+    const wrapper = mount(App, { global: { plugins: [...defaultPlugins()] } })
+    expect(wrapper.text()).toContain('My app')
+  })
+})
 ```
 
 For details, please refer to the package's
