@@ -1,10 +1,10 @@
 # Changelog
 
-## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-10-01
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-10-02
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @JammingBen, @Svanvith
+@Heiko-Pohl, @JammingBen, @Svanvith, @enricocirignaco
 
 ### :octocat: Developer Documentation
 
@@ -14,6 +14,10 @@
 
 - add img folder structure to the readme and contributing.md [[#1186](https://github.com/opencloud-eu/docs/pull/1186)]
 - refine .img structure in rolling [[#1184](https://github.com/opencloud-eu/docs/pull/1184)]
+
+### 👷 Admin Documentation
+
+- Add chapter "Separating OpenCloud Internal Data and User Storage" to storage docs [[#1121](https://github.com/opencloud-eu/docs/pull/1121)]
 
 ### 👤 User Documentation
 
