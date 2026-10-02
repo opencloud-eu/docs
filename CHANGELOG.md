@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- Remove semicolons from web dev docs [[#1193](https://github.com/opencloud-eu/docs/pull/1193)]
 - Overhaul web extension system docs [[#1187](https://github.com/opencloud-eu/docs/pull/1187)]
 
 ### 🐾 Guides
