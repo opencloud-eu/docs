@@ -45,15 +45,15 @@ Collaboration is a `yjs` option on `AppWrapperRoute`. The rest of the app setup 
 app:
 
 ```typescript title="src/index.ts"
-import { AppWrapperRoute, defineWebApplication } from '@opencloud-eu/web-pkg';
-import { useGettext } from 'vue3-gettext';
-import App from './App.vue';
-import { makeMyAdapter } from './yjs';
+import { AppWrapperRoute, defineWebApplication } from '@opencloud-eu/web-pkg'
+import { useGettext } from 'vue3-gettext'
+import App from './App.vue'
+import { makeMyAdapter } from './yjs'
 
 export default defineWebApplication({
   setup() {
-    const { $gettext } = useGettext();
-    const appId = 'my-editor';
+    const { $gettext } = useGettext()
+    const appId = 'my-editor'
 
     const routes = [
       {
@@ -75,7 +75,7 @@ export default defineWebApplication({
           patchCleanPath: true
         }
       }
-    ];
+    ]
 
     return {
       appInfo: {
@@ -85,9 +85,9 @@ export default defineWebApplication({
         extensions: [{ extension: 'md', routeName: appId }]
       },
       routes
-    };
+    }
   }
-});
+})
 ```
 
 ## The adapter
@@ -98,16 +98,16 @@ content between the native file format and the Y.Doc.
 ```typescript
 interface YjsAdapter {
   /** Seed an empty Y.Doc from the file content. Must be a no-op if the doc already has content. */
-  hydrate(ydoc: Y.Doc, content: string): void;
+  hydrate(ydoc: Y.Doc, content: string): void
 
   /** Render the current Y.Doc state back to the native file format. */
-  serialize(ydoc: Y.Doc): string | Promise<string>;
+  serialize(ydoc: Y.Doc): string | Promise<string>
 
   /** True if the Y.Doc already holds app content. */
-  hasContent(ydoc: Y.Doc): boolean;
+  hasContent(ydoc: Y.Doc): boolean
 
   /** Optional. Wipe the shared content so `hasContent` returns false again. */
-  reset?(ydoc: Y.Doc): void;
+  reset?(ydoc: Y.Doc): void
 }
 ```
 
@@ -123,21 +123,21 @@ Rules to keep in mind:
 If your editor is built on Tiptap, use `makeTiptapYjsAdapter`. It takes a content strategy and returns a ready adapter:
 
 ```typescript title="src/yjs.ts"
-import { ref } from 'vue';
-import type { YjsAdapter, YjsAdapterContext } from '@opencloud-eu/web-pkg';
-import { makeTiptapYjsAdapter, useContentStrategy } from '@opencloud-eu/web-pkg/editor';
+import { ref } from 'vue'
+import type { YjsAdapter, YjsAdapterContext } from '@opencloud-eu/web-pkg'
+import { makeTiptapYjsAdapter, useContentStrategy } from '@opencloud-eu/web-pkg/editor'
 
 export function makeMyAdapter({ resource }: YjsAdapterContext): YjsAdapter {
-  const { resolveStrategy } = useContentStrategy();
+  const { resolveStrategy } = useContentStrategy()
 
   const strategy = resolveStrategy('markdown', {
     sourceMode: ref(false),
     linkPanel: ref(null),
     editorZoom: ref(100),
     currentResource: resource
-  });
+  })
 
-  return makeTiptapYjsAdapter(strategy);
+  return makeTiptapYjsAdapter(strategy)
 }
 ```
 
@@ -153,20 +153,20 @@ collaborative editors:
 
 ```typescript
 type YjsEditorSlotProps = {
-  resource: Resource;
-  space: SpaceResource;
-  currentContent: string;
-  isReadOnly: boolean;
+  resource: Resource
+  space: SpaceResource
+  currentContent: string
+  isReadOnly: boolean
 
   /** The shared document. */
-  ydoc: Y.Doc | null;
+  ydoc: Y.Doc | null
 
   /** Peer presence: cursors, selections and user identity. */
-  awareness: Awareness | null;
+  awareness: Awareness | null
 
   /** 'connecting' | 'connected' | 'disconnected' | 'local' */
-  yjsStatus: YjsStatus | null;
-};
+  yjsStatus: YjsStatus | null
+}
 ```
 
 The `AppWrapper` keeps its loading screen up until the session is synced and hydrated. Your component therefore mounts
@@ -174,11 +174,11 @@ against a Y.Doc that is ready, and `ydoc` and `awareness` are never null inside 
 
 ```html title="src/App.vue"
 <script setup lang="ts">
-  import { toRef } from 'vue';
-  import { useTextEditor } from '@opencloud-eu/web-pkg/editor';
-  import type { YjsEditorSlotProps } from '@opencloud-eu/web-pkg';
+  import { toRef } from 'vue'
+  import { useTextEditor } from '@opencloud-eu/web-pkg/editor'
+  import type { YjsEditorSlotProps } from '@opencloud-eu/web-pkg'
 
-  const { ydoc, awareness, isReadOnly, resource, yjsStatus } = defineProps<YjsEditorSlotProps>();
+  const { ydoc, awareness, isReadOnly, resource, yjsStatus } = defineProps<YjsEditorSlotProps>()
 
   const textEditor = useTextEditor({
     contentType: 'markdown',
@@ -187,7 +187,7 @@ against a Y.Doc that is ready, and `ydoc` and `awareness` are never null inside 
     ydoc,
     awareness,
     yjsStatus: () => yjsStatus
-  });
+  })
 </script>
 ```
 
@@ -200,9 +200,9 @@ against a Y.Doc that is ready, and `ydoc` and `awareness` are never null inside 
 name. A user with several tabs open appears once.
 
 ```typescript
-import { useYjsCollaborators } from '@opencloud-eu/web-pkg';
+import { useYjsCollaborators } from '@opencloud-eu/web-pkg'
 
-const collaborators = useYjsCollaborators(awareness);
+const collaborators = useYjsCollaborators(awareness)
 // [{ id, name, color, isSelf }]
 ```
 

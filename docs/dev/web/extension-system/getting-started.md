@@ -88,7 +88,7 @@ The `src/index.ts` file acts as the entrypoint of the app. This file has to expo
 
 ```typescript title="src/index.ts"
 import { defineWebApplication } from '@opencloud-eu/web-pkg'
-import { useGettext } from 'vue3-gettext';
+import { useGettext } from 'vue3-gettext'
 
 // Needs to be unique within all installed applications in any OpenCloud
 // web instance. Should be short, unique and expressive as it is used as
@@ -98,7 +98,7 @@ const appId = 'your-app'
 export default defineWebApplication({
   setup({ applicationConfig }) {
     // Here, you have access to the full injection context.
-    const { $gettext } = useGettext();
+    const { $gettext } = useGettext()
 
     return {
       appInfo: {
@@ -136,11 +136,11 @@ Apps are built with [Vite](https://vite.dev/). The `@opencloud-eu/extension-sdk`
 config, so your `vite.config.ts` stays short:
 
 ```typescript title="vite.config.ts"
-import { defineConfig } from '@opencloud-eu/extension-sdk';
+import { defineConfig } from '@opencloud-eu/extension-sdk'
 
 export default defineConfig({
   name: 'my-app'
-});
+})
 ```
 
 `defineConfig` accepts any [Vite option](https://vite.dev/config/), plus the following:

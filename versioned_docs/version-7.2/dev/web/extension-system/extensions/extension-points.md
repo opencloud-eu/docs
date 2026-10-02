@@ -100,13 +100,13 @@ An extension point is a plain object of the `ExtensionPoint` type. Keep it in it
 `src/extensionPoints.ts`, so that you can use it in several places:
 
 ```typescript title="src/extensionPoints.ts"
-import { ActionExtension, ExtensionPoint } from '@opencloud-eu/web-pkg';
+import { ActionExtension, ExtensionPoint } from '@opencloud-eu/web-pkg'
 
 export const toolbarExtensionPoint: ExtensionPoint<ActionExtension> = {
   id: 'app.my-app.toolbar',
   extensionType: 'action',
   multiple: true
-};
+}
 ```
 
 `ExtensionPoint` accepts the following keys:
@@ -123,9 +123,9 @@ export const toolbarExtensionPoint: ExtensionPoint<ActionExtension> = {
 Return your extension points from the app definition. The key takes a `Ref<ExtensionPoint[]>`, so use a `computed`:
 
 ```typescript title="src/index.ts"
-import { defineWebApplication } from '@opencloud-eu/web-pkg';
-import { computed } from 'vue';
-import { toolbarExtensionPoint } from './extensionPoints';
+import { defineWebApplication } from '@opencloud-eu/web-pkg'
+import { computed } from 'vue'
+import { toolbarExtensionPoint } from './extensionPoints'
 
 export default defineWebApplication({
   setup() {
@@ -135,9 +135,9 @@ export default defineWebApplication({
         id: 'my-app'
       },
       extensionPoints: computed(() => [toolbarExtensionPoint])
-    };
+    }
   }
-});
+})
 ```
 
 Registration is not needed to query extensions. It makes your extension point known to the runtime, which is required
@@ -154,25 +154,25 @@ the registry and respects the user preference:
 </template>
 
 <script setup lang="ts">
-  import { CustomComponentTarget } from '@opencloud-eu/web-pkg';
-  import { componentExtensionPoint } from './extensionPoints';
+  import { CustomComponentTarget } from '@opencloud-eu/web-pkg'
+  import { componentExtensionPoint } from './extensionPoints'
 </script>
 ```
 
 For all other types, query the registry yourself and render the result the way your extension point needs it:
 
 ```typescript
-import { ActionExtension, useExtensionRegistry } from '@opencloud-eu/web-pkg';
-import { computed } from 'vue';
-import { toolbarExtensionPoint } from './extensionPoints';
+import { ActionExtension, useExtensionRegistry } from '@opencloud-eu/web-pkg'
+import { computed } from 'vue'
+import { toolbarExtensionPoint } from './extensionPoints'
 
-const extensionRegistry = useExtensionRegistry();
+const extensionRegistry = useExtensionRegistry()
 
 const actions = computed(() =>
   extensionRegistry
     .requestExtensions<ActionExtension>(toolbarExtensionPoint)
     .map(({ action }) => action)
-);
+)
 ```
 
 ### Letting users choose
@@ -181,10 +181,10 @@ Add a `userPreference` to your extension point to let users pick one of the regi
 sense when `multiple` is `false`:
 
 ```typescript title="src/extensionPoints.ts"
-import { ExtensionPoint, CustomComponentExtension } from '@opencloud-eu/web-pkg';
-import { useGettext } from 'vue3-gettext';
+import { ExtensionPoint, CustomComponentExtension } from '@opencloud-eu/web-pkg'
+import { useGettext } from 'vue3-gettext'
 
-const { $gettext } = useGettext();
+const { $gettext } = useGettext()
 
 export const progressBarExtensionPoint: ExtensionPoint<CustomComponentExtension> = {
   id: 'app.my-app.progress-bar',
@@ -193,7 +193,7 @@ export const progressBarExtensionPoint: ExtensionPoint<CustomComponentExtension>
     label: $gettext('Progress bar'),
     description: $gettext('Choose how the loading state is shown.')
   }
-};
+}
 ```
 
 The extension point then gets a dropdown on the preferences page, reachable via the top right user menu. The dropdown
