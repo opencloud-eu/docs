@@ -18,18 +18,18 @@ To define a floating action button extension, you implement the `FloatingActionB
 
 ```typescript
 interface FloatingActionButtonExtension {
-  id: string;
-  type: 'floatingActionButton';
-  extensionPointIds?: string[];
-  label: () => string;
-  tooltip?: () => string;
-  isVisible?: () => boolean;
-  isDisabled?: () => boolean;
-  color?: string;
-  icon?: string;
-  mode: () => 'drop' | 'handler';
-  handler?: () => Promise<void> | void;
-  dropComponent?: Component;
+  id: string
+  type: 'floatingActionButton'
+  extensionPointIds?: string[]
+  label: () => string
+  tooltip?: () => string
+  isVisible?: () => boolean
+  isDisabled?: () => boolean
+  color?: string
+  icon?: string
+  mode: () => 'drop' | 'handler'
+  handler?: () => Promise<void> | void
+  dropComponent?: Component
 }
 ```
 
@@ -46,14 +46,14 @@ The `mode` property determines whether the floating action button triggers a han
 The following example shows how the files app is registering a floating action button extension for creating new files or folders. Note that the example assumes you're in a Vue injection context (e.g. within the `setup` method of your app's `defineWebApplication` call).
 
 ```typescript title="src/extensions.ts"
-import { useGettext } from 'vue3-gettext';
-import CreateOrUploadMenu from './components/CreateOrUploadMenu.vue';
-import { markRaw } from 'vue';
-import { useIsFilesAppActive, useResourcesStore } from '@opencloud-eu/web-pkg';
+import { useGettext } from 'vue3-gettext'
+import CreateOrUploadMenu from './components/CreateOrUploadMenu.vue'
+import { markRaw } from 'vue'
+import { useIsFilesAppActive, useResourcesStore } from '@opencloud-eu/web-pkg'
 
-const { $gettext } = useGettext();
-const isFilesAppActive = useIsFilesAppActive();
-const resourcesStore = useResourcesStore();
+const { $gettext } = useGettext()
+const isFilesAppActive = useIsFilesAppActive()
+const resourcesStore = useResourcesStore()
 
 const extension = {
   id: 'com.github.opencloud-eu.web.files.floating-action-button',
@@ -62,12 +62,12 @@ const extension = {
   icon: 'add',
   label: () => $gettext('New'),
   isVisible: () => {
-    return unref(isFilesAppActive);
+    return unref(isFilesAppActive)
   },
   isDisabled: () => {
-    return !resourcesStore.currentFolder?.canUpload();
+    return !resourcesStore.currentFolder?.canUpload()
   },
   mode: () => 'drop',
   dropComponent: markRaw(CreateOrUploadMenu)
-};
+}
 ```

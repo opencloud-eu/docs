@@ -33,7 +33,7 @@ The `@opencloud-eu/extension-sdk` package ships a preconfigured [Tailwind CSS](h
 its stylesheet in your entrypoint (typically `src/index.ts`) to use it:
 
 ```typescript title="src/index.ts"
-import '@opencloud-eu/extension-sdk/tailwind.css';
+import '@opencloud-eu/extension-sdk/tailwind.css'
 ```
 
 Tailwind classes need the `ext:` prefix in apps. The prefix avoids style conflicts with the OpenCloud Web runtime.

@@ -42,15 +42,15 @@ There are two ways to override the defaults:
 The merged config is passed to the `setup` function of your app definition as `applicationConfig`:
 
 ```typescript title="src/index.ts"
-import { defineWebApplication } from '@opencloud-eu/web-pkg';
+import { defineWebApplication } from '@opencloud-eu/web-pkg'
 
 export default defineWebApplication({
   setup({ applicationConfig }) {
-    const showPreview = applicationConfig?.showPreview ?? true;
+    const showPreview = applicationConfig?.showPreview ?? true
 
     // ...
   }
-});
+})
 ```
 
 Always provide a fallback value. The config can be empty, and an administrator can set any value.

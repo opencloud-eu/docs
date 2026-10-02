@@ -14,10 +14,10 @@ To define a left sidebar menu item, you implement the `SidebarNavExtension` inte
 
 ```typescript
 interface SidebarNavExtension {
-  id: string;
-  type: 'sidebarNav';
-  extensionPointIds?: string[];
-  navItem: AppNavigationItem; // Please check the AppNavigationItem section below
+  id: string
+  type: 'sidebarNav'
+  extensionPointIds?: string[]
+  navItem: AppNavigationItem // Please check the AppNavigationItem section below
 }
 ```
 
@@ -42,15 +42,15 @@ Please check the [`AppNavigationItem` type](https://github.com/opencloud-eu/web/
 The following example is taken from the [office settings app](https://github.com/opencloud-eu/web/blob/main/packages/web-app-office-settings/src/index.ts). It adds a nav item to the left sidebar of the admin settings app, linking to a view of the office settings app.
 
 ```typescript title="src/index.ts"
-import { defineWebApplication, SidebarNavExtension } from '@opencloud-eu/web-pkg';
-import { useGettext } from 'vue3-gettext';
-import { computed } from 'vue';
-import App from './App.vue';
+import { defineWebApplication, SidebarNavExtension } from '@opencloud-eu/web-pkg'
+import { useGettext } from 'vue3-gettext'
+import { computed } from 'vue'
+import App from './App.vue'
 
 export default defineWebApplication({
   setup() {
-    const { $gettext } = useGettext();
-    const appId = 'admin-settings/office';
+    const { $gettext } = useGettext()
+    const appId = 'admin-settings/office'
 
     const extensions = computed<SidebarNavExtension[]>(() => [
       {
@@ -66,7 +66,7 @@ export default defineWebApplication({
           }
         }
       }
-    ]);
+    ])
 
     const routes = [
       {
@@ -78,7 +78,7 @@ export default defineWebApplication({
           authContext: 'user'
         }
       }
-    ];
+    ]
 
     return {
       appInfo: {
@@ -87,7 +87,7 @@ export default defineWebApplication({
       },
       routes,
       extensions
-    };
+    }
   }
-});
+})
 ```

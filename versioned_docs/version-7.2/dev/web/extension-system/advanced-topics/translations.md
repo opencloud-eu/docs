@@ -14,11 +14,11 @@ Translations are optional. An app without them simply shows its original strings
 In a script or a composable, get `$gettext` from `useGettext`:
 
 ```typescript
-import { useGettext } from 'vue3-gettext';
+import { useGettext } from 'vue3-gettext'
 
-const { $gettext } = useGettext();
+const { $gettext } = useGettext()
 
-const title = $gettext('Your application name');
+const title = $gettext('Your application name')
 ```
 
 In a template, `$gettext` is globally available:
@@ -33,20 +33,20 @@ Pass variables as an object. Use the `%{name}` syntax in the string, never strin
 changes between languages:
 
 ```typescript
-$gettext('Open «%{resource}»', { resource: resource.name });
+$gettext('Open «%{resource}»', { resource: resource.name })
 ```
 
 For plurals, use `$ngettext` with the singular form, the plural form, the count, and the variables:
 
 ```typescript
-const { $ngettext } = useGettext();
+const { $ngettext } = useGettext()
 
 $ngettext(
   'Delete the selected resource?',
   'Delete %{amount} selected resources?',
   resources.length,
   { amount: resources.length.toString() }
-);
+)
 ```
 
 :::warning
@@ -76,7 +76,7 @@ module.exports = {
     flat: false,
     linguas: false
   }
-};
+}
 ```
 
 Add two scripts to your `package.json`:
@@ -105,13 +105,13 @@ Import `translations.json` and return it from your app definition. The Web runti
 translations when your app is loaded.
 
 ```typescript title="src/index.ts"
-import { defineWebApplication } from '@opencloud-eu/web-pkg';
-import { useGettext } from 'vue3-gettext';
-import translations from '../l10n/translations.json';
+import { defineWebApplication } from '@opencloud-eu/web-pkg'
+import { useGettext } from 'vue3-gettext'
+import translations from '../l10n/translations.json'
 
 export default defineWebApplication({
   setup() {
-    const { $gettext } = useGettext();
+    const { $gettext } = useGettext()
 
     return {
       appInfo: {
@@ -119,9 +119,9 @@ export default defineWebApplication({
         id: 'your-app'
       },
       translations
-    };
+    }
   }
-});
+})
 ```
 
 The file is a map of language key to message map:

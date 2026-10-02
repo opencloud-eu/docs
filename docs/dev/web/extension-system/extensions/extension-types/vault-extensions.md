@@ -24,12 +24,12 @@ To define a vault extension, you implement the `VaultExtension` interface. Here'
 
 ```typescript
 interface VaultExtension {
-  id: string;
-  type: 'vault';
-  extensionPointIds?: string[];
-  claimsPath: (space: SpaceResource, path: string) => VaultClaim | null;
-  resolve: (space: SpaceResource, path: string) => Promise<VaultEngine | null>;
-  creation?: VaultCreation;
+  id: string
+  type: 'vault'
+  extensionPointIds?: string[]
+  claimsPath: (space: SpaceResource, path: string) => VaultClaim | null
+  resolve: (space: SpaceResource, path: string) => Promise<VaultEngine | null>
+  creation?: VaultCreation
 }
 ```
 
@@ -46,9 +46,9 @@ For `id`, `type`, and `extensionPointIds`, please see [base configuration sectio
 
 ```typescript
 interface VaultClaim {
-  vaultRoot: string;
-  encryptsNames: boolean;
-  unlockRoute?: RouteLocationNamedRaw;
+  vaultRoot: string
+  encryptsNames: boolean
+  unlockRoute?: RouteLocationNamedRaw
 }
 ```
 
@@ -64,14 +64,14 @@ bare resource name is a relative path with one segment, so a name must encrypt i
 
 ```typescript
 interface VaultEngine {
-  vaultRoot: string;
-  encryptPath: (relativePath: string) => Promise<string>;
-  decryptPath: (relativePath: string) => Promise<string>;
-  encryptContent: (plaintext: ReadableStream<Uint8Array>) => ReadableStream<Uint8Array>;
-  decryptContent: (encrypted: ReadableStream<Uint8Array>) => ReadableStream<Uint8Array>;
-  createIntegrityToken: () => Promise<string>;
-  verifyIntegrityToken: (token: string) => Promise<boolean>;
-  verifySegment: (sampleEncryptedSegment: string) => Promise<boolean>;
+  vaultRoot: string
+  encryptPath: (relativePath: string) => Promise<string>
+  decryptPath: (relativePath: string) => Promise<string>
+  encryptContent: (plaintext: ReadableStream<Uint8Array>) => ReadableStream<Uint8Array>
+  decryptContent: (encrypted: ReadableStream<Uint8Array>) => ReadableStream<Uint8Array>
+  createIntegrityToken: () => Promise<string>
+  verifyIntegrityToken: (token: string) => Promise<boolean>
+  verifySegment: (sampleEncryptedSegment: string) => Promise<boolean>
 }
 ```
 
@@ -86,9 +86,9 @@ calling the engine directly.
 
 ```typescript
 interface VaultCreation {
-  vaultExtension: string;
-  vaultContentType: string;
-  setupComponent: Component;
+  vaultExtension: string
+  vaultContentType: string
+  setupComponent: Component
 }
 ```
 
@@ -101,23 +101,23 @@ interface VaultCreation {
 ### Example
 
 ```typescript title="src/extensions.ts"
-import { markRaw } from 'vue';
-import { VaultExtension } from '@opencloud-eu/web-pkg';
-import VaultSetup from './components/VaultSetup.vue';
+import { markRaw } from 'vue'
+import { VaultExtension } from '@opencloud-eu/web-pkg'
+import VaultSetup from './components/VaultSetup.vue'
 
 export const vaultSchemeExtension: VaultExtension = {
   id: 'app.rclone-crypt.vault',
   type: 'vault',
   resolve(space, path) {
-    return Promise.resolve(resolveVault(space, path));
+    return Promise.resolve(resolveVault(space, path))
   },
   claimsPath(space, path) {
-    return claimsVaultPath(space, path);
+    return claimsVaultPath(space, path)
   },
   creation: {
     vaultExtension: 'vault',
     vaultContentType: 'application/vnd.opencloud.vault',
     setupComponent: markRaw(VaultSetup)
   }
-};
+}
 ```

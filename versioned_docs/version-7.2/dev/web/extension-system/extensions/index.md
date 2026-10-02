@@ -34,8 +34,8 @@ The `extensions` key of an app definition takes a `Ref<Extension[]>`, so use a `
 content when your app is loaded:
 
 ```typescript title="src/index.ts"
-import { defineWebApplication, Extension } from '@opencloud-eu/web-pkg';
-import { computed } from 'vue';
+import { defineWebApplication, Extension } from '@opencloud-eu/web-pkg'
+import { computed } from 'vue'
 
 export default defineWebApplication({
   setup() {
@@ -48,7 +48,7 @@ export default defineWebApplication({
           // See the action extension docs
         }
       }
-    ]);
+    ])
 
     return {
       appInfo: {
@@ -56,9 +56,9 @@ export default defineWebApplication({
         id: 'my-app'
       },
       extensions
-    };
+    }
   }
-});
+})
 ```
 
 Because the value is a ref, the list is reactive. You can hide or show an extension based on the app config, the
@@ -67,10 +67,10 @@ capabilities of the server, or the permissions of the user:
 ```typescript
 const extensions = computed<Extension[]>(() => {
   if (!unref(isFeatureAvailable)) {
-    return [];
+    return []
   }
-  return [myExtension];
-});
+  return [myExtension]
+})
 ```
 
 ### At runtime
@@ -79,17 +79,17 @@ You can also register extensions from any place that has access to the injection
 composable:
 
 ```typescript
-import { useExtensionRegistry } from '@opencloud-eu/web-pkg';
+import { useExtensionRegistry } from '@opencloud-eu/web-pkg'
 
-const extensionRegistry = useExtensionRegistry();
+const extensionRegistry = useExtensionRegistry()
 
-extensionRegistry.registerExtensions(computed(() => [myExtension]));
+extensionRegistry.registerExtensions(computed(() => [myExtension]))
 ```
 
 Remove them again via `unregisterExtensions`, which takes the ids:
 
 ```typescript
-extensionRegistry.unregisterExtensions([myExtension.id]);
+extensionRegistry.unregisterExtensions([myExtension.id])
 ```
 
 Prefer the app definition. Use the runtime API only when the extensions are not known at that point, for example because
@@ -106,14 +106,14 @@ Use `requestExtensions` to get all extensions of an extension point. The registr
 `type` matches the `extensionType` of the extension point, and whose `extensionPointIds` allow this extension point:
 
 ```typescript
-import { ActionExtension, useExtensionRegistry } from '@opencloud-eu/web-pkg';
-import { computed } from 'vue';
+import { ActionExtension, useExtensionRegistry } from '@opencloud-eu/web-pkg'
+import { computed } from 'vue'
 
-const extensionRegistry = useExtensionRegistry();
+const extensionRegistry = useExtensionRegistry()
 
 const actions = computed(() =>
   extensionRegistry.requestExtensions<ActionExtension>(myExtensionPoint).map(({ action }) => action)
-);
+)
 ```
 
 To learn how to define `myExtensionPoint`, please refer to the

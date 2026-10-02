@@ -40,30 +40,30 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return;
+      return
     }
 
-    const resources = event.data.data;
+    const resources = event.data.data
 
-    doSomethingWithSelectedResources(resources);
+    doSomethingWithSelectedResources(resources)
   }
 
   function shareLinksEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:share-links') {
-      return;
+      return
     }
 
-    const links = event.data.data; // Array<{ url: string, password?: string }>
+    const links = event.data.data // Array<{ url: string, password?: string }>
 
     links.forEach((link) => {
-      console.log('Shared link:', link.url, link.password);
-    });
+      console.log('Shared link:', link.url, link.password)
+    })
 
-    doSomethingWithSharedLinks(links);
+    doSomethingWithSharedLinks(links)
   }
 
-  window.addEventListener('message', selectEventHandler);
-  window.addEventListener('message', shareLinksEventHandler);
+  window.addEventListener('message', selectEventHandler)
+  window.addEventListener('message', shareLinksEventHandler)
 </script>
 ```
 
@@ -80,15 +80,15 @@ In special scenarios you also want the user to set a file name, this can be achi
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return;
+      return
     }
 
-    const resources = event.data.data[0];
+    const resources = event.data.data[0]
 
-    doSomethingWithSelectedResources(resources);
+    doSomethingWithSelectedResources(resources)
   }
 
-  window.addEventListener('message', selectEventHandler);
+  window.addEventListener('message', selectEventHandler)
 </script>
 ```
 
@@ -110,15 +110,15 @@ combination of both. If the embed-file-types parameter is not provided, all file
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:file-pick') {
-      return;
+      return
     }
 
-    const file = event.data.data;
+    const file = event.data.data
 
-    doSomethingWithPickedFile(file);
+    doSomethingWithPickedFile(file)
   }
 
-  window.addEventListener('message', selectEventHandler);
+  window.addEventListener('message', selectEventHandler)
 </script>
 ```
 
