@@ -35,7 +35,8 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
-    | v8.1.0 | TBD | TBD |
+    | v8.2.0 | TBD | TBD |
+    | v8.1.0 | 2026 October 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.1.0) |
     | v8.0.1 | 2026 September 16 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.1) |
     | v8.0.0 | 2026 September 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.0) |
     | v7.5.0 | 2026 August 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.5.0) |
