@@ -221,7 +221,23 @@ The `ocm` entry enables the OCM application in OpenCloud Web.
 
 :::important
 
-Do not remove web applications that are required by your deployment. If your existing `web.yaml` already contains an `apps` list, add `ocm` to the existing list instead of replacing it completely.
+Do not remove web applications that are required by your deployment. If your existing `web.yaml` already contains an `apps` list, add `ocm` to the existing list instead of replacing it completely. To find out what `apps` are currently loaded, you can execute the following command:
+
+```bash
+curl -sk https://cloud1.opencloud.test/config.json | jq .apps
+[
+  "files",
+  "search",
+  "text-editor",
+  "pdf-viewer",
+  "external",
+  "admin-settings",
+  "epub-reader",
+  "preview",
+  "app-store",
+  "rclone-crypt"
+]
+```
 
 :::
 
