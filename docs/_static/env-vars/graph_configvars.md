@@ -94,6 +94,7 @@
 |`GRAPH_LDAP_METRICS_DISABLE`| 8.0.0 |bool|`Disables the metrics for outbound LDAP operations.`|`"true"`|
 |`GRAPH_IDENTITY_BACKEND_METRICS_DISABLE`| 8.0.0 |bool|`Disables the metrics for inbound identity backend operations.`|`"true"`|
 |`OC_ENABLE_OCM`<br/>`GRAPH_INCLUDE_OCM_SHAREES`| 1.0.0 |bool|`Include OCM sharees when listing users.`|`"false"`|
+|`GRAPH_ENABLE_GUEST_INVITES`| 8.1.0 |bool|`Enables creating permission invites (shares) to mail addresses. Disabled by default.`|`"false"`|
 |`GRAPH_EVENTS_DISABLE_CONSUMER`| 8.0.0 |bool|`Disables consuming events. Set this to true if the service should only handle HTTP requests.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`<br/>`GRAPH_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Set to a empty string to disable emitting events.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`GRAPH_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"opencloud-cluster"`|

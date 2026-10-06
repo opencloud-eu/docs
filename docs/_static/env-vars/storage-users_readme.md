@@ -13,6 +13,8 @@ Purpose and description to be added
   * [Manage Unfinished Uploads](#manage-unfinished-uploads)
     * [Sessions command](#sessions-command)
     * [Command Examples](#command-examples)
+    * [Delete Stale Nodes command](#delete-stale-nodes-command)
+    * [Command Examples](#command-examples)
   * [Manage Trash-Bin Items](#manage-trashbin-items)
     * [Purge Expired](#purge-expired)
     * [List and Restore Trash-Bins Items](#list-and-restore-trashbins-items)
@@ -71,7 +73,8 @@ opencloud storage-users uploads <command>
 
 ```plaintext
 COMMANDS:
-   sessions   Print a list of upload sessions
+   delete-stale-nodes Delete (or revert) all nodes in processing state that are not referenced by any upload session
+   sessions           Print a list of upload sessions
 ```
 
 #### Sessions command
@@ -155,6 +158,50 @@ opencloud storage-users uploads sessions --expired=true --clean
 # resumes all uploads that are processing and are not virus infected
 opencloud storage-users uploads sessions --processing=false --has-virus=false --resume
 ```
+
+
+#### Delete Stale Nodes command
+
+This command allows to remove (or revert) nodes that are stale, meaning they are in postprocessing but their upload session is gone.
+It will check all nodes that are in postprocessing and find those without an upload session. Then it will delete the node if there are no other versions. If there are other versions, it will instead revert the node to the previous version.
+The command reads the decomposed storage directly, so it only finds nodes when the msgpack metadata backend (`.mpk` files) is used. The stale nodes are cleaned up by `DeleteRevision` events, which are consumed by the running `storage-users` service: it needs to be up for the cleanup to actually happen.
+
+```bash
+    opencloud storage-users uploads delete-stale-nodes <commandoptions>
+```
+```plaintext
+Delete (or revert) all nodes in processing state that are not referenced by any upload session
+
+Usage:
+  opencloud storage-users uploads delete-stale-nodes [flags]
+
+Flags:
+      --dry-run          Only show what would be deleted without actually deleting (default true)
+  -h, --help             help for delete-stale-nodes
+      --spaceid string   Space ID to check for processing nodes (omit to check all spaces)
+      --verbose          Enable verbose logging
+```
+
+#### Command Examples
+
+Dry run to see what would be deleted (recommended first step)
+
+```bash
+opencloud storage-users uploads delete-stale-nodes
+```
+
+Set `--dry-run=false` to actually delete the stale nodes
+
+```bash
+opencloud storage-users uploads delete-stale-nodes --dry-run=false
+```
+
+Use `--verbose` to get more information about what is happening
+
+```bash
+opencloud storage-users uploads delete-stale-nodes --dry-run=false --verbose
+```
+
 
 ### Manage Trash-Bin Items
 

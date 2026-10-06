@@ -127,6 +127,7 @@ identity:
   metrics:
     disabled: true
 include_ocm_sharees: false
+enable_guest_invites: false
 events:
   disabled_consumer: false
   endpoint: 127.0.0.1:9233
