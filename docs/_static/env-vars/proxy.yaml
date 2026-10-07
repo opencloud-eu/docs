@@ -150,6 +150,10 @@ policies:
   - endpoint: /graph/v1.0/invitations
     service: eu.opencloud.web.invitations
     skip_x_access_token: false
+  - endpoint: /graph/v1beta1/extensions/org.libregraph/guestLinks
+    service: eu.opencloud.web.auth-guest
+    unprotected: true
+    skip_x_access_token: false
   - endpoint: /graph/
     service: eu.opencloud.web.graph
     skip_x_access_token: false
@@ -163,12 +167,8 @@ policies:
     service: eu.opencloud.web.collaboration
     unprotected: true
     skip_x_access_token: true
-  - endpoint: /collaboration/fonts/manage
-    service: eu.opencloud.web.collaboration
-    skip_x_access_token: false
   - endpoint: /collaboration
     service: eu.opencloud.web.collaboration
-    unprotected: true
     skip_x_access_token: false
 additional_policies: []
 oidc:
@@ -264,3 +264,5 @@ events:
   enable_tls: false
   username: ""
   password: ""
+guest_link_auth:
+  cookie_name: __Host-oc_guest_session

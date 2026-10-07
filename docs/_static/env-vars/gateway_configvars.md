@@ -47,6 +47,7 @@
 |`GATEWAY_AUTH_BEARER_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-bearer service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`""`|
 |`GATEWAY_AUTH_MACHINE_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-machine service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-machine"`|
 |`GATEWAY_AUTH_SERVICE_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-service service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-service"`|
+|`GATEWAY_AUTH_GUESTLINKS_ENDPOINT`| next |string|`The endpoint of the auth-guestlinks service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-guest"`|
 |`GATEWAY_STORAGE_PUBLIC_LINK_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-publiclink service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-publiclink"`|
 |`GATEWAY_STORAGE_USERS_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-users service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-users"`|
 |`GATEWAY_STORAGE_SHARES_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-shares service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-shares"`|
