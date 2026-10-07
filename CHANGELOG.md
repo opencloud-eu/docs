@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders, @v-scharf
+@JammingBen, @openclouders, @v-scharf
+
+### :octocat: Developer Documentation
+
+- Document web app folder and ID naming [[#1198](https://github.com/opencloud-eu/docs/pull/1198)]
 
 ### 👷 Admin Documentation
 
