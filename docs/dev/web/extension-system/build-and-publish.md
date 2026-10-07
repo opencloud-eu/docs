@@ -40,11 +40,24 @@ Apps in the OpenCloud app store are listed in the
 [awesome-apps repository](https://github.com/opencloud-eu/awesome-apps). Publishing means adding your app to its
 `webApps/apps.json` file via a pull request.
 
+### App ID
+
+OpenCloud identifies an installed app by the name of its folder in the web application directory. To match installed
+apps against the app store, e.g. to show version compatibility in the admin settings, the following IDs must line up:
+
+1. The folder inside your zip must be named exactly like the `id` of your app's `appInfo`.
+2. The `id` of your app in awesome-apps' `apps.json` must either equal this ID or end with it, separated by a dot.
+
+For example, an app with the `appInfo.id` `my-app` ships a zip containing a `my-app` folder and is listed in
+`apps.json` as `com.github.my-org.my-repo.my-app`. If your `appInfo.id` is already namespaced, e.g.
+`com.github.my-org.my-app`, use that exact ID for both the folder and the `apps.json` entry.
+
 ### Requirements
 
 - Your app must be downloadable as a `.zip` file from a stable URL, for example a GitHub release asset.
-- The zip must contain a `manifest.json` in its root, next to your built files. A production build produces this
-  already, so zip the content of your `dist` folder, not the folder itself.
+- The zip must contain a single folder named after your app ID (see [App ID](#app-id)). That folder holds the content
+  of your `dist` folder, including the `manifest.json` that a production build produces. Admins copy this folder into
+  their web application directory as is.
 
 ### apps.json entry
 
@@ -84,7 +97,10 @@ Add one entry under the `apps` key. The schema is defined in the
 
 Notes on the fields:
 
+- `id` must equal your app ID or end with it, separated by a dot (see [App ID](#app-id)).
 - `versions` must be sorted from newest to oldest. `minOpenCloud` is the lowest OpenCloud version your app supports.
+  `maxOpenCloud` is optional and marks the highest supported OpenCloud version. Its patch component is ignored: for
+  example, `7.5.0` allows all `7.5.x` versions.
 - `badge` is optional and accepts a `label` and a `color` of `primary`, `success` or `danger`.
 - `screenshots` and `resources` are optional.
 
