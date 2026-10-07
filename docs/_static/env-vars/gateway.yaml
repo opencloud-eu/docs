@@ -55,6 +55,7 @@ auth_basic_endpoint: eu.opencloud.api.auth-basic
 auth_bearer_endpoint: ""
 auth_machine_endpoint: eu.opencloud.api.auth-machine
 auth_service_endpoint: eu.opencloud.api.auth-service
+auth_guestlinks_endpoint: eu.opencloud.api.auth-guest
 storage_public_link_endpoint: eu.opencloud.api.storage-publiclink
 storage_users_endpoint: eu.opencloud.api.storage-users
 storage_shares_endpoint: eu.opencloud.api.storage-shares
