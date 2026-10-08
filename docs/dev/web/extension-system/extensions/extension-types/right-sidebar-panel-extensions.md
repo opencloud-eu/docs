@@ -55,8 +55,7 @@ interface SideBarPanelContext<R extends Item, P extends Item, T extends Item> {
 ```typescript
 interface SideBarPanel<R extends Item, P extends Item, T extends Item> {
   name: string
-  icon: string
-  iconFillType?: IconFillType
+  icon: Icon
   title(context: SideBarPanelContext<R, P, T>): string
   isVisible(context: SideBarPanelContext<R, P, T>): boolean
   component: Component
@@ -66,7 +65,7 @@ interface SideBarPanel<R extends Item, P extends Item, T extends Item> {
 ```
 
 - `name` - A human readable id for the panel.
-- `icon`, `iconFillType` and `title` - Properties which are used to render the panel itself or right sidebar navigation items for navigating into that panel.
+- `icon` and `title` - Properties which are used to render the panel itself or right sidebar navigation items for navigating into that panel. For the `icon`, please see the [icons section](../index.md#icons).
 - `isVisible` - Determines if the panel is available for the given panel context.
 - `component` - Provides a component that renders the actual sidebar panel.
 - `componentAttrs` - Defines additional props for the component with the given panel context.
