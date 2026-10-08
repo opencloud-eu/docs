@@ -20,7 +20,7 @@ interface AccountExtension {
   extensionPointIds?: string[]
   content: Slot | Component
   label: () => string
-  icon: string
+  icon: Icon
 }
 ```
 
@@ -28,7 +28,7 @@ For `id`, `type`, and `extensionPointIds`, please see [base configuration sectio
 
 - `content` - The component to render inside the panel.
 - `label` - Returns the title of the panel. Wrap it in `$gettext` to make it translatable.
-- `icon` - The icon of the navigation entry, can be picked from [Remix Icon](https://remixicon.com/).
+- `icon` - The icon of the navigation entry, see the [icons section](../index.md#icons).
 
 ### Example
 

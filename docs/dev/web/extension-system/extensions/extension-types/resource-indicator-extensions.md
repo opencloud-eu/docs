@@ -38,8 +38,7 @@ interface ResourceIndicatorIcon {
   accessibleDescription: string
   type: string
   category: 'system' | 'sharing' | 'space'
-  icon: string
-  fillType: IconFillType
+  icon: Icon
   handler?: (resource: Resource, event?: MouseEvent) => void
 }
 
@@ -53,6 +52,8 @@ interface ResourceIndicatorTag {
   class?: string
 }
 ```
+
+For the `icon`, please see the [icons section](../index.md#icons).
 
 ### Example
 
@@ -74,8 +75,7 @@ const extension: ResourceIndicatorExtension = {
         kind: 'icon',
         label: $gettext('Read only'),
         accessibleDescription: $gettext('This item cannot be modified'),
-        icon: 'lock-2',
-        fillType: 'line',
+        icon: { name: 'lock-2', fillType: 'line' },
         category: 'system',
         type: 'read-only'
       }

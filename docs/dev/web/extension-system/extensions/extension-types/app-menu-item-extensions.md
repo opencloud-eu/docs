@@ -20,7 +20,7 @@ interface AppMenuItemExtension {
   label: () => string
   color?: string
   handler?: () => Promise<void> | void
-  icon?: string
+  icon?: Icon
   path?: string
   priority?: number
   url?: string
@@ -36,6 +36,8 @@ A `path` will result in an `<a>` element that links to an internal page via the 
 A `url` will result in an `<a>` element that links to an external page. External pages always open in a new tab or window.
 
 At least one of these properties has to be provided when registering an extension. If you define more than one, the priority order is `handler` > `path` > `url`.
+
+`icon` is the icon of the menu item, see the [icons section](../index.md#icons).
 
 `priority` specifies the order of the menu items. 50 is a good number to start with, then go up/down based on where the item should be placed. Defaults to the highest possible number, so the item will most likely end up at the bottom of the list if you don't specify a `priority`. Leave it empty if unsure what to pick.
 

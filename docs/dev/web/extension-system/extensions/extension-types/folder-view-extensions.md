@@ -29,7 +29,7 @@ For the folderView object, you have the following configuration options:
 
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed to the user when switching between different FolderView options
-- `icon` - Object, expecting an icon `name` and a corresponding `IconFillType`, see [Remix Icon](https://remixicon.com/) for available options
+- `icon` - The icon to be displayed to the user when switching between different FolderView options, see the [icons section](../index.md#icons)
 - `component` - The Vue component to render the resources. It should expect a prop of type `Resource[]`
 - `componentAttrs` - Optional function returning additional props for the component mentioned above
 
