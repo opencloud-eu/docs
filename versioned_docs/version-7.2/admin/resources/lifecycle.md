@@ -29,7 +29,11 @@ With LTS, businesses can continue using an older production release without need
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
-    | v7.5.0 | TBD | TBD |
+    | v8.2.0 | TBD | TBD |
+    | v8.1.0 | 2026 October 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.1.0) |
+    | v8.0.1 | 2026 September 16 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.1) |
+    | v8.0.0 | 2026 September 15 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.0.0) |
+    | v7.5.0 | 2026 August 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.5.0) |
     | v7.4.0 | 2026 August 3 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.4.0) |
     | v7.3.0 | 2026 July 14 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.3.0) |
     | v7.2.0 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.0) |
@@ -64,7 +68,9 @@ With LTS, businesses can continue using an older production release without need
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
     | - | 2026 October 26 | Production Release |
-    | v7.2.2 | 2026 July 13 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.1) |
+    | v7.2.4 | 2026 August 21 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.4) |
+    | v7.2.3 | 2026 August 6 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.3) |
+    | v7.2.2 | 2026 July 13 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.2) |
     | v7.2.1 | 2026 July 6 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.1) |
     | v4.0.8 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.8) |
     | v7.2.0 | 2026 June 25 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.0) |

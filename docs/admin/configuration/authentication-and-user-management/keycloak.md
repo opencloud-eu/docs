@@ -215,7 +215,7 @@ For Shared Directory Mode:
 
 ```bash
 # Enable services
-COMPOSE_FILE=docker-compose.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
 # Your public keycloak domain without protocol
 KEYCLOAK_DOMAIN=your-keycloak-domain.example.com
 # Admin user login name. Defaults to "kcadmin".
@@ -324,7 +324,7 @@ For Autoprovisioning Mode:
 
 ```bash
 # Enable services
-COMPOSE_FILE=docker-compose.yml:idm/external-idp.yml:traefik/opencloud.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:idm/external-idp.yml:traefik/opencloud.yml
 # Your public keycloak domain without protocol
 IDP_DOMAIN=your-idp-domain.example.com
 # The openCloud users need to be able to edit their account in the external IdP

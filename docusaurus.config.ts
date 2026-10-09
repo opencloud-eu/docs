@@ -61,7 +61,8 @@ presets: [
   themeConfig: {
     image: 'img/oc-docs-social-card.jpg',
     colorMode: {
-      defaultMode: 'light'
+      defaultMode: 'light',
+      respectPrefersColorScheme: true
     },
     navbar: {
       logo: {

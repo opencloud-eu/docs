@@ -116,7 +116,7 @@ curl -vk -XPOST 'https://ocis_url/auth-app/tokens?expiry=72h&userName=einstein' 
 
 Create a new App Password
 
-![Generate App Password](./img/generate-pass-nc.png)
+![Generate App Password](./img/migrate/generate-pass-nc.png)
 
 </TabItem>
 </Tabs>
@@ -198,6 +198,33 @@ description = nc-bob
 
 ```
 
+## Prepare OpenCloud for a Large Migration
+
+:::note Optional optimization
+The steps in this section are intended for a large initial bulk import. Skip them for small
+migrations where the additional system load is not a concern.
+:::
+
+A bulk import generates substantially more file events than normal operation. Temporarily exclude
+the `activitylog` and `search` services to prevent activity processing and search indexing from
+competing with the migration for system resources.
+
+Add both services to `OC_EXCLUDE_RUN_SERVICES` in the OpenCloud `.env` file:
+
+```dotenv
+OC_EXCLUDE_RUN_SERVICES=activitylog,search
+```
+
+If the variable already contains other services, preserve them and append `activitylog` and `search`
+to the comma-separated list. Restart the OpenCloud container after changing the configuration.
+
+While the services are excluded:
+
+- OpenCloud does not record activity history for files created or updated by the migration. This can
+  prevent duplicate or misleading entries when data is migrated in multiple passes.
+- Search results for migrated data remain incomplete until the search service is re-enabled and the
+  index is rebuilt.
+
 ## Copy Data to OpenCloud
 
 Use `rclone copy` to transfer data from `oCIS` and `Nextcloud` to `OpenCloud`:
@@ -208,6 +235,22 @@ rclone copy ocis-einstein:/ opencloud-alan:/ --no-check-certificate -P  # Copy o
 rclone copy nc-bob:/ opencloud-alan:/ --no-check-certificate -P  # Copy Nextcloud admin personal space to OpenCloud admin space
 
 ```
+
+## Restore Normal Operation After a Large Migration
+
+If you applied the optimizations for a large migration:
+
+1. Remove `activitylog` and `search` from `OC_EXCLUDE_RUN_SERVICES`, preserving any services that
+   were excluded before the migration.
+2. Restart OpenCloud and wait until the search service is ready.
+3. Build the search index for all Spaces:
+
+   ```shell
+   docker compose exec opencloud opencloud search index --all-spaces
+   ```
+
+   Indexing can take a long time on large installations. Search results remain incomplete until it
+   has finished.
 
 ## Migration Results and Limitations
 

@@ -38,6 +38,7 @@ http:
     - Upload-Metadata
     - Upload-Defer-Length
     - Upload-Concat
+    - Upload-Complete
     - Upload-Incomplete
     - Upload-Draft-Interop-Version
     allow_credentials: false
@@ -52,6 +53,7 @@ http:
     - Upload-Metadata
     - Upload-Defer-Length
     - Upload-Concat
+    - Upload-Complete
     - Upload-Incomplete
     - Upload-Draft-Interop-Version
     max_age: 86400
@@ -150,8 +152,6 @@ drivers:
     watch_root: ""
     inotify_stats_frequency: 5m0s
 data_server_url: http://localhost:9158/data
-data_gateway_url: http://localhost:9140/data
-transfer_expires: 86400
 events:
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
@@ -186,7 +186,6 @@ id_cache:
   tls_insecure: false
   tls_root_ca_certificate: ""
 mount_id: ""
-expose_data_server: false
 readonly: false
 upload_expiration: 86400
 tasks:

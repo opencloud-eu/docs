@@ -40,15 +40,13 @@ SMTP_AUTHENTICATION=auto
 
 See section [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) in the developers documentation for possible values for these variables. Note, that the environment variables are prefixed with `NOTIFICATIONS_`, so `NOTIFICATIONS_SMTP_AUTHENTICATION` shows possible values for `SMTP_AUTHENTICATION` in the `.env` file.
 
-Per default the `notifications` service is disabled. To send out notifications, the service must be enabled via:
+By default, the `notifications` service is disabled. To send notifications, enable the service in the `.env` file:
 
 ```env
-START_ADDITIONAL_SERVICES="notifications"
+START_ADDITIONAL_SERVICES=notifications
 ```
 
-:::warning
-In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
-:::
+In the OpenCloud Compose setup, `START_ADDITIONAL_SERVICES` is mapped to `OC_ADD_RUN_SERVICES` inside the OpenCloud container.
 
 ## Save and exit
 

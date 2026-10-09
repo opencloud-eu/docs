@@ -16,11 +16,11 @@ On macOS, files are downloaded to your system. You can configure what to sync an
 2. Go to the Account View.
 3. Click the three-dot menu (...) next to the Space you want to configure.
 
-<img src={require(".././img/sync-settings/sync-settings-three-dot.png").default} alt="Account spaces menu" width="400"/>
+<img src={require(".././img/macos/sync-settings/sync-settings-three-dot.png").default} alt="Account spaces menu" width="400"/>
 
 ## Synchronization Options
 
-<img src={require(".././img/sync-settings/sync-settings-menu.png").default} alt="Choose what to sync" width="400"/>
+<img src={require(".././img/macos/sync-settings/sync-settings-menu.png").default} alt="Choose what to sync" width="400"/>
 
 ### Show in Finder
 
@@ -50,7 +50,7 @@ On macOS, files are downloaded to your system. You can configure what to sync an
 - Select specific folders to sync locally.
 - Helps save disk space by keeping only necessary files synced.
 
-<img src={require(".././img/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
+<img src={require(".././img/macos/sync-settings/sync-settings-choose-what-to-sync.png").default} alt="Choose what to sync" width="400"/>
 
 :::note
 Files and folders not selected for sync will not be available locally.

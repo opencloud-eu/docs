@@ -103,9 +103,8 @@ WEBFINGER_DESKTOP_OIDC_CLIENT_SCOPES=openid profile email offline_access
 :::note
 
 - Android and iOS clients use the WebFinger discovery mechanism.
-- The Desktop Client does not fully support this discovery mechanism yet.
-  Configure the Desktop Client WebFinger variables anyway so the setup is ready
-  for client support and stays consistent.
+- The Desktop Client supports the WebFinger discovery mechanism starting with
+  version 4.0.
 
   :::
 

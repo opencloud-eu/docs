@@ -95,5 +95,5 @@ You can switch between the Rolling version and specific release versions using t
 
 ### Help
 
-- [Common Issues and Help](./common-issues)  
+- [Common Issues and Help](./common-issues/index.md)
   Find solutions for common problems and answers to frequently asked questions.

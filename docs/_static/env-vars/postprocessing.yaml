@@ -35,3 +35,4 @@ postprocessing:
   delayprocessing: 0s
   retry_backoff_duration: 5s
   max_retries: 14
+  publish_max_retries: 5

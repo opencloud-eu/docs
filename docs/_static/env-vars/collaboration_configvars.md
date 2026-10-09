@@ -12,8 +12,10 @@
 |`COLLABORATION_APP_PROOF_DISABLE`| 1.0.0 |bool|`Disable the proof keys verification`|`"false"`|
 |`COLLABORATION_APP_PROOF_DURATION`| 1.0.0 |string|`Duration for the proof keys to be cached in memory, using time.ParseDuration format. If the duration can't be parsed, we'll use the default 12h as duration`|`"12h"`|
 |`COLLABORATION_APP_LICENSE_CHECK_ENABLE`| 1.0.0 |bool|`Enable license checking to edit files. Needs to be enabled when using Microsoft365 with the business flow.`|`"false"`|
+|`COLLABORATION_APP_PRODUCT_EDITION`| 8.1.0 |string|`The edition of the WebOffice app, it decides which features the app offers. Only used for EuroOffice, where 'ce', 'de' and 'ee' are supported and an empty value is the same as 'ce'.`|`""`|
 |`COLLABORATION_FONT_ASSET_PATH`| 7.3.0 |string|`Serve fonts from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/collaboration/fonts`|`"/var/lib/opencloud/collaboration/fonts"`|
 |`COLLABORATION_FONT_PREVIEW_TEXT`| 7.3.0 |string|`The text that will be displayed in the font preview.`|`"OpenCloud"`|
+|`COLLABORATION_FONT_BASE_URL`| 7.3.0 |string|`The base URL under which the font files are served. It must match the URL configured in the remote_font_config of the office suite. If not set, it defaults to $OC_URL/collaboration/fonts`|`""`|
 |`OC_PERSISTENT_STORE`<br/>`COLLABORATION_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`COLLABORATION_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`COLLABORATION_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"collaboration"`|
@@ -24,13 +26,6 @@
 |`OC_PERSISTENT_STORE_ENABLE_TLS`<br/>`COLLABORATION_STORE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to the store. Only applies when store type 'nats-js-kv' is configured.`|`"false"`|
 |`OC_INSECURE`<br/>`OC_PERSISTENT_STORE_TLS_INSECURE`<br/>`COLLABORATION_STORE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_PERSISTENT_STORE_TLS_ROOT_CA_CERTIFICATE`<br/>`COLLABORATION_STORE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided COLLABORATION_STORE_TLS_INSECURE will be seen as false.`|`""`|
-|`OC_EVENTS_ENDPOINT`<br/>`COLLABORATION_EVENTS_ENDPOINT`| 7.3.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
-|`OC_EVENTS_CLUSTER`<br/>`COLLABORATION_EVENTS_CLUSTER`| 7.3.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
-|`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`COLLABORATION_EVENTS_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
-|`OC_EVENTS_TLS_ROOT_CA_CERTIFICATE`<br/>`COLLABORATION_EVENTS_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided COLLABORATION_EVENTS_TLS_INSECURE will be seen as false.`|`""`|
-|`OC_EVENTS_ENABLE_TLS`<br/>`COLLABORATION_EVENTS_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
-|`OC_EVENTS_AUTH_USERNAME`<br/>`COLLABORATION_EVENTS_AUTH_USERNAME`| 7.3.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`OC_EVENTS_AUTH_PASSWORD`<br/>`COLLABORATION_EVENTS_AUTH_PASSWORD`| 7.3.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_JWT_SECRET`<br/>`COLLABORATION_JWT_SECRET`| 1.0.0 |string|`The secret to mint and validate jwt tokens.`|`""`|
 |`COLLABORATION_GRPC_ADDR`| 1.0.0 |string|`The bind address of the GRPC service.`|`"127.0.0.1:9301"`|
 |`OC_GRPC_PROTOCOL`<br/>`COLLABORATION_GRPC_PROTOCOL`| 1.0.0 |string|`The transport protocol of the GRPC service.`|`"tcp"`|
@@ -44,6 +39,8 @@
 |`COLLABORATION_WOPI_PROXY_URL`| 1.0.0 |string|`The URL to the OpenCloud WOPI proxy. Optional. To use this feature, you need an office365 proxy subscription. If you become part of the Microsoft CSP program (\https://learn.microsoft.com/en-us/partner-center/enroll/csp-overview), you can use WebOffice without a proxy.`|`""`|
 |`COLLABORATION_WOPI_PROXY_SECRET`| 1.0.0 |string|`Optional, the secret to authenticate against the OpenCloud WOPI proxy. This secret can be obtained from OpenCloud via the office365 proxy subscription.`|`""`|
 |`COLLABORATION_WOPI_SHORTTOKENS`| 1.0.0 |bool|`Use short access tokens for WOPI access. This is useful for office packages, like Microsoft Office Online, which have URL length restrictions. If enabled, a persistent store must be configured.`|`"false"`|
+|`COLLABORATION_WOPI_ENABLE_MOBILE`| 8.1.0 |bool|`Enable the mobile web view of the office web frontend. This feature applies to EuroOffice, where the product edition decides whether it covers editing as well.`|`"false"`|
+|`COLLABORATION_WOPI_DISABLED_EXTENSIONS`| 8.1.0 |[]string|`A comma separated list of file extensions the office web frontend must not offer, for example 'docx,xlsx'. Extensions are matched case-insensitively, with or without the leading dot.`|`"[]"`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata.`|`"eu.opencloud.api.gateway"`|
 |`COLLABORATION_CS3API_DATAGATEWAY_INSECURE`| 1.0.0 |bool|`Connect to the CS3API data gateway insecurely.`|`"false"`|
 |`COLLABORATION_CS3API_APP_REGISTRATION_INTERVAL`| 4.0.0 |Duration|`The interval at which the app provider registers itself.`|`"30s"`|
@@ -52,4 +49,3 @@
 |`COLLABORATION_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`COLLABORATION_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`COLLABORATION_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
-|`OC_MACHINE_AUTH_API_KEY`<br/>`COLLABORATION_MACHINE_AUTH_API_KEY`| 7.3.0 |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`|`""`|

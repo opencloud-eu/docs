@@ -1,5 +1,213 @@
 # Changelog
 
+## [3.50.0](https://github.com/opencloud-eu/docs/releases/tag/3.50.0) - 2026-10-07
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen, @openclouders, @v-scharf
+
+### :octocat: Developer Documentation
+
+- Document web app folder and ID naming [[#1198](https://github.com/opencloud-eu/docs/pull/1198)]
+
+### 👷 Admin Documentation
+
+- publish 8.1.0 release notes [[#1195](https://github.com/opencloud-eu/docs/pull/1195)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1199](https://github.com/opencloud-eu/docs/pull/1199)]
+
+## [3.49.0](https://github.com/opencloud-eu/docs/releases/tag/3.49.0) - 2026-10-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @JammingBen, @Svanvith, @enricocirignaco
+
+### :octocat: Developer Documentation
+
+- Remove semicolons from web dev docs [[#1193](https://github.com/opencloud-eu/docs/pull/1193)]
+- Overhaul web extension system docs [[#1187](https://github.com/opencloud-eu/docs/pull/1187)]
+
+### 🐾 Guides
+
+- add img folder structure to the readme and contributing.md [[#1186](https://github.com/opencloud-eu/docs/pull/1186)]
+- refine .img structure in rolling [[#1184](https://github.com/opencloud-eu/docs/pull/1184)]
+
+### 👷 Admin Documentation
+
+- Add chapter "Separating OpenCloud Internal Data and User Storage" to storage docs [[#1121](https://github.com/opencloud-eu/docs/pull/1121)]
+
+### 👤 User Documentation
+
+- add e2ee folders part in files and folders [[#1157](https://github.com/opencloud-eu/docs/pull/1157)]
+
+## [3.48.0](https://github.com/opencloud-eu/docs/releases/tag/3.48.0) - 2026-09-22
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @kulmann, @openclouders
+
+### 👷 Admin Documentation
+
+- docs: remove sentry config from web docs [[#1183](https://github.com/opencloud-eu/docs/pull/1183)]
+- add Yjs Nginx guidance to the 8.x upgrade guide [[#1181](https://github.com/opencloud-eu/docs/pull/1181)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1175](https://github.com/opencloud-eu/docs/pull/1175)]
+
+## [3.47.0](https://github.com/opencloud-eu/docs/releases/tag/3.47.0) - 2026-09-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- remove the upgrade guide to 8.x from version 4.x and 7.x [[#1179](https://github.com/opencloud-eu/docs/pull/1179)]
+- publish 8.0.1 release notes [[#1177](https://github.com/opencloud-eu/docs/pull/1177)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1174](https://github.com/opencloud-eu/docs/pull/1174)]
+
+## [3.46.0](https://github.com/opencloud-eu/docs/releases/tag/3.46.0) - 2026-09-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@JammingBen, @Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- Clarify search index versioning in 8.x.x upgrade guide [[#1173](https://github.com/opencloud-eu/docs/pull/1173)]
+- add webfinger support info for desktop client 4.0) [[#1164](https://github.com/opencloud-eu/docs/pull/1164)]
+- add yjs collaboration docs [[#1166](https://github.com/opencloud-eu/docs/pull/1166)]
+- Use version-neutral in upgrade search index note [[#1171](https://github.com/opencloud-eu/docs/pull/1171)]
+- add common issues about login loop in desktop client [[#1163](https://github.com/opencloud-eu/docs/pull/1163)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1172](https://github.com/opencloud-eu/docs/pull/1172)]
+
+## [3.45.0](https://github.com/opencloud-eu/docs/releases/tag/3.45.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 👷 Admin Documentation
+
+- Explain bleve index removal [[#1169](https://github.com/opencloud-eu/docs/pull/1169)]
+- change bleve-v4 to blevee-v5 to avoid confusion [[#1167](https://github.com/opencloud-eu/docs/pull/1167)]
+
+## [3.44.0](https://github.com/opencloud-eu/docs/releases/tag/3.44.0) - 2026-09-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders, @tbsbdr, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish release notes v8.0.0 [[#1165](https://github.com/opencloud-eu/docs/pull/1165)]
+- migration to 8.x.x version [[#1153](https://github.com/opencloud-eu/docs/pull/1153)]
+- Clarify rolling release maturity [[#1162](https://github.com/opencloud-eu/docs/pull/1162)]
+- restructure the common issues in the admin part [[#1154](https://github.com/opencloud-eu/docs/pull/1154)]
+
+### 👤 User Documentation
+
+- restructure common issues in user [[#1155](https://github.com/opencloud-eu/docs/pull/1155)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1161](https://github.com/opencloud-eu/docs/pull/1161)]
+
+## [3.43.0](https://github.com/opencloud-eu/docs/releases/tag/3.43.0) - 2026-09-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @openclouders
+
+### :octocat: Developer Documentation
+
+- Update docs [[#1139](https://github.com/opencloud-eu/docs/pull/1139)]
+
+### 👷 Admin Documentation
+
+- docs: clarify notifications compose variable [[#1150](https://github.com/opencloud-eu/docs/pull/1150)]
+- add the --remove-orphans part  [[#1148](https://github.com/opencloud-eu/docs/pull/1148)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1151](https://github.com/opencloud-eu/docs/pull/1151)]
+- Update docs [[#1149](https://github.com/opencloud-eu/docs/pull/1149)]
+- Update docs [[#1147](https://github.com/opencloud-eu/docs/pull/1147)]
+
+## [3.42.0](https://github.com/opencloud-eu/docs/releases/tag/3.42.0) - 2026-08-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @kulmann, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish release notes -7.2.4 [[#1123](https://github.com/opencloud-eu/docs/pull/1123)]
+- publish release notes 7.5.0 [[#1128](https://github.com/opencloud-eu/docs/pull/1128)]
+- Add n8n example [[#1116](https://github.com/opencloud-eu/docs/pull/1116)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1129](https://github.com/opencloud-eu/docs/pull/1129)]
+
+## [3.41.0](https://github.com/opencloud-eu/docs/releases/tag/3.41.0) - 2026-08-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- add recommendations for large migrations [[#1111](https://github.com/opencloud-eu/docs/pull/1111)]
+- change the stable branch to the actual one [[#1106](https://github.com/opencloud-eu/docs/pull/1106)]
+
+### 👤 User Documentation
+
+- rerework best practices for spaces [[#1104](https://github.com/opencloud-eu/docs/pull/1104)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1115](https://github.com/opencloud-eu/docs/pull/1115)]
+- feat: add automatic color scheme [[#1108](https://github.com/opencloud-eu/docs/pull/1108)]
+
+## [3.40.0](https://github.com/opencloud-eu/docs/releases/tag/3.40.0) - 2026-08-10
+
+### ❤️ Thanks to all contributors! ❤️
+
+@openclouders, @pbleser-oc, @v-scharf
+
+### 👷 Admin Documentation
+
+- feat(docs): add documentation for the posixfs scan command [[#1084](https://github.com/opencloud-eu/docs/pull/1084)]
+- publish release notes 7.2.3 [[#1095](https://github.com/opencloud-eu/docs/pull/1095)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1101](https://github.com/opencloud-eu/docs/pull/1101)]
+
+## [3.39.0](https://github.com/opencloud-eu/docs/releases/tag/3.39.0) - 2026-08-04
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @openclouders
+
+### 👷 Admin Documentation
+
+- add announcement banner in admin section [[#1090](https://github.com/opencloud-eu/docs/pull/1090)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1089](https://github.com/opencloud-eu/docs/pull/1089)]
+
 ## [3.38.0](https://github.com/opencloud-eu/docs/releases/tag/3.38.0) - 2026-08-04
 
 ### ❤️ Thanks to all contributors! ❤️

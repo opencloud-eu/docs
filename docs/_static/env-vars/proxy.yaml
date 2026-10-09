@@ -13,6 +13,15 @@ http:
   tls_cert: /var/lib/opencloud/proxy/server.crt
   tls_key: /var/lib/opencloud/proxy/server.key
   tls: true
+  client:
+    dial_timeout: 30s
+    dial_keep_alive: 30s
+    force_attempt_http2: false
+    max_idle_conns: 100
+    max_idle_conns_per_host: 100
+    idle_conn_timeout: 1m30s
+    tls_handshake_timeout: 10s
+    expect_continue_timeout: 1s
 reva:
   address: eu.opencloud.api.gateway
   tls:
@@ -128,10 +137,6 @@ policies:
   - endpoint: /apps/
     service: eu.opencloud.web.frontend
     skip_x_access_token: false
-  - endpoint: /data
-    service: eu.opencloud.web.frontend
-    unprotected: true
-    skip_x_access_token: false
   - endpoint: /app/list
     service: eu.opencloud.web.frontend
     unprotected: true
@@ -144,6 +149,10 @@ policies:
     skip_x_access_token: false
   - endpoint: /graph/v1.0/invitations
     service: eu.opencloud.web.invitations
+    skip_x_access_token: false
+  - endpoint: /graph/v1beta1/extensions/org.libregraph/guestLinks
+    service: eu.opencloud.web.auth-guest
+    unprotected: true
     skip_x_access_token: false
   - endpoint: /graph/
     service: eu.opencloud.web.graph
@@ -158,18 +167,12 @@ policies:
     service: eu.opencloud.web.collaboration
     unprotected: true
     skip_x_access_token: true
-  - endpoint: /collaboration/fonts/manage
-    service: eu.opencloud.web.collaboration
-    skip_x_access_token: false
-  - endpoint: /collaboration/notify
-    service: eu.opencloud.web.collaboration
-    skip_x_access_token: false
   - endpoint: /collaboration
     service: eu.opencloud.web.collaboration
-    unprotected: true
     skip_x_access_token: false
 additional_policies: []
 oidc:
+  audiences: []
   issuer: https://localhost:9200
   insecure: false
   access_token_verify_method: jwt
@@ -229,6 +232,8 @@ pre_signed_url:
     enable_tls: false
     tls_insecure: false
     tls_root_ca_certificate: ""
+transfer_secret: ""
+transfer_timeout: 24h0m0s
 account_backend: cs3
 user_oidc_claim: preferred_username
 user_cs3_claim: username
@@ -259,3 +264,5 @@ events:
   enable_tls: false
   username: ""
   password: ""
+guest_link_auth:
+  cookie_name: __Host-oc_guest_session

@@ -17,7 +17,7 @@ The **Search Settings** allow you to define the default search scope that is use
 
 The **Search Settings** page allows you to choose the default scope for all searches.
 
-<img src={require("../../img/settings/search-settings/search settings button.png").default} alt="Search Settings Button" height="650"/>
+<img src={require("../../img/general/settings/search-settings/search settings button.png").default} alt="Search Settings Button" height="650"/>
 
 ## Available Search Scopes
 
@@ -29,7 +29,7 @@ You can choose one of the following default search scopes:
 - **Account** – Searches the complete personal account across all spaces.
 - **Server** – Performs a server-wide search.
 
-<img src={require("../../img/settings/search-settings/search settings menu.png").default} alt="Search Settings Menu" height="650"/>
+<img src={require("../../img/general/settings/search-settings/search settings menu.png").default} alt="Search Settings Menu" height="650"/>
 
 ## How Search Settings Work
 

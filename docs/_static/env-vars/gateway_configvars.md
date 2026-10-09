@@ -17,8 +17,6 @@
 |`GATEWAY_COMMIT_SHARE_TO_STORAGE_GRANT`| 1.0.0 |bool|`Commit shares to storage grants. This grants access to shared resources for the share receiver directly on the storage.`|`"true"`|
 |`GATEWAY_SHARE_FOLDER_NAME`| 1.0.0 |string|`Name of the share folder in users' home space.`|`"Shares"`|
 |`GATEWAY_DISABLE_HOME_CREATION_ON_LOGIN`| 1.0.0 |bool|`Disable creation of the home space on login.`|`"true"`|
-|`OC_TRANSFER_SECRET`| 1.0.0 |string|`The storage transfer secret.`|`""`|
-|`GATEWAY_TRANSFER_EXPIRES`| 1.0.0 |int|`Expiry for the gateway tokens.`|`"86400"`|
 |`OC_CACHE_STORE`<br/>`GATEWAY_PROVIDER_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"noop"`|
 |`OC_CACHE_STORE_NODES`<br/>`GATEWAY_PROVIDER_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"cache-providers"`|
@@ -49,6 +47,7 @@
 |`GATEWAY_AUTH_BEARER_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-bearer service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`""`|
 |`GATEWAY_AUTH_MACHINE_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-machine service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-machine"`|
 |`GATEWAY_AUTH_SERVICE_ENDPOINT`| 1.0.0 |string|`The endpoint of the auth-service service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-service"`|
+|`GATEWAY_AUTH_GUESTLINKS_ENDPOINT`| next |string|`The endpoint of the auth-guestlinks service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.auth-guest"`|
 |`GATEWAY_STORAGE_PUBLIC_LINK_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-publiclink service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-publiclink"`|
 |`GATEWAY_STORAGE_USERS_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-users service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-users"`|
 |`GATEWAY_STORAGE_SHARES_ENDPOINT`| 1.0.0 |string|`The endpoint of the storage-shares service. Can take a service name or a gRPC URI with the dns, kubernetes or unix protocol.`|`"eu.opencloud.api.storage-shares"`|

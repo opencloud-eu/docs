@@ -34,5 +34,5 @@ Spaces are shared work areas in OpenCloud. They help teams organize content, man
 - [Customize Spaces](./customize.md)  
   Update descriptions, subtitles, images, and icons for a Space.
 
-- [Best practice](./spaces-best-practices.md)  
+- [Best practices for organizing Spaces](./spaces-best-practices.md)<br />
   Follow recommended structures and naming conventions for Spaces.

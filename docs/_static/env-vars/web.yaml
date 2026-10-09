@@ -84,6 +84,7 @@ web:
     - epub-reader
     - preview
     - app-store
+    - rclone-crypt
     applications: []
     external_apps: []
     options:
@@ -118,6 +119,7 @@ web:
       oxAppSuite:
         enabled: false
         apiUrl: ""
+      yjsServerUrl: ""
     styles: []
     scripts: []
     custom_translations: []

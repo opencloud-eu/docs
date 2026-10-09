@@ -72,8 +72,6 @@ If you're using GitHub Pages, this will push the production build to the `gh-pag
 | Menu             | 400px  |
 | Pop-up / Modal   | 500px  |
 
-> Highlight key elements in the screenshot with red borders or boxes if needed.
-
 ### Example
 
 To include a screenshot in your documentation, use the following format:
@@ -85,6 +83,14 @@ To include a screenshot in your documentation, use the following format:
 - Use `require(...)` for image paths so they are bundled correctly by Docusaurus
 - Always include a meaningful `alt` text to improve accessibility and SEO
 
+### Image Directory Structure
+
+- Store images in the `img` directory of the corresponding documentation area.
+- Mirror the documentation structure below `img` as closely as possible.
+- Do not create an additional `index` directory for images used by an `index.md` page.
+- Place area-specific or topic-specific images in the corresponding subdirectory.
+- Place shared images in a clearly named common directory.
+- Use lowercase, descriptive, kebab-case filenames without spaces.
 
 ## Markdown Guidelines
 

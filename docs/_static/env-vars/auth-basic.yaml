@@ -55,6 +55,7 @@ auth_providers:
       display_name: cn
       group_name: cn
       member: member
+    lookup_cache_ttl: 10s
   owncloudsql:
     db_username: owncloud
     db_password: ""

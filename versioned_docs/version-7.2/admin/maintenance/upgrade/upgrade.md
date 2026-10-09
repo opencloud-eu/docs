@@ -266,8 +266,11 @@ exit
   </TabItem>
   <TabItem value="docker-compose" label="docker compose">
     ```Shell
-    docker compose up -d
+    docker compose up -d --remove-orphans
     ```
+
+`--remove-orphans` removes containers for services that are no longer defined in the current Compose configuration. This helps clean up obsolete containers after upgrades where services have been removed or integrated into another service.
+
   </TabItem>
 </Tabs>
 

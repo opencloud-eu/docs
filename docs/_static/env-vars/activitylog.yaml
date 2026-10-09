@@ -8,6 +8,7 @@ debug:
   pprof: false
   zpages: false
 events:
+  disabled: false
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
   tls_insecure: false
@@ -29,6 +30,7 @@ store:
 reva_gateway: eu.opencloud.api.gateway
 grpc_client_tls: null
 http:
+  disabled: false
   addr: 127.0.0.1:9195
   root: /
   cors:
@@ -58,3 +60,4 @@ service_account:
   service_account_secret: ""
 write_buffer_duration: 10s
 max_activities: 6000
+num_consumers: 1
