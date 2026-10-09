@@ -51,4 +51,4 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
   Display a global announcement banner to notify users about maintenance or important information.
 
 - [OpenCloud Mesh OCM](./ocm.md)  
-  Configure OpenCloud Mesh to connect users and share resources between separate OpenCloud instances.
+  Configure OpenCloud Mesh federation between separate OpenCloud instances.

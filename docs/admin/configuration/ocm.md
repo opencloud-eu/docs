@@ -2,7 +2,7 @@
 sidebar_position: 140
 id: ocm
 title: Configure OpenCloud Mesh OCM
-description: Configure OpenCloud Mesh OCM to connect users and share resources between two OpenCloud instances.
+description: Configure OpenCloud Mesh OCM between two OpenCloud instances.
 draft: false
 ---
 
@@ -39,25 +39,23 @@ The configuration must be applied to both instances.
 
 ## Enable OCM services
 
-Open `docker-compose.yml` and locate the `environment` section of the `opencloud` service.
-
-Add the following variables:
-
-```yaml
-OC_ENABLE_OCM: 'true'
-GRAPH_INCLUDE_OCM_SHAREES: 'true'
-```
-
-Example:
+Create an `ocm.yml` file in the root of the `opencloud-compose` directory with the following content:
 
 ```yaml
 services:
   opencloud:
     environment:
-      OC_DEFAULT_LANGUAGE: ${DEFAULT_LANGUAGE}
       OC_ENABLE_OCM: 'true'
       GRAPH_INCLUDE_OCM_SHAREES: 'true'
 ```
+
+Add `ocm.yml` to the end of the existing `COMPOSE_FILE` value in the `.env` file. Keep all files that are already part of your deployment. For example:
+
+```bash
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml:ocm.yml
+```
+
+Using a separate Compose overlay keeps the OCM configuration independent of `docker-compose.yml` and avoids conflicts when updating the `opencloud-compose` repository.
 
 `OC_ENABLE_OCM` enables the OCM backend services.
 
@@ -182,7 +180,7 @@ python3 -m json.tool /mnt/oc/config/ocmproviders.json
 
 ## Enable the OCM web application
 
-The OCM web application must be enabled in the OpenCloud Web configuration.
+The OCM web application, shown as ScienceMesh in OpenCloud Web, must be enabled in the OpenCloud Web configuration.
 
 Create `web.yaml` in the mounted OpenCloud configuration directory.
 
@@ -217,7 +215,7 @@ web:
       - ocm
 ```
 
-The `ocm` entry enables the OCM application in OpenCloud Web.
+The `ocm` entry enables the ScienceMesh application in OpenCloud Web.
 
 :::important
 
@@ -384,70 +382,11 @@ A `401` response confirms that the endpoint is reachable and requires authentica
 
 Errors such as `502 Bad Gateway`, DNS failures, TLS failures, or connection timeouts indicate a connectivity or reverse proxy problem.
 
-## Open the OCM application
-
-After recreating the container:
-
-1. Sign out of OpenCloud Web.
-2. Reload the page without using the browser cache or open a private browser window.
-3. Sign in again.
-4. Open the application switcher.
-5. Select the OCM application.
-
-The application provides the interface for creating and accepting OCM invitations.
-
-## Connect users
-
-Before users can share resources between instances, they must establish an OCM connection.
-
-:::important
-
-Create the invitation on one OpenCloud instance and accept it on the other OpenCloud instance.
-
-Do not accept an invitation on the same instance where it was created.
-
-:::
-
-On the first instance:
-
-1. Open the OCM application.
-2. Create a new invitation.
-3. Copy the generated invitation link or token.
-4. Send the invitation link or token to the user on the second instance.
-
-On the second instance:
-
-1. Open the invitation link or open the OCM application.
-2. Sign in to OpenCloud.
-3. Accept the invitation.
-
-After the invitation has been accepted, the remote user becomes available as an OCM connection.
-
-:::note
-
-Copy the full invitation link or token. Do not use the shortened token text that may be displayed in the invitation table.
-
-By default, invitation tokens expire after 24 hours. If an invitation cannot be accepted because it has expired, create a new invitation.
-
-:::
-
-## Share a file or folder
-
-After both users are connected:
-
-1. Open the Files application.
-2. Select a file or folder.
-3. Open the sharing panel.
-4. Search for the connected remote user.
-5. Select the remote user.
-6. Configure the permissions.
-7. Create the share.
-
-The remote user should now receive the shared resource on the other OpenCloud instance.
+After configuring and verifying OCM, see [Connect and share through OpenCloud Mesh](../../user/sharing/opencloud-mesh.md) for the user workflow.
 
 ## Troubleshooting
 
-### The OCM application is not visible
+### The ScienceMesh application is not visible
 
 Check that `/etc/opencloud/web.yaml` exists inside the container:
 
@@ -495,6 +434,8 @@ Also check that the users completed the OCM invitation process successfully.
 
 Remote users only appear as sharing recipients after the OCM connection has been established.
 
+For the user workflow, see [Connect and share through OpenCloud Mesh](../../user/sharing/opencloud-mesh.md).
+
 ### An invitation cannot be accepted
 
 Check that:
@@ -503,10 +444,8 @@ Check that:
 - The domains in `ocmproviders.json` do not include `https://`.
 - Both instances can access each other over HTTPS.
 - The ScienceMesh endpoints are reachable.
-- The invitation has not expired.
-- The user is signed in to the receiving OpenCloud instance.
-- The invitation is accepted on the other OpenCloud instance, not on the instance where it was created.
-- The full invitation link or token was copied.
+
+For checks that users can perform, see [Troubleshoot OpenCloud Mesh](../../user/sharing/opencloud-mesh.md#troubleshooting).
 
 ### The provider configuration is not loaded
 
