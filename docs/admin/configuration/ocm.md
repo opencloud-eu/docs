@@ -1,41 +1,49 @@
 ---
 sidebar_position: 140
 id: ocm
-title: Configure OpenCloud Mesh OCM
-description: Configure OpenCloud Mesh OCM between two OpenCloud instances.
+title: Configure Open Cloud Mesh (OCM)
+description: Configure Open Cloud Mesh (OCM) for an OpenCloud instance.
 draft: false
 ---
 
-# Configure OpenCloud Mesh
+# Configure Open Cloud Mesh (OCM)
 
-OpenCloud Mesh, abbreviated as OCM, enables users from separate OpenCloud instances to connect and share files or folders.
+Open Cloud Mesh, abbreviated as OCM, is an open federation protocol that enables users on separate systems to connect and share files or folders.
 
-OCM uses an invitation-based workflow. A user on one OpenCloud instance creates an invitation, and a user on another OpenCloud instance accepts it. After the invitation has been accepted, both users are connected through OCM and can share resources across instances.
+:::info
 
-OCM must be configured on every participating OpenCloud instance.
+OCM is not limited to federation between OpenCloud instances. OpenCloud can also connect to other OCM-compatible systems. Verified examples include CERNBox, Nextcloud, ownCloud, and Seafile.
 
-This guide uses the following example instances:
+This guide covers only the OpenCloud side of the configuration. Refer to the documentation of the remote system for instructions on enabling and configuring OCM there.
+
+:::
+
+OCM uses an invitation-based workflow. A user at one OCM provider creates an invitation, and a user at a remote OCM provider accepts it. After the invitation has been accepted, both users are connected through OCM and can share resources across providers.
+
+OCM must be configured at every participating OCM provider. Follow this guide for each participating OpenCloud instance.
+
+This guide uses two OpenCloud instances as an example:
 
 ```text
 cloud1.opencloud.test
 cloud2.opencloud.test
 ```
 
-Replace these domains with the domains of your OpenCloud instances.
+Replace these domains with the domains of your OpenCloud instance and the remote OCM provider. The use of two OpenCloud instances in the examples is not a protocol limitation.
 
 ## Prerequisites
 
 Before configuring OCM, make sure that:
 
-- At least two OpenCloud instances are available.
-- Both instances are reachable over HTTPS.
-- Both instances use valid TLS certificates.
-- Each instance can resolve and connect to the domain of the other instance.
-- You have access to the `opencloud-compose` directory on both servers.
+- An OpenCloud instance and a remote OCM provider are available.
+- Both OCM providers are reachable over HTTPS.
+- Both OCM providers use valid TLS certificates.
+- Each OCM provider can resolve and connect to the domain of the other provider.
+- You have access to the `opencloud-compose` directory on every participating OpenCloud server.
 - The OpenCloud configuration directory is mounted to `/etc/opencloud`.
 - The OpenCloud data directory is persistent.
 
-The configuration must be applied to both instances.
+Apply the configuration in this guide to every participating OpenCloud instance. Configure other OCM-compatible systems according to their respective documentation.
 
 ## Enable OCM services
 
@@ -63,7 +71,7 @@ Using a separate Compose overlay keeps the OCM configuration independent of `doc
 
 ## Configure trusted OCM providers
 
-Create an `ocmproviders.json` file in the mounted OpenCloud configuration directory.
+Create an `ocmproviders.json` file in the mounted OpenCloud configuration directory. Each entry in this file describes a trusted OCM provider.
 
 For example, if the host directory `/mnt/oc/config` is mounted to `/etc/opencloud`, create:
 
@@ -77,7 +85,7 @@ The file is then available inside the container as:
 /etc/opencloud/ocmproviders.json
 ```
 
-Use the same provider configuration on both OpenCloud instances.
+The following example configures two OpenCloud instances as trusted OCM providers. For an OpenCloud-to-OpenCloud deployment, use the same provider configuration on both instances. When connecting to another OCM-compatible system, configure the relevant trusted providers on the OpenCloud side and follow the remote system's documentation for its provider configuration.
 
 Example configuration:
 
@@ -278,7 +286,7 @@ Apply the configuration by recreating the OpenCloud container:
 docker compose up -d --force-recreate opencloud
 ```
 
-Run this command on both instances.
+Run this command on every participating OpenCloud instance.
 
 ## Verify the configuration
 
@@ -354,9 +362,9 @@ docker compose up -d --force-recreate opencloud
 
 ## Verify connectivity
 
-Run the connectivity checks from inside the OpenCloud container.
+Run the connectivity checks from inside the OpenCloud container. The following commands use the two OpenCloud instances from the example. For another OCM-compatible system, use the endpoints documented by the remote provider.
 
-On the first instance, check the second instance:
+On the first OpenCloud instance, check the second OpenCloud instance:
 
 ```bash
 docker compose exec opencloud curl -I https://cloud2.opencloud.test/ocm/
@@ -364,7 +372,7 @@ docker compose exec opencloud curl -I https://cloud2.opencloud.test/sciencemesh/
 docker compose exec opencloud curl -I https://cloud2.opencloud.test/dav/
 ```
 
-On the second instance, check the first instance:
+On the second OpenCloud instance, check the first OpenCloud instance:
 
 ```bash
 docker compose exec opencloud curl -I https://cloud1.opencloud.test/ocm/
@@ -382,7 +390,7 @@ A `401` response confirms that the endpoint is reachable and requires authentica
 
 Errors such as `502 Bad Gateway`, DNS failures, TLS failures, or connection timeouts indicate a connectivity or reverse proxy problem.
 
-After configuring and verifying OCM, see [Connect and share through OpenCloud Mesh](../../user/sharing/opencloud-mesh.md) for the user workflow.
+After configuring and verifying OCM, see [Connect and share with ScienceMesh](../../user/sharing/opencloud-mesh) for the user workflow.
 
 ## Troubleshooting
 
@@ -434,18 +442,18 @@ Also check that the users completed the OCM invitation process successfully.
 
 Remote users only appear as sharing recipients after the OCM connection has been established.
 
-For the user workflow, see [Connect and share through OpenCloud Mesh](../../user/sharing/opencloud-mesh.md).
+For the user workflow, see [Connect and share with ScienceMesh](../../user/sharing/opencloud-mesh).
 
 ### An invitation cannot be accepted
 
 Check that:
 
-- Both domains are listed in `ocmproviders.json`.
+- The OpenCloud instance and remote OCM provider are listed as trusted providers in `ocmproviders.json` where required.
 - The domains in `ocmproviders.json` do not include `https://`.
-- Both instances can access each other over HTTPS.
-- The ScienceMesh endpoints are reachable.
+- The OpenCloud instance and remote OCM provider can access each other over HTTPS.
+- The required OCM endpoints are reachable. For an OpenCloud-to-OpenCloud connection, this includes the ScienceMesh endpoints.
 
-For checks that users can perform, see [Troubleshoot OpenCloud Mesh](../../user/sharing/opencloud-mesh.md#troubleshooting).
+For checks that users can perform, see [Troubleshoot ScienceMesh](../../user/sharing/opencloud-mesh#troubleshooting).
 
 ### The provider configuration is not loaded
 

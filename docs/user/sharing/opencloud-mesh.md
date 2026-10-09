@@ -1,16 +1,16 @@
 ---
 sidebar_position: 40
 id: opencloud-mesh
-title: OpenCloud Mesh
+title: ScienceMesh
 description: Connect with users on another OpenCloud instance and share files or folders with them.
 draft: false
 ---
 
-# Connect and share through OpenCloud Mesh
+# Connect and share with ScienceMesh
 
-OpenCloud Mesh, abbreviated as OCM, lets you connect with users on another OpenCloud instance and share files or folders with them.
+The ScienceMesh application lets you connect with users on another OpenCloud instance and share files or folders with them. It uses the OpenCloud Mesh (OCM) protocol for connections between instances.
 
-Before you begin, an administrator must configure OCM on both participating instances. For configuration instructions, see [Configure OpenCloud Mesh](../../admin/configuration/ocm.md).
+Before you begin, an administrator must configure OCM on both participating instances. For configuration instructions, see [Configure OpenCloud Mesh](../../admin/configuration/ocm).
 
 ## Open the ScienceMesh application
 

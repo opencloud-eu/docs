@@ -7,7 +7,7 @@ title: Dateien und Ordner teilen
 # Dateien und Ordner teilen
 
 Dieser Abschnitt erklärt, wie das Teilen in OpenCloud funktioniert. Er behandelt internes Teilen mit Mitgliedern und
-Gruppen, öffentliche Links für externen Zugriff und File Drop zum Empfangen von Uploads.
+Gruppen, öffentliche Links für externen Zugriff, File Drop zum Empfangen von Uploads und das Teilen mit Benutzern anderer OpenCloud-Instanzen über ScienceMesh.
 
 ## In diesem Abschnitt
 
@@ -19,3 +19,5 @@ Gruppen, öffentliche Links für externen Zugriff und File Drop zum Empfangen vo
 
 - [File Drop](./file-drop.md)  
   Erlauben Sie externen Benutzern das Hochladen von Dateien, ohne ihnen Zugriff auf bestehende Inhalte zu geben.
+
+- [ScienceMesh](./opencloud-mesh.md) - Verbinden Sie sich mit Benutzern einer anderen OpenCloud-Instanz und teilen Sie Dateien oder Ordner mit ihnen.

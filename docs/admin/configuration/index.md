@@ -50,5 +50,5 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Announcement Banner](./announcement-banner.md)  
   Display a global announcement banner to notify users about maintenance or important information.
 
-- [OpenCloud Mesh OCM](./ocm.md)  
-  Configure OpenCloud Mesh federation between separate OpenCloud instances.
+- [Open Cloud Mesh (OCM)](./ocm.md)
+  Configure OCM federation between OpenCloud and trusted OCM-compatible systems.
