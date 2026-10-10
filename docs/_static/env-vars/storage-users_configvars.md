@@ -1,5 +1,5 @@
 
-2026-10-07-00-08-40
+2026-10-10-00-08-08
 
 ## Deprecation Notice
 
@@ -50,6 +50,7 @@
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`"true"`|
 |`OC_SPACES_MAX_QUOTA`<br/>`STORAGE_USERS_DECOMPOSED_MAX_QUOTA`| 1.0.0 |uint64|`Set a global max quota for spaces in bytes. A value of 0 equals unlimited. If not using the global OC_SPACES_MAX_QUOTA, you must define the FRONTEND_MAX_QUOTA in the frontend service.`|`"0"`|
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`"false"`|
+|`OC_METADATA_PREFIX`| next |string|`The attribute key prefix of the metadata on disk. Defaults to the native 'user.oc.' prefix. It applies to all storage drivers of the instance, they must share the prefix because it is set process wide.`|`""`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSEDS3_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`"sync"`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`"0s"`|
 |`STORAGE_USERS_DECOMPOSEDS3_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store metadata for blobs. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
@@ -76,6 +77,7 @@
 |`OC_MAX_CONCURRENCY`<br/>`STORAGE_USERS_DECOMPOSEDS3_MAX_CONCURRENCY`| 1.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value of 100 will be used.`|`"5"`|
 |`OC_ASYNC_UPLOADS`| 1.0.0 |bool|`Enable asynchronous file uploads.`|`"true"`|
 |`OC_DISABLE_VERSIONING`| 1.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`"false"`|
+|`OC_METADATA_PREFIX`| next |string|`The attribute key prefix of the metadata on disk. Defaults to the native 'user.oc.' prefix. It applies to all storage drivers of the instance, they must share the prefix because it is set process wide.`|`""`|
 |`STORAGE_USERS_OWNCLOUDSQL_DATADIR`| 1.0.0 |string|`The directory where the filesystem storage will store SQL migration data. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/owncloud.`|`"/var/lib/opencloud/storage/owncloud"`|
 |`STORAGE_USERS_OWNCLOUDSQL_SHARE_FOLDER`| 1.0.0 |string|`Name of the folder jailing all shares.`|`"/Shares"`|
 |`STORAGE_USERS_OWNCLOUDSQL_LAYOUT`| 1.0.0 |string|`Path layout to use to navigate into a users folder in an owncloud data directory`|`"{{.Username}}"`|
@@ -101,6 +103,7 @@
 |`STORAGE_USERS_POSIX_LOCK_CYCLE_DURATION_FACTOR`| 2.0.0 |int|`When trying to lock files, OpenCloud will multiply the cycle with this factor and use it as a millisecond timeout. Values of 0 or below will be ignored and the default value will be used.`|`"0"`|
 |`OC_MAX_CONCURRENCY`<br/>`STORAGE_USERS_POSIX_MAX_CONCURRENCY`| 2.0.0 |int|`Maximum number of concurrent go-routines. Higher values can potentially get work done faster but will also cause more load on the system. Values of 0 or below will be ignored and the default value will be used.`|`"0"`|
 |`OC_DISABLE_VERSIONING`| 2.0.0 |bool|`Disables versioning of files. When set to true, new uploads with the same filename will overwrite existing files instead of creating a new version.`|`"false"`|
+|`OC_METADATA_PREFIX`| next |string|`The attribute key prefix of the metadata on disk. Defaults to the native 'user.oc.' prefix. It applies to all storage drivers of the instance, they must share the prefix because it is set process wide.`|`""`|
 |`STORAGE_USERS_POSIX_USE_SPACE_GROUPS`| 1.0.0 |bool|`Use space groups to manage permissions on spaces.`|`"false"`|
 |`STORAGE_USERS_POSIX_ENABLE_FS_REVISIONS`| 1.0.0 |bool|`Allow for generating revisions from changes done to the local storage. Note: This doubles the number of bytes stored on disk because a copy of the current revision is stored to be turned into a revision later.`|`"false"`|
 |`STORAGE_USERS_POSIX_SCAN_FS`| 6.2.0 |bool|`Scan the filesystem at startup for changes and update the metadata accordingly.`|`"true"`|
