@@ -30,7 +30,6 @@
 |`OC_HTTP_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the server certificate to use for the http services.`|`""`|
 |`AUTH_GUEST_TOKENS_STORAGE_ROOT`| next |string|`The directory where the guest share tokens are stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/auth-guest.`|`"/var/lib/opencloud/auth-guest"`|
 |`OC_JWT_SECRET`<br/>`AUTH_GUEST_JWT_SECRET`| next |string|`The secret to mint and validate jwt tokens.`|`""`|
-|`AUTH_GUEST_SESSION_JWT_SECRET`| next |string|`The secret used to sign and validate guest session tokens. It must differ from OC_JWT_SECRET.`|`""`|
 |`AUTH_GUEST_JWT_COOKIE_NAME`| next |string|`The name of the session cookie set when a guest token is redeemed.`|`"__Host-oc_guest_session"`|
 |`AUTH_GUEST_JWT_TTL`| next |Duration|`The lifetime of a redeemed guest session token.`|`"24h0m0s"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`AUTH_GUEST_SERVICE_ACCOUNT_ID`| next |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
