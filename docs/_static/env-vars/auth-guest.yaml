@@ -53,7 +53,6 @@ storage:
 token_manager:
   jwt_secret: ""
 jwt:
-  secret: ""
   cookie_name: __Host-oc_guest_session
   ttl: 24h0m0s
 service_account:
