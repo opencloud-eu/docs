@@ -8,6 +8,8 @@ title: OpenCloud iOS App
 
 The OpenCloud iOS app provides mobile access to your files, Spaces, and shares on iPhone and iPad. It is designed for everyday tasks such as setup, searching, sharing, and making files available offline.
 
+Before installing the app, review the [mobile app requirements](../../admin/getting-started/requirements.md#mobile-apps).
+
 ## In this section
 
 - [General](./general/)  
