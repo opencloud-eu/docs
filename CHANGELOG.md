@@ -1,14 +1,18 @@
 # Changelog
 
-## [3.51.0](https://github.com/opencloud-eu/docs/releases/tag/3.51.0) - 2026-10-09
+## [3.51.0](https://github.com/opencloud-eu/docs/releases/tag/3.51.0) - 2026-10-13
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl
+@Heiko-Pohl, @openclouders
 
 ### 👤 User Documentation
 
 - add new screenshots to desktop client macos [[#1176](https://github.com/opencloud-eu/docs/pull/1176)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1210](https://github.com/opencloud-eu/docs/pull/1210)]
 
 ## [3.50.0](https://github.com/opencloud-eu/docs/releases/tag/3.50.0) - 2026-10-07
 
