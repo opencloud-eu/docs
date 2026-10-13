@@ -6,6 +6,10 @@
 
 @Heiko-Pohl, @openclouders
 
+### :octocat: Developer Documentation
+
+- refine index.md file in docs, i18n and versioned docs [[#1191](https://github.com/opencloud-eu/docs/pull/1191)]
+
 ### 👤 User Documentation
 
 - add new screenshots to desktop client macos [[#1176](https://github.com/opencloud-eu/docs/pull/1176)]
