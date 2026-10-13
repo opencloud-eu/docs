@@ -20,6 +20,7 @@ curl -L https://opencloud.eu/install | /bin/bash
 - Getting Started – Set up and deploy OpenCloud
 - Configuration – Customize and integrate with existing systems and storage
 - Maintenance – Learn how to update, backup and migrate
+- Resources – Find troubleshooting help, FAQs, and release information
 
 ## Explore the Admin Docs
 
