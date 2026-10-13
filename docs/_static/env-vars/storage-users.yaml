@@ -86,6 +86,7 @@ drivers:
     async_uploads: true
     max_quota: 0
     disable_versioning: false
+    metadata_prefix: ""
   decomposeds3:
     propagator: sync
     async_propagator_options:
@@ -114,6 +115,7 @@ drivers:
     max_concurrency: 5
     async_uploads: true
     disable_versioning: false
+    metadata_prefix: ""
   owncloudsql:
     root: /var/lib/opencloud/storage/owncloud
     share_folder: /Shares
@@ -142,6 +144,7 @@ drivers:
     lock_cycle_duration_factor: 0
     max_concurrency: 0
     disable_versioning: false
+    metadata_prefix: ""
     use_space_groups: false
     enable_fs_revisions: false
     scan_fs: true
