@@ -21,12 +21,12 @@ draft: false
 
 The OpenCloud Web Client requires a supported web browser. Supported versions follow the OpenCloud Web browser policy and exclude versions classified as end-of-life.
 
-| Browser         | Supported versions                                                                |
-| :-------------- | :-------------------------------------------------------------------------------- |
-| Google Chrome   | Releases from the last year or versions with over 0.2% global usage               |
-| Mozilla Firefox | Firefox ESR, releases from the last year, or versions with over 0.2% global usage |
-| Microsoft Edge  | Releases from the last year or versions with over 0.2% global usage               |
-| Apple Safari    | Releases from the last year or versions with over 0.2% global usage               |
+| Browser         | Supported versions                          |
+| :-------------- | :------------------------------------------ |
+| Google Chrome   | Releases from the last year                 |
+| Mozilla Firefox | Firefox ESR and releases from the last year |
+| Microsoft Edge  | Releases from the last year                 |
+| Apple Safari    | Releases from the last year                 |
 
 ### Desktop Client
 
