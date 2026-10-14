@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Heiko-Pohl, @openclouders
+@Heiko-Pohl, @TheOneRing, @openclouders
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- Desktop: Proxy settings where removed in 4.0 [[#1202](https://github.com/opencloud-eu/docs/pull/1202)]
 - add new screenshots to desktop client macos [[#1176](https://github.com/opencloud-eu/docs/pull/1176)]
 
 ### 📦️ Build&Tools
