@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.51.0](https://github.com/opencloud-eu/docs/releases/tag/3.51.0) - 2026-10-15
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @TheOneRing, @openclouders
+
+### :octocat: Developer Documentation
+
+- refine index.md file in docs, i18n and versioned docs [[#1191](https://github.com/opencloud-eu/docs/pull/1191)]
+
+### 👤 User Documentation
+
+- Desktop: Proxy settings where removed in 4.0 [[#1202](https://github.com/opencloud-eu/docs/pull/1202)]
+- add new screenshots to desktop client macos [[#1176](https://github.com/opencloud-eu/docs/pull/1176)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1213](https://github.com/opencloud-eu/docs/pull/1213)]
+- Update docs [[#1211](https://github.com/opencloud-eu/docs/pull/1211)]
+- Update docs [[#1210](https://github.com/opencloud-eu/docs/pull/1210)]
+
 ## [3.50.0](https://github.com/opencloud-eu/docs/releases/tag/3.50.0) - 2026-10-07
 
 ### ❤️ Thanks to all contributors! ❤️
