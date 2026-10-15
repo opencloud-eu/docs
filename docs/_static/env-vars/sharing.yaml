@@ -41,6 +41,7 @@ user_sharing_drivers:
     system_user_api_key: ""
     cache_ttl: 0
     max_concurrency: 1
+    skip_migrations: false
   json:
     file: /var/lib/opencloud/storage/shares.json
   cs3:
