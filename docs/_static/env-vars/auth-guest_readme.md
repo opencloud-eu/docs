@@ -34,7 +34,9 @@ links feature and start the service.
 - **Consumes** the share lifecycle events `ShareCreated`, `ShareRemoved` and
   `ShareExpired`.
 - **Publishes** the `GuestTokenCreated` event (initial token) and the
-  `GuestTokenRenewed` event (refresh, carrying the new token and the PIN).
+  `GuestTokenRenewed` event (refresh, carrying the new token and the PIN). The
+  `notifications` service consumes both and mails the link (and the PIN) to
+  the guest.
 - Exposes unauthenticated endpoints to redeem a token, renew it and verify a
   PIN; redeeming a token or verifying a PIN sets a session cookie.
 - Stores only hashes of the token secret and of the PIN and deletes the stored
@@ -61,7 +63,7 @@ sequenceDiagram
     Redeem->>+Reva: Get Share
     Reva->>-Redeem: Share
     Note right of Redeem: Validate Share, Mark Token used
-    Redeem->>-Web: Set Cookie, return shareid
+    Redeem->>-Web: Set Cookie, return shareid and session expiry
     Note right of Web: HTTP only cookie with signed JWT (24h by default)
     Web->>+Proxy: "/graph/me/drives/sharedWithMe"
     Proxy->>+Reva: validate token extracted from JWT
@@ -91,7 +93,9 @@ sequenceDiagram
 
 A guest session (signed JWT) is valid for 24 hours by default
 (`AUTH_GUEST_JWT_TTL`); a link token is single-use and valid for 30 minutes.
-Renewal starts from a *failed* attempt:
+Verifying a token or a PIN returns the session expiry as `expirationDateTime`,
+so the client can warn the guest before the session runs out, since it cannot
+read the HttpOnly cookie. Renewal starts from a *failed* attempt:
 
 - an authenticated request made with an expired session is rejected with `401`;
   the browser still holds the (expired) session cookie;
@@ -127,7 +131,7 @@ sequenceDiagram
     Web->>+Renew: POST renew { permissionId } (+ session cookie or link token)
     Note right of Renew: Validate share, generate token + PIN, store hashes
     Renew->>Bus: publish GuestTokenRenewed
-    Note right of Bus: External consumer delivers token + PIN (out of scope)
+    Note right of Bus: notifications service mails the new link + PIN to the guest
     Renew->>-Web: 200 OK
 
     alt Guest opens the new link
