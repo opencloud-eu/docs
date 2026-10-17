@@ -134,6 +134,10 @@ The recipient must have the folder password to unlock the encrypted folder and a
 
 Public links are not supported for encrypted folders or files.
 
+## Access an encrypted folder with rclone
+
+You can access an encrypted folder locally by configuring a WebDAV remote and an `rclone crypt` remote. See [Access End-to-End Encrypted Folders with rclone](./e2ee-folders-rclone.md).
+
 ## Preview and download behavior
 
 Some files in end-to-end encrypted folders cannot be previewed directly in the browser.
