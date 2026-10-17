@@ -26,7 +26,7 @@ interface FloatingActionButtonExtension {
   isVisible?: () => boolean
   isDisabled?: () => boolean
   color?: string
-  icon?: string
+  icon?: Icon
   mode: () => 'drop' | 'handler'
   handler?: () => Promise<void> | void
   dropComponent?: Component
@@ -39,7 +39,7 @@ The `mode` property determines whether the floating action button triggers a han
 
 `isDisabled` controls the disabled state of the button whereas `isVisible` determines if the button is showing at all. `tooltip` returns the text of the tooltip, for example to explain why the button is disabled.
 
-`icon` is an icon name string that can be picked from [Remix Icon](https://remixicon.com/).
+`icon` is the icon of the button, see the [icons section](../index.md#icons).
 
 ### Example
 
