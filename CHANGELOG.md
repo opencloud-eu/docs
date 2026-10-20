@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.52.0](https://github.com/opencloud-eu/docs/releases/tag/3.52.0) - 2026-10-20
+
+### ❤️ Thanks to all contributors! ❤️
+
+@tbsbdr
+
+### 👷 Admin Documentation
+
+- Update production release date to November 17, 2026 [[#1214](https://github.com/opencloud-eu/docs/pull/1214)]
+
 ## [3.51.0](https://github.com/opencloud-eu/docs/releases/tag/3.51.0) - 2026-10-15
 
 ### ❤️ Thanks to all contributors! ❤️
