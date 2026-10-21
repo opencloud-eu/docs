@@ -49,7 +49,7 @@ Mark frequently used files and folders for quick access. Favorites are stored se
 
 ### Versioning and Recovery
 
-Every change is automatically saved as a version and can be restored at any time.
+When versioning is enabled, which is the default, every change is automatically saved as a version and can be restored. Administrators can turn versioning off by setting `OC_DISABLE_VERSIONING` to `true`, see the [global environment variables](../dev/server/configuration/global-envvars.mdx). They also decide how long versions are kept: all of them, which is the default, or according to a cleanup strategy, see [Cleaning Up Old Versions](./configuration/storage/revisions-cleanup.md).
 
 OpenCloud supports storing any number of files in any format and size.
 
