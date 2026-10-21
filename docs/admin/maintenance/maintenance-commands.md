@@ -135,6 +135,141 @@ When no arguments are specified, the default behavior is to start the storage sc
 
 The optional command-line option `--halt-on-error` (or `-E`) will make the command stop as soon as an error is encountered, whereas the default behaviour is to keep going by skipping paths that yield unrecoverable errors and proceeding to processing the subsequent ones.
 
+### Clean up old file versions
+
+OpenCloud can delete old file versions automatically, according to a cleanup strategy, whenever a file gets a new version. That cleanup and its strategies are explained in [Cleaning Up Old Versions](../configuration/storage/revisions-cleanup.md).
+
+The automatic cleanup only looks at files that get a new version. Files that are never changed again keep all their versions. The `revisions cleanup` command cleans up the versions of whole spaces, of folders or of single files on demand. Use it:
+
+- once after turning the cleanup on, to clean up the versions that existed before,
+- after changing the strategy, to apply the new one to all files,
+- regularly, for example every night, so that files that are no longer changed are cleaned up too,
+- to free storage, with a stricter strategy than the configured one.
+
+```bash
+opencloud storage-users revisions cleanup [flags]
+```
+
+The command uses the configuration of the storage-users service, including the configured strategy, and can run while OpenCloud is running. Unlike the commands above, it doesn't need `--basepath`. With Docker Compose, run it inside the OpenCloud container:
+
+```bash
+docker compose exec opencloud opencloud storage-users revisions cleanup --all --dry-run
+```
+
+:::caution
+
+Deleted versions can't be restored. Always run the command with `--dry-run` first, and check what it would delete.
+
+:::
+
+#### Try it out first
+
+`--dry-run` (`-n`) deletes nothing. It prints what would be deleted. Together with `--verbose` (`-v`), it lists every version, with what would happen to it and why:
+
+```bash
+opencloud storage-users revisions cleanup --all --strategy "7d, auto, 90d" --dry-run --verbose
+```
+
+```plaintext
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 3 revisions (2.1 MiB)
+  protected 2026-10-21T14:50:00+02:00   2.3 MiB  protected by "7d": newer than 2026-10-14T15:00:00+02:00
+  kept      2026-09-30T09:00:00+02:00   2.2 MiB  kept by "auto" (last 30 days): the newest in its slot of 1 day starting 2026-09-30T00:00:00Z
+  deleted   2026-04-02T08:00:00+02:00   2.1 MiB  deleted by "90d": older than 2026-07-23T15:00:00+02:00
+3 files in 1 space: would delete 1 revision (2.1 MiB) of 1 file, 0 skipped, 0 failed
+```
+
+Each version is either `deleted`, `kept` (by the strategy) or `protected` (always kept, for example because it is among the newest ones). The reason names the part of the strategy that decided, and the time it compared the version with.
+
+When the result looks right, run the same command without `--dry-run`.
+
+#### Choose the files
+
+Exactly one of these options selects the files to clean up:
+
+- `--all` (`-a`): all files of all spaces.
+- `--space <space-id>`: all files of a space. The option can be given several times, for several spaces.
+- `--space <space-id> --path <path>`: only a file, or a folder with everything in it, within one space.
+- `--fs-path <path>` (`-p`): a file, or a folder with everything in it, by its path on disk. This only works with the PosixFS storage driver.
+
+Space IDs often contain a `$`, so put them in single quotes:
+
+```bash
+# all files of two spaces
+opencloud storage-users revisions cleanup --space '<space-id-1>' --space '<space-id-2>'
+
+# only the Documents folder of a space
+opencloud storage-users revisions cleanup --space '<space-id>' --path /Documents
+
+# a folder of a project space, by its path on disk (PosixFS only)
+opencloud storage-users revisions cleanup --fs-path /var/lib/opencloud/storage/users/projects/<space-id>/Documents
+```
+
+#### Choose the strategy
+
+Without `--strategy` (`-s`), the command uses the configured strategy, `OC_REVISIONS_CLEANUP_STRATEGY`. If none is configured, it stops with an error and doesn't delete anything. With `--strategy`, it uses the given one for this run only:
+
+```bash
+# keep only the 10 newest versions of every file in a space
+opencloud storage-users revisions cleanup --space '<space-id>' --strategy 10
+
+# delete all versions older than a year, but keep the 3 newest of every file
+opencloud storage-users revisions cleanup --all --strategy "3, 52w"
+```
+
+The strategies are explained in [Choosing a Strategy](../configuration/storage/revisions-cleanup.md#choosing-a-strategy).
+
+#### Read the output
+
+By default, the command prints a line for every file whose versions it deleted, that failed, or that it skipped, followed by a summary:
+
+```plaintext
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt: deleted 3 of 12 revisions (4.2 MiB)
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Photos/holiday.jpg: skipped: an upload to the file is still being processed
+1520 files in 3 spaces: deleted 3 revisions (4.2 MiB) of 1 file, 1 skipped, 0 failed
+```
+
+Each line starts with the ID of the space and the path of the file within the space. A file is skipped while an upload to it is still being processed, for example by the antivirus scanner. A later run cleans it up.
+
+For scripts and monitoring, `--json` (`-j`) prints the same as JSON objects, one per line. The last line is the summary. Sizes are in bytes:
+
+```json
+{"type":"file","space_id":"25b69780-5f39-43be-a7ac-a9b9e9fe4230","node_id":"8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94","path":"/Documents/report.odt","dry_run":false,"revisions":12,"deleted":3,"deleted_bytes":4404019,"failed":0}
+{"type":"summary","dry_run":false,"spaces":3,"files":1520,"cleaned":1,"deleted":3,"deleted_bytes":4404019,"skipped":1,"failed":0}
+```
+
+#### Run it regularly
+
+To clean up files that are no longer changed, run the command regularly, for example every night with cron. On large installations, a single run can take a long time, so limit it with `--timeout` (`-t`), and add `--shuffle`:
+
+```bash
+opencloud storage-users revisions cleanup --all --timeout 1h --shuffle
+```
+
+`--timeout` stops the cleanup gracefully: files that are being cleaned up are finished, and the rest is left for the next run. As every run starts from the beginning again, `--shuffle` makes it go through the spaces and folders in a random order. That way, each run starts in a different place, and over several nights, all files are reached.
+
+An example crontab entry for OpenCloud Compose, which runs the cleanup every night at 3:00 for at most one hour, and appends the output to a log file:
+
+```crontab
+0 3 * * * cd /opt/opencloud-compose && docker compose exec -T opencloud opencloud storage-users revisions cleanup --all --timeout 1h --shuffle >> /var/log/opencloud-revisions-cleanup.log 2>&1
+```
+
+Replace `/opt/opencloud-compose` with the directory of your OpenCloud Compose installation. `-T` is needed because cron doesn't provide a terminal.
+
+The command ends with one of these exit codes, which you can use in scripts:
+
+- `0`: the cleanup is done.
+- `1`: the cleanup, or the cleanup of at least one file, failed. The output says which and why.
+- `2`: `--timeout` stopped the cleanup before all files were cleaned up, and nothing failed.
+
+#### Other options
+
+- `--async`, `--workers` and `--queue-size` override the settings of the background workers for this run, see [Background Workers](../configuration/storage/revisions-cleanup.md#background-workers).
+- `--queue-full` and `--queue-full-timeout` say what happens when the queue of the background workers is full. Unlike the other settings, they don't default to the configured ones: the command finds files much faster than the workers can clean them up, so the queue is full most of the time, and skipping the files that don't fit would skip most of them. That's why the command waits for room in the queue by default (`--queue-full block`), as long as it takes (`--queue-full-timeout 0`). You rarely need to change them. With `--queue-full drop`, or with a timeout, for example `--queue-full-timeout 10s`, the skipped files are listed in the output, and are cleaned up with their next version or the next run.
+- Ctrl-C stops the cleanup gracefully, like `--timeout`.
+- A dry run doesn't change any file, but it takes the same locks on the files as a real run, which can create lock files.
+
+Not to be confused with `opencloud revisions purge`, an older command that deletes all versions of a DecomposedFS storage, or of a single file or space, directly on disk and without a strategy.
+
 ## Uploads
 
 The `opencloud storage-users uploads sessions` command lists and manages upload sessions. Flags can be combined to filter sessions by state.
