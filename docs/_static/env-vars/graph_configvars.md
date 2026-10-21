@@ -1,3 +1,12 @@
+
+2026-10-21-00-10-15
+
+## Deprecation Notice
+
+| Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
+|---|---|---|:---|
+| GRAPH_SPACES_DEFAULT_QUOTA is deprecated and will be removed in a future version. Please use OC_SPACES_DEFAULT_QUOTA instead. | next | next-prod | OC_SPACES_DEFAULT_QUOTA |
+
 ## Environment variables for the **graph** service
 
 | Name | Introduction Version | Type | Description | Default Value |
@@ -43,7 +52,7 @@
 |`GRAPH_APPLICATION_DISPLAYNAME`| 1.0.0 |string|`The OpenCloud application name.`|`"OpenCloud"`|
 |`OC_URL`<br/>`GRAPH_SPACES_WEBDAV_BASE`| 1.0.0 |string|`The public facing URL of WebDAV.`|`"https://localhost:9200"`|
 |`GRAPH_SPACES_WEBDAV_PATH`| 1.0.0 |string|`The WebDAV sub-path for spaces.`|`"/dav/spaces/"`|
-|`GRAPH_SPACES_DEFAULT_QUOTA`| 1.0.0 |string|`The default quota in bytes.`|`"1000000000"`|
+|`OC_SPACES_DEFAULT_QUOTA`<br/>`GRAPH_SPACES_DEFAULT_QUOTA`| 1.0.0 |string|`The default quota in bytes.`|`"1000000000"`|
 |`GRAPH_SPACES_EXTENDED_SPACE_PROPERTIES_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces property cache.`|`"60000000000"`|
 |`GRAPH_SPACES_USERS_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces users cache.`|`"60000000000"`|
 |`GRAPH_SPACES_GROUPS_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces groups cache.`|`"60000000000"`|
