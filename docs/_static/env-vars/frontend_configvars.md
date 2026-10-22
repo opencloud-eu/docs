@@ -1,5 +1,5 @@
 
-2026-10-15-03-54-05
+2026-10-22-00-09-57
 
 ## Deprecation Notice
 
@@ -57,6 +57,7 @@
 |`OC_MACHINE_AUTH_API_KEY`<br/>`FRONTEND_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`|`""`|
 |`FRONTEND_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
 |`OC_SPACES_MAX_QUOTA`<br/>`FRONTEND_MAX_QUOTA`| 1.0.0 |uint64|`Set the global max quota value in bytes. A value of 0 equals unlimited. The value is provided via capabilities.`|`"0"`|
+|`OC_SPACES_DEFAULT_QUOTA`| next |string|`Set the default quota in bytes for new project spaces. A value of 0 or an invalid value means no default quota. The value is provided via capabilities and must match the default quota of the graph service.`|`"1000000000"`|
 |`FRONTEND_UPLOAD_MAX_CHUNK_SIZE`| 1.0.0 |int|`Sets the max chunk sizes in bytes for uploads via the clients.`|`"10000000"`|
 |`FRONTEND_UPLOAD_HTTP_METHOD_OVERRIDE`| 1.0.0 |string|`Advise TUS to replace PATCH requests by POST requests.`|`""`|
 |`FRONTEND_DEFAULT_UPLOAD_PROTOCOL`| 1.0.0 |string|`The default upload protocol to use in clients. Currently only 'tus' is available. See the developer API documentation for more details about TUS.`|`"tus"`|
