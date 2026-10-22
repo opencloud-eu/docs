@@ -30,7 +30,7 @@ place your nav item in the left sidebar of that app.
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from [Remix Icon](https://remixicon.com/)
+- `icon` - The icon to be displayed, see the [icons section](../index.md#icons)
 - `name` - The text to be displayed
 - `route` - The string/route to navigate to, if the nav item should be a `<router-link>` (Mutually exclusive with `handler`)
 - `handler` - The action to perform upon click, if the nav item should be a `<button>` (Mutually exclusive with `route`)
