@@ -55,6 +55,21 @@ token_manager:
 jwt:
   cookie_name: __Host-oc_guest_session
   ttl: 24h0m0s
+nonce:
+  cookie_base_name: __Host-oc_guest_nonce
+pin_and_nonce_ttl: 30m0s
+backoff_limiter:
+  max_attempts: 5
+  backoff_base: 1s
+  backoff_cap: 30s
+quota_limiter:
+  daily_cap: 50
+  cooldown: 1m0s
+  window: 24h0m0s
+session_quota_limiter:
+  daily_cap: 5
+  cooldown: 5m0s
+  window: 24h0m0s
 service_account:
   service_account_id: ""
   service_account_secret: ""
