@@ -1,3 +1,12 @@
+
+2026-10-25-00-09-33
+
+## Deprecation Notice
+
+| Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
+|---|---|---|:---|
+| THUMBNAILS_FILESYSTEMSTORAGE_ROOT is deprecated. The webdav service owns the thumbnail cache now, so use WEBDAV_THUMBNAILS_CACHE_DIR instead. | next | next-prod | WEBDAV_THUMBNAILS_CACHE_DIR |
+
 ## Environment variables for the **webdav** service
 
 | Name | Introduction Version | Type | Description | Default Value |
@@ -16,7 +25,23 @@
 |`OC_HTTP_TLS_ENABLED`| 1.0.0 |bool|`Activates TLS for the http based services using the server certifcate and key configured via OC_HTTP_TLS_CERTIFICATE and OC_HTTP_TLS_KEY. If OC_HTTP_TLS_CERTIFICATE is not set a temporary server certificate is generated - to be used with PROXY_INSECURE_BACKEND=true.`|`"false"`|
 |`OC_HTTP_TLS_CERTIFICATE`| 1.0.0 |string|`Path/File name of the TLS server certificate (in PEM format) for the http services.`|`""`|
 |`OC_HTTP_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the server certificate to use for the http services.`|`""`|
-|`OC_DISABLE_PREVIEWS`<br/>`WEBDAV_DISABLE_PREVIEWS`| 1.0.0 |bool|`Set this option to 'true' to disable rendering of thumbnails triggered via webdav access. Note that when disabled, all access to preview related webdav paths will return a 404.`|`"false"`|
 |`OC_URL`<br/>`OC_PUBLIC_URL`| 1.0.0 |string|`URL, where OpenCloud is reachable for users.`|`"https://localhost:9200"`|
 |`WEBDAV_WEBDAV_NAMESPACE`| 1.0.0 |string|`CS3 path layout to use when forwarding /webdav requests`|`"/users/{{.Id.OpaqueId}}"`|
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`"eu.opencloud.api.gateway"`|
+|`OC_DISABLE_PREVIEWS`<br/>`WEBDAV_DISABLE_PREVIEWS`| 1.0.0 |bool|`Set this option to 'true' to disable rendering of thumbnails triggered via webdav access. Note that when disabled, all access to preview related webdav paths will return a 404.`|`"false"`|
+|`WEBDAV_THUMBNAILS_GENERATOR_URL`| next |string|`Base URL of the thumbnail generator service, e.g. \http://thumbnails:9186`|`"http://127.0.0.1:9186"`|
+|`WEBDAV_THUMBNAILS_GENERATOR_TIMEOUT`| next |string|`HTTP timeout for requests to the thumbnail generator, e.g. 30s`|`"30s"`|
+|`THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`WEBDAV_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`| next |string|`Maximum file size of an input image a thumbnail is made of. The generator refuses a larger body, so both read the same name by default. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB], example: 50MB`|`"50MB"`|
+|`WEBDAV_THUMBNAILS_CACHE_BACKEND`| next |string|`Cache backend for imagor thumbnails: 'none', 'memory', 'file', or 's3'. Default: file.`|`"file"`|
+|`WEBDAV_THUMBNAILS_CACHE_DIR`| next |string|`Directory for file-based thumbnail cache (Default: $OC_BASE_DATA_PATH/thumbnails/files). Only used when WEBDAV_THUMBNAILS_CACHE_BACKEND is 'file'.`|`""`|
+|`THUMBNAILS_FILESYSTEMSTORAGE_ROOT`| 1.0.0 |string|`Directory the thumbnails service stored its files in. Read as a fallback for WEBDAV_THUMBNAILS_CACHE_DIR.`|`""`|
+|`THUMBNAILS_RESOLUTIONS`<br/>`WEBDAV_THUMBNAILS_RESOLUTIONS`| next |[]string|`Allowed thumbnail edge lengths, like 512. Each axis of a requested size is rounded up to the next one of these before the box is sent to the generator. Legacy WidthxHeight entries are still accepted and contribute both of their sides.`|`"[16 32 64 128 192 256 320 384 448 512 640 768 1024 1280 1920 2048]"`|
+|`WEBDAV_THUMBNAILS_CACHE_S3_BUCKET`| next |string|`S3 bucket name for thumbnail cache when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
+|`WEBDAV_THUMBNAILS_CACHE_S3_REGION`| next |string|`S3 region for thumbnail cache when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
+|`WEBDAV_THUMBNAILS_CACHE_S3_ENDPOINT`| next |string|`S3 endpoint URL (for MinIO or compatible services) when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
+|`WEBDAV_THUMBNAILS_CACHE_S3_ACCESS_KEY`| next |string|`S3 access key for thumbnail cache authentication.`|`""`|
+|`WEBDAV_THUMBNAILS_CACHE_S3_SECRET_KEY`| next |string|`S3 secret key for thumbnail cache authentication.`|`""`|
+|`OC_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`<br/>`WEBDAV_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`| next |[]string|`Additional mime types a preview is announced and attempted for, e.g. image/vnd.microsoft.icon for a generator that reads icons. The built-in list is included; this only adds to them. A type the running generator cannot read answers 404.`|`"[]"`|
+|`OC_THUMBNAILS_ADDITIONAL_GENERATOR_FORMATS`<br/>`WEBDAV_THUMBNAILS_ADDITIONAL_GENERATOR_FORMATS`| next |[]string|`Additional formats the thumbnail generator writes, one per type it writes, as type:format entries, e.g. image/webp:webp. The format is the name the generator's own format filter uses. The built-in list is included; an entry for a type that is already listed replaces it. A type that is not listed is asked for as a JPEG instead, because what the generator behind the URL really writes is its own business.`|`"[]"`|
+|`OC_THUMBNAILS_ADDITIONAL_OUTPUT_TYPES`<br/>`WEBDAV_THUMBNAILS_ADDITIONAL_OUTPUT_TYPES`| next |[]string|`Additional types a thumbnail is returned in, one per type of the image it is made from, as source:target entries, e.g. image/vnd.microsoft.icon:image/png. The built-in list is included; an entry for a source type that is already listed replaces it. The target is asked for by the name WEBDAV_THUMBNAILS_ADDITIONAL_GENERATOR_FORMATS gives it. A type that is not listed becomes a JPEG; a target this service has no format name for is asked for as a JPEG as well.`|`"[]"`|
+|`THUMBNAILS_TXT_FONTMAP_FILE`<br/>`WEBDAV_THUMBNAILS_TXT_FONTMAP_FILE`| next |string|`The path to a font map file for txt thumbnails.`|`""`|
