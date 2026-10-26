@@ -1,3 +1,12 @@
+
+2026-10-26-00-10-59
+
+## Deprecation Notice
+
+| Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
+|---|---|---|:---|
+| GRAPH_SPACES_DEFAULT_QUOTA is deprecated and will be removed in a future version. Please use OC_SPACES_DEFAULT_QUOTA instead. | next | next-prod | OC_SPACES_DEFAULT_QUOTA |
+
 ## Environment variables for the **graph** service
 
 | Name | Introduction Version | Type | Description | Default Value |
@@ -43,7 +52,7 @@
 |`GRAPH_APPLICATION_DISPLAYNAME`| 1.0.0 |string|`The OpenCloud application name.`|`"OpenCloud"`|
 |`OC_URL`<br/>`GRAPH_SPACES_WEBDAV_BASE`| 1.0.0 |string|`The public facing URL of WebDAV.`|`"https://localhost:9200"`|
 |`GRAPH_SPACES_WEBDAV_PATH`| 1.0.0 |string|`The WebDAV sub-path for spaces.`|`"/dav/spaces/"`|
-|`GRAPH_SPACES_DEFAULT_QUOTA`| 1.0.0 |string|`The default quota in bytes.`|`"1000000000"`|
+|`OC_SPACES_DEFAULT_QUOTA`<br/>`GRAPH_SPACES_DEFAULT_QUOTA`| 1.0.0 |string|`The default quota in bytes.`|`"1000000000"`|
 |`GRAPH_SPACES_EXTENDED_SPACE_PROPERTIES_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces property cache.`|`"60000000000"`|
 |`GRAPH_SPACES_USERS_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces users cache.`|`"60000000000"`|
 |`GRAPH_SPACES_GROUPS_CACHE_TTL`| 1.0.0 |int|`Max TTL in seconds for the spaces groups cache.`|`"60000000000"`|
@@ -103,6 +112,7 @@
 |`OC_EVENTS_AUTH_USERNAME`<br/>`GRAPH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`GRAPH_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`GRAPH_AVAILABLE_ROLES`| 1.0.0 |[]string|`A comma separated list of roles that are available for assignment.`|`"[b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5 a8d5fe5e-96e3-418d-825b-534dbdf22b99 fb6c3e19-e378-47e5-b277-9732f9de6e21 58c63c02-1d89-4572-916a-870abc5a1b7d 2d00ce52-1fc2-4dbc-8b95-a73b73395f5a 1c996275-f1c9-4e71-abdf-a42f6495e960 312c0871-5ef7-4b3a-85b6-0e4074c64049]"`|
+|`OC_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`<br/>`GRAPH_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`| next |[]string|`Additional mime types a preview is announced for, the same list the webdav service attempts previews for. The types the build ships are included; this only adds to them.`|`"[]"`|
 |`OC_MAX_CONCURRENCY`<br/>`GRAPH_MAX_CONCURRENCY`| 1.0.0 |int|`The maximum number of concurrent requests the service will handle.`|`"20"`|
 |`OC_KEYCLOAK_BASE_PATH`<br/>`GRAPH_KEYCLOAK_BASE_PATH`| 1.0.0 |string|`The URL to access keycloak.`|`""`|
 |`OC_KEYCLOAK_CLIENT_ID`<br/>`GRAPH_KEYCLOAK_CLIENT_ID`| 1.0.0 |string|`The client id to authenticate with keycloak.`|`""`|
