@@ -4,11 +4,15 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith
+@Svanvith, @openclouders
 
 ### :octocat: Developer Documentation
 
 - add auth-guest services pages [[#1230](https://github.com/opencloud-eu/docs/pull/1230)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1229](https://github.com/opencloud-eu/docs/pull/1229)]
 
 ## [3.52.0](https://github.com/opencloud-eu/docs/releases/tag/3.52.0) - 2026-10-20
 
