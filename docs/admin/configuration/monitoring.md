@@ -10,7 +10,7 @@ draft: false
 
 OpenCloud exposes metrics in the Prometheus format: counters for requests and events, gauges for things like the number of requests currently in flight, and histograms that measure how long operations take. You can collect these metrics with [Prometheus](https://prometheus.io/) (or any other system that understands the Prometheus format) and visualize them, for example with Grafana.
 
-This page explains where OpenCloud exposes its metrics, how to configure Prometheus to collect them, and how to work with the duration histograms.
+This page explains where OpenCloud exposes its metrics, how to configure Prometheus to collect them, and how to work with the duration histograms, which OpenCloud provides in two forms: as classic histograms and as native histograms.
 
 ## Where OpenCloud Exposes Its Metrics
 
@@ -156,7 +156,9 @@ Prometheus knows two kinds of histograms:
 - **Classic histograms** have a fixed set of buckets, whose upper bounds are defined by OpenCloud. Each bucket is a separate time series, with the upper bound in the label `le` ("less or equal"), plus a time series for the count and one for the sum. Every Prometheus version understands them.
 - **Native histograms** choose their buckets automatically, with a much higher resolution: OpenCloud configures them so that the bucket boundaries are at most about 10% apart, which makes percentiles much more accurate. A native histogram is stored as a single time series, no matter how many buckets it has, which also saves a lot of storage. Native histograms must be enabled in Prometheus explicitly, as described below.
 
-Most of OpenCloud's duration histograms are classic histograms. Only the request durations of the proxy are recorded in a native histogram, see [The Request Durations of the Proxy](#the-request-durations-of-the-proxy) below.
+OpenCloud exposes its duration histograms **in both forms at the same time**.
+
+Prometheus decides which form it stores: if native histograms are not enabled in Prometheus, which is the default, it stores the classic histograms, exactly as before. If native histograms are enabled, it stores the native histograms instead.
 
 ### Classic Histograms
 
@@ -167,6 +169,8 @@ The bucket counters are cumulative: each bucket counts all measurements that are
 For the webfinger service, for example, the metrics endpoint returns lines like these:
 
 ```text
+opencloud_webfinger_webfinger_duration_seconds_bucket{le="0.001"} 0
+opencloud_webfinger_webfinger_duration_seconds_bucket{le="0.0025"} 12
 opencloud_webfinger_webfinger_duration_seconds_bucket{le="0.005"} 340
 opencloud_webfinger_webfinger_duration_seconds_bucket{le="0.01"} 1180
 opencloud_webfinger_webfinger_duration_seconds_bucket{le="0.025"} 1211
@@ -181,23 +185,43 @@ Here, 1214 webfinger requests were measured, which took 7.92 seconds altogether;
 
 The buckets of a classic histogram are a compromise: more buckets give more accurate percentiles, but every bucket is an additional time series for every combination of label values.
 
-Most OpenCloud histograms use the default buckets of the Prometheus Go client library, with these upper bounds, in seconds:
+OpenCloud uses the following sets of bucket boundaries, chosen to match what each histogram measures:
 
-```text
-0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10
-```
+| Bucket set     | Upper bounds of the buckets, in seconds                                | Used for                                                                                  |
+| -------------- | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Request        | 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, 60               | requests and API calls, which take milliseconds up to tens of seconds                     |
+| Fast operation | 0.001, 0.0025, 0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10 | fast operations, such as LDAP operations, which mostly take a few milliseconds            |
+| Transfer       | 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, 60, 300, 1800    | requests through the proxy, which include uploads, downloads and long-lived connections   |
+| Processing     | 0.1, 0.5, 1, 2.5, 5, 10, 30, 60, 120, 300, 600, 1200                   | long-running processing, such as postprocessing and indexing, which can take many minutes |
 
-Everything that takes longer than 10 seconds is only counted in the `+Inf` bucket.
+The [list of duration histograms](#list-of-the-duration-histograms) at the end of this page shows which set each histogram uses.
 
-The histograms of the search and postprocessing services have buckets of their own, up to 60 and 1200 seconds.
+:::caution Changed bucket boundaries
+Older versions of OpenCloud used the default buckets of the Prometheus Go client library (0.005 to 10 seconds) for most histograms, which put everything slower than 10 seconds into the `+Inf` bucket.
 
-The [list of duration histograms](#list-of-the-duration-histograms) at the end of this page shows the buckets of each histogram.
+With the new bucket sets, the `_bucket` time series of the following histograms have different boundaries after the upgrade, and queries over a time range that includes the upgrade mix old and new boundaries:
+
+- `opencloud_graph_http_request_duration_seconds`
+- `opencloud_graph_identity_backend_api_duration_seconds`
+- `opencloud_graph_ldap_client_operation_duration_seconds`
+- `opencloud_invitations_invitation_duration_seconds`
+- `opencloud_webfinger_webfinger_duration_seconds`
+- `opencloud_proxy_duration_seconds`
+- `opencloud_proxy_service_duration_seconds`
+- `opencloud_search_search_duration_seconds`
+
+Dashboards and alerts that use a specific bucket, for example `le="5"`, should be checked against the new boundaries.
+:::
 
 ### Native Histograms
 
-A native histogram is stored as a single time series with the name of the metric, without a suffix: there is no `_bucket`, `_count` or `_sum` time series. Prometheus provides functions to get these values from a native histogram instead, such as `histogram_count()`, `histogram_sum()`, `histogram_avg()` and `histogram_fraction()`, and `histogram_quantile()` works with native histograms directly. The [section about the proxy](#the-request-durations-of-the-proxy) below shows examples.
+A native histogram is stored as a single time series with the name of the metric, without a suffix: there is no `_bucket`, `_count` or `_sum` time series. Prometheus provides functions to get these values from a native histogram instead, such as `histogram_count()`, `histogram_sum()`, `histogram_avg()` and `histogram_fraction()`, and `histogram_quantile()` works with native histograms directly. The [PromQL examples](#promql-examples) below show the queries for both forms side by side.
 
 Native histograms are transferred with the [Protobuf format](https://protobuf.dev/), not with the text format that you see when you request the metrics endpoint with `curl` or in a browser. The text format therefore only shows the classic part of the histograms; that is expected.
+
+To limit the memory that OpenCloud needs for a native histogram, each native histogram has at most 100 buckets.
+
+If the measured durations are spread so widely that more buckets would be needed, OpenCloud reduces the resolution of that native histogram, i.e. it uses wider buckets, until OpenCloud is restarted. The classic histogram is not affected by this.
 
 ### Enable Native Histograms in Prometheus
 
@@ -228,40 +252,94 @@ histogram_count(opencloud_proxy_request_duration_seconds)
 
 If native histograms are enabled, this returns the number of requests that went through the proxy, for each combination of method, service and result. If it returns no data, native histograms are not enabled yet, or Prometheus hasn't scraped OpenCloud since.
 
+### Switching to Native Histograms Without Losing Data
+
+When you enable native histograms, Prometheus stores the native form of OpenCloud's histograms **instead of** the classic form.
+
+From then on, the `_bucket`, `_count` and `_sum` time series of these histograms receive no new data, and dashboards, recording rules and alerts that use them stop working until they are changed to the native form.
+
+:::warning
+This also applies to Prometheus setups that already have native histograms enabled when you upgrade OpenCloud to a version that exposes its histograms in both forms: from the upgrade on, Prometheus stores the native form of these histograms, and their classic `_bucket`, `_count` and `_sum` time series end. To keep them, set `always_scrape_classic_histograms: true` before the upgrade, as described below.
+:::
+
+To switch over without interruption, let Prometheus store **both forms** for a while, by additionally setting `always_scrape_classic_histograms: true`:
+
+```yaml title="prometheus.yml"
+scrape_configs:
+  - job_name: opencloud
+    scrape_native_histograms: true
+    always_scrape_classic_histograms: true
+    static_configs:
+      - targets: ['opencloud:9205']
+```
+
+The classic and the native form are stored as separate time series (the classic ones with the suffixes `_bucket`, `_count` and `_sum`, the native one without a suffix), so they don't interfere with each other.
+
+A good way to switch over is:
+
+1. Enable both settings, as in the example above.
+2. Change your dashboards, recording rules and alerts to the native form, one by one, with the help of the [PromQL examples](#promql-examples) below. Both forms are available in the meantime, so you can compare the results.
+3. Wait until the native histograms cover the time range that your dashboards and alerts look back on. A dashboard that shows the last 7 days only shows complete data from the native histograms once they have been collected for 7 days.
+4. Remove `always_scrape_classic_histograms: true`, to stop storing the classic form.
+
+While both forms are stored, Prometheus needs more storage for OpenCloud's histograms than before, as it stores the native histograms in addition to the classic ones.
+
 ### PromQL Examples
 
-The following examples use the histogram of the Graph API requests, `opencloud_graph_http_request_duration_seconds`; they work the same way for every other classic histogram.
+The following examples use the histogram of the Graph API requests, `opencloud_graph_http_request_duration_seconds`; they work the same way for every other duration histogram.
+
+Each example shows the query for the classic form first, then for the native form.
 
 **The 99th percentile of the request duration** over the last 5 minutes, i.e. the duration that 99% of the requests didn't exceed:
 
 ```promql
+# classic
 histogram_quantile(0.99, sum by (le) (rate(opencloud_graph_http_request_duration_seconds_bucket[5m])))
+
+# native
+histogram_quantile(0.99, sum(rate(opencloud_graph_http_request_duration_seconds[5m])))
 ```
 
-The same, separately for each HTTP method: add the label to the `by` clause:
+The same, separately for each HTTP method: add the label to the `by` clause of the classic query, and use `sum by` in the native query:
 
 ```promql
+# classic
 histogram_quantile(0.99, sum by (le, method) (rate(opencloud_graph_http_request_duration_seconds_bucket[5m])))
+
+# native
+histogram_quantile(0.99, sum by (method) (rate(opencloud_graph_http_request_duration_seconds[5m])))
 ```
 
 **The number of requests per second:**
 
 ```promql
+# classic
 sum(rate(opencloud_graph_http_request_duration_seconds_count[5m]))
+
+# native
+sum(histogram_count(rate(opencloud_graph_http_request_duration_seconds[5m])))
 ```
 
 **The average request duration:**
 
 ```promql
+# classic
 sum(rate(opencloud_graph_http_request_duration_seconds_sum[5m]))
   / sum(rate(opencloud_graph_http_request_duration_seconds_count[5m]))
+
+# native
+histogram_avg(sum(rate(opencloud_graph_http_request_duration_seconds[5m])))
 ```
 
-**The share of requests that took at most 0.5 seconds**, for example for an alert when it drops below 95%. The threshold must be the upper bound of one of the buckets of the histogram:
+**The share of requests that took at most 0.5 seconds**, for example for an alert when it drops below 95%. With a classic histogram, the threshold must be the upper bound of one of its buckets; a native histogram works with any threshold, but the result is an estimate, as the threshold usually lies within a bucket:
 
 ```promql
+# classic: 0.5 is the upper bound of one of the buckets
 sum(rate(opencloud_graph_http_request_duration_seconds_bucket{le="0.5"}[5m]))
   / sum(rate(opencloud_graph_http_request_duration_seconds_count[5m]))
+
+# native
+histogram_fraction(0, 0.5, sum(rate(opencloud_graph_http_request_duration_seconds[5m])))
 ```
 
 ### The Request Durations of the Proxy
@@ -303,20 +381,51 @@ sum by (service) (histogram_count(rate(opencloud_proxy_request_duration_seconds{
 
 Note that the durations measured by the proxy include the transfer of the request and response bodies, so uploads and downloads of large files, and long-lived connections such as the ones for notifications, show up with long durations.
 
+### Deprecated Summaries
+
+The invitations and webfinger services also expose their request durations as Prometheus _summaries_, in microseconds.
+
+Summaries calculate their percentiles within each OpenCloud instance, so they can't be combined across several instances.
+
+They are **deprecated** and will be removed in a future version of OpenCloud. Use the histograms of the same services instead, which measure the same requests:
+
+| Deprecated summary                                      | Use instead                                         |
+| ------------------------------------------------------- | --------------------------------------------------- |
+| `opencloud_invitations_invitation_latency_microseconds` | `opencloud_invitations_invitation_duration_seconds` |
+| `opencloud_webfinger_webfinger_latency_microseconds`    | `opencloud_webfinger_webfinger_duration_seconds`    |
+
+Note that the histograms measure in **seconds**, not in microseconds. For example, a query on the 99th percentile of the webfinger summary
+
+```promql
+opencloud_webfinger_webfinger_latency_microseconds{quantile="0.99"}
+```
+
+becomes
+
+```promql
+# classic
+histogram_quantile(0.99, sum by (le) (rate(opencloud_webfinger_webfinger_duration_seconds_bucket[5m])))
+
+# native
+histogram_quantile(0.99, sum(rate(opencloud_webfinger_webfinger_duration_seconds[5m])))
+```
+
+and returns seconds: multiply it by 1000000 if you need microseconds.
+
 ### List of the Duration Histograms
 
 | Histogram                                                | Labels                                                    | Classic buckets | Native |
 | -------------------------------------------------------- | --------------------------------------------------------- | --------------- | ------ |
-| `opencloud_graph_http_request_duration_seconds`          | `method`, `path`, `version`, `resource`, `code`, `result` | default         | no     |
-| `opencloud_graph_identity_backend_api_duration_seconds`  | `operation`, `result`, `type`                             | default         | no     |
-| `opencloud_graph_ldap_client_operation_duration_seconds` | `operation`, `result`, `uri`, `write`                     | default         | no     |
-| `opencloud_invitations_invitation_duration_seconds`      | none                                                      | default         | no     |
-| `opencloud_webfinger_webfinger_duration_seconds`         | none                                                      | default         | no     |
+| `opencloud_graph_http_request_duration_seconds`          | `method`, `path`, `version`, `resource`, `code`, `result` | request         | yes    |
+| `opencloud_graph_identity_backend_api_duration_seconds`  | `operation`, `result`, `type`                             | request         | yes    |
+| `opencloud_graph_ldap_client_operation_duration_seconds` | `operation`, `result`, `uri`, `write`                     | fast operation  | yes    |
+| `opencloud_invitations_invitation_duration_seconds`      | none                                                      | request         | yes    |
+| `opencloud_webfinger_webfinger_duration_seconds`         | none                                                      | fast operation  | yes    |
 | `opencloud_proxy_request_duration_seconds`               | `method`, `service`, `result`                             | none            | yes    |
-| `opencloud_proxy_duration_seconds`                       | `method`                                                  | default         | no     |
-| `opencloud_proxy_service_duration_seconds`               | `service`                                                 | default         | no     |
-| `opencloud_search_search_duration_seconds`               | `status`                                                  | 0.1 to 60 s     | no     |
-| `opencloud_search_index_duration_seconds`                | `status`                                                  | 0.1 to 1200 s   | no     |
-| `opencloud_postprocessing_duration_seconds`              | `status`                                                  | 0.1 to 1200 s   | no     |
+| `opencloud_proxy_duration_seconds`                       | `method`                                                  | transfer        | no     |
+| `opencloud_proxy_service_duration_seconds`               | `service`                                                 | transfer        | no     |
+| `opencloud_search_search_duration_seconds`               | `status`                                                  | request         | yes    |
+| `opencloud_search_index_duration_seconds`                | `status`                                                  | processing      | yes    |
+| `opencloud_postprocessing_duration_seconds`              | `status`                                                  | processing      | yes    |
 
-"default" means the default buckets of the Prometheus Go client library, from 0.005 to 10 seconds, as listed under [Classic Histograms](#classic-histograms).
+The two classic-only histograms of the proxy are the fallback for Prometheus setups without native histograms: their native form would only duplicate `opencloud_proxy_request_duration_seconds`.
