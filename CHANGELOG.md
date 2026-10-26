@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.53.0](https://github.com/opencloud-eu/docs/releases/tag/3.53.0) - 2026-10-26
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### :octocat: Developer Documentation
+
+- add auth-guest services pages [[#1230](https://github.com/opencloud-eu/docs/pull/1230)]
+
 ## [3.52.0](https://github.com/opencloud-eu/docs/releases/tag/3.52.0) - 2026-10-20
 
 ### ❤️ Thanks to all contributors! ❤️
