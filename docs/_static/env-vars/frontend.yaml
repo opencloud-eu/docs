@@ -65,6 +65,7 @@ reva:
 machine_auth_api_key: ""
 skip_user_groups_in_token: false
 max_quota: 0
+default_quota: "1000000000"
 upload_max_chunk_size: 10000000
 upload_http_method_override: ""
 default_upload_protocol: tus
@@ -114,6 +115,8 @@ ocdav:
   shares_namespace: /Shares
   ocm_namespace: /public
   public_url: https://localhost:9200
+  thumbnails:
+    additional_source_types: []
   insecure: false
   enable_http_tpc: false
   gateway_request_timeout: 84300

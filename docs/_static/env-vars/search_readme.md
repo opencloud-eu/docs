@@ -20,6 +20,7 @@ Consider using dedicated hardware for this service in case more resources are ne
   * [OpenSearch](#opensearch)
   * [Bringing an existing index over](#bringing-an-existing-index-over)
 * [Query language](#query-language)
+* [Query template](#query-template)
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
   * [Tika](#tika)
@@ -96,6 +97,19 @@ Not all parts are supported, the following list gives an overview of parts that 
 *   Date intervals
 
 In [this ADR](https://github.com/owncloud/ocis/blob/docs/ocis/adr/0020-file-search-query-language.md) you can read why KQL was chosen.
+
+## Query template
+
+`SEARCH_QUERY_TEMPLATE` is a KQL template every search runs through. Default:
+
+```
+({{.QUERY}}) AND (NOT path:"./.space" AND NOT id:{{.SPACE_ROOT_PERSONAL}})
+```
+
+*   `({{.QUERY}})` the user's search. Keep the parentheses.
+*   `{{.SPACE_ROOT_PERSONAL}}` / `{{.SPACE_ROOT_PROJECT}}` become the current space root, else a non-matching id.
+
+Empty turns it off. The service checks the template at startup.
 
 ## Content analysis / Extraction
 
