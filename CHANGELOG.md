@@ -10,6 +10,10 @@
 
 - add auth-guest services pages [[#1230](https://github.com/opencloud-eu/docs/pull/1230)]
 
+### 👷 Admin Documentation
+
+- Ocm [[#1204](https://github.com/opencloud-eu/docs/pull/1204)]
+
 ### 📦️ Build&Tools
 
 - Update docs [[#1240](https://github.com/opencloud-eu/docs/pull/1240)]
