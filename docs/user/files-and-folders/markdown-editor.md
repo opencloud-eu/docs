@@ -40,7 +40,7 @@ Choose the format based on how you want to use the document.
 
 An `.ocnote` file is an OpenCloud rich-text format stored as text-based JSON. It is not a standard Markdown format.
 
-<!-- Screenshot TODO: note-formatting.png - Show an .ocnote document with additional formatting options, such as text colors or alignment. -->
+<img src={require("./img/markdown-editor/note-formatting.png").default} alt="OpenCloud Note with rich text formatting and the text color menu open" width="1920"/>
 
 ## Format Your Content
 
@@ -107,13 +107,13 @@ The table controls let you add or remove rows and columns, toggle the header row
 
 Open `Search and replace` from the toolbar, or press `Ctrl + F` (`Cmd + F` on macOS). Enter the text to find and, if needed, replacement text. You can match the letter case or whole words only.
 
-<!-- Screenshot TODO: find-replace.png - Show the find and replace interface. -->
+<img src={require("./img/markdown-editor/find-replace.png").default} alt="Find and replace interface in the OpenCloud text editor" width="1920"/>
 
 ### Navigate with the Table of Contents
 
 Markdown and `.ocnote` documents provide a table of contents generated from their headings. Open the `Outlines` panel to see the document structure. Select a heading to jump to it; the active entry follows your position as you scroll and the list updates when headings change.
 
-<!-- Screenshot TODO: table-of-contents.png - Show a longer document with several headings and the table of contents visible. -->
+<img src={require("./img/markdown-editor/table-of-contents.png").default} alt="Markdown document with the Outlines table of contents open" width="1920"/>
 
 ## Collaborate on Documents
 
@@ -121,7 +121,7 @@ Real-time collaboration is available for Markdown and `.ocnote` files. When seve
 
 Users with edit permission can change the document. Users with view permission can follow the session without seeing editing controls.
 
-<!-- Screenshot TODO: collaboration.png - Show a document being edited by multiple users, including participant avatars and an active cursor. -->
+<img src={require("./img/markdown-editor/collaboration.png").default} alt="Markdown document with two active participants and Margaret Hamilton's cursor" width="1920"/>
 
 ### Mention Another User
 
@@ -129,7 +129,7 @@ In a Markdown or `.ocnote` document, type `@` and select a user from the suggest
 
 Mentions are not available through public links.
 
-<!-- Screenshot TODO: mentions.png - Show the @mention suggestion menu with users available for selection. -->
+<img src={require("./img/markdown-editor/mentions.png").default} alt="Mention suggestion menu showing Margaret Hamilton" width="1920"/>
 
 :::note
 Real-time collaboration requires the Yjs service. Administrators can find deployment details in [Collaborative Editing with the Yjs Server](../../admin/configuration/collaborative-editing.md).
