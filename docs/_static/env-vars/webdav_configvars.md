@@ -1,5 +1,5 @@
 
-2026-10-26-00-10-59
+2026-10-27-00-08-40
 
 ## Deprecation Notice
 
@@ -31,11 +31,11 @@
 |`OC_DISABLE_PREVIEWS`<br/>`WEBDAV_DISABLE_PREVIEWS`| 1.0.0 |bool|`Set this option to 'true' to disable rendering of thumbnails triggered via webdav access. Note that when disabled, all access to preview related webdav paths will return a 404.`|`"false"`|
 |`WEBDAV_THUMBNAILS_GENERATOR_URL`| next |string|`Base URL of the thumbnail generator service, e.g. \http://thumbnails:9186`|`"http://127.0.0.1:9186"`|
 |`WEBDAV_THUMBNAILS_GENERATOR_TIMEOUT`| next |string|`HTTP timeout for requests to the thumbnail generator, e.g. 30s`|`"30s"`|
-|`THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`WEBDAV_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`| next |string|`Maximum file size of an input image a thumbnail is made of. The generator refuses a larger body, so both read the same name by default. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB], example: 50MB`|`"50MB"`|
+|`OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`WEBDAV_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`| next |string|`Maximum file size of an input image a thumbnail is made of. The generator refuses a larger body, so both read the same name by default. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB], example: 50MB`|`"50MB"`|
 |`WEBDAV_THUMBNAILS_CACHE_BACKEND`| next |string|`Cache backend for imagor thumbnails: 'none', 'memory', 'file', or 's3'. Default: file.`|`"file"`|
-|`WEBDAV_THUMBNAILS_CACHE_DIR`| next |string|`Directory for file-based thumbnail cache (Default: $OC_BASE_DATA_PATH/thumbnails/files). Only used when WEBDAV_THUMBNAILS_CACHE_BACKEND is 'file'.`|`""`|
-|`THUMBNAILS_FILESYSTEMSTORAGE_ROOT`| 1.0.0 |string|`Directory the thumbnails service stored its files in. Read as a fallback for WEBDAV_THUMBNAILS_CACHE_DIR.`|`""`|
-|`THUMBNAILS_RESOLUTIONS`<br/>`WEBDAV_THUMBNAILS_RESOLUTIONS`| next |[]string|`Allowed thumbnail edge lengths, like 512. Each axis of a requested size is rounded up to the next one of these before the box is sent to the generator. Legacy WidthxHeight entries are still accepted and contribute both of their sides.`|`"[16 32 64 128 192 256 320 384 448 512 640 768 1024 1280 1920 2048]"`|
+|`WEBDAV_THUMBNAILS_CACHE_DIR`| next |string|`Directory for file-based thumbnail cache (Default: $OC_BASE_DATA_PATH/thumbnails/cache). Only used when WEBDAV_THUMBNAILS_CACHE_BACKEND is 'file'.`|`""`|
+|`THUMBNAILS_FILESYSTEMSTORAGE_ROOT`| 1.0.0 |string|`Directory the thumbnails service stored its files in. Read as a fallback for WEBDAV_THUMBNAILS_CACHE_DIR, which is then its cache subdirectory.`|`""`|
+|`THUMBNAILS_RESOLUTIONS`<br/>`WEBDAV_THUMBNAILS_RESOLUTIONS`| next |[]string|`Allowed thumbnail edge lengths, like 512. Each axis of a requested size is rounded up to the next one of these before the box is sent to the generator. Legacy WidthxHeight entries are still accepted and contribute both of their sides, each capped at 2048, the largest box the built-in generator accepts by default.`|`"[16 32 64 128 192 256 320 384 448 512 640 768 1024 1280 1920 2048]"`|
 |`WEBDAV_THUMBNAILS_CACHE_S3_BUCKET`| next |string|`S3 bucket name for thumbnail cache when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
 |`WEBDAV_THUMBNAILS_CACHE_S3_REGION`| next |string|`S3 region for thumbnail cache when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
 |`WEBDAV_THUMBNAILS_CACHE_S3_ENDPOINT`| next |string|`S3 endpoint URL (for MinIO or compatible services) when WEBDAV_THUMBNAILS_CACHE_BACKEND is 's3'.`|`""`|
