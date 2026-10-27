@@ -1,5 +1,5 @@
 ---
-id: markdown-editor
+id: text-editor
 sidebar_position: 40
 title: Text Editor
 description: Create, format, collaborate on, and save text documents and notes in OpenCloud.
@@ -22,7 +22,7 @@ The new document opens in the text editor.
 
 To open an existing document, select the file in the file list. If the text editor is not the default application for that file, open its context menu and select `Open with...` and then `Text Editor`.
 
-<img src={require("./img/markdown-editor/editor-overview.png").default} alt="OpenCloud text editor showing a formatted Markdown document" width="1920"/>
+<img src={require("./img/text-editor/editor-overview.png").default} alt="OpenCloud text editor showing a formatted Markdown document" width="1920"/>
 
 :::note
 You need permission to edit the file. If you only have view permission, you can follow changes made by others but cannot change the document.
@@ -40,13 +40,13 @@ Choose the format based on how you want to use the document.
 
 An `.ocnote` file is an OpenCloud rich-text format stored as text-based JSON. It is not a standard Markdown format.
 
-<img src={require("./img/markdown-editor/note-formatting.png").default} alt="OpenCloud Note with rich text formatting and the text color menu open" width="1920"/>
+<img src={require("./img/text-editor/note-formatting.png").default} alt="OpenCloud Note with rich text formatting and the text color menu open" width="1920"/>
 
 ## Format Your Content
 
 Use the formatting toolbar to undo or redo changes, format text, create lists, and insert content. In narrow windows, actions that do not fit move into `More actions`.
 
-<img src={require("./img/markdown-editor/formatting-toolbar.png").default} alt="Formatting toolbar in the OpenCloud text editor" width="1505"/>
+<img src={require("./img/text-editor/formatting-toolbar.png").default} alt="Formatting toolbar in the OpenCloud text editor" width="1505"/>
 
 To format existing text:
 
@@ -58,7 +58,7 @@ To format existing text:
 
 Type `/` at the beginning of a line to open the slash menu. Start typing the name of an action to filter the menu, then select an item such as a heading, list, quote, code block, link, image, or table.
 
-<img src={require("./img/markdown-editor/slash-menu.png").default} alt="Slash menu with formatting and insertion actions" width="900"/>
+<img src={require("./img/text-editor/slash-menu.png").default} alt="Slash menu with formatting and insertion actions" width="900"/>
 
 When you hover next to a content block, use `Add content` to insert a block after it. On a desktop device, use `Drag to move` to rearrange blocks.
 
@@ -68,13 +68,13 @@ When you hover next to a content block, use `Add content` to insert a block afte
 2. Select `Link` in the toolbar or slash menu.
 3. Enter the destination URL and link text.
 
-<img src={require("./img/markdown-editor/insert-link.png").default} alt="Link editor with fields for the URL and link text" width="900"/>
+<img src={require("./img/text-editor/insert-link.png").default} alt="Link editor with fields for the URL and link text" width="900"/>
 
 ### Insert Code
 
 Use `Inline code` for code within a sentence. For multiple lines, select `Code block` from `Turn into` or the slash menu. The editor highlights supported languages, detects the language when possible, and also lets you choose a language.
 
-<img src={require("./img/markdown-editor/code-block.png").default} alt="Code block with syntax highlighting and a language selector" width="900"/>
+<img src={require("./img/text-editor/code-block.png").default} alt="Code block with syntax highlighting and a language selector" width="900"/>
 
 ## Insert Images and Tables
 
@@ -88,7 +88,7 @@ Use `Inline code` for code within a sentence. For multiple lines, select `Code b
    - `Insert from cloud` selects an image already stored in OpenCloud. This option is not available from a public link.
 4. After insertion, select the image and use its resize handles to adjust its size.
 
-<img src={require("./img/markdown-editor/insert-image.png").default} alt="Slash menu showing the supported image insertion options" width="900"/>
+<img src={require("./img/text-editor/insert-image.png").default} alt="Slash menu showing the supported image insertion options" width="900"/>
 
 ### Insert a Table
 
@@ -99,7 +99,7 @@ Use `Inline code` for code within a sentence. For multiple lines, select `Code b
 
 The table controls let you add or remove rows and columns, toggle the header row, or delete the table.
 
-<img src={require("./img/markdown-editor/insert-table.png").default} alt="Table inserted into a document" width="900"/>
+<img src={require("./img/text-editor/insert-table.png").default} alt="Table inserted into a document" width="900"/>
 
 ## Find and Navigate Content
 
@@ -107,13 +107,13 @@ The table controls let you add or remove rows and columns, toggle the header row
 
 Open `Search and replace` from the toolbar, or press `Ctrl + F` (`Cmd + F` on macOS). Enter the text to find and, if needed, replacement text. You can match the letter case or whole words only.
 
-<img src={require("./img/markdown-editor/find-replace.png").default} alt="Find and replace interface in the OpenCloud text editor" width="1920"/>
+<img src={require("./img/text-editor/find-replace.png").default} alt="Find and replace interface in the OpenCloud text editor" width="1920"/>
 
 ### Navigate with the Table of Contents
 
 Markdown and `.ocnote` documents provide a table of contents generated from their headings. Open the `Outlines` panel to see the document structure. Select a heading to jump to it; the active entry follows your position as you scroll and the list updates when headings change.
 
-<img src={require("./img/markdown-editor/table-of-contents.png").default} alt="Markdown document with the Outlines table of contents open" width="1920"/>
+<img src={require("./img/text-editor/table-of-contents.png").default} alt="Markdown document with the Outlines table of contents open" width="1920"/>
 
 ## Collaborate on Documents
 
@@ -121,7 +121,7 @@ Real-time collaboration is available for Markdown and `.ocnote` files. When seve
 
 Users with edit permission can change the document. Users with view permission can follow the session without seeing editing controls.
 
-<img src={require("./img/markdown-editor/collaboration.png").default} alt="Markdown document with two active participants and Margaret Hamilton's cursor" width="1920"/>
+<img src={require("./img/text-editor/collaboration.png").default} alt="Markdown document with two active participants and Margaret Hamilton's cursor" width="1920"/>
 
 ### Mention Another User
 
@@ -129,7 +129,7 @@ In a Markdown or `.ocnote` document, type `@` and select a user from the suggest
 
 Mentions are not available through public links.
 
-<img src={require("./img/markdown-editor/mentions.png").default} alt="Mention suggestion menu showing Margaret Hamilton" width="1920"/>
+<img src={require("./img/text-editor/mentions.png").default} alt="Mention suggestion menu showing Margaret Hamilton" width="1920"/>
 
 :::note
 Real-time collaboration requires the Yjs service. Administrators can find deployment details in [Collaborative Editing with the Yjs Server](../../admin/configuration/collaborative-editing.md).

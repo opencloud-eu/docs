@@ -22,8 +22,8 @@ Dieser Abschnitt behandelt typische Aufgaben wie Inhalte erstellen und verschieb
 - [Elemente löschen und aus dem Papierkorb wiederherstellen](./delete-restore.md)  
   Entfernen Sie Dateien und Ordner und stellen Sie sie bei Bedarf später wieder her.
 
-- [Markdown-Dateien bearbeiten](./markdown-editor.md)  
-  Bearbeiten Sie `README.md` und andere Markdown-Dateien direkt in OpenCloud mit Formatierungshilfen.
+- [Texteditor](./text-editor.md)  
+  Erstellen und bearbeiten Sie Markdown-Dateien, OpenCloud-Notizen und unformatierte Textdateien direkt im Browser. Formatieren Sie Inhalte und arbeiten Sie in Echtzeit gemeinsam an Dokumenten.
 
 - [README-Dateien in Ordnern](./readme-files.md)  
   Fügen Sie einem Ordner eine `README.md`-Datei hinzu, damit OpenCloud sie oberhalb der Dateiliste rendert.
