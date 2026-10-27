@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.55.0](https://github.com/opencloud-eu/docs/releases/tag/3.55.0) - 2026-10-27
+
+### ❤️ Thanks to all contributors! ❤️
+
+@v-scharf
+
+### 👷 Admin Documentation
+
+- docs: add 9.x.x to upgrade index [[#1246](https://github.com/opencloud-eu/docs/pull/1246)]
+
 ## [3.54.0](https://github.com/opencloud-eu/docs/releases/tag/3.54.0) - 2026-10-27
 
 ### ❤️ Thanks to all contributors! ❤️
