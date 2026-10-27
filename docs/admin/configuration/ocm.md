@@ -47,7 +47,7 @@ Apply the configuration in this guide to every participating OpenCloud instance.
 
 ## Enable OCM services
 
-Create an `ocm.yml` file in the root of the `opencloud-compose` directory with the following content:
+Create `custom/ocm.yml` in the existing `custom` directory of the `opencloud-compose` repository with the following content:
 
 ```yaml
 services:
@@ -57,10 +57,10 @@ services:
       GRAPH_INCLUDE_OCM_SHAREES: 'true'
 ```
 
-Add `ocm.yml` to the end of the existing `COMPOSE_FILE` value in the `.env` file. Keep all files that are already part of your deployment. For example:
+Add `custom/ocm.yml` to the end of the existing `COMPOSE_FILE` value in the `.env` file. Keep all Compose files that are already part of your deployment and only append the OCM file. For example:
 
 ```bash
-COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml:ocm.yml
+COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml:custom/ocm.yml
 ```
 
 Using a separate Compose overlay keeps the OCM configuration independent of `docker-compose.yml` and avoids conflicts when updating the `opencloud-compose` repository.
@@ -454,6 +454,52 @@ Check that:
 - The required OCM endpoints are reachable. For an OpenCloud-to-OpenCloud connection, this includes the ScienceMesh endpoints.
 
 For checks that users can perform, see [Troubleshoot ScienceMesh](../../user/sharing/opencloud-mesh#troubleshooting).
+
+### The configured OCM API version does not match
+
+If invitations or connections fail even though the required endpoints are reachable, query the OCM discovery endpoint of every mesh partner:
+
+```bash
+curl https://cloud2.opencloud.test/.well-known/ocm
+```
+
+The response includes the API version provided by the deployment:
+
+```json
+{
+  "enabled": true,
+  "apiVersion": "1.2.0",
+  "endPoint": "https://cloud2.opencloud.test/ocm",
+  "provider": "OpenCloud",
+  "resourceTypes": [
+    {
+      "name": "file",
+      "shareTypes": [
+        "user"
+      ],
+      "protocols": {
+        "webdav": "/dav/ocm"
+      }
+    }
+  ],
+  "capabilities": [
+    "invites",
+    "webdav-uri",
+    "protocol-object",
+    "invite-wayf"
+  ],
+  "inviteAcceptDialog": "https://cloud2.opencloud.test/open-cloud-mesh/accept-invite"
+}
+```
+
+Make sure that `enabled` is `true` and compare `apiVersion` with the corresponding `api_version` values in `ocmproviders.json`. The configured values must match the API version provided by the mesh partner. Repeat this check for every configured provider and update `ocmproviders.json` if a version differs.
+
+After updating the provider configuration, validate the JSON file and recreate the OpenCloud container:
+
+```bash
+python3 -m json.tool /mnt/oc/config/ocmproviders.json
+docker compose up -d --force-recreate opencloud
+```
 
 ### The provider configuration is not loaded
 
