@@ -34,8 +34,10 @@ Nothing to configure. Existing previews keep working.
 - The cache moves to `thumbnails/cache` and is created automatically. The old `thumbnails/files` folder is no longer used and can be removed:
 
   ```bash
-  docker compose exec opencloud sh -c 'rm -r "$OC_BASE_DATA_PATH/thumbnails/files"'
+  docker compose exec opencloud rm -r /var/lib/opencloud/thumbnails/files
   ```
+
+  If you configured a custom `OC_BASE_DATA_PATH`, replace `/var/lib/opencloud` with the configured path.
 
 - Sizes are edge lengths, rounded up per axis, with a maximum of 2048 px.
 - Old `THUMBNAILS_*` variable names are still read. Removed ones are ignored.
