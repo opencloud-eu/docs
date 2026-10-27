@@ -1,11 +1,11 @@
 ---
 id: markdown-editor
 sidebar_position: 40
-title: Editing Text and Notes
+title: Text Editor
 description: Create, format, collaborate on, and save text documents and notes in OpenCloud.
 ---
 
-# Editing Text and Notes
+# Using the Text Editor
 
 OpenCloud 8.0 and later includes a Tiptap-based editor for working with supported text files directly in your browser. You can create and format Markdown documents and OpenCloud Notes without installing additional software. With collaborative editing enabled, several people can also work on the same document in real time.
 
