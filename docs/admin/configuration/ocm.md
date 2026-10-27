@@ -474,20 +474,13 @@ The response includes the API version provided by the deployment:
   "resourceTypes": [
     {
       "name": "file",
-      "shareTypes": [
-        "user"
-      ],
+      "shareTypes": ["user"],
       "protocols": {
         "webdav": "/dav/ocm"
       }
     }
   ],
-  "capabilities": [
-    "invites",
-    "webdav-uri",
-    "protocol-object",
-    "invite-wayf"
-  ],
+  "capabilities": ["invites", "webdav-uri", "protocol-object", "invite-wayf"],
   "inviteAcceptDialog": "https://cloud2.opencloud.test/open-cloud-mesh/accept-invite"
 }
 ```
