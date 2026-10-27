@@ -29,7 +29,7 @@ OpenCloud 9.x.x starts with the existing 8.x.x configuration. Guest links stay d
 
 ## Thumbnails
 
-Nothing to configure. Existing previews keep working.
+Existing previews keep working.
 
 - The cache moves to `thumbnails/cache` and is created automatically. The old `thumbnails/files` folder is no longer used and can be removed:
 
@@ -41,6 +41,7 @@ Nothing to configure. Existing previews keep working.
 
 - Sizes are edge lengths, rounded up per axis, with a maximum of 2048 px.
 - Old `THUMBNAILS_*` variable names are still read. Removed ones are ignored.
+- YAML keys are **not** read from the old place. If you set thumbnail settings in `opencloud.yaml`, move them to `webdav: thumbnails:` before restarting.
 - If services run in separate containers, set `WEBDAV_THUMBNAILS_GENERATOR_URL=http://thumbnails:9186`.
 
 Details: [webdav MIGRATION.md](https://github.com/opencloud-eu/opencloud/blob/main/services/webdav/MIGRATION.md).
@@ -51,9 +52,11 @@ Guest links are disabled by default. To enable them, migrate the configuration f
 
 ```bash
 docker run --rm -it --user 1000:1000 --entrypoint /bin/sh \
-  -v opencloud-compose_opencloud-config:/etc/opencloud \
-  opencloudeu/opencloud:9.0.0
+  -v <opencloud-config-volume>:/etc/opencloud \
+  opencloudeu/opencloud-rolling:9.0.0
 ```
+
+Replace `<opencloud-config-volume>` with the Docker volume or bind mount that contains your OpenCloud configuration.
 
 Inside the container, create and apply the patch:
 
@@ -66,7 +69,6 @@ patch opencloud.yaml < opencloud.config.patch
 The patch adds `auth_guest.service_account` and removes `thumbnails.thumbnail`.
 
 Then set `OC_ENABLE_GUEST_LINKS=true`, configure SMTP for the notifications service and restart OpenCloud. Guests get their link and PIN by email.
-
 
 ## Space quota
 
