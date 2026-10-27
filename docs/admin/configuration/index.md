@@ -26,3 +26,4 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Logging](./logging.md) - Configure logging in OpenCloud
 - [n8n](./n8n.md) - Automate OpenCloud workflows with n8n
 - [Announcement Banner](./announcement-banner.md) - Notify all users with a global banner
+- [Open Cloud Mesh (OCM)](./ocm.md) - Configure OCM federation between OpenCloud and trusted OCM-compatible systems
