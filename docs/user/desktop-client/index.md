@@ -10,14 +10,14 @@ The OpenCloud Desktop Client synchronizes files between your computer and OpenCl
 
 ## In this section
 
-- [Windows](./windows/installation.md)  
+- [Windows](./windows/index.md)  
   Install, set up, and configure the Desktop Client on Windows.
 
-- [MacOS](./macos/installation.md)  
+- [MacOS](./macos/index.md)  
   Install, set up, and configure the Desktop Client on macOS.
 
-- [Linux](./linux/installation.md)  
+- [Linux](./linux/index.md)  
   Install, set up, and configure the Desktop Client on Linux.
 
-- [Common functionality](./common-functionality/multiple-accounts.md)  
+- [Common functionality](./common-functionality/index.md)  
   Learn about shared features such as multiple accounts, file naming rules, conflict handling, and logging.

@@ -14,9 +14,7 @@ It is meant as a quick entry point for administrators who want to improve docume
 ## What you will find here
 
 - Add additional fonts so documents render more reliably across systems.
-- Enable Microsoft Office formats in the New menu when you want to create `.docx`, `.xlsx`, or `.pptx` files directly.
 
 ## Guides
 
-- [Install additional fonts](./collabora-fonts)
-- [Enable MS-Office formats](./collabora-ms-office-formats)
+- [Install additional fonts](../collabora.md) - Add fonts so documents render reliably

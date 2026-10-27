@@ -1,5 +1,5 @@
 
-2026-10-07-00-08-40
+2026-10-27-00-08-40
 
 ## Deprecation Notice
 
@@ -57,6 +57,7 @@
 |`OC_MACHINE_AUTH_API_KEY`<br/>`FRONTEND_MACHINE_AUTH_API_KEY`| 1.0.0 |string|`The machine auth API key used to validate internal requests necessary to access resources from other services.`|`""`|
 |`FRONTEND_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
 |`OC_SPACES_MAX_QUOTA`<br/>`FRONTEND_MAX_QUOTA`| 1.0.0 |uint64|`Set the global max quota value in bytes. A value of 0 equals unlimited. The value is provided via capabilities.`|`"0"`|
+|`OC_SPACES_DEFAULT_QUOTA`| next |string|`Set the default quota in bytes for new project spaces. A value of 0 or an invalid value means no default quota. The value is provided via capabilities and must match the default quota of the graph service.`|`"1000000000"`|
 |`FRONTEND_UPLOAD_MAX_CHUNK_SIZE`| 1.0.0 |int|`Sets the max chunk sizes in bytes for uploads via the clients.`|`"10000000"`|
 |`FRONTEND_UPLOAD_HTTP_METHOD_OVERRIDE`| 1.0.0 |string|`Advise TUS to replace PATCH requests by POST requests.`|`""`|
 |`FRONTEND_DEFAULT_UPLOAD_PROTOCOL`| 1.0.0 |string|`The default upload protocol to use in clients. Currently only 'tus' is available. See the developer API documentation for more details about TUS.`|`"tus"`|
@@ -101,6 +102,7 @@
 |`OCDAV_SHARES_NAMESPACE`<br/>`FRONTENT_OCDAV_SHARES_NAMESPACE`| 1.0.0 |string|`The human readable path for the share jail. Relative to a users personal space root. Upcased intentionally.`|`"/Shares"`|
 |`OCDAV_OCM_NAMESPACE`<br/>`FRONTENT_OCDAV_OCM_NAMESPACE`| 1.0.0 |string|`The human readable path prefix for the ocm shares.`|`"/public"`|
 |`OC_URL`<br/>`OCDAV_PUBLIC_URL`<br/>`FRONTENT_OCDAV_PUBLIC_URL`| 1.0.0 |string|`URL where OpenCloud is reachable for users.`|`"https://localhost:9200"`|
+|`OC_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`<br/>`FRONTEND_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`| next |[]string|`Additional mime types oc:has-preview is answered with 1 for, the same list the webdav service attempts previews for. The types the build ships are included; this only adds to them.`|`"[]"`|
 |`OC_INSECURE`<br/>`OCDAV_INSECURE`<br/>`FRONTENT_OCDAV_INSECURE`| 1.0.0 |bool|`Allow insecure connections to the GATEWAY service.`|`"false"`|
 |`OCDAV_ENABLE_HTTP_TPC`<br/>`FRONTENT_OCDAV_ENABLE_HTTP_TPC`| 6.0.0 |bool|`Enable HTTP / WebDAV Third-Party-Copy support.`|`"false"`|
 |`OCDAV_GATEWAY_REQUEST_TIME`<br/>`FRONTENT_OUTOCDAV_GATEWAY_REQUEST_TIMEOUT`| 1.0.0 |int64|`Request timeout in seconds for requests from the oCDAV service to the GATEWAY service.`|`"84300"`|

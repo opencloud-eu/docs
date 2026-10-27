@@ -11,44 +11,19 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 
 ## In this section
 
-- [Authentication and Identity Management](./authentication-and-user-management/)  
-  Configure internal and external identity providers, authentication settings, and user management options.
-
-- [Storage](./storage/)  
-  Configure storage drivers, backend storage, and storage-related behavior for OpenCloud.
-
-- [Collabora](./collabora/)  
-  Set up Collabora integration to create, edit, and collaborate on office documents directly in OpenCloud.
-
-- [Set Default Quota](./set-default-quota.md)  
-  Define the default storage quota that is assigned to users.
-
-- [Frontend Update Check](./frontend-update-check.md)  
-  Configure whether OpenCloud Web checks for available frontend updates.
-
-- [Mail Notifications](./mail-notifications.md)  
-  Configure email notifications so users can receive messages about relevant OpenCloud events.
-
-- [Radicale Integration](./radicale-integration.md)  
-  Integrate Radicale to provide calendar and contact functionality with OpenCloud.
-
-- [Web Applications](./web-applications.md)  
-  Configure which web applications are available in the OpenCloud web interface.
-
-- [Link Password Policy](./link-password-policy.md)  
-  Define password requirements for public links to improve link share security.
-
-- [Default Language](./default-language.md)  
-  Set the default language used by OpenCloud for the web interface.
-
-- [Euro Office](./euro-office.md)  
-  Configure the community-supported Euro Office integration for document editing.
-
-- [Logging](./logging.md)  
-  Adjust logging settings to help monitor OpenCloud and troubleshoot issues.
-
-- [Announcement Banner](./announcement-banner.md)  
-  Display a global announcement banner to notify users about maintenance or important information.
-
-- [Open Cloud Mesh (OCM)](./ocm.md)
-  Configure OCM federation between OpenCloud and trusted OCM-compatible systems.
+- [Authentication and Identity Management](./authentication-and-user-management/) - Internal and external IDP setup
+- [Storage](./storage/) - Storage drivers and backend setup
+- [Collabora](./collabora/) - Collabora integration and document compatibility
+- [Set Default Quota](./set-default-quota.md) - Define the default storage quota for users
+- [Frontend Update Check](./frontend-update-check.md) - Disable the update check in the web frontend
+- [Mail Notifications](./mail-notifications.md) - Send notifications to users by email
+- [Radicale Integration](./radicale-integration.md) - Calendar and contacts with Radicale
+- [Collaborative Editing](./collaborative-editing.md) - Real-time collaborative editing with the Yjs server
+- [Web Applications](./web-applications.md) - Enable additional web apps
+- [Link Password Policy](./link-password-policy.md) - Password enforcement and requirements for public links
+- [Default Language](./default-language.md) - Set the default language
+- [Euro Office](./euro-office.md) - Community supported Euro Office setup
+- [Logging](./logging.md) - Configure logging in OpenCloud
+- [n8n](./n8n.md) - Automate OpenCloud workflows with n8n
+- [Announcement Banner](./announcement-banner.md) - Notify all users with a global banner
+- [Open Cloud Mesh (OCM)](./ocm.md) - Configure OCM federation between OpenCloud and trusted OCM-compatible systems

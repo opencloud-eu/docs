@@ -30,9 +30,19 @@
 |`OC_HTTP_TLS_KEY`| 1.0.0 |string|`Path/File name for the TLS certificate key (in PEM format) for the server certificate to use for the http services.`|`""`|
 |`AUTH_GUEST_TOKENS_STORAGE_ROOT`| next |string|`The directory where the guest share tokens are stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/auth-guest.`|`"/var/lib/opencloud/auth-guest"`|
 |`OC_JWT_SECRET`<br/>`AUTH_GUEST_JWT_SECRET`| next |string|`The secret to mint and validate jwt tokens.`|`""`|
-|`AUTH_GUEST_SESSION_JWT_SECRET`| next |string|`The secret used to sign and validate guest session tokens. It must differ from OC_JWT_SECRET.`|`""`|
 |`AUTH_GUEST_JWT_COOKIE_NAME`| next |string|`The name of the session cookie set when a guest token is redeemed.`|`"__Host-oc_guest_session"`|
 |`AUTH_GUEST_JWT_TTL`| next |Duration|`The lifetime of a redeemed guest session token.`|`"24h0m0s"`|
+|`AUTH_GUEST_NONCE_COOKIE_BASE_NAME`| next |string|`The base name of the cookie that binds a nonce to the browser that requested the renewal. A short hash of the share id is appended per share, so the actual cookie is e.g. __Host-oc_guest_nonce_<hash>.`|`"__Host-oc_guest_nonce"`|
+|`AUTH_GUEST_PIN_AND_NONCE_TTL`| next |Duration|`The lifetime of the one-time PIN and of the nonce that binds it to the browser. After it expires the PIN has to be renewed again. See the Environment Variable Types description for more details.`|`"30m0s"`|
+|`AUTH_GUEST_BACKOFF_MAX_ATTEMPTS`| next |int|`The maximum number of failed attempts before the PIN is invalidated.`|`"5"`|
+|`AUTH_GUEST_BACKOFF_BASE`| next |Duration|`The base duration for the exponential backoff between failed attempts. See the Environment Variable Types description for more details.`|`"1s"`|
+|`AUTH_GUEST_BACKOFF_CAP`| next |Duration|`The maximum duration for the exponential backoff between failed attempts. See the Environment Variable Types description for more details.`|`"30s"`|
+|`AUTH_GUEST_QUOTA_DAILY_CAP`| next |int|`The maximum number of renewals without a valid session for the same share within the window.`|`"50"`|
+|`AUTH_GUEST_QUOTA_COOLDOWN`| next |Duration|`The minimum time between two renewals without a valid session for the same share. See the Environment Variable Types description for more details.`|`"1m0s"`|
+|`AUTH_GUEST_QUOTA_WINDOW`| next |Duration|`The window over which the quota for renewals without a valid session is counted. See the Environment Variable Types description for more details.`|`"24h0m0s"`|
+|`AUTH_GUEST_SESSION_QUOTA_DAILY_CAP`| next |int|`The maximum number of renewals authorized by a valid session for the same share within the window. Each of these renewals issues a new PIN.`|`"5"`|
+|`AUTH_GUEST_SESSION_QUOTA_COOLDOWN`| next |Duration|`The minimum time between two renewals authorized by a valid session for the same share. See the Environment Variable Types description for more details.`|`"5m0s"`|
+|`AUTH_GUEST_SESSION_QUOTA_WINDOW`| next |Duration|`The window over which the quota for renewals authorized by a valid session is counted. See the Environment Variable Types description for more details.`|`"24h0m0s"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`AUTH_GUEST_SERVICE_ACCOUNT_ID`| next |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`AUTH_GUEST_SERVICE_ACCOUNT_SECRET`| next |string|`The service account secret.`|`""`|
 |`AUTH_GUEST_NUM_CONSUMERS`| next |int|`The amount of concurrent event consumers to start. Event consumers are used for processing events. Multiple consumers increase parallelisation, but will also increase CPU and memory demands.`|`"1"`|
