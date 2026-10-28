@@ -88,22 +88,18 @@ Here you can customize additional display options such as sorting or column sele
 
     Provides further options for files, folders or spaces.
 
-## 14. Actions Panel
-
-    Shows possible actions for the selected file, e.g. rename or move.
-
-## 15. Shares Panel
+## 14. Shares Panel
 
     Here you can share files and folders internally or externally and manage permissions.
 
-## 16. Versions
+## 15. Versions
 
     Shows an overview of the versions of a selected file or folder.
 
-## 17. Activity Panel
+## 16. Activity Panel
 
     Shows an overview of changes and activities within a space or file.
 
-## 18. Context Menu
+## 17. Context Menu
 
     Right-clicking on a file or folder opens the context menu with specific options.
