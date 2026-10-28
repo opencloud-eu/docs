@@ -1,11 +1,11 @@
 
-2026-10-27-00-08-40
+2026-10-28-00-09-27
 
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-| GRAPH_SPACES_DEFAULT_QUOTA is deprecated and will be removed in a future version. Please use OC_SPACES_DEFAULT_QUOTA instead. | next | next-prod | OC_SPACES_DEFAULT_QUOTA |
+| GRAPH_SPACES_DEFAULT_QUOTA is deprecated and will be removed in a future version. Please use OC_SPACES_DEFAULT_QUOTA instead. | 9.0.0 | next-prod | OC_SPACES_DEFAULT_QUOTA |
 
 ## Environment variables for the **graph** service
 
@@ -112,7 +112,7 @@
 |`OC_EVENTS_AUTH_USERNAME`<br/>`GRAPH_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`GRAPH_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`GRAPH_AVAILABLE_ROLES`| 1.0.0 |[]string|`A comma separated list of roles that are available for assignment.`|`"[b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5 a8d5fe5e-96e3-418d-825b-534dbdf22b99 fb6c3e19-e378-47e5-b277-9732f9de6e21 58c63c02-1d89-4572-916a-870abc5a1b7d 2d00ce52-1fc2-4dbc-8b95-a73b73395f5a 1c996275-f1c9-4e71-abdf-a42f6495e960 312c0871-5ef7-4b3a-85b6-0e4074c64049]"`|
-|`OC_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`<br/>`GRAPH_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`| next |[]string|`Additional mime types a preview is announced for, the same list the webdav service attempts previews for. The types the build ships are included; this only adds to them.`|`"[]"`|
+|`OC_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`<br/>`GRAPH_THUMBNAILS_ADDITIONAL_SOURCE_TYPES`| 9.0.0 |[]string|`Additional mime types a preview is announced for, the same list the webdav service attempts previews for. The types the build ships are included; this only adds to them.`|`"[]"`|
 |`OC_MAX_CONCURRENCY`<br/>`GRAPH_MAX_CONCURRENCY`| 1.0.0 |int|`The maximum number of concurrent requests the service will handle.`|`"20"`|
 |`OC_KEYCLOAK_BASE_PATH`<br/>`GRAPH_KEYCLOAK_BASE_PATH`| 1.0.0 |string|`The URL to access keycloak.`|`""`|
 |`OC_KEYCLOAK_CLIENT_ID`<br/>`GRAPH_KEYCLOAK_CLIENT_ID`| 1.0.0 |string|`The client id to authenticate with keycloak.`|`""`|
