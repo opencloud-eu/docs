@@ -14,3 +14,4 @@ Use these guides to configure the storage backend for your OpenCloud deployment.
 
 - [PosixFS](./posixfs.md) - Use a regular filesystem as the OpenCloud storage backend
 - [DecomposedS3](./decomposeds3.md) - Use S3-compatible object storage with MinIO
+- [Cleaning Up Old Versions](./revisions-cleanup.md) - Delete old file versions automatically, according to a cleanup strategy
