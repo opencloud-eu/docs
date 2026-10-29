@@ -85,4 +85,4 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`PROXY_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`PROXY_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`PROXY_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`PROXY_GUEST_LINK_COOKIE_NAME`| next |string|`The name of the guest-session cookie. Defaults to __Host-opencloud-guest.`|`"__Host-oc_guest_session"`|
+|`PROXY_GUEST_LINK_COOKIE_NAME`| 9.0.0 |string|`The name of the guest-session cookie. Defaults to __Host-opencloud-guest.`|`"__Host-oc_guest_session"`|
