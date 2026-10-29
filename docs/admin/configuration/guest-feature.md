@@ -1,8 +1,8 @@
 ---
 sidebar_position: 160
 id: guest-feature
-title: Guest-Feature
-description: Set up guest-feature in OpenCloud
+title: Guest Feature
+description: Set up the Guest Feature in OpenCloud
 draft: false
 ---
 
@@ -34,36 +34,17 @@ The Guest Feature is provided by the `auth-guest` service.
 
 - A running OpenCloud deployment based on `opencloud-compose`.
 - OpenCloud version 9.0.0 or later.
-- Access to an SMTP mailbox that OpenCloud can use to send emails.
+- A working SMTP configuration for sending invitation emails.
+
+If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../maintenance/upgrade/upgrade-guide.md) before enabling the Guest Feature.
+
+:::important
+Before upgrading, check whether a version-specific upgrade guide is available for your target version. These guides may contain additional migration steps, configuration changes, or breaking changes that must be considered.
+:::
+
+To configure email delivery, follow the [Mail Notifications](./mail-notifications.md) guide. Make sure that the `notifications` service is enabled.
 
 All commands in this guide are run in the root directory of the `opencloud-compose` deployment.
-
-## Check the OpenCloud Version
-
-Check whether your OpenCloud image contains the `auth-guest` service:
-
-```bash
-docker compose exec opencloud opencloud help | grep -i guest
-```
-
-If the output shows `auth-guest`, continue with the next step.
-
-If there is no output, update OpenCloud. Set the image tag in your `.env` file, for example:
-
-```env
-OC_DOCKER_TAG=9.0.0
-```
-
-Then update the deployment:
-
-```bash
-docker compose pull opencloud
-docker compose up -d
-```
-
-:::caution
-Create a backup before you update OpenCloud.
-:::
 
 ## Get the Service Account Credentials
 
@@ -121,46 +102,16 @@ Docker Compose interprets the `$` character as the start of a variable. If the s
 
 ### Add the File to `COMPOSE_FILE`
 
-Add `custom/guest.yml` to the end of the `COMPOSE_FILE` variable in your `.env` file, for example:
+Add `custom/guest.yml` to the end of the existing `COMPOSE_FILE` variable in your `.env` file, for example:
 
 ```env
 COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml:custom/guest.yml
 ```
 
+Keep all files that are already part of your deployment.
+
 :::note
 Make sure that the `.env` file contains only one active `COMPOSE_FILE` line. If there are several lines, only the last one is used.
-:::
-
-## Configure Email Delivery
-
-Guests receive their invitation link by email. Configure the SMTP settings and enable the `notifications` service in your `.env` file:
-
-```env
-SMTP_HOST=smtp.example.com
-SMTP_PORT=587
-SMTP_SENDER=OpenCloud <noreply@example.com>
-SMTP_USERNAME=noreply@example.com
-SMTP_PASSWORD=YOUR-PASSWORD
-SMTP_TRANSPORT_ENCRYPTION=starttls
-SMTP_INSECURE=false
-SMTP_AUTHENTICATION=auto
-START_ADDITIONAL_SERVICES=notifications
-```
-
-- `SMTP_SENDER` must usually match the mailbox that sends the email. Otherwise the mail server may reject the message.
-- If `START_ADDITIONAL_SERVICES` already contains other services, add `notifications` separated by a comma.
-- Use port `587` with `starttls` or port `465` with `ssltls`, depending on your mail provider.
-
-For more information, see [Mail Notifications](./mail-notifications.md).
-
-:::tip
-Some hosting providers block outgoing connections on port `465`. If emails are not sent, check which port is reachable from your server:
-
-```bash
-nc -vz -w 5 smtp.example.com 465
-nc -vz -w 5 smtp.example.com 587
-```
-
 :::
 
 ## Restart OpenCloud
@@ -184,20 +135,25 @@ The status must be `Up`. If the status is `Restarting`, see [Troubleshooting](#t
 Check that the Guest Feature is enabled:
 
 ```bash
-docker compose exec opencloud env | grep GUEST
+docker compose exec opencloud printenv OC_ENABLE_GUEST_LINKS
 ```
 
-The output must contain `OC_ENABLE_GUEST_LINKS=true`.
+The output must be `true`.
 
-Check that the email settings are active:
+Check that the `notifications` service is enabled:
 
 ```bash
-docker compose exec opencloud env | grep -E "SMTP_HOST|ADD_RUN_SERVICES"
+docker compose exec opencloud printenv OC_ADD_RUN_SERVICES
 ```
 
-The output must contain your SMTP server and `notifications`.
+The output must contain `notifications`.
 
-Finally, test the Guest Feature in the web interface: share a folder with an external email address, select the entry marked **(Guest)**, and click **Share**. The guest should receive an invitation email.
+Finally, test the Guest Feature in the web interface:
+
+1. Share a file or folder with an external email address.
+2. Select the recipient marked `(Guest)`.
+3. Click `Share`.
+4. Verify that the guest receives an invitation email and can access the shared content.
 
 ## Optional Settings
 
@@ -229,11 +185,11 @@ If the log contains `guestlinks: service_account_id must not be empty`, the serv
 
 If users see the message `Failed to add share` when they share with a guest:
 
-- Check that the OpenCloud image contains the `auth-guest` service, see [Check the OpenCloud Version](#check-the-opencloud-version).
-- Check that `OC_ENABLE_GUEST_LINKS=true` is set inside the container:
+- Make sure that you are running OpenCloud version 9.0.0 or later.
+- Verify that `OC_ENABLE_GUEST_LINKS` is set to `true` inside the container:
 
   ```bash
-  docker compose exec opencloud env | grep GUEST
+  docker compose exec opencloud printenv OC_ENABLE_GUEST_LINKS
   ```
 
   If there is no output, the variable is not passed to the container. Make sure that `custom/guest.yml` is part of `COMPOSE_FILE`.
@@ -246,8 +202,6 @@ Check the log of the `notifications` service:
 docker compose logs opencloud | grep '"service":"notifications"' | tail -10
 ```
 
-- **No output:** The `notifications` service is not running. Set `START_ADDITIONAL_SERVICES=notifications` in your `.env` file.
-- **`SMTP Connection timed out`:** OpenCloud cannot reach the mail server. Your hosting provider may block the configured port. Use port `587` with `starttls` instead of port `465`.
-- **Authentication errors:** Check `SMTP_USERNAME`, `SMTP_PASSWORD`, and `SMTP_SENDER`.
+Make sure that the `notifications` service is enabled and that your SMTP configuration is working. See [Mail Notifications](./mail-notifications.md) for configuration details and troubleshooting.
 
 Invitations created while email delivery was not working are not sent again. Remove the guest share and invite the guest again.
