@@ -24,6 +24,7 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 - [Default Language](./default-language.md) - Set the default language
 - [Euro Office](./euro-office.md) - Community supported Euro Office setup
 - [Logging](./logging.md) - Configure logging in OpenCloud
+- [Monitoring with Prometheus](./monitoring.md) - Collect metrics with Prometheus, including classic and native histograms
 - [n8n](./n8n.md) - Automate OpenCloud workflows with n8n
 - [Announcement Banner](./announcement-banner.md) - Notify all users with a global banner
 - [Open Cloud Mesh (OCM)](./ocm.md) - Configure OCM federation between OpenCloud and trusted OCM-compatible systems
