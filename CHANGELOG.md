@@ -12,6 +12,11 @@
 
 ### 👤 User Documentation
 
+- add new screenshots [[#1267](https://github.com/opencloud-eu/docs/pull/1267)]
+- add new screenshots and change the Space to an existing one [[#1266](https://github.com/opencloud-eu/docs/pull/1266)]
+- new screensots, only list and grid view and adjust the text [[#1261](https://github.com/opencloud-eu/docs/pull/1261)]
+- add new screenshots [[#1265](https://github.com/opencloud-eu/docs/pull/1265)]
+- new screenshots and rework move section [[#1264](https://github.com/opencloud-eu/docs/pull/1264)]
 - add new screenshot [[#1260](https://github.com/opencloud-eu/docs/pull/1260)]
 - new pics und rework the text [[#1259](https://github.com/opencloud-eu/docs/pull/1259)]
 - new screenshot with overlay and remove actions panel [[#1258](https://github.com/opencloud-eu/docs/pull/1258)]
