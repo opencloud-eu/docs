@@ -10,6 +10,8 @@ draft: false
 
 With OpenCloud you can add tags to files and folders to make them easier to search or group.
 
+Assigned tags can also be used to find files and folders through [Search](./search.md#search-using-tags).
+
 ## Add tag
 
 - Open the context menu for the file or folder.
