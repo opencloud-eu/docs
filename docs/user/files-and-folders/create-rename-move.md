@@ -39,22 +39,23 @@ Done! - the new name is applied!
 
 ## Move files or folders
 
-- Make a selection:
-  - Select the file(s) or folder(s) you want to move.
-    <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Mark folder or files" width="1920"/>
-  - Open the context menu:
-    - Right-click on the file or folder
-    - or click on the three dots in the corresponding line
+1. Select the file or folder you want to move.
 
-  - Select the “Cut” option from the menu.
-    <img src={require("./img/create-rename-move/right-click-cut-option.png").default} alt="Right click on cut option" width="400"/>
-    (Alternatively, you can use the “Cut” function in the action bar at the top).
-    <img src={require("./img/create-rename-move/actionbar-cut-option.png").default} alt="Cut option in action bar" width="1920"/>
+   <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Selected folder to move" width="1920"/>
 
-- Select destination:
-  - Navigate to the folder or location where the file or folder should be moved to.
-  - Click on “Paste here” in the action bar.
-    <img src={require("./img/create-rename-move/paste-here-button.png").default} alt="Paste here button" width="1920"/>
-    <img src={require("./img/create-rename-move/pasted-file.png").default} alt="Paste file" width="1920"/>
+2. Choose “Move to” in one of the following ways:
+   - Open the context menu by right-clicking the selected item or selecting its three-dot menu, then choose “Move to”.
 
-The file or folder is now moved to the new location and no longer exists in the original location.
+     <img src={require("./img/create-rename-move/right-click-move-to-option.png").default} alt="Move to option in the context menu" width="400"/>
+
+   - Choose “Move to” from the action bar.
+
+     <img src={require("./img/create-rename-move/actionbar-move-to-option.png").default} alt="Move to option in the action bar" width="1920"/>
+
+3. In the dialog, select the destination folder and choose “Move here”.
+
+   <img src={require("./img/create-rename-move/move-dialog.png").default} alt="Dialog for selecting the destination folder" width="1920"/>
+
+4. The moved item appears in the destination folder and no longer exists in its original location.
+
+   <img src={require("./img/create-rename-move/moved-file.png").default} alt="Moved item in the destination folder" width="1920"/>
