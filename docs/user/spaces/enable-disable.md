@@ -10,25 +10,26 @@ draft: false
 
 You can disable and re-enable a Space in a few different ways. Only a Space Admin or the Administrator can do this.
 
-## Disable Space
+## Disable a Space
 
 - Select the desired Space.
-- Click Disable in the top action bar or open the context menu.
+- Select “Disable” in the top action bar or open the context menu.
 
   <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="Overview disabled spaces" width="1920"/>
 
-- Confirm the deactivation.
+- Confirm the action.
 
   <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="1920"/>
 
 - The Space is now disabled.
 
-<img src={require("./img/enable-disable/disabled-space.png").default} alt="Confirm disable" width="1920"/>
+  <img src={require("./img/enable-disable/disabled-space.png").default} alt="Disabled Space" width="1920"/>
+
 :::note
 No data will be deleted. Only the Space Admin or the Administrator can enable the Space again.
 :::
 
-## Enable Space
+## Enable a Space
 
 - After the Space has been disabled, the Enable option replaces Disable.
 
@@ -36,11 +37,11 @@ No data will be deleted. Only the Space Admin or the Administrator can enable th
 
 - Click it to enable the Space again.
 
-- If the Space is not visible, the Show disabled Spaces filter may be enabled.
+- If the Space is not visible, select the gear icon in the upper-right corner of the Spaces overview and enable "Show disabled Spaces".
 
   <img src={require("./img/enable-disable/include-disabled.png").default} alt="Include disabled spaces" width="1920"/>
 
-- Enable the filter and the Space will appear so it can be enabled.
+- Enable “Show disabled Spaces” to display the Space so it can be enabled.
 
   <img src={require("./img/enable-disable/disable-included.png").default} alt="Included disabled spaces" width="1920"/>
 
