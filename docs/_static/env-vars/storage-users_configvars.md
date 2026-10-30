@@ -1,5 +1,5 @@
 
-2026-10-29-00-07-44
+2026-10-30-00-07-42
 
 ## Deprecation Notice
 
@@ -33,7 +33,7 @@
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.`|`""`|
 |`STORAGE_USERS_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
 |`STORAGE_USERS_GRACEFUL_SHUTDOWN_TIMEOUT`| 1.0.0 |int|`The number of seconds to wait for the 'storage-users' service to shutdown cleanly before exiting with an error that gets logged. Note: This setting is only applicable when running the 'storage-users' service as a standalone service. See the text description for more details.`|`"30"`|
-|`STORAGE_USERS_DRIVER`| 1.0.0 |string|`The storage driver which should be used by the service. Defaults to 'posix'. Supported values are: 'posix', 'decomposed', 'decomposeds3' and 'owncloudsql'. For backwards compatibility reasons it's also possible to use the 'ocis' and 's3ng' driver and configure them using the 'decomposed'/'decomposeds3' options. The 'posix' driver stores data directly on a POSIX-compliant filesystem. The 'decomposed' driver stores all data (blob and meta data) in a POSIX compliant volume. The 'decomposeds3' driver stores metadata in a POSIX compliant volume and uploads blobs to the s3 bucket.`|`"posix"`|
+|`STORAGE_USERS_DRIVER`| 1.0.0 |string|`The storage driver which should be used by the service. Defaults to 'posix'. Supported values are: 'posix', 'decomposed', 'decomposeds3' and 'owncloudsql'. The deprecated 'ocis' and 's3ng' aliases use the 'decomposed' and 'decomposeds3' drivers with the legacy metadata prefix, overriding OC_METADATA_PREFIX. The 'posix' driver stores data directly on a POSIX-compliant filesystem. The 'decomposed' driver stores all data (blob and meta data) in a POSIX compliant volume. The 'decomposeds3' driver stores metadata in a POSIX compliant volume and uploads blobs to the s3 bucket.`|`"posix"`|
 |`OC_DECOMPOSEDFS_PROPAGATOR`<br/>`STORAGE_USERS_DECOMPOSED_PROPAGATOR`| 1.0.0 |string|`The propagator used for decomposedfs. At the moment, only 'sync' is fully supported, 'async' is available as an experimental option.`|`"sync"`|
 |`STORAGE_USERS_ASYNC_PROPAGATOR_PROPAGATION_DELAY`| 1.0.0 |Duration|`The delay between a change made to a tree and the propagation start on treesize and treetime. Multiple propagations are computed to a single one. See the Environment Variable Types description for more details.`|`"0s"`|
 |`STORAGE_USERS_DECOMPOSED_ROOT`| 1.0.0 |string|`The directory where the filesystem storage will store blobs and metadata. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage/users.`|`"/var/lib/opencloud/storage/users"`|
