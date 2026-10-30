@@ -1,14 +1,19 @@
 # Changelog
 
-## [3.56.0](https://github.com/opencloud-eu/docs/releases/tag/3.56.0) - 2026-10-29
+## [3.56.0](https://github.com/opencloud-eu/docs/releases/tag/3.56.0) - 2026-10-30
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@dschmidt, @openclouders
+@Svanvith, @dschmidt, @openclouders
 
 ### :octocat: Developer Documentation
 
 - Document the icon type of web apps and extensions [[#1201](https://github.com/opencloud-eu/docs/pull/1201)]
+
+### 👤 User Documentation
+
+- new pics und rework the text [[#1259](https://github.com/opencloud-eu/docs/pull/1259)]
+- new screenshot with overlay and remove actions panel [[#1258](https://github.com/opencloud-eu/docs/pull/1258)]
 
 ### 📦️ Build&Tools
 
