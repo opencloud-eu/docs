@@ -27,6 +27,10 @@ This section covers common day-to-day tasks such as creating and moving content,
 - [README files in folders](./readme-files.md)  
   Add a `README.md` file to a folder so OpenCloud renders it above the file list.
 
+- [End-to-end encrypted folders](./e2ee-folders.md) – Create and use password-protected folders whose contents are encrypted before upload.
+
+- [Access end-to-end encrypted folders with rclone](./e2ee-folders-rclone.md) – Configure WebDAV and `rclone crypt` to access an encrypted folder locally.
+
 ### Find and classify content
 
 - [Photos and videos](./photos-and-videos.md)  
