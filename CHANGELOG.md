@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @dschmidt, @openclouders
+@Svanvith, @alanbato, @dschmidt, @openclouders
 
 ### :octocat: Developer Documentation
 
@@ -13,6 +13,8 @@
 
 ### 👤 User Documentation
 
+- new screenshots, add tags and adjust the text [[#1269](https://github.com/opencloud-eu/docs/pull/1269)]
+- Fix Typo in "Why Spaces?" user documentation page [[#1225](https://github.com/opencloud-eu/docs/pull/1225)]
 - add new screenshots [[#1267](https://github.com/opencloud-eu/docs/pull/1267)]
 - add new screenshots and change the Space to an existing one [[#1266](https://github.com/opencloud-eu/docs/pull/1266)]
 - new screensots, only list and grid view and adjust the text [[#1261](https://github.com/opencloud-eu/docs/pull/1261)]
