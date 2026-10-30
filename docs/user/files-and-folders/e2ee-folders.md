@@ -55,6 +55,8 @@ After enabling end-to-end encryption, you must set a password for the folder.
 
 This password unlocks the encrypted folder and is required to access the files inside it.
 
+The dialog displays the password requirements and marks each requirement as it is met.
+
 <img src={require("./img/e2ee-folders/set-password.png").default} alt="Set a password for the encrypted folder" width="400"/>
 
 The dialog provides the following controls:
@@ -64,6 +66,9 @@ The dialog provides the following controls:
 
 - “Copy password” copies the password to the clipboard.
   <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Copy password button" width="400"/>
+
+- “Generate password” creates a password that meets all requirements.
+  <img src={require("./img/e2ee-folders/generate-password.png").default} alt="Generate password button" width="400"/>
 
 :::important
 
