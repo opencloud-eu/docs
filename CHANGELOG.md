@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- add new screenshot [[#1260](https://github.com/opencloud-eu/docs/pull/1260)]
 - new pics und rework the text [[#1259](https://github.com/opencloud-eu/docs/pull/1259)]
 - new screenshot with overlay and remove actions panel [[#1258](https://github.com/opencloud-eu/docs/pull/1258)]
 
