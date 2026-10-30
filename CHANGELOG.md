@@ -23,6 +23,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1270](https://github.com/opencloud-eu/docs/pull/1270)]
 - Update docs [[#1262](https://github.com/opencloud-eu/docs/pull/1262)]
 
 ## [3.55.0](https://github.com/opencloud-eu/docs/releases/tag/3.55.0) - 2026-10-27
