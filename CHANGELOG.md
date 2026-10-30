@@ -8,6 +8,7 @@
 
 ### :octocat: Developer Documentation
 
+- Update services sites [[#1241](https://github.com/opencloud-eu/docs/pull/1241)]
 - Document the icon type of web apps and extensions [[#1201](https://github.com/opencloud-eu/docs/pull/1201)]
 
 ### 👤 User Documentation
