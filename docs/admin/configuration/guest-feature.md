@@ -32,11 +32,11 @@ The Guest Feature is provided by the `auth-guest` service.
 
 ## Prerequisites
 
-- A running OpenCloud deployment based on `opencloud-compose`.
+- A running OpenCloud deployment based on [`opencloud-compose`](https://github.com/opencloud-eu/opencloud-compose).
 - OpenCloud version 9.0.0 or later.
 - A working SMTP configuration for sending invitation emails.
 
-If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../maintenance/upgrade/upgrade-guide.md) before enabling the Guest Feature.
+If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../maintenance/upgrade/upgrade.md) and the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x.md) guide before enabling the Guest Feature.
 
 :::important
 Before upgrading, check whether a version-specific upgrade guide is available for your target version. These guides may contain additional migration steps, configuration changes, or breaking changes that must be considered.
@@ -46,29 +46,18 @@ To configure email delivery, follow the [Mail Notifications](./mail-notification
 
 All commands in this guide are run in the root directory of the `opencloud-compose` deployment.
 
-## Get the Service Account Credentials
+## Check the Service Account Configuration
 
-The `auth-guest` service uses the OpenCloud service account. Without it, the service does not start.
+The `auth-guest` service requires a service account. Without it, the service does not start and the OpenCloud container keeps restarting.
 
-Read the service account credentials from your existing OpenCloud configuration:
+Check whether your OpenCloud configuration contains the service account settings for the `auth-guest` service:
 
 ```bash
-docker compose exec opencloud cat /etc/opencloud/opencloud.yaml | grep -m1 -A2 "service_account:"
+docker compose exec opencloud grep -A3 "auth_guest:" /etc/opencloud/opencloud.yaml
 ```
 
-The output looks similar to this:
-
-```yaml
-service_account:
-  service_account_id: 1234abcd-...
-  service_account_secret: ...
-```
-
-You need both values in the next step.
-
-:::important
-Treat the service account secret like a password. Do not share it.
-:::
+- **New installations of OpenCloud 9.0.0 or later:** The output shows the `service_account` settings. They are created automatically during the initial setup. No further action is required.
+- **Installations upgraded from an earlier version:** If there is no output, migrate the configuration as described in the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x.md#guest-links) guide before you continue.
 
 ## Enable the Guest Feature
 
@@ -85,20 +74,14 @@ mkdir -p custom
 nano custom/guest.yml
 ```
 
-Add the following content and replace the placeholders with the values from the previous step:
+Add the following content:
 
 ```yaml
 services:
   opencloud:
     environment:
       OC_ENABLE_GUEST_LINKS: 'true'
-      AUTH_GUEST_SERVICE_ACCOUNT_ID: 'YOUR-SERVICE-ACCOUNT-ID'
-      AUTH_GUEST_SERVICE_ACCOUNT_SECRET: 'YOUR-SERVICE-ACCOUNT-SECRET'
 ```
-
-:::caution
-Docker Compose interprets the `$` character as the start of a variable. If the secret contains a `$`, write it as `$$`. Otherwise Docker Compose shows a warning such as `The "XY" variable is not set` and passes an incorrect secret to the container.
-:::
 
 ### Add the File to `COMPOSE_FILE`
 
@@ -179,7 +162,7 @@ Check the logs:
 docker compose logs --tail=40 opencloud
 ```
 
-If the log contains `guestlinks: service_account_id must not be empty`, the service account credentials are missing. Add `AUTH_GUEST_SERVICE_ACCOUNT_ID` and `AUTH_GUEST_SERVICE_ACCOUNT_SECRET` to `custom/guest.yml` as described in [Enable the Guest Feature](#enable-the-guest-feature).
+If the log contains `guestlinks: service_account_id must not be empty`, the service account settings for the `auth-guest` service are missing in the OpenCloud configuration. Migrate the configuration as described in [Check the Service Account Configuration](#check-the-service-account-configuration).
 
 ### Sharing with a Guest Fails
 
