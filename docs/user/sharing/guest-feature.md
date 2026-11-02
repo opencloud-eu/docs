@@ -1,22 +1,22 @@
 ---
 sidebar_position: 40
 id: guest-feature
-title: Guest Feature
+title: Guest Access
 description: Invite external guests by email address, manage their permissions, and access shared content as a guest.
 draft: true
 ---
 
-# Guest Feature in OpenCloud
+# Guest Access in OpenCloud
 
-The **Guest Feature** lets you collaborate with external people who do not have an OpenCloud account.
+Guest access lets you collaborate with external people who do not have an OpenCloud account.
 
 You invite a guest with their email address and grant access to a specific file or folder. The guest receives an invitation email, opens the link in a web browser, and can access only the content you shared with them.
 
 :::note
-The Guest Feature must be enabled by your administrator. If you cannot invite guests, contact your administrator.
+Guest access must be enabled by your administrator. If you cannot invite guests, contact your administrator.
 :::
 
-## How the Guest Feature Works
+## How Guest Access Works
 
 1. You select a file or folder and open the sharing panel.
 2. You enter the external email address and choose a permission level.
@@ -76,6 +76,8 @@ This section describes the steps for the invited guest.
 - The link opens OpenCloud in your web browser.
 - OpenCloud verifies the invitation automatically. You do not need to sign in.
 - The shared file or folder is displayed.
+
+<img src={require("./img/guest-feature/invitation-email.png").default} alt="Guest invitation email with a personal access link" width="1000"/>
 
 :::important
 The invitation link is personal. Do not forward it to other people.
@@ -138,11 +140,11 @@ After you remove the share, the guest can no longer access the content, even if 
 Removing access does not delete copies of files that the guest has already downloaded.
 :::
 
-## Guest Feature Compared with Other Ways of Sharing
+## Guest Access Compared with Other Ways of Sharing
 
 | Sharing method       | Use case                                               | Access                                                                                       |
 | -------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| **Guest Feature**    | Share with a specific external person by email address | Personal invitation link, access limited to the shared content and to a limited session time |
+| **Guest access**     | Share with a specific external person by email address | Personal invitation link, access limited to the shared content and to a limited session time |
 | **Public link**      | Share content with anyone who has the link             | Anyone with the link, optionally protected by a password and expiration date                 |
 | **Internal sharing** | Share with other users of your OpenCloud               | Users sign in with their own OpenCloud account                                               |
 
@@ -160,7 +162,7 @@ Removing access does not delete copies of files that the guest has already downl
 
 - Make sure you entered the complete email address.
 - Check that you are allowed to share the selected file or folder.
-- Ask your administrator whether the Guest Feature is enabled.
+- Ask your administrator whether guest access is enabled.
 
 ### The Guest Did Not Receive an Email
 
