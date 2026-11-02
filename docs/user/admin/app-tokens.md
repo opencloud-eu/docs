@@ -13,8 +13,8 @@ App Tokens allow you to connect external apps and services (such as WebDAV clien
 This improves security in several ways:
 
 - You never need to expose your login password to third-party applications.
-- App tokens can be revoked. If you think one has been compromised, just delete it.
-- App tokens have a configurable expiry date. This reduces the risk of misuse.
+- App Tokens can be revoked. If you think one has been compromised, just delete it.
+- App Tokens have a configurable expiry date. This reduces the risk of misuse.
 
 In addition to improved security, App Tokens also maximize compatibility with third-party applications. Many applications do not support modern login flows like OpenID Connect, but only accept standard logins with a username and password instead. Your username together with any of your App Tokens works as the login credentials.
 
@@ -66,7 +66,7 @@ You can find this UUID in the Preferences overview page.
 If a token is no longer needed:
 
 - Go back to the App Tokens section.
-- Click Delete app token next to the token you want to remove.
+- Click the "Delete-Button" next to the token you want to remove.
 
   <img src={require("./img/app-tokens/delete-token.png").default} alt="Delete an App Token" width="1920"/>
 
