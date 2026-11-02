@@ -29,7 +29,7 @@ This section covers common day-to-day tasks such as creating and moving content,
 
 - [End-to-end encrypted folders](./e2ee-folders.md) – Create and use password-protected folders whose contents are encrypted before upload.
 
-- [Access end-to-end encrypted folders with rclone](./e2ee-folders-rclone.md) – Configure WebDAV and `rclone crypt` to access an encrypted folder locally.
+- [Access end-to-end encrypted folders with rclone](./e2ee-folders-rclone.md) – Mount an encrypted folder on Linux, macOS, or Windows with rclone.
 
 ### Find and classify content
 

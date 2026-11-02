@@ -2,26 +2,40 @@
 sidebar_position: 131
 id: e2ee-folders-rclone
 title: Access End-to-End Encrypted Folders with rclone
-description: Access an OpenCloud end-to-end encrypted folder locally with rclone crypt.
+description: Mount an OpenCloud end-to-end encrypted folder on your computer with rclone crypt.
 draft: false
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Access End-to-End Encrypted Folders with rclone
 
-Use `rclone crypt` to access an end-to-end encrypted folder locally while keeping file contents and names encrypted on the OpenCloud server.
+The OpenCloud Web Client encrypts end-to-end encrypted folders in the `rclone crypt` format. You can therefore mount such a folder on your computer with [rclone](https://rclone.org/). The mounted folder works like a local folder: you open, edit, and add files with your usual applications, while the file contents and names stay encrypted on the OpenCloud server.
 
-This setup has been tested on macOS with rclone v1.75.1.
+Files are encrypted on your computer before rclone uploads them. Files created through the mount can be opened in the OpenCloud Web Client, and files created in the Web Client can be opened through the mount.
+
+This guide is based on OpenCloud 9.0.0. It is intended for users who are familiar with the command line.
+
+## Overview
+
+The setup consists of the following steps:
+
+1. [Create the encrypted folder](./e2ee-folders.md) in the OpenCloud Web Client.
+2. [Install rclone](#install-rclone) on your computer.
+3. [Create an App Token](#create-an-app-token) in OpenCloud.
+4. [Get the WebDAV URL](#get-the-webdav-url) of the encrypted folder.
+5. [Create a WebDAV remote](#configure-the-webdav-remote) in rclone.
+6. [Create a crypt remote](#configure-the-encrypted-remote) for decryption.
+7. [Mount the encrypted folder](#mount-the-encrypted-folder).
 
 ## Before You Begin
 
-First, [create the end-to-end encrypted folder in the OpenCloud Web Client](./e2ee-folders).
-
 You need:
 
-- The password of the end-to-end encrypted folder
+- An end-to-end encrypted folder in OpenCloud and its password
 - An OpenCloud App Token
 - The WebDAV URL of the encrypted folder
-- [rclone](https://rclone.org/install/) installed locally
 
 The setup uses two rclone remotes that build on each other:
 
@@ -52,13 +66,76 @@ Show the E2EE folder in the OpenCloud Web Client.
 Do not show real credentials, URLs, or sensitive IDs.
 -->
 
+## Install rclone
+
+Mounting requires rclone and a FUSE or NFS component, depending on your operating system.
+
+<Tabs groupId="operating-system">
+<TabItem value="linux" label="Linux" default>
+
+Install rclone with the official install script:
+
+```bash
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+```
+
+Install FUSE 3, for example on Debian and Ubuntu:
+
+```bash
+sudo apt install fuse3
+```
+
+For other installation methods, see the [rclone installation guide](https://rclone.org/install/).
+
+</TabItem>
+<TabItem value="macos" label="macOS">
+
+Install rclone with the official install script:
+
+```bash
+sudo -v ; curl https://rclone.org/install.sh | sudo bash
+```
+
+:::caution
+
+Do not install rclone with Homebrew. The Homebrew version of rclone does not support mounting.
+
+:::
+
+No additional software is required. On macOS, this guide uses `rclone nfsmount`, which mounts the folder through a built-in NFS server.
+
+For other installation methods, see the [rclone installation guide](https://rclone.org/install/).
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+Install rclone and [WinFsp](https://winfsp.dev/) in PowerShell:
+
+```powershell
+winget install Rclone.Rclone
+winget install WinFsp.WinFsp
+```
+
+WinFsp is required to mount folders on Windows. Open a new PowerShell window after the installation so that the `rclone` command is available.
+
+For other installation methods, see the [rclone installation guide](https://rclone.org/install/).
+
+</TabItem>
+</Tabs>
+
+Check the installation:
+
+```bash
+rclone version
+```
+
 ## Create an App Token
 
 Create a dedicated App Token for rclone in your OpenCloud account settings. Copy it when it is displayed because it cannot be shown again.
 
-For detailed instructions, see [App Tokens](../admin/app-tokens).
+For detailed instructions, see [App Tokens](../admin/app-tokens.md).
 
-The App Token is used as the password for the WebDAV remote. It is not the password for the encrypted folder.
+The App Token is used as the password for the WebDAV remote. It is not the password for the encrypted folder. Your OpenCloud account password does not work with rclone.
 
 <!-- Screenshot suggestion:
 Show App Token creation in the OpenCloud account settings.
@@ -67,7 +144,7 @@ Do not show a real token or other credentials.
 
 ## Get the WebDAV URL
 
-Enable the WebDAV information in your OpenCloud account settings, open the details panel of the encrypted folder, and copy its WebDAV URL. For general instructions, see [Connect to a Space via WebDAV](../admin/web-dav).
+Enable “Show WebDAV info in details view” in your OpenCloud account settings, open the details panel of the encrypted folder, and copy its WebDAV URL. For general instructions, see [Connect to a Space via WebDAV](../admin/web-dav.md).
 
 The URL must point to the encrypted `.vault` folder, for example:
 
@@ -89,7 +166,7 @@ Run `rclone config` and create a WebDAV remote. This guide uses `opencloud-e2ee`
 - Your OpenCloud username as the user
 - Your OpenCloud App Token as the password
 
-When rclone writes passwords to its configuration, it stores them in obscured form. If you edit the configuration manually, use [`rclone obscure`](https://rclone.org/commands/rclone_obscure/) to create the value for `pass`.
+When rclone writes passwords to its configuration, it stores them in obscured form. If you edit the configuration manually, use [`rclone obscure`](https://rclone.org/commands/rclone_obscure/) to create the value for `pass`. To find the configuration file on your system, run `rclone config file`.
 
 The resulting configuration should look similar to:
 
@@ -116,7 +193,7 @@ If the connection works, rclone may display encrypted file names. This is expect
 
 ## Configure the Encrypted Remote
 
-Before creating the `crypt` remote, make sure that the WebDAV remote has been created with the App Token and can connect to OpenCloud. The `crypt` remote does not connect to OpenCloud directly. It adds encryption and decryption on top of the existing WebDAV remote.
+The `crypt` remote does not connect to OpenCloud directly. It adds encryption and decryption on top of the existing WebDAV remote. Create and test the WebDAV remote first.
 
 Create a second remote with the `crypt` backend. This guide uses `opencloud-decrypted` as the example name. Configure it as follows:
 
@@ -137,29 +214,11 @@ directory_name_encryption = true
 password = <encrypted-folder-password>
 ```
 
-The `remote` value must reference the WebDAV remote by name. If the WebDAV remote is named `opencloud-e2ee`, use:
-
-```ini
-remote = opencloud-e2ee:
-```
-
-The value always consists of the exact WebDAV remote name followed by `:`. Do not enter the WebDAV URL in this field.
+The `remote` value always consists of the exact WebDAV remote name followed by `:`. Do not enter the WebDAV URL in this field.
 
 If you edit the configuration manually, use [`rclone obscure`](https://rclone.org/commands/rclone_obscure/) to create the value for `password`. For more information about the backend options, see the [rclone crypt documentation](https://rclone.org/crypt/).
 
-## Test the Encrypted Remote
-
-List the data stored directly on the server:
-
-```bash
-rclone ls opencloud-e2ee:
-```
-
-Replace `opencloud-e2ee` with the name of your WebDAV remote if you chose a different name.
-
-Encrypted file names may be displayed. This is expected because the WebDAV remote accesses the encrypted data stored on the server without decrypting it.
-
-For normal file operations, use the decrypted remote instead:
+Test the encrypted remote:
 
 ```bash
 rclone ls opencloud-decrypted:
@@ -167,85 +226,135 @@ rclone ls opencloud-decrypted:
 
 Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
 
-rclone should display the original decrypted file names. This has been tested with a file created in the OpenCloud Web Client.
+rclone should display the original file names. If encrypted file names are displayed, see [Encrypted File Names Are Displayed](#encrypted-file-names-are-displayed).
 
-## Copy Files to the Encrypted Folder
+## Mount the Encrypted Folder
 
-Use the decrypted remote when copying files to the encrypted folder:
+Mount the `crypt` remote, not the WebDAV remote. Only the `crypt` remote decrypts the folder contents.
+
+<Tabs groupId="operating-system">
+<TabItem value="linux" label="Linux" default>
+
+Create an empty folder as mount point:
 
 ```bash
-rclone copy ~/Documents/example.txt opencloud-decrypted:
+mkdir -p ~/OpenCloud-Encrypted
 ```
+
+Mount the encrypted folder:
+
+```bash
+rclone mount opencloud-decrypted: ~/OpenCloud-Encrypted --vfs-cache-mode writes
+```
+
+The folder is mounted as long as the command runs. Keep the terminal open while you work with the files.
+
+To run the mount in the background, add `--daemon`:
+
+```bash
+rclone mount opencloud-decrypted: ~/OpenCloud-Encrypted --vfs-cache-mode writes --daemon
+```
+
+</TabItem>
+<TabItem value="macos" label="macOS">
+
+Create an empty folder as mount point:
+
+```bash
+mkdir -p ~/OpenCloud-Encrypted
+```
+
+Mount the encrypted folder:
+
+```bash
+rclone nfsmount opencloud-decrypted: ~/OpenCloud-Encrypted --vfs-cache-mode writes
+```
+
+The folder is mounted as long as the command runs. Keep the terminal open while you work with the files. The mounted folder is also shown in Finder.
+
+To run the mount in the background, add `--daemon`:
+
+```bash
+rclone nfsmount opencloud-decrypted: ~/OpenCloud-Encrypted --vfs-cache-mode writes --daemon
+```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+Mount the encrypted folder as drive `X:` in PowerShell:
+
+```powershell
+rclone mount opencloud-decrypted: X: --vfs-cache-mode writes
+```
+
+Use a drive letter that is not in use. To let rclone choose a free drive letter, use `*` instead of `X:`.
+
+The drive is mounted as long as the command runs. Keep the PowerShell window open while you work with the files. The drive is shown in File Explorer.
+
+</TabItem>
+</Tabs>
 
 Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
 
-Files copied this way are encrypted locally before upload. The following operations have been tested successfully:
+`--vfs-cache-mode writes` buffers changed files on your computer before they are uploaded. Most applications need this to edit files in the mounted folder, and rclone retries failed uploads. For more information, see the [`rclone mount` documentation](https://rclone.org/commands/rclone_mount/).
 
-- Files created in the OpenCloud Web Client can be read through rclone.
-- Files uploaded through rclone can be opened in the OpenCloud Web Client.
-- Subdirectories created through rclone work correctly.
+You can now work with the files in the mounted folder. New and changed files are encrypted on your computer and uploaded to OpenCloud.
 
-For additional copy options, see the [`rclone copy` documentation](https://rclone.org/commands/rclone_copy/).
+:::note
 
-## Synchronize a Local Directory
-
-To make the encrypted folder match a local directory, use `rclone sync` with the decrypted remote:
-
-```bash
-rclone sync ~/Documents/opencloud opencloud-decrypted:
-```
-
-Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
-
-:::warning
-
-`rclone sync` makes the destination match the source. Files that exist only in the destination are deleted. The direction of the command therefore determines where deletions are applied.
+Changes made in the OpenCloud Web Client can take up to five minutes to appear in the mounted folder, because rclone caches the folder structure.
 
 :::
 
-Check the planned changes before synchronizing:
+## Unmount the Encrypted Folder
+
+Before you unmount the folder, close all files and wait until rclone has finished uploading your changes.
+
+<Tabs groupId="operating-system">
+<TabItem value="linux" label="Linux" default>
+
+If the mount runs in the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+
+If the mount runs in the background, run:
 
 ```bash
-rclone sync ~/Documents/opencloud opencloud-decrypted: --dry-run
+fusermount3 -u ~/OpenCloud-Encrypted
 ```
 
-Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
+On systems with FUSE 2, use `fusermount -u` instead.
 
-Use `rclone copy` instead when files should only be added or updated without deleting files from OpenCloud. For more information, see the [`rclone sync` documentation](https://rclone.org/commands/rclone_sync/).
+</TabItem>
+<TabItem value="macos" label="macOS">
 
-## Platform Support
+If the mount runs in the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-The OpenCloud-specific rclone configuration is platform-independent. The same WebDAV and `crypt` configuration can be used on macOS, Windows, and Linux.
-
-The complete workflow described in this guide has currently been tested on macOS. Verification on Windows and Linux is still pending.
-
-Installation methods, local path syntax, mounting, and automation depend on the operating system and are documented by rclone. For installation and platform-specific information, see the [rclone documentation](https://rclone.org/docs/).
-
-To determine the configuration file used on your system, run:
+If the mount runs in the background, run:
 
 ```bash
-rclone config file
+umount ~/OpenCloud-Encrypted
 ```
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the PowerShell window in which the mount runs.
+
+</TabItem>
+</Tabs>
 
 ## Troubleshooting
 
 ### Encrypted File Names Are Displayed
 
-Encrypted file names are expected when you use the WebDAV remote directly:
+Encrypted file names are expected when you use the WebDAV remote directly, for example with `rclone ls opencloud-e2ee:`.
 
-```bash
-rclone ls opencloud-e2ee:
-```
-
-Replace `opencloud-e2ee` with the name of your WebDAV remote if you chose a different name.
-
-Use the decrypted remote for normal file operations:
+Use the `crypt` remote for listing and mounting:
 
 ```bash
 rclone ls opencloud-decrypted:
 ```
 
-Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
+If the `crypt` remote also displays encrypted file names or no files, check that the `crypt` password matches the encrypted folder password and that `filename_encryption` and `directory_name_encryption` are set as described in [Configure the Encrypted Remote](#configure-the-encrypted-remote).
 
 ### rclone Does Not Find the Configuration Section
 
@@ -255,9 +364,7 @@ The following error indicates that the `crypt` remote contains the WebDAV URL in
 didn't find section in config file ("https")
 ```
 
-The WebDAV connection must first be configured as a separate remote. It uses the App Token to authenticate with OpenCloud. The `crypt` remote then uses that existing connection for encrypted and decrypted file operations. This guide uses `opencloud-e2ee` for the WebDAV remote and `opencloud-decrypted` for the `crypt` remote, but both names are examples.
-
-The `remote` option in the `crypt` configuration must therefore contain the name of the WebDAV remote followed by a colon:
+The `remote` option in the `crypt` configuration must contain the name of the WebDAV remote followed by a colon:
 
 Correct:
 
@@ -265,12 +372,35 @@ Correct:
 remote = opencloud-e2ee:
 ```
 
-If your WebDAV remote has a different name, replace `opencloud-e2ee` with that exact name.
-
 Incorrect:
 
 ```ini
 remote = https://cloud.example.com/dav/...
 ```
 
-Create and test the WebDAV remote before configuring the `crypt` remote. Then update the `remote` value and run the test again.
+Update the `remote` value and run the test again.
+
+### The Folder Cannot Be Mounted
+
+<Tabs groupId="operating-system">
+<TabItem value="linux" label="Linux" default>
+
+- Check that FUSE 3 is installed.
+- Check that the mount point exists and is empty.
+- On recent Ubuntu versions, AppArmor can block FUSE mounts. For details, see the [`rclone mount` documentation](https://rclone.org/commands/rclone_mount/).
+
+</TabItem>
+<TabItem value="macos" label="macOS">
+
+- Check that rclone was not installed with Homebrew. Run `which rclone` and reinstall rclone with the install script if required.
+- Check that the mount point exists and is empty.
+- If macOS blocks rclone with a "developer cannot be verified" message, see the [rclone installation guide](https://rclone.org/install/).
+
+</TabItem>
+<TabItem value="windows" label="Windows">
+
+- Check that WinFsp is installed.
+- Check that the drive letter is not already in use.
+
+</TabItem>
+</Tabs>

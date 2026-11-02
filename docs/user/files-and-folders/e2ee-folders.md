@@ -136,7 +136,7 @@ Public links are not supported for encrypted folders or files.
 
 ## Access an encrypted folder with rclone
 
-You can access an encrypted folder locally by configuring a WebDAV remote and an `rclone crypt` remote. See [Access End-to-End Encrypted Folders with rclone](./e2ee-folders-rclone.md).
+You can mount an encrypted folder on a local machine with rclone. See [Access End-to-End Encrypted Folders with rclone](./e2ee-folders-rclone.md).
 
 ## Preview and download behavior
 
