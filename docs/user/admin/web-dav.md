@@ -24,8 +24,9 @@ With WebDAV, you can connect OpenCloud Spaces and folders as network drives on y
 
 To display WebDAV information for a Space:
 
-- Open Account Settings.
-- Enable "Show WebDAV info in details view".
+- Open the account menu and select Manage account.
+- Open Preferences.
+- Enable "Show WebDAV information" in "View options".
 
   <img src={require("./img/webdav/preferences.png").default} alt="Enable WebDAV info" width="1920"/>
 
@@ -33,7 +34,7 @@ To display WebDAV information for a Space:
 
 Open the info panel of the Space, folder, or account root you want to access in the OpenCloud web interface.
 
-You will see a section labeled WebDAV. Copy the full WebDAV URL. It looks like this:
+The details sidebar shows the WebDAV path and the full WebDAV URL. Use the copy button next to WebDAV URL. It looks like this:
 
 `https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
@@ -44,7 +45,7 @@ You will see a section labeled WebDAV. Copy the full WebDAV URL. It looks like t
 Now connect your device using the WebDAV URL:
 
 - Username: your OpenCloud username
-- Password: your OpenCloud password or an App Token, depending on your setup
+- Password: an App Token, or your OpenCloud password if password authentication is enabled in your deployment
 
 You can use various clients depending on your operating system:
 
@@ -73,4 +74,4 @@ Once connected, your Space behaves like a normal folder.
 - If your client supports OIDC, you may not need an App Token.
 - Use `https://` to ensure secure access.
 
-  :::
+:::
