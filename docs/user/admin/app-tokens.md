@@ -27,11 +27,11 @@ expose access to all your data, consider using a public link instead.
 ## Create an App Token
 
 - Go to the App Tokens section in your OpenCloud account settings.
-- Click on “+ New” to create a new token.
+- Click New to create a token.
 
   <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="1920"/>
 
-- Enter a name for the token (e.g., "WebDAV Client").
+- Enter a name for the token, for example `WebDAV Client`.
 - Select an expiration date for added security.
 - Click Confirm.
   <img src={require("./img/app-tokens/enter-name.png").default} alt="Enter the name and expiration date" width="1920"/>
@@ -66,6 +66,8 @@ You can find this UUID in the Preferences overview page.
 If a token is no longer needed:
 
 - Go back to the App Tokens section.
-- Click the trash icon next to the token to remove it.
+- Click Delete app token next to the token you want to remove.
+
+  <img src={require("./img/app-tokens/delete-token.png").default} alt="Delete an App Token" width="1920"/>
 
 This ensures unused tokens cannot be misused.
