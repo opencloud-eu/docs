@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- shortcut new screenshots [[#1273](https://github.com/opencloud-eu/docs/pull/1273)]
 - favourites add new screenshots and filter options [[#1271](https://github.com/opencloud-eu/docs/pull/1271)]
 - tags new screenshots and adjust the text [[#1272](https://github.com/opencloud-eu/docs/pull/1272)]
 - versions new screenshots [[#1274](https://github.com/opencloud-eu/docs/pull/1274)]
