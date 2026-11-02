@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- e2ee new screenshots [[#1276](https://github.com/opencloud-eu/docs/pull/1276)]
 - spaces create new pics and adjust text [[#1278](https://github.com/opencloud-eu/docs/pull/1278)]
 - add new screenshots and adjust the text [[#1279](https://github.com/opencloud-eu/docs/pull/1279)]
 - photos and videos rework text [[#1280](https://github.com/opencloud-eu/docs/pull/1280)]
