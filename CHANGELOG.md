@@ -13,6 +13,8 @@
 
 ### 👤 User Documentation
 
+- versions new screenshots [[#1274](https://github.com/opencloud-eu/docs/pull/1274)]
+- activities add new screenshots [[#1275](https://github.com/opencloud-eu/docs/pull/1275)]
 - e2ee new screenshots [[#1276](https://github.com/opencloud-eu/docs/pull/1276)]
 - spaces create new pics and adjust text [[#1278](https://github.com/opencloud-eu/docs/pull/1278)]
 - add new screenshots and adjust the text [[#1279](https://github.com/opencloud-eu/docs/pull/1279)]
