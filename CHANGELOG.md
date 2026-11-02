@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- photos and videos rework text [[#1280](https://github.com/opencloud-eu/docs/pull/1280)]
 - space rename new pics and adjust the text [[#1281](https://github.com/opencloud-eu/docs/pull/1281)]
 - disable/enable new pics and text adjustments [[#1282](https://github.com/opencloud-eu/docs/pull/1282)]
 - customize space new pics and text adjustments [[#1283](https://github.com/opencloud-eu/docs/pull/1283)]
