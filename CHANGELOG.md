@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- delete spcae new pics and adjust text [[#1284](https://github.com/opencloud-eu/docs/pull/1284)]
 - admin settings new pics and text adjustment [[#1288](https://github.com/opencloud-eu/docs/pull/1288)]
 - new screenshots and add delte apptoken [[#1289](https://github.com/opencloud-eu/docs/pull/1289)]
 - new screenshots an text adjustments [[#1290](https://github.com/opencloud-eu/docs/pull/1290)]
