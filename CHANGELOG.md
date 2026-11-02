@@ -13,6 +13,8 @@
 
 ### 👤 User Documentation
 
+- favourites add new screenshots and filter options [[#1271](https://github.com/opencloud-eu/docs/pull/1271)]
+- tags new screenshots and adjust the text [[#1272](https://github.com/opencloud-eu/docs/pull/1272)]
 - versions new screenshots [[#1274](https://github.com/opencloud-eu/docs/pull/1274)]
 - activities add new screenshots [[#1275](https://github.com/opencloud-eu/docs/pull/1275)]
 - e2ee new screenshots [[#1276](https://github.com/opencloud-eu/docs/pull/1276)]
