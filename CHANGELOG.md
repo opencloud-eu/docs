@@ -13,6 +13,9 @@
 
 ### 👤 User Documentation
 
+- space rename new pics and adjust the text [[#1281](https://github.com/opencloud-eu/docs/pull/1281)]
+- disable/enable new pics and text adjustments [[#1282](https://github.com/opencloud-eu/docs/pull/1282)]
+- customize space new pics and text adjustments [[#1283](https://github.com/opencloud-eu/docs/pull/1283)]
 - delete spcae new pics and adjust text [[#1284](https://github.com/opencloud-eu/docs/pull/1284)]
 - admin settings new pics and text adjustment [[#1288](https://github.com/opencloud-eu/docs/pull/1288)]
 - new screenshots and add delte apptoken [[#1289](https://github.com/opencloud-eu/docs/pull/1289)]
