@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 40
 id: guest-feature
 title: Guest Feature
 description: Invite external guests by email address, manage their permissions, and access shared content as a guest.
