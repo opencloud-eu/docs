@@ -20,7 +20,7 @@ Before you delete a Space, it must first be disabled.
 
 ## Delete the Space
 
-- Select the Space you want to delete, or open its context menu and select “Delete”.
+- Select the Space you want to delete, or open the context menu and select “Delete”.
 
   <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar and Context Menu" width="1920"/>
 
