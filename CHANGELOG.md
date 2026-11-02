@@ -13,6 +13,8 @@
 
 ### 👤 User Documentation
 
+- admin settings new pics and text adjustment [[#1288](https://github.com/opencloud-eu/docs/pull/1288)]
+- new screenshots and add delte apptoken [[#1289](https://github.com/opencloud-eu/docs/pull/1289)]
 - new screenshots an text adjustments [[#1290](https://github.com/opencloud-eu/docs/pull/1290)]
 - new screenshots, add tags and adjust the text [[#1269](https://github.com/opencloud-eu/docs/pull/1269)]
 - Fix Typo in "Why Spaces?" user documentation page [[#1225](https://github.com/opencloud-eu/docs/pull/1225)]
