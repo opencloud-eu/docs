@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 # Access End-to-End Encrypted Folders with rclone
 
-The OpenCloud Web Client encrypts end-to-end encrypted folders in the `rclone crypt` format. You can therefore mount such a folder on your computer with [rclone](https://rclone.org/). The mounted folder works like a local folder: you open, edit, and add files with your usual applications, while the file contents and names stay encrypted on the OpenCloud server.
+The OpenCloud Web Client encrypts end-to-end encrypted folders in the `rclone crypt` format. You can therefore mount such a folder on your computer with [rclone](https://rclone.org/). The mounted folder appears like a local folder: you open, edit, and add files with your usual applications, while the file contents and names stay encrypted on the OpenCloud server.
 
 Files are encrypted on your computer before rclone uploads them. Files created through the mount can be opened in the OpenCloud Web Client, and files created in the Web Client can be opened through the mount.
 
@@ -176,7 +176,7 @@ type = webdav
 url = https://cloud.example.com/dav/spaces/<space-id>/Encrypted.vault
 vendor = infinitescale
 user = <username>
-pass = <encrypted-app-token>
+pass = <obscured-app-token>
 ```
 
 For more information about the backend options, see the [rclone WebDAV documentation](https://rclone.org/webdav/).
@@ -211,12 +211,18 @@ type = crypt
 remote = opencloud-e2ee:
 filename_encryption = standard
 directory_name_encryption = true
-password = <encrypted-folder-password>
+password = <obscured-folder-password>
 ```
 
 The `remote` value always consists of the exact WebDAV remote name followed by `:`. Do not enter the WebDAV URL in this field.
 
 If you edit the configuration manually, use [`rclone obscure`](https://rclone.org/commands/rclone_obscure/) to create the value for `password`. For more information about the backend options, see the [rclone crypt documentation](https://rclone.org/crypt/).
+
+:::caution
+
+The passwords stored in the rclone configuration file are obscured, not securely encrypted. Protect the configuration file from unauthorized access.
+
+:::
 
 Test the encrypted remote:
 
@@ -296,9 +302,22 @@ The drive is mounted as long as the command runs. Keep the PowerShell window ope
 
 Replace `opencloud-decrypted` with the name of your `crypt` remote if you chose a different name.
 
+:::note
+
+An rclone mount provides access to files through a virtual file system. It does not create a fully synchronized local copy. An active connection to OpenCloud is required to access files that are not already cached.
+
+:::
+
 `--vfs-cache-mode writes` buffers changed files on your computer before they are uploaded. Most applications need this to edit files in the mounted folder, and rclone retries failed uploads. For more information, see the [`rclone mount` documentation](https://rclone.org/commands/rclone_mount/).
 
 You can now work with the files in the mounted folder. New and changed files are encrypted on your computer and uploaded to OpenCloud.
+
+### Verify the Mount
+
+1. Create a small test file in the mounted folder.
+2. After the upload finishes, verify that the file appears correctly in the OpenCloud Web Client.
+3. Create a small file in the encrypted folder in the Web Client.
+4. Verify that the file becomes accessible through the mounted folder.
 
 :::note
 
@@ -308,7 +327,7 @@ Changes made in the OpenCloud Web Client can take up to five minutes to appear i
 
 ## Unmount the Encrypted Folder
 
-Before you unmount the folder, close all files and wait until rclone has finished uploading your changes.
+Before unmounting, close all open files and make sure that pending uploads have completed. With VFS caching enabled, changes may still be stored locally and waiting to be uploaded to OpenCloud. Verify that recently changed files appear correctly in the Web Client before stopping rclone.
 
 <Tabs groupId="operating-system">
 <TabItem value="linux" label="Linux" default>
@@ -331,8 +350,16 @@ If the mount runs in the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 If the mount runs in the background, run:
 
 ```bash
-umount ~/OpenCloud-Encrypted
+pgrep -fl "rclone nfsmount opencloud-decrypted: $HOME/OpenCloud-Encrypted"
 ```
+
+Confirm that the output shows only the rclone process for this mount. Note the process ID at the beginning of the line, then send SIGTERM to that process:
+
+```bash
+kill -TERM <pid>
+```
+
+If you chose a different remote name or mount point, adjust the `pgrep` pattern. Do not use `killall` or an unfiltered `pkill`, because they can stop unrelated rclone processes.
 
 </TabItem>
 <TabItem value="windows" label="Windows">
@@ -354,7 +381,9 @@ Use the `crypt` remote for listing and mounting:
 rclone ls opencloud-decrypted:
 ```
 
-If the `crypt` remote also displays encrypted file names or no files, check that the `crypt` password matches the encrypted folder password and that `filename_encryption` and `directory_name_encryption` are set as described in [Configure the Encrypted Remote](#configure-the-encrypted-remote).
+If `rclone ls opencloud-decrypted:` returns no output, first check whether the encrypted folder contains any files. The `rclone ls` command lists files but does not display empty directories, so an empty result does not necessarily indicate a configuration error.
+
+If the folder contains files and the `crypt` remote displays encrypted file names or no files, check that the `crypt` password matches the encrypted folder password and that `filename_encryption` and `directory_name_encryption` are set as described in [Configure the Encrypted Remote](#configure-the-encrypted-remote).
 
 ### rclone Does Not Find the Configuration Section
 
