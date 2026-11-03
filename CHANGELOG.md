@@ -1,5 +1,51 @@
 # Changelog
 
+## [3.56.0](https://github.com/opencloud-eu/docs/releases/tag/3.56.0) - 2026-11-02
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith, @alanbato, @dschmidt, @openclouders
+
+### :octocat: Developer Documentation
+
+- Update services sites [[#1241](https://github.com/opencloud-eu/docs/pull/1241)]
+- Document the icon type of web apps and extensions [[#1201](https://github.com/opencloud-eu/docs/pull/1201)]
+
+### 👤 User Documentation
+
+- shortcut new screenshots [[#1273](https://github.com/opencloud-eu/docs/pull/1273)]
+- favourites add new screenshots and filter options [[#1271](https://github.com/opencloud-eu/docs/pull/1271)]
+- tags new screenshots and adjust the text [[#1272](https://github.com/opencloud-eu/docs/pull/1272)]
+- versions new screenshots [[#1274](https://github.com/opencloud-eu/docs/pull/1274)]
+- activities add new screenshots [[#1275](https://github.com/opencloud-eu/docs/pull/1275)]
+- e2ee new screenshots [[#1276](https://github.com/opencloud-eu/docs/pull/1276)]
+- spaces create new pics and adjust text [[#1278](https://github.com/opencloud-eu/docs/pull/1278)]
+- add new screenshots and adjust the text [[#1279](https://github.com/opencloud-eu/docs/pull/1279)]
+- photos and videos rework text [[#1280](https://github.com/opencloud-eu/docs/pull/1280)]
+- space rename new pics and adjust the text [[#1281](https://github.com/opencloud-eu/docs/pull/1281)]
+- disable/enable new pics and text adjustments [[#1282](https://github.com/opencloud-eu/docs/pull/1282)]
+- customize space new pics and text adjustments [[#1283](https://github.com/opencloud-eu/docs/pull/1283)]
+- delete spcae new pics and adjust text [[#1284](https://github.com/opencloud-eu/docs/pull/1284)]
+- admin settings new pics and text adjustment [[#1288](https://github.com/opencloud-eu/docs/pull/1288)]
+- new screenshots and add delte apptoken [[#1289](https://github.com/opencloud-eu/docs/pull/1289)]
+- new screenshots an text adjustments [[#1290](https://github.com/opencloud-eu/docs/pull/1290)]
+- new screenshots, add tags and adjust the text [[#1269](https://github.com/opencloud-eu/docs/pull/1269)]
+- Fix Typo in "Why Spaces?" user documentation page [[#1225](https://github.com/opencloud-eu/docs/pull/1225)]
+- add new screenshots [[#1267](https://github.com/opencloud-eu/docs/pull/1267)]
+- add new screenshots and change the Space to an existing one [[#1266](https://github.com/opencloud-eu/docs/pull/1266)]
+- new screensots, only list and grid view and adjust the text [[#1261](https://github.com/opencloud-eu/docs/pull/1261)]
+- add new screenshots [[#1265](https://github.com/opencloud-eu/docs/pull/1265)]
+- new screenshots and rework move section [[#1264](https://github.com/opencloud-eu/docs/pull/1264)]
+- add new screenshot [[#1260](https://github.com/opencloud-eu/docs/pull/1260)]
+- new pics und rework the text [[#1259](https://github.com/opencloud-eu/docs/pull/1259)]
+- new screenshot with overlay and remove actions panel [[#1258](https://github.com/opencloud-eu/docs/pull/1258)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1287](https://github.com/opencloud-eu/docs/pull/1287)]
+- Update docs [[#1270](https://github.com/opencloud-eu/docs/pull/1270)]
+- Update docs [[#1262](https://github.com/opencloud-eu/docs/pull/1262)]
+
 ## [3.55.0](https://github.com/opencloud-eu/docs/releases/tag/3.55.0) - 2026-10-27
 
 ### ❤️ Thanks to all contributors! ❤️
