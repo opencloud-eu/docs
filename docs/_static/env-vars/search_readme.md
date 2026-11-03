@@ -20,6 +20,7 @@ Consider using dedicated hardware for this service in case more resources are ne
   * [OpenSearch](#opensearch)
   * [Bringing an existing index over](#bringing-an-existing-index-over)
 * [Query language](#query-language)
+  * [Quoting values](#quoting-values)
 * [Query template](#query-template)
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
@@ -97,6 +98,35 @@ Not all parts are supported, the following list gives an overview of parts that 
 *   Date intervals
 
 In [this ADR](https://github.com/owncloud/ocis/blob/docs/ocis/adr/0020-file-search-query-language.md) you can read why KQL was chosen.
+
+### Quoting values
+
+Put a value in double quotes when it contains a space, a parenthesis or a double quote, or when it should not be read as an operator such as `AND`, `OR` or `NOT`: `name:"quarterly report"`, `tag:"draft (old)"`, `name:"rock AND roll"`.
+
+Inside the quotes only the double quote is special. Write it twice to search for one double quote, as the [KQL specification](https://learn.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-kql/56ed4d93-d021-430b-a367-972122d00111) defines it:
+
+```
+name:"*""draft""*"
+```
+
+finds `Offer "draft" v2.pdf`. Every other character stands for itself, the backslash and the slash included:
+
+| Character | In a quoted value | In an unquoted value |
+|---|---|---|
+| `"` | write it twice: `""` | not allowed, the query is rejected |
+| `\` | itself: `content:"C:\temp\new"` | itself: `name:back\slash.txt` |
+| `/` | itself: `tag:"a/b"` | itself: `mediatype:image/png` |
+| space, `(`, `)` | itself | can't be part of the value |
+| `*` | matches any number of characters | matches any number of characters |
+| `?` | matches exactly one character | matches exactly one character |
+
+A backslash does not escape anything. `name:"*\"draft\"*"` does not look for a quoted `draft`, it is `name:"*\"` followed by `draft\` and `"*"`.
+
+`*` and `?` are always wildcards, there is no way to search for a literal `*` or `?`.
+
+To build a query from user input, replace every `"` in the input with `""` and put the result in double quotes, for example `name:"*` + input + `*"`. Nothing else needs escaping.
+
+The quotes only decide what the value is. Whether a character takes part in the match depends on the field: `content` and the words of `name` and `title` are matched by their words, so `content:"""draft"""` finds the same documents as `content:"draft"`, while a wildcard on `name` or a tag compares the whole value including its quotes.
 
 ## Query template
 
