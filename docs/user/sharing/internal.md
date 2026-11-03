@@ -10,6 +10,8 @@ draft: false
 
 Files and folders can be shared within the organization with individual members or groups. Different access rights can be assigned.
 
+Creating an internal share requires the system-wide User Role `User`, `Space Admin`, or `Admin`. A User Light cannot create internal shares, even when assigned `Can manage` in the Space. User Light accounts can still receive shares and work with shared content according to their assigned permissions. For more information, see [User roles in OpenCloud](../roles/user-roles.md#user-light).
+
 ## Create an internal share
 
 - Open the three-dot menu next to the file or folder you want to share.
