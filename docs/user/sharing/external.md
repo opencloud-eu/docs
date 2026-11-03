@@ -26,14 +26,14 @@ Public links let you share files and folders with people outside your organizati
 
 - Click “Options” to configure the link.
 - Select the desired access rights for recipients:
-  - “Can view":  
-    Recipients can view and download the file, but cannot edit it or upload files.
-  - “Can edit":  
-    Recipients can view, download, edit and delete the file, and upload files to the folder.
-  - “File Drop (secret)":  
-    Recipients can only upload files. They cannot view or edit the content.
 
-    <img src={require("./img/extern/access-rights.png").default} alt="Access rights" width="1920"/>
+  | Permission           | Description                                                                                                   |
+  | -------------------- | ------------------------------------------------------------------------------------------------------------- |
+  | **Can view**         | Recipients can view and download the shared content but cannot change it or upload files.                     |
+  | **Can edit**         | Recipients can view, download, upload, create, edit, and delete content.                                      |
+  | **Secret File Drop** | Recipients can upload files to a shared folder without viewing, downloading, or editing its existing content. |
+
+  <img src={require("./img/extern/access-rights.png").default} alt="Available permissions for a public link" width="1920"/>
 
 - Enter a password in the field under “Password”. A password is required, unless an administrator has changed the setting.
 - Optionally, set an expiry date.
