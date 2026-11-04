@@ -80,7 +80,7 @@ You can switch between the Rolling version and specific release versions using t
   Find guidance for creating, organizing, moving, deleting, and restoring files and folders.
 
 - [Share Files and Folders](./sharing/)  
-  Learn how to share content internally, create public links, and use File Drop.
+  Learn how to share content internally, create public links, and use Secret File Drop.
 
 - [Working in Teams with Spaces](./spaces/)  
   Understand how to use Spaces to organize shared work and collaborate with teams.

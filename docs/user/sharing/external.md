@@ -30,7 +30,7 @@ Public links let you share files and folders with people outside your organizati
     Recipients can view and download the file, but cannot edit it or upload files.
   - “Can edit":  
     Recipients can view, download, edit and delete the file, and upload files to the folder.
-  - “File Drop (secret)":  
+  - “Secret File Drop”:
     Recipients can only upload files. They cannot view or edit the content.
 
     <img src={require("./img/extern/access-rights.png").default} alt="Access rights" width="1920"/>
