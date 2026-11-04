@@ -222,4 +222,4 @@ If the share has been removed or has expired, guest access cannot be renewed. As
 
 ## Guest Access Compared with Other Ways of Sharing
 
-Guest Access, public links, and regular OpenCloud accounts are different access methods. For a concise comparison, see [Sharing Methods](./index.md#sharing-methods).
+Guest Access, public links, and regular OpenCloud accounts are different access methods. For a concise comparison, see [Sharing Methods](./#sharing-methods).
