@@ -25,7 +25,7 @@ Guest access must be enabled by your administrator. If you cannot invite guests,
 5. The guest accesses the shared content with the assigned permissions.
 6. The person sharing can change or remove the guest's access at any time.
 
-A guest invitation applies only to the shared file or folder. It does not grant access to any other content in OpenCloud.
+A guest invitation applies only to the shared files or folders. It does not grant access to any other content in OpenCloud.
 
 If you want to invite someone, continue with [For the Person Sharing Content](#for-the-person-sharing-content). If you received an invitation, go to [For the Invited Guest](#for-the-invited-guest).
 
