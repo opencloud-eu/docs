@@ -148,8 +148,9 @@ The invitation link is personal. Do not forward it to other people.
 
 #### Invitation Link and Guest Session
 
-- **Invitation link:** The link in the invitation email can be used **only once** and is valid for a limited time, by default **30 minutes**. Open it soon after you receive the email.
-- **Guest session:** After you open the link, you can work with the shared content in this browser for a limited time, by default **24 hours**.
+- **Invitation link:** Open the link in the invitation email within **30 minutes**.
+- **Guest session:** Once opened, you can access the shared content in this browser for a limited time, by default **24 hours**. During that time, you can use the same link again to get back to it.
+- **New link:** If you open the link after the 30 minutes, in a different browser or after your session has ended, you automatically receive an email with a new link.
 
 The invitation-link lifetime is fixed. Administrators can configure the guest-session lifetime.
 
