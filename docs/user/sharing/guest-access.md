@@ -176,7 +176,7 @@ Guest access is available in the web browser only. Guests cannot use the OpenClo
 
 ### Renew Guest Access
 
-Guest sessions expire after a limited period, by default 24 hours. An expired session does not revoke the underlying share. You can renew your access as long as the share still exists and has not expired.
+Guest sessions expire after a limited period, by default 24 hours. An expired session does not revoke the underlying share. You can renew your access as long as the share still exists and has not expired via a new email.
 
 #### Renew with a PIN Before the Session Expires
 
