@@ -1,14 +1,14 @@
 ---
 sidebar_position: 30
 id: customization-file-list
-title: Customization of the file list
-description: Files-List customizations in OpenCloud
+title: Customize the file list
+description: Customize how files and folders are displayed in OpenCloud
 draft: false
 ---
 
-# Files-List customizations in OpenCloud
+# Customize the file list in OpenCloud
 
-Clicking on the settings icon on the right side of the user interface takes you to the options for customizing the view. Here you can customize the display
+Select the settings icon on the right side of the file list to open the display options.
 
 ## Available options
 
@@ -19,13 +19,14 @@ Clicking on the settings icon on the right side of the user interface takes you 
   - Hidden files are often system or configuration files.
 
 - Show file extensions
-  - Specify whether the file extensions (e.g. `.docx`, `.jpg`) should be displayed after the file names. This makes it easier to identify file types.
+  - Choose whether file extensions, such as `.docx` and `.jpg`, are displayed after file names. This makes file types easier to identify.
+
+- Folders first
+  - Choose whether folders are displayed before files.
 
 - Items per page
-  - Specify how many files should be displayed per page in a folder.
-  - Useful for navigating in folders with many files.
+  - Choose how many files and folders are displayed per page.
+  - This is useful when navigating folders with many items.
 
-- Tile size
-  - Customize the size of the icons and buttons:
-  - Small tiles for a more compact view.
-  - Large tiles for a clearer view.
+- Grid size
+  - Use the slider to adjust the size of tiles in Grid view.
