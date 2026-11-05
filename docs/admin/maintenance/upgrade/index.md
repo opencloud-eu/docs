@@ -17,7 +17,7 @@ This section collects the guides you need when upgrading OpenCloud.
 
 Version-specific upgrade guides for Production releases:
 
-- [Upgrade 9.1.x](./production/upgrade-9.1.x.md) - Upgrade from Production 7.2.x to 9.1.x
+- [Upgrade 9.1.x](./production/upgrade-9.1.x.md) - Upgrade from Production 7.2.x to 9.1.x. Upgrade from 4.x to 7.2.x first.
 - [Upgrade 7.2.x](./production/upgrade-7.x.x.md) - Version-specific upgrade steps for OpenCloud 7.2.x
 - [Upgrade 4.0.x](./production/upgrade-4.0.0.md) - Version-specific upgrade steps for OpenCloud 4.0.x
 

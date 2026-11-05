@@ -15,6 +15,19 @@ OpenCloud 9.1.x is the new Production release. This guide describes the direct u
 
 An interim upgrade to the Rolling release 8.x.x is not required. This guide includes all changes from 8.x.x and 9.x.x that are relevant for the upgrade.
 
+## Upgrade Paths
+
+| Current version | Upgrade path                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 7.2.x           | Upgrade directly to 9.1.x with this guide.                                                                         |
+| 4.x             | Upgrade to 7.2.x first as described in [Upgrade 7.2.x](./upgrade-7.x.x.md). Then upgrade to 9.1.x with this guide. |
+
+:::important
+
+A direct upgrade from 4.x to 9.1.x is not supported. Upgrade to 7.2.x first and verify that the deployment works before you continue with 9.1.x.
+
+:::
+
 Use this guide together with the [Standard Upgrade Guide](../upgrade.md), which describes the general upgrade procedure. For more information about the release channels, see the [Release Lifecycle](../../../resources/lifecycle.md).
 
 :::note
@@ -25,7 +38,7 @@ If you run the Rolling release 8.x.x, follow the [Upgrade 9.x.x](../rolling/upgr
 
 ## Before You Start
 
-- Make sure that your deployment runs OpenCloud 7.2.x. Check the version that is currently running:
+- Make sure that your deployment runs OpenCloud 7.2.x. If you run 4.x, see [Upgrade Paths](#upgrade-paths). Check the version that is currently running:
 
   ```bash
   docker compose images opencloud
