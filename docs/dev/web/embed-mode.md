@@ -130,6 +130,10 @@ If you already have a valid `access_token` that can be used to call the API from
 
 To allow authentication delegation, you need to set the config option `options.embed.delegateAuthentication` to `true`. This can be achieved via query parameter `embed-delegate-authentication=true`. Because we are using the `postMessage` method to communicate across different origins, it is best practice to verify that the event originated from a known origin and not from some malicious site. We highly recommend to allow this check in production environments. You can enable it by setting the config option `options.embed.delegateAuthenticationOrigin` via query parameter `embed-delegate-authentication-origin=my-origin`. The value of this parameter will be compared against the `MessageEvent.origin` value and if they do not match, the token will be rejected.
 
+:::note
+The token is only accepted from the direct parent window, so the page that embeds OpenCloud Web has to send it to the iframe itself (`iframe.contentWindow.postMessage`). Tokens sent from any other window, for example a popup opener or a frame further up, are ignored.
+:::
+
 ### Events
 
 #### Opening Embed mode
