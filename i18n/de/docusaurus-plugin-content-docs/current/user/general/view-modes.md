@@ -8,24 +8,18 @@ draft: false
 
 # Ansichtsmodi der Dateiliste in OpenCloud
 
-In OpenCloud können Sie zwischen verschiedenen Ansichtsmodi für Dateien und Ordner wählen, um die Anzeige nach Ihren Wünschen anzupassen.
+In OpenCloud können Sie zwischen der Raster- und der Listenansicht wechseln, um Ihre Dateien und Ordner so anzuzeigen, wie es Ihren Anforderungen am besten entspricht.
 
 ## Verfügbare Ansichtsmodi
 
-### Kachelansicht
+### Rasteransicht
 
-Dies ist die Standardansicht. Dateien und Ordner werden als Kacheln angezeigt und eignen sich gut für die visuelle Navigation.
+In der Rasteransicht werden Dateien und Ordner als Kacheln dargestellt. Vorschauen von Bildern und Dokumenten erleichtern das visuelle Durchsuchen der Inhalte.
 
-<img src={require("./img/view-modes/default.png").default} alt="Kachelansicht der Dateiliste" width="1920"/>
+<img src={require("./img/view-modes/grid.png").default} alt="Rasteransicht der Dateiliste" width="1920"/>
 
-### Verdichtete Tabellenansicht
+### Listenansicht
 
-Eine kompaktere Tabellenansicht, in der Informationen dichter zusammengefasst werden, um Platz zu sparen.
+In der Listenansicht werden Dateien und Ordner in Zeilen mit Details wie Status, Größe, Tags, Änderungsdatum und verfügbaren Aktionen dargestellt.
 
-<img src={require("./img/view-modes/condensed.png").default} alt="Verdichtete Tabellenansicht der Dateiliste" width="1920"/>
-
-### Standard-Tabellenansicht
-
-Die klassische Listenansicht, in der Dateien und Ordner in einer detaillierten Tabelle angezeigt werden.
-
-<img src={require("./img/view-modes/tiles.png").default} alt="Standard-Tabellenansicht der Dateiliste" width="1920"/>
+<img src={require("./img/view-modes/list.png").default} alt="Listenansicht der Dateiliste" width="1920"/>
