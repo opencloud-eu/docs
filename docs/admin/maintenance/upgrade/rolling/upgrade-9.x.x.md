@@ -1,6 +1,7 @@
 ---
 sidebar_position: 14
 id: upgrade-9.x.x
+slug: /admin/maintenance/upgrade/upgrade-9.x.x
 title: Upgrade 9.x.x
 description: Upgrading to OpenCloud 9.x.x
 draft: false
@@ -13,31 +14,32 @@ import TabItem from '@theme/TabItem';
 
 OpenCloud 9.x.x introduces guest links and a new thumbnail architecture. It also renames some settings and changes the default behavior of the search and the email templates. Some of these changes require manual steps during the upgrade.
 
-This guide describes the version-specific steps for upgrading to OpenCloud 9.x.x. Use it together with the [Standard Upgrade Guide](./upgrade.md), which describes the general upgrade procedure.
+This guide describes the version-specific steps for upgrading to OpenCloud 9.x.x. Use it together with the [Standard Upgrade Guide](../upgrade.md), which describes the general upgrade procedure.
 
 :::important
 
-OpenCloud 9.x.x is a Rolling release and is not intended for production environments. For more information, see the [Release Lifecycle](../../resources/lifecycle.md).
+OpenCloud 9.x.x is a Rolling release and is not intended for production environments. For more information, see the [Release Lifecycle](../../../resources/lifecycle.md).
 
 :::
 
 ## How to Use This Guide
 
-The required steps depend on the version you are upgrading from:
+This guide describes the upgrade from the Rolling release 8.x.x to 9.x.x.
 
-| Current version | Upgrade path                                  | Guide                                   |
-| --------------- | --------------------------------------------- | --------------------------------------- |
-| 8.x.x           | Upgrade directly to 9.x.x.                    | [Upgrade from 8.x.x](#upgrade-from-8xx) |
-| 7.x.x           | Upgrade to 8.x.x first, then upgrade to 9.x.x | [Upgrade from 7.x.x](#upgrade-from-7xx) |
+:::note
+
+If you run the Production release 7.2.x, follow the [Upgrade 9.1.x](../production/upgrade-9.1.x.md) guide instead. It describes the direct upgrade from 7.2.x to the Production release 9.1.x.
+
+:::
 
 1. Complete the steps in [Before You Start](#before-you-start).
-2. Follow the upgrade guide for your current version.
+2. Follow the steps in [Upgrade from 8.x.x](#upgrade-from-8xx).
 3. Check the [Breaking Changes](#breaking-changes) that apply to your deployment.
 4. [Verify the upgrade](#verify-the-upgrade).
 
 ## Before You Start
 
-- Create a complete backup of your configuration and data, see [Back Up Configuration and Data](./upgrade.md#back-up-configuration-and-data).
+- Create a complete backup of your configuration and data, see [Back Up Configuration and Data](../upgrade.md#back-up-configuration-and-data).
 - Check the version that is currently running:
 
   ```bash
@@ -46,43 +48,6 @@ The required steps depend on the version you are upgrading from:
 
 - Review the [OpenCloud 9.0.0 release notes](https://github.com/opencloud-eu/opencloud/releases).
 - Read the [Breaking Changes](#breaking-changes) if you use custom settings in `opencloud.yaml`, custom thumbnail settings, custom email templates, web extensions, or an external reverse proxy.
-
-## Upgrade from 7.x.x
-
-We recommend not to skip OpenCloud 8.x.x. Upgrade to 8.x.x first, verify the deployment and the search, and then continue with 9.x.x.
-
-### Step 1: Upgrade to 8.x.x
-
-Set the latest 8.x.x version in your `.env` file, for example:
-
-```env
-OC_DOCKER_TAG=8.x.x
-```
-
-Replace `8.x.x` with the latest available 8.x.x version. Then pull the image and restart OpenCloud:
-
-```bash
-docker compose pull opencloud
-docker compose up -d
-```
-
-### Step 2: Rebuild the Search Index
-
-OpenCloud 8.x.x creates a new search index. Files that existed before the upgrade are not found until you rebuild the index:
-
-```bash
-docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
-```
-
-After you have verified that older files can be found in the Web Client, remove the old index. For the commands for Bleve and OpenSearch, see [Upgrade 8.x.x](./upgrade-8.x.x.md).
-
-### Step 3: Check the Yjs Proxy Route
-
-If you have enabled Yjs for real-time collaborative editing and use an external Nginx reverse proxy, forward the `/yjs` WebSocket route. For the required configuration, see [Proxy Config](../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config).
-
-### Step 4: Continue With the Upgrade to 9.x.x
-
-Check that OpenCloud 8.x.x is running without errors. Then follow the steps in [Upgrade from 8.x.x](#upgrade-from-8xx).
 
 ## Upgrade from 8.x.x
 
@@ -105,7 +70,7 @@ OpenCloud 9.x.x starts with the existing 8.x.x configuration. Guest links stay d
 
 ### Step 2: Migrate the Configuration
 
-OpenCloud 9.x.x adds new settings to `opencloud.yaml`. Create and apply the configuration patch with the 9.x.x image as described in [Verify Configuration Changes](./upgrade.md#verify-configuration-changes) in the Standard Upgrade Guide.
+OpenCloud 9.x.x adds new settings to `opencloud.yaml`. Create and apply the configuration patch with the 9.x.x image as described in [Verify Configuration Changes](../upgrade.md#verify-configuration-changes) in the Standard Upgrade Guide.
 
 In short, open a shell in a temporary container with your configuration volume:
 
@@ -294,7 +259,7 @@ To enable guest links:
 
 Guest sessions are signed with a key derived from `OC_JWT_SECRET`. If you change `OC_JWT_SECRET`, all guest sessions become invalid.
 
-For all configuration options, see the [auth-guest service documentation](../../../dev/server/services/auth-guest/index.md).
+For all configuration options, see the [auth-guest service documentation](../../../../dev/server/services/auth-guest/index.md).
 
 ### Space Quota
 
@@ -334,7 +299,7 @@ After the upgrade, check your installed extensions and update them if required.
 
 ### Reverse Proxy
 
-If you use an external reverse proxy with custom routes, check after the upgrade that WebDAV, Office integration, and, if enabled, the `/yjs` WebSocket route are still forwarded correctly. For the required Nginx configuration, see [Proxy Config](../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config).
+If you use an external reverse proxy with custom routes, check after the upgrade that WebDAV, Office integration, and, if enabled, the `/yjs` WebSocket route are still forwarded correctly. For the required Nginx configuration, see [Proxy Config](../../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config).
 
 ## Verify the Upgrade
 
@@ -378,4 +343,4 @@ Rename `GRAPH_SPACES_DEFAULT_QUOTA` to `OC_SPACES_DEFAULT_QUOTA` and restart Ope
 
 ### Older Files Are Not Found by the Search
 
-If you upgraded from 7.x.x, rebuild the search index as described in [Step 2: Rebuild the Search Index](#step-2-rebuild-the-search-index).
+If you upgraded from 7.x.x without upgrading to 8.x.x first, rebuild the search index as described in [Upgrade 8.x.x](./upgrade-8.x.x.md).
