@@ -170,7 +170,7 @@ Do not publish the imagor port. imagor does not authenticate requests.
 
 - Source images larger than 7680 × 7680 pixels are not processed.
 - Animated images with more than 100 frames are not processed.
-- Files in [end-to-end encrypted folders](../../../user/files-and-folders/e2ee-folders.md) have no server-side previews, because the server only stores encrypted data.
+- Files in [end-to-end encrypted folders](../../../user/files-and-folders/e2ee-folders) have no server-side previews, because the server only stores encrypted data.
 
 ## Disable imagor
 
