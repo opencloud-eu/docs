@@ -212,7 +212,7 @@ Administrators can manage Spaces (e.g., cleanup, quota changes) but cannot acces
 
 ### End-to-End Encrypted Folders and Spaces
 
-Folders and Spaces can be encrypted end-to-end. Files and file names are encrypted in the browser before upload, and the encryption key never leaves the user’s device. Neither administrators nor anyone with access to the server, storage, or backups can read the contents. The encryption is based on rclone crypt, so encrypted folders can also be accessed with the rclone command line tool. For details, see [End-to-End Encrypted Folders](../user/files-and-folders/e2ee-folders.md).
+Folders and Spaces can be encrypted end-to-end. Files and file names are encrypted in the browser before upload, and the encryption key never leaves the user’s device. Neither administrators nor anyone with access to the server, storage, or backups can read the contents. The encryption is based on rclone crypt, so encrypted folders can also be accessed with the rclone command line tool. For details, see [End-to-End Encrypted Folders](../user/files-and-folders/e2ee-folders).
 
 There is no password recovery. If the password is lost, the encrypted contents can no longer be accessed.
 
