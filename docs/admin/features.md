@@ -9,12 +9,13 @@ draft: false
 ## Key Features at a Glance
 
 - Seamless File Synchronization: Access your files across all devices.
-- Secure & Flexible File Sharing: Share files with granular roles, expiration dates, and password protection.
+- Secure & Flexible File Sharing: Share files with granular roles, expiration dates, and password protection, or invite external guests by email address.
 - Spaces - Collaborative Team Folders: Ensure continuity even if team members leave.
 - Real-Time Collaboration: Work on documents simultaneously with Collabora Web Office.
 - Advanced Search & Organization: Use full-text search, tags, and filters for quick access.
 - Unlimited Storage & Uploads: No file size restrictions.
 - Privacy-First Design: Zero-Knowledge principle ensures admins can't access user content.
+- End-to-End Encryption: Encrypted folders and Spaces protect file contents and names already in the browser.
 - Cross-Client Availability: Works on Windows, Mac, Linux, Android, iOS, and Web.
 
 ## File Management
@@ -41,11 +42,11 @@ Files can be viewed directly in the device’s File Explorer and are stored effi
 
 ### Advanced Search
 
-Files can be found quickly—by title or full text. The search provides live suggestions and supports filtering by file type, modification date, tag, or storage location.
+Files can be found quickly—by title, full text, or tag. The search provides live suggestions and supports filtering by file type, modification date, tag, or storage location. Search results show why a file matches, for example the matching text or tag, and the preview scrolls to the matching text.
 
 ### Favorites
 
-Mark frequently used files and folders for quick access. Favorites are stored server-side, collected on a dedicated Favorites page, and visible in file lists and search results.
+Mark frequently used files and folders for quick access. Favorites are stored server-side, collected on a dedicated Favorites page, and visible in file lists and search results. The Favorites page can be filtered by file type and modification date.
 
 ### Versioning and Recovery
 
@@ -85,6 +86,13 @@ There are no system-side limits on the number or size of stored files. Available
 
 Documents, images, videos, and audio files can be viewed directly in the browser, desktop client, and mobile apps. Common formats are supported. On mobile devices, previews use native viewers or Collabora integration.
 
+The web interface also provides:
+
+- Previews of HEIC, HEIF, and AVIF photos, for example from smartphones. This requires the imagor thumbnail generator.
+- Playback of motion photos, such as Apple Live Photos.
+- An EPUB reader with full-text search, table of contents, and a mobile layout.
+- Secure display of SVG files. Embedded scripts are removed before display.
+
 ### Personal Storage
 
 Each user has a private storage area visible only to them by default. Files can be organized, shared, or moved to Spaces from here—ensuring clear separation between personal and shared work areas.
@@ -101,7 +109,7 @@ Intuitive usage without training. Accessibility for all users. Consistent, brand
 
 ### Fast User Interface
 
-The application remains responsive even in folders with many files and avoids unnecessary page reloads. Asynchronous updates keep lists and detail views usable without interruptions.
+The application remains responsive even in folders with many files and avoids unnecessary page reloads. Asynchronous updates keep lists and detail views usable without interruptions. The web interface loads only the fonts and translations that are needed, and scrolling stays smooth in folders with more than 1,000 files.
 
 ### Drag & Drop, Multi-Selection, Copy/Paste
 
@@ -113,15 +121,23 @@ The OpenCloud web interface is optimized according to the European Accessibility
 
 ### Email Notifications
 
-Users receive email notifications about events such as new shares or membership changes in a Space.
+Users receive email notifications about events such as new shares or membership changes in a Space. Notification emails use a consistent design based on the OpenCloud Design System and support dark mode in compatible email clients. Daily and weekly summaries are available.
 
 ### Customizable View Modes
 
 Files can be displayed in list, tile, or compact views. Columns, visible elements, and items per page can be configured to keep large directories tidy.
 
+### Folders First
+
+Folders stay at the top of the file list when sorting by name, size, or modification date. Users can turn off this option to sort files and folders together.
+
 ### Color Scheme Selection
 
 Users can switch between light and dark modes to improve readability under different lighting conditions and reduce eye strain.
+
+### Right-to-Left Languages
+
+For right-to-left languages such as Arabic and Hebrew, the entire web interface is mirrored.
 
 ### Responsive Design
 
@@ -134,6 +150,8 @@ Web, desktop, and mobile apps follow a unified interaction concept. Consistent n
 ### Individual Branding
 
 Administrators can create or customize design themes, including color palettes, logos, backgrounds, and UI elements. A fully accessible theme can be automatically generated from a single corporate color or defined manually. This allows OpenCloud to seamlessly match an organization’s corporate design.
+
+The desktop client can be branded with a JSON theme file for colors, icons, and logos, without building a custom client. In Kubernetes deployments, themes can be provided as a separate container image through the Helm chart.
 
 :::info supported within the [professional or premium subscription](https://opencloud.eu/en/product/service-and-support)
 :::
@@ -152,11 +170,11 @@ Project or team leads can manage individual Spaces without requiring global admi
 
 ### Internal Sharing
 
-Files and folders can be shared with users or groups within the organization. Access rights such as read, edit, or upload can be precisely controlled to ensure secure collaboration.
+Files and folders can be shared with users or groups within the organization. Access rights such as read, edit, or upload can be precisely controlled to ensure secure collaboration. New shares appear in “Shared with me” immediately, and revoked shares disappear without reloading the page.
 
 ### External Sharing
 
-Content can be shared securely with customers, service providers, suppliers, or authorities via password-protected links or guest accounts (soon).
+Content can be shared securely with customers, service providers, suppliers, or authorities via password-protected links or guest access by email address.
 
 ### Federation – Sharing Across Sites or Organizations
 
@@ -169,6 +187,14 @@ Through Collabora Online integration, office documents can be opened and collabo
 ### Real-Time Editing
 
 Multiple users can work on the same files simultaneously. This covers office documents through Collabora Online as well as text files such as Markdown directly in the web interface. Changes sync immediately, while Collabora and Yjs handle concurrent edits through their respective synchronization mechanisms.
+
+### Whiteboards
+
+With the Excalidraw web extension, users create whiteboards from the “New” menu and draw on them together in real time. Participants see each other’s changes immediately and can follow the cursor of other participants. Synchronization uses the OpenCloud Yjs service.
+
+### UML Diagrams
+
+The Apollon app supports 13 diagram types, including class, component, and activity diagrams as well as BPMN. Diagrams are created from the “New” menu and can be edited together in real time.
 
 ### Calendar and Contacts
 
@@ -183,6 +209,12 @@ Maximum data security and transparent processing. Trusted for regulated industri
 ### Zero-Knowledge Principle
 
 Administrators can manage Spaces (e.g., cleanup, quota changes) but cannot access its content. This ensures full confidentiality: even admins cannot view user data.
+
+### End-to-End Encrypted Folders and Spaces
+
+Folders and Spaces can be encrypted end-to-end. Files and file names are encrypted in the browser before upload, and the encryption key never leaves the user’s device. Neither administrators nor anyone with access to the server, storage, or backups can read the contents. The encryption is based on rclone crypt, so encrypted folders can also be accessed with the rclone command line tool. For details, see [End-to-End Encrypted Folders](../user/files-and-folders/e2ee-folders).
+
+There is no password recovery. If the password is lost, the encrypted contents can no longer be accessed.
 
 ### Compliance with Data Protection and Security Policies
 
@@ -284,11 +316,18 @@ OpenCloud integrates with leading IdPs such as Keycloak, Azure AD, EntraID, or A
 
 ### Share Links
 
-Content can be shared externally via link, optionally protected with a password and expiration date. Links are quick and simple but offer limited traceability compared to guest accounts.
+Content can be shared externally via link, optionally protected with a password and expiration date. Links are quick and simple but offer limited traceability compared to guest access.
 
-### Guest Accounts (soon)
+### Guest Access
 
-External users receive personal, password-protected accounts. Their access is fully attributable and auditable, with policies for expiration, 2FA/MFA, and individual revocation—ideal for compliance-sensitive use cases.
+Files and folders can be shared with external people by email address, without creating an account. Guests sign in without a password: they receive a personal, single-use link by email, which is valid for 30 minutes. A guest session lasts 24 hours and can be renewed with a PIN sent by email. Every access is logged with the guest's email address, and guests receive the same roles as internal users. Shares with guests can have an expiration date. Administrators can configure session and link lifetimes as well as rate limits.
+
+|                | Share link                               | Guest access                               | User account                |
+| -------------- | ---------------------------------------- | ------------------------------------------ | --------------------------- |
+| Best for       | Sending or collecting files once         | Ongoing work with a named external partner | Daily work of your own team |
+| Authentication | One link for everyone, optional password | Personal, single-use links sent by email   | Password or MFA             |
+| Identification | Nobody                                   | Email address of the guest                 | User in the directory       |
+| Clients        | Web only                                 | Web only                                   | Web, desktop, and mobile    |
 
 ### Session Management
 
@@ -314,7 +353,7 @@ Professional or premium subscription customers receive early security notificati
 
 ### Kubernetes Deployment
 
-OpenCloud can be deployed as containerized microservices in Kubernetes clusters using Helm charts for installation, scaling, and upgrades. Automated orchestration enables load balancing, self-healing, zero-downtime deployments, and dynamic scaling.
+OpenCloud can be deployed as containerized microservices in Kubernetes clusters using Helm charts for installation, scaling, and upgrades. Automated orchestration enables load balancing, self-healing, zero-downtime deployments, and dynamic scaling. The Helm chart also supports Red Hat OpenShift. Helm hooks automatically migrate the search index during upgrades.
 :::info supported within the [professional or premium subscription](https://opencloud.eu/en/product/service-and-support)
 :::
 
@@ -326,7 +365,7 @@ Integrates storage systems like CephFS, GPFS (IBM Spectrum Scale), or S3-compati
 
 ### Performance and Load Optimization
 
-Optimized for scalability and speed through parallel transfers and distributed I/O. Monitoring with Prometheus and Grafana enables continuous analysis and scaling.
+Optimized for scalability and speed through parallel transfers and distributed I/O. Monitoring with Prometheus and Grafana enables continuous analysis and scaling. The Graph API exports metrics such as request rates, error rates, and LDAP call durations, and the Helm chart provides Grafana dashboards and alerts.
 :::info supported within the [professional or premium subscription](https://opencloud.eu/en/product/service-and-support)
 :::
 
@@ -335,6 +374,10 @@ Optimized for scalability and speed through parallel transfers and distributed I
 Multiple organizational units can be hosted on the same instance—ideal for corporations, public authorities, or service providers.
 :::info supported within the [professional or premium subscription](https://opencloud.eu/en/product/service-and-support)
 :::
+
+### Announcement Banner
+
+Administrators can display a banner with important information to all users, for example about planned maintenance. The banner supports Markdown and is managed in the admin settings without restarting OpenCloud. For details, see [Announcement Banner](./configuration/announcement-banner.md).
 
 ### Metadata Stored in Files
 
@@ -397,6 +440,10 @@ Third-party extensibility and custom development. Open architecture for automati
 ### Plugin Architecture
 
 OpenCloud’s functionality can be extended or customized. The documented developer interface offers hooks, events, and a modular framework for server-side extensions.
+
+### App Store
+
+Additional apps and web extensions can be installed from the App Store. Apps maintained by OpenCloud are marked as official, and apps can be filtered by tags. Apps declare the OpenCloud versions they support, and the admin overview highlights apps that are not compatible with the installed version.
 
 ### Client SDKs
 
