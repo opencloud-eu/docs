@@ -35,11 +35,20 @@ ssh root@YOUR.SERVER.IP
 
 ## Install Docker
 
-Update your system and install Docker.
+Install Docker Engine and the Docker Compose plugin using the [official Docker installation instructions](https://docs.docker.com/engine/install/) for your Linux distribution.
+
+Verify that Docker and the Compose plugin are installed before proceeding.
 
 ## Install Nginx & Certbot
 
-Now install Nginx & Certbot
+On **Ubuntu or Debian**, install Nginx and Certbot:
+
+```bash
+sudo apt update
+sudo apt install -y nginx certbot
+```
+
+For other Linux distributions, use the appropriate package manager. The Nginx configuration below assumes the Debian/Ubuntu `sites-available` and `sites-enabled` directory layout.
 
 ## Create a Webroot Directory for Certbot
 
