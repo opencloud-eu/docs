@@ -174,7 +174,13 @@ curl -X DELETE "http://localhost:9200/opencloud-resources"
   </TabItem>
 </Tabs>
 
-Re-indexing runs in the background while OpenCloud keeps working. On large installations, it can take some time. For details, see [Upgrade 8.x.x](../rolling/upgrade-8.x.x.md).
+:::caution
+
+Re-indexing can take considerable time on installations with many files. During this process, search results may remain incomplete, and the additional CPU, memory, and disk I/O load can temporarily affect system performance.
+
+Run the re-indexing during a period of low activity and monitor the OpenCloud host and, if applicable, the OpenSearch backend. Do not remove the old index until the rebuild has completed and older files can be found in the Web Client.
+
+:::
 
 ## Step 6: Apply the Breaking Changes
 
@@ -234,6 +240,10 @@ If the log contains `guestlinks: service_account_id must not be empty`, guest li
 ### Older Files Are Not Found by the Search
 
 Rebuild the search index as described in [Step 5: Rebuild the Search Index](#step-5-rebuild-the-search-index).
+
+If a rebuild is already running, wait for it to complete. If expected files are still missing afterward, trigger the rebuild once more. Do not start another rebuild while the previous one is still running.
+
+If files remain missing after the second rebuild, check the OpenCloud logs and the health of the configured search backend.
 
 ### Previews Are Not Displayed
 
