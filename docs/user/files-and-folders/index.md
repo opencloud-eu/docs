@@ -22,8 +22,9 @@ This section covers common day-to-day tasks such as creating and moving content,
 - [Delete and restore items from the trash](./delete-restore.md)  
   Remove files and folders and restore them later if needed.
 
-- [Editing Markdown files](./markdown-editor.md)  
-  Edit `README.md` and other Markdown files directly in OpenCloud with formatting suggestions.
+- [Text Editor](./text-editor.md)  
+  Create and edit Markdown files, OpenCloud Notes, and plain text files directly in your browser. Format content and collaborate on documents in real time.
+  
 - [README files in folders](./readme-files.md)  
   Add a `README.md` file to a folder so OpenCloud renders it above the file list.
 
