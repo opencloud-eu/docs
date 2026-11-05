@@ -38,6 +38,7 @@ http:
     - Upload-Metadata
     - Upload-Defer-Length
     - Upload-Concat
+    - Upload-Complete
     - Upload-Incomplete
     - Upload-Draft-Interop-Version
     allow_credentials: false
@@ -52,6 +53,7 @@ http:
     - Upload-Metadata
     - Upload-Defer-Length
     - Upload-Concat
+    - Upload-Complete
     - Upload-Incomplete
     - Upload-Draft-Interop-Version
     max_age: 86400
@@ -84,6 +86,7 @@ drivers:
     async_uploads: true
     max_quota: 0
     disable_versioning: false
+    metadata_prefix: ""
   decomposeds3:
     propagator: sync
     async_propagator_options:
@@ -112,6 +115,7 @@ drivers:
     max_concurrency: 5
     async_uploads: true
     disable_versioning: false
+    metadata_prefix: ""
   owncloudsql:
     root: /var/lib/opencloud/storage/owncloud
     share_folder: /Shares
@@ -140,6 +144,7 @@ drivers:
     lock_cycle_duration_factor: 0
     max_concurrency: 0
     disable_versioning: false
+    metadata_prefix: ""
     use_space_groups: false
     enable_fs_revisions: false
     scan_fs: true
@@ -150,8 +155,6 @@ drivers:
     watch_root: ""
     inotify_stats_frequency: 5m0s
 data_server_url: http://localhost:9158/data
-data_gateway_url: http://localhost:9140/data
-transfer_expires: 86400
 events:
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
@@ -170,16 +173,22 @@ filemetadata_cache:
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 id_cache:
   store: nats-js-kv
   nodes:
   - 127.0.0.1:9233
   database: ids-storage-users
+  ttl: 0s
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 mount_id: ""
-expose_data_server: false
 readonly: false
 upload_expiration: 86400
 tasks:

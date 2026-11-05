@@ -1,5 +1,5 @@
 ---
-sidebar_position: 35
+sidebar_position: 50
 id: frontend-check-updates
 title: Frontend Update check
 description: How to disable the frontend check for updates in OpenCloud.

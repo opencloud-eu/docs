@@ -1,6 +1,6 @@
 {
   "label": "Manage Files and Folders",
-  "position": 3,
+  "position": 20,
   "link": {
     "type": "doc",
     "id": "files-and-folders-overview"

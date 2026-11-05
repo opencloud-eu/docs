@@ -55,10 +55,6 @@
     "message": "Getting Started",
     "description": "The label for category 'Getting Started' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Getting Started.link.generated-index.description": {
-    "message": "🚀 Getting Started",
-    "description": "The generated-index page description for category 'Getting Started' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Other": {
     "message": "Other",
     "description": "The label for category 'Other' in sidebar 'admin'"
@@ -67,25 +63,13 @@
     "message": "Configuration",
     "description": "The label for category 'Configuration' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Configuration.link.generated-index.description": {
-    "message": "⚙️ Configuration",
-    "description": "The generated-index page description for category 'Configuration' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Maintenance": {
     "message": "Maintenance",
     "description": "The label for category 'Maintenance' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Maintenance.link.generated-index.description": {
-    "message": "🛠️ Maintenance",
-    "description": "The generated-index page description for category 'Maintenance' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Resources": {
     "message": "Resources",
     "description": "The label for category 'Resources' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Resources.link.generated-index.description": {
-    "message": "Resources",
-    "description": "The generated-index page description for category 'Resources' in sidebar 'admin'"
   },
   "sidebar.dev.category.Development": {
     "message": "Development",
@@ -163,43 +147,27 @@
     "message": "Allgmein",
     "description": "The label for category 'General' in sidebar 'user'"
   },
-  "sidebar.user.category.ios-general.link.generated-index.description": {
-    "message": "Tutorials about installing, setup and overview of the OpenCloud iOS App.",
-    "description": "The generated-index page description for category 'General' in sidebar 'user'"
-  },
   "sidebar.user.category.ios-overview": {
     "message": "Übersicht",
     "description": "The label for category 'Overview' in sidebar 'user'"
-  },
-  "sidebar.user.category.ios-overview.link.generated-index.description": {
-    "message": "Overview of the user interface of the OpenCloud iOS App.",
-    "description": "The generated-index page description for category 'Overview' in sidebar 'user'"
   },
   "sidebar.user.category.ios-files-folders": {
     "message": "Dateien und Ordner",
     "description": "The label for category 'Files and Folders' in sidebar 'user'"
   },
-  "sidebar.user.category.ios-files-folders.link.generated-index.description": {
-    "message": "Tutorials for managing your files and folders in the OpenCloud iOS App.",
-    "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
-  },
   "sidebar.user.category.ios-shares": {
     "message": "Teilen",
     "description": "The label for category 'Shares' in sidebar 'user'"
-  },
-  "sidebar.user.category.ios-shares.link.generated-index.description": {
-    "message": "Tutorials about creating shares the OpenCloud iOS App.",
-    "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
   },
   "sidebar.user.category.OpenCloud Android App": {
     "message": "OpenCloud Android App",
     "description": "The label for category 'OpenCloud Android App' in sidebar 'user'"
   },
-  "sidebar.user.category.android-general": {
+  "sidebar.user.category.android-app-general": {
     "message": "Allgemein",
     "description": "The label for category 'General' in sidebar 'user'"
   },
-  "sidebar.user.category.android-general.link.generated-index.description": {
+  "sidebar.user.category.android-app-general.link.generated-index.description": {
     "message": "Tutorials about installing, setup and overview of the OpenCloud Android App.",
     "description": "The generated-index page description for category 'General' in sidebar 'user'"
   },
@@ -219,11 +187,11 @@
     "message": "Tutorials for managing your files and folders in the OpenCloud Android App.",
     "description": "The generated-index page description for category 'Files and Folders' in sidebar 'user'"
   },
-  "sidebar.user.category.android-shares": {
+  "sidebar.user.category.android-app-shares": {
     "message": "Teilen",
     "description": "The label for category 'Shares' in sidebar 'user'"
   },
-  "sidebar.user.category.android-shares.link.generated-index.description": {
+  "sidebar.user.category.android-app-shares.link.generated-index.description": {
     "message": "Tutorials about creating shares the OpenCloud Android App.",
     "description": "The generated-index page description for category 'Shares' in sidebar 'user'"
   },
@@ -430,5 +398,9 @@
   "sidebar.dev.category.Testing.link.generated-index.description": {
     "message": "✅ Testing",
     "description": "The generated-index page description for category 'Testing' in sidebar 'dev'"
+  },
+  "sidebar.user.category.ios-settings": {
+    "message": "Einstellungen",
+    "description": "The label for category 'Settings' in sidebar 'user'"
   }
 }

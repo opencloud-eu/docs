@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 id: file-names
 title: File Naming Rules
 description: File Naming Rules for OpenCloud Desktop

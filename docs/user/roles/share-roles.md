@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: share-roles
 title: Share roles in OpenCloud
 description: Share roles in OpenCloud
@@ -21,7 +21,7 @@ The available Share Roles can depend on the resource type and the OpenCloud conf
 
 :::note
 
-Public links use separate link permissions, such as `Can view`, `Can edit`, and `File Drop (secret)`. They are not Share Roles. For more information, see [Public links](../sharing/external.md).
+Public links use separate link permissions, such as `Can view`, `Can edit`, and `Secret File Drop`. They are not Share Roles. For more information, see [Public links](../sharing/external.md).
 
 :::
 

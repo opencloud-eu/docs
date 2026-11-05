@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 100
 id: shortcut
 title: Verknüpfung
 description: Verknüpfung in OpenCloud erstellen

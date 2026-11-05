@@ -150,7 +150,7 @@ opencloud init --diff
 
 If you see `no changes, your config is up to date`, no further action is needed.
 
-<img src={require("../img/init-diff.png").default} alt="init -diff" width="1920"/>
+<img src={require("../img/upgrade/standard-upgrade-guide/init-diff.png").default} alt="init -diff" width="1920"/>
 
 In that case, [exit the temporary container](#exit-the-temporary-container) and start OpenCloud.
 
@@ -266,8 +266,11 @@ exit
   </TabItem>
   <TabItem value="docker-compose" label="docker compose">
     ```Shell
-    docker compose up -d
+    docker compose up -d --remove-orphans
     ```
+
+`--remove-orphans` removes containers for services that are no longer defined in the current Compose configuration. This helps clean up obsolete containers after upgrades where services have been removed or integrated into another service.
+
   </TabItem>
 </Tabs>
 

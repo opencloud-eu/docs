@@ -62,3 +62,9 @@ This mode is suitable in scenarios where the OpenIDConnect provider is external 
 OpenCloud can disable users for login to actively prevent unwanted access to the system when the workflow with the external Identity Provider is slow or indirect. In this case, the LDAP server needs an OpenCloud Schema and write access for the LDAP bind user.
 
 For detailed configuration and setup instructions, see the [Keycloak with Autoprovisioning](./keycloak#autoprovisioning-mode) guide.
+
+## Guides
+
+- [External OpenID Connect Identity Provider](./external-idp.md) - Requirements for integrating external OpenID Connect IDPs
+- [Keycloak Integration](./keycloak.md) - Configure Keycloak in Shared User Directory or Autoprovisioning mode
+- [Adding users with Keycloak](./keycloak-user.md) - Create new users in Keycloak, including users without a personal space

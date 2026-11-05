@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 40
 id: settings
 title: Settings for macOS
 description: Settings in OpenCloud Desktop for macOS
@@ -14,7 +14,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 
 - Click on "Settings" in the top-right corner of OpenCloud Desktop
 
-  <img src={require(".././img/settings/settings-overview.png").default} alt="Settings overview" width="400"/>
+  <img src={require(".././img/macos/settings/settings-overview.png").default} alt="Settings overview" width="400"/>
 
 ## Overview of Settings Sections
 
@@ -23,7 +23,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 - Enable or disable auto-start when log in
 - Set your preferred language
 
-  <img src={require(".././img/settings/settings-general.png").default} alt="Settings-general" width="400"/>
+  <img src={require(".././img/macos/settings/settings-general.png").default} alt="Settings-general" width="400"/>
 
 ### Advanced Settings
 
@@ -32,22 +32,13 @@ You can customize OpenCloud Desktop settings by following these steps:
 - Edit the ignored files list
 - Enable a debug log file for troubleshooting
 
-  <img src={require(".././img/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
+  <img src={require(".././img/macos/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
 
 ### Network Settings
 
-- Select how the client handles proxy settings:
-  - No proxy
-  - Use system proxy (default)
-  - Manually enter a proxy
-
-  <img src={require(".././img/settings/settings-network.png").default} alt="Settings network" width="400"/>
-
-### Download and Upload Bandwidth
-
-- Set bandwidth limits:
+- Set download and upload bandwidth limits:
   - No limit (default)
   - Automatically adjust limit
   - Set a specific limit manually
 
-  <img src={require(".././img/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400"/>
+  <img src={require(".././img/macos/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400"/>

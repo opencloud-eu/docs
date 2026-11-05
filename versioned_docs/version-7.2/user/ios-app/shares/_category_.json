@@ -1,0 +1,9 @@
+{
+    "label": "Shares",
+    "position": 60,
+    "key": "ios-shares",
+    "link": {
+      "type": "doc",
+      "id": "ios-shares-overview"
+    }
+  }

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: settings
 title: Settings
 description: Settings
@@ -8,15 +8,19 @@ draft: false
 
 # Admin area overview
 
-The admin area of OpenCloud provides the main tools for managing your organization. The most important areas are shown below.
+The admin area of OpenCloud provides the main tools for managing your organization. It is available only to users with the administrator role. Other users do not see Admin Settings in the app switcher.
+
+To open the admin area, select the app switcher in the upper-right corner and then select “Admin Settings”. The most important areas are shown below.
 
 <img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="1920"/>
 
 ## General
 
 - Version overview:  
-  In the General section, you can view your current OpenCloud version and check whether a newer version is available.  
-  <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
+  In the General section, you can view your current OpenCloud version and check whether a newer version is available.
+- Announcement banner:
+  Administrators can display an organization-wide message to all users. For configuration instructions, see [Announcement Banner](../../admin/configuration/announcement-banner.md).
+  <img src={require("./img/settings/admin_general.png").default} alt="General administration settings" width="1920"/>
 
 :::note
 If a security-critical upgrade is available, administrators may also see a warning in the lower-left corner of the web interface.
@@ -56,7 +60,15 @@ If OpenCloud is connected to an external IdP, you can still see the users here, 
   Here you can see all existing Spaces in your OpenCloud instance.
 - Space management:  
   As an administrator, you can:
-  - edit Spaces, including rename, subtitle and quota
+  - rename Spaces
+  - customize descriptions, subtitles, images, and icons
+  - change Space quotas
   - deactivate or activate Spaces
-  - delete Spaces
+  - delete disabled Spaces
     <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
+
+## Apps
+
+- App overview:
+  Here you can see installed apps, their versions, compatible OpenCloud versions, and their current status.
+  <img src={require("./img/settings/admin_apps.png").default} alt="Admin apps" width="1920"/>

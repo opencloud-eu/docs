@@ -6,15 +6,15 @@ title: Roles
 
 # Roles
 
-OpenCloud uses different role models for different areas of the system. User Roles, Space Roles, and Share Roles are separate from each other and control different permissions.
+OpenCloud uses different role models for different areas of the system. User roles, Space roles, and Share roles are separate from each other and control different permissions.
 
-User Roles define what a regular account can do across OpenCloud. They control system-wide capabilities, such as administering users or Spaces and creating shares.
+User roles define what a regular account can do across OpenCloud. They control system-wide capabilities, such as administering users or Spaces and creating shares.
 
-Space Roles define what a member can do inside a specific Space. They control access to Space content and Space management options.
+Space roles define what a member can do inside a specific Space. They control access to Space content and Space management options.
 
-Share Roles define what a recipient can do with a shared file or folder. Public links use their own link permissions, which are separate from Share Roles.
+Share roles define what a recipient can do with a shared file or folder. Public links use their own link permissions, which are separate from Share roles. Share roles do not change the user's role in OpenCloud or their role inside a Space.
 
-These permission concepts complement each other. A Space Role or Share Role does not remove restrictions imposed by a system-wide User Role.
+These permission concepts complement each other. A Space role or Share role does not remove restrictions imposed by a system-wide User role.
 
 ## In this section
 

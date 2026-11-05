@@ -53,6 +53,9 @@ metadata_config:
     disable_persistence: false
     username: ""
     password: ""
+    enable_tls: false
+    tls_insecure: false
+    tls_root_ca_certificate: ""
 bundles_path: ""
 admin_user_id: ""
 token_manager:

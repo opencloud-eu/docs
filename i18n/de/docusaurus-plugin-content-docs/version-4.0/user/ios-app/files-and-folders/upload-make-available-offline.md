@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: upload-make-available-offline
 title: Hochladen - Offline verfügbar machen
 description: Hochladen - Offline verfügbar machen

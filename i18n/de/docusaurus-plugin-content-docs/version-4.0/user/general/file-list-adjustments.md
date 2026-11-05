@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: customization-file-list
 title: Anpassungen der Datei-Liste
 description: Anpassungen der Datei-Liste in OpenCloud
@@ -12,7 +12,7 @@ Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläch
 
 ## Verfügbare Optionen
 
-<img src={require("./img/files-list-adjustment/einstellungs-button.png").default} alt="Settings icon" width="400"/>
+<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
 
 - Versteckte Dateien anzeigen
   - Aktivieren oder deaktivieren Sie die Anzeige von versteckten Dateien.

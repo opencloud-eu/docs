@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 30
 id: sync-settings-win
 title: Synchronisationseinstellungen unter Windows
 description: Synchronisationseinstellungen unter Windows

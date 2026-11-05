@@ -12,6 +12,7 @@ The `sharing` service provides the CS3 Sharing API for OpenCloud. It manages use
 * [Integration](#integration)
 * [Share Types](#share-types)
 * [Configuration](#configuration)
+  * [Auto-Accept Shares](#autoaccept-shares)
 * [Scalability](#scalability)
 
 ## Overview
@@ -47,7 +48,12 @@ Share behavior can be configured via environment variables:
 - Auto-acceptance of shares
 - Share permissions and restrictions
 
-See the `frontend` service README for more details on share-related configuration options.
+### Auto-Accept Shares
+
+When setting the `SHARING_AUTO_ACCEPT_SHARES` to `true` (sharing service), all
+incoming shares will be accepted automatically. Users can overwrite this
+setting individually in their profile. The deprecated
+`FRONTEND_AUTO_ACCEPT_SHARES` is still supported for backwards compatibility.
 
 ## Scalability
 

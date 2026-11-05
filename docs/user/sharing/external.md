@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: external
 title: External
 description: External sharing of files and folders in OpenCloud
@@ -32,7 +32,7 @@ Public links use link permissions and do not identify individual recipients. The
     Recipients can view and download the file, but cannot edit it or upload files.
   - “Can edit":  
     Recipients can view, download, edit and delete the file, and upload files to the folder.
-  - “File Drop (secret)":  
+  - “Secret File Drop”:
     Recipients can only upload files. They cannot view or edit the content.
 
     <img src={require("./img/extern/access-rights.png").default} alt="Access rights" width="1920"/>

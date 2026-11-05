@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: invite
 title: Einladen zum Teilen
 description: Einladen zum Teilen

@@ -16,3 +16,8 @@ nats:
   tls_key: /var/lib/opencloud/nats/tls.key
   tls_skip_verify_client_cert: false
   enable_tls: false
+  monitoring:
+    enabled: false
+    host: 127.0.0.1
+    port: 8222
+    enable_tls: false

@@ -170,6 +170,11 @@ The desktop client is used for the OpenCloud desktop application:
   - `http://127.0.0.1`
   - `http://localhost`
 
+:::note
+The Desktop Client supports OIDC issuer discovery through the OpenCloud
+WebFinger service starting with version 4.0.
+:::
+
 ### Mobile App Clients
 
 #### Android App

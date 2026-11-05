@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: settings
 title: Settings
 description: Settings in OpenCloud Android app
@@ -16,7 +16,7 @@ In the Android app settings changes can be made, such as
     - Advanced settings
     and more
 
-<img src={require(".././img/settings/settings.png").default} alt="Settings" width="400"/>
+<img src={require(".././img/general/settings/settings.png").default} alt="Settings" width="400"/>
 
 ## Userinterface
 

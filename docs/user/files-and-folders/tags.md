@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 90
 id: tags
 title: Tags
 description: Add and manage tags with OpenCloud
@@ -10,7 +10,9 @@ draft: false
 
 With OpenCloud you can add tags to files and folders to make them easier to search or group.
 
-## Add tag
+Assigned tags can also be used to find files and folders through [Search](./search.md#search-using-tags).
+
+## Open the tag settings
 
 - Open the context menu for the file or folder.
 - Select the “Details” option.
@@ -29,7 +31,7 @@ With OpenCloud you can add tags to files and folders to make them easier to sear
 
 - Open the “Details” of the file or folder again.
 - Find the tag you want to remove.
-- Click on the “x” next to the tag to delete it.
-  <img src={require("./img/tags/delete-a-tag.png").default} alt="Click on x next to the tag" width="400"/>
+- Click on the “x” next to the tag to remove it from this item.
+  <img src={require("./img/tags/delete-a-tag.png").default} alt="Remove the tag assignment from the item" width="400"/>
 
-  The file or folder is now no longer associated with this tag.
+  The file or folder is no longer associated with the tag. The tag itself remains available for other files and folders.

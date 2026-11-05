@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: create
 title: Create a Space
 description: Create Spaces and share data in OpenCloud

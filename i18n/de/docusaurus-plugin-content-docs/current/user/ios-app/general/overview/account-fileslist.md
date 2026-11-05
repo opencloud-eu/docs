@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: account-fileslist
 title: Dateilisten-Menü
 description: Dateilisten-Menü
@@ -10,7 +10,7 @@ draft: false
 
 In diesem Abschnitt werden die zentralen Elemente der Benutzeroberfläche der OpenCloud iOS-App und deren Funktionen erklärt.
 
-<img src={require("../../img/overview/fileslist.png").default} alt="Dateiliste-Übersicht" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/fileslist.png").default} alt="Dateiliste-Übersicht" style={{ width: '400px', marginRight: '60px' }} />
 
 ## 1. Konto-Menü
 

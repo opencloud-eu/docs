@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: space-roles
 title: Space roles in OpenCloud
 description: Space roles in OpenCloud

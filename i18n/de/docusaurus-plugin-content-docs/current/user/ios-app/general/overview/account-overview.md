@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: account-overview
 title: Account-Menü
 draft: false
@@ -9,7 +9,7 @@ draft: false
 
 In der iOS-App bietet das Kontomenü Zugriff auf verschiedene persönliche und freigabebezogene Funktionen.
 
-<img src={require("../../img/overview/account.png").default} alt="Dateiübersicht" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account.png").default} alt="Dateiübersicht" style={{ width: '400px', marginRight: '60px' }} />
 
 ## 1. Kontomenüeintrag
 

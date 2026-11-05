@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: invite
 title: Invite to share
 description: Invite to share

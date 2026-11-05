@@ -1,5 +1,5 @@
 ---
-sidebar_position: 50
+sidebar_position: 70
 id: radicale-integration
 title: Calendar and Contacts Integration with Radicale
 description: How to enable Calendar and Contacts integration via Radicale in OpenCloud
@@ -18,7 +18,7 @@ setup the integration. This guide explains the required steps to achieve that.
 
 :::note
 The calendar and contacts feature is - until further notice - intended for
-non-customers, i.e. please note that it is not covered under our enterprise
+non-customers, i.e. please note that it is not covered under our professional or premium
 license, and we do not provide professional support for it. This means that
 this feature is maintained and supported on best effort without warranty.
 :::

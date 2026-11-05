@@ -1,0 +1,8 @@
+{
+  "label": "OpenCloud Desktop",
+  "position": 50,
+  "link": {
+    "type": "doc",
+    "id": "desktop-client-overview"
+  }
+}

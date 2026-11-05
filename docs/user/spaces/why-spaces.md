@@ -1,12 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: why-spaces
 title: Why Spaces?
 description: Why you should use Spaces
 draft: false
 ---
 
-# Why you should use Spaces – and now they differ from classic sharing
+# Why you should use Spaces – and how they differ from classic sharing
 
 ## The problem with classic sharing
 

@@ -12,9 +12,11 @@ app:
     disable: false
     duration: 12h
   licensecheckenable: false
+  product_edition: ""
 font:
   asset_path: /var/lib/opencloud/collaboration/fonts
   preview_text: OpenCloud
+  base_url: ""
 store:
   store: nats-js-kv
   nodes:
@@ -24,14 +26,9 @@ store:
   ttl: 30m0s
   username: ""
   password: ""
-events:
-  endpoint: 127.0.0.1:9233
-  cluster: opencloud-cluster
+  enable_tls: false
   tls_insecure: false
   tls_root_ca_certificate: ""
-  enable_tls: false
-  username: ""
-  password: ""
 token_manager:
   jwt_secret: ""
 grpc:
@@ -43,6 +40,14 @@ http:
     enabled: false
     cert: ""
     key: ""
+  trusted_proxies:
+  - 127.0.0.0/8
+  - ::1/128
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+  - fc00::/7
+  client_ip_header: X-Forwarded-For
 wopi:
   wopisrc: https://localhost:9300
   secret: ""
@@ -50,6 +55,8 @@ wopi:
   proxy_url: ""
   proxy_secret: ""
   short_tokens: false
+  enable_mobile: false
+  disabled_extensions: []
 cs3api:
   gateway:
     name: eu.opencloud.api.gateway
@@ -63,4 +70,3 @@ debug:
   token: ""
   pprof: false
   zpages: false
-machine_auth_api_key: ""

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 30
+sidebar_position: 40
 id: default-user-quota
 title: Set default user quota
 description: How to set default user quota

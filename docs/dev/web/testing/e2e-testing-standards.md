@@ -18,40 +18,40 @@ Here are the test standards and guidelines we adhere to when creating Playwright
 
 ## Folder Structure
 
-- `tests/:`
-  - `e2e/`: Main folder containing all (end-to-end) E2E test-related files.
-    - `cucumber/`: Main folder containing all Cucumber(BDD) test-related files.
-      - `features/`: Contains Gherkin feature files.
-        - `<test-suite-folder>/`: Collection house for "**related"** feature files.
-          - `<aFeatureFile>.feature`: A feature file.
+- `tests/`
+  - `e2e/`: Main folder containing all end-to-end (E2E) test-related files.
+    - `features/`: Contains Gherkin feature files.
+      - `<test-suite-folder>/`: Collection house for **related** feature files.
+        - `<aFeatureFile>.feature`: A feature file.
 
-      - `steps/`: Holds the step definition files for mapping Gherkin steps to code.
-        - `<stepDefinition>.ts`: Step definitions for each feature.
+    - `steps/`: Step definitions that map Gherkin steps to code. They are compiled into Playwright specs by [playwright-bdd](https://github.com/vitalets/playwright-bdd).
+      - `<stepDefinition>.ts`: Step definitions.
+      - `ui/`: UI-related step definitions.
 
-      - `hooks/`: Cucumber hooks for setting up and tearing down test environments.
-        - `hooks.ts`: Contains `Before`, `After`, and other lifecycle hooks.
+    - `environment/`: playwright-bdd test setup.
+      - `fixtures.ts`: Custom fixtures and the `createBdd()` instance exporting `Given`, `When`, `Then`, `Before`, `After`.
+      - `world.ts`: The custom `World` shared across the steps of a scenario.
+      - `hooks.ts`: `Before`/`After` lifecycle hooks.
 
-    - `support/`: Playwright (Test implementation)
-      - `api/`: Contains API-related test files and configurations.
-        - `<api-folder>/`: Specific API tests for a particular service.
+    - `support/`: Test implementation and helpers.
+      - `api/`: API clients used to arrange state (e.g. LibreGraph, WebDAV, shares, Keycloak).
+        - `<api-folder>/`: Client for a particular service.
 
       - `objects/`: Contains the Page Object classes.
         - `<specific-page-object-folder>/`: Collection house for related page objects for each webpage or component.
           - `<individualPageObject>.ts`: Page Object for each webpage or component.
 
-      - `utils/`: Utility functions and common helpers.
-        - `helpers.ts`: Common utility functions (e.g., date formatting, data generation).
+      - `utils/`: Utility functions and common helpers (e.g. accessibility checks, locator and date helpers).
 
-      - `test-data/`: Static test data files or folders for upload.
-        - `filesForUpload/`: Static test data files for upload.
+    - `filesForUpload/`: Static test data files for upload.
 
-    - `config/`: Configuration files for Playwright and other tools.
-      - `playwright.config.ts`: Playwright configuration.
+    - `playwright.config.ts`: Playwright configuration (browser projects, timeouts, `appConfig`).
 
-    - `reports/`: Generated test reports (e.g., HTML, JSON).
-      - `screenshots/`: Captured screenshots during test execution.
+    - `.features-gen/`: Playwright specs generated from the feature files by playwright-bdd (gitignored).
 
-      - `videos/`: Recorded videos of test runs.
+    - `playwright-report/`: HTML report of the last test run.
+
+    - `test-results/`: Traces, screenshots and videos recorded from (failed) runs.
 
 ## Test Structure - Arrange, Act, Assert
 
@@ -61,16 +61,16 @@ Consider including comments defining each section to ease readability.
 ```typescript
 // arrange, set up the initial conditions for the test
 // create a property
-await createProperty();
+await createProperty()
 
 // act, perform the action that you want to test
 // raise a charge
 // this could involve calling methods or functions defined in your page objects
-await raiseCharge();
+await raiseCharge()
 
 // assert, verify that the action had the expected outcome
 // confirm charge has been raised
-expect(charge).toBe('raised');
+expect(charge).toBe('raised')
 ```
 
 ## Page Object Model (POM)
@@ -84,42 +84,42 @@ All assertions should be in your test, no assertion in the POM
 DO 👍
 
 ```typescript
-// POM file './pageOobjects/foo/'
-// add all locators and functions related to the page.
-// allowing all tests to reuse
+// POM file './support/objects/foo/index.ts'
+// add all locators and functions related to the page,
+// allowing all tests to reuse them
 
-import { expect, Locator, Page } from '@playwright/test';
+import { Locator, Page } from '@playwright/test'
 
 export class FooPage {
-  readonly errorMessage: Locator;
+  #page: Page
 
-  constructor(page: Page) {
-    this.page = page;
-    this.errorMessage = page.locator('.error-message');
+  constructor({ page }: { page: Page }) {
+    this.#page = page
   }
 }
 
-// test file './steps/foo.ts'
-import { FooPage } from './pageObjects/foo';
+// step definition file './steps/ui/foo.ts'
+import { expect } from '@playwright/test'
+import { Then } from '../../environment/fixtures'
+import { FooPage } from '../../support/objects/foo'
 
-let fooPage: FooPage;
-
-Then('error message should be visible', async function ({ page }) {
-  const fooPage = new FooPage({ page });
-  await expect(fooPage.errorMessage).toBeVisible();
-});
+Then('the error message should be visible', async ({ page }) => {
+  const fooPage = new FooPage(page)
+  await expect(fooPage.errorMessage).toBeVisible()
+})
 ```
 
 DO NOT ⚔️
 
 ```typescript
-// test file './steps/foo.ts'
-// include locators directly in test
-import { Locator, Page } from '@playwright/test';
+// step definition file './steps/ui/foo.ts'
+// include locators directly in the step
+import { expect } from '@playwright/test'
+import { Then } from '../../environment/fixtures'
 
-Then('error message should be visible', async function ({ page }) {
-  await expect(page.locator('.error-message')).toBeVisible();
-});
+Then('the error message should be visible', async ({ page }) => {
+  await expect(page.locator('.error-message')).toBeVisible()
+})
 ```
 
 ## Waiting
@@ -129,7 +129,7 @@ Playwright uses auto-waiting, so we avoid artificial waiting, the exception bein
 DO NOT ⚔️
 
 ```typescript
-await page.waitForTimeout(5000);
+await page.waitForTimeout(5000)
 ```
 
 This can cause flaky tests as we can rarely be certain the amount of wait time is enough. It can also unnecessarily increase the test run time. Instead, we can try:
@@ -139,21 +139,21 @@ DO 👍
 ```typescript
 await page.goto(fooBarURL, {
   waitUntil: 'domcontentloaded'
-});
+})
 ```
 
 DO 👍
 
 ```typescript
-const element = page.locator('some-locator-path');
-element.waitFor({ visible: true });
+const element = page.locator('some-locator-path')
+element.waitFor({ visible: true })
 ```
 
 DO 👍
 
 ```typescript
-await fooPage.buttonFoo.click();
-await expect(fooPage.titlePage).toBeVisible();
+await fooPage.buttonFoo.click()
+await expect(fooPage.titlePage).toBeVisible()
 ```
 
 ## Selectors
@@ -171,14 +171,14 @@ Instead, we can prioritize the below, based on [testing-library guiding principl
 DO NOT ⚔️
 
 ```javascript
-page.locator('.opt-u > div > .summary > div:nth-child(4) > div');
+page.locator('.opt-u > div > .summary > div:nth-child(4) > div')
 ```
 
 DO 👍
 
 ```javascript
-page.locator('#foo-button');
-page.getByText('OK');
+page.locator('#foo-button')
+page.getByText('OK')
 ```
 
 ## Naming Conventions
@@ -197,7 +197,7 @@ Declare in **_camelCase_**.
 Start with ‘is’, ‘has’, ‘are’, ‘have’. This helps spot that this is a boolean while skimming the code. Still declared in **_camelCase_**.
 
 ```typescript
-let isTurnedOn = false;
+let isTurnedOn = false
 ```
 
 ### Page Objects / Classes
@@ -232,14 +232,14 @@ DO 👍
 
 ```typescript
 // This element is a submit button for the user registration form
-const submitButton = await page.locator('<locator-path>');
+const submitButton = await page.locator('<locator-path>')
 ```
 
 DO 👍
 
 ```typescript
 // This element is a button for uploading a profile picture
-const uploadProfilePictureButton = await page.locator('<locator-path>');
+const uploadProfilePictureButton = await page.locator('<locator-path>')
 ```
 
 ### Function names
@@ -249,9 +249,9 @@ Always start function names with a **_“verb”_**, followed by the **_“compo
 DO 👍
 
 ```typescript
-getWorksOrder();
-printTransactions();
-deleteProperty();
+getWorksOrder()
+printTransactions()
+deleteProperty()
 ```
 
 ## Gherkin Best Practices: Do's and Don'ts for Effective Features & Scenarios

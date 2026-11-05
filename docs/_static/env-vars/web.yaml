@@ -84,11 +84,13 @@ web:
     - epub-reader
     - preview
     - app-store
+    - rclone-crypt
     applications: []
     external_apps: []
     options:
       accountEditLink: null
       disableFeedbackLink: false
+      disableSponsorLink: false
       feedbackLink: null
       runningOnEos: false
       cernFeatures: false
@@ -117,6 +119,7 @@ web:
       oxAppSuite:
         enabled: false
         apiUrl: ""
+      yjsServerUrl: ""
     styles: []
     scripts: []
     custom_translations: []
@@ -124,3 +127,12 @@ apps: {}
 token_manager:
   jwt_secret: ""
 gateway_addr: eu.opencloud.api.gateway
+store:
+  nodes:
+  - 127.0.0.1:9233
+  database: web
+  username: ""
+  password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""

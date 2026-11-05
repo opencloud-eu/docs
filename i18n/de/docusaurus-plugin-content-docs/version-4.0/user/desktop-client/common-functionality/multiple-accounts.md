@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 id: multiple-accounts
 title: Mehrere Konten einrichten
 description: Nutzung von mehreren Konten in OpenCloud Desktop

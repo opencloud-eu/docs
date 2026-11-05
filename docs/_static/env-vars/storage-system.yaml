@@ -33,10 +33,14 @@ cache:
   disable_persistence: false
   auth_username: ""
   auth_password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 driver: decomposed
 drivers:
   decomposed:
     root: /var/lib/opencloud/storage/metadata
     max_acquire_lock_cycles: 20
     lock_cycle_duration_factor: 30
+    metadata_prefix: ""
 data_server_url: http://localhost:9216/data

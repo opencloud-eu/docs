@@ -22,8 +22,6 @@ skip_user_groups_in_token: false
 commit_share_to_storage_grant: true
 share_folder_name: Shares
 disable_home_creation_on_login: true
-transfer_secret: ""
-transfer_expires: 86400
 cache:
   provider_cache_store: noop
   provider_cache_nodes:
@@ -33,6 +31,9 @@ cache:
   provider_cache_disable_persistence: false
   provider_cache_auth_username: ""
   provider_cache_auth_password: ""
+  provider_cache_enable_tls: false
+  provider_cache_tls_insecure: false
+  provider_cache_tls_root_ca_certificate: ""
   create_home_cache_store: memory
   create_home_cache_nodes:
   - 127.0.0.1:9233
@@ -41,6 +42,9 @@ cache:
   create_home_cache_disable_persistence: false
   create_home_cache_auth_username: ""
   create_home_cache_auth_password: ""
+  create_home_cache_enable_tls: false
+  create_home_cache_tls_insecure: false
+  create_home_cache_tls_root_ca_certificate: ""
 frontend_public_url: https://localhost:9200
 users_endpoint: eu.opencloud.api.users
 groups_endpoint: eu.opencloud.api.groups
@@ -51,6 +55,7 @@ auth_basic_endpoint: eu.opencloud.api.auth-basic
 auth_bearer_endpoint: ""
 auth_machine_endpoint: eu.opencloud.api.auth-machine
 auth_service_endpoint: eu.opencloud.api.auth-service
+auth_guestlinks_endpoint: eu.opencloud.api.auth-guest
 storage_public_link_endpoint: eu.opencloud.api.storage-publiclink
 storage_users_endpoint: eu.opencloud.api.storage-users
 storage_shares_endpoint: eu.opencloud.api.storage-shares

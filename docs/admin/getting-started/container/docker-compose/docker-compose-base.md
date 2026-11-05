@@ -23,7 +23,6 @@ If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer t
 - Four domains pointing to your server:
   - `cloud.YOUR.DOMAIN` → OpenCloud frontend
   - `collabora.YOUR.DOMAIN` → Collabora Online Server
-  - `wopiserver.YOUR.DOMAIN` → WOPI server for document editing
   - `traefik.YOUR.DOMAIN` → Traefik dashboard
 
   Alternatively, you can use a wildcard domain (`*.YOUR.DOMAIN`)
@@ -106,7 +105,6 @@ nano .env
 TRAEFIK_DOMAIN=traefik.YOUR.DOMAIN
 OC_DOMAIN=cloud.YOUR.DOMAIN
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
-WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
 
 ### Set your admin password
@@ -134,13 +132,13 @@ Set the `COMPOSE_FILE` variable based on the components you want to deploy.
 For an OpenCloud deployment without Collabora, use:
 
 ```bash
-COMPOSE_FILE=docker-compose.yml:traefik/opencloud.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:traefik/opencloud.yml
 ```
 
 To deploy OpenCloud with Collabora, use:
 
 ```bash
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml
 ```
 
 Save the file and exit the editor.
@@ -285,4 +283,4 @@ If you encounter issues:
 1. Check Docker logs: `docker compose logs`
 2. Verify domain DNS records point to your server
 3. Ensure firewall allows HTTP (80) and HTTPS (443)
-4. See [Common Issues & Help](../../../resources/common-issues.md)
+4. See [Common Issues & Help](../../../resources/common-issues/index.md)

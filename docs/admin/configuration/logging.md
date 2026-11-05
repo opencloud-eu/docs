@@ -1,5 +1,5 @@
 ---
-sidebar_position: 100
+sidebar_position: 120
 id: logging
 title: Logging
 description: Logging in OpenCloud

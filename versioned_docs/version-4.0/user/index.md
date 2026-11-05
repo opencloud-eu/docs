@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 title: Welcome
 description: Welcome
 draft: false
@@ -90,3 +90,7 @@ Here you will find information on what options admins have and how you can use t
 ### [Common Issues and Help](./common-issues)
 
 Here you will find information on common issues and help on how to solve them.
+
+### [Collabora](./collabora.md)
+
+Here you will find information on how to create and edit documents in your browser with Collabora Online.

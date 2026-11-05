@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 50
 id: upgrade-linux
 title: Upgrade Desktop Client on Linux
 description: Upgrade Desktop Client on Linux

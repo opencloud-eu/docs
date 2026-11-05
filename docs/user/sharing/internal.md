@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: internal
 title: Internal
 description: Organization internal sharing of files and folders in OpenCloud
@@ -23,7 +23,7 @@ Creating an internal share requires the system-wide User Role `User`, `Space Adm
 - The sidebar opens on the right-hand side of the screen.
   <img src={require("./img/intern/sidebar-window.png").default} alt="Sharing sidebar" width="1920"/>
 
-- At the top of the sidebar, select the “Internal sharing” section.
+- Use the “Share with people” field at the top of the sidebar.
   <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400"/>
 
 - Enter at least three characters in the search field to look up members or groups.
@@ -33,13 +33,15 @@ Creating an internal share requires the system-wide User Role `User`, `Space Adm
 - Select the desired person or group from the suggestion list.
 
 - Set the access rights for the selected members or groups:
-  - “Can view”:
-    Members can view and download the file or folder. They cannot edit content or upload to shared folders.
-  - “Can upload”:
-    Members can view and download the content. For folders, they can also upload their own files.
-  - “Can edit”:
-    Members can view, download, upload, create, edit, and delete content.
-    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400"/>
+
+  | Permission            | Description                                                                                                                  |
+  | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+  | **Can view**          | Members can view and download the shared content.                                                                            |
+  | **Can view (secure)** | Members can only view documents, images, and PDFs in the browser. Downloading is not possible and watermarks are applied.    |
+  | **Can upload**        | Members can view and download the shared content and upload new files. This permission is available for shared folders only. |
+  | **Can edit**          | Members can view, download, upload, create, edit, and delete content.                                                        |
+
+  <img src={require("./img/intern/rights-options.png").default} alt="Available permissions for an internal share" width="400"/>
 
 - Click on “Share” to create the internal share.
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: sync-settings-linux
 title: Synchronization Settings on Linux
 description: Synchronisation Settings on Linux

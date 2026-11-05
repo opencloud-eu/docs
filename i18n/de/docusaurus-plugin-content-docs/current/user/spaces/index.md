@@ -35,5 +35,5 @@ Zugriff zu verwalten und Projekt- oder Teamdateien von persönlichen Daten zu tr
 - [Spaces anpassen](./customize.md)  
   Aktualisieren Sie Beschreibungen, Untertitel, Bilder und Symbole für einen Space.
 
-- [Best Practice](./spaces-best-practices.md)  
+- [Best Practices für die Organisation von Spaces](./spaces-best-practices.md)<br />
   Beachten Sie empfohlene Strukturen und Namenskonventionen für Spaces.

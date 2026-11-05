@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: web-dav
 title: WebDAV
 description: Connect to a Space via WebDAV

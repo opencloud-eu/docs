@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 80
 id: favorites
 title: Favoriten
 description: Häufig verwendete Dateien für den schnellen Zugriff markieren

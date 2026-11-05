@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: internal
 title: Internal
 description: Organization internal sharing of files and folders in OpenCloud

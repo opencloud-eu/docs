@@ -84,7 +84,7 @@ Navigate to the original repository and click the "New Pull Request" button. Pro
     - Icons & Buttons: Highlight UI elements such as the “+ New” button and the three-dot menu.
     - Action-Oriented Phrasing: Use verbs like 'Click,' 'Select,' 'Enter,' and 'Confirm' to encourage user interaction.
     - Code-Like Formatting: Uses inline code or UI-style highlights for menu options.
-    - Screenshots should highlight important aspects, and you may use red frames to emphasize specific buttons or areas.
+    - Follow the image directory structure and naming conventions described in the [Screenshot Guidelines](README.md#screenshot-guidelines).
     - Defined sizes for screenshots:
 
         | content           | size          |

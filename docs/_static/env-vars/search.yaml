@@ -64,6 +64,8 @@ extractor:
     clean_stop_words: false
 content_extraction_size_limit: 20971520
 batch_size: 50
+reindex_concurrency: 3
+query_template: ({{.QUERY}}) AND (NOT path:"./.space" AND NOT id:{{.SPACE_ROOT_PERSONAL}})
 service_account:
   service_account_id: ""
   service_account_secret: ""

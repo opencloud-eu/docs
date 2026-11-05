@@ -32,7 +32,7 @@ Add or uncomment the following lines to enable Keycloak with integrated LDAP:
 
 ```bash
 # Enable Keycloak + LDAP services
-COMPOSE_FILE=docker-compose.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
 
 # Keycloak domain (without https://)
 KEYCLOAK_DOMAIN=keycloak.YOUR.DOMAIN
