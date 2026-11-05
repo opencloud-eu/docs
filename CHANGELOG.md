@@ -1,10 +1,19 @@
 # Changelog
 
-## [3.56.1](https://github.com/opencloud-eu/docs/releases/tag/3.56.1) - 2026-11-04
+## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-05
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- clarify the variable names [[#1292](https://github.com/opencloud-eu/docs/pull/1292)]
+
+### 👤 User Documentation
+
+- new screenshots and permissions table [[#1297](https://github.com/opencloud-eu/docs/pull/1297)]
+- file drop - new screenshots, change name in several docs [[#1300](https://github.com/opencloud-eu/docs/pull/1300)]
 
 ### 📦️ Build&Tools
 
