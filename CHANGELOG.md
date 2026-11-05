@@ -4,7 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@AlexAndBear, @Svanvith, @openclouders
+
+### :octocat: Developer Documentation
+
+- Embed mode: delegated tokens are only accepted from the direct parent [[#1303](https://github.com/opencloud-eu/docs/pull/1303)]
 
 ### 👷 Admin Documentation
 
