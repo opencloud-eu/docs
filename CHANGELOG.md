@@ -12,6 +12,7 @@
 
 ### 👤 User Documentation
 
+- share extern - new screenshots and adjust the text [[#1298](https://github.com/opencloud-eu/docs/pull/1298)]
 - Roles rework [[#1293](https://github.com/opencloud-eu/docs/pull/1293)]
 - new screenshots and permissions table [[#1297](https://github.com/opencloud-eu/docs/pull/1297)]
 - file drop - new screenshots, change name in several docs [[#1300](https://github.com/opencloud-eu/docs/pull/1300)]
