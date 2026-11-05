@@ -10,6 +10,8 @@ draft: false
 
 Public links let you share files and folders with people outside your organization.
 
+Public links use link permissions and do not identify individual recipients. They are different from internal Share Roles. A User Light can create a public link when public links are available and the permissions for the resource allow it.
+
 ## Steps to create a public link
 
 - Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
