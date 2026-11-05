@@ -19,6 +19,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1301](https://github.com/opencloud-eu/docs/pull/1301)]
 - Update docs [[#1299](https://github.com/opencloud-eu/docs/pull/1299)]
 - Update docs [[#1291](https://github.com/opencloud-eu/docs/pull/1291)]
 
