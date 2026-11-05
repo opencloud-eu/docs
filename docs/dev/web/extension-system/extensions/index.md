@@ -26,6 +26,30 @@ For the `type` you can choose from the [predefined extension types](./extension-
 In addition, you can pass optional `extensionPointIds` to determine where the extension will appear. You can find all
 predefined ids in the [extension points docs](./extension-points).
 
+## Icons
+
+Wherever an extension or an app declares an `icon`, it accepts the `Icon` type from the design system. An icon can be
+declared in three ways:
+
+```typescript
+import type { Icon } from '@opencloud-eu/design-system/helpers'
+import iconUrl from './assets/icon.svg'
+import iconDarkUrl from './assets/icon-dark.svg'
+
+const iconName: Icon = 'brush'
+const namedIcon: Icon = { name: 'brush', fillType: 'line', color: '#e2725b' }
+const imageIcon: Icon = { src: iconUrl, srcDark: iconDarkUrl }
+```
+
+- A string is always the name of an icon from the icon set, which can be picked from [Remix Icon](https://remixicon.com/).
+- A named icon additionally carries its own `fillType` (`fill`, `line` or `none`) and `color`. Both are optional and
+  take precedence over what the rendering component would use.
+- An image icon ships your own image. It gets rendered as an `<img>` element and has neither a `fillType` nor a `color`.
+  The optional `srcDark` is used in dark mode.
+
+The sibling properties `iconFillType`, `iconColor` and `fillType`, which some types offer next to their `icon`, are
+deprecated. Please use a named icon instead.
+
 ## Registering extensions
 
 ### Via the app definition

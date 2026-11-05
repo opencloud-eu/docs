@@ -100,9 +100,11 @@ interface ApplicationFileExtension {
   hasPriority?: boolean
   label?: string
   name?: string
-  icon?: string
+  icon?: Icon
   mimeType?: string
   newFileMenu?: { menuTitle: () => string }
   routeName?: string
 }
 ```
+
+For the `icon`, please see the [icons section](../extensions/index.md#icons) in the extensions docs.

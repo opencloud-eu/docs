@@ -163,7 +163,7 @@ Password: your OpenCloud app token
 
 Use the base URL of the OpenCloud instance.
 
-Do not use a public share or File Drop URL.
+Do not use a public share or Secret File Drop URL.
 
 For example:
 

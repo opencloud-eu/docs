@@ -6,7 +6,7 @@ title: Share files and folders
 
 # Share files and folders
 
-This section explains how sharing works in OpenCloud. It covers internal sharing with members and groups, public links for external access, File Drop links for receiving uploads, and sharing with users on other OpenCloud instances through ScienceMesh.
+This section explains how sharing works in OpenCloud. It covers internal sharing with members and groups, public links for external access, Secret File Drop links for receiving uploads, and sharing with users on other OpenCloud instances through ScienceMesh.
 
 ## Sharing Methods
 
@@ -36,7 +36,7 @@ Public link permissions, Guest Access Share roles, and permissions assigned to r
 - [Guest Access](./guest-access.md)
   Invite external guests by email address and assign access to shared content.
 
-- [File Drop](./file-drop.md)  
+- [Secret File Drop](./file-drop.md)
   Allow external users to upload files without giving them access to existing content.
 
 - [ScienceMesh](./opencloud-mesh.md) - Connect with users on another OpenCloud instance and share files or folders with them.

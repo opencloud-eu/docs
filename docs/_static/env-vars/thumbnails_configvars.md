@@ -16,9 +16,9 @@
 |`OC_CORS_ALLOW_HEADERS`<br/>`THUMBNAILS_CORS_ALLOW_HEADERS`| 1.0.0 |[]string|`A list of allowed CORS headers. See following chapter for more details: *Access-Control-Request-Headers* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers. See the Environment Variable Types description for more details.`|`"[Authorization Origin Content-Type Accept X-Requested-With X-Request-Id Cache-Control]"`|
 |`OC_CORS_ALLOW_CREDENTIALS`<br/>`THUMBNAILS_CORS_ALLOW_CREDENTIALS`| 1.0.0 |bool|`Allow credentials for CORS.See following chapter for more details: *Access-Control-Allow-Credentials* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials.`|`"true"`|
 |`THUMBNAILS_MAX_INPUT_WIDTH`| 1.0.0 |int|`The maximum width of an input image which is being processed.`|`"7680"`|
-|`THUMBNAILS_MAX_OUTPUT_WIDTH`| next |int|`The maximum width of a thumbnail that may be asked for. A larger box is refused with HTTP 422. webdav never asks for more than its largest configured resolution, so this bounds everything else that reaches the endpoint.`|`"2048"`|
-|`THUMBNAILS_MAX_OUTPUT_HEIGHT`| next |int|`The maximum height of a thumbnail that may be asked for.`|`"2048"`|
+|`THUMBNAILS_MAX_OUTPUT_WIDTH`| 9.0.0 |int|`The maximum width of a thumbnail that may be asked for. A larger box is refused with HTTP 422. webdav never asks for more than its largest configured resolution, so this bounds everything else that reaches the endpoint.`|`"2048"`|
+|`THUMBNAILS_MAX_OUTPUT_HEIGHT`| 9.0.0 |int|`The maximum height of a thumbnail that may be asked for.`|`"2048"`|
 |`THUMBNAILS_MAX_INPUT_HEIGHT`| 1.0.0 |int|`The maximum height of an input image which is being processed.`|`"7680"`|
-|`THUMBNAILS_MAX_CONCURRENT_REQUESTS`| next |int|`Maximum number of concurrent thumbnail generation requests. Default is 0 which is unlimited.`|`"0"`|
+|`THUMBNAILS_MAX_CONCURRENT_REQUESTS`| 9.0.0 |int|`Maximum number of concurrent thumbnail generation requests. Default is 0 which is unlimited.`|`"0"`|
 |`OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`<br/>`THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`| 1.0.0 |string|`The maximum size of an image posted to the generator. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB], example: 50MB. An empty value means unlimited.`|`"50MB"`|
-|`THUMBNAILS_MAX_ANIMATION_FRAMES`| next |int|`The maximum number of frames an animated image may have. A file with more frames is refused before any of them is decoded. Default is 100, 0 is unlimited.`|`"100"`|
+|`THUMBNAILS_MAX_ANIMATION_FRAMES`| 9.0.0 |int|`The maximum number of frames an animated image may have. A file with more frames is refused before any of them is decoded. Default is 100, 0 is unlimited.`|`"100"`|

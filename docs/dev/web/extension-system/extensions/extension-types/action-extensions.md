@@ -27,7 +27,7 @@ For `id`, `type`, and `extensionPointIds`, please see [base configuration sectio
 
 The most important configuration options are:
 
-- `icon` - The icon to be displayed, can be picked from [Remix Icon](https://remixicon.com/)
+- `icon` - The icon to be displayed, or a function returning it. See the [icons section](../index.md#icons)
 - `name` - The name of the action (not displayed in the UI)
 - `label` - The text to be displayed
 - `route` - The string/route to navigate to. The nav item will be a `<router-link>` tag.

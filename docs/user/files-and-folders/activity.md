@@ -8,7 +8,7 @@ draft: false
 
 # Viewing the activities of a file or folder
 
-To find out who has edited a file or folder and what actions have been carried out, follow these steps:
+To see who performed an action on a file or folder and what changed, follow these steps:
 
 ## Show activities
 
@@ -16,16 +16,17 @@ To find out who has edited a file or folder and what actions have been carried o
   - Right-click on the file or folder, or click on the three dots in the corresponding line.
   - Select "Details" from the context menu.
 
-    <img src={require("./img/activity/details-button.png").default} alt="Context menu details" width="400"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Context menu details" width="1920"/>
 
 - Select Activities
-  - In the right sidebar opens a window, in this select the “Activities” item.
+  - In the right sidebar, select “Activities”.
+
     <img src={require("./img/activity/activities-button.png").default} alt="Select activities" width="400"/>
 
 - View activities
-  - All activities carried out with this file or folder are now displayed.
+  - The activity timeline shows recorded actions, who performed them, and when they occurred.
     <img src={require("./img/activity/activities.png").default} alt="View activities" width="400"/>
 
 :::info
-This allows you to track all changes and actions!
+Use the activity timeline to review recent changes and actions.
 :::

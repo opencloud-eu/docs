@@ -30,7 +30,7 @@ Alternatively, you can also click on “Delete” in the action bar.
 
 - Click “Deleted files” in the left sidebar.
 - Files from your personal space can be found under “Personal”.
-- Files from other spaces, such as “Platform Team”, can be found in their respective spaces.
+- Files from other spaces, such as “UNIX Lab”, can be found in their respective spaces.
 
   <img src={require("./img/delete-restore/structure-in-deleted-files.png").default} alt="Structure in deleted files" width="1920"/>
 

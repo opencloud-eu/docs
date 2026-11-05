@@ -2,23 +2,24 @@
 sidebar_position: 20
 id: settings
 title: Account Settings
-description: User account settings in OpenCloud
+description: Manage your profile, preferences, apps, and account access in OpenCloud.
 draft: false
 ---
 
-# User account settings in OpenCloud
+# Manage Account Settings
 
-In OpenCloud you have the option of making various settings for your user account to customize it according to your needs
+Use the account settings to manage your profile, preferences, apps, calendar access, personal data, and app tokens.
 
 ## Access the settings
 
-- Click on your avatar in the top right corner
-- Select "Preferences"
-  <img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+1. Select your avatar in the top-right corner.
+2. Select Preferences.
+
+<img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 ## Account information
 
-In the settings you can choose between different sections:
+The account settings are divided into several sections.
 
 ### Profile
 
@@ -33,37 +34,46 @@ In the settings you can choose between different sections:
 
 ### Avatar
 
-In profile picture you can change your Avatar image:
+To change your avatar:
 
-- Click on "Upload" under your Avatar icon
-  <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
-- Choose your Avatar image and click on "Upload"
-  <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="500"/>
-- now it opens a window you can anjusted your image and then click on the "Set" button
-  <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
-- after this your Avatar will be set up to your account
-  <img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920"/>
+1. Select "Upload" below your current avatar.
+
+<img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+
+2. Choose an image and select "Upload".
+
+<img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="500"/>
+
+3. Adjust the image in the preview and select "Set".
+
+<img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+
+The new avatar is now shown for your account.
+
+<img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920"/>
 
 ## Preferences
 
-Depending on the basic configuration, you can change the following options:
+The available settings depend on how your OpenCloud instance is configured.
 
 - Language:  
-  Select the desired language for your user interface.
+  Select the language used in the OpenCloud interface.
 - Password:  
-  Change your password for access to your user account.
+  Change the password for your account, if password changes are supported by your authentication provider.
 - Theme:  
-  Customize the Theme of the user interface according to your preferences.
-- Email notifications:  
-  Determine which email notifications you would like to receive from OpenCloud.
+  Choose the light, dark, or system theme.
 - View options:  
-  Set the WebDAV settings to allow external access to files and folders.
-  <img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
+  Choose whether WebDAV information is shown in the file details.
+- Notifications:  
+  Choose for each supported event whether you want to receive an in-app notification, an email notification, both, or neither.
 
-## Extensions
+<img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
 
-Under Extensions you can configure installed extensions, such as the Progressbar, if available.
-<img src={require("./img/account-settings/extensions.png").default} alt="Extensions" width="1920"/>
+## Apps
+
+Under Apps, you can configure settings provided by installed apps, such as the global progress bar, if available.
+
+<img src={require("./img/account-settings/extensions.png").default} alt="Apps settings" width="1920"/>
 
 ## Calendar
 
