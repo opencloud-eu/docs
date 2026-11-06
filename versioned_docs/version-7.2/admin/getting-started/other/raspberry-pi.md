@@ -63,10 +63,8 @@ sudo apt update && sudo apt upgrade -y
 
 - Install Docker via script:
 
-The Docker convenience script installs from the stable release channel and is intended for testing and development. For maintained installations, follow the [official Docker installation instructions](https://docs.docker.com/engine/install/). Check that your Raspberry Pi OS version and architecture are supported.
-
 ```bash
-curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
+curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
 - Add current user to the Docker group:
@@ -125,19 +123,13 @@ Look for the following line and set here your admin password:
 INITIAL_ADMIN_PASSWORD=YourSecurePassword
 ```
 
-:::tip Using external storage?
-If you plan to use an external drive, mount it and configure
-`OC_DATA_DIR` as described below **before the first OpenCloud startup**.
-Skip the next startup command and complete the external storage instructions first. Start OpenCloud only after setting `OC_DATA_DIR`.
-:::
-
-If you are using the default Docker data volume, start OpenCloud now:
+Then start Docker:
 
 ```bash
 docker compose up
 ```
 
-Once started, OpenCloud runs locally on your Raspberry Pi.
+Now OpenCloud is running locally on your Raspberry Pi, and you can adjust it to your needs.
 
 We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
 
@@ -152,12 +144,6 @@ lsblk
 <img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500"/>
 
 ### Format the drive to ext4
-
-:::danger Data loss warning
-Formatting a partition permanently erases its existing data. Back up any important files before proceeding.
-
-The device path `/dev/sda1` below is only an example. Use `lsblk -f` to identify your external drive and verify the correct partition, size, and mount points before formatting. Do not format a partition containing data you want to keep.
-:::
 
 ```bash
 sudo mkfs.ext4 /dev/sda1 -L DATA
@@ -179,10 +165,11 @@ Add this line:
 LABEL=DATA /mnt/data ext4 auto,defaults 0 0
 ```
 
-### Create the mount point
+### Create the mount point and set permissions
 
 ```bash
 sudo mkdir -p /mnt/data
+sudo chown -R 1000:1000 /mnt/data
 ```
 
 ### Mount the drive
@@ -203,35 +190,9 @@ systemctl daemon-reload
 
 And try mounting again.
 
-### Verify the mount and set permissions
-
-Before changing ownership, verify that the external filesystem is mounted at `/mnt/data`:
-
-```bash
-findmnt --mountpoint /mnt/data
-```
-
-If the expected filesystem is not mounted, correct the mount configuration before proceeding.
-
-For a new, empty data filesystem, set ownership of its root directory:
-
-```bash
-sudo chown 1000:1000 /mnt/data
-```
-
-Verify that UID and GID `1000:1000` are appropriate for your deployment. Do not recursively change ownership of an existing drive without checking its contents and required permissions.
-
 ## Mount external storage in Docker
 
-:::caution Existing installations
-Changing `OC_DATA_DIR` does not migrate existing data from the
-previous Docker volume. Before switching storage on an existing
-installation, back up your OpenCloud data and configuration and
-follow a verified migration procedure. Otherwise, existing files
-may appear missing.
-:::
-
-If OpenCloud is already running, stop its Compose services:
+Stop Docker:
 
 ```bash
 docker compose down
@@ -240,6 +201,7 @@ docker compose down
 Open the `.env` file:
 
 ```bash
+cd opencloud-compose
 nano .env
 ```
 
@@ -251,7 +213,7 @@ OC_DATA_DIR=/mnt/data
 
 <img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500"/>
 
-Start OpenCloud with the configured data directory:
+Restart Docker:
 
 ```bash
 docker compose up
