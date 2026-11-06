@@ -10,22 +10,22 @@ draft: false
 
 Sie können ganz einfach neue Mitglieder einladen, um in Ihrem Space zusammenzuarbeiten, indem Sie die folgenden Schritte ausführen.
 
-- Gehen Sie zu Ihrem Space und öffnen Sie das Mitglieder-Menü.
+- Öffnen Sie das Space-Menü und wählen Sie „Mitglieder“ aus.
   <img src={require("./img/add-user/member-menu.png").default} alt="Mitglieder-Menü" width="1920"/>
 
-- Im Mitglieder-Menü können Sie nach dem Benutzer aus Ihrer Organisation suchen, den Sie hinzufügen möchten.
+- Suchen Sie nach der Person aus Ihrer Organisation, die Sie hinzufügen möchten.
 
   <img src={require("./img/add-user/search-user.png").default} alt="Benutzer suchen" width="1920"/>
 
-- Wählen Sie die gewünschten Rechte für das Mitglied aus, z. B. ob die Person nur lesen oder auch bearbeiten darf.
+- Wählen Sie die Rolle für das neue Mitglied aus: „Kann anzeigen“, „Kann bearbeiten“ oder „Kann verwalten“.
 
   <img src={require("./img/add-user/choose-rights.png").default} alt="Rechte auswählen" width="1920"/>
 
-- Klicken Sie auf „Hinzufügen“, um das Mitglied in den Space einzuladen.
+- Wählen Sie „Hinzufügen“ aus, um das Mitglied in den Space einzuladen.
 
   <img src={require("./img/add-user/member-added.png").default} alt="Mitglied hinzugefügt" width="1920"/>
 
-- Um die Rechte eines Mitglieds zu ändern, öffnen Sie das Mitglieder-Menü, klicken Sie auf den entsprechenden Benutzer und wählen Sie die gewünschten neuen Rechte aus.
+- Um die Rolle eines Mitglieds zu ändern, wählen Sie die aktuelle Rolle neben dem Mitglied und anschließend eine neue Rolle aus.
 
   <img src={require("./img/add-user/change-rights.png").default} alt="Rechte ändern" width="1920"/>
 
