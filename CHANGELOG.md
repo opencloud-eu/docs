@@ -1,10 +1,10 @@
 # Changelog
 
-## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-05
+## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-06
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Svanvith, @openclouders
+@AlexAndBear, @Svanvith, @asaah262, @openclouders
 
 ### :octocat: Developer Documentation
 
@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- docs: improve getting started installation guides [[#1308](https://github.com/opencloud-eu/docs/pull/1308)]
 - clarify the variable names [[#1292](https://github.com/opencloud-eu/docs/pull/1292)]
 
 ### 👤 User Documentation
