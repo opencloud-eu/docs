@@ -1,5 +1,33 @@
 # Changelog
 
+## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-06
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @asaah262, @openclouders
+
+### :octocat: Developer Documentation
+
+- Embed mode: delegated tokens are only accepted from the direct parent [[#1303](https://github.com/opencloud-eu/docs/pull/1303)]
+
+### 👷 Admin Documentation
+
+- docs: improve getting started installation guides [[#1308](https://github.com/opencloud-eu/docs/pull/1308)]
+- clarify the variable names [[#1292](https://github.com/opencloud-eu/docs/pull/1292)]
+
+### 👤 User Documentation
+
+- share extern - new screenshots and adjust the text [[#1298](https://github.com/opencloud-eu/docs/pull/1298)]
+- Roles rework [[#1293](https://github.com/opencloud-eu/docs/pull/1293)]
+- new screenshots and permissions table [[#1297](https://github.com/opencloud-eu/docs/pull/1297)]
+- file drop - new screenshots, change name in several docs [[#1300](https://github.com/opencloud-eu/docs/pull/1300)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1301](https://github.com/opencloud-eu/docs/pull/1301)]
+- Update docs [[#1299](https://github.com/opencloud-eu/docs/pull/1299)]
+- Update docs [[#1291](https://github.com/opencloud-eu/docs/pull/1291)]
+
 ## [3.56.0](https://github.com/opencloud-eu/docs/releases/tag/3.56.0) - 2026-11-02
 
 ### ❤️ Thanks to all contributors! ❤️
