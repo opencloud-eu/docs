@@ -14,7 +14,7 @@ To open an end-to-end encrypted folder, a user needs both access to the folder i
 
 :::important
 
-End-to-end encrypted folders are currently intended for use with the Web Client. Mobile and Desktop Clients do not support the E2EE workflow and should not be used to access or modify encrypted folders.
+End-to-end encrypted folders are supported in the OpenCloud Web Client. You can also access them locally with rclone, which is a separate tool and not an OpenCloud client. The OpenCloud Desktop and Mobile Clients do not currently support the E2EE workflow and should not be used to access or modify encrypted folders. For more information, see [Access End-to-End Encrypted Folders with rclone](./e2ee-folders-rclone.md).
 
 :::
 
@@ -139,6 +139,10 @@ The recipient must have the folder password to unlock the encrypted folder and a
 
 Public links are not supported for encrypted folders or files.
 
+## Access an encrypted folder with rclone
+
+You can mount an encrypted folder on a local machine with rclone. See [Access End-to-End Encrypted Folders with rclone](./e2ee-folders-rclone.md).
+
 ## Preview and download behavior
 
 Some files in end-to-end encrypted folders cannot be previewed directly in the browser.
@@ -153,7 +157,7 @@ End-to-end encrypted folders are designed for storing sensitive data. Because th
 
 The following limitations apply:
 
-- End-to-end encrypted folders are currently intended for use with the Web Client. Mobile and Desktop Clients do not support the E2EE workflow and should not be used to access or modify encrypted folders. Existing encrypted files may be displayed in their encrypted form, while files added through these clients are not end-to-end encrypted and may not be usable in the Web Client.
+- The OpenCloud Desktop and Mobile Clients do not support the E2EE workflow and should not be used to access or modify encrypted folders. Existing encrypted files may be displayed in their encrypted form, while files added through these clients are not end-to-end encrypted and may not be usable in the Web Client.
 - Files and folders cannot be moved from another location in OpenCloud into an encrypted folder.
 - Files stored in encrypted folders are not included in search results.
 - Collaborative editing is not available for files stored in encrypted folders.
