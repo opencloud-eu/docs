@@ -131,23 +131,3 @@ Your OpenCloud server is now running and ready to use 🚀
 If you encounter any issues or errors, try finding a solution here:
 
 - [Common Issues & Help](../../resources/common-issues/index.md)
-
-### Diagnosing startup failures
-
-The startup command above uses `--rm`, which automatically removes
-the container when it exits. If OpenCloud fails during startup,
-the container may disappear before you can inspect its logs.
-
-To troubleshoot:
-
-1. Remove `--rm` from the **Start OpenCloud** command and run it again.
-2. Check the container status with `docker ps -a`.
-3. Inspect startup errors with `docker logs opencloud`.
-4. Correct the reported problem before retrying.
-
-If the container has exited, remove the stopped test container with
-`docker rm opencloud` before reusing the same name. This does not
-delete data stored in the bind-mounted directories.
-
-On macOS, an `extended attributes not supported` error may indicate
-the filesystem compatibility issue described above.
