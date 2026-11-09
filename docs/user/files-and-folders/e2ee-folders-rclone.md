@@ -21,7 +21,7 @@ This guide is based on OpenCloud 9.0.0. It is intended for users who are familia
 
 The setup consists of the following steps:
 
-1. [Create the encrypted folder](./e2ee-folders.md) in the OpenCloud Web Client.
+1. [Create the encrypted folder](./e2ee-folders) in the OpenCloud Web Client.
 2. [Install rclone](#install-rclone) on your computer.
 3. [Create an App Token](#create-an-app-token) in OpenCloud.
 4. [Get the WebDAV URL](#get-the-webdav-url) of the encrypted folder.
@@ -133,7 +133,7 @@ rclone version
 
 Create a dedicated App Token for rclone in your OpenCloud account settings. Copy it when it is displayed because it cannot be shown again.
 
-For detailed instructions, see [App Tokens](../admin/app-tokens.md).
+For detailed instructions, see [App Tokens](../admin/app-tokens).
 
 The App Token is used as the password for the WebDAV remote. It is not the password for the encrypted folder. Your OpenCloud account password does not work with rclone.
 
@@ -144,7 +144,7 @@ Do not show a real token or other credentials.
 
 ## Get the WebDAV URL
 
-Enable “Show WebDAV info in details view” in your OpenCloud account settings, open the details panel of the encrypted folder, and copy its WebDAV URL. For general instructions, see [Connect to a Space via WebDAV](../admin/web-dav.md).
+Enable “Show WebDAV info in details view” in your OpenCloud account settings, open the details panel of the encrypted folder, and copy its WebDAV URL. For general instructions, see [Connect to a Space via WebDAV](../admin/web-dav).
 
 The URL must point to the encrypted `.vault` folder, for example:
 
