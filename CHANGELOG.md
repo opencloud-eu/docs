@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- ger/overview- new screenshot, remove third view [[#1304](https://github.com/opencloud-eu/docs/pull/1304)]
 - science mesh - new screenshots [[#1302](https://github.com/opencloud-eu/docs/pull/1302)]
 - add guest-feature tutorial in user doku [[#1256](https://github.com/opencloud-eu/docs/pull/1256)]
 - first draft e2ee with rclone [[#1194](https://github.com/opencloud-eu/docs/pull/1194)]
