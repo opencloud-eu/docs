@@ -2,7 +2,7 @@
 sidebar_position: 20
 id: app-tokens
 title: App Tokens
-description: App Tokens in OpenCLoud
+description: App-Tokens in OpenCloud
 draft: false
 ---
 
@@ -12,39 +12,35 @@ App-Tokens ermöglichen es Ihnen, externe Apps und Dienste (z. B. WebDAV-Clients
 
 Dies verbessert die Sicherheit auf mehrere Arten:
 
-- Ihr Login-Passwort muss nicht an Drittanbieter-Anwendungen weitergegeben werden.
-- App-Tokens können widerrufen werden. Wenn Sie befürchten, dass ein Token kompromittiert wurde, löschen Sie es einfach.
-- App-Tokens können ein Ablaufdatum haben. Das reduziert potenzielle Angriffsflächen.
+- Sie müssen Ihr Anmeldepasswort nicht gegenüber Drittanbieter-Anwendungen offenlegen.
+- App-Tokens können widerrufen werden. Wenn Sie vermuten, dass ein Token kompromittiert wurde, löschen Sie es einfach.
+- App-Tokens haben ein konfigurierbares Ablaufdatum. Dadurch verringert sich das Missbrauchsrisiko.
 
-Zusätzlich zur erhöhten Sicherheit verbessern App-Tokens auch die Kompatibilität mit Drittanbieter-Anwendungen. Viele
-Anwendungen unterstützen moderne Login-Verfahren wie OpenID Connect nicht und akzeptieren nur Standard-Logins mit Benutzername
-und Passwort. Ihr Benutzername in Kombination mit einem App-Token dient genau diesem Zweck.
+Zusätzlich zur erhöhten Sicherheit verbessern App-Tokens die Kompatibilität mit Drittanbieter-Anwendungen. Viele Anwendungen unterstützen moderne Anmeldeverfahren wie OpenID Connect nicht, sondern akzeptieren nur eine Standardanmeldung mit Benutzername und Passwort. Ihr Benutzername und eines Ihrer App-Tokens dienen dabei als Anmeldedaten.
 
 :::important
-App-Tokens ermöglichen Drittanbieter-Anwendungen Zugriff auf all Ihre Daten. Erstellen Sie daher
-für jede Anwendung ein eigenes App-Token und wählen Sie ein angemessenes Ablaufdatum.  
-Wenn Sie keinen vollständigen Zugriff gewähren möchten, verwenden Sie stattdessen einen öffentlichen Link.
+App-Tokens ermöglichen Drittanbieter-Anwendungen den Zugriff auf all Ihre Daten. Erstellen Sie für jede Anwendung ein eigenes App-Token und wählen Sie einen angemessenen Gültigkeitszeitraum. Wenn Sie nicht den Zugriff auf all Ihre Daten ermöglichen möchten, verwenden Sie stattdessen einen öffentlichen Link.
 :::
 
 ## App-Token erstellen
 
 - Gehen Sie in Ihren OpenCloud-Kontoeinstellungen zum Bereich „App-Tokens“.
-- Klicken Sie auf „+ Neu“, um ein neues Token zu erstellen.
+- Klicken Sie auf „Neu“, um ein Token zu erstellen.
 
-  <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400"/>
+  <img src={require("./img/app-tokens/create.png").default} alt="App-Token erstellen" width="1920"/>
 
-- Geben Sie einen Namen für das Token ein (z. B. „WebDAV Client“).
+- Geben Sie einen Namen für das Token ein, beispielsweise `WebDAV Client`.
 - Wählen Sie ein Ablaufdatum, um die Sicherheit zu erhöhen.
 - Klicken Sie auf „Bestätigen“.
 
-  <img src={require("./img/app-tokens/enter-name.png").default} alt="Namen eingeben und Ablaufdatum wählen" width="400"/>
+  <img src={require("./img/app-tokens/enter-name.png").default} alt="Name und Ablaufdatum eingeben" width="1920"/>
 
 ## App-Token kopieren
 
 - Nach der Erstellung wird das Token nur ein einziges Mal angezeigt.
 - Kopieren Sie es sofort und bewahren Sie es sicher auf.
 
-  <img src={require("./img/app-tokens/copy-token.png").default} alt="Copy Token" width="400"/>
+  <img src={require("./img/app-tokens/copy-token.png").default} alt="App-Token kopieren" width="1920"/>
 
 :::note
 Wenn Sie das Token verlieren, müssen Sie es löschen und ein neues erstellen.
@@ -52,16 +48,16 @@ Wenn Sie das Token verlieren, müssen Sie es löschen und ein neues erstellen.
 
 ## App-Token verwenden
 
-Sie können das Token nun anstelle Ihres Passworts verwenden, zum Beispiel bei:
+Sie können das Token nun anstelle Ihres Passworts für folgende Verbindungen verwenden:
 
 - WebDAV
-- Externen Apps
-- Drittanbieter-Diensten
+- externe Apps
+- Drittanbieter-Dienste
 
 :::info
-Der Benutzername entspricht in der Regel dem Benutzernamen Ihres regulären Logins.  
-Wenn der Identity Provider jedoch im Autoprovisioning-Modus läuft, kann nur die UUID verwendet werden.  
-Diese finden Sie in der Übersicht der Einstellungen.
+Der Benutzername entspricht in der Regel dem Benutzernamen, den Sie für Ihre reguläre Anmeldung verwenden.
+Wenn der Identity Provider jedoch im Autoprovisioning-Modus betrieben wird, kann nur die UUID verwendet werden.
+Sie finden diese UUID auf der Übersichtsseite der Einstellungen.
 :::
 
 ## App-Token löschen
@@ -69,6 +65,8 @@ Diese finden Sie in der Übersicht der Einstellungen.
 Wenn ein Token nicht mehr benötigt wird:
 
 - Gehen Sie erneut zum Bereich „App-Tokens“.
-- Klicken Sie auf das Papierkorb-Symbol neben dem entsprechenden Token, um es zu entfernen.
+- Klicken Sie neben dem zu entfernenden Token auf die Schaltfläche „Löschen“.
 
-So stellen Sie sicher, dass ungenutzte Tokens nicht missbraucht werden können.
+  <img src={require("./img/app-tokens/delete-token.png").default} alt="App-Token löschen" width="1920"/>
+
+Dadurch wird verhindert, dass ungenutzte Tokens missbraucht werden können.
