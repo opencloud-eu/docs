@@ -17,6 +17,7 @@
 
 ### 👤 User Documentation
 
+- first draft e2ee with rclone [[#1194](https://github.com/opencloud-eu/docs/pull/1194)]
 - share extern - new screenshots and adjust the text [[#1298](https://github.com/opencloud-eu/docs/pull/1298)]
 - Roles rework [[#1293](https://github.com/opencloud-eu/docs/pull/1293)]
 - new screenshots and permissions table [[#1297](https://github.com/opencloud-eu/docs/pull/1297)]
