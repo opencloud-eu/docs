@@ -18,6 +18,8 @@
 
 ### 👤 User Documentation
 
+- Ger screenshots 9.x space quota [[#1314](https://github.com/opencloud-eu/docs/pull/1314)]
+- ger/space new member - new screenshots and text adjustments [[#1313](https://github.com/opencloud-eu/docs/pull/1313)]
 - ger/spaces create - new screenshots and text adjustments [[#1310](https://github.com/opencloud-eu/docs/pull/1310)]
 - ger/view-modes - new screnshots and remove old one [[#1307](https://github.com/opencloud-eu/docs/pull/1307)]
 - ger/fileslist - new screenshots and textadjustmens [[#1306](https://github.com/opencloud-eu/docs/pull/1306)]
