@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- ger/search new screenshots and text [[#1330](https://github.com/opencloud-eu/docs/pull/1330)]
 - ger/delte-restore new screenshots [[#1328](https://github.com/opencloud-eu/docs/pull/1328)]
 - ger/upload-download-unzip new screenshots [[#1327](https://github.com/opencloud-eu/docs/pull/1327)]
 - Ger/user admin web dav [[#1325](https://github.com/opencloud-eu/docs/pull/1325)]
