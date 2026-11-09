@@ -1,60 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 900" width="1180" height="900" role="img" aria-label="OpenCloud overview markers">
-<defs><filter id="markerShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-opacity="0.18"/></filter></defs>
-<g fill="#f5401d" filter="url(#markerShadow)">
-<polygon points="69,353 111,360 69,367"/>
-<circle cx="48" cy="360" r="23"/>
-<polygon points="1096,79 1103,37 1110,79"/>
-<circle cx="1103" cy="100" r="23"/>
-<polygon points="226,23 268,30 226,37"/>
-<circle cx="205" cy="30" r="23"/>
-<polygon points="681,21 723,28 681,35"/>
-<circle cx="660" cy="28" r="23"/>
-<polygon points="328,619 335,577 342,619"/>
-<circle cx="335" cy="640" r="23"/>
-<polygon points="324,67 282,74 324,81"/>
-<circle cx="345" cy="74" r="23"/>
-<polygon points="448,146 455,176 462,146"/>
-<circle cx="455" cy="125" r="23"/>
-<polygon points="696,81 738,88 696,95"/>
-<circle cx="675" cy="88" r="23"/>
-<polygon points="807,81 765,88 807,95"/>
-<circle cx="828" cy="88" r="23"/>
-<polygon points="1135,79 1142,37 1149,79"/>
-<circle cx="1142" cy="100" r="23"/>
-<polygon points="1104,338 1146,345 1104,352"/>
-<circle cx="1083" cy="345" r="23"/>
-<polygon points="809,153 767,160 809,167"/>
-<circle cx="830" cy="160" r="23"/>
-<polygon points="824,507 782,514 824,521"/>
-<circle cx="845" cy="514" r="23"/>
-<polygon points="1101,570 1143,577 1101,584"/>
-<circle cx="1080" cy="577" r="23"/>
-<polygon points="1101,618 1143,625 1101,632"/>
-<circle cx="1080" cy="625" r="23"/>
-<polygon points="1101,666 1143,673 1101,680"/>
-<circle cx="1080" cy="673" r="23"/>
-<polygon points="1101,713 1143,720 1101,727"/>
-<circle cx="1080" cy="720" r="23"/>
-<polygon points="553,719 560,677 567,719"/>
-<circle cx="560" cy="740" r="23"/>
-</g>
-<g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="21" text-anchor="middle" dominant-baseline="central">
-<text x="48" y="360">1</text>
-<text x="1103" y="100">2</text>
-<text x="205" y="30">3</text>
-<text x="660" y="28">4</text>
-<text x="335" y="640">5</text>
-<text x="345" y="74">6</text>
-<text x="455" y="125">7</text>
-<text x="675" y="88">8</text>
-<text x="828" y="88">9</text>
-<text x="1142" y="100">10</text>
-<text x="1083" y="345">11</text>
-<text x="830" y="160">12</text>
-<text x="845" y="514">13</text>
-<text x="1080" y="577">14</text>
-<text x="1080" y="625">15</text>
-<text x="1080" y="673">16</text>
-<text x="1080" y="720">17</text>
-<text x="560" y="740">18</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" width="2048" height="1152">
+<g fill="#f42613">
+<polygon points="119.6,480.4 217.5,471.7 119.6,463.0"/>
+<circle cx="96.9" cy="471.7" r="27.3"/>
+<polygon points="1968.8,92.9 1961.0,33.5 1951.4,92.7"/>
+<circle cx="1959.8" cy="115.4" r="27.3"/>
+<polygon points="550.8,52.1 627.6,43.4 550.8,34.7"/>
+<circle cx="528.2" cy="43.4" r="27.3"/>
+<polygon points="1100.8,73.3 1093.6,37.2 1083.4,72.6"/>
+<circle cx="1091.1" cy="95.6" r="27.3"/>
+<polygon points="692.2,779.3 683.5,692.7 674.8,779.3"/>
+<circle cx="683.5" cy="801.9" r="27.3"/>
+<polygon points="403.6,88.1 308.2,96.8 403.6,105.5"/>
+<circle cx="426.3" cy="96.8" r="27.3"/>
+<polygon points="929.9,125.8 850.0,140.3 931.2,143.1"/>
+<circle cx="953.2" cy="132.8" r="27.3"/>
+<polygon points="1474.2,104.3 1538.5,95.6 1474.2,86.9"/>
+<circle cx="1451.5" cy="95.6" r="27.3"/>
+<polygon points="1705.1,90.8 1619.3,95.6 1704.3,108.2"/>
+<circle cx="1727.4" cy="100.6" r="27.3"/>
+<polygon points="2021.0,92.9 2013.2,33.5 2003.6,92.7"/>
+<circle cx="2012.0" cy="115.4" r="27.3"/>
+<polygon points="1932.8,496.6 2012.0,487.9 1932.8,479.2"/>
+<circle cx="1910.1" cy="487.9" r="27.3"/>
+<polygon points="1717.1,183.7 1613.0,192.4 1717.1,201.1"/>
+<circle cx="1739.8" cy="192.4" r="27.3"/>
+<polygon points="1716.8,356.0 1623.0,368.7 1717.5,373.4"/>
+<circle cx="1739.8" cy="363.7" r="27.3"/>
+<polygon points="1889.3,651.7 2010.7,643.0 1889.3,634.3"/>
+<circle cx="1866.6" cy="643.0" r="27.3"/>
+<polygon points="1889.3,706.4 2010.7,697.7 1889.3,689.0"/>
+<circle cx="1866.6" cy="697.7" r="27.3"/>
+<polygon points="1889.3,756.0 2010.7,747.3 1889.3,738.6"/>
+<circle cx="1866.6" cy="747.3" r="27.3"/>
+<polygon points="1450.3,930.7 1441.6,882.6 1432.9,930.7"/>
+<circle cx="1441.6" cy="953.4" r="27.3"/>
+</g><g fill="white" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24.9" text-anchor="middle" dominant-baseline="central">
+<text x="96.9" y="471.7">1</text>
+<text x="1959.8" y="115.4">2</text>
+<text x="528.2" y="43.4">3</text>
+<text x="1091.1" y="95.6">4</text>
+<text x="683.5" y="801.9">5</text>
+<text x="426.3" y="96.8">6</text>
+<text x="953.2" y="132.8">7</text>
+<text x="1451.5" y="95.6">8</text>
+<text x="1727.4" y="100.6">9</text>
+<text x="2012.0" y="115.4">10</text>
+<text x="1910.1" y="487.9">11</text>
+<text x="1739.8" y="192.4">12</text>
+<text x="1739.8" y="363.7">13</text>
+<text x="1866.6" y="643.0">14</text>
+<text x="1866.6" y="697.7">15</text>
+<text x="1866.6" y="747.3">16</text>
+<text x="1441.6" y="953.4">17</text>
 </g></svg>

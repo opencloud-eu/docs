@@ -62,11 +62,10 @@ Allows you to edit, move or delete several selected files at the same time.
 
 ## 8. View Modes
 
-Provides various display options for the file list:
+Provides two display options for the file list:
 
-- List view
-- Tile view
-- Condensed view
+- Gridview
+- Listview
 
 ## 9. View Settings
 
