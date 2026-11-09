@@ -18,6 +18,9 @@
 
 ### 👤 User Documentation
 
+- Ger/user admin app tokens [[#1324](https://github.com/opencloud-eu/docs/pull/1324)]
+- ger/user-admin-settings - adjust text and new screenshots [[#1323](https://github.com/opencloud-eu/docs/pull/1323)]
+- Ger screenshots 9.x space customize [[#1322](https://github.com/opencloud-eu/docs/pull/1322)]
 - Ger screenshots 9.x space delete [[#1321](https://github.com/opencloud-eu/docs/pull/1321)]
 - ger/space-rename - new screenshots [[#1320](https://github.com/opencloud-eu/docs/pull/1320)]
 - Ger screenshots 9.x space disable enable [[#1319](https://github.com/opencloud-eu/docs/pull/1319)]
