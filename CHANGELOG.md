@@ -18,6 +18,8 @@
 
 ### 👤 User Documentation
 
+- Ger screenshots 9.x space delete [[#1321](https://github.com/opencloud-eu/docs/pull/1321)]
+- ger/space-rename - new screenshots [[#1320](https://github.com/opencloud-eu/docs/pull/1320)]
 - Ger screenshots 9.x space disable enable [[#1319](https://github.com/opencloud-eu/docs/pull/1319)]
 - Ger screenshots 9.x space quota [[#1314](https://github.com/opencloud-eu/docs/pull/1314)]
 - ger/space new member - new screenshots and text adjustments [[#1313](https://github.com/opencloud-eu/docs/pull/1313)]
