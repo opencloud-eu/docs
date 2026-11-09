@@ -12,6 +12,7 @@
 
 ### 👷 Admin Documentation
 
+- docs: improve authentication and user management guides [[#1315](https://github.com/opencloud-eu/docs/pull/1315)]
 - docs: improve getting started installation guides [[#1308](https://github.com/opencloud-eu/docs/pull/1308)]
 - clarify the variable names [[#1292](https://github.com/opencloud-eu/docs/pull/1292)]
 
