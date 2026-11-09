@@ -18,6 +18,8 @@
 
 ### 👤 User Documentation
 
+- ger/delte-restore new screenshots [[#1328](https://github.com/opencloud-eu/docs/pull/1328)]
+- ger/upload-download-unzip new screenshots [[#1327](https://github.com/opencloud-eu/docs/pull/1327)]
 - Ger/user admin web dav [[#1325](https://github.com/opencloud-eu/docs/pull/1325)]
 - Ger/user admin app tokens [[#1324](https://github.com/opencloud-eu/docs/pull/1324)]
 - ger/user-admin-settings - adjust text and new screenshots [[#1323](https://github.com/opencloud-eu/docs/pull/1323)]
