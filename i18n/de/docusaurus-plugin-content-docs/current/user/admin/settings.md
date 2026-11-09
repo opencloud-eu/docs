@@ -19,7 +19,7 @@ Um den Admin-Bereich zu öffnen, wählen Sie oben rechts den App-Umschalter und 
 - Versionsübersicht:
   Im Bereich „Allgemein“ können Sie Ihre aktuelle OpenCloud-Version einsehen und prüfen, ob eine neuere Version verfügbar ist.
 - Ankündigungsbanner:
-  Administratoren können allen Benutzern eine organisationsweite Nachricht anzeigen. Eine Anleitung zur Konfiguration finden Sie unter [Ankündigungsbanner](../../admin/configuration/announcement-banner.md).
+  Administratoren können allen Benutzern eine organisationsweite Nachricht anzeigen. Eine Anleitung zur Konfiguration finden Sie unter [Ankündigungsbanner](../../admin/configuration/announcement-banner).
   <img src={require("./img/settings/admin_general.png").default} alt="Allgemeine Admin-Einstellungen" width="1920"/>
 
 :::note
