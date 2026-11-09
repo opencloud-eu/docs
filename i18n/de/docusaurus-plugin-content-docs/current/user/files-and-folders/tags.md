@@ -10,7 +10,9 @@ draft: false
 
 Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, damit Sie diese leichter suchen oder gruppieren können.
 
-## Tag hinzufügen
+Zugewiesene Tags können außerdem verwendet werden, um Dateien und Ordner über die [Suche](./search) zu finden.
+
+## Tag-Einstellungen öffnen
 
 - Öffnen Sie das Kontextmenü für die Datei oder den Ordner.
 - Wählen Sie die Option „Details“.
@@ -29,7 +31,7 @@ Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, damit Sie diese 
 
 - Öffnen Sie die „Details“ der Datei oder des Ordners erneut.
 - Suchen Sie den Tag, den Sie entfernen möchten.
-- Klicken Sie auf das „x“ neben dem Tag, um ihn zu löschen.
-  <img src={require("./img/tags/delete-a-tag.png").default} alt="Auf das x neben dem Tag klicken" width="400"/>
+- Klicken Sie auf das „x“ neben dem Tag, um seine Zuordnung zu diesem Element zu entfernen.
+  <img src={require("./img/tags/delete-a-tag.png").default} alt="Tag-Zuordnung vom Element entfernen" width="400"/>
 
-  Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verknüpft.
+  Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verknüpft. Der Tag selbst bleibt für andere Dateien und Ordner verfügbar.
