@@ -18,6 +18,10 @@
 
 ### 👤 User Documentation
 
+- ger/spaces create - new screenshots and text adjustments [[#1310](https://github.com/opencloud-eu/docs/pull/1310)]
+- ger/view-modes - new screnshots and remove old one [[#1307](https://github.com/opencloud-eu/docs/pull/1307)]
+- ger/fileslist - new screenshots and textadjustmens [[#1306](https://github.com/opencloud-eu/docs/pull/1306)]
+- ger-account-settings new screenshots and text adjustments [[#1305](https://github.com/opencloud-eu/docs/pull/1305)]
 - ger/overview- new screenshot, remove third view [[#1304](https://github.com/opencloud-eu/docs/pull/1304)]
 - science mesh - new screenshots [[#1302](https://github.com/opencloud-eu/docs/pull/1302)]
 - add guest-feature tutorial in user doku [[#1256](https://github.com/opencloud-eu/docs/pull/1256)]
