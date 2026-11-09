@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- Ger screenshots 9.x space disable enable [[#1319](https://github.com/opencloud-eu/docs/pull/1319)]
 - Ger screenshots 9.x space quota [[#1314](https://github.com/opencloud-eu/docs/pull/1314)]
 - ger/space new member - new screenshots and text adjustments [[#1313](https://github.com/opencloud-eu/docs/pull/1313)]
 - ger/spaces create - new screenshots and text adjustments [[#1310](https://github.com/opencloud-eu/docs/pull/1310)]
