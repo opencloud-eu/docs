@@ -10,25 +10,25 @@ draft: false
 
 Bevor Sie einen Space löschen, muss er zuerst deaktiviert werden.
 
-## Space deaktivieren
+## Space zuerst deaktivieren
 
-- Folgen Sie der Anleitung unter [Einen Space deaktivieren](./enable-disable.md), um den Space vor dem Löschen zu deaktivieren.
+- Folgen Sie der Anleitung unter [Einen Space deaktivieren und aktivieren](./enable-disable.md), um den Space vor dem Löschen zu deaktivieren.
 
-- Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, stellen Sie sicher, dass der Filter für deaktivierte Spaces aktiviert ist, damit der Space wieder angezeigt wird.
+- Wenn der Space nach der Deaktivierung nicht mehr sichtbar ist, öffnen Sie oben rechts über das Zahnradsymbol die Anzeigeoptionen und aktivieren Sie „Deaktivierte Spaces anzeigen“.
 
   <img src={require("./img/delete/deactivate-filter.png").default} alt="Deaktivierte Spaces anzeigen" width="1920"/>
 
 ## Space löschen
 
-- Wählen Sie den Space aus, den Sie löschen möchten, oder öffnen Sie das Kontextmenü und klicken Sie auf „Löschen“.
+- Wählen Sie den Space aus, den Sie löschen möchten, oder öffnen Sie das Kontextmenü und wählen Sie „Löschen“ aus.
 
   <img src={require("./img/delete/delete-top-bar.png").default} alt="Space löschen in der oberen Leiste und im Kontextmenü" width="1920"/>
 
 - Bestätigen Sie, dass Sie den Space löschen möchten.
 
-  <img src={require("./img/delete/confirm.png").default} alt="Bestätigen" width="500"/>
+  <img src={require("./img/delete/confirm.png").default} alt="Löschen des Spaces bestätigen" width="1920"/>
 
-:::caution  
+:::caution
 Ein gelöschter Space kann nicht wiederhergestellt werden. Stellen Sie sicher, dass vor dem Löschen keine wichtigen Daten verloren gehen.
 :::
 
