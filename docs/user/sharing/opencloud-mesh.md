@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 50
 id: opencloud-mesh
 title: ScienceMesh
 description: Connect with users on another OpenCloud instance and share files or folders with them.

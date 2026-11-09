@@ -10,6 +10,12 @@ draft: false
 
 Share Roles define what recipients can do with individual shared files and folders.
 
+:::note
+
+Share roles also apply to [Guest Access](../sharing/guest-access.md). An invited guest can receive `Can view (secure)`, `Can view`, `Can upload`, or `Can edit`, depending on the resource type and the OpenCloud configuration. Guest Access is an access method, not a separate User role.
+
+:::
+
 | Share Role        | Access                                                        |
 | :---------------- | :------------------------------------------------------------ |
 | Can view (secure) | Restricted browser viewer with watermarks; no download        |

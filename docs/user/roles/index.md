@@ -8,6 +8,16 @@ title: Roles
 
 OpenCloud uses different role models for different areas of the system. User roles, Space roles, and Share roles are separate from each other and control different permissions.
 
+## Access Methods
+
+People can access content in different ways:
+
+- Public links provide access to anyone who has the link, subject to the link's permissions and optional protection.
+- [Guest Access](../sharing/guest-access.md) gives an invited external recipient access through their email address without creating a regular OpenCloud account.
+- Regular OpenCloud accounts authenticate as users and have a system-wide User role.
+
+These access methods are not User roles. For help choosing an access method, see [Sharing Methods](../sharing/index.md#sharing-methods).
+
 User roles define what a regular account can do across OpenCloud. They control system-wide capabilities, such as administering users or Spaces and creating shares.
 
 Space roles define what a member can do inside a specific Space. They control access to Space content and Space management options.
