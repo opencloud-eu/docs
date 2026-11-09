@@ -26,7 +26,7 @@ Before you delete a Space, it must first be disabled.
 
 - Confirm that you want to delete the Space.
 
-  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="1920pn"/>
+  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="1920"/>
 
 :::caution
 A deleted Space cannot be restored. Make sure that no important data will be lost before you delete it.
