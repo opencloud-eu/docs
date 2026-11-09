@@ -4,7 +4,7 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Svanvith, @asaah262, @openclouders
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @asaah262, @openclouders
 
 ### :octocat: Developer Documentation
 
@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- add guest-feature tutorial in user doku [[#1256](https://github.com/opencloud-eu/docs/pull/1256)]
 - first draft e2ee with rclone [[#1194](https://github.com/opencloud-eu/docs/pull/1194)]
 - share extern - new screenshots and adjust the text [[#1298](https://github.com/opencloud-eu/docs/pull/1298)]
 - Roles rework [[#1293](https://github.com/opencloud-eu/docs/pull/1293)]
