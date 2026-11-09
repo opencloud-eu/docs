@@ -8,9 +8,9 @@ draft: false
 
 # Favoriten
 
-Mit OpenCloud 6.0.0 können Sie häufig verwendete Dateien und Ordner als Favoriten markieren, damit Sie schneller darauf zugreifen können. Die Funktion ist im Web-Client verfügbar.
+Die mit OpenCloud 6.0.0 eingeführte Favoriten-Funktion ermöglicht es Ihnen, häufig verwendete Dateien und Ordner für einen schnelleren Zugriff im Web-Client zu markieren.
 
-Favoriten werden serverseitig gespeichert, auf einer eigenen Favoriten-Seite angezeigt und sind auch in Suchergebnissen und Dateilisten sichtbar. Die Funktion funktioniert in persönlichen und Projekt-Spaces, einschließlich Unterordnern.
+Favorisierte Elemente werden serverseitig gespeichert, auf einer eigenen Favoritenseite angezeigt und sind auch in Suchergebnissen und Dateilisten sichtbar. Die Funktion steht in persönlichen und Projekt-Spaces einschließlich ihrer Unterordner zur Verfügung.
 
 ## Ein Element als Favorit markieren
 
@@ -26,7 +26,21 @@ Favoriten werden serverseitig gespeichert, auf einer eigenen Favoriten-Seite ang
 - Öffnen Sie „Favoriten“ in der linken Seitenleiste des Web-Clients.
   <img src={require("./img/favorites/favorites-personal.png").default} alt="Favoriten-Seite mit mehreren persönlichen Dateien" width="1920"/>
 
-- Die Favoriten-Seite zeigt die Elemente aus dem persönlichen Bereich zusammen an.
+- Auf der Favoritenseite werden die Elemente aus dem persönlichen Space gemeinsam angezeigt.
+
+## Favoriten filtern
+
+Mit den Filtern oberhalb der Favoritenliste können Sie die angezeigten Elemente eingrenzen:
+
+- Öffnen Sie **Typ**, um nur bestimmte Ressourcentypen wie Dokumente, Tabellen, PDF-Dateien, Bilder, Ordner oder Archive anzuzeigen.
+  <img src={require("./img/favorites/favorites-type-filter.png").default} alt="Typfilter in der Favoritenansicht" width="1920"/>
+
+- Öffnen Sie **Tags**, um Favoriten mit einem zugewiesenen Tag anzuzeigen.
+
+- Öffnen Sie **Zuletzt geändert**, um die Ergebnisse auf einen Zeitraum wie heute, die letzten 7 oder 30 Tage, dieses Jahr oder das vergangene Jahr einzugrenzen.
+  <img src={require("./img/favorites/favorites-last-modified-filter.png").default} alt="Filter Zuletzt geändert in der Favoritenansicht" width="1920"/>
+
+Sie können die Filter miteinander kombinieren, um die Favoritenliste weiter einzugrenzen.
 
 ## Einen Favoriten entfernen
 
