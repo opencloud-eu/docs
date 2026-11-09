@@ -2,91 +2,76 @@
 sidebar_position: 30
 id: web-dav
 title: WebDAV
-description: Verbindung zu einem Space via WebDAV
+description: Über WebDAV mit einem Space verbinden
 draft: false
 ---
 
-# Verbindung zu einem Space via WebDAV herstellen
+# Über WebDAV mit einem Space verbinden
 
-Mit WebDAV kannst du OpenCloud-Spaces als Netzlaufwerke auf deinem Gerät einbinden und deine Dateien direkt über den Dateimanager verwalten – ganz ohne Browser.
+Mit WebDAV können Sie OpenCloud-Spaces und -Ordner als Netzlaufwerke auf Ihrem Gerät einbinden und Ihre Dateien ohne Browser direkt über den Dateimanager verwalten.
 
 ## Voraussetzungen
 
 - Ein gültiges OpenCloud-Konto mit aktivierter WebDAV-Information in den Einstellungen
-- Zugriff auf einen Space in OpenCloud
-- Ein WebDAV-Client (z. B. integrierte Unterstützung des Betriebssystems oder [Mountain Duck](https://mountainduck.io/))
-- (Optional, aber empfohlen) Ein App-Token  
-  → [So erstellst du ein App-Token](./app-tokens.md)
+- Zugriff auf eine Ressource in OpenCloud, entweder einen Space, einen Ordner oder das Stammverzeichnis Ihres Kontos
+- Ein WebDAV-Client, beispielsweise die integrierte Unterstützung Ihres Betriebssystems oder [Mountain Duck](https://mountainduck.io/)
+- Falls Ihr WebDAV-Client dies erfordert, ein App-Token
+  → [So erstellen Sie ein App-Token](./app-tokens)
 
 ## Schritt-für-Schritt-Anleitung
 
 ### WebDAV-Informationen in der Oberfläche aktivieren
 
-Um die WebDAV-Informationen für deine Spaces anzuzeigen:
+So zeigen Sie die WebDAV-Informationen für einen Space an:
 
-- Gehe zu den Kontoeinstellungen
-- Aktiviere „WebDAV-Info in der Detailansicht anzeigen“
+- Öffnen Sie das Kontomenü und wählen Sie „Konto verwalten“.
+- Öffnen Sie „Einstellungen“.
+- Aktivieren Sie unter „Ansichtsoptionen“ die Option „WebDAV-Informationen anzeigen“.
 
   <img src={require("./img/webdav/preferences.png").default} alt="WebDAV-Info aktivieren" width="1920"/>
 
-### App-Token erstellen (falls erforderlich)
-
-Einige WebDAV-Clients (insbesondere solche ohne OIDC-Unterstützung wie Mountain Duck) benötigen ein App-Token zur Authentifizierung.
-
-:::note
-Wir empfehlen aus Sicherheitsgründen die Verwendung eines App-Tokens anstelle deines Passworts.
-:::
-
-- Gehe zu Einstellungen > App-Tokens
-- Klicke auf „+ Neu“, gib einen Namen ein und wähle ein Ablaufdatum
-- Kopiere den Token sofort – er wird nur einmal angezeigt  
-  → [Siehe App-Token-Anleitung](./app-tokens.md)
-
 ### WebDAV-URL abrufen
 
-Öffne das Info-Panel deines Spaces in der OpenCloud-Weboberfläche.
+Öffnen Sie in der OpenCloud-Weboberfläche das Info-Panel des Spaces, Ordners oder Konto-Stammverzeichnisses, auf das Sie zugreifen möchten.
 
-Du findest dort einen Abschnitt „WebDAV“ – kopiere die vollständige URL. Diese sieht beispielsweise so aus:
+In der Detail-Seitenleiste werden der WebDAV-Pfad und die vollständige WebDAV-URL angezeigt. Verwenden Sie die Schaltfläche zum Kopieren neben der WebDAV-URL. Sie sieht beispielsweise so aus:
 
-`https://cloud.example.de/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
+`https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
 <img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV-URL" width="1920"/>
 
-### Verbindung via WebDAV herstellen
+### Verbindung über WebDAV herstellen
 
-Stelle nun die Verbindung zu deinem Gerät über die WebDAV-URL her:
+Verbinden Sie nun Ihr Gerät über die WebDAV-URL:
 
-- Benutzername: dein OpenCloud-Benutzername
-- Passwort: dein App-Token (oder Passwort, falls erlaubt)
+- Benutzername: Ihr OpenCloud-Benutzername
+- Passwort: ein App-Token oder Ihr OpenCloud-Passwort, falls die Passwortauthentifizierung in Ihrer Bereitstellung aktiviert ist
 
-Du kannst je nach Betriebssystem unterschiedliche Clients verwenden:
+Je nach Betriebssystem können Sie unterschiedliche Clients verwenden:
 
 ## Windows
 
-- Öffne den Datei-Explorer → Klicke auf „Dieser PC“ → Wähle „Netzlaufwerk verbinden“
-- Gib die WebDAV-URL ein
-- Authentifiziere dich mit Benutzername und App-Token
+- Öffnen Sie den Datei-Explorer.
+- Klicken Sie auf „Dieser PC“ und wählen Sie „Netzlaufwerk verbinden“.
+- Geben Sie die WebDAV-URL ein.
+- Authentifizieren Sie sich mit Ihrem Benutzernamen und Passwort oder App-Token.
 
 ## macOS
 
-- Wähle im Finder „Gehe zu“ > „Mit Server verbinden…“
-- Gib die WebDAV-URL ein
-- Melde dich mit deinen Zugangsdaten oder dem App-Token an
+- Wählen Sie im Finder „Gehe zu“ > „Mit Server verbinden …“.
+- Geben Sie die WebDAV-URL ein.
+- Melden Sie sich mit Ihren Anmeldedaten oder Ihrem App-Token an.
 
 ## Linux
 
-- Nutze die Funktion „Mit Server verbinden“ deines Dateimanagers
-- Format der URL:  
-  `davs://cloud.beispiel.de/remote.php/dav/spaces/<SPACE-ID>/`
+- Verwenden Sie die Funktion „Mit Server verbinden“ Ihres Dateimanagers.
+- Verwenden Sie für die URL das folgende Format:
+  `davs://cloud.example.com/remote.php/dav/spaces/<SPACE-ID>/`
 
 :::note
-Nach erfolgreicher Verbindung verhält sich dein Space wie ein normaler Ordner.
-:::
+Nach der Verbindungsherstellung verhält sich Ihr Space wie ein normaler Ordner.
 
-:::note
-
-- Wenn dein WebDAV-Client OIDC unterstützt, ist ein App-Token eventuell nicht erforderlich
-- Verwende immer `https://` für einen sicheren Zugriff
-- App-Tokens können jederzeit in den Kontoeinstellungen widerrufen werden
+- Wenn Ihr Client OIDC unterstützt, benötigen Sie möglicherweise kein App-Token.
+- Verwenden Sie `https://`, um einen sicheren Zugriff zu gewährleisten.
 
 :::
