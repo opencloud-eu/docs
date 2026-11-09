@@ -51,6 +51,9 @@ draft: false
 Wenn die Funktion aktiviert ist, können Sie gepackte Dateien in der Cloud entpacken.
 
 - Wählen Sie die ZIP-Datei in der Dateiliste aus und öffnen Sie das Kontextmenü mit einem Rechtsklick auf die Datei oder über die drei Punkte daneben.
+
+  <img src={require("./img/upload-download-unzip/zip-datei.png").default} alt="Ausgewählte ZIP-Datei" width="1920"/>
+
 - Wählen Sie „Entpacken“.
 
   <img src={require("./img/upload-download-unzip/unzip-options-fullpage.png").default} alt="Entpacken-Optionen im Vollbild" width="1920"/>
