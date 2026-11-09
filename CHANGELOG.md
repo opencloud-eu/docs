@@ -18,6 +18,7 @@
 
 ### 👤 User Documentation
 
+- Ger/user admin web dav [[#1325](https://github.com/opencloud-eu/docs/pull/1325)]
 - Ger/user admin app tokens [[#1324](https://github.com/opencloud-eu/docs/pull/1324)]
 - ger/user-admin-settings - adjust text and new screenshots [[#1323](https://github.com/opencloud-eu/docs/pull/1323)]
 - Ger screenshots 9.x space customize [[#1322](https://github.com/opencloud-eu/docs/pull/1322)]
