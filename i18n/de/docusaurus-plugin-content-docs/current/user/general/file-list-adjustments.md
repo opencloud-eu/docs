@@ -1,31 +1,32 @@
 ---
 sidebar_position: 30
 id: customization-file-list
-title: Anpassungen der Datei-Liste
-description: Anpassungen der Datei-Liste in OpenCloud
+title: Dateiliste anpassen
+description: Passen Sie die Anzeige von Dateien und Ordnern in OpenCloud an
 draft: false
 ---
 
-# Anpassungen der Datei-Liste in OpenCloud
+# Dateiliste in OpenCloud anpassen
 
-Wenn Sie auf das Einstellungssymbol auf der rechten Seite der Benutzeroberfläche klicken, gelangen Sie zu den Optionen für die Anpassung der Ansicht. Hier können Sie die Anzeige anpassen
+Wählen Sie das Einstellungssymbol auf der rechten Seite der Dateiliste aus, um die Anzeigeoptionen zu öffnen.
 
 ## Verfügbare Optionen
 
-<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400"/>
+<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Einstellungssymbol für die Dateiliste" width="400"/>
 
 - Versteckte Dateien anzeigen
   - Aktivieren oder deaktivieren Sie die Anzeige von versteckten Dateien.
   - Bei versteckten Dateien handelt es sich oft um System- oder Konfigurationsdateien.
 
-- Dateierweiterungen anzeigen
-  - Legen Sie fest, ob die Dateierweiterungen (z. B. `.docx`, `.jpg`) hinter den Dateinamen angezeigt werden sollen. Dies erleichtert die Identifizierung von Dateitypen.
+- Dateiendungen anzeigen
+  - Legen Sie fest, ob Dateiendungen wie `.docx` und `.jpg` hinter den Dateinamen angezeigt werden. Dadurch lassen sich Dateitypen leichter erkennen.
 
-- Dateien pro Seite
-  - Geben Sie an, wie viele Dateien pro Seite in einem Ordner angezeigt werden sollen.
-  - Nützlich für das Navigieren in Ordnern mit vielen Dateien.
+- Ordner zuerst
+  - Legen Sie fest, ob Ordner vor Dateien angezeigt werden.
 
-- Kachelgröße
-  - Passen Sie die Größe der Symbole und Schaltflächen an:
-  - Kleine Kacheln für eine kompaktere Ansicht.
-  - Große Kacheln für eine übersichtlichere Ansicht.
+- Elemente pro Seite
+  - Legen Sie fest, wie viele Dateien und Ordner pro Seite angezeigt werden.
+  - Dies erleichtert die Navigation in Ordnern mit vielen Elementen.
+
+- Rastergröße
+  - Passen Sie mit dem Schieberegler die Größe der Elemente in der Rasteransicht an.
