@@ -24,7 +24,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
 - Update your package list:
 
   ```bash
-  sudo apt update && apt upgrade
+  sudo apt update && sudo apt upgrade
   ```
 
 - Install Git using the following command:

@@ -22,8 +22,7 @@ Or use vim, code, or gedit as you prefer.
 
 ## Add or modify these Environment Variables
 
-Adjust the following lines in your `.env` file according to your SMTP provider and requirements.  
-Note: `SMTP_TRANSPORT_ENCRYPTION` and `SMTP_INSECURE` may vary depending on your setup.
+Adjust the following lines in your `.env` file according to your SMTP provider and requirements.
 
 SMTP Settings:
 
@@ -38,7 +37,13 @@ SMTP_INSECURE=true
 SMTP_AUTHENTICATION=auto
 ```
 
-See section [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) in the developers documentation for possible values for these variables. Note, that the environment variables are prefixed with `NOTIFICATIONS_`, so `NOTIFICATIONS_SMTP_AUTHENTICATION` shows possible values for `SMTP_AUTHENTICATION` in the `.env` file.
+For available configuration options and values, see the [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) section in the developer documentation.
+
+The variables used in the `.env` file of `opencloud-compose` are mapped to the corresponding OpenCloud environment variables in `docker-compose.yml`. Their names are not always identical.
+
+For example, `SMTP_TRANSPORT_ENCRYPTION` in the `.env` file maps to `NOTIFICATIONS_SMTP_ENCRYPTION` in OpenCloud, not `NOTIFICATIONS_SMTP_TRANSPORT_ENCRYPTION`.
+
+When configuring OpenCloud directly without `opencloud-compose`, use the environment variable names listed in the developer documentation.
 
 Per default the `notifications` service is disabled. To send out notifications, the service must be enabled via:
 

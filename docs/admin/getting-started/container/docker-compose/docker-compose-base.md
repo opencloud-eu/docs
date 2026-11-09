@@ -20,7 +20,7 @@ If you already have an external reverse proxy (Nginx, HAProxy, etc.) or prefer t
 
 ## Prerequisites
 
-- Four domains pointing to your server:
+- DNS records for the services you enable:
   - `cloud.YOUR.DOMAIN` → OpenCloud frontend
   - `collabora.YOUR.DOMAIN` → Collabora Online Server
   - `traefik.YOUR.DOMAIN` → Traefik dashboard

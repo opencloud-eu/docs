@@ -18,13 +18,13 @@ People can access content in different ways:
 
 These access methods are not User roles. For help choosing an access method, see [Sharing Methods](../sharing/index.md#sharing-methods).
 
-User roles define what a user can do on a system-wide level. They control administrative permissions, such as managing users, groups, and Spaces.
+User roles define what a regular account can do across OpenCloud. They control system-wide capabilities, such as administering users or Spaces and creating shares.
 
 Space roles define what a member can do inside a specific Space. They control access to Space content and Space management options.
 
-Share roles define what a recipient can do with shared files and folders. They apply to shares and do not change the user's role in OpenCloud or their role inside a Space.
+Share roles define what a recipient can do with a shared file or folder. Public links use their own link permissions, which are separate from Share roles. Share roles do not change the user's role in OpenCloud or their role inside a Space.
 
-System-wide User role restrictions can still limit actions granted through Space roles or Share roles.
+These permission concepts complement each other. A Space role or Share role does not remove restrictions imposed by a system-wide User role.
 
 ## In this section
 
