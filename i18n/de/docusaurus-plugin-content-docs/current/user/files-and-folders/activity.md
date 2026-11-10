@@ -8,24 +8,26 @@ draft: false
 
 # Aktivitäten einer Datei oder eines Ordners anzeigen
 
-Um herauszufinden, wer eine Datei oder einen Ordner bearbeitet hat und welche Aktionen ausgeführt wurden, gehen Sie wie folgt vor:
+Um zu sehen, wer eine Aktion an einer Datei oder einem Ordner ausgeführt hat und was geändert wurde, gehen Sie wie folgt vor:
 
 ## Aktivitäten anzeigen
 
 - Details öffnen
   - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
-  - Wählen Sie im Kontextmenü "Details“ aus.
+  - Wählen Sie im Kontextmenü „Details“.
 
-    <img src={require("./img/activity/details-button.png").default} alt="Details auswählen im Kontextmenü" width="1920"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920"/>
 
-- Wählen Sie Aktivitäten
-  - In der rechten Seitenleiste öffnet sich ein Fenster. Wählen Sie dort "Aktivitäten“ aus.
+- Aktivitäten auswählen
+  - Wählen Sie in der rechten Seitenleiste „Aktivitäten“.
+
     <img src={require("./img/activity/activities-button.png").default} alt="Aktivitäten auswählen" width="400"/>
 
 - Aktivitäten anzeigen
-  - Alle Aktivitäten, die mit dieser Datei oder diesem Ordner durchgeführt wurden, werden jetzt angezeigt.
+  - Die Aktivitätschronik zeigt die aufgezeichneten Aktionen, die ausführenden Personen und den jeweiligen Zeitpunkt.
+
     <img src={require("./img/activity/activities.png").default} alt="Aktivitäten anzeigen" width="400"/>
 
 :::info
-So können Sie alle Änderungen und Aktionen nachverfolgen.
+Verwenden Sie die Aktivitätschronik, um die letzten Änderungen und Aktionen nachzuvollziehen.
 :::
