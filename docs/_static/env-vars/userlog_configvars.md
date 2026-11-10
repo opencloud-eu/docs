@@ -7,6 +7,7 @@
 |`USERLOG_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`USERLOG_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`USERLOG_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
+|`USERLOG_HTTP_DISABLED`| next |bool|`Disables the HTTP service. Set this to true if the service should only handle events.`|`"false"`|
 |`USERLOG_HTTP_ADDR`| 1.0.0 |string|`The bind address of the HTTP service.`|`"127.0.0.1:9210"`|
 |`USERLOG_HTTP_ROOT`| 1.0.0 |string|`Subdirectory that serves as the root for this HTTP service.`|`"/"`|
 |`OC_CORS_ALLOW_ORIGINS`<br/>`USERLOG_CORS_ALLOW_ORIGINS`| 1.0.0 |[]string|`A list of allowed CORS origins. See following chapter for more details: *Access-Control-Allow-Origin* at \https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin. See the Environment Variable Types description for more details.`|`"[*]"`|
@@ -20,6 +21,7 @@
 |`OC_REVA_GATEWAY`| 1.0.0 |string|`CS3 gateway used to look up user metadata`|`"eu.opencloud.api.gateway"`|
 |`OC_TRANSLATION_PATH`<br/>`USERLOG_TRANSLATION_PATH`| 1.0.0 |string|`(optional) Set this to a path with custom translations to overwrite the builtin translations. Note that file and folder naming rules apply, see the documentation for more details.`|`""`|
 |`OC_DEFAULT_LANGUAGE`| 1.0.0 |string|`The default language used by services and the WebUI. If not defined, English will be used as default. See the documentation for more details.`|`""`|
+|`USERLOG_EVENTS_DISABLED`| next |bool|`Disables listening for events. Set this to true if the service should only handle HTTP requests.`|`"false"`|
 |`OC_EVENTS_ENDPOINT`<br/>`USERLOG_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`USERLOG_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Mandatory when using NATS as event system.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`USERLOG_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
