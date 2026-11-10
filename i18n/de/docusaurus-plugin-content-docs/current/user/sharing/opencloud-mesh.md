@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 50
 id: opencloud-mesh
 title: ScienceMesh
 description: Verbinden Sie sich mit Benutzern einer anderen OpenCloud-Instanz und teilen Sie Dateien oder Ordner mit ihnen.
