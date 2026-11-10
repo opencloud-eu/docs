@@ -1,10 +1,15 @@
 # Changelog
 
-## [3.57.1](https://github.com/opencloud-eu/docs/releases/tag/3.57.1) - 2026-11-10
+## [3.58.0](https://github.com/opencloud-eu/docs/releases/tag/3.58.0) - 2026-11-10
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@Svanvith, @openclouders
+
+### 👤 User Documentation
+
+- ger/create-rename-move - new screenshots and text adjustments [[#1326](https://github.com/opencloud-eu/docs/pull/1326)]
+- ger/radme in folders - new screenshots [[#1329](https://github.com/opencloud-eu/docs/pull/1329)]
 
 ### 📦️ Build&Tools
 
