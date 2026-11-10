@@ -34,6 +34,8 @@ Creating an internal share requires the system-wide User Role `User`, `Space Adm
 
 - Set the access rights for the selected members or groups:
 
+  <img src={require("./img/intern/rights-options.png").default} alt="Available permissions for an internal share" width="400"/>
+
   | Permission            | Description                                                                                                                  |
   | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
   | **Can view**          | Members can view and download the shared content.                                                                            |
@@ -41,7 +43,9 @@ Creating an internal share requires the system-wide User Role `User`, `Space Adm
   | **Can upload**        | Members can view and download the shared content and upload new files. This permission is available for shared folders only. |
   | **Can edit**          | Members can view, download, upload, create, edit, and delete content.                                                        |
 
-  <img src={require("./img/intern/rights-options.png").default} alt="Available permissions for an internal share" width="400"/>
+- Optional: Open the three-dot menu next to the “Share” button and select “Set expiration date”. Choose the date on which the share should expire automatically.
+
+  <img src={require("./img/intern/expiration-date.png").default} alt="Set an expiration date for an internal share" width="400"/>
 
 - Click on “Share” to create the internal share.
 
