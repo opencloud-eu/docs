@@ -3,7 +3,7 @@ sidebar_position: 10
 id: upgrade-9.1.x
 title: Upgrade 9.1.x
 description: Upgrading from OpenCloud 7.2.x to the Production release 9.1.x
-draft: false
+draft: true
 ---
 
 import Tabs from '@theme/Tabs';
@@ -52,9 +52,17 @@ If you run the Rolling release 8.x.x, follow the [Upgrade 9.x.x](../rolling/upgr
 
 Update your local copy of the `opencloud-compose` repository as described in [Update the opencloud-compose Checkout](../upgrade.md#update-the-opencloud-compose-checkout).
 
-## Step 2: Set the New Version
+## Step 2: Verify the New Version
 
-Set the Production image and the new version in your `.env` file:
+After updating the `opencloud-compose` checkout, check which OpenCloud image Docker Compose resolves:
+
+```bash
+docker compose config --images | grep '^opencloudeu/opencloud'
+```
+
+If the output already shows the Production image with the intended 9.1.x release tag, no change to your `.env` file is required.
+
+If the output still shows the previous version or the Rolling image, set the Production image and the exact new version in your `.env` file:
 
 ```env
 OC_DOCKER_IMAGE=opencloudeu/opencloud
@@ -63,10 +71,10 @@ OC_DOCKER_TAG=9.1.x
 
 Replace `9.1.x` with the exact image tag of the version you want to install. Available tags are listed on [Docker Hub](https://hub.docker.com/r/opencloudeu/opencloud/tags).
 
-Pull the new image:
+Run the check again and verify that Docker Compose now resolves the intended Production image. Then pull all images referenced by the updated Compose configuration:
 
 ```bash
-docker compose pull opencloud
+docker compose pull
 ```
 
 ## Step 3: Migrate the Configuration
@@ -106,17 +114,25 @@ Replace `<path-to-your-config-directory>` with the host directory that contains 
   </TabItem>
 </Tabs>
 
-Inside the container, create the patch, test it, and apply it:
+Inside the container, create the configuration diff:
 
 ```bash
 cd /etc/opencloud
 opencloud init --diff
+```
+
+If the command reports `no changes, your config is up to date`, run `exit` and continue with [Step 4: Start OpenCloud](#step-4-start-opencloud).
+
+Otherwise, review the generated patch, test it, and apply it:
+
+```bash
+cat opencloud.config.patch
 patch --dry-run opencloud.yaml < opencloud.config.patch
 patch opencloud.yaml < opencloud.config.patch
 exit
 ```
 
-Review the patch before you apply it, especially if you use custom settings in `opencloud.yaml`. Among other changes, the patch adds the `auth_guest.service_account` settings that are required for guest links.
+Review the patch carefully before you apply it, especially if you use custom settings in `opencloud.yaml`. Among other changes, the patch adds the `auth_guest.service_account` settings that are required for guest links.
 
 For a detailed description of these steps, see [Verify Configuration Changes](../upgrade.md#verify-configuration-changes).
 
@@ -164,12 +180,16 @@ Rebuild the index:
 docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
 ```
 
-Verify that older files can be found in the Web Client. Then list the existing indexes and remove the old one:
+Verify that older files can be found in the Web Client. If you use OpenSearch from `opencloud-compose`, list the existing indexes and remove the old one from within the OpenSearch container:
 
 ```bash
-curl "http://localhost:9200/_cat/indices/opencloud-resources*?v"
-curl -X DELETE "http://localhost:9200/opencloud-resources"
+docker compose exec opensearch \
+  curl "http://localhost:9200/_cat/indices/opencloud-resources*?v"
+docker compose exec opensearch \
+  curl -X DELETE "http://localhost:9200/opencloud-resources"
 ```
+
+If you changed `OPENSEARCH_RESOURCE_INDEX`, replace `opencloud-resources` with the configured index name. If you use an external OpenSearch instance, run the requests against its configured URL and include any required authentication and TLS options.
 
   </TabItem>
 </Tabs>
