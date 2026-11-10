@@ -174,6 +174,8 @@ If you configured a custom `SEARCH_ENGINE_BLEVE_DATA_PATH`, replace `/var/lib/op
   </TabItem>
   <TabItem value="opensearch" label="OpenSearch">
 
+Follow these steps only if your OpenCloud 7.2.x installation already used OpenSearch. If it used the default Bleve backend, follow the Bleve instructions instead.
+
 Rebuild the index:
 
 ```bash
