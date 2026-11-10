@@ -8,6 +8,7 @@ debug:
   pprof: false
   zpages: false
 http:
+  disabled: false
   addr: 127.0.0.1:9210
   root: /
   cors:
@@ -35,6 +36,7 @@ reva_gateway: eu.opencloud.api.gateway
 translation_path: ""
 default_language: ""
 events:
+  disabled: false
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
   tls_insecure: false
