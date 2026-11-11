@@ -88,7 +88,7 @@ Documents, images, videos, and audio files can be viewed directly in the browser
 
 The web interface also provides:
 
-- Previews of HEIC, HEIF, and AVIF photos, for example from smartphones. This requires the imagor thumbnail generator.
+- Previews of HEIC, HEIF, and AVIF photos, for example from smartphones. This requires the imagor thumbnail generator, which is not enabled by default. For setup instructions, see [Thumbnailer](./configuration/thumbnailer/thumbnailer.md).
 - Playback of motion photos, such as Apple Live Photos.
 - An EPUB reader with full-text search, table of contents, and a mobile layout.
 - Secure display of SVG files. Embedded scripts are removed before display.
@@ -121,7 +121,7 @@ The OpenCloud web interface is optimized according to the European Accessibility
 
 ### Email Notifications
 
-Users receive email notifications about events such as new shares or membership changes in a Space. Notification emails use a consistent design based on the OpenCloud Design System and support dark mode in compatible email clients. Daily and weekly summaries are available.
+Users receive email notifications about events such as new shares or membership changes in a Space. Daily and weekly summaries are available.
 
 ### Customizable View Modes
 
@@ -353,7 +353,7 @@ Professional or premium subscription customers receive early security notificati
 
 ### Kubernetes Deployment
 
-OpenCloud can be deployed as containerized microservices in Kubernetes clusters using Helm charts for installation, scaling, and upgrades. Automated orchestration enables load balancing, self-healing, zero-downtime deployments, and dynamic scaling. The Helm chart also supports Red Hat OpenShift. Helm hooks automatically migrate the search index during upgrades.
+OpenCloud can be deployed as containerized microservices in Kubernetes clusters using Helm charts for installation, scaling, and upgrades. Automated orchestration enables load balancing, self-healing, zero-downtime deployments, and dynamic scaling. OpenCloud is compatible with Red Hat OpenShift. Helm hooks automatically migrate the search index during upgrades.
 :::info supported within the [professional or premium subscription](https://opencloud.eu/en/product/service-and-support)
 :::
 
