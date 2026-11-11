@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Add guest feature in admin doku [[#1257](https://github.com/opencloud-eu/docs/pull/1257)]
 - Add imagor thumbnailer tutorial [[#1295](https://github.com/opencloud-eu/docs/pull/1295)]
 
 ### 👤 User Documentation
