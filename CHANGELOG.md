@@ -12,6 +12,8 @@
 
 ### 👤 User Documentation
 
+- ger/filedrop new screenshot and textadjustments [[#1341](https://github.com/opencloud-eu/docs/pull/1341)]
+- ger/science mesh new screenshots [[#1343](https://github.com/opencloud-eu/docs/pull/1343)]
 - ger/share extern new screenshot and textadjustments [[#1340](https://github.com/opencloud-eu/docs/pull/1340)]
 - ger/share intern new screenshots, add exparation date (ger+eng) and t… [[#1339](https://github.com/opencloud-eu/docs/pull/1339)]
 - ger/e2ee with rclone [[#1338](https://github.com/opencloud-eu/docs/pull/1338)]
