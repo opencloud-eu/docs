@@ -12,6 +12,11 @@
 
 ### 👤 User Documentation
 
+- ger/share extern new screenshot and textadjustments [[#1340](https://github.com/opencloud-eu/docs/pull/1340)]
+- ger/share intern new screenshots, add exparation date (ger+eng) and t… [[#1339](https://github.com/opencloud-eu/docs/pull/1339)]
+- ger/e2ee with rclone [[#1338](https://github.com/opencloud-eu/docs/pull/1338)]
+- ger/activities new screenshots and text adjustments [[#1337](https://github.com/opencloud-eu/docs/pull/1337)]
+- ger/versions new screenshots and text adjustments [[#1336](https://github.com/opencloud-eu/docs/pull/1336)]
 - ger/shortcuts new screenshots and textadjustments [[#1333](https://github.com/opencloud-eu/docs/pull/1333)]
 - ger/tags new screnshots and text adjustments [[#1332](https://github.com/opencloud-eu/docs/pull/1332)]
 - ger/create-rename-move - new screenshots and text adjustments [[#1326](https://github.com/opencloud-eu/docs/pull/1326)]
