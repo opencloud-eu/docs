@@ -1,5 +1,5 @@
 
-2026-11-10-00-06-21
+2026-11-11-00-10-01
 
 ## Deprecation Notice
 
@@ -122,7 +122,7 @@
 |`STORAGE_USERS_EVENTS_NUM_CONSUMERS`| 1.0.0 |int|`The amount of concurrent event consumers to start. Event consumers are used for post-processing files. Multiple consumers increase parallelisation, but will also increase CPU and memory demands. The setting has no effect when the OC_ASYNC_UPLOADS is set to false. The default and minimum value is 1.`|`"0"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`STORAGE_USERS_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`STORAGE_USERS_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`OC_CACHE_STORE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"storage-users"`|
 |`OC_CACHE_TTL`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`"24h0m0s"`|
@@ -132,7 +132,7 @@
 |`OC_CACHE_ENABLE_TLS`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
 |`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`STORAGE_USERS_FILEMETADATA_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided STORAGE_USERS_FILEMETADATA_CACHE_TLS_INSECURE will be seen as false.`|`""`|
-|`OC_CACHE_STORE`<br/>`STORAGE_USERS_ID_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_CACHE_STORE`<br/>`STORAGE_USERS_ID_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. The 'posix' driver only supports 'nats-js-kv'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_USERS_ID_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"ids-storage-users"`|
 |`OC_CACHE_TTL`<br/>`STORAGE_USERS_ID_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens have no expiration. Defaults to 300s which is derived from the underlaying package though not explicitly set as default. See the Environment Variable Types description for more details.`|`"0s"`|

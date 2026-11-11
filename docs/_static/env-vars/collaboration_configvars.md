@@ -16,7 +16,7 @@
 |`COLLABORATION_FONT_ASSET_PATH`| 7.3.0 |string|`Serve fonts from a path on the filesystem instead of the builtin assets. If not defined, the root directory derives from $OC_BASE_DATA_PATH/collaboration/fonts`|`"/var/lib/opencloud/collaboration/fonts"`|
 |`COLLABORATION_FONT_PREVIEW_TEXT`| 7.3.0 |string|`The text that will be displayed in the font preview.`|`"OpenCloud"`|
 |`COLLABORATION_FONT_BASE_URL`| 7.3.0 |string|`The base URL under which the font files are served. It must match the URL configured in the remote_font_config of the office suite. If not set, it defaults to $OC_URL/collaboration/fonts`|`""`|
-|`OC_PERSISTENT_STORE`<br/>`COLLABORATION_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_PERSISTENT_STORE`<br/>`COLLABORATION_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`COLLABORATION_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`COLLABORATION_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"collaboration"`|
 |`COLLABORATION_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|
