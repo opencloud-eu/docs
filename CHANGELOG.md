@@ -12,6 +12,8 @@
 
 ### 👤 User Documentation
 
+- ger/shortcuts new screenshots and textadjustments [[#1333](https://github.com/opencloud-eu/docs/pull/1333)]
+- ger/tags new screnshots and text adjustments [[#1332](https://github.com/opencloud-eu/docs/pull/1332)]
 - ger/create-rename-move - new screenshots and text adjustments [[#1326](https://github.com/opencloud-eu/docs/pull/1326)]
 - ger/radme in folders - new screenshots [[#1329](https://github.com/opencloud-eu/docs/pull/1329)]
 
