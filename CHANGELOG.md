@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.58.0](https://github.com/opencloud-eu/docs/releases/tag/3.58.0) - 2026-11-10
+## [3.58.0](https://github.com/opencloud-eu/docs/releases/tag/3.58.0) - 2026-11-11
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @openclouders
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- Add imagor thumbnailer tutorial [[#1295](https://github.com/opencloud-eu/docs/pull/1295)]
 
 ### 👤 User Documentation
 
