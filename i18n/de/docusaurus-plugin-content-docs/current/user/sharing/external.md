@@ -10,7 +10,7 @@ draft: false
 
 Öffentliche Links ermöglichen es Ihnen, Dateien und Ordner mit Personen außerhalb Ihrer Organisation zu teilen.
 
-Öffentliche Links verwenden Link-Berechtigungen und identifizieren keine einzelnen Empfänger. Sie unterscheiden sich von internen Freigaberollen und dem [Gastzugang](./guest-access.md). Ein User Light kann einen öffentlichen Link erstellen, wenn öffentliche Links verfügbar sind und die Berechtigungen für die Ressource dies zulassen. Einen Vergleich finden Sie unter [Freigabemethoden](./index.md).
+Öffentliche Links verwenden Link-Berechtigungen und identifizieren keine einzelnen Empfänger. Sie unterscheiden sich von internen Freigaberollen und dem [Gastzugang](./guest-access). Ein User Light kann einen öffentlichen Link erstellen, wenn öffentliche Links verfügbar sind und die Berechtigungen für die Ressource dies zulassen. Einen Vergleich finden Sie unter [Freigabemethoden](./index.md).
 
 ## Schritte zum Erstellen eines öffentlichen Links
 
