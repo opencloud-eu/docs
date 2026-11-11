@@ -10,6 +10,8 @@ draft: false
 
 Dateien und Ordner können innerhalb der Organisation mit einzelnen Mitgliedern oder Gruppen geteilt werden. Dabei können unterschiedliche Zugriffsrechte vergeben werden.
 
+Zum Erstellen einer internen Freigabe ist die systemweite Nutzerrolle `Person`, `Space Admin` oder `Administrator` erforderlich. Ein User Light kann keine internen Freigaben erstellen, auch wenn ihm in einem Space die Rolle `Kann verwalten` zugewiesen wurde. User-Light-Konten können weiterhin Freigaben erhalten und entsprechend den zugewiesenen Berechtigungen mit freigegebenen Inhalten arbeiten. Weitere Informationen finden Sie unter [Nutzerrollen in OpenCloud](../roles/user-roles.md#user-light).
+
 ## Interne Freigabe erstellen
 
 - Öffnen Sie das Drei-Punkte-Menü neben der Datei oder dem Ordner, den Sie freigeben möchten.
@@ -22,9 +24,9 @@ Dateien und Ordner können innerhalb der Organisation mit einzelnen Mitgliedern 
 
   <img src={require("./img/intern/sidebar-window.png").default} alt="Seitenleiste anzeigen" width="1920"/>
 
-- Wählen Sie in der Seitenleiste den Bereich „Interne Freigabe“ aus.
+- Verwenden Sie das Feld „Mit Personen teilen“ am oberen Rand der Seitenleiste.
 
-  <img src={require("./img/intern/share-with-people-section.png").default} alt="Interne Freigabe auswählen" width="400"/>
+  <img src={require("./img/intern/share-with-people-section.png").default} alt="Mit Personen teilen" width="400"/>
 
 - Geben Sie mindestens drei Zeichen in das Suchfeld ein, um nach Mitgliedern oder Gruppen zu suchen.
 
@@ -32,17 +34,20 @@ Dateien und Ordner können innerhalb der Organisation mit einzelnen Mitgliedern 
 
 - Wählen Sie die gewünschte Person oder Gruppe aus der Vorschlagsliste aus.
 
-- Legen Sie die Zugriffsrechte fest:
-  - „Kann anzeigen“:
-    Mitglieder können die Datei oder den Ordner anzeigen und herunterladen. Sie können keine Inhalte bearbeiten oder in freigegebene Ordner hochladen.
-
-  - „Kann hochladen“:
-    Mitglieder können Inhalte anzeigen und herunterladen. Bei Ordnern können sie zusätzlich eigene Dateien hochladen.
-
-  - „Kann bearbeiten“:
-    Mitglieder können Inhalte anzeigen, herunterladen, hochladen, erstellen, bearbeiten und löschen.
+- Legen Sie die Zugriffsrechte für die ausgewählten Mitglieder oder Gruppen fest:
 
   <img src={require("./img/intern/rights-options.png").default} alt="Rechte auswählen" width="400"/>
+
+  | Berechtigung                        | Beschreibung                                                                                                                                                        |
+  | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | **Kann anzeigen**                   | Mitglieder können die freigegebenen Inhalte anzeigen und herunterladen.                                                                                             |
+  | **Kann anzeigen (sichere Ansicht)** | Mitglieder können Dokumente, Bilder und PDF-Dateien nur im Browser anzeigen. Das Herunterladen ist nicht möglich und die Inhalte werden mit Wasserzeichen versehen. |
+  | **Kann hochladen**                  | Mitglieder können die freigegebenen Inhalte anzeigen und herunterladen sowie neue Dateien hochladen. Diese Berechtigung ist nur für freigegebene Ordner verfügbar.  |
+  | **Kann bearbeiten**                 | Mitglieder können Inhalte anzeigen, herunterladen, hochladen, erstellen, bearbeiten und löschen.                                                                    |
+
+- Optional: Öffnen Sie das Drei-Punkte-Menü neben der Schaltfläche „Teilen“ und wählen Sie „Ablaufdatum festlegen“. Wählen Sie das Datum aus, an dem die Freigabe automatisch ablaufen soll.
+
+  <img src={require("./img/intern/expiration-date.png").default} alt="Ablaufdatum für eine interne Freigabe festlegen" width="400"/>
 
 - Klicken Sie auf „Teilen“, um die interne Freigabe zu erstellen.
 
