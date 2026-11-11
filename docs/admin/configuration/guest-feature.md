@@ -61,40 +61,20 @@ docker compose exec opencloud grep -A3 "auth_guest:" /etc/opencloud/opencloud.ya
 
 ## Enable the Guest Feature
 
-The Guest Feature settings must be passed to the OpenCloud container. Adding the variables to the `.env` file alone is not sufficient, because the `opencloud-compose` files do not forward them to the container.
-
-Use a separate Compose file for the Guest Feature instead.
-
-### Create the Compose File
-
-Create the folder `custom` and the file `custom/guest.yml`:
+Enable the Guest Feature in the `.env` file of your `opencloud-compose` deployment:
 
 ```bash
-mkdir -p custom
-nano custom/guest.yml
+nano .env
 ```
 
-Add the following content:
-
-```yaml
-services:
-  opencloud:
-    environment:
-      OC_ENABLE_GUEST_LINKS: 'true'
-```
-
-### Add the File to `COMPOSE_FILE`
-
-Add `custom/guest.yml` to the end of the existing `COMPOSE_FILE` variable in your `.env` file, for example:
+Add or update the following setting:
 
 ```env
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:traefik/opencloud.yml:traefik/collabora.yml:radicale/radicale.yml:custom/guest.yml
+OC_ENABLE_GUEST_LINKS=true
 ```
 
-Keep all files that are already part of your deployment.
-
 :::note
-Make sure that the `.env` file contains only one active `COMPOSE_FILE` line. If there are several lines, only the last one is used.
+The current `opencloud-compose` setup passes `OC_ENABLE_GUEST_LINKS` from the `.env` file to the OpenCloud container. If you use an older checkout, update `opencloud-compose` before enabling the feature.
 :::
 
 ## Restart OpenCloud
@@ -140,7 +120,23 @@ Finally, test the Guest Feature in the web interface:
 
 ## Optional Settings
 
-You can adjust the behavior of the Guest Feature with additional environment variables in `custom/guest.yml`.
+You can adjust the behavior of the Guest Feature with additional environment variables. The standard `opencloud-compose` file does not pass the service-specific `AUTH_GUEST_*` variables from `.env` to the container. To configure them, create a separate Compose file:
+
+```bash
+mkdir -p custom
+nano custom/guest.yml
+```
+
+Add only the settings that you want to change, for example:
+
+```yaml
+services:
+  opencloud:
+    environment:
+      AUTH_GUEST_JWT_TTL: '12h'
+```
+
+Append `custom/guest.yml` to the existing `COMPOSE_FILE` value in `.env`. Keep all Compose files that are already part of your deployment.
 
 | Variable                          | Default | Description                                                                           |
 | --------------------------------- | ------- | ------------------------------------------------------------------------------------- |
@@ -175,7 +171,7 @@ If users see the message `Failed to add share` when they share with a guest:
   docker compose exec opencloud printenv OC_ENABLE_GUEST_LINKS
   ```
 
-  If there is no output, the variable is not passed to the container. Make sure that `custom/guest.yml` is part of `COMPOSE_FILE`.
+  If there is no output, make sure that `.env` contains an active `OC_ENABLE_GUEST_LINKS=true` line and that your `opencloud-compose` checkout is up to date. Then recreate the OpenCloud container with `docker compose up -d`.
 
 ### Guests Do Not Receive an Email
 
@@ -187,4 +183,4 @@ docker compose logs opencloud | grep '"service":"notifications"' | tail -10
 
 Make sure that the `notifications` service is enabled and that your SMTP configuration is working. See [Mail Notifications](./mail-notifications.md) for configuration details and troubleshooting.
 
-Invitations created while email delivery was not working are not sent again. Remove the guest share and invite the guest again.
+After fixing email delivery, remove the guest share and invite the guest again to create a new invitation.
