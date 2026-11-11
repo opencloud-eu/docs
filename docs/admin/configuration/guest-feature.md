@@ -36,7 +36,7 @@ The Guest Feature is provided by the `auth-guest` service.
 - OpenCloud version 9.0.0 or later.
 - A working SMTP configuration for sending invitation emails.
 
-If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../maintenance/upgrade/upgrade.md) and the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x.md) guide before enabling the Guest Feature.
+If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../maintenance/upgrade/upgrade.md) and the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x) guide before enabling the Guest Feature.
 
 :::important
 Before upgrading, check whether a version-specific upgrade guide is available for your target version. These guides may contain additional migration steps, configuration changes, or breaking changes that must be considered.
@@ -57,7 +57,7 @@ docker compose exec opencloud grep -A3 "auth_guest:" /etc/opencloud/opencloud.ya
 ```
 
 - **New installations of OpenCloud 9.0.0 or later:** The output shows the `service_account` settings. They are created automatically during the initial setup. No further action is required.
-- **Installations upgraded from an earlier version:** If there is no output, migrate the configuration as described in the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x.md#guest-links) guide before you continue.
+- **Installations upgraded from an earlier version:** If there is no output, migrate the configuration as described in the [Upgrade 9.x.x](../maintenance/upgrade/upgrade-9.x.x#guest-links) guide before you continue.
 
 ## Enable the Guest Feature
 
