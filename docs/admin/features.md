@@ -88,7 +88,7 @@ Documents, images, videos, and audio files can be viewed directly in the browser
 
 The web interface also provides:
 
-- Previews of HEIC, HEIF, and AVIF photos, for example from smartphones. This requires the imagor thumbnail generator, which is not enabled by default. For setup instructions, see [Thumbnailer](./configuration/thumbnailer/thumbnailer.md).
+- Previews of HEIC, HEIF, and AVIF photos, for example from smartphones. This requires the imagor thumbnail generator, which is not enabled by default. For setup instructions, see [With imagor Previews](https://github.com/opencloud-eu/opencloud-compose#with-imagor-previews).
 - Playback of motion photos, such as Apple Live Photos.
 - An EPUB reader with full-text search, table of contents, and a mobile layout.
 - Secure display of SVG files. Embedded scripts are removed before display.
