@@ -2,7 +2,7 @@
 sidebar_position: 110
 id: versions
 title: Versionen
-description: Verwalten der Versionen von Dateien OpenCloud
+description: Dateiversionen in OpenCloud verwalten
 draft: false
 ---
 
@@ -13,17 +13,19 @@ OpenCloud speichert verschiedene Versionen von Dateien. So können Sie frühere 
 ## Versionen anzeigen und wiederherstellen
 
 - Details öffnen
-  - Klicken Sie mit der rechten Maustaste auf die Datei oder klicken Sie auf die drei Punkte in der entsprechenden Dateizeile.
-  - Wählen Sie „Details“ aus dem Kontextmenü aus.
+  - Klicken Sie mit der rechten Maustaste auf die Datei
+  - oder klicken Sie auf die drei Punkte in der entsprechenden Dateizeile.
+  - Wählen Sie im Kontextmenü „Details“.
     <img src={require("./img/versions/details-button.png").default} alt="Details auswählen" width="1920"/>
 
 - Versionen auswählen
-  - Wählen Sie in der rechten Seitenleiste den Punkt „Versionen“ aus.
+  - Wählen Sie in der sich öffnenden rechten Seitenleiste den Eintrag „Versionen“.
     <img src={require("./img/versions/versions-button.png").default} alt="Versionen auswählen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 - Versionen anzeigen
   - Alle Versionen der Datei werden angezeigt.
   - Sie können nun die gewünschte Version wiederherstellen oder herunterladen.
+
     <img src={require("./img/versions/versions.png").default} alt="Alle Versionen anzeigen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
 
 Mit diesen Schritten können Sie jederzeit auf ältere Versionen Ihrer Dateien zugreifen.
