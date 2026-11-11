@@ -7,7 +7,7 @@
 |`POSTPROCESSING_DEBUG_TOKEN`| 1.0.0 |string|`Token to secure the metrics endpoint.`|`""`|
 |`POSTPROCESSING_DEBUG_PPROF`| 1.0.0 |bool|`Enables pprof, which can be used for profiling.`|`"false"`|
 |`POSTPROCESSING_DEBUG_ZPAGES`| 1.0.0 |bool|`Enables zpages, which can be used for collecting and viewing in-memory traces.`|`"false"`|
-|`OC_PERSISTENT_STORE`<br/>`POSTPROCESSING_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_PERSISTENT_STORE`<br/>`POSTPROCESSING_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`POSTPROCESSING_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`POSTPROCESSING_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"postprocessing"`|
 |`POSTPROCESSING_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|

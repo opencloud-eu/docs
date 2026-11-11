@@ -18,7 +18,7 @@
 |`OC_SYSTEM_USER_ID`| 1.0.0 |string|`ID of the OpenCloud storage-system system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|`""`|
 |`OC_SYSTEM_USER_API_KEY`| 1.0.0 |string|`API key for the STORAGE-SYSTEM system user.`|`""`|
 |`STORAGE_SYSTEM_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
-|`OC_CACHE_STORE`<br/>`STORAGE_SYSTEM_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`STORAGE_SYSTEM_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`STORAGE_SYSTEM_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"storage-system"`|
 |`OC_CACHE_TTL`<br/>`STORAGE_SYSTEM_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the user info cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`"24h0m0s"`|

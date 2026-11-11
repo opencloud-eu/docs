@@ -31,7 +31,7 @@
 |`OC_GRPC_CLIENT_TLS_CACERT`| 1.0.0 |string|`Path/File name for the root CA certificate (in PEM format) used to validate TLS server certificates of the go-micro based grpc services.`|`""`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`NOTIFICATIONS_SERVICE_ACCOUNT_ID`| 1.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`NOTIFICATIONS_SERVICE_ACCOUNT_SECRET`| 1.0.0 |string|`The service account secret.`|`""`|
-|`OC_PERSISTENT_STORE`<br/>`NOTIFICATIONS_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_PERSISTENT_STORE`<br/>`NOTIFICATIONS_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`NOTIFICATIONS_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`NOTIFICATIONS_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"notifications"`|
 |`NOTIFICATIONS_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|

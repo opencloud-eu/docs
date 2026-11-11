@@ -1,5 +1,5 @@
 
-2026-11-10-00-06-21
+2026-11-11-00-10-01
 
 ## Deprecation Notice
 
@@ -12,7 +12,7 @@
 | Name | Introduction Version | Type | Description | Default Value |
 |---|---|---|---|:---|
 |`OC_LOG_LEVEL`<br/>`GRAPH_LOG_LEVEL`| 1.0.0 |string|`The log level. Valid values are: 'panic', 'fatal', 'error', 'warn', 'info', 'debug', 'trace'.`|`"error"`|
-|`OC_CACHE_STORE`<br/>`GRAPH_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`GRAPH_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`GRAPH_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store are configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`GRAPH_CACHE_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"cache-roles"`|
 |`GRAPH_CACHE_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|

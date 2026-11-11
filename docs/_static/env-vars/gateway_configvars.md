@@ -17,7 +17,7 @@
 |`GATEWAY_COMMIT_SHARE_TO_STORAGE_GRANT`| 1.0.0 |bool|`Commit shares to storage grants. This grants access to shared resources for the share receiver directly on the storage.`|`"true"`|
 |`GATEWAY_SHARE_FOLDER_NAME`| 1.0.0 |string|`Name of the share folder in users' home space.`|`"Shares"`|
 |`GATEWAY_DISABLE_HOME_CREATION_ON_LOGIN`| 1.0.0 |bool|`Disable creation of the home space on login.`|`"true"`|
-|`OC_CACHE_STORE`<br/>`GATEWAY_PROVIDER_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"noop"`|
+|`OC_CACHE_STORE`<br/>`GATEWAY_PROVIDER_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"noop"`|
 |`OC_CACHE_STORE_NODES`<br/>`GATEWAY_PROVIDER_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"cache-providers"`|
 |`OC_CACHE_TTL`<br/>`GATEWAY_PROVIDER_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`"5m0s"`|
@@ -27,7 +27,7 @@
 |`OC_CACHE_ENABLE_TLS`<br/>`GATEWAY_PROVIDER_CACHE_ENABLE_TLS`| 7.3.0 |bool|`Enable TLS for the connection to file metadata cache.`|`"false"`|
 |`OC_INSECURE`<br/>`OC_CACHE_TLS_INSECURE`<br/>`GATEWAY_PROVIDER_CACHE_TLS_INSECURE`| 7.3.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
 |`OC_CACHE_TLS_ROOT_CA_CERTIFICATE`<br/>`GATEWAY_PROVIDER_CACHE_TLS_ROOT_CA_CERTIFICATE`| 7.3.0 |string|`The root CA certificate used to validate the server's TLS certificate. If provided GATEWAY_PROVIDER_CACHE_TLS_INSECURE will be seen as false.`|`""`|
-|`OC_CACHE_STORE`<br/>`GATEWAY_CREATE_HOME_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`GATEWAY_CREATE_HOME_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`GATEWAY_CREATE_HOME_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"cache-createhome"`|
 |`OC_CACHE_TTL`<br/>`GATEWAY_CREATE_HOME_CACHE_TTL`| 1.0.0 |Duration|`Default time to live for user info in the cache. Only applied when access tokens has no expiration. See the Environment Variable Types description for more details.`|`"5m0s"`|
