@@ -1,16 +1,17 @@
 ---
 sidebar_position: 30
-title: File Drop
+id: file-drop
+title: File Drop (geheim)
 description: File Drop (geheim)
 draft: false
 ---
 
 # File Drop (geheim) - So funktioniert es
 
-File Drop ermöglicht es Personen, die einen bestimmten Link erhalten, Dateien in einen freigegebenen Ordner hochzuladen.
+File Drop (geheim) ermöglicht es Personen, die einen bestimmten Link erhalten, Dateien in einen freigegebenen Ordner hochzuladen.
 Die Linkempfänger können die Dateien, die sich bereits im Ordner befinden, nicht sehen.
 
-## Einen File Drop erstellen
+## File Drop (geheim) erstellen
 
 - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf das Drei-Punkte-Menü neben dem Namen, um das Kontextmenü zu öffnen.
 - Wählen Sie im Kontextmenü „Teilen“ aus.
@@ -33,13 +34,13 @@ Die Linkempfänger können die Dateien, die sich bereits im Ordner befinden, nic
 - Der Empfänger öffnet den erhaltenen Link in einem Browser und gibt das Passwort ein. Anschließend klickt er auf „Weiter“.
   <img src={require("./img/file-drop/password-and-continue.png").default} alt="Passwort eingeben und weiter" width="1920" />
 - Dateien hochladen:
-  - Der File-Drop-Ordner wird geöffnet. Der Empfänger kann Dateien hochladen, ohne den vorhandenen Inhalt des Ordners zu sehen.
+  - File Drop (geheim) wird geöffnet. Der Empfänger kann Dateien hochladen, ohne den vorhandenen Inhalt des Ordners zu sehen.
     <img src={require("./img/file-drop/file-drop-area.png").default} alt="File-Drop-Bereich" width="1920" />
-  - Unten rechts erscheint ein Pop-up-Fenster, das bestätigt, dass der Upload erfolgreich war.
+  - Nach Abschluss des Uploads erscheint eine Bestätigungsseite. Eine Benachrichtigung unten rechts zeigt an, wie viele Dateien hochgeladen wurden.
     <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload-Bestätigung" width="1920" />
 
 :::important
 Empfänger haben keinen Zugriff auf vorhandene Dateien. Sie können nur neue Dateien hinzufügen.
 :::
 
-Jetzt wissen Sie, wie Sie einen File-Drop-Link freigeben.
+Jetzt wissen Sie, wie Sie einen Link für File Drop (geheim) teilen.
