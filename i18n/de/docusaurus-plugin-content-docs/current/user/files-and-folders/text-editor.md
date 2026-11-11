@@ -34,11 +34,11 @@ Zum Bearbeiten einer Datei benötigen Sie die entsprechende Berechtigung. Mit Le
 
 Welches Format sich am besten eignet, hängt davon ab, wie Sie das Dokument verwenden möchten.
 
-| Format | Geeignet für | Formatierungsmöglichkeiten |
-| --- | --- | --- |
-| Markdown (`.md`) | Dokumente, die Sie auch außerhalb von OpenCloud mit anderen Markdown-Editoren bearbeiten möchten | Überschriften, Textauszeichnungen, Listen, Zitate, Links, Bilder, Tabellen und Code |
+| Format                      | Geeignet für                                                                                       | Formatierungsmöglichkeiten                                                                                                                            |
+| --------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Markdown (`.md`)            | Dokumente, die Sie auch außerhalb von OpenCloud mit anderen Markdown-Editoren bearbeiten möchten   | Überschriften, Textauszeichnungen, Listen, Zitate, Links, Bilder, Tabellen und Code                                                                   |
 | OpenCloud-Notiz (`.ocnote`) | Notizen mit zusätzlichen Formatierungsmöglichkeiten, die Sie hauptsächlich in OpenCloud bearbeiten | Markdown-ähnliche Funktionen sowie Schriftgröße, Text- und Hintergrundfarben, Zeilenabstand, Textausrichtung, Unterstreichung, Tief- und Hochstellung |
-| Einfacher Text (`.txt`) | Texte ohne Formatierung, beispielsweise Protokolle oder einfache Notizen | Keine Textformatierung; Suchen, Ersetzen und Drucken sind weiterhin möglich |
+| Einfacher Text (`.txt`)     | Texte ohne Formatierung, beispielsweise Protokolle oder einfache Notizen                           | Keine Textformatierung; Suchen, Ersetzen und Drucken sind weiterhin möglich                                                                           |
 
 OpenCloud-Notizen werden als `.ocnote`-Dateien im JSON-Format gespeichert. Sie sind keine Markdown-Dateien und bieten zusätzliche Formatierungsmöglichkeiten.
 

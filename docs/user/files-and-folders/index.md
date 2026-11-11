@@ -24,7 +24,6 @@ This section covers common day-to-day tasks such as creating and moving content,
 
 - [Text Editor](./text-editor.md)  
   Create and edit Markdown files, OpenCloud Notes, and plain text files directly in your browser. Format content and collaborate on documents in real time.
-  
 - [README files in folders](./readme-files.md)  
   Add a `README.md` file to a folder so OpenCloud renders it above the file list.
 
