@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- Rework feature list in admin section [[#1296](https://github.com/opencloud-eu/docs/pull/1296)]
 - rework text for better clairification [[#1345](https://github.com/opencloud-eu/docs/pull/1345)]
 - Add guest feature in admin doku [[#1257](https://github.com/opencloud-eu/docs/pull/1257)]
 - Add imagor thumbnailer tutorial [[#1295](https://github.com/opencloud-eu/docs/pull/1295)]
