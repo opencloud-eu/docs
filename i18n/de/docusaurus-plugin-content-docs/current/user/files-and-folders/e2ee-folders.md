@@ -14,7 +14,7 @@ Um einen Ende-zu-Ende-verschlüsselten Ordner zu öffnen, benötigt ein Benutzer
 
 :::important
 
-Ende-zu-Ende-verschlüsselte Ordner sind derzeit für die Verwendung mit dem Web Client vorgesehen. Mobile und Desktop Clients unterstützen den E2EE-Ablauf nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern.
+Ende-zu-Ende-verschlüsselte Ordner werden im OpenCloud Web Client unterstützt. Sie können außerdem lokal mit rclone auf diese Ordner zugreifen. rclone ist ein separates Werkzeug und kein OpenCloud-Client. Die OpenCloud Desktop- und Mobile-Clients unterstützen den E2EE-Ablauf derzeit nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern. Weitere Informationen finden Sie unter [Mit rclone auf Ende-zu-Ende-verschlüsselte Ordner zugreifen](./e2ee-folders-rclone).
 
 :::
 
@@ -47,13 +47,15 @@ Wenn die Ende-zu-Ende-Verschlüsselung aktiviert ist, fügt OpenCloud dem Ordner
 
 <img src={require("./img/e2ee-folders/encryption-enabled.png").default} alt="Ende-zu-Ende-Verschlüsselung für den neuen Ordner aktiviert" width="400"/>
 
-Klicken Sie auf „Fortfahren“.
+Klicken Sie auf „Weiter“.
 
 ## Ordnerpasswort festlegen
 
 Nach dem Aktivieren der Ende-zu-Ende-Verschlüsselung müssen Sie ein Passwort für den Ordner festlegen.
 
 Dieses Passwort entsperrt den verschlüsselten Ordner und wird benötigt, um auf die darin enthaltenen Dateien zuzugreifen.
+
+Der Dialog zeigt die Passwortanforderungen an und kennzeichnet jede erfüllte Anforderung.
 
 <img src={require("./img/e2ee-folders/set-password.png").default} alt="Passwort für den verschlüsselten Ordner festlegen" width="400"/>
 
@@ -64,6 +66,9 @@ Der Dialog bietet folgende Funktionen:
 
 - „Passwort kopieren“ kopiert das Passwort in die Zwischenablage.
   <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Schaltfläche Passwort kopieren" width="400"/>
+
+- „Passwort generieren“ erstellt ein Passwort, das alle Anforderungen erfüllt.
+  <img src={require("./img/e2ee-folders/generate-password.png").default} alt="Schaltfläche Passwort generieren" width="400"/>
 
 :::important
 
@@ -133,6 +138,10 @@ Sie können einen Ende-zu-Ende-verschlüsselten Ordner für andere OpenCloud-Ben
 Die empfangende Person benötigt das Ordnerpasswort, um den verschlüsselten Ordner zu entsperren und auf seine Inhalte zuzugreifen. Übermitteln Sie das Passwort separat über einen sicheren Kanal.
 
 Öffentliche Links werden für verschlüsselte Ordner oder Dateien nicht unterstützt.
+
+## Mit rclone auf einen verschlüsselten Ordner zugreifen
+
+Sie können einen verschlüsselten Ordner mit rclone auf einem lokalen Computer einbinden. Weitere Informationen finden Sie unter [Mit rclone auf Ende-zu-Ende-verschlüsselte Ordner zugreifen](./e2ee-folders-rclone).
 
 ## Verhalten bei Vorschau und Download
 
