@@ -20,8 +20,6 @@ Use the viewer controls to:
 - Show or hide the photo roll.
 - Enter or exit full screen mode.
 
-<!-- TODO: Update photo-roll-screenshot.png to show the current photo viewer, photo roll, and grouped viewer controls. -->
-
 <img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo roll view in OpenCloud" width="1920"/>
 
 ## Supported image formats
@@ -50,10 +48,6 @@ OpenCloud supports Live Photos created with Apple devices and Motion Photos crea
 - In tile view, hover over the photo to play it in a loop. Use the play icon to start or pause playback.
 - When you open the photo in the preview viewer, it plays once automatically and then displays the still image.
 - Select “Play Live Photo” or “Play Motion Photo” in the viewer to replay it. The control changes to “Pause Live Photo” or “Pause Motion Photo” during playback.
-
-<!-- TODO: Add screenshot showing a recognized Live Photo in tile view. -->
-
-<!-- TODO: Add screenshot showing Live Photo playback controls in the preview viewer. -->
 
 <video controls width="960" style={{ maxWidth: "100%" }} aria-label="Motion Photo playback in OpenCloud">
 
