@@ -1,5 +1,41 @@
 # Changelog
 
+## [3.58.0](https://github.com/opencloud-eu/docs/releases/tag/3.58.0) - 2026-11-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- Rework feature list in admin section [[#1296](https://github.com/opencloud-eu/docs/pull/1296)]
+- rework text for better clairification [[#1345](https://github.com/opencloud-eu/docs/pull/1345)]
+- Add guest feature in admin doku [[#1257](https://github.com/opencloud-eu/docs/pull/1257)]
+- Add imagor thumbnailer tutorial [[#1295](https://github.com/opencloud-eu/docs/pull/1295)]
+
+### 👤 User Documentation
+
+- Ger/e2ee [[#1349](https://github.com/opencloud-eu/docs/pull/1349)]
+- photo/video eng+ger new screenshots and add videos [[#1348](https://github.com/opencloud-eu/docs/pull/1348)]
+- Ger/guests access user [[#1344](https://github.com/opencloud-eu/docs/pull/1344)]
+- ger/filedrop new screenshot and textadjustments [[#1341](https://github.com/opencloud-eu/docs/pull/1341)]
+- ger/science mesh new screenshots [[#1343](https://github.com/opencloud-eu/docs/pull/1343)]
+- ger/share extern new screenshot and textadjustments [[#1340](https://github.com/opencloud-eu/docs/pull/1340)]
+- ger/share intern new screenshots, add exparation date (ger+eng) and t… [[#1339](https://github.com/opencloud-eu/docs/pull/1339)]
+- ger/e2ee with rclone [[#1338](https://github.com/opencloud-eu/docs/pull/1338)]
+- ger/activities new screenshots and text adjustments [[#1337](https://github.com/opencloud-eu/docs/pull/1337)]
+- ger/versions new screenshots and text adjustments [[#1336](https://github.com/opencloud-eu/docs/pull/1336)]
+- ger/shortcuts new screenshots and textadjustments [[#1333](https://github.com/opencloud-eu/docs/pull/1333)]
+- ger/tags new screnshots and text adjustments [[#1332](https://github.com/opencloud-eu/docs/pull/1332)]
+- ger/create-rename-move - new screenshots and text adjustments [[#1326](https://github.com/opencloud-eu/docs/pull/1326)]
+- ger/radme in folders - new screenshots [[#1329](https://github.com/opencloud-eu/docs/pull/1329)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1346](https://github.com/opencloud-eu/docs/pull/1346)]
+- Update docs [[#1342](https://github.com/opencloud-eu/docs/pull/1342)]
+- Update docs [[#1334](https://github.com/opencloud-eu/docs/pull/1334)]
+
 ## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-09
 
 ### ❤️ Thanks to all contributors! ❤️
