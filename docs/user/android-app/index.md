@@ -8,6 +8,8 @@ title: OpenCloud Android App
 
 The OpenCloud Android app provides mobile access to your files, spaces, and shares. It is designed for quick access on the go, with support for setup, search, shortcuts, and file management.
 
+Before installing the app, review the [mobile app requirements](../../admin/getting-started/requirements.md#mobile-apps).
+
 ## What you will find here
 
 - [General](./general/)  
