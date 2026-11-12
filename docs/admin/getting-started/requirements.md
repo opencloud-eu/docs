@@ -30,8 +30,6 @@ The OpenCloud Web Client requires a supported web browser. Supported versions fo
 
 ### Desktop Client
 
-The OpenCloud Desktop Client is designed for file synchronization on local desktop computers and is not intended for use in Virtual Desktop Infrastructure (VDI) environments.
-
 The following requirements are based on the ownCloud Desktop documentation and are provisional until confirmed by the OpenCloud Desktop developers.
 
 | Operating system                | Supported versions                                                                                             |
@@ -39,6 +37,22 @@ The following requirements are based on the ownCloud Desktop documentation and a
 | Windows (x64)                   | Windows 10 (version 1809 or later), Windows 11                                                                 |
 | macOS (Intel and Apple Silicon) | macOS 13 or later                                                                                              |
 | Linux (x86-64)                  | Latest two versions of supported distributions and the previous Ubuntu LTS release, where technically feasible |
+
+#### Virtual Desktop Infrastructure (VDI)
+
+The OpenCloud Desktop Client can be used in Virtual Desktop Infrastructure (VDI) environments. However, the following data locations must be handled consistently across sessions:
+
+- Windows Registry: Stores credentials and sidebar entries.
+- User configuration directory: Stores the Desktop Client configuration.
+- Synchronization directory: Contains locally synchronized files and folders.
+
+All three locations must either be preserved across sessions or completely cleared when a session is reset. Partially retained data may cause configuration or synchronization issues.
+
+:::caution
+
+If synchronized Spaces are deleted between VDI sessions, all metadata must be synchronized again. This can generate significant load on both the OpenCloud server and the client machine, especially for large Spaces.
+
+:::
 
 For installation and setup information, see the [Desktop Client documentation](../../user/desktop-client/).
 
