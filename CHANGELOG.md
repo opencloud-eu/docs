@@ -13,6 +13,7 @@
 
 ### 👤 User Documentation
 
+- photo/video eng+ger new screenshots and add videos [[#1348](https://github.com/opencloud-eu/docs/pull/1348)]
 - Ger/guests access user [[#1344](https://github.com/opencloud-eu/docs/pull/1344)]
 - ger/filedrop new screenshot and textadjustments [[#1341](https://github.com/opencloud-eu/docs/pull/1341)]
 - ger/science mesh new screenshots [[#1343](https://github.com/opencloud-eu/docs/pull/1343)]
