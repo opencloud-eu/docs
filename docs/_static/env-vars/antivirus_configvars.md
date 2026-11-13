@@ -22,6 +22,6 @@
 |`ANTIVIRUS_ICAP_SCAN_TIMEOUT`| 1.0.0 |Duration|`Scan timeout for the ICAP client. Defaults to '5m' (5 minutes). See the Environment Variable Types description for more details.`|`"5m0s"`|
 |`ANTIVIRUS_ICAP_URL`| 1.0.0 |string|`URL of the ICAP server.`|`"icap://127.0.0.1:1344"`|
 |`ANTIVIRUS_ICAP_SERVICE`| 1.0.0 |string|`The name of the ICAP service.`|`"avscan"`|
-|`ANTIVIRUS_MAX_SCAN_SIZE`| 1.0.0 |string|`The maximum scan size the virus scanner can handle.0 means unlimited. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB, TB, TiB, PB, PiB, EB, EiB], example: 2GB.`|`"100MB"`|
+|`ANTIVIRUS_MAX_SCAN_SIZE`| 1.0.0 |string|`The maximum scan size the virus scanner can handle. 0 means unlimited. When using ClamAV, keep it at or below clamd's StreamMaxLength, otherwise clamd refuses bigger files and their uploads fail after the postprocessing retries. Usable common abbreviations: [KB, KiB, MB, MiB, GB, GiB, TB, TiB, PB, PiB, EB, EiB], example: 2GB.`|`"100MB"`|
 |`ANTIVIRUS_MAX_SCAN_SIZE_MODE`| 2.1.0 |MaxScanSizeMode|`Defines the mode of handling files that exceed the maximum scan size. Supported options are: 'skip', which skips files that are bigger than the max scan size, and 'truncate' (default), which only uses the file up to the max size.`|`"partial"`|
 |`ANTIVIRUS_DEBUG_SCAN_OUTCOME`| 1.0.0 |string|`A predefined outcome for virus scanning, FOR DEBUG PURPOSES ONLY! (example values: 'found,infected')`|`""`|
