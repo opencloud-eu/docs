@@ -2,7 +2,7 @@
 sidebar_position: 6
 id: raspberry-pi
 title: Raspberry Pi
-description: OpenCLoud on a Raspberry Pi
+description: OpenCloud on a Raspberry Pi
 draft: false
 ---
 
@@ -21,9 +21,11 @@ It is not recommended for enterprise or critical environments due to the hardwar
 
 ## Install operating system
 
-- Install Raspberry Pi OS  
+- Install the 64-bit version of Raspberry Pi OS  
   A very detailed and understandable guide is available at:  
   [Raspberry Pi Getting Started](https://pimylifeup.com/raspberry-pi-getting-started/)
+
+- Create a user account during the installation, for example in the Raspberry Pi Imager. Current versions of Raspberry Pi OS no longer have a default `pi` user.
 
 - SSH must be enabled if you want to access the machine remotely.
 
@@ -41,8 +43,10 @@ The IP for this can be viewed in your router.
 ### Establish connection via SSH
 
 ```bash
-ssh pi@YOUR-IP
+ssh YOUR-USERNAME@YOUR-IP
 ```
+
+Replace `YOUR-USERNAME` with the user you created during the installation.
 
 After the first login, you should change the password for security reasons:
 
@@ -134,10 +138,22 @@ Skip the next startup command and complete the external storage instructions fir
 If you are using the default Docker data volume, start OpenCloud now:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
-Once started, OpenCloud runs locally on your Raspberry Pi.
+Once started, OpenCloud runs locally on your Raspberry Pi. To follow the startup, run `docker compose logs -f opencloud`.
+
+### Access OpenCloud in your local network
+
+By default, OpenCloud is available at `https://cloud.opencloud.test`. To open it from a computer in your local network, add the following line to the `hosts` file of that computer. Replace `YOUR-IP` with the IP address of your Raspberry Pi:
+
+```text
+YOUR-IP cloud.opencloud.test
+```
+
+The `hosts` file is located at `/etc/hosts` on Linux and macOS and at `C:\Windows\System32\drivers\etc\hosts` on Windows.
+
+Then open `https://cloud.opencloud.test` in your browser and sign in with the user `admin` and the password you set as `INITIAL_ADMIN_PASSWORD`. Your browser displays a certificate warning, because OpenCloud uses a self-signed certificate for this domain.
 
 We will describe how to mount an external disk or USB stick and make OpenCloud available outside the local network using No-IP.
 
@@ -176,8 +192,10 @@ sudo nano /etc/fstab
 Add this line:
 
 ```bash
-LABEL=DATA /mnt/data ext4 auto,defaults 0 0
+LABEL=DATA /mnt/data ext4 defaults,nofail 0 2
 ```
+
+The `nofail` option ensures that the Raspberry Pi still starts if the external drive is not connected.
 
 ### Create the mount point
 
@@ -198,7 +216,7 @@ If an error occurs:
 Run:
 
 ```bash
-systemctl daemon-reload
+sudo systemctl daemon-reload
 ```
 
 And try mounting again.
@@ -225,10 +243,11 @@ Verify that UID and GID `1000:1000` are appropriate for your deployment. Do not 
 
 :::caution Existing installations
 Changing `OC_DATA_DIR` does not migrate existing data from the
-previous Docker volume. Before switching storage on an existing
-installation, back up your OpenCloud data and configuration and
-follow a verified migration procedure. Otherwise, existing files
-may appear missing.
+previous Docker volume. The data directory contains not only files,
+but also users, shares, and the search index. Before switching storage
+on an existing installation, back up your OpenCloud data and
+configuration and follow a verified migration procedure. Otherwise,
+existing files, users, and shares may appear missing.
 :::
 
 If OpenCloud is already running, stop its Compose services:
@@ -254,7 +273,7 @@ OC_DATA_DIR=/mnt/data
 Start OpenCloud with the configured data directory:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 ## Make OpenCloud externally available
@@ -301,18 +320,21 @@ docker compose down
 nano .env
 ```
 
-Edit the `OC_DOMAIN` value:
+Edit the `OC_DOMAIN` value and set your email address for the Let's Encrypt certificate:
 
 ```env
 OC_DOMAIN=opencloud.webhop.me
+TRAEFIK_ACME_MAIL=your@email.com
 ```
+
+Traefik uses this email address to request a valid certificate from Let's Encrypt for your domain.
 
 <img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500"/>
 
-Restart Docker:
+Start OpenCloud again:
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 Now your OpenCloud should be reachable via your URL.
