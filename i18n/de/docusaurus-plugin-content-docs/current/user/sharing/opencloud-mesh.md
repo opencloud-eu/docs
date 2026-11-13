@@ -113,7 +113,7 @@ Der eingeladene Benutzer führt auf seiner OpenCloud-Instanz folgende Schritte a
 
 <img src={require("./img/opencloud-mesh/received-federated-share.png").default} alt="Föderierter Ordner unter Mit mir geteilt auf der empfangenden OpenCloud-Instanz" width="1920" />
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 ### Die ScienceMesh-Anwendung ist nicht sichtbar
 

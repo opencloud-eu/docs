@@ -20,8 +20,6 @@ Mit den Steuerelementen der Vorschau können Sie:
 - Die Fotogalerie ein- oder ausblenden.
 - Den Vollbildmodus aufrufen oder verlassen.
 
-<!-- TODO: photo-roll-screenshot.png aktualisieren, um die aktuelle Fotovorschau, die Fotogalerie und die gruppierten Steuerelemente zu zeigen. -->
-
 <img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo-Roll-Ansicht in OpenCloud" width="1920"/>
 
 ## Unterstützte Bildformate
@@ -50,10 +48,6 @@ OpenCloud unterstützt Live Photos, die mit Apple-Geräten erstellt wurden, und 
 - Bewegen Sie den Mauszeiger in der Kachelansicht über das Foto, um es in einer Schleife abzuspielen. Verwenden Sie das Wiedergabesymbol, um die Wiedergabe zu starten oder anzuhalten.
 - Wenn Sie das Foto in der Vorschau öffnen, wird es einmal automatisch abgespielt. Anschließend wird das Standbild angezeigt.
 - Wählen Sie in der Vorschau „Live Photo abspielen“ oder „Bewegungsaufnahme abspielen“ aus, um es erneut abzuspielen. Während der Wiedergabe ändert sich das Steuerelement in „Live Photo pausieren“ beziehungsweise „Bewegungsaufnahme pausieren“.
-
-<!-- TODO: Screenshot einer erkannten Live Photo in der Kachelansicht hinzufügen. -->
-
-<!-- TODO: Screenshot der Steuerelemente für die Wiedergabe einer Live Photo in der Vorschau hinzufügen. -->
 
 <video controls width="960" style={{ maxWidth: "100%" }} aria-label="Wiedergabe einer Motion Photo in OpenCloud">
 
