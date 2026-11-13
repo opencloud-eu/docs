@@ -46,12 +46,12 @@ This launches an additional container (called `yjs`) using the `opencloudeu/yjs`
 
 All options are set in the `.env` file. All of them are optional.
 
-| Variable                       | Description                                                                                                        | Default                 |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| `YJS_DOCKER_IMAGE`             | Docker image for the yjs container.                                                                                | `opencloudeu/yjs`       |
-| `YJS_DOCKER_TAG`               | Docker tag for the yjs container.                                                                                  | `1.0.0`                 |
-| `YJS_OPENCLOUD_URL`            | URL the yjs server uses to reach OpenCloud. This is an internal address, so no TLS is used between the containers. | `http://opencloud:9200` |
-| `YJS_SHUTDOWN_GRACE_PERIOD_MS` | Grace period in milliseconds for a graceful shutdown. Keep it below the `stop_grace_period` set in `yjs/yjs.yml`.  | `15000`                 |
+| Variable                       | Description                                                                                                        | Default                                                                                            |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| `YJS_DOCKER_IMAGE`             | Docker image for the yjs container.                                                                                | `opencloudeu/yjs`                                                                                  |
+| `YJS_DOCKER_TAG`               | Docker tag for the yjs container. The default is defined in Compose and may change between releases.               | [Current Compose default](https://github.com/opencloud-eu/opencloud-compose/blob/main/yjs/yjs.yml) |
+| `YJS_OPENCLOUD_URL`            | URL the yjs server uses to reach OpenCloud. This is an internal address, so no TLS is used between the containers. | `http://opencloud:9200`                                                                            |
+| `YJS_SHUTDOWN_GRACE_PERIOD_MS` | Grace period in milliseconds for a graceful shutdown. Keep it below the `stop_grace_period` set in `yjs/yjs.yml`.  | `15000`                                                                                            |
 
 The OpenCloud web frontend gets the address of the yjs server through the `WEB_OPTION_YJS_SERVER_URL` variable. The `yjs/yjs.yml` compose file sets this for you. Collaborative editing stays disabled as long as this variable is empty.
 
