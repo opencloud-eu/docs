@@ -165,5 +165,6 @@ password_policy:
   min_special_characters: 1
   banned_passwords_list: ""
 configurable_notifications: true
+server_managed_spaces: false
 groupware:
   enabled: false

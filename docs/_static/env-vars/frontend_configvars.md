@@ -1,5 +1,5 @@
 
-2026-11-13-00-05-41
+2026-11-14-00-06-23
 
 ## Deprecation Notice
 
@@ -135,4 +135,5 @@
 |`OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`<br/>`FRONTEND_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`| 1.0.0 |int|`Define the minimum number of characters from the special characters list to be present. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`<br/>`FRONTEND_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`| 1.0.0 |string|`Path to the 'banned passwords list' file. This only impacts public link password validation. See the documentation for more details.`|`""`|
 |`FRONTEND_CONFIGURABLE_NOTIFICATIONS`| 1.0.0 |bool|`Allow configuring notifications via web client.`|`"true"`|
+|`OC_CLAIM_MANAGED_SPACES_ENABLED`| next |bool|`Mark spaces as managed by the server. Clients like the web UI then block adding or removing users to or from spaces. See the text description for more details.`|`"false"`|
 |`FRONTEND_GROUPWARE_ENABLED`| 3.7.0 |bool|`Enable groupware features. Defaults to false.`|`"false"`|
