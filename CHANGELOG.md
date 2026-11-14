@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-13
+## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@Svanvith, @asaah262, @openclouders
+@AlexAndBear, @Svanvith, @asaah262, @openclouders
 
 ### 👷 Admin Documentation
 
+- publish 9.1.0 release notes [[#1354](https://github.com/opencloud-eu/docs/pull/1354)]
 - docs: improve Raspberry Pi installation guide [[#1311](https://github.com/opencloud-eu/docs/pull/1311)]
 
 ### 👤 User Documentation
