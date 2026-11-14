@@ -8,6 +8,7 @@
 
 ### 👷 Admin Documentation
 
+- publish 7.2.5 and 4.0.9 release notes [[#1356](https://github.com/opencloud-eu/docs/pull/1356)]
 - publish 9.1.0 release notes [[#1354](https://github.com/opencloud-eu/docs/pull/1354)]
 - docs: improve Raspberry Pi installation guide [[#1311](https://github.com/opencloud-eu/docs/pull/1311)]
 
