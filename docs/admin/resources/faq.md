@@ -121,6 +121,8 @@ We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the 
 
 Yes. In case you made a mistake, you can always jump back to older versions of a file. We got your back!
 
+By default, OpenCloud keeps all versions. Administrators can have old versions deleted automatically, according to a cleanup strategy, see [Cleaning Up Old Versions](../configuration/storage/revisions-cleanup.md).
+
 </details>
 
 ## Deployment and Installation
