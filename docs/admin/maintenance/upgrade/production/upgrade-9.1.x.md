@@ -3,7 +3,7 @@ sidebar_position: 10
 id: upgrade-9.1.x
 title: Upgrade 9.1.x
 description: Upgrading from OpenCloud 7.2.x to the Production release 9.1.x
-draft: true
+draft: false
 ---
 
 import Tabs from '@theme/Tabs';
