@@ -1,5 +1,30 @@
 # Changelog
 
+## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @openclouders
+
+### 📦️ Build&Tools
+
+- chore: fail the build on broken Markdown links [[#1374](https://github.com/opencloud-eu/docs/pull/1374)]
+- feat: lazy load images in the docs [[#1373](https://github.com/opencloud-eu/docs/pull/1373)]
+- feat: add syntax highlighting for more code block languages [[#1372](https://github.com/opencloud-eu/docs/pull/1372)]
+- fix: move the 4.0 collabora fonts page into the collabora folder [[#1371](https://github.com/opencloud-eu/docs/pull/1371)]
+- chore: bump typescript to 7.0.2 [[#1369](https://github.com/opencloud-eu/docs/pull/1369)]
+- chore: remove unused raw loader plugin and stale config comments [[#1370](https://github.com/opencloud-eu/docs/pull/1370)]
+- chore: bump @opencloud-eu/prettier-config to 8.2.2 [[#1368](https://github.com/opencloud-eu/docs/pull/1368)]
+- ci: run lint, format and type checks as separate workflows [[#1367](https://github.com/opencloud-eu/docs/pull/1367)]
+- fix: make pnpm typecheck pass and run it in CI [[#1366](https://github.com/opencloud-eu/docs/pull/1366)]
+- feat: enable Docusaurus Faster [[#1365](https://github.com/opencloud-eu/docs/pull/1365)]
+- fix: hide the unmaintained banner on the 4.0 and 7.2 docs [[#1364](https://github.com/opencloud-eu/docs/pull/1364)]
+- chore: compress png images losslessly [[#1363](https://github.com/opencloud-eu/docs/pull/1363)]
+- Update docs [[#1358](https://github.com/opencloud-eu/docs/pull/1358)]
+- chore: remove unreferenced images [[#1361](https://github.com/opencloud-eu/docs/pull/1361)]
+- docs: describe the CI deployment in the README [[#1360](https://github.com/opencloud-eu/docs/pull/1360)]
+- chore: bump dependencies and clean up repo files [[#1359](https://github.com/opencloud-eu/docs/pull/1359)]
+
 ## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
