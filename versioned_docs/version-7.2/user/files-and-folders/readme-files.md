@@ -8,7 +8,7 @@ description: Learn how README.md files are rendered in folders in OpenCloud.
 
 If a folder contains a file named `README.md`, OpenCloud renders its Markdown content above the file list.
 
-<img src={require("./img/readme-files/readme-list-view.png").default} alt="README rendered in list view with the file still visible" width="1920"/>
+<img src={require("./img/readme-files/readme-list-view.png").default} alt="README rendered in list view with the file still visible" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Create a README File
 
@@ -49,4 +49,4 @@ The images are used to show list view, thumbnail view, and image preview behavio
 
 Delete or rename `README.md` to remove the rendered section.
 
-<img src={require("./img/readme-files/readme-removed.png").default} alt="Folder without the rendered README section" width="1920"/>
+<img src={require("./img/readme-files/readme-removed.png").default} alt="Folder without the rendered README section" width="1920" height="1080" loading="lazy" decoding="async"/>

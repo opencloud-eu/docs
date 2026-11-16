@@ -19,7 +19,10 @@ Wenn Sie diese Option auswählen, öffnet sich das Teilen-Menü Ihres Geräts mi
 
 <img src={require("../../img/general/settings/recommend-to-a-friend/recommend to a friend button.png").default}
 alt="Schaltfläche Einem Freund empfehlen"
-height="650"/>
+width="294"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Einladung versenden
 
@@ -35,7 +38,10 @@ Geben Sie einfach den Empfänger ein und senden Sie die Nachricht.
 
 <img src={require("../../img/general/settings/recommend-to-a-friend/message field.png").default}
 alt="Nachrichtenfeld"
-height="650"/>
+width="301"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 :::tip
 

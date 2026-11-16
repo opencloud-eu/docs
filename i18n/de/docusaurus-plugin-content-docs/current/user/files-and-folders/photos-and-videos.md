@@ -20,7 +20,7 @@ Mit den Steuerelementen der Vorschau können Sie:
 - Die Fotogalerie ein- oder ausblenden.
 - Den Vollbildmodus aufrufen oder verlassen.
 
-<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo-Roll-Ansicht in OpenCloud" width="1920"/>
+<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo-Roll-Ansicht in OpenCloud" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Unterstützte Bildformate
 

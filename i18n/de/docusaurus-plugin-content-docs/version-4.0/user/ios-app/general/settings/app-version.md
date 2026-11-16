@@ -17,7 +17,9 @@ Der Bereich **App-Version** zeigt detaillierte Versionsinformationen zur install
 4. Tippen Sie auf **App-Version**.
 
 <img src={require("../../img/settings/app-version/app version button.png").default}
-alt="Schaltfläche App-Version" height="650"/>
+alt="Schaltfläche App-Version" width="294" height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Versionsinformationen kopiert
 
@@ -26,7 +28,9 @@ Nachdem Sie auf **App-Version** getippt haben, werden die vollständigen Version
 Am oberen Bildschirmrand erscheint eine Bestätigung, dass die Versionsinformationen erfolgreich kopiert wurden.
 
 <img src={require("../../img/settings/app-version/copied app version pop up.png").default}
-alt="Bestätigung zum Kopieren der App-Version" height="650"/>
+alt="Bestätigung zum Kopieren der App-Version" width="298" height="650"
+loading="lazy"
+decoding="async"/>
 
 :::tip
 

@@ -13,7 +13,7 @@ OpenCloud verwendet einen Tiptap-basierten Markdown-Editor für Dateien wie `REA
 
 Wenn Sie eine Markdown-Datei öffnen, zeigt OpenCloud sie im Editor an, sodass Sie die Datei direkt im Browser bearbeiten können.
 
-<img src={require("./img/markdown-editor/editor-open.png").default} alt="Markdown-Editor mit einer README-Datei geöffnet" width="1920"/>
+<img src={require("./img/markdown-editor/editor-open.png").default} alt="Markdown-Editor mit einer README-Datei geöffnet" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Sie können Überschriften, Listen, Links, Zitate, Code und andere häufige Formatierungen hinzufügen, ohne die Dateiansicht zu verlassen.
 
@@ -27,7 +27,7 @@ Geben Sie `/` in einer neuen Zeile ein, um das Formatierungsmenü zu öffnen.
 
 Das Menü gibt Ihnen einen schnellen Überblick über die verfügbaren Formatierungsoptionen und erlaubt es Ihnen, diese zu nutzen, ohne sich jede Tastenkombination merken zu müssen.
 
-<img src={require("./img/markdown-editor/slash-menu.png").default} alt="Slash-Menü im Markdown-Editor" width="1920"/>
+<img src={require("./img/markdown-editor/slash-menu.png").default} alt="Slash-Menü im Markdown-Editor" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Das ist besonders hilfreich, wenn Sie schnell formatieren möchten und dabei die Hände auf der Tastatur lassen wollen.
 

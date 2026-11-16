@@ -52,7 +52,7 @@ You want to synchronize the folder `/foo/A`, but your sync root is `/home/bar/Op
 The OpenCloud Desktop Client does not synchronize files starting with `~$`, such as `~$document.docx`.  
 These files are temporary lock files created by Microsoft Office applications (Word, Excel, PowerPoint) while a document is open.
 
-<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Show the ~$ file is excluded from synchronizing" width="500"/>
+<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Show the ~$ file is excluded from synchronizing" width="500" height="420" loading="lazy" decoding="async"/>
 
 They are not actual content files but serve as internal markers to prevent multiple users from editing the same document simultaneously.  
 Once the file is closed, the `~$` file is automatically removed by Office.

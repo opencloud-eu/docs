@@ -16,17 +16,17 @@ Um zu sehen, wer eine Aktion an einer Datei oder einem Ordner ausgeführt hat un
   - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
   - Wählen Sie im Kontextmenü „Details“.
 
-    <img src={require("./img/activity/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Aktivitäten auswählen
   - Wählen Sie in der rechten Seitenleiste „Aktivitäten“.
 
-    <img src={require("./img/activity/activities-button.png").default} alt="Aktivitäten auswählen" width="400"/>
+    <img src={require("./img/activity/activities-button.png").default} alt="Aktivitäten auswählen" width="400" height="1005" loading="lazy" decoding="async"/>
 
 - Aktivitäten anzeigen
   - Die Aktivitätschronik zeigt die aufgezeichneten Aktionen, die ausführenden Personen und den jeweiligen Zeitpunkt.
 
-    <img src={require("./img/activity/activities.png").default} alt="Aktivitäten anzeigen" width="400"/>
+    <img src={require("./img/activity/activities.png").default} alt="Aktivitäten anzeigen" width="400" height="1005" loading="lazy" decoding="async"/>
 
 :::info
 Verwenden Sie die Aktivitätschronik, um die letzten Änderungen und Aktionen nachzuvollziehen.

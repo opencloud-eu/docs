@@ -13,13 +13,13 @@ Mit der Suchleiste in der Kopfleiste können Sie Dateien und Ordner anhand ihrer
 ## So funktioniert die Suche
 
 - Die Suchleiste befindet sich oben in der Kopfleiste der Weboberfläche.
-  <img src={require("./img/search/searchbar.png").default} alt="Suchleiste" width="700"/>
+  <img src={require("./img/search/searchbar.png").default} alt="Suchleiste" width="700" height="124" loading="lazy" decoding="async"/>
 - Tastenkürzel: Drücken Sie `/` oder geben Sie `s` ein, um die Suchleiste zu fokussieren.
 - Klicken Sie auf das Dropdown-Menü neben der Suchleiste.
 - Wählen Sie, ob Sie in allen Dateien oder nur im aktuellen Ordner suchen möchten.
-  <img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="Auswahl, wo gesucht werden soll" width="500"/>
+  <img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="Auswahl, wo gesucht werden soll" width="500" height="135" loading="lazy" decoding="async"/>
 - Geben Sie einen Suchbegriff ein. Die Suche berücksichtigt Datei- und Ordnernamen, Dateiinhalte und zugewiesene Tags.
-  <img src={require("./img/search/search-example.png").default} alt="Suchbeispiel" width="700"/>
+  <img src={require("./img/search/search-example.png").default} alt="Suchbeispiel" width="700" height="747" loading="lazy" decoding="async"/>
 
 ## Mit Tags suchen
 
@@ -31,7 +31,7 @@ Geben Sie den Namen eines zugewiesenen Tags in die Suchleiste ein. Dateien und O
 - Öffnen Sie den Tag-Filter, um die verfügbaren Tags anzuzeigen.
 - Wählen Sie einen Tag aus, um nur Elemente mit diesem Tag anzuzeigen.
 
-<img src={require("./img/search/tag-filter-search-results.png").default} alt="Nach dem Tag Wichtig gefilterte Suchergebnisse" width="1920"/>
+<img src={require("./img/search/tag-filter-search-results.png").default} alt="Nach dem Tag Wichtig gefilterte Suchergebnisse" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Übereinstimmende Suchergebnisse anzeigen
 
@@ -41,4 +41,4 @@ Die Suchergebnisse zeigen, warum ein Element gefunden wurde:
 - Bei Übereinstimmungen im Inhalt wird ein passender Textausschnitt unterhalb des Dateinamens angezeigt.
 - Übereinstimmende Begriffe werden im Textausschnitt hervorgehoben.
 
-<img src={require("./img/search/content-search-results.png").default} alt="Suchergebnisse mit hervorgehobenen Texttreffern" width="1920"/>
+<img src={require("./img/search/content-search-results.png").default} alt="Suchergebnisse mit hervorgehobenen Texttreffern" width="1920" height="1080" loading="lazy" decoding="async"/>

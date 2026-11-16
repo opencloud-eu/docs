@@ -68,7 +68,7 @@ opencloud init --diff
 
 If you see `no changes, your config is up to date`, no further action is needed. Otherwise, update your `opencloud.yaml` file accordingly and start OpenCloud.
 
-<img src={require("../img/init-diff.png").default} alt="init -diff" width="1920"/>
+<img src={require("../img/init-diff.png").default} alt="init -diff" width="1920" height="361" loading="lazy" decoding="async"/>
 
 ## Start OpenCloud with updated image
 

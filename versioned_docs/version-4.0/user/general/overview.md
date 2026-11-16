@@ -10,7 +10,7 @@ draft: false
 
 The OpenCloud web interface consists of several areas that help you to work efficiently with files and settings
 
-<img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
+<img src={require("./img/overview/overview.png").default} alt="Overview" width="1920" height="1093" loading="lazy" decoding="async"/>
 
 ## 1. Left Sidebar
 

@@ -12,7 +12,7 @@ The admin area of OpenCloud provides the main tools for managing your organizati
 
 To open the admin area, select the app switcher in the upper-right corner and then select “Admin Settings”. The most important areas are shown below.
 
-<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## General
 
@@ -20,7 +20,7 @@ To open the admin area, select the app switcher in the upper-right corner and th
   In the General section, you can view your current OpenCloud version and check whether a newer version is available.
 - Announcement banner:
   Administrators can display an organization-wide message to all users. For configuration instructions, see [Announcement Banner](../../admin/configuration/announcement-banner.md).
-  <img src={require("./img/settings/admin_general.png").default} alt="General administration settings" width="1920"/>
+  <img src={require("./img/settings/admin_general.png").default} alt="General administration settings" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 If a security-critical upgrade is available, administrators may also see a warning in the lower-left corner of the web interface.
@@ -38,7 +38,7 @@ An administrator may disable the version check. If this option is turned off, in
   - change user quotas
   - add or remove users from groups
   - allow or block logins for individual users
-    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 If OpenCloud is connected to an external IdP, you can still see the users here, but user management must be done in the IdP.
@@ -52,7 +52,7 @@ If OpenCloud is connected to an external IdP, you can still see the users here, 
   You can create, edit, or delete local groups and add or remove members.
 - Imported groups:  
   External groups that were imported through an external user management system cannot be edited here. These groups are marked with a lock symbol to show that they are locked.
-  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920"/>
+  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Spaces
 
@@ -65,10 +65,10 @@ If OpenCloud is connected to an external IdP, you can still see the users here, 
   - change Space quotas
   - deactivate or activate Spaces
   - delete disabled Spaces
-    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Apps
 
 - App overview:
   Here you can see installed apps, their versions, compatible OpenCloud versions, and their current status.
-  <img src={require("./img/settings/admin_apps.png").default} alt="Admin apps" width="1920"/>
+  <img src={require("./img/settings/admin_apps.png").default} alt="Admin apps" width="1920" height="1080" loading="lazy" decoding="async"/>
