@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.60.1](https://github.com/opencloud-eu/docs/releases/tag/3.60.1) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- ci: label the release pull request automatically [[#1386](https://github.com/opencloud-eu/docs/pull/1386)]
+
 ## [3.60.0](https://github.com/opencloud-eu/docs/releases/tag/3.60.0) - 2026-11-16
 
 ### ❤️ Thanks to all contributors! ❤️
