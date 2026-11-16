@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: fail the build on broken anchors [[#1385](https://github.com/opencloud-eu/docs/pull/1385)]
 - fix: correct the table of contents anchors in the 4.0 and 7.2 service docs [[#1383](https://github.com/opencloud-eu/docs/pull/1383)]
 - Update docs [[#1382](https://github.com/opencloud-eu/docs/pull/1382)]
 - feat: downscale images that are much larger than displayed [[#1379](https://github.com/opencloud-eu/docs/pull/1379)]
