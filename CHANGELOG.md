@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- ci: run lint, format and type checks as separate workflows [[#1367](https://github.com/opencloud-eu/docs/pull/1367)]
 - fix: make pnpm typecheck pass and run it in CI [[#1366](https://github.com/opencloud-eu/docs/pull/1366)]
 - feat: enable Docusaurus Faster [[#1365](https://github.com/opencloud-eu/docs/pull/1365)]
 - fix: hide the unmaintained banner on the 4.0 and 7.2 docs [[#1364](https://github.com/opencloud-eu/docs/pull/1364)]
