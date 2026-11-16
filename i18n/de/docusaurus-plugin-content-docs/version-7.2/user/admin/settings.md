@@ -47,7 +47,7 @@ Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hi
 - Gruppen verwalten:
   Sie können lokale Gruppen erstellen, bearbeiten oder löschen und Mitglieder hinzufügen oder entfernen.
 - Importierte Gruppen: Externe Gruppen, die über ein externes Benutzerverwaltungssystem importiert wurden, können hier nicht bearbeitet werden. Diese Gruppen sind mit einem Sperrsymbol  
-   gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
+  gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
   <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920"/>
 
 ## Spaces

@@ -51,8 +51,8 @@ OpenCloud supports Live Photos created with Apple devices and Motion Photos crea
 
 <video controls width="960" style={{ maxWidth: "100%" }} aria-label="Motion Photo playback in OpenCloud">
 
-  <source src={require("./img/photos-and-videos/motion-photo-playback.mp4").default} type="video/mp4" />
-  Your browser does not support embedded videos.
+<source src={require("./img/photos-and-videos/motion-photo-playback.mp4").default} type="video/mp4" />
+Your browser does not support embedded videos.
 </video>
 
 ### Uploading Live Photos
@@ -88,8 +88,8 @@ The toolbar below the viewer groups related actions: navigation between media fi
 
 <video controls width="960" style={{ maxWidth: "100%" }} aria-label="Video playback in OpenCloud">
 
-  <source src={require("./img/photos-and-videos/video-playback.mp4").default} type="video/mp4" />
-  Your browser does not support embedded videos.
+<source src={require("./img/photos-and-videos/video-playback.mp4").default} type="video/mp4" />
+Your browser does not support embedded videos.
 </video>
 
 ## Notes
