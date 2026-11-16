@@ -23,6 +23,16 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  // Docusaurus Faster (Rspack, SWC, Lightning CSS), see
+  // https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: {
+      // required by faster.ssgWorkerThreads
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+    faster: true,
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
