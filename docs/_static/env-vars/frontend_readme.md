@@ -16,7 +16,7 @@ The frontend service translates various OpenCloud related HTTP APIs to CS3 reque
     * [Event Handler](#event-handler)
   * [Sharing](#sharing)
 * [Scalability](#scalability)
-* [Define Read-Only Attributes](#define-readonly-attributes)
+* [Define Read-Only Attributes](#define-read-only-attributes)
 * [Caching](#caching)
 * [Passwords](#passwords)
   * [The Password Policy](#the-password-policy)

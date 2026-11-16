@@ -12,7 +12,7 @@ The `sharing` service provides the CS3 Sharing API for OpenCloud. It manages use
 * [Integration](#integration)
 * [Share Types](#share-types)
 * [Configuration](#configuration)
-  * [Auto-Accept Shares](#autoaccept-shares)
+  * [Auto-Accept Shares](#auto-accept-shares)
 * [Scalability](#scalability)
 
 ## Overview
