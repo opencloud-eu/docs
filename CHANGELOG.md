@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: fail the build on broken Markdown links [[#1374](https://github.com/opencloud-eu/docs/pull/1374)]
 - feat: lazy load images in the docs [[#1373](https://github.com/opencloud-eu/docs/pull/1373)]
 - feat: add syntax highlighting for more code block languages [[#1372](https://github.com/opencloud-eu/docs/pull/1372)]
 - fix: move the 4.0 collabora fonts page into the collabora folder [[#1371](https://github.com/opencloud-eu/docs/pull/1371)]
