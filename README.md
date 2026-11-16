@@ -68,7 +68,7 @@ Deployment is done by the Woodpecker CI (`.woodpecker/build.yaml`), there is no 
 To include a screenshot in your documentation, use the following format:
 
 ```jsx
-<img src={require("./../../img/PATH/EXAMPLE.png").default} alt="EXAMPLE" width="1920" />
+<img src={require("./../../img/PATH/EXAMPLE.png").default} alt="EXAMPLE" width="1920" loading="lazy" decoding="async" />
 ```
 
 - Use `require(...)` for image paths so they are bundled correctly by Docusaurus
@@ -82,6 +82,7 @@ To include a screenshot in your documentation, use the following format:
 - Place area-specific or topic-specific images in the corresponding subdirectory.
 - Place shared images in a clearly named common directory.
 - Use lowercase, descriptive, kebab-case filenames without spaces.
+- Add `loading="lazy"` and `decoding="async"` to every `<img>` tag, so browsers only download an image when it gets close to the visible area. Docusaurus adds these attributes automatically for Markdown image syntax (`![alt](./img.png)`), but not for JSX `<img>` tags.
 
 ## Markdown Guidelines
 
