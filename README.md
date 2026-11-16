@@ -63,6 +63,8 @@ Deployment is done by the Woodpecker CI (`.woodpecker/build.yaml`), there is no 
 | Menu             | 400px  |
 | Pop-up / Modal   | 500px  |
 
+The widths are display sizes for the `width` attribute. Save the image file at most twice as large as it is displayed (e.g. at most 1000px wide for a 500px pop-up, or at most 800px tall for a phone screenshot shown with `height="400"`). That's sharp enough for high-DPI screens, and larger files only make readers download more. The content column is never wider than 1300px, so full-screen screenshots don't need more than 2600px.
+
 ### Example
 
 To include a screenshot in your documentation, use the following format:
