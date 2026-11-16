@@ -20,7 +20,7 @@ Klicke auf das „Plus-Symbol“ und wähle „New Shortcut“ aus.
 
 Ein Menü öffnet sich mit Optionen für Verlinkungen.
 
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" width="300" height="668" loading="lazy" decoding="async"/>
+<img src={require("./img/shortcuts/shortcut-menu.png").default} alt="Shortcut menue" width="300" height="668" loading="lazy" decoding="async"/>
 
 ## URL eingeben
 

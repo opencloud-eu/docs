@@ -14,7 +14,7 @@ Hier erklären wir, wie man in der OpenCloud iOS-App, Dateien und Ordner per Ein
 
 - Klicken Sie auf das "Drei-Punkte-Menü" neben der Datei oder Ordner
 
-<img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/three-dot-menu.png").default} alt="Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Teilen
 
@@ -32,7 +32,7 @@ Hier erklären wir, wie man in der OpenCloud iOS-App, Dateien und Ordner per Ein
 
 - Es öffnet sich das Teilen Menü, in dem Sie über die Suchleiste nach Personen oder Gruppen suchen können, die Sie einladen möchten
 
-<img src={require("../img/shares/invite/invite-menue.png").default} alt="Teilen mit Menü" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/invite-menu.png").default} alt="Teilen mit Menü" width="184" height="400" loading="lazy" decoding="async"/>
 <img src={require("../img/shares/invite/searchbar.png").default} alt="Suchleiste" width="184" height="400" loading="lazy" decoding="async"/>
 <img src={require("../img/shares/invite/choose-invites.png").default} alt="Auswahl Personen und/oder Gruppen" width="184" height="400" loading="lazy" decoding="async"/>
 

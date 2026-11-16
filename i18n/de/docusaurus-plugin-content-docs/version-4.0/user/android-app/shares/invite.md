@@ -14,7 +14,7 @@ Hier erklären wir, wie man Dateien und Ordner per Einladung mit anderen Persone
 
 Klicke auf das „Drei-Punkte-Menü“ neben der Datei oder dem Ordner.
 
-<img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/three-dot-menu.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Teilen
 
@@ -32,7 +32,7 @@ In der folgenden Auswahl klicke auf das Plus bei „Benutzer und Gruppen“.
 
 Das Teilen-Menü öffnet sich, dort kannst du in der Suchleiste nach Personen oder Gruppen suchen, die du einladen möchtest.
 
-<img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/invite-menu.png").default} alt="Share with menue" width="180" height="400" loading="lazy" decoding="async"/>
 <img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Berechtigungen

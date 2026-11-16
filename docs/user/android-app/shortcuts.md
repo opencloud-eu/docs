@@ -20,7 +20,7 @@ Click on the "Plus symbol" and select "New Shortcut"
 
 A menue opens with options for shortcuts
 
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menue" width="300" height="668" loading="lazy" decoding="async"/>
+<img src={require("./img/shortcuts/shortcut-menu.png").default} alt="Shortcut menue" width="300" height="668" loading="lazy" decoding="async"/>
 
 ## Enter URL
 

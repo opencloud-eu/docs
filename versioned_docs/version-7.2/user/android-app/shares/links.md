@@ -14,7 +14,7 @@ Here we explain how to share files and folders with others via link in the OpenC
 
 Click the three-dot menu next to the file or folder
 
-<img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/links/three-dot-menu.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Share
 

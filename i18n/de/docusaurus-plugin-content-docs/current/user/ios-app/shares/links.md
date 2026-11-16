@@ -14,7 +14,7 @@ Hier erklären wir, wie man in der OpenCloud iOS-App Dateien und Ordner per Link
 
 - Tippe auf das Drei-Punkte-Menü neben der Datei oder dem Ordner
 
-  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("../img/shares/links/three-dot-menu.png").default} alt="Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Teilen
 

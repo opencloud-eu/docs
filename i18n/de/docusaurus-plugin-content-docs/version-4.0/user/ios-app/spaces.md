@@ -26,7 +26,7 @@ Durch Tippen auf das Suchsymbol öffnet sich das Suchmenü für Spaces.
 
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/search-menu.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Funktionen innerhalb eines Spaces
 
@@ -72,4 +72,4 @@ Die Gerätekamera verwenden, um physische Dokumente zu scannen und sie direkt al
 
 Durch Tippen auf das Drei-Punkte-Menü öffnet sich ein Pop-up-Menü, in dem du den Space offline verfügbar machen kannst.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/three-dot-menu.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />

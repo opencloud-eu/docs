@@ -181,7 +181,7 @@ Expand the certificate information to confirm it was issued by "Let's Encrypt St
 
 <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500" height="615" loading="lazy" decoding="async"/>
 
-<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details Subordinate CA" width="500" height="309" loading="lazy" decoding="async"/>
+<img src={require("./../../img/docker-compose/subordinate-cas.png").default} alt="Certificate Details Subordinate CA" width="500" height="309" loading="lazy" decoding="async"/>
 
 :::success Staging Certificate Success
 If you see "Let's Encrypt Staging" as the issuer, the certificate generation is working correctly. You can now safely switch to production certificates.

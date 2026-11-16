@@ -20,7 +20,7 @@ Here we show you how to create shortcuts in the iOS app
 
 - A drop-down menu opens
 
-  <img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menu" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/shortcuts/plus-menu.png").default} alt="Drop-down menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Create shortcut
 
@@ -32,7 +32,7 @@ Here we show you how to create shortcuts in the iOS app
 
 -A menu opens with options for shortcuts
 
-<img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menu" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("./img/shortcuts/shortcut-menu.png").default} alt="Shortcut menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## URL
 
