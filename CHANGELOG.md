@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- fix: correct the table of contents anchors in the 4.0 and 7.2 service docs [[#1383](https://github.com/opencloud-eu/docs/pull/1383)]
 - Update docs [[#1382](https://github.com/opencloud-eu/docs/pull/1382)]
 - feat: downscale images that are much larger than displayed [[#1379](https://github.com/opencloud-eu/docs/pull/1379)]
 - chore: add Dependabot for npm dependencies [[#1378](https://github.com/opencloud-eu/docs/pull/1378)]
