@@ -10,16 +10,8 @@ const config: Config = {
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.svg',
 
-  // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'opencloud-eu', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -33,16 +25,13 @@ const config: Config = {
     faster: true,
   },
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
     localeConfigs: {
       en: {
         label: 'English',
-        htmlLang: 'en-GB', // or 'en-US'
+        htmlLang: 'en-GB',
       },
       de: {
         label: 'Deutsch',
