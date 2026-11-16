@@ -15,13 +15,13 @@ Purpose and description to be added
     * [Sessions command](#sessions-command)
     * [Command Examples](#command-examples)
     * [Delete Stale Nodes command](#delete-stale-nodes-command)
-    * [Command Examples](#command-examples)
+    * [Command Examples](#command-examples-1)
   * [Check and Inspect the Blobstore](#check-and-inspect-the-blobstore)
     * [Check](#check)
     * [Get](#get)
-  * [Manage Trash-Bin Items](#manage-trashbin-items)
+  * [Manage Trash-Bin Items](#manage-trash-bin-items)
     * [Purge Expired](#purge-expired)
-    * [List and Restore Trash-Bins Items](#list-and-restore-trashbins-items)
+    * [List and Restore Trash-Bins Items](#list-and-restore-trash-bins-items)
 * [Caching](#caching)
 
 ## Legacy storage drivers
