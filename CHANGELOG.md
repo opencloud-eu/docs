@@ -1,5 +1,25 @@
 # Changelog
 
+## [3.60.0](https://github.com/opencloud-eu/docs/releases/tag/3.60.0) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith
+
+### 👷 Admin Documentation
+
+- Refine yjs [[#1347](https://github.com/opencloud-eu/docs/pull/1347)]
+
+### 📦️ Build&Tools
+
+- chore: fail the build on broken anchors [[#1385](https://github.com/opencloud-eu/docs/pull/1385)]
+- fix: correct the table of contents anchors in the 4.0 and 7.2 service docs [[#1383](https://github.com/opencloud-eu/docs/pull/1383)]
+- Update docs [[#1382](https://github.com/opencloud-eu/docs/pull/1382)]
+- feat: downscale images that are much larger than displayed [[#1379](https://github.com/opencloud-eu/docs/pull/1379)]
+- chore: add Dependabot for npm dependencies [[#1378](https://github.com/opencloud-eu/docs/pull/1378)]
+- chore: remove unused Docusaurus template images [[#1377](https://github.com/opencloud-eu/docs/pull/1377)]
+- chore: rename files to kebab-case [[#1375](https://github.com/opencloud-eu/docs/pull/1375)]
+
 ## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
 
 ### ❤️ Thanks to all contributors! ❤️
