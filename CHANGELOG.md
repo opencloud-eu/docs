@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- chore: bump dependencies and clean up repo files [[#1359](https://github.com/opencloud-eu/docs/pull/1359)]
+
 ## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-14
 
 ### ❤️ Thanks to all contributors! ❤️
