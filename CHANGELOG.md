@@ -1,13 +1,18 @@
 # Changelog
 
-## [3.59.2](https://github.com/opencloud-eu/docs/releases/tag/3.59.2) - 2026-11-16
+## [3.60.0](https://github.com/opencloud-eu/docs/releases/tag/3.60.0) - 2026-11-16
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @Svanvith
+
+### 👷 Admin Documentation
+
+- Refine yjs [[#1347](https://github.com/opencloud-eu/docs/pull/1347)]
 
 ### 📦️ Build&Tools
 
+- feat: downscale images that are much larger than displayed [[#1379](https://github.com/opencloud-eu/docs/pull/1379)]
 - chore: add Dependabot for npm dependencies [[#1378](https://github.com/opencloud-eu/docs/pull/1378)]
 - chore: remove unused Docusaurus template images [[#1377](https://github.com/opencloud-eu/docs/pull/1377)]
 - chore: rename files to kebab-case [[#1375](https://github.com/opencloud-eu/docs/pull/1375)]
