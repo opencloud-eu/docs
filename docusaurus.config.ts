@@ -14,6 +14,7 @@ const config: Config = {
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
 
   // Docusaurus Faster (Rspack, SWC, Lightning CSS), see
   // https://docusaurus.io/docs/api/docusaurus-config#future
