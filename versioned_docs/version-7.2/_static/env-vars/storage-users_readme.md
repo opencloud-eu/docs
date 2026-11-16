@@ -13,9 +13,9 @@ Purpose and description to be added
   * [Manage Unfinished Uploads](#manage-unfinished-uploads)
     * [Sessions command](#sessions-command)
     * [Command Examples](#command-examples)
-  * [Manage Trash-Bin Items](#manage-trashbin-items)
+  * [Manage Trash-Bin Items](#manage-trash-bin-items)
     * [Purge Expired](#purge-expired)
-    * [List and Restore Trash-Bins Items](#list-and-restore-trashbins-items)
+    * [List and Restore Trash-Bins Items](#list-and-restore-trash-bins-items)
 * [Caching](#caching)
 
 ## Graceful Shutdown

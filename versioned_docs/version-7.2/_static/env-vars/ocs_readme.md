@@ -8,8 +8,8 @@ The `ocs` service (open collaboration services) serves one purpose: it has an en
 
 ## Table of Contents
 
-* [Signing-Keys Endpoint](#signingkeys-endpoint)
-* [Signing-Keys Store](#signingkeys-store)
+* [Signing-Keys Endpoint](#signing-keys-endpoint)
+* [Signing-Keys Store](#signing-keys-store)
 
 ## Signing-Keys Endpoint
 
