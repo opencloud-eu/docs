@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: bump typescript to 7.0.2 [[#1369](https://github.com/opencloud-eu/docs/pull/1369)]
 - chore: remove unused raw loader plugin and stale config comments [[#1370](https://github.com/opencloud-eu/docs/pull/1370)]
 - chore: bump @opencloud-eu/prettier-config to 8.2.2 [[#1368](https://github.com/opencloud-eu/docs/pull/1368)]
 - ci: run lint, format and type checks as separate workflows [[#1367](https://github.com/opencloud-eu/docs/pull/1367)]
