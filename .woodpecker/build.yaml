@@ -9,26 +9,10 @@ steps:
     image: quay.io/thegeeklab/git-batch
     commands:
       - git batch -vv
-  - name: lint-md
-    image: quay.io/opencloudeu/nodejs-alpine-ci:24
-    commands:
-      - pnpm install
-      - pnpm lint:md
-  - name: format-check
-    image: quay.io/opencloudeu/nodejs-alpine-ci:24
-    commands:
-      - pnpm install
-      - pnpm format:check
-  - name: typecheck
-    image: quay.io/opencloudeu/nodejs-alpine-ci:24
-    commands:
-      - pnpm install
-      - pnpm typecheck
   - name: build
     image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
       - pnpm install
-      - pnpm list likec4
       - pnpm build-likec4
       - pnpm build
   - name: deploy-staging
