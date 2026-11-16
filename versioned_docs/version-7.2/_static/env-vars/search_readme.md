@@ -22,7 +22,7 @@ Consider using dedicated hardware for this service in case more resources are ne
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
   * [Tika](#tika)
-* [Manually Trigger Re-Indexing a Space](#manually-trigger-reindexing-a-space)
+* [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
 * [Metrics](#metrics)
 
 ## Search backends
