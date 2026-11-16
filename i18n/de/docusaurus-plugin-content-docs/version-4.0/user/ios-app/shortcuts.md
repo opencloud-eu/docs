@@ -20,7 +20,7 @@ Hier zeigen wir dir, wie du Shortcuts in der iOS-App erstellst.
 
 - Es öffnet sich ein Drop-down-Menü
 
-  <img src={require("./img/shortcuts/plus-menue.png").default} alt="Drop-down menu" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/shortcuts/plus-menu.png").default} alt="Drop-down menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Shortcut erstellen
 
@@ -32,7 +32,7 @@ Hier zeigen wir dir, wie du Shortcuts in der iOS-App erstellst.
 
 - Es öffnet sich ein Menü mit Optionen für Shortcuts
 
-  <img src={require("./img/shortcuts/shortcut-menue.png").default} alt="Shortcut menu" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/shortcuts/shortcut-menu.png").default} alt="Shortcut menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## URL
 

@@ -14,7 +14,7 @@ Hier erklären wir, wie man Dateien und Ordner per Link mit anderen in der OpenC
 
 Klicke auf das Drei-Punkte-Menü neben der Datei oder dem Ordner.
 
-<img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/links/three-dot-menu.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Teilen
 

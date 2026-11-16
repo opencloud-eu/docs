@@ -14,7 +14,7 @@ Here we explain how to share files and folders via invitation with other people 
 
 Click the "three-dot menu" next to the file or folder
 
-<img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/three-dot-menu.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Share
 
@@ -32,7 +32,7 @@ In the following selection, click on the Plus at "Users and Groups"
 
 The Share menu opens, where you can use the search bar to search for people or groups you want to invite
 
-<img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/invite-menu.png").default} alt="Share with menue" width="180" height="400" loading="lazy" decoding="async"/>
 <img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Permissions

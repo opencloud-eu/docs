@@ -52,7 +52,7 @@ Wenn die Funktion aktiviert ist, können Sie gepackte Dateien in der Cloud entpa
 
 - Wählen Sie die ZIP-Datei in der Dateiliste aus und öffnen Sie das Kontextmenü mit einem Rechtsklick auf die Datei oder über die drei Punkte daneben.
 
-  <img src={require("./img/upload-download-unzip/zip-datei.png").default} alt="Ausgewählte ZIP-Datei" width="1920" height="1080" loading="lazy" decoding="async"/>
+  <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="Ausgewählte ZIP-Datei" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Wählen Sie „Entpacken“.
 

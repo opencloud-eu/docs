@@ -26,7 +26,7 @@ By tapping the search icon, the search menue for Spaces will open.
 
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/search-menu.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Functions within a Space
 
@@ -72,4 +72,4 @@ Use your device camera to scan physical documents and save them directly as PDFs
 
 By tapping the three-dot menu, a pop-up menu opens where you can choose to make the Space available offline.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/three-dot-menu.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
