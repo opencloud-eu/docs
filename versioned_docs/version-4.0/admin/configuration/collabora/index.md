@@ -17,4 +17,4 @@ It is meant as a quick entry point for administrators who want to improve docume
 
 ## Guides
 
-- [Install additional fonts](../collabora.md) - Add fonts so documents render reliably
+- [Install additional fonts](./collabora-fonts.md) - Add fonts so documents render reliably
