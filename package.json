@@ -39,11 +39,12 @@
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
     "@opencloud-eu/prettier-config": "^8.2.2",
+    "@types/react": "^19.3.0",
     "likec4": "1.61.0",
     "markdownlint-cli2": "^0.24.1",
     "prettier": "^3.10.1",
     "raw-loader": "^4.0.2",
-    "typescript": "~5.6.3"
+    "typescript": "~7.0.2"
   },
   "browserslist": {
     "production": [
