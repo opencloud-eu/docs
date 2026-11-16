@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- docs: describe the CI deployment in the README [[#1360](https://github.com/opencloud-eu/docs/pull/1360)]
 - chore: bump dependencies and clean up repo files [[#1359](https://github.com/opencloud-eu/docs/pull/1359)]
 
 ## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-14
