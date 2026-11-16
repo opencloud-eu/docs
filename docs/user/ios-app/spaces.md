@@ -14,27 +14,27 @@ The "Spaces" section provides a central place for collaboration in groups or tea
 
 To open the Spaces Overview, tap the "Spaces button" in the account menu.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
 Afterwards, the Spaces Overview appears, listing all Spaces you are a member of or have created yourself.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
 ## Search Function
 
 By tapping the search icon, the search menue for Spaces will open.
 
-<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
 ## Functions within a Space
 
 By tapping the plus icon, the available functions within a Space appear.
 
-<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} loading="lazy" decoding="async" />
 
 ## Add Menu
 
@@ -72,4 +72,4 @@ Use your device camera to scan physical documents and save them directly as PDFs
 
 By tapping the three-dot menu, a pop-up menu opens where you can choose to make the Space available offline.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />

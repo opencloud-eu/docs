@@ -16,17 +16,17 @@ Files and folders can be shared within the organization with individual members 
 
 - Select “Share” from the context menu.
 
-  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="1920"/>
+  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="1920" loading="lazy" decoding="async"/>
 
 - The sidebar opens on the right-hand side of the screen.
-  <img src={require("./img/intern/sidebar-window.png").default} alt="Sharing sidebar" width="1920"/>
+  <img src={require("./img/intern/sidebar-window.png").default} alt="Sharing sidebar" width="1920" loading="lazy" decoding="async"/>
 
 - At the top of the sidebar, select the “Internal sharing” section.
-  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400"/>
+  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400" loading="lazy" decoding="async"/>
 
 - Enter at least three characters in the search field to look up members or groups.
 
-  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400"/>
+  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400" loading="lazy" decoding="async"/>
 
 - Select the desired person or group from the suggestion list.
 
@@ -37,13 +37,13 @@ Files and folders can be shared within the organization with individual members 
     Members can view and download the content. For folders, they can also upload their own files.
   - “Can edit”:
     Members can view, download, upload, create, edit, and delete content.
-    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400"/>
+    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400" loading="lazy" decoding="async"/>
 
 - Click on “Share” to create the internal share.
 
 The shared members or groups are then shown under “Shared with”.
 
-<img src={require("./img/intern/shared-with-alan.png").default} alt="Show the shared overview" width="400"/>
+<img src={require("./img/intern/shared-with-alan.png").default} alt="Show the shared overview" width="400" loading="lazy" decoding="async"/>
 
 ## Remove an internal share
 
@@ -53,6 +53,6 @@ An existing internal share can be removed at any time.
 
 - Select the “Remove share” option.
 
-<img src={require("./img/intern/remove-share.png").default} alt="Remove share" width="400"/>
+<img src={require("./img/intern/remove-share.png").default} alt="Remove share" width="400" loading="lazy" decoding="async"/>
 
 The access is removed immediately. After that, the person or group can no longer access the file or folder through this share.

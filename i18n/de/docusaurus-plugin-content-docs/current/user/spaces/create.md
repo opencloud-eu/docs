@@ -14,19 +14,19 @@ Mit Spaces können Sie Daten mit bestimmten Personen innerhalb Ihrer Organisatio
 
 - Wählen Sie „Spaces“ in der linken Seitenleiste.
 
-  <img src={require("./img/create/new-space.png").default} alt="Space in linker Seitenleiste" width="1920"/>
+  <img src={require("./img/create/new-space.png").default} alt="Space in linker Seitenleiste" width="1920" loading="lazy" decoding="async"/>
 
 - Wählen Sie „+ Neu“.
 
-  <img src={require("./img/create/new-space-popup.png").default} alt="Neuer Space" width="1920"/>
+  <img src={require("./img/create/new-space-popup.png").default} alt="Neuer Space" width="1920" loading="lazy" decoding="async"/>
 
 - Geben Sie einen Namen für den Space ein.
 
-  <img src={require("./img/create/enter-name.png").default} alt="Space-Namen eingeben" width="1920"/>
+  <img src={require("./img/create/enter-name.png").default} alt="Space-Namen eingeben" width="1920" loading="lazy" decoding="async"/>
 
 - Wählen Sie optional „Optionen“, um eine Ende-zu-Ende-Verschlüsselung einzurichten, den Space anzupassen, eine Speicherplatzbegrenzung festzulegen oder Mitglieder hinzuzufügen.
 
-  <img src={require("./img/create/space-options.png").default} alt="Optionale Einstellungen für einen neuen Space" width="1920"/>
+  <img src={require("./img/create/space-options.png").default} alt="Optionale Einstellungen für einen neuen Space" width="1920" loading="lazy" decoding="async"/>
 
 - Wählen Sie „Erstellen“.
 
@@ -34,7 +34,7 @@ Mit Spaces können Sie Daten mit bestimmten Personen innerhalb Ihrer Organisatio
 
 Ihr neuer Space erscheint nun unter „Spaces“ und ist bereit zur Nutzung.
 
-<img src={require("./img/create/created-space.png").default} alt="Erstellter Space" width="1920"/>
+<img src={require("./img/create/created-space.png").default} alt="Erstellter Space" width="1920" loading="lazy" decoding="async"/>
 
 Jetzt wissen Sie, wie Sie schnell und einfach einen Space erstellen und mit dem Teilen von Daten beginnen können.
 

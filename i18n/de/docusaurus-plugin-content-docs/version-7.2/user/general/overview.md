@@ -18,6 +18,8 @@ Die OpenCloud Web-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen 
     alt="Übersicht"
     width="1920"
     style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
   />
   <OverviewMarker
     aria-hidden="true"

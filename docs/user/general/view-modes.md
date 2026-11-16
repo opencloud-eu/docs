@@ -16,10 +16,10 @@ In OpenCloud, you can switch between grid and list views to display your files a
 
 Grid view displays files and folders as cards. Image and document previews make it useful for browsing content visually.
 
-<img src={require("./img/view-modes/grid.png").default} alt="Grid view of the file list" width="1920"/>
+<img src={require("./img/view-modes/grid.png").default} alt="Grid view of the file list" width="1920" loading="lazy" decoding="async"/>
 
 ### List view
 
 List view displays files and folders in rows with details such as their status, size, tags, modification date, and available actions.
 
-<img src={require("./img/view-modes/list.png").default} alt="List view of the file list" width="1920"/>
+<img src={require("./img/view-modes/list.png").default} alt="List view of the file list" width="1920" loading="lazy" decoding="async"/>

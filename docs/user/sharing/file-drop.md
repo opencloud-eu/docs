@@ -15,29 +15,29 @@ Link recipients cannot see the files that are already in the folder.
 
 - Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
 - Select “Share” from the context menu.
-  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down menu" width="1920" />
+  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down menu" width="1920" loading="lazy" decoding="async" />
 - A sidebar window will open on the right-hand side of the screen.
-  <img src={require("./img/file-drop/sidebar-window.png").default} alt="Sidebar window" width="400"/>
+  <img src={require("./img/file-drop/sidebar-window.png").default} alt="Sidebar window" width="400" loading="lazy" decoding="async"/>
 - In the sidebar window, find the “Public links” section and click “Add link”.
-  <img src={require("./img/file-drop/add-link-button.png").default} alt="Add link button" width="400"/>
+  <img src={require("./img/file-drop/add-link-button.png").default} alt="Add link button" width="400" loading="lazy" decoding="async"/>
 - Click "Options" to open the link settings.
 - Open the access rights dropdown menu and select "Secret File Drop".
-  <img src={require("./img/file-drop/file-drop-button.png").default} alt="Select Secret File Drop" width="1920"/>
+  <img src={require("./img/file-drop/file-drop-button.png").default} alt="Select Secret File Drop" width="1920" loading="lazy" decoding="async"/>
 
 - Enter a password and click “Copy link” to confirm.
 - You can also set an “Expiry date” if you want the link to expire.
-  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Enter password and copy link" width="1920"/>
+  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Enter password and copy link" width="1920" loading="lazy" decoding="async"/>
 - Share the link and password with the recipient.
 
 ## What the recipient does
 
 - The recipient opens the received link in a browser, enters the password, and clicks “Continue”.
-  <img src={require("./img/file-drop/password-and-continue.png").default} alt="Enter password and continue" width="1920"/>
+  <img src={require("./img/file-drop/password-and-continue.png").default} alt="Enter password and continue" width="1920" loading="lazy" decoding="async"/>
 - Upload files:
   - The Secret File Drop opens. The recipient can upload files without seeing the existing contents of the folder.
-    <img src={require("./img/file-drop/file-drop-area.png").default} alt="File drop area" width="1920"/>
+    <img src={require("./img/file-drop/file-drop-area.png").default} alt="File drop area" width="1920" loading="lazy" decoding="async"/>
   - After the upload is complete, a confirmation page appears. A notification in the lower right corner shows how many files were uploaded.
-    <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload confirmation" width="1920"/>
+    <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload confirmation" width="1920" loading="lazy" decoding="async"/>
 
 :::important
 Recipients do not have access to existing files. They can only add new files.

@@ -17,7 +17,7 @@ Die Installation über den Store sorgt für einen einfachen Installationsprozess
 oder klicke auf den untenstehenden Button, um direkt zur App-Seite zu gelangen:
 
 <a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
-  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" loading="lazy" decoding="async"/>
 </a>
 
 ## „Installieren“ klicken

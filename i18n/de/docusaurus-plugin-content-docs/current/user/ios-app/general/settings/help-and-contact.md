@@ -20,7 +20,9 @@ Auf der Seite **Hilfe & Kontakt** erhalten Sie Zugriff auf Dokumentation und Com
 
 <img src={require("../../img/general/settings/help-and-contact/help and contact button.png").default}
 alt="Schaltfläche Hilfe & Kontakt"
-height="650"/>
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Verfügbare Ressourcen
 
@@ -34,7 +36,9 @@ Verwenden Sie diese Ressourcen, wenn Sie weitere Informationen benötigen, ein P
 
 <img src={require("../../img/general/settings/help-and-contact/help and contact menu.png").default}
 alt="Seite Hilfe & Kontakt"
-height="650"/>
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Wann welche Ressource verwenden?
 

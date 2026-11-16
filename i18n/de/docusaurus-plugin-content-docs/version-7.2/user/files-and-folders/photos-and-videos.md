@@ -13,7 +13,7 @@ Dadurch können Sie Medien einfacher prüfen, ohne die Dateien zuerst herunterla
 
 Öffnen Sie ein Foto in der Vorschauansicht, um durch den Photo-Roll zu blättern.
 
-<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo-Roll-Ansicht in OpenCloud" width="1920"/>
+<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo-Roll-Ansicht in OpenCloud" width="1920" loading="lazy" decoding="async"/>
 
 Der Fotobetrachter unterstützt eine Navigation im Photo-Roll-Stil, sodass Sie durch eine Bilderserie blättern können, ohne die Vorschau zu verlassen.
 
@@ -21,7 +21,7 @@ Der Fotobetrachter unterstützt eine Navigation im Photo-Roll-Stil, sodass Sie d
 
 Videos öffnen sich im gleichen Vorschaubereich und können direkt im Browser abgespielt werden.
 
-<img src={require("./img/photos-and-videos/video-screenshot.png").default} alt="Videovorschau in OpenCloud" width="1920"/>
+<img src={require("./img/photos-and-videos/video-screenshot.png").default} alt="Videovorschau in OpenCloud" width="1920" loading="lazy" decoding="async"/>
 
 Die Videowiedergabe funktioniert direkt in OpenCloud, sodass Sie Clips prüfen können, ohne sie zuerst herunterzuladen.
 

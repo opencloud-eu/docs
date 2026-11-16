@@ -25,7 +25,7 @@ Check the running containers:
 docker ps
 ```
 
-<img src={require("../img/common-issues/quick-docker-running.png").default} alt="Admin general" width="1920"/>
+<img src={require("../img/common-issues/quick-docker-running.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
 
 Several containers should be listed, for example OpenCloud and Traefik.
 

@@ -45,47 +45,47 @@ Once Keycloak is running
 https://keycloak.your.domain
 ```
 
-<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keycloak dashboard" width="1920"/>
+<img src={require("./../../img/docker-compose/keycloak-dashboard.png").default} alt="Keycloak dashboard" width="1920" loading="lazy" decoding="async"/>
 
 ### Log in with the admin credentials (default is admin / admin)
 
-<img src={require("./../../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920"/>
+<img src={require("./../../img/docker-compose/keycloak-login.png").default} alt="Keycloak login" width="1920" loading="lazy" decoding="async"/>
 
 ### In the top-left dropdown (labeled Keycloak), switch to the OpenCloud realm
 
-<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400"/>
+<img src={require("./../../img/docker-compose/top-left-dropdown.png").default} alt="Top left dropdown menue" width="400" loading="lazy" decoding="async"/>
 
 ### Navigate to the "Users" section and click "Add user"
 
-<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920"/>
+<img src={require("./../../img/docker-compose/users-section.png").default} alt="User section" width="1920" loading="lazy" decoding="async"/>
 
 - Fill in a username
 - Optionally add email, first/last name
 - Click "Create"
-  <img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920"/>
+  <img src={require("./../../img/docker-compose/fill-in-userdata.png").default} alt="Fill in userdata" width="1920" loading="lazy" decoding="async"/>
 
 ### Go to the "Credentials" tab
 
 - Click "Set password"
-  <img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920"/>
+  <img src={require("./../../img/docker-compose/credentials.png").default} alt="Credentials" width="1920" loading="lazy" decoding="async"/>
   <br/>
 - Set a temporary password
 - Enable "Temporary" to force password change on first login (optional)
 - Click "Save"
-  <img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400"/>
+  <img src={require("./../../img/docker-compose/set-password.png").default} alt="Set password" width="400" loading="lazy" decoding="async"/>
 
 ### Go to the "Role Mapping" tab
 
-<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920"/>
+<img src={require("./../../img/docker-compose/role-mapping.png").default} alt="Role mapping" width="1920" loading="lazy" decoding="async"/>
 
 - Click "Assign role"
-  <img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920"/>
+  <img src={require("./../../img/docker-compose/assign-role.png").default} alt="Assign role" width="1920" loading="lazy" decoding="async"/>
 
 - In the dialog, click "Filter by realm roles"
-  <img src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920"/>
+  <img src={require("./../../img/docker-compose/filter-by-realm-roles.png").default} alt="Filter by realm roles" width="1920" loading="lazy" decoding="async"/>
 
 - Choose the appropriate role (e.g., user, admin, etc.)
 - Click "Assign"
-  <img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920"/>
+  <img src={require("./../../img/docker-compose/realm-roles.png").default} alt="Realm roles" width="1920" loading="lazy" decoding="async"/>
 
 The user can now log in via OpenCloud using the Keycloak credentials.

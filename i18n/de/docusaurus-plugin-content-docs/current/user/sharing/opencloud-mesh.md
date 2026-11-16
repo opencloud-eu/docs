@@ -20,7 +20,7 @@ Bevor Sie beginnen, muss ein Administrator OCM auf beiden beteiligten Instanzen 
 
 Die ScienceMesh-Anwendung stellt die Oberfläche zum Erstellen und Annehmen von OCM-Einladungen bereit.
 
-<img src={require("./img/opencloud-mesh/open-ocm-application.png").default} alt="Anwendungsumschalter mit der ScienceMesh-Anwendung" width="1920" />
+<img src={require("./img/opencloud-mesh/open-ocm-application.png").default} alt="Anwendungsumschalter mit der ScienceMesh-Anwendung" width="1920" loading="lazy" decoding="async" />
 
 ## Mit einem Benutzer verbinden
 
@@ -38,19 +38,19 @@ Nehmen Sie eine Einladung nicht auf derselben Instanz an, auf der sie erstellt w
 
 1. Wählen Sie im Bereich Benutzer einladen die Option Einladung erstellen aus.
 
-   <img src={require("./img/opencloud-mesh/generate-invitation.png").default} alt="Bereich Benutzer einladen mit der Schaltfläche Einladung erstellen" width="1640" />
+   <img src={require("./img/opencloud-mesh/generate-invitation.png").default} alt="Bereich Benutzer einladen mit der Schaltfläche Einladung erstellen" width="1640" loading="lazy" decoding="async" />
 
 2. Geben Sie im Dialog Neue Einladung erstellen optional eine Beschreibung ein, anhand derer Sie die Einladung später erkennen können.
 3. Wählen Sie Erstellen aus.
 
-   <img src={require("./img/opencloud-mesh/generate-invitation-dialog.png").default} alt="Dialog Neue Einladung erstellen mit einer Beschreibung" width="1008" />
+   <img src={require("./img/opencloud-mesh/generate-invitation-dialog.png").default} alt="Dialog Neue Einladung erstellen mit einer Beschreibung" width="1008" loading="lazy" decoding="async" />
 
 4. Der Einladungstoken wird erstellt und automatisch in Ihre Zwischenablage kopiert.
 5. Senden Sie den vollständigen kopierten Token an den Benutzer auf der anderen Instanz.
 
 Wenn Sie den Token erneut kopieren müssen, suchen Sie die Einladung im Bereich Benutzer einladen und verwenden Sie die Aktion Base64-Token kopieren.
 
-<img src={require("./img/opencloud-mesh/copy-invitation-token.png").default} alt="Erstellte Einladung und Aktionen zum Kopieren des Einladungstokens" width="1640" />
+<img src={require("./img/opencloud-mesh/copy-invitation-token.png").default} alt="Erstellte Einladung und Aktionen zum Kopieren des Einladungstokens" width="1640" loading="lazy" decoding="async" />
 
 ### Einladung auf der anderen Instanz annehmen
 
@@ -59,17 +59,17 @@ Der eingeladene Benutzer führt auf seiner OpenCloud-Instanz folgende Schritte a
 1. Melden Sie sich bei OpenCloud Web an.
 2. Öffnen Sie die ScienceMesh-Anwendung.
 
-   <img src={require("./img/opencloud-mesh/open-accept-invitations.png").default} alt="Bereich Einladungen annehmen in der ScienceMesh-Anwendung" width="1608" />
+   <img src={require("./img/opencloud-mesh/open-accept-invitations.png").default} alt="Bereich Einladungen annehmen in der ScienceMesh-Anwendung" width="1608" loading="lazy" decoding="async" />
 
 3. Fügen Sie im Bereich Einladungen annehmen den vollständigen Token in das Feld Einladungstoken eingeben ein.
 4. Prüfen Sie, ob unter Institution die Domain der einladenden OpenCloud-Instanz angezeigt wird.
 5. Wählen Sie Einladung annehmen aus.
 
-   <img src={require("./img/opencloud-mesh/accept-invitation.png").default} alt="Einladungstoken mit erkannter Institution und der Schaltfläche Einladung annehmen" width="1608" />
+   <img src={require("./img/opencloud-mesh/accept-invitation.png").default} alt="Einladungstoken mit erkannter Institution und der Schaltfläche Einladung annehmen" width="1608" loading="lazy" decoding="async" />
 
 Nachdem die Einladung angenommen wurde, ist der Benutzer der anderen Instanz als OCM-Verbindung verfügbar.
 
-<img src={require("./img/opencloud-mesh/federated-connection.png").default} alt="Neue föderierte Verbindung in der ScienceMesh-Anwendung" width="1920" />
+<img src={require("./img/opencloud-mesh/federated-connection.png").default} alt="Neue föderierte Verbindung in der ScienceMesh-Anwendung" width="1920" loading="lazy" decoding="async" />
 
 :::note
 
@@ -88,17 +88,17 @@ Nachdem beide Benutzer verbunden sind:
 3. Öffnen Sie den Freigabebereich.
 4. Wählen Sie unter Freigabetyp die Option Extern aus.
 
-   <img src={require("./img/opencloud-mesh/select-external-share-type.png").default} alt="Menü Freigabetyp mit ausgewählten externen Benutzern" width="452" />
+   <img src={require("./img/opencloud-mesh/select-external-share-type.png").default} alt="Menü Freigabetyp mit ausgewählten externen Benutzern" width="452" loading="lazy" decoding="async" />
 
 5. Geben Sie den vollständigen Namen oder einen Teil des Namens des verbundenen Benutzers in das Suchfeld ein.
 6. Wählen Sie den passenden, als Extern gekennzeichneten Benutzer aus.
 
-   <img src={require("./img/opencloud-mesh/find-external-user.png").default} alt="Suchergebnis mit einem externen föderierten Benutzer" width="452" />
+   <img src={require("./img/opencloud-mesh/find-external-user.png").default} alt="Suchergebnis mit einem externen föderierten Benutzer" width="452" loading="lazy" decoding="async" />
 
 7. Konfigurieren Sie die Berechtigungen.
 8. Wählen Sie Teilen aus.
 
-   <img src={require("./img/opencloud-mesh/share-with-external-user.png").default} alt="Ausgewählter externer Benutzer mit Berechtigungen und der Schaltfläche Teilen" width="452" />
+   <img src={require("./img/opencloud-mesh/share-with-external-user.png").default} alt="Ausgewählter externer Benutzer mit Berechtigungen und der Schaltfläche Teilen" width="452" loading="lazy" decoding="async" />
 
 Der Benutzer auf der anderen OpenCloud-Instanz sollte die freigegebene Ressource jetzt erhalten.
 
@@ -111,7 +111,7 @@ Der eingeladene Benutzer führt auf seiner OpenCloud-Instanz folgende Schritte a
 3. Öffnen Sie Mit mir geteilt.
 4. Prüfen Sie, ob die freigegebene Datei oder der freigegebene Ordner aufgeführt ist.
 
-<img src={require("./img/opencloud-mesh/received-federated-share.png").default} alt="Föderierter Ordner unter Mit mir geteilt auf der empfangenden OpenCloud-Instanz" width="1920" />
+<img src={require("./img/opencloud-mesh/received-federated-share.png").default} alt="Föderierter Ordner unter Mit mir geteilt auf der empfangenden OpenCloud-Instanz" width="1920" loading="lazy" decoding="async" />
 
 ## Fehlerbehebung {#troubleshooting}
 

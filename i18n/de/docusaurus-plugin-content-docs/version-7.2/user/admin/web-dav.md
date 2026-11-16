@@ -27,7 +27,7 @@ Um die WebDAV-Informationen für deine Spaces anzuzeigen:
 - Gehe zu den Kontoeinstellungen
 - Aktiviere „WebDAV-Info in der Detailansicht anzeigen“
 
-  <img src={require("./img/webdav/preferences.png").default} alt="WebDAV-Info aktivieren" width="1920"/>
+  <img src={require("./img/webdav/preferences.png").default} alt="WebDAV-Info aktivieren" width="1920" loading="lazy" decoding="async"/>
 
 ### App-Token erstellen (falls erforderlich)
 
@@ -50,7 +50,7 @@ Du findest dort einen Abschnitt „WebDAV“ – kopiere die vollständige URL. 
 
 `https://cloud.example.de/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
-<img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV-URL" width="1920"/>
+<img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV-URL" width="1920" loading="lazy" decoding="async"/>
 
 ### Verbindung via WebDAV herstellen
 

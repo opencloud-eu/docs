@@ -175,13 +175,13 @@ The same warning may appear for the other configured domains.
 
 Click on the lock icon to view certificate details:
 
-<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500" loading="lazy" decoding="async"/>
 
 Expand the certificate information to confirm it was issued by "Let's Encrypt Staging":
 
-<img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500"/>
+<img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500" loading="lazy" decoding="async"/>
 
-<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details Subordinate CA" width="500"/>
+<img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details Subordinate CA" width="500" loading="lazy" decoding="async"/>
 
 :::success Staging Certificate Success
 If you see "Let's Encrypt Staging" as the issuer, the certificate generation is working correctly. You can now safely switch to production certificates.
@@ -249,7 +249,7 @@ Look for messages indicating successful certificate generation.
 
 After a short moment, visiting your domain should show a secure HTTPS connection:
 
-<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Secure Connection" width="1920"/>
+<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Secure Connection" width="1920" loading="lazy" decoding="async"/>
 
 The lock icon should show "Secure" (green lock) with "Let's Encrypt Authority X3" or similar as the issuer.
 
@@ -267,7 +267,7 @@ https://cloud.YOUR.DOMAIN
    - Username: `admin`
    - Password: (the password you configured in the `.env` file)
 
-<img src={require("./../../img/docker-compose/login.png").default} alt="OpenCloud Login" width="1920"/>
+<img src={require("./../../img/docker-compose/login.png").default} alt="OpenCloud Login" width="1920" loading="lazy" decoding="async"/>
 
 ## Further Configuration
 

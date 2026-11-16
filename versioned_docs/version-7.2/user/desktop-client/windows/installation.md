@@ -16,7 +16,7 @@ Open the Microsoft Store on your Windows device and search for OpenCloud Desktop
 or click the button below to go directly to the app page:
 
 <a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
-  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" loading="lazy" decoding="async"/>
 </a>
 
 ## Click “Install”

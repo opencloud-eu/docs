@@ -14,18 +14,18 @@ To find out who has edited a file or folder and what actions have been carried o
 
 - Open details
   - Right-click on the file or folder, or click on the three dots in the corresponding line.
-    <img src={require("./img/activity/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
+    <img src={require("./img/activity/three-dot-menu.png").default} alt="Three dot menu" width="1920" loading="lazy" decoding="async"/>
 
   - Select Details from the context menu.
-    <img src={require("./img/activity/details-button.png").default} alt="Context menu details" width="400"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Context menu details" width="400" loading="lazy" decoding="async"/>
 
 - Select activities
   - In the right sidebar opens a window, in this select the “Activities” item.
-    <img src={require("./img/activity/activities-button.png").default} alt="Select activities" width="400"/>
+    <img src={require("./img/activity/activities-button.png").default} alt="Select activities" width="400" loading="lazy" decoding="async"/>
 
 - View activities
   - All activities carried out with this file or folder are now displayed.
-    <img src={require("./img/activity/activities.png").default} alt="View activities" width="400"/>
+    <img src={require("./img/activity/activities.png").default} alt="View activities" width="400" loading="lazy" decoding="async"/>
 
 :::info
 This allows you to track all changes and actions!

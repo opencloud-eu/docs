@@ -16,17 +16,17 @@ Before you delete a Space, it must first be disabled.
 
 - If the Space is no longer visible after deactivation, make sure the Include disabled filter is enabled so the Space is shown again.
 
-  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="1920"/>
+  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="1920" loading="lazy" decoding="async"/>
 
 ## Delete the Space
 
 - Select the Space you want to delete, or open the context menu and click Delete.
 
-  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar and Context Menu" width="1920"/>
+  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar and Context Menu" width="1920" loading="lazy" decoding="async"/>
 
 - Confirm that you want to delete the Space.
 
-  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500"/>
+  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500" loading="lazy" decoding="async"/>
 
 :::caution
 A deleted Space cannot be restored. Make sure that no important data will be lost before you delete it.

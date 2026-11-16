@@ -18,7 +18,9 @@ The **Privacy Policy** section provides quick access to OpenCloud's official pri
 Selecting this option opens a confirmation dialog before leaving the app.
 
 <img src={require("../../img/settings/privacy-policy/privacy policy button.png").default}
-alt="Privacy Policy Button" height="650"/>
+alt="Privacy Policy Button" height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Confirm Opening the Website
 
@@ -28,7 +30,9 @@ A confirmation dialog appears asking whether you want to open the external websi
 - Tap **Cancel** to remain in the OpenCloud app.
 
 <img src={require("../../img/settings/privacy-policy/pop up.png").default}
-alt="Pop up" height="650"/>
+alt="Pop up" height="650"
+loading="lazy"
+decoding="async"/>
 
 ## View the Privacy Policy
 
@@ -42,7 +46,9 @@ The page contains information about:
 - Your rights regarding personal data
 
 <img src={require("../../img/settings/privacy-policy/privacy policy page.png").default}
-alt="OpenCloud Privacy Policy website" height="650"/>
+alt="OpenCloud Privacy Policy website" height="650"
+loading="lazy"
+decoding="async"/>
 
 :::tip
 

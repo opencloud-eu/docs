@@ -14,7 +14,7 @@ In OpenCloud haben Sie die Möglichkeit, verschiedene Einstellungen für Ihr Ben
 
 - Klicken Sie oben rechts auf den Avatar
 - Wählen Sie den Punkt „Einstellungen“
-  <img src={require("./img/account-settings/access.png").default} alt="Einstellungen öffnen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/account-settings/access.png").default} alt="Einstellungen öffnen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 ## Kontoinformationen
 
@@ -29,20 +29,20 @@ In den Einstellungen können Sie zwischen verschiedenen Abschnitten wählen:
 - Persönlicher Speicherplatz
 - Gruppenmitgliedschaften
 
-<img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920"/>
+<img src={require("./img/account-settings/account-information.png").default} alt="Kontoinformationen" width="1920" loading="lazy" decoding="async"/>
 
 ### Avatar
 
 Im Bereich Profilbild können Sie Ihr Avatar-Bild ändern:
 
 - Klicken Sie auf „Hochladen“ unter Ihrem Avatar-Symbol  
-  <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar-Menü" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar-Menü" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 - Wählen Sie Ihr Avatar-Bild aus und klicken Sie auf „Hochladen“  
-  <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar hochladen" width="500"/>
+  <img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar hochladen" width="500" loading="lazy" decoding="async"/>
 - Es öffnet sich nun ein Fenster, in dem Sie Ihr Bild anpassen können. Klicken Sie anschließend auf „Set“.  
-  <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar-Einstellungen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar-Einstellungen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 - Danach wird Ihr Avatar für Ihr Konto übernommen.  
-  <img src={require("./img/account-settings/visible-avatar.png").default} alt="Sichtbarer Avatar" width="1920"/>
+  <img src={require("./img/account-settings/visible-avatar.png").default} alt="Sichtbarer Avatar" width="1920" loading="lazy" decoding="async"/>
 
 ## Einstellungen
 
@@ -58,26 +58,26 @@ Je nach Grundkonfiguration können Sie die folgenden Optionen ändern:
   Legen Sie fest, welche E-Mail-Benachrichtigungen Sie von OpenCloud erhalten möchten.
 - Anzeigeoptionen:  
   Richten Sie die WebDAV-Einstellungen ein, um externen Zugriff auf Dateien und Ordner zu ermöglichen.  
-  <img src={require("./img/account-settings/preferences.png").default} alt="Einstellungen" width="1920"/>
+  <img src={require("./img/account-settings/preferences.png").default} alt="Einstellungen" width="1920" loading="lazy" decoding="async"/>
 
 ## Erweiterungen
 
 Unter "Erweiterungen" können Sie installierte Erweiterungen konfigurieren, wie z. B. die Fortschrittsanzeige, sofern verfügbar.  
-<img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920"/>
+<img src={require("./img/account-settings/extensions.png").default} alt="Erweiterungen" width="1920" loading="lazy" decoding="async"/>
 
 ## Kalender
 
 Unter „Kalender“ können Sie auf Ihren persönlichen Kalender zugreifen und ihn, sofern konfiguriert, in Apps von Drittanbietern wie Thunderbird, Apple Kalender und andere integrieren.
 
-<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920" loading="lazy" decoding="async"/>
 
 ## DSGVO
 
 Unter "DSGVO" können Sie einen Datenexport Ihrer persönlichen Daten anfordern, falls gewünscht.  
-<img src={require("./img/account-settings/gdpr.png").default} alt="DSGVO" width="1920"/>
+<img src={require("./img/account-settings/gdpr.png").default} alt="DSGVO" width="1920" loading="lazy" decoding="async"/>
 
 ## App-Tokens
 
 Mit "App-Tokens" können Sie externe Apps und Dienste (wie WebDAV-Clients) sicher verbinden, ohne Ihr Hauptpasswort zu verwenden.
 
-<img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920"/>
+<img src={require("./img/account-settings/app-tokens.png").default} alt="App-Tokens" width="1920" loading="lazy" decoding="async"/>

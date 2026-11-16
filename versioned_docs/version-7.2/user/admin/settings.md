@@ -10,13 +10,13 @@ draft: false
 
 The admin area of OpenCloud provides the main tools for managing your organization. The most important areas are shown below.
 
-<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="1920"/>
+<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="1920" loading="lazy" decoding="async"/>
 
 ## General
 
 - Version overview:  
   In the General section, you can view your current OpenCloud version and check whether a newer version is available.  
-  <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
 
 :::note
 If a security-critical upgrade is available, administrators may also see a warning in the lower-left corner of the web interface.
@@ -34,7 +34,7 @@ An administrator may disable the version check. If this option is turned off, in
   - change user quotas
   - add or remove users from groups
   - allow or block logins for individual users
-    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920" loading="lazy" decoding="async"/>
 
 :::note
 If OpenCloud is connected to an external IdP, you can still see the users here, but user management must be done in the IdP.
@@ -48,7 +48,7 @@ If OpenCloud is connected to an external IdP, you can still see the users here, 
   You can create, edit, or delete local groups and add or remove members.
 - Imported groups:  
   External groups that were imported through an external user management system cannot be edited here. These groups are marked with a lock symbol to show that they are locked.
-  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920"/>
+  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920" loading="lazy" decoding="async"/>
 
 ## Spaces
 
@@ -59,4 +59,4 @@ If OpenCloud is connected to an external IdP, you can still see the users here, 
   - edit Spaces, including rename, subtitle and quota
   - deactivate or activate Spaces
   - delete Spaces
-    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920" loading="lazy" decoding="async"/>

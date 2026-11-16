@@ -21,8 +21,8 @@ The local environment uses a self-signed certificate that the browser does not t
 
 Accept the security risk in your browser. In Firefox, select **Advanced**:
 
-<img src={require("../img/common-issues/quick-advanced.png").default} alt="Admin general" width="500"/>
+<img src={require("../img/common-issues/quick-advanced.png").default} alt="Admin general" width="500" loading="lazy" decoding="async"/>
 
 Then select **Accept the Risk and Continue**:
 
-<img src={require("../img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500"/>
+<img src={require("../img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500" loading="lazy" decoding="async"/>

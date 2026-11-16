@@ -12,12 +12,12 @@ Sie können einen bestehenden Space jederzeit umbenennen, damit er besser zu sei
 
 - Öffnen Sie in der Space-Übersicht das Drei-Punkte-Menü oder klicken Sie mit der rechten Maustaste auf den Space. Wählen Sie anschließend „Umbenennen“ aus.
 
-  <img src={require("./img/rename/rename.png").default} alt="Space über das Menü umbenennen" width="1920"/>
+  <img src={require("./img/rename/rename.png").default} alt="Space über das Menü umbenennen" width="1920" loading="lazy" decoding="async"/>
 
 - Geben Sie den neuen Namen für den Space ein und wählen Sie „Umbenennen“ aus.
 
-  <img src={require("./img/rename/confirm.png").default} alt="Neuen Space-Namen eingeben und bestätigen" width="1920"/>
+  <img src={require("./img/rename/confirm.png").default} alt="Neuen Space-Namen eingeben und bestätigen" width="1920" loading="lazy" decoding="async"/>
 
 - Der Space wurde umbenannt.
 
-  <img src={require("./img/rename/renamed-space.png").default} alt="Umbenannter Space in der Space-Übersicht" width="1920"/>
+  <img src={require("./img/rename/renamed-space.png").default} alt="Umbenannter Space in der Space-Übersicht" width="1920" loading="lazy" decoding="async"/>

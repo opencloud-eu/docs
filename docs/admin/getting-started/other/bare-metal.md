@@ -33,7 +33,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   sudo apt install git
   ```
 
-  <img src={require("./../img/bare-metal/install-git.png").default} alt="install git" width="1920"/>
+  <img src={require("./../img/bare-metal/install-git.png").default} alt="install git" width="1920" loading="lazy" decoding="async"/>
 
 - Clone the OpenCloud repository:
 
@@ -41,7 +41,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   git clone https://github.com/opencloud-eu/opencloud.git
   ```
 
-  <img src={require("./../img/bare-metal/git-clone.png").default} alt="git clone" width="1920"/>
+  <img src={require("./../img/bare-metal/git-clone.png").default} alt="git clone" width="1920" loading="lazy" decoding="async"/>
 
 ## Install the required packages
 
@@ -53,7 +53,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   sudo apt install npm -y
   ```
 
-  <img src={require("./../img/bare-metal/install-npm.png").default} alt="install npm" width="1920"/>
+  <img src={require("./../img/bare-metal/install-npm.png").default} alt="install npm" width="1920" loading="lazy" decoding="async"/>
 
 - Install corepack globally:
 
@@ -61,7 +61,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   sudo npm install -g corepack
   ```
 
-  <img src={require("./../img/bare-metal/install-corepack.png").default} alt="install corepack" width="1920"/>
+  <img src={require("./../img/bare-metal/install-corepack.png").default} alt="install corepack" width="1920" loading="lazy" decoding="async"/>
 
 - Enable `pnpm` using corepack:
 
@@ -69,7 +69,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   corepack enable pnpm
   ```
 
-  <img src={require("./../img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920"/>
+  <img src={require("./../img/bare-metal/corepack-enable.png").default} alt="corepack enable" width="1920" loading="lazy" decoding="async"/>
 
 ## Build process and OpenCloud initialization
 
@@ -79,7 +79,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   cd opencloud
   ```
 
-  <img src={require("./../img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
+  <img src={require("./../img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920" loading="lazy" decoding="async"/>
 
 - Run the build generate process:
 
@@ -100,7 +100,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   ./bin/opencloud init --insecure true --admin-password admin
   ```
 
-  <img src={require("./../img/bare-metal/opencloud-init.png").default} alt="opencloud init" width="1920"/>
+  <img src={require("./../img/bare-metal/opencloud-init.png").default} alt="opencloud init" width="1920" loading="lazy" decoding="async"/>
 
 - Start the OpenCloud server:
 
@@ -108,7 +108,7 @@ Bare-metal deployments are not officially supported by OpenCloud. They are great
   ./bin/opencloud server
   ```
 
-  <img src={require("./../img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920"/>
+  <img src={require("./../img/bare-metal/opencloud-server.png").default} alt="opencloud server" width="1920" loading="lazy" decoding="async"/>
 
 ## Login
 
@@ -118,7 +118,7 @@ Login with your browser:
 - user: **admin**
 - password: **admin**
 
-<img src={require("./../img/bare-metal/login.png").default} alt="login" width="1920"/>
+<img src={require("./../img/bare-metal/login.png").default} alt="login" width="1920" loading="lazy" decoding="async"/>
 
 ## Conclusion
 

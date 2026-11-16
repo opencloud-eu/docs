@@ -13,13 +13,13 @@ You can use the search bar in the top bar to find files and content quickly.
 ## This is how the search works
 
 - The search bar is located at the top of the top bar in the web interface.
-  <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="1920"/>
+  <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="1920" loading="lazy" decoding="async"/>
 - Shortcut: press `/` or type `s` to focus the search bar.
 
 - Click on the drop-down menu next to the search bar.
 - Select whether you want to search in all files or only in the current folder.
-  <img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="Select where to search" width="500"/>
+  <img src={require("./img/search/drop-down-menu-searchbar.png").default} alt="Select where to search" width="500" loading="lazy" decoding="async"/>
 - The Search function searches through file names as well as the content of the files to display relevant results.
-  <img src={require("./img/search/search-example.png").default} alt="Example search" width="500"/>
+  <img src={require("./img/search/search-example.png").default} alt="Example search" width="500" loading="lazy" decoding="async"/>
 
 Use these steps to find your files or folders quickly and efficiently!
