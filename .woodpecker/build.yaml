@@ -19,6 +19,11 @@ steps:
     commands:
       - pnpm install
       - pnpm format:check
+  - name: typecheck
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
+    commands:
+      - pnpm install
+      - pnpm typecheck
   - name: build
     image: quay.io/opencloudeu/nodejs-alpine-ci:24
     commands:
