@@ -48,6 +48,12 @@ presets: [
       docs: {
         sidebarPath: require.resolve('./sidebars.ts'),
         editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
+        // 4.0 and 7.2 are production releases that still get updates,
+        // so they must not show the "no longer actively maintained" banner
+        versions: {
+          '4.0': {banner: 'none'},
+          '7.2': {banner: 'none'},
+        },
       },
       blog: false,
       theme: {
