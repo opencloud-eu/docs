@@ -196,7 +196,7 @@ presets: [
   markdown: {
     mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'warn'
+      onBrokenMarkdownLinks: 'throw'
     }
   },
 };
