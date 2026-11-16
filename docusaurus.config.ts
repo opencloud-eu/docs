@@ -167,7 +167,7 @@ presets: [
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash'],
+      additionalLanguages: ['bash', 'diff', 'gherkin', 'http', 'ini', 'nginx', 'powershell', 'rego'],
     },
   } satisfies Preset.ThemeConfig,
 
