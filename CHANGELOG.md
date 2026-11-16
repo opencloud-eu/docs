@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: remove unused Docusaurus template images [[#1377](https://github.com/opencloud-eu/docs/pull/1377)]
 - chore: rename files to kebab-case [[#1375](https://github.com/opencloud-eu/docs/pull/1375)]
 
 ## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
