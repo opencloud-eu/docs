@@ -11,6 +11,15 @@ jobs:
       issues: write
       pull-requests: write
     steps:
+      # the release pull request from ready-release-go can't set labels itself
+      - name: Label release pull request
+        if: github.event.pull_request.head.ref == 'next-release/main'
+        run: gh api "repos/$REPO/issues/$PR_NUMBER/labels" -f "labels[]=Docs:Build&Tools"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+      # reads the labels from the API, so it sees the label added above
       - uses: mheap/github-action-required-labels@v5
         with:
           mode: minimum
