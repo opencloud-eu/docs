@@ -1,5 +1,87 @@
 # Changelog
 
+## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @openclouders
+
+### 📦️ Build&Tools
+
+- chore: fail the build on broken Markdown links [[#1374](https://github.com/opencloud-eu/docs/pull/1374)]
+- feat: lazy load images in the docs [[#1373](https://github.com/opencloud-eu/docs/pull/1373)]
+- feat: add syntax highlighting for more code block languages [[#1372](https://github.com/opencloud-eu/docs/pull/1372)]
+- fix: move the 4.0 collabora fonts page into the collabora folder [[#1371](https://github.com/opencloud-eu/docs/pull/1371)]
+- chore: bump typescript to 7.0.2 [[#1369](https://github.com/opencloud-eu/docs/pull/1369)]
+- chore: remove unused raw loader plugin and stale config comments [[#1370](https://github.com/opencloud-eu/docs/pull/1370)]
+- chore: bump @opencloud-eu/prettier-config to 8.2.2 [[#1368](https://github.com/opencloud-eu/docs/pull/1368)]
+- ci: run lint, format and type checks as separate workflows [[#1367](https://github.com/opencloud-eu/docs/pull/1367)]
+- fix: make pnpm typecheck pass and run it in CI [[#1366](https://github.com/opencloud-eu/docs/pull/1366)]
+- feat: enable Docusaurus Faster [[#1365](https://github.com/opencloud-eu/docs/pull/1365)]
+- fix: hide the unmaintained banner on the 4.0 and 7.2 docs [[#1364](https://github.com/opencloud-eu/docs/pull/1364)]
+- chore: compress png images losslessly [[#1363](https://github.com/opencloud-eu/docs/pull/1363)]
+- Update docs [[#1358](https://github.com/opencloud-eu/docs/pull/1358)]
+- chore: remove unreferenced images [[#1361](https://github.com/opencloud-eu/docs/pull/1361)]
+- docs: describe the CI deployment in the README [[#1360](https://github.com/opencloud-eu/docs/pull/1360)]
+- chore: bump dependencies and clean up repo files [[#1359](https://github.com/opencloud-eu/docs/pull/1359)]
+
+## [3.59.0](https://github.com/opencloud-eu/docs/releases/tag/3.59.0) - 2026-11-14
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Svanvith, @asaah262, @openclouders
+
+### 👷 Admin Documentation
+
+- publish 7.2.5 and 4.0.9 release notes [[#1356](https://github.com/opencloud-eu/docs/pull/1356)]
+- publish 9.1.0 release notes [[#1354](https://github.com/opencloud-eu/docs/pull/1354)]
+- docs: improve Raspberry Pi installation guide [[#1311](https://github.com/opencloud-eu/docs/pull/1311)]
+
+### 👤 User Documentation
+
+- markdown new screenshots ger + eng [[#1350](https://github.com/opencloud-eu/docs/pull/1350)]
+
+### 📦️ Build&Tools
+
+- update German translations and clean up media documentation [[#1351](https://github.com/opencloud-eu/docs/pull/1351)]
+- Update docs [[#1352](https://github.com/opencloud-eu/docs/pull/1352)]
+
+## [3.58.0](https://github.com/opencloud-eu/docs/releases/tag/3.58.0) - 2026-11-12
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @Svanvith, @openclouders
+
+### 👷 Admin Documentation
+
+- Rework feature list in admin section [[#1296](https://github.com/opencloud-eu/docs/pull/1296)]
+- rework text for better clairification [[#1345](https://github.com/opencloud-eu/docs/pull/1345)]
+- Add guest feature in admin doku [[#1257](https://github.com/opencloud-eu/docs/pull/1257)]
+- Add imagor thumbnailer tutorial [[#1295](https://github.com/opencloud-eu/docs/pull/1295)]
+
+### 👤 User Documentation
+
+- Ger/e2ee [[#1349](https://github.com/opencloud-eu/docs/pull/1349)]
+- photo/video eng+ger new screenshots and add videos [[#1348](https://github.com/opencloud-eu/docs/pull/1348)]
+- Ger/guests access user [[#1344](https://github.com/opencloud-eu/docs/pull/1344)]
+- ger/filedrop new screenshot and textadjustments [[#1341](https://github.com/opencloud-eu/docs/pull/1341)]
+- ger/science mesh new screenshots [[#1343](https://github.com/opencloud-eu/docs/pull/1343)]
+- ger/share extern new screenshot and textadjustments [[#1340](https://github.com/opencloud-eu/docs/pull/1340)]
+- ger/share intern new screenshots, add exparation date (ger+eng) and t… [[#1339](https://github.com/opencloud-eu/docs/pull/1339)]
+- ger/e2ee with rclone [[#1338](https://github.com/opencloud-eu/docs/pull/1338)]
+- ger/activities new screenshots and text adjustments [[#1337](https://github.com/opencloud-eu/docs/pull/1337)]
+- ger/versions new screenshots and text adjustments [[#1336](https://github.com/opencloud-eu/docs/pull/1336)]
+- ger/shortcuts new screenshots and textadjustments [[#1333](https://github.com/opencloud-eu/docs/pull/1333)]
+- ger/tags new screnshots and text adjustments [[#1332](https://github.com/opencloud-eu/docs/pull/1332)]
+- ger/create-rename-move - new screenshots and text adjustments [[#1326](https://github.com/opencloud-eu/docs/pull/1326)]
+- ger/radme in folders - new screenshots [[#1329](https://github.com/opencloud-eu/docs/pull/1329)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1346](https://github.com/opencloud-eu/docs/pull/1346)]
+- Update docs [[#1342](https://github.com/opencloud-eu/docs/pull/1342)]
+- Update docs [[#1334](https://github.com/opencloud-eu/docs/pull/1334)]
+
 ## [3.57.0](https://github.com/opencloud-eu/docs/releases/tag/3.57.0) - 2026-11-09
 
 ### ❤️ Thanks to all contributors! ❤️

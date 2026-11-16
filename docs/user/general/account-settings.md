@@ -15,7 +15,7 @@ Use the account settings to manage your profile, preferences, apps, calendar acc
 1. Select your avatar in the top-right corner.
 2. Select Preferences.
 
-<img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+<img src={require("./img/account-settings/access.png").default} alt="Access settings" width="400" height="337" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 ## Account information
 
@@ -30,7 +30,7 @@ The account settings are divided into several sections.
 - Personal storage space
 - Group memberships
 
-<img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920"/>
+<img src={require("./img/account-settings/account-information.png").default} alt="Account Information" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Avatar
 
@@ -38,19 +38,19 @@ To change your avatar:
 
 1. Select "Upload" below your current avatar.
 
-<img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+<img src={require("./img/account-settings/avatar-menu.png").default} alt="Avatar menu" width="400" height="212" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 2. Choose an image and select "Upload".
 
-<img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="500"/>
+<img src={require("./img/account-settings/avatar-upload.png").default} alt="Avatar upload" width="500" height="323" loading="lazy" decoding="async"/>
 
 3. Adjust the image in the preview and select "Set".
 
-<img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+<img src={require("./img/account-settings/avatar-settings.png").default} alt="Avatar settings" width="400" height="451" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 The new avatar is now shown for your account.
 
-<img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920"/>
+<img src={require("./img/account-settings/visible-avatar.png").default} alt="Visible Avatar" width="1920" height="1350" loading="lazy" decoding="async"/>
 
 ## Preferences
 
@@ -67,27 +67,27 @@ The available settings depend on how your OpenCloud instance is configured.
 - Notifications:  
   Choose for each supported event whether you want to receive an in-app notification, an email notification, both, or neither.
 
-<img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920"/>
+<img src={require("./img/account-settings/preferences.png").default} alt="Preferences" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Apps
 
 Under Apps, you can configure settings provided by installed apps, such as the global progress bar, if available.
 
-<img src={require("./img/account-settings/extensions.png").default} alt="Apps settings" width="1920"/>
+<img src={require("./img/account-settings/extensions.png").default} alt="Apps settings" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Calendar
 
 Under Calendar you can access your personal calendar for integration with third-party apps like Thunderbird, Apple Calendar, and others, when configured.
 
-<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920"/>
+<img src={require("./img/account-settings/calendar.png").default} alt="Calendar" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## GDPR
 
 Under GDPR you can request a data export of your personal data if you wish.
-<img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920"/>
+<img src={require("./img/account-settings/gdpr.png").default} alt="GDPR" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## App Tokens
 
 App Tokens allow you to connect external apps and services (such as WebDAV clients) securely without using your main password.
 
-<img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920"/>
+<img src={require("./img/account-settings/app-tokens.png").default} alt="App Tokens" width="1920" height="1080" loading="lazy" decoding="async"/>

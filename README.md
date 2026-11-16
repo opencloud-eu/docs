@@ -49,19 +49,10 @@ This command generates static content in the `build` folder. You can serve it us
 
 ## Deployment
 
-### Using SSH:
+Deployment is done by the Woodpecker CI (`.woodpecker/build.yaml`), there is no manual deploy step:
 
-```bash
-USE_SSH=true pnpm deploy
-```
-
-### Without SSH:
-
-```bash
-GIT_USER=<Your GitHub username> pnpm deploy
-```
-
-If you're using GitHub Pages, this will push the production build to the `gh-pages` branch.
+- Every push to `main` builds the site and deploys it to staging.
+- Every tag deploys the site to production. Tags are created by the release PR that [ready-release-go](https://github.com/woodpecker-ci/plugin-ready-release-go) opens (`🎉 Release x.y.z`): merging that PR creates the tag.
 
 
 ## Screenshot Guidelines
@@ -77,7 +68,7 @@ If you're using GitHub Pages, this will push the production build to the `gh-pag
 To include a screenshot in your documentation, use the following format:
 
 ```jsx
-<img src={require("./../../img/PATH/EXAMPLE.png").default} alt="EXAMPLE" width="1920" />
+<img src={require("./../../img/PATH/EXAMPLE.png").default} alt="EXAMPLE" width="1920" height="1080" loading="lazy" decoding="async" />
 ```
 
 - Use `require(...)` for image paths so they are bundled correctly by Docusaurus
@@ -91,6 +82,8 @@ To include a screenshot in your documentation, use the following format:
 - Place area-specific or topic-specific images in the corresponding subdirectory.
 - Place shared images in a clearly named common directory.
 - Use lowercase, descriptive, kebab-case filenames without spaces.
+- Add `loading="lazy"` and `decoding="async"` to every `<img>` tag, so browsers only download an image when it gets close to the visible area. Docusaurus adds these attributes automatically for Markdown image syntax (`![alt](./img.png)`), but not for JSX `<img>` tags.
+- Set both `width` and `height` on every `<img>` tag, with the same aspect ratio as the image file (e.g. a 2880×1620 screenshot shown with `width="1920"` gets `height="1080"`). The browser then reserves the image's space before it is loaded, so the page doesn't jump while lazy images load.
 
 ## Markdown Guidelines
 

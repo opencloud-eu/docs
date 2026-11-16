@@ -382,5 +382,45 @@
   "sidebar.user.category.ios-settings": {
     "message": "Einstellungen",
     "description": "The label for category 'Settings' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-windows": {
+    "message": "Desktop Client für Windows",
+    "description": "The label for category 'Desktop Client for Windows' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-macos": {
+    "message": "Desktop Client für macOS",
+    "description": "The label for category 'Desktop Client for MacOS' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-linux": {
+    "message": "Desktop Client für Linux",
+    "description": "The label for category 'Desktop Client for Linux' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-common-functionalty": {
+    "message": "Allgemeine Funktionen",
+    "description": "The label for category 'Common functionality' in sidebar 'user'"
+  },
+  "sidebar.user.category.Common Issues & Help": {
+    "message": "Häufige Probleme und Hilfe",
+    "description": "The label for category 'Common Issues & Help' in sidebar 'user'"
+  },
+  "sidebar.admin.category.Common Issues & Help": {
+    "message": "Häufige Probleme und Hilfe",
+    "description": "The label for category 'Common Issues & Help' in sidebar 'admin'"
+  },
+  "sidebar.dev.category.Auth-guest": {
+    "message": "Auth-guest",
+    "description": "The label for category 'Auth-guest' in sidebar 'dev'"
+  },
+  "sidebar.dev.category.Advanced topics": {
+    "message": "Fortgeschrittene Themen",
+    "description": "The label for category 'Advanced topics' in sidebar 'dev'"
+  },
+  "sidebar.dev.category.Extensions": {
+    "message": "Erweiterungen",
+    "description": "The label for category 'Extensions' in sidebar 'dev'"
+  },
+  "sidebar.dev.category.Viewer and editor apps": {
+    "message": "Viewer- und Editor-Apps",
+    "description": "The label for category 'Viewer and editor apps' in sidebar 'dev'"
   }
 }

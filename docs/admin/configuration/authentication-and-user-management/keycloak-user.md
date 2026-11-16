@@ -26,7 +26,7 @@ To manage users and groups for OpenCloud, you need a user with administrative pr
 
 Example: A user named `dennis` is granted user-management permissions in Keycloak.
 
-<img src={require(".././img/keycloak/add-user/set-admin-roles.png").default} alt="Add admin roles to user" width="1920"/>
+<img src={require(".././img/keycloak/add-user/set-admin-roles.png").default} alt="Add admin roles to user" width="1920" height="993" loading="lazy" decoding="async"/>
 
 Once assigned, the user can log in as a Realm Administrator and access user and group management.
 
@@ -39,10 +39,10 @@ With admin permissions, you can now create users and groups:
 - Navigate to the "Users" section in the Keycloak Admin Console
 
 - Click Add User
-  <img src={require(".././img/keycloak/add-user/add-user.png").default} alt="Add user" width="1920"/>
+  <img src={require(".././img/keycloak/add-user/add-user.png").default} alt="Add user" width="1920" height="712" loading="lazy" decoding="async"/>
 
 - Fill in the required user details (e.g., username, email)
-  <img src={require(".././img/keycloak/add-user/fill-out-userinfo.png").default} alt="Fill out user information" width="1920"/>
+  <img src={require(".././img/keycloak/add-user/fill-out-userinfo.png").default} alt="Fill out user information" width="1920" height="971" loading="lazy" decoding="async"/>
 
 - Optionally assign the user to one or more groups.
 
@@ -50,7 +50,7 @@ With admin permissions, you can now create users and groups:
 
 - Set an initial password
 
-<img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920"/>
+<img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920" height="566" loading="lazy" decoding="async"/>
 
 :::note
 
@@ -71,7 +71,7 @@ When a "User Light" logs in for the first time, prompts depend on the account an
 
 After successful login, newly created users assigned the "User Light" role do not receive a personal space by default, fulfilling the guest user requirement.
 
-<img src={require(".././img/keycloak/add-user/guest-login.png").default} alt="Guest login" width="1920"/>
+<img src={require(".././img/keycloak/add-user/guest-login.png").default} alt="Guest login" width="1920" height="1059" loading="lazy" decoding="async"/>
 
 ## Optional: Enable Self Registration
 
@@ -83,17 +83,17 @@ To enable self-registration:
 - Go to the Login settings in the OpenCloud realm.
 - Enable the User Registration option.
 
-<img src={require(".././img/keycloak/add-user/enable-self-registration.png").default} alt="Enable self registration" width="1920"/>
+<img src={require(".././img/keycloak/add-user/enable-self-registration.png").default} alt="Enable self registration" width="1920" height="1055" loading="lazy" decoding="async"/>
 
 ### Self Registration Flow
 
 - Users see a Register option on the login screen.
 
-<img src={require(".././img/keycloak/add-user/register-button.png").default} alt="Register Button" width="1920"/>
+<img src={require(".././img/keycloak/add-user/register-button.png").default} alt="Register Button" width="1920" height="1058" loading="lazy" decoding="async"/>
 
 - They complete the registration form.
 
-<img src={require(".././img/keycloak/add-user/fill-out-registration-form.png").default} alt="Fill out the registration form" width="1920"/>
+<img src={require(".././img/keycloak/add-user/fill-out-registration-form.png").default} alt="Fill out the registration form" width="1920" height="1063" loading="lazy" decoding="async"/>
 
 After logging in, the user has now the "User Light" Role with no personal Space.
 

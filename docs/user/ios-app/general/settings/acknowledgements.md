@@ -15,8 +15,10 @@ The **Acknowledgements** section lists the third-party libraries and open-source
 2. Tap **Settings**.
 3. Under **More**, tap **Acknowledgements**.
 
-<img src={require("../../img/general/settings/acknowledgements/acknowledgements button.png").default}
-alt="Acknowledgements Button" height="650"/>
+<img src={require("../../img/general/settings/acknowledgements/acknowledgements-button.png").default}
+alt="Acknowledgements Button" width="296" height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Browse Third-Party Components
 
@@ -32,8 +34,10 @@ Depending on the app version, the list may include components such as:
 
 Tap any entry to view additional information about the corresponding library.
 
-<img src={require("../../img/general/settings/acknowledgements/acknowledgements menu.png").default}
-alt="Acknowledgements Page" height="650"/>
+<img src={require("../../img/general/settings/acknowledgements/acknowledgements-menu.png").default}
+alt="Acknowledgements Page" width="302" height="650"
+loading="lazy"
+decoding="async"/>
 
 :::note
 

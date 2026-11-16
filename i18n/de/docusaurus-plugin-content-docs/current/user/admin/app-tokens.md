@@ -27,20 +27,20 @@ App-Tokens ermöglichen Drittanbieter-Anwendungen den Zugriff auf all Ihre Daten
 - Gehen Sie in Ihren OpenCloud-Kontoeinstellungen zum Bereich „App-Tokens“.
 - Klicken Sie auf „Neu“, um ein Token zu erstellen.
 
-  <img src={require("./img/app-tokens/create.png").default} alt="App-Token erstellen" width="1920"/>
+  <img src={require("./img/app-tokens/create.png").default} alt="App-Token erstellen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Geben Sie einen Namen für das Token ein, beispielsweise `WebDAV Client`.
 - Wählen Sie ein Ablaufdatum, um die Sicherheit zu erhöhen.
 - Klicken Sie auf „Bestätigen“.
 
-  <img src={require("./img/app-tokens/enter-name.png").default} alt="Name und Ablaufdatum eingeben" width="1920"/>
+  <img src={require("./img/app-tokens/enter-name.png").default} alt="Name und Ablaufdatum eingeben" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## App-Token kopieren
 
 - Nach der Erstellung wird das Token nur ein einziges Mal angezeigt.
 - Kopieren Sie es sofort und bewahren Sie es sicher auf.
 
-  <img src={require("./img/app-tokens/copy-token.png").default} alt="App-Token kopieren" width="1920"/>
+  <img src={require("./img/app-tokens/copy-token.png").default} alt="App-Token kopieren" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 Wenn Sie das Token verlieren, müssen Sie es löschen und ein neues erstellen.
@@ -67,6 +67,6 @@ Wenn ein Token nicht mehr benötigt wird:
 - Gehen Sie erneut zum Bereich „App-Tokens“.
 - Klicken Sie neben dem zu entfernenden Token auf die Schaltfläche „Löschen“.
 
-  <img src={require("./img/app-tokens/delete-token.png").default} alt="App-Token löschen" width="1920"/>
+  <img src={require("./img/app-tokens/delete-token.png").default} alt="App-Token löschen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Dadurch wird verhindert, dass ungenutzte Tokens missbraucht werden können.

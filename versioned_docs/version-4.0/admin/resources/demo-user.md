@@ -30,7 +30,7 @@ Role: Admin
 
 Co-developer of UNIX & inventor of the C programming language
 
-<img src={require("./img/demo-user/dennis-ritchie.png").default} alt="Dennis Ritchie" width="200"/>
+<img src={require("./img/demo-user/dennis-ritchie.png").default} alt="Dennis Ritchie" width="200" height="200" loading="lazy" decoding="async"/>
 
 - Studied physics and applied mathematics at Harvard University
 - Worked at Bell Labs from 1967, where he developed the first version of the Unix operating system
@@ -44,7 +44,7 @@ Role: Space Admin
 
 Software pioneer & NASA developer
 
-<img src={require("./img/demo-user/margaret-hamilton.png").default} alt="Margaret Hamilton" width="200"/>
+<img src={require("./img/demo-user/margaret-hamilton.png").default} alt="Margaret Hamilton" width="200" height="200" loading="lazy" decoding="async"/>
 
 - Studied mathematics at Earlham College
 - Developed the on-board flight software for NASA as a software engineer at MIT
@@ -59,7 +59,7 @@ Role: User
 
 Father of modern computer science & codebreaker in the Second World War
 
-<img src={require("./img/demo-user/alan-turing.png").default} alt="Alan Turing" width="200"/>
+<img src={require("./img/demo-user/alan-turing.png").default} alt="Alan Turing" width="200" height="200" loading="lazy" decoding="async"/>
 
 - British logician, mathematician, and computer scientist
 - Developed the theoretical foundations of modern computer technology
@@ -74,7 +74,7 @@ Role: User
 
 Computer scientist & microchip design pioneer
 
-<img src={require("./img/demo-user/lynn-conway.png").default} alt="Lynn Conway" width="200"/>
+<img src={require("./img/demo-user/lynn-conway.png").default} alt="Lynn Conway" width="200" height="200" loading="lazy" decoding="async"/>
 
 - Studied electrical engineering at Columbia University
 - Developed VLSI design methodology, revolutionizing microchip development
@@ -90,7 +90,7 @@ Role: User
 
 First woman with a PhD in computer science
 
-<img src={require("./img/demo-user/mary-kenneth-keller.png").default} alt="Mary Kenneth Keller" width="200"/>
+<img src={require("./img/demo-user/mary-kenneth-keller.png").default} alt="Mary Kenneth Keller" width="200" height="200" loading="lazy" decoding="async"/>
 
 - Was a nun and studied mathematics (Bachelor & Master of Science)
 - First woman to work at Dartmouth College's Computer Science Center

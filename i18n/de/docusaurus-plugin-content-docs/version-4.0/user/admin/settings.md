@@ -9,13 +9,13 @@ draft: false
 # Überblick über den Admin-Bereich
 
 Im Admin-Bereich von OpenCloud haben Sie umfangreiche Verwaltungsoptionen für Ihre Organisation. Hier sind die wichtigsten Bereiche:
-<img src={require("./img/settings/admin_settings.png").default} alt="Admin settings" width="400"/>
+<img src={require("./img/settings/admin-settings.png").default} alt="Admin settings" width="400" height="389" loading="lazy" decoding="async"/>
 
 ## Allgemein
 
 - Versionsübersicht:
   Im Bereich Allgemein kannst du Informationen zu deiner aktuellen OpenCloud-Version einsehen und prüfen, ob eine neuere Version verfügbar ist.
-  <img src={require("./img/settings/admin_general.png").default} alt="Admin general" width="1920"/>
+  <img src={require("./img/settings/admin-general.png").default} alt="Admin general" width="1920" height="1052" loading="lazy" decoding="async"/>
 
 :::note
 Die Versionsprüfung kann von einem Administrator deaktiviert worden sein.
@@ -33,7 +33,7 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
   - Quota (Speicherplatz) von Benutzern ändern
   - Benutzer in Gruppen hinzufügen oder entfernen
   - Allow or prohibit logins (for individual users)
-    <img src={require("./img/settings/admin_users.png").default} alt="Admin users" width="1920"/>
+    <img src={require("./img/settings/admin-users.png").default} alt="Admin users" width="1920" height="1095" loading="lazy" decoding="async"/>
 
 ## Gruppen
 
@@ -42,8 +42,8 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
 - Gruppen verwalten:
   Sie können lokale Gruppen erstellen, bearbeiten oder löschen und Mitglieder hinzufügen oder entfernen.
 - Importierte Gruppen: Externe Gruppen, die über ein externes Benutzerverwaltungssystem importiert wurden, können hier nicht bearbeitet werden. Diese Gruppen sind mit einem Sperrsymbol  
-   gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
-  <img src={require("./img/settings/admin_groups.png").default} alt="Admin groups" width="1920"/>
+  gekennzeichnet, um anzuzeigen, dass sie gesperrt sind.
+  <img src={require("./img/settings/admin-groups.png").default} alt="Admin groups" width="1920" height="1090" loading="lazy" decoding="async"/>
 
 ## Spaces
 
@@ -53,4 +53,4 @@ Wenn diese Option ausgeschaltet ist, werden Informationen über neuere Versionen
   - Bearbeiten
   - Deaktivieren oder aktivieren
   - Löschen
-    <img src={require("./img/settings/admin_spaces.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/settings/admin-spaces.png").default} alt="Admin spaces" width="1920" height="1095" loading="lazy" decoding="async"/>

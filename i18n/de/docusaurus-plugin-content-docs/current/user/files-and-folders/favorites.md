@@ -15,7 +15,7 @@ Favorisierte Elemente werden serverseitig gespeichert, auf einer eigenen Favorit
 ## Ein Element als Favorit markieren
 
 - Öffnen Sie das Kontextmenü für eine Datei oder einen Ordner.
-  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Kontextmenü mit Favoriten-Aktion" width="1920"/>
+  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Kontextmenü mit Favoriten-Aktion" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Wählen Sie im Kontextmenü oder in den Batch-Aktionen „Zu Favoriten hinzufügen“.
 
@@ -24,7 +24,7 @@ Favorisierte Elemente werden serverseitig gespeichert, auf einer eigenen Favorit
 ## Favoriten öffnen
 
 - Öffnen Sie „Favoriten“ in der linken Seitenleiste des Web-Clients.
-  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favoriten-Seite mit mehreren persönlichen Dateien" width="1920"/>
+  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favoriten-Seite mit mehreren persönlichen Dateien" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Auf der Favoritenseite werden die Elemente aus dem persönlichen Space gemeinsam angezeigt.
 
@@ -33,19 +33,19 @@ Favorisierte Elemente werden serverseitig gespeichert, auf einer eigenen Favorit
 Mit den Filtern oberhalb der Favoritenliste können Sie die angezeigten Elemente eingrenzen:
 
 - Öffnen Sie **Typ**, um nur bestimmte Ressourcentypen wie Dokumente, Tabellen, PDF-Dateien, Bilder, Ordner oder Archive anzuzeigen.
-  <img src={require("./img/favorites/favorites-type-filter.png").default} alt="Typfilter in der Favoritenansicht" width="1920"/>
+  <img src={require("./img/favorites/favorites-type-filter.png").default} alt="Typfilter in der Favoritenansicht" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Öffnen Sie **Tags**, um Favoriten mit einem zugewiesenen Tag anzuzeigen.
 
 - Öffnen Sie **Zuletzt geändert**, um die Ergebnisse auf einen Zeitraum wie heute, die letzten 7 oder 30 Tage, dieses Jahr oder das vergangene Jahr einzugrenzen.
-  <img src={require("./img/favorites/favorites-last-modified-filter.png").default} alt="Filter Zuletzt geändert in der Favoritenansicht" width="1920"/>
+  <img src={require("./img/favorites/favorites-last-modified-filter.png").default} alt="Filter Zuletzt geändert in der Favoritenansicht" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Sie können die Filter miteinander kombinieren, um die Favoritenliste weiter einzugrenzen.
 
 ## Einen Favoriten entfernen
 
 - Öffnen Sie das Kontextmenü erneut.
-  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Kontextmenü mit Entfernen-aus-Favoriten-Aktion" width="1920"/>
+  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Kontextmenü mit Entfernen-aus-Favoriten-Aktion" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Wählen Sie im Kontextmenü oder in den Batch-Aktionen „Aus Favoriten entfernen“.
 - Das Element wird aus Ihren Favoriten entfernt.
