@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.59.2](https://github.com/opencloud-eu/docs/releases/tag/3.59.2) - 2026-11-16
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear
+
+### 📦️ Build&Tools
+
+- chore: rename files to kebab-case [[#1375](https://github.com/opencloud-eu/docs/pull/1375)]
+
 ## [3.59.1](https://github.com/opencloud-eu/docs/releases/tag/3.59.1) - 2026-11-16
 
 ### ❤️ Thanks to all contributors! ❤️
