@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: bump @opencloud-eu/prettier-config to 8.2.2 [[#1368](https://github.com/opencloud-eu/docs/pull/1368)]
 - ci: run lint, format and type checks as separate workflows [[#1367](https://github.com/opencloud-eu/docs/pull/1367)]
 - fix: make pnpm typecheck pass and run it in CI [[#1366](https://github.com/opencloud-eu/docs/pull/1366)]
 - feat: enable Docusaurus Faster [[#1365](https://github.com/opencloud-eu/docs/pull/1365)]
