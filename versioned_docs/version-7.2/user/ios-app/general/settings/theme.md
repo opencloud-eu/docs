@@ -21,7 +21,10 @@ The **Theme** page allows you to select how the OpenCloud app is displayed.
 
 <img src={require("../../img/general/settings/theme/theme-button.png").default}
 alt="Theme Button"
-height="650"/>
+width="300"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Available Themes
 
@@ -37,7 +40,10 @@ The selected theme is applied immediately throughout the app.
 
 <img src={require("../../img/general/settings/theme/theme-menu.png").default}
 alt="Theme Menu"
-height="650"/>
+width="300"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## How Theme Selection Works
 

@@ -15,7 +15,7 @@ Favorite items are stored server-side, shown in a dedicated Favorites page and a
 ## Mark an item as a favorite
 
 - Open the context menu for a file or folder.
-  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Context menu with favorites action" width="1920"/>
+  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Context menu with favorites action" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Choose "Add to favorites" in the context menu or in the batch actions.
 
@@ -24,14 +24,14 @@ Favorite items are stored server-side, shown in a dedicated Favorites page and a
 ## Open your favorites
 
 - Open Favorites from the left sidebar in the Web Client.
-  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favorites page with multiple personal files" width="1920"/>
+  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favorites page with multiple personal files" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - The favorites page shows items from the personal space together.
 
 ## Remove a favorite
 
 - Open the context menu again.
-  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Context menu with remove from favorites action" width="1920"/>
+  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Context menu with remove from favorites action" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Choose "Remove from favorites" in the context menu or in the batch actions.
 - The item is removed from your favorites.

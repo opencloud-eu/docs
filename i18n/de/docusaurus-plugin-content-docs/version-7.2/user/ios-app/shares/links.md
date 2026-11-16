@@ -14,37 +14,37 @@ Hier erklären wir, wie man in der OpenCloud iOS-App Dateien und Ordner per Link
 
 - Tippe auf das Drei-Punkte-Menü neben der Datei oder dem Ordner
 
-  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Drei-Punkte-Menü" height="400"/>
+  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Teilen
 
 - Wähle nun den Menüpunkt „Share“ aus
 
-  <img src={require("../img/shares/links/sharing-button.png").default} alt="Teilen" height="400"/>
+  <img src={require("../img/shares/links/sharing-button.png").default} alt="Teilen" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Link erstellen
 
 - Klicke in der folgenden Auswahl auf „Create Link“
 
-  <img src={require("../img/shares/links/create-link-button.png").default} alt="Link erstellen" height="400"/>
+  <img src={require("../img/shares/links/create-link-button.png").default} alt="Link erstellen" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Optionen
 
 - Hier kannst du mehrere Optionen für den zu erstellenden Link auswählen und festlegen
 
-  <img src={require("../img/shares/links/create-link-options.png").default} alt="Übersicht Link-Menü" height="400"/>
+  <img src={require("../img/shares/links/create-link-options.png").default} alt="Übersicht Link-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Linkname
 
 - Gib hier einen Namen für deinen Link ein
 
-  <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" height="400"/>
+  <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Linkfunktionen
 
 - Hier kannst du auswählen, welche Funktion dein Link haben soll:
 
-  <img src={require("../img/shares/links/sharing-options.png").default} alt="Freigabeoptionen" height="400"/>
+  <img src={require("../img/shares/links/sharing-options.png").default} alt="Freigabeoptionen" width="184" height="400" loading="lazy" decoding="async"/>
   - Personen einladen:  
     Nur eingeladene Personen haben Zugriff auf den Link und dessen Inhalt.
   - Kann anzeigen:  
@@ -60,22 +60,22 @@ Hier erklären wir, wie man in der OpenCloud iOS-App Dateien und Ordner per Link
 
 - Hier musst du ein Passwort eingeben. Du kannst eines selbst wählen oder automatisch generieren lassen
 
-  <img src={require("../img/shares/links/password.png").default} alt="Passwort" height="400"/>
+  <img src={require("../img/shares/links/password.png").default} alt="Passwort" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Verfügbarkeitszeitraum
 
 - Hier kannst du einen Zeitraum festlegen, für den der Link verfügbar sein soll
 
-  <img src={require("../img/shares/links/expiration-date.png").default} alt="Ablaufdatum des Links" height="400"/>
+  <img src={require("../img/shares/links/expiration-date.png").default} alt="Ablaufdatum des Links" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Erstellen
 
 - Um den Link zu erstellen, musst du nun auf „Share“ klicken
 
-  <img src={require("../img/shares/links/share-button.png").default} alt="Teilen" height="400"/>
+  <img src={require("../img/shares/links/share-button.png").default} alt="Teilen" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Erstellt Link
 
 - Sobald der Link erstellt wurde, wird er mit dem vergebenen Namen in der Datei- oder Ordnerübersicht angezeigt
 
-  <img src={require("../img/shares/links/created-link.png").default} alt="Erstellter Link" height="400"/>
+  <img src={require("../img/shares/links/created-link.png").default} alt="Erstellter Link" width="184" height="400" loading="lazy" decoding="async"/>

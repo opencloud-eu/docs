@@ -16,10 +16,10 @@ In OpenCloud können Sie zwischen der Raster- und der Listenansicht wechseln, um
 
 In der Rasteransicht werden Dateien und Ordner als Kacheln dargestellt. Vorschauen von Bildern und Dokumenten erleichtern das visuelle Durchsuchen der Inhalte.
 
-<img src={require("./img/view-modes/grid.png").default} alt="Rasteransicht der Dateiliste" width="1920"/>
+<img src={require("./img/view-modes/grid.png").default} alt="Rasteransicht der Dateiliste" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Listenansicht
 
 In der Listenansicht werden Dateien und Ordner in Zeilen mit Details wie Status, Größe, Tags, Änderungsdatum und verfügbaren Aktionen dargestellt.
 
-<img src={require("./img/view-modes/list.png").default} alt="Listenansicht der Dateiliste" width="1920"/>
+<img src={require("./img/view-modes/list.png").default} alt="Listenansicht der Dateiliste" width="1920" height="1080" loading="lazy" decoding="async"/>

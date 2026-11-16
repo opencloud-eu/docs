@@ -14,27 +14,27 @@ Der Bereich „Spaces“ bietet einen zentralen Ort für die Zusammenarbeit in G
 
 Um die Spaces-Übersicht zu öffnen, tippe im Kontomenü auf die Schaltfläche „Spaces“.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 Anschließend erscheint die Spaces-Übersicht, in der alle Spaces aufgelistet sind, in denen du Mitglied bist oder die du selbst erstellt hast.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Suchfunktion
 
 Durch Tippen auf das Suchsymbol öffnet sich das Suchmenü für Spaces.
 
-<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Funktionen innerhalb eines Spaces
 
 Durch Tippen auf das Plus-Symbol erscheinen die verfügbaren Funktionen innerhalb eines Spaces.
 
-<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-functions.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Hinzufügen-Menü
 
@@ -72,4 +72,4 @@ Die Gerätekamera verwenden, um physische Dokumente zu scannen und sie direkt al
 
 Durch Tippen auf das Drei-Punkte-Menü öffnet sich ein Pop-up-Menü, in dem du den Space offline verfügbar machen kannst.
 
-<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/three-point-menue.png").default} alt="Three-Dot Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />

@@ -17,7 +17,10 @@ The OpenCloud web interface consists of several areas that help you to work effi
     src={require("./img/overview/overview.png").default}
     alt="Overview"
     width="1920"
+    height="1080"
     style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
   />
   <OverviewMarker
     aria-hidden="true"

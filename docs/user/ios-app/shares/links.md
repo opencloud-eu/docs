@@ -14,37 +14,37 @@ Here we explain how to share files and folders with others via link in the OpenC
 
 - Click the three-dot menu next to the file or folder
 
-  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menu" height="400"/>
+  <img src={require("../img/shares/links/three-dot-menue.png").default} alt="Three-dot menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Share
 
 - Now select the menu item “Share”
 
-  <img src={require("../img/shares/links/sharing-button.png").default} alt="Share" height="400"/>
+  <img src={require("../img/shares/links/sharing-button.png").default} alt="Share" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Create link
 
 - In the following selection, click on "Create link"
 
-  <img src={require("../img/shares/links/create-link-button.png").default} alt="Create link" height="400"/>
+  <img src={require("../img/shares/links/create-link-button.png").default} alt="Create link" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Options
 
 - Here you can select and specify several options for the link to be created
 
-  <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menu" height="400"/>
+  <img src={require("../img/shares/links/create-link-options.png").default} alt="Overview link menu" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Link name
 
 - Enter a name for your link here
 
-  <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" height="400"/>
+  <img src={require("../img/shares/links/link-name.png").default} alt="Linkname" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Link functions
 
 - Here you can select which function your link should have:
 
-  <img src={require("../img/shares/links/sharing-options.png").default} alt="Share options" height="400"/>
+  <img src={require("../img/shares/links/sharing-options.png").default} alt="Share options" width="184" height="400" loading="lazy" decoding="async"/>
   - Invite people:
     Only invited people have access to the link and its content.
   - Can View:
@@ -60,22 +60,22 @@ Here we explain how to share files and folders with others via link in the OpenC
 
 - You must enter a password here. You can choose your own or have one generated for you
 
-  <img src={require("../img/shares/links/password.png").default} alt="Password" height="400"/>
+  <img src={require("../img/shares/links/password.png").default} alt="Password" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Period of available
 
 - Here you can specify a period of time for which the link should be available
 
-  <img src={require("../img/shares/links/expiration-date.png").default} alt="Link expiration date" height="400"/>
+  <img src={require("../img/shares/links/expiration-date.png").default} alt="Link expiration date" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Create
 
 - To create the link you must now click on "Share"
 
-  <img src={require("../img/shares/links/share-button.png").default} alt="Share" height="400"/>
+  <img src={require("../img/shares/links/share-button.png").default} alt="Share" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Created link
 
 - Once the link is created, you will see it with the assigned name in the file or folder overview
 
-  <img src={require("../img/shares/links/created-link.png").default} alt="Created link" height="400"/>
+  <img src={require("../img/shares/links/created-link.png").default} alt="Created link" width="184" height="400" loading="lazy" decoding="async"/>

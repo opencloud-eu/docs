@@ -12,7 +12,7 @@ import ReleaseDates from '@site/static/templates/release-dates.md';
 
 OpenCloud offers three release types to suit different needs: Rolling, Production, and LTS. For most users, Rolling is ideal, providing the latest features every few weeks. Production focuses on stability. LTS (Long-Term Support Release) is designed specifically for businesses that need longevity and extended backports.
 
-<img src={require("./img/lifecycle/Release Cycle OpenCloud.png").default} alt="Release types" width="1920"/>
+<img src={require("./img/lifecycle/Release Cycle OpenCloud.png").default} alt="Release types" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Advantage of the LTS Releases
 
@@ -30,4 +30,4 @@ With LTS, businesses can continue using an older production release without need
 
 OpenCloud follows [Semantic Versioning](https://semver.org/), also known as SemVer. Version numbers are structured as MAJOR.MINOR.PATCH. Breaking changes increase the MAJOR version, new backward-compatible features increase the MINOR version, and backward-compatible bug fixes increment the PATCH version.
 
-<img src={require("./img/lifecycle/semver.png").default} alt="Semantic Versioning" width="1920"/>
+<img src={require("./img/lifecycle/semver.png").default} alt="Semantic Versioning" width="1920" height="1391" loading="lazy" decoding="async"/>

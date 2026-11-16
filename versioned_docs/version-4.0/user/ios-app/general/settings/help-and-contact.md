@@ -20,7 +20,10 @@ The **Help & Contact** page gives you access to documentation and community supp
 
 <img src={require("../../img/settings/help-and-contact/help and contact button.png").default}
 alt="Help & Contact Button"
-height="650"/>
+width="296"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Available Resources
 
@@ -34,7 +37,10 @@ Use these resources whenever you need additional information, want to report a p
 
 <img src={require("../../img/settings/help-and-contact/help and contact menu.png").default}
 alt="Help & Contact Page"
-height="650"/>
+width="301"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## When to Use Each Resource
 

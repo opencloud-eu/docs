@@ -17,19 +17,19 @@ Public links use link permissions and do not identify individual recipients. The
 - Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
 - Select “Share” from the context menu.
 
-  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Select share" width="1920"/>
+  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Select share" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - A sidebar window will open on the right-hand side of the screen.
-  <img src={require("./img/extern/sidebar-window.png").default} alt="Sharing sidebar" width="400"/>
+  <img src={require("./img/extern/sidebar-window.png").default} alt="Sharing sidebar" width="400" height="617" loading="lazy" decoding="async"/>
 
 - Click “Add link” to open the link configuration window.
 
-  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Public link configuration" width="1920"/>
+  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Public link configuration" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Click “Options” to configure the link.
 - Select the desired access rights for recipients:
 
-  <img src={require("./img/extern/access-rights.png").default} alt="Available permissions for a public link" width="1920"/>
+  <img src={require("./img/extern/access-rights.png").default} alt="Available permissions for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
   | Permission           | Description                                                                                                   |
   | -------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -42,13 +42,13 @@ Public links use link permissions and do not identify individual recipients. The
 - After you have configured the link options, click “Copy link” to create and copy the public link.
   To include the password, open the menu next to “Copy link” and select “Copy link and password”.
 
-  <img src={require("./img/extern/password-section.png").default} alt="Password, expiration date, and copy options for a public link" width="1920"/>
+  <img src={require("./img/extern/password-section.png").default} alt="Password, expiration date, and copy options for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - The link is now created and can be shared with recipients.
-  <img src={require("./img/extern/copy-link-button.png").default} alt="Created public link" width="1920"/>
+  <img src={require("./img/extern/copy-link-button.png").default} alt="Created public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - You can edit the link later by clicking the three-dot menu to the right of the link.
 
-  <img src={require("./img/extern/link-actions-menu.png").default} alt="Actions for a public link" width="1920"/>
+  <img src={require("./img/extern/link-actions-menu.png").default} alt="Actions for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
   From there, you can rename the link, change the expiration date, update the password, remove the password, or delete the link.

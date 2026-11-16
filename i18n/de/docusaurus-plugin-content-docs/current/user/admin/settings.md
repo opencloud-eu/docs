@@ -12,7 +12,7 @@ Der Admin-Bereich von OpenCloud bietet die wichtigsten Werkzeuge zur Verwaltung 
 
 Um den Admin-Bereich zu öffnen, wählen Sie oben rechts den App-Umschalter und anschließend „Admin-Einstellungen“. Die wichtigsten Bereiche werden im Folgenden beschrieben.
 
-<img src={require("./img/settings/admin_settings.png").default} alt="Admin-Einstellungen" width="1920"/>
+<img src={require("./img/settings/admin_settings.png").default} alt="Admin-Einstellungen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Allgemein
 
@@ -20,7 +20,7 @@ Um den Admin-Bereich zu öffnen, wählen Sie oben rechts den App-Umschalter und 
   Im Bereich „Allgemein“ können Sie Ihre aktuelle OpenCloud-Version einsehen und prüfen, ob eine neuere Version verfügbar ist.
 - Ankündigungsbanner:
   Administratoren können allen Benutzern eine organisationsweite Nachricht anzeigen. Eine Anleitung zur Konfiguration finden Sie unter [Ankündigungsbanner](../../admin/configuration/announcement-banner).
-  <img src={require("./img/settings/admin_general.png").default} alt="Allgemeine Admin-Einstellungen" width="1920"/>
+  <img src={require("./img/settings/admin_general.png").default} alt="Allgemeine Admin-Einstellungen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 Wenn ein sicherheitskritisches Upgrade verfügbar ist, können Administratoren zusätzlich eine Warnung unten links in der Weboberfläche sehen.
@@ -38,7 +38,7 @@ Ein Administrator kann die Versionsprüfung deaktivieren. Wenn diese Option ausg
   - Benutzerquoten ändern
   - Benutzer zu Gruppen hinzufügen oder aus Gruppen entfernen
   - die Anmeldung einzelner Benutzer erlauben oder sperren
-    <img src={require("./img/settings/admin_users.png").default} alt="Benutzerverwaltung" width="1920"/>
+    <img src={require("./img/settings/admin_users.png").default} alt="Benutzerverwaltung" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hier weiterhin sehen. Die Benutzerverwaltung muss jedoch im IdP erfolgen.
@@ -52,7 +52,7 @@ Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hi
   Sie können lokale Gruppen erstellen, bearbeiten oder löschen und Mitglieder hinzufügen oder entfernen.
 - Importierte Gruppen:
   Externe Gruppen, die über ein externes Benutzerverwaltungssystem importiert wurden, können hier nicht bearbeitet werden. Diese Gruppen sind mit einem Sperrsymbol als gesperrt gekennzeichnet.
-  <img src={require("./img/settings/admin_groups.png").default} alt="Gruppenverwaltung" width="1920"/>
+  <img src={require("./img/settings/admin_groups.png").default} alt="Gruppenverwaltung" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Spaces
 
@@ -65,10 +65,10 @@ Wenn OpenCloud mit einem externen IdP verbunden ist, können Sie die Benutzer hi
   - Space-Quoten ändern
   - Spaces deaktivieren oder aktivieren
   - deaktivierte Spaces löschen
-    <img src={require("./img/settings/admin_spaces.png").default} alt="Space-Verwaltung" width="1920"/>
+    <img src={require("./img/settings/admin_spaces.png").default} alt="Space-Verwaltung" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Apps
 
 - App-Übersicht:
   Hier sehen Sie die installierten Apps, deren Versionen, die kompatiblen OpenCloud-Versionen und den aktuellen Status.
-  <img src={require("./img/settings/admin_apps.png").default} alt="Admin-Apps" width="1920"/>
+  <img src={require("./img/settings/admin_apps.png").default} alt="Admin-Apps" width="1920" height="1080" loading="lazy" decoding="async"/>

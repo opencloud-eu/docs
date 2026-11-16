@@ -20,7 +20,7 @@ Use the viewer controls to:
 - Show or hide the photo roll.
 - Enter or exit full screen mode.
 
-<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo roll view in OpenCloud" width="1920"/>
+<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo roll view in OpenCloud" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Supported image formats
 

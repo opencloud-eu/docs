@@ -8,7 +8,7 @@ description: Erfahren Sie, wie README.md-Dateien in Ordnern in OpenCloud gerende
 
 Wenn ein Ordner eine Datei mit dem Namen `README.md` enthält, rendert OpenCloud deren Markdown-Inhalt oberhalb der Dateiliste.
 
-<img src={require("./img/readme-files/readme-list-view.png").default} alt="README in der Listenansicht gerendert, während die Datei noch sichtbar ist" width="1920"/>
+<img src={require("./img/readme-files/readme-list-view.png").default} alt="README in der Listenansicht gerendert, während die Datei noch sichtbar ist" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## README-Datei erstellen
 
@@ -49,4 +49,4 @@ Die Bilder werden verwendet, um das Verhalten der Listenansicht, der Kachelansic
 
 Löschen Sie die Datei `README.md` oder benennen Sie sie um, um den gerenderten Bereich zu entfernen.
 
-<img src={require("./img/readme-files/readme-removed.png").default} alt="Ordner ohne den gerenderten README-Bereich" width="1920"/>
+<img src={require("./img/readme-files/readme-removed.png").default} alt="Ordner ohne den gerenderten README-Bereich" width="1920" height="1080" loading="lazy" decoding="async"/>
