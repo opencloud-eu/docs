@@ -12,6 +12,7 @@
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1382](https://github.com/opencloud-eu/docs/pull/1382)]
 - feat: downscale images that are much larger than displayed [[#1379](https://github.com/opencloud-eu/docs/pull/1379)]
 - chore: add Dependabot for npm dependencies [[#1378](https://github.com/opencloud-eu/docs/pull/1378)]
 - chore: remove unused Docusaurus template images [[#1377](https://github.com/opencloud-eu/docs/pull/1377)]
