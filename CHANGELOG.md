@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- fix: hide the unmaintained banner on the 4.0 and 7.2 docs [[#1364](https://github.com/opencloud-eu/docs/pull/1364)]
 - chore: compress png images losslessly [[#1363](https://github.com/opencloud-eu/docs/pull/1363)]
 - Update docs [[#1358](https://github.com/opencloud-eu/docs/pull/1358)]
 - chore: remove unreferenced images [[#1361](https://github.com/opencloud-eu/docs/pull/1361)]
