@@ -49,19 +49,10 @@ This command generates static content in the `build` folder. You can serve it us
 
 ## Deployment
 
-### Using SSH:
+Deployment is done by the Woodpecker CI (`.woodpecker/build.yaml`), there is no manual deploy step:
 
-```bash
-USE_SSH=true pnpm deploy
-```
-
-### Without SSH:
-
-```bash
-GIT_USER=<Your GitHub username> pnpm deploy
-```
-
-If you're using GitHub Pages, this will push the production build to the `gh-pages` branch.
+- Every push to `main` builds the site and deploys it to staging.
+- Every tag deploys the site to production. Tags are created by the release PR that [ready-release-go](https://github.com/woodpecker-ci/plugin-ready-release-go) opens (`🎉 Release x.y.z`): merging that PR creates the tag.
 
 
 ## Screenshot Guidelines
