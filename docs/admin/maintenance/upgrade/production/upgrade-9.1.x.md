@@ -50,7 +50,16 @@ If you run the Rolling release 8.x.x, follow the [Upgrade 9.x.x](../rolling/upgr
 
 ## Step 1: Update the `opencloud-compose` Checkout
 
-Update your local copy of the `opencloud-compose` repository as described in [Update the opencloud-compose Checkout](../upgrade.md#update-the-opencloud-compose-checkout).
+If you use the `opencloud-compose` repository, fetch the latest changes and switch from the previous Production branch to the new one:
+
+```bash
+cd /opencloud-compose
+git fetch origin
+git switch stable-9.1
+git pull --ff-only
+```
+
+Running `git pull` while you are still on `stable-7.2` only updates that branch and does not switch the checkout to the 9.1 release. Skip this step if you run OpenCloud with plain Docker.
 
 ## Step 2: Verify the New Version
 
@@ -123,7 +132,11 @@ opencloud init --diff
 
 If the command reports `no changes, your config is up to date`, run `exit` and continue with [Step 4: Start OpenCloud](#step-4-start-opencloud).
 
-Otherwise, review the generated patch, test it, and apply it:
+Otherwise, review the generated patch carefully, especially if you use custom settings in `opencloud.yaml`. Among other changes, the patch adds the `auth_guest.service_account` settings that are required for guest links.
+
+The patch can also remove the existing `thumbnails.thumbnail` section. This is expected because the thumbnail configuration changed in OpenCloud 9.1.x. If you customized these settings, migrate them as described in [Thumbnails](../rolling/upgrade-9.x.x.md#thumbnails) before you apply the patch.
+
+Test and apply the patch:
 
 ```bash
 cat opencloud.config.patch
@@ -131,8 +144,6 @@ patch --dry-run opencloud.yaml < opencloud.config.patch
 patch opencloud.yaml < opencloud.config.patch
 exit
 ```
-
-Review the patch carefully before you apply it, especially if you use custom settings in `opencloud.yaml`. Among other changes, the patch adds the `auth_guest.service_account` settings that are required for guest links.
 
 For a detailed description of these steps, see [Verify Configuration Changes](../upgrade.md#verify-configuration-changes).
 
@@ -160,7 +171,7 @@ As of OpenCloud 8.x.x, OpenCloud uses a new, versioned search index. After the u
 Rebuild the index:
 
 ```bash
-docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
+docker compose exec opencloud opencloud search index --all-spaces --force-rescan
 ```
 
 Verify that older files can be found in the Web Client. Then remove the old, unversioned Bleve index:
@@ -179,7 +190,7 @@ Follow these steps only if your OpenCloud 7.2.x installation already used OpenSe
 Rebuild the index:
 
 ```bash
-docker compose exec opencloud opencloud search index --all-spaces --force-rescan --insecure
+docker compose exec opencloud opencloud search index --all-spaces --force-rescan
 ```
 
 Verify that older files can be found in the Web Client. If you use OpenSearch from `opencloud-compose`, list the existing indexes and remove the old one from within the OpenSearch container:
@@ -214,7 +225,7 @@ Check the following list and apply the changes that are relevant for your deploy
 | set thumbnail settings via environment variables or YAML                | [Thumbnails](../rolling/upgrade-9.x.x.md#thumbnails)                   |
 | run the OpenCloud services in separate containers                       | [Separate Containers](../rolling/upgrade-9.x.x.md#separate-containers) |
 | want to enable guest links                                              | [Guest Links](../rolling/upgrade-9.x.x.md#guest-links)                 |
-| set `GRAPH_SPACES_DEFAULT_QUOTA`                                        | [Space Quota](../rolling/upgrade-9.x.x.md#space-quota)                 |
+| set `GRAPH_SPACES_DEFAULT_QUOTA`                                        | [Space Quota](#space-quota)                                            |
 | rely on the search results for personal space roots or `.space` folders | [Search](../rolling/upgrade-9.x.x.md#search)                           |
 | use customized email templates                                          | [Email Templates](../rolling/upgrade-9.x.x.md#email-templates)         |
 | use apps or web extensions                                              | [Web Extensions](../rolling/upgrade-9.x.x.md#web-extensions)           |
@@ -228,6 +239,16 @@ Real-time collaborative editing in the OpenCloud Editor requires the Yjs service
 Also check that WebDAV and the Office integration are still forwarded correctly.
 
 For the required Nginx configuration, see [Proxy Config](../../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config).
+
+### Space Quota
+
+If `GRAPH_SPACES_DEFAULT_QUOTA` is set, rename it to `OC_SPACES_DEFAULT_QUOTA`. The value is set in bytes:
+
+```env
+OC_SPACES_DEFAULT_QUOTA=10000000000
+```
+
+The old name is deprecated. The quota is still applied, but the `spaces.default_quota` capability reads only the new name. If you keep the old name, clients display the default of 1 GB instead of your configured value.
 
 ## Step 7: Verify the Upgrade
 
