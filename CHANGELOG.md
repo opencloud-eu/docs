@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: add Dependabot for npm dependencies [[#1378](https://github.com/opencloud-eu/docs/pull/1378)]
 - chore: remove unused Docusaurus template images [[#1377](https://github.com/opencloud-eu/docs/pull/1377)]
 - chore: rename files to kebab-case [[#1375](https://github.com/opencloud-eu/docs/pull/1375)]
 
