@@ -8,6 +8,8 @@
 
 ### 📦️ Build&Tools
 
+- feat: add syntax highlighting for more code block languages [[#1372](https://github.com/opencloud-eu/docs/pull/1372)]
+- fix: move the 4.0 collabora fonts page into the collabora folder [[#1371](https://github.com/opencloud-eu/docs/pull/1371)]
 - chore: bump typescript to 7.0.2 [[#1369](https://github.com/opencloud-eu/docs/pull/1369)]
 - chore: remove unused raw loader plugin and stale config comments [[#1370](https://github.com/opencloud-eu/docs/pull/1370)]
 - chore: bump @opencloud-eu/prettier-config to 8.2.2 [[#1368](https://github.com/opencloud-eu/docs/pull/1368)]
