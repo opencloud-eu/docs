@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear
+@AlexAndBear, @openclouders
 
 ### 📦️ Build&Tools
 
+- Update docs [[#1358](https://github.com/opencloud-eu/docs/pull/1358)]
 - chore: remove unreferenced images [[#1361](https://github.com/opencloud-eu/docs/pull/1361)]
 - docs: describe the CI deployment in the README [[#1360](https://github.com/opencloud-eu/docs/pull/1360)]
 - chore: bump dependencies and clean up repo files [[#1359](https://github.com/opencloud-eu/docs/pull/1359)]
