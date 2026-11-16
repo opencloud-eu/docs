@@ -8,6 +8,7 @@
 
 ### 📦️ Build&Tools
 
+- chore: compress png images losslessly [[#1363](https://github.com/opencloud-eu/docs/pull/1363)]
 - Update docs [[#1358](https://github.com/opencloud-eu/docs/pull/1358)]
 - chore: remove unreferenced images [[#1361](https://github.com/opencloud-eu/docs/pull/1361)]
 - docs: describe the CI deployment in the README [[#1360](https://github.com/opencloud-eu/docs/pull/1360)]
