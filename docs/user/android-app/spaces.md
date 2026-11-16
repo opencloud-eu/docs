@@ -25,7 +25,7 @@ Afterwards, the Spaces Overview appears, listing all Spaces you are a member of 
 By tapping the **search icon**, the searchbar and the search menu for Spaces will open.
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Functions within a Space
 

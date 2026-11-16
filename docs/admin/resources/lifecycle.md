@@ -12,7 +12,7 @@ import ReleaseDates from '@site/static/templates/release-dates.md';
 
 OpenCloud offers three release types to suit different needs: Rolling, Production, and LTS. For most users, Rolling is ideal, providing the latest features every few weeks. Production focuses on stability. LTS (Long-Term Support Release) is designed specifically for businesses that need longevity and extended backports.
 
-<img src={require("./img/lifecycle/Release Cycle OpenCloud.png").default} alt="Release types" width="1920" height="1080" loading="lazy" decoding="async"/>
+<img src={require("./img/lifecycle/release-cycle-opencloud.png").default} alt="Release types" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Feature Maturity in Rolling
 

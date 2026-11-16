@@ -17,7 +17,7 @@ Der Bereich **Datenschutzerkl채rung** bietet schnellen Zugriff auf die offiziell
 
 Wenn Sie diese Option ausw채hlen, wird ein Best채tigungsdialog angezeigt, bevor die App verlassen wird.
 
-<img src={require("../../img/settings/privacy-policy/privacy policy button.png").default}
+<img src={require("../../img/settings/privacy-policy/privacy-policy-button.png").default}
 alt="Schaltfl채che Datenschutzerkl채rung" width="294" height="650"
 loading="lazy"
 decoding="async"/>
@@ -29,7 +29,7 @@ Es erscheint ein Best채tigungsdialog mit der Frage, ob Sie die externe Website �
 - Tippen Sie auf **OK**, um fortzufahren.
 - Tippen Sie auf **Abbrechen**, um in der OpenCloud-App zu bleiben.
 
-<img src={require("../../img/settings/privacy-policy/pop up.png").default}
+<img src={require("../../img/settings/privacy-policy/pop-up.png").default}
 alt="Pop-up" width="366" height="650"
 loading="lazy"
 decoding="async"/>
@@ -45,7 +45,7 @@ Die Seite enth채lt Informationen zu:
 - DSGVO-Konformit채t
 - Ihren Rechten in Bezug auf personenbezogene Daten
 
-<img src={require("../../img/settings/privacy-policy/privacy policy page.png").default}
+<img src={require("../../img/settings/privacy-policy/privacy-policy-page.png").default}
 alt="OpenCloud-Datenschutzerkl채rung" width="366" height="650"
 loading="lazy"
 decoding="async"/>

@@ -16,7 +16,7 @@ The **App Version** section displays detailed version information about your ins
 3. Scroll to the bottom of the page.
 4. Tap **App Version**.
 
-<img src={require("../../img/settings/app-version/app version button.png").default}
+<img src={require("../../img/settings/app-version/app-version-button.png").default}
 alt="App Version Button" width="296" height="650"
 loading="lazy"
 decoding="async"/>
@@ -27,7 +27,7 @@ After tapping **App Version**, the complete version information is automatically
 
 A confirmation message appears at the top of the screen indicating that the version information has been copied successfully.
 
-<img src={require("../../img/settings/app-version/copied app version pop up.png").default}
+<img src={require("../../img/settings/app-version/copied-app-version-pop-up.png").default}
 alt="App Version copied confirmation" width="299" height="650"
 loading="lazy"
 decoding="async"/>

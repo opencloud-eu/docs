@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
-id: verify-SSL-certification
+id: verify-ssl-certification
+slug: verify-SSL-certification
 title: Verify SSL Certification
 description: 'Verify SSL Certification in OpenCloud'
 draft: false
@@ -27,7 +28,7 @@ Example in the Chrome browser:
 - Check the certificate details to confirm that the certificate was issued by Let's Encrypt Staging.
 
   <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500" height="615" loading="lazy" decoding="async"/>
-  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500" height="309" loading="lazy" decoding="async"/>
+  <img src={require("./../../img/docker-compose/subordinate-cas.png").default} alt="Certificate Details" width="500" height="309" loading="lazy" decoding="async"/>
 
 ## Apply a Real SSL Certificate
 

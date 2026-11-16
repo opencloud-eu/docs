@@ -26,7 +26,7 @@ Durch Tippen auf das Suchsymbol öffnet sich das Suchmenü für Spaces.
 
 <img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
+<img src={require("./img/spaces/search-menue.png").default} alt="Search Menu" style={{ width: '300px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## Funktionen innerhalb eines Spaces
 

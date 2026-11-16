@@ -339,4 +339,4 @@ docker compose up -d
 
 Now your OpenCloud should be reachable via your URL.
 
-<img src={require("./../img/raspberrypi/reachable-via-URL.png").default} alt="reachable-via-URL" width="1920" height="1152" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/reachable-via-url.png").default} alt="reachable-via-URL" width="1920" height="1152" loading="lazy" decoding="async"/>

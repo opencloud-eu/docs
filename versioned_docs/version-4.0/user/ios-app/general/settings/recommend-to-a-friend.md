@@ -17,7 +17,7 @@ The **Recommend to a Friend** feature allows you to quickly invite others to try
 
 Selecting this option opens your device's share sheet with a pre-filled invitation message.
 
-<img src={require("../../img/settings/recommend-to-a-friend/recommend to a friend button.png").default}
+<img src={require("../../img/settings/recommend-to-a-friend/recommend-to-a-friend-button.png").default}
 alt="Recommend to a Friend Button" width="296" height="650"
 loading="lazy"
 decoding="async"/>
@@ -34,7 +34,7 @@ The invitation message already contains:
 
 Simply enter the recipient and send the message.
 
-<img src={require("../../img/settings/recommend-to-a-friend/message field.png").default}
+<img src={require("../../img/settings/recommend-to-a-friend/message-field.png").default}
 alt="Message Field" width="301" height="650"
 loading="lazy"
 decoding="async"/>

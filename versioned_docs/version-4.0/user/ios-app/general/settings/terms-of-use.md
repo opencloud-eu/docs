@@ -17,7 +17,7 @@ The **Terms Of Use** section provides quick access to the OpenCloud Terms of Use
 
 Selecting this option opens a confirmation dialog before leaving the app.
 
-<img src={require("../../img/settings/terms-of-use/terms of use button.png").default}
+<img src={require("../../img/settings/terms-of-use/terms-of-use-button.png").default}
 alt="Terms Of Use Button" width="296" height="650"
 loading="lazy"
 decoding="async"/>
@@ -29,7 +29,7 @@ A confirmation dialog appears asking whether you want to open the external websi
 - Tap **OK** to continue.
 - Tap **Cancel** to remain in the OpenCloud app.
 
-<img src={require("../../img/settings/terms-of-use/pop up.png").default}
+<img src={require("../../img/settings/terms-of-use/pop-up.png").default}
 alt="Pop Up" width="300" height="650"
 loading="lazy"
 decoding="async"/>
@@ -40,7 +40,7 @@ After confirming, OpenCloud opens the Terms of Use in your device's default web 
 
 The page contains the complete license and terms governing the use of OpenCloud software and related components.
 
-<img src={require("../../img/settings/terms-of-use/terms of use page.png").default}
+<img src={require("../../img/settings/terms-of-use/terms-of-use-page.png").default}
 alt="OpenCloud Terms Of Use website" width="300" height="650"
 loading="lazy"
 decoding="async"/>
