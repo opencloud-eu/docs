@@ -14,7 +14,7 @@ for a detailed specification of the API implemented by the graph service.
 * [Sequence Diagram](#sequence-diagram)
 * [Users and Groups API](#users-and-groups-api)
   * [LDAP Configuration](#ldap-configuration)
-    * [Read-Only Access to Existing LDAP Servers](#readonly-access-to-existing-ldap-servers)
+    * [Read-Only Access to Existing LDAP Servers](#read-only-access-to-existing-ldap-servers)
     * [Using a Write Enabled LDAP Server](#using-a-write-enabled-ldap-server)
 * [Query Filters Provided by the Graph API](#query-filters-provided-by-the-graph-api)
 * [Caching](#caching)
