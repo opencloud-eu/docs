@@ -58,8 +58,8 @@ importers:
         specifier: 3.10.2
         version: 3.10.2(@swc/core@1.16.22)(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.33))(esbuild@0.27.1)(html-minifier-terser@7.2.0)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@opencloud-eu/prettier-config':
-        specifier: ^3.2.0
-        version: 3.2.0(prettier@3.10.1)
+        specifier: ^8.2.2
+        version: 8.2.2(prettier@3.10.1)
       likec4:
         specifier: 1.61.0
         version: 1.61.0(@types/node@26.6.6)(@types/react@19.3.0)(esbuild@0.27.1)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(terser@5.51.2)
@@ -1849,8 +1849,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@opencloud-eu/prettier-config@3.2.0':
-    resolution: {integrity: sha512-7sFmvQ1d6kWQCtZe0XpyfoZDKTu2+LhAOAeP9+Lmlj2sWl8ym4PdFa9DgyPhLCulBHGyR+LSbx7VxV34R8qmeQ==}
+  '@opencloud-eu/prettier-config@8.2.2':
+    resolution: {integrity: sha512-N56e83sCAxvZYiTOUdztTfjGBbqApaR2mt6Z/IeyXMJYtPbzcJiZ8QZgGoOl1Dae2UgGvYQswDh10LI8ti9bEA==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -9768,7 +9768,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.20.3
 
-  '@opencloud-eu/prettier-config@3.2.0(prettier@3.10.1)':
+  '@opencloud-eu/prettier-config@8.2.2(prettier@3.10.1)':
     dependencies:
       prettier: 3.10.1
 
