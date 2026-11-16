@@ -128,6 +128,7 @@ OpenCloud: Delete a file
 src={require('./img/n8n/workflow-overview.png').default}
 alt="n8n workflow with a manual trigger, an OpenCloud folder listing, a filter, and an OpenCloud file deletion step"
 width="1920"
+height="1066"
 loading="lazy"
 decoding="async"
 />
@@ -298,6 +299,7 @@ Enable `Convert types where required` if n8n does not automatically recognize th
 src={require('./img/n8n/filter.png').default}
 alt="n8n Filter node configured with two AND conditions to select files older than five minutes"
 width="1920"
+height="1022"
 loading="lazy"
 decoding="async"
 />

@@ -15,19 +15,19 @@ OpenCloud speichert verschiedene Versionen von Dateien. Dies erlaubt Ihnen, frü
 - Details öffnen
   - Rechtsklick auf die Datei
   - oder Klick auf die drei Punkte in der entsprechenden Dateizeile.
-    <img src={require("./img/versions/three-dot-menu.png").default} width="1920" loading="lazy" decoding="async"/>
+    <img src={require("./img/versions/three-dot-menu.png").default} width="1920" height="1098" loading="lazy" decoding="async"/>
   - Wählen Sie "Details “ aus dem Kontextmenü.
-    <img src={require("./img/versions/details-button.png").default} width="400" loading="lazy" decoding="async"/>
+    <img src={require("./img/versions/details-button.png").default} width="400" height="626" loading="lazy" decoding="async"/>
 
 - Versionen auswählen
   - Wählen Sie in der rechten Seitenleiste, die sich öffnet, den Punkt "Versionen “.
 
-  <img src={require("./img/versions/versions-button.png").default} width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/versions/versions-button.png").default} width="400" height="645" loading="lazy" decoding="async"/>
 
 - Versionen anzeigen
   - Alle Versionen der Datei werden angezeigt.
-    <img src={require("./img/versions/versions.png").default} width="400" loading="lazy" decoding="async"/>
+    <img src={require("./img/versions/versions.png").default} width="400" height="364" loading="lazy" decoding="async"/>
   - Sie können nun die gewünschte Version wiederherstellen oder herunterladen.
-    <img src={require("./img/versions/versions-options.png").default} width="400" loading="lazy" decoding="async"/>
+    <img src={require("./img/versions/versions-options.png").default} width="400" height="364" loading="lazy" decoding="async"/>
 
 Diese Schritte geben Ihnen Zugriff auf ältere Versionen Ihrer Dateien zu jeder Zeit!

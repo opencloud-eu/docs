@@ -32,7 +32,7 @@ To create an end-to-end encrypted folder:
 2. Open the “+ New” menu.
 3. Select “Folder”.
 
-<img src={require("./img/e2ee-folders/create-folder-menu.png").default} alt="Create a new folder from the New menu" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/create-folder-menu.png").default} alt="Create a new folder from the New menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Enable end-to-end encryption
 
@@ -41,11 +41,11 @@ In the “Create a new folder” dialog:
 1. Enter a folder name.
 2. Enable “End-to-end encrypt this folder”.
 
-<img src={require("./img/e2ee-folders/create-folder-name.png").default} alt="Create a new folder dialog" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/create-folder-name.png").default} alt="Create a new folder dialog" width="400" height="248" loading="lazy" decoding="async"/>
 
 When end-to-end encryption is enabled, OpenCloud automatically adds the `.vault` suffix to the folder name.
 
-<img src={require("./img/e2ee-folders/encryption-enabled.png").default} alt="End-to-end encryption enabled for the new folder" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/encryption-enabled.png").default} alt="End-to-end encryption enabled for the new folder" width="400" height="248" loading="lazy" decoding="async"/>
 
 Click “Continue”.
 
@@ -57,18 +57,18 @@ This password unlocks the encrypted folder and is required to access the files i
 
 The dialog displays the password requirements and marks each requirement as it is met.
 
-<img src={require("./img/e2ee-folders/set-password.png").default} alt="Set a password for the encrypted folder" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/set-password.png").default} alt="Set a password for the encrypted folder" width="400" height="274" loading="lazy" decoding="async"/>
 
 The dialog provides the following controls:
 
 - “Show password” displays the password you entered.
-  <img src={require("./img/e2ee-folders/show-password.png").default} alt="Show password button" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/e2ee-folders/show-password.png").default} alt="Show password button" width="400" height="274" loading="lazy" decoding="async"/>
 
 - “Copy password” copies the password to the clipboard.
-  <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Copy password button" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Copy password button" width="400" height="274" loading="lazy" decoding="async"/>
 
 - “Generate password” creates a password that meets all requirements.
-  <img src={require("./img/e2ee-folders/generate-password.png").default} alt="Generate password button" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/e2ee-folders/generate-password.png").default} alt="Generate password button" width="400" height="274" loading="lazy" decoding="async"/>
 
 :::important
 
@@ -82,7 +82,7 @@ Click “Create”.
 
 The encrypted folder appears in the file list with a lock icon.
 
-<img src={require("./img/e2ee-folders/encrypted-folder-created.png").default} alt="Encrypted folder created in OpenCloud" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/encrypted-folder-created.png").default} alt="Encrypted folder created in OpenCloud" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 The lock icon indicates that the folder is end-to-end encrypted.
 
@@ -90,13 +90,13 @@ The lock icon indicates that the folder is end-to-end encrypted.
 
 When opening an encrypted folder, you are asked to enter the folder password.
 
-<img src={require("./img/e2ee-folders/unlock-folder.png").default} alt="Unlock an end-to-end encrypted folder" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/unlock-folder.png").default} alt="Unlock an end-to-end encrypted folder" width="400" height="262" loading="lazy" decoding="async"/>
 
 Enter the password and click “Unlock”.
 
 After unlocking the folder, you can access its contents in the Web Client.
 
-<img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Unlocked encrypted folder" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Unlocked encrypted folder" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 
@@ -127,6 +127,7 @@ Other file types, such as documents, spreadsheets, and presentations, are not av
 src={require("./img/e2ee-folders/create-file-menu.png").default}
 alt="New menu in an encrypted folder with document, spreadsheet, and presentation options disabled"
 width="1920"
+height="1080"
 loading="lazy"
 decoding="async"
 />
@@ -151,7 +152,7 @@ Some files in end-to-end encrypted folders cannot be previewed directly in the b
 
 In this case, OpenCloud indicates that no preview is available and offers the file for download instead.
 
-<img src={require("./img/e2ee-folders/no-preview-available.png").default} alt="No preview available for a file in an encrypted folder" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/e2ee-folders/no-preview-available.png").default} alt="No preview available for a file in an encrypted folder" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Limitations
 

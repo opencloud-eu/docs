@@ -21,6 +21,7 @@ Auf der Seite **Design** können Sie auswählen, wie die OpenCloud-App dargestel
 
 <img src={require("../../img/general/settings/theme/theme-button.png").default}
 alt="Schaltfläche Design"
+width="302"
 height="650"
 loading="lazy"
 decoding="async"/>
@@ -39,6 +40,7 @@ Das ausgewählte Design wird sofort in der gesamten App übernommen.
 
 <img src={require("../../img/general/settings/theme/theme-menu.png").default}
 alt="Menü Design"
+width="302"
 height="650"
 loading="lazy"
 decoding="async"/>

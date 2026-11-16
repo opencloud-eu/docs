@@ -10,7 +10,7 @@ draft: false
 
 This section explains the core interface elements of the OpenCloud iOS app and their functionality.
 
-<img src={require("../../img/general/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("../../img/general/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## 1. Account Menu
 

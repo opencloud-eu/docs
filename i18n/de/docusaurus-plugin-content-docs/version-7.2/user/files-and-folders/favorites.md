@@ -15,7 +15,7 @@ Favoriten werden serverseitig gespeichert, auf einer eigenen Favoriten-Seite ang
 ## Ein Element als Favorit markieren
 
 - Öffnen Sie das Kontextmenü für eine Datei oder einen Ordner.
-  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Kontextmenü mit Favoriten-Aktion" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/favorites/add-to-favorites-menu.png").default} alt="Kontextmenü mit Favoriten-Aktion" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Wählen Sie im Kontextmenü oder in den Batch-Aktionen „Zu Favoriten hinzufügen“.
 
@@ -24,14 +24,14 @@ Favoriten werden serverseitig gespeichert, auf einer eigenen Favoriten-Seite ang
 ## Favoriten öffnen
 
 - Öffnen Sie „Favoriten“ in der linken Seitenleiste des Web-Clients.
-  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favoriten-Seite mit mehreren persönlichen Dateien" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/favorites/favorites-personal.png").default} alt="Favoriten-Seite mit mehreren persönlichen Dateien" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Die Favoriten-Seite zeigt die Elemente aus dem persönlichen Bereich zusammen an.
 
 ## Einen Favoriten entfernen
 
 - Öffnen Sie das Kontextmenü erneut.
-  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Kontextmenü mit Entfernen-aus-Favoriten-Aktion" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/favorites/remove-from-favorites-menu.png").default} alt="Kontextmenü mit Entfernen-aus-Favoriten-Aktion" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Wählen Sie im Kontextmenü oder in den Batch-Aktionen „Aus Favoriten entfernen“.
 - Das Element wird aus Ihren Favoriten entfernt.

@@ -14,7 +14,7 @@ Here we explain how to use the search function in the OpenCloud iOS app
 
 - Click on the search icon to open the search function
 
-  <img src={require("./img/search/search-symbol.png").default} alt="Magnifying glass icon" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-symbol.png").default} alt="Magnifying glass icon" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Search function
 
@@ -24,7 +24,7 @@ Here we explain how to use the search function in the OpenCloud iOS app
 
 - You can search for file or folder names in the search bar.
 
-  <img src={require("./img/search/searchbar.png").default} alt="Search bar" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Search Location
 
@@ -41,19 +41,19 @@ By clicking the option to the left of the search bar, you can specify where the 
 - Server:  
   Searches the entire server.
 
-  <img src={require("./img/search/search-location.png").default} alt="Search location" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-location.png").default} alt="Search location" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Type
 
 - By clicking on the option "Type", you can set which file type should be searched for
 
-  <img src={require("./img/search/type.png").default} alt="File type" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/type.png").default} alt="File type" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Date
 
 - By clicking on the option "date", you can set the period in which you want to search
 
-  <img src={require("./img/search/date.png").default} alt="Date" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/date.png").default} alt="Date" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Size
 
@@ -63,10 +63,10 @@ By clicking the option to the left of the search bar, you can specify where the 
 
 - By clicking on the "circle symbol" with the three dots in it, you can save the current search
 
-  <img src={require("./img/search/save-search.png").default} alt="Save search" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/save-search.png").default} alt="Save search" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Search result
 
 - This area displays the search results
 
-  <img src={require("./img/search/search-result.png").default} alt="Search results" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-result.png").default} alt="Search results" width="184" height="400" loading="lazy" decoding="async"/>

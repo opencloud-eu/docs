@@ -14,7 +14,7 @@ draft: false
 docker ps
 ```
 
-<img src={require("./img/common-issues/quick-docker-running.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/common-issues/quick-docker-running.png").default} alt="Admin general" width="1920" height="120" loading="lazy" decoding="async"/>
 
 Several containers should be listed here, e.g., for opencloud, traefik, etc.
 
@@ -26,11 +26,11 @@ For Firefox:
 
 You need to click on Advanced
 
-<img src={require("./img/common-issues/quick-advanced.png").default} alt="Admin general" width="500" loading="lazy" decoding="async"/>
+<img src={require("./img/common-issues/quick-advanced.png").default} alt="Admin general" width="500" height="168" loading="lazy" decoding="async"/>
 
 Confirm the risk with Accept the risk and Continue
 
-<img src={require("./img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500" loading="lazy" decoding="async"/>
+<img src={require("./img/common-issues/quick-accept-security-risk.png").default} alt="Admin general" width="500" height="179" loading="lazy" decoding="async"/>
 
 ## Docker Permission Issues
 

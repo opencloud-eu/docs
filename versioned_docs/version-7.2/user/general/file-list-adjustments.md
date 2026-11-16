@@ -12,7 +12,7 @@ Clicking on the settings icon on the right side of the user interface takes you 
 
 ## Available options
 
-<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Settings icon" width="400" height="444" loading="lazy" decoding="async"/>
 
 - Show hidden files
   - Activate or deactivate the display of hidden files.

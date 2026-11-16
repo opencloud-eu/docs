@@ -14,16 +14,16 @@ As a Space administrator, you can adjust the storage capacity (quota) of a Space
 
 - Select the Edit quota option in the Top-Bar or in the Context-Menu
 
-  <img src={require("./img/quota/context-menu.png").default} alt="Context-Menu" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/context-menu.png").default} alt="Context-Menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Two options are available in the window that opens:
 - Select a default size (e.g. 5 GB) from the drop-down menu.
 
-  <img src={require("./img/quota/select.png").default} alt="Select-quota" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/select.png").default} alt="Select-quota" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Enter an individual storage size.
 
-  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Click on Confirm to apply the change.
 

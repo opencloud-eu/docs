@@ -11,19 +11,19 @@ draft: false
 Here are the steps to share files or folders with other members or groups internally
 
 - Click on the “three dot menu” next to the file or folder name you want to share.
-  <img src={require("./img/intern/three-dot-menu.png").default} alt="Three dot menu" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/three-dot-menu.png").default} alt="Three dot menu" width="1920" height="994" loading="lazy" decoding="async"/>
 
 - Select “Share” from the drop-down menu.
-  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="400" height="620" loading="lazy" decoding="async"/>
 
 - A sidebar window will open on the right-hand side of the screen.
-  <img src={require("./img/intern/sidebar-window.png").default} alt="Sidebar window" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/sidebar-window.png").default} alt="Sidebar window" width="1920" height="1129" loading="lazy" decoding="async"/>
 
 - At the top of the sidebar window, you will find the area for “Internal sharing”.
-  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400" height="373" loading="lazy" decoding="async"/>
 - Search for individual members or entire groups by entering them in the search bar.
 
-  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400" height="372" loading="lazy" decoding="async"/>
 
 - Select the people or groups with whom you would like to share the folder or file.
 
@@ -35,12 +35,12 @@ Here are the steps to share files or folders with other members or groups intern
   - “Can edit":  
     Members have the same rights as in "can upload", but can also create new files, edit existing files and delete them.
 
-    <img src={require("./img/intern/rights-drop-down-menu.png").default} alt="Drop down rights" width="400" loading="lazy" decoding="async"/>
-    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400" loading="lazy" decoding="async"/>
+    <img src={require("./img/intern/rights-drop-down-menu.png").default} alt="Drop down rights" width="400" height="367" loading="lazy" decoding="async"/>
+    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400" height="442" loading="lazy" decoding="async"/>
 
 - Click on “Share” to confirm the selection.
 
-  <img src={require("./img/intern/share-button.png").default} alt="Share button" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/intern/share-button.png").default} alt="Share button" width="400" height="377" loading="lazy" decoding="async"/>
 
 - The shared members or groups are listed under “shared with” in the same window.
 

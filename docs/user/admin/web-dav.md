@@ -28,7 +28,7 @@ To display WebDAV information for a Space:
 - Open Preferences.
 - Enable "Show WebDAV information" in "View options".
 
-  <img src={require("./img/webdav/preferences.png").default} alt="Enable WebDAV info" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/webdav/preferences.png").default} alt="Enable WebDAV info" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Get the WebDAV URL
 
@@ -38,7 +38,7 @@ The details sidebar shows the WebDAV path and the full WebDAV URL. Use the copy 
 
 `https://cloud.example.com/remote.php/dav/spaces/12345678-abcd-efgh-ijkl-987654321000/`
 
-<img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV URL" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/webdav/webdav-url.png").default} alt="WebDAV URL" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ### Connect via WebDAV
 

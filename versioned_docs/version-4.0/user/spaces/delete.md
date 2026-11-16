@@ -16,27 +16,27 @@ Before you can delete a Space, it must first be disabled. Here are the steps you
 
 - If the Space is no longer visible after deactivation, click on the Include disabled filter to display it again.
 
-  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="500" loading="lazy" decoding="async"/>
+  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="500" height="387" loading="lazy" decoding="async"/>
 
 ## Delete Space
 
 - Select the Space you want to delete.
 
-  <img src={require("./img/delete/select-space.png").default} alt="Select Space" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/delete/select-space.png").default} alt="Select Space" width="1920" height="1092" loading="lazy" decoding="async"/>
 
 - Click on Delete in the top bar,
 
-  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar" width="1920" height="1092" loading="lazy" decoding="async"/>
 
   or
 
 - open the three-dot menu and select Delete
 
-  <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="400" height="533" loading="lazy" decoding="async"/>
 
 - Confirm that you are sure that you want to delete the space
 
-  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500" loading="lazy" decoding="async"/>
+  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500" height="158" loading="lazy" decoding="async"/>
 
 :::caution
 A deleted Space cannot be restored. It is permanently and irretrievably deleted.  

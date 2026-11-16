@@ -13,7 +13,7 @@ This makes it easier to review media without downloading files first.
 
 Open a photo in the preview view to browse through the photo roll.
 
-<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo roll view in OpenCloud" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/photos-and-videos/photo-roll-screenshot.png").default} alt="Photo roll view in OpenCloud" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 The photo viewer supports photo roll style navigation, so you can move through a series of images without leaving the preview.
 
@@ -21,7 +21,7 @@ The photo viewer supports photo roll style navigation, so you can move through a
 
 Videos open in the same preview area and can be played directly in the browser.
 
-<img src={require("./img/photos-and-videos/video-screenshot.png").default} alt="Video preview in OpenCloud" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/photos-and-videos/video-screenshot.png").default} alt="Video preview in OpenCloud" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Video playback works directly in OpenCloud, so you can review clips without downloading them first.
 

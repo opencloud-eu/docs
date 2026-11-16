@@ -15,15 +15,15 @@ You can disable and re-enable a Space in a few different ways. Only a Space Admi
 - Select the desired Space.
 - Click Disable in the top action bar or open the context menu.
 
-  <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="Overview disabled spaces" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/enable-disable/disable-space-overview.png").default} alt="Overview disabled spaces" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Confirm the deactivation.
 
-  <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/enable-disable/disable-confirm.png").default} alt="Confirm disable" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - The Space is now disabled.
 
-<img src={require("./img/enable-disable/disabled-space.png").default} alt="Confirm disable" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/enable-disable/disabled-space.png").default} alt="Confirm disable" width="1920" height="1080" loading="lazy" decoding="async"/>
 :::note
 No data will be deleted. Only the Space Admin or the Administrator can enable the Space again.
 :::
@@ -32,17 +32,17 @@ No data will be deleted. Only the Space Admin or the Administrator can enable th
 
 - After the Space has been disabled, the Enable option replaces Disable.
 
-  <img src={require("./img/enable-disable/enable.png").default} alt="Enable option" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/enable-disable/enable.png").default} alt="Enable option" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Click it to enable the Space again.
 
 - If the Space is not visible, the Show disabled Spaces filter may be enabled.
 
-  <img src={require("./img/enable-disable/include-disabled.png").default} alt="Include disabled spaces" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/enable-disable/include-disabled.png").default} alt="Include disabled spaces" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Enable the filter and the Space will appear so it can be enabled.
 
-  <img src={require("./img/enable-disable/disable-included.png").default} alt="Included disabled spaces" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/enable-disable/disable-included.png").default} alt="Included disabled spaces" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Enable by Administrator
 

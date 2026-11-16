@@ -14,7 +14,7 @@ Hier erklären wir, wie du die Suchfunktion in der OpenCloud iOS-App verwendest.
 
 - Klicke auf das Suchsymbol, um die Suchfunktion zu öffnen
 
-  <img src={require("./img/search/search-symbol.png").default} alt="Magnifying glass icon" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-symbol.png").default} alt="Magnifying glass icon" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Suchfunktion
 
@@ -24,7 +24,7 @@ Hier erklären wir, wie du die Suchfunktion in der OpenCloud iOS-App verwendest.
 
 - In der Suchleiste kannst du nach Datei- oder Ordnernamen suchen.
 
-  <img src={require("./img/search/searchbar.png").default} alt="Search bar" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/searchbar.png").default} alt="Search bar" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Suchort
 
@@ -41,19 +41,19 @@ Durch Klicken auf die Option links neben der Suchleiste kannst du festlegen, wo 
 - Server:  
   Sucht auf dem gesamten Server.
 
-  <img src={require("./img/search/search-location.png").default} alt="Search location" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-location.png").default} alt="Search location" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Typ
 
 - Durch Klicken auf die Option „Typ“ kannst du festlegen, nach welchem Dateityp gesucht werden soll
 
-  <img src={require("./img/search/type.png").default} alt="File type" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/type.png").default} alt="File type" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Datum
 
 - Durch Klicken auf die Option „Datum“ kannst du den Zeitraum festlegen, in dem gesucht werden soll
 
-  <img src={require("./img/search/date.png").default} alt="Date" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/date.png").default} alt="Date" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Größe
 
@@ -63,10 +63,10 @@ Durch Klicken auf die Option links neben der Suchleiste kannst du festlegen, wo 
 
 - Durch Klicken auf das „Kreissymbol“ mit den drei Punkten kannst du die aktuelle Suche speichern
 
-  <img src={require("./img/search/save-search.png").default} alt="Save search" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/save-search.png").default} alt="Save search" width="184" height="400" loading="lazy" decoding="async"/>
 
 ## Suchergebnis
 
 - In diesem Bereich werden die Suchergebnisse angezeigt
 
-  <img src={require("./img/search/search-result.png").default} alt="Search results" height="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/search/search-result.png").default} alt="Search results" width="184" height="400" loading="lazy" decoding="async"/>

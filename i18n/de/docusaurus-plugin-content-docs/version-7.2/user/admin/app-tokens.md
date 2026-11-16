@@ -31,20 +31,20 @@ Wenn Sie keinen vollständigen Zugriff gewähren möchten, verwenden Sie stattde
 - Gehen Sie in Ihren OpenCloud-Kontoeinstellungen zum Bereich „App-Tokens“.
 - Klicken Sie auf „+ Neu“, um ein neues Token zu erstellen.
 
-  <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/app-tokens/create.png").default} alt="Create App Token" width="400" height="238" loading="lazy" decoding="async"/>
 
 - Geben Sie einen Namen für das Token ein (z. B. „WebDAV Client“).
 - Wählen Sie ein Ablaufdatum, um die Sicherheit zu erhöhen.
 - Klicken Sie auf „Bestätigen“.
 
-  <img src={require("./img/app-tokens/enter-name.png").default} alt="Namen eingeben und Ablaufdatum wählen" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/app-tokens/enter-name.png").default} alt="Namen eingeben und Ablaufdatum wählen" width="400" height="210" loading="lazy" decoding="async"/>
 
 ## App-Token kopieren
 
 - Nach der Erstellung wird das Token nur ein einziges Mal angezeigt.
 - Kopieren Sie es sofort und bewahren Sie es sicher auf.
 
-  <img src={require("./img/app-tokens/copy-token.png").default} alt="Copy Token" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/app-tokens/copy-token.png").default} alt="Copy Token" width="400" height="218" loading="lazy" decoding="async"/>
 
 :::note
 Wenn Sie das Token verlieren, müssen Sie es löschen und ein neues erstellen.

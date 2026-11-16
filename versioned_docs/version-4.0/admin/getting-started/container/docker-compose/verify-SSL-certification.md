@@ -22,12 +22,12 @@ The same warning may appear for the other domains you configured.
 
 Example in the Chrome browser:
 
-<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../../img/docker-compose/certificate-details.png").default} alt="Certificate Details" width="500" height="437" loading="lazy" decoding="async"/>
 
 - Check the certificate details to confirm that the certificate was issued by Let's Encrypt Staging.
 
-  <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500" loading="lazy" decoding="async"/>
-  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500" loading="lazy" decoding="async"/>
+  <img src={require("./../../img/docker-compose/certificate-viewer.png").default} alt="Certificate Details" width="500" height="615" loading="lazy" decoding="async"/>
+  <img src={require("./../../img/docker-compose/subordinate-ca's.png").default} alt="Certificate Details" width="500" height="309" loading="lazy" decoding="async"/>
 
 ## Apply a Real SSL Certificate
 
@@ -77,7 +77,7 @@ OpenCloud will now request trusted production certificates from Let's Encrypt.
 
 After a short moment, visiting the following URL should show a secure HTTPS connection:
 
-<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./../../img/docker-compose/status-secure.png").default} alt="Certificate Details" width="1920" height="1063" loading="lazy" decoding="async"/>
 
 ## Log into OpenCloud
 
@@ -93,7 +93,7 @@ Username: `admin`
 
 Password: (the password you configured in the .env file)
 
-<img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./../../img/docker-compose/login.png").default} alt="Admin general" width="1920" height="1095" loading="lazy" decoding="async"/>
 
 ## Troubleshooting
 

@@ -12,7 +12,7 @@ Wählen Sie das Einstellungssymbol auf der rechten Seite der Dateiliste aus, um 
 
 ## Verfügbare Optionen
 
-<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Einstellungssymbol für die Dateiliste" width="400" loading="lazy" decoding="async"/>
+<img src={require("./img/files-list-adjustment/settings-icon.png").default} alt="Einstellungssymbol für die Dateiliste" width="400" height="455" loading="lazy" decoding="async"/>
 
 - Versteckte Dateien anzeigen
   - Aktivieren oder deaktivieren Sie die Anzeige von versteckten Dateien.

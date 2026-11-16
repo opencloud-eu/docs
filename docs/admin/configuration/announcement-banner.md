@@ -21,7 +21,7 @@ To configure the announcement banner, open the **Admin Settings** app.
 1. Click the app switcher icon in the top-right corner.
 2. Select **Admin Settings**.
 
-<img src={require("./img/announcement-banner/admin-settings-button.png").default} alt="Admin Settings button" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/announcement-banner/admin-settings-button.png").default} alt="Admin Settings button" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Configure the announcement banner
 
@@ -34,7 +34,7 @@ In the **Announcement banner** area, you can configure the banner that will be s
 3. Optionally, enter additional message text in the **Banner details** field if you want to provide more information.
 4. Click **Save**.
 
-<img src={require("./img/announcement-banner/announcement-banner-option.png").default} alt="Announcement banner settings" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/announcement-banner/announcement-banner-option.png").default} alt="Announcement banner settings" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::important
 
@@ -46,17 +46,17 @@ The announcement banner is visible to users. Do not include sensitive informatio
 
 Before saving the announcement, you can click **Preview** to check how the message will be displayed to users.
 
-<img src={require("./img/announcement-banner/announcement-banner-save.png").default} alt="Preview and save announcement banner" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/announcement-banner/announcement-banner-save.png").default} alt="Preview and save announcement banner" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## User view
 
 After saving the configuration, the announcement banner is displayed at the top of the OpenCloud web interface.
 
-<img src={require("./img/announcement-banner/announcement-banner-on-top.png").default} alt="Announcement banner displayed at the top" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/announcement-banner/announcement-banner-on-top.png").default} alt="Announcement banner displayed at the top" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Users can open the banner to view the full announcement text in a pop-up dialog.
 
-<img src={require("./img/announcement-banner/announcement-banner-pop-up.png").default} alt="Announcement banner pop-up" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/announcement-banner/announcement-banner-pop-up.png").default} alt="Announcement banner pop-up" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Disable the announcement banner
 

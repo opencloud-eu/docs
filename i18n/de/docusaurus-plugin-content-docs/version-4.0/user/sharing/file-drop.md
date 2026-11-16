@@ -14,37 +14,37 @@ Der Trick: Die "Linkempfänger“ können die bereits im Ordner befindlichen Dat
 ## Erstellen Sie eine "Dateiablage"
 
 - Klicken Sie auf das "Drei-Punkte-Menü“ neben dem Namen der Datei oder des Ordners, den Sie freigeben möchten.
-  <img src={require("./img/file-drop/three-dot-menu.png").default} alt="Drei Punkte Menü" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/three-dot-menu.png").default} alt="Drei Punkte Menü" width="1920" height="1014" loading="lazy" decoding="async"/>
 - Wählen Sie Teilen aus dem Dropdown-Menü.
 
-  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down Menü" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Drop down Menü" width="400" height="631" loading="lazy" decoding="async"/>
 
 - Auf der rechten Seite des Bildschirms öffnet sich ein Sidebar-Fenster.
-  <img src={require("./img/file-drop/sidebar-window.png").default} width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/sidebar-window.png").default} width="1920" height="1014" loading="lazy" decoding="async"/>
 - Im Seitenleistenfenster finden Sie den Bereich Öffentliche Links und klicken dort auf die Schaltfläche Link hinzufügen.
-  <img src={require("./img/file-drop/add-link-button.png").default} alt="Seitenleistenfenster" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/add-link-button.png").default} alt="Seitenleistenfenster" width="400" height="380" loading="lazy" decoding="async"/>
 - Wählen Sie die Option **„File Drop (geheim)“** aus.
 
-  <img src={require("./img/file-drop/file-drop-button.png").default} alt="File Drop auswählen" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/file-drop-button.png").default} alt="File Drop auswählen" width="400" height="277" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 - Geben Sie ein Passwort ein und bestätigen Sie die Eingaben mit einem Klick auf "Link kopieren“.
 - Du kannst außerdem ein „Ablaufdatum“ festlegen, wenn der Link automatisch ablaufen soll. Weitere Informationen zur Einstellung eines Ablaufdatums findest du unter [Externe Freigabe](./external).
 
-  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Passwort eingeben und Link kopieren" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Passwort eingeben und Link kopieren" width="400" height="293" loading="lazy" decoding="async"/>
 
 - Nun senden Sie den Link und das Passwort an einen "Linkempfänger".
 
 ## To do's für den "Linkempfänger“
 
 - Der "Linkempfänger“ öffnet den empfangenen Link in einem Browser.
-  <img src={require("./img/file-drop/file-drop-website.png").default} alt="File drop website" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/file-drop-website.png").default} alt="File drop website" width="1920" height="1020" loading="lazy" decoding="async"/>
 - Der "Linkempfänger" gibt das Passwort ein und klickt dann auf "Weiter“.
-  <img src={require("./img/file-drop/password-and-continue.png").default} alt="Passwort eingeben und Weiter klicken" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/file-drop/password-and-continue.png").default} alt="Passwort eingeben und Weiter klicken" width="400" height="197" loading="lazy" decoding="async"/>
 - Dateien hochladen:
   - Der "Dateiablageordner“ wird geöffnet. Der "Linkempfänger“ kann hier seine Dateien hochladen, ohne den vorhandenen Inhalt des Ordners einsehen zu können.
-    <img src={require("./img/file-drop/file-drop-area.png").default} alt="File drop area" width="1920" loading="lazy" decoding="async"/>
+    <img src={require("./img/file-drop/file-drop-area.png").default} alt="File drop area" width="1920" height="1090" loading="lazy" decoding="async"/>
   - Zur Bestätigung, dass der Upload erfolgreich war, erscheint ein Pop-up-Fenster in der unteren rechten Ecke.
-    <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload bestätigt" width="1920" loading="lazy" decoding="async"/>
+    <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload bestätigt" width="1920" height="1098" loading="lazy" decoding="async"/>
 
 :::important
 Der "Linkempfänger“ hat keinen Zugriff auf bestehende Dateien - er kann nur neue Dateien hinzufügen.

@@ -15,14 +15,14 @@ draft: false
 - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf das Drei-Punkte-Menü neben dem Namen, um das Kontextmenü zu öffnen.
 - Wählen Sie im Kontextmenü die Option „Teilen“ aus.
 
-  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Teilen auswählen" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Teilen auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Auf der rechten Seite des Bildschirms wird eine Seitenleiste geöffnet.
-  <img src={require("./img/extern/sidebar-window.png").default} alt="Seitenleistenfenster" width="400" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/sidebar-window.png").default} alt="Seitenleistenfenster" width="400" height="670" loading="lazy" decoding="async"/>
 
 - Klicken Sie auf „Link hinzufügen“, um das Fenster zur Link-Konfiguration zu öffnen.
 
-  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Popup-Fenster" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Popup-Fenster" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Klicken Sie auf „Optionen“, um den Link zu konfigurieren.
 - Wählen Sie die gewünschten Zugriffsrechte für die Empfänger aus:
@@ -33,19 +33,19 @@ draft: false
   - „Datei ablegen (geheim)“:
     Empfänger können nur Dateien hochladen. Sie können den Inhalt weder anzeigen noch bearbeiten.
 
-    <img src={require("./img/extern/access-rights.png").default} alt="Zugriffsrechte" width="1920" loading="lazy" decoding="async"/>
+    <img src={require("./img/extern/access-rights.png").default} alt="Zugriffsrechte" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Geben Sie ein Passwort in das Feld unter „Passwort“ ein. Ein Passwort ist erforderlich, sofern ein Administrator die Einstellung nicht geändert hat.
 - Optional können Sie ein Ablaufdatum festlegen.
 - Nachdem Sie die Link-Optionen konfiguriert haben, klicken Sie auf „Link kopieren“, um den öffentlichen Link zu erstellen und zu kopieren.
   Um das Passwort mit einzuschließen, öffnen Sie das Menü neben „Link kopieren“ und wählen Sie „Link und Passwort kopieren“.
-  <img src={require("./img/extern/password-section.png").default} alt="Passwortbereich" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/password-section.png").default} alt="Passwortbereich" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Der Link ist jetzt erstellt und kann mit den Empfängern geteilt werden.
-  <img src={require("./img/extern/copy-link-button.png").default} alt="Link kopieren" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/copy-link-button.png").default} alt="Link kopieren" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Sie können den Link später bearbeiten, indem Sie auf das Drei-Punkte-Menü rechts neben dem Link klicken.
   Dort können Sie den Link umbenennen, das Ablaufdatum ändern, das Passwort aktualisieren, das Passwort entfernen oder den Link löschen.
-  <img src={require("./img/extern/link-actions-menu.png").default} alt="Link-Aktionen-Menü" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/extern/link-actions-menu.png").default} alt="Link-Aktionen-Menü" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Jetzt wissen Sie, wie Sie Dateien und Ordner sicher mit externen Nutzern teilen können.

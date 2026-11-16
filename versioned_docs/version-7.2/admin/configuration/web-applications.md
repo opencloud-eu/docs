@@ -18,7 +18,7 @@ You can install a web application in just a few steps:
 
 Use the Application Switcher in the top navigation bar of OpenCloud and navigate to the App Store.
 
-<img src={require("./img/app-store.png").default} alt="App Store" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./img/app-store.png").default} alt="App Store" width="1920" height="1079" loading="lazy" decoding="async"/>
 
 ### Download the Application
 

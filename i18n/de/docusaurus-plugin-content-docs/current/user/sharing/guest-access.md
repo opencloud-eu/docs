@@ -41,7 +41,7 @@ Die teilende Person legt fest, auf welche Inhalte der Gast zugreifen kann, und i
 - Geben Sie im Feld „Mit Personen teilen“ die E-Mail-Adresse des Gasts ein.
 - Wählen Sie den mit „(Gast)“ gekennzeichneten Eintrag aus.
 
-<img src={require("./img/guest-access/invite-guest.png").default} alt="Gast über eine E-Mail-Adresse einladen" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/invite-guest.png").default} alt="Gast über eine E-Mail-Adresse einladen" width="900" height="1389" loading="lazy" decoding="async"/>
 
 - Wählen Sie eine Berechtigung aus. Weitere Informationen finden Sie unter [Gastberechtigungen festlegen](#gastberechtigungen-festlegen).
 - Klicken Sie auf „Teilen“.
@@ -67,7 +67,7 @@ Die verfügbaren Berechtigungen hängen von der Art der freigegebenen Ressource 
 
 Öffnen Sie die Berechtigungsauswahl unterhalb des E-Mail-Adressfelds, bevor Sie auf „Teilen“ klicken, um eine Berechtigung auszuwählen.
 
-<img src={require("./img/guest-access/guest-permissions.png").default} alt="Berechtigungen für einen externen Gast auswählen" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-permissions.png").default} alt="Berechtigungen für einen externen Gast auswählen" width="900" height="1389" loading="lazy" decoding="async"/>
 
 :::tip
 Gewähren Sie nur die Berechtigungen, die für die Zusammenarbeit erforderlich sind. Verwenden Sie „Kann anzeigen“, wenn der Gast keine Änderungen vornehmen muss, und „Kann anzeigen (sichere Ansicht)“, wenn der Gast die Inhalte nicht herunterladen darf.
@@ -86,7 +86,7 @@ Sie können den Gastzugang jederzeit überprüfen und ändern.
   - **Ablaufdatum festlegen** – Legt ein Datum fest, nach dem der Gastzugang automatisch endet.
   - **Freigabe entfernen** – Entzieht dem Gast den Zugriff.
 
-<img src={require("./img/guest-access/manage-guest.png").default} alt="Gastzugang und Berechtigungen verwalten" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/manage-guest.png").default} alt="Gastzugang und Berechtigungen verwalten" width="900" height="1389" loading="lazy" decoding="async"/>
 
 #### Gastzugang entfernen
 
@@ -95,7 +95,7 @@ Sie können den Gastzugang jederzeit überprüfen und ändern.
 - Öffnen Sie das Aktionsmenü (**⋮**) neben dem Gast.
 - Wählen Sie „Freigabe entfernen“ aus.
 
-<img src={require("./img/guest-access/remove-guest.png").default} alt="Externen Gast von einer freigegebenen Ressource entfernen" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/remove-guest.png").default} alt="Externen Gast von einer freigegebenen Ressource entfernen" width="900" height="1389" loading="lazy" decoding="async"/>
 
 Nachdem Sie die Freigabe entfernt haben, kann der Gast nicht mehr auf die Inhalte zugreifen. Dies gilt auch dann, wenn er noch über den Einladungslink oder eine aktive Gastsitzung verfügt.
 
@@ -140,7 +140,7 @@ Dieser Abschnitt beschreibt die Schritte für den eingeladenen Gast.
 - OpenCloud überprüft die Einladung automatisch. Sie müssen sich nicht anmelden.
 - Die freigegebene Datei oder der freigegebene Ordner wird angezeigt.
 
-<img src={require("./img/guest-access/invitation-email.png").default} alt="Gasteinladung per E-Mail mit einem persönlichen Zugangslink" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/invitation-email.png").default} alt="Gasteinladung per E-Mail mit einem persönlichen Zugangslink" width="1000" height="786" loading="lazy" decoding="async"/>
 
 :::important
 Der Einladungslink ist persönlich. Leiten Sie ihn nicht an andere Personen weiter.
@@ -168,7 +168,7 @@ Abhängig von den erteilten Berechtigungen können Sie:
 - Dateien hochladen sowie
 - Inhalte bearbeiten, hinzufügen und löschen.
 
-<img src={require("./img/guest-access/guest-access.png").default} alt="Gast greift auf eine freigegebene Ressource zu" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-access.png").default} alt="Gast greift auf eine freigegebene Ressource zu" width="1000" height="625" loading="lazy" decoding="async"/>
 
 :::note
 Der Gastzugang ist nur im Webbrowser verfügbar. Gäste können weder den OpenCloud Desktop Client noch die mobilen Apps verwenden.
@@ -182,14 +182,14 @@ Gastsitzungen laufen nach einem begrenzten Zeitraum ab, standardmäßig nach 24 
 
 Etwa 15 Minuten vor Ablauf der Sitzung zeigt OpenCloud eine Warnung an.
 
-<img src={require("./img/guest-access/guest-session-renewal.png").default} alt="Warnung vor dem bevorstehenden Ablauf der Gastsitzung mit der Option, eine PIN anzufordern" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-session-renewal.png").default} alt="Warnung vor dem bevorstehenden Ablauf der Gastsitzung mit der Option, eine PIN anzufordern" width="1000" height="625" loading="lazy" decoding="async"/>
 
 1. Wählen Sie vor Ablauf der Sitzung „PIN anfordern“ aus.
 2. Öffnen Sie die neueste E-Mail von OpenCloud.
 3. Kehren Sie zum Browser zurück und wählen Sie „PIN eingeben“ aus.
 4. Geben Sie die PIN aus der E-Mail ein und wählen Sie „Weiter“ aus.
 
-<img src={require("./img/guest-access/guest-pin-verification.png").default} alt="Dialog zur Eingabe der PIN für die Verlängerung der Gastsitzung" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-pin-verification.png").default} alt="Dialog zur Eingabe der PIN für die Verlängerung der Gastsitzung" width="1000" height="625" loading="lazy" decoding="async"/>
 
 Nach der Überprüfung wird die Gastsitzung erneuert, ohne dass Sie die freigegebenen Inhalte verlassen müssen.
 
@@ -199,7 +199,7 @@ Die PIN-Option ist nur verfügbar, solange OpenCloud in dem Browser, über den d
 
 Wenn OpenCloud erkennt, dass die Gastsitzung nicht mehr gültig ist, wird automatisch die Seite zur Erneuerung geöffnet.
 
-<img src={require("./img/guest-access/guest-session-expired.png").default} alt="OpenCloud erneuert eine abgelaufene Gastsitzung" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-session-expired.png").default} alt="OpenCloud erneuert eine abgelaufene Gastsitzung" width="1000" height="625" loading="lazy" decoding="async"/>
 
 1. Warten Sie, während OpenCloud „Ihr Zugriff wird erneuert …“ anzeigt.
 2. Wenn „Prüfen Sie Ihren Posteingang“ angezeigt wird, öffnen Sie die neueste E-Mail von OpenCloud.

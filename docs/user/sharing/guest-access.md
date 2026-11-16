@@ -41,7 +41,7 @@ The person sharing the content chooses what the guest can access and remains res
 - Enter the guest's email address in the **Share with people** field.
 - Select the entry marked **(Guest)**.
 
-<img src={require("./img/guest-access/invite-guest.png").default} alt="Invite a guest using an email address" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/invite-guest.png").default} alt="Invite a guest using an email address" width="900" height="1389" loading="lazy" decoding="async"/>
 
 - Choose the permission level, see [Set Guest Permissions](#set-guest-permissions).
 - Click **Share**.
@@ -67,7 +67,7 @@ The available permission levels depend on the type of the shared resource. For e
 
 To choose a permission level, open the permission selector below the email address field before you click **Share**.
 
-<img src={require("./img/guest-access/guest-permissions.png").default} alt="Select permissions for an external guest" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-permissions.png").default} alt="Select permissions for an external guest" width="900" height="1389" loading="lazy" decoding="async"/>
 
 :::tip
 Grant only the permissions required for the collaboration. Use **Can view** when the guest does not need to make changes, and **Can view (secure)** when the guest must not download the content.
@@ -86,7 +86,7 @@ You can review and change guest access at any time.
   - **Set expiration date** – Defines a date after which the guest's access ends automatically.
   - **Remove share** – Revokes the guest's access.
 
-<img src={require("./img/guest-access/manage-guest.png").default} alt="Manage guest access and permissions" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/manage-guest.png").default} alt="Manage guest access and permissions" width="900" height="1389" loading="lazy" decoding="async"/>
 
 #### Remove Guest Access
 
@@ -95,7 +95,7 @@ You can review and change guest access at any time.
 - Open the action menu (**⋮**) next to the guest.
 - Select **Remove share**.
 
-<img src={require("./img/guest-access/remove-guest.png").default} alt="Remove an external guest from a shared resource" width="900" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/remove-guest.png").default} alt="Remove an external guest from a shared resource" width="900" height="1389" loading="lazy" decoding="async"/>
 
 After you remove the share, the guest can no longer access the content, even if they still have the invitation link or an active guest session.
 
@@ -140,7 +140,7 @@ This section describes the steps for the invited guest.
 - OpenCloud verifies the invitation automatically. You do not need to sign in.
 - The shared file or folder is displayed.
 
-<img src={require("./img/guest-access/invitation-email.png").default} alt="Guest invitation email with a personal access link" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/invitation-email.png").default} alt="Guest invitation email with a personal access link" width="1000" height="786" loading="lazy" decoding="async"/>
 
 :::important
 The invitation link is personal. Do not forward it to other people.
@@ -168,7 +168,7 @@ Depending on the permissions you have been granted, you can:
 - Upload files.
 - Edit, add, and delete content.
 
-<img src={require("./img/guest-access/guest-access.png").default} alt="Guest accessing a shared resource" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-access.png").default} alt="Guest accessing a shared resource" width="1000" height="625" loading="lazy" decoding="async"/>
 
 :::note
 Guest access is available in the web browser only. Guests cannot use the OpenCloud Desktop Client or the mobile apps.
@@ -182,14 +182,14 @@ Guest sessions expire after a limited period, by default 24 hours. An expired se
 
 About 15 minutes before the session expires, OpenCloud displays a warning.
 
-<img src={require("./img/guest-access/guest-session-renewal.png").default} alt="Warning that the guest session expires soon with an option to request a PIN" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-session-renewal.png").default} alt="Warning that the guest session expires soon with an option to request a PIN" width="1000" height="625" loading="lazy" decoding="async"/>
 
 1. Select `Request PIN` before the session expires.
 2. Open the most recent email from OpenCloud.
 3. Return to the browser and select `Enter PIN`.
 4. Enter the PIN from the email and select `Continue`.
 
-<img src={require("./img/guest-access/guest-pin-verification.png").default} alt="Dialog for entering the guest session renewal PIN" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-pin-verification.png").default} alt="Dialog for entering the guest session renewal PIN" width="1000" height="625" loading="lazy" decoding="async"/>
 
 After verification, the guest session is renewed without leaving the shared content.
 
@@ -199,7 +199,7 @@ The PIN option is available only while OpenCloud can verify an existing guest se
 
 When OpenCloud detects that the guest session is no longer valid, it opens the renewal page automatically.
 
-<img src={require("./img/guest-access/guest-session-expired.png").default} alt="OpenCloud renewing an expired guest session" width="1000" loading="lazy" decoding="async"/>
+<img src={require("./img/guest-access/guest-session-expired.png").default} alt="OpenCloud renewing an expired guest session" width="1000" height="625" loading="lazy" decoding="async"/>
 
 1. Wait while OpenCloud displays `Renewing your access…`.
 2. When `Check your inbox` appears, open the most recent email from OpenCloud.

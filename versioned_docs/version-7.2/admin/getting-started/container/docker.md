@@ -66,7 +66,7 @@ docker run --rm -it \
 
 You can set your own password using `IDM_ADMIN_PASSWORD=your_password`. If not set, a password will be auto-generated
 
-<img src={require("./../img/quick-guide/docker-opencloud-init.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./../img/quick-guide/docker-opencloud-init.png").default} alt="Admin general" width="1920" height="559" loading="lazy" decoding="async"/>
 
 :::note Certificate verification during initialization
 During `opencloud init`, you may be asked whether to disable certificate checking.
@@ -120,7 +120,7 @@ Login with your browser:
 - user: admin
 - password: admin
 
-<img src={require("./../img/quick-guide/quick-login.png").default} alt="Admin general" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./../img/quick-guide/quick-login.png").default} alt="Admin general" width="1920" height="1095" loading="lazy" decoding="async"/>
 
 ## Conclusion
 

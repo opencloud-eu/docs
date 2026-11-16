@@ -13,7 +13,7 @@ When files are modified both locally and remotely before synchronization, the De
 - `conflict.txt` (remote version)
 - `conflict (conflicted copy YYYY-MM-DD HHMMSS).txt` (local version)
 
-  <img src={require(".././img/conflict-files/conflict-file.png").default} alt="Conflict files in explorer" width="1920" loading="lazy" decoding="async"/>
+  <img src={require(".././img/conflict-files/conflict-file.png").default} alt="Conflict files in explorer" width="1920" height="224" loading="lazy" decoding="async"/>
 
 This usually happens when:
 
@@ -26,7 +26,7 @@ In the Desktop Client overview, a notification will appear when conflicting file
 This means that multiple versions of the same file exist—often because changes were made on different devices before synchronization.  
 The notification serves as a prompt for you to review the conflicts and decide how to merge or keep the versions.
 
-<img src={require(".././img/conflict-files/conflict-info.png").default} alt="Notification about file conflicts in the Desktop Client" width="500" loading="lazy" decoding="async"/>
+<img src={require(".././img/conflict-files/conflict-info.png").default} alt="Notification about file conflicts in the Desktop Client" width="500" height="457" loading="lazy" decoding="async"/>
 
 ## Resolve File Conflicts Manually
 

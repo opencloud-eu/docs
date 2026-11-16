@@ -13,18 +13,18 @@ Als Space-Administrator können Sie die Speicherkapazität (Quota) eines Spaces 
 ## Steps to edit the Space quota
 
 - Wählen Sie die Option Quota ändern in der Top-Bar oder im Drei-Punkte-Menü
-  <img src={require("./img/quota/top-bar.png").default} alt="Context-Menu" width="1920" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/top-bar.png").default} alt="Context-Menu" width="1920" height="1094" loading="lazy" decoding="async"/>
 
 - In dem sich öffnenden Fenster stehen zwei Optionen zur Verfügung:
 - Wählen Sie eine Standardgröße (z.B. 5 GB) aus dem Dropdown-Menü.
 
-  <img src={require("./img/quota/context-menu.png").default} alt="Select-quota" width="500" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/context-menu.png").default} alt="Select-quota" width="500" height="364" loading="lazy" decoding="async"/>
 
 - Geben Sie eine individuelle Speichergröße ein.
 
-      <img src={require("./img/quota/select.png").default} alt="Enter-quota" width="500" loading="lazy" decoding="async"/>
+      <img src={require("./img/quota/select.png").default} alt="Enter-quota" width="500" height="228" loading="lazy" decoding="async"/>
 
 - Klicken Sie auf Bestätigen, um die Änderung zu übernehmen.
-  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="500" loading="lazy" decoding="async"/>
+  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="500" height="227" loading="lazy" decoding="async"/>
 
 Das Kontingent des Speicherplatzes wird, den neuen Einstellungen entsprechend, aktualisiert.

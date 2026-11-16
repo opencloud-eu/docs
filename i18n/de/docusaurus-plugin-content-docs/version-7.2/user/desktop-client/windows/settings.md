@@ -14,7 +14,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 - Klicken Sie auf "Einstellungen“ in der oberen rechten Ecke von OpenCloud Desktop
 
-<img src={require(".././img/windows/settings/settings-overview.png").default} alt="settings overview" width="400" loading="lazy" decoding="async"/>
+<img src={require(".././img/windows/settings/settings-overview.png").default} alt="settings overview" width="400" height="368" loading="lazy" decoding="async"/>
 
 ## Übersicht der Einstellungen
 
@@ -22,7 +22,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 
 - Legen Sie Ihre bevorzugte Sprache fest
 
-  <img src={require(".././img/windows/settings/settings-general.png").default} alt="settings-general" width="400" loading="lazy" decoding="async"/>
+  <img src={require(".././img/windows/settings/settings-general.png").default} alt="settings-general" width="400" height="130" loading="lazy" decoding="async"/>
 
 ### Erweiterte Einstellungen
 
@@ -31,7 +31,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
 - Bearbeiten Sie die Liste der ignorierten Dateien
 - Aktivieren Sie eine Debug-Protokolldatei für die Fehlersuche
 
-  <img src={require(".././img/windows/settings/settings-advanced.png").default} alt="settings advanced" width="400" loading="lazy" decoding="async"/>
+  <img src={require(".././img/windows/settings/settings-advanced.png").default} alt="settings advanced" width="400" height="75" loading="lazy" decoding="async"/>
 
 ### Netzwerkeinstellungen
 
@@ -40,7 +40,7 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   - Systemproxy verwenden (Standard)
   - Manuelles Eingeben eines Proxys
 
-  <img src={require(".././img/windows/settings/settings-network.png").default} alt="settings network" width="400" loading="lazy" decoding="async"/>
+  <img src={require(".././img/windows/settings/settings-network.png").default} alt="settings network" width="400" height="156" loading="lazy" decoding="async"/>
 
   ### Download- und Upload-Bandbreite
 
@@ -49,4 +49,4 @@ Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten 
   - Automatische Anpassung des Limits
   - Ein bestimmtes Limit manuell einstellen
 
-  <img src={require(".././img/windows/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400" loading="lazy" decoding="async"/>
+  <img src={require(".././img/windows/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400" height="82" loading="lazy" decoding="async"/>

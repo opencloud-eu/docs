@@ -14,26 +14,26 @@ The "Spaces" section provides a central place for collaboration in groups or tea
 
 To open the Spaces Overview, tap the "Spaces button" in the bottom line of the the screen.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 Afterwards, the Spaces Overview appears, listing all Spaces you are a member of or have created yourself.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Search Function
 
 By tapping the **search icon**, the searchbar and the search menu for Spaces will open.
-<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Functions within a Space
 
 By tapping the plus icon, the available functions within a Space appear.
 
-<img src={require("./img/spaces/spaces-plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/spaces-plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} loading="lazy" decoding="async" />
+<img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Create Menu
 

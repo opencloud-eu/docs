@@ -38,7 +38,7 @@ It is not recommended for enterprise or critical environments due to the hardwar
 Start the Raspberry Pi with the SD card and connect via SSH.  
 The IP for this can be viewed in your router.
 
-<img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/ip-router.png").default} alt="find ip from raspberry-pi in router" width="500" height="36" loading="lazy" decoding="async"/>
 
 ### Establish connection via SSH
 
@@ -85,7 +85,7 @@ sudo usermod -aG docker ${USER}
 groups ${USER}
 ```
 
-<img src={require("./../img/raspberrypi/docker-user-check.png").default} alt="Check docker user" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/docker-user-check.png").default} alt="Check docker user" width="500" height="45" loading="lazy" decoding="async"/>
 
 - Reboot the Raspberry Pi:
 
@@ -165,7 +165,7 @@ We will describe how to mount an external disk or USB stick and make OpenCloud a
 lsblk
 ```
 
-<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/find-external-hd.png").default} alt="find the external hd" width="500" height="172" loading="lazy" decoding="async"/>
 
 ### Format the drive to ext4
 
@@ -179,7 +179,7 @@ The device path `/dev/sda1` below is only an example. Use `lsblk -f` to identify
 sudo mkfs.ext4 /dev/sda1 -L DATA
 ```
 
-<img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/format-drive.png").default} alt="format drive" width="500" height="210" loading="lazy" decoding="async"/>
 
 ### Add fstab entry for auto-mounting
 
@@ -211,7 +211,7 @@ sudo mount -a
 
 If an error occurs:
 
-<img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/error-mounting.png").default} alt="error mounting" width="500" height="80" loading="lazy" decoding="async"/>
 
 Run:
 
@@ -268,7 +268,7 @@ Set the `OC_DATA_DIR` variable to your mounted storage path, e.g.:
 OC_DATA_DIR=/mnt/data
 ```
 
-<img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/change-env-for-storage.png").default} alt="change env for storage" width="500" height="93" loading="lazy" decoding="async"/>
 
 Start OpenCloud with the configured data directory:
 
@@ -282,7 +282,7 @@ docker compose up -d
 
 Register at [No-IP](https://www.noip.com/) and create a hostname, e.g. `opencloud.webhop.me`.
 
-<img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/noip.png").default} alt="noip hostname input" width="500" height="412" loading="lazy" decoding="async"/>
 
 ### Configure DynDNS in your router
 
@@ -308,7 +308,7 @@ More help: [No-IP Support](https://www.noip.com/support/knowledgebase/how-to-con
 - TCP Port 80 (HTTP)
 - TCP Port 443 (HTTPS)
 
-<img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/portforwarding.png").default} alt="portforwarding in router" width="500" height="497" loading="lazy" decoding="async"/>
 
 ### Update OC_DOMAIN
 
@@ -329,7 +329,7 @@ TRAEFIK_ACME_MAIL=your@email.com
 
 Traefik uses this email address to request a valid certificate from Let's Encrypt for your domain.
 
-<img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/oc-domain.png").default} alt="change the OC_DOMAIN variable" width="500" height="96" loading="lazy" decoding="async"/>
 
 Start OpenCloud again:
 
@@ -339,4 +339,4 @@ docker compose up -d
 
 Now your OpenCloud should be reachable via your URL.
 
-<img src={require("./../img/raspberrypi/reachable-via-URL.png").default} alt="reachable-via-URL" width="1920" loading="lazy" decoding="async"/>
+<img src={require("./../img/raspberrypi/reachable-via-URL.png").default} alt="reachable-via-URL" width="1920" height="1152" loading="lazy" decoding="async"/>
