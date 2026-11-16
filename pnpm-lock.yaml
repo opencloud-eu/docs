@@ -17,6 +17,9 @@ importers:
       '@docusaurus/plugin-client-redirects':
         specifier: 3.10.2
         version: 3.10.2(@docusaurus/faster@3.10.2(@docusaurus/types@3.10.2(@swc/core@1.16.22)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(esbuild@0.27.1)(postcss@8.5.33))(@mdx-js/react@3.1.1(@types/react@19.3.0)(react@19.3.1))(@rspack/core@1.7.12)(@swc/core@1.16.22)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.6.3)
+      '@docusaurus/plugin-content-docs':
+        specifier: 3.10.2
+        version: 3.10.2(@docusaurus/faster@3.10.2(@docusaurus/types@3.10.2(@swc/core@1.16.22)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(esbuild@0.27.1)(postcss@8.5.33))(@mdx-js/react@3.1.1(@types/react@19.3.0)(react@19.3.1))(@rspack/core@1.7.12)(@swc/core@1.16.22)(debug@4.4.3)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@5.6.3)
       '@docusaurus/preset-classic':
         specifier: 3.10.2
         version: 3.10.2(@algolia/client-search@5.64.0)(@docusaurus/faster@3.10.2(@docusaurus/types@3.10.2(@swc/core@1.16.22)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(esbuild@0.27.1)(postcss@8.5.33))(@mdx-js/react@3.1.1(@types/react@19.3.0)(react@19.3.1))(@rspack/core@1.7.12)(@swc/core@1.16.22)(@types/react@19.3.0)(esbuild@0.27.1)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(search-insights@2.17.3)(typescript@5.6.3)
