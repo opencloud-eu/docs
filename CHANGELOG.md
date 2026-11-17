@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.61.1](https://github.com/opencloud-eu/docs/releases/tag/3.61.1) - 2026-11-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Svanvith
+
+### 📦️ Build&Tools
+
+- create version 9.1 [[#1391](https://github.com/opencloud-eu/docs/pull/1391)]
+
 ## [3.61.0](https://github.com/opencloud-eu/docs/releases/tag/3.61.0) - 2026-11-17
 
 ### ❤️ Thanks to all contributors! ❤️
