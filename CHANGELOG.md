@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders, @v-scharf
 
 ### 👷 Admin Documentation
 
+- publish 9.1.1 7.2.6 and rolling-9.2.0 [[#1389](https://github.com/opencloud-eu/docs/pull/1389)]
 - Add upgrade guide 9.x.x to admin doku [[#1268](https://github.com/opencloud-eu/docs/pull/1268)]
 
 ### 👤 User Documentation
