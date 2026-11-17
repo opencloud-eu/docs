@@ -1,6 +1,7 @@
 ---
 sidebar_position: 15
 id: upgrade-8.x.x
+slug: /admin/maintenance/upgrade/upgrade-8.x.x
 title: Upgrade 8.x.x
 description: Upgrading to OpenCloud 8.x.x
 draft: false
@@ -11,11 +12,11 @@ import TabItem from '@theme/TabItem';
 
 # Upgrading to OpenCloud 8.x.x
 
-OpenCloud 8.x.x changes how resources are indexed and creates a new search index. Complete the regular upgrade first by following the [Standard Upgrade Guide](./upgrade.md).
+OpenCloud 8.x.x changes how resources are indexed and creates a new search index. Complete the regular upgrade first by following the [Standard Upgrade Guide](../upgrade.md).
 
 :::important
 
-OpenCloud 8.x.x is a Rolling release and is not intended for production environments. For more information, see the [Release Lifecycle](../../resources/lifecycle.md).
+OpenCloud 8.x.x is a Rolling release and is not intended for production environments. For more information, see the [Release Lifecycle](../../../resources/lifecycle.md).
 
 :::
 
@@ -80,4 +81,4 @@ If you have enabled Yjs and use an external Nginx reverse proxy, update your Ngi
 
 If Yjs is not enabled, the OpenCloud Editor continues to work without real-time collaborative editing.
 
-See [Proxy Config](../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config) for the required Nginx configuration.
+See [Proxy Config](../../../getting-started/container/docker-compose/docker-external-proxy.md#create-a-new-proxy-config) for the required Nginx configuration.
