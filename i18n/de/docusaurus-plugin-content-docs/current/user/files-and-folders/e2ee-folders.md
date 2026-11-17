@@ -14,7 +14,7 @@ Um einen Ende-zu-Ende-verschlüsselten Ordner zu öffnen, benötigt ein Benutzer
 
 :::important
 
-Ende-zu-Ende-verschlüsselte Ordner sind derzeit für die Verwendung mit dem Web Client vorgesehen. Mobile und Desktop Clients unterstützen den E2EE-Ablauf nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern.
+Ende-zu-Ende-verschlüsselte Ordner werden im OpenCloud Web Client unterstützt. Sie können außerdem lokal mit rclone auf diese Ordner zugreifen. rclone ist ein separates Werkzeug und kein OpenCloud-Client. Die OpenCloud Desktop- und Mobile-Clients unterstützen den E2EE-Ablauf derzeit nicht und sollten nicht verwendet werden, um auf verschlüsselte Ordner zuzugreifen oder sie zu ändern. Weitere Informationen finden Sie unter [Mit rclone auf Ende-zu-Ende-verschlüsselte Ordner zugreifen](./e2ee-folders-rclone).
 
 :::
 
@@ -32,7 +32,7 @@ So erstellen Sie einen Ende-zu-Ende-verschlüsselten Ordner:
 2. Öffnen Sie das Menü „+ Neu“.
 3. Wählen Sie „Ordner“ aus.
 
-<img src={require("./img/e2ee-folders/create-folder-menu.png").default} alt="Neuen Ordner über das Menü Neu erstellen" width="1920"/>
+<img src={require("./img/e2ee-folders/create-folder-menu.png").default} alt="Neuen Ordner über das Menü Neu erstellen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Ende-zu-Ende-Verschlüsselung aktivieren
 
@@ -41,13 +41,13 @@ Im Dialog „Neuen Ordner erstellen“:
 1. Geben Sie einen Ordnernamen ein.
 2. Aktivieren Sie „Diesen Ordner Ende-zu-Ende verschlüsseln“.
 
-<img src={require("./img/e2ee-folders/create-folder-name.png").default} alt="Dialog zum Erstellen eines neuen Ordners" width="400"/>
+<img src={require("./img/e2ee-folders/create-folder-name.png").default} alt="Dialog zum Erstellen eines neuen Ordners" width="400" height="260" loading="lazy" decoding="async"/>
 
 Wenn die Ende-zu-Ende-Verschlüsselung aktiviert ist, fügt OpenCloud dem Ordnernamen automatisch die Endung `.vault` hinzu.
 
-<img src={require("./img/e2ee-folders/encryption-enabled.png").default} alt="Ende-zu-Ende-Verschlüsselung für den neuen Ordner aktiviert" width="400"/>
+<img src={require("./img/e2ee-folders/encryption-enabled.png").default} alt="Ende-zu-Ende-Verschlüsselung für den neuen Ordner aktiviert" width="400" height="260" loading="lazy" decoding="async"/>
 
-Klicken Sie auf „Fortfahren“.
+Klicken Sie auf „Weiter“.
 
 ## Ordnerpasswort festlegen
 
@@ -55,15 +55,20 @@ Nach dem Aktivieren der Ende-zu-Ende-Verschlüsselung müssen Sie ein Passwort f
 
 Dieses Passwort entsperrt den verschlüsselten Ordner und wird benötigt, um auf die darin enthaltenen Dateien zuzugreifen.
 
-<img src={require("./img/e2ee-folders/set-password.png").default} alt="Passwort für den verschlüsselten Ordner festlegen" width="400"/>
+Der Dialog zeigt die Passwortanforderungen an und kennzeichnet jede erfüllte Anforderung.
+
+<img src={require("./img/e2ee-folders/set-password.png").default} alt="Passwort für den verschlüsselten Ordner festlegen" width="400" height="301" loading="lazy" decoding="async"/>
 
 Der Dialog bietet folgende Funktionen:
 
 - „Passwort anzeigen“ zeigt das eingegebene Passwort an.
-  <img src={require("./img/e2ee-folders/show-password.png").default} alt="Schaltfläche Passwort anzeigen" width="400"/>
+  <img src={require("./img/e2ee-folders/show-password.png").default} alt="Schaltfläche Passwort anzeigen" width="400" height="301" loading="lazy" decoding="async"/>
 
 - „Passwort kopieren“ kopiert das Passwort in die Zwischenablage.
-  <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Schaltfläche Passwort kopieren" width="400"/>
+  <img src={require("./img/e2ee-folders/copy-password.png").default} alt="Schaltfläche Passwort kopieren" width="400" height="301" loading="lazy" decoding="async"/>
+
+- „Passwort generieren“ erstellt ein Passwort, das alle Anforderungen erfüllt.
+  <img src={require("./img/e2ee-folders/generate-password.png").default} alt="Schaltfläche Passwort generieren" width="400" height="301" loading="lazy" decoding="async"/>
 
 :::important
 
@@ -77,7 +82,7 @@ Klicken Sie auf „Erstellen“.
 
 Der verschlüsselte Ordner wird in der Dateiliste mit einem Schlosssymbol angezeigt.
 
-<img src={require("./img/e2ee-folders/encrypted-folder-created.png").default} alt="Verschlüsselter Ordner in OpenCloud erstellt" width="1920"/>
+<img src={require("./img/e2ee-folders/encrypted-folder-created.png").default} alt="Verschlüsselter Ordner in OpenCloud erstellt" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Das Schlosssymbol zeigt an, dass der Ordner Ende-zu-Ende verschlüsselt ist.
 
@@ -85,13 +90,13 @@ Das Schlosssymbol zeigt an, dass der Ordner Ende-zu-Ende verschlüsselt ist.
 
 Beim Öffnen eines verschlüsselten Ordners werden Sie aufgefordert, das Ordnerpasswort einzugeben.
 
-<img src={require("./img/e2ee-folders/unlock-folder.png").default} alt="Ende-zu-Ende-verschlüsselten Ordner entsperren" width="400"/>
+<img src={require("./img/e2ee-folders/unlock-folder.png").default} alt="Ende-zu-Ende-verschlüsselten Ordner entsperren" width="400" height="264" loading="lazy" decoding="async"/>
 
 Geben Sie das Passwort ein und klicken Sie auf „Entsperren“.
 
 Nach dem Entsperren des Ordners können Sie im Web Client auf dessen Inhalte zugreifen.
 
-<img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Entsperrter verschlüsselter Ordner" width="1920"/>
+<img src={require("./img/e2ee-folders/unlocked-folder.png").default} alt="Entsperrter verschlüsselter Ordner" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 
@@ -122,6 +127,9 @@ Andere Dateitypen wie Textdokumente, Tabellen und Präsentationen können nicht 
 src={require("./img/e2ee-folders/create-file-menu.png").default}
 alt="Menü Neu in einem verschlüsselten Ordner mit deaktivierten Optionen für Dokumente, Tabellen und Präsentationen"
 width="1920"
+height="1080"
+loading="lazy"
+decoding="async"
 />
 
 Weitere Informationen finden Sie unter [Dateien und Ordner erstellen](./create-rename-move.md#dateien-und-ordner-erstellen).
@@ -134,13 +142,17 @@ Die empfangende Person benötigt das Ordnerpasswort, um den verschlüsselten Ord
 
 Öffentliche Links werden für verschlüsselte Ordner oder Dateien nicht unterstützt.
 
+## Mit rclone auf einen verschlüsselten Ordner zugreifen
+
+Sie können einen verschlüsselten Ordner mit rclone auf einem lokalen Computer einbinden. Weitere Informationen finden Sie unter [Mit rclone auf Ende-zu-Ende-verschlüsselte Ordner zugreifen](./e2ee-folders-rclone).
+
 ## Verhalten bei Vorschau und Download
 
 Einige Dateien in Ende-zu-Ende-verschlüsselten Ordnern können nicht direkt im Browser als Vorschau angezeigt werden.
 
 In diesem Fall zeigt OpenCloud eine Meldung an, dass keine Vorschau verfügbar ist, und bietet stattdessen den Download der Datei an.
 
-<img src={require("./img/e2ee-folders/no-preview-available.png").default} alt="Keine Vorschau für eine Datei in einem verschlüsselten Ordner verfügbar" width="1920"/>
+<img src={require("./img/e2ee-folders/no-preview-available.png").default} alt="Keine Vorschau für eine Datei in einem verschlüsselten Ordner verfügbar" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Einschränkungen
 

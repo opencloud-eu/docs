@@ -2,7 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useDocsPreferredVersion} from '@docusaurus/theme-common';
+import {useDocsPreferredVersion} from '@docusaurus/plugin-content-docs/client';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Translate from '@docusaurus/Translate';

@@ -13,13 +13,13 @@ In OpenCloud können Sie ganz einfach neue Text-, Tabellen- und Präsentationsda
 ## Dateien und Ordner erstellen
 
 - Öffnen Sie das Menü „+ Neu“ in der linken Seitenleiste.
-  <img src={require("./img/create-rename-move/new-button.png").default} alt="Neue Schaltfläche" width="1920"/>
+  <img src={require("./img/create-rename-move/new-button.png").default} alt="Neue Schaltfläche" width="1920" height="900" loading="lazy" decoding="async"/>
 - Wählen Sie entweder „Ordner“ oder den gewünschten Dateityp aus.
-  <img src={require("./img/create-rename-move/create-options.png").default} alt="Dateityp oder Ordner auswählen" width="400"/>
+  <img src={require("./img/create-rename-move/create-options.png").default} alt="Dateityp oder Ordner auswählen" width="400" height="558" loading="lazy" decoding="async"/>
 - Geben Sie im angezeigten Fenster einen Namen für die Datei oder den Ordner ein.
 - Klicken Sie auf „Erstellen“.
 
-  <img src={require("./img/create-rename-move/create-button.png").default} alt="Auf Erstellen klicken" width="400"/>
+  <img src={require("./img/create-rename-move/create-button.png").default} alt="Auf Erstellen klicken" width="400" height="260" loading="lazy" decoding="async"/>
 
 Fertig. Die Datei oder der Ordner wurde erstellt. Wenn es sich um eine Datei handelt, wird sie automatisch im Bearbeitungsmodus geöffnet.
 
@@ -30,39 +30,34 @@ Fertig. Die Datei oder der Ordner wurde erstellt. Wenn es sich um eine Datei han
   - Oder klicken Sie auf die drei Punkte rechts in der entsprechenden Zeile
 - Wählen Sie die Option „Umbenennen“.
 
-  <img src={require("./img/create-rename-move/rename-option.png").default} alt="Umbenennen auswählen" width="400"/>
+  <img src={require("./img/create-rename-move/rename-option.png").default} alt="Umbenennen auswählen" width="400" height="618" loading="lazy" decoding="async"/>
 
 - Geben Sie den neuen Namen für die Datei oder den Ordner in das angezeigte Fenster ein.
 - Bestätigen Sie mit „Umbenennen“.
 
-  <img src={require("./img/create-rename-move/rename-popup.png").default} alt="Neuen Namen eingeben" width="400"/>
+  <img src={require("./img/create-rename-move/rename-popup.png").default} alt="Neuen Namen eingeben" width="400" height="183" loading="lazy" decoding="async"/>
 
 Fertig. Der neue Name wurde übernommen.
 
 ## Dateien oder Ordner verschieben
 
-- Treffen Sie zuerst eine Auswahl:
-  - Wählen Sie die Datei(en) oder Ordner aus, die Sie verschieben möchten.
+1. Wählen Sie die zu verschiebende Datei beziehungsweise den zu verschiebenden Ordner aus.
 
-    <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Dateien oder Ordner auswählen" width="1920"/>
+   <img src={require("./img/create-rename-move/mark-folder.png").default} alt="Zum Verschieben ausgewählter Ordner" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-  - Öffnen Sie das Kontextmenü:
-    - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner
-    - Oder klicken Sie auf die drei Punkte in der entsprechenden Zeile
-  - Wählen Sie die Option „Ausschneiden“ aus dem Menü.
+2. Wählen Sie „Verschieben nach“ auf eine der folgenden Arten:
+   - Öffnen Sie das Kontextmenü, indem Sie mit der rechten Maustaste auf das ausgewählte Element klicken oder dessen Drei-Punkte-Menü öffnen. Wählen Sie anschließend „Verschieben nach“.
 
-    <img src={require("./img/create-rename-move/right-click-cut-option.png").default} alt="Ausschneiden per Rechtsklick" width="400"/>
+     <img src={require("./img/create-rename-move/right-click-move-to-option.png").default} alt="Option Verschieben nach im Kontextmenü" width="400" height="703" loading="lazy" decoding="async"/>
 
-    Alternativ können Sie die Funktion „Ausschneiden“ in der Aktionsleiste oben verwenden.
+   - Wählen Sie „Verschieben nach“ in der Aktionsleiste.
 
-    <img src={require("./img/create-rename-move/actionbar-cut-option.png").default} alt="Ausschneiden in der Aktionsleiste" width="1920"/>
+     <img src={require("./img/create-rename-move/actionbar-move-to-option.png").default} alt="Option Verschieben nach in der Aktionsleiste" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Wählen Sie das Ziel aus:
-  - Navigieren Sie zu dem Ordner oder Speicherort, an den die Datei oder der Ordner verschoben werden soll.
-  - Klicken Sie in der Aktionsleiste auf „Hier einfügen“.
+3. Wählen Sie im Dialog den Zielordner und anschließend „Hierher verschieben“.
 
-    <img src={require("./img/create-rename-move/paste-here-button.png").default} alt="Hier einfügen" width="1920"/>
+   <img src={require("./img/create-rename-move/move-dialog.png").default} alt="Dialog zur Auswahl des Zielordners" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-    <img src={require("./img/create-rename-move/pasted-file.png").default} alt="Eingefügte Datei" width="1920"/>
+4. Das verschobene Element wird im Zielordner angezeigt und befindet sich nicht mehr am ursprünglichen Speicherort.
 
-Die Datei oder der Ordner befindet sich jetzt am neuen Speicherort und nicht mehr am ursprünglichen Speicherort.
+   <img src={require("./img/create-rename-move/moved-file.png").default} alt="Verschobenes Element im Zielordner" width="1920" height="1080" loading="lazy" decoding="async"/>

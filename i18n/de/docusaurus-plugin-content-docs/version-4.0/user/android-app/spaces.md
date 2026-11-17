@@ -14,27 +14,27 @@ Der Bereich „Verlinkungen“ bietet einen zentralen Ort für die Zusammenarbei
 
 Um die Space-Übersicht zu öffnen, tippe auf den „Spaces-Button“ in der unteren Leiste des Bildschirms.
 
-<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-button.png").default} alt="Spaces Button" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 Anschließend erscheint die Space-Übersicht, in der alle Spaces aufgelistet sind, in denen du Mitglied bist oder die du selbst erstellt hast.
 
-<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-overview.png").default} alt="Spaces Overview" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Suchfunktion
 
 Durch Tippen auf das Suchsymbol öffnet sich die Suchleiste sowie das Suchmenü für Spaces.
 
-<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-button.png").default} alt="Search Function" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/Search-menue.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/search-menu.png").default} alt="Search Menue" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Funktionen innerhalb eines Spaces
 
 Durch Tippen auf das Plus-Symbol erscheinen die verfügbaren Funktionen innerhalb eines Spaces.
 
-<img src={require("./img/spaces/spaces-plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-plus-symbol.png").default} alt="Plus Icon" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("./img/spaces/spaces-plus-symbol-menue.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("./img/spaces/spaces-plus-symbol-menu.png").default} alt="Functions in Spaces" style={{ width: '400px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## Erstellen-Menü
 

@@ -53,6 +53,14 @@ Do not include the protocol in `IDP_DOMAIN`. Use `idp.example.org`, not
 - `PROXY_OIDC_ACCESS_TOKEN_VERIFY_METHOD`: Set this to `jwt` so OpenCloud
   verifies access tokens as JWTs using the Identity Provider's published
   signing keys.
+- `PROXY_OIDC_AUDIENCES`: Recommended for production when using JWT access
+  tokens. Set this to a comma-separated list of accepted audiences from the
+  IDP's access token `aud` claim. For example, use
+  `PROXY_OIDC_AUDIENCES=opencloud` only if the IDP issues tokens containing
+  `opencloud` as an audience. At least one configured audience must match
+  exactly (including case). Tokens with missing or non-matching audiences
+  are rejected. Leaving this variable unset disables audience validation.
+  This setting requires `PROXY_OIDC_ACCESS_TOKEN_VERIFY_METHOD=jwt`.
 - `PROXY_OIDC_REWRITE_WELLKNOWN`: Set this to `true` to expose the Identity
   Provider's `.well-known/openid-configuration` endpoint via the OpenCloud base
   URLs.
@@ -64,12 +72,19 @@ Do not include the protocol in `IDP_DOMAIN`. Use `idp.example.org`, not
   is set to `preferred_username` and `PROXY_USER_CS3_CLAIM` is set to
   `username`, then an OpenID Connect user with `preferred_username=alan` maps
   to the OpenCloud user with username `alan`.
-- `PROXY_AUTOPROVISION_ACCOUNTS` and `GRAPH_USERNAME_MATCH`: When
+- `PROXY_AUTOPROVISION_ACCOUNTS`: When
   `PROXY_AUTOPROVISION_ACCOUNTS` is set to `true`, OpenCloud creates a new user
   account in the LDAP database for every user who logs in via OpenID Connect
   for the first time. This requires a writable LDAP server. For smaller setups,
   the built-in LDAP server provided by the `idm` service can be used. If set to
   `false`, users must already exist in LDAP.
+- `GRAPH_USERNAME_MATCH`: Controls username validation when users are created
+  through the Graph API, including during autoprovisioning. The default value,
+  `default`, restricts usernames to an ASCII-based pattern that must start with
+  a letter or underscore. Usernames from an external IDP that do not match this
+  pattern may cause autoprovisioning to fail. Set `GRAPH_USERNAME_MATCH=none`
+  only if the external IDP's usernames are trusted and the underlying user
+  directory supports them.
 - `PROXY_ROLE_ASSIGNMENT_DRIVER` and `GRAPH_ASSIGN_DEFAULT_USER_ROLE`: See the
   section below.
 
@@ -106,7 +121,7 @@ WEBFINGER_DESKTOP_OIDC_CLIENT_SCOPES=openid profile email offline_access
 - The Desktop Client supports the WebFinger discovery mechanism starting with
   version 4.0.
 
-  :::
+:::
 
 ### Automatic Role Assignments
 
@@ -119,10 +134,10 @@ If the IDP does not provide the required role claim, automatic role assignment
 with the `oidc` driver will not work.
 :::
 
-When users login into OpenCloud, they get a user role assigned
+When users log in to OpenCloud, they get a user role assigned
 automatically. The automatic role assignment can be configured in different
 ways. The `PROXY_ROLE_ASSIGNMENT_DRIVER` environment variable (or the `driver`
-setting in the `role_assignment` section of the configuration file) select which
+setting in the `role_assignment` section of the configuration file) selects which
 mechanism to use for the automatic role assignment.
 
 When set to `default`, all users which do not have a role assigned at the time

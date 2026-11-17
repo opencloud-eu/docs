@@ -10,42 +10,45 @@ draft: false
 
 Public links let you share files and folders with people outside your organization.
 
+Public links use link permissions and do not identify individual recipients. They are different from internal Share Roles and [Guest Access](./guest-access.md). A User Light can create a public link when public links are available and the permissions for the resource allow it. For a comparison, see [Sharing Methods](./index.md#sharing-methods).
+
 ## Steps to create a public link
 
 - Right-click the file or folder, or click the three-dot menu next to its name, to open the context menu.
 - Select “Share” from the context menu.
 
-  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Select share" width="1920"/>
+  <img src={require("./img/extern/share-drop-down-menu.png").default} alt="Select share" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - A sidebar window will open on the right-hand side of the screen.
-  <img src={require("./img/extern/sidebar-window.png").default} alt="Sidebar window" width="400"/>
+  <img src={require("./img/extern/sidebar-window.png").default} alt="Sharing sidebar" width="400" height="617" loading="lazy" decoding="async"/>
 
 - Click “Add link” to open the link configuration window.
 
-  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Pop up window" width="1920"/>
+  <img src={require("./img/extern/public-link-option-pop-up.png").default} alt="Public link configuration" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Click “Options” to configure the link.
 - Select the desired access rights for recipients:
-  - “Can view":  
-    Recipients can view and download the file, but cannot edit it or upload files.
-  - “Can edit":  
-    Recipients can view, download, edit and delete the file, and upload files to the folder.
-  - “File Drop (secret)":  
-    Recipients can only upload files. They cannot view or edit the content.
 
-    <img src={require("./img/extern/access-rights.png").default} alt="Access rights" width="1920"/>
+  <img src={require("./img/extern/access-rights.png").default} alt="Available permissions for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
+
+  | Permission           | Description                                                                                                   |
+  | -------------------- | ------------------------------------------------------------------------------------------------------------- |
+  | **Can view**         | Recipients can view and download the shared content but cannot change it or upload files.                     |
+  | **Can edit**         | Recipients can view, download, upload, edit, and delete content.                                              |
+  | **Secret File Drop** | Recipients can upload files to a shared folder without viewing, downloading, or editing its existing content. |
 
 - Enter a password in the field under “Password”. A password is required, unless an administrator has changed the setting.
-- Optionally, set an expiry date.
+- Optionally, set an expiration date.
 - After you have configured the link options, click “Copy link” to create and copy the public link.
   To include the password, open the menu next to “Copy link” and select “Copy link and password”.
-  <img src={require("./img/extern/password-section.png").default} alt="Password section" width="1920"/>
+
+  <img src={require("./img/extern/password-section.png").default} alt="Password, expiration date, and copy options for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - The link is now created and can be shared with recipients.
-  <img src={require("./img/extern/copy-link-button.png").default} alt="Copy link" width="1920"/>
+  <img src={require("./img/extern/copy-link-button.png").default} alt="Created public link" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - You can edit the link later by clicking the three-dot menu to the right of the link.
-  From there, you can rename the link, change the expiry date, update the password, remove the password, or delete the link.
-  <img src={require("./img/extern/link-actions-menu.png").default} alt="Link actions menu" width="1920"/>
 
-Now you know how to share files and folders securely with external users.
+  <img src={require("./img/extern/link-actions-menu.png").default} alt="Actions for a public link" width="1920" height="1080" loading="lazy" decoding="async"/>
+
+  From there, you can rename the link, change the expiration date, update the password, remove the password, or delete the link.

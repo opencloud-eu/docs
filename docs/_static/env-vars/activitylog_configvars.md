@@ -15,7 +15,7 @@
 |`OC_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`OC_PERSISTENT_STORE`<br/>`ACTIVITYLOG_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_PERSISTENT_STORE`<br/>`ACTIVITYLOG_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`ACTIVITYLOG_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`ACTIVITYLOG_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"activitylog"`|
 |`OC_PERSISTENT_STORE_TTL`<br/>`ACTIVITYLOG_STORE_TTL`| 1.0.0 |Duration|`Time to live for events in the store. See the Environment Variable Types description for more details.`|`"0s"`|

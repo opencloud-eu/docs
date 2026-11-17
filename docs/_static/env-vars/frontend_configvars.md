@@ -1,5 +1,5 @@
 
-2026-10-30-00-07-42
+2026-11-17-00-06-48
 
 ## Deprecation Notice
 
@@ -78,7 +78,7 @@
 |`FRONTEND_OCS_SHARE_PREFIX`| 1.0.0 |string|`Path prefix for shares as part of a CS3 resource. Note that the path must start with '/'.`|`"/Shares"`|
 |`FRONTEND_OCS_PERSONAL_NAMESPACE`| 1.0.0 |string|`Home namespace identifier.`|`"/users/{{.Id.OpaqueId}}"`|
 |`FRONTEND_OCS_ADDITIONAL_INFO_ATTRIBUTE`| 1.0.0 |string|`Additional information attribute for the user like {{.Mail}}.`|`"{{.Mail}}"`|
-|`OC_CACHE_STORE`<br/>`FRONTEND_OCS_STAT_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`FRONTEND_OCS_STAT_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`FRONTEND_OCS_STAT_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"cache-stat"`|
 |`FRONTEND_OCS_STAT_CACHE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|
@@ -135,4 +135,5 @@
 |`OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`<br/>`FRONTEND_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`| 1.0.0 |int|`Define the minimum number of characters from the special characters list to be present. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`<br/>`FRONTEND_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`| 1.0.0 |string|`Path to the 'banned passwords list' file. This only impacts public link password validation. See the documentation for more details.`|`""`|
 |`FRONTEND_CONFIGURABLE_NOTIFICATIONS`| 1.0.0 |bool|`Allow configuring notifications via web client.`|`"true"`|
+|`OC_CLAIM_MANAGED_SPACES_ENABLED`| next |bool|`Mark spaces as managed by the server. Clients like the web UI then block adding or removing users to or from spaces. See the text description for more details.`|`"false"`|
 |`FRONTEND_GROUPWARE_ENABLED`| 3.7.0 |bool|`Enable groupware features. Defaults to false.`|`"false"`|

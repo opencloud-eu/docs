@@ -67,6 +67,13 @@
     }
 }
 
+/* Images in the docs set both width and height, so the browser can reserve their
+   space before they are lazy loaded. height: auto keeps the aspect ratio when
+   max-width makes an image narrower than its width attribute. */
+.markdown img {
+    height: auto;
+}
+
 /* For images that needs to be displayed according to light oder dark mode. */
 .light-mode-image {
     display: none;

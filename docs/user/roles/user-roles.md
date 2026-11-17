@@ -8,24 +8,39 @@ draft: false
 
 # User Roles in OpenCloud
 
-| Role        | can be Space Manager | Personal Space | create/delete Spaces | manage Users and Groups |
-| :---------- | :------------------: | :------------: | :------------------: | :---------------------: |
-| User Light  |          x           |       -        |          -           |            -            |
-| User        |          x           |       x        |          -           |            -            |
-| Space Admin |          x           |       x        |          x           |            -            |
-| Admin       |          x           |       x        |          x           |            x            |
+| Role        | can receive Can manage | Personal Space | create/delete Spaces | manage Users and Groups |
+| :---------- | :--------------------: | :------------: | :------------------: | :---------------------: |
+| User Light  |           x            |       -        |          -           |            -            |
+| User        |           x            |       x        |          -           |            -            |
+| Space Admin |           x            |       x        |          x           |            -            |
+| Admin       |           x            |       x        |          x           |            x            |
 
 ## User Light
 
-A User Light has limited access and does not have a personal Space by default.
+A User Light is a regular OpenCloud account with restricted system-wide permissions and does not have a personal Space by default.
 
 A User Light can:
 
 - Be added as a member to a Space
 - Be assigned a role in a Space
+- Work with content according to the assigned Space or Share Role, subject to the restrictions below
+
+The following restrictions currently apply:
+
+- A User Light cannot create internal shares with users or groups, even when assigned `Can manage` in the Space.
+- A User Light can create public links when public links are available and the permissions for the resource allow it.
+- A User Light cannot assign `Can manage` to another Space member, even when assigned `Can manage` themselves.
+
+:::caution
+
+If only User Light accounts retain `Can manage`, it may not be possible for them to restore `Can manage` to another member. Keep at least one Space member with the User, Space Admin, or Admin User Role and the `Can manage` Space Role.
+
+:::
 
 :::note
+
 If a user previously had the role User or higher and is later changed back to User Light, they keep their existing personal Space.
+
 :::
 
 ## User

@@ -14,7 +14,7 @@ The OpenCloud Android App makes it easy to manage your content. You can create n
 
 Tap the “+” button in the bottom right corner.
 
-<img src={require("../img/files-and-folders/create-rename-move-android/create-new.png").default} alt="Create new" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/create-new.png").default} alt="Create new" width="180" height="400" loading="lazy" decoding="async"/>
 
 Choose what you want to create from the menu:
 
@@ -24,7 +24,7 @@ Choose what you want to create from the menu:
 - Enter a name for your folder
 - Tap "OK"
 
-<img src={require("../img/files-and-folders/create-rename-move-android/create-folder.png").default} alt="Create folder" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/create-folder.png").default} alt="Create folder" width="180" height="400" loading="lazy" decoding="async"/>
 
 ### Create a Document (Requires Collabora)
 
@@ -34,12 +34,12 @@ If Collabora Online is enabled in your OpenCloud instance:
 - Choose the document type (text, spreadsheet, presentation)
 - Enter a filename and confirm
 
-<img src={require("../img/files-and-folders/create-rename-move-android/choose-file-type.png").default} alt="Choose file type" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/choose-file-type.png").default} alt="Choose file type" width="180" height="400" loading="lazy" decoding="async"/>
 
 The document will open in a built-in browser window using **Collabora** for editing.
 
-<img src={require("../img/files-and-folders/create-rename-move-android/open-collabora.png").default} alt="Open Collabora" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move-android/edit-collabora.png").default} alt="Edit Collabora" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/open-collabora.png").default} alt="Open Collabora" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/edit-collabora.png").default} alt="Edit Collabora" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Rename Files or Folders
 
@@ -47,20 +47,20 @@ To rename a file or folder in the OpenCloud Android App:
 
 - Tap the "three dots (...)" next to the item you want to rename
 
-<img src={require("../img/files-and-folders/create-rename-move-android/three-dots.png").default} alt="Click on the three dots menu" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/three-dots.png").default} alt="Click on the three dots menu" width="180" height="400" loading="lazy" decoding="async"/>
 
 - Select "Rename" from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move-android/select-rename.png").default} alt="Select rename" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/select-rename.png").default} alt="Select rename" width="180" height="400" loading="lazy" decoding="async"/>
 
 - Enter the new name for the file or folder
 
-<img src={require("../img/files-and-folders/create-rename-move-android/enter-rename.png").default} alt="Enter the new name" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/enter-rename.png").default} alt="Enter the new name" width="180" height="400" loading="lazy" decoding="async"/>
 
 - Tap "OK"to apply the changes
 
-<img src={require("../img/files-and-folders/create-rename-move-android/tap-ok.png").default} alt="Tap OK" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move-android/new-name-applied.png").default} alt="New applied name" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/tap-ok.png").default} alt="Tap OK" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/new-name-applied.png").default} alt="New applied name" width="180" height="400" loading="lazy" decoding="async"/>
 
 The new name will be saved immediately.
 
@@ -70,16 +70,16 @@ To move a file or folder in the OpenCloud Android App:
 
 - Tap the "three dots (...)" next to the file or folder you want to move
 
-<img src={require("../img/files-and-folders/create-rename-move-android/three-dots-move.png").default} alt="Select the three dot menu" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/three-dots-move.png").default} alt="Select the three dot menu" width="180" height="400" loading="lazy" decoding="async"/>
 
 - Select "Move" or "Copy" from the menu
 
-<img src={require("../img/files-and-folders/create-rename-move-android/select-move-or-copy.png").default} alt="Select move or copy" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/select-move-or-copy.png").default} alt="Select move or copy" width="180" height="400" loading="lazy" decoding="async"/>
 
 Navigate to the destination folder
 Tap "Move here" or "Copy here"
 
-<img src={require("../img/files-and-folders/create-rename-move-android/select-paste.png").default} alt="Select paste" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move-android/file-moved.png").default} alt="File is moved" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/select-paste.png").default} alt="Select paste" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move-android/file-moved.png").default} alt="File is moved" width="180" height="400" loading="lazy" decoding="async"/>
 
 The file or folder will now appear in the new location.

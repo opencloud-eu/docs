@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 50
 id: opencloud-mesh
 title: ScienceMesh
 description: Connect with users on another OpenCloud instance and share files or folders with them.
@@ -20,7 +20,7 @@ Before you begin, an administrator must configure OCM on both participating inst
 
 The ScienceMesh application provides the interface for creating and accepting OCM invitations.
 
-<img src={require("./img/opencloud-mesh/open-ocm-application.png").default} alt="Application switcher with the ScienceMesh application" width="1920" />
+<img src={require("./img/opencloud-mesh/open-ocm-application.png").default} alt="Application switcher with the ScienceMesh application" width="1920" height="1080" loading="lazy" decoding="async" />
 
 ## Connect with a user
 
@@ -38,19 +38,19 @@ Do not accept an invitation on the same instance where it was created.
 
 1. In the Invite users section, select Generate invitation.
 
-   <img src={require("./img/opencloud-mesh/generate-invitation.png").default} alt="Invite users section with the Generate invitation button" width="1640" />
+   <img src={require("./img/opencloud-mesh/generate-invitation.png").default} alt="Invite users section with the Generate invitation button" width="1640" height="564" loading="lazy" decoding="async" />
 
 2. In the Generate new invitation dialog, optionally enter a description that helps you identify the invitation later.
 3. Select Generate.
 
-   <img src={require("./img/opencloud-mesh/generate-invitation-dialog.png").default} alt="Generate new invitation dialog with a description" width="1008" />
+   <img src={require("./img/opencloud-mesh/generate-invitation-dialog.png").default} alt="Generate new invitation dialog with a description" width="1008" height="468" loading="lazy" decoding="async" />
 
 4. The invitation token is generated and copied to your clipboard automatically.
 5. Send the complete copied token to the user on the other instance.
 
 If you need to copy the token again, find the invitation in the Invite users section and use the Copy base64 token action.
 
-<img src={require("./img/opencloud-mesh/copy-invitation-token.png").default} alt="Generated invitation and controls for copying the invitation token" width="1640" />
+<img src={require("./img/opencloud-mesh/copy-invitation-token.png").default} alt="Generated invitation and controls for copying the invitation token" width="1640" height="450" loading="lazy" decoding="async" />
 
 ### Accept the invitation on the other instance
 
@@ -59,17 +59,17 @@ The invited user completes the following steps on their OpenCloud instance:
 1. Sign in to OpenCloud Web.
 2. Open the ScienceMesh application.
 
-   <img src={require("./img/opencloud-mesh/open-accept-invitations.png").default} alt="Accept invitations section in the ScienceMesh application" width="1608" />
+   <img src={require("./img/opencloud-mesh/open-accept-invitations.png").default} alt="Accept invitations section in the ScienceMesh application" width="1608" height="456" loading="lazy" decoding="async" />
 
 3. In the Accept invitations section, paste the complete token into Enter invite token.
 4. Check that Institution displays the domain of the inviting OpenCloud instance.
 5. Select Accept invitation.
 
-   <img src={require("./img/opencloud-mesh/accept-invitation.png").default} alt="Invitation token with the detected institution and the Accept invitation button" width="1608" />
+   <img src={require("./img/opencloud-mesh/accept-invitation.png").default} alt="Invitation token with the detected institution and the Accept invitation button" width="1608" height="456" loading="lazy" decoding="async" />
 
 After the invitation has been accepted, the remote user becomes available as an OCM connection.
 
-<img src={require("./img/opencloud-mesh/federated-connection.png").default} alt="New federated connection in the ScienceMesh application" width="1920" />
+<img src={require("./img/opencloud-mesh/federated-connection.png").default} alt="New federated connection in the ScienceMesh application" width="1920" height="808" loading="lazy" decoding="async" />
 
 :::note
 
@@ -88,17 +88,17 @@ After both users are connected:
 3. Open the sharing panel.
 4. From Share type, select External.
 
-   <img src={require("./img/opencloud-mesh/select-external-share-type.png").default} alt="Share type menu with External users selected" width="452" />
+   <img src={require("./img/opencloud-mesh/select-external-share-type.png").default} alt="Share type menu with External users selected" width="452" height="1080" loading="lazy" decoding="async" />
 
 5. Enter all or part of the connected remote user's name in the search field.
 6. Select the matching user marked as External.
 
-   <img src={require("./img/opencloud-mesh/find-external-user.png").default} alt="Search results with an external federated user" width="452" />
+   <img src={require("./img/opencloud-mesh/find-external-user.png").default} alt="Search results with an external federated user" width="452" height="1080" loading="lazy" decoding="async" />
 
 7. Configure the permissions.
 8. Select Share.
 
-   <img src={require("./img/opencloud-mesh/share-with-external-user.png").default} alt="External user selected with permissions and the Share button" width="452" />
+   <img src={require("./img/opencloud-mesh/share-with-external-user.png").default} alt="External user selected with permissions and the Share button" width="452" height="1080" loading="lazy" decoding="async" />
 
 The remote user should now receive the shared resource on the other OpenCloud instance.
 
@@ -111,7 +111,7 @@ The invited user completes the following steps on their OpenCloud instance:
 3. Open Shared with me.
 4. Verify that the shared file or folder is listed.
 
-<img src={require("./img/opencloud-mesh/received-federated-share.png").default} alt="Federated folder under Shared with me on the receiving OpenCloud instance" width="1920" />
+<img src={require("./img/opencloud-mesh/received-federated-share.png").default} alt="Federated folder under Shared with me on the receiving OpenCloud instance" width="1920" height="1080" loading="lazy" decoding="async" />
 
 ## Troubleshooting
 

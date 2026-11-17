@@ -15,13 +15,13 @@ Purpose and description to be added
     * [Sessions command](#sessions-command)
     * [Command Examples](#command-examples)
     * [Delete Stale Nodes command](#delete-stale-nodes-command)
-    * [Command Examples](#command-examples)
+    * [Command Examples](#command-examples-1)
   * [Check and Inspect the Blobstore](#check-and-inspect-the-blobstore)
     * [Check](#check)
     * [Get](#get)
-  * [Manage Trash-Bin Items](#manage-trashbin-items)
+  * [Manage Trash-Bin Items](#manage-trash-bin-items)
     * [Purge Expired](#purge-expired)
-    * [List and Restore Trash-Bins Items](#list-and-restore-trashbins-items)
+    * [List and Restore Trash-Bins Items](#list-and-restore-trash-bins-items)
 * [Caching](#caching)
 
 ## Legacy storage drivers
@@ -117,6 +117,7 @@ OPTIONS:
    --processing  filter sessions by processing status (default: unset)
    --expired     filter sessions by expired status (default: unset)
    --has-virus   filter sessions by virus scan result (default: unset)
+   --orphaned    filter sessions by whether their node metadata is unreadable (default: unset)
    --json        output as json (default: false)
    --restart     send restart event for all listed sessions (default: false)
    --resume      send resume event for all listed sessions (default: false)
@@ -170,6 +171,23 @@ opencloud storage-users uploads sessions --expired=true --clean
 # resumes all uploads that are processing and are not virus infected
 opencloud storage-users uploads sessions --processing=false --has-virus=false --resume
 ```
+
+Uploads whose node metadata can no longer be read are orphaned: they can never finish
+postprocessing, because the destination of the upload cannot be resolved. Such uploads stay
+in processing state indefinitely and keep consuming the quota of their space. Use the
+`--orphaned` filter to list them, and `--clean` to remove them and release the quota.
+
+```bash
+# lists all orphaned upload sessions
+opencloud storage-users uploads sessions --orphaned=true
+
+# removes them and releases the quota they consume
+opencloud storage-users uploads sessions --orphaned=true --clean
+```
+
+Note: `--orphaned` reads the node metadata of every upload session, so it is slower than the
+other filters. Cleaning an orphaned session deletes the uploaded bytes, which are the only
+copy as long as postprocessing has not finished. Run the command without `--clean` first.
 
 
 #### Delete Stale Nodes command
@@ -340,19 +358,19 @@ When the CLI tool restores the item with the `replace` option, the existing item
 ## Caching
 
 The `storage-users` service caches stat, metadata and uuids of files and folders via the configured store in `STORAGE_USERS_FILEMETADATA_CACHE_STORE` and `STORAGE_USERS_ID_CACHE_STORE`. Possible stores are:
-  -   `memory`: Basic in-memory store and the default.
-  -   `redis-sentinel`: Stores data in a configured Redis Sentinel cluster.
-  -   `nats-js-kv`: Stores data using key-value-store feature of [nats jetstream](https://docs.nats.io/nats-concepts/jetstream/key-value-store)
+  -   `memory`: Basic in-memory store.
+  -   `nats-js-kv`: Stores data using key-value-store feature of [nats jetstream](https://docs.nats.io/nats-concepts/jetstream/key-value-store). This is the default.
   -   `noop`: Stores nothing. Useful for testing. Not recommended in production environments.
 
 Other store types may work but are not supported currently.
+
+The `posix` driver, which is the default, only supports `nats-js-kv` for `STORAGE_USERS_ID_CACHE_STORE` and refuses to start with any other store. `STORAGE_USERS_ID_CACHE_STORE` falls back to `OC_CACHE_STORE`, so if `OC_CACHE_STORE` is set to something else, set `STORAGE_USERS_ID_CACHE_STORE=nats-js-kv` and `STORAGE_USERS_ID_CACHE_STORE_NODES` to the nats address (usually the same as `OC_EVENTS_ENDPOINT`) explicitly.
 
 Note: The service can only be scaled if not using `memory` store and the stores are configured identically over all instances!
 
 Note that if you have used one of the deprecated stores, you should reconfigure to one of the supported ones as the deprecated stores will be removed in a later version.
 
 Store specific notes:
-  -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OC_CACHE_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
   -   When using `nats-js-kv` it is recommended to set `OC_CACHE_STORE_NODES` to the same value as `OC_EVENTS_ENDPOINT`. That way the cache uses the same nats instance as the event bus.
   -   When using the `nats-js-kv` store, it is possible to set `OC_CACHE_DISABLE_PERSISTENCE` to instruct nats to not persist cache data on disc.
 

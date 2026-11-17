@@ -17,7 +17,10 @@ The OpenCloud web interface consists of several areas that help you to work effi
     src={require("./img/overview/overview.png").default}
     alt="Overview"
     width="1920"
+    height="1080"
     style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
   />
   <OverviewMarker
     aria-hidden="true"
@@ -62,11 +65,10 @@ Allows you to edit, move or delete several selected files at the same time.
 
 ## 8. View Modes
 
-Provides various display options for the file list:
+Provides two display options for the file list:
 
-- List view
-- Tile view
-- Condensed view
+- Gridview
+- Listview
 
 ## 9. View Settings
 

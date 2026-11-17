@@ -22,6 +22,15 @@ http:
     idle_conn_timeout: 1m30s
     tls_handshake_timeout: 10s
     expect_continue_timeout: 1s
+client_ip:
+  trusted_proxies:
+  - 127.0.0.0/8
+  - ::1/128
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+  - fc00::/7
+  header: X-Forwarded-For
 reva:
   address: eu.opencloud.api.gateway
   tls:

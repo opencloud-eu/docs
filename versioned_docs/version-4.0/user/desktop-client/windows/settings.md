@@ -14,7 +14,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 
 - Click on "Settings" in the top-right corner of OpenCloud Desktop
 
-  <img src={require(".././img/settings/settings-overview.png").default} alt="Settings overview" width="400"/>
+  <img src={require(".././img/settings/settings-overview.png").default} alt="Settings overview" width="400" height="364" loading="lazy" decoding="async"/>
 
 ## Overview of Settings Sections
 
@@ -22,7 +22,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 
 - Set your preferred language
 
-  <img src={require(".././img/settings/windows/settings-general.png").default} alt="Settings-general" width="400"/>
+  <img src={require(".././img/settings/windows/settings-general.png").default} alt="Settings-general" width="400" height="40" loading="lazy" decoding="async"/>
 
 ### Advanced Settings
 
@@ -31,7 +31,7 @@ You can customize OpenCloud Desktop settings by following these steps:
 - Edit the ignored files list
 - Enable a debug log file for troubleshooting
 
-  <img src={require(".././img/settings/settings-advanced.png").default} alt="Settings advanced" width="400"/>
+  <img src={require(".././img/settings/settings-advanced.png").default} alt="Settings advanced" width="400" height="73" loading="lazy" decoding="async"/>
 
 ### Network Settings
 
@@ -40,7 +40,7 @@ You can customize OpenCloud Desktop settings by following these steps:
   - Use system proxy (default)
   - Manually enter a proxy
 
-  <img src={require(".././img/settings/settings-network.png").default} alt="Settings network" width="400"/>
+  <img src={require(".././img/settings/settings-network.png").default} alt="Settings network" width="400" height="153" loading="lazy" decoding="async"/>
 
 ### Download and Upload Bandwidth
 
@@ -49,4 +49,4 @@ You can customize OpenCloud Desktop settings by following these steps:
   - Automatically adjust limit
   - Set a specific limit manually
 
-  <img src={require(".././img/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400"/>
+  <img src={require(".././img/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400" height="85" loading="lazy" decoding="async"/>

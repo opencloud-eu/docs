@@ -22,11 +22,11 @@ To manage users and groups for OpenCloud, you need a user with administrative pr
 
 - Log in to Keycloak as an admin.
 - Navigate to the OpenCloud realm
-- Assign appropriate roles (such as `manage-user` and `view-users`) to the user you want to promote.
+- Assign the appropriate client roles (such as `manage-users` and `view-users`) from the `realm-management` client to grant the user the required administrative permissions.
 
-Example: A user named `dennis` is assigned as a Realm Admin.
+Example: A user named `dennis` is granted user-management permissions in Keycloak.
 
-<img src={require(".././img/keycloak/add-user/set-admin-roles.png").default} alt="Add admin roles to user" width="1920"/>
+<img src={require(".././img/keycloak/add-user/set-admin-roles.png").default} alt="Add admin roles to user" width="1920" height="993" loading="lazy" decoding="async"/>
 
 Once assigned, the user can log in as a Realm Administrator and access user and group management.
 
@@ -39,37 +39,39 @@ With admin permissions, you can now create users and groups:
 - Navigate to the "Users" section in the Keycloak Admin Console
 
 - Click Add User
-  <img src={require(".././img/keycloak/add-user/add-user.png").default} alt="Add user" width="1920"/>
+  <img src={require(".././img/keycloak/add-user/add-user.png").default} alt="Add user" width="1920" height="712" loading="lazy" decoding="async"/>
 
 - Fill in the required user details (e.g., username, email)
-  <img src={require(".././img/keycloak/add-user/fill-out-userinfo.png").default} alt="Fill out user information" width="1920"/>
+  <img src={require(".././img/keycloak/add-user/fill-out-userinfo.png").default} alt="Fill out user information" width="1920" height="971" loading="lazy" decoding="async"/>
 
 - Optionally assign the user to one or more groups.
 
 - Click on "Create"
 
-- Set an inital password
+- Set an initial password
 
-<img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920"/>
+<img src={require(".././img/keycloak/add-user/set-password.png").default} alt="Set initial user password" width="1920" height="566" loading="lazy" decoding="async"/>
 
 :::note
-In the opencloud-compose setup, the default user role is `OpenCloudGuest`.  
-This means new users will not receive a personal space by default.  
-You can change the default role in "Realm Settings" under "User Registration" in the Keycloak admin console.
+
+In the imported `opencloud-compose` Keycloak realm, `opencloudGuest` is included in the default realm roles.
+When OIDC role assignment is enabled and this role is mapped to OpenCloud's "User Light" role, new users do not receive a personal space by default.
+
+To change the default roles assigned to new users, navigate to **Realm settings → User registration** in the Keycloak Admin Console and update the default role assignments.
+
+:::
 
 ## First Login Experience for the "User Light"
 
-When a "User Light" logs in for the first time, they will:
+When a "User Light" logs in for the first time, prompts depend on the account and Keycloak realm settings:
 
-- Be prompted to change their password
-- Update their profile (name, email, etc.)
-- Verify their email address
+- Users assigned a temporary password must choose a new password.
+- Keycloak may request profile updates when required by realm settings.
+- Email verification is requested only when enabled or required in Keycloak.
 
-if this was set before.
+After successful login, newly created users assigned the "User Light" role do not receive a personal space by default, fulfilling the guest user requirement.
 
-After successful login, they will not receive a personal space — fulfilling the guest user requirement.
-
-<img src={require(".././img/keycloak/add-user/guest-login.png").default} alt="Guest login" width="1920"/>
+<img src={require(".././img/keycloak/add-user/guest-login.png").default} alt="Guest login" width="1920" height="1059" loading="lazy" decoding="async"/>
 
 ## Optional: Enable Self Registration
 
@@ -81,19 +83,19 @@ To enable self-registration:
 - Go to the Login settings in the OpenCloud realm.
 - Enable the User Registration option.
 
-<img src={require(".././img/keycloak/add-user/enable-self-registration.png").default} alt="Enable self registration" width="1920"/>
+<img src={require(".././img/keycloak/add-user/enable-self-registration.png").default} alt="Enable self registration" width="1920" height="1055" loading="lazy" decoding="async"/>
 
 ### Self Registration Flow
 
 - Users see a Register option on the login screen.
 
-<img src={require(".././img/keycloak/add-user/register-button.png").default} alt="Register Button" width="1920"/>
+<img src={require(".././img/keycloak/add-user/register-button.png").default} alt="Register Button" width="1920" height="1058" loading="lazy" decoding="async"/>
 
 - They complete the registration form.
 
-<img src={require(".././img/keycloak/add-user/fill-out-registration-form.png").default} alt="Fill out the registration form" width="1920"/>
+<img src={require(".././img/keycloak/add-user/fill-out-registration-form.png").default} alt="Fill out the registration form" width="1920" height="1063" loading="lazy" decoding="async"/>
 
-After loggin in, the user has now the "User Light" Role with no personal Space.
+After logging in, the user has now the "User Light" Role with no personal Space.
 
 ## Summary
 

@@ -22,7 +22,7 @@
 |`OC_SYSTEM_USER_ID`<br/>`SETTINGS_SYSTEM_USER_ID`| 1.0.0 |string|`ID of the OpenCloud STORAGE-SYSTEM system user. Admins need to set the ID for the STORAGE-SYSTEM system user in this config option which is then used to reference the user. Any reasonable long string is possible, preferably this would be an UUIDv4 format.`|`""`|
 |`OC_SYSTEM_USER_IDP`<br/>`SETTINGS_SYSTEM_USER_IDP`| 1.0.0 |string|`IDP of the OpenCloud STORAGE-SYSTEM system user.`|`"internal"`|
 |`OC_SYSTEM_USER_API_KEY`| 1.0.0 |string|`API key for the STORAGE-SYSTEM system user.`|`""`|
-|`OC_CACHE_STORE`<br/>`SETTINGS_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'redis-sentinel', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
+|`OC_CACHE_STORE`<br/>`SETTINGS_CACHE_STORE`| 1.0.0 |string|`The type of the cache store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"memory"`|
 |`OC_CACHE_STORE_NODES`<br/>`SETTINGS_CACHE_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`OC_CACHE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"settings-cache"`|
 |`SETTINGS_FILE_CACHE_TABLE`| 1.0.0 |string|`The database table the store should use for the file cache.`|`"settings_files"`|

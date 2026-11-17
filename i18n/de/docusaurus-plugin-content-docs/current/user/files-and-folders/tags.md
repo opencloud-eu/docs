@@ -10,18 +10,20 @@ draft: false
 
 Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, damit Sie diese leichter suchen oder gruppieren können.
 
-## Tag hinzufügen
+Zugewiesene Tags können außerdem verwendet werden, um Dateien und Ordner über die [Suche](./search) zu finden.
+
+## Tag-Einstellungen öffnen
 
 - Öffnen Sie das Kontextmenü für die Datei oder den Ordner.
 - Wählen Sie die Option „Details“.
-  <img src={require("./img/tags/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920"/>
+  <img src={require("./img/tags/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Tag hinzufügen
 
 - Klicken Sie in das Eingabefeld neben „Tags“.
-  <img src={require("./img/tags/tags-line.png").default} alt="Eingabefeld neben Tags" width="400"/>
+  <img src={require("./img/tags/tags-line.png").default} alt="Eingabefeld neben Tags" width="400" height="1168" loading="lazy" decoding="async"/>
 - Wählen Sie einen vorhandenen Tag aus oder geben Sie einen neuen Begriff ein, um einen neuen Tag zu erstellen.
-  <img src={require("./img/tags/type-or-choose-a-tag.png").default} alt="Tag-Namen eingeben" width="400"/>
+  <img src={require("./img/tags/type-or-choose-a-tag.png").default} alt="Tag-Namen eingeben" width="400" height="1168" loading="lazy" decoding="async"/>
 
   Der Tag wird hinzugefügt und ist jetzt mit der Datei oder dem Ordner verknüpft.
 
@@ -29,7 +31,7 @@ Mit OpenCloud können Sie Dateien und Ordner mit Tags versehen, damit Sie diese 
 
 - Öffnen Sie die „Details“ der Datei oder des Ordners erneut.
 - Suchen Sie den Tag, den Sie entfernen möchten.
-- Klicken Sie auf das „x“ neben dem Tag, um ihn zu löschen.
-  <img src={require("./img/tags/delete-a-tag.png").default} alt="Auf das x neben dem Tag klicken" width="400"/>
+- Klicken Sie auf das „x“ neben dem Tag, um seine Zuordnung zu diesem Element zu entfernen.
+  <img src={require("./img/tags/delete-a-tag.png").default} alt="Tag-Zuordnung vom Element entfernen" width="400" height="1168" loading="lazy" decoding="async"/>
 
-  Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verknüpft.
+  Die Datei oder der Ordner ist nun nicht mehr mit diesem Tag verknüpft. Der Tag selbst bleibt für andere Dateien und Ordner verfügbar.

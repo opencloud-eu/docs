@@ -17,9 +17,12 @@ Mit der Funktion **Einem Freund empfehlen** können Sie andere schnell dazu einl
 
 Wenn Sie diese Option auswählen, öffnet sich das Teilen-Menü Ihres Geräts mit einer vorbereiteten Einladungsnachricht.
 
-<img src={require("../../img/settings/recommend-to-a-friend/recommend to a friend button.png").default}
+<img src={require("../../img/settings/recommend-to-a-friend/recommend-to-a-friend-button.png").default}
 alt="Schaltfläche Einem Freund empfehlen"
-height="650"/>
+width="294"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 ## Einladung versenden
 
@@ -33,9 +36,12 @@ Die Einladungsnachricht enthält bereits:
 
 Geben Sie einfach den Empfänger ein und senden Sie die Nachricht.
 
-<img src={require("../../img/settings/recommend-to-a-friend/message field.png").default}
+<img src={require("../../img/settings/recommend-to-a-friend/message-field.png").default}
 alt="Nachrichtenfeld"
-height="650"/>
+width="301"
+height="650"
+loading="lazy"
+decoding="async"/>
 
 :::tip
 

@@ -16,8 +16,8 @@ When the frontend update check detects a security-critical upgrade, administrato
 
 :::
 
-<img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520"/>
-<img src={require("./img/frontend-update-check/check-true-critical.png").default} alt="critical check is true" width="520"/>
+<img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520" height="182" loading="lazy" decoding="async"/>
+<img src={require("./img/frontend-update-check/check-true-critical.png").default} alt="critical check is true" width="520" height="156" loading="lazy" decoding="async"/>
 
 ## Edit the `.env` File
 
@@ -46,4 +46,4 @@ docker compose up -d
 
 The frontend will no longer display a message about newer versions being available.
 
-<img src={require("./img/frontend-update-check/check-false.png").default} alt="check is false" width="520"/>
+<img src={require("./img/frontend-update-check/check-false.png").default} alt="check is false" width="520" height="155" loading="lazy" decoding="async"/>

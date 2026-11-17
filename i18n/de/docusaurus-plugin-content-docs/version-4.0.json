@@ -402,5 +402,25 @@
   "sidebar.user.category.ios-settings": {
     "message": "Einstellungen",
     "description": "The label for category 'Settings' in sidebar 'user'"
+  },
+  "sidebar.user.category.Working in Teams with Spaces": {
+    "message": "In Teams mit Spaces arbeiten",
+    "description": "The label for category 'Working in Teams with Spaces' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-windows": {
+    "message": "Desktop Client für Windows",
+    "description": "The label for category 'Desktop Client for Windows' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-macos": {
+    "message": "Desktop Client für macOS",
+    "description": "The label for category 'Desktop Client for MacOS' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-linux": {
+    "message": "Desktop Client für Linux",
+    "description": "The label for category 'Desktop Client for Linux' in sidebar 'user'"
+  },
+  "sidebar.user.category.desktop-client-common-functionalty": {
+    "message": "Allgemeine Funktionen",
+    "description": "The label for category 'Common functionality' in sidebar 'user'"
   }
 }

@@ -14,32 +14,32 @@ Here we explain how to share files and folders via invitation with other people 
 
 Click the "three-dot menu" next to the file or folder
 
-<img src={require("../img/shares/invite/three-dot-menue.png").default} alt="Three-dot menue" height="400"/>
+<img src={require("../img/shares/invite/three-dot-menu.png").default} alt="Three-dot menue" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Share
 
 Now select the menue item "Share"
 
-<img src={require("../img/shares/invite/sharing-button.png").default} alt="Shareing-Button" height="400"/>
+<img src={require("../img/shares/invite/sharing-button.png").default} alt="Shareing-Button" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Users and Groups
 
 In the following selection, click on the Plus at "Users and Groups"
 
-<img src={require("../img/shares/invite/invite-option.png").default} alt="Share with" height="400"/>
+<img src={require("../img/shares/invite/invite-option.png").default} alt="Share with" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Share menu
 
 The Share menu opens, where you can use the search bar to search for people or groups you want to invite
 
-<img src={require("../img/shares/invite/invite-menue.png").default} alt="Share with menue" height="400"/>
-<img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" height="400"/>
+<img src={require("../img/shares/invite/invite-menu.png").default} alt="Share with menue" width="180" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/shares/invite/searchbar.png").default} alt="Search bar" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Permissions
 
 To configure the sharing permissions, click the pencil icon located next to the trash bin icon
 
-<img src={require("../img/shares/invite/permissions.png").default} alt="Permissions" height="400"/>
+<img src={require("../img/shares/invite/permissions.png").default} alt="Permissions" width="180" height="400" loading="lazy" decoding="async"/>
 
 - Create:  
   Users can create and upload files and folders.
@@ -52,4 +52,4 @@ To configure the sharing permissions, click the pencil icon located next to the 
 
 Once the invitation is created, you will see it in the file or folder overview
 
-<img src={require("../img/shares/invite/shared-with.png").default} alt="Shared with" height="400"/>
+<img src={require("../img/shares/invite/shared-with.png").default} alt="Shared with" width="180" height="400" loading="lazy" decoding="async"/>

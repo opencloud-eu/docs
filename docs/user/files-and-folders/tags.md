@@ -12,18 +12,18 @@ With OpenCloud you can add tags to files and folders to make them easier to sear
 
 Assigned tags can also be used to find files and folders through [Search](./search.md#search-using-tags).
 
-## Add tag
+## Open the tag settings
 
 - Open the context menu for the file or folder.
 - Select the “Details” option.
-  <img src={require("./img/tags/details-button.png").default} alt="Select details in context menu" width="1920"/>
+  <img src={require("./img/tags/details-button.png").default} alt="Select details in context menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 ## Add a tag
 
 - Click in the input field next to “Tags”.
-  <img src={require("./img/tags/tags-line.png").default} alt="Input line next to tags" width="400"/>
+  <img src={require("./img/tags/tags-line.png").default} alt="Input line next to tags" width="400" height="1168" loading="lazy" decoding="async"/>
 - Select an existing tag, or enter a new term to create a new tag.
-  <img src={require("./img/tags/type-or-choose-a-tag.png").default} alt="Enter tag name" width="400"/>
+  <img src={require("./img/tags/type-or-choose-a-tag.png").default} alt="Enter tag name" width="400" height="1168" loading="lazy" decoding="async"/>
 
   The tag is added and is now linked to the file or folder.
 
@@ -31,7 +31,7 @@ Assigned tags can also be used to find files and folders through [Search](./sear
 
 - Open the “Details” of the file or folder again.
 - Find the tag you want to remove.
-- Click on the “x” next to the tag to delete it.
-  <img src={require("./img/tags/delete-a-tag.png").default} alt="Click on x next to the tag" width="400"/>
+- Click on the “x” next to the tag to remove it from this item.
+  <img src={require("./img/tags/delete-a-tag.png").default} alt="Remove the tag assignment from the item" width="400" height="1168" loading="lazy" decoding="async"/>
 
-  The file or folder is now no longer associated with this tag.
+  The file or folder is no longer associated with the tag. The tag itself remains available for other files and folders.

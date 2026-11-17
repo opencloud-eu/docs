@@ -149,14 +149,14 @@ This will start all required services in the background.
 
 After starting OpenCloud, verify that services are running and SSL certificates were issued:
 
-1. Check the [TLS/SSL certificates are valid](./verify-SSL-certification.md)
+1. Check the [TLS/SSL certificates are valid](./verify-ssl-certification.md)
 2. Log in to OpenCloud: `https://cloud.YOUR.DOMAIN`
    - Username: `admin`
    - Password: (the password you set in `.env`)
 
 ## Next Steps
 
-- [Verify TLS Certificates](./verify-SSL-certification.md) – Validate staging certificates and switch to production
+- [Verify TLS Certificates](./verify-ssl-certification.md) – Validate staging certificates and switch to production
 - [Production Setup Considerations](./production-setup-consideration.md) – Persistent storage, backups, and production best practices
 - [Configure Keycloak](./keycloak.md) (optional) – Add Keycloak for enterprise identity management
 - [Configure Authentication](../../../configuration/authentication-and-user-management/) – User management and identity provider integration

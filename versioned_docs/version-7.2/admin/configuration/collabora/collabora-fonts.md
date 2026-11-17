@@ -29,7 +29,7 @@ apt install ttf-mscorefonts-installer
 
 During the installation, you will be prompted to accept the EULA (End User License Agreement).
 
-<img src={require("../img/collabora/accept-eula.png").default} alt="Accept EULA" width="1920"/>
+<img src={require("../img/collabora/accept-eula.png").default} alt="Accept EULA" width="1920" height="1172" loading="lazy" decoding="async"/>
 
 ## 3. Restart Collabora
 
@@ -41,4 +41,4 @@ docker compose restart
 
 Once restarted, Collabora will recognize the newly installed fonts, and they will be available when editing documents.
 
-<img src={require("../img/collabora/new-fonts.png").default} alt="New Fonts added" width="1920"/>
+<img src={require("../img/collabora/new-fonts.png").default} alt="New Fonts added" width="1920" height="500" loading="lazy" decoding="async"/>

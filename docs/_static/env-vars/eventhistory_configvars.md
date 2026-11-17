@@ -17,7 +17,7 @@
 |`OC_EVENTS_AUTH_USERNAME`<br/>`EVENTHISTORY_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`EVENTHISTORY_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`EVENTHISTORY_EVENTS_DISABLED`| 7.5.0 |bool|`Disables listening for events. Set this to true if the service should only handle GRPC requests.`|`"false"`|
-|`OC_PERSISTENT_STORE`<br/>`EVENTHISTORY_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'redis-sentinel', 'noop'. See the text description for details.`|`"nats-js-kv"`|
+|`OC_PERSISTENT_STORE`<br/>`EVENTHISTORY_STORE`| 1.0.0 |string|`The type of the store. Supported values are: 'memory', 'nats-js-kv', 'noop'. See the text description for details.`|`"nats-js-kv"`|
 |`OC_PERSISTENT_STORE_NODES`<br/>`EVENTHISTORY_STORE_NODES`| 1.0.0 |[]string|`A list of nodes to access the configured store. This has no effect when 'memory' store is configured. Note that the behaviour how nodes are used is dependent on the library of the configured store. See the Environment Variable Types description for more details.`|`"[127.0.0.1:9233]"`|
 |`EVENTHISTORY_STORE_DATABASE`| 1.0.0 |string|`The database name the configured store should use.`|`"eventhistory"`|
 |`EVENTHISTORY_STORE_TABLE`| 1.0.0 |string|`The database table the store should use.`|`""`|

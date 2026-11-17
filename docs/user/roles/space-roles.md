@@ -47,7 +47,11 @@ Members with this role can:
 - Edit the Space quota
 
 :::note
+
 Members with the `can manage` role can manage a Space, but they cannot delete it.
 
 Deleting a Space requires the OpenCloud user role `Admin` or `Space Admin`. For more information, see [User roles in OpenCloud](./user-roles.md).
+
+A Space Role does not override restrictions imposed by a system-wide User Role. In particular, a member with the User Light role cannot create internal shares or assign `Can manage` to another member, even when that User Light member has `Can manage`. See [User roles in OpenCloud](./user-roles.md#user-light) for details.
+
 :::

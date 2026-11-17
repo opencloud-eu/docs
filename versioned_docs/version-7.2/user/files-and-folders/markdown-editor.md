@@ -13,7 +13,7 @@ OpenCloud uses a Tiptap-based Markdown editor for files such as `README.md` and 
 
 When you open a Markdown file, OpenCloud shows it in the editor so you can write and update the file directly in the browser.
 
-<img src={require("./img/markdown-editor/editor-open.png").default} alt="Markdown editor open on a README file" width="1920"/>
+<img src={require("./img/markdown-editor/editor-open.png").default} alt="Markdown editor open on a README file" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 You can add headings, lists, links, quotes, code, and other common formatting without leaving the file view.
 
@@ -27,7 +27,7 @@ Type `/` in a new line to open the formatting menu.
 
 The menu gives you a quick overview of the available formatting options and lets you insert them without memorizing every shortcut.
 
-<img src={require("./img/markdown-editor/slash-menu.png").default} alt="Slash menu in the Markdown editor" width="1920"/>
+<img src={require("./img/markdown-editor/slash-menu.png").default} alt="Slash menu in the Markdown editor" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 This is especially helpful when you want to insert formatting quickly while keeping your hands on the keyboard.
 
