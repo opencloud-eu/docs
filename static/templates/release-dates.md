@@ -5,6 +5,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="rolling" label="Rolling" default>
     | Version | Release Date | Release Notes & Download|
     |:--------|:-------------|:--------------|
+    | v9.2.0 | 2026 November 17 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v9.2.0) |
     | v9.1.0 | 2026 November 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v9.1.0) |
     | v9.0.0 | 2026 October 27 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v9.0.0) |
     | v8.1.0 | 2026 October 5 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v8.1.0) |
@@ -44,7 +45,8 @@ import TabItem from '@theme/TabItem';
   <TabItem value="production " label="Production">
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
-    | - | 2026 November 17 | Production Release |
+    | v9.1.1 | 2026 November 17 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v9.1.1) |
+    | v7.2.6 | 2026 November 17 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.6) |
     | v7.2.5 | 2026 November 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.5) |
     | v4.0.9 | 2026 November 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.9) |
     | v7.2.4 | 2026 August 21 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v7.2.4) |
