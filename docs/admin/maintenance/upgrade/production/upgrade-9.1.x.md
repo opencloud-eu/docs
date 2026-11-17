@@ -1,17 +1,17 @@
 ---
 sidebar_position: 10
-id: upgrade-9.2.x
-title: Upgrade 9.2.x
-description: Upgrading from OpenCloud 7.2.x to the Production release 9.2.x
+id: upgrade-9.1.x
+title: Upgrade 9.1.x
+description: Upgrading from OpenCloud 7.2.x to the Production release 9.1.x
 draft: false
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Upgrading to OpenCloud 9.2.x
+# Upgrading to OpenCloud 9.1.x
 
-OpenCloud 9.2.x is the new Production release. This guide describes the direct upgrade from the previous Production release 7.2.x to 9.2.x.
+OpenCloud 9.1.x is the new Production release. This guide describes the direct upgrade from the previous Production release 7.2.x to 9.1.x.
 
 An interim upgrade to the Rolling release 8.x.x is not required. This guide includes all changes from 8.x.x and 9.x.x that are relevant for the upgrade.
 
@@ -19,12 +19,12 @@ An interim upgrade to the Rolling release 8.x.x is not required. This guide incl
 
 | Current version | Upgrade path                                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ |
-| 7.2.x           | Upgrade directly to 9.2.x with this guide.                                                                         |
-| 4.x             | Upgrade to 7.2.x first as described in [Upgrade 7.2.x](./upgrade-7.x.x.md). Then upgrade to 9.2.x with this guide. |
+| 7.2.x           | Upgrade directly to 9.1.x with this guide.                                                                         |
+| 4.x             | Upgrade to 7.2.x first as described in [Upgrade 7.2.x](./upgrade-7.x.x.md). Then upgrade to 9.1.x with this guide. |
 
 :::important
 
-A direct upgrade from 4.x to 9.2.x is not supported. Upgrade to 7.2.x first and verify that the deployment works before you continue with 9.2.x.
+A direct upgrade from 4.x to 9.1.x is not supported. Upgrade to 7.2.x first and verify that the deployment works before you continue with 9.1.x.
 
 :::
 
@@ -55,11 +55,11 @@ If you use the `opencloud-compose` repository, fetch the latest changes and swit
 ```bash
 cd /opencloud-compose
 git fetch origin
-git switch stable-9.2
+git switch stable-9.1
 git pull --ff-only
 ```
 
-Running `git pull` while you are still on `stable-7.2` only updates that branch and does not switch the checkout to the 9.2 release. Skip this step if you run OpenCloud with plain Docker.
+Running `git pull` while you are still on `stable-7.2` only updates that branch and does not switch the checkout to the 9.1 release. Skip this step if you run OpenCloud with plain Docker.
 
 ## Step 2: Verify the New Version
 
@@ -69,16 +69,16 @@ After updating the `opencloud-compose` checkout, check which OpenCloud image Doc
 docker compose config --images | grep '^opencloudeu/opencloud'
 ```
 
-If the output already shows the Production image with the intended 9.2.x release tag, no change to your `.env` file is required.
+If the output already shows the Production image with the intended 9.1.x release tag, no change to your `.env` file is required.
 
 If the output still shows the previous version or the Rolling image, set the Production image and the exact new version in your `.env` file:
 
 ```env
 OC_DOCKER_IMAGE=opencloudeu/opencloud
-OC_DOCKER_TAG=9.2.x
+OC_DOCKER_TAG=9.1.x
 ```
 
-Replace `9.2.x` with the exact image tag of the version you want to install. Available tags are listed on [Docker Hub](https://hub.docker.com/r/opencloudeu/opencloud/tags).
+Replace `9.1.x` with the exact image tag of the version you want to install. Available tags are listed on [Docker Hub](https://hub.docker.com/r/opencloudeu/opencloud/tags).
 
 Run the check again and verify that Docker Compose now resolves the intended Production image. Then pull all images referenced by the updated Compose configuration:
 
@@ -88,7 +88,7 @@ docker compose pull
 
 ## Step 3: Migrate the Configuration
 
-OpenCloud 9.2.x adds new settings to `opencloud.yaml`. Create and apply the configuration patch with the 9.2.x image before you start OpenCloud.
+OpenCloud 9.1.x adds new settings to `opencloud.yaml`. Create and apply the configuration patch with the 9.1.x image before you start OpenCloud.
 
 Stop OpenCloud:
 
@@ -104,7 +104,7 @@ Open a shell in a temporary container with your configuration volume:
 ```bash
 docker run --rm -it --user 1000:1000 --entrypoint /bin/sh \
   -v <opencloud-config-volume>:/etc/opencloud \
-  opencloudeu/opencloud:9.2.x
+  opencloudeu/opencloud:9.1.x
 ```
 
 Replace `<opencloud-config-volume>` with the Docker volume that contains your OpenCloud configuration.
@@ -115,7 +115,7 @@ Replace `<opencloud-config-volume>` with the Docker volume that contains your Op
 ```bash
 docker run --rm -it --user 1000:1000 --entrypoint /bin/sh \
   -v <path-to-your-config-directory>:/etc/opencloud \
-  opencloudeu/opencloud:9.2.x
+  opencloudeu/opencloud:9.1.x
 ```
 
 Replace `<path-to-your-config-directory>` with the host directory that contains your `opencloud.yaml`.
@@ -134,7 +134,7 @@ If the command reports `no changes, your config is up to date`, run `exit` and c
 
 Otherwise, review the generated patch carefully, especially if you use custom settings in `opencloud.yaml`. Among other changes, the patch adds the `auth_guest.service_account` settings that are required for guest links.
 
-The patch can also remove the existing `thumbnails.thumbnail` section. This is expected because the thumbnail configuration changed in OpenCloud 9.2.x. If you customized these settings, migrate them as described in [Thumbnails](../rolling/upgrade-9.x.x.md#thumbnails) before you apply the patch.
+The patch can also remove the existing `thumbnails.thumbnail` section. This is expected because the thumbnail configuration changed in OpenCloud 9.1.x. If you customized these settings, migrate them as described in [Thumbnails](../rolling/upgrade-9.x.x.md#thumbnails) before you apply the patch.
 
 Test and apply the patch:
 
