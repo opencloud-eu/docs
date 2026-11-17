@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.60.1](https://github.com/opencloud-eu/docs/releases/tag/3.60.1) - 2026-11-17
+## [3.61.0](https://github.com/opencloud-eu/docs/releases/tag/3.61.0) - 2026-11-17
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@AlexAndBear, @openclouders
+@AlexAndBear, @Svanvith, @openclouders
+
+### 👤 User Documentation
+
+- Screenshots 9.x space quota [[#1384](https://github.com/opencloud-eu/docs/pull/1384)]
 
 ### 📦️ Build&Tools
 
