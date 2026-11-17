@@ -28,7 +28,7 @@ This guide describes the upgrade from the Rolling release 8.x.x to 9.x.x.
 
 :::note
 
-If you run the Production release 7.2.x, follow the [Upgrade 9.1.x](../production/upgrade-9.1.x.md) guide instead. It describes the direct upgrade from 7.2.x to the Production release 9.1.x.
+If you run the Production release 7.2.x, follow the [Upgrade 9.2.x](../production/upgrade-9.2.x.md) guide instead. It describes the direct upgrade from 7.2.x to the Production release 9.2.x.
 
 :::
 
