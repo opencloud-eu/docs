@@ -1,0 +1,44 @@
+---
+sidebar_position: 40
+id: settings
+title: Einstellungen in macOS
+description: Einstellungen in OpenCloud Desktop für macOS
+draft: false
+---
+
+# Einstellungen in OpenCloud Desktop ändern
+
+Sie können die Einstellungen des OpenCloud Desktop mit den folgenden Schritten anpassen:
+
+## Einstellungen öffnen
+
+- Klicken Sie auf "Einstellungen“ in der oberen rechten Ecke von OpenCloud Desktop
+
+<img src={require("../img/macos/settings/settings-overview.png").default} alt="settings overview" width="400" height="351" loading="lazy" decoding="async"/>
+
+## Übersicht der Einstellungen
+
+### Allgemeine Einstellungen
+
+- Aktivieren oder Deaktivieren des automatischen Starts bei der Anmeldung
+- Legen Sie Ihre bevorzugte Sprache fest
+
+  <img src={require("../img/macos/settings/settings-general.png").default} alt="settings-general" width="400" height="56" loading="lazy" decoding="async"/>
+
+### Erweiterte Einstellungen
+
+- Versteckte Dateien synchronisieren
+- Entscheiden Sie, ob gelöschte Dateien in den lokalen Papierkorb verschoben werden sollen
+- Bearbeiten Sie die Liste der ignorierten Dateien
+- Aktivieren Sie eine Debug-Protokolldatei für die Fehlersuche
+
+  <img src={require("../img/macos/settings/settings-advanced.png").default} alt="settings advanced" width="400" height="67" loading="lazy" decoding="async"/>
+
+### Netzwerkeinstellungen
+
+- Legen Sie Download- und Upload-Bandbreitenlimits fest:
+  - Kein Limit (Standard)
+  - Automatische Anpassung des Limits
+  - Ein bestimmtes Limit manuell einstellen
+
+  <img src={require("../img/macos/settings/settings-bandwidth.png").default} alt="settings bandwith" width="400" height="105" loading="lazy" decoding="async"/>

@@ -1,0 +1,116 @@
+---
+sidebar_position: 10
+id: create-rename-move
+title: Create - Rename - Move
+description: Create - Rename - Move
+draft: false
+---
+
+# Create, Rename, and Move Files and Folders
+
+The OpenCloud iOS App makes it easy to manage your content. You can create new folders and files, rename items, and move them to different locations — all directly from your iPhone or iPad.
+
+## Creating Files and Folders
+
+- Tap the “+” button in the top right corner.
+
+  <img src={require("../img/files-and-folders/create-rename-move/create-new.png").default} alt="Create new" width="184" height="400" loading="lazy" decoding="async"/>
+
+Choose what you want to create from the menu:
+
+### Create a Folder
+
+- Tap "Create folder"
+- Enter a name for your folder
+- Tap "Done"
+
+  <img src={require("../img/files-and-folders/create-rename-move/create-folder.png").default} alt="Create folder" width="184" height="400" loading="lazy" decoding="async"/>
+
+### Create a Document (Requires Collabora)
+
+If Collabora Online is enabled in your OpenCloud instance:
+
+- Tap "New document"
+- Choose the document type (text, spreadsheet, presentation)
+- Enter a filename and confirm
+
+  <img src={require("../img/files-and-folders/create-rename-move/choose-file-type.png").default} alt="Choose file type" width="184" height="400" loading="lazy" decoding="async"/>
+
+The document will open in a built-in web view using Collabora for editing.
+<img src={require("../img/files-and-folders/create-rename-move/open-collabora.png").default} alt="Open Collabora" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move/edit-collabora.png").default} alt="Edit Collabora" width="184" height="400" loading="lazy" decoding="async"/>
+
+### Take Photo or Video
+
+- Select "Take photo or video" from the menu
+
+  <img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="select take photo or video" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Your device camera will open
+- Capture a photo or video
+
+  <img src={require("../img/files-and-folders/create-rename-move/take-photo.png").default} alt="Take Photo" width="185" height="400" loading="lazy" decoding="async"/>
+
+- The media will be saved directly to your OpenCloud account
+
+  <img src={require("../img/files-and-folders/create-rename-move/photo-saved.png").default} alt="Photo saved" width="184" height="400" loading="lazy" decoding="async"/>
+
+### Scan Document
+
+Use your iOS device to scan paper documents:
+
+- Select "Scan document"
+- Point the camera at your document
+- OpenCloud will auto-detect the edges and scan it
+
+You can then:
+
+- Crop or rotate the scan
+- Switch color modes (color, grayscale, black & white)
+- Choose a file format (PDF, JPEG, PNG)
+- Save as a single-page or multi-page file
+
+The scanned document will be saved in your OpenCloud account.
+
+## Rename Files or Folders
+
+To rename a file or folder in the OpenCloud iOS App:
+
+- Tap the three dots (⋯) next to the item you want to rename
+
+  <img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Click on the three dots menu" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Select "Rename" from the menu
+
+  <img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Select rename" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Enter the new name for the file or folder
+
+  <img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Enter the new name" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Tap "Done" to apply the changes
+
+  <img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tap done" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="New applied name" width="184" height="400" loading="lazy" decoding="async"/>
+
+The new name will be saved immediately.
+
+## Move Files or Folders
+
+To move a file or folder in the OpenCloud iOS App:
+
+- Tap the three dots (⋯) next to the file or folder you want to move
+
+  <img src={require("../img/files-and-folders/create-rename-move/three-dots-move.png").default} alt="Select the three dot menu" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Select "Cut" or "Copy" from the menu
+
+  <img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Select cut or copy" width="184" height="400" loading="lazy" decoding="async"/>
+
+- Navigate to the destination folder
+- Tap the three dots (⋯) in the destination location and select "Paste"
+
+  <img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Select paste" width="184" height="400" loading="lazy" decoding="async"/>
+  <img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="File is moved" width="184" height="400" loading="lazy" decoding="async"/>
+
+The file or folder will now appear in the new location.

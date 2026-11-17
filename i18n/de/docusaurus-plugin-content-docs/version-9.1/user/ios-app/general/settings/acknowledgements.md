@@ -1,0 +1,46 @@
+---
+sidebar_position: 110
+title: Danksagungen
+description: Zeigen Sie die in der OpenCloud iOS-App verwendeten Drittanbieterbibliotheken und Danksagungen an.
+draft: false
+---
+
+# Danksagungen
+
+Der Bereich **Danksagungen** listet die Drittanbieterbibliotheken und Open-Source-Komponenten auf, die von der OpenCloud iOS-App verwendet werden.
+
+## Danksagungen öffnen
+
+1. Öffnen Sie die **OpenCloud**-App.
+2. Tippen Sie auf **Einstellungen**.
+3. Tippen Sie im Bereich **Weitere** auf **Danksagungen**.
+
+<img src={require("../../img/general/settings/acknowledgements/acknowledgements-button.png").default}
+alt="Schaltfläche Danksagungen" width="336" height="650"
+loading="lazy"
+decoding="async"/>
+
+## Drittanbieterkomponenten durchsuchen
+
+Auf der Seite **Danksagungen** wird eine Liste der Drittanbieterbibliotheken und Frameworks angezeigt, die von der App verwendet werden.
+
+Je nach App-Version kann die Liste Komponenten wie die folgenden enthalten:
+
+- PLCrashReporter
+- Down
+- PocketSVG
+- OpenSSL
+- ISRunLoopThread
+
+Tippen Sie auf einen Eintrag, um weitere Informationen zur jeweiligen Bibliothek anzuzeigen.
+
+<img src={require("../../img/general/settings/acknowledgements/acknowledgements-menu.png").default}
+alt="Seite Danksagungen" width="348" height="650"
+loading="lazy"
+decoding="async"/>
+
+:::note
+
+Die angezeigten Bibliotheken können sich zwischen OpenCloud-Versionen ändern, wenn Abhängigkeiten hinzugefügt, aktualisiert oder entfernt werden.
+
+:::
