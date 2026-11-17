@@ -1,5 +1,25 @@
 # Changelog
 
+## [3.61.0](https://github.com/opencloud-eu/docs/releases/tag/3.61.0) - 2026-11-17
+
+### ❤️ Thanks to all contributors! ❤️
+
+@AlexAndBear, @Heiko-Pohl, @Svanvith, @openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish 9.1.1 7.2.6 and rolling-9.2.0 [[#1389](https://github.com/opencloud-eu/docs/pull/1389)]
+- Add upgrade guide 9.x.x to admin doku [[#1268](https://github.com/opencloud-eu/docs/pull/1268)]
+
+### 👤 User Documentation
+
+- Screenshots 9.x space quota [[#1384](https://github.com/opencloud-eu/docs/pull/1384)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1388](https://github.com/opencloud-eu/docs/pull/1388)]
+- ci: label the release pull request automatically [[#1386](https://github.com/opencloud-eu/docs/pull/1386)]
+
 ## [3.60.0](https://github.com/opencloud-eu/docs/releases/tag/3.60.0) - 2026-11-16
 
 ### ❤️ Thanks to all contributors! ❤️
