@@ -1,7 +1,8 @@
 ---
 sidebar_position: 20
 id: upgrade-7.x.x
-title: Upgrade 7.x.x
+slug: /admin/maintenance/upgrade/upgrade-7.x.x
+title: Upgrade 7.2.x
 description: Upgrading to OpenCloud 7.x.x
 draft: false
 ---
@@ -348,7 +349,7 @@ New extension versions are available from:
 - The App Store inside the OpenCloud web interface
 - [OpenCloud Web Extensions on GitHub](https://github.com/opencloud-eu/web-extensions/releases)
 
-Download the latest extension versions and follow the [web applications installation guide](../../configuration/web-applications.md).
+Download the latest extension versions and follow the [web applications installation guide](../../../configuration/web-applications.md).
 
 ## Verify the Upgrade
 
@@ -374,6 +375,6 @@ If issues occur during or after the upgrade:
 
 ## Useful Resources
 
-- [OpenCloud Troubleshooting Guide](../../resources/common-issues/index.md)
+- [OpenCloud Troubleshooting Guide](../../../resources/common-issues/index.md)
 - [OpenCloud GitHub Issues](https://github.com/opencloud-eu/opencloud/issues)
 - [OpenCloud Web Extensions Releases](https://github.com/opencloud-eu/web-extensions/releases)

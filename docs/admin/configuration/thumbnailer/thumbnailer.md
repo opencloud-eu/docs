@@ -44,7 +44,7 @@ The `opencloud-compose` deployment example provides a module that:
 - OpenCloud version 9.0.0 or later.
 - A current version of the `opencloud-compose` repository that contains the file `thumbnails/imagor.yml`.
 
-If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../../maintenance/upgrade/upgrade.md) and the [Upgrade 9.x.x](../../maintenance/upgrade/upgrade-9.x.x.md) guide first.
+If you are running an older OpenCloud version, follow the [Standard Upgrade Guide](../../maintenance/upgrade/upgrade.md) and the [Upgrade 9.x.x](../../maintenance/upgrade/rolling/upgrade-9.x.x.md) guide first.
 
 All commands in this guide are run in the root directory of the `opencloud-compose` deployment.
 
