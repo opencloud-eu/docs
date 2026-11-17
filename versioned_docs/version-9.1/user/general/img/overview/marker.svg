@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" width="2048" height="1152">
+<g fill="#f42613">
+<polygon points="119.6,480.4 217.5,471.7 119.6,463.0"/>
+<circle cx="96.9" cy="471.7" r="27.3"/>
+<polygon points="1968.8,92.9 1961.0,33.5 1951.4,92.7"/>
+<circle cx="1959.8" cy="115.4" r="27.3"/>
+<polygon points="550.8,52.1 627.6,43.4 550.8,34.7"/>
+<circle cx="528.2" cy="43.4" r="27.3"/>
+<polygon points="1100.8,73.3 1093.6,37.2 1083.4,72.6"/>
+<circle cx="1091.1" cy="95.6" r="27.3"/>
+<polygon points="692.2,779.3 683.5,692.7 674.8,779.3"/>
+<circle cx="683.5" cy="801.9" r="27.3"/>
+<polygon points="403.6,88.1 308.2,96.8 403.6,105.5"/>
+<circle cx="426.3" cy="96.8" r="27.3"/>
+<polygon points="929.9,125.8 850.0,140.3 931.2,143.1"/>
+<circle cx="953.2" cy="132.8" r="27.3"/>
+<polygon points="1474.2,104.3 1538.5,95.6 1474.2,86.9"/>
+<circle cx="1451.5" cy="95.6" r="27.3"/>
+<polygon points="1705.1,90.8 1619.3,95.6 1704.3,108.2"/>
+<circle cx="1727.4" cy="100.6" r="27.3"/>
+<polygon points="2021.0,92.9 2013.2,33.5 2003.6,92.7"/>
+<circle cx="2012.0" cy="115.4" r="27.3"/>
+<polygon points="1932.8,496.6 2012.0,487.9 1932.8,479.2"/>
+<circle cx="1910.1" cy="487.9" r="27.3"/>
+<polygon points="1717.1,183.7 1613.0,192.4 1717.1,201.1"/>
+<circle cx="1739.8" cy="192.4" r="27.3"/>
+<polygon points="1716.8,356.0 1623.0,368.7 1717.5,373.4"/>
+<circle cx="1739.8" cy="363.7" r="27.3"/>
+<polygon points="1889.3,651.7 2010.7,643.0 1889.3,634.3"/>
+<circle cx="1866.6" cy="643.0" r="27.3"/>
+<polygon points="1889.3,706.4 2010.7,697.7 1889.3,689.0"/>
+<circle cx="1866.6" cy="697.7" r="27.3"/>
+<polygon points="1889.3,756.0 2010.7,747.3 1889.3,738.6"/>
+<circle cx="1866.6" cy="747.3" r="27.3"/>
+<polygon points="1450.3,930.7 1441.6,882.6 1432.9,930.7"/>
+<circle cx="1441.6" cy="953.4" r="27.3"/>
+</g><g fill="white" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24.9" text-anchor="middle" dominant-baseline="central">
+<text x="96.9" y="471.7">1</text>
+<text x="1959.8" y="115.4">2</text>
+<text x="528.2" y="43.4">3</text>
+<text x="1091.1" y="95.6">4</text>
+<text x="683.5" y="801.9">5</text>
+<text x="426.3" y="96.8">6</text>
+<text x="953.2" y="132.8">7</text>
+<text x="1451.5" y="95.6">8</text>
+<text x="1727.4" y="100.6">9</text>
+<text x="2012.0" y="115.4">10</text>
+<text x="1910.1" y="487.9">11</text>
+<text x="1739.8" y="192.4">12</text>
+<text x="1739.8" y="363.7">13</text>
+<text x="1866.6" y="643.0">14</text>
+<text x="1866.6" y="697.7">15</text>
+<text x="1866.6" y="747.3">16</text>
+<text x="1441.6" y="953.4">17</text>
+</g></svg>

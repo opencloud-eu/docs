@@ -1,0 +1,8 @@
+{
+  "label": "Manage Files and Folders",
+  "position": 20,
+  "link": {
+    "type": "doc",
+    "id": "files-and-folders-overview"
+  }
+}
