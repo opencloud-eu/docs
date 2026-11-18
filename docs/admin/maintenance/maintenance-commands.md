@@ -156,6 +156,23 @@ The command uses the configuration of the storage-users service, including the c
 docker compose exec opencloud opencloud storage-users revisions cleanup --all --dry-run
 ```
 
+`docker compose exec` runs the command with the environment variables of the container, so it gets the same settings as OpenCloud. Without containers, this isn't automatic. In particular, variables that you set with `Environment=` in a systemd unit only reach the OpenCloud service. A command that you run from a shell or from cron doesn't get them: it finds no strategy and stops with an error, and it doesn't see the settings of the file metadata cache either (see [Share the file metadata cache](#share-the-file-metadata-cache) below).
+
+On such a server, keep the settings in an environment file, for example `/etc/opencloud/opencloud.env`, and load it in the systemd unit with `EnvironmentFile=`:
+
+```ini
+[Service]
+EnvironmentFile=/etc/opencloud/opencloud.env
+```
+
+Then load the same file for the command, as the user OpenCloud runs as:
+
+```bash
+sudo -u opencloud sh -c 'set -a; . /etc/opencloud/opencloud.env; exec opencloud storage-users revisions cleanup --all --dry-run'
+```
+
+`set -a` exports every variable the file sets, so that the command sees them. This works as long as the file only contains lines of the form `NAME=value`, with values that contain spaces in quotes, as in `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY="7d, auto, 90d"`.
+
 :::caution
 
 Deleted versions can't be restored. Always run the command with `--dry-run` first, and check what it would delete.
@@ -180,7 +197,48 @@ opencloud storage-users revisions cleanup --all --strategy "7d, auto, 90d" --dry
 
 Each version is either `deleted`, `kept` (by the strategy) or `protected` (always kept, for example because it is among the newest ones). The reason names the part of the strategy that decided, and the time it compared the version with.
 
-When the result looks right, run the same command without `--dry-run`.
+When the result looks right, run the same command without `--dry-run`. On a default installation, the command then stops with an error about the file metadata cache, see the next section.
+
+#### Share the file metadata cache
+
+OpenCloud keeps the metadata of files and their versions in a cache, the file metadata cache. By default, each process keeps a cache of its own, in its memory. The command runs in a process of its own, next to OpenCloud, so with the default cache, OpenCloud doesn't learn which versions the command deleted.
+
+OpenCloud lists the versions of a file from the storage, so a list of versions that is opened after the cleanup is right. But a list that was already open while the command ran, for example the Versions panel of a file in the web interface, still shows the deleted versions. Downloading or restoring one of them fails, as they are gone. Opening the list again shows the remaining versions.
+
+That's why the command refuses to delete versions when each process keeps a cache of its own, which is the case with the default, `memory`, and with `ocmem`. It stops right away, before it deletes anything, with this error:
+
+```plaintext
+the file metadata cache of the storage-users service is kept in the memory of each process (store "memory"): the server doesn't learn about the revisions this command deletes, so a list of versions that is already open keeps showing them, and downloading or restoring one of them fails. Share the cache by setting STORAGE_USERS_FILEMETADATA_CACHE_STORE to 'nats-js-kv' (OC_CACHE_STORE would set the cache store of all services), or run the command anyway with --allow-local-cache
+```
+
+To share the cache, set `STORAGE_USERS_FILEMETADATA_CACHE_STORE` to `nats-js-kv`. OpenCloud then keeps the cache in NATS, and the command uses the same cache. With OpenCloud Compose, add the setting to the `opencloud` service, for example in the same file as the strategy, as described in [Turning the Cleanup On](../configuration/storage/revisions-cleanup.md#with-opencloud-compose):
+
+```yaml
+services:
+  opencloud:
+    environment:
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY: '7d, auto, 90d'
+      STORAGE_USERS_FILEMETADATA_CACHE_STORE: 'nats-js-kv'
+```
+
+Then restart OpenCloud:
+
+```bash
+docker compose down
+docker compose up -d
+```
+
+With other installations, set the variable for the OpenCloud process, in the same way as the strategy, and restart OpenCloud. The command must get the same setting, see above for a server that runs OpenCloud with systemd.
+
+`OC_CACHE_STORE` would also work, but it sets the cache of all services, not only the one of the storage.
+
+If you can accept that open lists of versions show deleted versions until they are opened again, for example because the command runs at night, when nobody is working, you can run it anyway with `--allow-local-cache`:
+
+```bash
+opencloud storage-users revisions cleanup --all --allow-local-cache
+```
+
+A dry run needs neither: it deletes nothing, so there is nothing OpenCloud would have to learn about. It always keeps a cache of its own in its memory, whatever is configured, so that it doesn't fill the shared cache with the metadata of every file it looks at.
 
 #### Choose the files
 
@@ -253,7 +311,13 @@ An example crontab entry for OpenCloud Compose, which runs the cleanup every nig
 0 3 * * * cd /opt/opencloud-compose && docker compose exec -T opencloud opencloud storage-users revisions cleanup --all --timeout 1h --shuffle >> /var/log/opencloud-revisions-cleanup.log 2>&1
 ```
 
-Replace `/opt/opencloud-compose` with the directory of your OpenCloud Compose installation. `-T` is needed because cron doesn't provide a terminal.
+Replace `/opt/opencloud-compose` with the directory of your OpenCloud Compose installation. `-T` is needed because cron doesn't provide a terminal. The entry needs the shared file metadata cache, see [Share the file metadata cache](#share-the-file-metadata-cache). Otherwise, every run ends with an error and exit code `1`, and deletes nothing.
+
+Without containers, load the environment file of OpenCloud in the crontab entry, as described at the beginning of this section, for example in the crontab of the user `opencloud`:
+
+```crontab
+0 3 * * * sh -c 'set -a; . /etc/opencloud/opencloud.env; exec opencloud storage-users revisions cleanup --all --timeout 1h --shuffle' >> /var/log/opencloud/revisions-cleanup.log 2>&1
+```
 
 The command ends with one of these exit codes, which you can use in scripts:
 
@@ -265,10 +329,10 @@ The command ends with one of these exit codes, which you can use in scripts:
 
 The command can run while OpenCloud is running. It works on the storage directly, in a process of its own, next to OpenCloud. Three things are good to know:
 
-- **Run it as the user OpenCloud runs as.** While the command cleans up a file, it locks it, and the first time a file is locked, a lock file is created. That lock file belongs to the user that runs the command, and only that user can open it. If the command runs as another user, for example as `root`, OpenCloud may no longer be able to lock these files, and changing, moving or deleting them fails. A dry run (`--dry-run`) changes nothing on disk and creates no lock files, so it does no harm, but the real cleanup must run as the right user. With Docker Compose, `docker compose exec` already runs the command as the user of the container. On a server where OpenCloud runs as the user `opencloud`, run the command with `sudo -u`:
+- **Run it as the user OpenCloud runs as.** While the command cleans up a file, it locks it, and the first time a file is locked, a lock file is created. That lock file belongs to the user that runs the command, and only that user can open it. If the command runs as another user, for example as `root`, OpenCloud may no longer be able to lock these files, and changing, moving or deleting them fails. A dry run (`--dry-run`) changes nothing on disk and creates no lock files, so it does no harm, but the real cleanup must run as the right user. With Docker Compose, `docker compose exec` already runs the command as the user of the container. On a server where OpenCloud runs as the user `opencloud`, run the command with `sudo -u`, and load the environment file of OpenCloud, as described at the beginning of this section:
 
   ```bash
-  sudo -u opencloud opencloud storage-users revisions cleanup --all --dry-run
+  sudo -u opencloud sh -c 'set -a; . /etc/opencloud/opencloud.env; exec opencloud storage-users revisions cleanup --all --dry-run'
   ```
 
   When the storage belongs to another user than the one that runs the command, the command prints a warning before it starts, except in a dry run, which changes nothing on disk. For example:
@@ -279,7 +343,7 @@ The command can run while OpenCloud is running. It works on the storage directly
 
   If you see it, stop the command with Ctrl-C and run it again as the right user.
 
-- **Versions in an open Versions panel.** OpenCloud keeps the metadata of files and versions in a cache. With the default cache (`STORAGE_USERS_FILEMETADATA_CACHE_STORE=memory`), each process has a cache of its own, so OpenCloud doesn't learn which versions the command deleted. That does no harm: OpenCloud lists the versions from the storage, and refuses to download or restore a version that no longer exists. But a user who had the Versions panel of a file open while the command ran still sees the deleted versions there, and gets an error when trying to download or restore one of them. Opening the panel again shows the remaining versions.
+- **The file metadata cache must be shared**, so that OpenCloud learns which versions the command deleted. See [Share the file metadata cache](#share-the-file-metadata-cache).
 - **PosixFS needs NATS.** With the PosixFS driver, the command connects to NATS, like OpenCloud itself. When NATS runs within OpenCloud, which is the default where a single `opencloud server` process runs all services, the command only works while OpenCloud is running. When OpenCloud is stopped, the command gives up after 10 seconds, after a few log lines about the failed attempts to connect:
 
   ```plaintext

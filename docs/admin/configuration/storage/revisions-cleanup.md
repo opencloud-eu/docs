@@ -31,12 +31,27 @@ The configuration and the commands call versions _revisions_, for example `STORA
 Once a strategy is configured, OpenCloud applies it to a file whenever the file gets a new version:
 
 - when a user uploads new content for an existing file, as soon as the upload is complete. If the upload is checked first, for example by the antivirus scanner, the cleanup runs once the check has passed.
-- when a user restores an earlier version. The version that holds the content from just before the restore is always kept, so that the restore can be undone.
+- when a user restores an earlier version. The version that holds the content from just before the restore is kept, so that the restore can be undone, see [After a Restore](#after-a-restore) below.
 - with PosixFS in [collaborative mode](./posixfs.md#posixfs-collaborative-mode), when a file is changed directly in the file system and OpenCloud picks up the change. This only creates a version if `STORAGE_USERS_POSIX_ENABLE_FS_REVISIONS` is set to `true`, which is not the default.
 
 The cleanup only looks at the file that got the new version. Files that are never changed again keep all their versions, even if the strategy would delete some of them. To clean those up too, or to apply a different strategy once, use the [command to clean up versions on demand](../../maintenance/maintenance-commands.md#clean-up-old-file-versions).
 
 The cleanup skips a file while an upload to it is still being checked. It cleans up that file with its next version.
+
+### After a Restore
+
+When a user restores an earlier version, the content the file had until then becomes a version. The cleanup keeps this version for as long as the file has the restored content, whatever the strategy says. That way, the user can always undo the restore.
+
+This also applies to strategies with a duration. An example with `30d`:
+
+1. A user edits a document every day in March, and doesn't touch it afterwards.
+2. On October 14, the user restores a version from March 3, by mistake. The content from March 31 becomes a version, dated March 31.
+3. With `30d`, the version from March 31 would be deleted right away, and with it the content the document had until a minute ago. Instead, it is kept.
+4. The user notices the mistake and restores the version from March 31 again.
+
+The protection ends as soon as the file is changed again: by an upload, by another restore, or with PosixFS, by a change in the file system. From then on, the version is treated like any other, and the next cleanup applies the strategy to it.
+
+So, for every restored file, at most one version is kept beyond what the strategy allows, until the file is changed again.
 
 ### The Cleanup Runs in the Background
 
@@ -65,7 +80,10 @@ services:
   opencloud:
     environment:
       STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY: '7d, auto, 90d'
+      STORAGE_USERS_FILEMETADATA_CACHE_STORE: 'nats-js-kv'
 ```
+
+The second setting is only needed for the [command to clean up versions on demand](../../maintenance/maintenance-commands.md#clean-up-old-file-versions). It makes OpenCloud keep its cache of file metadata in NATS, where the command can update it, instead of in the memory of the OpenCloud process. Without it, the command refuses to delete versions, see [Share the file metadata cache](../../maintenance/maintenance-commands.md#share-the-file-metadata-cache). If you never run the command, you can leave it out.
 
 Then add the file to the `COMPOSE_FILE` variable in your `.env` file, at the end of the list. For example, if your `.env` file has
 
@@ -99,7 +117,7 @@ Environment=STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY=7d,auto,90d
 
 If you prefer the strategy with spaces, put the whole assignment in double quotes: `Environment="STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY=7d, auto, 90d"`.
 
-In an environment file, for example one that your systemd unit reads with `EnvironmentFile=`, or one that you pass to `docker run` with `--env-file`:
+In an environment file, for example one that your systemd unit reads with `EnvironmentFile=`, or one that you pass to `docker run` with `--env-file`. If you want to run the [cleanup command](../../maintenance/maintenance-commands.md#clean-up-old-file-versions) by hand or with cron, prefer an environment file to `Environment=` lines: the command needs the same settings as OpenCloud, and it can load the same file, while `Environment=` lines only reach the OpenCloud service.
 
 ```env
 STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY=7d,auto,90d
@@ -114,6 +132,8 @@ docker run -e STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY=7d,auto,90d ...
 With spaces, quote the value for the shell: `-e 'STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY=7d, auto, 90d'`.
 
 Then restart OpenCloud. After changing a systemd unit, run `systemctl daemon-reload` first.
+
+If you want to use the [command to clean up versions on demand](../../maintenance/maintenance-commands.md#clean-up-old-file-versions), also set `STORAGE_USERS_FILEMETADATA_CACHE_STORE` to `nats-js-kv` in the same way, see [Share the file metadata cache](../../maintenance/maintenance-commands.md#share-the-file-metadata-cache).
 
 ### Checking the Configuration
 
@@ -294,7 +314,7 @@ For the report from above, the output would look like this (shortened, the lines
   deleted   2026-04-02T08:00:00+02:00   2.1 MiB  deleted by "90d": older than 2026-07-23T15:00:00+02:00
 ```
 
-See [Clean up old file versions](../../maintenance/maintenance-commands.md#clean-up-old-file-versions) for all options of the command.
+A dry run works with any configuration of the file metadata cache, as it deletes nothing. See [Clean up old file versions](../../maintenance/maintenance-commands.md#clean-up-old-file-versions) for all options of the command.
 
 ## Background Workers
 
@@ -350,4 +370,5 @@ At log level `debug`, every deleted version is logged as well, with the reason, 
 - **Versions count towards the quota of a space.** Deleting old versions frees storage and quota.
 - **The cleanup can't be undone.** Deleted versions are gone. Try a new strategy with a dry run first.
 - **Versions that are not deleted stay as they are.** The cleanup never changes a version, it only deletes versions.
+- **A restore keeps one version beyond the strategy.** The version created by a restore is kept until the file is changed again, see [After a Restore](#after-a-restore).
 - **Turning versioning off is different.** Turning versioning off with `OC_DISABLE_VERSIONING` only stops creating new versions, while the existing ones are kept. The cleanup deletes existing versions, gradually, as files get new versions, or all at once with the [cleanup command](../../maintenance/maintenance-commands.md#clean-up-old-file-versions).
