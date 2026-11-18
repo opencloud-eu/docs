@@ -1,11 +1,9 @@
 
-2026-11-17-00-06-48
-
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-| THUMBNAILS_FILESYSTEMSTORAGE_ROOT is deprecated. The webdav service owns the thumbnail cache now, so use WEBDAV_THUMBNAILS_CACHE_DIR instead. | 9.0.0 | next-prod | WEBDAV_THUMBNAILS_CACHE_DIR |
+| THUMBNAILS_FILESYSTEMSTORAGE_ROOT is deprecated. The webdav service owns the thumbnail cache now, so use WEBDAV_THUMBNAILS_CACHE_DIR instead. | 9.0.0 | 9.1.1 | WEBDAV_THUMBNAILS_CACHE_DIR |
 
 ## Environment variables for the **webdav** service
 
