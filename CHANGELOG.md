@@ -1,10 +1,14 @@
 # Changelog
 
-## [3.61.2](https://github.com/opencloud-eu/docs/releases/tag/3.61.2) - 2026-11-18
+## [3.62.0](https://github.com/opencloud-eu/docs/releases/tag/3.62.0) - 2026-11-18
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders
+@openclouders, @v-scharf
+
+### 👷 Admin Documentation
+
+- publish 4.0.10 [[#1395](https://github.com/opencloud-eu/docs/pull/1395)]
 
 ### 📦️ Build&Tools
 
