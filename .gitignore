@@ -9,6 +9,10 @@
 /static/cdperf
 /static/design-system
 
+# docs pulled from other repos at build time (git-batch)
+/docs/dev/web/testing/running-tests
+/docs/dev/server/testing
+
 # Generated files
 .docusaurus
 .cache-loader
@@ -19,9 +23,6 @@
 .env.development.local
 .env.test.local
 .env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.log
 
 .idea

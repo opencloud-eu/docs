@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: account-overview
 title: Account Menu
 description: Overview of the Account Menu
@@ -10,9 +10,9 @@ draft: false
 
 Here a is a overview of the account-menue in the OpenCloud Android-App
 
-<img src={require("../../img/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account-1.png").default} alt="Account Menue Button" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
-<img src={require("../../img/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} />
+<img src={require("../../img/general/overview/account-2.png").default} alt="Account Menue" style={{ width: '300px', marginRight: '60px' }} width="1344" height="2992" loading="lazy" decoding="async" />
 
 ## 1. Account Menu Item
 

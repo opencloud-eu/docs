@@ -1,5 +1,5 @@
 ---
-sidebar_position: 40
+sidebar_position: 60
 id: mail-notifications
 title: Mail Notifications
 description: How to activate mail notifications in OpenCloud
@@ -22,8 +22,7 @@ Or use vim, code, or gedit as you prefer.
 
 ## Add or modify these Environment Variables
 
-Adjust the following lines in your `.env` file according to your SMTP provider and requirements.  
-Note: `SMTP_TRANSPORT_ENCRYPTION` and `SMTP_INSECURE` may vary depending on your setup.
+Adjust the following lines in your `.env` file according to your SMTP provider and requirements.
 
 SMTP Settings:
 
@@ -38,17 +37,21 @@ SMTP_INSECURE=true
 SMTP_AUTHENTICATION=auto
 ```
 
-See section [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) in the developers documentation for possible values for these variables. Note, that the environment variables are prefixed with `NOTIFICATIONS_`, so `NOTIFICATIONS_SMTP_AUTHENTICATION` shows possible values for `SMTP_AUTHENTICATION` in the `.env` file.
+For available configuration options and values, see the [Environment Variables](../../dev/server/services/notifications/env-vars.mdx) section in the developer documentation.
 
-Per default the `notifications` service is disabled. To send out notifications, the service must be enabled via:
+The variables used in the `.env` file of `opencloud-compose` are mapped to the corresponding OpenCloud environment variables in `docker-compose.yml`. Their names are not always identical.
+
+For example, `SMTP_TRANSPORT_ENCRYPTION` in the `.env` file maps to `NOTIFICATIONS_SMTP_ENCRYPTION` in OpenCloud, not `NOTIFICATIONS_SMTP_TRANSPORT_ENCRYPTION`.
+
+When configuring OpenCloud directly without `opencloud-compose`, use the environment variable names listed in the developer documentation.
+
+By default, the `notifications` service is disabled. To send notifications, enable the service in the `.env` file:
 
 ```env
-START_ADDITIONAL_SERVICES="notifications"
+START_ADDITIONAL_SERVICES=notifications
 ```
 
-:::warning
-In the .env file, values should be written without quotation marks. Do not use 'single quotes' or "double quotes" — just enter the plain value.
-:::
+In the OpenCloud Compose setup, `START_ADDITIONAL_SERVICES` is mapped to `OC_ADD_RUN_SERVICES` inside the OpenCloud container.
 
 ## Save and exit
 

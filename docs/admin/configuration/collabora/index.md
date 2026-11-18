@@ -18,5 +18,5 @@ It is meant as a quick entry point for administrators who want to improve docume
 
 ## Guides
 
-- [Install additional fonts](./collabora-fonts)
-- [Enable MS-Office formats](./collabora-ms-office-formats)
+- [Install additional fonts](./collabora-fonts) - Add fonts so documents render reliably
+- [Enable MS-Office formats](./collabora-ms-office-formats) - Create `.docx`, `.xlsx`, and `.pptx` files from the New menu

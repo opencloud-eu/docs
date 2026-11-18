@@ -1,32 +1,33 @@
 ---
-sidebar_position: 8
+sidebar_position: 120
 id: activities
 title: Aktivitäten
 description: Aktivitäten einer Datei oder eines Ordners in OpenCloud anzeigen
 draft: false
 ---
 
-# Anzeigen der Aktivitäten von Dateien und Ordner
+# Aktivitäten einer Datei oder eines Ordners anzeigen
 
-Um herauszufinden, wer eine Datei oder einen Ordner bearbeitet hat und welche Aktionen ausgeführt wurden, führen Sie die folgenden Schritte aus:
+Um zu sehen, wer eine Aktion an einer Datei oder einem Ordner ausgeführt hat und was geändert wurde, gehen Sie wie folgt vor:
 
 ## Aktivitäten anzeigen
 
 - Details öffnen
-  - rechts Klick auf die Datei oder den Ordner, oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
-    <img src={require("./img/activity/drei-punkte-menue.png").default} width="1920"/>
+  - Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf die drei Punkte in der entsprechenden Zeile.
+  - Wählen Sie im Kontextmenü „Details“.
 
-- Wählen Sie "Details" in dem Kontextmenü aus.
-  <img src={require("./img/activity/details-button.png").default} width="400"/>
+    <img src={require("./img/activity/details-button.png").default} alt="Details im Kontextmenü auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Wählen Sie Aktivitäten
-  - In der rechten Seitenleiste wird ein Pop-up geöffnet, dort wählen Sie "Aktivitäten" aus.
-    <img src={require("./img/activity/aktivitaeten-button.png").default} width="400"/>
+- Aktivitäten auswählen
+  - Wählen Sie in der rechten Seitenleiste „Aktivitäten“.
+
+    <img src={require("./img/activity/activities-button.png").default} alt="Aktivitäten auswählen" width="400" height="1005" loading="lazy" decoding="async"/>
 
 - Aktivitäten anzeigen
-  - Alle Aktivitäten, die mit dieser Datei oder diesem Ordner durchgeführt werden, werden jetzt angezeigt.
-    <img src={require("./img/activity/aktivitaeten.png").default} width="400"/>
+  - Die Aktivitätschronik zeigt die aufgezeichneten Aktionen, die ausführenden Personen und den jeweiligen Zeitpunkt.
+
+    <img src={require("./img/activity/activities.png").default} alt="Aktivitäten anzeigen" width="400" height="1005" loading="lazy" decoding="async"/>
 
 :::info
-Mit dieser Funktion können Sie alle Änderungen und Aktionen verfolgen!
+Verwenden Sie die Aktivitätschronik, um die letzten Änderungen und Aktionen nachzuvollziehen.
 :::

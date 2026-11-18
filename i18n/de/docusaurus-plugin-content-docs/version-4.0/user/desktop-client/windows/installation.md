@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: installation
 title: Installation
 description: Installiere den OpenCloud Client
@@ -17,7 +17,7 @@ Die Installation über den Store sorgt für einen einfachen Installationsprozess
 oder klicke auf den untenstehenden Button, um direkt zur App-Seite zu gelangen:
 
 <a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
-  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" loading="lazy" decoding="async"/>
 </a>
 
 ## „Installieren“ klicken
@@ -54,4 +54,4 @@ Falls du den Client deinstallieren möchtest:
 2. Suche nach OpenCloud Desktop.
 3. Klicke mit der rechten Maustaste auf die Anwendung und wähle Deinstallieren.
 
-Windows entfernt die App und deren Komponenten sauber über
+Windows entfernt den Client und dessen Komponenten sauber über

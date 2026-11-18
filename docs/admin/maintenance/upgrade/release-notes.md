@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 40
 id: release-notes
 title: Release Notes
 description: Release Notes

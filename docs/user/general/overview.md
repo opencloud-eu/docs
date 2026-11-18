@@ -1,16 +1,39 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: overview
 title: Overview
 description: Overview of the web user interface
 draft: false
 ---
 
+import OverviewMarker from "./img/overview/marker.svg";
+
 # OpenCloud - Overview of the web user interface
 
 The OpenCloud web interface consists of several areas that help you to work efficiently with files and settings
 
-<img src={require("./img/overview/overview.png").default} alt="Overview" width="1920"/>
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/overview.png").default}
+    alt="Overview"
+    width="1920"
+    height="1080"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Left Sidebar
 
@@ -18,7 +41,7 @@ The sidebar contains the navigation elements such as Spaces, Files, Shares and S
 
 ## 2. App Switcher
 
-The menu in the top left corner allows you to switch between different Apps and modules.
+The menu in the top right corner allows you to switch between different Apps and modules.
 
 ## 3. Top Bar
 
@@ -42,11 +65,10 @@ Allows you to edit, move or delete several selected files at the same time.
 
 ## 8. View Modes
 
-Provides various display options for the file list:
+Provides two display options for the file list:
 
-- List view
-- Tile view
-- Condensed view
+- Gridview
+- Listview
 
 ## 9. View Settings
 
@@ -68,22 +90,18 @@ Here you can customize additional display options such as sorting or column sele
 
     Provides further options for files, folders or spaces.
 
-## 14. Actions Panel
-
-    Shows possible actions for the selected file, e.g. rename or move.
-
-## 15. Shares Panel
+## 14. Shares Panel
 
     Here you can share files and folders internally or externally and manage permissions.
 
-## 16. Versions
+## 15. Versions
 
     Shows an overview of the versions of a selected file or folder.
 
-## 17. Activity Panel
+## 16. Activity Panel
 
     Shows an overview of changes and activities within a space or file.
 
-## 18. Context Menu
+## 17. Context Menu
 
     Right-clicking on a file or folder opens the context menu with specific options.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: share-roles
 title: Rollen beim Teilen
 description: Rollen beim Teilen in OpenCloud

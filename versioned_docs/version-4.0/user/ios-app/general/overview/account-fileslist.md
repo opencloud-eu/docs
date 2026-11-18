@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: account-fileslist
 title: Fileslist Menu
 description: Fileslist Menu
@@ -10,7 +10,7 @@ draft: false
 
 This section explains the core interface elements of the OpenCloud iOS app and their functionality.
 
-<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} />
+<img src={require("../../img/overview/fileslist.png").default} alt="Fileslist-Overview" style={{ width: '400px', marginRight: '60px' }} width="1206" height="2622" loading="lazy" decoding="async" />
 
 ## 1. Account Menu
 

@@ -97,8 +97,8 @@ clients:
   origins: []
   application_type: native
 ldap:
-  uri: ldaps://localhost:9235
-  cacert: /var/lib/opencloud/idm/ldap.crt
+  uri: ldap://localhost:9236
+  cacert: ""
   bind_dn: uid=idp,ou=sysusers,o=libregraph-idm
   bind_password: ""
   base_dn: ou=users,o=libregraph-idm

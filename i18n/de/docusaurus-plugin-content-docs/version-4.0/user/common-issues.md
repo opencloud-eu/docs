@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 110
 id: common-issues
 title: Häufige Probleme & Hilfe
 description: Häufige Probleme & Hilfe
@@ -37,7 +37,14 @@ Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihr Sync-Root ist `/home/
 1. Verschieben Sie den Ordner in das Synchronisationsverzeichnis:
 
    ```bash
+   mkdir -p /home/bar/OpenCloud/Personal/foo/
    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ```
+
+2. Erstellen Sie einen Symlink am ursprünglichen Ort:
+
+   ```bash
+   ln -s /home/bar/OpenCloud/Personal/foo/A /foo/A
    ```
 
 ## Dateien mit "~$" im Namen werden nicht synchronisiert
@@ -45,10 +52,9 @@ Sie möchten den Ordner `/foo/A` synchronisieren, aber Ihr Sync-Root ist `/home/
 Der OpenCloud Desktop Client synchronisiert keine Dateien, die mit `~$` beginnen, wie z. B. `~$document.docx`.  
 Dabei handelt es sich um temporäre Sperrdateien, die von Microsoft Office-Anwendungen (Word, Excel, PowerPoint) erstellt werden, solange ein Dokument geöffnet ist.
 
-<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500"/>
+<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Anzeige, dass ~$ Dateien von der Synchronisierung ausgeschlossen sind" width="500" height="394" loading="lazy" decoding="async"/>
 
 Es sind keine eigentlichen Inhaltsdateien, sondern interne Marker, die verhindern sollen, dass mehrere Benutzer gleichzeitig dasselbe Dokument bearbeiten.  
 Sobald die Datei geschlossen wird, entfernt Office die `~$`-Datei automatisch.
 
-Weitere Informationen finden Sie in der Erklärung von Microsoft:  
-[Beschreibung, wie Word temporäre Dateien erstellt](https://support.microsoft.com/de-de/topic/description-of-how-word-creates-temporary-files-66b112fb-d2c0-8f40-a0be-70a367cc4c85)
+Weitere Informationen finden Sie in dem [Microsoft-Supportartikel zu temporären Office-Sperrdateien von Word/Excel/PowerPoint](https://support.microsoft.com/en-gb/topic/-the-document-is-locked-for-editing-by-another-user-error-message-when-you-try-to-open-a-document-in-word-10b92aeb-2e23-25e0-9110-370af6edb638?).

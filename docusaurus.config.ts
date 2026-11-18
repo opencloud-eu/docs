@@ -10,29 +10,29 @@ const config: Config = {
   tagline: 'Excellent file sharing',
   favicon: 'img/oc-favicon.svg',
 
-  // Set the production url of your site here
   url: 'https://docs.opencloud.eu',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'opencloud-eu', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
-
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Docusaurus Faster (Rspack, SWC, Lightning CSS), see
+  // https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: {
+      // required by faster.ssgWorkerThreads
+      removeLegacyPostBuildHeadAttribute: true,
+    },
+    faster: true,
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
     localeConfigs: {
       en: {
         label: 'English',
-        htmlLang: 'en-GB', // or 'en-US'
+        htmlLang: 'en-GB',
       },
       de: {
         label: 'Deutsch',
@@ -48,6 +48,13 @@ presets: [
       docs: {
         sidebarPath: require.resolve('./sidebars.ts'),
         editUrl: 'https://github.com/opencloud-eu/docs/tree/main',
+        // 4.0, 7.2, and 9.1 are production releases that still get updates,
+        // so they must not show the "no longer actively maintained" banner
+        versions: {
+          '4.0': {banner: 'none'},
+          '7.2': {banner: 'none'},
+          '9.1': {banner: 'none'},
+        },
       },
       blog: false,
       theme: {
@@ -61,7 +68,8 @@ presets: [
   themeConfig: {
     image: 'img/oc-docs-social-card.jpg',
     colorMode: {
-      defaultMode: 'light'
+      defaultMode: 'light',
+      respectPrefersColorScheme: true
     },
     navbar: {
       logo: {
@@ -97,8 +105,9 @@ presets: [
           position: 'right'
         }
       ],
-    },
-    footer: {
+  },
+  footer: {
+      copyright: 'Copyright © {year} OpenCloud, powered by Heinlein Gruppe',
       links: [
         {
           title: 'Docs',
@@ -156,12 +165,11 @@ presets: [
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} OpenCloud, powered by Heinlein Gruppe`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash'],
+      additionalLanguages: ['bash', 'diff', 'gherkin', 'http', 'ini', 'nginx', 'powershell', 'rego'],
     },
   } satisfies Preset.ThemeConfig,
 
@@ -190,7 +198,7 @@ presets: [
   markdown: {
     mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'warn'
+      onBrokenMarkdownLinks: 'throw'
     }
   },
 };

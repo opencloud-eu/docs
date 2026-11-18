@@ -1,48 +1,35 @@
 ---
-sidebar_position: 6
+sidebar_position: 60
 id: delete
 title: Delete a Space
 description: Delete a Space in OpenCloud
 draft: false
 ---
 
-# Delete Space in OpenCloud
+# Delete a Space in OpenCloud
 
-Before you can delete a Space, it must first be disabled. Here are the steps you should follow:
+Before you delete a Space, it must first be disabled.
 
-## Disable Space
+## Disable the Space first
 
-- Follow the instructions for [Disable a Space](./enable-disable.md) to set the Space to the deactivated state before deleting it.
+- Follow the instructions in [Disable and Enable a Space](./enable-disable.md) to disable the Space before deleting it.
 
-- If the Space is no longer visible after deactivation, click on the Include disabled filter to display it again.
+- If the Space is no longer visible after deactivation, open the display options using the gear icon in the upper-right corner and enable “Show disabled Spaces”.
 
-  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="500"/>
+  <img src={require("./img/delete/deactivate-filter.png").default} alt="Deactivate Filter" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-## Delete Space
+## Delete the Space
 
-- Select the Space you want to delete.
+- Select the Space you want to delete, or open the context menu and select “Delete”.
 
-  <img src={require("./img/delete/select-space.png").default} alt="Select Space" width="1920"/>
+  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar and Context Menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Click on Delete in the top bar,
+- Confirm that you want to delete the Space.
 
-  <img src={require("./img/delete/delete-top-bar.png").default} alt="Delete Top-Bar" width="1920"/>
-
-  or
-
-- open the three-dot menu and select Delete
-
-  <img src={require("./img/delete/context-menu.png").default} alt="Context Menu" width="400"/>
-
-- Confirm that you are sure that you want to delete the space
-
-  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="500"/>
+  <img src={require("./img/delete/confirm.png").default} alt="Confirm" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::caution
-A deleted Space cannot be restored. It is permanently and irretrievably deleted.  
-Therefore, be careful to whom you grant can manage rights for your Space.
-
-Please remember to ensure that no important data is lost before deleting.
+A deleted Space cannot be restored. Make sure that no important data will be lost before you delete it.
 :::
 
-Now you know how to delete a space.
+Now you know how to delete a Space.

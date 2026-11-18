@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: upload-make-available-offline
 title: Hochladen - Offline verfügbar machen
 description: Dateien hochladen in Android
@@ -20,7 +20,7 @@ Navigieren Sie zu dem Ordner, in dem Sie eine Datei hochladen möchten.
 
 und wählen Sie „Hochladen“
 
-<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-plus-button.png").default} alt="Plus-Schaltfläche" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-plus-button.png").default} alt="Plus-Schaltfläche" width="180" height="400" loading="lazy" decoding="async"/>
 
 ### Upload-Option wählen
 
@@ -29,7 +29,7 @@ Im Menü können Sie wählen:
 - „Hochladen“ – eine Datei aus dem Gerätespeicher hochladen
 - „Bild von Kamera“ – ein Foto oder Video mit der Kamera des Smartphones oder Tablets aufnehmen und hochladen
 
-<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-options.png").default} alt="Upload-Optionen" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/upload-options.png").default} alt="Upload-Optionen" width="180" height="400" loading="lazy" decoding="async"/>
 
 ### Auswahl bestätigen
 
@@ -41,19 +41,19 @@ Sie können Dateien offline verfügbar machen, damit Sie auch ohne Internetverbi
 
 ### Tippen Sie auf die drei Punkte (...) neben der Datei
 
-<img src={require("../img/files-and-folders/upload-make-available-offline-android/three-dots.png").default} alt="Drei-Punkte-Menü" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/three-dots.png").default} alt="Drei-Punkte-Menü" width="180" height="400" loading="lazy" decoding="async"/>
 
 ### Wählen Sie „Offline verfügbar machen“
 
 Die Datei wird heruntergeladen und lokal auf Ihrem Gerät gespeichert.
 
-<img src={require("../img/files-and-folders/upload-make-available-offline-android/make-available-offline.png").default} alt="Offline verfügbar machen" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/make-available-offline.png").default} alt="Offline verfügbar machen" width="180" height="400" loading="lazy" decoding="async"/>
 
 :::info
 Offline-Dateien sind mit einem rosa Kreis mit weißem Häkchen markiert.
 :::
 
-<img src={require("../img/files-and-folders/upload-make-available-offline-android/marked-offline.png").default} alt="Als offline markiert" height="400"/>
+<img src={require("../img/files-and-folders/upload-make-available-offline-android/marked-offline.png").default} alt="Als offline markiert" width="180" height="400" loading="lazy" decoding="async"/>
 
 ## Offline-Verfügbarkeit entfernen
 

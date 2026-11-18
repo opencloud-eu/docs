@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 110
 id: common-issues
 title: Common Issues & Help
 description: Common issues & help
@@ -37,7 +37,14 @@ You want to synchronize the folder `/foo/A`, but your sync root is `/home/bar/Op
 1. Move the folder into your sync root:
 
    ```bash
+   mkdir -p /home/bar/OpenCloud/Personal/foo/
    mv /foo/A /home/bar/OpenCloud/Personal/foo/A
+   ```
+
+2. Create a symlink in the original place:
+
+   ```bash
+   ln -s /home/bar/OpenCloud/Personal/foo/A /foo/A
    ```
 
 ## Files with "~$" in the name will not be synchronized
@@ -45,10 +52,9 @@ You want to synchronize the folder `/foo/A`, but your sync root is `/home/bar/Op
 The OpenCloud Desktop Client does not synchronize files starting with `~$`, such as `~$document.docx`.  
 These files are temporary lock files created by Microsoft Office applications (Word, Excel, PowerPoint) while a document is open.
 
-<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Show the ~$ file is excluded from synchronizing" width="500"/>
+<img src={require("./img/common-issues/desktop-excluded.png").default} alt="Show the ~$ file is excluded from synchronizing" width="500" height="420" loading="lazy" decoding="async"/>
 
 They are not actual content files but serve as internal markers to prevent multiple users from editing the same document simultaneously.  
 Once the file is closed, the `~$` file is automatically removed by Office.
 
-For more details, see Microsoft’s explanation:  
-[Description of how Word creates temporary files](https://support.microsoft.com/en-us/topic/description-of-how-word-creates-temporary-files-66b112fb-d2c0-8f40-a0be-70a367cc4c85)
+For more details, see the [Microsoft support article on temporary Office lock files created by Word/Excel/PowerPoint](https://support.microsoft.com/en-gb/topic/-the-document-is-locked-for-editing-by-another-user-error-message-when-you-try-to-open-a-document-in-word-10b92aeb-2e23-25e0-9110-370af6edb638?).

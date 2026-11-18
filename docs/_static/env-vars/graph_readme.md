@@ -14,16 +14,25 @@ for a detailed specification of the API implemented by the graph service.
 * [Sequence Diagram](#sequence-diagram)
 * [Users and Groups API](#users-and-groups-api)
   * [LDAP Configuration](#ldap-configuration)
-    * [Read-Only Access to Existing LDAP Servers](#readonly-access-to-existing-ldap-servers)
+    * [Read-Only Access to Existing LDAP Servers](#read-only-access-to-existing-ldap-servers)
     * [Using a Write Enabled LDAP Server](#using-a-write-enabled-ldap-server)
 * [Query Filters Provided by the Graph API](#query-filters-provided-by-the-graph-api)
+* [Space Images](#space-images)
 * [Caching](#caching)
 * [Keycloak Configuration For The Personal Data Export](#keycloak-configuration-for-the-personal-data-export)
   * [Keycloak Client Configuration](#keycloak-client-configuration)
+* [Rate Limit For The Personal Data Export](#rate-limit-for-the-personal-data-export)
 * [Translations](#translations)
   * [Translation Rules](#translation-rules)
 * [Default Language](#default-language)
 * [Unified Role Management](#unified-role-management)
+  * [Allowed Resource Actions](#allowed-resource-actions)
+* [API Handlers](#api-handlers)
+* [Metrics](#metrics)
+  * [Graph User Password Change Counter Metric](#graph-user-password-change-counter-metric)
+  * [Graph Inbound HTTP Request Duration Metrics](#graph-inbound-http-request-duration-metrics)
+  * [Graph Outbound LDAP Operation Duration Metrics](#graph-outbound-ldap-operation-duration-metrics)
+  * [Graph Identity Backend API Duration Metrics](#graph-identity-backend-api-duration-metrics)
 
 ## Sequence Diagram
 
@@ -75,18 +84,85 @@ is based on the [OData Specification](https://docs.oasis-open.org/odata/odata/v4
 See the [Libre Graph API](https://docs.opencloud.eu/swagger/libre-graph-api/#/users/ListUsers) for examples
 on the filters supported when querying users.
 
+## Space Images
+
+The image of a space is a file in the space, usually in its `.space` folder. A space manager
+uploads the file, and then assigns it with `PATCH /graph/v1.0/drives/{drive-id}` (or
+`PATCH /graph/v1beta1/drives/{drive-id}`, which works the same way), naming the id of the file in
+the `image` entry of `special`:
+
+```bash
+# OC-FileId holds the id of the file
+curl -i -X PUT -H "Authorization: Bearer $TOKEN" --data-binary @image.png \
+  "https://cloud.example.com/dav/spaces/$DRIVE_ID/.space/image.png"
+
+# assign the file as the image of the space
+curl -X PATCH -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"special": [{"specialFolder": {"name": "image"}, "id": "'"$FILE_ID"'"}]}' \
+  "https://cloud.example.com/graph/v1.0/drives/$DRIVE_ID"
+```
+
+Clients only ever show a space image as a thumbnail. A file that is too large for the thumbnail
+generator is therefore never shown at all: the space would keep a broken image, and nobody would
+get an error.
+
+So the graph service looks at the size of the file when it is assigned, and refuses a file above
+the limit with `413 Request Entity Too Large`, without changing the space:
+
+```json
+{
+  "error": {
+    "code": "invalidRequest",
+    "message": "the space image is too large: 73400320 bytes, the maximum is 50000000 bytes",
+    "innererror": {
+      "date": "2026-11-13T15:04:05Z",
+      "request-id": "..."
+    }
+  }
+}
+```
+
+The space keeps the image it had, as long as that is a different file. A client that overwrites the
+file of the current image with the new content has replaced that content already, so the space
+then shows no image.
+
+The limit is the one of the thumbnail generator, which the graph service reads under the same names
+as the webdav and thumbnails services: `OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE`, `50MB` by default.
+An empty value means unlimited.
+
+Setting the limit there sets it for all three services:
+
+```bash
+# space images, and thumbnails in general, up to 100 MB
+OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE=100MB
+```
+
+`OC_SPACE_IMAGE_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE` sets a limit for space images alone. It only
+makes sense to set it lower than the limit of the thumbnail generator: a space image between the two
+would be accepted, but not shown.
+
+```bash
+# thumbnails up to 100 MB, but space images only up to 10 MB
+OC_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE=100MB
+OC_SPACE_IMAGE_THUMBNAILS_MAX_INPUT_IMAGE_FILE_SIZE=10MB
+```
+
+Only the file size is checked. The thumbnail generator also has limits for the width and the height
+of an image (`THUMBNAILS_MAX_INPUT_WIDTH` and `THUMBNAILS_MAX_INPUT_HEIGHT`), and for the number of
+frames of an animation. The graph service can't check those without reading the whole image, so a
+small file with too many pixels is still accepted, and still not shown. The space readme has no
+size limit.
+
 ## Caching
 
 The `graph` service can use a configured store via `GRAPH_CACHE_STORE`. Possible stores are:
   -   `memory`: Basic in-memory store and the default.
-  -   `redis-sentinel`: Stores data in a configured Redis Sentinel cluster.
   -   `nats-js-kv`: Stores data using key-value-store feature of [nats jetstream](https://docs.nats.io/nats-concepts/jetstream/key-value-store)
   -   `noop`: Stores nothing. Useful for testing. Not recommended in production environments.
 
 Other store types may work but are not supported currently.
 
 Store specific notes:
-  -   When using `redis-sentinel`, the Redis master to use is configured via e.g. `OC_CACHE_STORE_NODES` in the form of `<sentinel-host>:<sentinel-port>/<redis-master>` like `10.10.0.200:26379/mymaster`.
   -   When using `nats-js-kv` it is recommended to set `OC_CACHE_STORE_NODES` to the same value as `OC_EVENTS_ENDPOINT`. That way the cache uses the same nats instance as the event bus.
   -   When using the `nats-js-kv` store, it is possible to set `OC_CACHE_DISABLE_PERSISTENCE` to instruct nats to not persist cache data on disc.
 
@@ -115,6 +191,20 @@ The client that is used to authenticate with keycloak has to be able to list use
 :::note
 These roles are only available to assign if the client is in the `master` realm.
 :::
+
+## Rate Limit For The Personal Data Export
+
+Every personal data export collects the data of the user and writes it to a file in the user's personal space, which takes time and resources. To keep users from starting exports over and over, the number of exports a user can start is limited to 5 per minute. Further requests within the same minute are answered with the HTTP status `429 Too Many Requests` and a `Retry-After` header that tells the client how long to wait at most before trying again.
+
+The limit can be changed with `GRAPH_EXPORT_PERSONAL_DATA_RATE_LIMIT`, for example to allow 2 exports per minute:
+
+```bash
+GRAPH_EXPORT_PERSONAL_DATA_RATE_LIMIT=2
+```
+
+Setting it to `0` disables the limit.
+
+Every instance of the `graph` service counts the requests on its own, in memory. When several instances run behind a load balancer, a user can start up to this number of exports per minute on each of them, and a restart of an instance resets its counts.
 
 ## Translations
 
@@ -154,19 +244,38 @@ Note that a disabled role does not lose previously assigned permissions. It only
 
 The following roles are **enabled** by default:
 
-- `UnifiedRoleViewerID`
-- `UnifiedRoleSpaceViewer`
-- `UnifiedRoleEditor`
-- `UnifiedRoleSpaceEditor`
-- `UnifiedRoleFileEditor`
-- `UnifiedRoleEditorLite`
-- `UnifiedRoleManager`
+| Role                       | UID                                    |
+|----------------------------|----------------------------------------|
+| `UnifiedRoleViewerID`      | `b1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5` |
+| `UnifiedRoleSpaceViewerID` | `a8d5fe5e-96e3-418d-825b-534dbdf22b99` |
+| `UnifiedRoleEditorID`      | `fb6c3e19-e378-47e5-b277-9732f9de6e21` |
+| `UnifiedRoleSpaceEditorID` | `58c63c02-1d89-4572-916a-870abc5a1b7d` |
+| `UnifiedRoleFileEditorID`  | `2d00ce52-1fc2-4dbc-8b95-a73b73395f5a` |
+| `UnifiedRoleEditorLiteID`  | `1c996275-f1c9-4e71-abdf-a42f6495e960` |
+| `UnifiedRoleManagerID`     | `312c0871-5ef7-4b3a-85b6-0e4074c64049` |
 
-The following role is **disabled** by default:
+The following roles are **disabled** by default:
 
-- `UnifiedRoleSecureViewer`
+| Role                                                     | UID                                    |
+|----------------------------------------------------------|----------------------------------------|
+| `UnifiedRoleSecureViewerID`                              | `aa97fe03-7980-45ac-9e50-b325749fd7e6` |
+| `UnifiedRoleSpaceViewerWithVersionsID`                   | `3de465fc-6e17-4839-8b8a-a77cc497878b` |
+| `UnifiedRoleSpaceEditorWithoutVersionsID`                | `3284f2d5-0070-4ad8-ac40-c247f7c1fb27` |
+| `UnifiedRoleSpaceEditorWithoutTrashbinID`                | `8f4701d9-c68f-4109-a482-88e22ee32805` |
+| `UnifiedRoleSpaceEditorWithoutVersionsWithoutTrashbinID` | `a5f73816-4d4b-452d-8973-3b61c3d0bed4` |
+| `UnifiedRoleViewerListGrantsID`                          | `d5041006-ebb3-4b4a-b6a4-7c180ecfb17d` |
+| `UnifiedRoleEditorListGrantsID`                          | `e8ea8b21-abd4-45d2-b893-8d1546378e9e` |
+| `UnifiedRoleEditorListGrantsWithVersionsID`              | `0911d62b-1e3f-4778-8b1b-903b7e4e8476` |
+| `UnifiedRoleFileEditorListGrantsID`                      | `c1235aea-d106-42db-8458-7d5610fb0a67` |
+| `UnifiedRoleFileEditorListGrantsWithVersionsID`          | `b173329d-cf2e-42f0-a595-ee410645d840` |
+| `UnifiedRoleViewerWithVersionsID`                        | `d1e2218d-eef8-4d4c-b82d-0f1a1b48f3b5` |
+| `UnifiedRoleEditorWithVersionsID`                        | `b8c6e1c9-5d2a-4f0e-9c3b-1a2b3c4d5e6f` |
+| `UnifiedRoleFileEditorWithVersionsID`                    | `3d00ce52-1fc2-4dbc-8b95-a73b73395f5a` |
+| `UnifiedRoleDeniedID`                                    | `63e64e19-8d43-42ec-a738-2b6af2610efa` |
 
-To enable disabled roles like the `UnifiedRoleSecureViewer`, you must provide the UID(s) by one of the following methods:
+The list of disabled roles is defined in `_disabledByDefaultUnifiedRoleRoleIDs` in `pkg/config/defaults/defaultconfig.go`.
+
+To enable disabled roles like the `UnifiedRoleSecureViewerID`, you must provide the UID(s) by one of the following methods:
 
 - Using the `GRAPH_AVAILABLE_ROLES` environment variable.
 - Setting the `available_roles` configuration value.
@@ -179,6 +288,8 @@ opencloud graph list-unified-roles
 
 The output of this command includes the following information for each role:
 
+* `Label`\
+  A short, stable name of the role.
 * `UID`\
   The unique identifier of the role.
 * `Enabled`\
@@ -188,7 +299,7 @@ The output of this command includes the following information for each role:
 * `Condition`
 * `Allowed resource actions`
 
-**Example output (shortned)**
+**Example output (shortened)**
 
 ```bash
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
@@ -203,5 +314,125 @@ The output of this command includes the following information for each role:
 |                                      |          |                                |                                | libre.graph/driveItem/basic/read         |
 +--------------------------------------+----------+--------------------------------+--------------------------------+------------------------------------------+
 ```
+
+### Allowed Resource Actions
+
+The permissions of a role are Libre Graph actions on the shared `driveItem`. Each action maps to exactly one [CS3 ResourcePermission](https://cs3org.github.io/cs3apis/#cs3.storage.provider.v1beta1.ResourcePermissions) of the storage:
+
+| Action                                     | CS3 permission           | Meaning                                           |
+|--------------------------------------------|--------------------------|---------------------------------------------------|
+| `libre.graph/driveItem/basic/read`         | `stat`                   | See the item and its details (name, size, date)   |
+| `libre.graph/driveItem/path/read`          | `get_path`               | See where the item is located                     |
+| `libre.graph/driveItem/quota/read`         | `get_quota`              | See the quota                                     |
+| `libre.graph/driveItem/children/read`      | `list_container`         | List the contents of a folder                     |
+| `libre.graph/driveItem/content/read`       | `initiate_file_download` | Download and open files                           |
+| `libre.graph/driveItem/upload/create`      | `initiate_file_upload`   | Upload files and save changes                     |
+| `libre.graph/driveItem/children/create`    | `create_container`       | Create folders                                    |
+| `libre.graph/driveItem/path/update`        | `move`                   | Rename and move                                   |
+| `libre.graph/driveItem/standard/delete`    | `delete`                 | Delete                                            |
+| `libre.graph/driveItem/versions/read`      | `list_file_versions`     | List the versions of a file                       |
+| `libre.graph/driveItem/versions/update`    | `restore_file_version`   | Restore a version                                 |
+| `libre.graph/driveItem/deleted/read`       | `list_recycle`           | List deleted items                                |
+| `libre.graph/driveItem/deleted/update`     | `restore_recycle_item`   | Restore deleted items                             |
+| `libre.graph/driveItem/deleted/delete`     | `purge_recycle`          | Empty the trash bin                               |
+| `libre.graph/driveItem/permissions/read`   | `list_grants`            | See who has access                                |
+| `libre.graph/driveItem/permissions/create` | `add_grant`              | Add people                                        |
+| `libre.graph/driveItem/permissions/update` | `update_grant`           | Change the access of people                       |
+| `libre.graph/driveItem/permissions/delete` | `remove_grant`           | Remove people                                     |
+| `libre.graph/driveItem/permissions/deny`   | `deny_grant`             | Deny access (Experimental, candidate for removal) |
+
+The conversion is implemented in `CS3ResourcePermissionsToLibregraphActions` and `PermissionsToCS3ResourcePermissions` in `pkg/unifiedrole/conversion.go`.
+
+## API Handlers
+
+To specialize `graph` service instances in order to scale them independently, it is possible to disable its API handlers:
+
+* `GRAPH_HTTP_DISABLE`: when set to `true`, the service does not listen on HTTP and only consumes events (defaults to `false`)
+* `GRAPH_EVENTS_DISABLE_CONSUMER`: when set to `true`, the service does not consome events and only listens on HTTP (defaults to `false`)
+
+## Metrics
+
+Metrics are disabled by default, and must be enabled using the following environment variables:
+
+* `GRAPH_LDAP_METRICS_DISABLE`: set to `false` to enable metrics for the duration of outbound LDAP client operations (defaults to `true`)
+* `GRAPH_HTTP_METRICS_DISABLE`: set to `false` to enable metrics for the duration of inbound Graph HTTP API requests (defaults to `true`)
+* `GRAPH_IDENTITY_BACKEND_METRICS_DISABLE`: set to `false` to enable metrics for the duration of Graph identity backend operations (defaults to `true`)
+
+The `graph` service provides the following metrics:
+
+| Name | Description |
+| ---- | ----------- |
+| `opencloud_graph_build_info{version=...}` | Contains a label `version` that is set to the current version of the service, and always has a value of `1` |
+| `opencloud_graph_events_enabled` | Is set to `1` if the Events API handler is enabled, or `0` if not |
+| `opencloud_graph_http_enabled` | Is set to `1` if the HTTP API handler is enabled, or `0` if not |
+| `opencloud_graph_events{event=...,result=...}` | Counts the number of events that have been consumed, with a `event` label that contains the name of the event, and a `result` label that is set to `success` or `failure` |
+| `opencloud_graph_events_invalid` | Counts the number of invalid events that are malformed or are missing required data |
+| `opencloud_graph_events_unsupported` | Counts the numbef of consumed events that cannot be processes by this service, should always be `0` |
+| `opencloud_graph_user_password_changes{result=...,reason=...}` | Counts the number of user password change attempts, including the reason for failure when `result`=`failure` |
+| `opencloud_graph_http_request_duration_seconds{method=...,path=...,version=...,resource=...,code=...,result=...}` | Histogram that measures the duration of Graph HTTP API requests, in buckets |
+| `opencloud_graph_http_requests` | Gauge that counts the number of concurrent inbound HTTP requests to the Graph API |
+| `opencloud_graph_ldap_client_operation_duration_seconds{uri=...,write=...,operation=...,result=...}` | Histogram that measures the duration of outbound LDAP operations |
+| `opencloud_graph_ldap_client_operations{uri=...,write=...}` | Gauge that counts the number of concurrent outbound LDAP operations |
+| `opencloud_graph_identity_backend_api_duration_seconds{type=...,operation=...,result=...}` | Histogram that measures the duration of requests to the Graph identity backend, in buckets |
+
+To create some moderate load on a running `opencloud` instance, one can use the k6 script `load_test.js` as follows:
+
+```bash
+k6 run --vus=10 --duration=3m ./load_test.js
+```
+
+The following environment variables can be used to influence its behavior:
+
+ * `BASE_URL`: defaults to `https://localhost:9200`
+ * `USERNAME`: defaults to `alan`
+ * `PASSWORD`: defaults to `demo`
+
+For example, to use a different user and a different URL:
+
+```bash
+k6 run --vus=10 --duration=3m -e USERNAME=lynn -e BASE_URL=https://localhost:9201 ./load_test.js
+```
+
+It is not meant to be a feature test suite, but merely a small k6 script to generate some read-only load in order to make Grafana displays.
+
+### Graph User Password Change Counter Metric
+
+For `opencloud_graph_user_password_changes`:
+
+* `result` is either
+  * `success`: when the password was changed successfully
+  * `failure`: when the password could not be changed, the reason being tracked in the `reason` label
+* `reason` is either
+  * empty when `result` is `success`
+  * `invalid`: when parameters were invalid, such as the new password being an empty password
+  * `error`: when an error prevented the password change, such as a network failure
+  * `wrong-password`: when the password change was refused because the current password is wrong
+
+### Graph Inbound HTTP Request Duration Metrics
+
+For `opencloud_graph_http_request_duration_seconds`:
+
+* `method` is the HTTP method (`GET`, `PUT`, ...)
+* `path` is the canonical request path with placeholders (e.g. `/v1beta1/drives/{driveID}/root/children`)
+* `version` is the Graph API version (`v1beta` or `v1.0`)
+* `resource` is the top-level resource after the version (`me`, `application`, `drives`, ...)
+* `code` is the resulting HTTP status code (`200`, `404`, `500`, ...)
+* `result` is one of `success`, `client-error`, `server-error`
+
+### Graph Outbound LDAP Operation Duration Metrics
+
+For `opencloud_graph_ldap_client_operation_duration_seconds`:
+
+* `operation` is the name of the LDAP operation (`add`, `delete`, `modify`, `modify-dn`, ...)
+* `result` is either `success`, `failure`, `read-only` (when attempting a write operation on a LDAP server that is configured as read-only in OpenCloud) or `not-found`
+* `uri` contains the LDAP server URI the client is connected to
+* `write` is set to `1` if the LDAP client is allowed to perform write operations, or to `0` if it is configured to be read-only
+
+### Graph Identity Backend API Duration Metrics
+
+* `type` is the type of the identity backend that is being used (`ldap` or `cs3`)
+* `operation` is the name of the API operation (`create-user`, `get-users`, ...)
+* `result` is `success`, `failure` or `not-found`
+
 
 

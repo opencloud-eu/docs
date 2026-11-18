@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: create-rename-move
 title: Erstellen - Umbenennen - Verschieben
 description: Erstellen - Umbenennen - Verschieben
@@ -14,7 +14,7 @@ Mit der OpenCloud iOS-App verwalten Sie Ihre Inhalte ganz einfach. Erstellen Sie
 
 - Tippen Sie oben rechts auf die Schaltfläche "+".
 
-<img src={require("../img/files-and-folders/create-rename-move/create-new.png").default} alt="Neu erstellen" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/create-new.png").default} alt="Neu erstellen" width="184" height="400" loading="lazy" decoding="async"/>
 
 Wählen Sie aus dem Menü aus, was Sie erstellen möchten:
 
@@ -24,7 +24,7 @@ Wählen Sie aus dem Menü aus, was Sie erstellen möchten:
 – Geben Sie einen Namen für Ihren Ordner ein
 – Tippen Sie auf "Done"
 
-<img src={require("../img/files-and-folders/create-rename-move/create-folder.png").default} alt="Ordner erstellen" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/create-folder.png").default} alt="Ordner erstellen" width="184" height="400" loading="lazy" decoding="async"/>
 
 ### Erstellen Sie ein Dokument (erfordert Collabora)
 
@@ -34,27 +34,27 @@ Wenn Collabora Online in Ihrer OpenCloud-Instanz aktiviert ist:
 – Wählen Sie den Dokumenttyp (Text, Tabelle, Präsentation)
 – Geben Sie einen Dateinamen ein und bestätigen Sie.
 
-<img src={require("../img/files-and-folders/create-rename-move/choose-file-type.png").default} alt="Wählen Sie den Dateityp" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/choose-file-type.png").default} alt="Wählen Sie den Dateityp" width="184" height="400" loading="lazy" decoding="async"/>
 
 Das Dokument wird zur Bearbeitung in einer integrierten Webansicht mit Collabora geöffnet.
 
-<img src={require("../img/files-and-folders/create-rename-move/open-collabora.png").default} alt="In Collabora öffnen" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move/edit-collabora.png").default} alt="In Collabora bearbeiten" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/open-collabora.png").default} alt="In Collabora öffnen" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move/edit-collabora.png").default} alt="In Collabora bearbeiten" width="184" height="400" loading="lazy" decoding="async"/>
 
 ### Machen Sie ein Foto oder Video
 
 - Wählen Sie "Foto oder Video aufnehmen" aus dem Menü
 
-<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="wählen Sie Foto oder Video aufnehmen aus" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-take-photo.png").default} alt="wählen Sie Foto oder Video aufnehmen aus" width="184" height="400" loading="lazy" decoding="async"/>
 
 – Die Kamera Ihres Geräts wird geöffnet.
 – Nehmen Sie ein Foto oder Video auf.
 
-<img src={require("../img/files-and-folders/create-rename-move/take-photo.png").default} alt="Machen Sie ein Foto" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/take-photo.png").default} alt="Machen Sie ein Foto" width="185" height="400" loading="lazy" decoding="async"/>
 
 - Die Medien werden direkt in Ihrem OpenCloud-Konto gespeichert
 
-<img src={require("../img/files-and-folders/create-rename-move/photo-saved.png").default} alt="Foto gespeichert" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/photo-saved.png").default} alt="Foto gespeichert" width="184" height="400" loading="lazy" decoding="async"/>
 
 ### Dokument scannen
 
@@ -79,20 +79,20 @@ So benennen Sie eine Datei oder einen Ordner in der OpenCloud iOS-App um:
 
 - Tippen Sie auf die drei Punkte (⋯) neben dem Element, das Sie umbenennen möchten.
 
-<img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Klicken Sie auf das Drei-Punkte-Menü" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/three-dots.png").default} alt="Klicken Sie auf das Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 - Wählen Sie "Umbenennen" aus dem Menü
 
-<img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Wählen Sie umbenennen" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-rename.png").default} alt="Wählen Sie umbenennen" width="184" height="400" loading="lazy" decoding="async"/>
 
 - Geben Sie den neuen Namen für die Datei oder den Ordner ein
 
-<img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Geben Sie den neuen Namen ein" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/enter-rename.png").default} alt="Geben Sie den neuen Namen ein" width="184" height="400" loading="lazy" decoding="async"/>
 
 - Tippen Sie auf "Done", um die Änderungen zu übernehmen
 
-<img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tippen Sie auf fertig" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="Neuer angewendeter Name" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/tap-done.png").default} alt="Tippen Sie auf fertig" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move/new-name-applied.png").default} alt="Neuer angewendeter Name" width="184" height="400" loading="lazy" decoding="async"/>
 
 Der neue Name wird sofort gespeichert.
 
@@ -102,17 +102,17 @@ So verschieben Sie eine Datei oder einen Ordner in der OpenCloud iOS-App:
 
 - Tippen Sie auf die drei Punkte (⋯) neben der Datei oder dem Ordner, die/den Sie verschieben möchten.
 
-<img src={require("../img/files-and-folders/create-rename-move/three-dots-move.png").default} alt="Wählen Sie das Drei-Punkte-Menü" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/three-dots-move.png").default} alt="Wählen Sie das Drei-Punkte-Menü" width="184" height="400" loading="lazy" decoding="async"/>
 
 - Wählen Sie "Ausschneiden" oder "Kopieren" aus dem Menü
 
-<img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Wählen Sie Ausschneiden oder Kopieren" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-cut-or-copy.png").default} alt="Wählen Sie Ausschneiden oder Kopieren" width="184" height="400" loading="lazy" decoding="async"/>
 
 - Navigieren Sie zum Zielordner.
 - Tippen Sie auf die drei Punkte (⋯) im Zielordner und wählen Sie Einfügen.
 
-<img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Wählen Sie einfügen" height="400"/>
-<img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="Datei ist verschoben" height="400"/>
+<img src={require("../img/files-and-folders/create-rename-move/select-paste.png").default} alt="Wählen Sie einfügen" width="184" height="400" loading="lazy" decoding="async"/>
+<img src={require("../img/files-and-folders/create-rename-move/file-moved.png").default} alt="Datei ist verschoben" width="184" height="400" loading="lazy" decoding="async"/>
 
 Die Datei oder der Ordner wird jetzt am neuen Speicherort angezeigt.
 

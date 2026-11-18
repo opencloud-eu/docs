@@ -1,50 +1,46 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: file-drop
-title: File Drop
+title: File Drop (geheim)
 description: File Drop (geheim)
 draft: false
 ---
 
 # File Drop (geheim) - So funktioniert es
 
-Mit dem File Drop können Personen, die einen bestimmten Link erhalten (die sogenannten "Linkempfänger"), Dateien in einen gemeinsamen Ordner hochladen
-Der Trick: Die "Linkempfänger“ können die bereits im Ordner befindlichen Dateien nicht sehen.
+File Drop (geheim) ermöglicht es Personen, die einen bestimmten Link erhalten, Dateien in einen freigegebenen Ordner hochzuladen.
+Die Linkempfänger können die Dateien, die sich bereits im Ordner befinden, nicht sehen.
 
-## Erstellen Sie eine "Dateiablage"
+## File Drop (geheim) erstellen
 
-- Klicken Sie auf das "Drei-Punkte-Menü“ neben dem Namen der Datei oder des Ordners, den Sie freigeben möchten.
-  <img src={require("./img/file-drop/drei-punkte-menue.png").default} alt="Drei Punkte Menü" width="1920"/>
-- Wählen Sie Teilen aus dem Dropdown-Menü.
+- Klicken Sie mit der rechten Maustaste auf die Datei oder den Ordner oder klicken Sie auf das Drei-Punkte-Menü neben dem Namen, um das Kontextmenü zu öffnen.
+- Wählen Sie im Kontextmenü „Teilen“ aus.
+  <img src={require("./img/file-drop/share-drop-down-menu.png").default} alt="Dropdown-Menü" width="1920" height="1080" loading="lazy" decoding="async" />
+- Auf der rechten Seite des Bildschirms wird eine Seitenleiste geöffnet.
+  <img src={require("./img/file-drop/sidebar-window.png").default} alt="Seitenleiste" width="400" height="617" loading="lazy" decoding="async" />
+- Suchen Sie in der Seitenleiste den Bereich „Öffentliche Links“ und klicken Sie auf „Link hinzufügen“.
+  <img src={require("./img/file-drop/add-link-button.png").default} alt="Link hinzufügen" width="400" height="617" loading="lazy" decoding="async" />
+- Klicken Sie auf „Optionen“, um die Linkeinstellungen zu öffnen.
+- Öffnen Sie das Dropdown-Menü für die Zugriffsrechte und wählen Sie „File Drop (geheim)“.
+  <img src={require("./img/file-drop/file-drop-button.png").default} alt="File Drop auswählen" width="1920" height="1080" loading="lazy" decoding="async" />
 
-  <img src={require("./img/file-drop/teilen-menue.png").default} alt="Drop down Menü" width="400"/>
+- Geben Sie ein Passwort ein und klicken Sie auf „Link kopieren“, um zu bestätigen.
+- Sie können auch ein „Ablaufdatum“ festlegen, wenn der Link ablaufen soll.
+  <img src={require("./img/file-drop/password-and-copy-link-button.png").default} alt="Passwort eingeben und Link kopieren" width="1920" height="1080" loading="lazy" decoding="async" />
+- Teilen Sie den Link und das Passwort mit dem Empfänger.
 
-- Auf der rechten Seite des Bildschirms öffnet sich ein Sidebar-Fenster.
-  <img src={require("./img/file-drop/sidebar-fenster.png").default} width="1920"/>
-- Im Seitenleistenfenster finden Sie den Bereich Öffentliche Links und klicken dort auf die Schaltfläche Link hinzufügen.
-  <img src={require("./img/file-drop/link-hinzufuegen.png").default} alt="Seitenleistenfenster" width="400"/>
-- Wählen Sie unter Optionen "File Drop (geheim)“ aus.
-  <img src={require("./img/file-drop/oeffentliche-links-button.png").default} alt="Klick auf Link hinzufügen" width="400"/>
-  <img src={require("./img/file-drop/file-drop-button.png").default} alt="Filedrop auswählen" width="400"/>
-- Geben Sie ein Passwort ein und bestätigen Sie die Eingaben mit einem Klick auf "Link kopieren“.
-- Du kannst außerdem ein „Ablaufdatum“ festlegen, wenn der Link automatisch ablaufen soll. Weitere Informationen zur Einstellung eines Ablaufdatums findest du unter [Externe Freigabe](./external).
+## Was der Empfänger macht
 
-  <img src={require("./img/file-drop/passwort-und-link-kopieren.png").default} alt="Passwort eingeben und Link kopieren" width="400"/>
-
-- Nun senden Sie den Link und das Passwort an einen "Linkempfänger".
-
-## To do's für den "Linkempfänger“
-
-- Der "Linkempfänger“ öffnet den empfangenen Link in einem Browser.
-  <img src={require("./img/file-drop/file-drop-website.png").default} alt="File drop website" width="1920"/>
-- Der "Linkempfänger" gibt das Passwort ein und klickt dann auf "Weiter“.
-  <img src={require("./img/file-drop/passwort-popup.png").default} alt="Passwort eingeben und Weiter klicken" width="400"/>
+- Der Empfänger öffnet den erhaltenen Link in einem Browser und gibt das Passwort ein. Anschließend klickt er auf „Weiter“.
+  <img src={require("./img/file-drop/password-and-continue.png").default} alt="Passwort eingeben und weiter" width="1920" height="1080" loading="lazy" decoding="async" />
 - Dateien hochladen:
-  - Der "Dateiablageordner“ wird geöffnet. Der "Linkempfänger“ kann hier seine Dateien hochladen, ohne den vorhandenen Inhalt des Ordners einsehen zu können.
-    <img src={require("./img/file-drop/file-drop-bildschirm.png").default} alt="File drop area" width="1920"/>
-  - Zur Bestätigung, dass der Upload erfolgreich war, erscheint ein Pop-up-Fenster in der unteren rechten Ecke.
-    <img src={require("./img/file-drop/hochladen-bestaedigung.png").default} alt="Upload bestätigt" width="1920"/>
+  - File Drop (geheim) wird geöffnet. Der Empfänger kann Dateien hochladen, ohne den vorhandenen Inhalt des Ordners zu sehen.
+    <img src={require("./img/file-drop/file-drop-area.png").default} alt="File-Drop-Bereich" width="1920" height="1080" loading="lazy" decoding="async" />
+  - Nach Abschluss des Uploads erscheint eine Bestätigungsseite. Eine Benachrichtigung unten rechts zeigt an, wie viele Dateien hochgeladen wurden.
+    <img src={require("./img/file-drop/upload-confirmation.png").default} alt="Upload-Bestätigung" width="1920" height="1080" loading="lazy" decoding="async" />
 
 :::important
-Der "Linkempfänger“ hat keinen Zugriff auf bestehende Dateien - er kann nur neue Dateien hinzufügen.
+Empfänger haben keinen Zugriff auf vorhandene Dateien. Sie können nur neue Dateien hinzufügen.
 :::
+
+Jetzt wissen Sie, wie Sie einen Link für File Drop (geheim) teilen.

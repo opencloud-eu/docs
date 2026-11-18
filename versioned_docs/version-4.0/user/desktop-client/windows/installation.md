@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: installation
 title: Installation
 description: Install OpenCloud Client
@@ -16,7 +16,7 @@ Open the Microsoft Store on your Windows device and search for OpenCloud Desktop
 or click the button below to go directly to the app page:
 
 <a href="https://apps.microsoft.com/detail/9pbx43hcmldq?mode=direct">
-  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+  <img alt="Download from Microsoft Store" src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" loading="lazy" decoding="async"/>
 </a>
 
 ## Click “Install”
@@ -53,4 +53,4 @@ If you ever need to uninstall the client:
 2. Search for OpenCloud Desktop.
 3. Right-click the application and select Uninstall.
 
-Windows will remove the app and its components cleanly through the Microsoft Store framework.
+Windows will remove the client and its components cleanly through the Microsoft Store framework.

@@ -1,8 +1,8 @@
 {
   "label": "Common Issues & Help",
-  "position": 11,
+  "position": 110,
   "link": {
     "type": "doc",
-    "id": "common-issues"
+    "id": "user-common-issues-overview"
   }
 }

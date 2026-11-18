@@ -8,16 +8,20 @@ cache:
   - 127.0.0.1:9233
   database: cache-roles
   table: ""
-  ttl: 336h0m0s
+  ttl: 24h0m0s
   disable_persistence: false
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 debug:
   addr: 127.0.0.1:9124
   token: ""
   pprof: false
   zpages: false
 http:
+  disabled: false
   addr: 127.0.0.1:9120
   root: /graph
   tls:
@@ -45,12 +49,15 @@ http:
     - Purge
     - Restore
     allow_credentials: true
+  metrics:
+    disabled: true
 api:
   group_members_patch_limit: 20
   graph_username_match: default
   graph_assign_default_user_role: true
   graph_identity_search_min_length: 3
   show_email_in_results: false
+  export_personal_data_rate_limit: 5
 reva:
   address: eu.opencloud.api.gateway
   tls:
@@ -75,8 +82,8 @@ spaces:
 identity:
   backend: ldap
   ldap:
-    uri: ldaps://localhost:9235
-    cacert: /var/lib/opencloud/idm/ldap.crt
+    uri: ldap://localhost:9236
+    cacert: ""
     insecure: false
     bind_dn: uid=libregraph,ou=sysusers,o=libregraph-idm
     bind_password: ""
@@ -116,8 +123,13 @@ identity:
       school_number_attribute: ""
       school_id_attribute: ""
       school_termination_min_grace_days: 0
+    metrics:
+      disabled: true
+  metrics:
+    disabled: true
 include_ocm_sharees: false
 events:
+  disabled_consumer: false
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
   tls_insecure: false
@@ -134,6 +146,9 @@ unified_roles:
   - 2d00ce52-1fc2-4dbc-8b95-a73b73395f5a
   - 1c996275-f1c9-4e71-abdf-a42f6495e960
   - 312c0871-5ef7-4b3a-85b6-0e4074c64049
+thumbnails:
+  additional_source_types: []
+  space_image_max_input_image_file_size: 50MB
 max_concurrency: 20
 keycloak:
   base_path: ""
@@ -145,6 +160,7 @@ keycloak:
 service_account:
   service_account_id: ""
   service_account_secret: ""
+machine_auth_api_key: ""
 metadata_config:
   gateway_addr: eu.opencloud.api.storage-system
   storage_addr: eu.opencloud.api.storage-system
@@ -158,3 +174,6 @@ store:
   database: graph
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""

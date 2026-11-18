@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: create
 title: Create a Space
 description: Create Spaces and share data in OpenCloud
@@ -12,28 +12,32 @@ With Spaces you can share data with specific people within your organization. Al
 
 ## Create a new Space
 
-- Go to the menu item "Spaces” in the left sidebar
+- Select “Spaces” in the left sidebar.
 
-  <img src={require("./img/create/left-sidebar.png").default} alt="Space in left Sidebar" width="1920"/>
+  <img src={require("./img/create/new-space.png").default} alt="Space in left Sidebar" width="1920" height="900" loading="lazy" decoding="async"/>
 
-- Click on "+ New Space”
+- Select “New”.
 
-  <img src={require("./img/create/new-space.png").default} alt="New-Space" width="1920"/>
+  <img src={require("./img/create/new-space-popup.png").default} alt="New-Space" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Enter the desired name for the Space.
+- Enter a name for the Space.
 
-  <img src={require("./img/create/enter-name.png").default} alt="Enter Spacename" width="500"/>
+  <img src={require("./img/create/enter-name.png").default} alt="Enter Spacename" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Click on "Create”.
+- Optionally, select “Options” to configure end-to-end encryption, customize the Space, set a quota, or add members.
 
-## Display Space
+  <img src={require("./img/create/space-options.png").default} alt="Optional settings for a new Space" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-Your new Space now appears under "Spaces” and is ready to be used
+- Select “Create”.
 
-<img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920"/>
+## Your new Space
+
+Your new Space now appears under "Spaces" and is ready to be used.
+
+<img src={require("./img/create/created-space.png").default} alt="Created Space" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 Now you know how to quickly and easily create a Space and can start sharing data!
 
 :::important
-Spaces can only be permanently shared within your own organization.
+You can only add users from your own organization as Space members.
 :::

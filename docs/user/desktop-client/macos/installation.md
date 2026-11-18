@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: installation
 title: Installation
 description: Install OpenCloud Client

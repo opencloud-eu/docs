@@ -1,0 +1,12 @@
+---
+when:
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+  - event: [pull_request, manual, tag]
+
+steps:
+  - name: format-check
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
+    commands:
+      - pnpm install
+      - pnpm format:check

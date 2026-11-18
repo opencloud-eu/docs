@@ -1,0 +1,52 @@
+---
+sidebar_position: 40
+id: settings
+title: Settings in Windows
+description: Settings in OpenCloud Desktop for Windows
+draft: false
+---
+
+# Change Settings in OpenCloud Desktop
+
+You can customize OpenCloud Desktop settings by following these steps:
+
+## Open Settings
+
+- Click on "Settings" in the top-right corner of OpenCloud Desktop
+
+  <img src={require(".././img/windows/settings/settings-overview.png").default} alt="Settings overview" width="400" height="364" loading="lazy" decoding="async"/>
+
+## Overview of Settings Sections
+
+### General Settings
+
+- Set your preferred language
+
+  <img src={require(".././img/windows/settings/settings-general.png").default} alt="Settings-general" width="400" height="40" loading="lazy" decoding="async"/>
+
+### Advanced Settings
+
+- Choose to sync hidden files
+- Decide whether deleted files should be moved to the local trash bin
+- Edit the ignored files list
+- Enable a debug log file for troubleshooting
+
+  <img src={require(".././img/windows/settings/settings-advanced.png").default} alt="Settings advanced" width="400" height="73" loading="lazy" decoding="async"/>
+
+### Network Settings
+
+- Select how the client handles proxy settings:
+  - No proxy
+  - Use system proxy (default)
+  - Manually enter a proxy
+
+  <img src={require(".././img/windows/settings/settings-network.png").default} alt="Settings network" width="400" height="153" loading="lazy" decoding="async"/>
+
+### Download and Upload Bandwidth
+
+- Set bandwidth limits:
+  - No limit (default)
+  - Automatically adjust limit
+  - Set a specific limit manually
+
+  <img src={require(".././img/windows/settings/settings-bandwidth.png").default} alt="Settings bandwidth" width="400" height="85" loading="lazy" decoding="async"/>

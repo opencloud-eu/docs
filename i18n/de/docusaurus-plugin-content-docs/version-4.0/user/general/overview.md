@@ -1,22 +1,45 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: overview
 title: Übersicht
 description: Überblick der Web Benutzeroberfläche
 draft: false
 ---
 
+import OverviewMarker from "./img/overview/marker.svg";
+
 # Überblick der Web Benutzeroberfläche
 
-Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
+Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
 
-<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/overview.png").default}
+    alt="Übersicht"
+    width="1920"
+    height="1090"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Linke Seitenleiste
 
 Die Seitenleiste enthält die Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
 
-## 2. App-Wechsler
+## 2. App-Switcher
 
 Das Menü in der linken oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
 
@@ -26,7 +49,7 @@ Die obere Leiste enthält wichtige Funktionen wie die Suchleiste, Benutzeraktion
 
 ## 4. Suchleiste
 
-Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Räumen.
+Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Spaces.
 
 ## 5. Dateiliste
 

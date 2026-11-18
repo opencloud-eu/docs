@@ -1,8 +1,4 @@
 {
   "label": "Resources",
-  "position": 7,
-  "link": {
-    "type": "doc",
-    "id": "admin-resources"
-  }
+  "position": 7
 }

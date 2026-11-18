@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: upload-download-unzip
 title: Upload - Download - Unzip
 description: Upload - Download - Unzip
@@ -12,11 +12,11 @@ draft: false
 
 - Click on “Upload” in the action bar.
 
-  <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920"/>
+  <img src={require("./img/upload-download-unzip/upload-button.png").default} alt="Upload button" width="1920" height="1088" loading="lazy" decoding="async"/>
 
 - Select whether you want to upload files or folders.
 
-  <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/upload-download-unzip/upload-options.png").default} alt="Select file or folder" width="400" height="320" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 - Select files/folders:
   - In the window that opens, select the desired files or folders.
@@ -25,7 +25,7 @@ draft: false
   - Click on “Open” to start the upload.
   - Once completed, a message will appear in the bottom right-hand corner.
 
-    <img src={require("./img/upload-download-unzip/upload-window.png").default} alt="Confirm upload" width="500"/>
+    <img src={require("./img/upload-download-unzip/upload-window.png").default} alt="Confirm upload" width="500" height="431" loading="lazy" decoding="async"/>
 
 - Alternatively:
   - Drag and drop the files or folders directly from your Explorer window into the browser to upload them.
@@ -36,11 +36,11 @@ draft: false
   - Clicking in the file line
   - or clicking the box at the beginning of the line.
 
-    <img src={require("./img/upload-download-unzip/choose-download-files.png").default} alt="Admin spaces" width="1920"/>
+    <img src={require("./img/upload-download-unzip/choose-download-files.png").default} alt="Admin spaces" width="1920" height="1001" loading="lazy" decoding="async"/>
 
 - Open the context menu - By right-clicking - or by clicking on the three dots next to the file. - or by clicking the download button in the action bar
 
-  <img src={require("./img/upload-download-unzip/download-options.png").default} alt="Download options" width="1920"/>
+  <img src={require("./img/upload-download-unzip/download-options.png").default} alt="Download options" width="1920" height="1005" loading="lazy" decoding="async"/>
 
 - Select “Download” from the menu.
 
@@ -48,6 +48,6 @@ draft: false
 
 - If you download several files or folders, these are saved as a ZIP file.
 
-  <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="Download several files in zip file" width="1920"/>
+  <img src={require("./img/upload-download-unzip/zip-file.png").default} alt="Download several files in zip file" width="1920" height="1097" loading="lazy" decoding="async"/>
 
 - Unzip the ZIP file on your device after downloading.

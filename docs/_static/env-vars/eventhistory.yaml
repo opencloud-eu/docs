@@ -10,6 +10,7 @@ debug:
 grpc:
   addr: 127.0.0.1:9274
   tls: null
+  disabled: false
 grpc_client_tls: null
 events:
   endpoint: 127.0.0.1:9233
@@ -19,12 +20,16 @@ events:
   enable_tls: false
   username: ""
   password: ""
+  disabled: false
 store:
   store: nats-js-kv
   nodes:
   - 127.0.0.1:9233
   database: eventhistory
   table: ""
-  ttl: 336h0m0s
+  ttl: 0s
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""

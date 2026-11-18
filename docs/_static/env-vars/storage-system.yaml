@@ -29,14 +29,18 @@ cache:
   nodes:
   - 127.0.0.1:9233
   database: storage-system
-  ttl: 24m0s
+  ttl: 24h0m0s
   disable_persistence: false
   auth_username: ""
   auth_password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 driver: decomposed
 drivers:
   decomposed:
     root: /var/lib/opencloud/storage/metadata
     max_acquire_lock_cycles: 20
     lock_cycle_duration_factor: 30
+    metadata_prefix: ""
 data_server_url: http://localhost:9216/data

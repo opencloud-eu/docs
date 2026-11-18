@@ -10,7 +10,7 @@ draft: false
 
 By default, OpenCloud performs a frontend check to verify if you are running the latest version.
 
-<img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520"/>
+<img src={require("./img/frontend-update-check/check-true.png").default} alt="check is true" width="520" height="182" loading="lazy" decoding="async"/>
 
 ## Edit the `.env` File
 
@@ -39,4 +39,4 @@ docker compose up -d
 
 The frontend will no longer display a message about newer versions being available.
 
-<img src={require("./img/frontend-update-check/check-false.png").default} alt="check is false" width="520"/>
+<img src={require("./img/frontend-update-check/check-false.png").default} alt="check is false" width="520" height="155" loading="lazy" decoding="async"/>

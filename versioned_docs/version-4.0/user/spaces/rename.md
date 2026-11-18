@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 id: rename
 title: Rename a Space
 description: Rename a Space in OpenCloud
@@ -12,11 +12,11 @@ You can rename an existing Space at any time to better reflect its purpose or co
 
 - Click on the three dots menu or do a right click on the Space in the Space Overview and select Rename
 
-  <img src={require("./img/rename/rename.png").default} alt="Rename" width="400"/>
+  <img src={require("./img/rename/rename.png").default} alt="Rename" width="400" height="612" loading="lazy" decoding="async"/>
 
 - Enter the new name for the Space and confirm.
 
-  <img src={require("./img/rename/confirm.png").default} alt="confirm" width="400" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
+  <img src={require("./img/rename/confirm.png").default} alt="confirm" width="400" height="167" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 - Now your Space is renamed.
-  <img src={require("./img/rename/renamed-space.png").default} alt="Renamed Space" width="1920"/>
+  <img src={require("./img/rename/renamed-space.png").default} alt="Renamed Space" width="1920" height="704" loading="lazy" decoding="async"/>

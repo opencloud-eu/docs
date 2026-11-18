@@ -1,24 +1,47 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: overview
 title: Übersicht
-description: Überblick der Web Benutzeroberfläche
+description: Überblick über die Web-Benutzeroberfläche
 draft: false
 ---
 
-# Überblick der Web Benutzeroberfläche
+import OverviewMarker from "./img/overview/marker.svg";
 
-Die OpenCloud Web Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten
+# Überblick der Web-Benutzeroberfläche
 
-<img src={require("./img/overview/ueberblick.png").default} alt="Overview" width="1920"/>
+Die OpenCloud Web-Benutzeroberfläche besteht aus mehreren Bereichen, die Ihnen helfen, effizient mit Dateien und Einstellungen zu arbeiten.
+
+<div style={{ position: "relative", display: "inline-block", width: "100%", maxWidth: "1920px" }}>
+  <img
+    src={require("./img/overview/overview.png").default}
+    alt="Übersicht"
+    width="1920"
+    height="1080"
+    style={{ display: 'block', width: '100%', height: 'auto' }}
+    loading="lazy"
+    decoding="async"
+  />
+  <OverviewMarker
+    aria-hidden="true"
+    style={{
+      position: 'absolute',
+      inset: 0,
+      width: '100%',
+      height: '100%',
+      pointerEvents: 'none',
+      zIndex: 1,
+    }}
+  />
+</div>
 
 ## 1. Linke Seitenleiste
 
-Die Seitenleiste enthält die Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
+Die Seitenleiste enthält Navigationselemente wie Spaces, Dateien, Freigaben und Einstellungen.
 
-## 2. App-Wechsler
+## 2. App-Switcher
 
-Das Menü in der linken oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
+Das Menü in der rechten oberen Ecke ermöglicht es Ihnen, zwischen verschiedenen Apps und Modulen zu wechseln.
 
 ## 3. Obere Leiste
 
@@ -26,11 +49,11 @@ Die obere Leiste enthält wichtige Funktionen wie die Suchleiste, Benutzeraktion
 
 ## 4. Suchleiste
 
-Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Räumen.
+Ermöglicht Ihnen das schnelle Auffinden von Dateien, Ordnern oder Spaces.
 
 ## 5. Dateiliste
 
-Zeigt alle Dateien und Ordner in einer Auswahlansicht an.
+Zeigt alle Dateien und Ordner in der ausgewählten Ansicht an.
 
 ## 6. Breadcrumbs-Menü
 
@@ -42,11 +65,10 @@ Ermöglicht Ihnen das Bearbeiten, Verschieben oder Löschen mehrerer ausgewählt
 
 ## 8. Ansichtsmodi
 
-Bietet verschiedene Anzeigeoptionen für die Dateiliste:
+Bietet zwei Anzeigeoptionen für die Dateiliste:
 
-- Listenansicht
 - Kachelansicht
-- Komprimierte Ansicht
+- Listenansicht
 
 ## 9. Ansichtseinstellungen
 
@@ -54,11 +76,11 @@ Hier können Sie zusätzliche Anzeigeoptionen wie Sortierung oder Spaltenauswahl
 
 ## 10. Benutzermenü
 
-Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um zu Einstellungen, Abmeldung und Kontooptionen zu gelangen.
+Klicken Sie auf Ihr Profilbild in der oberen rechten Ecke, um auf Einstellungen, Abmeldung und Kontooptionen zuzugreifen.
 
 ## 11. Rechte Seitenleiste
 
-Zeigt zusätzliche Informationen und Panels für Anteile, Aktivitäten oder Dateidetails.
+Zeigt zusätzliche Informationen und Bereiche für Freigaben, Aktivitäten oder Dateidetails.
 
 ## 12. Aktionen
 
@@ -66,24 +88,20 @@ Hier finden Sie Aktionen wie Herunterladen, Teilen, Löschen oder Bearbeiten fü
 
 ## 13. Drei-Punkte-Menü
 
-Bietet weitere Optionen für Dateien, Ordner oder Bereiche.
+Bietet weitere Optionen für Dateien, Ordner oder Spaces.
 
-## 14. Aktionen-Panel
-
-Zeigt mögliche Aktionen für die ausgewählte Datei, z. B. Umbenennen oder Verschieben.
-
-## 15. Freigabe-Panel
+## 14. Freigabe-Panel
 
 Hier können Sie Dateien und Ordner intern oder extern freigeben und Berechtigungen verwalten.
 
-## 16. Versionen
+## 15. Versionen
 
-Zeigt eine Übersicht der Versionen einer ausgewählten Datei oder Ordner.
+Zeigt eine Übersicht der Versionen einer ausgewählten Datei oder eines ausgewählten Ordners.
 
-## 17. Aktivitätsleiste
+## 16. Aktivitätsleiste
 
-Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Bereichs oder einer Datei.
+Zeigt eine Übersicht über Änderungen und Aktivitäten innerhalb eines Spaces oder einer Datei.
 
-## 18. Kontextmenü
+## 17. Kontextmenü
 
 Ein Rechtsklick auf eine Datei oder einen Ordner öffnet das Kontextmenü mit spezifischen Optionen.

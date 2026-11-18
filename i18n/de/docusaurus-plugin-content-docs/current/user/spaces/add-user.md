@@ -1,49 +1,46 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: add-members
 title: Mitglieder hinzufügen
-description: Mitglieder zu Space hinzufügen in OpenCloud
+description: Neue Mitglieder zu Ihrem Space in OpenCloud hinzufügen
 draft: false
 ---
 
-# Füge ein neues Mitglied zu deinem Space in OpenCloud hinzu
+# Neues Mitglied zu Ihrem Space in OpenCloud hinzufügen
 
-Sie können ganz einfach neue Mitglieder einladen, um gemeinsam in deinem Space zu arbeiten. Folgen Sie dazu den folgenden Schritten.
+Sie können ganz einfach neue Mitglieder einladen, um in Ihrem Space zusammenzuarbeiten, indem Sie die folgenden Schritte ausführen.
 
-- Gehen Sie zu Ihrem Space und öffnen Sie das Mitgliedermenü.
+- Öffnen Sie das Space-Menü und wählen Sie „Mitglieder“ aus.
+  <img src={require("./img/add-user/member-menu.png").default} alt="Mitglieder-Menü" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-<img src={require("./img/add-user/mitglieder-menue.png").default} alt="Member menu" width="1920"/>
+- Suchen Sie nach der Person aus Ihrer Organisation, die Sie hinzufügen möchten.
 
-- Im Menü „Mitglieder“ können Sie nach dem Benutzer aus Ihrer Organisation suchen, den Sie hinzufügen möchten.
+  <img src={require("./img/add-user/search-user.png").default} alt="Benutzer suchen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-<img src={require("./img/add-user/mitglieder-suche.png").default} alt="search user" width="400"/>
+- Wählen Sie die Rolle für das neue Mitglied aus: „Kann anzeigen“, „Kann bearbeiten“ oder „Kann verwalten“.
 
-- Wählen Sie die gewünschten Rechte für das Mitglied aus, z.B. ob die Person nur lesen oder auch bearbeiten darf.
+  <img src={require("./img/add-user/choose-rights.png").default} alt="Rechte auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-<img src={require("./img/add-user/rechte.png").default} alt="Choose rights" width="400"/>
+- Wählen Sie „Hinzufügen“ aus, um das Mitglied in den Space einzuladen.
 
-- Klicken Sie auf „Hinzufügen“, um das Mitglied in den Space einzuladen.
+  <img src={require("./img/add-user/member-added.png").default} alt="Mitglied hinzugefügt" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-<img src={require("./img/add-user/mitglieder-hinzufuegen.png").default} alt="Member added" width="400"/>
+- Um die Rolle eines Mitglieds zu ändern, wählen Sie die aktuelle Rolle neben dem Mitglied und anschließend eine neue Rolle aus.
 
-- Um die Rechte eines Mitglieds zu ändern, öffnen Sie das Mitgliedermenü, klicken Sie auf den entsprechenden Benutzer und wählen Sie die gewünschten neuen Rechte aus.
+  <img src={require("./img/add-user/change-rights.png").default} alt="Rechte ändern" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-<img src={require("./img/add-user/rechte-aendern.png").default} alt="Change rights" width="400"/>
+- Öffnen Sie das Mitglieder-Menü, klicken Sie auf das Drei-Punkte-Menü neben dem Mitglied und verwenden Sie nach Bedarf „Zugriffsdetails“, „Ablaufdatum festlegen“ oder „Mitglied entfernen“.
 
-- Öffnen Sie das Mitgliedermenü, klicken Sie auf das Drei-Punkte-Menü neben dem Mitglied, das Sie entfernen möchten, und wählen Sie „Mitglied entfernen“.
-
-<img src={require("./img/add-user/mitglied-entfernen.png").default} alt="Remove user" width="400"/>
+  <img src={require("./img/add-user/remove-user.png").default} alt="Mitglied entfernen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
-Das entfernte Mitglied verliert sofort den Zugang zum Space.
+Das entfernte Mitglied verliert sofort den Zugriff auf den Space.
 :::
 
 :::important
 
 - Das hinzugefügte Mitglied hat sofortigen Zugriff auf den Space.
-- Achtung: Jeder Benutzer mit dem Recht „kann verwalten“ hat die Berechtigung, den Space zu deaktivieren und zu löschen.
-- Ein gelöschter Space kann nicht wiederhergestellt werden, seien Sie also vorsichtig, wem Sie diese Rechte gewähren.
+- Achtung: Jeder Benutzer mit dem Recht „Kann verwalten“ hat die Berechtigung, den Space zu deaktivieren und zu löschen.
+- Ein gelöschter Space kann nicht wiederhergestellt werden, also seien Sie vorsichtig, wem Sie diese Rechte gewähren.
 
 :::
-
-Dies gibt Ihnen die Möglichkeit, Mitglieder zu Ihrem Space hinzuzufügen und die Berechtigungen entsprechend festzulegen!

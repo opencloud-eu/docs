@@ -20,7 +20,6 @@ If you don't have an existing reverse proxy or prefer to let Traefik manage cert
 - Proper DNS records for your domain:
   - `cloud.YOUR.DOMAIN`
   - `collabora.YOUR.DOMAIN`
-  - `wopiserver.YOUR.DOMAIN`
 - Installed software:
   - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
   - `nginx`
@@ -36,11 +35,20 @@ ssh root@YOUR.SERVER.IP
 
 ## Install Docker
 
-Update your system and install Docker.
+Install Docker Engine and the Docker Compose plugin using the [official Docker installation instructions](https://docs.docker.com/engine/install/) for your Linux distribution.
+
+Verify that Docker and the Compose plugin are installed before proceeding.
 
 ## Install Nginx & Certbot
 
-Now install Nginx & Certbot
+On **Ubuntu or Debian**, install Nginx and Certbot:
+
+```bash
+sudo apt update
+sudo apt install -y nginx certbot
+```
+
+For other Linux distributions, use the appropriate package manager. The Nginx configuration below assumes the Debian/Ubuntu `sites-available` and `sites-enabled` directory layout.
 
 ## Create a Webroot Directory for Certbot
 
@@ -62,7 +70,7 @@ Paste the following config and adjust the URLs:
 ```nginx
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN;
 
     root /var/www/certbot;
 
@@ -76,7 +84,7 @@ server {
 Enable and reload Nginx:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/certbot-challenge /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/certbot-challenge /etc/nginx/sites-enabled/certbot-challenge
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
@@ -89,7 +97,6 @@ sudo certbot certonly --webroot \
   -w /var/www/certbot \
   -d cloud.YOUR.DOMAIN \
   -d collabora.YOUR.DOMAIN \
-  -d wopiserver.YOUR.DOMAIN \
   --email your@email.com \
   --agree-tos \
   --no-eff-email
@@ -116,18 +123,38 @@ Set the following environment variables:
 ```env
 # INSECURE=true
 
-COMPOSE_FILE=docker-compose.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
-
 OC_DOMAIN=cloud.YOUR.DOMAIN
 
 INITIAL_ADMIN_PASSWORD=YOUR.SECRET.PASSWORD
 
 COLLABORA_DOMAIN=collabora.YOUR.DOMAIN
-
-WOPISERVER_DOMAIN=wopiserver.YOUR.DOMAIN
 ```
 
 The initial Admin password is mandatory for security reasons.
+
+Set `COMPOSE_FILE` depending on where the reverse proxy runs.
+
+If the reverse proxy runs on the same machine as OpenCloud:
+
+```env
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:external-proxy/opencloud.yml:external-proxy/collabora.yml
+```
+
+If the reverse proxy runs on a different machine, use the exposed variants, which publish the container ports on all network interfaces so the proxy host can reach them:
+
+```env
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:weboffice/collabora.yml:external-proxy/opencloud-exposed.yml:external-proxy/collabora-exposed.yml
+```
+
+:::warning
+The exposed compose files publish service ports on all network interfaces. Restrict access to these ports with a firewall and only allow connections from the reverse proxy host.
+:::
+
+:::note
+The WOPI endpoint is served by OpenCloud on the OpenCloud domain. It is available through the OpenCloud proxy under `/wopi` and `/collaboration`.
+
+A separate `wopiserver` domain, reverse proxy block, or exposed WOPI port is not required.
+:::
 
 Start the docker compose setup
 
@@ -159,11 +186,13 @@ sudo nano /etc/nginx/sites-available/opencloud
 
 Paste the following configuration and adjust the URLs:
 
+If the reverse proxy runs on a different machine than OpenCloud, replace `127.0.0.1` with the IP address or DNS name of the OpenCloud host in each `proxy_pass` directive.
+
 ```nginx
 # Redirect HTTP to HTTPS
 server {
     listen 80;
-    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN wopiserver.YOUR.DOMAIN;
+    server_name cloud.YOUR.DOMAIN collabora.YOUR.DOMAIN;
 
     location /.well-known/acme-challenge/ {
         root /var/www/certbot;
@@ -206,49 +235,64 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
     }
+
+    # WebSocket route for the yjs server (collaborative editing).
+    # Only needed if yjs/yjs.yml is part of COMPOSE_FILE.
+    location ^~ /yjs {
+        proxy_pass http://127.0.0.1:9200;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 
 # Collabora
 server {
-  listen 443 ssl http2;
-  server_name collabora.YOUR.DOMAIN;
+    listen 443 ssl http2;
+    server_name collabora.YOUR.DOMAIN;
 
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
-  # Increase max upload size to collabora editor
-  client_max_body_size 10M;
+    ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
 
-  location / {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Host $host;
-  }
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
 
-  location ~ ^/cool/(.*)/ws$ {
-      proxy_pass http://127.0.0.1:9980;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection "Upgrade";
-      proxy_set_header Host $host;
-  }
+    client_max_body_size 10M;
 
-}
+    location / {
+        proxy_pass http://127.0.0.1:9980;
 
-# WOPI Server
-server {
-  listen 443 ssl http2;
-  server_name wopiserver.YOUR.DOMAIN;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
 
-  ssl_certificate /etc/letsencrypt/live/cloud.YOUR.DOMAIN/fullchain.pem;
-  ssl_certificate_key /etc/letsencrypt/live/cloud.YOUR.DOMAIN/privkey.pem;
-  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+        proxy_read_timeout 36000s;
+        proxy_send_timeout 36000s;
+    }
 
-  location / {
-      proxy_pass http://127.0.0.1:9300;
-      proxy_set_header Host $host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme;
-  }
+    location ^~ /cool/ {
+        proxy_pass http://127.0.0.1:9980;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+
+        proxy_read_timeout 36000s;
+        proxy_send_timeout 36000s;
+    }
 }
 ```
 
@@ -260,13 +304,25 @@ Starting from nginx 1.25.0, the `http2` directive syntax changed from: `listen 4
 We enabled HTTP/2 and increased keep-alive limits to prevent large syncs from failing and ensure stable client connections, since nginx closes connections after ~1,000 requests by default.
 :::
 
-Thanks to [mitexleo](https://github.com/mitexleo) for the Ngnix example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments
+Thanks to [mitexleo](https://github.com/mitexleo) for the Nginx example configuration on GitHub and [zerox80](https://github.com/zerox80) for the adjustments.
 
 Enable and reload Nginx:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/opencloud /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/opencloud /etc/nginx/sites-enabled/opencloud
 sudo nginx -t && sudo systemctl reload nginx
+```
+
+Verify that Nginx is listening on port `443`:
+
+```bash
+sudo ss -tulpn | grep ':443'
+```
+
+Verify that Collabora is reachable through the external proxy:
+
+```bash
+curl -k https://collabora.YOUR.DOMAIN/hosting/discovery | head
 ```
 
 ## Test Certificate Renewal
@@ -276,3 +332,18 @@ sudo certbot renew --dry-run
 ```
 
 Your OpenCloud instance is now running securely behind a fully configured external Nginx reverse proxy with HTTPS.
+
+## Timeout Considerations
+
+When using a reverse proxy other than the documented Nginx example, make sure that request and response timeouts are configured for long-running uploads.
+
+Slow uploads or large file uploads can take longer than the default timeout of some reverse proxies. If the timeout is too low, uploads may fail with `502 Bad Gateway` after about 60 seconds.
+
+For custom reverse proxy setups, configure the equivalent of the relevant Nginx options, such as:
+
+- `proxy_read_timeout`
+- `proxy_send_timeout`
+- `proxy_request_buffering off`
+- `proxy_buffering off`
+
+The exact option names depend on the reverse proxy in use.

@@ -34,7 +34,40 @@ http:
     enabled: false
     cert: ""
     key: ""
-disablePreviews: false
 opencloud_public_url: https://localhost:9200
 webdav_namespace: /users/{{.Id.OpaqueId}}
 reva_gateway: eu.opencloud.api.gateway
+disablePreviews: false
+thumbnails:
+  generator_url: http://127.0.0.1:9186
+  generator_timeout: 30s
+  max_input_image_file_size: 50MB
+  cache_backend: file
+  cache_dir: ""
+  filesystemstorage_root: ""
+  resolutions:
+  - "16"
+  - "32"
+  - "64"
+  - "128"
+  - "192"
+  - "256"
+  - "320"
+  - "384"
+  - "448"
+  - "512"
+  - "640"
+  - "768"
+  - "1024"
+  - "1280"
+  - "1920"
+  - "2048"
+  cache_s3_bucket: ""
+  cache_s3_region: ""
+  cache_s3_endpoint: ""
+  cache_s3_access_key: ""
+  cache_s3_secret_key: ""
+  additional_source_types: []
+  additional_generator_formats: []
+  additional_output_types: []
+  txt_fontmap_file: ""

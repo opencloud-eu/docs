@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 30
 id: add-members
 title: Add members
 description: Add new members to your Space in OpenCloud
@@ -10,28 +10,28 @@ draft: false
 
 You can easily invite new members to collaborate within your Space by following the steps below.
 
-- Go to your Space and open the members' menu.
-  <img src={require("./img/add-user/member-menu.png").default} alt="Member menu" width="1920"/>
+- Open the Space menu and select “Members”.
+  <img src={require("./img/add-user/member-menu.png").default} alt="Member menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- In the members menu, you can search for the user from your organization that you want to add.
+- Search for the person from your organization that you want to add.
 
-  <img src={require("./img/add-user/search-user.png").default} alt="search user" width="400"/>
+  <img src={require("./img/add-user/search-user.png").default} alt="search user" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Select the desired rights for the member, e.g. whether the person may only read or also edit.
+- Select the role for the new member: “Can view”, “Can edit”, or “Can manage”.
 
-  <img src={require("./img/add-user/choose-rights.png").default} alt="Choose rights" width="400"/>
+  <img src={require("./img/add-user/choose-rights.png").default} alt="Choose rights" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Click on “Add” to invite the member to the Space.
+- Select “Add” to invite the member to the Space.
 
-  <img src={require("./img/add-user/member-added.png").default} alt="Member added" width="400"/>
+  <img src={require("./img/add-user/member-added.png").default} alt="Member added" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- To change the rights of a member, open the members menu, click on the corresponding user and select the desired new rights.
+- To change a member's role, select the current role next to that member and choose a new one.
 
-  <img src={require("./img/add-user/change-rights.png").default} alt="Change rights" width="400"/>
+  <img src={require("./img/add-user/change-rights.png").default} alt="Change rights" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Open the members menu, click on the three-dot menu next to the member you want to remove and select “Remove member”.
+- Open the members menu, click on the three-dot menu next to the member and use “Access details”, “Set expiration date”, or “Remove member” as needed.
 
-  <img src={require("./img/add-user/remove-user.png").default} alt="Remove user" width="400"/>
+  <img src={require("./img/add-user/remove-user.png").default} alt="Remove user" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note
 The removed member immediately loses access to the space.
@@ -44,5 +44,3 @@ The removed member immediately loses access to the space.
 - A deleted Space cannot be restored, so be careful who you grant these rights to.
 
 :::
-
-Now you know how to add members to your Space and set the permissions accordingly!

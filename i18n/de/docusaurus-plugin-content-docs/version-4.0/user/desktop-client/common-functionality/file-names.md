@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 50
 id: file-names
 title: Dateinamensbeschränkungen
 description: Dateinamensbeschränkungen im OpenCloud Desktop-Client
@@ -29,9 +29,9 @@ Unter Windows 10 und neuer kann diese Beschränkung aufgehoben werden, indem "Lo
 
 ### b. Verbotene Zeichen
 
-| Betriebssystem | Verbotene Zeichen               |
+| Betriebssystem | Verbotene Zeichen |
 | -------------- | ------------------------------- | ------------ |
-| Windows        | `<`, `>`, `:`, `"`, `/`, `\`, ` | `, `?`, `\*` |
+| Windows | `<`, `>`, `:`, `"`, `/`, `\`, `|`, `?`, `\*` |
 
 ### c. Nicht druckbare ASCII-Zeichen
 

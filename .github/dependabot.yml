@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 4
+    cooldown:
+      default-days: 1
+    labels:
+      - "Docs:Build&Tools"
+    groups:
+      # the @docusaurus/* packages must always have the same version
+      docusaurus:
+        patterns:
+          - "@docusaurus/*"

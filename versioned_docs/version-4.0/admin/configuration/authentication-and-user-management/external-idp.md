@@ -106,7 +106,7 @@ role_assignment:
         claim_value: mySpaceAdminRole
       - role_name: user
         claim_value: myUserRole
-      - role_name: guest
+      - role_name: user-light
         claim_value: myGuestRole
 ```
 
@@ -135,7 +135,7 @@ The default `role_claim` (or `PROXY_ROLE_ASSIGNMENT_OIDC_CLAIM`) is `roles`. The
   claim_value: opencloudSpaceAdmin
 - role_name: user
   claim_value: opencloudUser
-- role_name: guest
+- role_name: user-light
   claim_value: opencloudGuest
 ```
 
@@ -157,6 +157,8 @@ The web client is used for browser-based access to OpenCloud:
   - `https://your-domain.example.com/`
   - `https://your-domain.example.com/oidc-callback.html`
   - `https://your-domain.example.com/oidc-silent-redirect.html`
+- Post Logout Redirect URIs:
+  - `https://your-domain.example.com/`
 
 ### Desktop Client
 
@@ -167,6 +169,11 @@ The desktop client is used for the OpenCloud desktop application:
 - Redirect URIs:
   - `http://127.0.0.1`
   - `http://localhost`
+
+:::note
+The Desktop Client supports OIDC issuer discovery through the OpenCloud
+WebFinger service starting with version 4.0.
+:::
 
 ### Mobile App Clients
 

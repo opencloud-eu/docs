@@ -38,8 +38,11 @@ signing_keys:
   store: nats-js-kv
   addresses:
   - 127.0.0.1:9233
-  ttl: 12h0m0s
+  ttl: 24h0m0s
   username: ""
   password: ""
+  enable_tls: false
+  tls_insecure: false
+  tls_root_ca_certificate: ""
 token_manager:
   jwt_secret: ""

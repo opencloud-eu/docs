@@ -1,8 +1,4 @@
 {
   "label": "Maintenance",
-  "position": 6,
-  "link": {
-    "type": "doc",
-    "id": "admin-maintenance"
-  }
+  "position": 6
 }

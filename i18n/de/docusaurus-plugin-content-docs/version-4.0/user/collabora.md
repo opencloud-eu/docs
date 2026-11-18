@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 100
 id: collabora
 title: Collabora in OpenCloud
 description: Collabora in OpenCloud

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: why-spaces
 title: Warum Spaces?
 description: Warum man Spaces nutzen sollte
@@ -13,12 +13,12 @@ draft: false
 ### Ein einfaches Beispiel
 
 - Alan erstellt einen Ordner mit dem Namen „Projekt“ und teilt ihn mit mehreren Personen.  
-  <img src={require("./img/why-spaces/spaghetti.png").default} alt="Mitglieder-Menü" width="500"/>
+  <img src={require("./img/why-spaces/spaghetti.png").default} alt="Mitglieder-Menü" width="500" height="393" loading="lazy" decoding="async"/>
 - Später verlässt Alan die Organisation.
 - Da Alans Account gelöscht wird, verschwinden auch einige geteilte Ordner.
 - Benutzer verlieren den Zugriff auf bestimmte Ordner und deren Inhalte.
 
-  <img src={require("./img/why-spaces/alan-left.png").default} alt="Mitglieder-Menü" width="500"/>
+  <img src={require("./img/why-spaces/alan-left.png").default} alt="Mitglieder-Menü" width="500" height="365" loading="lazy" decoding="async"/>
 
 ### Dieses Szenario zeigt mehrere Risiken auf
 
@@ -35,7 +35,7 @@ Spaces wurden entwickelt, um diese Einschränkungen zu überwinden und eine stab
 - **Gemeinsame Verwaltung:** Mehrere Benutzer können einen Space gemeinsam verwalten.
 - **Eigenes Speicherkontingent:** Jeder Space hat ein eigenes Speicherkontingent, unabhängig vom persönlichen Speicherplatz.
 
-  <img src={require("./img/why-spaces/spaces.png").default} alt="Mitglieder-Menü" width="500"/>
+  <img src={require("./img/why-spaces/spaces.png").default} alt="Mitglieder-Menü" width="500" height="536" loading="lazy" decoding="async"/>
 
 :::note
 Spaces machen Zusammenarbeit einfacher, sicherer und skalierbarer – besonders in professionellen Umgebungen.

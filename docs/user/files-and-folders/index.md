@@ -22,10 +22,25 @@ This section covers common day-to-day tasks such as creating and moving content,
 - [Delete and restore items from the trash](./delete-restore.md)  
   Remove files and folders and restore them later if needed.
 
+- [Editing Markdown files](./markdown-editor.md)  
+  Edit `README.md` and other Markdown files directly in OpenCloud with formatting suggestions.
+- [README files in folders](./readme-files.md)  
+  Add a `README.md` file to a folder so OpenCloud renders it above the file list.
+
+- [End-to-end encrypted folders](./e2ee-folders.md) – Create and use password-protected folders whose contents are encrypted before upload.
+
+- [Access end-to-end encrypted folders with rclone](./e2ee-folders-rclone.md) – Mount an encrypted folder on Linux, macOS, or Windows with rclone.
+
 ### Find and classify content
+
+- [Photos and videos](./photos-and-videos.md)  
+  Preview photos, browse them in a photo roll, and play videos directly in the web interface.
 
 - [Search for files and content](./search.md)  
   Find files by name or search within their content.
+
+- [Favorites](./favorites.md)  
+  Mark frequently used files for quick access and collect them on a dedicated Favorites page.
 
 - [Add and remove tags](./tags.md)  
   Use tags to organize files and folders and make them easier to find.

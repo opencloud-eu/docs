@@ -3,17 +3,9 @@
     "message": "4.0",
     "description": "The label for version 4.0"
   },
-  "sidebar.admin.category.Welcome": {
-    "message": "Welcome",
-    "description": "The label for category 'Welcome' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Getting Started": {
     "message": "Getting Started",
     "description": "The label for category 'Getting Started' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Getting Started.link.generated-index.description": {
-    "message": "🚀 Getting Started",
-    "description": "The generated-index page description for category 'Getting Started' in sidebar 'admin'"
   },
   "sidebar.admin.category.Container": {
     "message": "Container",
@@ -31,10 +23,6 @@
     "message": "Configuration",
     "description": "The label for category 'Configuration' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Configuration.link.generated-index.description": {
-    "message": "⚙️ Configuration",
-    "description": "The generated-index page description for category 'Configuration' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Authentication and Identity Management": {
     "message": "Authentication and Identity Management",
     "description": "The label for category 'Authentication and Identity Management' in sidebar 'admin'"
@@ -47,25 +35,13 @@
     "message": "Maintenance",
     "description": "The label for category 'Maintenance' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Maintenance.link.generated-index.description": {
-    "message": "🛠️ Maintenance",
-    "description": "The generated-index page description for category 'Maintenance' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Upgrade": {
     "message": "Upgrade",
     "description": "The label for category 'Upgrade' in sidebar 'admin'"
   },
-  "sidebar.admin.category.Upgrade.link.generated-index.description": {
-    "message": "Upgrade",
-    "description": "The generated-index page description for category 'Upgrade' in sidebar 'admin'"
-  },
   "sidebar.admin.category.Resources": {
     "message": "Resources",
     "description": "The label for category 'Resources' in sidebar 'admin'"
-  },
-  "sidebar.admin.category.Resources.link.generated-index.description": {
-    "message": "Resources",
-    "description": "The generated-index page description for category 'Resources' in sidebar 'admin'"
   },
   "sidebar.user.category.User Interface and Navigation": {
     "message": "User Interface and Navigation",

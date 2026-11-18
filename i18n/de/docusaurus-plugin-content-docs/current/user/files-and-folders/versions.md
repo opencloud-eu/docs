@@ -1,33 +1,31 @@
 ---
-sidebar_position: 7
+sidebar_position: 110
 id: versions
 title: Versionen
-description: Verwalten der Versionen von Dateien OpenCloud
+description: Dateiversionen in OpenCloud verwalten
 draft: false
 ---
 
-# Verwalten von Versionen für Dateien und Ordner in OpenCloud
+# Verwalten von Dateiversionen in OpenCloud
 
-OpenCloud speichert verschiedene Versionen von Dateien. Dies erlaubt Ihnen, frühere Versionen wiederherzustellen oder herunterzuladen
+OpenCloud speichert verschiedene Versionen von Dateien. So können Sie frühere Versionen wiederherstellen oder herunterladen:
 
 ## Versionen anzeigen und wiederherstellen
 
 - Details öffnen
-  - Rechtsklick auf die Datei
-  - oder Klick auf die drei Punkte in der entsprechenden Dateizeile.
-    <img src={require("./img/versions/drei-punkte-menue.png").default} width="1920"/>
-  - Wählen Sie "Details “ aus dem Kontextmenü.
-    <img src={require("./img/versions/details-button.png").default} width="400"/>
+  - Klicken Sie mit der rechten Maustaste auf die Datei
+  - oder klicken Sie auf die drei Punkte in der entsprechenden Dateizeile.
+  - Wählen Sie im Kontextmenü „Details“.
+    <img src={require("./img/versions/details-button.png").default} alt="Details auswählen" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 - Versionen auswählen
-  - Wählen Sie in der rechten Seitenleiste, die sich öffnet, den Punkt "Versionen “.
-
-  <img src={require("./img/versions/versionen-button.png").default} width="400"/>
+  - Wählen Sie in der sich öffnenden rechten Seitenleiste den Eintrag „Versionen“.
+    <img src={require("./img/versions/versions-button.png").default} alt="Versionen auswählen" width="400" height="1005" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
 
 - Versionen anzeigen
   - Alle Versionen der Datei werden angezeigt.
-    <img src={require("./img/versions/versionen.png").default} width="400"/>
   - Sie können nun die gewünschte Version wiederherstellen oder herunterladen.
-    <img src={require("./img/versions/versionen-optionen.png").default} width="400"/>
 
-Diese Schritte geben Ihnen Zugriff auf ältere Versionen Ihrer Dateien zu jeder Zeit!
+    <img src={require("./img/versions/versions.png").default} alt="Alle Versionen anzeigen" width="400" height="1005" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }} loading="lazy" decoding="async"/>
+
+Mit diesen Schritten können Sie jederzeit auf ältere Versionen Ihrer Dateien zugreifen.

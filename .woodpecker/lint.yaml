@@ -1,0 +1,12 @@
+---
+when:
+  - event: push
+    branch: ${CI_REPO_DEFAULT_BRANCH}
+  - event: [pull_request, manual, tag]
+
+steps:
+  - name: lint-md
+    image: quay.io/opencloudeu/nodejs-alpine-ci:24
+    commands:
+      - pnpm install
+      - pnpm lint:md

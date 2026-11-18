@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
 id: internal
 title: Internal
 description: Organization internal sharing of files and folders in OpenCloud
@@ -8,40 +8,59 @@ draft: false
 
 # Organization internal sharing of files and folders in OpenCloud
 
-Here are the steps to share files or folders with other members or groups internally
+Files and folders can be shared within the organization with individual members or groups. Different access rights can be assigned.
 
-- Click on the “three dot menu” next to the file or folder name you want to share.
-  <img src={require("./img/intern/three-dot-menu.png").default} alt="Three dot menu" width="1920"/>
+Creating an internal share requires the system-wide User Role `User`, `Space Admin`, or `Admin`. A User Light cannot create internal shares, even when assigned `Can manage` in the Space. User Light accounts can still receive shares and work with shared content according to their assigned permissions. For more information, see [User roles in OpenCloud](../roles/user-roles.md#user-light).
 
-- Select “Share” from the drop-down menu.
-  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="400"/>
+## Create an internal share
 
-- A sidebar window will open on the right-hand side of the screen.
-  <img src={require("./img/intern/sidebar-window.png").default} alt="Sidebar window" width="1920"/>
+- Open the three-dot menu next to the file or folder you want to share.
 
-- At the top of the sidebar window, you will find the area for “Internal sharing”.
-  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400"/>
-- Search for individual members or entire groups by entering them in the search bar.
+- Select “Share” from the context menu.
 
-  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400"/>
+  <img src={require("./img/intern/share-drop-down-menu.png").default} alt="Drop down menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Select the people or groups with whom you would like to share the folder or file.
+- The sidebar opens on the right-hand side of the screen.
+  <img src={require("./img/intern/sidebar-window.png").default} alt="Sharing sidebar" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Select the rights for the selected members or groups:
-  - “Can view":  
-    Members can only view and download the file, but cannot edit it or upload it to shared folders.
-  - “Can upload":  
-    Members can view and download the file and upload their own files to the shared folder.
-  - “Can edit":  
-    Members have the same rights as in "can upload", but can also create new files, edit existing files and delete them.
+- Use the “Share with people” field at the top of the sidebar.
+  <img src={require("./img/intern/share-with-people-section.png").default} alt="Share with people" width="400" height="297" loading="lazy" decoding="async"/>
 
-    <img src={require("./img/intern/rights-drop-down-menu.png").default} alt="Drop down rights" width="400"/>
-    <img src={require("./img/intern/rights-options.png").default} alt="Right options" width="400"/>
+- Enter at least three characters in the search field to look up members or groups.
 
-- Click on “Share” to confirm the selection.
+  <img src={require("./img/intern/searchbar.png").default} alt="Enter name or group" width="400" height="617" loading="lazy" decoding="async"/>
 
-  <img src={require("./img/intern/share-button.png").default} alt="Share button" width="400"/>
+- Select the desired person or group from the suggestion list.
 
-- The shared members or groups are listed under “shared with” in the same window.
+- Set the access rights for the selected members or groups:
 
-Now you know how you share files and folders within your organization and manage access accordingly.
+  <img src={require("./img/intern/rights-options.png").default} alt="Available permissions for an internal share" width="400" height="617" loading="lazy" decoding="async"/>
+
+  | Permission            | Description                                                                                                                  |
+  | --------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+  | **Can view**          | Members can view and download the shared content.                                                                            |
+  | **Can view (secure)** | Members can only view documents, images, and PDFs in the browser. Downloading is not possible and watermarks are applied.    |
+  | **Can upload**        | Members can view and download the shared content and upload new files. This permission is available for shared folders only. |
+  | **Can edit**          | Members can view, download, upload, create, edit, and delete content.                                                        |
+
+- Optional: Open the three-dot menu next to the “Share” button and select “Set expiration date”. Choose the date on which the share should expire automatically.
+
+  <img src={require("./img/intern/expiration-date.png").default} alt="Set an expiration date for an internal share" width="400" height="201" loading="lazy" decoding="async"/>
+
+- Click on “Share” to create the internal share.
+
+The shared members or groups are then shown under “Shared with”.
+
+<img src={require("./img/intern/shared-with-alan.png").default} alt="Show the shared overview" width="400" height="617" loading="lazy" decoding="async"/>
+
+## Remove an internal share
+
+An existing internal share can be removed at any time.
+
+- Open the three-dot menu next to the person or group in the “Shared with” section.
+
+- Select the “Remove share” option.
+
+<img src={require("./img/intern/remove-share.png").default} alt="Remove share" width="400" height="617" loading="lazy" decoding="async"/>
+
+The access is removed immediately. After that, the person or group can no longer access the file or folder through this share.

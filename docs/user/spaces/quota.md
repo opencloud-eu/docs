@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: space-quota
 title: Edit Space Quota
 description: Edit the quota of a Space
@@ -12,23 +12,18 @@ As a Space administrator, you can adjust the storage capacity (quota) of a Space
 
 ## Steps to edit the Space quota
 
-- Select the Edit quota option in the Top-Bar
+1. Open the three-dot menu for the Space and select “Edit quota”.
 
-  <img src={require("./img/quota/top-bar.png").default} alt="Top-Bar" width="1920"/>
+   <img src={require("./img/quota/context-menu.png").default} alt="Edit quota in the Space menu" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- or in the Context-Menu
+2. Open the “Quota” list and select a predefined storage limit, such as “5 GB”.
 
-  <img src={require("./img/quota/context-menu.png").default} alt="Context-Menu" width="400"/>
+   <img src={require("./img/quota/select.png").default} alt="Select a predefined Space quota" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Two options are available in the window that opens:
-- Select a default size (e.g. 5 GB) from the drop-down menu.
+3. To use a custom storage limit, enter the desired value in the “Quota” field.
 
-  <img src={require("./img/quota/select.png").default} alt="Select-quota" width="500"/>
+   <img src={require("./img/quota/enter.png").default} alt="Enter a custom Space quota" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-- Enter an individual storage size.
+4. Select “Confirm” to apply the change.
 
-  <img src={require("./img/quota/enter.png").default} alt="Enter-quota" width="500" style={{ display: "block", marginTop: "1rem", marginBottom: "1rem" }}/>
-
-- Click on Confirm to apply the change.
-
-The quota of the space is updated according to the new settings.
+The new quota is applied to the Space.

@@ -40,30 +40,30 @@ To maintain uniformity and ease of handling, each event encapsulates the same st
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return;
+      return
     }
 
-    const resources = event.data.data;
+    const resources = event.data.data
 
-    doSomethingWithSelectedResources(resources);
+    doSomethingWithSelectedResources(resources)
   }
 
   function shareLinksEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:share-links') {
-      return;
+      return
     }
 
-    const links = event.data.data; // Array<{ url: string, password?: string }>
+    const links = event.data.data // Array<{ url: string, password?: string }>
 
     links.forEach((link) => {
-      console.log('Shared link:', link.url, link.password);
-    });
+      console.log('Shared link:', link.url, link.password)
+    })
 
-    doSomethingWithSharedLinks(links);
+    doSomethingWithSharedLinks(links)
   }
 
-  window.addEventListener('message', selectEventHandler);
-  window.addEventListener('message', shareLinksEventHandler);
+  window.addEventListener('message', selectEventHandler)
+  window.addEventListener('message', shareLinksEventHandler)
 </script>
 ```
 
@@ -80,15 +80,15 @@ In special scenarios you also want the user to set a file name, this can be achi
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:select') {
-      return;
+      return
     }
 
-    const resources = event.data.data[0];
+    const resources = event.data.data[0]
 
-    doSomethingWithSelectedResources(resources);
+    doSomethingWithSelectedResources(resources)
   }
 
-  window.addEventListener('message', selectEventHandler);
+  window.addEventListener('message', selectEventHandler)
 </script>
 ```
 
@@ -110,15 +110,15 @@ combination of both. If the embed-file-types parameter is not provided, all file
 <script>
   function selectEventHandler(event) {
     if (event.data?.name !== 'opencloud-embed:file-pick') {
-      return;
+      return
     }
 
-    const file = event.data.data;
+    const file = event.data.data
 
-    doSomethingWithPickedFile(file);
+    doSomethingWithPickedFile(file)
   }
 
-  window.addEventListener('message', selectEventHandler);
+  window.addEventListener('message', selectEventHandler)
 </script>
 ```
 
@@ -129,6 +129,10 @@ If you already have a valid `access_token` that can be used to call the API from
 ### Configuration
 
 To allow authentication delegation, you need to set the config option `options.embed.delegateAuthentication` to `true`. This can be achieved via query parameter `embed-delegate-authentication=true`. Because we are using the `postMessage` method to communicate across different origins, it is best practice to verify that the event originated from a known origin and not from some malicious site. We highly recommend to allow this check in production environments. You can enable it by setting the config option `options.embed.delegateAuthenticationOrigin` via query parameter `embed-delegate-authentication-origin=my-origin`. The value of this parameter will be compared against the `MessageEvent.origin` value and if they do not match, the token will be rejected.
+
+:::note
+The token is only accepted from the direct parent window, so the page that embeds OpenCloud Web has to send it to the iframe itself (`iframe.contentWindow.postMessage`). Tokens sent from any other window, for example a popup opener or a frame further up, are ignored.
+:::
 
 ### Events
 

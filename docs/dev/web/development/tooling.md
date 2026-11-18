@@ -28,9 +28,9 @@ This setup currently doesn't work on Windows out of the box.
 
 <details>
   <summary>Workaround</summary>
-  
-  One of our contributors has opened a PR to a dependency that prevents us from successfully bundling the frontend.
-  Feel free to check out [their changes](https://github.com/egoist/rollup-plugin-postcss/pull/384) and build them locally if you absolutely want to work on Windows.
+
+One of our contributors has opened a PR to a dependency that prevents us from successfully bundling the frontend.
+Feel free to check out [their changes](https://github.com/egoist/rollup-plugin-postcss/pull/384) and build them locally if you absolutely want to work on Windows.
 </details>
 :::
 
@@ -40,7 +40,7 @@ After cloning the source code, install the dependencies via `pnpm install`.
 
 ### Starting the Server
 
-You can start the OpenCloud server by running `docker-compose up opencloud -d`. If you want to run the full stack, you can run `docker-compose up -d` instead. This will also start the wopi service and an instance of Collabora.
+You can start the OpenCloud server by running `docker compose up opencloud -d`. If you want to run the full stack, you can run `docker compose up -d` instead. This will also start the wopi service and an instance of Collabora.
 
 ### Building and Accessing Web
 

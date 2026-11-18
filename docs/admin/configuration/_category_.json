@@ -1,8 +1,4 @@
 {
   "label": "Configuration",
-  "position": 5,
-  "link": {
-    "type": "doc",
-    "id": "admin-configuration"
-  }
+  "position": 5
 }

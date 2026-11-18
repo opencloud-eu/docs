@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 title: Welcome
 description: Welcome
 draft: false
@@ -28,9 +28,13 @@ OpenCloud is a file sharing and collaboration platform developed by the [Heinlei
 You can access OpenCloud in different ways, depending on your workflow:
 
 - The [Web Client](./general/) provides full access to OpenCloud features directly in the browser, including file management, collaboration features, and administration options based on your permissions.
+
 - The [Desktop Client](./desktop-client/) synchronizes files between OpenCloud and your local computer for offline work and automatic updates.
+
 - The [iOS App](./ios-app/) provides convenient access to files and essential actions on iPhone and iPad.
+
 - The [Android App](./android-app/) provides convenient access to files and essential actions on Android devices.
+
 - [Collabora in OpenCloud](./collabora) provides browser-based document editing and real-time collaboration for supported office files stored in OpenCloud.
 
 Each client and integration is designed for a specific use case: the Web Client for full-featured browser access, the Desktop Client for local synchronization, the mobile apps for mobile access and everyday tasks, and Collabora Online for browser-based document editing and collaboration.
@@ -76,7 +80,7 @@ You can switch between the Rolling version and specific release versions using t
   Find guidance for creating, organizing, moving, deleting, and restoring files and folders.
 
 - [Share Files and Folders](./sharing/)  
-  Learn how to share content internally, create public links, and use File Drop.
+  Learn how to share content internally, create public links, and use Secret File Drop.
 
 - [Working in Teams with Spaces](./spaces/)  
   Understand how to use Spaces to organize shared work and collaborate with teams.
@@ -91,5 +95,5 @@ You can switch between the Rolling version and specific release versions using t
 
 ### Help
 
-- [Common Issues and Help](./common-issues)  
+- [Common Issues and Help](./common-issues/index.md)
   Find solutions for common problems and answers to frequently asked questions.

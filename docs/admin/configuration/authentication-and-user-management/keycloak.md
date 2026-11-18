@@ -8,7 +8,9 @@ draft: false
 
 # Keycloak Integration
 
-OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities. This guide explains how to set up and configure Keycloak with OpenCloud.
+OpenCloud supports using Keycloak as an external identity provider, providing enterprise-grade identity management capabilities.
+For issuer variables, WebFinger client discovery, and Docker Compose requirements, see the [generic external IDP documentation](./external-idp.md).
+
 This guide is divided into three main sections:
 
 - [Keycloak Integration Overview](#opencloud-configuration-for-keycloak-general): A brief overview of the integration process.
@@ -17,59 +19,102 @@ This guide is divided into three main sections:
 
 ## OpenCloud Configuration for Keycloak (General)
 
-When using Keycloak as the identity provider, you need to understand the general configuration settings if you want to configure your custom integration.
+When using Keycloak as the identity provider, keep the Keycloak-specific parts of the setup here:
+realm, clients, scopes, mappers, and logout behavior.
 
-You can also use one of our predefined Docker Compose setups, which are located in the `opencloud-compose` repository. These setups include all necessary configurations for Keycloak and OpenLDAP.
-
-### Server Configuration
-
-```env
-PROXY_AUTOPROVISION_ACCOUNTS=true|false # that depends on your setup
-PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
-OC_OIDC_ISSUER=https://your-domain.example.com/realms/openCloud
-WEB_OPTION_ACCOUNT_EDIT_LINK_HREF=https://your-domain.example.com/realms/openCloud/account
-PROXY_OIDC_REWRITE_WELLKNOWN=true
-PROXY_USER_OIDC_CLAIM=preferred_username|sub|uuid # this depends on your setup
-# admin and demo accounts must be created in Keycloak
-OC_ADMIN_USER_ID: ""
-SETTINGS_SETUP_DEFAULT_ASSIGNMENTS: "false"
-GRAPH_ASSIGN_DEFAULT_USER_ROLE: "false"
-GRAPH_USERNAME_MATCH=none
-OC_EXCLUDE_RUN_SERVICES=idp,idm # it is not supported to run keycloak with the built-in idm
-```
-
-Look [OpenCloud external IDP configuration](./external-idp#opencloud-configuration) for some more details about these settings.
+The OpenCloud issuer, WebFinger discovery, and Docker Compose external IDP setup
+are documented in the [generic external IDP guide](./external-idp.md).
 
 ### Client Configuration
 
-The [OIDC clients](./external-idp#client-configuration) required by OpenCloud are pre-configured in the Docker Compose setup and match the clients used by the built-in IdP.
+If you use the official `opencloud-compose` Docker Compose setup with Keycloak
+(see [Shared User Directory Mode](#shared-user-directory-mode) below), the
+required OIDC clients are already pre-configured in Keycloak through the
+`opencloud-realm.dist.json` import and match the client IDs and scopes
+OpenCloud expects by default. You only need to configure the clients manually
+if you are not using this Docker Compose setup or run a custom Keycloak
+deployment.
+
+Use the client IDs and scopes from the [generic external IDP guide](./external-idp.md)
+when creating the Keycloak clients.
 
 ### Manual Client Configuration
 
-If you need to manually configure the clients in Keycloak:
+Create one public OpenID Connect client in Keycloak for each OpenCloud client
+type that should connect to this deployment: Web, Android, iOS, and Desktop.
 
-1. Log in to the Keycloak admin console
-2. Select the OpenCloud realm
-3. Navigate to Clients and click Create
-4. Configure each client according to the specifications above
-5. Ensure all clients have the appropriate scopes:
-   - web-origins
-   - profile
-   - roles
-   - groups
-   - basic
-   - email
+The client IDs configured in Keycloak must match the client IDs configured in
+OpenCloud through WebFinger. OpenCloud already ships with the following
+defaults, so you only need to set the corresponding environment variables if
+you want to use different client IDs:
+
+```env
+WEBFINGER_WEB_OIDC_CLIENT_ID=web
+WEBFINGER_ANDROID_OIDC_CLIENT_ID=OpenCloudAndroid
+WEBFINGER_IOS_OIDC_CLIENT_ID=OpenCloudIOS
+WEBFINGER_DESKTOP_OIDC_CLIENT_ID=OpenCloudDesktop
+```
+
+Configure each client as a public OIDC client and enable the authorization code
+flow with PKCE. Do not configure a client secret.
+
+The scopes configured on the Keycloak clients must provide the claims required
+by OpenCloud. Make sure the access token or UserInfo response contains the user,
+email, profile, group, and role information required by your OpenCloud setup.
+The WebFinger OIDC scopes configured in OpenCloud must exist in Keycloak and be
+usable by the clients. These are already the OpenCloud defaults, so you only
+need to set the corresponding environment variables if you want to use
+different scopes:
+
+```env
+WEBFINGER_WEB_OIDC_CLIENT_SCOPES=openid profile email
+WEBFINGER_ANDROID_OIDC_CLIENT_SCOPES=openid profile email offline_access
+WEBFINGER_IOS_OIDC_CLIENT_SCOPES=openid profile email offline_access
+WEBFINGER_DESKTOP_OIDC_CLIENT_SCOPES=openid profile email offline_access
+```
+
+Configure the required redirect URIs for each client according to the OpenCloud
+client configuration used by your deployment.
+
+Keycloak client scopes and mappers must provide the claims required for user
+mapping, user provisioning if enabled, and role assignment when the `oidc`
+driver is used.
+
+For the generic OpenCloud external IDP requirements, including issuer
+variables, WebFinger client discovery, required claims, and Docker Compose
+setup, see [External OpenID Connect Identity Provider](./external-idp.md).
 
 ### Advanced Configuration
 
 #### Backchannel Logout
 
-OpenCloud supports Keycloak's backchannel logout feature, which allows Keycloak to notify OpenCloud when a user logs out. This ensures that all sessions are properly terminated:
+OpenCloud supports Keycloak's backchannel logout feature, which allows Keycloak to notify OpenCloud when a user logs out so OpenCloud can invalidate the corresponding cached authentication information.
+
+However, some Keycloak logout operations may not send backchannel notifications for every affected session, so complete session termination cannot always be guaranteed.
+
+Configure the following settings in Keycloak:
 
 - Backchannel Logout URL: `https://your-domain.example.com/backchannel_logout`
 - Backchannel Logout Session Required: `true`
 
 ## Shared User Directory Mode
+
+:::warning LDAP TLS certificate verification
+
+The LDAP configuration examples below use `OC_LDAP_INSECURE=true` to work
+with the self-signed certificates generated by the example Docker Compose
+deployment. This disables TLS certificate verification and should not be
+used in production.
+
+For production deployments, use `OC_LDAP_INSECURE=false` and a trusted
+LDAP server certificate. If using a private certificate authority, set
+`OC_LDAP_CACERT` to the path of its PEM certificate, accessible to the
+OpenCloud process.
+
+The example Docker Compose files explicitly configure
+`OC_LDAP_INSECURE=true`, so update those files when securing the deployment.
+
+:::
 
 ```mermaid
 graph TD
@@ -134,9 +179,9 @@ dc=example,dc=org              # Base DN
 
 :::tip
 
-It is possible to use a writable subtree of the LDAP server for custom groups. This is useful if you want to create groups in OpenCloud that are not managed by Keycloak.
+Custom group creation is optional. You can configure a dedicated writable LDAP subtree to create groups in OpenCloud that are not managed by Keycloak, while keeping the main LDAP directory read-only.
 
-This feature is optional and can be disabled by setting `GRAPH_LDAP_GROUP_CREATE_BASE_DN` to an empty string.
+If you do not need custom group creation, set `OC_LDAP_SERVER_WRITE_ENABLED=false` and either leave `GRAPH_LDAP_GROUP_CREATE_BASE_DN` empty or set it to the same value as `OC_LDAP_GROUP_BASE_DN`.
 
 :::
 
@@ -153,7 +198,9 @@ KEYCLOAK_REALM=openCloud
 OC_OIDC_ISSUER=https://${KEYCLOAK_DOMAIN:-keycloak.opencloud.test}/realms/${KEYCLOAK_REALM:-openCloud}
 WEB_OPTION_ACCOUNT_EDIT_LINK_HREF=https://${KEYCLOAK_DOMAIN:-keycloak.opencloud.test}/realms/${KEYCLOAK_REALM:-openCloud}/account
 PROXY_OIDC_REWRITE_WELLKNOWN=true
-PROXY_USER_OIDC_CLAIM=uuid # this claim needs to be configured in the keycloak realm to use the keycloak user id
+PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
+# The imported Keycloak realm maps LDAP entryUUID to the OIDC uuid claim.
+PROXY_USER_OIDC_CLAIM=uuid
 PROXY_USER_CS3_CLAIM=userid
 # admin and demo accounts must be created in Keycloak
 OC_ADMIN_USER_ID=""
@@ -191,22 +238,27 @@ For Shared Directory Mode:
 
 ```bash
 # Enable services
-COMPOSE_FILE=docker-compose.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:idm/ldap-keycloak.yml:traefik/opencloud.yml:traefik/ldap-keycloak.yml
 # Your public keycloak domain without protocol
 KEYCLOAK_DOMAIN=your-keycloak-domain.example.com
 # Admin user login name. Defaults to "kcadmin".
 KEYCLOAK_ADMIN=
-# Admin user login password. Defaults to "admin".
-KEYCLOAK_ADMIN_PASSWORD=
+# Choose a strong administrator password; the Compose default "admin" is insecure.
+KEYCLOAK_ADMIN_PASSWORD=replace-with-a-strong-password
 ```
 
 The Docker Compose file `idm/ldap-keycloak.yml` contains the complete configuration for each component.
 
-Keycloak is configured during startup by importing the `keycloak-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
+Keycloak is configured during startup by importing the `opencloud-realm.dist.json` file. This file contains the configuration for the OpenCloud realm, including client settings, roles, and user federation. This file is located in the `config/keycloak` directory of the `opencloud-compose` repository.
 
 :::warning
 
-Keycloak can import the realm configuration file only once during the first startup. If you need to change the configuration, you must delete the Keycloak container and volume and restart it. This will reset Keycloak to its initial state.
+Keycloak's startup import creates a realm only if it does not already exist.
+Editing `config/keycloak/opencloud-realm.dist.json` and restarting Keycloak
+will not update an existing realm. Use the Keycloak Admin Console or a
+supported import process to change an existing realm. Back up existing data
+before destructive operations; do not delete the database volume merely to
+update realm settings.
 
 :::
 
@@ -267,6 +319,8 @@ KEYCLOAK_REALM=openCloud
 OC_OIDC_ISSUER=https://${KEYCLOAK_DOMAIN:-keycloak.opencloud.test}/realms/${KEYCLOAK_REALM:-openCloud}
 WEB_OPTION_ACCOUNT_EDIT_LINK_HREF=https://${KEYCLOAK_DOMAIN:-keycloak.opencloud.test}/realms/${KEYCLOAK_REALM:-openCloud}/account
 PROXY_OIDC_REWRITE_WELLKNOWN=true
+PROXY_ROLE_ASSIGNMENT_DRIVER=oidc
+PROXY_AUTOPROVISION_ACCOUNTS=true
 PROXY_USER_OIDC_CLAIM=sub
 PROXY_AUTOPROVISION_CLAIM_USERNAME=sub
 PROXY_USER_CS3_CLAIM=username
@@ -285,7 +339,7 @@ OC_LDAP_INSECURE=true
 OC_LDAP_BIND_DN=cn=admin,dc=opencloud,dc=eu
 OC_LDAP_BIND_PASSWORD=admin-password
 OC_LDAP_USER_BASE_DN=ou=users,dc=opencloud,dc=eu
-OC_LDAP_DISABLE_USER_MECHANISM=none
+OC_LDAP_DISABLE_USER_MECHANISM=attribute
 OC_LDAP_GROUP_BASE_DN=ou=groups,dc=opencloud,dc=eu
 ```
 
@@ -300,18 +354,19 @@ For Autoprovisioning Mode:
 
 ```bash
 # Enable services
-COMPOSE_FILE=docker-compose.yml:idm/external-idp.yml:traefik/opencloud.yml
+COMPOSE_FILE=docker-compose.yml:yjs/yjs.yml:idm/external-idp.yml:traefik/opencloud.yml
 # Your public keycloak domain without protocol
 IDP_DOMAIN=your-idp-domain.example.com
 # The openCloud users need to be able to edit their account in the external IdP
 IDP_ACCOUNT_URL=https://your-idp-domain.example.com/realms/openCloud/account
 ```
 
-The Docker Compose file `idm/external-idp.yml` contains the complete configuration for each OpenCloud component. The file `10_opencloud_ldap_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container. In this mode, your IdP setup is not part of the OpenCloud Deployment.
+The Docker Compose file `idm/external-idp.yml` contains the complete configuration for each OpenCloud component. The file `config/ldap/schemas/10_opencloud_schema.ldif` contains the OpenCloud LDAP schema and is loaded during the startup of the OpenLdap container. In this mode, your IdP setup is not part of the OpenCloud Deployment.
 
 :::warning
 
-Your external IdP configuration must match the settings described in the [Client Configuration](#client-configuration) section above.
+Your external IdP configuration must match the client IDs and scopes described in the
+[generic external IDP guide](./external-idp.md).
 
 Your external IdP must provide the required claims for user provisioning and role assignment.
 

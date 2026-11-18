@@ -1,28 +1,25 @@
 ---
-sidebar_position: 4
+sidebar_position: 40
 id: view-modes
 title: View modes
-description: Change file list views in OpenCloud
+description: View modes for the file list in OpenCloud
 draft: false
 ---
 
-# Change file list views in OpenCloud
+# File list view modes in OpenCloud
 
-In OpenCloud you can choose between different view modes for your files and folders to customize the display according to your preferences
+In OpenCloud, you can switch between grid and list views to display your files and folders in the way that best suits your needs.
 
 ## Available view modes
 
-### Default table view
+### Grid view
 
-The classic List view, in which all files and folders are displayed in a detailed table.
-<img src={require("./img/view-modes/default.png").default} alt="Default" width="1920"/>
+Grid view displays files and folders as cards. Image and document previews make it useful for browsing content visually.
 
-### Condensed table view
+<img src={require("./img/view-modes/grid.png").default} alt="Grid view of the file list" width="1920" height="1080" loading="lazy" decoding="async"/>
 
-A more compact version of the table view, in which the data is summarized more closely to save space.
-<img src={require("./img/view-modes/condensed.png").default} alt="Condensed" width="1920"/>
+### List view
 
-### Tiles view
+List view displays files and folders in rows with details such as their status, size, tags, modification date, and available actions.
 
-A view in which files and folders are displayed as tiles. Ideal for visual representations and if you want to access icons quickly.
-<img src={require("./img/view-modes/tiles.png").default} alt="Tiles" width="1920"/>
+<img src={require("./img/view-modes/list.png").default} alt="List view of the file list" width="1920" height="1080" loading="lazy" decoding="async"/>

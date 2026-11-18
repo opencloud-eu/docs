@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 20
 id: space-roles
 title: Rollen für Spaces
 ---
 
-### Rollen für Spaces in OpenCloud
+# Rollen für Spaces in OpenCloud
 
 | Role            | anzeigen | herunterladen | hochladen | bearbeiten | erstellen | löschen | Mitglieder verwalten | deaktivieren / aktivieren Space | Quota bearbeiten | Space löschen |
 | :-------------- | :------: | :-----------: | :-------: | :--------: | :-------: | :-----: | :------------------: | :-----------------------------: | :--------------: | :-----------: |

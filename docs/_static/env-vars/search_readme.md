@@ -17,12 +17,16 @@ Consider using dedicated hardware for this service in case more resources are ne
 
 * [Search backends](#search-backends)
   * [Bleve](#bleve)
+    * [Memory](#memory)
   * [OpenSearch](#opensearch)
+  * [Bringing an existing index over](#bringing-an-existing-index-over)
 * [Query language](#query-language)
+  * [Quoting values](#quoting-values)
+* [Query template](#query-template)
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
   * [Tika](#tika)
-* [Manually Trigger Re-Indexing a Space](#manually-trigger-reindexing-a-space)
+* [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
 * [Metrics](#metrics)
 
 ## Search backends
@@ -43,6 +47,12 @@ The following optional settings can be set:
 
 *   `SEARCH_ENGINE_BLEVE_DATA_PATH=/path/to/bleve/index` (default: `$OC_BASE_DATA_PATH/search`): Path to store the bleve index.
 
+#### Memory
+
+Bleve stores the index in segments and merges smaller segments into larger ones in the background. A merge keeps the positions of each word across the whole new segment in memory, so it can briefly need much more memory than indexing or searching. How much depends on the size of the segments, and they grow with the index.
+
+This mostly matters with content extraction and many large text files, such as books or long documents. As a rough guide, keep about a tenth of the index size (the size of the bleve directory in the data path) free in addition to what OpenCloud otherwise uses, and expect that to grow along with the index. Merges run whenever bleve decides to, not only during a reindex. If the search service is killed for running out of memory while or after indexing, give it more memory.
+
 ### OpenSearch
 
 OpenSearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases.
@@ -55,7 +65,10 @@ To enable OpenSearch as a backend, the following settings must be set:
 
 Additionally, the following optional settings can be set:
 
-*   `SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME=val` (default: `opencloud-resource`): Name of the OpenSearch index
+*   `SEARCH_ENGINE_OPEN_SEARCH_RESOURCE_INDEX_NAME=val` (default:
+    `opencloud-resource`): base name of the OpenSearch index. The running
+    index is suffixed with the current schema version; a breaking schema
+    change targets a fresh index, the old one stays in place.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_USERNAME=val`: Username for HTTP Basic Authentication.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_PASSWORD=val`: Password for HTTP Basic Authentication.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_HEADER=val`: HTTP headers to include in requests.
@@ -70,6 +83,12 @@ Additionally, the following optional settings can be set:
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_METRICS=val`: Enable metrics collection.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_ENABLE_DEBUG_LOGGER=val`: Enable debug logging.
 *   `SEARCH_ENGINE_OPEN_SEARCH_CLIENT_INSECURE=val`: Skip TLS certificate verification.
+
+### Bringing an existing index over
+
+A version that changes how resources are indexed works on a new index and leaves the old one untouched.
+The new index starts empty and has to be filled, see [MIGRATION.md](https://github.com/opencloud-eu/opencloud/blob/main/services/search/MIGRATION.md). New installations are
+not affected.
 
 ## Query language
 
@@ -86,6 +105,48 @@ Not all parts are supported, the following list gives an overview of parts that 
 *   Date intervals
 
 In [this ADR](https://github.com/owncloud/ocis/blob/docs/ocis/adr/0020-file-search-query-language.md) you can read why KQL was chosen.
+
+### Quoting values
+
+Put a value in double quotes when it contains a space, a parenthesis or a double quote, or when it should not be read as an operator such as `AND`, `OR` or `NOT`: `name:"quarterly report"`, `tag:"draft (old)"`, `name:"rock AND roll"`.
+
+Inside the quotes only the double quote is special. Write it twice to search for one double quote, as the [KQL specification](https://learn.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-kql/56ed4d93-d021-430b-a367-972122d00111) defines it:
+
+```
+name:"*""draft""*"
+```
+
+finds `Offer "draft" v2.pdf`. Every other character stands for itself, the backslash and the slash included:
+
+| Character | In a quoted value | In an unquoted value |
+|---|---|---|
+| `"` | write it twice: `""` | not allowed, the query is rejected |
+| `\` | itself: `content:"C:\temp\new"` | itself: `name:back\slash.txt` |
+| `/` | itself: `tag:"a/b"` | itself: `mediatype:image/png` |
+| space, `(`, `)` | itself | can't be part of the value |
+| `*` | matches any number of characters | matches any number of characters |
+| `?` | matches exactly one character | matches exactly one character |
+
+A backslash does not escape anything. `name:"*\"draft\"*"` does not look for a quoted `draft`, it is `name:"*\"` followed by `draft\` and `"*"`.
+
+`*` and `?` are always wildcards, there is no way to search for a literal `*` or `?`.
+
+To build a query from user input, replace every `"` in the input with `""` and put the result in double quotes, for example `name:"*` + input + `*"`. Nothing else needs escaping.
+
+The quotes only decide what the value is. Whether a character takes part in the match depends on the field: `content` and the words of `name` and `title` are matched by their words, so `content:"""draft"""` finds the same documents as `content:"draft"`, while a wildcard on `name` or a tag compares the whole value including its quotes.
+
+## Query template
+
+`SEARCH_QUERY_TEMPLATE` is a KQL template every search runs through. Default:
+
+```
+({{.QUERY}}) AND (NOT path:"./.space" AND NOT id:{{.SPACE_ROOT_PERSONAL}})
+```
+
+*   `({{.QUERY}})` the user's search. Keep the parentheses.
+*   `{{.SPACE_ROOT_PERSONAL}}` / `{{.SPACE_ROOT_PROJECT}}` become the current space root, else a non-matching id.
+
+Empty turns it off. The service checks the template at startup.
 
 ## Content analysis / Extraction
 
@@ -106,7 +167,7 @@ It does not do any further content analysis.
 
 The main difference is that this extractor is able to analyze and extract data from more advanced file types like PDF, DOCX, PPTX, etc.
 However, [Apache Tika](https://tika.apache.org/) is required for this task.
-Read the [Getting Started with Apache Tika](https://tika.apache.org/2.6.0/gettingstarted.html) guide on how to install and run Tika or use a ready to run [Tika container](https://hub.docker.com/r/apache/tika).
+Read the [Getting Started with Apache Tika](https://tika.apache.org/) guide on how to install and run Tika or use a ready to run [Tika container](https://hub.docker.com/r/apache/tika).
 See the [Tika container usage document](https://github.com/apache/tika-docker#usage) for a quickstart.
 
 As soon as Tika is installed and configured, the search service needs to be told to use it.
@@ -134,12 +195,14 @@ It can also be used to re-index all spaces:
 opencloud search index --all-spaces
 ```
 
-Please note that a reindex only picks up new files. Files that have already been indexed are not indexed again, even if the configuration or the whole extractor has been changed. To force a full reindex you need to use the `force-reindex` flag:
+Please note that a reindex only picks up new or changed files. Files that have already been indexed are not scanned again, even if the configuration or the whole extractor has been changed. To force a full rescan (re-running the extractor on every file) you need to use the `force-rescan` flag:
 
 
 ```shell
-opencloud search index --all-spaces --force-reindex
+opencloud search index --all-spaces --force-rescan
 ```
+
+The command connects to the service's gRPC address (`SEARCH_GRPC_ADDR`) unless `--endpoint` is given, with the TLS mode set in `OC_GRPC_CLIENT_TLS_MODE`. With `on`, the server certificate is verified against that address, so if `SEARCH_GRPC_ADDR` is a bind address such as `0.0.0.0:9220`, pass `--endpoint` with a host name the certificate is valid for.
 
 ## Metrics
 
