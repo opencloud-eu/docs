@@ -73,6 +73,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="lts" label="LTS">
     | Version | Release Date | Release Notes & Download |
     |:--------|:-------------|:--------------|
+    | v4.0.10 | 2026 November 17 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.10) |
     | v4.0.9 | 2026 November 11 | [Details · Download](https://github.com/opencloud-eu/opencloud/releases/tag/v4.0.9) |
   </TabItem>
 </Tabs>
