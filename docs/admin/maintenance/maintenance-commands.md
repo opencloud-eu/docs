@@ -190,12 +190,12 @@ opencloud storage-users revisions cleanup --all --strategy "7d, auto, 90d" --dry
 ```plaintext
 25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 3 revisions (2.1 MiB)
   protected 2026-10-21T14:50:00+02:00   2.3 MiB  protected by "7d": newer than 2026-10-14T15:00:00+02:00
-  kept      2026-09-30T09:00:00+02:00   2.2 MiB  kept by "auto" (last 30 days): the newest in its slot of 1 day starting 2026-09-30T00:00:00Z
+  kept      2026-09-30T09:00:00+02:00   2.2 MiB  kept by "auto" (last 30 days): the oldest in its slot of 1 day starting 2026-09-30T00:00:00Z
   deleted   2026-04-02T08:00:00+02:00   2.1 MiB  deleted by "90d": older than 2026-07-23T15:00:00+02:00
 3 files in 1 space: would delete 1 revision (2.1 MiB) of 1 file, 0 skipped, 0 failed
 ```
 
-Each version is either `deleted`, `kept` (by the strategy) or `protected` (always kept, for example because it is among the newest ones). The reason names the part of the strategy that decided, and the time it compared the version with.
+Each version is either `deleted`, `kept` (by the strategy) or `protected` (always kept, for example because it is among the newest ones). The reason names the part of the strategy that decided, and the time it compared the version with. The time shown for each version is when it was created, which can differ from the date the version list in the web interface shows, see [How Old Is a Version?](../configuration/storage/revisions-cleanup.md#how-old-is-a-version).
 
 When the result looks right, run the same command without `--dry-run`. On a default installation, the command then stops with an error about the file metadata cache, see the next section.
 

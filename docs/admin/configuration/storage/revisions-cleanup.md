@@ -42,12 +42,14 @@ The cleanup skips a file while an upload to it is still being checked. It cleans
 
 When a user restores an earlier version, the content the file had until then becomes a version. The cleanup keeps this version for as long as the file has the restored content, whatever the strategy says. That way, the user can always undo the restore.
 
-This also applies to strategies with a duration. An example with `30d`:
+Usually, the strategy would keep this version anyway, as it is the newest one. But not always. An example with `auto`, which keeps only the oldest version of each time slot:
 
-1. A user edits a document every day in March, and doesn't touch it afterwards.
-2. On October 14, the user restores a version from March 3, by mistake. The content from March 31 becomes a version, dated March 31.
-3. With `30d`, the version from March 31 would be deleted right away, and with it the content the document had until a minute ago. Instead, it is kept.
-4. The user notices the mistake and restores the version from March 31 again.
+1. At 10:00:00, a user saves a document. The previous content becomes a version.
+2. At 10:00:05, the user restores an earlier version, by mistake. The content saved at 10:00:00 becomes a version.
+3. Both versions were created within the same slot of 10 seconds. `auto` would keep the one from 10:00:00 and delete the one from the restore, and with it the content the document had until a few seconds ago. Instead, it is kept.
+4. The user notices the mistake and restores that version again.
+
+The same goes for `0`, which deletes all versions, and for a duration: as long as the file has the restored content, `30d` doesn't delete the version from the restore, not even after 30 days.
 
 The protection ends as soon as the file is changed again: by an upload, by another restore, or with PosixFS, by a change in the file system. From then on, the version is treated like any other, and the next cleanup applies the strategy to it.
 
@@ -155,9 +157,9 @@ The spaces after the commas are optional: `5, 30d` and `5,30d` are the same.
 
 ### The Example File
 
-The examples below all use the same file, a report that was worked on over several months. Today is October 21 at 15:00, and the report has these 8 versions, besides its current content:
+The examples below all use the same file, a report that was worked on over several months. Today is October 21 at 15:00, and the report has these 8 versions, besides its current content. Each version was created when the report was saved, and holds the content it had until then:
 
-| Version | Saved on                                  |
+| Version | Created on                                |
 | ------- | ----------------------------------------- |
 | 1       | October 21, 14:50 (10 minutes ago)        |
 | 2       | October 21, 14:20                         |
@@ -169,6 +171,8 @@ The examples below all use the same file, a report that was worked on over sever
 | 8       | April 2, 08:00 (more than six months ago) |
 
 The current content of a file is never deleted by the cleanup, whatever the strategy. Only versions are.
+
+The cleanup goes by the time a version was created. The version list in the web interface shows another date for each version, the time its content was saved, see [How Old Is a Version?](#how-old-is-a-version).
 
 ### Keeping a Number of Versions: `10`
 
@@ -184,17 +188,17 @@ A single duration keeps the versions of that period and deletes the older ones.
 
 With `30d`, the period starts on September 21 at 15:00. Versions 1 to 6 are kept, versions 7 and 8 are deleted. With `14d`, the period starts on October 7, so versions 1 to 5 are kept and versions 6 to 8 are deleted.
 
-Read [How Old Is a Version?](#how-old-is-a-version) before you choose a strategy with only a duration: a file that wasn't changed for a long time can lose all its versions at once.
+A version is as old as the time since it was created, see [How Old Is a Version?](#how-old-is-a-version). With `30d`, the content a file had before a change is kept for 30 days after the change, however old that content was.
 
 ### Counting From Midnight: `1D`
 
 A duration in days or weeks counts back from the current time by default: `1d` means the last 24 hours. With an uppercase unit, `D` or `W`, it counts from midnight instead (in the time zone of the server): `1D` means "since yesterday at 00:00", `0D` means "since today at 00:00", and `1W` "since 00:00 seven days ago".
 
-For the report, `1d` keeps the versions since yesterday at 15:00, which are versions 1 to 4. `1D` keeps the versions since yesterday at 00:00, which are also versions 1 to 4. The difference shows for a version saved yesterday at 09:00: `1d` deletes it, as it is older than 24 hours, while `1D` keeps it, because it is from yesterday.
+For the report, `1d` keeps the versions since yesterday at 15:00, which are versions 1 to 4. `1D` keeps the versions since yesterday at 00:00, which are also versions 1 to 4. The difference shows for a version created yesterday at 09:00: `1d` deletes it, as it is older than 24 hours, while `1D` keeps it, because it is from yesterday.
 
 ### Thinning Out Versions: `auto`
 
-`auto` keeps fewer versions the older they get. It divides time into slots, and keeps the newest version of each slot:
+`auto` keeps fewer versions the older they get. It divides time into slots, and keeps the oldest version of each slot:
 
 | Age of the version | `auto` keeps                 |
 | ------------------ | ---------------------------- |
@@ -204,11 +208,13 @@ For the report, `1d` keeps the versions since yesterday at 15:00, which are vers
 | less than 30 days  | one version per day          |
 | older              | one version per week         |
 
-`auto` never deletes the only version of a slot. It deletes versions that were saved shortly after each other, of which it only needs one.
+`auto` never deletes the only version of a slot. It deletes versions that were created shortly after each other, of which it only needs one.
 
 For the report, `auto` keeps all 8 versions: each one is the only version in its slot. Version 2 and version 1 are only 30 minutes apart, but they are less than an hour old, so each of them has a slot of one minute.
 
-Here is an example where `auto` makes a difference. A user edits a presentation yesterday afternoon and saves it six times between 14:00 and 14:05. Today, these six versions are more than a day old, so they share one slot, the one for yesterday. `auto` keeps the newest of them, the one from 14:05, and deletes the other five. If the user had saved the presentation six times within the last few minutes, `auto` would still keep all six for now, and thin them out later as they get older.
+Here is an example where `auto` makes a difference. A user edits a presentation yesterday afternoon and saves it six times between 14:00 and 14:05. Each save makes the previous content a version, so there are six versions, created between 14:00 and 14:05. Today, they are more than a day old, so they share one slot, the one for yesterday. `auto` keeps the oldest of them, the one created at 14:00, which holds the presentation as it was before the user started editing it. It deletes the other five, which hold the intermediate states of those five minutes. The state from 14:05 is still there, as the current content or as a later version. If the user had saved the presentation six times within the last few minutes, `auto` would still keep all six for now, and thin them out later as they get older.
+
+Why the oldest of a slot, not the newest? The oldest version of a slot holds the content the file had when the slot began, which may have been there for a long time. Keeping the newest instead would delete that content as soon as a user saves the file twice within a few seconds.
 
 `auto` alone never deletes a version that is the only one of its week. Over the years, a file that changes every week keeps one version per week.
 
@@ -221,7 +227,7 @@ With two parts, the first part sets what is always kept, and the second part set
 
 Let's look at the report again. Today is October 21 at 15:00:
 
-| Version | Saved on                                  |
+| Version | Created on                                |
 | ------- | ----------------------------------------- |
 | 1       | October 21, 14:50 (10 minutes ago)        |
 | 2       | October 21, 14:20                         |
@@ -234,7 +240,7 @@ Let's look at the report again. Today is October 21 at 15:00:
 
 For the report, `5, 30d` keeps versions 1 to 6: versions 1 to 5 are the 5 newest, and version 6 is from the last 30 days. Versions 7 and 8 are deleted.
 
-`5, 30d` is a good choice for files that are rarely changed. Take a contract that was edited a few times in spring and then put aside. When someone changes it again in October, all its versions are months old. `30d` alone would delete all of them right away. `5, 30d` keeps the 5 newest, so the content from before the October change can still be restored.
+`5, 30d` is a good choice for files that are rarely changed. Take a contract that was edited a few times in spring and then put aside. When someone changes it again in October, the versions from spring are months old. `30d` alone would delete all of them, and keep only the version created by the October change. `5, 30d` keeps the 5 newest, so the contract can still be restored to how it was during the spring.
 
 One part must be a number and the other a duration. Two numbers or two durations, like `5, 10`, are rejected, as one of them would have no effect: `5, 10` is the same as `10`. The error message tells you which value to use instead.
 
@@ -281,20 +287,22 @@ Which strategy is right depends on how your users work and how much storage you 
 
 ## How Old Is a Version?
 
-The age of a version is the time its content was saved, which is also the date that the version list in the web interface shows for it. It is _not_ the time when the file was changed again and the content became a version.
+The age of a version is the time since it was created: when the file was changed, and its previous content became the version. OpenCloud records that time on the server when it creates the version.
 
-For files that are changed often, the two are close together. For files that are left alone for a long time, they are far apart. An example:
+It is _not_ the date that the version list in the web interface shows for the version. That date is when the content of the version was saved, as the app that saved it says, so it can be any date, also one in the future. For example, a desktop client that uploads a file keeps the modification time the file has on the user's computer.
+
+For files that are changed often, the two dates are close together. For files that are left alone for a long time, they are far apart. An example:
 
 1. On August 14, a user saves a document.
 2. Nobody touches the document for two months.
-3. On October 14, the user changes it. The content from August 14 becomes a version, and it is dated August 14.
-4. The cleanup runs right after the change. For the cleanup, the version is 61 days old.
+3. On October 14, the user changes it. The content from August 14 becomes a version. The version list shows it as August 14.
+4. The cleanup runs right after the change. For the cleanup, the version is a few seconds old.
 
-With a strategy that deletes by duration, like `30d`, `auto, 30d` or `7d, 30d`, this version is deleted right away. The content the document had until that morning is gone, although the user only changed it a minute ago.
+With `30d`, this version is kept until November 13, 30 days after the change. So the content a file had before a change can always be restored for the duration of the strategy, however old that content was.
 
-To avoid this, combine the duration with a number, for example `5, 30d`, which always keeps the 5 newest versions. `auto` also helps: it always keeps one version per week, also for old content.
+The cleanup also orders the versions by the time they were created, for example to find the 10 newest. A version whose content is dated in the future therefore doesn't count as the newest one, and can't push the actual newest versions out.
 
-Versions that PosixFS creates from changes made directly in the file system are an exception. Such a version is not dated with the modification time its content had. Instead, it is dated when OpenCloud took over that content: when it was uploaded, or when OpenCloud noticed the earlier change in the file system. Usually, these are the same time. They differ when content was uploaded with an older modification time, for example a file that was copied with its original dates. The version is then younger than its content, and a strategy with a duration keeps it longer.
+Versions created before OpenCloud recorded the time of their creation, that is, with an earlier version of OpenCloud, get an estimate instead: the time they were replaced, as far as OpenCloud can tell it from the dates of the newer versions and of the file. The estimate is never later than the current time.
 
 ## Trying Out a Strategy
 
