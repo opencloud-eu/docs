@@ -218,6 +218,9 @@ server {
     proxy_buffering off;
     proxy_request_buffering off;
 
+    # improves upload speed via TUS protocol
+    http2_body_preread_size 512k;
+
     # Extend timeouts for long connections
     proxy_read_timeout 3600s;
     proxy_send_timeout 3600s;
