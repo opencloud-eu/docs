@@ -1,6 +1,4 @@
 
-2026-11-17-00-06-49
-
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |

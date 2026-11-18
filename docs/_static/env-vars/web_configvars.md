@@ -1,11 +1,9 @@
 
-2026-11-17-00-06-48
-
 ## Deprecation Notice
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-| WEB_OPTION_RUNNING_ON_EOS is deprecated and will be removed in a future release. | 6.2.0 | next-prod |  |
+| WEB_OPTION_RUNNING_ON_EOS is deprecated and will be removed in a future release. | 6.2.0 | 9.1.1 |  |
 
 ## Environment variables for the **web** service
 
