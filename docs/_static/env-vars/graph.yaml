@@ -57,6 +57,7 @@ api:
   graph_assign_default_user_role: true
   graph_identity_search_min_length: 3
   show_email_in_results: false
+  disable_new_user_shares: false
   export_personal_data_rate_limit: 5
 reva:
   address: eu.opencloud.api.gateway
@@ -160,6 +161,8 @@ keycloak:
 service_account:
   service_account_id: ""
   service_account_secret: ""
+validation:
+  max_tag_length: 100
 machine_auth_api_key: ""
 metadata_config:
   gateway_addr: eu.opencloud.api.storage-system

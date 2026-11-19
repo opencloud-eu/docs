@@ -13,6 +13,7 @@ The `sharing` service provides the CS3 Sharing API for OpenCloud. It manages use
 * [Share Types](#share-types)
 * [Configuration](#configuration)
   * [Auto-Accept Shares](#auto-accept-shares)
+  * [Disable Creating New Shares](#disable-creating-new-shares)
 * [Scalability](#scalability)
 
 ## Overview
@@ -54,6 +55,15 @@ When setting the `SHARING_AUTO_ACCEPT_SHARES` to `true` (sharing service), all
 incoming shares will be accepted automatically. Users can overwrite this
 setting individually in their profile. The deprecated
 `FRONTEND_AUTO_ACCEPT_SHARES` is still supported for backwards compatibility.
+
+### Disable Creating New Shares
+
+Two global switches stop users from creating new shares. Everything that already exists keeps working: existing shares and links can still be used, changed and deleted.
+
+- `OC_DISABLE_NEW_USER_SHARES=true` rejects new user, group and federated shares. Adding members to a space is still possible. The OCS sharee search returns no results and the capabilities announce that user sharing is disabled.
+- `OC_DISABLE_NEW_PUBLIC_LINKS=true` rejects new public links and turning an internal link into a public link. Internal links can still be created. The capabilities announce that public links are disabled, so the web UI hides the link section.
+
+Both are read by the `frontend`, `graph`, `sharing` and (for federated shares) `ocm` services. When the services run separately, set them for all of them.
 
 ## Scalability
 

@@ -80,3 +80,5 @@ password_policy:
   min_digits: 1
   min_special_characters: 1
   banned_passwords_list: ""
+disable_new_user_shares: false
+disable_new_public_links: false

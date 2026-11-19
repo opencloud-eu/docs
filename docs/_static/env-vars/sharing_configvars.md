@@ -63,3 +63,5 @@
 |`OC_PASSWORD_POLICY_MIN_DIGITS`<br/>`SHARING_PASSWORD_POLICY_MIN_DIGITS`| 1.0.0 |int|`Define the minimum number of digits. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`<br/>`SHARING_PASSWORD_POLICY_MIN_SPECIAL_CHARACTERS`| 1.0.0 |int|`Define the minimum number of characters from the special characters list to be present. Defaults to 1 if not set.`|`"1"`|
 |`OC_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`<br/>`SHARING_PASSWORD_POLICY_BANNED_PASSWORDS_LIST`| 1.0.0 |string|`Path to the 'banned passwords list' file. This only impacts public link password validation. See the documentation for more details.`|`""`|
+|`OC_DISABLE_NEW_USER_SHARES`| next |bool|`Reject the creation of new user and group shares. Existing shares keep working. Adding members to spaces is not affected.`|`"false"`|
+|`OC_DISABLE_NEW_PUBLIC_LINKS`| next |bool|`Reject the creation of new public links and turning internal links into public links. Internal links and existing public links keep working.`|`"false"`|
