@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.63.0](https://github.com/opencloud-eu/docs/releases/tag/3.63.0) - 2026-11-19
+
+### ❤️ Thanks to all contributors! ❤️
+
+@openclouders, @schweigisito
+
+### 👷 Admin Documentation
+
+- enhance: add nginx config settig to improve upload performance [[#1396](https://github.com/opencloud-eu/docs/pull/1396)]
+
+### 📦️ Build&Tools
+
+- Update docs [[#1399](https://github.com/opencloud-eu/docs/pull/1399)]
+
 ## [3.62.0](https://github.com/opencloud-eu/docs/releases/tag/3.62.0) - 2026-11-18
 
 ### ❤️ Thanks to all contributors! ❤️
