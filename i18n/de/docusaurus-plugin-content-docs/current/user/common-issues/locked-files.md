@@ -2,7 +2,7 @@
 sidebar_position: 80
 id: locked-files
 title: Gesperrte Dateien
-description: Wann Dateien in OpenCloud gesperrt sein können und wie sich das für Benutzer auswirkt.
+description: Wann Dateien in OpenCloud gesperrt sein können, wann sie wieder freigegeben werden und wie sich das für Benutzer auswirkt.
 ---
 
 # Gesperrte Dateien
@@ -18,9 +18,7 @@ Eine Datei kann gesperrt sein, wenn:
 - sie gerade in einer integrierten Office-Anwendung geöffnet oder bearbeitet wird
 - mehrere Benutzer gemeinsam an derselben Office-Datei arbeiten
 - eine Office-Bearbeitungssitzung noch nicht sauber beendet wurde
-- ein Upload noch verarbeitet wird
-- ein Virenscan noch läuft
-- ein Verarbeitungsschritt nach dem Upload noch nicht abgeschlossen ist
+- ein Upload noch verarbeitet wird, zum Beispiel durch einen Virenscan
 
 ## Office-Bearbeitung
 
@@ -41,16 +39,29 @@ Bei gemeinsamer Office-Bearbeitung können mehrere Benutzer gleichzeitig in ders
 
 ## Verarbeitung nach dem Upload
 
-Eine Datei kann auch nach einem Upload gesperrt sein, während OpenCloud sie verarbeitet.
+Je nach Serverkonfiguration verarbeitet OpenCloud eine Datei nach dem Upload, bevor sie verfügbar ist. Solange diese Verarbeitung läuft, kann die Datei weder geöffnet noch heruntergeladen werden.
 
-Zu diesen Verarbeitungsschritten können gehören:
+Zu den Verarbeitungsschritten können gehören:
 
-- Virenscan
-- Metadatenverarbeitung
-- Vorschauerstellung
-- Aktualisierung des Suchindex
+- ein Virenscan
+- Prüfungen anhand von Richtlinien, die der Administrator festgelegt hat
 
-Solange diese Verarbeitung nicht abgeschlossen ist, kann die Datei für Benutzer gesperrt oder nur eingeschränkt verfügbar sein.
+## Wann wird eine Datei wieder freigegeben?
+
+Wann eine Sperre aufgehoben wird, hängt von ihrer Ursache ab.
+
+### Office-Bearbeitung
+
+- Die Sperre wird aufgehoben, wenn der letzte Benutzer das Dokument oder den Browser-Tab schließt.
+- Solange das Dokument geöffnet ist, erneuert die Office-Anwendung die Sperre regelmäßig. Die Sperre bleibt daher aktiv, solange jemand an dem Dokument arbeitet.
+- Wenn die Bearbeitungssitzung nicht sauber beendet wird, zum Beispiel weil der Browser abgestürzt ist oder die Netzwerkverbindung unterbrochen wurde, läuft die Sperre spätestens nach 30 Minuten automatisch ab.
+
+### Verarbeitung nach dem Upload
+
+- Die Datei wird freigegeben, sobald alle Verarbeitungsschritte abgeschlossen sind. Das dauert in der Regel nur wenige Sekunden.
+- Es gibt keine feste Zeitgrenze. Wenn ein Verarbeitungsschritt fehlschlägt, wiederholt OpenCloud ihn automatisch nach einer zunehmenden Wartezeit.
+- Schlägt der Schritt auch nach der maximalen Anzahl an Versuchen fehl, wird die Verarbeitung abgebrochen. In diesem Fall bleibt die Datei nicht verfügbar, bis ein Administrator die Verarbeitung fortsetzt.
+- Findet der Virenscan Schadsoftware, wird die Datei je nach Serverkonfiguration gelöscht oder bleibt gesperrt.
 
 ## Wie wirkt sich eine Sperre aus?
 
@@ -69,12 +80,14 @@ Mögliche Auswirkungen sind:
 
 In vielen Fällen ist eine Sperre nur vorübergehend. Benutzer können:
 
-1. einige Minuten warten
+1. warten, bis die Verarbeitung eines Uploads abgeschlossen ist
 2. die Dateiliste neu laden
 3. prüfen, ob die Datei noch in einem anderen Browser-Tab geöffnet ist
 4. prüfen, ob die Datei auf einem anderen Gerät geöffnet ist
 5. prüfen, ob ein Sync-Client die Datei gerade hochlädt oder synchronisiert
 6. die Office-Datei schließen und erneut öffnen
+
+Office-Dateien werden spätestens nach 30 Minuten automatisch freigegeben, auch wenn eine Bearbeitungssitzung nicht sauber beendet wurde.
 
 Wenn die Datei dauerhaft gesperrt bleibt, sollte ein Administrator die Ursache prüfen.
 
@@ -82,9 +95,15 @@ Wenn die Datei dauerhaft gesperrt bleibt, sollte ein Administrator die Ursache p
 
 Ein Administrator sollte prüfen, wenn:
 
-- die Datei über längere Zeit gesperrt bleibt
+- eine Office-Datei mehr als 30 Minuten, nachdem alle Benutzer sie geschlossen haben, noch gesperrt ist
+- eine hochgeladene Datei im Verarbeitungsstatus bleibt
 - mehrere Dateien betroffen sind
-- Dateien nach dem Upload nicht freigegeben werden
-- Office-Dateien nach dem Schließen weiterhin gesperrt bleiben
 - Benutzer trotz Bearbeitungsrechten nicht speichern können
 - die Datei für alle Benutzer blockiert ist
+
+Wenn die Verarbeitung von Uploads fehlgeschlagen ist, kann ein Administrator die Upload-Sitzungen mit den folgenden Befehlen auflisten und fehlgeschlagene Uploads fortsetzen:
+
+```bash
+opencloud storage-users uploads sessions
+opencloud storage-users uploads sessions --resume
+```

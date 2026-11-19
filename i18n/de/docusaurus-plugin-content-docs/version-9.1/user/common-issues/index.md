@@ -15,4 +15,5 @@ Auf dieser Seite finden Sie Hilfestellungen zu häufigen Problemen im User-Berei
 
 - [Symlinks werden nicht synchronisiert](./desktop-client-symlinks.md)
 - [Microsoft-Office-Sperrdateien werden nicht synchronisiert](./desktop-client-office-lock-files.md)
+- [Gesperrte Dateien](./locked-files.md)
 - [Desktop-Client-Einrichtung wiederholt sich und Arbeitsspeichernutzung steigt](./desktop-client-setup-loop.md)
