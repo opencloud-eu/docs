@@ -19,6 +19,7 @@ A file can be locked when:
 - several users are working on the same Office file at the same time
 - an Office editing session has not ended cleanly yet
 - an upload is still being processed, for example by a virus scan
+- a WebDAV client has locked it, for example a desktop Office application that opens files via WebDAV or the macOS Finder
 
 ## Office editing
 
@@ -36,6 +37,10 @@ This typically applies to files such as:
 While the file is being edited, the lock protects it from conflicting writes. This helps prevent changes from being overwritten by other write operations.
 
 When several users edit the same Office file together, the file can still be technically locked. In that case, the lock does not block collaboration inside the Office app. It only prevents external write access while the session is active.
+
+## WebDAV clients
+
+Applications that access OpenCloud via WebDAV can lock files as well. Examples are desktop Office applications that open files via WebDAV or the macOS Finder. While such a lock is active, other users and applications cannot change the file.
 
 ## Processing after upload
 
@@ -60,8 +65,15 @@ When a lock is released depends on its cause.
 
 - The file is unlocked as soon as all processing steps have finished. This usually takes only a few seconds.
 - There is no fixed time limit. If a processing step fails, OpenCloud repeats it automatically after an increasing waiting time.
-- If the step still fails after the maximum number of attempts, processing is aborted. In this case, the file stays unavailable until an administrator resumes the processing.
-- If the virus scan detects malware, the file is deleted or stays blocked, depending on the server configuration.
+- If the step still fails after the maximum number of attempts, processing is aborted and the upload is reverted. A new file disappears from the folder again. If an existing file was overwritten, it returns to its previous version. Users therefore do not see a locked file, but the upload is missing or their changes are not saved.
+- If the virus scan detects malware, the result depends on the server configuration:
+  - The file is deleted. This is the default.
+  - The file is kept for inspection by an administrator, but it is not added to the folder.
+  - The file is marked as infected but is available as usual.
+
+### WebDAV clients
+
+The lock is released when the WebDAV client closes the file and removes the lock, or when the lock time set by the client expires.
 
 ## What does a lock look like?
 
@@ -84,6 +96,7 @@ In many cases the lock is temporary. Users can:
 4. check whether the file is open on another device
 5. check whether a sync client is currently uploading or synchronizing the file
 6. close the Office file and open it again
+7. upload the file again if an upload is missing or changes were not saved after the upload
 
 Office files are unlocked automatically after 30 minutes at the latest, even if an editing session was not closed cleanly.
 
@@ -95,13 +108,27 @@ An administrator should check when:
 
 - an Office file is still locked more than 30 minutes after all users have closed it
 - an uploaded file stays in the processing state
+- uploads disappear again or changes are reverted after the upload
 - several files are affected
 - users cannot save even though they have editing rights
 - the file is blocked for all users
 
-If the processing of uploads has failed, an administrator can list the upload sessions and resume failed uploads with the following commands:
+If the processing of an upload has failed, an administrator can list the upload sessions and restart a failed upload. First list the upload sessions and identify the ID of the failed upload:
 
 ```bash
 opencloud storage-users uploads sessions
-opencloud storage-users uploads sessions --resume
 ```
+
+Then restart this upload:
+
+```bash
+opencloud storage-users uploads sessions --id <upload-id> --restart
+```
+
+Replace `<upload-id>` with the ID of the failed upload.
+
+:::caution
+Do not run the command with `--restart` without a filter such as `--id`. Otherwise, the command affects all upload sessions, including uploads that are still being processed.
+
+The `--resume` option does not help with failed uploads. After the maximum number of attempts, an upload is marked as finished, and `--resume` skips finished uploads.
+:::

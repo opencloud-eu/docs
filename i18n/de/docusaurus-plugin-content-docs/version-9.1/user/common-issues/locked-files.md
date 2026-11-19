@@ -19,6 +19,7 @@ Eine Datei kann gesperrt sein, wenn:
 - mehrere Benutzer gemeinsam an derselben Office-Datei arbeiten
 - eine Office-Bearbeitungssitzung noch nicht sauber beendet wurde
 - ein Upload noch verarbeitet wird, zum Beispiel durch einen Virenscan
+- ein WebDAV-Client sie gesperrt hat, zum Beispiel eine Desktop-Office-Anwendung, die Dateien über WebDAV öffnet, oder der macOS Finder
 
 ## Office-Bearbeitung
 
@@ -36,6 +37,10 @@ Das betrifft typischerweise Dateien wie:
 Während der Bearbeitung schützt die Sperre die Datei vor konkurrierenden Schreibzugriffen. Dadurch wird verhindert, dass Änderungen durch andere Schreibvorgänge überschrieben werden.
 
 Bei gemeinsamer Office-Bearbeitung können mehrere Benutzer gleichzeitig in derselben Datei arbeiten. Auch in diesem Fall kann die Datei technisch gesperrt sein. Die Sperre verhindert dabei nicht die gemeinsame Bearbeitung innerhalb der Office-Anwendung, sondern schützt die Datei vor Schreibzugriffen außerhalb dieser Sitzung.
+
+## WebDAV-Clients
+
+Auch Anwendungen, die über WebDAV auf OpenCloud zugreifen, können Dateien sperren. Beispiele sind Desktop-Office-Anwendungen, die Dateien über WebDAV öffnen, oder der macOS Finder. Solange eine solche Sperre aktiv ist, können andere Benutzer und Anwendungen die Datei nicht ändern.
 
 ## Verarbeitung nach dem Upload
 
@@ -60,8 +65,15 @@ Wann eine Sperre aufgehoben wird, hängt von ihrer Ursache ab.
 
 - Die Datei wird freigegeben, sobald alle Verarbeitungsschritte abgeschlossen sind. Das dauert in der Regel nur wenige Sekunden.
 - Es gibt keine feste Zeitgrenze. Wenn ein Verarbeitungsschritt fehlschlägt, wiederholt OpenCloud ihn automatisch nach einer zunehmenden Wartezeit.
-- Schlägt der Schritt auch nach der maximalen Anzahl an Versuchen fehl, wird die Verarbeitung abgebrochen. In diesem Fall bleibt die Datei nicht verfügbar, bis ein Administrator die Verarbeitung fortsetzt.
-- Findet der Virenscan Schadsoftware, wird die Datei je nach Serverkonfiguration gelöscht oder bleibt gesperrt.
+- Schlägt der Schritt auch nach der maximalen Anzahl an Versuchen fehl, wird die Verarbeitung abgebrochen und der Upload rückgängig gemacht. Eine neue Datei verschwindet wieder aus dem Ordner. Wurde eine vorhandene Datei überschrieben, kehrt sie zu ihrer vorherigen Version zurück. Benutzer sehen also keine gesperrte Datei, sondern der Upload fehlt oder ihre Änderungen wurden nicht gespeichert.
+- Findet der Virenscan Schadsoftware, hängt das Ergebnis von der Serverkonfiguration ab:
+  - Die Datei wird gelöscht. Das ist die Standardeinstellung.
+  - Die Datei wird für eine Prüfung durch den Administrator aufbewahrt, aber nicht in den Ordner übernommen.
+  - Die Datei wird als infiziert markiert, ist aber wie gewohnt verfügbar.
+
+### WebDAV-Clients
+
+Die Sperre wird aufgehoben, wenn der WebDAV-Client die Datei schließt und die Sperre entfernt oder wenn die vom Client festgelegte Sperrzeit abläuft.
 
 ## Wie wirkt sich eine Sperre aus?
 
@@ -86,6 +98,7 @@ In vielen Fällen ist eine Sperre nur vorübergehend. Benutzer können:
 4. prüfen, ob die Datei auf einem anderen Gerät geöffnet ist
 5. prüfen, ob ein Sync-Client die Datei gerade hochlädt oder synchronisiert
 6. die Office-Datei schließen und erneut öffnen
+7. die Datei erneut hochladen, wenn ein Upload fehlt oder Änderungen nach dem Upload nicht gespeichert wurden
 
 Office-Dateien werden spätestens nach 30 Minuten automatisch freigegeben, auch wenn eine Bearbeitungssitzung nicht sauber beendet wurde.
 
@@ -97,13 +110,27 @@ Ein Administrator sollte prüfen, wenn:
 
 - eine Office-Datei mehr als 30 Minuten, nachdem alle Benutzer sie geschlossen haben, noch gesperrt ist
 - eine hochgeladene Datei im Verarbeitungsstatus bleibt
+- Uploads wieder verschwinden oder Änderungen nach dem Upload zurückgesetzt werden
 - mehrere Dateien betroffen sind
 - Benutzer trotz Bearbeitungsrechten nicht speichern können
 - die Datei für alle Benutzer blockiert ist
 
-Wenn die Verarbeitung von Uploads fehlgeschlagen ist, kann ein Administrator die Upload-Sitzungen mit den folgenden Befehlen auflisten und fehlgeschlagene Uploads fortsetzen:
+Wenn die Verarbeitung eines Uploads fehlgeschlagen ist, kann ein Administrator die Upload-Sitzungen auflisten und einen fehlgeschlagenen Upload neu starten. Listen Sie zuerst die Upload-Sitzungen auf und ermitteln Sie die ID des fehlgeschlagenen Uploads:
 
 ```bash
 opencloud storage-users uploads sessions
-opencloud storage-users uploads sessions --resume
 ```
+
+Starten Sie diesen Upload anschließend neu:
+
+```bash
+opencloud storage-users uploads sessions --id <upload-id> --restart
+```
+
+Ersetzen Sie `<upload-id>` durch die ID des fehlgeschlagenen Uploads.
+
+:::caution
+Führen Sie den Befehl mit `--restart` nicht ohne einen Filter wie `--id` aus. Andernfalls betrifft der Befehl alle Upload-Sitzungen, auch Uploads, die gerade noch verarbeitet werden.
+
+Die Option `--resume` hilft bei fehlgeschlagenen Uploads nicht. Nach der maximalen Anzahl an Versuchen gilt ein Upload als abgeschlossen, und `--resume` überspringt abgeschlossene Uploads.
+:::
