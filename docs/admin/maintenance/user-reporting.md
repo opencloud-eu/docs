@@ -9,8 +9,11 @@ draft: false
 # User Reporting
 
 `opencloud report` counts the users of a running instance and groups them by their assigned role. It
-answers the two questions that come up for licence and usage reporting: how many accounts exist per
-role, and how many of those accounts were actually used recently.
+answers the question that comes up for licence and usage reporting: how many accounts exist, and how
+they are distributed across roles.
+
+It can additionally report how many of those accounts were used recently, but only on a deployment
+that records sign-ins. That part is opt-in, see [Reporting sign-ins](#reporting-sign-ins).
 
 The numbers are read from the Libre Graph API as the configured service account. The command only
 reads, but the instance has to be running while the report is generated.
@@ -39,27 +42,18 @@ opencloud report
 ## What the report shows
 
 ```text
-Sign-in window: last 31 days (since 2026-10-17T09:18:01Z)
+Users in total: 10026
 
-Users in total:                    10026
-Signed in within the last 31 days: N/A
-Users with a recorded sign-in:     0
-
-┌────────────────────┬───────┬───────────────────────────────────┐
-│        Role        │ Users │ Signed in within the last 31 days │
-├────────────────────┼───────┼───────────────────────────────────┤
-│ (no role assigned) │  9919 │                               N/A │
-│ User               │   103 │                               N/A │
-│ Admin              │     2 │                               N/A │
-│ Space Admin        │     1 │                               N/A │
-│ User Light         │     1 │                               N/A │
-└────────────────────┴───────┴───────────────────────────────────┘
+┌────────────────────┬───────┐
+│        Role        │ Users │
+├────────────────────┼───────┤
+│ (no role assigned) │  9919 │
+│ User               │   103 │
+│ Admin              │     2 │
+│ Space Admin        │     1 │
+│ User Light         │     1 │
+└────────────────────┴───────┘
 ```
-
-The three summary lines are the headcount, how many of those users signed in inside the window, and
-how many have a recorded sign-in at all regardless of the window. The last line tells you whether the
-sign-in data is usable at all, see
-[Sign-in counts and the LDAP integration](#sign-in-counts-and-the-ldap-integration).
 
 Users without any role assignment are reported in their own `(no role assigned)` bucket rather than
 dropped, so the role table accounts for every user. A role that OpenCloud cannot resolve to a display
@@ -78,43 +72,19 @@ headcount and the role rows for the distribution.
 
 ## Options
 
-| Flag                         | Default | What it does                                                    |
-| ---------------------------- | ------- | --------------------------------------------------------------- |
-| `-d`, `--days <n>`           | `31`    | Width of the sign-in window in days. Must be at least 1.        |
-| `-o`, `--output <format>`    | `table` | One of `table`, `json`, `csv`, `yaml`.                          |
-| `--skip-sign-in`             | off     | Leave the sign-in window out and only count the users per role. |
-| `-t`, `--timeout <duration>` | `5m`    | Time budget for the whole run, e.g. `10m`. Must be positive.    |
-| `--insecure`                 | off     | Do not verify the TLS certificate of the graph service.         |
+| Flag                         | Default | What it does                                                     |
+| ---------------------------- | ------- | ---------------------------------------------------------------- |
+| `--with-sign-in`             | off     | Also report how many users per role signed in recently.          |
+| `-d`, `--days <n>`           | `31`    | Width of the sign-in window in days. Only with `--with-sign-in`. |
+| `-o`, `--output <format>`    | `table` | One of `table`, `json`, `csv`, `yaml`.                           |
+| `-t`, `--timeout <duration>` | `5m`    | Time budget for the whole run, e.g. `10m`. Must be positive.     |
+| `--insecure`                 | off     | Do not verify the TLS certificate of the graph service.          |
 
-`--skip-sign-in` and `--days` cannot be combined. The window has no effect when the sign-ins are not
-reported, so the command rejects the combination instead of ignoring the flag:
-
-```text
---skip-sign-in and --days cannot be combined, --skip-sign-in reports no sign-ins at all
-```
-
-### Counting users only
-
-`--skip-sign-in` is the right choice when the sign-in counts are not available anyway, which is the
-case on a read-only directory. It drops every sign-in field from the output rather than reporting it
-as `N/A` or `null`, because nothing was read:
-
-```bash
-docker compose exec opencloud opencloud report --skip-sign-in
-```
+`--days` on its own is rejected rather than ignored, because it has no effect without the sign-in
+window:
 
 ```text
-Users in total: 10026
-
-┌────────────────────┬───────┐
-│        Role        │ Users │
-├────────────────────┼───────┤
-│ (no role assigned) │  9919 │
-│ User               │   103 │
-│ Admin              │     2 │
-│ Space Admin        │     1 │
-│ User Light         │     1 │
-└────────────────────┴───────┘
+--days only applies together with --with-sign-in
 ```
 
 ### Instances with many users
@@ -144,133 +114,111 @@ trusts, the report works without the flag.
 
 ## Machine readable output
 
-`json` and `yaml` carry the same fields as the table. `csv` repeats the report totals on every row, so
+`json` and `yaml` carry the same fields as the table. `csv` repeats the report total on every row, so
 a single flat table holds the summary as well:
 
 ```json
 {
-  "generatedAt": "2026-11-17T09:32:05.592286966Z",
-  "days": 31,
-  "activeSince": "2026-10-17T09:32:05.592286966Z",
+  "generatedAt": "2026-11-19T11:56:23.290875967Z",
   "totalUsers": 6,
-  "activeUsers": 3,
-  "usersWithSignInData": 3,
   "roles": [
-    { "role": "User", "users": 3, "signedIn": 1 },
-    { "role": "Admin", "users": 2, "signedIn": 1 }
+    { "role": "User", "users": 3 },
+    { "role": "Admin", "users": 2 }
   ]
 }
 ```
 
 ```text
-days,activeSince,totalUsers,activeUsers,usersWithSignInData,role,users,signedIn
-31,2026-10-17T09:32:10Z,6,3,3,User,3,1
-31,2026-10-17T09:32:10Z,6,3,3,Admin,2,1
+totalUsers,role,users
+6,User,3
+6,Admin,2
 ```
 
-With `--skip-sign-in` the sign-in fields are absent instead of empty, and `csv` reduces to
-`totalUsers,role,users`.
+The sign-in fields are absent entirely unless `--with-sign-in` is given, rather than present and
+empty, because nothing was read.
 
-## Sign-in counts and the LDAP integration
+## Reporting sign-ins
 
-Whether the sign-in columns hold numbers or `N/A` depends entirely on whether OpenCloud may write to
-the LDAP directory. OpenCloud keeps no database of its own for this: the timestamp of the last
-successful sign-in is stored as an attribute on the user entry in the directory.
+`--with-sign-in` adds, per role, how many of its users signed in successfully within the last
+`--days` days:
 
-### How a sign-in is recorded
-
-```mermaid
-graph LR
-    User["User signs in<br>via OIDC"] --> Proxy["proxy<br>(new session)"]
-    Proxy -->|"UserSignedIn event"| Graph["graph"]
-    Graph -->|"writes openCloudLastSignInTimestamp"| LDAP[("LDAP<br>directory")]
-    Report["opencloud report"] -->|"reads signInActivity"| Graph
+```bash
+docker compose exec opencloud opencloud report --with-sign-in
 ```
-
-Only a new OIDC session produces the event. Other ways of authenticating against the API do not, so
-an instance can be in daily use and still show no recorded sign-ins if its directory does not accept
-the write.
-
-### Writable directory
-
-`OC_LDAP_SERVER_WRITE_ENABLED` defaults to `true`, which is the setting used with the built-in
-identity management. The graph service then writes `openCloudLastSignInTimestamp` on every new
-session, and the report returns real counts:
 
 ```text
+Sign-in window: last 31 days (since 2026-10-19T11:56:16Z)
+
 Users in total:                    6
-Signed in within the last 31 days: 3
-Users with a recorded sign-in:     3
+Signed in within the last 31 days: 2
+Users with a recorded sign-in:     2
 
 ┌─────────────┬───────┬───────────────────────────────────┐
 │    Role     │ Users │ Signed in within the last 31 days │
 ├─────────────┼───────┼───────────────────────────────────┤
 │ User        │     3 │                                 1 │
 │ Admin       │     2 │                                 1 │
-│ Space Admin │     1 │                                 1 │
+│ Space Admin │     1 │                                 0 │
 └─────────────┴───────┴───────────────────────────────────┘
 ```
 
-Two conditions have to hold beyond the variable itself. The directory schema must allow the
-`openCloudLastSignInTimestamp` attribute on the user entries, which a directory using its own schema
-rather than the OpenCloud one usually does not. And `OC_LDAP_SERVER_WRITE_ENABLED` is only supported
-while the user and group attribute mappings are left at their defaults, so a deployment with a custom
-schema mapping should not switch it on.
+In the machine readable formats the same run adds `days`, `activeSince`, `activeUsers`,
+`usersWithSignInData` and a `signedIn` field per role.
 
-### Read-only directory
+### What it needs
 
-An external directory is usually read-only for OpenCloud, with
-`OC_LDAP_SERVER_WRITE_ENABLED=false`, because the external identity management owns all user
-management including deprovisioning. This is the setup described in
-[Keycloak](../configuration/authentication-and-user-management/keycloak.md).
+OpenCloud keeps no database of its own for this. The timestamp of the last successful sign-in is
+stored as an attribute on the user entry in LDAP, so the flag needs an LDAP identity backend that
+OpenCloud may write to.
 
-The graph service then skips the update without failing the sign-in: the user is logged in normally,
-but no timestamp is stored. No user ever gets a `signInActivity`, so the report cannot tell an account
-that was never used from one whose use was never recorded. It reports the counts as `N/A` rather than
-`0` and explains why:
-
-```text
-Warning: not a single user has a recorded sign-in, so the sign-in
-counts are reported as N/A rather than 0. This instance does not store
-sign-in timestamps. They are only recorded when the identity backend
-is writable, see OC_LDAP_SERVER_WRITE_ENABLED, and when the directory
-holds the OpenCloud LDAP schema.
+```mermaid
+graph LR
+    User["User signs in<br>via OIDC"] --> Proxy["proxy<br>(new session)"]
+    Proxy -->|"UserSignedIn event"| Graph["graph"]
+    Graph -->|"writes openCloudLastSignInTimestamp"| LDAP[("LDAP<br>directory")]
+    Report["opencloud report --with-sign-in"] -->|"reads signInActivity"| Graph
 ```
 
-:::caution Do not read N/A as "nobody signed in"
-`N/A` means the instance stores no sign-in timestamps at all. It says nothing about how active the
-users are. Making the directory writable only to collect this number is rarely worth it: it gives
-OpenCloud write access to a directory that an external system owns, and it is the identity provider,
-not OpenCloud, that holds the authoritative login history.
+Only a new OIDC session produces the event. Other ways of authenticating against the API do not.
+
+Where the directory does not accept the write, the flag is refused rather than reporting a column of
+empty values. An external directory is usually read-only for OpenCloud, with
+`OC_LDAP_SERVER_WRITE_ENABLED=false`, because the external identity management owns all user
+management including deprovisioning. This is the setup described in
+[Keycloak](../configuration/authentication-and-user-management/keycloak.md):
+
+```text
+--with-sign-in is not available on this instance: the LDAP identity backend is read-only,
+see OC_LDAP_SERVER_WRITE_ENABLED, so no sign-in is ever recorded
+```
+
+The `cs3` identity backend never records sign-ins either, and is refused the same way:
+
+```text
+--with-sign-in is not available on this instance: the "cs3" identity backend does not record sign-ins
+```
+
+On such a deployment, run the report without the flag and take the login figures from the identity
+provider, which holds the authoritative login history anyway.
+
+:::caution Making a directory writable only for this is rarely worth it
+Switching `OC_LDAP_SERVER_WRITE_ENABLED` on gives OpenCloud write access to a directory that an
+external system owns. It also only works while the user and group attribute mappings are left at
+their defaults, and the directory schema has to allow the `openCloudLastSignInTimestamp` attribute,
+which a directory using its own schema usually does not.
 :::
 
-On a read-only directory, run the report with `--skip-sign-in` and take the login figures from the
-identity provider instead.
+### Reading N/A against 0
 
-### The two modes side by side
-
-|                                | Writable directory              | Read-only directory               |
-| ------------------------------ | ------------------------------- | --------------------------------- |
-| `OC_LDAP_SERVER_WRITE_ENABLED` | `true` (default)                | `false`                           |
-| Typical setup                  | Built-in identity management    | External directory, e.g. Keycloak |
-| Last sign-in stored            | Yes, on the user entry in LDAP  | No, the write is skipped          |
-| Sign-in columns                | Real counts                     | `N/A`, with a warning             |
-| `usersWithSignInData`          | Number of users seen signing in | Always `0`                        |
-| Recommended invocation         | `opencloud report`              | `opencloud report --skip-sign-in` |
-| User counts per role           | Correct                         | Correct                           |
-
-The user and role counts are unaffected by any of this. They come from the directory itself and are
-correct in both modes.
-
-## Reading N/A against 0
-
-The report keeps the two apart on purpose, in every format:
+On a writable backend the counts can still be unavailable, when no user has a recorded sign-in at
+all. That happens before anyone has signed in since recording was switched on, or when the directory
+does not hold the OpenCloud schema. The report keeps that apart from a real zero, in every format:
 
 | Meaning                                                                                | `table` | `json` and `yaml` | `csv`      |
 | -------------------------------------------------------------------------------------- | ------- | ----------------- | ---------- |
-| Not available, the instance records no sign-ins                                        | `N/A`   | `null`            | empty cell |
+| Not available, no user has a recorded sign-in                                          | `N/A`   | `null`            | empty cell |
 | A real zero, sign-ins are recorded but nobody in this role signed in inside the window | `0`     | `0`               | `0`        |
 
 A role showing `0` on an instance whose other roles show numbers is a genuine finding: those accounts
 exist and were not used inside the window. A report showing `N/A` everywhere is a statement about the
-deployment, not about the users.
+deployment, not about the users, and the table says so in a warning below it.
