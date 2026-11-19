@@ -47,6 +47,7 @@
 |`OCM_OCM_SHAREPROVIDER_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`"/var/lib/opencloud/storage/ocm/ocmshares.json"`|
 |`OCM_OCM_SHARE_PROVIDER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`"false"`|
 |`OCM_WEBAPP_TEMPLATE`| 1.0.0 |string|`Template for the webapp url.`|`""`|
+|`OC_DISABLE_NEW_USER_SHARES`| next |bool|`Reject the creation of new federated shares. Existing shares keep working.`|`"false"`|
 |`OCM_OCM_CORE_DRIVER`| 1.0.0 |string|`Driver to be used for the OCM core. Supported value is only 'json'.`|`"json"`|
 |`OCM_OCM_CORE_JSON_FILE`| 1.0.0 |string|`Path to the JSON file where OCM share data will be stored. If not defined, the root directory derives from $OC_BASE_DATA_PATH/storage.`|`"/var/lib/opencloud/storage/ocm/ocmshares.json"`|
 |`OCM_OCM_STORAGE_PROVIDER_INSECURE`| 1.0.0 |bool|`Disable TLS certificate validation for the OCM connections. Do not set this in production environments.`|`"false"`|

@@ -99,6 +99,7 @@ ocm_share_provider:
       file: /var/lib/opencloud/storage/ocm/ocmshares.json
   insecure: false
   webapp_template: ""
+  disable_new_user_shares: false
 ocm_core:
   driver: json
   drivers:
