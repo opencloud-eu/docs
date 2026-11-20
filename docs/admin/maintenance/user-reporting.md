@@ -25,9 +25,9 @@ release it first appears in.
 
 ## Running the report
 
-The command talks to the services of the instance through the shared service registry, so it has to
-run next to them, not from a remote machine. With Docker Compose, run it inside the OpenCloud
-container as described in [Maintenance Commands](./maintenance-commands.md):
+The command talks to the gateway and the graph service directly, so it has to run next to them, not
+from a remote machine. With Docker Compose, run it inside the OpenCloud container as described in
+[Maintenance Commands](./maintenance-commands.md):
 
 ```bash
 docker compose exec opencloud opencloud report
@@ -37,6 +37,13 @@ On a single binary installation, run it on the host where the instance is runnin
 
 ```bash
 opencloud report
+```
+
+On Kubernetes, run it in the pod that serves the API, where both services live. No extra
+configuration is needed:
+
+```bash
+kubectl exec -n <namespace> deploy/<release>-api -- opencloud report
 ```
 
 ## What the report shows
