@@ -38,7 +38,7 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "@opencloud-eu/prettier-config": "^8.2.2",
+    "@opencloud-eu/prettier-config": "^8.3.0",
     "@types/react": "^19.3.0",
     "likec4": "1.61.0",
     "markdownlint-cli2": "^0.24.1",
