@@ -7,19 +7,14 @@ description: Overview of OpenCloud administration configuration topics
 
 # Configuration
 
-Use these guides to tune OpenCloud behavior, integrations, and default settings.
+Use these guides to tune OpenCloud behavior, integrations, and default settings. The guides are grouped by topic:
 
-## In this section
-
-- [Authentication and Identity Management](./authentication-and-user-management/) - Internal and external IDP setup
-- [Storage](./storage/) - Storage drivers and backend setup
-- [Collabora](./collabora/) - Collabora integration and document compatibility
-- [Frontend Update Check](./frontend-update-check.md) - Disable the update check in the web frontend
-- [Link Password Policy](./link-password-policy.md) - Password enforcement and requirements for public links
-- [Default Language](./default-language.md) - Set the default language
-- [Euro Office](./euro-office.md) - Community supported Euro Office setup
-- [Logging](./logging.md) - Configure logging in OpenCloud
-- [Mail Notifications](./mail-notifications.md) - Send notifications to users by email
-- [Radicale Integration](./radicale-integration.md) - Calendar and contacts with Radicale
-- [Set Default Quota](./set-default-quota.md) - Define the default storage quota for users
-- [Web Applications](./web-applications.md) - Enable additional web apps
+| Section                                                                                 | What you configure there                                  |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [Authentication and Identity Management](./authentication-and-user-management/index.md) | Internal and external IDP, Keycloak, user management      |
+| [Storage](./storage/index.md)                                                           | Storage drivers and default user quota                    |
+| [Office and Editing](./office-and-editing/index.md)                                     | Collabora, Euro Office                                    |
+| [Sharing and Federation](./sharing-and-federation/index.md)                             | Link Password Policy                                      |
+| [Web Interface](./web-interface/index.md)                                               | Default Language, Web Applications, Frontend Update Check |
+| [Integrations](./integrations/index.md)                                                 | Radicale Integration                                      |
+| [Notifications and Logging](./notifications-and-logging/index.md)                       | Mail Notifications, Logging                               |

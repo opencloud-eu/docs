@@ -86,7 +86,7 @@ By defining an application via `defineWebApplication` you can provide the follow
 
 Please check out the [web-app-skeleton repository](https://github.com/opencloud-eu/web-app-skeleton) for a boilerplate application to get started with your own application. In addition to that, if you want to learn how to implement an app for viewing and editing specific file types, please consult the [relevant documentation](./viewer-editor-apps) for detailed instructions and guidance.
 
-To learn how to integrate an app into OpenCloud Web, please refer to the [Web Application admin docs](../../../admin/configuration/web-applications).
+To learn how to integrate an app into OpenCloud Web, please refer to the [Web Application admin docs](../../../admin/configuration/web-interface/web-applications).
 
 ### Extensions
 

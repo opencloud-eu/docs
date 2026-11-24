@@ -2,7 +2,7 @@
 sidebar_position: 0
 id: storage
 title: Storage
-description: Overview of OpenCloud storage configuration options
+description: 'Overview of OpenCloud storage configuration options'
 draft: false
 ---
 
@@ -14,3 +14,4 @@ Use these guides to configure the storage backend for your OpenCloud deployment.
 
 - [PosixFS](./posixfs.md) - Use a regular filesystem as the OpenCloud storage backend
 - [DecomposedS3](./decomposeds3.md) - Use S3-compatible object storage with MinIO
+- [Set Default Quota](./set-default-quota.md) - Define the default storage quota for users

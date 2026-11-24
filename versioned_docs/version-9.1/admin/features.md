@@ -377,7 +377,7 @@ Multiple organizational units can be hosted on the same instance—ideal for cor
 
 ### Announcement Banner
 
-Administrators can display a banner with important information to all users, for example about planned maintenance. The banner supports Markdown and is managed in the admin settings without restarting OpenCloud. For details, see [Announcement Banner](./configuration/announcement-banner.md).
+Administrators can display a banner with important information to all users, for example about planned maintenance. The banner supports Markdown and is managed in the admin settings without restarting OpenCloud. For details, see [Announcement Banner](./configuration/web-interface/announcement-banner.md).
 
 ### Metadata Stored in Files
 
