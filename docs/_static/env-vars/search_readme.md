@@ -26,6 +26,7 @@ Consider using dedicated hardware for this service in case more resources are ne
 * [Content analysis / Extraction](#content-analysis--extraction)
   * [Basic](#basic)
   * [Tika](#tika)
+    * [Files Tika Cannot Parse](#files-tika-cannot-parse)
 * [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
 * [Metrics](#metrics)
 
@@ -180,6 +181,18 @@ The following settings must be set:
 Additionally, the following optional settings can be set:
 
 *   `SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS=true` (default: `true`): ignore stop words like `I`, `you`, `the` during content extraction.
+
+#### Files Tika Cannot Parse
+
+A file Tika cannot parse, such as a broken PDF or an image the OCR fails on, is still indexed by name, path and tags, so it stays findable. The content is tried again on later reindexes, the first retry one hour after the failure, the second one day after that. After the third failure the service logs a warning with the path and stops trying until the file changes. If Tika or the file is unreachable, a new or changed file is indexed by name as well, this does not count as a failure and every later reindex tries again.
+
+To list the files the service gave up on, search for:
+
+```text
+extractionfailure.count>=3
+```
+
+A reindex with `--force-rescan` (see below) tries these files again regardless of the limit, for example after a Tika upgrade.
 
 ## Manually Trigger Re-Indexing a Space
 
