@@ -188,6 +188,13 @@ id_cache:
   enable_tls: false
   tls_insecure: false
   tls_root_ca_certificate: ""
+revisions_cleanup:
+  strategy: disabled
+  async: true
+  async_workers: 0
+  async_queue_size: 0
+  async_queue_full: drop
+  async_queue_full_timeout: 5s
 mount_id: ""
 readonly: false
 upload_expiration: 86400
