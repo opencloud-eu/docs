@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: storage-decomposeds3
 title: 'Decomposeds3'
 description: Decomposeds3 Storage Driver
@@ -79,9 +79,9 @@ Open your browser and log in.
 
 After logging in, you should see the OpenCloud interface:
 
-<img src={require("./img/decomposeds3/login-page.png").default} alt="Login Page" width="1920" height="1991" loading="lazy" decoding="async"/>
+<img src={require("./../img/login-page.png").default} alt="Login Page" width="1920" height="1991" loading="lazy" decoding="async"/>
 
-<img src={require("./img/decomposeds3/decomposeds3-with-minio.png").default} alt="OpenCloud with decomposeds3 and MinIO" width="1920" height="961" loading="lazy" decoding="async"/>
+<img src={require("./../img/decomposeds3-with-minio.png").default} alt="OpenCloud with decomposeds3 and MinIO" width="1920" height="961" loading="lazy" decoding="async"/>
 
 ## Troubleshooting
 

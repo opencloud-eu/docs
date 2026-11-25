@@ -348,7 +348,7 @@ New extension versions are available from:
 - The App Store inside the OpenCloud web interface
 - [OpenCloud Web Extensions on GitHub](https://github.com/opencloud-eu/web-extensions/releases)
 
-Download the latest extension versions and follow the [web applications installation guide](../../configuration/web-interface/web-applications.md).
+Download the latest extension versions and follow the [web applications installation guide](../../configuration/web-applications.md).
 
 ## Verify the Upgrade
 

@@ -29,5 +29,5 @@ Feel free to contribute or just be inspired for your own apps and extensions.
 ## Installing an app
 
 To learn how to integrate an app into OpenCloud Web, please refer to the
-[Web application admin docs](../../../admin/configuration/web-interface/web-applications). To learn how to ship your app to users,
+[Web application admin docs](../../../admin/configuration/web-applications). To learn how to ship your app to users,
 please refer to the [build and publish docs](./build-and-publish).
