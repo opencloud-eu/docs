@@ -41,7 +41,7 @@
     "@opencloud-eu/prettier-config": "^8.3.0",
     "@types/react": "^19.3.0",
     "likec4": "1.61.0",
-    "markdownlint-cli2": "^0.24.1",
+    "markdownlint-cli2": "^0.24.2",
     "prettier": "^3.10.1",
     "raw-loader": "^4.0.2",
     "typescript": "~7.0.2"
