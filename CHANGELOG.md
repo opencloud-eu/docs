@@ -12,6 +12,8 @@
 
 ### 📦️ Build&Tools
 
+- Bump markdownlint-cli2 from 0.24.1 to 0.24.2 [[#1401](https://github.com/opencloud-eu/docs/pull/1401)]
+- Bump @opencloud-eu/prettier-config from 8.2.2 to 8.3.0 [[#1400](https://github.com/opencloud-eu/docs/pull/1400)]
 - Update docs [[#1406](https://github.com/opencloud-eu/docs/pull/1406)]
 - Update docs [[#1405](https://github.com/opencloud-eu/docs/pull/1405)]
 - Update docs [[#1402](https://github.com/opencloud-eu/docs/pull/1402)]
