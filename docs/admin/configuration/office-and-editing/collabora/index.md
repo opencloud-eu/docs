@@ -1,22 +1,20 @@
 ---
 sidebar_position: 1
 id: collabora
-title: Collabora
-description: Configuration guides for Collabora integration in OpenCloud
+title: 'Collabora'
+description: 'Configuration guides for Collabora integration in OpenCloud'
 draft: false
 ---
 
 # Collabora
 
-This section collects the most common Collabora configuration topics for OpenCloud.
-It is meant as a quick entry point for administrators who want to improve document compatibility and editing experience.
+Improve document rendering and the editing experience with Collabora Online.  
+This section collects the most common Collabora configuration topics for administrators who want better compatibility with Microsoft Office documents.
 
-## What you will find here
+## In this section
 
-- Add additional fonts so documents render more reliably across systems.
-- Enable Microsoft Office formats in the New menu when you want to create `.docx`, `.xlsx`, or `.pptx` files directly.
+- [Install additional fonts](./collabora-fonts.md)  
+  Install additional font packages on the server so that documents, especially Microsoft Office files, render correctly.
 
-## Guides
-
-- [Install additional fonts](./collabora-fonts) - Add fonts so documents render reliably
-- [Enable MS-Office formats](./collabora-ms-office-formats) - Create `.docx`, `.xlsx`, and `.pptx` files from the New menu
+- [Enable Microsoft Office formats](./collabora-ms-office-formats.md)  
+  Make `.docx`, `.xlsx`, and `.pptx` available as creation options in the New menu again.

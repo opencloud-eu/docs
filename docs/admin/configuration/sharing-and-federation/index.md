@@ -1,17 +1,23 @@
 ---
 sidebar_position: 0
 id: sharing-and-federation
-title: Sharing and Federation
-description: 'Configure public links, guest access and federation in OpenCloud'
+title: 'Sharing and Federation'
+description: 'Configure public links, guest access, and federation in OpenCloud'
 draft: false
 ---
 
 # Sharing and Federation
 
-Control how users share content: public links, guests invited by email, and federated sharing with other instances.
+Control how users share content with people outside their own account.  
+This section explains how to configure password rules for public links, how to invite external guests by email, and how to share with other OpenCloud instances and OCM-compatible systems.
 
 ## In this section
 
-- [Link Password Policy](./link-password-policy.md) - Password enforcement and requirements for public links
-- [Guest Feature](./guest-feature.md) - Allow users to share with external guests by email address
-- [Open Cloud Mesh (OCM)](./ocm.md) - Federation between OpenCloud and trusted OCM-compatible systems
+- [Public links: password enforcement and policy](./link-password-policy.md)  
+  Decide whether public links require a password and how strong that password must be.
+
+- [Guest Feature](./guest-feature.md)  
+  Allow users to share files and folders with external people by email address, without an OpenCloud account.
+
+- [Open Cloud Mesh (OCM)](./ocm.md)  
+  Enable federated sharing with other OpenCloud instances and OCM-compatible systems such as Nextcloud or ownCloud.
