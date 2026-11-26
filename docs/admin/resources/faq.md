@@ -119,7 +119,9 @@ We provide apps for Windows, MacOS, Linux, iOS and Android. Please refer to the 
 <details>
 <summary>Does OpenCloud support versioning?</summary>
 
-Yes. In case you made a mistake, you can always jump back to older versions of a file. We got your back!
+Yes. You can restore an earlier version of a file if that version is still available.
+
+By default, OpenCloud keeps all versions. Administrators can have old versions deleted automatically, according to a cleanup strategy, see [Cleaning Up Old Versions](../configuration/storage/revisions-cleanup.md).
 
 </details>
 
