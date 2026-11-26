@@ -180,7 +180,7 @@ A single number keeps that many versions and deletes all older ones.
 
 With `5`, OpenCloud keeps versions 1 to 5 and deletes versions 6, 7 and 8. With `10`, all 8 versions are kept, as the report has fewer than 10.
 
-`0` deletes **all versions of every file that gets a new version**. Unlike turning versioning off with `OC_DISABLE_VERSIONING`, this also deletes the versions that already exist.
+`0` deletes all versions of every file that gets a new version, except for the version [protected after a restore](#after-a-restore). Unlike turning versioning off with `OC_DISABLE_VERSIONING`, this also deletes the versions that already exist.
 
 ### Keeping Versions for a Period of Time: `30d`
 
@@ -282,7 +282,7 @@ Which strategy is right depends on how your users work and how much storage you 
 
 - **Keep everything recent, and a history for a few months:** `7d, auto, 90d`. Users can go back to any version of the last week, and to about one version per day or week for three months.
 - **Save storage, but never lose the last few versions of a file:** `5, 30d`.
-- **A fixed upper limit per file:** `auto, 50` or simply `20`.
+- **Limit the number of versions per file:** `auto, 50` or simply `20`. A [version protected after a restore](#after-a-restore) can be kept beyond this limit.
 - **Keep a long history, but not every save:** `auto`. The number of versions grows slowly, by about one per week for files that keep changing.
 
 ## How Old Is a Version?

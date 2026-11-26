@@ -259,7 +259,7 @@ opencloud storage-users revisions cleanup --space '<space-id-1>' --space '<space
 opencloud storage-users revisions cleanup --space '<space-id>' --path /Documents
 
 # a folder of a project space, by its path on disk (PosixFS only)
-opencloud storage-users revisions cleanup --fs-path /var/lib/opencloud/storage/users/projects/<space-id>/Documents
+opencloud storage-users revisions cleanup --fs-path '/var/lib/opencloud/storage/users/projects/<space-id>/Documents'
 ```
 
 #### Choose the strategy
