@@ -1,0 +1,8 @@
+{
+  "label": "Encryption",
+  "position": 50,
+  "link": {
+    "type": "doc",
+    "id": "files-and-folders-encryption"
+  }
+}

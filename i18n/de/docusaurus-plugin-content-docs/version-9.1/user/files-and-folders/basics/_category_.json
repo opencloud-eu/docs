@@ -1,0 +1,8 @@
+{
+  "label": "Grundlagen",
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "files-and-folders-basics"
+  }
+}

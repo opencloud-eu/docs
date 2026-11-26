@@ -7,48 +7,21 @@ title: Dateien und Ordner verwalten
 # Dateien und Ordner verwalten
 
 Lernen Sie, wie Sie Dateien und Ordner in OpenCloud organisieren, verwalten und prüfen.  
-Dieser Abschnitt behandelt typische Aufgaben wie Inhalte erstellen und verschieben, Dateien hochladen, gelöschte Elemente wiederherstellen und den Dateiverlauf prüfen.
+Die Anleitungen sind nach Themen gruppiert – von den Grundlagen bis zur Ende-zu-Ende-Verschlüsselung.
 
 ## In diesem Abschnitt
 
-### Inhalte organisieren und verwalten
+- [Grundlagen](./basics/index.md)  
+  Dateien und Ordner in OpenCloud erstellen, umbenennen, verschieben, hochladen, herunterladen, entpacken, löschen und wiederherstellen.
 
-- [Dateien und Ordner erstellen, umbenennen und verschieben](./create-rename-move.md)  
-  Erstellen Sie neue Inhalte, ordnen Sie bestehende Dateien und Ordner neu und verschieben Sie Elemente an einen anderen Ort.
+- [Ordnen und Finden](./organize-and-find/index.md)  
+  Dateien und Ordner in OpenCloud suchen, markieren, verschlagworten und verknüpfen.
 
-- [Inhalte hochladen, herunterladen und entpacken](./upload-download-unzip.md)  
-  Laden Sie Dateien in OpenCloud hoch, speichern Sie sie auf Ihrem Gerät oder entpacken Sie ZIP-Archive.
+- [Ansehen und Bearbeiten](./view-and-edit/index.md)  
+  Fotos und Videos ansehen sowie Markdown- und README-Dateien in OpenCloud bearbeiten.
 
-- [Elemente löschen und aus dem Papierkorb wiederherstellen](./delete-restore.md)  
-  Entfernen Sie Dateien und Ordner und stellen Sie sie bei Bedarf später wieder her.
+- [Verlauf und Aktivitäten](./history/index.md)  
+  Dateiversionen und Aktivitäten in OpenCloud nachvollziehen.
 
-- [Markdown-Dateien bearbeiten](./markdown-editor.md)  
-  Bearbeiten Sie `README.md` und andere Markdown-Dateien direkt in OpenCloud mit Formatierungshilfen.
-
-- [README-Dateien in Ordnern](./readme-files.md)  
-  Fügen Sie einem Ordner eine `README.md`-Datei hinzu, damit OpenCloud sie oberhalb der Dateiliste rendert.
-
-### Inhalte finden und klassifizieren
-
-- [Fotos und Videos](./photos-and-videos.md)  
-  Zeigen Sie Fotos in der Vorschau an, blättern Sie durch einen Photo-Roll und spielen Sie Videos direkt im Web an.
-
-- [Nach Dateien und Inhalten suchen](./search.md)  
-  Finden Sie Dateien anhand des Namens oder durchsuchen Sie Inhalte innerhalb von Dateien.
-
-- [Favoriten](./favorites.md)  
-  Markieren Sie häufig verwendete Dateien für den schnellen Zugriff und sammeln Sie sie auf einer eigenen Favoriten-Seite.
-
-- [Tags hinzufügen und entfernen](./tags.md)  
-  Verwenden Sie Tags, um Dateien und Ordner zu organisieren und leichter wiederzufinden.
-
-- [Verknüpfungen zu Dateien oder Weblinks erstellen](./shortcut.md)  
-  Fügen Sie Verknüpfungen zu häufig verwendeten Dateien oder externen Webseiten für einen schnelleren Zugriff hinzu.
-
-### Dateiverlauf und Aktivität prüfen
-
-- [Dateiversionen und Aktivitätshistorie ansehen](./versions.md)  
-  Prüfen Sie frühere Dateiversionen und verfolgen Sie, wie sich eine Datei im Laufe der Zeit verändert hat.
-
-- [Dateiaktivität prüfen](./activity.md)  
-  Sehen Sie, welche Aktionen an einer Datei oder einem Ordner durchgeführt wurden und von wem die Änderungen stammen.
+- [Verschlüsselung](./encryption/index.md)  
+  Dateien und Ordner in OpenCloud mit Ende-zu-Ende-Verschlüsselung schützen.

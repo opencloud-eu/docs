@@ -422,5 +422,25 @@
   "sidebar.dev.category.Viewer and editor apps": {
     "message": "Viewer- und Editor-Apps",
     "description": "The label for category 'Viewer and editor apps' in sidebar 'dev'"
+  },
+  "sidebar.user.category.Basics": {
+    "message": "Grundlagen",
+    "description": "The label for category 'Basics' in sidebar 'user'"
+  },
+  "sidebar.user.category.Organize and Find": {
+    "message": "Ordnen und Finden",
+    "description": "The label for category 'Organize and Find' in sidebar 'user'"
+  },
+  "sidebar.user.category.View and Edit": {
+    "message": "Ansehen und Bearbeiten",
+    "description": "The label for category 'View and Edit' in sidebar 'user'"
+  },
+  "sidebar.user.category.History and Activity": {
+    "message": "Verlauf und Aktivitäten",
+    "description": "The label for category 'History and Activity' in sidebar 'user'"
+  },
+  "sidebar.user.category.Encryption": {
+    "message": "Verschlüsselung",
+    "description": "The label for category 'Encryption' in sidebar 'user'"
   }
 }
