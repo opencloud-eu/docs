@@ -188,7 +188,7 @@ opencloud storage-users revisions cleanup --all --strategy "7d, auto, 90d" --dry
 ```
 
 ```plaintext
-25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 3 revisions (2.1 MiB)
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 3 revisions (2.1 MiB), strategy "7d, auto, 90d" (--strategy)
   protected 2026-10-21T14:50:00+02:00   2.3 MiB  protected by "7d": newer than 2026-10-14T15:00:00+02:00
   kept      2026-09-30T09:00:00+02:00   2.2 MiB  kept by "auto" (last 30 days): the oldest in its slot of 1 day starting 2026-09-30T00:00:00Z
   deleted   2026-04-02T08:00:00+02:00   2.1 MiB  deleted by "90d": older than 2026-07-23T15:00:00+02:00
@@ -264,7 +264,9 @@ opencloud storage-users revisions cleanup --fs-path '/var/lib/opencloud/storage/
 
 #### Choose the strategy
 
-Without `--strategy` (`-s`), the command uses the configured strategy, `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`. If none is configured, it stops with an error and doesn't delete anything. With `--strategy`, it uses the given one for this run only:
+Without `--strategy` (`-s`), the command uses the configured strategies: the one of `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, and for personal spaces and project spaces, their own strategy if they have one (see [Personal Spaces and Project Spaces](../configuration/storage/revisions-cleanup.md#personal-spaces-and-project-spaces)). If none is configured, it stops with an error and doesn't delete anything.
+
+With `--strategy`, it uses the given strategy for all spaces, for this run only, whatever their type and whatever is configured for it:
 
 ```bash
 # keep only the 10 newest versions of every file in a space
@@ -273,6 +275,24 @@ opencloud storage-users revisions cleanup --space '<space-id>' --strategy 10
 # delete all versions older than a year, but keep the 3 newest of every file
 opencloud storage-users revisions cleanup --all --strategy "3, 52w"
 ```
+
+To change the strategy of one type of space only, use `--strategy-personal` or `--strategy-project`. They replace the configured strategy of the personal spaces or of the project spaces for this run. All other spaces keep their configured strategy:
+
+```bash
+# a stricter strategy for the personal spaces, the project spaces keep theirs
+opencloud storage-users revisions cleanup --all --strategy-personal "5, 30d"
+
+# keep all versions in the project spaces for this run, clean up the others as configured
+opencloud storage-users revisions cleanup --all --strategy-project disabled
+```
+
+`--strategy` can't be combined with `--strategy-personal` or `--strategy-project`, as it already applies to all spaces. The command stops with an error if you give both, before it deletes anything:
+
+```plaintext
+--strategy applies to all spaces and can't be combined with --strategy-personal or --strategy-project
+```
+
+The command checks every strategy, given or configured, before it starts, and names the option or the variable of an invalid one.
 
 The strategies are explained in [Choosing a Strategy](../configuration/storage/revisions-cleanup.md#choosing-a-strategy).
 
@@ -288,10 +308,18 @@ By default, the command prints a line for every file whose versions it deleted, 
 
 Each line starts with the ID of the space and the path of the file within the space. A file is skipped while an upload to it is still being processed, for example by the antivirus scanner. A later run cleans it up.
 
-For scripts and monitoring, `--json` (`-j`) prints the same as JSON objects, one per line. The last line is the summary. Sizes are in bytes:
+The files of spaces whose strategy is `disabled`, for example all personal spaces with `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL=disabled`, are left out, and not counted as skipped. Otherwise, a run over all spaces would list every file of these spaces.
+
+With `--verbose`, the line of each file also says which strategy it got, and where that strategy came from: `--strategy`, `of the space type` (from `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL`, `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PROJECT`, `--strategy-personal` or `--strategy-project`) or `the default` (from `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`):
+
+```plaintext
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): deleted 3 of 12 revisions (4.2 MiB), strategy "7d, auto, 52w" (of the space type)
+```
+
+For scripts and monitoring, `--json` (`-j`) prints the same as JSON objects, one per line. The last line is the summary. Sizes are in bytes. Each file has its strategy in `strategy`, and where it came from in `strategy_source`: `forced` (`--strategy`), `space type` or `default`:
 
 ```json
-{"type":"file","space_id":"25b69780-5f39-43be-a7ac-a9b9e9fe4230","node_id":"8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94","path":"/Documents/report.odt","dry_run":false,"revisions":12,"deleted":3,"deleted_bytes":4404019,"failed":0}
+{"type":"file","space_id":"25b69780-5f39-43be-a7ac-a9b9e9fe4230","node_id":"8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94","path":"/Documents/report.odt","dry_run":false,"strategy":"7d, auto, 52w","strategy_source":"space type","revisions":12,"deleted":3,"deleted_bytes":4404019,"failed":0}
 {"type":"summary","dry_run":false,"spaces":3,"files":1520,"cleaned":1,"deleted":3,"deleted_bytes":4404019,"skipped":1,"failed":0}
 ```
 

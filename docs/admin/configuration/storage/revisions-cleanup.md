@@ -65,7 +65,7 @@ If a file gets several new versions while it waits in the queue, it is cleaned u
 
 ## Turning the Cleanup On
 
-The cleanup is configured with environment variables of the OpenCloud service. The most important one is `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, which sets the strategy. All variables are listed in the [environment variables of the storage-users service](../../../dev/server/services/storage-users/env-vars.mdx).
+The cleanup is configured with environment variables of the OpenCloud service. The most important one is `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, which sets the strategy. Personal spaces and project spaces can have strategies of their own, see [Personal Spaces and Project Spaces](#personal-spaces-and-project-spaces). All variables are listed in the [environment variables of the storage-users service](../../../dev/server/services/storage-users/env-vars.mdx).
 
 ### With OpenCloud Compose
 
@@ -285,6 +285,65 @@ Which strategy is right depends on how your users work and how much storage you 
 - **Limit the number of versions per file:** `auto, 50` or simply `20`. A [version protected after a restore](#after-a-restore) can be kept beyond this limit.
 - **Keep a long history, but not every save:** `auto`. The number of versions grows slowly, by about one per week for files that keep changing.
 
+## Personal Spaces and Project Spaces
+
+`STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY` applies to all spaces. Personal spaces and project spaces can also have strategies of their own. For example, you may want to keep a long history of the files a team works on together in a project space, but fewer versions of the files each user keeps in their personal space.
+
+| Variable                                            | Applies to                                   |
+| --------------------------------------------------- | -------------------------------------------- |
+| `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL` | the personal spaces                          |
+| `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PROJECT`  | the project spaces                           |
+| `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`          | all spaces that the two above don't apply to |
+
+Both take the same strategies as `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, and their value can also be:
+
+- **empty**, which is the default: the spaces of that type get the strategy of `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, as if the variable wasn't there.
+- **`disabled`**: all versions of the spaces of that type are kept, whatever `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY` says.
+
+A file gets the strategy of the space it is in. A file that a user shares with others stays in the space of its owner, so it gets the strategy of that space: a file shared from a personal space gets the strategy of the personal spaces, also when the users it is shared with change it.
+
+### Examples
+
+Keep the versions of personal files for 30 days, but always the 5 newest, and thin out the versions in project spaces, keeping them for a year:
+
+```yaml
+services:
+  opencloud:
+    environment:
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL: '5, 30d'
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PROJECT: '7d, auto, 52w'
+```
+
+Clean up only the project spaces, and keep all versions of personal files. `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY` keeps its default, `disabled`, so the personal spaces need no setting of their own:
+
+```yaml
+services:
+  opencloud:
+    environment:
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PROJECT: 'auto, 90d'
+```
+
+The other way around: one strategy for all spaces, except the personal spaces, which keep all their versions:
+
+```yaml
+services:
+  opencloud:
+    environment:
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY: '7d, auto, 90d'
+      STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL: 'disabled'
+```
+
+These examples are for OpenCloud Compose, in a file of your own, as described in [With OpenCloud Compose](#with-opencloud-compose). With other installations, set the variables in the same way as `STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY`, see [With Other Installations](#with-other-installations), for example in an environment file:
+
+```env
+STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PERSONAL=5,30d
+STORAGE_USERS_REVISIONS_CLEANUP_STRATEGY_PROJECT=7d,auto,52w
+```
+
+OpenCloud checks all three strategies when it starts. If one of them is invalid, the storage-users service doesn't start, and its log says which one, for example `invalid strategy for personal spaces`.
+
+To see what a strategy for one type of space would delete before you configure it, see [Trying Out a Strategy](#trying-out-a-strategy).
+
 ## How Old Is a Version?
 
 The age of a version is the time since it was created: when the file was changed, and its previous content became the version. OpenCloud records that time on the server when it creates the version.
@@ -315,11 +374,17 @@ docker compose exec opencloud opencloud storage-users revisions cleanup --all --
 For the report from above, the output would look like this (shortened, the lines for versions 3 to 7 are left out):
 
 ```plaintext
-25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 8 revisions (2.1 MiB)
+25b69780-5f39-43be-a7ac-a9b9e9fe4230 /Documents/report.odt (node 8a1c0e2f-6b4d-4f7a-9c3e-2d5b7f1a0c94): would delete 1 of 8 revisions (2.1 MiB), strategy "7d, auto, 90d" (--strategy)
   protected 2026-10-21T14:50:00+02:00   2.3 MiB  protected by "7d": newer than 2026-10-14T15:00:00+02:00
   protected 2026-10-21T14:20:00+02:00   2.3 MiB  protected by "7d": newer than 2026-10-14T15:00:00+02:00
   ...
   deleted   2026-04-02T08:00:00+02:00   2.1 MiB  deleted by "90d": older than 2026-07-23T15:00:00+02:00
+```
+
+`--strategy` applies the strategy to all spaces. To try out a strategy for the personal spaces or for the project spaces only, use `--strategy-personal` or `--strategy-project` instead. The other spaces then keep their configured strategy, and with `--verbose`, the output says which strategy each file got:
+
+```bash
+docker compose exec opencloud opencloud storage-users revisions cleanup --all --strategy-project "7d, auto, 52w" --dry-run --verbose
 ```
 
 A dry run works with any configuration of the file metadata cache, as it deletes nothing. See [Clean up old file versions](../../maintenance/maintenance-commands.md#clean-up-old-file-versions) for all options of the command.
