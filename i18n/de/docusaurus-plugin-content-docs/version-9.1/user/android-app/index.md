@@ -15,7 +15,7 @@ Zugriff unterwegs ausgelegt und unterstützt die Einrichtung, Suche, Verknüpfun
   Installieren Sie die App, richten Sie sie ein und lernen Sie die wichtigsten Bereiche und Einstellungen kennen.
 
 - [Dateien und Ordner](./files-and-folders/)  
-  Erstellen und bearbeiten Sie Inhalte, laden Sie Dateien hoch und machen Sie Elemente offline verfügbar.
+  Erstellen Sie Dateien und Ordner, benennen Sie sie um, verschieben oder kopieren Sie sie, laden Sie Dateien hoch und machen Sie Elemente offline verfügbar.
 
 - [Spaces](./spaces.md)  
   Arbeiten Sie mit Spaces und den verfügbaren Aktionen in Android.

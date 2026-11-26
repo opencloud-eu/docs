@@ -10,8 +10,17 @@ The OpenCloud Android App provides everything you need to organize and manage yo
 
 ## In this section
 
-- [Create, Rename, and Move](./create-rename-move.md)  
-  Learn how to create new folders and documents, rename existing files and folders, and move or copy them to different locations.
+- [Create files and folders](./create.md)  
+  Create new folders and, if Collabora is enabled, new documents.
 
-- [Upload and Make Available Offline](./upload-make-available-offline.md)  
-  Upload files from your device, capture photos directly with your camera, and make files available for offline use.
+- [Rename files and folders](./rename.md)  
+  Give files and folders a new name.
+
+- [Move or copy files and folders](./move.md)  
+  Move or copy files and folders to a different location.
+
+- [Upload files](./upload.md)  
+  Upload files from your device or photos and videos directly from the camera.
+
+- [Make files available offline](./make-available-offline.md)  
+  Save files on your device so you can access them without an internet connection.
