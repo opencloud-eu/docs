@@ -16,7 +16,7 @@ alltägliche Aufgaben wie Einrichtung, Suche, Teilen und das Offline-Verfügbar-
   Einstellungen kennen.
 
 - [Dateien und Ordner](./files-and-folders/)  
-  Erstellen und bearbeiten Sie Inhalte, laden Sie Dateien hoch und machen Sie Elemente offline verfügbar.
+  Erstellen Sie Dateien und Ordner, benennen Sie sie um, verschieben oder kopieren Sie sie, laden Sie Dateien hoch und machen Sie Elemente offline verfügbar.
 
 - [Spaces](./spaces.md)  
   Arbeiten Sie mit Spaces und den verfügbaren Aktionen in der iOS App.
