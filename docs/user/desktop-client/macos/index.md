@@ -8,6 +8,8 @@ title: Desktop Client for macOS
 
 The OpenCloud Desktop Client for macOS allows you to synchronize files between your Mac and your OpenCloud instance. This section guides you through the complete lifecycle of the Desktop Client, from installation and initial setup to synchronization settings, application preferences, and upgrading to newer versions.
 
+Before installing the client, review the [Desktop Client requirements](../../../admin/getting-started/requirements.md#desktop-client).
+
 ## In this section
 
 - [Installation](./installation.md)  
