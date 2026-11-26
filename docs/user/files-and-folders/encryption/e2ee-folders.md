@@ -112,7 +112,7 @@ After unlocking an encrypted folder, you can add files by uploading existing fil
 
 You can upload existing files or folders to an encrypted folder in the same way as to any other folder.
 
-For details, see [Upload files or folders](../basics/upload-download-unzip.md#upload-files-or-folders).
+For details, see [Upload files or folders](../basics/upload.md).
 
 ### Create files
 
@@ -132,7 +132,7 @@ loading="lazy"
 decoding="async"
 />
 
-For details about creating files, see [Create files and folders](../basics/create-rename-move.md#create-files-and-folders).
+For details about creating files, see [Create files and folders](../basics/create.md).
 
 ## Share an encrypted folder
 

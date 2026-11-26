@@ -2,21 +2,36 @@
 sidebar_position: 0
 id: files-and-folders-basics
 title: 'Basics'
-description: 'Create, upload, download, and delete files and folders in OpenCloud'
+description: 'Create, rename, move, upload, download, unzip, delete, and restore files and folders in OpenCloud'
 ---
 
 # Basics
 
 The basics of working with files and folders in OpenCloud.  
-This section shows you how to create new content, bring files into OpenCloud and back to your device, and how to remove items and restore them from the trash.
+This section shows you how to create, rename, and move content, how to upload files to OpenCloud, download them to your device, or extract ZIP files, and how to delete items and restore them from the trash.
 
 ## In this section
 
-- [Create, rename, and move files and folders](./create-rename-move.md)  
-  Create new files and folders, give them a new name, and move them to another location.
+- [Create files and folders](./create.md)  
+  Create new folders as well as text, table, and presentation files.
 
-- [Upload, download, and unzip content](./upload-download-unzip.md)  
-  Upload files and folders from your device, download them again, or extract ZIP archives directly in OpenCloud.
+- [Rename files and folders](./rename.md)  
+  Give files and folders a new name.
 
-- [Delete and restore items](./delete-restore.md)  
-  Move files and folders to the trash and restore them if you need them again.
+- [Move files and folders](./move.md)  
+  Move files and folders to another folder.
+
+- [Upload files and folders](./upload.md)  
+  Upload files and folders from your device, using the “+ New” menu or drag and drop.
+
+- [Download files and folders](./download.md)  
+  Download files and folders to your device. Several items are saved as a ZIP file.
+
+- [Unzip ZIP files](./unzip.md)  
+  Extract ZIP files directly in OpenCloud, if this feature is enabled.
+
+- [Delete files and folders](./delete.md)  
+  Move files and folders that you no longer need to the trash.
+
+- [Restore files and folders](./restore.md)  
+  Restore deleted files and folders to their original location.

@@ -12,7 +12,7 @@ The guides are grouped by topic – from the basics to end-to-end encryption.
 ## In this section
 
 - [Basics](./basics/index.md)  
-  Create, upload, download, and delete files and folders in OpenCloud.
+  Create, rename, move, upload, download, unzip, delete, and restore files and folders in OpenCloud.
 
 - [Organize and Find](./organize-and-find/index.md)  
   Search, mark, tag, and link files and folders in OpenCloud.

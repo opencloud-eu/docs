@@ -12,7 +12,7 @@ Die Anleitungen sind nach Themen gruppiert – von den Grundlagen bis zur Ende-z
 ## In diesem Abschnitt
 
 - [Grundlagen](./basics/index.md)  
-  Dateien und Ordner in OpenCloud erstellen, hochladen, herunterladen und löschen.
+  Dateien und Ordner in OpenCloud erstellen, umbenennen, verschieben, hochladen, herunterladen, entpacken, löschen und wiederherstellen.
 
 - [Ordnen und Finden](./organize-and-find/index.md)  
   Dateien und Ordner in OpenCloud suchen, markieren, verschlagworten und verknüpfen.

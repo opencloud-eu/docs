@@ -112,7 +112,7 @@ Nach dem Entsperren eines verschlüsselten Ordners können Sie vorhandene Dateie
 
 Sie können vorhandene Dateien oder Ordner genauso in einen verschlüsselten Ordner hochladen wie in jeden anderen Ordner.
 
-Weitere Informationen finden Sie unter [Dateien oder Ordner hochladen](../basics/upload-download-unzip.md#dateien-oder-ordner-hochladen).
+Weitere Informationen finden Sie unter [Dateien oder Ordner hochladen](../basics/upload.md).
 
 ### Dateien erstellen
 
@@ -132,7 +132,7 @@ loading="lazy"
 decoding="async"
 />
 
-Weitere Informationen finden Sie unter [Dateien und Ordner erstellen](../basics/create-rename-move.md#dateien-und-ordner-erstellen).
+Weitere Informationen finden Sie unter [Dateien und Ordner erstellen](../basics/create.md).
 
 ## Verschlüsselten Ordner freigeben
 

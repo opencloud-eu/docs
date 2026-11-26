@@ -61,7 +61,7 @@ The example initially uses a retention period of five minutes for testing. After
 Test the workflow in a dedicated test Space before using it with production data.
 
 The delete operation moves files to the OpenCloud **Deleted files** area. They can be
-[restored](../../user/files-and-folders/basics/delete-restore) until they are removed from the trash
+[restored](../../user/files-and-folders/basics/restore) until they are removed from the trash
 manually or according to the instance's trash retention settings. Verify the filtered results before
 adding the delete operation and before activating the workflow.
 
