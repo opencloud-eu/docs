@@ -62,6 +62,7 @@ extractor:
   tika:
     tika_url: http://127.0.0.1:9998
     clean_stop_words: false
+    timeout: 5m0s
 content_extraction_size_limit: 20971520
 batch_size: 50
 reindex_concurrency: 3
