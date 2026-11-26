@@ -10,8 +10,17 @@ Erfahren Sie, wie Sie Ihre Dateien und Ordner in der OpenCloud iOS App verwalten
 
 ## In diesem Abschnitt
 
-- [Erstellen - Umbenennen - Verschieben](./create-rename-move.md)  
-  Erstellen Sie neue Ordner und Dateien, benennen Sie Elemente um und verschieben Sie sie an einen anderen Ort.
+- [Dateien und Ordner erstellen](./create.md)  
+  Erstellen Sie Ordner und Dokumente, nehmen Sie Fotos oder Videos auf und scannen Sie Papierdokumente.
 
-- [Hochladen - Offline verfügbar machen](./upload-make-available-offline.md)  
-  Laden Sie Dateien in OpenCloud hoch und machen Sie sie offline verfügbar.
+- [Dateien und Ordner umbenennen](./rename.md)  
+  Geben Sie Dateien und Ordnern einen neuen Namen.
+
+- [Dateien und Ordner verschieben oder kopieren](./move.md)  
+  Schneiden Sie Dateien und Ordner aus oder kopieren Sie sie und fügen Sie sie an einem anderen Ort ein.
+
+- [Dateien hochladen](./upload.md)  
+  Laden Sie Dateien aus der Dateien-App oder Fotos und Videos aus Ihrer Fotobibliothek hoch.
+
+- [Dateien offline verfügbar machen](./make-available-offline.md)  
+  Speichern Sie Dateien auf Ihrem Gerät, um auch ohne Internetverbindung darauf zuzugreifen.

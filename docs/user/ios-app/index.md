@@ -14,7 +14,7 @@ The OpenCloud iOS app provides mobile access to your files, Spaces, and shares o
   Install the app, complete the initial setup, and learn the main interface and settings.
 
 - [Files and folders](./files-and-folders/)  
-  Create and edit content, upload files, and make items available offline.
+  Create, rename, move, or copy files and folders, upload files, and make items available offline.
 
 - [Spaces](./spaces.md)  
   Work with Spaces and use the available Space actions in the iOS app.
