@@ -10,8 +10,17 @@ Die OpenCloud Android-App bietet alle Funktionen, die Sie benötigen, um Ihre Da
 
 ## In diesem Abschnitt
 
-- [Erstellen, Umbenennen und Verschieben](./create-rename-move.md)  
-  Erfahren Sie, wie Sie neue Ordner und Dokumente erstellen, vorhandene Dateien und Ordner umbenennen sowie an einen anderen Speicherort verschieben oder kopieren.
+- [Dateien und Ordner erstellen](./create.md)  
+  Erstellen Sie neue Ordner und, wenn Collabora aktiviert ist, neue Dokumente.
 
-- [Hochladen und offline verfügbar machen](./upload-make-available-offline.md)  
-  Laden Sie Dateien von Ihrem Gerät hoch, nehmen Sie Fotos direkt mit der Kamera auf und stellen Sie Dateien für die Offline-Verwendung bereit.
+- [Dateien und Ordner umbenennen](./rename.md)  
+  Geben Sie Dateien und Ordnern einen neuen Namen.
+
+- [Dateien und Ordner verschieben oder kopieren](./move.md)  
+  Verschieben oder kopieren Sie Dateien und Ordner an einen anderen Speicherort.
+
+- [Dateien hochladen](./upload.md)  
+  Laden Sie Dateien von Ihrem Gerät oder Fotos und Videos direkt von der Kamera hoch.
+
+- [Dateien offline verfügbar machen](./make-available-offline.md)  
+  Speichern Sie Dateien auf Ihrem Gerät, um auch ohne Internetverbindung darauf zuzugreifen.

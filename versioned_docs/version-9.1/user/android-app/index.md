@@ -8,13 +8,13 @@ title: OpenCloud Android App
 
 The OpenCloud Android app provides mobile access to your files, spaces, and shares. It is designed for quick access on the go, with support for setup, search, shortcuts, and file management.
 
-## What you will find here
+## In this section
 
 - [General](./general/)  
   Install the app, set it up, and learn the main interface and settings.
 
 - [Files and folders](./files-and-folders/)  
-  Create and edit content, upload files, and make items available offline.
+  Create, rename, move, or copy files and folders, upload files, and make items available offline.
 
 - [Spaces](./spaces.md)  
   Work with Spaces and their available actions on Android.
