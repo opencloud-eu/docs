@@ -4,10 +4,11 @@
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders, @schweigisito
+@openclouders, @pbleser-oc, @schweigisito
 
 ### 👷 Admin Documentation
 
+- docs(admin): document the cleanup of old file versions [[#1222](https://github.com/opencloud-eu/docs/pull/1222)]
 - enhance: add nginx config settig to improve upload performance [[#1396](https://github.com/opencloud-eu/docs/pull/1396)]
 
 ### 📦️ Build&Tools
