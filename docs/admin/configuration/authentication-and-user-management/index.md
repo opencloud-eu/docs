@@ -1,5 +1,9 @@
 ---
-title: 'Internal and External IDP'
+sidebar_position: 0
+id: authentication-and-user-management
+title: 'Authentication and Identity Management'
+description: 'Configure authentication, identity providers, and user management in OpenCloud'
+draft: false
 ---
 
 # Internal and External IDP
