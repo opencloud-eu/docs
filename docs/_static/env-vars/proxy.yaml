@@ -273,5 +273,8 @@ events:
   enable_tls: false
   username: ""
   password: ""
+audit:
+  enabled: false
+  mode: best_effort
 guest_link_auth:
   cookie_name: __Host-oc_guest_session

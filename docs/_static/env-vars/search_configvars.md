@@ -49,7 +49,7 @@
 |`SEARCH_EXTRACTOR_TIKA_TIKA_URL`| 1.0.0 |string|`URL of the tika server.`|`"http://127.0.0.1:9998"`|
 |`SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS`| 1.0.0 |bool|`Defines if stop words should be cleaned or not. See the documentation for more details.`|`"false"`|
 |`SEARCH_EXTRACTOR_TIKA_TIMEOUT`| next |Duration|`The time one content extraction may take, from downloading the file to the answer of Tika. An extraction that takes longer counts as a failure of the file. 0 disables the limit. See the documentation for more details.`|`"5m0s"`|
-|`SEARCH_CONTENT_EXTRACTION_SIZE_LIMIT`| 1.0.0 |uint64|`Maximum file size in bytes that is allowed for content extraction.`|`"20971520"`|
+|`SEARCH_CONTENT_EXTRACTION_SIZE_LIMIT`| 1.0.0 |uint64|`Maximum file size in bytes that is allowed for content extraction. Of a larger file only the metadata is extracted, from its first bytes up to this size.`|`"20971520"`|
 |`SEARCH_BATCH_SIZE`| 1.0.0 |int|`The number of documents to process in a single batch. Defaults to 500.`|`"50"`|
 |`SEARCH_REINDEX_MAX_CONCURRENCY`| 7.4.0 |int|`The maximum number of spaces that are reindexed concurrently when reindexing all spaces.`|`"3"`|
 |`SEARCH_QUERY_TEMPLATE`| 9.0.0 |string|`A KQL template every search runs through, see the search service documentation for the available placeholders.`|`"({{.QUERY}}) AND (NOT path:\"./.space\" AND NOT id:{{.SPACE_ROOT_PERSONAL}})"`|

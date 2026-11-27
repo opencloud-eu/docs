@@ -28,6 +28,7 @@ Consider using dedicated hardware for this service in case more resources are ne
   * [Tika](#tika)
     * [Files Tika Cannot Parse](#files-tika-cannot-parse)
 * [Manually Trigger Re-Indexing a Space](#manually-trigger-re-indexing-a-space)
+* [Optimizing the Index](#optimizing-the-index)
 * [Metrics](#metrics)
 
 ## Search backends
@@ -181,6 +182,7 @@ The following settings must be set:
 Additionally, the following optional settings can be set:
 
 *   `SEARCH_EXTRACTOR_TIKA_CLEAN_STOP_WORDS=true` (default: `true`): ignore stop words like `I`, `you`, `the` during content extraction.
+*   `SEARCH_CONTENT_EXTRACTION_SIZE_LIMIT=20971520` (default: 20 MiB): files up to this size get their content extracted. Of a larger file only the metadata is extracted, such as EXIF or the image size, from its first bytes up to this size.
 *   `SEARCH_EXTRACTOR_TIKA_TIMEOUT=5m` (default: `5m`): the time one extraction may take, from downloading the file to the answer of Tika. A longer one counts as a failure of the file, see below. Raise it if OCR of large files takes longer, `0` disables the limit.
 
 #### Files Tika Cannot Parse
@@ -217,6 +219,18 @@ opencloud search index --all-spaces --force-rescan
 ```
 
 The command connects to the service's gRPC address (`SEARCH_GRPC_ADDR`) unless `--endpoint` is given, with the TLS mode set in `OC_GRPC_CLIENT_TLS_MODE`. With `on`, the server certificate is verified against that address, so if `SEARCH_GRPC_ADDR` is a bind address such as `0.0.0.0:9220`, pass `--endpoint` with a host name the certificate is valid for.
+
+## Optimizing the Index
+
+Every write adds segments to the Bleve index, which the service merges in the background. After a large reindex, many segments can remain, and each search has to read all of them. The `optimize` command merges them into one without indexing anything again:
+
+```shell
+opencloud search optimize
+```
+
+The index stays searchable and writable while it is optimized. The command returns once the merge is done. Pressing Ctrl+C stops the merge; if a background merge is running at that moment, the command stops once that one is done. A merge that fails, for example because the disk is full, is retried by Bleve until it succeeds, so the command does not return; Ctrl+C ends it. It takes the same `--endpoint` and `--insecure` flags as `index`.
+
+The command applies to Bleve only. OpenSearch merges its segments according to the merge policy of the cluster, so the command reports it as not supported there.
 
 ## Metrics
 

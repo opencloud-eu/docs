@@ -20,6 +20,8 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`SHARING_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`SHARING_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`Username for the events broker.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`SHARING_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`Password for the events broker.`|`""`|
+|`OC_AUDIT_ENABLED`<br/>`SHARING_AUDIT_ENABLED`| next |bool|`Emit audit events for the CS3 calls of the service to the audit stream.`|`"false"`|
+|`OC_AUDIT_MODE`<br/>`SHARING_AUDIT_MODE`| next |string|`What happens when an audit event can't be stored. 'best_effort', the only mode for now, never blocks a request and counts dropped events.`|`"best_effort"`|
 |`OC_SERVICE_ACCOUNT_ID`<br/>`SHARING_SERVICE_ACCOUNT`| 7.0.0 |string|`The ID of the service account the service should use. See the 'auth-service' service description for more details.`|`""`|
 |`OC_SERVICE_ACCOUNT_SECRET`<br/>`SHARING_SERVICE_ACCOUNT_SECRET`| 7.0.0 |string|`The service account secret.`|`""`|
 |`SHARING_SKIP_USER_GROUPS_IN_TOKEN`| 1.0.0 |bool|`Disables the loading of user's group memberships from the reva access token.`|`"false"`|
