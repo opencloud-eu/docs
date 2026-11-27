@@ -30,7 +30,7 @@ There are two ways to override the defaults:
 - During development, put your values into `src/config.json`. The file is merged on top of the `config` key of
   `src/manifest.json`. Don't commit values that only apply to your machine.
 - In a real deployment, administrators override them via the `apps.yaml` file, see the
-  [web applications admin docs](../../../../admin/configuration/web-applications).
+  [web applications admin docs](../../../../admin/configuration/web-interface/web-applications).
 
 ```json title="src/config.json"
 {

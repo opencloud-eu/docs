@@ -19,7 +19,7 @@ To open the admin area, select the app switcher in the upper-right corner and th
 - Version overview:  
   In the General section, you can view your current OpenCloud version and check whether a newer version is available.
 - Announcement banner:
-  Administrators can display an organization-wide message to all users. For configuration instructions, see [Announcement Banner](../../admin/configuration/announcement-banner.md).
+  Administrators can display an organization-wide message to all users. For configuration instructions, see [Announcement Banner](../../admin/configuration/web-interface/announcement-banner.md).
   <img src={require("./img/settings/admin-general.png").default} alt="General administration settings" width="1920" height="1080" loading="lazy" decoding="async"/>
 
 :::note

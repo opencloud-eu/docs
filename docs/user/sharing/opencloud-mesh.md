@@ -10,7 +10,7 @@ draft: false
 
 The ScienceMesh application lets you connect with users on another OpenCloud instance and share files or folders with them. It uses the OpenCloud Mesh (OCM) protocol for connections between instances.
 
-Before you begin, an administrator must configure OCM on both participating instances. For configuration instructions, see [Configure OpenCloud Mesh](../../admin/configuration/ocm).
+Before you begin, an administrator must configure OCM on both participating instances. For configuration instructions, see [Configure OpenCloud Mesh](../../admin/configuration/sharing-and-federation/ocm).
 
 ## Open the ScienceMesh application
 

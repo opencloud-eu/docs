@@ -1,4 +1,8 @@
 {
   "label": "Authentication and Identity Management",
-  "position": 10
+  "position": 10,
+  "link": {
+    "type": "doc",
+    "id": "authentication-and-user-management"
+  }
 }
