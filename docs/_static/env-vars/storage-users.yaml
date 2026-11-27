@@ -164,6 +164,9 @@ events:
   num_consumers: 0
   username: ""
   password: ""
+audit:
+  enabled: false
+  mode: best_effort
 filemetadata_cache:
   store: memory
   nodes:

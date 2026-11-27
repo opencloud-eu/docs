@@ -145,13 +145,16 @@ middleware:
   auth:
     credentials_by_user_agent: {}
 events:
-  endpoint: ""
-  cluster: ""
+  endpoint: 127.0.0.1:9233
+  cluster: opencloud-cluster
   tls_insecure: false
   tls_root_ca_certificate: ""
   enable_tls: false
   username: ""
   password: ""
+audit:
+  enabled: false
+  mode: best_effort
 grpc_client_tls: null
 auto_accept_shares: false
 service_account:

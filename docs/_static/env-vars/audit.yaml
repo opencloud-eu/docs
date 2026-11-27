@@ -15,6 +15,16 @@ events:
   enable_tls: false
   username: ""
   password: ""
+stream:
+  replicas: 1
+  max_age: 168h0m0s
+output:
+  stdout: true
+  otlp:
+    endpoint: ""
+    insecure: false
+legacy:
+  enabled: false
 auditlog:
   log_to_console: true
   log_to_file: false
