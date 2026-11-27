@@ -10,7 +10,7 @@ draft: false
 
 Mit der ScienceMesh-Anwendung können Sie sich mit Benutzern einer anderen OpenCloud-Instanz verbinden und Dateien oder Ordner mit ihnen teilen. Für Verbindungen zwischen Instanzen verwendet sie das OpenCloud-Mesh-Protokoll (OCM).
 
-Bevor Sie beginnen, muss ein Administrator OCM auf beiden beteiligten Instanzen konfigurieren. Eine Anleitung finden Sie unter [OpenCloud Mesh konfigurieren](../../admin/configuration/ocm).
+Bevor Sie beginnen, muss ein Administrator OCM auf beiden beteiligten Instanzen konfigurieren. Eine Anleitung finden Sie unter [OpenCloud Mesh konfigurieren](../../admin/configuration/sharing-and-federation/ocm).
 
 ## ScienceMesh-Anwendung öffnen
 

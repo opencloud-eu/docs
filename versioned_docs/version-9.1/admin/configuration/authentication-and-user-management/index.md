@@ -63,8 +63,13 @@ OpenCloud can disable users for login to actively prevent unwanted access to the
 
 For detailed configuration and setup instructions, see the [Keycloak with Autoprovisioning](./keycloak#autoprovisioning-mode) guide.
 
-## Guides
+## In this section
 
-- [External OpenID Connect Identity Provider](./external-idp.md) - Requirements for integrating external OpenID Connect IDPs
-- [Keycloak Integration](./keycloak.md) - Configure Keycloak in Shared User Directory or Autoprovisioning mode
-- [Adding users with Keycloak](./keycloak-user.md) - Create new users in Keycloak, including users without a personal space
+- [External OpenID Connect identity provider](./external-idp.md)  
+  Requirements for connecting an external OpenID Connect identity provider to OpenCloud.
+
+- [Keycloak integration](./keycloak.md)  
+  Configure Keycloak in Shared User Directory mode or Autoprovisioning mode.
+
+- [Add users with Keycloak](./keycloak-user.md)  
+  Create new users in Keycloak, assign roles, and enable self-registration.

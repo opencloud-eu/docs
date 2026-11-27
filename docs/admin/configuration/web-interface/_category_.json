@@ -1,0 +1,8 @@
+{
+  "label": "Web Interface",
+  "position": 50,
+  "link": {
+    "type": "doc",
+    "id": "web-interface"
+  }
+}

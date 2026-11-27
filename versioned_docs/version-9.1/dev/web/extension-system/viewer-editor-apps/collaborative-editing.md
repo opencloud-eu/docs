@@ -34,7 +34,7 @@ Y.Doc layouts therefore never share a room.
 ## Requirements
 
 Collaborative editing is only active if the deployment sets `WEB_OPTION_YJS_SERVER_URL`. See the
-[admin documentation](../../../../admin/configuration/collaborative-editing) for the server setup.
+[admin documentation](../../../../admin/configuration/office-and-editing/collaborative-editing) for the server setup.
 
 The Yjs server authenticates the user with a bearer token against the LibreGraph API, and it checks the permissions of
 the file. Contexts without a user token, for example public links or OCM, always fall back to local mode.

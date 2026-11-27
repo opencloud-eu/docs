@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 id: storage-revisions-cleanup
 title: 'Cleaning Up Old Versions'
 description: How OpenCloud deletes old file versions according to a cleanup strategy
@@ -371,7 +371,7 @@ When OpenCloud stops, cleanups that are already running are finished, and the cl
 
 For every file it deleted versions of, the cleanup writes a line at log level `info`: `revision cleanup: purged old revisions`, with the number and the size of the deleted versions. Nothing is logged for files where nothing was deleted.
 
-At log level `debug`, every deleted version is logged as well, with the reason, for example `deleted by "30d": older than 2026-09-21T15:00:00Z`. See [Logging](../logging.md) for how to set the log level.
+At log level `debug`, every deleted version is logged as well, with the reason, for example `deleted by "30d": older than 2026-09-21T15:00:00Z`. See [Logging](../notifications-and-logging/logging.md) for how to set the log level.
 
 ## Things to Keep in Mind
 

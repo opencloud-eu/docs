@@ -11,21 +11,10 @@ Use these guides to tune OpenCloud behavior, integrations, and default settings.
 
 ## In this section
 
-- [Authentication and Identity Management](./authentication-and-user-management/) - Internal and external IDP setup
-- [Storage](./storage/) - Storage drivers and backend setup
-- [Collabora](./collabora/) - Collabora integration and document compatibility
-- [Set Default Quota](./set-default-quota.md) - Define the default storage quota for users
-- [Frontend Update Check](./frontend-update-check.md) - Disable the update check in the web frontend
-- [Mail Notifications](./mail-notifications.md) - Send notifications to users by email
-- [Radicale Integration](./radicale-integration.md) - Calendar and contacts with Radicale
-- [Collaborative Editing](./collaborative-editing.md) - Real-time collaborative editing with the Yjs server
-- [Web Applications](./web-applications.md) - Enable additional web apps
-- [Link Password Policy](./link-password-policy.md) - Password enforcement and requirements for public links
-- [Default Language](./default-language.md) - Set the default language
-- [Euro Office](./euro-office.md) - Community supported Euro Office setup
-- [Logging](./logging.md) - Configure logging in OpenCloud
-- [n8n](./n8n.md) - Automate OpenCloud workflows with n8n
-- [Announcement Banner](./announcement-banner.md) - Notify all users with a global banner
-- [Guest Feature](./guest-feature.md) - Allow users to share with external guests by email address
-- [Open Cloud Mesh (OCM)](./ocm.md) - Configure OCM federation between OpenCloud and trusted OCM-compatible systems
-- [Thumbnailer](./thumbnailer/thumbnailer.md) - Use imagor to create previews for HEIC, HEIF, and AVIF images
+- [Authentication and Identity Management](./authentication-and-user-management/index.md) - Internal and external IDP, Keycloak, user management
+- [Storage](./storage/index.md) - Storage drivers (PosixFS, DecomposedS3) and default user quota
+- [Office and Editing](./office-and-editing/index.md) - Collabora, Euro Office, collaborative editing with Yjs
+- [Sharing and Federation](./sharing-and-federation/index.md) - Public link passwords, guest users, Open Cloud Mesh (OCM)
+- [Web Interface](./web-interface/index.md) - Default language, web apps, announcement banner, update check
+- [Integrations](./integrations/index.md) - Radicale (calendar and contacts), n8n, imagor thumbnailer
+- [Notifications and Logging](./notifications-and-logging/index.md) - Mail notifications and server logging
