@@ -1,13 +1,14 @@
 # Changelog
 
-## [3.63.0](https://github.com/opencloud-eu/docs/releases/tag/3.63.0) - 2026-11-26
+## [3.63.0](https://github.com/opencloud-eu/docs/releases/tag/3.63.0) - 2026-11-27
 
 ### ❤️ Thanks to all contributors! ❤️
 
-@openclouders, @pbleser-oc, @schweigisito
+@Heiko-Pohl, @openclouders, @pbleser-oc, @schweigisito
 
 ### 👷 Admin Documentation
 
+- change the structure in admin/configuration part [[#1404](https://github.com/opencloud-eu/docs/pull/1404)]
 - docs(admin): document the cleanup of old file versions [[#1222](https://github.com/opencloud-eu/docs/pull/1222)]
 - enhance: add nginx config settig to improve upload performance [[#1396](https://github.com/opencloud-eu/docs/pull/1396)]
 
