@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.63.0](https://github.com/opencloud-eu/docs/releases/tag/3.63.0) - 2026-11-27
+
+### ❤️ Thanks to all contributors! ❤️
+
+@Heiko-Pohl, @openclouders, @pbleser-oc, @schweigisito
+
+### 👷 Admin Documentation
+
+- change the structure in admin/configuration part [[#1404](https://github.com/opencloud-eu/docs/pull/1404)]
+- docs(admin): document the cleanup of old file versions [[#1222](https://github.com/opencloud-eu/docs/pull/1222)]
+- enhance: add nginx config settig to improve upload performance [[#1396](https://github.com/opencloud-eu/docs/pull/1396)]
+
+### 📦️ Build&Tools
+
+- Bump markdownlint-cli2 from 0.24.1 to 0.24.2 [[#1401](https://github.com/opencloud-eu/docs/pull/1401)]
+- Bump @opencloud-eu/prettier-config from 8.2.2 to 8.3.0 [[#1400](https://github.com/opencloud-eu/docs/pull/1400)]
+- Update docs [[#1406](https://github.com/opencloud-eu/docs/pull/1406)]
+- Update docs [[#1405](https://github.com/opencloud-eu/docs/pull/1405)]
+- Update docs [[#1402](https://github.com/opencloud-eu/docs/pull/1402)]
+- Update docs [[#1399](https://github.com/opencloud-eu/docs/pull/1399)]
+
 ## [3.62.0](https://github.com/opencloud-eu/docs/releases/tag/3.62.0) - 2026-11-18
 
 ### ❤️ Thanks to all contributors! ❤️
