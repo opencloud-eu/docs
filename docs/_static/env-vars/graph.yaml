@@ -154,6 +154,7 @@ thumbnails:
   additional_source_types: []
   space_image_max_input_image_file_size: 50MB
 max_concurrency: 20
+received_shares_stat_timeout: 10s
 keycloak:
   base_path: ""
   client_id: ""

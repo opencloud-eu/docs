@@ -3,7 +3,10 @@
 
 | Deprecation Info | Deprecation Version | Removal Version | Deprecation Replacement |
 |---|---|---|:---|
-| The legacy audit log is replaced by the audit stream and will be removed. | next | next-prod | AUDIT_OUTPUT_STDOUT |
+| The legacy audit log is replaced by the audit stream, enable it with OC_AUDIT_ENABLED. Without it, the audit service will not start once the legacy audit log is removed. | next | next-prod | AUDIT_OUTPUT_STDOUT |
+| The legacy audit log is replaced by the audit stream, enable it with OC_AUDIT_ENABLED. Without it, the audit service will not start once the legacy audit log is removed. The audit stream writes to stdout or to an OpenTelemetry Collector, not to a file. | next | next-prod | AUDIT_OUTPUT_OTLP_ENDPOINT |
+| The legacy audit log is replaced by the audit stream, enable it with OC_AUDIT_ENABLED. Without it, the audit service will not start once the legacy audit log is removed. The audit stream writes to stdout or to an OpenTelemetry Collector, not to a file. | next | next-prod | AUDIT_OUTPUT_OTLP_ENDPOINT |
+| The legacy audit log is replaced by the audit stream, enable it with OC_AUDIT_ENABLED. Without it, the audit service will not start once the legacy audit log is removed. The audit stream always writes JSON. | next | next-prod |  |
 
 ## Environment variables for the **audit** service
 
@@ -21,13 +24,13 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`AUDIT_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`AUDIT_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`AUDIT_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
+|`OC_AUDIT_ENABLED`<br/>`AUDIT_STREAM_ENABLED`| next |bool|`Write the audit records of the audit stream. OC_AUDIT_ENABLED also makes the services emit them. If false, the deprecated legacy audit log runs instead, with the AUDIT_LOG_TO_CONSOLE, AUDIT_LOG_TO_FILE, AUDIT_FILEPATH and AUDIT_FORMAT settings.`|`"false"`|
 |`AUDIT_STREAM_REPLICAS`| next |int|`Number of replicas of the audit stream in a clustered NATS. Use 3 in production clusters.`|`"1"`|
 |`AUDIT_STREAM_MAX_AGE`| next |Duration|`How long audit events stay in the stream. The stream is a buffer for outages of the audit service, not the archive. See the Environment Variable Types description for more details.`|`"168h0m0s"`|
 |`AUDIT_OUTPUT_STDOUT`| next |bool|`Write the audit records to stdout, one JSON record per line.`|`"true"`|
 |`AUDIT_OUTPUT_OTLP_ENDPOINT`| next |string|`Address of an OpenTelemetry Collector to send the audit records to as OTLP logs over gRPC, e.g. 'otel-collector:4317'. Empty disables the output.`|`""`|
 |`AUDIT_OUTPUT_OTLP_INSECURE`| next |bool|`Connect to the OpenTelemetry Collector without TLS.`|`"false"`|
-|`AUDIT_LEGACY_ENABLED`| next |bool|`Run the legacy audit log on the domain events instead of the audit stream. It uses the AUDIT_LOG_TO_CONSOLE, AUDIT_LOG_TO_FILE, AUDIT_FILEPATH and AUDIT_FORMAT settings.`|`"false"`|
-|`AUDIT_LOG_TO_CONSOLE`| 1.0.0 |bool|`Logs to stdout if set to 'true'. Independent of the LOG_TO_FILE option.`|`"true"`|
-|`AUDIT_LOG_TO_FILE`| 1.0.0 |bool|`Logs to file if set to 'true'. Independent of the LOG_TO_CONSOLE option.`|`"false"`|
-|`AUDIT_FILEPATH`| 1.0.0 |string|`Filepath of the logfile. Mandatory if LOG_TO_FILE is set to 'true'.`|`""`|
-|`AUDIT_FORMAT`| 1.0.0 |string|`Log format. Supported values are '' (empty) and 'json'. Using 'json' is advised, '' (empty) renders the 'minimal' format. See the text description for more details.`|`"json"`|
+|`AUDIT_LOG_TO_CONSOLE`| 1.0.0 |bool|`Logs to stdout if set to 'true'. Independent of the LOG_TO_FILE option. Only used by the legacy audit log.`|`"true"`|
+|`AUDIT_LOG_TO_FILE`| 1.0.0 |bool|`Logs to file if set to 'true'. Independent of the LOG_TO_CONSOLE option. Only used by the legacy audit log.`|`"false"`|
+|`AUDIT_FILEPATH`| 1.0.0 |string|`Filepath of the logfile. Mandatory if LOG_TO_FILE is set to 'true'. Only used by the legacy audit log.`|`""`|
+|`AUDIT_FORMAT`| 1.0.0 |string|`Log format. Supported values are '' (empty) and 'json'. Using 'json' is advised, '' (empty) renders the 'minimal' format. See the text description for more details. Only used by the legacy audit log.`|`"json"`|

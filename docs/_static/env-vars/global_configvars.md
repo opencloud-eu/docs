@@ -7,7 +7,7 @@
 | `IDM_CREATE_DEMO_USERS` | 1.0.0 | bool | Flag to enable or disable the creation of the demo users. | "false" |
 | `OC_ADMIN_USER_ID` | 1.0.0 | string | ID of the user that should receive admin privileges. Consider that the UUID can be encoded in some LDAP deployment configurations like in .ldif files. These need to be decoded beforehand. | "" |
 | `OC_ASYNC_UPLOADS` | 1.0.0 | bool | Enable asynchronous file uploads. | "true" |
-| `OC_AUDIT_ENABLED` | next | bool | Emit audit events for archive downloads to the audit stream. | "false" |
+| `OC_AUDIT_ENABLED` | next | bool | Write the audit records of the audit stream. OC_AUDIT_ENABLED also makes the services emit them. If false, the deprecated legacy audit log runs instead, with the AUDIT_LOG_TO_CONSOLE, AUDIT_LOG_TO_FILE, AUDIT_FILEPATH and AUDIT_FORMAT settings. | "false" |
 | `OC_AUDIT_MODE` | next | string | What happens when an audit event can't be stored. 'best_effort', the only mode for now, never blocks a request and counts dropped events. | "best_effort" |
 | `OC_CACHE_AUTH_PASSWORD` | 1.0.0 | string | The password to use for authentication. Only applies when using the 'nats-js-kv' store type. | "" |
 | `OC_CACHE_AUTH_USERNAME` | 1.0.0 | string | The username to use for authentication. Only applies when using the 'nats-js-kv' store type. | "" |

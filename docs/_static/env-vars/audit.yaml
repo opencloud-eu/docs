@@ -16,6 +16,7 @@ events:
   username: ""
   password: ""
 stream:
+  enabled: false
   replicas: 1
   max_age: 168h0m0s
 output:
@@ -23,8 +24,6 @@ output:
   otlp:
     endpoint: ""
     insecure: false
-legacy:
-  enabled: false
 auditlog:
   log_to_console: true
   log_to_file: false
