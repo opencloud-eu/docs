@@ -78,8 +78,8 @@
 |`PROXY_HTTPS_CACERT`| 1.0.0 |string|`Path/File for the root CA certificate used to validate the server’s TLS certificate for https enabled backend services.`|`""`|
 |`PROXY_ENABLE_APP_AUTH`| 1.0.0 |bool|`Allow app authentication. This can be used to authenticate 3rd party applications. Note that auth-app service must be running for this feature to work.`|`"true"`|
 |`PROXY_POLICIES_QUERY`| 1.0.0 |string|`Defines the 'Complete Rules' variable defined in the rego rule set this step uses for its evaluation. Rules default to deny if the variable was not found.`|`""`|
-|`PROXY_CSP_CONFIG_FILE_LOCATION`| 1.0.0 |string|`The location of the CSP configuration file.`|`""`|
-|`PROXY_CSP_CONFIG_FILE_OVERRIDE_LOCATION`| 4.0.0 |string|`The location of the CSP configuration file override.`|`""`|
+|`PROXY_CSP_CONFIG_FILE_LOCATION`| 1.0.0 |[]string|`A comma-separated list of CSP configuration files, which are merged into the default CSP in the given order. Each element can be a path or a glob pattern like '/web/apps/*/csp.yaml'. A pattern without matches is ignored, a path to a missing file is an error.`|`"[]"`|
+|`PROXY_CSP_CONFIG_FILE_OVERRIDE_LOCATION`| 4.0.0 |[]string|`A comma-separated list of CSP configuration files, which replace the default CSP and are merged in the given order. Each element can be a path or a glob pattern like '/web/apps/*/csp.yaml'. A pattern without matches is ignored, a path to a missing file is an error. At least one file needs to exist. If set, PROXY_CSP_CONFIG_FILE_LOCATION is ignored.`|`"[]"`|
 |`OC_EVENTS_ENDPOINT`<br/>`PROXY_EVENTS_ENDPOINT`| 1.0.0 |string|`The address of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture. Set to a empty string to disable emitting events.`|`"127.0.0.1:9233"`|
 |`OC_EVENTS_CLUSTER`<br/>`PROXY_EVENTS_CLUSTER`| 1.0.0 |string|`The clusterID of the event system. The event system is the message queuing service. It is used as message broker for the microservice architecture.`|`"opencloud-cluster"`|
 |`OC_INSECURE`<br/>`OC_EVENTS_TLS_INSECURE`<br/>`PROXY_EVENTS_TLS_INSECURE`| 1.0.0 |bool|`Whether to verify the server TLS certificates.`|`"false"`|
@@ -87,6 +87,6 @@
 |`OC_EVENTS_ENABLE_TLS`<br/>`PROXY_EVENTS_ENABLE_TLS`| 1.0.0 |bool|`Enable TLS for the connection to the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`"false"`|
 |`OC_EVENTS_AUTH_USERNAME`<br/>`PROXY_EVENTS_AUTH_USERNAME`| 1.0.0 |string|`The username to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
 |`OC_EVENTS_AUTH_PASSWORD`<br/>`PROXY_EVENTS_AUTH_PASSWORD`| 1.0.0 |string|`The password to authenticate with the events broker. The events broker is the OpenCloud service which receives and delivers events between the services.`|`""`|
-|`OC_AUDIT_ENABLED`<br/>`PROXY_AUDIT_ENABLED`| next |bool|`Emit audit events for logins and failed logins to the audit stream.`|`"false"`|
+|`OC_AUDIT_ENABLED`<br/>`PROXY_AUDIT_ENABLED`| next |bool|`Emit audit events for logins and failed logins, public link access and backchannel logouts to the audit stream.`|`"false"`|
 |`OC_AUDIT_MODE`<br/>`PROXY_AUDIT_MODE`| next |string|`What happens when an audit event can't be stored. 'best_effort', the only mode for now, never blocks a request and counts dropped events.`|`"best_effort"`|
 |`PROXY_GUEST_LINK_COOKIE_NAME`| 9.0.0 |string|`The name of the guest-session cookie. Defaults to __Host-opencloud-guest.`|`"__Host-oc_guest_session"`|

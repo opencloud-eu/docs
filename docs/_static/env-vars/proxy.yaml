@@ -263,8 +263,8 @@ auth_middleware:
   allow_app_auth: true
 policies_middleware:
   query: ""
-csp_config_file_location: ""
-csp_config_file_override_location: ""
+csp_config_file_location: []
+csp_config_file_override_location: []
 events:
   endpoint: 127.0.0.1:9233
   cluster: opencloud-cluster
